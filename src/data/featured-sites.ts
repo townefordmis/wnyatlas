@@ -17,9 +17,22 @@ export const featuredSites: AtlasSite[] = [
     municipality: "Buffalo",
     county: "Erie",
     category: "industry",
-    summary: "A multi-parcel chemical manufacturing and remediation landscape.",
+    summary:
+      "Former dye and chemical-manufacturing complex beside the Buffalo River. Investigations documented metals, volatile and semi-volatile compounds in plant sewer sediment, including storm sewers leading to river Outfalls 006 and 011; remedies included measures to address contaminated sewer sediment and limit migration toward the river.",
     evidenceStatus: "well-documented",
     coordinates: [-78.854, 42.858],
+    sources: [
+      {
+        title: "Buffalo Color Remedial Investigation Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915230/Report.BCP.C915230.2008-08-29.Area-ABCE_Remedial_Investigation_Report.pdf",
+      },
+      {
+        title: "Buffalo Color Corporation Hazardous-Waste Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-buffalo-color-corporation-buffalo-new-york",
+      },
+    ],
   },
   {
     id: "buffalo-river",
@@ -27,9 +40,22 @@ export const featuredSites: AtlasSite[] = [
     municipality: "Buffalo",
     county: "Erie",
     category: "waterway",
-    summary: "Industrial corridor, sediment cleanup, habitat restoration, and recovery.",
+    summary:
+      "Industrial corridor where navigational and remedial dredging removed legacy-contaminated sediment alongside habitat restoration and long-term recovery work.",
     evidenceStatus: "well-documented",
     coordinates: [-78.873, 42.864],
+    sources: [
+      {
+        title: "Remediation and Restoration Projects for the Buffalo River AOC",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/great-lakes-aocs/remediation-and-restoration-projects-buffalo-river-aoc",
+      },
+      {
+        title: "Buffalo River Area of Concern",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/great-lakes-aocs/buffalo-river-aoc",
+      },
+    ],
   },
   {
     id: "linde-air-products",
@@ -40,5 +66,1610 @@ export const featuredSites: AtlasSite[] = [
     summary: "Manhattan Project uranium processing and the regional FUSRAP story.",
     evidenceStatus: "well-documented",
     coordinates: [-78.911, 42.999],
+    atomicLegacy: {
+      era: "Manhattan Project",
+      role: "uranium-ore refining and uranium tetrafluoride production",
+    },
+    sources: [
+      {
+        title: "Tonawanda, New York, Site",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/lm/tonawanda-new-york-site",
+      },
+    ],
+  },
+  {
+    id: "bethlehem-steel",
+    name: "Former Bethlehem Steel",
+    municipality: "Lackawanna",
+    county: "Erie",
+    category: "industry",
+    summary:
+      "Former Lake Erie steelmaking complex whose western shoreline includes about 440 acres of manmade land created with iron- and steelmaking slag and plant waste. The property also included the HWM-2 on-site landfill, documented as containing about 118,000 cubic yards of coke- and primary-metalmaking wastes; the larger site remains under cleanup, monitoring, and land-use controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.85913, 42.82158],
+    sources: [
+      {
+        title: "Environmental Cleanup at Former Bethlehem Steel Site",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/environmental-cleanup-at-former-bethlehem-steel-site",
+      },
+      {
+        title: "Tecumseh Redevelopment Hazardous-Waste Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-tecumseh-redevelopment-incorporated-lackawanna",
+      },
+      {
+        title: "40 CFR Part 261, Appendix IX — Bethlehem Steel HWM-2 Exclusion",
+        publisher: "U.S. Government Publishing Office",
+        url: "https://www.govinfo.gov/content/pkg/CFR-2013-title40-vol27/pdf/CFR-2013-title40-vol27-part261-appIX.pdf",
+      },
+    ],
+  },
+  {
+    id: "west-valley",
+    name: "West Valley Demonstration Project",
+    municipality: "Ashford",
+    county: "Cattaraugus",
+    category: "radiological",
+    summary:
+      "Federal cleanup and decommissioning project at the former commercial nuclear fuel reprocessing facility.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.647, 42.451],
+    sources: [
+      {
+        title: "About the West Valley Demonstration Project",
+        publisher: "U.S. Department of Energy",
+        url: "https://www.energy.gov/wvdp/about-wvdp",
+      },
+    ],
+  },
+  {
+    id: "republic-steel",
+    name: "Former Republic Steel",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "industry",
+    summary:
+      "Former South Buffalo steel and coke complex remediated in phases as the Steelfields and RiverBend properties.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.83, 42.85],
+    sources: [
+      {
+        title: "Restoring the Buffalo River: Frequently Asked Questions",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/restoring-buffalo-river-faq",
+      },
+    ],
+  },
+  {
+    id: "tonawanda-coke",
+    name: "Former Tonawanda Coke",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "industry",
+    summary:
+      "Former coke manufacturing facility documented as a major historical benzene source, where shutdown response, removal work, state cleanup, and redevelopment followed the 2018 closure.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.92593, 42.98318],
+    sources: [
+      {
+        title: "Tonawanda Coke Corporation Site",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/tonawanda-coke-corporation-tcc-site",
+      },
+    ],
+  },
+  {
+    id: "woodlawn-beach",
+    name: "Woodlawn Beach",
+    municipality: "Blasdell",
+    county: "Erie",
+    category: "waterway",
+    summary:
+      "Lake Erie public beach where swimming decisions use a water-quality model and restoration work addresses the adjacent wetland and Blasdell Creek.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.864, 42.79],
+    sources: [
+      {
+        title: "Beaches and Pools: Beach Water Quality",
+        publisher: "Erie County Department of Health",
+        url: "https://www3.erie.gov/envhealth/beaches-and-pools",
+      },
+      {
+        title: "Woodlawn Beach Wetland Restoration",
+        publisher: "New York State Parks",
+        url: "https://parks.ny.gov/news/press-releases/woodlawn-beach-state-park-wetland-restoration-project-slated-fall",
+      },
+    ],
+  },
+  {
+    id: "seaway-site",
+    name: "Seaway FUSRAP Site / Tonawanda North Unit 3",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "radiological",
+    summary:
+      "River Road landfill areas containing material moved from the former Ashland property, where residues from Linde uranium processing had been stored.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.915, 42.997],
+    atomicLegacy: {
+      era: "Manhattan Project-derived material",
+      role: "later disposal of residues moved from the Ashland property",
+    },
+    sources: [
+      {
+        title: "Seaway Site",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612995/seaway-site/",
+      },
+      {
+        title: "Seaway Site Five-Year Review",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/4396884/fusrap-seaway-site-five-year-review-of-selected-remedy/",
+      },
+    ],
+  },
+  {
+    id: "gratwick-riverside-park",
+    name: "Gratwick Riverside Park",
+    municipality: "North Tonawanda",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Niagara River park established on a former municipal and industrial landfill, with a documented remedial program and long-term site management.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.899038, 43.054331],
+    sources: [
+      {
+        title: "Gratwick Riverside Park Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932060/ROD.HW.932060.1991-02-01.gratwick_riverside.pdf",
+      },
+    ],
+  },
+  {
+    id: "cherry-farm",
+    name: "Niagara Mohawk–Cherry Farm",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former Niagara River landfill containing foundry sand, slag, cinders, and other fill, later remediated with habitat-oriented cover and plantings.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.918, 43.012],
+    sources: [
+      {
+        title: "Niagara Mohawk–Cherry Farm Site Summary",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1012HVJ.txt",
+      },
+    ],
+  },
+  {
+    id: "niagara-erie-radiological-assessment",
+    name: "Niagara–Erie Residential Radiological Assessment",
+    municipality: "Town of Niagara",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "Ongoing regional investigation in which 121 property owners were contacted for access to conduct more detailed testing. Contact or screening does not mean every property contains radioactive fill.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-79.035, 43.125],
+    sources: [
+      {
+        title: "Niagara and Erie County Radiological Assessment Project",
+        publisher: "Office of the Governor of New York",
+        url: "https://www.governor.ny.gov/news/governor-hochuls-letter-epa-administrator-protect-new-yorkers-and-accelerate-niagara-and-erie",
+      },
+      {
+        title: "ASPECT Radiological Assessment Deployment",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/emergency-response/aspect-program-history",
+      },
+      {
+        title: "DEC Officials Report 121 Property-Access Letters",
+        publisher: "Niagara Action",
+        url: "https://www.niagaraaction.com/radioactive-contamination-fears-grow-in-niagara-county-as-residents-demand-answers-cleanup-and-superfund-designation/",
+      },
+    ],
+  },
+  {
+    id: "niagara-falls-boulevard-radiation-site",
+    name: "Niagara Falls Boulevard Radiation Site",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "Radioactive slag fill was removed from parking lots and interior areas at the documented 9512–9626 Niagara Falls Boulevard properties.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.949, 43.101],
+    sources: [
+      {
+        title: "Niagara County Radiation Removal Sites",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+      },
+    ],
+  },
+  {
+    id: "donovan-head-start-radiation-site",
+    name: "Donovan Head Start Slag Removal",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "Radioactive industrial slag fill was removed from playground and parking areas in 2023; EPA reports that the building itself was not contaminated.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.054, 43.106],
+    sources: [
+      {
+        title: "Niagara County Radiation Removal Sites",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+      },
+    ],
+  },
+  {
+    id: "upper-mountain-road-radiation-site",
+    name: "Upper Mountain Road Radiation Site",
+    municipality: "Lewiston",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "Radioactive fill was removed from an access road and portions of two adjacent residential properties between 2020 and 2023.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.01842, 43.15618],
+    sources: [
+      {
+        title: "Niagara County Radiation Removal Sites",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+      },
+    ],
+  },
+  {
+    id: "holy-trinity-radiation-site",
+    name: "Holy Trinity Cemetery Vicinity",
+    municipality: "Lewiston",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "EPA removed radioactive material from a garage and driveway at one nearby residence and from a driveway and patio at another.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.03242, 43.1484],
+    sources: [
+      {
+        title: "Niagara County Radiation Removal Sites",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+      },
+    ],
+  },
+  {
+    id: "michael-heyman-east-ferry",
+    name: "Michael Heyman / 858 East Ferry",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "industry",
+    summary:
+      "Former zinc and lead smelting and refining area where cleanup removed 136,234 tons of lead-contaminated soil from the site and surrounding properties.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.836, 42.914],
+    sources: [
+      {
+        title: "East Ferry Street Cleanup Success Story",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories",
+      },
+      {
+        title: "858 East Ferry Final Remediation Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915175/Report.HW.915175.2009-03-26.Final_Remediation_Report..pdf",
+      },
+    ],
+  },
+  {
+    id: "buffalo-color-area-e-field",
+    name: "Buffalo Color Area E / Former Medaille Field",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former Buffalo Color chemical-manufacturing parcel remediated under the Brownfield Cleanup Program and redeveloped in 2019 as the Medaille athletic complex at Buffalo Color Park.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.852, 42.856],
+    sources: [
+      {
+        title: "Buffalo Color Area E Site Management and Periodic Review",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915232/Report.BCP.C915232.2024-03-21.PRR_and_IC-EC_Certification.pdf",
+      },
+      {
+        title: "2021 Athletic Field Air-Monitoring Action",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/press-releases/2021/5/dec-directs-pvs-chemical-solutions-inc-to-temporarily-cease-operations",
+      },
+    ],
+  },
+  {
+    id: "ashland-1-refinery-site",
+    name: "Ashland 1 / Former Ashland Oil Refinery",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "radiological",
+    summary:
+      "Former River Road refinery property where Linde uranium-processing residues had been stored before Ashland Oil acquired the land; federal cleanup was completed in 2003.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.917, 42.993],
+    atomicLegacy: {
+      era: "Manhattan Project-derived material",
+      role: "wartime Linde residues stored on the property",
+    },
+    sources: [
+      {
+        title: "Ashland 1 FUSRAP Site",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612233/ashland-1-site/",
+      },
+      {
+        title: "Tonawanda North Unit 1",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/lm/tonawanda-north-new-york-site-unit-1",
+      },
+    ],
+  },
+  {
+    id: "huntley-generating-station",
+    name: "Former Huntley Generating Station",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "industry",
+    summary:
+      "Coal-fired Niagara River power station retired in 2016, with a separately managed industrial fly-ash landfill and a history extending to the River Station era.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.927, 42.975],
+    sources: [
+      {
+        title: "Huntley Generating Station Coal-Impoundment Assessment",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www3.epa.gov/epawaste/coal/pdf/nrg_huntley_final.pdf",
+      },
+      {
+        title: "NRG Huntley Industrial Landfill Annual Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/fs/projects/SWMF/Annual%20Reports_Solid%20Waste%20Management%20Facility/Annual%20Reports_by%20Activity%20Type/Landfill/Landfill%20Annual%20Reports%20-%202023/R9/15N24_NRG_Huntley_Landfill_ind_R9_2022.2023-03-01.AR.pdf",
+      },
+    ],
+  },
+  {
+    id: "dunlop-disposal-sites",
+    name: "Dunlop Tire Disposal Sites",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Three historical waste-disposal areas at the River Road tire plant were investigated, capped, and placed under long-term groundwater monitoring and site management.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.92442, 42.96944],
+    sources: [
+      {
+        title: "Dunlop Site 2 Superfund Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201676",
+      },
+      {
+        title: "Dunlop Tire Corporation Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915018/",
+      },
+    ],
+  },
+  {
+    id: "buffalo-harbor-cdf-4",
+    name: "Buffalo Harbor CDF No. 4",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "waterway",
+    summary:
+      "A 107-acre Outer Harbor confined disposal facility constructed in 1977 beside the former Bethlehem Steel property. It receives dredged material from Buffalo Harbor, the Buffalo River, Black Rock Channel, and Tonawanda Harbor, but is distinct from Bethlehem’s HWM-2 industrial landfill and the steel plant’s slag-fill area.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.869, 42.8],
+    sources: [
+      {
+        title: "Buffalo Harbor Confined Disposal Facility No. 4",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://lre-ops.usace.army.mil/OandM/GLNAV/DMMandCDFFS/BuffaloCDFFactSheet.pdf",
+      },
+    ],
+  },
+  {
+    id: "pfohl-brothers-landfill",
+    name: "Pfohl Brothers Landfill",
+    municipality: "Cheektowaga",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former municipal and industrial landfill bordering Transit Road where drums and contaminated material were removed, wastes were consolidated beneath engineered caps, and long-term monitoring continues.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.699, 42.947],
+    sources: [
+      {
+        title: "Pfohl Brothers Landfill Superfund Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0201751",
+      },
+      {
+        title: "Pfohl Brothers Landfill Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915043/ROD.HW.915043.1994-01-01.pfohl_brothers_ou2.pdf",
+      },
+    ],
+  },
+  {
+    id: "tifft-nature-preserve",
+    name: "Tifft Nature Preserve",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "A 264-acre former dockland and city-dump landscape transformed through capping and habitat work into an urban nature preserve with trails, wetlands, and environmental education.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.862, 42.847],
+    sources: [
+      {
+        title: "Tifft Nature Preserve",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/things-to-do/watchable-wildlife/sites/tifft-nature-preserve",
+      },
+      {
+        title: "Buffalo Parks Master Plan",
+        publisher: "City of Buffalo",
+        url: "https://www.buffalony.gov/DocumentCenter/View/9917/Buffalo-Parks-Master-Plan",
+      },
+    ],
+  },
+  {
+    id: "main-hertel-the-rails",
+    name: "Main & Hertel / The Rails",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former manufacturing and electroplating property cleaned through the Brownfield Cleanup Program and redeveloped as apartments with commercial space.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.836, 42.947],
+    sources: [
+      {
+        title: "DEC Marks 21st Successful Year for the Brownfield Cleanup Program",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/press-releases/2025/2/dec-marks-21st-successful-year-for-new-york-states-brownfield-cleanup-program",
+      },
+    ],
+  },
+  {
+    id: "former-trico-plant",
+    name: "Former Trico Plant",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former windshield-wiper manufacturing complex remediated under the Brownfield Cleanup Program and converted primarily to residential apartments with commercial space.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.868, 42.898],
+    sources: [
+      {
+        title: "Former Trico Plant Site Management Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915281/Work%20Plan.BCP.C915281.2025-03-25.Reivsed_SMP.pdf",
+      },
+    ],
+  },
+  {
+    id: "niagara-falls-air-reserve-pfas",
+    name: "Niagara Falls Air Reserve Station PFAS Investigation",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "pfas",
+    summary:
+      "Federal and state investigations of PFAS associated with historical use and releases of aqueous film-forming firefighting foam at the air station.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.946, 43.113],
+    sources: [
+      {
+        title: "Final Site Inspection Report of Firefighting Foam Usage",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932106/Report.RCRA.932106.2019-01-10.Final_Site_Inspection_Report_AFFF_at_NFARS.pdf",
+      },
+      {
+        title: "Hazardous Waste Cleanup: 914th Airlift Wing-AFRC",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-914th-airlift-wing-afrc-niagara-falls-new-york",
+      },
+    ],
+  },
+  {
+    id: "mayville-pfas-site",
+    name: "Mayville PFAS Site",
+    municipality: "Mayville",
+    county: "Chautauqua",
+    category: "pfas",
+    summary:
+      "Ongoing investigation of PFNA detected in the village water system and in environmental media near a former firefighting-training area; replacement supply and treatment measures were implemented.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-79.505, 42.254],
+    sources: [
+      {
+        title: "Investigation at the Mayville PFAS Site",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/investigation-at-the-mayville-pfas-site",
+      },
+    ],
+  },
+  {
+    id: "marine-drive-apartments-east-pfas",
+    name: "Marine Drive Apartments East PFAS Investigation",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "pfas",
+    summary:
+      "Brownfield investigation at 90 Erie Street documented PFAS impacts in groundwater alongside contaminants associated with historic fill; remediation planning remains part of the site record.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.88, 42.881],
+    sources: [
+      {
+        title: "Marine Drive Apartments East Remedial Investigation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915398/Report.BCP.C915398.2024-12-09.Final%20Remedial%20Investigation_Alt.%20Analysis%20.pdf",
+      },
+    ],
+  },
+  {
+    id: "iroquois-gas-westwood",
+    name: "Iroquois Gas / Westwood Pharmaceutical",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former manufactured-gas plant at Dart and Bradley Streets where investigations documented coal tar, benzene and related BTEX compounds, and PAHs in site media.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.894, 42.938],
+    sources: [
+      {
+        title: "Gaslight Lane and Scajaquada Creek Site Characterization",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915351/Report.HW.915351.2022-10-20.Site%20Characterization%20Report%20.pdf",
+      },
+    ],
+  },
+  {
+    id: "west-genesee-former-mgp",
+    name: "West Genesee Former Manufactured-Gas Plant",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former manufactured-gas property where benzene and other coal-gas wastes were documented in soil and groundwater, remediated, and redeveloped with the HealthNow office building.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.884, 42.889],
+    sources: [
+      {
+        title: "Region 9 Environmental Cleanup Success Stories",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories",
+      },
+    ],
+  },
+  {
+    id: "solvent-chemical-niagara-falls",
+    name: "Solvent Chemical Site",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former Buffalo Avenue chemical-manufacturing and disposal site where benzene and chlorinated benzenes affected multiple groundwater zones; containment, treatment, and monitoring remain part of the remedy.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.006, 43.086],
+    sources: [
+      {
+        title: "Solvent Chemical Site Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932096/ROD.HW.932096.1996-12-01.solvent_chem.pdf",
+      },
+      {
+        title: "Solvent Chemical Site Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932096/Report.HW.932096.2022-04-21.2021_Periodic_Review_Report.pdf",
+      },
+    ],
+  },
+  {
+    id: "ashland-2-fusrap-site",
+    name: "Ashland 2 FUSRAP Site",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "radiological",
+    summary:
+      "Former industrial landfill that received radioactive soil excavated from Ashland 1 in 1974; federal cleanup removed more than 52,000 tons of material.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.913, 43.002],
+    atomicLegacy: {
+      era: "Manhattan Project-derived material",
+      role: "later disposal of contaminated soil moved from Ashland 1",
+    },
+    sources: [
+      {
+        title: "Ashland 2 Site",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612311/ashland-2-site/",
+      },
+    ],
+  },
+  {
+    id: "tonawanda-landfill-fusrap-vicinity",
+    name: "Tonawanda Landfill FUSRAP Vicinity Property",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "radiological",
+    summary:
+      "Town landfill and mudflats vicinity property where radioactive material resembled material at other FUSRAP sites, although no record ties the property to Manhattan Engineer District or Atomic Energy Commission operations.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.895, 42.984],
+    atomicLegacy: {
+      era: "FUSRAP — origin unconfirmed",
+      role: "radiological vicinity property; no documented MED/AEC activity",
+    },
+    sources: [
+      {
+        title: "Tonawanda Landfill Vicinity Property",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3613023/tonawanda-landfill-vicinity-property/",
+      },
+    ],
+  },
+  {
+    id: "niagara-falls-storage-site",
+    name: "Niagara Falls Storage Site",
+    municipality: "Lewiston",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "Former Lake Ontario Ordnance Works property used beginning in 1944 to store Manhattan Engineer District radioactive residues and uranium-processing wastes; active federal remediation continues.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.018, 43.228],
+    atomicLegacy: {
+      era: "Manhattan Project",
+      role: "radioactive-residue and uranium-processing-waste storage",
+    },
+    sources: [
+      {
+        title: "Niagara Falls Storage Site",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612360/niagara-falls-storage-site/",
+      },
+    ],
+  },
+  {
+    id: "niagara-falls-storage-site-vicinity-properties",
+    name: "Niagara Falls Storage Site Vicinity Properties",
+    municipality: "Lewiston and Porter",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "Properties surrounding the federal storage site that have been investigated or remediated individually for material associated with the Niagara Falls Storage Site.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-79.026, 43.235],
+    atomicLegacy: {
+      era: "Manhattan Project-derived material",
+      role: "vicinity-property investigation and cleanup",
+    },
+    sources: [
+      {
+        title: "Niagara Falls Storage Site",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612360/niagara-falls-storage-site/",
+      },
+    ],
+  },
+  {
+    id: "electro-metallurgical-company",
+    name: "Electro Metallurgical Company",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "Union Carbide subsidiary that converted Linde uranium tetrafluoride into uranium metal, producing more than one-third of the Manhattan Project’s uranium-metal requirement.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.958, 43.103],
+    atomicLegacy: {
+      era: "Manhattan Project",
+      role: "uranium-metal production",
+    },
+    sources: [
+      {
+        title: "Manhattan Project Uranium Milling and Processing Facilities",
+        publisher: "U.S. Department of Energy Office of Scientific and Technical Information",
+        url: "https://www.osti.gov/opennet/manhattan-project-history/Places/Other/uranium-production.html",
+      },
+    ],
+  },
+  {
+    id: "bliss-laughlin-steel",
+    name: "Bliss & Laughlin Steel",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "radiological",
+    summary:
+      "Steel facility where uranium rods were machined and straightened in 1952 for an Atomic Energy Commission contractor; the affected area was remediated under FUSRAP.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.823, 42.846],
+    atomicLegacy: {
+      era: "Early Atomic Energy Commission",
+      role: "uranium-rod machining and straightening",
+    },
+    sources: [
+      {
+        title: "Buffalo, New York, Site",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/lm/buffalo-new-york-site",
+      },
+    ],
+  },
+  {
+    id: "guterl-specialty-steel",
+    name: "Guterl Specialty Steel / Former Simonds Saw and Steel",
+    municipality: "Lockport",
+    county: "Niagara",
+    category: "radiological",
+    summary:
+      "Former specialty-steel complex where Atomic Energy Commission work left uranium and thorium impacts in buildings, soil, and groundwater; federal remediation is active.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.69, 43.171],
+    atomicLegacy: {
+      era: "Early Atomic Energy Commission",
+      role: "uranium rolling and specialty-metal work",
+    },
+    sources: [
+      {
+        title: "Guterl Steel Site",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3612330/guterl-steel-site/",
+      },
+    ],
+  },
+  {
+    id: "katherine-street-peninsula",
+    name: "Katherine Street Peninsula",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "waterway",
+    summary:
+      "Former industrial Buffalo River peninsula with compacted fill and a documented waste-oil handling history nearby, where contaminated river sediment was addressed and multiple shoreline and habitat-restoration projects were completed. Sources reviewed do not establish the peninsula as a former municipal landfill.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.855204, 42.857583],
+    sources: [
+      {
+        title: "Remediation and Restoration Projects for the Buffalo River AOC",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/great-lakes-aocs/remediation-and-restoration-projects-buffalo-river-aoc",
+      },
+      {
+        title: "Buffalo River Habitat Restoration Completed at Katherine Street",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Article/3652617/buffalo-river-habitat-restoration-completed-at-katherine-street/",
+      },
+      {
+        title: "Buffalo River Corridor Brownfield Opportunity Area",
+        publisher: "University at Buffalo Regional Institute",
+        url: "https://regional-institute.buffalo.edu/wp-content/uploads/sites/155/2021/07/Buffalo-River-Corridor-BOA-Nomination-Document.pdf",
+      },
+    ],
+  },
+  {
+    id: "exxonmobil-former-buffalo-terminal",
+    name: "Former ExxonMobil Buffalo Terminal",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Large former petroleum refinery, lubricant plant, and terminal at Elk and Babcock Streets, divided into multiple state brownfield cleanup units addressing petroleum-impacted soil, groundwater, infrastructure, and riverfront conditions.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.839, 42.86],
+    sources: [
+      {
+        title: "Babcock Street Properties Area Investigation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915201C/Report.BCP.C915201C.2001-06-05.BSPA_Investigation.pdf",
+      },
+      {
+        title: "Former Buffalo Terminal OU-2 Cleanup Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915201B/Fact%20Sheet.BCP.C915201B.2017-05-03.ExxonMobil_Former_Buffalo_Terminal_OU-2_Cleanup_Proposed.pdf",
+      },
+      {
+        title: "Former Buffalo Terminal OU-3 Brownfield Cleanup Agreement",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915201D/Agreement.BCP.C915201D.2017-10-02.Executed_BCA_OU-3.pdf",
+      },
+    ],
+  },
+  {
+    id: "polymer-applications",
+    name: "Former Polymer Applications",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former phenolic-resin and rubber-products plant at 3445 River Road where a 1988 fire left drums, tanks, laboratory chemicals, and contaminated media requiring federal removal and state remediation.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.925, 42.974],
+    sources: [
+      {
+        title: "Polymer Applications Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915044/",
+      },
+      {
+        title: "Polymer Applications Superfund Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201544",
+      },
+    ],
+  },
+  {
+    id: "3m-o-cel-o-tonawanda",
+    name: "3M O-Cel-O Sponge Site",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Sponge-manufacturing property where interim controls addressed carbon-disulfide handling and drainage areas; the closed state site remains subject to controls, inspections, and monitoring.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.906, 42.963],
+    sources: [
+      {
+        title: "3M O-Cel-O Sponge Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915148/ROD.HW.915148.1999-03-30.3M_O-Cel-O.pdf",
+      },
+      {
+        title: "3M O-Cel-O Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915148/Report.HW.915148.2022-03-09.2021_Periodic_Review_Report.pdf",
+      },
+    ],
+  },
+  {
+    id: "dupont-yerkes",
+    name: "DuPont Yerkes Plant",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "industry",
+    summary:
+      "Long-running chemical and polymer-products facility at 3115 River Road, included in the state’s southwestern Tonawanda groundwater study and subject to wastewater, hazardous-air-pollutant, and emissions controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.924, 42.955],
+    sources: [
+      {
+        title: "Southwestern Tonawanda Hydrogeologic Study",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915337/Report.BCP.C915337.2007-04-15.Hydrogeologic_and_Geochemical_Investigation_of_Southwestern_Tonawanda.pdf",
+      },
+      {
+        title: "DuPont Yerkes Wastewater Permit Review",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2025-07-09/completed-application/town-of-tonawanda-dupont-specialty-products-usa-llc",
+      },
+    ],
+  },
+  {
+    id: "fmc-peroxychem-evonik-tonawanda",
+    name: "Former FMC Tonawanda Plant",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "industry",
+    summary:
+      "River Road and Sawyer Avenue chemical-manufacturing property included in the southwestern Tonawanda groundwater study; its former state waste-site listing was delisted while regulated operations continued under later owners.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.92, 42.961],
+    sources: [
+      {
+        title: "Southwestern Tonawanda Hydrogeologic Study",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915337/Report.BCP.C915337.2007-04-15.Hydrogeologic_and_Geochemical_Investigation_of_Southwestern_Tonawanda.pdf",
+      },
+      {
+        title: "Toxic Chemical Releases in Tonawanda Community Snapshot",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/sites/default/files/2014-09/documents/r2_tonawanda_tri_comm_snapshot-final.pdf",
+      },
+    ],
+  },
+  {
+    id: "gastown-former-mgp",
+    name: "Gastown Former Manufactured-Gas Plant",
+    municipality: "City of Tonawanda",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former manufactured-gas plant at 126 East Niagara Street where coal-tar non-aqueous-phase liquid and contaminated groundwater affected the property and nearby basement sumps; recovery and treatment systems were installed.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.873, 43.022],
+    sources: [
+      {
+        title: "Gastown Treatment System Semiannual Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915171/Report.HW.915171.2002-08-15.Treatment_System-1st_Semi_Report_2002.pdf",
+      },
+    ],
+  },
+  {
+    id: "lockport-transit-street-former-mgp",
+    name: "Transit Street Former Manufactured-Gas Plant",
+    municipality: "Lockport",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Gasworks operated on Transit Street from 1851 to 1927. Investigations documented coal tar and related non-aqueous-phase liquid, leading to excavation, containment, and long-term remediation.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.696, 43.17],
+    sources: [
+      {
+        title: "Transit Street Former MGP Remediation Request for Proposals",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932098/Report.HW.932098.2013-07-08.RFP_for_Remediation_from_NYSEG.pdf",
+      },
+      {
+        title: "36 South Transit Street Approved Work Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932098/Work%20Plan.HW.932098.2015-12-16.36%20S%20Transit%20Work%20Plan%20-%20approved.pdf",
+      },
+    ],
+  },
+  {
+    id: "mineral-springs-road-former-mgp",
+    name: "Mineral Springs Road Former Manufactured-Gas Plant",
+    municipality: "West Seneca",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former manufactured-gas plant built in the 1920s and operated into the 1960s, where purifier residuals and hydrocarbon compounds were investigated and remediated through New York's voluntary cleanup program.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.807, 42.878],
+    sources: [
+      {
+        title: "Mineral Springs Road Final Engineering Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00195/Report.VCP.V00195.2002-06-24.Final_Engineering_Report_-Vol_I.pdf",
+      },
+    ],
+  },
+  {
+    id: "buffalo-gas-light-tonawanda-street",
+    name: "Buffalo Gas Light Gas Holder / 31 Tonawanda Street",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former gas-holder property near Scajaquada Creek. State investigation documents the historic gasometer and evaluates coal-tar impacts associated with the adjoining former Westwood manufactured-gas plant area.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.892, 42.922],
+    sources: [
+      {
+        title: "31 Tonawanda Street Off-Site Remedial Investigation Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915299A/Report.BCP.C915299A.2023-08-02.Off-Site%20RI%20Report%20-%20Text-Figures-Tables.pdf",
+      },
+    ],
+  },
+  {
+    id: "pierce-arrow-manufacturing-complex",
+    name: "Former Pierce-Arrow Manufacturing Complex",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former luxury-automobile manufacturing complex around Great Arrow Avenue and Elmwood Avenue. State records identify petroleum impacts, industrial fill, metals, PCBs, solvents, underground tanks, and later hazardous-material storage across separately managed brownfield parcels; investigation at 157 Great Arrow was updated to include PFAS sampling.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.874006, 42.943264],
+    sources: [
+      {
+        title: "Former Pierce Arrow Manufacturing Site Brownfield Application",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915220/Application.BCP.C915220.2007-08-23.BCP_Application.pdf",
+      },
+      {
+        title: "157 Great Arrow Avenue Remedial Investigation Work Plan Addendum",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915326/Work%20Plan.BCP.C915326.2024-03-15.RIWP%20Addendum%20-%20FINAL.pdf",
+      },
+      {
+        title: "Federal Superfund Drum Removal at Great Arrow Plaza",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/f967face708ce80885257245005d9528.html",
+      },
+    ],
+  },
+  {
+    id: "union-road-gardenville-yard",
+    name: "Union Road Site / Former Gardenville Yard",
+    municipality: "Cheektowaga",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former railroad classification and maintenance yard where a spur was built into an eastern wetland depression to dispose of railyard waste. Investigators later found tar-like material and 56 drums; the waste was contained, capped, and remains under long-term monitoring.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.739028, 42.879639],
+    sources: [
+      {
+        title: "Union Road Site Health and Safety Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915128/Report.HW.915128.2023-09-07.HASP.pdf",
+      },
+      {
+        title: "Union Road Site 2024 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915128/Report.HW.915128.2025-03-14.PRR.pdf",
+      },
+      {
+        title: "Union Road Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0202408",
+      },
+    ],
+  },
+  {
+    id: "hooker-hyde-park-landfill",
+    name: "Hooker / Hyde Park Landfill",
+    municipality: "Town of Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former Hooker Chemical landfill that received about 80,000 tons of chemical waste, including dioxin-bearing material. The landfill and perimeter are capped, contaminated groundwater is hydraulically contained and treated, and community monitoring wells remain in use.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.019, 43.119],
+    sources: [
+      {
+        title: "Hooker / Hyde Park Superfund Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0201306",
+      },
+      {
+        title: "EPA Removes Hyde Park Landfill from Superfund List",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/722b0632baeffc0d85257c19005357a4.html",
+      },
+    ],
+  },
+  {
+    id: "hooker-102nd-street-landfill",
+    name: "Hooker / 102nd Street Landfill",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former industrial landfill where Occidental/Hooker and Olin deposited at least 159,000 tons of liquid and solid chemical waste. The remedy consolidated waste beneath a lined cap, added a slurry wall and recovery systems, and requires long-term groundwater and NAPL monitoring.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.951, 43.083],
+    sources: [
+      {
+        title: "Hooker / 102nd Street Superfund Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0201706",
+      },
+      {
+        title: "102nd Street Long-Term Cleanup Systems",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/2fd830188d5d707c8525725800716b7d.html",
+      },
+    ],
+  },
+  {
+    id: "hooker-s-area-landfill",
+    name: "Hooker / S-Area Landfill",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Eight-acre former chemical-waste landfill beside the Niagara Falls drinking-water treatment plant. The remedy includes a final landfill cap, source containment, groundwater collection and treatment, and continuing monitoring.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.0054, 43.0757],
+    sources: [
+      {
+        title: "Hooker S-Area Record of Decision",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100PZCV.TXT",
+      },
+      {
+        title: "Niagara River Hazardous-Waste Site Progress Report",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1010FPR.txt",
+      },
+    ],
+  },
+  {
+    id: "dupont-necco-park-landfill",
+    name: "DuPont / Necco Park Landfill",
+    municipality: "Niagara Falls and Town of Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former DuPont disposal area containing an estimated 93,000 tons of industrial process waste. A clay cap, groundwater and dense non-aqueous-phase-liquid recovery, treatment systems, and a large monitoring-well network manage contamination in fractured bedrock.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.956, 43.112],
+    sources: [
+      {
+        title: "DuPont / Necco Park Superfund Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.Cleanup&id=0201992",
+      },
+      {
+        title: "DuPont / Necco Park Record of Decision",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1002O4B.TXT",
+      },
+    ],
+  },
+  {
+    id: "niagara-sanitation-nash-road-landfill",
+    name: "Niagara Sanitation / Nash Road Landfill",
+    municipality: "Wheatfield",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former landfill that accepted municipal refuse and industrial wastes, including caustic material and sludges, from regional manufacturers and the former air base. The site remains under an approved operation, maintenance, and monitoring program.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.856, 43.069],
+    sources: [
+      {
+        title: "Niagara Sanitation Company Project Summary",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9",
+      },
+      {
+        title: "Niagara Sanitation Remedial Investigation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/nsc11.pdf",
+      },
+    ],
+  },
+  {
+    id: "lancaster-sanitary-landfill",
+    name: "Lancaster Sanitary Landfill",
+    municipality: "Lancaster and Clarence",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former sanitary landfill that also accepted industrial waste, including sludges, waste ink, chemical drums, and PCB-containing equipment. The landfill was capped under a state-approved closure plan and remains subject to post-closure groundwater monitoring and maintenance.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.6131, 42.955],
+    sources: [
+      {
+        title: "Lancaster Landfill Site Classification Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915068/Report.HW.915068.1994-03-24.reclass_decision_2a_to_4.pdf",
+      },
+      {
+        title: "Lancaster Landfill Post-Closure Monitoring and Maintenance Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915068/Work%20Plan.HW.915068.2021-08-31.Post_Closure_Monitoring_and_Maintenance_Plan.pdf",
+      },
+    ],
+  },
+  {
+    id: "niagara-county-refuse",
+    name: "Niagara County Refuse Site",
+    municipality: "Wheatfield",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former municipal and industrial landfill that accepted solid and chemical wastes from 1969 to 1976. About 3.1 million tons of material remain contained beneath a cap with leachate collection and gas venting; cleanup construction was completed in 2000 and long-term groundwater and surface-water monitoring continues.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.906111, 43.06055],
+    sources: [
+      {
+        title: "Niagara County Refuse Superfund Cleanup Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0201266",
+      },
+      {
+        title: "Niagara County Refuse Fourth Five-Year Review",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932026/Report.HW.932026.2019-07-18.EPA_Fourth_5%20Year_Review.pdf",
+      },
+    ],
+  },
+  {
+    id: "alltift-landfill-ramco-steel",
+    name: "Alltift Landfill / Ramco Steel",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former disposal and industrial property where the remedy consolidated waste and contaminated soil beneath an engineered cover. The completed cleanup is maintained through institutional controls, inspections, and long-term operation and maintenance.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.851, 42.843],
+    sources: [
+      {
+        title: "Alltift Landfill Construction Completion Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915054/Report.HW.915054.2006-04-01.CCR%28FER%29%28Abridged_amended%2011-15-12%29.pdf",
+      },
+      {
+        title: "Alltift Landfill Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915054/Report.HW.915054.2014-05-12.Periodic%20Review%20Report%202014.pdf",
+      },
+    ],
+  },
+  {
+    id: "outer-harbor-greenbelt",
+    name: "Outer Harbor Greenbelt",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Public waterfront land formed in part from dredged sediment, construction debris, and a former municipal dump that received ash and incinerator residue. Remediation included soil removal, a protective cover, and shoreline stabilization; New York issued a Certificate of Completion in 2012 and the property now supports recreation.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.869, 42.834],
+    sources: [
+      {
+        title: "Region 9 Remediation Success Stories: Outer Harbor Greenbelt",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories",
+      },
+      {
+        title: "Buffalo Outer Harbor Redevelopment Request for Proposals",
+        publisher: "Empire State Development",
+        url: "https://esd.ny.gov/sites/default/files/rfp/RFP%20Document_Outer%20Harbor%202020_FINAL.pdf",
+      },
+    ],
+  },
+  {
+    id: "times-beach-disposal-site",
+    name: "Times Beach Confined Disposal Site",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "waterway",
+    summary:
+      "Former confined disposal area used from 1972 to 1976 for contaminated sediment dredged from the Buffalo River federal navigation channel. The 45-acre containment site later became a nature preserve; habitat restoration and invasive-species work continue around the contained dredged material.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.8818, 42.872],
+    sources: [
+      {
+        title: "Restoring Habitat at Times Beach",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.usace.army.mil/Media/News/NewsSearch/Article/503312/restoring-quality-habitat-and-combating-invasive-plants-at-times-beach/",
+      },
+      {
+        title: "Times Beach Disposal Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0202103",
+      },
+    ],
+  },
+  {
+    id: "pettit-flume-durez-outfall",
+    name: "Pettit Flume / Durez Outfall",
+    municipality: "North Tonawanda",
+    county: "Niagara",
+    category: "waterway",
+    summary:
+      "Storm-sewer route and Niagara River cove affected by contaminants migrating from the former Durez chemical site. Cleanup included plant containment, cleaning about 22,000 feet of sewers, removal of roughly 25,000 cubic yards of contaminated sewer and cove sediment, wetland restoration, later maintenance dredging, and continuing site controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.918, 43.055],
+    sources: [
+      {
+        title: "Reduction of Toxics Loadings to the Niagara River",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1010FSX.txt",
+      },
+      {
+        title: "Durez North Tonawanda Facility",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9",
+      },
+      {
+        title: "Durez North Tonawanda 2023 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932018/Report.HW.932018.2024-05-20.Revised%202023%20PRR%20Durez%20NT.pdf",
+      },
+    ],
+  },
+  {
+    id: "gill-creek-chemical-corridor",
+    name: "Gill Creek / DuPont–Olin Chemical Corridor",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "waterway",
+    summary:
+      "Creek flowing past the DuPont and Olin chemical plants to the Niagara River. Historic plant-related contaminants affected creek sediment and groundwater; joint cleanup removed about 8,020 cubic yards of contaminated sediment by 1992, while groundwater collection, treatment, and monitoring continued to control migration toward the creek and river.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.989, 43.074],
+    sources: [
+      {
+        title: "Olin Corporation Hazardous-Waste Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-olin-corporation-niagara-falls-new-york",
+      },
+      {
+        title: "Reduction of Toxics Loadings to the Niagara River",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1010FSX.txt",
+      },
+      {
+        title: "Gill Creek Investigation and Cleanup History",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932013/Report.HW.932013.1991-03-13.GILL_CREEK_WELL_BORINGS.pdf",
+      },
+    ],
+  },
+  {
+    id: "smokes-creek-bethlehem-corridor",
+    name: "Smokes Creek / Bethlehem Steel Discharge Corridor",
+    municipality: "Lackawanna",
+    county: "Erie",
+    category: "waterway",
+    summary:
+      "Lake Erie tributary crossing the former Bethlehem Steel property. Historical plant discharges contaminated the lower creek; approximately 40,000 cubic yards of affected sediment were removed in 2009. Current planning focuses on bank stabilization, habitat connectivity, flood resilience, and restoration from the creek corridor to its Lake Erie mouth.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.863012, 42.811638],
+    sources: [
+      {
+        title: "Tecumseh Redevelopment Hazardous-Waste Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-tecumseh-redevelopment-incorporated-lackawanna",
+      },
+      {
+        title: "Environmental Cleanup at Former Bethlehem Steel Site",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/environmental-cleanup-at-former-bethlehem-steel-site",
+      },
+      {
+        title: "Smokes Creek Habitat Opportunity Assessment",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/fs/programs/press/R9/12572245-Smokes%20Creek-Final%20Report_DRAFT%205-15-2024.pdf",
+      },
+    ],
+  },
+  {
+    id: "southtowns-awtf-ash-landfill",
+    name: "Southtowns AWTF Ash Landfill",
+    municipality: "Hamburg",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former on-site disposal area for sewage-sludge incinerator ash at the Southtowns Advanced Wastewater Treatment Facility beside Woodlawn Beach State Park. Erie County’s reclamation project removed, tested, hauled, and disposed of the landfill contents off-site and restored the area; this record does not identify the natural beach or dune system as a landfill.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.8465, 42.78875],
+    sources: [
+      {
+        title: "Southtowns AWTF Ash Landfill Reclamation Bid Documents",
+        publisher: "Erie County Division of Sewerage Management",
+        url: "https://www3.erie.gov/dsm/sites/www3.erie.gov.dsm/files/2025-05/d3c82_ashland-notice.pdf",
+      },
+      {
+        title: "Southtowns AWTF Ash Landfill Reclamation Closeout",
+        publisher: "Erie County Division of Sewerage Management",
+        url: "https://www3.erie.gov/dsm/sites/www3.erie.gov.dsm/files/2026-04/item5c_closeout82.pdf",
+      },
+      {
+        title: "Southtowns Advanced Wastewater Treatment Facility Permit Review",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2025-12-17/completed-application/town-of-hamburg-southtowns-advanced-wastewater-treatment-facility",
+      },
+    ],
+  },
+  {
+    id: "lasalle-reservoir-quarry-landfill",
+    name: "LaSalle Reservoir / Former Quarry Landfill",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former roughly 50-acre limestone quarry later filled with municipal refuse, incinerator ash, construction and demolition debris, appliances, vegetation, and documented Buffalo Forge waste. Portions became McCarthy Park and nearby development, while the remaining quarry serves as a stormwater-retention basin; state investigation supported removing the site from the hazardous-waste registry.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.8315, 42.948],
+    sources: [
+      {
+        title: "LaSalle Reservoir Phase II Investigation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915033/Report.HW.915033.1991-04-01.Phase_II_Investigation.pdf",
+      },
+      {
+        title: "Legacy LaSalle Site Management Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915283/Work%20Plan.BCP.C915283.2025-08-05.Revised_SMP.pdf",
+      },
+    ],
+  },
+  {
+    id: "1827-fillmore-former-quarry",
+    name: "1827 Fillmore Avenue Former Quarry",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former stone quarry backfilled during the 1940s and 1950s with material of unknown origin and later developed as the Kensington Heights apartment complex. Investigations found PAHs and metals in soil and fill; excavation, cover, and institutional controls supported completion of the state brownfield cleanup in 2019.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.8095, 42.9295],
+    sources: [
+      {
+        title: "1827 Fillmore Avenue Cleanup Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/der/factsheet/c915279cubegins.pdf",
+      },
+      {
+        title: "1827 Fillmore Avenue Cleanup Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915279/Decision%20Document.BCP.C915279.2019-03-27.signed_Decision_Document.pdf",
+      },
+      {
+        title: "1827 Fillmore Avenue Certificate of Completion",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915279/Certificate%20of%20Completion.BCP.C915279.2019-12-23.Executed_COC.pdf",
+      },
+    ],
+  },
+  {
+    id: "eighteenmile-creek-superfund",
+    name: "Eighteen Mile Creek Superfund Site",
+    municipality: "Lockport and Newfane",
+    county: "Niagara",
+    category: "waterway",
+    summary:
+      "Active federal Superfund site covering roughly 15 miles of Eighteen Mile Creek, from its Lockport source area toward Lake Ontario. Historic industrial operations contaminated soil, groundwater, and creek sediment with PCBs, lead, and other pollutants. Cleanup and investigation are proceeding in stages; source-area work has included building demolition, excavation, capping, and some residential relocations, while fish-consumption advisories remain in effect.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.691, 43.171],
+    sources: [
+      {
+        title: "Eighteen Mile Creek Superfund Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206456",
+      },
+      {
+        title: "Eighteenmile Creek Area of Concern",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/nature/waterbodies/lakes-rivers/great-lakes/areas-of-concern/eighteenmile-creek-area-of-concern",
+      },
+    ],
+  },
+  {
+    id: "forest-glen-mobile-home-subdivision",
+    name: "Forest Glen Mobile Home Subdivision",
+    municipality: "Town of Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Federal Superfund site where a residential development was built over an inadequately covered chemical-waste dump. EPA permanently relocated residents from 51 mobile homes and two houses, excavated contaminated soil, and consolidated it beneath an engineered cap. Long-term monitoring and land-use controls continue; the record documents the former subdivision and capped disposal area, not the wider neighborhood.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.965, 43.119],
+    sources: [
+      {
+        title: "Forest Glen Mobile Home Subdivision Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0202361",
+      },
+      {
+        title: "Forest Glen Cleanup and Reuse Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.redevelop&id=0202361",
+      },
+    ],
+  },
+  {
+    id: "wide-beach-development",
+    name: "Wide Beach Development",
+    municipality: "Brant",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former federal Superfund site in a Lake Erie residential development where PCB-contaminated waste oil was spread on dirt roads for dust control and later redistributed with excavated road soil into yards. Cleanup treated about 36,160 tons of contaminated soil and sediment and restored affected wetlands. EPA deleted the site from the National Priorities List in 1994 after completing the remedy.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.066, 42.59],
+    sources: [
+      {
+        title: "Wide Beach Development Cleanup Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0202151",
+      },
+      {
+        title: "Wide Beach Development Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915119/ROD.HW.915119.1985-09-01.Wide_Beach_OU1.pdf",
+      },
+    ],
+  },
+  {
+    id: "fmc-middleport",
+    name: "FMC Middleport Facility and Off-Site Cleanup",
+    municipality: "Middleport",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Pesticide plant that manufactured arsenic-based and other products beginning in the 1920s. Historic releases and disposal affected facility soil, sediment, surface water, groundwater, and nearby properties through runoff and air deposition. State-supervised cleanup has included contaminated-soil removal at residential, commercial, and Royalton-Hartland school properties; the multi-year off-site program remained active in 2025.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.4758, 43.211],
+    sources: [
+      {
+        title: "FMC Middleport Facility",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/fmc-middleport-facility",
+      },
+      {
+        title: "FMC Middleport Summer 2025 Community Update",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/der/factsheet/932014update0725.pdf",
+      },
+    ],
+  },
+  {
+    id: "former-american-axle-east-delavan",
+    name: "Former GM / American Axle Plant",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former automotive-parts manufacturing complex at 1001 East Delavan Avenue, operated by General Motors and later American Axle. Investigations documented petroleum impacts associated with plant operations and underground tanks, along with possible PCB releases from electrical equipment. The property is divided between state Superfund and Brownfield Cleanup Program areas, with phased investigation, oil recovery, demolition, and remediation.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.821, 42.9202],
+    sources: [
+      {
+        title: "American Axle Cleanup Community Working Group",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/press-releases/2021/4/dec-commissioner-seggos-and-erie-county-legislator-baskin-announce-community-working-group-to-support-cleanup-of-former-american-axle-site",
+      },
+      {
+        title: "1001 East Delavan Brownfield Cleanup Application",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915196B/Application.BCP.C915196B.2017-09-29.Complete%20BCP%20Application.pdf",
+      },
+    ],
+  },
+  {
+    id: "cecos-international",
+    name: "CECOS International Waste Facility",
+    municipality: "Town of Niagara / Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Large waste-management property used for disposal since 1897 and for hazardous-waste treatment, storage, and disposal beginning in 1977. Investigations found releases to fill, soil, and groundwater from historic waste-management units. Closed units are capped and maintained, contaminated groundwater is recovered and treated, and long-term monitoring and corrective-action controls continue under state and federal hazardous-waste permits.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.93, 43.1682],
+    sources: [
+      {
+        title: "CECOS International Hazardous-Waste Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-cecos-international-incorporated-niagara-falls",
+      },
+      {
+        title: "CECOS Corrective-Action Documents",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/documents-cecos-international-incorporated-niagara-falls-new-york",
+      },
+    ],
+  },
+  {
+    id: "frontier-chemical-royal-avenue",
+    name: "Frontier Chemical — Royal Avenue",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former hazardous-waste treatment and storage facility at 4626 Royal Avenue, on property with earlier chlor-alkali manufacturing and sludge-disposal history. VOCs and other contaminants remain concentrated in deep soil and groundwater. Major corrective work is complete, while a pump-and-treat system, groundwater monitoring, an industrial-use restriction, and site-management controls continue.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.011194, 43.087472],
+    sources: [
+      {
+        title: "Frontier Chemical Royal Avenue Hazardous-Waste Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-frontier-chemical-waste-process-incorporated",
+      },
+      {
+        title: "Frontier Chemical EPA Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201541",
+      },
+    ],
   },
 ];

@@ -16,6 +16,8 @@
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
+.dev-*.log
+/.pnpm-store
 
 # editors and operating systems
 .DS_Store

@@ -24,7 +24,7 @@ The project asks a simple question:
 - TypeScript
 - Tailwind CSS
 - Typed starter site records
-- Responsive map-first homepage
+- Responsive map-first homepage with accessible MapLibre markers and details
 - PostgreSQL/PostGIS-ready connection and draft schema
 
 ## Local setup
@@ -45,7 +45,8 @@ On macOS or Linux, replace the `copy` line with:
 cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000). The first map uses
+OpenStreetMap raster tiles and the typed starter records; no database is required.
 
 ## Useful checks
 
