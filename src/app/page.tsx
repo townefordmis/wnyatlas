@@ -1,4 +1,4 @@
-import { MapPlaceholder } from "@/components/map-placeholder";
+import { AtlasMap } from "@/components/atlas-map";
 import { featuredSites } from "@/data/featured-sites";
 
 const categories = [
@@ -7,6 +7,12 @@ const categories = [
   ["Cleanup & controls", "Removal, caps, treatment, monitoring, and restrictions"],
   ["Then & now", "What occupied each place and what is there today"],
 ];
+
+const evidenceLabels = {
+  "well-documented": "Documented",
+  "research-in-progress": "Research in progress",
+  "research-lead": "Research lead",
+};
 
 export default function Home() {
   return (
@@ -49,7 +55,7 @@ export default function Home() {
       </section>
 
       <div id="map">
-        <MapPlaceholder />
+        <AtlasMap />
       </div>
 
       <section className="category-grid" aria-label="Atlas categories">
@@ -66,10 +72,10 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Starting collection</p>
-            <h2>Four anchor stories</h2>
+            <h2>{featuredSites.length} anchor stories</h2>
           </div>
           <p>
-            The first records establish the model for hundreds of sourced places
+            These first records establish the model for hundreds of sourced places
             across Erie, Niagara, and neighboring counties.
           </p>
         </div>
@@ -81,8 +87,15 @@ export default function Home() {
                 <p className="site-meta">{site.category} · {site.county} County</p>
                 <h3>{site.name}</h3>
                 <p>{site.summary}</p>
+                {site.atomicLegacy && (
+                  <p className="site-meta">
+                    {site.atomicLegacy.era} · {site.atomicLegacy.role}
+                  </p>
+                )}
               </div>
-              <span className="evidence-pill">Documented</span>
+              <span className="evidence-pill">
+                {evidenceLabels[site.evidenceStatus]}
+              </span>
             </article>
           ))}
         </div>

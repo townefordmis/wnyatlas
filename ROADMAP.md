@@ -9,17 +9,18 @@ The roadmap keeps promising ideas visible without overloading the first release.
 - [x] Create a responsive map-first homepage
 - [x] Add typed starter records
 - [x] Document a PostGIS-ready data direction
-- [ ] Install dependencies and confirm production build
+- [x] Install dependencies and confirm production build
 - [ ] Publish the first preview
 
 ## Milestone 2 — Working atlas
 
-- [ ] Replace the illustrated placeholder with MapLibre
-- [ ] Add accessible site markers and detail panels
+- [x] Replace the illustrated placeholder with MapLibre
+- [x] Add accessible site markers and detail panels
 - [ ] Create filters for site type, evidence status, and cleanup method
 - [ ] Build individual site pages
-- [ ] Expand to 25 carefully sourced anchor records
-- [ ] Add citations and an evidence panel to every record
+- [x] Expand beyond 25 carefully sourced anchor records
+- [x] Add citations and an evidence panel to every record
+- [x] Audit the founding radiological, benzene, and PFAS collections
 
 ## Milestone 3 — Spatial database
 

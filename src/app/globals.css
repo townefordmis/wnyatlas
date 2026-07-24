@@ -9,6 +9,8 @@
   --rust: #b65031;
   --moss: #657553;
   --line: rgba(23, 39, 32, 0.18);
+  --font-sans: "Aptos", "Segoe UI", Arial, sans-serif;
+  --font-mono: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
 }
 
 * {
@@ -25,7 +27,7 @@ body {
   background:
     linear-gradient(rgba(245, 241, 231, 0.88), rgba(245, 241, 231, 0.96)),
     repeating-linear-gradient(0deg, transparent 0 23px, rgba(23, 39, 32, 0.04) 24px);
-  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-family: var(--font-sans);
 }
 
 a {
@@ -78,7 +80,7 @@ nav a:hover {
 
 .edition {
   justify-self: end;
-  font-family: var(--font-geist-mono), monospace;
+  font-family: var(--font-mono);
   font-size: 0.72rem;
   text-transform: uppercase;
 }
@@ -97,7 +99,7 @@ nav a:hover {
 .site-meta,
 .field-label {
   margin: 0 0 1rem;
-  font-family: var(--font-geist-mono), monospace;
+  font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.13em;
   font-size: 0.73rem;
@@ -191,129 +193,208 @@ h1 {
   margin-bottom: 0.3rem;
 }
 
-.map-actions {
-  display: flex;
-  gap: 0.6rem;
-}
-
-.map-actions button {
+.map-reset {
   color: var(--paper);
   padding: 0.6rem 0.9rem;
   border: 1px solid rgba(245, 241, 231, 0.25);
   background: transparent;
   border-radius: 2px;
-}
-
-.map-canvas {
-  position: relative;
-  min-height: 610px;
-  overflow: hidden;
-  background-color: #d9d1bd;
-  background-image:
-    linear-gradient(30deg, rgba(23, 39, 32, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(23, 39, 32, 0.05) 87.5%),
-    linear-gradient(150deg, rgba(23, 39, 32, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(23, 39, 32, 0.05) 87.5%);
-  background-size: 40px 70px;
-}
-
-.lake {
-  position: absolute;
-  background: var(--water);
-  opacity: 0.93;
-}
-
-.lake-ontario {
-  width: 76%;
-  height: 26%;
-  left: 22%;
-  top: -12%;
-  border-radius: 44% 56% 48% 52%;
-  transform: rotate(-2deg);
-}
-
-.lake-erie {
-  width: 66%;
-  height: 34%;
-  left: -33%;
-  bottom: -8%;
-  border-radius: 48% 53% 44% 56%;
-  transform: rotate(8deg);
-}
-
-.river {
-  position: absolute;
-  left: 24%;
-  top: 11%;
-  width: 7%;
-  height: 70%;
-  background: var(--water);
-  transform: rotate(-4deg);
-  clip-path: polygon(38% 0, 78% 0, 64% 22%, 84% 40%, 55% 63%, 69% 100%, 14% 100%, 30% 63%, 5% 40%, 28% 20%);
-}
-
-.place {
-  position: absolute;
-  color: rgba(23, 39, 32, 0.76);
-  font-weight: 760;
-  letter-spacing: 0.04em;
-}
-
-.place-niagara { left: 33%; top: 18%; }
-.place-tonawanda { left: 39%; top: 49%; }
-.place-buffalo { left: 36%; top: 76%; font-size: 1.4rem; }
-
-.map-marker {
-  position: absolute;
-  z-index: 3;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  border: 0;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  background: var(--rust);
-  box-shadow: 0 3px 0 rgba(23, 39, 32, 0.25);
   cursor: pointer;
 }
 
-.map-marker span {
-  display: block;
-  width: 9px;
-  height: 9px;
-  margin: 10px;
-  background: var(--paper);
-  border-radius: 50%;
+.map-reset:hover,
+.map-reset:focus-visible {
+  border-color: var(--water-light);
+  color: var(--water-light);
 }
 
-.marker-waterway { background: #287d8b; }
-.marker-radiological { background: #7f5a88; }
-.marker-industry { background: #384a40; }
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 24%);
+  min-height: 610px;
+}
 
-.map-note {
+.map-stage {
+  position: relative;
+  min-width: 0;
+}
+
+.map-canvas {
   position: absolute;
-  right: 2rem;
-  bottom: 2rem;
-  max-width: 350px;
-  padding: 1rem 1.2rem;
-  display: flex;
-  gap: 0.8rem;
+  inset: 0;
+  background-color: #d9d1bd;
+}
+
+.map-canvas .maplibregl-canvas {
+  filter: sepia(0.22) saturate(0.7) contrast(0.92);
+}
+
+.map-canvas .maplibregl-ctrl button {
+  cursor: pointer;
+}
+
+.atlas-marker {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 3px solid var(--paper);
+  border-radius: 50% 50% 50% 0;
+  background: var(--rust);
+  box-shadow: 0 3px 8px rgba(23, 39, 32, 0.38);
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.atlas-marker:hover,
+.atlas-marker:focus-visible {
+  width: 34px;
+  height: 34px;
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.marker-waterway {
+  background: #287d8b;
+}
+
+.marker-radiological {
+  background: #7f5a88;
+}
+
+.marker-industry {
+  background: #384a40;
+}
+
+.marker-pfas {
+  background: #b1497a;
+}
+
+.map-status {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  margin: 0;
+  padding: 0.65rem 0.8rem;
   color: var(--paper);
   background: rgba(23, 39, 32, 0.92);
+  font-size: 0.8rem;
 }
 
-.map-note p {
-  margin: 0.25rem 0 0;
-  color: rgba(245, 241, 231, 0.7);
-  font-size: 0.84rem;
-  line-height: 1.4;
+.map-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-left: 1px solid rgba(245, 241, 231, 0.18);
+  background: #20332b;
 }
 
-.status-dot {
-  flex: 0 0 auto;
-  width: 9px;
-  height: 9px;
-  margin-top: 0.35rem;
-  border-radius: 50%;
-  background: #e5b64f;
+.map-sidebar .field-label {
+  color: var(--water-light);
+}
+
+.map-site-list {
+  display: grid;
+  gap: 0.4rem;
+  max-height: 300px;
+  padding-right: 0.25rem;
+  overflow-y: auto;
+}
+
+.map-site-list button {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.6rem;
+  padding: 0.75rem;
+  color: var(--paper);
+  text-align: left;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.map-site-list button:hover,
+.map-site-list button:focus-visible,
+.map-site-list button.is-selected {
+  border-color: rgba(143, 196, 199, 0.58);
+  background: rgba(143, 196, 199, 0.1);
+}
+
+.map-site-list button > span:first-child {
+  color: var(--water-light);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.map-site-list strong,
+.map-site-list small {
+  display: block;
+}
+
+.map-site-list small {
+  margin-top: 0.2rem;
+  color: rgba(245, 241, 231, 0.62);
+}
+
+.map-detail {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(245, 241, 231, 0.18);
+}
+
+.map-detail > p:first-child {
+  color: var(--water-light);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.map-detail h3 {
+  margin: 0.5rem 0;
+  font-family: Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.map-detail > p:nth-child(3) {
+  color: rgba(245, 241, 231, 0.74);
+  line-height: 1.5;
+}
+
+.map-detail > span {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  color: var(--water-light);
+  border: 1px solid rgba(143, 196, 199, 0.45);
+  font-size: 0.68rem;
+}
+
+.map-sources {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.map-sources strong {
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.map-sources a {
+  color: var(--water-light);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.map-sources a:hover,
+.map-sources a:focus-visible {
+  color: var(--paper);
 }
 
 .category-grid {
@@ -332,7 +413,7 @@ h1 {
 
 .category-grid span,
 .site-number {
-  font-family: var(--font-geist-mono), monospace;
+  font-family: var(--font-mono);
   color: var(--rust);
   font-size: 0.75rem;
 }
@@ -505,18 +586,21 @@ footer {
     align-items: flex-start;
   }
 
-  .map-actions {
-    flex-direction: column;
+  .map-layout {
+    grid-template-columns: 1fr;
   }
 
-  .map-canvas {
+  .map-stage {
     min-height: 480px;
   }
 
-  .map-note {
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
+  .map-sidebar {
+    border-top: 1px solid rgba(245, 241, 231, 0.18);
+    border-left: 0;
+  }
+
+  .map-detail {
+    margin-top: 1.5rem;
   }
 
   .category-grid {
