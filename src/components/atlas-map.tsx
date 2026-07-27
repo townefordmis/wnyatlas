@@ -12,6 +12,7 @@ import type { AtlasSite } from "@/types/site";
 const regionCenter: [number, number] = [-78.84, 42.8];
 const CLUSTER_ZOOM_THRESHOLD = 9;
 const CLUSTER_DISTANCE = 52;
+const SITE_LIST_PAGE_SIZE = 30;
 
 type SiteCluster = {
   sites: AtlasSite[];
@@ -47,6 +48,8 @@ export function AtlasMap() {
   const [query, setQuery] = useState("");
   const [county, setCounty] = useState("all");
   const [category, setCategory] = useState("all");
+  const [evidence, setEvidence] = useState("all");
+  const [visibleSiteCount, setVisibleSiteCount] = useState(SITE_LIST_PAGE_SIZE);
   const [mapUnavailable, setMapUnavailable] = useState(false);
 
   const filteredSites = useMemo(() => {
@@ -60,10 +63,13 @@ export function AtlasMap() {
         );
       const matchesCounty = county === "all" || site.county === county;
       const matchesCategory = category === "all" || site.category === category;
+      const matchesEvidence =
+        evidence === "all" || site.evidenceStatus === evidence;
 
-      return matchesQuery && matchesCounty && matchesCategory;
+      return matchesQuery && matchesCounty && matchesCategory && matchesEvidence;
     });
-  }, [category, county, query]);
+  }, [category, county, evidence, query]);
+  const listedSites = filteredSites.slice(0, visibleSiteCount);
   const displayedSite =
     filteredSites.find((site) => site.id === selectedSite.id) ??
     filteredSites[0] ??
@@ -286,6 +292,7 @@ export function AtlasMap() {
     setQuery("");
     setCounty("all");
     setCategory("all");
+    setEvidence("all");
   }
 
   return (
@@ -323,7 +330,10 @@ export function AtlasMap() {
               id="atlas-search"
               type="search"
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={(event) => {
+                setQuery(event.target.value);
+                setVisibleSiteCount(SITE_LIST_PAGE_SIZE);
+              }}
               placeholder="Name, town, or keyword"
             />
             <div>
@@ -331,7 +341,10 @@ export function AtlasMap() {
                 <span>County</span>
                 <select
                   value={county}
-                  onChange={(event) => setCounty(event.target.value)}
+                  onChange={(event) => {
+                    setCounty(event.target.value);
+                    setVisibleSiteCount(SITE_LIST_PAGE_SIZE);
+                  }}
                 >
                   <option value="all">All counties</option>
                   <option value="Erie">Erie</option>
@@ -344,7 +357,10 @@ export function AtlasMap() {
                 <span>Type</span>
                 <select
                   value={category}
-                  onChange={(event) => setCategory(event.target.value)}
+                  onChange={(event) => {
+                    setCategory(event.target.value);
+                    setVisibleSiteCount(SITE_LIST_PAGE_SIZE);
+                  }}
                 >
                   <option value="all">All types</option>
                   <option value="cleanup">Cleanup</option>
@@ -354,10 +370,28 @@ export function AtlasMap() {
                   <option value="waterway">Waterway</option>
                 </select>
               </label>
+              <label>
+                <span>Evidence</span>
+                <select
+                  value={evidence}
+                  onChange={(event) => {
+                    setEvidence(event.target.value);
+                    setVisibleSiteCount(SITE_LIST_PAGE_SIZE);
+                  }}
+                >
+                  <option value="all">All records</option>
+                  <option value="well-documented">Documented</option>
+                  <option value="research-in-progress">Research in progress</option>
+                  <option value="research-lead">Research leads</option>
+                </select>
+              </label>
             </div>
             <p aria-live="polite">
               {filteredSites.length} of {featuredSites.length} places
-              {(query || county !== "all" || category !== "all") && (
+              {(query ||
+                county !== "all" ||
+                category !== "all" ||
+                evidence !== "all") && (
                 <button type="button" onClick={clearFilters}>
                   Clear filters
                 </button>
@@ -366,7 +400,7 @@ export function AtlasMap() {
           </div>
           <p className="field-label">Choose a place</p>
           <div className="map-site-list">
-            {filteredSites.map((site) => {
+            {listedSites.map((site) => {
               const index = featuredSites.findIndex((record) => record.id === site.id);
 
               return (
@@ -391,6 +425,20 @@ export function AtlasMap() {
             })}
             {filteredSites.length === 0 && (
               <p className="map-empty">No places match these filters.</p>
+            )}
+            {listedSites.length < filteredSites.length && (
+              <button
+                className="map-show-more"
+                type="button"
+                onClick={() =>
+                  setVisibleSiteCount((count) => count + SITE_LIST_PAGE_SIZE)
+                }
+              >
+                Show {Math.min(
+                  SITE_LIST_PAGE_SIZE,
+                  filteredSites.length - listedSites.length,
+                )} more places
+              </button>
             )}
           </div>
 
