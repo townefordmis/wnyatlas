@@ -10,6 +10,69 @@ export const featuredSites: AtlasSite[] = [
     summary: "Chemical disposal, public-health response, containment, and monitoring.",
     evidenceStatus: "well-documented",
     coordinates: [-78.949, 43.08],
+    story: {
+      lastReviewed: "July 26, 2026",
+      background: [
+        "Love Canal began as an unfinished canal project and was later used for chemical-waste disposal. Residential development and a school were subsequently built around the disposal area, turning a buried industrial-waste site into a national test of how government responds when contamination and community life overlap.",
+        "The public record is also a history of residents organizing, government investigation, emergency relocation, litigation, and the creation of the modern federal Superfund program. WNYAtlas treats those events as connected but distinct parts of the story.",
+      ],
+      timeline: [
+        {
+          period: "1978",
+          event:
+            "New York began collecting contaminated liquids, covering and fencing the landfill, and responding to conditions in the surrounding neighborhood.",
+        },
+        {
+          period: "1980",
+          event:
+            "Federal and state actions included temporary relocation and an expanded emergency response as the national significance of the site grew.",
+        },
+        {
+          period: "1985",
+          event:
+            "The state completed the approximately 40-acre cap and improved the collection and treatment system.",
+        },
+        {
+          period: "2004",
+          event:
+            "EPA removed Love Canal from the National Priorities List after completion of the required cleanup actions.",
+        },
+        {
+          period: "Today",
+          event:
+            "The containment, collection, treatment, inspection, and groundwater-monitoring systems remain under long-term operation and review.",
+        },
+      ],
+      documentedImpacts: [
+        "Chemical wastes were disposed in the former canal and later enclosed by residential development.",
+        "Contaminated liquids, nearby sewers, creek sediment, and portions of the surrounding built environment became part of the cleanup record.",
+        "The site prompted demolition of contaminated houses and the former school within the remedy area.",
+      ],
+      cleanupAndControls: [
+        "A synthetic cap limits rainwater contact with buried material.",
+        "Barrier drains, wells, and the Love Canal Treatment Facility collect and treat contaminated liquids and groundwater.",
+        "The cap, treatment plant, collection systems, and monitoring wells receive continuing inspections, maintenance, and five-year reviews.",
+      ],
+      presentDay: [
+        "EPA reports that construction of the cleanup is complete and that the remedy continues to protect people and the environment. That conclusion depends on the continued operation, maintenance, monitoring, and inspection of the containment systems.",
+      ],
+      researchNotes: [
+        "Separate the documented remedy boundary from broader claims about all of Niagara Falls.",
+        "Add resident oral histories only with clear attribution and without converting personal experience into unsupported medical causation.",
+      ],
+    },
+    sources: [
+      {
+        title: "Love Canal Superfund Cleanup Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0201290",
+      },
+      {
+        title: "EPA History: Love Canal",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/history/epa-history-love-canal",
+      },
+    ],
   },
   {
     id: "buffalo-color",
@@ -21,6 +84,58 @@ export const featuredSites: AtlasSite[] = [
       "Former dye and chemical-manufacturing complex beside the Buffalo River. Investigations documented metals, volatile and semi-volatile compounds in plant sewer sediment, including storm sewers leading to river Outfalls 006 and 011; remedies included measures to address contaminated sewer sediment and limit migration toward the river.",
     evidenceStatus: "well-documented",
     coordinates: [-78.854, 42.858],
+    story: {
+      lastReviewed: "July 26, 2026",
+      background: [
+        "Chemical and dye manufacturing began on this Buffalo River property in 1879 under the Schoellkopf Aniline and Dye Company. Later owners included National Aniline, Allied Chemical, and Buffalo Color. EPA reports that the complex produced more than 1,000 dyes and organic chemicals based on aniline and related compounds.",
+        "The site's long operating history created multiple cleanup areas rather than one simple event. Plant sections, sewers, soil, groundwater, shoreline, and the adjacent river have been investigated through different state and federal programs.",
+      ],
+      timeline: [
+        {
+          period: "1879",
+          event:
+            "Schoellkopf Aniline and Dye Company established the dye and chemical works beside the Buffalo River.",
+        },
+        {
+          period: "1916–1920",
+          event:
+            "The property became part of National Aniline and then Allied Chemical.",
+        },
+        {
+          period: "1977",
+          event:
+            "Buffalo Color purchased the plant and focused later production on indigo dye and related materials.",
+        },
+        {
+          period: "2003",
+          event:
+            "Manufacturing ended after Buffalo Color ceased operations and entered bankruptcy.",
+        },
+        {
+          period: "2000s–present",
+          event:
+            "State brownfield and inactive-hazardous-waste programs, together with federal corrective-action oversight, addressed the complex in separate areas and phases.",
+        },
+      ],
+      documentedImpacts: [
+        "Historic wastes included off-specification dye, process tars and residues, spent catalysts, and waste solvents.",
+        "Investigations documented metals, volatile compounds, and semi-volatile compounds in parts of the plant system, including sewer sediment.",
+        "Plant sewers leading toward Buffalo River outfalls became part of the investigation and remedy.",
+      ],
+      cleanupAndControls: [
+        "The large complex was divided into Areas A through E because conditions, ownership, and cleanup programs varied across the property.",
+        "New York reports that Area C was remediated through the Brownfield Cleanup Program and that Area D is capped and secured; work in Areas A, B, and E has proceeded through separate state programs and site-management requirements.",
+        "EPA's RCRA corrective-action record separately describes proposed measures for remaining portions of the former facility, including contaminated-material removal, sewer work, groundwater controls, and long-term monitoring. That federal record should not be read as a single status statement for every parcel.",
+        "Shoreline habitat restoration at the Buffalo Color peninsula complemented—but did not replace—the industrial-site cleanup programs.",
+      ],
+      presentDay: [
+        "Former plant areas have moved through cleanup and redevelopment at different rates. The correct present-day account therefore depends on the specific parcel and cleanup program rather than treating the entire former complex as one uniform condition.",
+      ],
+      researchNotes: [
+        "Build a parcel-by-parcel crosswalk for Areas A through E and identify the current owner, remedy, and land-use controls for each.",
+        "Distinguish Buffalo Color plant contamination from the separate Buffalo River sediment-remediation program.",
+      ],
+    },
     sources: [
       {
         title: "Buffalo Color Remedial Investigation Report",
@@ -31,6 +146,11 @@ export const featuredSites: AtlasSite[] = [
         title: "Buffalo Color Corporation Hazardous-Waste Cleanup",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-buffalo-color-corporation-buffalo-new-york",
+      },
+      {
+        title: "Frequently Asked Questions About Restoring the Buffalo River",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/restoring-buffalo-river-faq",
       },
     ],
   },
@@ -44,6 +164,57 @@ export const featuredSites: AtlasSite[] = [
       "Industrial corridor where navigational and remedial dredging removed legacy-contaminated sediment alongside habitat restoration and long-term recovery work.",
     evidenceStatus: "well-documented",
     coordinates: [-78.873, 42.864],
+    story: {
+      lastReviewed: "July 26, 2026",
+      background: [
+        "The Buffalo River became the western terminus of the Erie Canal in 1825. Grain elevators, steel mills, meatpacking, chemical works, petroleum facilities, municipal systems, and other industries concentrated along its banks, using the river as transportation infrastructure and, historically, as a receiving water.",
+        "By 1987, the United States and Canada had designated the Buffalo River as a Great Lakes Area of Concern because contamination and habitat loss impaired environmental and recreational uses. Its modern story is one of sediment remediation, navigation dredging, shoreline restoration, monitoring, and the gradual removal of formally identified beneficial-use impairments.",
+      ],
+      timeline: [
+        {
+          period: "1825",
+          event:
+            "The opening of the Erie Canal helped establish the Buffalo River as a major industrial and transportation corridor.",
+        },
+        {
+          period: "1987",
+          event:
+            "The river was designated a Great Lakes Area of Concern under the binational Great Lakes Water Quality Agreement.",
+        },
+        {
+          period: "2013–2015",
+          event:
+            "EPA and Honeywell completed major dredging and capping work on contaminated sediment outside and below the navigation channel.",
+        },
+        {
+          period: "2020–2021",
+          event:
+            "Strategic navigation dredging and final cleanup work addressed remaining targeted sediment areas.",
+        },
+        {
+          period: "Present",
+          event:
+            "Monitoring and habitat work continue as agencies evaluate the remaining beneficial-use impairments required for eventual delisting.",
+        },
+      ],
+      documentedImpacts: [
+        "Historic industrial and municipal activity introduced pollutants to the river and contributed to contaminated sediment.",
+        "The Area of Concern record identified restrictions involving dredging, fish and wildlife, degraded benthic communities, habitat loss, aesthetics, and other uses.",
+        "Contamination and physical alteration of the shoreline affected ecological function as well as navigation and recreation.",
+      ],
+      cleanupAndControls: [
+        "Nearly 500,000 cubic yards of contaminated sediment outside and below the navigation channel were remediated through dredging and capping.",
+        "Additional navigation dredging targeted residual contamination in five channel areas.",
+        "Multiple projects restored in-water, riparian, wetland, and upland habitat along former industrial shorelines.",
+      ],
+      presentDay: [
+        "EPA reports substantial environmental recovery and the removal of multiple beneficial-use impairments. The river remains an Area of Concern until all required impairment-removal criteria are met and the formal delisting process is completed.",
+      ],
+      researchNotes: [
+        "Connect individual shoreline projects to the industrial parcels and waste pathways documented elsewhere in the atlas.",
+        "Keep navigational dredging, remedial dredging, and habitat restoration distinct in future maps and timelines.",
+      ],
+    },
     sources: [
       {
         title: "Remediation and Restoration Projects for the Buffalo River AOC",
@@ -70,11 +241,67 @@ export const featuredSites: AtlasSite[] = [
       era: "Manhattan Project",
       role: "uranium-ore refining and uranium tetrafluoride production",
     },
+    story: {
+      lastReviewed: "July 26, 2026",
+      background: [
+        "Between 1942 and 1946, the Manhattan Engineer District contracted with the Linde Air Products Division of Union Carbide to process uranium ore at this Town of Tonawanda industrial facility. Work included separating uranium dioxide from ores and converting uranium dioxide to uranium tetrafluoride.",
+        "Processing affected portions of the property, buildings, infrastructure, sediment, soil, and groundwater. Later handling and disposal also moved Linde-related material to other Tonawanda locations, making the site central to understanding the region's connected FUSRAP landscape.",
+      ],
+      timeline: [
+        {
+          period: "1942–1946",
+          event:
+            "Linde performed uranium-processing work for the Manhattan Engineer District.",
+        },
+        {
+          period: "1980",
+          event:
+            "The Department of Energy designated the property for remediation under FUSRAP.",
+        },
+        {
+          period: "1996–1997",
+          event:
+            "DOE began investigation and removal work; Congress then transferred FUSRAP cleanup execution to the U.S. Army Corps of Engineers.",
+        },
+        {
+          period: "1997–2013",
+          event:
+            "USACE excavated contaminated soil and removed affected building surfaces and infrastructure for licensed off-site disposal.",
+        },
+        {
+          period: "Present",
+          event:
+            "The property remains an active industrial-gas facility under long-term stewardship for the completed FUSRAP remedy.",
+        },
+      ],
+      documentedImpacts: [
+        "The contaminants of concern included radium-226, thorium-230, uranium isotopes, and associated decay products.",
+        "Contamination was documented in surface and subsurface soil, sediment, structural surfaces, and groundwater.",
+        "Waste relocation linked the Linde history to the Ashland, Seaway, and Tonawanda Landfill FUSRAP records.",
+      ],
+      cleanupAndControls: [
+        "Remedial work removed affected soil, building surfaces, and infrastructure for disposal at licensed facilities.",
+        "Cleanup criteria were based on the site's anticipated commercial and industrial use.",
+        "Long-term stewardship preserves records and verifies that the completed remedy remains protective for the intended land use.",
+      ],
+      presentDay: [
+        "The privately owned property continues to operate as an industrial-gas facility. A completed FUSRAP cleanup does not erase the site's Manhattan Project history; it changes the story from active remediation to stewardship and land-use context.",
+      ],
+      researchNotes: [
+        "Create a material-movement diagram connecting Linde, Ashland 1, Ashland 2, Seaway, and Tonawanda Landfill.",
+        "Document which remedy areas support unrestricted use and which were evaluated for commercial or industrial use.",
+      ],
+    },
     sources: [
       {
         title: "Tonawanda, New York, Site",
         publisher: "U.S. Department of Energy Office of Legacy Management",
         url: "https://www.energy.gov/lm/tonawanda-new-york-site",
+      },
+      {
+        title: "Tonawanda, New York, Site Fact Sheet",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/lm/articles/tonawanda-new-york-site-fact-sheet",
       },
     ],
   },
@@ -88,6 +315,54 @@ export const featuredSites: AtlasSite[] = [
       "Former Lake Erie steelmaking complex whose western shoreline includes about 440 acres of manmade land created with iron- and steelmaking slag and plant waste. The property also included the HWM-2 on-site landfill, documented as containing about 118,000 cubic yards of coke- and primary-metalmaking wastes; the larger site remains under cleanup, monitoring, and land-use controls.",
     evidenceStatus: "well-documented",
     coordinates: [-78.85913, 42.82158],
+    story: {
+      lastReviewed: "July 26, 2026",
+      background: [
+        "The former Bethlehem Steel complex in Lackawanna was one of Western New York's defining industrial landscapes. Ironmaking, steelmaking, coke production, finishing operations, rail systems, water use, and waste management reshaped a long section of the Lake Erie shoreline.",
+        "The environmental record is correspondingly large. It includes plant-wide corrective action, individual waste-management units, extensive slag and industrial fill, shoreline and creek restoration, demolition, groundwater and soil work, long-term controls, and redevelopment proposals across differently managed portions of the property.",
+      ],
+      timeline: [
+        {
+          period: "Industrial era",
+          event:
+            "The integrated steel complex expanded production and created extensive industrial infrastructure and filled shoreline land.",
+        },
+        {
+          period: "1980s–2000s",
+          event:
+            "Federal and state programs investigated waste units, soil, groundwater, shoreline areas, and off-site migration pathways as steel operations contracted and ended.",
+        },
+        {
+          period: "2009",
+          event:
+            "A major sediment-removal project addressed affected material in lower Smokes Creek.",
+        },
+        {
+          period: "Present",
+          event:
+            "Cleanup, monitoring, demolition, habitat restoration, renewable-energy use, and industrial redevelopment proceed across separate portions of the former complex.",
+        },
+      ],
+      documentedImpacts: [
+        "Approximately 440 acres of the western property consist of manmade land formed with iron- and steelmaking slag and other plant waste.",
+        "The HWM-2 landfill was documented as containing coke-making and primary-metals wastes.",
+        "Investigations and remedies have addressed soil, groundwater, waste units, shoreline areas, and Smokes Creek sediment.",
+      ],
+      cleanupAndControls: [
+        "Corrective-action work is divided into units and phases because of the site's size, operating history, and varied conditions.",
+        "At the former Benzol Yard, a groundwater extraction and treatment system has operated since 2005 to control a plume containing benzene and related compounds.",
+        "At the Acid Tar Pits and Coke Oven Area, current work includes containment, extraction and treatment, cap construction or improvement, and an expanded groundwater monitoring and treatment network.",
+        "Other remedies include excavation, consolidation or containment, covers, monitoring, land-use restrictions, and habitat work. In 2009, approximately 40,000 cubic yards of affected sediment were removed from lower Smokes Creek.",
+        "Redevelopment decisions must remain compatible with environmental easements, engineering controls, and site-management requirements.",
+      ],
+      presentDay: [
+        "The former complex is not one uniform brownfield. Some areas support new industrial or energy uses, some remain under active cleanup or management, and restored shoreline and creek habitats coexist with controlled industrial land.",
+      ],
+      researchNotes: [
+        "Build a map of the major corrective-action units, HWM-2, slag-fill areas, Smokes Creek, and redevelopment parcels.",
+        "Separate Buffalo Harbor dredged-material disposal records from Bethlehem's own industrial waste units unless a primary source documents a connection.",
+      ],
+    },
     sources: [
       {
         title: "Environmental Cleanup at Former Bethlehem Steel Site",

@@ -9,6 +9,19 @@ export type AtlasSource = {
   url: string;
 };
 
+export type AtlasStory = {
+  lastReviewed: string;
+  background: string[];
+  timeline: {
+    period: string;
+    event: string;
+  }[];
+  documentedImpacts: string[];
+  cleanupAndControls: string[];
+  presentDay: string[];
+  researchNotes: string[];
+};
+
 export type AtlasSite = {
   id: string;
   name: string;
@@ -19,6 +32,7 @@ export type AtlasSite = {
   evidenceStatus: EvidenceStatus;
   coordinates: [longitude: number, latitude: number];
   sources?: AtlasSource[];
+  story?: AtlasStory;
   atomicLegacy?: {
     era:
       | "Manhattan Project"
