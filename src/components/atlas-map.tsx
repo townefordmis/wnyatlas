@@ -78,13 +78,15 @@ export function AtlasMap() {
   useEffect(() => {
     if (!mapContainer.current || map.current) return;
 
+    const isMobileViewport = window.matchMedia("(max-width: 620px)").matches;
     const markerElementMap = markerElements.current;
     const mapInstance = new maplibregl.Map({
       container: mapContainer.current,
       center: regionCenter,
-      zoom: 7.8,
+      zoom: isMobileViewport ? 7.15 : 7.8,
       minZoom: 7,
       maxZoom: 16,
+      cooperativeGestures: isMobileViewport,
       attributionControl: false,
       style: {
         version: 8,
@@ -108,6 +110,8 @@ export function AtlasMap() {
     });
 
     map.current = mapInstance;
+    const resizeObserver = new ResizeObserver(() => mapInstance.resize());
+    resizeObserver.observe(mapContainer.current);
     mapInstance.addControl(
       new maplibregl.NavigationControl({ showCompass: false }),
       "top-right",
@@ -250,6 +254,7 @@ export function AtlasMap() {
       markers.current = [];
       clearClusters();
       markerElementMap.clear();
+      resizeObserver.disconnect();
       mapInstance.remove();
       map.current = null;
     };
@@ -281,9 +286,10 @@ export function AtlasMap() {
   }
 
   function resetMap() {
+    const isMobileViewport = window.matchMedia("(max-width: 620px)").matches;
     map.current?.flyTo({
       center: regionCenter,
-      zoom: 7.8,
+      zoom: isMobileViewport ? 7.15 : 7.8,
       essential: false,
     });
   }
@@ -300,7 +306,8 @@ export function AtlasMap() {
       <div className="map-toolbar">
         <div>
           <p className="eyebrow">
-            Working atlas · {featuredSites.length} evidence-linked places
+            Every place is supported by documented public records ·{" "}
+            {featuredSites.length} places
           </p>
           <h2 id="map-heading">Explore the region</h2>
         </div>

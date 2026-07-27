@@ -36,8 +36,8 @@ export default function Home() {
         <aside className="field-note">
           <p className="field-label">Our standard</p>
           <blockquote>
-            If it is documented, include it. If it is uncertain, label it. If it is
-            interpretation, do not present it as fact.
+            We include what is documented, clearly identify uncertainty, and never
+            present interpretation as established fact.
           </blockquote>
           <p>Every atlas entry will show how we know what we know.</p>
         </aside>
