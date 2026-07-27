@@ -239,6 +239,30 @@ h1 {
   height: 28px;
 }
 
+.atlas-cluster {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  color: var(--paper);
+  border: 3px solid var(--paper);
+  border-radius: 50%;
+  background: var(--water);
+  box-shadow: 0 3px 10px rgba(23, 39, 32, 0.42);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.atlas-cluster:hover,
+.atlas-cluster:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+  transform: scale(1.08);
+}
+
 .atlas-marker-wrap:hover,
 .atlas-marker-wrap:focus-within,
 .atlas-marker-wrap.is-highlighted {
@@ -347,12 +371,76 @@ h1 {
   color: var(--water-light);
 }
 
+.atlas-filters {
+  display: grid;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+.atlas-filters label,
+.atlas-filters label span {
+  display: block;
+  color: var(--water-light);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.atlas-filters input,
+.atlas-filters select {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.62rem 0.68rem;
+  color: var(--paper);
+  border: 1px solid rgba(245, 241, 231, 0.25);
+  border-radius: 2px;
+  background: #172720;
+}
+
+.atlas-filters input::placeholder {
+  color: rgba(245, 241, 231, 0.48);
+}
+
+.atlas-filters > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+}
+
+.atlas-filters > p {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0.2rem 0 0;
+  color: rgba(245, 241, 231, 0.66);
+  font-size: 0.68rem;
+}
+
+.atlas-filters > p button {
+  padding: 0;
+  color: var(--water-light);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .map-site-list {
   display: grid;
   gap: 0.4rem;
   max-height: 300px;
   padding-right: 0.25rem;
   overflow-y: auto;
+}
+
+.map-empty {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  color: rgba(245, 241, 231, 0.68);
+  font-size: 0.82rem;
 }
 
 .map-site-list button {
@@ -568,6 +656,38 @@ h1 {
 .site-list .site-meta {
   color: var(--moss);
   font-size: 0.67rem;
+}
+
+.directory-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.directory-toggle p {
+  margin: 0;
+  color: var(--moss);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.directory-toggle button {
+  padding: 0.8rem 1rem;
+  color: var(--paper);
+  border: 0;
+  border-radius: 2px;
+  background: var(--rust);
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.directory-toggle button:hover,
+.directory-toggle button:focus-visible {
+  background: var(--ink);
 }
 
 .evidence-pill {
@@ -902,6 +1022,11 @@ footer {
   .site-actions {
     grid-column: 2;
     justify-items: start;
+  }
+
+  .directory-toggle {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .story-header {
