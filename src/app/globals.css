@@ -336,6 +336,19 @@ h1 {
   cursor: pointer;
 }
 
+.atlas-native-marker,
+.atlas-native-marker * {
+  transition: none !important;
+}
+
+.atlas-native-marker {
+  cursor: pointer;
+}
+
+.atlas-native-marker.is-highlighted svg {
+  filter: drop-shadow(0 0 3px var(--paper)) drop-shadow(0 0 2px var(--ink));
+}
+
 .map-status {
   position: absolute;
   left: 1rem;
@@ -433,13 +446,17 @@ h1 {
 
 .map-site-list button {
   display: grid;
-  grid-template-columns: 2rem 1fr;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  align-items: start;
   gap: 0.6rem;
+  width: 100%;
+  min-width: 0;
   padding: 0.75rem;
   color: var(--paper);
   text-align: left;
-  border: 1px solid transparent;
+  border: 1px solid rgba(143, 196, 199, 0.2);
   background: transparent;
+  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -1467,7 +1484,7 @@ footer {
   }
 
   .map-site-list button {
-    min-height: 52px;
+    min-height: 64px;
     padding: 0.72rem 0.6rem;
   }
 
