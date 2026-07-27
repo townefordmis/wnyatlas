@@ -436,6 +436,44 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
       },
     ],
   },
+  {
+    id: "outer-harbor-industrial-recovery",
+    name: "Outer Harbor industrial recovery landscape",
+    summary:
+      "Canals, filled shoreline, disposal areas, steel and iron facilities, and restored habitat form a connected Outer Harbor landscape. Each location retains its own contamination record, remedy boundary, and present-day controls.",
+    members: [
+      {
+        siteId: "union-ship-canal-hanna-furnace",
+        role: "Pig-iron canal and remediated park",
+        connection:
+          "The canal and Ship Canal Commons preserve Hanna Furnace history while containing contaminated sediment and residual upland material.",
+      },
+      {
+        siteId: "outer-harbor-greenbelt",
+        role: "Covered shoreline brownfield",
+        connection:
+          "The Greenbelt adds a separately managed filled shoreline and public-open-space remedy.",
+      },
+      {
+        siteId: "times-beach-disposal-site",
+        role: "Dredged-material site and habitat",
+        connection:
+          "Times Beach shows another Outer Harbor transition from disposal infrastructure to ecological value.",
+      },
+      {
+        siteId: "alltift-landfill-ramco-steel",
+        role: "Landfill and steel property",
+        connection:
+          "Alltift connects historic filling and steel operations to the broader South Buffalo waterfront.",
+      },
+      {
+        siteId: "bethlehem-steel",
+        role: "Adjacent steelmaking landscape",
+        connection:
+          "The former Bethlehem complex extends the heavy-industrial shoreline south into Lackawanna.",
+      },
+    ],
+  },
 ];
 
 export function getConnectionGroupsForSite(
