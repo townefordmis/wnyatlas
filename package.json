@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "audit:coordinates": "node scripts/audit-coordinates.mjs"
+    "audit:coordinates": "node scripts/audit-coordinates.mjs",
+    "audit:coordinate-authorities": "node scripts/audit-coordinate-authorities.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^6.0.0",
