@@ -1389,12 +1389,12 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "union-road-gardenville-yard",
-    name: "Union Road Site / Former Gardenville Yard",
+    name: "Union Road Site / Losson Road Tar Pit",
     municipality: "Cheektowaga",
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former railroad classification and maintenance yard where a spur was built into an eastern wetland depression to dispose of railyard waste. Investigators later found tar-like material and 56 drums; the waste was contained, capped, and remains under long-term monitoring.",
+      "Former Gardenville railroad classification and maintenance yard where a spur led into an eastern wetland depression used for waste disposal. The location became locally known as the Losson Road tar pit. Investigators found tar-like material and dozens of abandoned drums; site waste was consolidated inside a slurry-walled containment cell, capped, and remains under long-term monitoring.",
     evidenceStatus: "well-documented",
     coordinates: [-78.739028, 42.879639],
     sources: [
@@ -1412,6 +1412,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Union Road Site Profile",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0202408",
+      },
+      {
+        title: "Idylwoods Associates v. Mader Capital",
+        publisher: "United States District Court, Western District of New York",
+        url: "https://law.justia.com/cases/federal/district-courts/FSupp/915/1290/1618926/",
       },
     ],
   },
