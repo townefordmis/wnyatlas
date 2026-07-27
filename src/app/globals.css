@@ -250,7 +250,6 @@ h1 {
   padding: 1.5rem;
   border: 1px solid var(--line);
   border-top: 5px solid var(--rust);
-  transform: rotate(1deg);
   background: rgba(255, 255, 255, 0.28);
   box-shadow: 7px 9px 0 rgba(23, 39, 32, 0.08);
 }
@@ -341,6 +340,7 @@ h1 {
   position: relative;
   width: 28px;
   height: 28px;
+  transform-origin: 50% 100%;
 }
 
 .atlas-cluster {
@@ -382,17 +382,19 @@ h1 {
   background: var(--rust);
   box-shadow: 0 3px 8px rgba(23, 39, 32, 0.38);
   transform: rotate(-45deg);
+  transform-origin: 50% 100%;
+  transition:
+    filter 120ms ease,
+    transform 120ms ease;
   cursor: pointer;
 }
 
 .atlas-marker-wrap:hover .atlas-marker,
 .atlas-marker:focus-visible,
 .atlas-marker-wrap.is-highlighted .atlas-marker {
-  width: 34px;
-  height: 34px;
-  margin: -6px 0 0 -3px;
   outline: 3px solid var(--ink);
   outline-offset: 3px;
+  transform: rotate(-45deg) scale(1.18);
 }
 
 .atlas-marker-label {
@@ -1514,27 +1516,117 @@ footer {
   .map-shell {
     margin: 0;
     border-radius: 0;
+    scroll-margin-top: 3.5rem;
   }
 
   .map-toolbar {
+    min-height: 82px;
+    gap: 0.75rem;
     align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .map-toolbar h2 {
+    font-size: 1.65rem;
+  }
+
+  .map-toolbar .eyebrow {
+    max-width: 230px;
+    font-size: 0.6rem;
+    line-height: 1.35;
+  }
+
+  .map-reset {
+    min-width: 88px;
+    min-height: 44px;
+    padding: 0.55rem 0.7rem;
   }
 
   .map-layout {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   .map-stage {
-    min-height: 480px;
+    height: clamp(360px, 58svh, 520px);
+    min-height: 360px;
+  }
+
+  .map-canvas .maplibregl-ctrl-top-right {
+    top: 0.35rem;
+    right: 0.35rem;
+  }
+
+  .map-canvas .maplibregl-ctrl-group button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .atlas-marker-wrap {
+    width: 34px;
+    height: 34px;
+  }
+
+  .atlas-marker {
+    border-width: 3px;
+  }
+
+  .atlas-marker-wrap:hover .atlas-marker,
+  .atlas-marker:focus-visible,
+  .atlas-marker-wrap.is-highlighted .atlas-marker {
+    transform: rotate(-45deg) scale(1.12);
+  }
+
+  .atlas-marker-label {
+    max-width: 155px;
+    white-space: normal;
+  }
+
+  .atlas-cluster {
+    width: 48px;
+    height: 48px;
   }
 
   .map-sidebar {
+    padding: 1rem;
     border-top: 1px solid rgba(245, 241, 231, 0.18);
     border-left: 0;
   }
 
+  .atlas-filters {
+    gap: 0.75rem;
+  }
+
+  .atlas-filters input,
+  .atlas-filters select {
+    min-height: 46px;
+    font-size: 1rem;
+  }
+
+  .map-site-list {
+    max-height: 250px;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .map-site-list button {
+    min-height: 52px;
+    padding: 0.72rem 0.6rem;
+  }
+
   .map-detail {
     margin-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .map-detail-image {
+    height: 180px;
+  }
+
+  .map-story-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
 
   .category-grid {
