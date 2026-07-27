@@ -4,32 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
-import type { GeoJSONSource, Map as MapLibreMap } from "maplibre-gl";
+import type { Map as MapLibreMap, Marker } from "maplibre-gl";
 
 import { featuredSites } from "@/data/featured-sites";
 import type { AtlasSite } from "@/types/site";
 
 const regionCenter: [number, number] = [-78.84, 42.8];
 const SITE_LIST_PAGE_SIZE = 30;
-
-function siteFeatureCollection(sites: AtlasSite[]) {
-  return {
-    type: "FeatureCollection" as const,
-    features: sites.map((site) => ({
-      type: "Feature" as const,
-      id: site.id,
-      properties: {
-        id: site.id,
-        name: site.name,
-        category: site.category,
-      },
-      geometry: {
-        type: "Point" as const,
-        coordinates: site.coordinates,
-      },
-    })),
-  };
-}
 
 const categoryLabels: Record<AtlasSite["category"], string> = {
   cleanup: "Cleanup",
@@ -48,8 +29,7 @@ const evidenceLabels: Record<AtlasSite["evidenceStatus"], string> = {
 export function AtlasMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
-  const visibleSites = useRef<AtlasSite[]>(featuredSites);
-  const activeSiteId = useRef(featuredSites[0].id);
+  const markers = useRef<Map<string, Marker>>(new Map());
   const [selectedSite, setSelectedSite] = useState<AtlasSite>(featuredSites[0]);
   const [highlightedSiteId, setHighlightedSiteId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
@@ -96,7 +76,6 @@ export function AtlasMap() {
       attributionControl: false,
       style: {
         version: 8,
-        glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
         sources: {
           openStreetMap: {
             type: "raster",
@@ -105,76 +84,12 @@ export function AtlasMap() {
             attribution:
               '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           },
-          atlasSites: {
-            type: "geojson",
-            data: siteFeatureCollection(featuredSites),
-            cluster: true,
-            clusterMaxZoom: 9,
-            clusterRadius: 52,
-          },
         },
         layers: [
           {
             id: "openStreetMap",
             type: "raster",
             source: "openStreetMap",
-          },
-          {
-            id: "site-clusters",
-            type: "circle",
-            source: "atlasSites",
-            filter: ["has", "point_count"],
-            paint: {
-              "circle-color": "#176b87",
-              "circle-radius": ["step", ["get", "point_count"], 18, 10, 22, 30, 27],
-              "circle-stroke-color": "#f5f0e5",
-              "circle-stroke-width": 3,
-            },
-          },
-          {
-            id: "site-cluster-count",
-            type: "symbol",
-            source: "atlasSites",
-            filter: ["has", "point_count"],
-            layout: {
-              "text-field": ["get", "point_count_abbreviated"],
-              "text-font": ["Open Sans Bold"],
-              "text-size": 12,
-            },
-            paint: { "text-color": "#ffffff" },
-          },
-          {
-            id: "site-points",
-            type: "circle",
-            source: "atlasSites",
-            filter: ["!", ["has", "point_count"]],
-            paint: {
-              "circle-color": [
-                "match",
-                ["get", "category"],
-                "cleanup", "#b6462c",
-                "industry", "#263943",
-                "pfas", "#8b5e34",
-                "radiological", "#7b3f86",
-                "waterway", "#176b87",
-                "#263943",
-              ],
-              "circle-radius": 9,
-              "circle-stroke-color": "#f5f0e5",
-              "circle-stroke-width": 3,
-            },
-          },
-          {
-            id: "selected-site-point",
-            type: "circle",
-            source: "atlasSites",
-            filter: ["==", ["get", "id"], featuredSites[0].id],
-            paint: {
-              "circle-color": "#e0643f",
-              "circle-radius": 13,
-              "circle-stroke-color": "#263943",
-              "circle-stroke-width": 3,
-            },
           },
         ],
       },
@@ -198,84 +113,53 @@ export function AtlasMap() {
     );
     mapInstance.on("error", () => setMapUnavailable(true));
 
-    mapInstance.on("load", () => {
-      const source = mapInstance.getSource("atlasSites") as GeoJSONSource;
-      source.setData(siteFeatureCollection(visibleSites.current));
-      mapInstance.setFilter("selected-site-point", [
-        "==",
-        ["get", "id"],
-        activeSiteId.current,
-      ]);
-      // Mobile browser chrome and responsive layout can settle one frame
-      // after the map's load event. Resize again after that final layout.
-      resizeMap();
+    featuredSites.forEach((site) => {
+      const marker = new maplibregl.Marker({
+        color:
+          site.category === "waterway"
+            ? "#176b87"
+            : site.category === "radiological"
+              ? "#7b3f86"
+              : site.category === "pfas"
+                ? "#8b5e34"
+                : site.category === "industry"
+                  ? "#263943"
+                  : "#b6462c",
+        scale: 0.72,
+        subpixelPositioning: true,
+      })
+        .setLngLat(site.coordinates)
+        .addTo(mapInstance);
+      const element = marker.getElement();
+      element.classList.add("atlas-native-marker");
+      element.setAttribute("aria-label", `Show ${site.name}, ${site.municipality}`);
+      element.addEventListener("click", () => setSelectedSite(site));
+      markers.current.set(site.id, marker);
     });
-
-    const selectFeature = (
-      event: maplibregl.MapMouseEvent & {
-        features?: maplibregl.MapGeoJSONFeature[];
-      },
-    ) => {
-      const siteId = event.features?.[0]?.properties?.id;
-      const site = featuredSites.find((candidate) => candidate.id === siteId);
-      if (site) setSelectedSite(site);
-    };
-
-    mapInstance.on("click", "site-points", selectFeature);
-    mapInstance.on("click", "selected-site-point", selectFeature);
-    mapInstance.on("click", "site-clusters", async (event) => {
-      const feature = event.features?.[0];
-      const clusterId = feature?.properties?.cluster_id;
-      if (clusterId === undefined || feature?.geometry.type !== "Point") return;
-
-      const source = mapInstance.getSource("atlasSites") as GeoJSONSource;
-      const zoom = await source.getClusterExpansionZoom(clusterId);
-      mapInstance.easeTo({
-        center: feature.geometry.coordinates as [number, number],
-        zoom,
-        essential: false,
-      });
-    });
-
-    for (const layer of [
-      "site-points",
-      "selected-site-point",
-      "site-clusters",
-    ]) {
-      mapInstance.on("mouseenter", layer, () => {
-        mapInstance.getCanvas().style.cursor = "pointer";
-      });
-      mapInstance.on("mouseleave", layer, () => {
-        mapInstance.getCanvas().style.cursor = "";
-      });
-    }
 
     return () => {
       resizeObserver.disconnect();
       window.removeEventListener("resize", resizeMap);
       window.visualViewport?.removeEventListener("resize", resizeMap);
+      markers.current.forEach((marker) => marker.remove());
+      markers.current.clear();
       mapInstance.remove();
       map.current = null;
     };
   }, []);
 
   useEffect(() => {
-    activeSiteId.current = highlightedSiteId ?? displayedSite.id;
-    if (map.current?.getLayer("selected-site-point")) {
-      map.current.setFilter("selected-site-point", [
-        "==",
-        ["get", "id"],
-        activeSiteId.current,
-      ]);
-    }
+    const activeId = highlightedSiteId ?? displayedSite.id;
+    markers.current.forEach((marker, siteId) => {
+      marker.getElement().classList.toggle("is-highlighted", siteId === activeId);
+    });
   }, [displayedSite.id, highlightedSiteId]);
 
   useEffect(() => {
-    visibleSites.current = filteredSites;
-    const source = map.current?.getSource("atlasSites") as
-      | GeoJSONSource
-      | undefined;
-    source?.setData(siteFeatureCollection(filteredSites));
+    const visibleIds = new Set(filteredSites.map((site) => site.id));
+    markers.current.forEach((marker, siteId) => {
+      marker.getElement().style.display = visibleIds.has(siteId) ? "" : "none";
+    });
   }, [filteredSites]);
 
   function focusSite(site: AtlasSite) {
