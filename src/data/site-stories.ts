@@ -1979,22 +1979,22 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
   "union-road-gardenville-yard": {
     lastReviewed: "July 27, 2026",
     background: [
-      "The Union Road site was part of the former Gardenville railroad classification and maintenance yard. A rail spur extended into an eastern wetland depression that was used for railyard-waste disposal.",
-      "Investigation found tar-like material and 56 drums. The remedy consolidated and capped waste, while wetlands, groundwater, and engineering controls remain under long-term inspection.",
+      "The Union Road site—remembered locally as the Losson Road tar pit—was part of the former Gardenville railroad classification and maintenance yard. A rail spur extended into an eastern wetland depression that was used for railyard-waste disposal.",
+      "Erie County investigators documented an approximately 80-by-140-foot area of tar-like waste and 56 abandoned drums in 1982; a later investigation reported 81 drums. The selected remedy did not excavate every waste deposit. It stabilized the tar-pit material in place, moved other impacted material into a containment cell, installed a bentonite slurry wall and cap, and established long-term groundwater control and monitoring.",
     ],
     timeline: [
       { period: "Railyard era", event: "Rail classification and maintenance generated wastes disposed along an eastern spur." },
-      { period: "Investigation", event: "Crews identified tar-like waste, buried debris, and 56 drums." },
-      { period: "Remedial construction", event: "Waste was consolidated and isolated beneath an engineered cap." },
+      { period: "1982–1986", event: "Investigators documented tar-like waste and dozens of abandoned drums; the recorded count increased from 56 to 81 as investigation continued." },
+      { period: "1995–1997", event: "Tar-pit material was stabilized and impacted material was consolidated within a slurry-walled containment cell beneath an engineered cap." },
       { period: "2024 review", event: "The latest cited periodic review evaluated monitoring and remedy maintenance." },
     ],
     documentedImpacts: [
-      "Tar-like material and buried drums documented direct waste disposal.",
+      "Tar-like material, abandoned drums, and indications of buried metal objects documented direct waste disposal.",
       "Disposal in a wetland depression created soil, groundwater, and ecological pathways.",
       "Residual waste remains on site beneath the remedy.",
     ],
     cleanupAndControls: [
-      "Drums and waste were characterized, removed where required, or consolidated within the containment area.",
+      "Impacted material was stabilized in place or consolidated within the containment cell. Available public records do not establish that every drum or drum fragment was removed from the property.",
       "An engineered cap prevents routine contact and limits infiltration.",
       "Groundwater monitoring, inspections, maintenance, and institutional controls protect the remedy.",
     ],
@@ -2002,6 +2002,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "The disposal area is capped and managed rather than restored to unrestricted conditions. Long-term reviews are the key evidence for whether containment continues to perform.",
     ],
     researchNotes: [
+      "Locate the final construction report or drum-disposition log that could establish how the individually documented drums were handled.",
       "Add groundwater trend conclusions and any cap repairs from post-2024 reviews.",
       "Map the disposal spur and capped footprint separately from the larger former yard.",
     ],
