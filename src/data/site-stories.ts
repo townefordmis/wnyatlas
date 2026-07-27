@@ -1,6 +1,402 @@
 import type { AtlasStory } from "@/types/site";
 
 export const siteStories: Partial<Record<string, AtlasStory>> = {
+  "former-roblin-steel-dunkirk": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Dunkirk property began as part of an American Locomotive Company complex established around 1910, connecting the Lake Erie city to the national railroad-equipment industry. Later occupants adapted portions of the complex for metal and steel reclamation, including Roblin Steel.",
+      "The cleanup covers an approximately 12-acre portion of this larger industrial landscape. Decades of heavy manufacturing, material storage, fuel use, and steel recovery left building, soil, and groundwater issues that required demolition and remediation before controlled reuse.",
+    ],
+    timeline: [
+      { period: "Circa 1910", event: "American Locomotive Company established the larger Dunkirk manufacturing complex." },
+      { period: "Later industrial era", event: "Roblin Steel and related occupants used portions of the property for steel reclamation and metal work." },
+      { period: "Environmental Restoration Program", event: "Publicly sponsored investigation and cleanup addressed a defined 12-acre parcel." },
+      { period: "Remedial construction", event: "Industrial buildings were demolished and contaminated areas were addressed for reuse." },
+      { period: "Present", event: "Groundwater monitoring and an environmental easement continue on the completed cleanup parcel." },
+    ],
+    documentedImpacts: [
+      "Heavy manufacturing and steel reclamation affected soil and groundwater in defined areas.",
+      "Aging industrial buildings and infrastructure required environmental management during demolition.",
+      "The 12-acre cleanup parcel is part of a larger complex whose neighboring properties may have different records and controls.",
+    ],
+    cleanupAndControls: [
+      "Buildings were demolished under controlled conditions and identified contaminated material was removed or managed.",
+      "Groundwater monitoring tracks residual subsurface conditions.",
+      "An environmental easement, approved cover, excavation controls, and site management preserve the assumptions supporting industrial reuse.",
+    ],
+    presentDay: [
+      "The former Roblin Steel parcel has completed major remedial construction and supports controlled industrial reuse. It should not be confused with the separately listed Roblin Steel site in Tonawanda.",
+    ],
+    researchNotes: [
+      "Build a parcel-level chronology for American Locomotive, later owners, Roblin operations, and redevelopment.",
+      "Track groundwater trends and the condition of covers and easement controls in the newest periodic review.",
+    ],
+  },
+  "special-metals-dunkirk": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Special Metals is part of Dunkirk's specialty-alloy manufacturing tradition, producing high-performance metals associated with demanding industrial and aerospace applications. The cleanup record concerns a defined area within an active manufacturing property rather than the whole plant.",
+      "During facility expansion, workers encountered an underground storage tank and petroleum-affected soil. The discovery triggered a state-supervised interim action so construction and industrial use could proceed with the affected source removed and residual conditions controlled.",
+    ],
+    timeline: [
+      { period: "Manufacturing era", event: "Specialty-alloy production developed at the Dunkirk industrial property." },
+      { period: "Expansion discovery", event: "An underground tank and petroleum-contaminated soil were found during construction work." },
+      { period: "Interim remedial measure", event: "The tank and affected soil were removed under DEC oversight." },
+      { period: "Present", event: "The active industrial facility continues to operate subject to institutional controls for the remediated area." },
+    ],
+    documentedImpacts: [
+      "Petroleum contamination was associated with a former underground storage tank.",
+      "The affected area was localized within a much larger active alloy-manufacturing property.",
+      "The cleanup record does not establish uniform contamination across the entire Special Metals facility.",
+    ],
+    cleanupAndControls: [
+      "The underground tank was removed and petroleum-affected soil was excavated for proper disposal.",
+      "Confirmation sampling documented the limits and outcome of the removal.",
+      "Institutional controls and soil-management requirements govern future disturbance in the controlled area.",
+    ],
+    presentDay: [
+      "Special Metals remains an active industrial site with a completed, location-specific petroleum cleanup. The atlas keeps that remedial area distinct from the company's broader manufacturing history.",
+    ],
+    researchNotes: [
+      "Add the tank size, excavation quantity, and final confirmation results from the construction-completion record.",
+      "Develop the plant's product and ownership chronology from company and Dunkirk archival sources.",
+    ],
+  },
+  "lexington-machining": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Lexington Machining property in Lakewood supported die casting and machining from the 1950s until 2014. Metalworking operations used oils and chlorinated solvents, including degreasing chemicals that could move through soil into groundwater.",
+      "Investigation found a solvent-centered subsurface problem requiring active remediation followed by long-term monitoring. The site illustrates how a modest manufacturing plant can create a persistent groundwater-management obligation.",
+    ],
+    timeline: [
+      { period: "1950s–2014", event: "Die-casting and machining operations occupied the property." },
+      { period: "Investigation", event: "Soil and groundwater studies identified chlorinated-solvent impacts associated with degreasing." },
+      { period: "Active remediation", event: "Source and groundwater treatment measures were implemented under state oversight." },
+      { period: "Monitoring phase", event: "The site moved from active treatment into groundwater monitoring and controlled use." },
+      { period: "Present", event: "Periodic review evaluates monitoring results and the continuing effectiveness of institutional controls." },
+    ],
+    documentedImpacts: [
+      "Chlorinated solvents used in degreasing affected soil and groundwater.",
+      "Machining oils and other industrial materials were evaluated as part of the facility record.",
+      "Groundwater impacts are confined to the investigated site and plume information; they should not be generalized to Lakewood.",
+    ],
+    cleanupAndControls: [
+      "Active remedial measures addressed source material and affected groundwater.",
+      "Groundwater monitoring tracks concentration and plume trends after active treatment.",
+      "Land-use restrictions, groundwater-use controls, and a site-management plan govern residual contamination.",
+    ],
+    presentDay: [
+      "Lexington Machining is in the long-term management phase after active cleanup. Continued monitoring is how the state confirms that the remedy remains protective.",
+    ],
+    researchNotes: [
+      "Add the specific treatment technologies, contaminant trends, and current monitoring schedule.",
+      "Develop a verified company, product, and employment history for the Lakewood plant.",
+    ],
+  },
+  "former-cb-dry-cleaners": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Former C&B Dry Cleaners is a compact Jamestown cleanup site whose significance comes from solvent use rather than the physical scale of the business. Dry-cleaning chemicals can enter soil through spills, floor drains, tanks, or waste handling and then migrate as vapor or dissolved groundwater contamination.",
+      "The property sits within a larger urban and industrial setting, but its regulatory record is distinct from nearby metalworking sites. That distinction is essential when discussing a solvent plume or vapor pathway.",
+    ],
+    timeline: [
+      { period: "Dry-cleaning era", event: "A dry-cleaning business operated at the property and used chlorinated cleaning solvent." },
+      { period: "Investigation", event: "Environmental studies evaluated soil, groundwater, and soil-vapor pathways." },
+      { period: "Remedial program", event: "New York directed cleanup and controls for the defined former cleaner property." },
+      { period: "Present", event: "Residual conditions and any vapor or groundwater obligations remain subject to site-specific management." },
+    ],
+    documentedImpacts: [
+      "Chlorinated dry-cleaning solvent is the principal concern associated with the former operation.",
+      "Groundwater and soil vapor can carry solvent impacts beyond the original release point.",
+      "The site record should not be merged with nearby D.C. Rollforms, Weber-Knapp, or other Jamestown industrial sources.",
+    ],
+    cleanupAndControls: [
+      "Investigation delineated source, groundwater, and vapor pathways before remedy selection.",
+      "Source removal or treatment and vapor mitigation are applied where required by the state remedy.",
+      "Monitoring, land-use controls, groundwater restrictions, and site management protect against remaining exposure.",
+    ],
+    presentDay: [
+      "The former cleaner demonstrates that a small commercial footprint can require sophisticated long-term cleanup. Present-day risk should be described from current monitoring and mitigation records, not from the historic business name alone.",
+    ],
+    researchNotes: [
+      "Add verified operating dates, solvent storage and disposal practices, and the final remedy from DEC documents.",
+      "Map any confirmed plume and vapor-mitigation area without identifying private properties more precisely than public records warrant.",
+    ],
+  },
+  "bush-industries-cattaraugus": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Bush Industries property in the Village of Cattaraugus passed through several industrial eras. Early uses included Standard Oil activity and an apple-evaporator operation before the site became associated with decades of veneer and furniture-related manufacturing.",
+      "When the plant closed, the publicly supported cleanup addressed petroleum-contaminated soil, aging industrial buildings, and asbestos-containing construction materials so the property could move toward reuse.",
+    ],
+    timeline: [
+      { period: "Early industrial era", event: "Standard Oil and an apple-evaporator operation used portions of the property." },
+      { period: "Veneer-manufacturing era", event: "Wood-product and veneer operations became the site's long-term industrial identity." },
+      { period: "Closure and investigation", event: "Plant closure led to environmental assessment of petroleum, buildings, and former operating areas." },
+      { period: "Cleanup", event: "Buildings were demolished and approximately 3,400 tons of petroleum-affected soil were removed." },
+      { period: "2010", event: "New York completed the Environmental Restoration Program project." },
+    ],
+    documentedImpacts: [
+      "Petroleum contamination affected soil in former fuel-handling or industrial areas.",
+      "Industrial buildings contained asbestos requiring controlled demolition and disposal.",
+      "Different operating eras may have contributed different materials; attribution should follow documented source areas.",
+    ],
+    cleanupAndControls: [
+      "Approximately 3,400 tons of petroleum-affected soil were excavated and properly disposed.",
+      "Asbestos-containing industrial buildings were demolished under controlled conditions.",
+      "Completion documentation and any remaining land-use or soil-management requirements govern reuse.",
+    ],
+    presentDay: [
+      "The Bush Industries property is a completed state restoration project and an important example of cleanup outside the region's largest cities. Completion should be paired with any recorded residual-use restrictions when describing future development.",
+    ],
+    researchNotes: [
+      "Build a detailed ownership and product chronology for the Standard Oil, evaporator, veneer, and Bush Industries periods.",
+      "Confirm current reuse and any surviving easement or soil-management obligations.",
+    ],
+  },
+  "former-randolph-foundry": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Former Randolph Foundry was a small foundry and machine-shop property beside a rail corridor in the Village of Randolph. Metal casting produced waste foundry sand, scrap, oils, and other residues typical of a compact industrial operation.",
+      "After the foundry closed around 1986, investigation found deteriorated buildings, asbestos, drums, foundry sand, and industrial debris. The cleanup combined demolition and removal with controls for material left safely in place.",
+    ],
+    timeline: [
+      { period: "Foundry era", event: "Metal casting and machine-shop operations occupied the rail-adjacent property." },
+      { period: "Circa 1986", event: "Foundry operations ended." },
+      { period: "Investigation", event: "State work documented asbestos, drums, waste foundry sand, and industrial debris." },
+      { period: "Environmental Restoration Program", event: "Buildings and waste areas were addressed through public brownfield cleanup." },
+      { period: "Present", event: "The completed site remains subject to land-use and soil-management requirements." },
+    ],
+    documentedImpacts: [
+      "Waste foundry sand and industrial debris were present across portions of the property.",
+      "Drums and petroleum or process materials required characterization and removal where necessary.",
+      "Asbestos in former industrial structures required controlled abatement.",
+    ],
+    cleanupAndControls: [
+      "Unsafe structures and asbestos-containing material were demolished or removed under controlled conditions.",
+      "Drums, debris, and contaminated soil were removed or consolidated as required by the remedy.",
+      "A cover, environmental easement, excavation controls, and site-management plan govern residual material.",
+    ],
+    presentDay: [
+      "The former foundry is a completed cleanup with continuing controls appropriate to its residual industrial fill. The rail corridor and neighboring parcels should be interpreted separately unless investigation connects them.",
+    ],
+    researchNotes: [
+      "Add the foundry's operating name, products, ownership dates, and local employment history.",
+      "Track cover inspections and verify the current controlled-use designation.",
+    ],
+  },
+  "former-signore": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Former Signore property in Ellicottville is an approximately eight-acre manufacturing site carried through New York's Brownfield Cleanup Program. It broadens the region's industrial history beyond major rail, steel, and chemical centers to a smaller Southern Tier community.",
+      "Manufacturing left soil, groundwater, building, or fill conditions requiring investigation before redevelopment. Because the public-facing short record contains limited process history, the atlas separates verified cleanup status from questions still needing archival research.",
+    ],
+    timeline: [
+      { period: "Manufacturing era", event: "Industrial operations occupied the approximately eight-acre Ellicottville property." },
+      { period: "Closure and assessment", event: "The former plant was evaluated for environmental impacts and redevelopment potential." },
+      { period: "Brownfield Cleanup Program", event: "Investigation and remedy proceeded under state oversight." },
+      { period: "Present", event: "Reuse and any residual contamination are governed by the site's completion documents and controls." },
+    ],
+    documentedImpacts: [
+      "State brownfield enrollment confirms that industrial environmental conditions required investigation and remedy.",
+      "Soil, groundwater, fill, and former manufacturing areas were evaluated within the defined property.",
+      "Specific contaminant and process claims should remain tied to the final remedial record rather than inferred from the company name.",
+    ],
+    cleanupAndControls: [
+      "The Brownfield Cleanup Program required investigation, remedy selection, construction documentation, and state approval.",
+      "Contaminated material was removed, treated, or managed beneath approved controls as specified by the remedy.",
+      "Any easement, cover, vapor measure, groundwater restriction, or site-management duty remains property-specific.",
+    ],
+    presentDay: [
+      "Former Signore is a controlled brownfield property whose detailed industrial story remains a research priority. The atlas marks what the state cleanup record establishes and leaves uncertain process history explicitly open.",
+    ],
+    researchNotes: [
+      "Review the remedial investigation, decision document, final engineering report, and certificate to replace general language with verified detail.",
+      "Use local newspapers, directories, and company records to establish products, dates, and employment.",
+    ],
+  },
+  "former-nl-industries-foundry": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Former NL Industries Foundry occupies roughly 7.5 acres within the Buffalo–Cheektowaga industrial belt. Foundry operations linked the property to the region's metal-casting economy and produced the characteristic mix of casting sand, metals, fuels, and industrial fill.",
+      "The property entered New York's Brownfield Cleanup Program so environmental conditions could be investigated and managed alongside redevelopment. Its remedy and boundary are distinct from neighboring rail and industrial parcels.",
+    ],
+    timeline: [
+      { period: "Foundry era", event: "Metal-casting operations occupied the Cheektowaga property." },
+      { period: "Industrial transition", event: "Closure or reuse left former production areas and fill requiring environmental assessment." },
+      { period: "Brownfield Cleanup Program", event: "The approximately 7.5-acre site underwent investigation and remediation." },
+      { period: "Present", event: "Controlled reuse depends on the approved remedy, environmental easement, and site-management requirements." },
+    ],
+    documentedImpacts: [
+      "Foundry sand, metals, industrial fill, and former fuel or process areas were central lines of investigation.",
+      "Residual contamination is managed within the defined brownfield boundary.",
+      "Conditions should not be attributed to the wider Cheektowaga industrial district without parcel-specific evidence.",
+    ],
+    cleanupAndControls: [
+      "Investigation identified areas requiring excavation, cover, or other remedial management.",
+      "An approved site cover limits routine contact with residual industrial soil or fill.",
+      "An environmental easement, land-use and groundwater restrictions, and a site-management plan govern future work.",
+    ],
+    presentDay: [
+      "The former foundry is a remediated brownfield suited to controlled reuse. Its industrial heritage remains physically legible, while the easement and site-management plan carry the cleanup forward.",
+    ],
+    researchNotes: [
+      "Add verified operating dates, products, ownership succession, and remedy quantities from DEC and archival records.",
+      "Digitize the controlled-property and cover-system boundaries.",
+    ],
+  },
+  "former-mill-no-2": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Former Mill No. 2 was a Niagara Falls paper-manufacturing property within a city shaped by abundant hydroelectric power and intensive industry. When the obsolete mill entered public cleanup, investigators confronted conventional industrial contamination and localized radioactive material.",
+      "The unusual mixed-hazard record required radiological surveying and targeted hot-spot removal alongside building demolition and soil cleanup. New York completed the environmental-restoration project in 2012.",
+    ],
+    timeline: [
+      { period: "Paper-mill era", event: "Mill No. 2 operated as part of Niagara Falls' paper and power-intensive manufacturing landscape." },
+      { period: "Investigation", event: "State work identified industrial contamination and localized radioactive hot spots." },
+      { period: "Remedial construction", event: "Radiological material and other contaminated areas were removed, and the obsolete mill was demolished." },
+      { period: "2012", event: "New York completed the Environmental Restoration Program project." },
+      { period: "Present", event: "Reuse is governed by the completion record and any continuing property controls." },
+    ],
+    documentedImpacts: [
+      "Localized radioactive material required specialized survey, handling, and disposal.",
+      "Conventional industrial contaminants were also associated with the former mill and its infrastructure.",
+      "The radiological findings were bounded hot spots and should not be generalized to the surrounding Niagara Falls neighborhood.",
+    ],
+    cleanupAndControls: [
+      "Radiological surveys identified material requiring targeted removal.",
+      "The mill was demolished and contaminated soil or debris was disposed through appropriate facilities.",
+      "Completion documentation, verification results, and any easement or soil-management requirements govern reuse.",
+    ],
+    presentDay: [
+      "Former Mill No. 2 is a completed public cleanup notable for integrating radiological and conventional brownfield work. Its history warrants precision: localized radioactive material was addressed, not evidence of a citywide condition.",
+    ],
+    researchNotes: [
+      "Identify the documented origin and isotope of the radioactive material from the final engineering record.",
+      "Add the mill's company, product, operating, and worker history from Niagara Falls archives.",
+    ],
+  },
+  "tonawanda-plastics": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Tonawanda Plastics occupies part of the River Road industrial corridor, a landscape shaped by steel, coke, chemical production, landfilling, rail lines, and Niagara River shipping. Plastics manufacturing added its own process chemicals and waste-management history to this already complex setting.",
+      "The state cleanup record must be read parcel by parcel. Tonawanda Plastics lies near Tonawanda Coke and other listed properties, but proximity alone does not establish one source, one plume, or one remedy.",
+    ],
+    timeline: [
+      { period: "Industrial development", event: "Plastics-related manufacturing developed on the River Road property." },
+      { period: "Investigation", event: "DEC evaluated site soil, fill, groundwater, and former operating or disposal areas." },
+      { period: "State cleanup program", event: "The property received its own inactive hazardous-waste site record, separate from neighboring facilities." },
+      { period: "Present", event: "Cleanup status and controls remain defined by the Tonawanda Plastics record and current DEC reviews." },
+    ],
+    documentedImpacts: [
+      "Historic plastics operations and waste handling created site-specific soil and groundwater concerns.",
+      "Industrial fill and neighboring facilities complicate source attribution in the River Road corridor.",
+      "Tonawanda Coke studies provide regional context but do not automatically define Tonawanda Plastics contamination.",
+    ],
+    cleanupAndControls: [
+      "DEC investigation distinguishes on-site source areas from regional background and neighboring properties.",
+      "Remedial measures and controls are applied to the defined Tonawanda Plastics site according to its own decision record.",
+      "Monitoring and land-use or excavation restrictions remain important where residual contamination persists.",
+    ],
+    presentDay: [
+      "Tonawanda Plastics remains a separately tracked industrial cleanup within a dense cluster of sites. The atlas preserves that separation while making the corridor relationships easy to explore.",
+    ],
+    researchNotes: [
+      "Locate the best current remedial decision and periodic-review documents and add verified contaminants, dates, and remedy components.",
+      "Build a shared River Road parcel map showing boundaries without implying unproven plume connections.",
+    ],
+  },
+  "roblin-steel-tonawanda": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Tonawanda Roblin Steel site is a former steel property in the River Road industrial corridor. Its name can easily be confused with Former Roblin Steel in Dunkirk, but the two properties occupy different cities, regulatory records, and industrial settings.",
+      "Steel handling and processing occurred amid neighboring coke, plastics, landfill, rail, and bulk-terminal operations. That crowded landscape makes verified parcel boundaries and source attribution especially important.",
+    ],
+    timeline: [
+      { period: "Steel-industry era", event: "Roblin-related steel operations occupied the Tonawanda property." },
+      { period: "Industrial decline and transition", event: "Changing operations left former production, storage, and waste areas requiring investigation." },
+      { period: "State cleanup record", event: "DEC established Site 915056 for the defined Tonawanda property." },
+      { period: "Present", event: "The site's status and remedy remain distinct from both Tonawanda Coke and Roblin Steel in Dunkirk." },
+    ],
+    documentedImpacts: [
+      "Former steel operations and industrial fill created soil and groundwater concerns within the defined site.",
+      "Neighboring facilities complicate interpretation of groundwater and fill conditions.",
+      "Similar company names do not establish a shared disposal history between Tonawanda and Dunkirk.",
+    ],
+    cleanupAndControls: [
+      "State investigation and remedy decisions address the Tonawanda parcel on its own evidence.",
+      "Source removal, cover, monitoring, or institutional controls apply only where established by the site record.",
+      "Regional studies help test possible connections but do not replace parcel-specific sampling.",
+    ],
+    presentDay: [
+      "Roblin Steel–Tonawanda is retained as its own atlas entry to prevent a historically and geographically incorrect merger with the Dunkirk site. Its place in the River Road cluster is meaningful, but each neighboring cleanup remains independently documented.",
+    ],
+    researchNotes: [
+      "Establish the company's operating dates, products, ownership succession, and exact parcel boundary.",
+      "Review the newest DEC site classification and remedy documents for verified contaminant and control details.",
+    ],
+  },
+  "batavia-landfill": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Batavia Landfill is a roughly 35-acre former municipal disposal site in the Town of Batavia. From the 1960s until 1980, municipal waste was joined by industrial wastes including heavy-metal sludges, oils, solvents, and drums.",
+      "The mixture of ordinary refuse and hazardous industrial material led to federal Superfund action. The remedy removed accessible drums and source material, consolidated remaining waste beneath an engineered multilayer cap, managed leachate, restored wetlands, and reduced reliance on potentially affected private wells.",
+    ],
+    timeline: [
+      { period: "1960s–1980", event: "Municipal and industrial wastes were disposed at the landfill." },
+      { period: "Superfund investigation", event: "EPA and New York characterized drums, waste, leachate, groundwater, and nearby wetlands." },
+      { period: "Remedial construction", event: "Drums were removed, waste was consolidated and capped, leachate controls were installed, and wetlands were restored." },
+      { period: "2005", event: "EPA deleted the site from the National Priorities List after completing the remedy." },
+      { period: "Present", event: "Groundwater and surface-water sampling, cap maintenance, and institutional controls continue." },
+    ],
+    documentedImpacts: [
+      "Industrial contributors disposed of metal-bearing sludge, oils, solvents, and other wastes with municipal refuse.",
+      "Drums and contaminated landfill material created source and direct-contact concerns.",
+      "Leachate, groundwater, surface water, and adjacent wetlands were important migration and ecological pathways.",
+    ],
+    cleanupAndControls: [
+      "Accessible drums and highly contaminated materials were removed or consolidated.",
+      "A multilayer cap isolates the waste mass and reduces infiltration, while leachate is collected and managed.",
+      "Wetlands were restored, public water was extended, and long-term monitoring, maintenance, and land-use restrictions protect the remedy.",
+    ],
+    presentDay: [
+      "Batavia Landfill is a completed and delisted Superfund cleanup, not an unrestricted former dump. Deletion records successful construction and protective controls; buried waste, the cap, monitoring, and maintenance remain part of the site.",
+    ],
+    researchNotes: [
+      "Add exact drum, waste, cap, wetland, and public-water quantities from EPA decision and closeout documents.",
+      "Track current groundwater and surface-water trends and the newest five-year-review findings.",
+    ],
+  },
+  "chaffee-landfill": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Chaffee Landfill on Olean Road is a long-running solid-waste complex in the Sardinia/Chaffee area. Unlike the atlas's abandoned dumps and completed brownfields, this property contains closed historic disposal areas alongside an active permitted landfill operation.",
+      "That continuing use makes chronology and boundaries especially important. Historic cells, current cells, leachate systems, landfill-gas controls, support facilities, and any proposed expansion are related parts of one complex but have different construction and permit status.",
+    ],
+    timeline: [
+      { period: "Historic disposal era", event: "Earlier landfill cells received waste and were later closed under the standards applicable to their operating period." },
+      { period: "Modern operating era", event: "Permitted solid-waste disposal continued in engineered cells with leachate and landfill-gas systems." },
+      { period: "Permit reviews", event: "DEC reviewed operating, monitoring, and expansion applications through the solid-waste permitting process." },
+      { period: "Present", event: "The facility remains active while closed cells require continuing post-closure care." },
+    ],
+    documentedImpacts: [
+      "Landfill leachate and gas are expected waste-decomposition products requiring engineered collection and management.",
+      "Closed and active cells have different liners, caps, monitoring networks, and regulatory histories.",
+      "Permit applications and monitoring records should be used to describe measured conditions; an operating landfill is not automatically a state Superfund site.",
+    ],
+    cleanupAndControls: [
+      "Engineered liners, daily and intermediate cover, final caps, and stormwater controls limit releases from disposal cells.",
+      "Leachate is collected and managed, while landfill gas is monitored and controlled.",
+      "Groundwater monitoring, inspections, operating permits, financial assurance, and post-closure care apply across the appropriate units.",
+    ],
+    presentDay: [
+      "Chaffee remains an operating solid-waste facility with a historical landscape inside it. The atlas distinguishes permitted current disposal from closed cells and avoids labeling the whole complex as an abandoned dump or completed brownfield.",
+    ],
+    researchNotes: [
+      "Create a cell-by-cell map with opening, closure, liner, cap, and current permit status.",
+      "Track the newest annual report, leachate and gas data, enforcement record, and any expansion decision.",
+    ],
+  },
   "5565-river-road": {
     lastReviewed: "July 27, 2026",
     background: [
