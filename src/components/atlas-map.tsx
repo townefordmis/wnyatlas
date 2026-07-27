@@ -147,6 +147,7 @@ export function AtlasMap() {
       const marker = new maplibregl.Marker({
         element: markerElement,
         anchor: "bottom",
+        subpixelPositioning: true,
       })
         .setLngLat(site.coordinates)
         .addTo(mapInstance);
@@ -232,7 +233,10 @@ export function AtlasMap() {
         });
 
         clusterMarkers.current.push(
-          new maplibregl.Marker({ element: clusterButton })
+          new maplibregl.Marker({
+            element: clusterButton,
+            subpixelPositioning: true,
+          })
             .setLngLat([longitude, latitude])
             .addTo(mapInstance),
         );
