@@ -9,6 +9,16 @@ export type AtlasSource = {
   url: string;
 };
 
+export type AtlasImage = {
+  src: string;
+  alt: string;
+  caption: string;
+  date: string;
+  credit: string;
+  sourceUrl: string;
+  rights: string;
+};
+
 export type AtlasStory = {
   lastReviewed: string;
   background: string[];
@@ -32,6 +42,7 @@ export type AtlasSite = {
   evidenceStatus: EvidenceStatus;
   coordinates: [longitude: number, latitude: number];
   sources?: AtlasSource[];
+  image?: AtlasImage;
   story?: AtlasStory;
   atomicLegacy?: {
     era:

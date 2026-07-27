@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import { featuredSites } from "@/data/featured-sites";
@@ -71,6 +72,23 @@ export default async function SitePage({ params }: SitePageProps) {
             </p>
             <h1>{site.name}</h1>
             <p className="story-location">{site.municipality}</p>
+            {site.image && (
+              <figure className="story-image">
+                <Image
+                  src={site.image.src}
+                  alt={site.image.alt}
+                  width={1200}
+                  height={760}
+                  priority
+                />
+                <figcaption>
+                  <span>{site.image.caption}</span>
+                  <a href={site.image.sourceUrl} target="_blank" rel="noreferrer">
+                    {site.image.date} · {site.image.credit} · {site.image.rights}
+                  </a>
+                </figcaption>
+              </figure>
+            )}
           </div>
           <aside className="story-status">
             <p className="field-label">Evidence status</p>

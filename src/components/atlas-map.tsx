@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type { Map as MapLibreMap, Marker } from "maplibre-gl";
@@ -395,6 +396,15 @@ export function AtlasMap() {
 
           {filteredSites.length > 0 && (
             <div className="map-detail" aria-live="polite">
+              {displayedSite.image && (
+                <Image
+                  className="map-detail-image"
+                  src={displayedSite.image.src}
+                  alt={displayedSite.image.alt}
+                  width={520}
+                  height={260}
+                />
+              )}
               <p>
                 {categoryLabels[displayedSite.category]} · {displayedSite.county}{" "}
                 County
