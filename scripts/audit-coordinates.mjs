@@ -1,9 +1,11 @@
 import fs from "node:fs";
 
-const source = fs.readFileSync(
-  new URL("../src/data/featured-sites.ts", import.meta.url),
-  "utf8",
-);
+const source = [
+  "../src/data/featured-sites.ts",
+  "../src/data/historic-cleanup-expansion.ts",
+]
+  .map((path) => fs.readFileSync(new URL(path, import.meta.url), "utf8"))
+  .join("\n");
 const connectionSource = fs.readFileSync(
   new URL("../src/data/site-connections.ts", import.meta.url),
   "utf8",
@@ -25,7 +27,7 @@ const siteIds = new Set(sites.map((site) => site.id));
 for (const site of sites) {
   if (
     site.longitude < -79.9 ||
-    site.longitude > -78.3 ||
+    site.longitude > -78.15 ||
     site.latitude < 41.9 ||
     site.latitude > 43.7
   ) {
@@ -56,8 +58,8 @@ for (const siteId of connectedSiteIds) {
 console.log(`Checked ${sites.length} site coordinates.`);
 console.log(`Checked ${connectedSiteIds.length} connection memberships.`);
 
-if (sites.length !== 75) {
-  issues.push(`Expected 75 coordinate records but found ${sites.length}`);
+if (sites.length !== 95) {
+  issues.push(`Expected 95 coordinate records but found ${sites.length}`);
 }
 
 if (issues.length > 0) {

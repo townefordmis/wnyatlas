@@ -21,9 +21,7 @@ function findSite(id: string) {
 }
 
 export function generateStaticParams() {
-  return featuredSites
-    .filter((site) => site.story)
-    .map((site) => ({ id: site.id }));
+  return featuredSites.map((site) => ({ id: site.id }));
 }
 
 export async function generateMetadata({
@@ -32,7 +30,7 @@ export async function generateMetadata({
   const { id } = await params;
   const site = findSite(id);
 
-  if (!site?.story) {
+  if (!site) {
     return {};
   }
 
@@ -46,7 +44,7 @@ export default async function SitePage({ params }: SitePageProps) {
   const { id } = await params;
   const site = findSite(id);
 
-  if (!site?.story) {
+  if (!site) {
     notFound();
   }
 
@@ -78,9 +76,11 @@ export default async function SitePage({ params }: SitePageProps) {
             <p className="field-label">Evidence status</p>
             <strong>{evidenceLabels[site.evidenceStatus]}</strong>
             <p>{story.evidenceContext}</p>
-            <p className="story-reviewed">
-              Editorial review: {story.lastReviewed}
-            </p>
+            {story.lastReviewed && (
+              <p className="story-reviewed">
+                Editorial review: {story.lastReviewed}
+              </p>
+            )}
           </aside>
         </section>
 
@@ -255,7 +255,7 @@ export default async function SitePage({ params }: SitePageProps) {
 
       <footer className="story-footer">
         <p>Evidence-based public history for Western New York.</p>
-        <Link href="/#sites">Browse all 75 places</Link>
+        <Link href="/#sites">Browse all {featuredSites.length} places</Link>
       </footer>
     </main>
   );

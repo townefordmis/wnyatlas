@@ -1,5 +1,6 @@
 import type { AtlasSite } from "@/types/site";
 import { siteStories } from "@/data/site-stories";
+import { historicCleanupExpansion } from "@/data/historic-cleanup-expansion";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -1970,7 +1971,10 @@ const featuredSiteRecords: AtlasSite[] = [
   },
 ];
 
-export const featuredSites: AtlasSite[] = featuredSiteRecords.map((site) => ({
+export const featuredSites: AtlasSite[] = [
+  ...featuredSiteRecords,
+  ...historicCleanupExpansion,
+].map((site) => ({
   ...site,
   story: site.story ?? siteStories[site.id],
 }));

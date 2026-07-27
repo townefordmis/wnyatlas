@@ -322,6 +322,120 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
       },
     ],
   },
+  {
+    id: "river-road-industrial-corridor",
+    name: "River Road industrial and disposal corridor",
+    summary:
+      "Coke, plastics, steel, landfills, and material-transfer histories overlap along River Road. These records are geographically related but retain separate cleanup boundaries and responsible-party histories.",
+    members: [
+      {
+        siteId: "tonawanda-coke",
+        role: "Coke-manufacturing complex",
+        connection:
+          "The former coke plant anchors the corridor's heavy-industrial and air-emissions history.",
+      },
+      {
+        siteId: "tonawanda-plastics",
+        role: "Plastics property",
+        connection:
+          "The plastics site is a separately regulated industrial property within the same River Road landscape.",
+      },
+      {
+        siteId: "roblin-steel-tonawanda",
+        role: "Steel property",
+        connection:
+          "This Tonawanda steel site is distinct from the former Roblin Steel cleanup in Dunkirk.",
+      },
+      {
+        siteId: "cherry-farm",
+        role: "Industrial landfill",
+        connection:
+          "Cherry Farm connects the corridor's manufacturing history to documented disposal and long-term containment.",
+      },
+      {
+        siteId: "seaway-site",
+        role: "Mixed landfill and FUSRAP site",
+        connection:
+          "Seaway adds municipal, industrial, and radiological material histories to the corridor.",
+      },
+    ],
+  },
+  {
+    id: "dunkirk-metals-corridor",
+    name: "Dunkirk metals and manufacturing corridor",
+    summary:
+      "Former locomotive, steel-reclamation, specialty-metal, and related industrial properties form a connected manufacturing landscape whose individual remedies and present uses differ.",
+    members: [
+      {
+        siteId: "altech-specialty-steel",
+        role: "Specialty-steel complex",
+        connection:
+          "AlTech represents the corridor's largest and longest-running steelmaking cleanup record.",
+      },
+      {
+        siteId: "former-roblin-steel-dunkirk",
+        role: "Locomotive and steel-reclamation property",
+        connection:
+          "The property began within the American Locomotive Company complex and later supported steel reclamation.",
+      },
+      {
+        siteId: "special-metals-dunkirk",
+        role: "Aerospace-alloy manufacturing",
+        connection:
+          "Special Metals shows continued industrial use alongside a separately managed cleanup area.",
+      },
+    ],
+  },
+  {
+    id: "southern-tier-small-industry",
+    name: "Southern Tier small-industry cleanups",
+    summary:
+      "Foundries, furniture and veneer works, machining plants, dry cleaners, and rural disposal sites show that Western New York's cleanup history extends well beyond its largest waterfront factories.",
+    members: [
+      {
+        siteId: "farwell-road-landfill",
+        role: "Rural disposal site",
+        connection:
+          "Farwell Road represents a managed hazardous-waste landfill outside the major urban industrial corridors.",
+      },
+      {
+        siteId: "carroll-landfill",
+        role: "Municipal landfill",
+        connection:
+          "Carroll connects local waste disposal to wetlands, Conewango Creek, and long-term treatment.",
+      },
+      {
+        siteId: "dc-rollforms-proto-tool",
+        role: "Tool-manufacturing complex",
+        connection:
+          "Proto Tool brings electroplating, heat treatment, degreasing, and river-edge remediation into the collection.",
+      },
+      {
+        siteId: "former-cb-dry-cleaners",
+        role: "Small solvent site",
+        connection:
+          "The dry cleaner demonstrates how a very small parcel can create a consequential subsurface cleanup.",
+      },
+      {
+        siteId: "bush-industries-cattaraugus",
+        role: "Petroleum and veneer works",
+        connection:
+          "Bush Industries layers early petroleum use with later wood-products manufacturing.",
+      },
+      {
+        siteId: "former-randolph-foundry",
+        role: "Foundry and machine shop",
+        connection:
+          "Randolph adds discarded foundry sand, drums, and asbestos to the southern-tier industrial record.",
+      },
+      {
+        siteId: "lexington-machining",
+        role: "Die-casting and machining plant",
+        connection:
+          "Lexington documents solvent use and long-term groundwater management at a smaller manufacturing plant.",
+      },
+    ],
+  },
 ];
 
 export function getConnectionGroupsForSite(
