@@ -40,4 +40,35 @@ export const siteImages: Partial<Record<string, AtlasImage>> = {
     sourceUrl: "https://www.loc.gov/pictures/item/2016811560/",
     rights: "No known restrictions on publication",
   },
+  "union-ship-canal-hanna-furnace": {
+    src: "/historical/hanna-furnace-process-context.jpg",
+    alt: "Two workers supervising coke ovens at a Hanna furnace operation in Detroit during 1942",
+    caption:
+      "Hanna furnace workers supervising coke ovens in Detroit. This is company and process context, not a photograph of Buffalo's Union Ship Canal plant.",
+    date: "1942",
+    credit: "Arthur S. Siegel / U.S. Office of War Information, Library of Congress",
+    sourceUrl: "https://www.loc.gov/pictures/item/2017840024/",
+    rights: "No known restrictions",
+  },
+  "remington-rand-north-tonawanda": {
+    src: "/historical/remington-rand-company-context.jpg",
+    alt: "James H. Rand Junior meeting with U.S. Labor Secretary Frances Perkins during the 1937 Remington Rand strike",
+    caption:
+      "Remington Rand president James H. Rand Jr. meeting with Labor Secretary Frances Perkins during the national 1937 strike. This is corporate and labor context, not the North Tonawanda plant.",
+    date: "March 18, 1937",
+    credit: "Harris & Ewing Collection, Library of Congress",
+    sourceUrl: "https://www.loc.gov/pictures/item/2016871380/",
+    rights: "No known restrictions on Harris & Ewing collection images",
+  },
+  "batavia-landfill": {
+    src: "/historical/batavia-landfill.png",
+    alt: "U.S. Environmental Protection Agency photograph of the capped Batavia Landfill Superfund site",
+    caption:
+      "The Batavia Landfill after Superfund remedial construction and capping.",
+    date: "Post-cleanup site photograph",
+    credit: "U.S. Environmental Protection Agency",
+    sourceUrl:
+      "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.photovideoaudio&id=0201766",
+    rights: "U.S. government image",
+  },
 };
