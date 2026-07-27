@@ -1,6 +1,7 @@
 import type { AtlasSite } from "@/types/site";
+import { siteStories } from "@/data/site-stories";
 
-export const featuredSites: AtlasSite[] = [
+const featuredSiteRecords: AtlasSite[] = [
   {
     id: "love-canal",
     name: "Love Canal",
@@ -397,6 +398,11 @@ export const featuredSites: AtlasSite[] = [
         publisher: "U.S. Department of Energy",
         url: "https://www.energy.gov/wvdp/about-wvdp",
       },
+      {
+        title: "West Valley Begins Demolishing Legacy Fuel Reprocessing Facility",
+        publisher: "U.S. Department of Energy Office of Environmental Management",
+        url: "https://www.energy.gov/em/articles/west-valley-begins-demolishing-legacy-fuel-reprocessing-facility",
+      },
     ],
   },
   {
@@ -414,6 +420,11 @@ export const featuredSites: AtlasSite[] = [
         title: "Restoring the Buffalo River: Frequently Asked Questions",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/restoring-buffalo-river-faq",
+      },
+      {
+        title: "Steelfields Area I Revised Site Management Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00619/Report.VCP.V00619.2021-09-20.Area_I_Revised_SMP.pdf",
       },
     ],
   },
@@ -501,6 +512,11 @@ export const featuredSites: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932060/ROD.HW.932060.1991-02-01.gratwick_riverside.pdf",
       },
+      {
+        title: "Gratwick Riverside Park Trail Excavation Work Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932060/Work%20Plan.HW.932060.2024-08-14.Trail_Excavation_Notification.pdf",
+      },
     ],
   },
   {
@@ -518,6 +534,11 @@ export const featuredSites: AtlasSite[] = [
         title: "Niagara Mohawk–Cherry Farm Site Summary",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1012HVJ.txt",
+      },
+      {
+        title: "Niagara Mohawk Cherry Farm Superfund Site Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201480",
       },
     ],
   },
@@ -1948,3 +1969,8 @@ export const featuredSites: AtlasSite[] = [
     ],
   },
 ];
+
+export const featuredSites: AtlasSite[] = featuredSiteRecords.map((site) => ({
+  ...site,
+  story: site.story ?? siteStories[site.id],
+}));
