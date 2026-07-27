@@ -240,7 +240,8 @@ h1 {
 }
 
 .atlas-marker-wrap:hover,
-.atlas-marker-wrap:focus-within {
+.atlas-marker-wrap:focus-within,
+.atlas-marker-wrap.is-highlighted {
   z-index: 3;
 }
 
@@ -257,7 +258,8 @@ h1 {
 }
 
 .atlas-marker-wrap:hover .atlas-marker,
-.atlas-marker:focus-visible {
+.atlas-marker:focus-visible,
+.atlas-marker-wrap.is-highlighted .atlas-marker {
   width: 34px;
   height: 34px;
   margin: -6px 0 0 -3px;
@@ -300,7 +302,8 @@ h1 {
 }
 
 .atlas-marker-wrap:hover .atlas-marker-label,
-.atlas-marker:focus-visible + .atlas-marker-label {
+.atlas-marker:focus-visible + .atlas-marker-label,
+.atlas-marker-wrap.is-highlighted .atlas-marker-label {
   opacity: 1;
   transform: translate(-50%, 0);
 }

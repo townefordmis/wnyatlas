@@ -28,12 +28,15 @@ export function AtlasMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
   const markers = useRef<Marker[]>([]);
+  const markerElements = useRef<Map<string, HTMLDivElement>>(new Map());
   const [selectedSite, setSelectedSite] = useState<AtlasSite>(featuredSites[0]);
+  const [highlightedSiteId, setHighlightedSiteId] = useState<string | null>(null);
   const [mapUnavailable, setMapUnavailable] = useState(false);
 
   useEffect(() => {
     if (!mapContainer.current || map.current) return;
 
+    const markerElementMap = markerElements.current;
     const mapInstance = new maplibregl.Map({
       container: mapContainer.current,
       center: regionCenter,
@@ -76,6 +79,8 @@ export function AtlasMap() {
     markers.current = featuredSites.map((site) => {
       const markerElement = document.createElement("div");
       markerElement.className = "atlas-marker-wrap";
+      markerElement.dataset.siteId = site.id;
+      markerElementMap.set(site.id, markerElement);
 
       const markerButton = document.createElement("button");
       markerButton.type = "button";
@@ -93,18 +98,39 @@ export function AtlasMap() {
 
       markerElement.append(markerButton, markerLabel);
 
-      return new maplibregl.Marker({ element: markerElement, anchor: "bottom" })
+      const marker = new maplibregl.Marker({
+        element: markerElement,
+        anchor: "bottom",
+      })
         .setLngLat(site.coordinates)
         .addTo(mapInstance);
+
+      // MapLibre assigns role="button" to a custom marker container. The
+      // actual button inside it already provides the interactive semantics,
+      // so remove the duplicate role to avoid nesting one button inside
+      // another in the accessibility tree.
+      markerElement.removeAttribute("role");
+
+      return marker;
     });
 
     return () => {
       markers.current.forEach((marker) => marker.remove());
       markers.current = [];
+      markerElementMap.clear();
       mapInstance.remove();
       map.current = null;
     };
   }, []);
+
+  useEffect(() => {
+    markerElements.current.forEach((element, siteId) => {
+      element.classList.toggle(
+        "is-highlighted",
+        siteId === (highlightedSiteId ?? selectedSite.id),
+      );
+    });
+  }, [highlightedSiteId, selectedSite.id]);
 
   function focusSite(site: AtlasSite) {
     setSelectedSite(site);
@@ -160,6 +186,10 @@ export function AtlasMap() {
                 key={site.id}
                 type="button"
                 onClick={() => focusSite(site)}
+                onFocus={() => setHighlightedSiteId(site.id)}
+                onBlur={() => setHighlightedSiteId(null)}
+                onMouseEnter={() => setHighlightedSiteId(site.id)}
+                onMouseLeave={() => setHighlightedSiteId(null)}
                 aria-pressed={selectedSite.id === site.id}
               >
                 <span>{String(index + 1).padStart(2, "0")}</span>
