@@ -4,21 +4,32 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
-import type { Map as MapLibreMap, Marker } from "maplibre-gl";
+import type { GeoJSONSource, Map as MapLibreMap } from "maplibre-gl";
 
 import { featuredSites } from "@/data/featured-sites";
 import type { AtlasSite } from "@/types/site";
 
 const regionCenter: [number, number] = [-78.84, 42.8];
-const CLUSTER_ZOOM_THRESHOLD = 9;
-const CLUSTER_DISTANCE = 52;
 const SITE_LIST_PAGE_SIZE = 30;
 
-type SiteCluster = {
-  sites: AtlasSite[];
-  x: number;
-  y: number;
-};
+function siteFeatureCollection(sites: AtlasSite[]) {
+  return {
+    type: "FeatureCollection" as const,
+    features: sites.map((site) => ({
+      type: "Feature" as const,
+      id: site.id,
+      properties: {
+        id: site.id,
+        name: site.name,
+        category: site.category,
+      },
+      geometry: {
+        type: "Point" as const,
+        coordinates: site.coordinates,
+      },
+    })),
+  };
+}
 
 const categoryLabels: Record<AtlasSite["category"], string> = {
   cleanup: "Cleanup",
@@ -37,11 +48,8 @@ const evidenceLabels: Record<AtlasSite["evidenceStatus"], string> = {
 export function AtlasMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
-  const markers = useRef<Marker[]>([]);
-  const clusterMarkers = useRef<Marker[]>([]);
-  const markerElements = useRef<Map<string, HTMLDivElement>>(new Map());
   const visibleSites = useRef<AtlasSite[]>(featuredSites);
-  const refreshMarkers = useRef<() => void>(() => undefined);
+  const activeSiteId = useRef(featuredSites[0].id);
   const [selectedSite, setSelectedSite] = useState<AtlasSite>(featuredSites[0]);
   const [highlightedSiteId, setHighlightedSiteId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
@@ -78,7 +86,6 @@ export function AtlasMap() {
     if (!mapContainer.current || map.current) return;
 
     const isMobileViewport = window.matchMedia("(max-width: 620px)").matches;
-    const markerElementMap = markerElements.current;
     const mapInstance = new maplibregl.Map({
       container: mapContainer.current,
       center: regionCenter,
@@ -89,6 +96,7 @@ export function AtlasMap() {
       attributionControl: false,
       style: {
         version: 8,
+        glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
         sources: {
           openStreetMap: {
             type: "raster",
@@ -97,6 +105,13 @@ export function AtlasMap() {
             attribution:
               '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           },
+          atlasSites: {
+            type: "geojson",
+            data: siteFeatureCollection(featuredSites),
+            cluster: true,
+            clusterMaxZoom: 9,
+            clusterRadius: 52,
+          },
         },
         layers: [
           {
@@ -104,13 +119,75 @@ export function AtlasMap() {
             type: "raster",
             source: "openStreetMap",
           },
+          {
+            id: "site-clusters",
+            type: "circle",
+            source: "atlasSites",
+            filter: ["has", "point_count"],
+            paint: {
+              "circle-color": "#176b87",
+              "circle-radius": ["step", ["get", "point_count"], 18, 10, 22, 30, 27],
+              "circle-stroke-color": "#f5f0e5",
+              "circle-stroke-width": 3,
+            },
+          },
+          {
+            id: "site-cluster-count",
+            type: "symbol",
+            source: "atlasSites",
+            filter: ["has", "point_count"],
+            layout: {
+              "text-field": ["get", "point_count_abbreviated"],
+              "text-font": ["Open Sans Bold"],
+              "text-size": 12,
+            },
+            paint: { "text-color": "#ffffff" },
+          },
+          {
+            id: "site-points",
+            type: "circle",
+            source: "atlasSites",
+            filter: ["!", ["has", "point_count"]],
+            paint: {
+              "circle-color": [
+                "match",
+                ["get", "category"],
+                "cleanup", "#b6462c",
+                "industry", "#263943",
+                "pfas", "#8b5e34",
+                "radiological", "#7b3f86",
+                "waterway", "#176b87",
+                "#263943",
+              ],
+              "circle-radius": 9,
+              "circle-stroke-color": "#f5f0e5",
+              "circle-stroke-width": 3,
+            },
+          },
+          {
+            id: "selected-site-point",
+            type: "circle",
+            source: "atlasSites",
+            filter: ["==", ["get", "id"], featuredSites[0].id],
+            paint: {
+              "circle-color": "#e0643f",
+              "circle-radius": 13,
+              "circle-stroke-color": "#263943",
+              "circle-stroke-width": 3,
+            },
+          },
         ],
       },
     });
 
     map.current = mapInstance;
-    const resizeObserver = new ResizeObserver(() => mapInstance.resize());
+    const resizeMap = () => {
+      window.requestAnimationFrame(() => mapInstance.resize());
+    };
+    const resizeObserver = new ResizeObserver(resizeMap);
     resizeObserver.observe(mapContainer.current);
+    window.addEventListener("resize", resizeMap);
+    window.visualViewport?.addEventListener("resize", resizeMap);
     mapInstance.addControl(
       new maplibregl.NavigationControl({ showCompass: false }),
       "top-right",
@@ -121,159 +198,84 @@ export function AtlasMap() {
     );
     mapInstance.on("error", () => setMapUnavailable(true));
 
-    markers.current = featuredSites.map((site) => {
-      const markerElement = document.createElement("div");
-      markerElement.className = "atlas-marker-wrap";
-      markerElement.dataset.siteId = site.id;
-      markerElementMap.set(site.id, markerElement);
-
-      const markerButton = document.createElement("button");
-      markerButton.type = "button";
-      markerButton.className = `atlas-marker marker-${site.category}`;
-      markerButton.setAttribute(
-        "aria-label",
-        `Show ${site.name}, ${site.municipality}`,
-      );
-      markerButton.addEventListener("click", () => setSelectedSite(site));
-
-      const markerLabel = document.createElement("span");
-      markerLabel.className = "atlas-marker-label";
-      markerLabel.setAttribute("aria-hidden", "true");
-      markerLabel.textContent = site.name;
-
-      markerElement.append(markerButton, markerLabel);
-
-      const marker = new maplibregl.Marker({
-        element: markerElement,
-        anchor: "bottom",
-        subpixelPositioning: true,
-      })
-        .setLngLat(site.coordinates)
-        .addTo(mapInstance);
-
-      // MapLibre assigns role="button" to a custom marker container. The
-      // actual button inside it already provides the interactive semantics,
-      // so remove the duplicate role to avoid nesting one button inside
-      // another in the accessibility tree.
-      markerElement.removeAttribute("role");
-
-      return marker;
+    mapInstance.on("load", () => {
+      const source = mapInstance.getSource("atlasSites") as GeoJSONSource;
+      source.setData(siteFeatureCollection(visibleSites.current));
+      mapInstance.setFilter("selected-site-point", [
+        "==",
+        ["get", "id"],
+        activeSiteId.current,
+      ]);
+      // Mobile browser chrome and responsive layout can settle one frame
+      // after the map's load event. Resize again after that final layout.
+      resizeMap();
     });
 
-    function clearClusters() {
-      clusterMarkers.current.forEach((marker) => marker.remove());
-      clusterMarkers.current = [];
+    const selectFeature = (
+      event: maplibregl.MapMouseEvent & {
+        features?: maplibregl.MapGeoJSONFeature[];
+      },
+    ) => {
+      const siteId = event.features?.[0]?.properties?.id;
+      const site = featuredSites.find((candidate) => candidate.id === siteId);
+      if (site) setSelectedSite(site);
+    };
+
+    mapInstance.on("click", "site-points", selectFeature);
+    mapInstance.on("click", "selected-site-point", selectFeature);
+    mapInstance.on("click", "site-clusters", async (event) => {
+      const feature = event.features?.[0];
+      const clusterId = feature?.properties?.cluster_id;
+      if (clusterId === undefined || feature?.geometry.type !== "Point") return;
+
+      const source = mapInstance.getSource("atlasSites") as GeoJSONSource;
+      const zoom = await source.getClusterExpansionZoom(clusterId);
+      mapInstance.easeTo({
+        center: feature.geometry.coordinates as [number, number],
+        zoom,
+        essential: false,
+      });
+    });
+
+    for (const layer of [
+      "site-points",
+      "selected-site-point",
+      "site-clusters",
+    ]) {
+      mapInstance.on("mouseenter", layer, () => {
+        mapInstance.getCanvas().style.cursor = "pointer";
+      });
+      mapInstance.on("mouseleave", layer, () => {
+        mapInstance.getCanvas().style.cursor = "";
+      });
     }
-
-    function drawVisibleMarkers() {
-      clearClusters();
-
-      const sites = visibleSites.current;
-      const visibleIds = new Set(sites.map((site) => site.id));
-
-      markerElementMap.forEach((element, siteId) => {
-        element.style.display =
-          visibleIds.has(siteId) && mapInstance.getZoom() >= CLUSTER_ZOOM_THRESHOLD
-            ? ""
-            : "none";
-      });
-
-      if (mapInstance.getZoom() >= CLUSTER_ZOOM_THRESHOLD) return;
-
-      // Keep every site inside its geographic cluster at regional zoom.
-      // Pulling the selected site out as a separate pin caused it to overlap
-      // the nearby cluster and made the regional view harder to read.
-      const clusterCandidates = sites;
-      const clusters: SiteCluster[] = [];
-
-      clusterCandidates.forEach((site) => {
-        const point = mapInstance.project(site.coordinates);
-        const nearbyCluster = clusters.find(
-          (cluster) =>
-            Math.hypot(cluster.x - point.x, cluster.y - point.y) <
-            CLUSTER_DISTANCE,
-        );
-
-        if (nearbyCluster) {
-          const count = nearbyCluster.sites.length;
-          nearbyCluster.x = (nearbyCluster.x * count + point.x) / (count + 1);
-          nearbyCluster.y = (nearbyCluster.y * count + point.y) / (count + 1);
-          nearbyCluster.sites.push(site);
-        } else {
-          clusters.push({ sites: [site], x: point.x, y: point.y });
-        }
-      });
-
-      clusters.forEach((cluster) => {
-        if (cluster.sites.length === 1) {
-          const site = cluster.sites[0];
-          markerElementMap.get(site.id)!.style.display = "";
-          return;
-        }
-
-        const longitude =
-          cluster.sites.reduce((sum, site) => sum + site.coordinates[0], 0) /
-          cluster.sites.length;
-        const latitude =
-          cluster.sites.reduce((sum, site) => sum + site.coordinates[1], 0) /
-          cluster.sites.length;
-        const clusterButton = document.createElement("button");
-        clusterButton.type = "button";
-        clusterButton.className = "atlas-cluster";
-        clusterButton.textContent = String(cluster.sites.length);
-        clusterButton.setAttribute(
-          "aria-label",
-          `Zoom in to explore ${cluster.sites.length} nearby places`,
-        );
-        clusterButton.addEventListener("click", () => {
-          mapInstance.flyTo({
-            center: [longitude, latitude],
-            zoom: Math.min(CLUSTER_ZOOM_THRESHOLD + 0.5, mapInstance.getZoom() + 2),
-            essential: false,
-          });
-        });
-
-        clusterMarkers.current.push(
-          new maplibregl.Marker({
-            element: clusterButton,
-            subpixelPositioning: true,
-          })
-            .setLngLat([longitude, latitude])
-            .addTo(mapInstance),
-        );
-      });
-
-    }
-
-    refreshMarkers.current = drawVisibleMarkers;
-    mapInstance.on("zoomend", drawVisibleMarkers);
-    drawVisibleMarkers();
 
     return () => {
-      mapInstance.off("zoomend", drawVisibleMarkers);
-      markers.current.forEach((marker) => marker.remove());
-      markers.current = [];
-      clearClusters();
-      markerElementMap.clear();
       resizeObserver.disconnect();
+      window.removeEventListener("resize", resizeMap);
+      window.visualViewport?.removeEventListener("resize", resizeMap);
       mapInstance.remove();
       map.current = null;
     };
   }, []);
 
   useEffect(() => {
-    markerElements.current.forEach((element, siteId) => {
-      element.classList.toggle(
-        "is-highlighted",
-        siteId === (highlightedSiteId ?? displayedSite.id),
-      );
-    });
-    refreshMarkers.current();
+    activeSiteId.current = highlightedSiteId ?? displayedSite.id;
+    if (map.current?.getLayer("selected-site-point")) {
+      map.current.setFilter("selected-site-point", [
+        "==",
+        ["get", "id"],
+        activeSiteId.current,
+      ]);
+    }
   }, [displayedSite.id, highlightedSiteId]);
 
   useEffect(() => {
     visibleSites.current = filteredSites;
-    refreshMarkers.current();
+    const source = map.current?.getSource("atlasSites") as
+      | GeoJSONSource
+      | undefined;
+    source?.setData(siteFeatureCollection(filteredSites));
   }, [filteredSites]);
 
   function focusSite(site: AtlasSite) {
