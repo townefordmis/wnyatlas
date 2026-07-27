@@ -1,6 +1,435 @@
 import type { AtlasStory } from "@/types/site";
 
 export const siteStories: Partial<Record<string, AtlasStory>> = {
+  "5565-river-road": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The 5565 River Road property lies within Tonawanda's heavily industrialized Niagara River corridor. Historic aerial photographs show largely undeveloped land in 1927, followed by nearby petroleum-storage and truck-terminal activity and increasing deposits of industrial fill after World War II.",
+      "By the late 1970s, fill covered much of the property and obscured portions of Rattlesnake Creek and a smaller southern drainage. A 2009 environmental assessment documented large fill mounds and surface drums, leading to state investigation and classification as a site requiring remedial action.",
+    ],
+    timeline: [
+      { period: "1927", event: "Aerial photography showed the property as largely undeveloped." },
+      { period: "1950s–1970s", event: "Industrial development expanded nearby, while fill accumulated across the property and altered local drainage." },
+      { period: "2009", event: "A Phase I assessment documented extensive industrial fill and discarded drums at the surface." },
+      { period: "2011–2012", event: "DEC completed site characterization and classified the property as a Class 2 inactive hazardous-waste site." },
+      { period: "Present", event: "The upland property and documented PCB-affected shoreline sediment remain part of an active remedial record." },
+    ],
+    documentedImpacts: [
+      "Industrial fill of uncertain origin covers much of the property and locally buried or displaced former drainage channels.",
+      "Discarded drums and other debris were reported, although drums described in older accounts as containing black tar-like material were not located during DEC's preliminary assessment.",
+      "DEC's sediment inventory identifies PCB-affected sediment associated with the site along the Niagara River edge.",
+    ],
+    cleanupAndControls: [
+      "State investigation has used soil, groundwater, surface-water, and sediment information to distinguish the upland fill from shoreline impacts.",
+      "Class 2 status means the defined site requires remedial action; it should not be presented as a completed cleanup.",
+      "Future work must account for buried fill, altered drainage, and the relationship between upland sources and river sediment.",
+    ],
+    presentDay: [
+      "The property remains an active state cleanup site within an operating industrial corridor. The atlas treats its documented boundary separately from neighboring terminals, tank farms, and cleanup sites and does not infer one continuous corridor-wide plume.",
+    ],
+    researchNotes: [
+      "Add the final remedial decision and construction milestones when DEC issues them.",
+      "Digitize the historic Rattlesnake Creek alignment and compare it with the modern site and sediment boundaries.",
+    ],
+  },
+  "tennessee-gas-station-229": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Station 229 is a natural-gas pipeline compressor station on East Eden Road, part of the infrastructure that moved gas through rural Western New York. Compressor stations historically used large engines, lubricating systems, electrical equipment, and drainage networks that could create environmental impacts far from the region's better-known urban factories.",
+      "The state cleanup record centers on PCB contamination associated with the station and its drainage or sediment areas. The site is now classified for long-term management rather than unrestricted closure.",
+    ],
+    timeline: [
+      { period: "Pipeline era", event: "The East Eden Road property operated as Tennessee Gas Pipeline Compressor Station 229." },
+      { period: "Investigation", event: "State and company investigations identified PCB-affected areas associated with station operations and drainage." },
+      { period: "Remedial work", event: "Contaminated material was addressed and controls were established for residual impacts." },
+      { period: "Long-term phase", event: "New York reclassified the cleanup as Class 4, indicating that site management remains necessary." },
+    ],
+    documentedImpacts: [
+      "PCBs are the defining contaminant in the state remedial and sediment-mapping record.",
+      "Affected sediment and drainage features extend the interpretation beyond a single equipment pad or building.",
+      "The mapped cleanup area is site-specific and does not establish contamination across the wider rural landscape.",
+    ],
+    cleanupAndControls: [
+      "Remedial actions addressed identified PCB source and sediment areas.",
+      "Monitoring, inspection, land-use requirements, and maintenance preserve the remedy where contamination remains.",
+      "Current operating permits for the compressor station are distinct from the inactive hazardous-waste cleanup record.",
+    ],
+    presentDay: [
+      "Station 229 remains an instructive rural industrial site: major cleanup construction has been completed, while Class 4 status records continuing stewardship. The mapped sediment area should not be mistaken for a general warning about every nearby stream or property.",
+    ],
+    researchNotes: [
+      "Add the station construction date, compressor technology, and exact source of the historical PCB releases from verified company or agency records.",
+      "Map the remedial drainage and sediment features separately from the larger operating station parcel.",
+    ],
+  },
+  "weber-knapp-company": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Weber-Knapp property at 441 Chandler Street is part of Jamestown's dense Chadakoin River manufacturing district. Industrial and residential uses occupied the area by at least 1902; Weber-Knapp acquired portions beginning in 1909, and a factory built around 1910 grew through repeated additions into an approximately 105,000-square-foot complex.",
+      "A trichloroethylene vapor degreaser operated from about 1969 to 1993 and was connected to a 2,000-gallon solvent tank. Later investigation identified chlorinated-solvent contamination in overburden and bedrock groundwater, together with petroleum product and 1,4-dioxane concerns.",
+    ],
+    timeline: [
+      { period: "1902–1910", event: "Earlier neighborhood uses gave way to Weber-Knapp acquisition and construction of the principal factory." },
+      { period: "1910s–1960s", event: "The plant expanded, absorbing former dwellings and a section of Morse Avenue into the industrial complex." },
+      { period: "Circa 1969–1993", event: "A TCE vapor degreaser and associated solvent tank operated at the facility." },
+      { period: "2019 onward", event: "The property entered New York's Brownfield Cleanup Program for investigation and remediation." },
+      { period: "2022 onward", event: "A groundwater extraction and treatment interim measure began operating while the broader remedy advanced." },
+    ],
+    documentedImpacts: [
+      "TCE and related chlorinated compounds affected soil and groundwater, including fractured bedrock.",
+      "Investigation also identified light non-aqueous-phase liquid and 1,4-dioxane in parts of the groundwater system.",
+      "The Chadakoin River edge and sediment required controls separate from the interior manufacturing source areas.",
+    ],
+    cleanupAndControls: [
+      "Groundwater extraction and treatment began as an interim remedial measure in July 2022.",
+      "The remedy includes source-area work, building and vapor considerations, groundwater management, and a clean-stone sediment cover.",
+      "An environmental easement and site-management obligations govern the approximately 2.65-acre cleanup property.",
+    ],
+    presentDay: [
+      "Weber-Knapp remains a layered manufacturing and cleanup property beside the Chadakoin River. Active treatment and engineered controls are signs of a functioning remedy, not evidence that every deep-groundwater impact has disappeared.",
+    ],
+    researchNotes: [
+      "Build a product and employment timeline from Weber-Knapp catalogs, city directories, and local archives.",
+      "Track groundwater-treatment performance and distinguish Weber-Knapp impacts from neighboring D.C. Rollforms conditions.",
+    ],
+  },
+  "pvs-chemicals-buffalo": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The PVS Chemicals property on Lee Street belongs to South Buffalo's long chemical-manufacturing and bulk-material corridor. Its setting near rail, the Buffalo River industrial belt, and other heavy industries helped make this part of the city a major production landscape during the twentieth century.",
+      "New York lists the property as an active Class 2 inactive hazardous-waste disposal site. That classification establishes a significant remedial need for the defined site, while the available public record requires care when assigning particular releases to individual operating eras.",
+    ],
+    timeline: [
+      { period: "Industrial development", event: "Chemical handling and manufacturing became established on the Lee Street property." },
+      { period: "State investigation", event: "DEC evaluated waste-management areas, soil, and groundwater associated with the facility." },
+      { period: "Class 2 listing", event: "New York identified the defined property as requiring remedial action." },
+      { period: "Present", event: "The site remains in the active investigation and cleanup program while industrial permitting follows a separate regulatory track." },
+    ],
+    documentedImpacts: [
+      "The state registry identifies hazardous-waste impacts significant enough to require action at the defined site.",
+      "Chemical manufacturing and handling make soil, groundwater, tanks, process areas, and former waste-management features important lines of investigation.",
+      "Conditions at PVS should not be merged with Buffalo Color or other nearby South Buffalo chemical properties without site-specific evidence.",
+    ],
+    cleanupAndControls: [
+      "DEC oversight governs investigation, remedy selection, and any required interim actions.",
+      "Active industrial permits regulate current operations but do not substitute for the historical cleanup program.",
+      "Final controls and completion status should be updated from DEC decision and construction documents as the remedy progresses.",
+    ],
+    presentDay: [
+      "PVS remains an active industrial and remedial property. The atlas presents the verified Class 2 status and avoids treating the entire Lee Street or Buffalo River corridor as a single contamination source.",
+    ],
+    researchNotes: [
+      "Locate the most recent remedial investigation, interim-action, and registry-classification documents.",
+      "Develop a verified ownership, product, and waste-management chronology before adding process-specific claims.",
+    ],
+  },
+  "depew-village-landfill": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Depew Village Landfill was an unrecorded municipal disposal area near a bend of Cayuga Creek. The exact landfill limits were never documented; later investigation treated a roughly 32-acre study area, including a 1.3-acre registry parcel on a creek-bounded peninsula and additional fill near Zurbrick Road.",
+      "The site has also been called the Depew DPW/Cayuga Creek and Zurbrick Road site. Its history combines municipal dumping, creek-bank filling, floodplain impacts, and later public-works and sewer infrastructure.",
+    ],
+    timeline: [
+      { period: "Disposal era", event: "Municipal and other fill was placed near Cayuga Creek without a complete map of the landfill limits." },
+      { period: "1980s", event: "The property entered the state hazardous-waste registry and underwent early investigation." },
+      { period: "2008–2009", event: "DEC selected separate remedies for the landfill/source area and the Cayuga Creek, sediment, floodplain, and Zurbrick Road areas." },
+      { period: "2010s", event: "Remedial construction addressed contaminated fill, creek-bank material, and exposure pathways." },
+      { period: "Present", event: "The completed construction remains subject to site management, inspection, and periodic review." },
+    ],
+    documentedImpacts: [
+      "Landfilled material and debris extended beyond the small original registry parcel.",
+      "Contaminated fill had been dumped down the Zurbrick Road slope and affected creek-bank or floodplain areas.",
+      "Cayuga Creek sediment and surface-water pathways were evaluated as a separate operable unit.",
+    ],
+    cleanupAndControls: [
+      "DEC divided the remedy into operable units so upland fill and the creek environment could be addressed appropriately.",
+      "Excavation, consolidation or cover, bank restoration, and other construction measures reduced contact and migration.",
+      "A site-management plan, inspections, and institutional or engineering controls govern remaining material.",
+    ],
+    presentDay: [
+      "The landfill is no longer an open disposal operation, but its remedy remains part of the Cayuga Creek landscape. The atlas distinguishes the confirmed cleanup areas from the much larger creek watershed.",
+    ],
+    researchNotes: [
+      "Digitize the two operable-unit boundaries and the final construction limits.",
+      "Add disposal dates and accepted waste types only where supported by municipal or DEC records.",
+    ],
+  },
+  "lockport-city-landfill": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The City of Lockport operated this approximately 30-acre municipal and industrial landfill from the early 1950s until 1976. The site occupies two fill areas separated by railroad tracks near Gulf Creek, a wetland, city facilities, and the Niagara Escarpment.",
+      "Reported wastes included sewage sludge, peroxide-contaminated wood starch, chemical wastes, steel barrels, plastics, glass, cardboard, and paper. Operators reportedly trenched into overburden, deposited and burned waste, and covered it with excavated material.",
+    ],
+    timeline: [
+      { period: "Early 1950s–1976", event: "The city operated the property as a municipal and industrial landfill." },
+      { period: "1981 onward", event: "State investigations examined waste, groundwater, drainage, slope stability, and nearby Gulf Creek." },
+      { period: "1992", event: "DEC selected the landfill remedy in a Record of Decision." },
+      { period: "Post-closure era", event: "The site was closed and placed under long-term cap, drainage, access, and monitoring requirements." },
+      { period: "Present", event: "Periodic inspection and maintenance continue under Class 4 site management." },
+    ],
+    documentedImpacts: [
+      "Municipal and industrial wastes were buried and sometimes burned within two fill areas.",
+      "Drums and refuse were historically visible at the surface, and a buried drainage pipe and steep landfill slopes complicated the setting.",
+      "Gulf Creek, nearby wetlands, groundwater, drainage, and slope stability were important potential migration pathways.",
+    ],
+    cleanupAndControls: [
+      "Closure measures covered and graded the waste mass and established controlled drainage.",
+      "Fencing, access restrictions, vegetation, ditches, swales, and slope stabilization protect the closed landfill.",
+      "Routine inspection and maintenance address erosion, settlement, drainage blockage, vegetation, and unauthorized vehicle access.",
+    ],
+    presentDay: [
+      "The landfill is properly closed but remains a managed waste site. Class 4 status means the remedy depends on continuing care; it does not mean the buried municipal and industrial waste was wholly removed.",
+    ],
+    researchNotes: [
+      "Add a final cap and drainage map and connect Gulf Creek carefully to the wider Eighteen Mile Creek watershed.",
+      "Track the newest periodic-review findings and any repairs to slopes, drainage structures, or access controls.",
+    ],
+  },
+  "batavia-iron-and-metal": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The 6.8-acre property at 301 Bank Street operated as Batavia Waste Material Company and later Batavia Iron and Metal from 1951 to 1999. The business recycled scrap metal and handled electrical transformers.",
+      "Two furnaces operated from the early 1970s until 1994 to reclaim wire and smelt white metals. Before the furnaces were installed, wire insulation was reportedly removed by open burning in yard dumpsters, leaving a mixed metal-recycling legacy in fill, soil, groundwater, and neighboring areas.",
+    ],
+    timeline: [
+      { period: "1951–1999", event: "The property operated as a metal-recycling and scrap-handling facility." },
+      { period: "Early 1970s–1994", event: "Two furnaces reclaimed wire and smelted white metals, replacing earlier open burning used to strip insulation." },
+      { period: "2013", event: "DEC selected a remedy addressing four principal areas of concern." },
+      { period: "2022 onward", event: "State remedial construction advanced after design-phase investigation." },
+      { period: "2024", event: "DEC documented modifications to the remedy based on additional investigation and construction findings." },
+    ],
+    documentedImpacts: [
+      "PCBs and pesticides affected fill near the on-site building.",
+      "PCBs and metals occurred in soil and fill across the property, with metals also affecting nearby Bank Street parcels.",
+      "Debris piles, groundwater conditions, wetland sediment, and an off-site vapor pathway required separate evaluation.",
+    ],
+    cleanupAndControls: [
+      "The remedy excavates contaminated soil, fill, debris, and wetland sediment where required, followed by verification and restoration.",
+      "Groundwater treatment includes enhanced bioremediation in the affected area.",
+      "Off-site vapor mitigation, institutional controls, and a site-management plan protect against remaining exposure pathways.",
+    ],
+    presentDay: [
+      "Batavia Iron and Metal remains an active state cleanup whose design evolved as field work refined the extent of contamination. The property and specific neighboring parcels are documented; the findings should not be generalized to the wider Bank Street neighborhood.",
+    ],
+    researchNotes: [
+      "Track final excavation quantities, wetland restoration, groundwater performance, and construction completion.",
+      "Add worker, business, and scrap-market history without implying unverified exposure outcomes.",
+    ],
+  },
+  "former-electruk-battery": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Former Electruk Battery site at 4922 IDA Park Drive represents a smaller industrial cleanup within Lockport's manufacturing district. Battery-related activity raised concerns about metals and other process materials in site soil.",
+      "Niagara County carried the property through New York's Environmental Restoration Program, a program designed to investigate and clean publicly controlled brownfields for reuse.",
+    ],
+    timeline: [
+      { period: "Industrial era", event: "Battery-related operations occupied the IDA Park Drive property." },
+      { period: "Environmental Restoration Program", event: "The property was investigated and remediated under state oversight." },
+      { period: "2012", event: "New York issued a Certificate of Completion and established continuing institutional controls." },
+      { period: "Present", event: "Commercial or industrial reuse remains subject to an environmental easement and site-management requirements." },
+    ],
+    documentedImpacts: [
+      "Battery handling or manufacturing created metals-related soil concerns requiring investigation and cleanup.",
+      "The completed remedy left residual conditions appropriate for controlled commercial or industrial use rather than unrestricted use.",
+      "The defined 1.35-acre controlled property should not be conflated with the larger industrial park.",
+    ],
+    cleanupAndControls: [
+      "State-supervised remedial work addressed identified contaminated material before completion.",
+      "The environmental easement restricts use to commercial and industrial purposes and prohibits unauthorized groundwater use.",
+      "A site-management and soil-management framework governs future disturbance; the completion record identifies no continuing engineering control.",
+    ],
+    presentDay: [
+      "The site is a completed environmental-restoration project available for controlled commercial or industrial use. Its easement is the durable link between the historic cleanup and safe future excavation or redevelopment.",
+    ],
+    researchNotes: [
+      "Add the final engineering report's excavation quantities and verified contaminants.",
+      "Clarify the company's products, operating dates, and relationship to surrounding Lockport industries.",
+    ],
+  },
+  "stauffer-chemical-pasny": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Stauffer Chemical/PASNY site is a roughly 23-acre controlled property on Lewiston Road near the Niagara Power Project industrial landscape. Its history reflects the close physical relationship among chemical production, high-voltage infrastructure, transportation corridors, and the remade landscape around the Niagara River.",
+      "State records document a completed remedy with contamination remaining under institutional and site-management controls. The Stauffer parcel must be interpreted separately from other Lewiston and Niagara Falls chemical sites despite shared corporate and industrial geography.",
+    ],
+    timeline: [
+      { period: "Industrial era", event: "Chemical operations occupied the Lewiston Road property." },
+      { period: "Investigation and remedy", event: "DEC and responsible parties characterized and addressed contaminated site media." },
+      { period: "Remedial completion", event: "Major cleanup construction was completed and the site was reclassified for long-term management." },
+      { period: "Present", event: "A Class 4 designation and environmental easement preserve use and management requirements." },
+    ],
+    documentedImpacts: [
+      "Historic chemical production and waste management affected defined portions of the property.",
+      "Residual contamination remains compatible only with the assumptions and controls established by the remedy.",
+      "The site record should not be used to assign conditions to the entire Power Authority property or neighboring parcels.",
+    ],
+    cleanupAndControls: [
+      "Remedial construction addressed identified source and exposure areas under DEC oversight.",
+      "An environmental easement controls approximately 23 acres and restricts incompatible use or disturbance.",
+      "Site management, inspection, monitoring, and soil-handling requirements maintain the remedy.",
+    ],
+    presentDay: [
+      "Stauffer Chemical/PASNY is a closed Class 4 cleanup rather than an unrestricted former factory. Long-term controls are part of the completed remedy and should remain visible in any account of redevelopment or public access.",
+    ],
+    researchNotes: [
+      "Develop a verified plant, product, ownership, and waste-disposal chronology from the remedial investigation and corporate archives.",
+      "Digitize the easement and distinguish it from the larger PASNY and Lewiston industrial landscape.",
+    ],
+  },
+  "frontier-chemical-pendleton": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Frontier Chemical Waste Process operated an industrial-waste treatment facility in Pendleton from 1958 to 1974. The plant treated plating wastes, pickle liquors, and other acidic liquids from plating and metal-finishing businesses.",
+      "Treatment residuals were discharged into the approximately 15-acre Quarry Lake. After operations ended, much of the former process area was filled and graded, leaving contaminated sediment, soil, and groundwater that required a containment-based remedy.",
+    ],
+    timeline: [
+      { period: "1958–1974", event: "Frontier Chemical treated plating and metal-finishing wastes at the Pendleton facility." },
+      { period: "Post-1974", event: "Waste-treatment operations ended and portions of the process area were filled and graded." },
+      { period: "1992", event: "DEC selected a containment and collection remedy in the site's Record of Decision." },
+      { period: "1990s", event: "Contaminated lake sediment was removed and consolidated in an on-site engineered landfill." },
+      { period: "Present", event: "The capped landfill and groundwater collection and pretreatment system operate under long-term management." },
+    ],
+    documentedImpacts: [
+      "Plating wastes, pickle liquors, and acidic industrial liquids generated contaminated treatment residuals.",
+      "Quarry Lake sediment received residuals from the waste-treatment process.",
+      "Contaminated soil and groundwater required containment and hydraulic control.",
+    ],
+    cleanupAndControls: [
+      "Contaminated lake sediment was excavated and placed within an approximately 11-acre on-site capped landfill.",
+      "A subsurface containment boundary and groundwater collection, conveyance, and pretreatment system limit migration.",
+      "Fencing, cap maintenance, wetland-area controls, monitoring, and annual periodic review preserve the remedy.",
+    ],
+    presentDay: [
+      "The Pendleton site is a closed Class 4 facility with waste consolidated and managed on site. It is entirely distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls, which has a different operating history and remedy.",
+    ],
+    researchNotes: [
+      "Track current groundwater-system performance and Quarry Lake monitoring in future periodic reviews.",
+      "Map the capped landfill, Quarry Lake, wetland, former process area, and larger 75-acre property as separate features.",
+    ],
+  },
+  "1660-niagara-street-sediment": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The 1660 Niagara Street record represents a specific industrial shoreline property and associated Niagara River sediment area, not the entire West Side waterfront. The location developed within a corridor shaped by manufacturing, bulk handling, rail access, filling, and repeated property reuse.",
+      "DEC identifies PCB-affected sediment adjoining the cleanup property. That connection makes the shoreline an important example of how upland industrial activity and submerged environmental records must be researched together.",
+    ],
+    timeline: [
+      { period: "Industrial waterfront era", event: "Manufacturing and material-handling uses developed along the Niagara Street shoreline." },
+      { period: "Investigation", event: "Environmental work evaluated the upland parcel and adjoining river sediment." },
+      { period: "State cleanup record", event: "DEC established a site-specific remedial record for the property and associated sediment." },
+      { period: "Present", event: "PCB-affected sediment remains mapped as a bounded feature requiring careful interpretation and management." },
+    ],
+    documentedImpacts: [
+      "DEC's sediment inventory identifies PCBs in a defined shoreline sediment area.",
+      "Historic fill and industrial use make the upland-to-river pathway important to the site interpretation.",
+      "The available boundary does not support describing the entire upper Niagara River shoreline as affected by this site.",
+    ],
+    cleanupAndControls: [
+      "Investigation and remedial decisions distinguish upland soil or groundwater from submerged sediment.",
+      "Any shoreline construction, dredging, or sediment disturbance must account for the documented affected area.",
+      "The atlas uses the mapped sediment feature rather than extending the marker to unrelated waterfront parcels.",
+    ],
+    presentDay: [
+      "The site remains part of a rapidly changing Niagara Street waterfront. Redevelopment and public access should be described alongside, not in place of, the documented sediment record and any continuing controls.",
+    ],
+    researchNotes: [
+      "Add the exact upland ownership and industrial-use chronology from DEC reports and city directories.",
+      "Replace the centroid marker with verified upland and sediment geometry when authoritative downloadable boundaries are available.",
+    ],
+  },
+  "farwell-road-landfill": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Farwell Road Landfill is a former county-owned disposal site in the rural Town of Ischua. Its history shows that hazardous-waste management in Western New York was not limited to the Buffalo–Niagara industrial belt; smaller communities also inherited disposal areas requiring engineered closure.",
+      "New York selected the remedy in 2001. Contaminated material remains within the managed landfill, making deed restrictions, cover maintenance, drainage, monitoring, and formal site management essential parts of the cleanup.",
+    ],
+    timeline: [
+      { period: "Disposal era", event: "Waste was placed at the Farwell Road property before modern closure and hazardous-waste controls." },
+      { period: "Investigation", event: "State work characterized the landfill, surrounding environmental media, and potential exposure pathways." },
+      { period: "2001", event: "DEC selected the site remedy." },
+      { period: "Remedial construction", event: "The landfill was closed under an engineered, containment-based remedy." },
+      { period: "Present", event: "The site is inspected and managed under a revised long-term site-management plan." },
+    ],
+    documentedImpacts: [
+      "Residual contamination remains within the former disposal footprint.",
+      "Runoff, erosion, groundwater, and unauthorized disturbance are continuing concerns for a closed rural landfill.",
+      "The documented site does not establish contamination on unrelated surrounding farms or residences.",
+    ],
+    cleanupAndControls: [
+      "An engineered cover limits direct contact, erosion, and water infiltration.",
+      "Deed and land-use restrictions prevent incompatible development or uncontrolled excavation.",
+      "Inspection, maintenance, monitoring, reporting, and repair requirements are defined in the site-management plan.",
+    ],
+    presentDay: [
+      "Farwell Road is a closed, managed landfill. Its cleanup contains remaining waste and controls exposure; it should not be described either as an active open dump or as land returned to unrestricted use.",
+    ],
+    researchNotes: [
+      "Add verified operating dates, waste sources, and construction quantities from the remedial investigation and final engineering report.",
+      "Map the cap, drainage system, monitoring network, and controlled parcel separately.",
+    ],
+  },
+  "carroll-landfill": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Carroll Landfill is an approximately 25-acre former municipal and construction-and-demolition disposal property in the Frewsburg area. Its location near homes, wetlands, and Conewango Creek made leachate, groundwater, drainage, and surface-water protection central to the remedy.",
+      "The property later functioned in connection with solid-waste transfer activities, but the historic landfill and any later operating facilities require separate regulatory interpretation.",
+    ],
+    timeline: [
+      { period: "Landfill era", event: "Municipal and construction-and-demolition wastes were disposed at the Town of Carroll property." },
+      { period: "Investigation", event: "State and local work evaluated the waste mass, leachate, groundwater, wetlands, and nearby receptors." },
+      { period: "Remedial design", event: "The selected remedy was translated into landfill, collection, treatment, and monitoring construction plans." },
+      { period: "Construction and closure", event: "Engineering controls were installed to contain waste and manage contaminated water." },
+      { period: "Present", event: "Treatment, monitoring, inspection, and maintenance continue under long-term management." },
+    ],
+    documentedImpacts: [
+      "Landfill leachate and contaminated groundwater required collection and treatment.",
+      "The setting near Conewango Creek and wetlands created sensitive surface-water and ecological pathways.",
+      "The waste footprint and treatment infrastructure are site-specific and should not be generalized to all nearby land.",
+    ],
+    cleanupAndControls: [
+      "The remedy uses landfill closure and cover systems to reduce infiltration and direct contact.",
+      "Leachate or affected groundwater is collected and treated.",
+      "Monitoring wells, drainage structures, inspections, maintenance, access controls, and land-use restrictions support long-term performance.",
+    ],
+    presentDay: [
+      "Carroll Landfill remains a managed disposal property near an important creek corridor. The visible closure and treatment systems are continuing components of the remedy, not merely remnants of construction.",
+    ],
+    researchNotes: [
+      "Add verified disposal dates, accepted waste categories, and current transfer-station relationship.",
+      "Track treatment-system discharge performance and the newest groundwater and surface-water trends.",
+    ],
+  },
+  "dc-rollforms-proto-tool": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The D.C. Rollforms/Proto Tool complex occupied part of Jamestown's Chadakoin River industrial corridor. Forging, machining, heat treating, electroplating, and vapor degreasing supported tool production but also created multiple waste streams and source areas.",
+      "Investigation identified chlorinated solvents, petroleum, metals, and other industrial contaminants in soil and groundwater. Its riverbank setting required cleanup construction that protected the Chadakoin while removing source material.",
+    ],
+    timeline: [
+      { period: "Manufacturing era", event: "Tool production included forging, machining, heat treating, plating, and solvent degreasing." },
+      { period: "Investigation", event: "Environmental studies identified several contaminant groups and source areas." },
+      { period: "Remedial construction", event: "Contaminated material was excavated while temporary river-protection measures isolated the work." },
+      { period: "2009", event: "DEC certified completion of the major engineering construction." },
+      { period: "Present", event: "Shoreline stabilization and continuing institutional or site-management controls preserve the remedy." },
+    ],
+    documentedImpacts: [
+      "TCE, related breakdown products, toluene, xylenes, petroleum, and metals were associated with historic operations.",
+      "Oil and other industrial residues affected portions of soil and groundwater.",
+      "The proximity of the Chadakoin River required careful control of excavation, runoff, and bank stability.",
+    ],
+    cleanupAndControls: [
+      "Contaminated soil and source material were excavated for appropriate management or disposal.",
+      "Temporary barriers protected the river during construction, and the shoreline was stabilized afterward.",
+      "Remaining impacts are governed by approved covers, land-use or excavation controls, monitoring, and site management where required.",
+    ],
+    presentDay: [
+      "The former tool complex is a completed-construction cleanup within a larger riverfront manufacturing district. D.C. Rollforms and neighboring Weber-Knapp have related geography but distinct source histories and regulatory records.",
+    ],
+    researchNotes: [
+      "Develop a company and product history from Jamestown industrial directories and Proto Tool records.",
+      "Map excavation limits, stabilized shoreline, groundwater areas, and the boundary with Weber-Knapp.",
+    ],
+  },
   "durez-occidental-north-tonawanda": {
     lastReviewed: "July 27, 2026",
     background: [
