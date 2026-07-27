@@ -1,20 +1,18 @@
-import Link from "next/link";
-
 import { AtlasMap } from "@/components/atlas-map";
-import { featuredSites } from "@/data/featured-sites";
+import { SiteDirectory } from "@/components/site-directory";
 
 const categories = [
   ["Industrial history", "Factories, products, employers, and material flows"],
   ["Environmental legacy", "Documented contaminants, disposal, and waterways"],
-  ["Cleanup & controls", "Removal, caps, treatment, monitoring, and restrictions"],
-  ["Then & now", "What occupied each place and what is there today"],
+  [
+    "Waterways transformed",
+    "Straightened creeks, filled wetlands, and hardened shorelines",
+  ],
+  [
+    "Recovery & restoration",
+    "Cleanup, habitat repair, monitoring, and what returned",
+  ],
 ];
-
-const evidenceLabels = {
-  "well-documented": "Documented",
-  "research-in-progress": "Research in progress",
-  "research-lead": "Research lead",
-};
 
 export default function Home() {
   return (
@@ -70,49 +68,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="featured" id="sites">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">Starting collection</p>
-            <h2>{featuredSites.length} anchor places</h2>
-          </div>
-          <p>
-            Completed long-form stories are linked as their background, chronology,
-            environmental record, cleanup status, and primary sources finish review.
-          </p>
-        </div>
-        <div className="site-list">
-          {featuredSites.map((site, index) => (
-            <article key={site.id}>
-              <span className="site-number">{String(index + 1).padStart(2, "0")}</span>
-              <div>
-                <p className="site-meta">{site.category} · {site.county} County</p>
-                <h3>
-                  {site.story ? (
-                    <Link href={`/sites/${site.id}`}>{site.name}</Link>
-                  ) : (
-                    site.name
-                  )}
-                </h3>
-                <p>{site.summary}</p>
-                {site.atomicLegacy && (
-                  <p className="site-meta">
-                    {site.atomicLegacy.era} · {site.atomicLegacy.role}
-                  </p>
-                )}
-              </div>
-              <div className="site-actions">
-                <span className="evidence-pill">
-                  {evidenceLabels[site.evidenceStatus]}
-                </span>
-                {site.story && (
-                  <Link href={`/sites/${site.id}`}>Read the story →</Link>
-                )}
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+      <SiteDirectory />
 
       <section className="about-panel" id="about">
         <p className="eyebrow">Built as a public record</p>

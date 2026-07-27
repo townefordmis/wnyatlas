@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type { Map as MapLibreMap, Marker } from "maplibre-gl";
 
@@ -9,6 +9,14 @@ import { featuredSites } from "@/data/featured-sites";
 import type { AtlasSite } from "@/types/site";
 
 const regionCenter: [number, number] = [-78.84, 42.8];
+const CLUSTER_ZOOM_THRESHOLD = 9;
+const CLUSTER_DISTANCE = 52;
+
+type SiteCluster = {
+  sites: AtlasSite[];
+  x: number;
+  y: number;
+};
 
 const categoryLabels: Record<AtlasSite["category"], string> = {
   cleanup: "Cleanup",
@@ -28,10 +36,37 @@ export function AtlasMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
   const markers = useRef<Marker[]>([]);
+  const clusterMarkers = useRef<Marker[]>([]);
   const markerElements = useRef<Map<string, HTMLDivElement>>(new Map());
+  const visibleSites = useRef<AtlasSite[]>(featuredSites);
+  const activeSiteId = useRef(featuredSites[0].id);
+  const refreshMarkers = useRef<() => void>(() => undefined);
   const [selectedSite, setSelectedSite] = useState<AtlasSite>(featuredSites[0]);
   const [highlightedSiteId, setHighlightedSiteId] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+  const [county, setCounty] = useState("all");
+  const [category, setCategory] = useState("all");
   const [mapUnavailable, setMapUnavailable] = useState(false);
+
+  const filteredSites = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+
+    return featuredSites.filter((site) => {
+      const matchesQuery =
+        !normalizedQuery ||
+        [site.name, site.municipality, site.county, site.summary].some((value) =>
+          value.toLowerCase().includes(normalizedQuery),
+        );
+      const matchesCounty = county === "all" || site.county === county;
+      const matchesCategory = category === "all" || site.category === category;
+
+      return matchesQuery && matchesCounty && matchesCategory;
+    });
+  }, [category, county, query]);
+  const displayedSite =
+    filteredSites.find((site) => site.id === selectedSite.id) ??
+    filteredSites[0] ??
+    selectedSite;
 
   useEffect(() => {
     if (!mapContainer.current || map.current) return;
@@ -114,9 +149,99 @@ export function AtlasMap() {
       return marker;
     });
 
+    function clearClusters() {
+      clusterMarkers.current.forEach((marker) => marker.remove());
+      clusterMarkers.current = [];
+    }
+
+    function drawVisibleMarkers() {
+      clearClusters();
+
+      const sites = visibleSites.current;
+      const highlightedId = activeSiteId.current;
+      const visibleIds = new Set(sites.map((site) => site.id));
+
+      markerElementMap.forEach((element, siteId) => {
+        element.style.display =
+          visibleIds.has(siteId) && mapInstance.getZoom() >= CLUSTER_ZOOM_THRESHOLD
+            ? ""
+            : "none";
+      });
+
+      if (mapInstance.getZoom() >= CLUSTER_ZOOM_THRESHOLD) return;
+
+      const clusterCandidates = sites.filter((site) => site.id !== highlightedId);
+      const clusters: SiteCluster[] = [];
+
+      clusterCandidates.forEach((site) => {
+        const point = mapInstance.project(site.coordinates);
+        const nearbyCluster = clusters.find(
+          (cluster) =>
+            Math.hypot(cluster.x - point.x, cluster.y - point.y) <
+            CLUSTER_DISTANCE,
+        );
+
+        if (nearbyCluster) {
+          const count = nearbyCluster.sites.length;
+          nearbyCluster.x = (nearbyCluster.x * count + point.x) / (count + 1);
+          nearbyCluster.y = (nearbyCluster.y * count + point.y) / (count + 1);
+          nearbyCluster.sites.push(site);
+        } else {
+          clusters.push({ sites: [site], x: point.x, y: point.y });
+        }
+      });
+
+      clusters.forEach((cluster) => {
+        if (cluster.sites.length === 1) {
+          const site = cluster.sites[0];
+          markerElementMap.get(site.id)!.style.display = "";
+          return;
+        }
+
+        const longitude =
+          cluster.sites.reduce((sum, site) => sum + site.coordinates[0], 0) /
+          cluster.sites.length;
+        const latitude =
+          cluster.sites.reduce((sum, site) => sum + site.coordinates[1], 0) /
+          cluster.sites.length;
+        const clusterButton = document.createElement("button");
+        clusterButton.type = "button";
+        clusterButton.className = "atlas-cluster";
+        clusterButton.textContent = String(cluster.sites.length);
+        clusterButton.setAttribute(
+          "aria-label",
+          `Zoom in to explore ${cluster.sites.length} nearby places`,
+        );
+        clusterButton.addEventListener("click", () => {
+          mapInstance.flyTo({
+            center: [longitude, latitude],
+            zoom: Math.min(CLUSTER_ZOOM_THRESHOLD + 0.5, mapInstance.getZoom() + 2),
+            essential: false,
+          });
+        });
+
+        clusterMarkers.current.push(
+          new maplibregl.Marker({ element: clusterButton })
+            .setLngLat([longitude, latitude])
+            .addTo(mapInstance),
+        );
+      });
+
+      const activeMarker = markerElementMap.get(highlightedId);
+      if (activeMarker && visibleIds.has(highlightedId)) {
+        activeMarker.style.display = "";
+      }
+    }
+
+    refreshMarkers.current = drawVisibleMarkers;
+    mapInstance.on("zoomend", drawVisibleMarkers);
+    drawVisibleMarkers();
+
     return () => {
+      mapInstance.off("zoomend", drawVisibleMarkers);
       markers.current.forEach((marker) => marker.remove());
       markers.current = [];
+      clearClusters();
       markerElementMap.clear();
       mapInstance.remove();
       map.current = null;
@@ -124,13 +249,20 @@ export function AtlasMap() {
   }, []);
 
   useEffect(() => {
+    activeSiteId.current = highlightedSiteId ?? displayedSite.id;
     markerElements.current.forEach((element, siteId) => {
       element.classList.toggle(
         "is-highlighted",
-        siteId === (highlightedSiteId ?? selectedSite.id),
+        siteId === (highlightedSiteId ?? displayedSite.id),
       );
     });
-  }, [highlightedSiteId, selectedSite.id]);
+    refreshMarkers.current();
+  }, [displayedSite.id, highlightedSiteId]);
+
+  useEffect(() => {
+    visibleSites.current = filteredSites;
+    refreshMarkers.current();
+  }, [filteredSites]);
 
   function focusSite(site: AtlasSite) {
     setSelectedSite(site);
@@ -147,6 +279,12 @@ export function AtlasMap() {
       zoom: 7.8,
       essential: false,
     });
+  }
+
+  function clearFilters() {
+    setQuery("");
+    setCounty("all");
+    setCategory("all");
   }
 
   return (
@@ -178,63 +316,123 @@ export function AtlasMap() {
         </div>
 
         <aside className="map-sidebar" aria-label="Featured places">
+          <div className="atlas-filters">
+            <label htmlFor="atlas-search">Search places</label>
+            <input
+              id="atlas-search"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Name, town, or keyword"
+            />
+            <div>
+              <label>
+                <span>County</span>
+                <select
+                  value={county}
+                  onChange={(event) => setCounty(event.target.value)}
+                >
+                  <option value="all">All counties</option>
+                  <option value="Erie">Erie</option>
+                  <option value="Niagara">Niagara</option>
+                  <option value="Cattaraugus">Cattaraugus</option>
+                  <option value="Chautauqua">Chautauqua</option>
+                </select>
+              </label>
+              <label>
+                <span>Type</span>
+                <select
+                  value={category}
+                  onChange={(event) => setCategory(event.target.value)}
+                >
+                  <option value="all">All types</option>
+                  <option value="cleanup">Cleanup</option>
+                  <option value="industry">Industry</option>
+                  <option value="pfas">PFAS</option>
+                  <option value="radiological">Radiological</option>
+                  <option value="waterway">Waterway</option>
+                </select>
+              </label>
+            </div>
+            <p aria-live="polite">
+              {filteredSites.length} of {featuredSites.length} places
+              {(query || county !== "all" || category !== "all") && (
+                <button type="button" onClick={clearFilters}>
+                  Clear filters
+                </button>
+              )}
+            </p>
+          </div>
           <p className="field-label">Choose a place</p>
           <div className="map-site-list">
-            {featuredSites.map((site, index) => (
-              <button
-                className={selectedSite.id === site.id ? "is-selected" : ""}
-                key={site.id}
-                type="button"
-                onClick={() => focusSite(site)}
-                onFocus={() => setHighlightedSiteId(site.id)}
-                onBlur={() => setHighlightedSiteId(null)}
-                onMouseEnter={() => setHighlightedSiteId(site.id)}
-                onMouseLeave={() => setHighlightedSiteId(null)}
-                aria-pressed={selectedSite.id === site.id}
-              >
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <span>
-                  <strong>{site.name}</strong>
-                  <small>{site.municipality}</small>
-                </span>
-              </button>
-            ))}
+            {filteredSites.map((site) => {
+              const index = featuredSites.findIndex((record) => record.id === site.id);
+
+              return (
+                <button
+                  className={displayedSite.id === site.id ? "is-selected" : ""}
+                  key={site.id}
+                  type="button"
+                  onClick={() => focusSite(site)}
+                  onFocus={() => setHighlightedSiteId(site.id)}
+                  onBlur={() => setHighlightedSiteId(null)}
+                  onMouseEnter={() => setHighlightedSiteId(site.id)}
+                  onMouseLeave={() => setHighlightedSiteId(null)}
+                  aria-pressed={displayedSite.id === site.id}
+                >
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <span>
+                    <strong>{site.name}</strong>
+                    <small>{site.municipality}</small>
+                  </span>
+                </button>
+              );
+            })}
+            {filteredSites.length === 0 && (
+              <p className="map-empty">No places match these filters.</p>
+            )}
           </div>
 
-          <div className="map-detail" aria-live="polite">
-            <p>
-              {categoryLabels[selectedSite.category]} · {selectedSite.county} County
-            </p>
-            <h3>{selectedSite.name}</h3>
-            <p>{selectedSite.summary}</p>
-            {selectedSite.atomicLegacy && (
+          {filteredSites.length > 0 && (
+            <div className="map-detail" aria-live="polite">
               <p>
-                <strong>{selectedSite.atomicLegacy.era}:</strong>{" "}
-                {selectedSite.atomicLegacy.role}
+                {categoryLabels[displayedSite.category]} · {displayedSite.county}{" "}
+                County
               </p>
-            )}
-            <span>{evidenceLabels[selectedSite.evidenceStatus]}</span>
-            {selectedSite.story && (
-              <Link className="map-story-link" href={`/sites/${selectedSite.id}`}>
-                Read the full place record →
-              </Link>
-            )}
-            {selectedSite.sources && (
-              <div className="map-sources">
-                <strong>Official sources</strong>
-                {selectedSite.sources.map((source) => (
-                  <a
-                    href={source.url}
-                    key={source.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {source.publisher}: {source.title}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+              <h3>{displayedSite.name}</h3>
+              <p>{displayedSite.summary}</p>
+              {displayedSite.atomicLegacy && (
+                <p>
+                  <strong>{displayedSite.atomicLegacy.era}:</strong>{" "}
+                  {displayedSite.atomicLegacy.role}
+                </p>
+              )}
+              <span>{evidenceLabels[displayedSite.evidenceStatus]}</span>
+              {displayedSite.story && (
+                <Link
+                  className="map-story-link"
+                  href={`/sites/${displayedSite.id}`}
+                >
+                  Read the full place record →
+                </Link>
+              )}
+              {displayedSite.sources && (
+                <div className="map-sources">
+                  <strong>Official sources</strong>
+                  {displayedSite.sources.map((source) => (
+                    <a
+                      href={source.url}
+                      key={source.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {source.publisher}: {source.title}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
         </aside>
       </div>
     </section>
