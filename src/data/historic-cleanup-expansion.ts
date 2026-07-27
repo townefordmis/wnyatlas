@@ -7,6 +7,316 @@ const decEasements =
 
 export const historicCleanupExpansion: AtlasSite[] = [
   {
+    id: "durez-occidental-north-tonawanda",
+    name: "Durez / Occidental Chemical",
+    municipality: "North Tonawanda",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Historic chemical-manufacturing property near Walck and River roads. The closed Class 4 State Superfund site remains under management; DEC's sediment inventory identifies adjacent sediment affected by chlorinated dioxins and furans. The facility, groundwater, outfalls, and sediment require separate but connected interpretation.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.86006033, 43.04655837],
+    sources: [
+      {
+        title: "Durez / Occidental Chemical Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932018/",
+      },
+      {
+        title: "DEC Sediment Cap and Contamination Layer",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/5",
+      },
+    ],
+  },
+  {
+    id: "chemical-leaman-tank-lines",
+    name: "Chemical Leaman Tank Lines",
+    municipality: "Tonawanda",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former chemical tank-truck terminal and cleaning property on Fillmore Avenue. The active Class 2 State Superfund site covers roughly 15 acres and is subject to an environmental easement, making it an important companion to the River Road chemical and transportation corridor.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.86055311, 43.01276013],
+    sources: [
+      {
+        title: "Chemical Leaman Tank Lines Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915014/",
+      },
+      {
+        title: "Chemical Leaman Environmental Easement",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/915014e.pdf",
+      },
+    ],
+  },
+  {
+    id: "5565-river-road",
+    name: "5565 River Road",
+    municipality: "Tonawanda",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Active Class 2 State Superfund property within Tonawanda's River Road industrial corridor. DEC's sediment inventory identifies PCB-affected sediment associated with the site, requiring the upland property and Niagara River edge to be understood together without assuming one corridor-wide plume.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.908915, 43.002985],
+    sources: [
+      {
+        title: "5565 River Road Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915239/",
+      },
+      {
+        title: "DEC Sediment Cap and Contamination Layer",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/5",
+      },
+    ],
+  },
+  {
+    id: "tennessee-gas-station-229",
+    name: "Tennessee Gas Pipeline Station 229",
+    municipality: "Eden",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former pipeline-compressor station cleanup on East Eden Road. The closed Class 4 site remains managed, and DEC maps PCB-affected sediment over a substantial drainage area, adding an important rural industrial-contamination story to the atlas.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.8302482, 42.67695649],
+    sources: [
+      {
+        title: "Tennessee Gas Pipeline Station 229 Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915140/",
+      },
+      {
+        title: "DEC Sediment Cap and Contamination Layer",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/5",
+      },
+    ],
+  },
+  {
+    id: "weber-knapp-company",
+    name: "Weber-Knapp Company",
+    municipality: "Jamestown",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Historic manufacturing property on Chandler Street where chlorinated solvents affected environmental media. DEC records an installed clean-stone sediment cover and an environmental easement over approximately 2.65 acres.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.225, 42.099166667],
+    sources: [
+      {
+        title: "Weber-Knapp Company Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907048/",
+      },
+      {
+        title: "DEC Sediment Cap and Contamination Layer",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/5",
+      },
+    ],
+  },
+  {
+    id: "pvs-chemicals-buffalo",
+    name: "PVS Chemicals",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Longstanding chemical-operation property on Lee Street listed as an active Class 2 State Superfund site. The record expands the South Buffalo chemical-manufacturing story beyond the better-known Buffalo Color complex.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.84121737, 42.86472756],
+    sources: [
+      {
+        title: "PVS Chemicals Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915004/",
+      },
+    ],
+  },
+  {
+    id: "depew-village-landfill",
+    name: "Depew Village Landfill",
+    municipality: "Depew",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Inactive disposal property on Rutherford Road classified by New York as a Class 2 site requiring remedial action. It adds a suburban municipal-landfill history outside the region's major waterfront industrial corridors.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.704797222, 42.8979],
+    sources: [
+      {
+        title: "Depew Village Landfill Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915105/",
+      },
+    ],
+  },
+  {
+    id: "lockport-city-landfill",
+    name: "Lockport City Landfill",
+    municipality: "Lockport",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former municipal landfill on Oakhurst Road. New York classifies the site as properly closed while requiring continuing management, distinguishing containment and stewardship from unrestricted reuse.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.71725032, 43.18116152],
+    sources: [
+      {
+        title: "Lockport City Landfill Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932010/",
+      },
+    ],
+  },
+  {
+    id: "batavia-iron-and-metal",
+    name: "Batavia Iron and Metal",
+    municipality: "Batavia",
+    county: "Genesee",
+    category: "cleanup",
+    summary:
+      "Former scrap-metal and metal-processing property at 301 Bank Street. The active Class 2 State Superfund site gives Batavia a second major industrial-cleanup story beyond the municipal landfill.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.177060007, 43.008938506],
+    sources: [
+      {
+        title: "Batavia Iron and Metal Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/819018/",
+      },
+    ],
+  },
+  {
+    id: "lehigh-valley-railroad-derailment",
+    name: "Lehigh Valley Railroad Derailment",
+    municipality: "Le Roy",
+    county: "Genesee",
+    category: "cleanup",
+    summary:
+      "Historic railroad-release site at Gulf Road and the former Lehigh Valley Railroad crossing. New York lists it as an active Class 2 State Superfund site, extending the atlas's rail and material-transport history east of Batavia.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-77.93303124, 42.99226538],
+    sources: [
+      {
+        title: "Lehigh Valley Railroad Derailment Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/819014/",
+      },
+    ],
+  },
+  {
+    id: "harrison-radiator-lockport",
+    name: "Harrison Radiator Division, GMC",
+    municipality: "Lockport",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Major automotive-component manufacturing property on Upper Mountain Road. DEC's closed remediation record provides a Lockport counterpart to Buffalo's former GM and American Axle complex and preserves the environmental history behind a major regional employer.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.742012511, 43.165618767],
+    sources: [
+      {
+        title: "Harrison Radiator Division Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932017/",
+      },
+    ],
+  },
+  {
+    id: "former-electruk-battery",
+    name: "Former Electruk Battery",
+    municipality: "Lockport",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former battery-related industrial property at 4922 IDA Park Drive. The completed environmental-restoration site remains under an approximately 1.35-acre easement restricting the controlled property to commercial and industrial use.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.7466, 43.1677],
+    sources: [
+      {
+        title: "Former Electruk Battery Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/E932132/",
+      },
+      {
+        title: "Former Electruk Battery Environmental Easement",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "http://extapps.dec.ny.gov/docs/remediation_hudson_pdf/e932132e.pdf",
+      },
+    ],
+  },
+  {
+    id: "stauffer-chemical-pasny",
+    name: "Stauffer Chemical / PASNY",
+    municipality: "Lewiston",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former chemical-plant property on Lewiston Road associated with a Power Authority of the State of New York parcel. The closed Class 4 site remains under an environmental easement covering approximately 23 acres.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-79.03306918, 43.14455465],
+    sources: [
+      {
+        title: "Stauffer Chemical / PASNY Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932053/",
+      },
+      {
+        title: "Stauffer Chemical Environmental Easement",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "http://extapps.dec.ny.gov/docs/remediation_hudson_pdf/e932053stauffer.pdf",
+      },
+    ],
+  },
+  {
+    id: "frontier-chemical-pendleton",
+    name: "Frontier Chemical — Pendleton",
+    municipality: "Pendleton / North Tonawanda",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Closed Class 4 chemical cleanup site on Townline Road. This property is distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls and is mapped separately to prevent their histories and remedies from being conflated.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.821419444, 43.087527778],
+    sources: [
+      {
+        title: "Frontier Chemical — Pendleton Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/",
+      },
+    ],
+  },
+  {
+    id: "1660-niagara-street-sediment",
+    name: "1660 Niagara Street Shoreline",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Niagara River shoreline sediment area associated with the 1660 Niagara Street cleanup record. DEC identifies PCB-affected sediment here; the marker represents the documented sediment boundary and should not be generalized to the entire upper Niagara River shoreline.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.8978, 42.9295],
+    sources: [
+      {
+        title: "1660 Niagara Street Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915311/",
+      },
+      {
+        title: "DEC Sediment Cap and Contamination Layer",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/5",
+      },
+    ],
+  },
+  {
     id: "union-ship-canal-hanna-furnace",
     name: "Union Ship Canal / Hanna Furnace",
     municipality: "Buffalo",

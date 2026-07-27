@@ -347,6 +347,18 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
           "This Tonawanda steel site is distinct from the former Roblin Steel cleanup in Dunkirk.",
       },
       {
+        siteId: "chemical-leaman-tank-lines",
+        role: "Chemical tank-truck terminal",
+        connection:
+          "Chemical Leaman adds chemical transport, tank cleaning, and a managed environmental easement to the corridor.",
+      },
+      {
+        siteId: "5565-river-road",
+        role: "Upland and sediment cleanup",
+        connection:
+          "The 5565 River Road record connects a Class 2 upland site with separately mapped PCB-affected sediment.",
+      },
+      {
         siteId: "cherry-farm",
         role: "Industrial landfill",
         connection:
@@ -471,6 +483,120 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
         role: "Adjacent steelmaking landscape",
         connection:
           "The former Bethlehem complex extends the heavy-industrial shoreline south into Lackawanna.",
+      },
+    ],
+  },
+  {
+    id: "lockport-industrial-cleanups",
+    name: "Lockport industrial and disposal history",
+    summary:
+      "Automotive manufacturing, battery production, chemical processing, municipal disposal, and canal-side industry created several separately managed cleanup sites around Lockport.",
+    members: [
+      {
+        siteId: "lockport-city-landfill",
+        role: "Municipal landfill",
+        connection:
+          "The closed landfill represents the city's long-term disposal and containment history.",
+      },
+      {
+        siteId: "harrison-radiator-lockport",
+        role: "Automotive manufacturing",
+        connection:
+          "Harrison Radiator preserves the environmental record of a major regional automotive employer.",
+      },
+      {
+        siteId: "former-electruk-battery",
+        role: "Battery manufacturing",
+        connection:
+          "Electruk adds a smaller controlled industrial property with an environmental easement.",
+      },
+      {
+        siteId: "lockport-transit-street-former-mgp",
+        role: "Manufactured-gas plant",
+        connection:
+          "Transit Street represents the city's earlier gas-manufacturing infrastructure and recurring MGP contaminants.",
+      },
+      {
+        siteId: "eighteenmile-creek-superfund",
+        role: "Creek and sediment corridor",
+        connection:
+          "Eighteenmile Creek links multiple Lockport source areas to a much longer sediment-cleanup record.",
+      },
+    ],
+  },
+  {
+    id: "genesee-county-industrial-cleanups",
+    name: "Genesee County industrial and disposal sites",
+    summary:
+      "Municipal disposal, scrap-metal processing, and railroad transport provide three different views of Genesee County's documented cleanup history.",
+    members: [
+      {
+        siteId: "batavia-landfill",
+        role: "Municipal and industrial landfill",
+        connection:
+          "The landfill received industrial wastes before its federal cleanup, deletion, and continuing stewardship.",
+      },
+      {
+        siteId: "batavia-iron-and-metal",
+        role: "Scrap and metal processing",
+        connection:
+          "The Bank Street site adds a Class 2 industrial cleanup within the City of Batavia.",
+      },
+      {
+        siteId: "lehigh-valley-railroad-derailment",
+        role: "Railroad release",
+        connection:
+          "The Le Roy site shows how rail transport created a different kind of historical contamination record.",
+      },
+    ],
+  },
+  {
+    id: "western-new-york-sediment-controls",
+    name: "Western New York sediment controls",
+    summary:
+      "These sites contain documented sediment remedies or affected sediment areas. They are a comparative research collection, not evidence of a shared source or connected plume.",
+    members: [
+      {
+        siteId: "union-ship-canal-hanna-furnace",
+        role: "Installed sediment cover",
+        connection:
+          "A geotextile and stone cover isolates PAHs, PCBs, and metals in part of the former industrial canal.",
+      },
+      {
+        siteId: "weber-knapp-company",
+        role: "Chlorinated-solvent sediment cover",
+        connection:
+          "DEC records a clean-stone cover at this Jamestown manufacturing cleanup.",
+      },
+      {
+        siteId: "tennessee-gas-station-229",
+        role: "PCB-affected sediment area",
+        connection:
+          "The Eden compressor-station record extends sediment concerns into a rural drainage setting.",
+      },
+      {
+        siteId: "5565-river-road",
+        role: "PCB-affected shoreline sediment",
+        connection:
+          "The River Road entry connects an upland Class 2 site with Niagara River-edge sediment.",
+      },
+      {
+        siteId: "1660-niagara-street-sediment",
+        role: "PCB-affected shoreline sediment",
+        connection:
+          "The Niagara Street marker represents a bounded sediment record rather than the entire river shoreline.",
+      },
+      {
+        siteId: "durez-occidental-north-tonawanda",
+        role: "Dioxin- and furan-affected sediment",
+        connection:
+          "The Durez record adds a distinct chemical-manufacturing and sediment-contaminant history.",
+      },
+      {
+        siteId: "gratwick-riverside-park",
+        role: "Riprap and habitat cover",
+        connection:
+          "Gratwick combines landfill containment, shoreline protection, and present-day park use.",
       },
     ],
   },

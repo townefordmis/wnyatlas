@@ -27,7 +27,7 @@ const siteIds = new Set(sites.map((site) => site.id));
 for (const site of sites) {
   if (
     site.longitude < -79.9 ||
-    site.longitude > -78.15 ||
+    site.longitude > -77.85 ||
     site.latitude < 41.9 ||
     site.latitude > 43.7
   ) {
@@ -58,8 +58,8 @@ for (const siteId of connectedSiteIds) {
 console.log(`Checked ${sites.length} site coordinates.`);
 console.log(`Checked ${connectedSiteIds.length} connection memberships.`);
 
-if (sites.length !== 96) {
-  issues.push(`Expected 96 coordinate records but found ${sites.length}`);
+if (sites.length !== 111) {
+  issues.push(`Expected 111 coordinate records but found ${sites.length}`);
 }
 
 if (issues.length > 0) {
