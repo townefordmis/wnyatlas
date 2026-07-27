@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 import { featuredSites } from "@/data/featured-sites";
@@ -38,6 +39,16 @@ export function SiteDirectory() {
             <span className="site-number">
               {String(index + 1).padStart(2, "0")}
             </span>
+            {site.image && (
+              <Link className="site-thumbnail" href={`/sites/${site.id}`}>
+                <Image
+                  src={site.image.src}
+                  alt={site.image.alt}
+                  width={236}
+                  height={156}
+                />
+              </Link>
+            )}
             <div>
               <p className="site-meta">
                 {site.category} · {site.county} County
