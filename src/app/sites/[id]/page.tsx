@@ -143,6 +143,12 @@ export default async function SitePage({ params }: SitePageProps) {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
+                {(site.id === "tonawanda-coke" || site.id === "love-canal") && (
+                  <Link className="risk-map-link" href="/risks/airborne-exposure">
+                    <span>Linked risk pathway</span>
+                    <strong>See the airborne exposure & historic plumes map →</strong>
+                  </Link>
+                )}
               </section>
             )}
 

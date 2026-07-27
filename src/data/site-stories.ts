@@ -1375,7 +1375,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       },
     ],
     documentedImpacts: [
-      "The facility's enforcement record included benzene, sulfur dioxide, particulate, and hazardous-waste concerns associated with coke production.",
+      "The facility's enforcement record included benzene, sulfur dioxide, particulate, and hazardous-waste concerns associated with coke production. Government monitoring and modeling identified elevated benzene and community areas with estimated excess lifetime cancer risk associated with the facility's emissions.",
       "Shutdown and removal work encountered contaminated soil, waste ammonia liquor, coal and coke, drums, vessels, and contaminated containment areas.",
       "Site 108 is a distinct state Superfund parcel west of River Road and should not be conflated with the former oven and main-plant parcel.",
     ],

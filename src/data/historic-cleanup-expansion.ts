@@ -7,6 +7,230 @@ const decEasements =
 
 export const historicCleanupExpansion: AtlasSite[] = [
   {
+    id: "webb-road-grand-island",
+    name: "Webb Road Site",
+    municipality: "Grand Island",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "A 24.32-acre group of vacant and underused parcels at Baseline Road and Grand Island Boulevard entered New York's Brownfield Cleanup Program after investigations identified environmental impacts requiring additional study and remediation. The record gives Grand Island its first site-specific brownfield entry in the atlas.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.961575, 43.0158],
+    story: {
+      lastReviewed: "July 27, 2026",
+      background: [
+        "The Webb Road Site consists of three parcels totaling 24.32 acres near Baseline Road and Grand Island Boulevard. The land was vacant or underused when Rivertown Center Holdings applied to enter it in New York's Brownfield Cleanup Program.",
+        "Earlier environmental work prompted the applicant to propose additional investigation and remediation before redevelopment. The state brownfield file, rather than the wider Webb Road neighborhood, defines the place represented by this marker.",
+      ],
+      timeline: [
+        {
+          period: "Before 2021",
+          event:
+            "Environmental assessments and a Phase II investigation evaluated the three undeveloped parcels and identified conditions requiring further work.",
+        },
+        {
+          period: "2021",
+          event:
+            "Rivertown Center Holdings applied to enter the 24.32-acre property in New York's Brownfield Cleanup Program.",
+        },
+        {
+          period: "June–July 2021",
+          event:
+            "DEC opened the application for public comment and established the Grand Island Memorial Library as a document repository.",
+        },
+        {
+          period: "Brownfield program",
+          event:
+            "Additional investigation, remedy selection, cleanup, and redevelopment review proceed through the state site file.",
+        },
+      ],
+      documentedImpacts: [
+        "The brownfield application describes the property as environmentally impacted and requiring additional investigation and remediation.",
+        "The documented site is limited to three identified tax parcels; evidence does not support extending the marker to surrounding homes or the broader Webb Road area.",
+        "Contaminants, affected media, and cleanup boundaries should be reported from the latest DEC investigation and decision records rather than inferred from former land use alone.",
+      ],
+      cleanupAndControls: [
+        "Participation in the Brownfield Cleanup Program provides state oversight for investigation, remedy selection, cleanup verification, and any required long-term controls.",
+        "Future redevelopment must be evaluated against the remedy and the level of use approved by DEC.",
+        "The DEC document repository remains the authoritative source for current milestones and completion status.",
+      ],
+      presentDay: [
+        "Webb Road is an active brownfield record, not a completed cleanup. The atlas should update its status when DEC posts a remedial investigation, decision document, certificate of completion, or site-management requirements.",
+      ],
+      researchNotes: [
+        "Extract the contaminant and media tables from the final remedial investigation when available.",
+        "Confirm the present brownfield agreement status and whether the proposed redevelopment or parcel configuration has changed.",
+      ],
+    },
+    sources: [
+      {
+        title: "Webb Road Site Brownfield Cleanup Program Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915379/",
+      },
+      {
+        title: "Webb Road Site Brownfield Application Public Notice",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2021-06-23/the-new-york-state-department-of-environmental-conservation-nys-dec-has-received-a-brownfield-cleanup-program-bcp-application-from-rivertown-center-holdings-llc-for-a-site-known-as-webb-road-site-site-id",
+      },
+    ],
+  },
+  {
+    id: "motor-frog-islands-restoration",
+    name: "Motor and Frog Islands Restoration",
+    municipality: "Grand Island / Niagara River",
+    county: "Erie",
+    category: "waterway",
+    summary:
+      "Upper Niagara River habitat-restoration cluster centered on Motor Island and the former Frog Island shallows. A private boating club and bulkhead altered Motor Island, while historic gravel removal eliminated small islands nearby. Shoreline reconstruction and a recreated wetland complex now restore some of the lost shallow-water habitat.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.934036, 42.964515],
+    story: {
+      lastReviewed: "July 27, 2026",
+      background: [
+        "Motor Island was developed for a private motorboat club, including marina facilities and a vertical bulkhead that replaced most of its natural shoreline. After boating use was abandoned, its trees became important nesting habitat for colonial waterbirds.",
+        "Between Motor and Strawberry islands, historic gravel extraction removed a small group of islands and left comparatively uniform shallow water. The Niagara River Area of Concern restoration program later treated both places as opportunities to rebuild habitat complexity.",
+      ],
+      timeline: [
+        {
+          period: "Historic development",
+          event:
+            "A private motorboat club, marina facilities, and a bulkhead substantially altered Motor Island's shoreline.",
+        },
+        {
+          period: "Historic extraction",
+          event:
+            "Small islands between Motor and Strawberry islands were mined for gravel and eventually disappeared beneath the river.",
+        },
+        {
+          period: "1998",
+          event:
+            "New York acquired the 6.3-acre Motor Island to protect colonial nesting birds and important fish habitat.",
+        },
+        {
+          period: "2012–2013",
+          event:
+            "Habitat projects restored natural shoreline features at Motor Island and reconstructed wetland and island structure in the former Frog Island area.",
+        },
+        {
+          period: "2022",
+          event:
+            "DEC reviewed maintenance work intended to repair erosion and improve wave protection at the Frog Island habitat project.",
+        },
+      ],
+      documentedImpacts: [
+        "Marina development and a vertical bulkhead replaced much of Motor Island's natural shoreline.",
+        "Gravel extraction removed former islands and simplified shallow-water habitat between Motor and Strawberry islands.",
+        "Wave action, boat wakes, ice, and high water continued to erode reconstructed planting areas.",
+        "This is a habitat-loss and restoration record; the sources do not identify Motor or Frog Island as a hazardous-waste disposal site.",
+      ],
+      cleanupAndControls: [
+        "Motor Island's bulkheaded edge was regraded and shallow-water shoreline habitat was reconstructed.",
+        "The Frog Island project added berms, planting substrates, boulders, logs, and marsh structure to recreate habitat in the former island area.",
+        "DEC management protects Motor Island's nesting colony; public access onto the island and beach is closed.",
+      ],
+      presentDay: [
+        "Motor Island is a state wildlife management area and the reconstructed Frog Island complex is maintained as Niagara River habitat. The work repairs historic physical disturbance and habitat loss rather than documenting a conventional contaminated-site cleanup.",
+      ],
+      researchNotes: [
+        "Add precise project polygons if DEC or the Power Authority publishes reusable construction geometry.",
+        "Track the performance of repaired berms and emergent planting areas after high-water and ice events.",
+      ],
+    },
+    sources: [
+      {
+        title: "Motor Island Wildlife Management Area",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/places/motor-island-wildlife-management-area",
+      },
+      {
+        title: "Niagara River Area of Concern Habitat Restoration Plan Addendum",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/sites/default/files/2024-06/niagareaochabitat2019.pdf",
+      },
+      {
+        title: "Frog Island Wetland Restoration Maintenance",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2022-07-27/completed-application/frog-island-wetland-restoration-hip",
+      },
+    ],
+  },
+  {
+    id: "strawberry-island-restoration",
+    name: "Strawberry Island Restoration",
+    municipality: "Tonawanda / Niagara River",
+    county: "Erie",
+    category: "waterway",
+    summary:
+      "Historic gravel mining and persistent erosion greatly reduced and reshaped Strawberry Island. Successive shoreline stabilization and wetland projects protected the surviving island and rebuilt riverine marsh habitat within the Niagara River Area of Concern.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.9289, 42.9389],
+    story: {
+      lastReviewed: "July 27, 2026",
+      background: [
+        "Strawberry Island once occupied a much larger footprint in the upper Niagara River. Historic sand and gravel removal altered its form, and later ice, waves, and boat wakes accelerated erosion of the remaining shoreline.",
+        "Beginning in the 1990s, state agencies undertook several phases of breach repair, shoreline protection, revegetation, and marsh creation. The work became part of the larger effort to restore habitat impairments in the Niagara River Area of Concern.",
+      ],
+      timeline: [
+        {
+          period: "Historic extraction era",
+          event:
+            "Sand and gravel mining reduced and reshaped Strawberry Island.",
+        },
+        {
+          period: "1993–1997",
+          event:
+            "After a major breach, agencies repaired the island, stabilized approximately 1,400 feet of shoreline, and planted trees and shrubs.",
+        },
+        {
+          period: "2002",
+          event:
+            "A third restoration phase created approximately three acres of riverine marsh and installed protective breakwall.",
+        },
+        {
+          period: "2018",
+          event:
+            "A wetland-restoration project added roughly seven acres of habitat and continued shoreline protection.",
+        },
+        {
+          period: "2022",
+          event:
+            "DEC reviewed repairs to eroded berms and planting areas within the habitat-improvement project.",
+        },
+      ],
+      documentedImpacts: [
+        "Historic aggregate mining removed island material and changed the surrounding shallow-water environment.",
+        "Ice, waves, wakes, and high water caused breaches, shoreline retreat, and loss of wetland habitat.",
+        "The island lies within a river historically impaired by industrial and municipal pollution, but the restoration sources principally document physical habitat loss rather than a discrete hazardous-waste source on the island.",
+      ],
+      cleanupAndControls: [
+        "Stone protection repaired breaches and stabilized vulnerable shoreline.",
+        "Breakwalls and low-profile berms reduced wave energy and sheltered new marsh areas.",
+        "Native wetland, tree, and shrub planting rebuilt fish and wildlife habitat.",
+        "Periodic maintenance replaces eroded material and protects the long-term restoration investment.",
+      ],
+      presentDay: [
+        "Strawberry Island remains an undeveloped conservation and habitat-restoration site. Its changing footprint is a visible record of extraction, erosion, and active ecological repair in the upper Niagara River.",
+      ],
+      researchNotes: [
+        "Compare historic navigation charts and aerial photographs to quantify the island's changing acreage.",
+        "Track post-2022 maintenance and vegetation monitoring for the reconstructed marsh areas.",
+      ],
+    },
+    sources: [
+      {
+        title: "Niagara River Area of Concern Habitat Restoration Plan Addendum",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/sites/default/files/2024-06/niagareaochabitat2019.pdf",
+      },
+      {
+        title: "Strawberry Island Habitat Improvement Project Maintenance",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2022-07-27/completed-application/strawberry-island-0",
+      },
+    ],
+  },
+  {
     id: "durez-occidental-north-tonawanda",
     name: "Durez / Occidental Chemical",
     municipality: "North Tonawanda",
@@ -166,7 +390,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Former municipal landfill on Oakhurst Road. New York classifies the site as properly closed while requiring continuing management, distinguishing containment and stewardship from unrestricted reuse.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.71725032, 43.18116152],
+    coordinates: [-78.72370647324514, 43.17286010406627],
     sources: [
       {
         title: "Lockport City Landfill Site Documents",
@@ -430,7 +654,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Former county-owned hazardous-waste disposal site where contamination remains under a managed remedy. Engineering controls, deed restrictions, inspections, and a site-management plan govern the closed landfill.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.4058, 42.2529],
+    coordinates: [-78.38134867598835, 42.22007775214247],
     sources: [
       {
         title: "Farwell Road Landfill Site Management Plan",
@@ -448,7 +672,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Former municipal and construction-and-demolition landfill near Conewango Creek, wetlands, and homes. The roughly 25-acre disposal property has required leachate and groundwater controls, treatment, monitoring, and long-term management.",
     evidenceStatus: "well-documented",
-    coordinates: [-79.1607, 42.0608],
+    coordinates: [-79.13670584217945, 42.07609437135028],
     sources: [
       {
         title: "Carroll Landfill Remedial Design",
@@ -485,7 +709,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Large former specialty-steel complex with a century-scale manufacturing history. Industrial fill, process wastes, soil, and groundwater have been addressed through phased state investigation, demolition, remediation, and site management.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-79.3415, 42.4789],
+    coordinates: [-79.34139486518566, 42.471590931745645],
     sources: [
       {
         title: "AlTech Specialty Steel Site Documents",
@@ -540,7 +764,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Former die-casting and machining plant operated from the 1950s into 2014. Solvents used for degreasing affected soil and groundwater; active remediation was followed by groundwater monitoring, land-use controls, and site management.",
     evidenceStatus: "well-documented",
-    coordinates: [-79.3337, 42.0911],
+    coordinates: [-79.32998896581996, 42.100013659046084],
     sources: [
       {
         title: "Lexington Machining Periodic Review Report",
@@ -558,7 +782,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Compact former dry-cleaning property that illustrates how a small business could create a significant solvent cleanup problem. The site is managed separately from Jamestown's much larger industrial complexes.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-79.2368, 42.0954],
+    coordinates: [-79.2466826043239, 42.112404952445836],
     sources: [
       {
         title: "Former C&B Dry Cleaners Site Documents",
@@ -614,7 +838,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Former manufacturing property tracked through New York's brownfield program. The eight-acre site adds a smaller southern-tier industrial cleanup to an atlas otherwise dominated by Buffalo and Niagara Falls.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-78.6672, 42.2797],
+    coordinates: [-78.66980735370983, 42.27055940024228],
     sources: [
       {
         title: "Former Signore Site Documents",
@@ -656,7 +880,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Seven-and-a-half-acre former foundry property carried through New York's Brownfield Cleanup Program. Its story connects metal casting, industrial fill, cleanup controls, and reuse in the Buffalo–Cheektowaga industrial belt.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-78.8038, 42.8931],
+    coordinates: [-78.70027906069848, 42.91119522314418],
     sources: [
       {
         title: "Former NL Industries Foundry Site Documents",
@@ -675,7 +899,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Former paper mill where cleanup encountered both conventional industrial contamination and localized radioactive material. State work removed hot spots, demolished the mill, and completed the environmental-restoration project in 2012.",
     evidenceStatus: "well-documented",
-    coordinates: [-79.0374, 43.0908],
+    coordinates: [-79.01326203165878, 43.08822382497429],
     sources: [
       { title: "Region 9 Cleanup Success Stories", publisher: "NYSDEC", url: decSuccessStories },
       {
@@ -694,7 +918,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Former industrial complex where investigations documented petroleum, chlorinated solvents, PAHs, metals, and PCBs. Interim removals and a managed remedy supported restricted-residential redevelopment while preserving soil and groundwater controls.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.8732, 43.0326],
+    coordinates: [-78.87387831625173, 43.023181066006856],
     sources: [
       { title: "Region 9 Cleanup Success Stories", publisher: "NYSDEC", url: decSuccessStories },
       {
@@ -713,10 +937,15 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "River Road plastics property within the dense Tonawanda industrial corridor. It is tracked separately from Tonawanda Coke while sharing a landscape shaped by neighboring steel, coke, landfill, and chemical operations.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-78.93342, 42.97851],
+    coordinates: [-78.93194594688349, 42.9796717028209],
     sources: [
       {
-        title: "Tonawanda Plastics Site Documents",
+        title: "3821 River Road Brownfield Cleanup Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915003/",
+      },
+      {
+        title: "Legacy Tonawanda Plastics RCRA Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915003/",
       },

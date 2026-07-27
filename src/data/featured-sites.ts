@@ -48,6 +48,7 @@ const featuredSiteRecords: AtlasSite[] = [
       ],
       documentedImpacts: [
         "Chemical wastes were disposed in the former canal and later enclosed by residential development.",
+        "New York's public-health orders documented pervasive chemical vapors and fumes affecting ambient air and conditions inside some nearby buildings during the emergency period.",
         "Contaminated liquids, nearby sewers, creek sediment, and portions of the surrounding built environment became part of the cleanup record.",
         "The site prompted demolition of contaminated houses and the former school within the remedy area.",
       ],
@@ -75,6 +76,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/history/epa-history-love-canal",
       },
+      {
+        title: "Love Canal Chemical Waste Landfill Health Order",
+        publisher: "New York State Department of Health",
+        url: "https://www.health.ny.gov/environmental/investigations/love_canal/docs/lctimbmb.pdf",
+      },
     ],
   },
   {
@@ -86,7 +92,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former dye and chemical-manufacturing complex beside the Buffalo River. Investigations documented metals, volatile and semi-volatile compounds in plant sewer sediment, including storm sewers leading to river Outfalls 006 and 011; remedies included measures to address contaminated sewer sediment and limit migration toward the river.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.854, 42.858],
+    coordinates: [-78.84472385396359, 42.863843134660996],
     story: {
       lastReviewed: "July 26, 2026",
       background: [
@@ -653,7 +659,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former zinc and lead smelting and refining area where cleanup removed 136,234 tons of lead-contaminated soil from the site and surrounding properties.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.836, 42.914],
+    coordinates: [-78.83169297049032, 42.915597320172324],
     sources: [
       {
         title: "East Ferry Street Cleanup Success Story",
@@ -676,7 +682,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former Buffalo Color chemical-manufacturing parcel remediated under the Brownfield Cleanup Program and redeveloped in 2019 as the Medaille athletic complex at Buffalo Color Park.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.852, 42.856],
+    coordinates: [-78.84111274948687, 42.86634334494757],
     sources: [
       {
         title: "Buffalo Color Area E Site Management and Periodic Review",
@@ -749,7 +755,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Three historical waste-disposal areas at the River Road tire plant were investigated, capped, and placed under long-term groundwater monitoring and site management.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.92442, 42.96944],
+    coordinates: [-78.91895772323295, 42.97036356877955],
     sources: [
       {
         title: "Dunlop Site 2 Superfund Site Profile",
@@ -790,7 +796,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former municipal and industrial landfill bordering Transit Road where drums and contaminated material were removed, wastes were consolidated beneath engineered caps, and long-term monitoring continues.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.699, 42.947],
+    coordinates: [-78.70135404543488, 42.94506885094213],
     sources: [
       {
         title: "Pfohl Brothers Landfill Superfund Site Profile",
@@ -854,7 +860,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former windshield-wiper manufacturing complex remediated under the Brownfield Cleanup Program and converted primarily to residential apartments with commercial space.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.868, 42.898],
+    coordinates: [-78.86966826328961, 42.895286241026554],
     sources: [
       {
         title: "Former Trico Plant Site Management Plan",
@@ -872,7 +878,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Federal and state investigations of PFAS associated with historical use and releases of aqueous film-forming firefighting foam at the air station.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-78.946, 43.113],
+    coordinates: [-78.93997339520959, 43.11936785737371],
     sources: [
       {
         title: "Final Site Inspection Report of Firefighting Foam Usage",
@@ -913,7 +919,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Brownfield investigation at 90 Erie Street documented PFAS impacts in groundwater alongside contaminants associated with historic fill; remediation planning remains part of the site record.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-78.88, 42.881],
+    coordinates: [-78.87939879828025, 42.87868563473828],
     sources: [
       {
         title: "Marine Drive Apartments East Remedial Investigation",
@@ -931,7 +937,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former manufactured-gas plant at Dart and Bradley Streets where investigations documented coal tar, benzene and related BTEX compounds, and PAHs in site media.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.894, 42.938],
+    coordinates: [-78.89891900618512, 42.92937998910184],
     sources: [
       {
         title: "Gaslight Lane and Scajaquada Creek Site Characterization",
@@ -967,7 +973,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former Buffalo Avenue chemical-manufacturing and disposal site where benzene and chlorinated benzenes affected multiple groundwater zones; containment, treatment, and monitoring remain part of the remedy.",
     evidenceStatus: "well-documented",
-    coordinates: [-79.006, 43.086],
+    coordinates: [-79.02291556938837, 43.08187274370253],
     sources: [
       {
         title: "Solvent Chemical Site Record of Decision",
@@ -1172,7 +1178,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Large former petroleum refinery, lubricant plant, and terminal at Elk and Babcock Streets, divided into multiple state brownfield cleanup units addressing petroleum-impacted soil, groundwater, infrastructure, and riverfront conditions.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.839, 42.86],
+    coordinates: [-78.83719331140942, 42.86557967382599],
     sources: [
       {
         title: "Babcock Street Properties Area Investigation",
@@ -1200,7 +1206,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former phenolic-resin and rubber-products plant at 3445 River Road where a 1988 fire left drums, tanks, laboratory chemicals, and contaminated media requiring federal removal and state remediation.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.925, 42.974],
+    coordinates: [-78.92503206804305, 42.970463759085646],
     sources: [
       {
         title: "Polymer Applications Site Documents",
@@ -1223,7 +1229,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Sponge-manufacturing property where interim controls addressed carbon-disulfide handling and drainage areas; the closed state site remains subject to controls, inspections, and monitoring.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.906, 42.963],
+    coordinates: [-78.91726673086372, 42.97616585704152],
     sources: [
       {
         title: "3M O-Cel-O Sponge Record of Decision",
@@ -1310,7 +1316,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Gasworks operated on Transit Street from 1851 to 1927. Investigations documented coal tar and related non-aqueous-phase liquid, leading to excavation, containment, and long-term remediation.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.696, 43.17],
+    coordinates: [-78.69624555259125, 43.16692913716765],
     sources: [
       {
         title: "Transit Street Former MGP Remediation Request for Proposals",
@@ -1351,7 +1357,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former gas-holder property near Scajaquada Creek. State investigation documents the historic gasometer and evaluates coal-tar impacts associated with the adjoining former Westwood manufactured-gas plant area.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-78.892, 42.922],
+    coordinates: [-78.89686994667213, 42.92980676363506],
     sources: [
       {
         title: "31 Tonawanda Street Off-Site Remedial Investigation Report",
@@ -1397,7 +1403,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former Gardenville railroad classification and maintenance yard where a spur led into an eastern wetland depression used for waste disposal. The location became locally known as the Losson Road tar pit. Investigators found tar-like material and dozens of abandoned drums; site waste was consolidated inside a slurry-walled containment cell, capped, and remains under long-term monitoring.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.739028, 42.879639],
+    coordinates: [-78.74165401790096, 42.87696653934266],
     sources: [
       {
         title: "Union Road Site Health and Safety Plan",
@@ -1545,7 +1551,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former sanitary landfill that also accepted industrial waste, including sludges, waste ink, chemical drums, and PCB-containing equipment. The landfill was capped under a state-approved closure plan and remains subject to post-closure groundwater monitoring and maintenance.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.6131, 42.955],
+    coordinates: [-78.62055360422367, 42.95326587141351],
     sources: [
       {
         title: "Lancaster Landfill Site Classification Decision",
@@ -1568,7 +1574,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former municipal and industrial landfill that accepted solid and chemical wastes from 1969 to 1976. About 3.1 million tons of material remain contained beneath a cap with leachate collection and gas venting; cleanup construction was completed in 2000 and long-term groundwater and surface-water monitoring continues.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.906111, 43.06055],
+    coordinates: [-78.90641356469966, 43.066200238910234],
     sources: [
       {
         title: "Niagara County Refuse Superfund Cleanup Profile",
@@ -1591,7 +1597,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former disposal and industrial property where the remedy consolidated waste and contaminated soil beneath an engineered cover. The completed cleanup is maintained through institutional controls, inspections, and long-term operation and maintenance.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.851, 42.843],
+    coordinates: [-78.83915543575709, 42.84547102465679],
     sources: [
       {
         title: "Alltift Landfill Construction Completion Report",
@@ -1772,7 +1778,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former roughly 50-acre limestone quarry later filled with municipal refuse, incinerator ash, construction and demolition debris, appliances, vegetation, and documented Buffalo Forge waste. Portions became McCarthy Park and nearby development, while the remaining quarry serves as a stormwater-retention basin; state investigation supported removing the site from the hazardous-waste registry.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.8315, 42.948],
+    coordinates: [-78.82590193043687, 42.9431559910684],
     sources: [
       {
         title: "LaSalle Reservoir Phase II Investigation",
@@ -1795,7 +1801,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former stone quarry backfilled during the 1940s and 1950s with material of unknown origin and later developed as the Kensington Heights apartment complex. Investigations found PAHs and metals in soil and fill; excavation, cover, and institutional controls supported completion of the state brownfield cleanup in 2019.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.8095, 42.9295],
+    coordinates: [-78.83710443432456, 42.926038168218604],
     sources: [
       {
         title: "1827 Fillmore Avenue Cleanup Fact Sheet",
@@ -1869,7 +1875,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former federal Superfund site in a Lake Erie residential development where PCB-contaminated waste oil was spread on dirt roads for dust control and later redistributed with excavated road soil into yards. Cleanup treated about 36,160 tons of contaminated soil and sediment and restored affected wetlands. EPA deleted the site from the National Priorities List in 1994 after completing the remedy.",
     evidenceStatus: "well-documented",
-    coordinates: [-79.066, 42.59],
+    coordinates: [-79.12796715865463, 42.58686971771397],
     sources: [
       {
         title: "Wide Beach Development Cleanup Profile",
@@ -1938,7 +1944,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Large waste-management property used for disposal since 1897 and for hazardous-waste treatment, storage, and disposal beginning in 1977. Investigations found releases to fill, soil, and groundwater from historic waste-management units. Closed units are capped and maintained, contaminated groundwater is recovered and treated, and long-term monitoring and corrective-action controls continue under state and federal hazardous-waste permits.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.93, 43.1682],
+    coordinates: [-78.98965269272462, 43.10158803773757],
     sources: [
       {
         title: "CECOS International Hazardous-Waste Cleanup",
