@@ -1,6 +1,424 @@
 import type { AtlasStory } from "@/types/site";
 
 export const siteStories: Partial<Record<string, AtlasStory>> = {
+  "durez-occidental-north-tonawanda": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The North Tonawanda Durez plant became part of Western New York's important plastics and chemical-manufacturing economy. Durez was associated with phenolic resins and molding compounds—materials used to make durable electrical, automotive, appliance, and industrial components before modern plastics became commonplace.",
+      "Successive corporate ownership connected the facility to Hooker Chemical and later Occidental Chemical. The environmental record is divided among the former plant, waste-management areas, groundwater-control systems, outfalls, and affected sediment. Treating those areas as one undifferentiated problem would obscure how the remedy actually works.",
+    ],
+    timeline: [
+      {
+        period: "Industrial era",
+        event:
+          "Durez produced phenolic-resin and related chemical materials at the North Tonawanda complex.",
+      },
+      {
+        period: "Corporate succession",
+        event:
+          "The operation became associated with Hooker and Occidental Chemical, linking it to a wider Niagara County chemical-manufacturing network.",
+      },
+      {
+        period: "1989",
+        event:
+          "A partial consent judgment established major groundwater-monitoring and remediation obligations.",
+      },
+      {
+        period: "1989–present",
+        event:
+          "A perimeter interceptor-trench system has operated to capture groundwater and limit off-site chemical migration.",
+      },
+      {
+        period: "Current stewardship",
+        event:
+          "Groundwater levels, chemistry, hydraulic capture, sediment conditions, and engineering controls remain subject to monitoring and review.",
+      },
+    ],
+    documentedImpacts: [
+      "Chemical manufacturing and waste management affected soil and groundwater across portions of the former facility.",
+      "DEC's sediment inventory identifies chlorinated dioxins and furans in an associated sediment area.",
+      "The long operating history produced multiple source and management areas rather than a single uniform deposit.",
+    ],
+    cleanupAndControls: [
+      "A perimeter interceptor trench creates an inward hydraulic gradient and collects groundwater that might otherwise migrate away from the property.",
+      "Collected water is managed through a long-term extraction and treatment program.",
+      "Institutional controls, monitoring wells, sediment restrictions, maintenance, and periodic review remain essential because contamination has not simply been excavated away.",
+    ],
+    presentDay: [
+      "The Durez record is in long-term management. The correct present-day description is neither an uncontrolled historic dump nor a completely erased cleanup: groundwater capture and continuing controls are integral parts of the remedy.",
+    ],
+    researchNotes: [
+      "Build a product and ownership timeline from Durez corporate records, Hooker annual reports, and North Tonawanda industrial directories.",
+      "Map the interceptor trench, principal waste areas, outfalls, and DEC sediment boundary as separate features.",
+      "Determine which sediment areas were capped, removed, or left subject to monitoring.",
+    ],
+  },
+  "houdaille-strippit-landfill": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Akron property first entered the twentieth-century defense economy through Buffalo Arms, which used it from about 1940 to 1950 for machine-gun testing and scrap disposal. Houdaille Industries' Strippit Division later manufactured metalworking machinery there beginning in 1956.",
+      "A roughly two-acre disposal area immediately behind the plant received process and general wastes until 1979. Records describe approximately 20,000 gallons per year of cutting oils, coolants, and possibly degreasing solvents, about three tons per year of heat-treatment sludge, refuse, open burning, and reports of buried drums.",
+    ],
+    timeline: [
+      {
+        period: "Circa 1940–1950",
+        event:
+          "Buffalo Arms used the property for machine-gun testing and disposed of metal scrap and related material.",
+      },
+      {
+        period: "1956–1979",
+        event:
+          "Houdaille/Strippit manufactured metalworking equipment and used the rear disposal area for coolant, sludge, refuse, and possibly solvents.",
+      },
+      {
+        period: "1979",
+        event:
+          "On-site disposal ended and the area was covered with several feet of fill during plant expansion.",
+      },
+      {
+        period: "1981–1994",
+        event:
+          "Successive investigations characterized buried waste, drums, metals, organic compounds, and groundwater conditions.",
+      },
+      {
+        period: "1994–present",
+        event:
+          "Waste was consolidated beneath a composite soil and geomembrane cap, followed by post-closure monitoring and maintenance.",
+      },
+    ],
+    documentedImpacts: [
+      "Historical records identify process coolants, cutting oils, heat-treatment sludge, refuse, and suspected degreasing solvents in the disposal area.",
+      "Investigations detected metals, PCBs, PAHs, phthalates, and halogenated organic compounds in site media.",
+      "The reported buried drums and earlier defense-production use add uncertainty to the precise inventory of material beneath the cap.",
+    ],
+    cleanupAndControls: [
+      "The 1994 interim remedial measure consolidated waste into a controlled footprint.",
+      "A composite soil and geomembrane cap limits contact, erosion, and water infiltration.",
+      "Groundwater sampling, cap inspection, vegetation management, repair, and periodic reporting continue under the post-closure program.",
+    ],
+    presentDay: [
+      "The property remains associated with industrial use while the former disposal area is a managed capped landfill. The remedy contains material on site rather than demonstrating that every drum and waste deposit was removed.",
+    ],
+    researchNotes: [
+      "Locate Buffalo Arms property plans and wartime production records to clarify the testing range and scrap-disposal footprint.",
+      "Reconcile the reported drum count with construction records from the 1994 consolidation.",
+      "Map the capped two-acre area separately from the larger operating industrial property.",
+    ],
+  },
+  "remington-rand-north-tonawanda": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "The Remington Rand property belongs to North Tonawanda's long manufacturing history. Remington Rand assembled several office-machine, filing-system, and business-equipment companies into a nationally recognized industrial corporation, and its local plant became a substantial part of the city's factory landscape.",
+      "Later environmental investigation documented a mixed industrial contaminant profile rather than one single release. Petroleum, chlorinated solvents, PAHs, metals, and PCBs reflected decades of machinery, fuel, electrical equipment, material handling, and changing operations.",
+    ],
+    timeline: [
+      {
+        period: "Manufacturing era",
+        event:
+          "The property supported Remington Rand and successor industrial operations within North Tonawanda's rail- and canal-served factory district.",
+      },
+      {
+        period: "Industrial decline",
+        event:
+          "Manufacturing contraction and property reuse left aging buildings, tanks, equipment areas, and subsurface impacts requiring investigation.",
+      },
+      {
+        period: "2000s",
+        event:
+          "State investigation and interim actions addressed petroleum, solvents, PCBs, PAHs, and metals in targeted areas.",
+      },
+      {
+        period: "2010",
+        event:
+          "DEC reported completion of major interim remedial measures supporting controlled redevelopment.",
+      },
+      {
+        period: "Present",
+        event:
+          "Restricted-residential or other approved reuse depends on covers, institutional controls, and site-management requirements.",
+      },
+    ],
+    documentedImpacts: [
+      "Petroleum and chlorinated solvents affected portions of soil and groundwater.",
+      "PCBs were associated with electrical or industrial equipment areas.",
+      "PAHs and metals occurred in historic industrial soil and fill.",
+    ],
+    cleanupAndControls: [
+      "Interim measures removed tanks, contaminated material, or other identified sources where required.",
+      "Remaining impacts are managed beneath approved covers and through land-use and excavation controls.",
+      "Environmental easements and site-management obligations preserve the assumptions under which redevelopment was approved.",
+    ],
+    presentDay: [
+      "The former plant has moved from heavy industrial use toward redevelopment, but its environmental history remains embedded in parcel-specific controls. Reuse should not be described as proof that all residual material was removed.",
+    ],
+    researchNotes: [
+      "Establish the plant's opening date, original products, peak employment, and successor occupants from city directories and company records.",
+      "Map former production buildings, tank areas, railroad access, and remedial areas.",
+      "Separate conditions documented on the Remington Rand cleanup parcel from neighboring North Tonawanda industries.",
+    ],
+  },
+  "former-buffalo-china": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Buffalo Pottery was established in 1901 as part of the Larkin Company's vertically integrated manufacturing world. The Hayes Street factory produced decorated commercial and household ceramics, later operating under the Buffalo China name and becoming a familiar regional employer and brand.",
+      "Ceramic production involved kilns, glazing, decorating, fuels, solvents, metals, and extensive factory infrastructure. When the historic operation ended and the property entered redevelopment, investigation found that the environmental story extended beyond the plant boundary through groundwater and soil vapor.",
+    ],
+    timeline: [
+      {
+        period: "1901",
+        event:
+          "Buffalo Pottery began production as an associated Larkin enterprise on the East Side industrial property.",
+      },
+      {
+        period: "Twentieth century",
+        event:
+          "The plant produced institutional, commercial, and household ceramics and later became widely known as Buffalo China.",
+      },
+      {
+        period: "Factory closure and transition",
+        event:
+          "The end of historic ceramics production led to property investigation, demolition or reuse planning, and entry into the Brownfield Cleanup Program.",
+      },
+      {
+        period: "Remedial construction",
+        event:
+          "Cleanup addressed contaminated soil and groundwater and established vapor controls where necessary.",
+      },
+      {
+        period: "Present",
+        event:
+          "Groundwater, soil-vapor, and engineering-control monitoring continue, including an off-site sub-slab system at a neighboring residence.",
+      },
+    ],
+    documentedImpacts: [
+      "Industrial operations affected soil and groundwater beneath portions of the former factory.",
+      "Soil-vapor migration required evaluation beyond the principal property boundary.",
+      "A neighboring residence received a sub-slab depressurization system as part of the continuing protective measures.",
+    ],
+    cleanupAndControls: [
+      "Contaminated material was removed or managed beneath approved covers during redevelopment.",
+      "Groundwater and soil-vapor monitoring track residual impacts and potential migration.",
+      "Sub-slab depressurization, institutional controls, environmental easements, and periodic review remain part of the remedy.",
+    ],
+    presentDay: [
+      "The site illustrates both Buffalo's manufacturing ingenuity and the long environmental afterlife of an industrial plant. Redevelopment coexists with continuing off-site monitoring and vapor controls.",
+    ],
+    researchNotes: [
+      "Add product catalogs, worker history, photographs, and a factory-building chronology from Larkin and Buffalo Pottery archives.",
+      "Identify which ceramic processes and later occupants correspond to the documented contaminants.",
+      "Keep the neighboring vapor-control record precise enough to avoid generalizing conditions to the wider residential area.",
+    ],
+  },
+  "harrison-radiator-lockport": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Harrison Radiator emerged in Lockport during the early automobile era and became part of the group of component manufacturers assembled into General Motors. The plant made radiators and heat-exchange products, tying Lockport directly to the growth of mass automobile production.",
+      "The scale and longevity of metalworking, fabrication, testing, coating, degreasing, fuel use, and utility systems created a complex industrial property. DEC's completed-site designation reflects remedial work, but the historic facility should be interpreted parcel by parcel rather than as one uniform condition.",
+    ],
+    timeline: [
+      {
+        period: "Early 1900s",
+        event:
+          "Harrison developed radiator manufacturing in Lockport as the automobile industry expanded.",
+      },
+      {
+        period: "General Motors era",
+        event:
+          "The operation became a major GM component division and a defining regional employer.",
+      },
+      {
+        period: "Late twentieth century",
+        event:
+          "Production changes, plant modernization, and industrial-property transitions led to environmental investigation and cleanup.",
+      },
+      {
+        period: "Remediation",
+        event:
+          "State-supervised work addressed identified industrial impacts and established any required controls.",
+      },
+      {
+        period: "Present",
+        event:
+          "The closed DEC remediation record remains part of a larger active and former manufacturing landscape on Upper Mountain Road.",
+      },
+    ],
+    documentedImpacts: [
+      "Historic automotive-component manufacturing involved oils, fuels, solvents, metals, coatings, and industrial wastewater systems.",
+      "DEC records document a bounded remediation site within a much larger manufacturing history.",
+      "Conditions on one cleanup parcel should not be attributed automatically to the entire Harrison/GM property.",
+    ],
+    cleanupAndControls: [
+      "Investigation and remedial actions addressed identified source areas under DEC oversight.",
+      "Completed-site status records the remedial program outcome for the defined parcel.",
+      "Any residual contamination, excavation requirements, or continuing controls remain parcel-specific.",
+    ],
+    presentDay: [
+      "Harrison Radiator remains important both as labor and automotive history and as a documented cleanup site. The atlas treats those histories together without implying that the whole Lockport manufacturing district shares identical conditions.",
+    ],
+    researchNotes: [
+      "Verify the founding, acquisition, product, employment, and plant-expansion timeline through GM and Lockport archival sources.",
+      "Obtain the final remedial report and map the exact DEC site boundary within the larger plant.",
+      "Connect worker and product history without making unsupported occupational-health claims.",
+    ],
+  },
+  "lehigh-valley-railroad-derailment": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "In December 1970, a Lehigh Valley Railroad train derailed at the Gulf Road crossing in Le Roy. Two tank cars ruptured, releasing approximately 30,000 gallons of trichloroethylene, or TCE, into the ground; about one ton of cyanide crystals was also released.",
+      "The cyanide was collected and neutralizing material was spread, but most of the TCE could not be recovered. Odors were reported within days, and the solvent entered bedrock groundwater, eventually producing a plume extending roughly four miles through portions of Genesee, Livingston, and Monroe counties.",
+    ],
+    timeline: [
+      {
+        period: "December 1970",
+        event:
+          "The derailment released about 30,000 gallons of TCE and one ton of cyanide crystals at Gulf Road.",
+      },
+      {
+        period: "1971",
+        event:
+          "The railroad excavated flushing trenches and installed carbon treatment on affected private wells.",
+      },
+      {
+        period: "1989–1994",
+        event:
+          "TCE was found in the Genesee County campground well and then in approximately 50 wells east and southeast of the spill zone.",
+      },
+      {
+        period: "2003",
+        event:
+          "A public waterline connected existing homes in the affected area to a municipal supply.",
+      },
+      {
+        period: "2023",
+        event:
+          "EPA selected a long-term remedy addressing soil, groundwater, surface water, soil vapor, indoor air, and institutional controls.",
+      },
+    ],
+    documentedImpacts: [
+      "TCE entered fractured bedrock and created an approximately four-mile groundwater plume.",
+      "Private wells and a campground supply were affected, prompting filtration, monitoring, and public-water connections.",
+      "Soil vapor and indoor-air pathways required mitigation systems at affected properties.",
+      "Mud Creek surface water and streambed conditions became part of the remedy.",
+    ],
+    cleanupAndControls: [
+      "Contaminated source soil is excavated for permitted off-site disposal where accessible.",
+      "The selected remedy uses long-term groundwater monitoring because available treatment cannot restore the full bedrock plume within a reasonable period.",
+      "Streambed treatment, vapor mitigation, indoor-air monitoring, public-water connections, easements, and groundwater-use restrictions reduce exposure.",
+    ],
+    presentDay: [
+      "More than fifty years after the derailment, the site remains an active federal and state cleanup. Its history demonstrates how a short transportation accident can become a multi-county groundwater and vapor-management problem lasting generations.",
+    ],
+    researchNotes: [
+      "Add the train consist, locomotive, ownership, emergency-response, and contemporary newspaper chronology.",
+      "Map the spill zone, groundwater plume, public-water service area, Mud Creek remedy, and vapor-mitigation properties at appropriate privacy-preserving scales.",
+      "Track implementation milestones under EPA's 2023 Record of Decision.",
+    ],
+  },
+  "chemical-leaman-tank-lines": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Chemical Leaman Tank Lines operated a chemical tank-truck terminal on Fillmore Avenue in Tonawanda. Tank cleaning and freight handling generated wastewater and residues that were managed in on-site impoundments before modern hazardous-waste controls were established.",
+      "The property also contains layers of transportation and disposal history. A former trolley grade crossed the land, construction and demolition fill covered much of the western portion, and the southern edge drains toward Ellicott Creek.",
+    ],
+    timeline: [
+      {
+        period: "Pre-terminal landscape",
+        event:
+          "A north-south trolley grade crossed the property before later industrial filling and terminal development.",
+      },
+      {
+        period: "Tank-terminal era",
+        event:
+          "Chemical Leaman operated tank-truck handling and cleaning facilities with waste impoundments.",
+      },
+      {
+        period: "1970s",
+        event:
+          "Construction and demolition fill accumulated on the western property, including material reportedly associated with a burned Tonawanda department store.",
+      },
+      {
+        period: "1987–1989",
+        event:
+          "DEC ordered closure of the impoundments; contaminated material was excavated and shipped off site, followed by additional excavation and backfilling.",
+      },
+      {
+        period: "Present",
+        event:
+          "The Class 2 site remains under remediation requirements and an approximately 15-acre environmental easement.",
+      },
+    ],
+    documentedImpacts: [
+      "Tank washing and chemical-freight operations generated residues and wastewater managed in on-site impoundments.",
+      "Investigators documented fill, leachate breakout, and potential migration toward the low southern portion of the property and Ellicott Creek.",
+      "Construction and demolition debris complicates the site history but should not automatically be described as hazardous industrial waste without supporting records.",
+    ],
+    cleanupAndControls: [
+      "Waste-impoundment material was excavated and transported to an industrial disposal facility during closure work.",
+      "Additional investigation and remedy requirements address remaining soil, groundwater, fill, and migration pathways.",
+      "An environmental easement controls land use and requires compliance with the approved site-management framework.",
+    ],
+    presentDay: [
+      "Chemical Leaman remains a managed Class 2 cleanup property. Its story connects chemical transportation, tank cleaning, informal fill, historic transit infrastructure, and Ellicott Creek rather than representing a single isolated spill.",
+    ],
+    researchNotes: [
+      "Identify the chemicals routinely transported and the operating dates of the terminal from manifests, permits, and company directories.",
+      "Verify the reported Jenss department-store demolition-fill account through hauling and municipal records.",
+      "Map the former impoundments, trolley grade, filled area, leachate location, and creek boundary.",
+    ],
+  },
+  "altech-specialty-steel": {
+    lastReviewed: "July 27, 2026",
+    background: [
+      "Iron and steel manufacturing began on this Dunkirk property by 1908. Foundry work evolved into forging and finishing stainless-steel rod, bar, and wire, making the complex part of more than a century of metals production beside residential neighborhoods, rail lines, Crooked Brook, and Lake Erie.",
+      "Past operations included salt-bath and trichloroethylene pickling, plating, heat treatment, solid-waste disposal, spills, and discharges to Willowbrook Pond. The 90-acre site is divided into operable units because the demolished Lucas Avenue Plant, the pond and tributary, and the main industrial plant present different conditions.",
+    ],
+    timeline: [
+      {
+        period: "1908 onward",
+        event:
+          "Iron and steel manufacturing began, later shifting toward specialty and stainless-steel products.",
+      },
+      {
+        period: "1992",
+        event:
+          "A RCRA facility assessment identified 24 solid-waste-management units and 11 areas of concern.",
+      },
+      {
+        period: "1995–1997",
+        event:
+          "Facility investigation documented hazardous-waste disposal and impacts to groundwater and surface-water sediment.",
+      },
+      {
+        period: "1999–2002",
+        event:
+          "AlTech and successor Empire Specialty Steel entered bankruptcy; the property later continued operation as Dunkirk Specialty Steel.",
+      },
+      {
+        period: "2012–present",
+        event:
+          "DEC selected operable-unit remedies, demolished the Lucas Avenue Plant, and continued phased investigation and cleanup.",
+      },
+    ],
+    documentedImpacts: [
+      "Chromium, lead, PCBs, chlorinated solvents, and other industrial contaminants affected soil, groundwater, pond material, and tributary sediment.",
+      "Pickling operations used molten sodium or barium salts and trichloroethylene baths.",
+      "Willowbrook Pond and its tributary connected plant operations to Crooked Brook and the wider Lake Erie drainage system.",
+      "The plant lies near homes, recreation areas, and school property, making precise boundaries and pathways especially important.",
+    ],
+    cleanupAndControls: [
+      "DEC divided the property into the Lucas Avenue Plant, Willowbrook Pond/tributary, and main-plant operable units.",
+      "Demolition, excavation, soil and groundwater remedies, sediment work, covers, monitoring, and institutional controls proceed by operable unit.",
+      "Active industrial areas require cleanup designs that protect workers and neighbors while accounting for continuing operations.",
+    ],
+    presentDay: [
+      "Parts of the historic complex remain industrial while other areas have been demolished or entered remediation. AlTech is therefore both a continuing manufacturing landscape and a multi-phase State Superfund cleanup.",
+    ],
+    researchNotes: [
+      "Build the full company succession from the 1908 works through AlTech, Empire, and Dunkirk Specialty Steel.",
+      "Map all three operable units, Willowbrook Pond, the tributary, Crooked Brook, residential edges, and former disposal areas.",
+      "Track remedy construction and sediment status without presenting proposed work as completed.",
+    ],
+  },
   "west-valley": {
     lastReviewed: "July 27, 2026",
     background: [
