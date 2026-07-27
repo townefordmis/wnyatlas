@@ -336,6 +336,10 @@ h1 {
   cursor: pointer;
 }
 
+.map-canvas .maplibregl-marker {
+  transition: none !important;
+}
+
 .atlas-marker-wrap {
   position: relative;
   width: 28px;
@@ -364,7 +368,6 @@ h1 {
 .atlas-cluster:focus-visible {
   outline: 3px solid var(--ink);
   outline-offset: 3px;
-  transform: scale(1.08);
 }
 
 .atlas-marker-wrap:hover,
@@ -1574,7 +1577,7 @@ footer {
   .atlas-marker-wrap:hover .atlas-marker,
   .atlas-marker:focus-visible,
   .atlas-marker-wrap.is-highlighted .atlas-marker {
-    transform: rotate(-45deg) scale(1.12);
+    transform: rotate(-45deg);
   }
 
   .atlas-marker-label {
