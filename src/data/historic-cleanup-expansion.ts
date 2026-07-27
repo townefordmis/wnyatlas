@@ -7,6 +7,88 @@ const decEasements =
 
 export const historicCleanupExpansion: AtlasSite[] = [
   {
+    id: "union-ship-canal-hanna-furnace",
+    name: "Union Ship Canal / Hanna Furnace",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former Hanna Furnace pig-iron waterfront where industrial fill, furnace waste, petroleum impacts, contaminated groundwater, and canal sediment required a brownfield remedy. Debris was removed, surrounding land was covered, canal walls were stabilized, and contaminated sediment east of Route 5 was isolated beneath geotextile and a stone-and-gravel cover. The remediated landscape is now Ship Canal Commons.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.8514, 42.835],
+    story: {
+      lastReviewed: "July 27, 2026",
+      background: [
+        "The Union Ship Canal—originally called the Goodyear Canal—was constructed beginning in 1903 to connect Lake Erie shipping with the Buffalo and Susquehanna Iron Company, later Hanna Furnace. Freighters delivered iron ore and limestone to the canal, and bridge cranes transferred those raw materials to the adjoining pig-iron works.",
+        "Hanna Furnace operated from 1902 until 1982. Its blast furnaces, rail yard, engine-repair area, waste-disposal areas, and extensive industrial fill left a complex environmental record in the land surrounding the canal and in the canal sediment itself.",
+      ],
+      timeline: [
+        {
+          period: "1902–1903",
+          event:
+            "Pig-iron production began and construction of the ship canal connected the furnace complex to Lake Erie.",
+        },
+        {
+          period: "1910",
+          event:
+            "The canal was extended to support the growing furnace and bulk-material operation.",
+        },
+        {
+          period: "1982",
+          event:
+            "Hanna Furnace ended pig-iron production, leaving a large underused industrial property.",
+        },
+        {
+          period: "2001 onward",
+          event:
+            "Demolition and phased environmental work began across the former furnace property and Buffalo Lakeside Commerce Park.",
+        },
+        {
+          period: "2010–2011",
+          event:
+            "The Union Ship Canal public-open-space remedy covered contaminated canal sediment, stabilized walls, installed upland covers, and created Ship Canal Commons.",
+        },
+      ],
+      documentedImpacts: [
+        "Furnace waste and soil contained elevated metals including lead, copper, chromium, arsenic, and selenium, together with cyanide and other industrial contaminants.",
+        "Engine repair in the former rail yard created a documented petroleum-contaminated area.",
+        "Canal sediment was contaminated and required an engineered cover rather than unrestricted disturbance or complete removal.",
+        "Groundwater and the surrounding filled industrial land were evaluated and managed separately from the sediment remedy.",
+      ],
+      cleanupAndControls: [
+        "Surface debris was removed and the park landscape was regraded beneath an imported clean-soil cover.",
+        "Unstable portions of the northern and eastern canal walls were reinforced with an underwater berm.",
+        "Sediment east of the Route 5 bridge was covered with geotextile filter fabric and approximately one foot of stone and gravel.",
+        "An environmental easement and site-management requirements preserve the public passive-recreation assumptions of the remedy.",
+      ],
+      presentDay: [
+        "Ship Canal Commons provides trails, habitat, fishing access, and public interpretation around the surviving canal. Its public use rests on an engineered brownfield remedy: contaminated sediment and residual upland material remain managed beneath covers and controls.",
+      ],
+      researchNotes: [
+        "Map the sediment-cover boundary east of Route 5 separately from the entire canal waterbody.",
+        "Build a parcel crosswalk among Hanna Furnace subparcels, Buffalo Lakeside Commerce Park, and neighboring disposal or industrial sites.",
+        "Track current easement inspections, sediment-cover condition, canal-wall maintenance, and any future dredging restrictions.",
+      ],
+    },
+    sources: [
+      {
+        title: "Union Ship Canal Cleanup Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/usccleanupfs.pdf",
+      },
+      {
+        title: "Hanna Furnace Preliminary Site Assessment",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/E915193/Report.ERP.E915193.1995-11-01.PSA_Vol_I.pdf",
+      },
+      {
+        title: "Hanna Furnace Subparcel 3 Environmental Easement",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/brownfield-and-state-superfund-programs/finalizing-remedial-projects/sites-with-environmental-easements",
+      },
+    ],
+  },
+  {
     id: "houdaille-strippit-landfill",
     name: "Houdaille / Strippit Landfill",
     municipality: "Akron / Town of Newstead",
