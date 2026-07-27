@@ -39,6 +39,18 @@ button {
   font: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .site-header {
   min-height: 76px;
   display: grid;
@@ -79,10 +91,88 @@ nav a:hover {
 }
 
 .edition {
-  justify-self: end;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header-tools {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-search {
+  position: relative;
+  display: flex;
+}
+
+.header-search input {
+  width: clamp(150px, 15vw, 230px);
+  padding: 0.55rem 0.65rem;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-right: 0;
+  border-radius: 2px 0 0 2px;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.header-search button {
+  padding: 0.55rem 0.7rem;
+  color: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 0 2px 2px 0;
+  background: var(--ink);
+  font-size: 0.74rem;
+  cursor: pointer;
+}
+
+.header-search button:disabled {
+  cursor: default;
+  opacity: 0.52;
+}
+
+.header-search-results {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.45rem);
+  right: 0;
+  width: min(360px, 88vw);
+  color: var(--paper);
+  border: 1px solid rgba(245, 241, 231, 0.2);
+  background: var(--ink);
+  box-shadow: 0 10px 28px rgba(23, 39, 32, 0.28);
+}
+
+.header-search-results a {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.75rem 0.85rem;
+  border-bottom: 1px solid rgba(245, 241, 231, 0.15);
+}
+
+.header-search-results a:hover,
+.header-search-results a:focus-visible {
+  background: rgba(143, 196, 199, 0.14);
+}
+
+.header-search-results strong {
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.header-search-results span,
+.header-search-results p {
+  color: var(--water-light);
+  font-size: 0.68rem;
+}
+
+.header-search-results p {
+  margin: 0;
+  padding: 0.85rem;
 }
 
 .hero {
@@ -834,6 +924,79 @@ footer {
   margin-top: 0.8rem;
 }
 
+.connection-groups {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.story-body .connection-groups > section {
+  margin: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.connection-groups h3 {
+  margin: 0 0 0.6rem;
+  font-family: Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.connection-groups > section > p {
+  margin-top: 0;
+  color: rgba(23, 39, 32, 0.7);
+}
+
+.connection-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.connection-list a {
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.connection-list a:hover,
+.connection-list a:focus-visible {
+  border-color: var(--rust);
+}
+
+.connection-list a.is-current {
+  border-color: var(--moss);
+  box-shadow: inset 4px 0 0 var(--moss);
+}
+
+.connection-list span {
+  color: var(--rust);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.connection-list strong {
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.connection-list p {
+  margin: 0;
+  color: rgba(23, 39, 32, 0.68);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
 .story-timeline {
   padding: 0;
   list-style: none;
@@ -919,6 +1082,10 @@ footer {
     display: none;
   }
 
+  .edition {
+    display: none;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding-top: 5rem;
@@ -951,12 +1118,27 @@ footer {
 }
 
 @media (max-width: 620px) {
-  .edition {
-    display: none;
+  .site-header {
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
+    padding: 0.75rem 4vw;
   }
 
-  .site-header {
-    grid-template-columns: 1fr;
+  .header-tools {
+    width: 100%;
+  }
+
+  .header-search {
+    width: 100%;
+  }
+
+  .header-search input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .site-header .brand > span:last-child {
+    display: none;
   }
 
   .hero {
@@ -1042,6 +1224,10 @@ footer {
   .story-timeline li {
     grid-template-columns: 1fr;
     gap: 0.2rem;
+  }
+
+  .connection-list {
+    grid-template-columns: 1fr;
   }
 
   footer {
