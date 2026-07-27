@@ -78,7 +78,9 @@ export function SiteDirectory() {
           Showing {visibleSites.length} of {featuredSites.length} places
         </p>
         <button type="button" onClick={() => setIsExpanded((value) => !value)}>
-          {isExpanded ? "Show fewer places" : "View all 75 places"}
+          {isExpanded
+            ? "Show fewer places"
+            : `View all ${featuredSites.length} places`}
         </button>
       </div>
     </section>
