@@ -1,5 +1,6 @@
 import { AtlasMap } from "@/components/atlas-map";
 import { SiteDirectory } from "@/components/site-directory";
+import { SiteHeader } from "@/components/site-header";
 
 const categories = [
   ["Industrial history", "Factories, products, employers, and material flows"],
@@ -17,19 +18,7 @@ const categories = [
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="brand" href="#" aria-label="WNYAtlas home">
-          <span className="brand-mark">WNY</span>
-          <span>ATLAS</span>
-        </a>
-        <nav aria-label="Main navigation">
-          <a href="#map">Map</a>
-          <a href="#mission">Mission</a>
-          <a href="#sites">Sites</a>
-          <a href="#about">About</a>
-        </nav>
-        <span className="edition">Founding edition · 2026</span>
-      </header>
+      <SiteHeader />
 
       <section className="hero" id="mission">
         <div className="hero-copy">

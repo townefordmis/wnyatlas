@@ -4,6 +4,10 @@ const source = fs.readFileSync(
   new URL("../src/data/featured-sites.ts", import.meta.url),
   "utf8",
 );
+const connectionSource = fs.readFileSync(
+  new URL("../src/data/site-connections.ts", import.meta.url),
+  "utf8",
+);
 
 const sitePattern =
   /id: "([^"]+)"[\s\S]*?name: "([^"]+)"[\s\S]*?coordinates: \[(-?\d+(?:\.\d+)?), (-?\d+(?:\.\d+)?)\]/g;
@@ -16,6 +20,7 @@ const sites = [...source.matchAll(sitePattern)].map((match) => ({
 
 const issues = [];
 const coordinateOwners = new Map();
+const siteIds = new Set(sites.map((site) => site.id));
 
 for (const site of sites) {
   if (
@@ -38,7 +43,18 @@ for (const site of sites) {
   }
 }
 
+const connectedSiteIds = [
+  ...connectionSource.matchAll(/siteId: "([^"]+)"/g),
+].map((match) => match[1]);
+
+for (const siteId of connectedSiteIds) {
+  if (!siteIds.has(siteId)) {
+    issues.push(`Connection group references unknown site ID: ${siteId}`);
+  }
+}
+
 console.log(`Checked ${sites.length} site coordinates.`);
+console.log(`Checked ${connectedSiteIds.length} connection memberships.`);
 
 if (sites.length !== 75) {
   issues.push(`Expected 75 coordinate records but found ${sites.length}`);

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { featuredSites } from "@/data/featured-sites";
+import { getConnectionGroupsForSite } from "@/data/site-connections";
 import { getSiteStory } from "@/lib/site-story";
 
 type SitePageProps = {
@@ -50,6 +51,7 @@ export default async function SitePage({ params }: SitePageProps) {
   }
 
   const story = getSiteStory(site);
+  const connectionGroups = getConnectionGroupsForSite(site.id, featuredSites);
 
   return (
     <main className="story-page">
@@ -145,6 +147,44 @@ export default async function SitePage({ params }: SitePageProps) {
                 {story.presentDay.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
+              </section>
+            )}
+
+            {connectionGroups.length > 0 && (
+              <section>
+                <p className="eyebrow">Atlas connections</p>
+                <h2>Connected places</h2>
+                <p>
+                  These collections explain documented material, facility,
+                  waterway, ownership, or cleanup relationships. Inclusion does not
+                  imply that every place shares one contaminant source or plume.
+                </p>
+                <div className="connection-groups">
+                  {connectionGroups.map((group) => (
+                    <section key={group.id}>
+                      <h3>{group.name}</h3>
+                      <p>{group.summary}</p>
+                      <div className="connection-list">
+                        {group.members.map((member) => (
+                          <Link
+                            className={
+                              member.siteId === site.id ? "is-current" : ""
+                            }
+                            href={`/sites/${member.siteId}`}
+                            key={member.siteId}
+                            aria-current={
+                              member.siteId === site.id ? "page" : undefined
+                            }
+                          >
+                            <span>{member.role}</span>
+                            <strong>{member.site.name}</strong>
+                            <p>{member.connection}</p>
+                          </Link>
+                        ))}
+                      </div>
+                    </section>
+                  ))}
+                </div>
               </section>
             )}
 
