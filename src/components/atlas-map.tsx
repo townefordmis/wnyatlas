@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type { Map as MapLibreMap, Marker } from "maplibre-gl";
@@ -73,6 +74,9 @@ export function AtlasMap() {
     mapInstance.on("error", () => setMapUnavailable(true));
 
     markers.current = featuredSites.map((site) => {
+      const markerElement = document.createElement("div");
+      markerElement.className = "atlas-marker-wrap";
+
       const markerButton = document.createElement("button");
       markerButton.type = "button";
       markerButton.className = `atlas-marker marker-${site.category}`;
@@ -80,10 +84,16 @@ export function AtlasMap() {
         "aria-label",
         `Show ${site.name}, ${site.municipality}`,
       );
-      markerButton.title = site.name;
       markerButton.addEventListener("click", () => setSelectedSite(site));
 
-      return new maplibregl.Marker({ element: markerButton, anchor: "bottom" })
+      const markerLabel = document.createElement("span");
+      markerLabel.className = "atlas-marker-label";
+      markerLabel.setAttribute("aria-hidden", "true");
+      markerLabel.textContent = site.name;
+
+      markerElement.append(markerButton, markerLabel);
+
+      return new maplibregl.Marker({ element: markerElement, anchor: "bottom" })
         .setLngLat(site.coordinates)
         .addTo(mapInstance);
     });
@@ -174,6 +184,11 @@ export function AtlasMap() {
               </p>
             )}
             <span>{evidenceLabels[selectedSite.evidenceStatus]}</span>
+            {selectedSite.story && (
+              <Link className="map-story-link" href={`/sites/${selectedSite.id}`}>
+                Read the full place record →
+              </Link>
+            )}
             {selectedSite.sources && (
               <div className="map-sources">
                 <strong>Official sources</strong>

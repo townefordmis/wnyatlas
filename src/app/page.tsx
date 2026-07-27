@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { AtlasMap } from "@/components/atlas-map";
 import { featuredSites } from "@/data/featured-sites";
 
@@ -72,11 +74,11 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Starting collection</p>
-            <h2>{featuredSites.length} anchor stories</h2>
+            <h2>{featuredSites.length} anchor places</h2>
           </div>
           <p>
-            These first records establish the model for hundreds of sourced places
-            across Erie, Niagara, and neighboring counties.
+            Completed long-form stories are linked as their background, chronology,
+            environmental record, cleanup status, and primary sources finish review.
           </p>
         </div>
         <div className="site-list">
@@ -85,7 +87,13 @@ export default function Home() {
               <span className="site-number">{String(index + 1).padStart(2, "0")}</span>
               <div>
                 <p className="site-meta">{site.category} · {site.county} County</p>
-                <h3>{site.name}</h3>
+                <h3>
+                  {site.story ? (
+                    <Link href={`/sites/${site.id}`}>{site.name}</Link>
+                  ) : (
+                    site.name
+                  )}
+                </h3>
                 <p>{site.summary}</p>
                 {site.atomicLegacy && (
                   <p className="site-meta">
@@ -93,9 +101,14 @@ export default function Home() {
                   </p>
                 )}
               </div>
-              <span className="evidence-pill">
-                {evidenceLabels[site.evidenceStatus]}
-              </span>
+              <div className="site-actions">
+                <span className="evidence-pill">
+                  {evidenceLabels[site.evidenceStatus]}
+                </span>
+                {site.story && (
+                  <Link href={`/sites/${site.id}`}>Read the story →</Link>
+                )}
+              </div>
             </article>
           ))}
         </div>
