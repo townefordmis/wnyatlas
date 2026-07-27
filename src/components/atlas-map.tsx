@@ -41,7 +41,6 @@ export function AtlasMap() {
   const clusterMarkers = useRef<Marker[]>([]);
   const markerElements = useRef<Map<string, HTMLDivElement>>(new Map());
   const visibleSites = useRef<AtlasSite[]>(featuredSites);
-  const activeSiteId = useRef(featuredSites[0].id);
   const refreshMarkers = useRef<() => void>(() => undefined);
   const [selectedSite, setSelectedSite] = useState<AtlasSite>(featuredSites[0]);
   const [highlightedSiteId, setHighlightedSiteId] = useState<string | null>(null);
@@ -170,7 +169,6 @@ export function AtlasMap() {
       clearClusters();
 
       const sites = visibleSites.current;
-      const highlightedId = activeSiteId.current;
       const visibleIds = new Set(sites.map((site) => site.id));
 
       markerElementMap.forEach((element, siteId) => {
@@ -182,7 +180,10 @@ export function AtlasMap() {
 
       if (mapInstance.getZoom() >= CLUSTER_ZOOM_THRESHOLD) return;
 
-      const clusterCandidates = sites.filter((site) => site.id !== highlightedId);
+      // Keep every site inside its geographic cluster at regional zoom.
+      // Pulling the selected site out as a separate pin caused it to overlap
+      // the nearby cluster and made the regional view harder to read.
+      const clusterCandidates = sites;
       const clusters: SiteCluster[] = [];
 
       clusterCandidates.forEach((site) => {
@@ -242,10 +243,6 @@ export function AtlasMap() {
         );
       });
 
-      const activeMarker = markerElementMap.get(highlightedId);
-      if (activeMarker && visibleIds.has(highlightedId)) {
-        activeMarker.style.display = "";
-      }
     }
 
     refreshMarkers.current = drawVisibleMarkers;
@@ -265,7 +262,6 @@ export function AtlasMap() {
   }, []);
 
   useEffect(() => {
-    activeSiteId.current = highlightedSiteId ?? displayedSite.id;
     markerElements.current.forEach((element, siteId) => {
       element.classList.toggle(
         "is-highlighted",
