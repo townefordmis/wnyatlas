@@ -1,6 +1,8 @@
 import { AtlasMap } from "@/components/atlas-map";
 import { SiteDirectory } from "@/components/site-directory";
 import { SiteHeader } from "@/components/site-header";
+import { StructuredData } from "@/components/structured-data";
+import { VisitorCount } from "@/components/visitor-count";
 
 const categories = [
   ["Industrial history", "Factories, products, employers, and material flows"],
@@ -16,8 +18,20 @@ const categories = [
 ];
 
 export default function Home() {
+  const websiteData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "WNYAtlas",
+    alternateName: "Western New York Industrial & Environmental Atlas",
+    url: "https://wnyatlas.com/",
+    description:
+      "An evidence-based public atlas of Western New York's industrial, environmental, cleanup, and redevelopment history.",
+    inLanguage: "en-US",
+  };
+
   return (
     <main>
+      <StructuredData data={websiteData} />
       <SiteHeader />
 
       <section className="hero" id="mission">
@@ -76,6 +90,7 @@ export default function Home() {
         </div>
         <p>Evidence-based public history for Western New York.</p>
         <p>wnyatlas.com</p>
+        <VisitorCount />
       </footer>
     </main>
   );

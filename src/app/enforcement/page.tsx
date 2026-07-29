@@ -4,9 +4,19 @@ import Link from "next/link";
 import { enforcementActions } from "@/data/enforcement-actions";
 
 export const metadata: Metadata = {
-  title: "Major Environmental Enforcement Actions | WNYAtlas",
+  title: "Major Environmental Enforcement Actions",
   description:
     "Ten major documented environmental penalties, settlements, and cost recoveries in Western New York.",
+  alternates: {
+    canonical: "/enforcement",
+  },
+  openGraph: {
+    type: "article",
+    url: "/enforcement",
+    title: "Major Environmental Enforcement Actions | WNYAtlas",
+    description:
+      "Ten major documented environmental penalties, settlements, and cost recoveries in Western New York.",
+  },
 };
 
 export default function EnforcementPage() {

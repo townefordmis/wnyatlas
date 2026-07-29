@@ -1,7 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { FormerWaterwaysMap } from "@/components/former-waterways-map";
 import { SiteHeader } from "@/components/site-header";
+
+export const metadata: Metadata = {
+  title: "Former and Buried Waterways of Buffalo",
+  description:
+    "Explore documented former canals, filled channels, reclaimed waterfront land, disposal fill, and contaminated sediment in Buffalo, New York.",
+  alternates: {
+    canonical: "/research/former-waterways",
+  },
+  openGraph: {
+    type: "article",
+    url: "/research/former-waterways",
+    title: "Former and Buried Waterways of Buffalo | WNYAtlas",
+    description:
+      "A source-led map of Buffalo's former canals, filled channels, reclaimed waterfront land, disposal fill, and contaminated sediment.",
+  },
+};
 
 export default function FormerWaterwaysResearchPage() {
   return (

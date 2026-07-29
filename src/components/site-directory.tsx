@@ -142,14 +142,17 @@ export function SiteDirectory() {
           <p>
             Showing {visibleSites.length} of {filteredSites.length} places
           </p>
-          {!isFiltering && filteredSites.length > INITIAL_SITE_COUNT && (
-            <button
-              type="button"
-              onClick={() => setIsExpanded((value) => !value)}
-            >
-              {isExpanded ? "Show fewer places" : "View all places"}
-            </button>
-          )}
+          <div className="directory-toggle-actions">
+            <Link href="/places">Complete A–Z index</Link>
+            {!isFiltering && filteredSites.length > INITIAL_SITE_COUNT && (
+              <button
+                type="button"
+                onClick={() => setIsExpanded((value) => !value)}
+              >
+                {isExpanded ? "Show fewer places" : "View all places"}
+              </button>
+            )}
+          </div>
         </div>
       )}
     </section>

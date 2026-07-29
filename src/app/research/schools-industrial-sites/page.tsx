@@ -1,7 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { BuffaloSchoolsMap } from "@/components/buffalo-schools-map";
 import { SiteHeader } from "@/components/site-header";
+
+export const metadata: Metadata = {
+  title: "Schools Near Documented Cleanup Sites",
+  description:
+    "A carefully sourced map of Western New York school campuses touching, adjoining, or within 500 feet of documented cleanup-property boundaries.",
+  alternates: {
+    canonical: "/research/schools-industrial-sites",
+  },
+  openGraph: {
+    type: "article",
+    url: "/research/schools-industrial-sites",
+    title: "Schools Near Documented Cleanup Sites | WNYAtlas",
+    description:
+      "Explore documented property, adjacency, and 500-foot proximity relationships involving Western New York schools and cleanup sites.",
+  },
+};
 
 export default function BuffaloSchoolsResearchPage() {
   return (

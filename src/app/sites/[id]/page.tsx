@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+import { StructuredData } from "@/components/structured-data";
 import { featuredSites } from "@/data/featured-sites";
 import {
   buffaloSchoolCampuses,
@@ -41,8 +42,31 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${site.name} | WNYAtlas`,
+    title: site.name,
     description: site.summary,
+    alternates: {
+      canonical: `/sites/${site.id}`,
+    },
+    openGraph: {
+      type: "article",
+      url: `/sites/${site.id}`,
+      title: `${site.name} | WNYAtlas`,
+      description: site.summary,
+      images: site.image
+        ? [
+            {
+              url: site.image.src,
+              alt: site.image.alt,
+            },
+          ]
+        : ["/opengraph-image"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${site.name} | WNYAtlas`,
+      description: site.summary,
+      images: [site.image?.src ?? "/opengraph-image"],
+    },
   };
 }
 
@@ -65,9 +89,93 @@ export default async function SitePage({ params }: SitePageProps) {
         existingAtlasSiteByCleanupCode[record.siteCode] === site.id,
     ),
   );
+  const siteUrl = `https://wnyatlas.com/sites/${site.id}`;
+  const reviewedDate = story.lastReviewed
+    ? new Date(story.lastReviewed)
+    : null;
+  const dateModified =
+    reviewedDate && !Number.isNaN(reviewedDate.valueOf())
+      ? reviewedDate.toISOString()
+      : undefined;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${siteUrl}#article`,
+        headline: site.name,
+        description: site.summary,
+        url: siteUrl,
+        mainEntityOfPage: siteUrl,
+        inLanguage: "en-US",
+        ...(dateModified ? { dateModified } : {}),
+        ...(site.image
+          ? { image: `https://wnyatlas.com${site.image.src}` }
+          : {}),
+        author: {
+          "@type": "Organization",
+          name: "WNYAtlas",
+          url: "https://wnyatlas.com/",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "WNYAtlas",
+          url: "https://wnyatlas.com/",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://wnyatlas.com/icon.svg",
+          },
+        },
+        about: {
+          "@id": `${siteUrl}#place`,
+        },
+      },
+      {
+        "@type": "Place",
+        "@id": `${siteUrl}#place`,
+        name: site.name,
+        description: site.summary,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: site.municipality,
+          addressRegion: "NY",
+          addressCountry: "US",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          longitude: site.coordinates[0],
+          latitude: site.coordinates[1],
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "WNYAtlas",
+            item: "https://wnyatlas.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "All documented places",
+            item: "https://wnyatlas.com/places",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: site.name,
+            item: siteUrl,
+          },
+        ],
+      },
+    ],
+  };
 
   return (
     <main className="story-page">
+      <StructuredData data={structuredData} />
       <header className="story-header">
         <Link className="brand" href="/" aria-label="WNYAtlas home">
           <span className="brand-mark">WNY</span>

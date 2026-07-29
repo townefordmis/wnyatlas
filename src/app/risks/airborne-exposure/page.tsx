@@ -4,9 +4,19 @@ import Link from "next/link";
 import { AirborneRiskMap } from "@/components/airborne-risk-map";
 
 export const metadata: Metadata = {
-  title: "Airborne Exposure & Historic Plumes | WNYAtlas",
+  title: "Airborne Exposure & Historic Plumes",
   description:
     "A source-led orientation map of documented historic airborne environmental concerns in Western New York.",
+  alternates: {
+    canonical: "/risks/airborne-exposure",
+  },
+  openGraph: {
+    type: "article",
+    url: "/risks/airborne-exposure",
+    title: "Airborne Exposure & Historic Plumes | WNYAtlas",
+    description:
+      "A source-led orientation map of documented historic airborne environmental concerns in Western New York.",
+  },
 };
 
 export default function AirborneExposurePage() {
