@@ -11,6 +11,9 @@ import type { AtlasSite } from "@/types/site";
 
 const regionCenter: [number, number] = [-78.84, 42.8];
 const SITE_LIST_PAGE_SIZE = 30;
+const countyOptions = [...new Set(featuredSites.map((site) => site.county))].sort(
+  (a, b) => a.localeCompare(b),
+);
 
 const categoryLabels: Record<AtlasSite["category"], string> = {
   cleanup: "Cleanup",
@@ -241,10 +244,11 @@ export function AtlasMap() {
                   }}
                 >
                   <option value="all">All counties</option>
-                  <option value="Erie">Erie</option>
-                  <option value="Niagara">Niagara</option>
-                  <option value="Cattaraugus">Cattaraugus</option>
-                  <option value="Chautauqua">Chautauqua</option>
+                  {countyOptions.map((countyName) => (
+                    <option key={countyName} value={countyName}>
+                      {countyName}
+                    </option>
+                  ))}
                 </select>
               </label>
               <label>

@@ -1965,4 +1965,182 @@ export const historicCleanupExpansion: AtlasSite[] = [
       },
     ],
   },
+  {
+    id: "fmc-dublin-road-landfill",
+    name: "FMC Dublin Road Landfill",
+    municipality: "Shelby and Ridgeway",
+    county: "Orleans",
+    category: "cleanup",
+    summary:
+      "Former federal Superfund landfill used from 1933 to 1968 for wastes from the Niagara Sprayer and FMC pesticide operation in Middleport. DDT, DDD, DDE, lindane-related compounds, metals, and other wastes affected several environmental media; the remedy consolidated and capped waste, treated water, restored wetlands, and established continuing controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.441212, 43.21636],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The 30-acre Dublin Road property lies in the towns of Shelby and Ridgeway. From 1933 through 1968, approximately six acres received coal ash, cinders, laboratory material, building debris, lime-sulfur residues, and residues from pesticide-production areas and equipment associated with the Middleport plant.",
+        "EPA and DEC treated Dublin Road as a distinct disposal site. Its history is directly related to FMC Middleport, but its landfill boundary, remedy, and present-day controls are separate.",
+      ],
+      timeline: [
+        { period: "1933-1968", event: "Niagara Sprayer and FMC used part of the property for disposal of pesticide-production residues and other wastes." },
+        { period: "1993", event: "EPA and DEC selected a remedy for contaminated soil, sediment, debris, groundwater, and surface water." },
+        { period: "2015", event: "DEC determined that remedial construction was complete and reclassified the property from Class 2 to Class 4." },
+        { period: "2020-present", event: "EPA deleted the site from the National Priorities List; state-supervised monitoring and site management continue." },
+      ],
+      documentedImpacts: [
+        "EPA's remedy records identify DDT, DDD, DDE, alpha-, beta-, and gamma-hexachlorocyclohexane, including lindane, as site contaminants of concern.",
+        "Arsenic, copper, lead, mercury, zinc, pesticides, and related wastes affected combinations of soil, sediment, groundwater, and surface water.",
+        "A historical cleanup record is not evidence that present-day neighboring drinking water is contaminated; exposure and water-quality conclusions must come from current sampling records.",
+      ],
+      cleanupAndControls: [
+        "The remedy excavated and consolidated affected soil, sediment, debris, and waste into an engineered on-site cell with treatment, leachate controls, and a soil cap.",
+        "Groundwater and surface-water treatment, wetland restoration, inspections, monitoring, an environmental easement, and land and groundwater restrictions support the long-term remedy.",
+      ],
+      presentDay: [
+        "Deletion from the federal Superfund list and Class 4 state status mean the remedy was constructed and is being managed; they do not mean the capped waste or long-term obligations disappeared.",
+      ],
+      researchNotes: [
+        "Track DEC periodic reviews and any revisions to monitoring after decommissioning of the former groundwater extraction and treatment equipment.",
+      ],
+    },
+    sources: [
+      {
+        title: "FMC Dublin Road Cleanup and NPL Deletion",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-completes-cleanup-fmc-corp-landfill-superfund-site",
+      },
+      {
+        title: "FMC Dublin Road Superfund Cleanup Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0201207",
+      },
+      {
+        title: "FMC Dublin Road 2026 Site Management Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/837001/Work%20Plan.HW.837001.2026-01-09.SMP%20Rev.%201.pdf",
+      },
+      {
+        title: "FMC Dublin Road Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/837001/",
+      },
+    ],
+  },
+  {
+    id: "lyndonville-west-avenue",
+    name: "Lyndonville - West Avenue Landfill",
+    municipality: "Lyndonville",
+    county: "Orleans",
+    category: "cleanup",
+    summary:
+      "Historic landfill and drainage-swale cleanup where DEC records identified arsenic, DDT, DDD, and DDE as constituents requiring control. Stormwater diversion, leachate collection, soil removal, a landfill cap, fencing, and land-use restrictions form the continuing remedy.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.39237616, 43.32384815],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The West Avenue record covers a historic landfill, an adjoining drainage swale, and landfill leachate that once entered the village industrial storm-sewer system.",
+        "Investigations involved several nearby industrial parties. The atlas therefore reports the defined DEC site and remedy without assigning every material in the landfill to one company or operation.",
+      ],
+      timeline: [
+        { period: "1978-1993", event: "State and local investigations examined odors, drainage, soil, surface water, and stormwater along West Avenue." },
+        { period: "1994", event: "The property was reclassified as a Class 2 inactive hazardous-waste site." },
+        { period: "2000-2001", event: "Stormwater diversion and a leachate collection system stopped landfill leachate from entering the West Avenue storm sewer." },
+        { period: "2005 onward", event: "Drainage-swale soil removal, landfill capping, fencing, leachate management, and long-term site controls implemented the remedy." },
+      ],
+      documentedImpacts: [
+        "DEC's site-management plan identifies arsenic, DDT, DDD, and DDE as constituents of potential concern in landfill or drainage-swale soil.",
+        "Earlier investigations described pesticide concentrations as relatively low and potentially influenced by the area's agricultural background; the atlas does not infer a specific source beyond the official site record.",
+        "Landfill leachate, erosion, and direct contact with remaining material were the principal pathways addressed by the remedy.",
+      ],
+      cleanupAndControls: [
+        "The remedy removed affected drainage-swale soil and installed an asphalt and soil cap with a geosynthetic barrier over the landfill.",
+        "Leachate collection and off-site disposal, fencing, inspections, maintenance, access restrictions, and property controls remain part of site management.",
+      ],
+      presentDay: [
+        "DEC continues to list West Avenue as a Class 2 site. The cap and collection system control remaining material rather than documenting unrestricted cleanup.",
+      ],
+      researchNotes: [
+        "Track current periodic-review findings and distinguish this landfill from the nearby Monroe Electronics cleanup, which has its own DEC site number.",
+      ],
+    },
+    sources: [
+      {
+        title: "Lyndonville West Avenue Site Management Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/837002/Work%20Plan.HW.837002.2005-04-22.SITE_MANAGEMENT_PLAN.pdf",
+      },
+      {
+        title: "Lyndonville West Avenue Focused Feasibility Study",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/837002/Report.HW.837002.2003-11-05.Revised%20Lyndonville%20Focused%20Feasibility%20Study%20Report.pdf",
+      },
+      {
+        title: "Lyndonville West Avenue Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/837002/",
+      },
+    ],
+  },
+  {
+    id: "robert-moses-parkway-south",
+    name: "Robert Moses Parkway - South Site",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "State Superfund cleanup within Niagara Falls State Park where buried contaminated fill included an organochlorine-pesticide hazardous-waste area. Roughly 32,000 tons of contaminated soil and waste were removed, including approximately 2,810 tons managed as hazardous pesticide waste; covers and long-term controls remain.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.052733333, 43.081777778],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The approximately 16-acre cleanup area lies between Buffalo Avenue, Riverside Drive, the former Robert Moses Parkway, Fourth Street, and the Niagara River.",
+        "DEC records state that the area has been park land since the Niagara Reservation was created in 1885 and did not confirm former mills or factories inside the site boundary. The marker therefore documents buried fill and waste, not a proven on-site manufacturing operation.",
+      ],
+      timeline: [
+        { period: "2010", event: "A preliminary assessment for parkway reconstruction identified the potential for contaminated fill." },
+        { period: "2015-2018", event: "State Parks entered a cleanup order, investigations defined affected areas, and interim removals addressed buried waste and contaminated soil." },
+        { period: "2019", event: "DEC selected the final State Superfund remedy, incorporating the completed removals, site covers, and long-term management." },
+        { period: "2020-present", event: "A certificate documented completion of remedial construction while the site remained subject to covers, restrictions, and management." },
+      ],
+      documentedImpacts: [
+        "Aldrin exceeded the commercial-use soil cleanup objective in a documented hot spot; hexachlorobenzene and additional metals, volatile compounds, and semi-volatile compounds were also reported.",
+        "Approximately 2,810 tons of excavated material were managed as organochlorine-pesticide hazardous waste, within roughly 32,000 tons of total contaminated soil and waste removed.",
+        "The records establish contamination within the defined cleanup site but do not establish that the surrounding state park or nearby neighborhoods share the same conditions.",
+      ],
+      cleanupAndControls: [
+        "The interim work excavated contaminated soil and buried wastes for permitted off-site disposal or treatment.",
+        "Site covers over remaining contamination support passive recreational use; a site-management plan, inspections, maintenance, and recorded restrictions preserve the remedy.",
+      ],
+      presentDay: [
+        "The riverway and park setting can be used subject to the completed remedy and continuing controls. The page should not describe the entire park as contaminated.",
+      ],
+      researchNotes: [
+        "Update the page when DEC posts a newer periodic review than the currently available site-management record.",
+      ],
+    },
+    sources: [
+      {
+        title: "Robert Moses Parkway - South Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932166/ROD.HW.932166.2019-03-20.Final%20ROD.pdf",
+      },
+      {
+        title: "Robert Moses Parkway - South Interim Cleanup Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932166/Report.HW.932166.2019-02-07.Final%20IRM_CCR-Part%201.pdf",
+      },
+      {
+        title: "Robert Moses Parkway - South Site Management Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932166/Work%20Plan.HW.932166.2020-01-29.Site%20Management%20Plan-Final.pdf",
+      },
+      {
+        title: "Robert Moses Parkway - South Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932166/",
+      },
+    ],
+  },
 ];

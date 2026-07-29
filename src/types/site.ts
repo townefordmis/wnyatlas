@@ -36,7 +36,15 @@ export type AtlasSite = {
   id: string;
   name: string;
   municipality: string;
-  county: "Erie" | "Niagara" | "Cattaraugus" | "Chautauqua" | "Genesee";
+  county:
+    | "Erie"
+    | "Niagara"
+    | "Cattaraugus"
+    | "Chautauqua"
+    | "Genesee"
+    | "Orleans"
+    | "Allegany"
+    | "Wyoming";
   category: "industry" | "cleanup" | "radiological" | "waterway" | "pfas";
   summary: string;
   evidenceStatus: EvidenceStatus;

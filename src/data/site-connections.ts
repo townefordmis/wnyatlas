@@ -19,6 +19,26 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
   {
+    id: "fmc-middleport-dublin-road",
+    name: "FMC Middleport production and Dublin Road disposal",
+    summary:
+      "The Middleport manufacturing facility and Dublin Road landfill share a documented pesticide-production and waste-disposal history, but each has its own boundary, remedy, and present-day obligations.",
+    members: [
+      {
+        siteId: "fmc-middleport",
+        role: "Manufacturing facility and off-site cleanup",
+        connection:
+          "The Middleport plant manufactured pesticides; releases and deposition led to separate facility and off-site cleanup areas.",
+      },
+      {
+        siteId: "fmc-dublin-road-landfill",
+        role: "Pesticide-production waste landfill",
+        connection:
+          "Dublin Road received residues and other waste associated with the Middleport operation from 1933 through 1968.",
+      },
+    ],
+  },
+  {
     id: "tonawanda-fusrap-network",
     name: "Tonawanda FUSRAP material network",
     summary:
