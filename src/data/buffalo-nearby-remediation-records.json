@@ -1,0 +1,2938 @@
+[
+    {
+        "siteCode":  "C915277",
+        "siteName":  "1050-1088 Niagara Street Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "1050-1088 Niagara Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2017-12-29"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2017-12-29"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2017-08-04"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2016-08-26"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,2,4-trimethylbenzene",
+                             "1,3,5-trimethylbenzene",
+                             "arsenic",
+                             "benzene",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "butylbenzene",
+                             "cadmium",
+                             "chromium",
+                             "chrysene",
+                             "copper",
+                             "dibenz[a,h]anthracene",
+                             "ethylbenzene",
+                             "fluoranthene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "isopropylbenzene",
+                             "lead",
+                             "mercury",
+                             "n-propylbenzene",
+                             "phenanthrene",
+                             "phenol",
+                             "pyrene",
+                             "sec-butylbenzene",
+                             "toluene",
+                             "xylene (mixed)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "William Paladino"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915277",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915277/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915364",
+        "siteName":  "1095 Niagara Street Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "1095 Niagara Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-07-31"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "William Paladino"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915364",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915364/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915358",
+        "siteName":  "125 Chandler Street Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "N",
+        "address":  "125 Chandler Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Rocco Termini"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915358",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915358/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "E915213",
+        "siteName":  "1318 Niagara Street",
+        "program":  "Environmental Restoration Program ",
+        "siteClass":  "A",
+        "address":  "1318 Niagara Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-12-01"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2021-06-25"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2019-10-03"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2014-03-26"
+                         },
+                         {
+                             "name":  "Remedial Investigation Amendment",
+                             "date":  "2025-08-21"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,1 dichloroethene",
+                             "1,2,4-trichlorobenzene",
+                             "1,2-dichloroethane",
+                             "acetone",
+                             "benzene",
+                             "chromium",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "PCB aroclor 1260",
+                             "trichloroethene (TCE)",
+                             "vinyl chloride",
+                             "xylene (mixed)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=E915213",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/E915213/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915302",
+        "siteName":  "1360 Niagara Street",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "1336, 1340 and 1360 Niagara Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2017-12-29"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2017-12-29"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2017-12-19"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,1-dichloroethane",
+                             "acetone",
+                             "arsenic",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "chromium",
+                             "chrysene",
+                             "cis-1,2-dichloroethene",
+                             "dibenz[a,h]anthracene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "methyl ethyl ketone",
+                             "phenol",
+                             "tetrachloroethene (PCE)",
+                             "vinyl chloride"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Paul Ciminelli"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915302",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915302/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915354",
+        "siteName":  "140 Chandler Street",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "140 Chandler Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2020-12-30"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2020-12-18"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2020-12-22"
+                         }
+                     ],
+        "contaminants":  [
+                             "cadmium",
+                             "chromium",
+                             "copper",
+                             "lead",
+                             "manganese",
+                             "mercury",
+                             "polycyclic aromatic hydrocarbons (PAHS), total",
+                             "zinc"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Rocco Termini"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915354",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915354/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915389",
+        "siteName":  "147 West Tupper Street Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "147 West Tupper Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2025-12-23"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2025-12-23"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2024-01-16"
+                         }
+                     ],
+        "contaminants":  [
+                             "acetone",
+                             "alpha-BHC",
+                             "arsenic",
+                             "barium",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "chrysene",
+                             "cis-1,2-dichloroethene",
+                             "copper",
+                             "DDD",
+                             "DDE",
+                             "DDT",
+                             "dibenz[a,h]anthracene",
+                             "dieldrin",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "manganese",
+                             "mercury",
+                             "nickel",
+                             "tetrachloroethene (PCE)",
+                             "trichloroethene (TCE)",
+                             "zinc"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Chris Wan"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915389",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915389/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915268",
+        "siteName":  "154 South Ogden Street Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "154 South Ogden",
+        "closestRelationship":  "point_inside_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2014-12-09"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2014-12-09"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2014-07-28"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,2-dichlorobenzene",
+                             "1,2-dichloroethane",
+                             "arsenic",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "chlorobenzene",
+                             "chrysene",
+                             "cis-1,2-dichloroethene",
+                             "dibenz[a,h]anthracene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Christine petrie",
+                       "David ehrle"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915268",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915268/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915370",
+        "siteName":  "156 Chandler Street",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "156 Chandler Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-09-25"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Rocco Termini"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915370",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915370/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915326",
+        "siteName":  "157 Great Arrow Avenue",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "157 Great Arrow Avenue",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-07-31"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "aron fischman"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915326",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915326/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915320",
+        "siteName":  "166 Chandler Street",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "166 Chandler Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2018-12-20"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2018-12-20"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2018-12-12"
+                         }
+                     ],
+        "contaminants":  [
+                             "barium",
+                             "cadmium",
+                             "copper",
+                             "lead",
+                             "mercury",
+                             "polycyclic aromatic hydrocarbons (PAHS), total",
+                             "tetrachloroethene (PCE)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Rocco Termini"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915320",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915320/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915279",
+        "siteName":  "1827 Fillmore Avenue",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "1827 Fillmore Avenue",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2019-12-23"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2019-12-23"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2019-03-27"
+                         }
+                     ],
+        "contaminants":  [
+                             "arsenic",
+                             "barium",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "cadmium",
+                             "copper",
+                             "dibenz[a,h]anthracene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "mercury"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Thomas J. Quatroche, Jr."
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915279",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915279/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915214",
+        "siteName":  "200 Delaware Ave Project",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "N",
+        "address":  "200 Delaware Ave",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "MICHAEL MONTANTE"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915214",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915214/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915391",
+        "siteName":  "2101 Kenmore Avenue Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "2101 Kenmore Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2024-12-31"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2024-12-31"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2024-11-08"
+                         }
+                     ],
+        "contaminants":  [
+                             "arsenic",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "carbon tetrachloride",
+                             "chrysene",
+                             "dibenz[a,h]anthracene",
+                             "dieldrin",
+                             "fluoranthene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "iron",
+                             "magnesium",
+                             "manganese",
+                             "phenanthrene",
+                             "sodium",
+                             "trichloroethene (TCE)"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Michael Wopperer"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915391",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915391/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915413",
+        "siteName":  "230 Grider",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "P",
+        "address":  "230 Grider Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915413",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915413/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "not_found",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915340",
+        "siteName":  "240 - 260 Lakefront Boulevard Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "240 Lakefront Boulevard",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2020-08-04"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2020-08-04"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2019-03-25"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2020-05-19"
+                         }
+                     ],
+        "contaminants":  [
+                             "acetone",
+                             "antimony",
+                             "arsenic",
+                             "barium",
+                             "benzene",
+                             "lead",
+                             "manganese",
+                             "mercury",
+                             "phenol",
+                             "polychlorinated biphenyls (PCB)",
+                             "polycyclic aromatic hydrocarbons (PAHS), total"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Paul Ciminelli"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915340",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915340/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915323",
+        "siteName":  "25 Rano Street Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "25 Rano Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-07-31"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "25 rano llc"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915323",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915323/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915271",
+        "siteName":  "250 Delaware Avenue Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "250 Delaware Avenue",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2014-12-23"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2014-12-23"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2014-12-09"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,2,4-trimethylbenzene",
+                             "1,3,5-trimethylbenzene",
+                             "benzene",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "cadmium",
+                             "chrysene",
+                             "dibenz[a,h]anthracene",
+                             "ethylbenzene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "methyl-tert-butyl ether (MTBE)",
+                             "naphthalene",
+                             "n-propylbenzene",
+                             "toluene",
+                             "xylene (mixed)"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Michael J. Montante"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915271",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915271/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915208",
+        "siteName":  "275 Franklin Street",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "275 Franklin Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2017-12-27"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2017-12-27"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2013-09-30"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2013-09-30"
+                         }
+                     ],
+        "contaminants":  [
+                             "tetrachloroethene (PCE)",
+                             "trichloroethene (TCE)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "JEssica Croce"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915208",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915208/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915208A",
+        "siteName":  "275 Franklin Street - OFF-SITE",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "275 Franklin Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2013-06-10"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2019-04-30"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Anthony Martino",
+                       "Boomer Connell",
+                       "David Metz"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915208A",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915208A/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915242",
+        "siteName":  "295 Maryland Street",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "289 \u0026 291 Maryland Street and 97 \u0026 129 West Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2016-12-16"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2016-12-16"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2015-04-15"
+                         }
+                     ],
+        "contaminants":  [
+                             "alpha-BHC",
+                             "arsenic",
+                             "benzene, toluene, ethylbenzene and xylenes (BTEX)",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "beta-BHC",
+                             "cadmium",
+                             "chromium",
+                             "chrysene",
+                             "dibenz[a,h]anthracene",
+                             "dieldrin",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "mercury",
+                             "naphthalene"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Anthony LoRusso"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915242",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915242/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915151",
+        "siteName":  "318 Urban Street",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "04",
+        "address":  "318 Urban Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2012-08-30"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "1996-09-01"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "1995-03-01"
+                         },
+                         {
+                             "name":  "Site Characterization",
+                             "date":  "1991-12-01"
+                         }
+                     ],
+        "contaminants":  [
+                             "polychlorinated biphenyls (PCB)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Notice",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Michael Sweeney"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915151",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915151/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915369",
+        "siteName":  "389 Manhattan Avenue",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "389 Manhattan Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-08-31"
+                         },
+                         {
+                             "name":  "",
+                             "date":  "2026-11-30"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2026-04-21"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,2,4-trichlorobenzene",
+                             "arsenic",
+                             "benzo(a)anthracene",
+                             "benzo(b)fluoranthene",
+                             "chrysene",
+                             "cis-1,2-dichloroethene",
+                             "copper",
+                             "cyclohexane",
+                             "dibenz[a,h]anthracene",
+                             "hexane",
+                             "lead",
+                             "trichloroethene (TCE)",
+                             "vinyl chloride"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Bethune Hall, LLC"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915369",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915369/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915203",
+        "siteName":  "4 New Seventh Street Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "4 New Seventh Street Site",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2006-12-22"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2006-12-22"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2006-12-22"
+                         }
+                     ],
+        "contaminants":  [
+                             "benzene",
+                             "xylene (mixed)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "John M. Pons"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915203",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915203/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915237",
+        "siteName":  "432 Pearl Street",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "432 Pearl Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2017-12-28"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2017-12-28"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2013-09-30"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2013-10-01"
+                         }
+                     ],
+        "contaminants":  [
+                             "tetrachloroethene (PCE)",
+                             "trichloroethene (TCE)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "JEssica Croce"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915237",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915237/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "V00084",
+        "siteName":  "601 Amherst Street",
+        "program":  "Voluntary Cleanup Program",
+        "siteClass":  "C",
+        "address":  "601 Amherst Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "1997-10-21"
+                         }
+                     ],
+        "contaminants":  [
+                             "polychlorinated biphenyls (PCB)",
+                             "trichloroethene (TCE)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Deed Restriction",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00084",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/V00084/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915282",
+        "siteName":  "73-79 W. Huron St.",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "73-79 W. Huron St.",
+        "closestRelationship":  "point_inside_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2017-12-28"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2017-12-28"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2017-11-16"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,2,4-trimethylbenzene",
+                             "1,3,5-trimethylbenzene",
+                             "ethylbenzene",
+                             "isopropylbenzene",
+                             "n-propylbenzene",
+                             "toluene",
+                             "trichloroethene (TCE)",
+                             "xylene (mixed)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Alex Libin"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915282",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915282/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915283",
+        "siteName":  "89 LaSalle Avenue Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "89 LaSalle Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2015-12-29"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2015-12-29"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2015-05-14"
+                         }
+                     ],
+        "contaminants":  [
+                             "arsenic",
+                             "barium",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "chrysene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Frank Chinnici",
+                       "Nathan Marton"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915283",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915283/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915313",
+        "siteName":  "990 Niagara Street",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "990 NIAGARA STREET",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-12-31"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2021-04-01"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2019-07-12"
+                         }
+                     ],
+        "contaminants":  [
+                             "acenaphthene",
+                             "anthracene",
+                             "arsenic",
+                             "benzo(a)anthracene",
+                             "benzo(k)fluoranthene",
+                             "cadmium",
+                             "chrysene",
+                             "dibenz[a,h]anthracene",
+                             "fluoranthene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "mercury",
+                             "naphthalene",
+                             "PCB aroclor 1254",
+                             "phenanthrene",
+                             "pyrene",
+                             "zinc"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "andrew crossed"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915313",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915313/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915007",
+        "siteName":  "Anaconda Company/American Brass",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "C",
+        "address":  "Military Road and Sayre Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "1995-12-01"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "1996-11-08"
+                         },
+                         {
+                             "name":  "Site Characterization",
+                             "date":  "1993-03-01"
+                         }
+                     ],
+        "contaminants":  [
+                             "arsenic",
+                             "cadmium",
+                             "lead",
+                             "polychlorinated biphenyls (PCB)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Deed Restriction",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Earl T. Robinson",
+                       "PAUL J. BODEKOR"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915007",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915007/",
+        "documentIndexStatus":  "unavailable: The remote server returned an error: (404) Not Found.",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "V00314",
+        "siteName":  "Aurubis Buffalo, Inc.",
+        "program":  "Voluntary Cleanup Program",
+        "siteClass":  "C",
+        "address":  "Military Road and Sayre Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2007-06-27"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2005-03-24"
+                         }
+                     ],
+        "contaminants":  [
+                             "arsenic",
+                             "cadmium",
+                             "lead"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Elizabeth Zurowski"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00314",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/V00314/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915402",
+        "siteName":  "Bailey and Kensington",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "N",
+        "address":  "3074 Bailey Ave; 1096, 1098, \u0026 1102 Kensington Ave",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Justin Azzarella"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915402",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915402/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "V00734",
+        "siteName":  "Buffalo River - GLNPO Dredging Project",
+        "program":  "Voluntary Cleanup Program",
+        "siteClass":  "N",
+        "address":  "Buffalo River and City Ship Canal",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00734",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/V00734/",
+        "documentIndexStatus":  "unavailable: The remote server returned an error: (404) Not Found.",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915324",
+        "siteName":  "Buffalo River - GLNPO Dredging Project",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "A",
+        "address":  "Buffalo River and City Ship Canal",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2014-03-01"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2013-03-01"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2009-03-01"
+                         }
+                     ],
+        "contaminants":  [
+                             "lead",
+                             "mercury",
+                             "polychlorinated biphenyls (PCB)",
+                             "polycyclic aromatic hydrocarbons (PAHS), total"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915324",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915324/",
+        "documentIndexStatus":  "unavailable: The remote server returned an error: (404) Not Found.",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915195",
+        "siteName":  "Buffalo Urban Renewal Agency West Property",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "257 West Genesee Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2006-11-30"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2006-11-30"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2005-10-11"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "John M. Pons"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915195",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915195/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915176",
+        "siteName":  "ChemCore",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "04",
+        "address":  "1382 Niagara Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2017-01-31"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2011-10-07"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2003-01-29"
+                         }
+                     ],
+        "contaminants":  [
+                             "tetrachloroethane",
+                             "tetrachloroethene (PCE)",
+                             "trichloroethene (TCE)",
+                             "vinyl chloride"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Deed Restriction",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "tIM nICHOLS"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915176",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915176/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915366",
+        "siteName":  "Ellicott and Oak Streets Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "324, 328, and 334 North Oak St and 441 Ellicott St",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-12-31"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Frank Chinnici"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915366",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915366/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915194",
+        "siteName":  "Former Buffalo Service Station",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "249 West Genesee Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2006-11-30"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2006-11-30"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2005-10-11"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "John M. Pons"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915194",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915194/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915194A",
+        "siteName":  "Former Buffalo Service Station - OFF-SITE",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "249 West Genesee Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Site Characterization",
+                             "date":  "2016-08-26"
+                         }
+                     ],
+        "contaminants":  [
+                             "acenaphthene",
+                             "benzene",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "ethylbenzene",
+                             "mercury",
+                             "polycyclic aromatic hydrocarbons (PAHS), total",
+                             "toluene",
+                             "xylene (mixed)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Commissioner of the City of Buffalo\u0027s Department o",
+                       "Paul Zakrzewski",
+                       "Thomas Moore"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915194A",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915194A/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915220",
+        "siteName":  "Former Pierce Arrow Manufacturing Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "N",
+        "address":  "255 Great Arrow Way",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2009-07-03"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "ATTN:  SHELBY R. STAY",
+                       "C/O CHRIST GAETANOS, ESQ."
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915220",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915220/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915362",
+        "siteName":  "Former Pilgrim Village Family Apartments",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "1100 MICHIGAN AVENUE",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2022-12-27"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2022-12-27"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2021-05-10"
+                         }
+                     ],
+        "contaminants":  [
+                             "arsenic",
+                             "barium",
+                             "lead",
+                             "mercury",
+                             "petroleum products",
+                             "polycyclic aromatic hydrocarbons (PAHS), total",
+                             "zinc"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "David Alexander",
+                       "J. Mascaro"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915362",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915362/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915363",
+        "siteName":  "Former Pilgrim Village Senior Apartments",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "951 Ellicott Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2022-12-27"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2022-12-27"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2021-05-10"
+                         }
+                     ],
+        "contaminants":  [
+                             "copper",
+                             "lead",
+                             "mercury",
+                             "zinc"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "David Alexander",
+                       "J. Mascaro"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915363",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915363/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915415",
+        "siteName":  "Former Pilgrim Village Sublot 3",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "951 Ellicott Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Winthrop Wharton"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915415",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915415/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915412",
+        "siteName":  "Former Sweet Kleen Site",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "P",
+        "address":  "764 Kensington Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2027-12-31"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Timothy Benes"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915412",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915412/",
+        "documentIndexStatus":  "unavailable: The remote server returned an error: (404) Not Found.",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915167",
+        "siteName":  "Fourth Street MGP Site",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "C",
+        "address":  "43 Carolina Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2005-02-08"
+                         },
+                         {
+                             "name":  "",
+                             "date":  "2006-10-02"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2001-08-08"
+                         }
+                     ],
+        "contaminants":  [
+                             "coal tar",
+                             "polycyclic aromatic hydrocarbons (PAHS), total",
+                             "toluene",
+                             "xylene (mixed)"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Howard Grynspan"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915167",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915167/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915210",
+        "siteName":  "Hertel Warehouse Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "N",
+        "address":  "373 Hertel Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Donald Sadkin"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915210",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915210/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915400",
+        "siteName":  "Jefferson and Best Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "1003 Jefferson Ave, 403-411 Best St, 94-120 Earl",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-08-28"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Bishop Dwight E. Brown",
+                       "Paula McDonald"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915400",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915400/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915317",
+        "siteName":  "Jefferson Avenue Apartments",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "1140 \u0026 1162 Jefferson Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2018-12-21"
+                         },
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2018-12-21"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2018-08-29"
+                         }
+                     ],
+        "contaminants":  [
+                             "aldrin",
+                             "barium",
+                             "cadmium",
+                             "chromium",
+                             "copper",
+                             "delta-BHC",
+                             "lead",
+                             "mercury",
+                             "polycyclic aromatic hydrocarbons (PAHS), total",
+                             "zinc"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "1200 Jefferson Properties, LLC",
+                       "6350 Group LLC",
+                       "Nicholas Sinatra"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915317",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915317/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915033",
+        "siteName":  "LaSalle Reservoir",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "N",
+        "address":  "Parkridge Avenue and East Amherst Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Site Characterization",
+                             "date":  "1991-04-01"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "City of Buffalo"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915033",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915033/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915318",
+        "siteName":  "Main and Hertel",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "2929-2939 Main Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2024-12-23"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2024-12-23"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2022-06-14"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,1-dichloroethane",
+                             "arsenic",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "cadmium",
+                             "chrysene",
+                             "cis-1,2-dichloroethene",
+                             "dibenz[a,h]anthracene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "mercury",
+                             "polychlorinated biphenyls (PCB)",
+                             "trans-1,2-dichloroethene",
+                             "trichloroethene (TCE)",
+                             "vinyl chloride"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "F. James McGuire"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915318",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915318/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915318A",
+        "siteName":  "Main and Hertel - Off-Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "2929-2939 Main Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2026-12-31"
+                         }
+                     ],
+        "contaminants":  [
+                             "cis-1,2-dichloroethene",
+                             "trichloroethene (TCE)"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915318A",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915318A/",
+        "documentIndexStatus":  "unavailable: The remote server returned an error: (404) Not Found.",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "V00168",
+        "siteName":  "Main-LaSalle Revitalization Project",
+        "program":  "Voluntary Cleanup Program",
+        "siteClass":  "N",
+        "address":  "Main-LaSalle Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2009-06-15"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00168",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/V00168/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915375",
+        "siteName":  "Michigan-Best Development",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "1145 Michigan Avenue",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2022-12-29"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2022-12-29"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "2022-12-21"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2022-12-21"
+                         }
+                     ],
+        "contaminants":  [
+                             "antimony",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "chrysene",
+                             "DDD",
+                             "DDE",
+                             "DDT",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "mercury",
+                             "zinc"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Dr. Fadi Dagher"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915375",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915375/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915314",
+        "siteName":  "MOD-PAC CORP.",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "1801 Elmwood Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2019-12-24"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2019-12-24"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2019-07-25"
+                         }
+                     ],
+        "contaminants":  [
+                             "arsenic",
+                             "cadmium",
+                             "cis-1,2-dichloroethene",
+                             "copper",
+                             "lead",
+                             "trichloroethene (TCE)",
+                             "vinyl chloride"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Daniel G. Keane",
+                       "Rebecca Reeder"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915314",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915314/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915210",
+        "siteName":  "Morgan Materials (aka Hertel Warehouse)",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "02",
+        "address":  "373 Hertel Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2019-04-15"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2023-12-22"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,1-dichloroethene",
+                             "barium",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "chrysene",
+                             "cis-1,2-dichloroethene",
+                             "copper",
+                             "indeno(1,2,3-cd)pyrene",
+                             "manganese",
+                             "PCB aroclor 1260",
+                             "tetrachloroethene (PCE)",
+                             "trichloroethene (TCE)",
+                             "vinyl chloride"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Mohamed Khalil"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915210",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915210/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915377",
+        "siteName":  "Mt. Olive Senior Manor Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "227 Sheridan Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2023-12-29"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2023-12-29"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2023-04-11"
+                         }
+                     ],
+        "contaminants":  [
+                             "antimony",
+                             "arsenic",
+                             "barium",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(k)fluoranthene",
+                             "chromium",
+                             "cis-1,2-dichloroethene",
+                             "cobalt",
+                             "copper",
+                             "dibenz[a,h]anthracene",
+                             "lead",
+                             "mercury",
+                             "nickel",
+                             "perfluorooctane sulfonic acid",
+                             "perfluorooctanoic acid",
+                             "polychlorinated biphenyls (PCB)",
+                             "trichloroethene (TCE)",
+                             "zinc"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Brian Smith"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915377",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915377/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "V00362",
+        "siteName":  "NFG - Buffalo Service Center",
+        "program":  "Voluntary Cleanup Program",
+        "siteClass":  "C",
+        "address":  "95 Fourth Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2005-10-03"
+                         },
+                         {
+                             "name":  "",
+                             "date":  "2012-06-06"
+                         },
+                         {
+                             "name":  "",
+                             "date":  "2016-04-22"
+                         }
+                     ],
+        "contaminants":  [
+                             "coal tar",
+                             "other"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Deed Restriction",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Amy McKone",
+                       "John Heffron"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00362",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/V00362/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915144",
+        "siteName":  "Niagara Mohawk Dewey Ave. Service Sta.",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "C",
+        "address":  "144 Kensington Avenue",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Nicholas Smith"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915144",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915144/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915211",
+        "siteName":  "NOCO #S41",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "1055 Genesee Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2009-12-30"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2008-02-15"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2009-12-24"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,2,4-trimethylbenzene",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "methyl-tert-butyl ether (MTBE)",
+                             "xylene (mixed)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Matthew mcclellan"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915211",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915211/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915312",
+        "siteName":  "Pierce Arrow Business Center",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "155-157 Chandler Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2017-12-27"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2017-12-27"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2017-12-19"
+                         }
+                     ],
+        "contaminants":  [
+                             "cadmium",
+                             "chromium",
+                             "copper",
+                             "lead",
+                             "mercury",
+                             "polychlorinated biphenyls (PCB)",
+                             "polycyclic aromatic hydrocarbons (PAHS), total",
+                             "trichloroethene (TCE)"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Rocco termini"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915312",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915312/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915294",
+        "siteName":  "Pilgrim Village Redevelopment/Campus Square",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "903 Ellicott Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2025-12-31"
+                         },
+                         {
+                             "name":  "",
+                             "date":  "2026-03-12"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "G. David Von Derau Jr."
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915294",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915294/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915309",
+        "siteName":  "Silos at Elk Street Site",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "C",
+        "address":  "50 Elk Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Certificate of Completion",
+                             "date":  "2017-12-28"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "2017-12-28"
+                         },
+                         {
+                             "name":  "Remedial Investigation",
+                             "date":  "2017-11-09"
+                         }
+                     ],
+        "contaminants":  [
+                             "arsenic",
+                             "benzo(a)anthracene",
+                             "benzo(a)pyrene",
+                             "benzo(b)fluoranthene",
+                             "benzo(g,h,i)perylene",
+                             "benzo(k)fluoranthene",
+                             "dibenz[a,h]anthracene",
+                             "indeno(1,2,3-cd)pyrene",
+                             "lead",
+                             "mercury"
+                         ],
+        "controls":  [
+                         {
+                             "code":  "Environmental Easement",
+                             "type":  "INST"
+                         }
+                     ],
+        "owners":  [
+                       "Shawn Wright"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915309",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915309/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  true,
+        "hasFinalEngineeringReport":  true,
+        "hasSiteManagementPlan":  true,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915388",
+        "siteName":  "Simon Properties Northeast",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "N",
+        "address":  "264 Oak Street",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Greg Baker"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915388",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915388/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915057",
+        "siteName":  "TRW (J.H. Williams Div.)",
+        "program":  "Resource Conservation and Recovery",
+        "siteClass":  "C",
+        "address":  "400 Vulcan Street",
+        "closestRelationship":  "within_500_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "1982-10-01"
+                         },
+                         {
+                             "name":  "Site Characterization",
+                             "date":  "2012-09-10"
+                         }
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "TRW (J.H. WILLIAMS DIV.)"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915057",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915057/",
+        "documentIndexStatus":  "unavailable: The remote server returned an error: (404) Not Found.",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "915165",
+        "siteName":  "Vibratech Inc.",
+        "program":  "State Superfund Program            ",
+        "siteClass":  "02",
+        "address":  "537 East Delavan",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+                         {
+                             "name":  "",
+                             "date":  "2027-06-30"
+                         },
+                         {
+                             "name":  "IRWA",
+                             "date":  "2006-08-30"
+                         },
+                         {
+                             "name":  "Remedial Action",
+                             "date":  "1997-03-01"
+                         },
+                         {
+                             "name":  "Remedial Design",
+                             "date":  "1995-10-01"
+                         }
+                     ],
+        "contaminants":  [
+                             "1,1,1-trichloroethane",
+                             "petroleum products",
+                             "trichloroethene (TCE)"
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Rebecca Gandour"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915165",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/915165/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  true,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    },
+    {
+        "siteCode":  "C915421",
+        "siteName":  "Voelkers Lanes Apartments",
+        "program":  "Brownfield Cleanup Program",
+        "siteClass":  "A",
+        "address":  "1624, 1628, 1634 Elmwood Ave; 155 Marion St;",
+        "closestRelationship":  "within_1000_ft_of_dec_boundary",
+        "projects":  [
+
+                     ],
+        "contaminants":  [
+
+                         ],
+        "controls":  [
+
+                     ],
+        "owners":  [
+                       "Krista Voelker"
+                   ],
+        "decDetailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915421",
+        "decDocumentIndex":  "https://extapps.dec.ny.gov/data/DecDocs/C915421/",
+        "documentIndexStatus":  "available",
+        "hasCertificateOfCompletion":  false,
+        "hasFinalEngineeringReport":  false,
+        "hasSiteManagementPlan":  false,
+        "hasPeriodicReview":  false,
+        "openDataStatus":  "matched",
+        "openDataSource":  "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
+        "assembledOn":  "2026-07-29"
+    }
+]

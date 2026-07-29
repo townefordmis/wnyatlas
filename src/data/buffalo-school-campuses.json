@@ -1,0 +1,2722 @@
+[
+    {
+        "id":  "140600010059",
+        "address":  "1 MLK PARK",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.843449785252588,
+                            42.905837330095963
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 59 DR CHARLES DREW SCIENCE MAGNET",
+                            "type":  "public",
+                            "sedCode":  "140600010059"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "800000091782",
+        "address":  "100 POPLAR AVE",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.804706116518418,
+                            42.909033278774153
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO ACADEMY OF SCIENCE CHARTER MIDDLE SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "800000091782"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "800000088484",
+        "address":  "102 BUFFUM ST",
+        "city":  "BUFFALO",
+        "zip":  "14210",
+        "coordinates":  [
+                            -78.8039341951374,
+                            42.854552105896474
+                        ],
+        "schools":  [
+                        {
+                            "name":  "WESTERN NY MARITIME CHARTER MS",
+                            "type":  "charter",
+                            "sedCode":  "800000088484"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010017",
+        "address":  "1045 W DELAVAN AVE",
+        "city":  "BUFFALO",
+        "zip":  "14209",
+        "coordinates":  [
+                            -78.861048389368463,
+                            42.921985333333737
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 17",
+                            "type":  "public",
+                            "sedCode":  "140600010017"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010094",
+        "address":  "106 APPENHEIMER ST",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.8348216359528,
+                            42.924200244240005
+                        ],
+        "schools":  [
+                        {
+                            "name":  "DR LYDIA T WRIGHT SCH OF EXCELLENCE",
+                            "type":  "public",
+                            "sedCode":  "140600010094"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915165",
+                                           "siteName":  "Vibratech Inc.",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "02",
+                                           "siteAddress":  "537 East Delavan",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915165"
+                                       },
+                                       {
+                                           "siteCode":  "C915279",
+                                           "siteName":  "1827 Fillmore Avenue",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1827 Fillmore Avenue",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915279"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010126",
+        "address":  "1095 JEFFERSON AVE",
+        "city":  "BUFFALO",
+        "zip":  "14208",
+        "coordinates":  [
+                            -78.853272815633687,
+                            42.904372483022357
+                        ],
+        "schools":  [
+                        {
+                            "name":  "STANLEY MAKOWSKI EARLY CHILDHOOD CENTER",
+                            "type":  "public",
+                            "sedCode":  "140600010126"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915317",
+                                           "siteName":  "Jefferson Avenue Apartments",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1140 \u0026 1162 Jefferson Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915317"
+                                       },
+                                       {
+                                           "siteCode":  "C915400",
+                                           "siteName":  "Jefferson and Best Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "1003 Jefferson Ave, 403-411 Best St, 94-120 Earl",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915400"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010308",
+        "address":  "110 14TH ST",
+        "city":  "BUFFALO",
+        "zip":  "14213",
+        "coordinates":  [
+                            -78.88472503520002,
+                            42.903782366307382
+                        ],
+        "schools":  [
+                        {
+                            "name":  "INTERNATIONAL PREPARATORY SCHOOL (THE)",
+                            "type":  "public",
+                            "sedCode":  "140600010308"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "800000090491",
+        "address":  "111 GREAT ARROW AVE",
+        "city":  "BUFFALO",
+        "zip":  "14216",
+        "coordinates":  [
+                            -78.87206845753559,
+                            42.94249849213687
+                        ],
+        "schools":  [
+                        {
+                            "name":  "TAPESTRY CHARTER SCHOOL ELEMENTARY SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "800000090491"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915220",
+                                           "siteName":  "Former Pierce Arrow Manufacturing Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "255 Great Arrow Way",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915220"
+                                       },
+                                       {
+                                           "siteCode":  "C915314",
+                                           "siteName":  "MOD-PAC CORP.",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1801 Elmwood Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915314"
+                                       },
+                                       {
+                                           "siteCode":  "C915326",
+                                           "siteName":  "157 Great Arrow Avenue",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "157 Great Arrow Avenue",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915326"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600860986",
+        "address":  "113 LAFAYETTE AVE",
+        "city":  "BUFFALO",
+        "zip":  "14213",
+        "coordinates":  [
+                            -78.894623464106886,
+                            42.9199058155162
+                        ],
+        "schools":  [
+                        {
+                            "name":  "WEST BUFFALO CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860986"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600860961",
+        "address":  "1140 ELLICOTT ST",
+        "city":  "BUFFALO",
+        "zip":  "14209",
+        "coordinates":  [
+                            -78.864924212686759,
+                            42.909356546752349
+                        ],
+        "schools":  [
+                        {
+                            "name":  "HEALTH SCIENCES CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860961"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600861109",
+        "address":  "115 ASH ST",
+        "city":  "BUFFALO",
+        "zip":  "14204",
+        "coordinates":  [
+                            -78.864259121635683,
+                            42.891089155389153
+                        ],
+        "schools":  [
+                        {
+                            "name":  "REACH ACADEMY CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600861109"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010074",
+        "address":  "126 DONALDSON RD",
+        "city":  "BUFFALO",
+        "zip":  "14208",
+        "coordinates":  [
+                            -78.847117822580827,
+                            42.918683230592869
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 74 HAMLIN PARK - CLAUDE AND OUIDA CLAPP ACADEMY",
+                            "type":  "public",
+                            "sedCode":  "140600010074"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010081",
+        "address":  "140 TACOMA AVE",
+        "city":  "BUFFALO",
+        "zip":  "14216",
+        "coordinates":  [
+                            -78.866891715178781,
+                            42.951624777565662
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 81",
+                            "type":  "public",
+                            "sedCode":  "140600010081"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010197",
+        "address":  "1405 SYCAMORE ST",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.819915144703515,
+                            42.903285137499815
+                        ],
+        "schools":  [
+                        {
+                            "name":  "HARVEY AUSTIN SCHOOL #97",
+                            "type":  "public",
+                            "sedCode":  "140600010197"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010045",
+        "address":  "141 HOYT ST",
+        "city":  "BUFFALO",
+        "zip":  "14213",
+        "coordinates":  [
+                            -78.886485683666379,
+                            42.91949123563829
+                        ],
+        "schools":  [
+                        {
+                            "name":  "INTERNATIONAL SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010045"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010110",
+        "address":  "150 SOUTHSIDE PKWY",
+        "city":  "BUFFALO",
+        "zip":  "14220",
+        "coordinates":  [
+                            -78.824218645034563,
+                            42.852976796853504
+                        ],
+        "schools":  [
+                        {
+                            "name":  "SOUTH PARK HIGH SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010110"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010098",
+        "address":  "1500 ELMWOOD AVE",
+        "city":  "BUFFALO",
+        "zip":  "14207",
+        "coordinates":  [
+                            -78.879312839050442,
+                            42.938265764728193
+                        ],
+        "schools":  [
+                        {
+                            "name":  "MCKINLEY VOCATIONAL HIGH SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010098"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915421",
+                                           "siteName":  "Voelkers Lanes Apartments",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "1624, 1628, 1634 Elmwood Ave; 155 Marion St;",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915421"
+                                       },
+                                       {
+                                           "siteCode":  "V00084",
+                                           "siteName":  "601 Amherst Street",
+                                           "program":  "Voluntary Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "601 Amherst Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00084"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600860817",
+        "address":  "154 S OGDEN ST",
+        "city":  "BUFFALO",
+        "zip":  "14210",
+        "coordinates":  [
+                            -78.80339974325409,
+                            42.863467993220084
+                        ],
+        "schools":  [
+                        {
+                            "name":  "SOUTH BUFFALO CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860817"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915268",
+                                           "siteName":  "154 South Ogden Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "154 South Ogden",
+                                           "relationship":  "point_inside_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915268"
+                                       }
+                                   ],
+        "researchStatus":  "documented_same_site"
+    },
+    {
+        "id":  "140600860814",
+        "address":  "156 NEWBURGH AVE",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.809228607463027,
+                            42.918885836222451
+                        ],
+        "schools":  [
+                        {
+                            "name":  "KING CENTER CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860814"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010033",
+        "address":  "157 ELK ST",
+        "city":  "BUFFALO",
+        "zip":  "14210",
+        "coordinates":  [
+                            -78.848430913988778,
+                            42.868755232264519
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BILINGUAL CENTER",
+                            "type":  "public",
+                            "sedCode":  "140600010033"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915309",
+                                           "siteName":  "Silos at Elk Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "50 Elk Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915309"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010043",
+        "address":  "161 BENZINGER ST",
+        "city":  "BUFFALO",
+        "zip":  "14206",
+        "coordinates":  [
+                            -78.805810793785369,
+                            42.889234884565383
+                        ],
+        "schools":  [
+                        {
+                            "name":  "LOVEJOY DISCOVERY SCHOOL #43",
+                            "type":  "public",
+                            "sedCode":  "140600010043"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010128",
+        "address":  "167 E UTICA ST",
+        "city":  "BUFFALO",
+        "zip":  "14208",
+        "coordinates":  [
+                            -78.858368815754162,
+                            42.910839464928706
+                        ],
+        "schools":  [
+                        {
+                            "name":  "LEONARDO DA VINCI HIGH SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010128"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010069",
+        "address":  "1725 CLINTON ST",
+        "city":  "BUFFALO",
+        "zip":  "14206",
+        "coordinates":  [
+                            -78.812782012565549,
+                            42.8714725117084
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 69 HOUGHTON ACADEMY",
+                            "type":  "public",
+                            "sedCode":  "140600010069"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "142601030006",
+        "address":  "184 IRVING TER",
+        "city":  "BUFFALO",
+        "zip":  "14223",
+        "coordinates":  [
+                            -78.853234408358261,
+                            42.966108372461569
+                        ],
+        "schools":  [
+                        {
+                            "name":  "CHARLES A LINDBERGH ELEMENTARY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "142601030006"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010102",
+        "address":  "186 E NORTH ST",
+        "city":  "BUFFALO",
+        "zip":  "14204",
+        "coordinates":  [
+                            -78.8612648895066,
+                            42.903023395953092
+                        ],
+        "schools":  [
+                        {
+                            "name":  "CITY HONORS SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010102"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915294",
+                                           "siteName":  "Pilgrim Village Redevelopment/Campus Square",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "903 Ellicott Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915294"
+                                       },
+                                       {
+                                           "siteCode":  "C915362",
+                                           "siteName":  "Former Pilgrim Village Family Apartments",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1100 MICHIGAN AVENUE",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915362"
+                                       },
+                                       {
+                                           "siteCode":  "C915363",
+                                           "siteName":  "Former Pilgrim Village Senior Apartments",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "951 Ellicott Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915363"
+                                       },
+                                       {
+                                           "siteCode":  "C915375",
+                                           "siteName":  "Michigan-Best Development",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1145 Michigan Avenue",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915375"
+                                       },
+                                       {
+                                           "siteCode":  "C915415",
+                                           "siteName":  "Former Pilgrim Village Sublot 3",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "951 Ellicott Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915415"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "142601030024",
+        "address":  "199 THORNCLIFF RD",
+        "city":  "BUFFALO",
+        "zip":  "14223",
+        "coordinates":  [
+                            -78.863605708805508,
+                            42.982598693479339
+                        ],
+        "schools":  [
+                        {
+                            "name":  "HERBERT HOOVER ELEMENTARY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "142601030024"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010130",
+        "address":  "21 LOWELL PL",
+        "city":  "BUFFALO",
+        "zip":  "14213",
+        "coordinates":  [
+                            -78.886716605328914,
+                            42.9095807810913
+                        ],
+        "schools":  [
+                        {
+                            "name":  "FRANK A SEDITA SCHOOL #30",
+                            "type":  "public",
+                            "sedCode":  "140600010130"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010031",
+        "address":  "212 STANTON ST",
+        "city":  "BUFFALO",
+        "zip":  "14212",
+        "coordinates":  [
+                            -78.84649023924004,
+                            42.889126343413643
+                        ],
+        "schools":  [
+                        {
+                            "name":  "HARRIET ROSS TUBMAN ACADEMY",
+                            "type":  "public",
+                            "sedCode":  "140600010031"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600860863",
+        "address":  "2219 S PARK AVE",
+        "city":  "BUFFALO",
+        "zip":  "14220",
+        "coordinates":  [
+                            -78.824172342329661,
+                            42.838297455901767
+                        ],
+        "schools":  [
+                        {
+                            "name":  "WESTERN NEW YORK MARITIME CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860863"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "800000059271",
+        "address":  "2245 KENMORE AVE",
+        "city":  "BUFFALO",
+        "zip":  "14223",
+        "coordinates":  [
+                            -78.896681254568378,
+                            42.965488966092586
+                        ],
+        "schools":  [
+                        {
+                            "name":  "CHARTER SCH APPLIED TECHNOLOGIES HS",
+                            "type":  "charter",
+                            "sedCode":  "800000059271"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915057",
+                                           "siteName":  "TRW (J.H. Williams Div.)",
+                                           "program":  "Resource Conservation and Recovery",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "400 Vulcan Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915057"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010129",
+        "address":  "225 LAWN AVE",
+        "city":  "BUFFALO",
+        "zip":  "14207",
+        "coordinates":  [
+                            -78.889714734287381,
+                            42.950588256227242
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PFC WILLIAM J GRABIARZ #79",
+                            "type":  "public",
+                            "sedCode":  "140600010129"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915007",
+                                           "siteName":  "Anaconda Company/American Brass",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "Military Road and Sayre Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915007"
+                                       },
+                                       {
+                                           "siteCode":  "V00314",
+                                           "siteName":  "Aurubis Buffalo, Inc.",
+                                           "program":  "Voluntary Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "Military Road and Sayre Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00314"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010082",
+        "address":  "230 EASTON AVE",
+        "city":  "BUFFALO",
+        "zip":  "14215",
+        "coordinates":  [
+                            -78.804960798186883,
+                            42.927961930047658
+                        ],
+        "schools":  [
+                        {
+                            "name":  "RONALD PEOPLES SCHOOL OF SCHOLARS (THE)",
+                            "type":  "public",
+                            "sedCode":  "140600010082"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "142601860031",
+        "address":  "2303 KENMORE AVE",
+        "city":  "BUFFALO",
+        "zip":  "14207",
+        "coordinates":  [
+                            -78.89850009156477,
+                            42.967300997673775
+                        ],
+        "schools":  [
+                        {
+                            "name":  "CHARTER SCHOOL FOR APPLIED TECHNOLOGIES",
+                            "type":  "charter",
+                            "sedCode":  "142601860031"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915057",
+                                           "siteName":  "TRW (J.H. Williams Div.)",
+                                           "program":  "Resource Conservation and Recovery",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "400 Vulcan Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915057"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010054",
+        "address":  "2358 MAIN ST",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.8459515667066,
+                            42.933636699414812
+                        ],
+        "schools":  [
+                        {
+                            "name":  "DR GEORGE BLACKMAN ECC",
+                            "type":  "public",
+                            "sedCode":  "140600010054"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915144",
+                                           "siteName":  "Niagara Mohawk Dewey Ave. Service Sta.",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "144 Kensington Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915144"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600860861",
+        "address":  "24 AGASSIZ CIRCLE",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.8559660315006,
+                            42.928518209452776
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO ACADEMY OF SCIENCE CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860861"
+                        },
+                        {
+                            "name":  "BUFFALO ACADEMY OF SCIENCE CHARTER II HIGH SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "800000092475"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "800000059832",
+        "address":  "24 SHOSHONE DR",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.836456987887829,
+                            42.9479757203918
+                        ],
+        "schools":  [
+                        {
+                            "name":  "CHARTER SCH APPLIED TECHNOLOGIES MS",
+                            "type":  "charter",
+                            "sedCode":  "800000059832"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600860874",
+        "address":  "24 WESTMINSTER AVE",
+        "city":  "BUFFALO",
+        "zip":  "14215",
+        "coordinates":  [
+                            -78.812613950097713,
+                            42.939697119868129
+                        ],
+        "schools":  [
+                        {
+                            "name":  "WESTMINSTER COMMUNITY CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860874"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915402",
+                                           "siteName":  "Bailey and Kensington",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "3074 Bailey Ave; 1096, 1098, \u0026 1102 Kensington Ave",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915402"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600861184",
+        "address":  "2408 MAIN ST",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.843909032992755,
+                            42.935194253941418
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PRIMARY HALL PREPARATORY CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600861184"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010065",
+        "address":  "249 SKILLEN ST",
+        "city":  "BUFFALO",
+        "zip":  "14207",
+        "coordinates":  [
+                            -78.895997923360227,
+                            42.960081915420368
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 65 ROOSEVELT ECC",
+                            "type":  "public",
+                            "sedCode":  "140600010065"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915391",
+                                           "siteName":  "2101 Kenmore Avenue Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "2101 Kenmore Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915391"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "142601030011",
+        "address":  "249 THORNCLIFF RD",
+        "city":  "BUFFALO",
+        "zip":  "14223",
+        "coordinates":  [
+                            -78.863107164631813,
+                            42.982580800801422
+                        ],
+        "schools":  [
+                        {
+                            "name":  "HERBERT HOOVER MIDDLE SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "142601030011"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010317",
+        "address":  "2495 MAIN ST",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.842388871412069,
+                            42.93573208905493
+                        ],
+        "schools":  [
+                        {
+                            "name":  "RESEARCH LABORATORY HIGH SCHOOL FOR BIOINFORMATICS AND LIFE SCIENCES",
+                            "type":  "public",
+                            "sedCode":  "140600010317"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010003",
+        "address":  "255 PORTER AVE",
+        "city":  "BUFFALO",
+        "zip":  "14201",
+        "coordinates":  [
+                            -78.89229067532105,
+                            42.900689259645112
+                        ],
+        "schools":  [
+                        {
+                            "name":  "DYOUVILLE-PORTER CAMPUS",
+                            "type":  "public",
+                            "sedCode":  "140600010003"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010105",
+        "address":  "256 S ELMWOOD AVE",
+        "city":  "BUFFALO",
+        "zip":  "14201",
+        "coordinates":  [
+                            -78.8788959831579,
+                            42.891762154066804
+                        ],
+        "schools":  [
+                        {
+                            "name":  "HUTCHINSON CENTRAL TECHNICAL HIGH SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010105"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915214",
+                                           "siteName":  "200 Delaware Ave Project",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "200 Delaware Ave",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915214"
+                                       },
+                                       {
+                                           "siteCode":  "C915271",
+                                           "siteName":  "250 Delaware Avenue Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "250 Delaware Avenue",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915271"
+                                       },
+                                       {
+                                           "siteCode":  "C915282",
+                                           "siteName":  "73-79 W. Huron St.",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "73-79 W. Huron St.",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915282"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "800000093590",
+        "address":  "266 GENESEE ST",
+        "city":  "BUFFALO",
+        "zip":  "14204",
+        "coordinates":  [
+                            -78.8647269193696,
+                            42.892024425502846
+                        ],
+        "schools":  [
+                        {
+                            "name":  "REACH ACADEMY CS MS",
+                            "type":  "charter",
+                            "sedCode":  "800000093590"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600860856",
+        "address":  "275 OAK ST",
+        "city":  "BUFFALO",
+        "zip":  "14203",
+        "coordinates":  [
+                            -78.868454607994778,
+                            42.890184528460161
+                        ],
+        "schools":  [
+                        {
+                            "name":  "ENTERPRISE CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860856"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915366",
+                                           "siteName":  "Ellicott and Oak Streets Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "324, 328, and 334 North Oak St and 441 Ellicott St",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915366"
+                                       },
+                                       {
+                                           "siteCode":  "C915388",
+                                           "siteName":  "Simon Properties Northeast",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "264 Oak Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915388"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010311",
+        "address":  "2885 MAIN ST",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.832660883996851,
+                            42.9448850487522
+                        ],
+        "schools":  [
+                        {
+                            "name":  "LEWIS J BENNETT HIGH SCHOOL OF INNOVATIVE TECHNOLGY",
+                            "type":  "public",
+                            "sedCode":  "140600010311"
+                        },
+                        {
+                            "name":  "MIDDLE EARLY COLLEGE HIGH SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010135"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915318",
+                                           "siteName":  "Main and Hertel",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "2929-2939 Main Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915318"
+                                       },
+                                       {
+                                           "siteCode":  "C915318A",
+                                           "siteName":  "Main and Hertel - Off-Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "2929-2939 Main Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915318A"
+                                       },
+                                       {
+                                           "siteCode":  "C915369",
+                                           "siteName":  "389 Manhattan Avenue",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "389 Manhattan Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915369"
+                                       },
+                                       {
+                                           "siteCode":  "V00168",
+                                           "siteName":  "Main-LaSalle Revitalization Project",
+                                           "program":  "Voluntary Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "Main-LaSalle Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00168"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010037",
+        "address":  "295 CARLTON ST",
+        "city":  "BUFFALO",
+        "zip":  "14204",
+        "coordinates":  [
+                            -78.858180293420716,
+                            42.897915510523639
+                        ],
+        "schools":  [
+                        {
+                            "name":  "MARVA J DANIEL FUTURES PREPARATORY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010037"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600861196",
+        "address":  "30 RICH ST",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.842775848391867,
+                            42.901789000662284
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BRICK BUFFALO ACADEMY CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600861196"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915211",
+                                           "siteName":  "NOCO #S41",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1055 Genesee Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915211"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010076",
+        "address":  "315 CAROLINA ST",
+        "city":  "BUFFALO",
+        "zip":  "14201",
+        "coordinates":  [
+                            -78.8784156148097,
+                            42.893984369806823
+                        ],
+        "schools":  [
+                        {
+                            "name":  "HERMAN BADILLO BILINGUAL ACADEMY",
+                            "type":  "public",
+                            "sedCode":  "140600010076"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915271",
+                                           "siteName":  "250 Delaware Avenue Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "250 Delaware Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915271"
+                                       },
+                                       {
+                                           "siteCode":  "C915389",
+                                           "siteName":  "147 West Tupper Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "147 West Tupper Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915389"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010056",
+        "address":  "319 SUFFOLK",
+        "city":  "BUFFALO",
+        "zip":  "14215",
+        "coordinates":  [
+                            -78.8098783109516,
+                            42.931542116866858
+                        ],
+        "schools":  [
+                        {
+                            "name":  "FREDERICK OLMSTED #156",
+                            "type":  "public",
+                            "sedCode":  "140600010056"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600860851",
+        "address":  "325 MANHATTAN AVE",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.828345038592374,
+                            42.941628079384131
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO UNITED CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860851"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915033",
+                                           "siteName":  "LaSalle Reservoir",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "Parkridge Avenue and East Amherst Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915033"
+                                       },
+                                       {
+                                           "siteCode":  "C915283",
+                                           "siteName":  "89 LaSalle Avenue Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "89 LaSalle Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915283"
+                                       },
+                                       {
+                                           "siteCode":  "C915318",
+                                           "siteName":  "Main and Hertel",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "2929-2939 Main Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915318"
+                                       },
+                                       {
+                                           "siteCode":  "C915318A",
+                                           "siteName":  "Main and Hertel - Off-Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "2929-2939 Main Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915318A"
+                                       },
+                                       {
+                                           "siteCode":  "C915369",
+                                           "siteName":  "389 Manhattan Avenue",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "389 Manhattan Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915369"
+                                       },
+                                       {
+                                           "siteCode":  "V00168",
+                                           "siteName":  "Main-LaSalle Revitalization Project",
+                                           "program":  "Voluntary Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "Main-LaSalle Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00168"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010053",
+        "address":  "329 ROEHRER AVE",
+        "city":  "BUFFALO",
+        "zip":  "14208",
+        "coordinates":  [
+                            -78.84891310524317,
+                            42.912773719147417
+                        ],
+        "schools":  [
+                        {
+                            "name":  "NAN M WOOD COMMUNITY SCHOOL OF EXCELLENCE",
+                            "type":  "public",
+                            "sedCode":  "140600010053"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "142601030026",
+        "address":  "33 HIGHLAND PKY",
+        "city":  "BUFFALO",
+        "zip":  "14223",
+        "coordinates":  [
+                            -78.864755230476121,
+                            42.973409883806681
+                        ],
+        "schools":  [
+                        {
+                            "name":  "KENMORE WEST SENIOR HIGH SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "142601030026"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600861185",
+        "address":  "335 DOAT ST",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.808285308417268,
+                            42.909333492918876
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO ACADEMY OF SCIENCE CHARTER SCHOOL II",
+                            "type":  "charter",
+                            "sedCode":  "140600861185"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010312",
+        "address":  "340 FOUGERON ST",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.826441251018991,
+                            42.908659693366609
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUILD COMMUNITY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010312"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915151",
+                                           "siteName":  "318 Urban Street",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "04",
+                                           "siteAddress":  "318 Urban Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915151"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010122",
+        "address":  "342 CLINTON ST",
+        "city":  "BUFFALO",
+        "zip":  "14204",
+        "coordinates":  [
+                            -78.862380802177057,
+                            42.8827840905526
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BENNETT PARK MONTESSORI SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010122"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010141",
+        "address":  "370 LAFAYETTE AVE",
+        "city":  "BUFFALO",
+        "zip":  "14213",
+        "coordinates":  [
+                            -78.884717278376513,
+                            42.920623854376409
+                        ],
+        "schools":  [
+                        {
+                            "name":  "LAFAYETTE INTERNATIONAL SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010141"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600861134",
+        "address":  "378 URBAN ST",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.825103874247418,
+                            42.909483998561015
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PERSISTENCE PREPARATORY ACADEMY CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600861134"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915151",
+                                           "siteName":  "318 Urban Street",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "04",
+                                           "siteAddress":  "318 Urban Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915151"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600860896",
+        "address":  "40 DAYS PARK",
+        "city":  "BUFFALO",
+        "zip":  "14201",
+        "coordinates":  [
+                            -78.882020054944547,
+                            42.89878085988331
+                        ],
+        "schools":  [
+                        {
+                            "name":  "ELMWOOD VILLAGE CHARTER SCHOOL DAYS PARK",
+                            "type":  "charter",
+                            "sedCode":  "140600860896"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915242",
+                                           "siteName":  "295 Maryland Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "289 \u0026 291 Maryland Street and 97 \u0026 129 West Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915242"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010101",
+        "address":  "400 KENSINGTON AVE",
+        "city":  "BUFFALO",
+        "zip":  "14214",
+        "coordinates":  [
+                            -78.8362349646665,
+                            42.929456359380495
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BURGARD HIGH SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010101"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915279",
+                                           "siteName":  "1827 Fillmore Avenue",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1827 Fillmore Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915279"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600861072",
+        "address":  "404 EDISON ST",
+        "city":  "BUFFALO",
+        "zip":  "14222",
+        "coordinates":  [
+                            -78.802673894003235,
+                            42.9340924059911
+                        ],
+        "schools":  [
+                        {
+                            "name":  "CHARTER SCHOOL OF INQUIRY",
+                            "type":  "charter",
+                            "sedCode":  "140600861072"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010006",
+        "address":  "414 S DIVISION ST",
+        "city":  "BUFFALO",
+        "zip":  "14204",
+        "coordinates":  [
+                            -78.8609032790677,
+                            42.88057957602949
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO ELEMENTARY SCHOOL OF TECHNOLOGY",
+                            "type":  "public",
+                            "sedCode":  "140600010006"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010093",
+        "address":  "430 SOUTHSIDE PKWY",
+        "city":  "BUFFALO",
+        "zip":  "14210",
+        "coordinates":  [
+                            -78.8222759534595,
+                            42.860596270596893
+                        ],
+        "schools":  [
+                        {
+                            "name":  "SOUTHSIDE ELEMENTARY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010093"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915324",
+                                           "siteName":  "Buffalo River - GLNPO Dredging Project",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "Buffalo River and City Ship Canal",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915324"
+                                       },
+                                       {
+                                           "siteCode":  "V00734",
+                                           "siteName":  "Buffalo River - GLNPO Dredging Project",
+                                           "program":  "Voluntary Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "Buffalo River and City Ship Canal",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00734"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010097",
+        "address":  "450 MASTEN AVE",
+        "city":  "BUFFALO",
+        "zip":  "14209",
+        "coordinates":  [
+                            -78.859956327708517,
+                            42.914578099920782
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO ACADEMY FOR THE VISUAL \u0026 PERFORMING ARTS",
+                            "type":  "public",
+                            "sedCode":  "140600010097"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010061",
+        "address":  "453 LEROY ST",
+        "city":  "BUFFALO",
+        "zip":  "14215",
+        "coordinates":  [
+                            -78.828682896979814,
+                            42.93255513658319
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 61 ARTHUR O EVE SCHOOL OF DISTINCTION",
+                            "type":  "public",
+                            "sedCode":  "140600010061"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915412",
+                                           "siteName":  "Former Sweet Kleen Site",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "P",
+                                           "siteAddress":  "764 Kensington Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915412"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010084",
+        "address":  "462 GRIDER ST",
+        "city":  "BUFFALO",
+        "zip":  "14215",
+        "coordinates":  [
+                            -78.8347455119414,
+                            42.927827445274723
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 84",
+                            "type":  "public",
+                            "sedCode":  "140600010084"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915279",
+                                           "siteName":  "1827 Fillmore Avenue",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1827 Fillmore Avenue",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915279"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010314",
+        "address":  "487 HIGH ST",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.851607303108068,
+                            42.899965253903488
+                        ],
+        "schools":  [
+                        {
+                            "name":  "MARTIN LUTHER KING JR #48",
+                            "type":  "public",
+                            "sedCode":  "140600010314"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915400",
+                                           "siteName":  "Jefferson and Best Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "1003 Jefferson Ave, 403-411 Best St, 94-120 Earl",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915400"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010118",
+        "address":  "489 HERTEL AVE",
+        "city":  "BUFFALO",
+        "zip":  "14207",
+        "coordinates":  [
+                            -78.889668484501712,
+                            42.946187991406887
+                        ],
+        "schools":  [
+                        {
+                            "name":  "WEST HERTEL ELEMENTARY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010118"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915007",
+                                           "siteName":  "Anaconda Company/American Brass",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "Military Road and Sayre Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915007"
+                                       },
+                                       {
+                                           "siteCode":  "915210",
+                                           "siteName":  "Morgan Materials (aka Hertel Warehouse)",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "02",
+                                           "siteAddress":  "373 Hertel Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915210"
+                                       },
+                                       {
+                                           "siteCode":  "C915210",
+                                           "siteName":  "Hertel Warehouse Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "373 Hertel Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915210"
+                                       },
+                                       {
+                                           "siteCode":  "V00314",
+                                           "siteName":  "Aurubis Buffalo, Inc.",
+                                           "program":  "Voluntary Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "Military Road and Sayre Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00314"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010320",
+        "address":  "50 A ST",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.837431424861393,
+                            42.901404467298221
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 90",
+                            "type":  "public",
+                            "sedCode":  "140600010320"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915211",
+                                           "siteName":  "NOCO #S41",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1055 Genesee Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915211"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "142601030023",
+        "address":  "500 PARKHURST BLVD",
+        "city":  "BUFFALO",
+        "zip":  "14223",
+        "coordinates":  [
+                            -78.8327935011305,
+                            42.972325082303954
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BEN FRANKLIN ELEMENTARY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "142601030023"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010310",
+        "address":  "51 ONTARIO ST",
+        "city":  "BUFFALO",
+        "zip":  "14207",
+        "coordinates":  [
+                            -78.905404561258834,
+                            42.94636017110809
+                        ],
+        "schools":  [
+                        {
+                            "name":  "RIVERSIDE ACADEMY HIGH SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010310"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915323",
+                                           "siteName":  "25 Rano Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "25 Rano Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915323"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "142601030003",
+        "address":  "540 PARKHURST BLVD",
+        "city":  "BUFFALO",
+        "zip":  "14223",
+        "coordinates":  [
+                            -78.832829650797663,
+                            42.97312697370257
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BEN FRANKLIN MIDDLE SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "142601030003"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010080",
+        "address":  "600 HIGHGATE AVE",
+        "city":  "BUFFALO",
+        "zip":  "14215",
+        "coordinates":  [
+                            -78.806103932750588,
+                            42.948494262419139
+                        ],
+        "schools":  [
+                        {
+                            "name":  "HIGHGATE HEIGHTS",
+                            "type":  "public",
+                            "sedCode":  "140600010080"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010132",
+        "address":  "646 E DELEVAN AVE",
+        "city":  "BUFFALO",
+        "zip":  "14215",
+        "coordinates":  [
+                            -78.832401774239116,
+                            42.922360774861666
+                        ],
+        "schools":  [
+                        {
+                            "name":  "MATH SCIENCE TECHNOLOGY PREPARATORY SCHOOL AT 197",
+                            "type":  "public",
+                            "sedCode":  "140600010132"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915165",
+                                           "siteName":  "Vibratech Inc.",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "02",
+                                           "siteAddress":  "537 East Delavan",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915165"
+                                       },
+                                       {
+                                           "siteCode":  "915413",
+                                           "siteName":  "230 Grider",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "P",
+                                           "siteAddress":  "230 Grider Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915413"
+                                       },
+                                       {
+                                           "siteCode":  "C915377",
+                                           "siteName":  "Mt. Olive Senior Manor Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "227 Sheridan Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915377"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600860838",
+        "address":  "65 GREAT ARROW AVE",
+        "city":  "BUFFALO",
+        "zip":  "14216",
+        "coordinates":  [
+                            -78.870334955448442,
+                            42.942376049705558
+                        ],
+        "schools":  [
+                        {
+                            "name":  "TAPESTRY CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600860838"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915220",
+                                           "siteName":  "Former Pierce Arrow Manufacturing Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "255 Great Arrow Way",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915220"
+                                       },
+                                       {
+                                           "siteCode":  "C915314",
+                                           "siteName":  "MOD-PAC CORP.",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1801 Elmwood Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915314"
+                                       },
+                                       {
+                                           "siteCode":  "C915326",
+                                           "siteName":  "157 Great Arrow Avenue",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "157 Great Arrow Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915326"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600861105",
+        "address":  "665 HERTEL AVE",
+        "city":  "BUFFALO",
+        "zip":  "14207",
+        "coordinates":  [
+                            -78.88411261545825,
+                            42.945175936765615
+                        ],
+        "schools":  [
+                        {
+                            "name":  "ELMWOOD VILLAGE CHARTER SCHOOL HERTEL",
+                            "type":  "charter",
+                            "sedCode":  "140600861105"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915312",
+                                           "siteName":  "Pierce Arrow Business Center",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "155-157 Chandler Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915312"
+                                       },
+                                       {
+                                           "siteCode":  "C915320",
+                                           "siteName":  "166 Chandler Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "166 Chandler Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915320"
+                                       },
+                                       {
+                                           "siteCode":  "C915354",
+                                           "siteName":  "140 Chandler Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "140 Chandler Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915354"
+                                       },
+                                       {
+                                           "siteCode":  "C915358",
+                                           "siteName":  "125 Chandler Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "125 Chandler Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915358"
+                                       },
+                                       {
+                                           "siteCode":  "C915370",
+                                           "siteName":  "156 Chandler Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "156 Chandler Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915370"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010104",
+        "address":  "70 W CHIPPEWA ST",
+        "city":  "BUFFALO",
+        "zip":  "14202",
+        "coordinates":  [
+                            -78.875946694925076,
+                            42.890465702566246
+                        ],
+        "schools":  [
+                        {
+                            "name":  "EMERSON SCHOOL OF HOSPITALITY",
+                            "type":  "public",
+                            "sedCode":  "140600010104"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915208",
+                                           "siteName":  "275 Franklin Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "275 Franklin Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915208"
+                                       },
+                                       {
+                                           "siteCode":  "C915208A",
+                                           "siteName":  "275 Franklin Street - OFF-SITE",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "275 Franklin Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915208A"
+                                       },
+                                       {
+                                           "siteCode":  "C915214",
+                                           "siteName":  "200 Delaware Ave Project",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "200 Delaware Ave",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915214"
+                                       },
+                                       {
+                                           "siteCode":  "C915237",
+                                           "siteName":  "432 Pearl Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "432 Pearl Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915237"
+                                       },
+                                       {
+                                           "siteCode":  "C915271",
+                                           "siteName":  "250 Delaware Avenue Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "250 Delaware Avenue",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915271"
+                                       },
+                                       {
+                                           "siteCode":  "C915282",
+                                           "siteName":  "73-79 W. Huron St.",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "73-79 W. Huron St.",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915282"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010072",
+        "address":  "71 LORRAINE AVE",
+        "city":  "BUFFALO",
+        "zip":  "14220",
+        "coordinates":  [
+                            -78.814630134036179,
+                            42.846649660431694
+                        ],
+        "schools":  [
+                        {
+                            "name":  "LORRAINE ELEMENTARY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010072"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010027",
+        "address":  "73 PAWNEE PKWY",
+        "city":  "BUFFALO",
+        "zip":  "14210",
+        "coordinates":  [
+                            -78.809492908002341,
+                            42.861700836980063
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 27 HILLERY PARK ACADEMY",
+                            "type":  "public",
+                            "sedCode":  "140600010027"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915268",
+                                           "siteName":  "154 South Ogden Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "154 South Ogden",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915268"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010313",
+        "address":  "75 W HURON ST",
+        "city":  "BUFFALO",
+        "zip":  "14201 / 14214",
+        "coordinates":  [
+                            -78.876286838625518,
+                            42.88957020825535
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO SCHOOL OF CULINARY ARTS AND HOSPITALITY MANAGEMENT",
+                            "type":  "public",
+                            "sedCode":  "140600010313"
+                        },
+                        {
+                            "name":  "PS 42 OCCUPATIONAL TRAINING CENTER",
+                            "type":  "public",
+                            "sedCode":  "140600010042"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915208",
+                                           "siteName":  "275 Franklin Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "275 Franklin Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915208"
+                                       },
+                                       {
+                                           "siteCode":  "C915208A",
+                                           "siteName":  "275 Franklin Street - OFF-SITE",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "275 Franklin Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915208A"
+                                       },
+                                       {
+                                           "siteCode":  "C915214",
+                                           "siteName":  "200 Delaware Ave Project",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "200 Delaware Ave",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915214"
+                                       },
+                                       {
+                                           "siteCode":  "C915237",
+                                           "siteName":  "432 Pearl Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "432 Pearl Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915237"
+                                       },
+                                       {
+                                           "siteCode":  "C915271",
+                                           "siteName":  "250 Delaware Avenue Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "250 Delaware Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915271"
+                                       },
+                                       {
+                                           "siteCode":  "C915282",
+                                           "siteName":  "73-79 W. Huron St.",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "73-79 W. Huron St.",
+                                           "relationship":  "point_inside_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915282"
+                                       }
+                                   ],
+        "researchStatus":  "documented_same_site"
+    },
+    {
+        "id":  "140600010018",
+        "address":  "750 WEST AVE",
+        "city":  "BUFFALO",
+        "zip":  "14215",
+        "coordinates":  [
+                            -78.896932826682388,
+                            42.91116484544888
+                        ],
+        "schools":  [
+                        {
+                            "name":  "DR ANTONIA PANTOJA COMMUNITY SCHOOL OF ACADEMIC EXCELLENCE AT #18",
+                            "type":  "public",
+                            "sedCode":  "140600010018"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915277",
+                                           "siteName":  "1050-1088 Niagara Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1050-1088 Niagara Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915277"
+                                       },
+                                       {
+                                           "siteCode":  "C915313",
+                                           "siteName":  "990 Niagara Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "990 NIAGARA STREET",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915313"
+                                       },
+                                       {
+                                           "siteCode":  "C915364",
+                                           "siteName":  "1095 Niagara Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "1095 Niagara Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915364"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010133",
+        "address":  "756 ST LAWRENCE AVE",
+        "city":  "BUFFALO",
+        "zip":  "14216",
+        "coordinates":  [
+                            -78.841597129084164,
+                            42.956349578391539
+                        ],
+        "schools":  [
+                        {
+                            "name":  "ACADEMY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010133"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010315",
+        "address":  "780 PARKSIDE AVE",
+        "city":  "BUFFALO",
+        "zip":  "14216",
+        "coordinates":  [
+                            -78.848517582716241,
+                            42.9519941226524
+                        ],
+        "schools":  [
+                        {
+                            "name":  "NORTH PARK COMMUNITY SCHOOL #50",
+                            "type":  "public",
+                            "sedCode":  "140600010315"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010140",
+        "address":  "820 NORTHAMPTON ST",
+        "city":  "BUFFALO",
+        "zip":  "14211",
+        "coordinates":  [
+                            -78.836706194984174,
+                            42.90760505031048
+                        ],
+        "schools":  [
+                        {
+                            "name":  "EAST COMMUNITY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010140"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600861186",
+        "address":  "833 MICHIGAN AVE-3RD FL",
+        "city":  "BUFFALO",
+        "zip":  "14203",
+        "coordinates":  [
+                            -78.864203734175177,
+                            42.895407255481963
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO COMMONS CHARTER SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "140600861186"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010064",
+        "address":  "874 AMHERST ST",
+        "city":  "BUFFALO",
+        "zip":  "14216",
+        "coordinates":  [
+                            -78.871651039218818,
+                            42.940937100818786
+                        ],
+        "schools":  [
+                        {
+                            "name":  "PS 64 FREDERICK LAW OLMSTED",
+                            "type":  "public",
+                            "sedCode":  "140600010064"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "C915220",
+                                           "siteName":  "Former Pierce Arrow Manufacturing Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "N",
+                                           "siteAddress":  "255 Great Arrow Way",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915220"
+                                       },
+                                       {
+                                           "siteCode":  "C915326",
+                                           "siteName":  "157 Great Arrow Avenue",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "157 Great Arrow Avenue",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915326"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "800000090624",
+        "address":  "89 CLARE ST",
+        "city":  "BUFFALO",
+        "zip":  "14206",
+        "coordinates":  [
+                            -78.8406080858465,
+                            42.880927865785992
+                        ],
+        "schools":  [
+                        {
+                            "name":  "BUFFALO ACADEMY OF SCIENCE CHARTER SCHOOL - ELEMENTARY SCHOOL",
+                            "type":  "charter",
+                            "sedCode":  "800000090624"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010001",
+        "address":  "911 ABBOTT RD",
+        "city":  "BUFFALO",
+        "zip":  "14220",
+        "coordinates":  [
+                            -78.809213075022356,
+                            42.839832523380458
+                        ],
+        "schools":  [
+                        {
+                            "name":  "DISCOVERY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010001"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+
+                                   ],
+        "researchStatus":  "campus_mapped"
+    },
+    {
+        "id":  "140600010119",
+        "address":  "95 FOURTH ST",
+        "city":  "BUFFALO",
+        "zip":  "14202",
+        "coordinates":  [
+                            -78.884609499905125,
+                            42.887003889582715
+                        ],
+        "schools":  [
+                        {
+                            "name":  "WATERFRONT ELEMENTARY SCHOOL",
+                            "type":  "public",
+                            "sedCode":  "140600010119"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915167",
+                                           "siteName":  "Fourth Street MGP Site",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "43 Carolina Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915167"
+                                       },
+                                       {
+                                           "siteCode":  "C915194",
+                                           "siteName":  "Former Buffalo Service Station",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "249 West Genesee Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915194"
+                                       },
+                                       {
+                                           "siteCode":  "C915194A",
+                                           "siteName":  "Former Buffalo Service Station - OFF-SITE",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "249 West Genesee Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915194A"
+                                       },
+                                       {
+                                           "siteCode":  "C915195",
+                                           "siteName":  "Buffalo Urban Renewal Agency West Property",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "257 West Genesee Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915195"
+                                       },
+                                       {
+                                           "siteCode":  "C915203",
+                                           "siteName":  "4 New Seventh Street Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "4 New Seventh Street Site",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915203"
+                                       },
+                                       {
+                                           "siteCode":  "C915340",
+                                           "siteName":  "240 - 260 Lakefront Boulevard Site",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "240 Lakefront Boulevard",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915340"
+                                       },
+                                       {
+                                           "siteCode":  "V00362",
+                                           "siteName":  "NFG - Buffalo Service Center",
+                                           "program":  "Voluntary Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "95 Fourth Street",
+                                           "relationship":  "within_500_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00362"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    },
+    {
+        "id":  "140600010019",
+        "address":  "97 W DELAVAN AVE",
+        "city":  "BUFFALO",
+        "zip":  "14213",
+        "coordinates":  [
+                            -78.895866875824922,
+                            42.921739715166133
+                        ],
+        "schools":  [
+                        {
+                            "name":  "NATIVE AMERICAN MAGNET",
+                            "type":  "public",
+                            "sedCode":  "140600010019"
+                        }
+                    ],
+        "nearbyRemediationSites":  [
+                                       {
+                                           "siteCode":  "915176",
+                                           "siteName":  "ChemCore",
+                                           "program":  "State Superfund Program            ",
+                                           "siteClass":  "04",
+                                           "siteAddress":  "1382 Niagara Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915176"
+                                       },
+                                       {
+                                           "siteCode":  "C915302",
+                                           "siteName":  "1360 Niagara Street",
+                                           "program":  "Brownfield Cleanup Program",
+                                           "siteClass":  "C",
+                                           "siteAddress":  "1336, 1340 and 1360 Niagara Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915302"
+                                       },
+                                       {
+                                           "siteCode":  "E915213",
+                                           "siteName":  "1318 Niagara Street",
+                                           "program":  "Environmental Restoration Program ",
+                                           "siteClass":  "A",
+                                           "siteAddress":  "1318 Niagara Street",
+                                           "relationship":  "within_1000_ft_of_dec_boundary",
+                                           "detailUrl":  "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=E915213"
+                                       }
+                                   ],
+        "researchStatus":  "proximity_screened"
+    }
+]

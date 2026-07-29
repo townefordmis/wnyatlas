@@ -26,4 +26,8 @@ Thumbs.db
 
 # TypeScript
 *.tsbuildinfo
+
+# Local full-text research extracts; retain source links and derived findings only.
+research/dec-fact-sheet-extracts.json
+research/dec-fact-sheet-history-excerpts.json
 next-env.d.ts

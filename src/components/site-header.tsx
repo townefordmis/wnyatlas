@@ -47,6 +47,7 @@ export function SiteHeader() {
         <a href="#mission">Mission</a>
         <a href="#sites">Sites</a>
         <Link href="/enforcement">Enforcement</Link>
+        <Link href="/research/schools-industrial-sites">Schools</Link>
         <a href="#about">About</a>
       </nav>
 
