@@ -23,7 +23,7 @@ export default function Home() {
     "@type": "WebSite",
     name: "WNYAtlas",
     alternateName: "Western New York Industrial & Environmental Atlas",
-    url: "https://wnyatlas.com/",
+    url: "https://www.wnyatlas.com/",
     description:
       "An evidence-based public atlas of Western New York's industrial, environmental, cleanup, and redevelopment history.",
     inLanguage: "en-US",

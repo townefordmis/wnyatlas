@@ -3,7 +3,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wnyatlas.com"),
+  metadataBase: new URL("https://www.wnyatlas.com"),
   title: {
     default: "WNYAtlas | Western New York Environmental History",
     template: "%s | WNYAtlas",

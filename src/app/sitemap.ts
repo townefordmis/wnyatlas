@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { featuredSites } from "@/data/featured-sites";
 
-const BASE_URL = "https://wnyatlas.com";
+const BASE_URL = "https://www.wnyatlas.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const publicPages: MetadataRoute.Sitemap = [

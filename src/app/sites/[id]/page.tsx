@@ -89,7 +89,7 @@ export default async function SitePage({ params }: SitePageProps) {
         existingAtlasSiteByCleanupCode[record.siteCode] === site.id,
     ),
   );
-  const siteUrl = `https://wnyatlas.com/sites/${site.id}`;
+  const siteUrl = `https://www.wnyatlas.com/sites/${site.id}`;
   const reviewedDate = story.lastReviewed
     ? new Date(story.lastReviewed)
     : null;
@@ -110,20 +110,20 @@ export default async function SitePage({ params }: SitePageProps) {
         inLanguage: "en-US",
         ...(dateModified ? { dateModified } : {}),
         ...(site.image
-          ? { image: `https://wnyatlas.com${site.image.src}` }
+          ? { image: `https://www.wnyatlas.com${site.image.src}` }
           : {}),
         author: {
           "@type": "Organization",
           name: "WNYAtlas",
-          url: "https://wnyatlas.com/",
+          url: "https://www.wnyatlas.com/",
         },
         publisher: {
           "@type": "Organization",
           name: "WNYAtlas",
-          url: "https://wnyatlas.com/",
+          url: "https://www.wnyatlas.com/",
           logo: {
             "@type": "ImageObject",
-            url: "https://wnyatlas.com/icon.svg",
+            url: "https://www.wnyatlas.com/icon.svg",
           },
         },
         about: {
@@ -154,13 +154,13 @@ export default async function SitePage({ params }: SitePageProps) {
             "@type": "ListItem",
             position: 1,
             name: "WNYAtlas",
-            item: "https://wnyatlas.com/",
+            item: "https://www.wnyatlas.com/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "All documented places",
-            item: "https://wnyatlas.com/places",
+            item: "https://www.wnyatlas.com/places",
           },
           {
             "@type": "ListItem",

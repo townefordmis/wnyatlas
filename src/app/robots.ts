@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://wnyatlas.com/sitemap.xml",
-    host: "https://wnyatlas.com",
+    sitemap: "https://www.wnyatlas.com/sitemap.xml",
+    host: "https://www.wnyatlas.com",
   };
 }
