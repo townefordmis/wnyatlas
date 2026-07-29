@@ -20,6 +20,22 @@ export type FormerWaterwayRecord = {
 
 export const formerWaterwayRecords: FormerWaterwayRecord[] = [
   {
+    id: "buried-erie-canal-buffalo-terminus",
+    name: "Buried Erie Canal and Commercial Slip terminus",
+    location: "Canalside and the former downtown canal corridor, Buffalo",
+    coordinates: [-78.8771, 42.8775],
+    evidenceType: "documented_filled_waterway",
+    waterwayHistory:
+      "The original Erie Canal reached Buffalo through the Commercial Slip at the foot of Main Street. After the Barge Canal shifted the active western connection to Tonawanda, the old canal through downtown was abandoned and filled; the Commercial Slip was filled in 1926.",
+    documentedMaterial:
+      "The reviewed historical sources establish abandonment and filling, but do not establish that every buried section was filled with industrial waste. WNY Atlas therefore labels this as a filled waterway rather than a waste-disposal site.",
+    interpretation:
+      "Canalside later re-excavated, rewatered, or interpreted portions of the historic terminus. This marker identifies the documented terminus area and does not claim to trace the entire buried canal alignment.",
+    sourceUrl:
+      "https://www.buffalony.gov/DocumentCenter/View/9463/PreservationReadySurvey",
+    sourceLabel: "City of Buffalo Preservation Ready Survey",
+  },
+  {
     id: "south-ogden-former-river-channel",
     name: "Former Buffalo River channel at South Ogden",
     location: "154 South Ogden Street, Buffalo",
