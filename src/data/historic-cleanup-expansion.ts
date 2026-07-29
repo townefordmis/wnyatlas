@@ -1748,7 +1748,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Chautauqua",
     category: "cleanup",
     summary:
-      "Downtown property historically used by a photo facility, dry cleaner, taxi company, automotive repair shop, and parking garage. Deep chlorinated-solvent contamination required major excavation, groundwater treatment, vapor mitigation, and continuing controls.",
+      "Downtown property historically used by a photo facility, dry cleaner, taxi company, automotive repair shop, and parking garage. Deep chlorinated-solvent contamination required major excavation, groundwater treatment, vapor mitigation, and continuing controls; recent site-well monitoring also documented benzene, PFOA, and PFOS above applicable groundwater values.",
     evidenceStatus: "well-documented",
     coordinates: [-79.2432394993632, 42.09551127136597],
     story: {
@@ -1764,7 +1764,8 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       documentedImpacts: [
         "DEC identified PCE, TCE, dichloroethene, vinyl chloride, petroleum-related compounds, and PFAS in investigated soil, groundwater, or vapor.",
-        "The public water supply is separate from the contaminated site groundwater.",
+        "Recent periodic-review monitoring documented benzene, PFOA, and PFOS above applicable groundwater standards or guidance values in specific site monitoring wells.",
+        "These results describe groundwater monitoring at the cleanup site; they are not evidence of contamination in the public drinking-water supply, which is separate from the site groundwater.",
       ],
       cleanupAndControls: [
         "Removal included approximately 430 tons characterized as hazardous; in-situ injections address the remaining chlorinated-solvent plume.",
@@ -1780,6 +1781,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         url: "https://extapps.dec.ny.gov/data/DecDocs/C907047/Decision%20Document.BCP.C907047.2021-01-04.Decision%20Document_Jamestown%20Brewery.pdf",
       },
       {
+        title: "Jamestown Brewery 2025 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907047/Report.BCP.C907047.2026-03-03.PRR_and_IC-EC_Certification_4_21_24_to_4_21_25.pdf",
+      },
+      {
         title: "Jamestown Brewery Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C907047/",
@@ -1793,7 +1799,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Chautauqua",
     category: "cleanup",
     summary:
-      "Former locomotive, heat-exchanger, specialty-steel, and aluminum-extrusion property within Dunkirk's Roberts Road complex. Chlorinated-solvent source treatment was completed, but groundwater monitoring and land controls continue.",
+      "Former locomotive, heat-exchanger, specialty-steel, and aluminum-extrusion property within Dunkirk's Roberts Road complex. Source treatment was completed, but monitoring continues for chlorinated solvents and benzene in groundwater along with long-term land controls.",
     evidenceStatus: "well-documented",
     coordinates: [-79.31608370183818, 42.486107315578224],
     story: {
@@ -1809,6 +1815,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       documentedImpacts: [
         "Investigations identified a chlorinated-solvent source near a suspected former tank and TCE-related groundwater contamination.",
+        "DEC's 2025 periodic review reported benzene above the state groundwater standard in specific wells sampled during 2024, alongside continuing chlorinated-VOC and vinyl-chloride monitoring.",
         "DEC records distinguish the Alumax groundwater area from the adjoining Roblin Steel property.",
       ],
       cleanupAndControls: [
@@ -1823,6 +1830,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Closed Alumax Site Management Plan",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/V00589/Report.VCP.V00589.2021-11-01.Revised_SMP.pdf",
+      },
+      {
+        title: "Closed Alumax 2025 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00589/Report.VCP.V00589.2025-03-03.PRR_and_IC-EC_Certification.pdf",
       },
       {
         title: "Closed Alumax Site Documents",
