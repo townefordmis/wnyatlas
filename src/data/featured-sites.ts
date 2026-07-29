@@ -935,7 +935,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former manufactured-gas plant at Dart and Bradley Streets where investigations documented coal tar, benzene and related BTEX compounds, and PAHs in site media.",
+      "Former manufactured-gas plant at Dart and Bradley Streets. Long-term terrestrial and creek remedies remain under management, while DEC continues investigating historic coal-tar impacts in the lower Scajaquada Creek area.",
     evidenceStatus: "well-documented",
     coordinates: [-78.89891900618512, 42.92937998910184],
     sources: [
@@ -944,23 +944,33 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915351/Report.HW.915351.2022-10-20.Site%20Characterization%20Report%20.pdf",
       },
+      {
+        title: "Iroquois Gas / Westwood Riparian Periodic Review",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915141B/Report.HW.915141B.2025-09-12.Revised_2024_Periodic_Review_Report.pdf",
+      },
     ],
   },
   {
     id: "west-genesee-former-mgp",
-    name: "West Genesee Former Manufactured-Gas Plant",
+    name: "Former Buffalo Service Station / Blue Cross–HealthNow Site",
     municipality: "Buffalo",
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former manufactured-gas property where benzene and other coal-gas wastes were documented in soil and groundwater, remediated, and redeveloped with the HealthNow office building.",
+      "Former West Genesee manufactured-gas property where coal-gas wastes affected soil and groundwater. Cleanup was completed in 2006 and the property was redeveloped for the former HealthNow/Blue Cross headquarters, which Highmark vacated as its headquarters in 2024.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.884, 42.889],
+    coordinates: [-78.88303247319787, 42.885725283841616],
     sources: [
       {
         title: "Region 9 Environmental Cleanup Success Stories",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories",
+      },
+      {
+        title: "Former Buffalo Service Station DEC Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915194/",
       },
     ],
   },
@@ -1296,7 +1306,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former manufactured-gas plant at 126 East Niagara Street where coal-tar non-aqueous-phase liquid and contaminated groundwater affected the property and nearby basement sumps; recovery and treatment systems were installed.",
+      "Former manufactured-gas plant at 126 East Niagara Street where coal-tar liquid and contaminated groundwater affected the property and nearby basement sumps. DEC classifies the closed site as Class 4 because recovery, monitoring, and continuing site management remain necessary.",
     evidenceStatus: "well-documented",
     coordinates: [-78.873, 43.022],
     sources: [
@@ -1304,6 +1314,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Gastown Treatment System Semiannual Report",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915171/Report.HW.915171.2002-08-15.Treatment_System-1st_Semi_Report_2002.pdf",
+      },
+      {
+        title: "Gastown MGP DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915171/",
       },
     ],
   },
@@ -1314,7 +1329,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "cleanup",
     summary:
-      "Gasworks operated on Transit Street from 1851 to 1927. Investigations documented coal tar and related non-aqueous-phase liquid, leading to excavation, containment, and long-term remediation.",
+      "Gasworks operated on Transit Street from 1851 to 1927. Most of the selected cleanup was constructed from 2014 through 2016, but DEC continues to classify the non-registry program as active rather than complete.",
     evidenceStatus: "well-documented",
     coordinates: [-78.69624555259125, 43.16692913716765],
     sources: [
@@ -1328,6 +1343,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932098/Work%20Plan.HW.932098.2015-12-16.36%20S%20Transit%20Work%20Plan%20-%20approved.pdf",
       },
+      {
+        title: "Transit Street MGP Cleanup Update",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/der/factsheet/932098update.pdf",
+      },
     ],
   },
   {
@@ -1337,7 +1357,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former manufactured-gas plant built in the 1920s and operated into the 1960s, where purifier residuals and hydrocarbon compounds were investigated and remediated through New York's voluntary cleanup program.",
+      "Former manufactured-gas plant built in the 1920s and operated into the 1960s. DEC classifies the voluntary cleanup as complete, while groundwater, surface-water, and soil-vapor evaluation continue under site management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.807, 42.878],
     sources: [
@@ -1345,6 +1365,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Mineral Springs Road Final Engineering Report",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/V00195/Report.VCP.V00195.2002-06-24.Final_Engineering_Report_-Vol_I.pdf",
+      },
+      {
+        title: "Mineral Springs Road DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00195/",
       },
     ],
   },
@@ -1363,6 +1388,98 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "31 Tonawanda Street Off-Site Remedial Investigation Report",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C915299A/Report.BCP.C915299A.2023-08-02.Off-Site%20RI%20Report%20-%20Text-Figures-Tables.pdf",
+      },
+    ],
+  },
+  {
+    id: "jamestown-former-mgp",
+    name: "Jamestown Former Manufactured-Gas Plant",
+    municipality: "Jamestown",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former water-gas plant at 208 East First Street that operated from 1881 until an explosion destroyed structures around 1900–1901. DEC documented coal-tar liquid and contaminants above standards in soil and groundwater and classifies the property as a Class 2 State Superfund site requiring action.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.23710236, 42.095189055],
+    sources: [
+      {
+        title: "Jamestown Former MGP Class 2 Notice",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/der/factsheet/907036class2.pdf",
+      },
+      {
+        title: "Jamestown Former MGP Site Characterization Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907036/Report.HW.907036.2017-07-05.Site%20Characterization%20Report.pdf",
+      },
+    ],
+  },
+  {
+    id: "dunkirk-former-mgp",
+    name: "Dunkirk Former Manufactured-Gas Plant",
+    municipality: "Dunkirk",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former three-acre gasworks at 31 West Second Street that operated from the late 1800s to about 1910. Investigation documented a source area and affected groundwater extending beyond the property. DEC classifies the cleanup program as active and incomplete.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.337186744, 42.48551081],
+    sources: [
+      {
+        title: "Dunkirk Former MGP Remedial Investigation Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/dfmgpfs.pdf",
+      },
+      {
+        title: "Dunkirk Former MGP DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907035/",
+      },
+    ],
+  },
+  {
+    id: "niagara-falls-former-mgp",
+    name: "Niagara Falls Former Manufactured-Gas Plant",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Potential DEC site in the Rainbow Bridge and former Prospect Park area. Historic maps document a Niagara Falls Gas and Electric manufactured-gas plant and large gas holders, but the Class P designation means further investigation is required before cleanup needs can be determined.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-79.066273224, 43.088691577],
+    sources: [
+      {
+        title: "Niagara Gorge Corridor Hazardous-Waste Screening",
+        publisher: "New York State Office of Parks, Recreation and Historic Preservation",
+        url: "https://parks.ny.gov/documents/inside-our-agency/PublicDocuments/NiagaraFallsStateParkScopingReport/MosesParkwayNorth/AppendixLHazardousWasteJuly2016.pdf",
+      },
+      {
+        title: "Niagara Falls Former MGP DEC Record — 932147",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932147/",
+      },
+    ],
+  },
+  {
+    id: "salamanca-former-mgp",
+    name: "Salamanca Former Gas Property",
+    municipality: "Salamanca",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Potential DEC site at 38 Main Street on the Seneca Nation's Allegany Territory. The available records link the property to Salamanca Gas Company and document gas purification and natural-gas distribution, but do not yet establish on-site manufactured-gas production or a required remedy.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.715378774, 42.156053639],
+    sources: [
+      {
+        title: "Salamanca Former MGP DEC Record — 905035",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905035/",
+      },
+      {
+        title: "Fredonia and Salamanca Historical Records Search",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907038/Report.HW.907038.2009-09-30.Records_Search_Reports_Fredonia_Salamanca.pdf",
       },
     ],
   },

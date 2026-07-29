@@ -2430,10 +2430,10 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "iroquois-gas-westwood": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "July 29, 2026",
     background: [
-      "This property near Dart and Bradley streets is associated with the former Iroquois Gas manufactured-gas plant and later Westwood Pharmaceutical operations. Manufactured-gas plants heated coal or oil to make fuel gas, leaving coal tar and other dense wastes that can persist in soil and groundwater.",
-      "New York's site-characterization work documented coal-tar-related contamination, including benzene and other BTEX compounds and polycyclic aromatic hydrocarbons. The nearby Scajaquada Creek setting makes the distinction between on-site source material and migration pathways especially important.",
+      "This profile connects—but does not merge—the former Iroquois Gas manufactured-gas plant and later Westwood Pharmaceutical property with the adjoining lower Scajaquada Creek investigation. Manufactured-gas plants heated coal or oil to make fuel gas, leaving coal tar and other dense wastes that can persist in soil, groundwater, and sediment.",
+      "The terrestrial and riparian cleanup areas, DEC sites 915141A and 915141B, have constructed remedies under continuing management. The separate former Buffalo Gas Light / Iroquois Gas potential site, 915351, and the downstream creek area remain under investigation.",
     ],
     timeline: [
       {
@@ -2456,6 +2456,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
         event:
           "DEC issued the site-characterization report that anchors the present public record.",
       },
+      {
+        period: "2024–2025",
+        event:
+          "Periodic review documented continuing management of the riparian remedy and preparation of a remedial investigation and feasibility study for lower Scajaquada Creek.",
+      },
     ],
     documentedImpacts: [
       "Coal tar and coal-tar indicators were identified in subsurface materials.",
@@ -2463,12 +2468,12 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "The site's proximity to Scajaquada Creek creates a potential migration pathway that requires source- and location-specific interpretation.",
     ],
     cleanupAndControls: [
-      "DEC characterization defines the nature and extent of contamination before a final remedy is selected.",
-      "Access controls and safe soil-management procedures are necessary where contaminated subsurface material may be disturbed.",
-      "Further investigation, remedial design, and long-term monitoring should be tracked through DEC's official site record.",
+      "A terrestrial containment system and groundwater collection control remaining source material at the former plant property.",
+      "The riparian remedy included contaminated-sediment removal, creek-bottom capping, and a sheet-pile barrier.",
+      "Long-term inspection, monitoring, and maintenance continue while the downstream investigation defines whether additional action is needed.",
     ],
     presentDay: [
-      "This remains an investigation and cleanup-planning site rather than a completed remediation. Public descriptions should identify documented manufactured-gas contamination without implying that every nearby property or all of Scajaquada Creek is part of the site.",
+      "This is a mixed-status story: constructed remedies remain under management at the terrestrial and riparian sites, while additional lower-creek investigation and cleanup planning continue. The map must not imply that every nearby property or all of Scajaquada Creek is one cleanup boundary.",
     ],
     researchNotes: [
       "Track later DEC decision documents for the selected remedy, cleanup boundaries, and implementation schedule.",
@@ -2476,10 +2481,10 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "west-genesee-former-mgp": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "July 29, 2026",
     background: [
       "A manufactured-gas plant operated on this approximately 1.65-acre West Genesee Street property from 1848 to 1948. Coal-gas production left wastes containing volatile organic compounds, PAHs, and cyanide in soil and groundwater.",
-      "After a long investigation, contaminated material was excavated and disposed of off site. New York issued a Certificate of Completion in 2006, and the property was redeveloped with the HealthNow office building.",
+      "After a long investigation, contaminated material was excavated and disposed of off site. New York issued a Certificate of Completion in 2006, and the property was redeveloped for the HealthNow/Blue Cross Blue Shield headquarters.",
     ],
     timeline: [
       {
@@ -2502,6 +2507,16 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
         event:
           "New York issued a Certificate of Completion, enabling redevelopment of the property.",
       },
+      {
+        period: "2007–2024",
+        event:
+          "HealthNow and later Highmark Blue Cross Blue Shield used the 257 West Genesee office complex as their Buffalo headquarters.",
+      },
+      {
+        period: "July 2024",
+        event:
+          "Highmark completed its headquarters move to Seneca One Tower.",
+      },
     ],
     documentedImpacts: [
       "Benzene, toluene, ethylbenzene, and xylenes were associated with former gas-production wastes.",
@@ -2514,7 +2529,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Any remaining engineering or institutional controls must be maintained under the site's completion documents.",
     ],
     presentDay: [
-      "The former plant is a completed-cleanup and redevelopment example, now occupied by a major office building. Completion does not erase its industrial history; it means the state-approved remedy was carried out and continuing controls, if any, remain enforceable.",
+      "The former plant is a completed-cleanup and redevelopment example associated with the former HealthNow/Blue Cross headquarters. Highmark moved its headquarters to Seneca One in 2024. Completion does not erase the site's industrial history or any continuing controls.",
     ],
     researchNotes: [
       "Use the Certificate of Completion and site-management documents to describe any residual contamination or continuing restrictions precisely.",
@@ -3070,7 +3085,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "gastown-former-mgp": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "July 29, 2026",
     background: [
       "The Gastown property at 126 East Niagara Street in the City of Tonawanda is a former manufactured-gas plant. Coal-tar nonaqueous-phase liquid and contaminated groundwater migrated through the subsurface and were detected in nearby building sump systems.",
       "The remedy uses recovery and treatment rather than relying only on excavation. That operating-system history is central to understanding why the site remains managed after the former gasworks disappeared.",
@@ -3092,7 +3107,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Monitoring wells and nearby sump observations evaluate performance and potential off-site movement.",
     ],
     presentDay: [
-      "Gastown is a long-term operating remedy. Public interpretation should focus on the recovery system, current monitoring, and protectiveness rather than treating the former plant footprint as the only relevant boundary.",
+      "DEC classifies Gastown as a Class 4 site: remedial construction is complete, but operation, maintenance, monitoring, and site management remain required. Public interpretation should focus on the recovery system and current protectiveness rather than treating the former plant footprint as the only relevant boundary.",
     ],
     researchNotes: [
       "Replace early system reports with the newest operation and periodic-review data.",
@@ -3100,7 +3115,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "lockport-transit-street-former-mgp": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "July 29, 2026",
     background: [
       "A manufactured-gas plant operated on Transit Street in Lockport from 1851 to 1927. Coal tar and related nonaqueous-phase liquid persisted after the plant closed, affecting soil and groundwater in a mixed urban setting.",
       "New York's remedy combined removal of accessible source material with containment and long-term management where complete excavation was impracticable.",
@@ -3122,7 +3137,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Groundwater and engineering controls remain subject to long-term monitoring and maintenance.",
     ],
     presentDay: [
-      "The former gasworks is a remediated but managed site. The remedy reduced exposure and migration while leaving some residual contamination under controls.",
+      "DEC reported that most of the 2009 remedy was constructed between 2014 and 2016, but the program remains Class A—active and not yet complete. The remedy reduced exposure and migration while follow-up work and management continue.",
     ],
     researchNotes: [
       "Add construction quantities and the latest periodic-review conclusion from the full DEC document set.",
@@ -3130,7 +3145,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "mineral-springs-road-former-mgp": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "July 29, 2026",
     background: [
       "The Mineral Springs Road manufactured-gas plant was built in the 1920s and operated into the 1960s. Investigations found purifier residuals and hydrocarbon compounds associated with gas production and handling.",
       "The property proceeded through New York's voluntary cleanup program, where remedial work addressed source areas and enabled controlled reuse.",
@@ -3152,7 +3167,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Institutional controls govern future excavation and land use.",
     ],
     presentDay: [
-      "Mineral Springs Road is a completed state cleanup with continuing obligations where residual material remains. Its classification should follow the official completion and site-management documents.",
+      "DEC classifies Mineral Springs Road as complete, but that does not mean all oversight ended. Recent records include groundwater and surface-water monitoring, periodic review, and a 2025 soil-vapor investigation work plan.",
     ],
     researchNotes: [
       "Add exact completion dates, removal quantities, and current restrictions from DEC's final engineering report.",
@@ -3187,6 +3202,131 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Locate historic Sanborn maps, ownership records, boring logs, and DEC's final source interpretation.",
       "Keep the point linked to—but not merged with—the Iroquois Gas / Westwood record.",
+    ],
+  },
+  "jamestown-former-mgp": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "The former Jamestown Gas Works occupied about one acre at 208 East First Street. DEC's historical review states that a water-gas plant operated there from 1881 until 1900 or 1901, when an explosion destroyed structures at the site.",
+      "Historic plans show two gas holders, a water-gas house, a purifying house, and smaller structures. The property later became an access and parking area for an adjoining woodworking business, with the Chadakoin River approximately 100 feet to the south.",
+    ],
+    timeline: [
+      { period: "1881", event: "The Jamestown water-gas plant began operating." },
+      { period: "1900–1901", event: "An explosion destroyed plant structures and ended the documented operating era." },
+      { period: "2013–2017", event: "DEC site-characterization work investigated former structures, soil, groundwater, surface soil, and possible migration toward the Chadakoin River." },
+      { period: "May 2017", event: "DEC added the property to the State Superfund Registry as a Class 2 site requiring action." },
+      { period: "Current program", event: "Further investigation, exposure-pathway evaluation, remedy selection, and cleanup remain part of the State Superfund process." },
+    ],
+    documentedImpacts: [
+      "Coal-tar nonaqueous-phase liquid was identified below ground.",
+      "BTEX compounds and coal-tar-related PAHs exceeded groundwater standards near former gas holders and the suspected purifier-house area.",
+      "PAHs exceeded soil criteria near a suspected central gas holder.",
+      "DEC identified possible migration toward the nearby Chadakoin River as a significant environmental concern.",
+    ],
+    cleanupAndControls: [
+      "The Class 2 designation requires investigation and remedial action; it is not a completed-cleanup classification.",
+      "DEC called for defining the nature and extent of contamination, evaluating on- and off-property exposure pathways, and assessing cleanup alternatives.",
+      "A final remedy should be described only after DEC issues the corresponding decision documents.",
+    ],
+    presentDay: [
+      "Jamestown is the clearest newly added active-cleanup priority in the manufactured-gas network. The official record supports action required, but it does not support claims about specific health effects or contamination across every nearby parcel.",
+    ],
+    researchNotes: [
+      "Track the current remedial investigation, proposed remedy, public-comment documents, and any Chadakoin River sampling.",
+      "Replace the point with an official DEC boundary if a mapped polygon becomes available.",
+    ],
+  },
+  "dunkirk-former-mgp": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "The Dunkirk manufactured-gas plant occupied roughly three acres at 31 West Second Street and operated from the late 1800s until about 1910. Historic mapping shows three gas holders and supporting gasworks structures.",
+      "The property later became a National Fuel service center. It lies in a mixed commercial and residential area approximately 600 feet south of Lake Erie.",
+    ],
+    timeline: [
+      { period: "Late 1800s–about 1910", event: "The plant manufactured and stored gas for the Dunkirk area." },
+      { period: "2010–2012", event: "Site-characterization work identified former structures, a source area, and affected groundwater." },
+      { period: "2013–2016", event: "A remedial investigation expanded the on- and off-property evaluation." },
+      { period: "2019–2020", event: "Additional bedrock wells evaluated benzene in groundwater and the connection between overburden and bedrock." },
+      { period: "Current program", event: "DEC continues to classify the site as Class A, meaning the non-registry cleanup program remains active and incomplete." },
+    ],
+    documentedImpacts: [
+      "MGP-related soil contamination was identified around a former structure in the northeastern source area.",
+      "Affected groundwater was documented moving northeast beyond the property.",
+      "Benzene and other volatile compounds prompted additional bedrock-groundwater investigation.",
+      "The site's position south of Lake Erie makes groundwater direction and off-property extent important parts of the investigation.",
+    ],
+    cleanupAndControls: [
+      "The investigation installed soil borings and monitoring wells on and beyond the former plant property.",
+      "Bedrock wells were added to evaluate dissolved contamination and vertical hydraulic connections.",
+      "DEC's Class A designation means investigation or remediation is underway and has not been reclassified as complete.",
+    ],
+    presentDay: [
+      "Dunkirk remains an active MGP program rather than a completed cleanup. The Atlas reports documented migration and investigation without assuming that Lake Erie or every intervening property is contaminated.",
+    ],
+    researchNotes: [
+      "Track the next DEC remedy-selection document and any updated off-property or bedrock findings.",
+      "Add the official site boundary and groundwater monitoring area when a stable public GIS layer is available.",
+    ],
+  },
+  "niagara-falls-former-mgp": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "New York State Parks' hazardous-waste screening identifies a former Niagara Falls Gas and Electric manufactured-gas plant on the Niagara Escarpment in the present Rainbow Bridge and former Prospect Park area.",
+      "Historic 1893, 1908, and 1914 mapping places gasworks structures and several large gas holders north of the bridge area. Later bridge, customs, park, roadway, and power-related development substantially changed the landscape.",
+    ],
+    timeline: [
+      { period: "1893–1914 mapping", event: "Historic maps show a gasworks and large gas holders on the Niagara Escarpment." },
+      { period: "Later twentieth century", event: "Rainbow Bridge and park, customs, roadway, and related infrastructure transformed the former industrial area." },
+      { period: "2016 screening", event: "State Parks documented the historic MGP as a recognized environmental condition during corridor planning." },
+      { period: "Current DEC record", event: "DEC lists site 932147 as Class P, a potential site requiring more information before a registry decision." },
+    ],
+    documentedImpacts: [
+      "The former gasworks location and gas-holder history are documented.",
+      "The State Parks screening identifies potential for petroleum, chemical, solvent, and former-tank conditions in the broader bridge-plaza area.",
+      "The reviewed public records do not yet provide a DEC remedial investigation establishing the nature and extent of MGP contamination at site 932147.",
+    ],
+    cleanupAndControls: [
+      "Class P is an investigation status, not a determination that cleanup is required.",
+      "Additional site characterization would be needed to distinguish former MGP impacts from other historic industrial and transportation uses.",
+      "No final remedy or cleanup-completion claim is made in the reviewed record.",
+    ],
+    presentDay: [
+      "This is an important historical and investigative location because it sits within a heavily visited, repeatedly redeveloped landscape. Its map pin is a documented evidence location—not a surveyed contamination boundary or a finding about present park conditions.",
+    ],
+    researchNotes: [
+      "Seek DEC site-characterization files, State Parks construction sampling, historic Sanborn sheets, and bridge-plaza subsurface reports.",
+      "Keep the potential MGP record distinct from unrelated spill entries and other former industries in the Rainbow Bridge area.",
+    ],
+  },
+  "salamanca-former-mgp": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "DEC's database identifies a potential former-MGP site at 38 Main Street in Salamanca, within the Seneca Nation's Allegany Territory and south of the Allegheny River.",
+      "A historical records search links the property to National Fuel predecessor Salamanca Gas Company. However, the available documentation describes gas purification and natural-gas distribution and states that public information about operations is limited.",
+    ],
+    timeline: [
+      { period: "1888 mapping", event: "Historic mapping documented gas-related facilities at the Main Street property." },
+      { period: "Later utility era", event: "Available records associate the property with Salamanca Gas Company and gas purification and distribution." },
+      { period: "1970s", event: "The State appropriated part of the property for flood-control purposes." },
+      { period: "2009", event: "A formal historical records search summarized the limited operating history." },
+      { period: "Current DEC record", event: "DEC lists site 905035 as Class P, meaning more investigation is needed before determining whether registry listing or cleanup is warranted." },
+    ],
+    documentedImpacts: [
+      "The reviewed record establishes a gas-utility history but does not establish that manufactured gas was produced on this property.",
+      "The reviewed DEC collection does not yet provide a public site-characterization report defining contaminants or migration.",
+      "The Class P status reflects preliminary potential, not a confirmed significant-threat determination.",
+    ],
+    cleanupAndControls: [
+      "No final remedy is documented in the reviewed public record.",
+      "Future characterization should determine whether purifier residuals or other gas-related wastes remain and whether action is necessary.",
+      "Any future fieldwork and public description must recognize the property's location within Seneca Nation territory and the relevant jurisdictional relationships.",
+    ],
+    presentDay: [
+      "Salamanca is included as a carefully labeled research-in-progress site. The Atlas does not call it a confirmed manufactured-gas production site or state that cleanup is required without additional evidence.",
+    ],
+    researchNotes: [
+      "Seek Seneca Nation records and coordination, DEC characterization files, utility archives, historic maps, and flood-control acquisition records.",
+      "Update the title if primary records establish whether gas was manufactured, purified, stored, or only distributed at the property.",
     ],
   },
   "pierce-arrow-manufacturing-complex": {
@@ -4004,6 +4144,341 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "B00022 and 932136 are successive program records for one Tract II story and should not appear as duplicate places.",
       "The displayed school distance is a GIS screen using approximate DEC boundaries, not a parcel survey or exposure assessment.",
+    ],
+  },
+  "olean-well-field-superfund": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "The Olean Well Field site covers roughly 800 acres beneath parts of Olean and Portville. EPA's investigation connected TCE and other volatile-organic groundwater contamination with four principal industrial source properties: Alcas, McGraw-Edison/Cooper, AVX, and Loohn's Dry Cleaners.",
+      "The site is a regional groundwater system rather than a single disposal lot. Municipal wells, private wells, industrial source properties, and the intervening aquifer have therefore been addressed through separate but coordinated actions.",
+    ],
+    timeline: [
+      { period: "1981", event: "Olean detected volatile organic compounds in municipal wells and removed affected wells from normal service." },
+      { period: "1983", event: "EPA placed the site on the National Priorities List." },
+      { period: "Early response", event: "Treatment was added to municipal supplies and public water was extended to affected private-well users." },
+      { period: "2002 onward", event: "Source-property groundwater systems and monitoring addressed continuing contamination." },
+      { period: "2022–present", event: "EPA selected additional AVX-area groundwater and soil cleanup and continued design and implementation work." },
+    ],
+    documentedImpacts: [
+      "TCE and other volatile organic compounds were documented in groundwater beneath residential and industrial areas.",
+      "The contamination affected municipal-well and private-well decision-making.",
+      "EPA attributes source-area work to four identified industrial properties; the mapped regional pin does not define the boundary of every plume.",
+    ],
+    cleanupAndControls: [
+      "Air stripping and carbon treatment protected public-water supplies.",
+      "Public water was extended to affected private-well properties.",
+      "Source-area remedies include pump-and-treat, in-situ treatment, monitored natural attenuation, investigation, and continuing groundwater monitoring.",
+    ],
+    presentDay: [
+      "Cleanup and monitoring continue. WNY Atlas treats the regional point as an entry to a multi-property groundwater story, not as a parcel boundary or exposure map.",
+    ],
+    researchNotes: [
+      "Build a dedicated Olean detail map for the four source properties and the official study area.",
+      "Do not infer present-day exposure at a home from proximity to the regional marker.",
+    ],
+  },
+  "peter-cooper-gowanda": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Animal-glue production began on the Palmer Street property in 1904. Peter Cooper and predecessor operations later made industrial adhesives, connecting the site to Gowanda's long leather, rendering, and animal-products economy.",
+      "From 1925 through October 1970, glue-manufacturing sludge was placed in an elevated disposal area covering about five acres. The plant closed after later synthetic-adhesive operations ended in the 1980s.",
+    ],
+    timeline: [
+      { period: "1904", event: "Animal-glue manufacturing began at the Gowanda property." },
+      { period: "1925–1970", event: "Glue-manufacturing sludge was placed in the elevated disposal area." },
+      { period: "1970s–1985", event: "Industrial-adhesive operations continued before the facility closed." },
+      { period: "2005", event: "DEC selected the principal site remedy." },
+      { period: "Present", event: "The closed Class 4 site remains subject to inspection, maintenance, and institutional controls." },
+    ],
+    documentedImpacts: [
+      "Animal-glue manufacturing sludge and associated waste occupied a defined disposal area near Cattaraugus Creek.",
+      "Soil, groundwater, surface-water, sediment, and creek-edge conditions were evaluated during the state cleanup.",
+    ],
+    cleanupAndControls: [
+      "Waste was consolidated and covered within an engineered remedy.",
+      "Drainage, erosion protection, groundwater monitoring, access restrictions, and site-management requirements protect the closed disposal area.",
+    ],
+    presentDay: [
+      "Part of the former industrial property is associated with Zoar Valley Gateway Park, while the managed cleanup controls remain legally and physically important.",
+    ],
+    researchNotes: [
+      "Keep Peter Cooper Gowanda distinct from the downstream Markhams disposal site.",
+      "Show its relationship to Moench Tanning as shared industrial geography, not a claim that both sites have one plume.",
+    ],
+  },
+  "peter-cooper-markhams": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "The Markhams property is a separate disposal site in the Town of Dayton. Waste from the Peter Cooper animal-glue plant in Gowanda was transported here, linking two geographically separate communities through one industrial waste stream.",
+    ],
+    timeline: [
+      { period: "Historic disposal era", event: "Glue-production wastes from the Gowanda operation were deposited at the Bentley Road property." },
+      { period: "1980s", event: "Federal and state investigations evaluated the waste mass and surrounding environmental media." },
+      { period: "2006", event: "EPA selected a final containment remedy." },
+      { period: "Remedial construction", event: "Waste was consolidated beneath a low-permeability cover with drainage and erosion controls." },
+      { period: "Present", event: "Inspection, maintenance, land-use controls, and periodic federal review continue." },
+    ],
+    documentedImpacts: [
+      "The disposal area contained animal-glue manufacturing wastes transported from the Gowanda plant.",
+      "The remedy addressed waste, leachate, drainage, erosion, and the potential for direct contact or migration.",
+    ],
+    cleanupAndControls: [
+      "Waste was consolidated and capped.",
+      "Surface-water diversion, erosion protection, access and land-use controls, monitoring, and maintenance support the containment remedy.",
+    ],
+    presentDay: [
+      "The remedy relies on preserving the engineered cover and institutional controls. The site remains a separate Superfund property from the former Gowanda factory.",
+    ],
+    researchNotes: [
+      "Map the historic waste-transfer relationship without drawing an unsupported continuous plume between Gowanda and Markhams.",
+    ],
+  },
+  "moench-tanning-gowanda": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Leather tanning operated at this Palmer Street location for approximately 120 years. Moench Tanning, later associated with Brown Shoe, operated from 1900 until 1983.",
+      "The cleanup record centers on a closed industrial landfill near Splinter Creek and Cattaraugus Creek, where long-term stewardship must also account for streambank erosion.",
+    ],
+    timeline: [
+      { period: "Circa 1860s", event: "Tanning activity began in the Palmer Street industrial area." },
+      { period: "1900–1983", event: "Moench Tanning operated the leather-tanning facility." },
+      { period: "1990–1992", event: "The company closed the landfill under state oversight." },
+      { period: "2019", event: "Updated consent and site-management requirements formalized continuing controls." },
+      { period: "2021", event: "Additional erosion protection was installed near Splinter Creek." },
+    ],
+    documentedImpacts: [
+      "Tannery waste was managed in a defined landfill area.",
+      "Groundwater and creek-edge conditions require continued monitoring and maintenance.",
+    ],
+    cleanupAndControls: [
+      "The landfill has an approved cover system.",
+      "Groundwater monitoring, inspections, land-use restrictions, and streambank erosion protection maintain the remedy.",
+    ],
+    presentDay: [
+      "DEC classifies the property as Class 4: properly closed but requiring continuing site management.",
+    ],
+    researchNotes: [
+      "Present Moench and Peter Cooper as neighboring industrial histories without implying identical contaminants or a single remedy.",
+    ],
+  },
+  "standard-portable-mayville": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Standard Portable used TCE in metalworking operations at 13 West Lake Road. Records identify an exterior underground septic tank used for spent solvent and document groundwater impacts extending onto adjacent village property.",
+      "The location is close to the separate Mayville drinking-water PFAS investigation. DEC's PFAS work did not identify Standard Portable as the source, so the two records must not be merged.",
+    ],
+    timeline: [
+      { period: "Industrial era", event: "Metalworking operations used TCE as a cleaning and degreasing solvent." },
+      { period: "Historic disposal", event: "Spent TCE was stored or disposed in an exterior underground septic tank." },
+      { period: "Investigation", event: "Soil and groundwater work identified on-site and off-site chlorinated-solvent impacts." },
+      { period: "Brownfield cleanup", event: "The site entered state-supervised investigation and remedial planning." },
+      { period: "Present", event: "On-site and off-site records continue as a coordinated chlorinated-solvent cleanup." },
+    ],
+    documentedImpacts: [
+      "TCE affected soil and groundwater at the former facility.",
+      "The investigated groundwater area extended onto adjacent village property.",
+      "The reviewed PFAS investigation did not support labeling Standard Portable as the source of Mayville's separate PFAS finding.",
+    ],
+    cleanupAndControls: [
+      "Source-area investigation, groundwater delineation, remedial design, monitoring, and state oversight form the cleanup record.",
+    ],
+    presentDay: [
+      "The Atlas shows one Standard Portable history and links it to Mayville PFAS only to explain that the investigations are nearby but distinct.",
+    ],
+    researchNotes: [
+      "Add official on-site and off-site remedial boundaries when a stable parcel layer is available.",
+    ],
+  },
+  "anderson-cleaners-jamestown": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Anderson Cleaners operated at 5 Hunt Road in Jamestown. Releases associated with dry-cleaning chemicals created a chlorinated-solvent cleanup involving soil and groundwater.",
+    ],
+    timeline: [
+      { period: "Dry-cleaning era", event: "The facility used chlorinated cleaning chemicals." },
+      { period: "Investigation", event: "DEC documented chlorinated volatile organic compounds in soil and groundwater." },
+      { period: "State listing", event: "The property became a Class 2 State Superfund site requiring remedial action." },
+      { period: "Remedial planning", event: "DEC evaluated targeted source removal, in-ground treatment, plume treatment, and monitoring." },
+      { period: "Present", event: "The site remains part of Jamestown's documented chlorinated-solvent cleanup record." },
+    ],
+    documentedImpacts: [
+      "Chlorinated volatile organic compounds affected defined soil and groundwater areas.",
+      "The record concerns the Anderson property and investigated plume; proximity alone does not establish an impact at another property.",
+    ],
+    cleanupAndControls: [
+      "The remedy combines treatment or removal of concentrated source material with treatment of dissolved groundwater contamination and monitoring.",
+    ],
+    presentDay: [
+      "Anderson Cleaners is mapped separately from Former C&B Dry Cleaners. Their connection is a shared industrial process and cleanup type, not proof of one plume.",
+    ],
+    researchNotes: [
+      "Track the newest construction and groundwater-monitoring documents before describing the remedy as complete.",
+    ],
+  },
+  "keywell-vac-air-frewsburg": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Before 1969 the property was used for wafer-board manufacturing. Vac-Air then sorted, cleaned, and packaged high-grade scrap metal, using TCE for degreasing; Keywell acquired the operation in 1987 and continued high-grade metal processing.",
+      "The property lies near Conewango Creek and across Falconer Road from a public-water supply well, making groundwater containment and monitoring central to the remedy.",
+    ],
+    timeline: [
+      { period: "Before 1969", event: "The property supported wafer-board manufacturing." },
+      { period: "1969 onward", event: "Vac-Air processed and solvent-cleaned high-grade scrap metal." },
+      { period: "1987", event: "Keywell acquired the facility." },
+      { period: "1996", event: "DEC selected a remedy following investigation and feasibility work." },
+      { period: "Present", event: "Groundwater treatment, monitoring, cover and barrier maintenance, and access controls continue." },
+    ],
+    documentedImpacts: [
+      "TCE and related volatile organic compounds affected groundwater.",
+      "The waste record includes spent TCE, TCE sludge, and lubricating and hydraulic oils.",
+      "Periodic reviews have continued to evaluate groundwater and soil-vapor conditions.",
+    ],
+    cleanupAndControls: [
+      "A groundwater treatment system, barrier wall, paved cap, subsurface barriers, stormwater controls, fencing, restrictions, and monitoring form the managed remedy.",
+    ],
+    presentDay: [
+      "DEC classifies the closed cleanup as Class 4, meaning the remedy depends on continuing site management.",
+    ],
+    researchNotes: [
+      "Do not describe a detected sub-slab vapor concentration as indoor exposure without corresponding indoor-air evidence.",
+    ],
+  },
+  "machias-gravel-pit": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "In 1978 an inactive town gravel pit on Very Road reportedly stored about 600 drums of industrial waste from Motorola's Arcade plant. Records identify suspected epoxy resins, acids, solvents and cutting oils; some oil was reportedly used for road-dust control.",
+      "Early removal records account for 184 drums, while later geophysical investigation did not find evidence of additional buried drums in the investigated area.",
+    ],
+    timeline: [
+      { period: "March–September 1978", event: "Approximately 600 drums were reportedly stored at the inactive gravel pit." },
+      { period: "1986–1988", event: "DEC and the town removed documented drums and attempted limited soil cleanup." },
+      { period: "1991–1992", event: "Investigation defined TCE and 1,1,1-TCA groundwater impacts and DEC selected a remedy." },
+      { period: "1993–1999", event: "Air sparging and soil-vapor extraction removed volatile contaminants from the source area." },
+      { period: "Present", event: "Groundwater monitoring, use restrictions, and a phytoremediation barrier continue." },
+    ],
+    documentedImpacts: [
+      "TCE and 1,1,1-TCA were principal groundwater contaminants.",
+      "The complete disposition of every drum described in the original estimate is not documented.",
+    ],
+    cleanupAndControls: [
+      "Drum removal, soil-vapor extraction, air sparging, monitored natural attenuation, groundwater-use restrictions, monitoring, and a planted groundwater barrier addressed the site.",
+    ],
+    presentDay: [
+      "The Class 4 remedy remains managed. The record documents substantial cleanup while preserving uncertainty about the original drum inventory.",
+    ],
+    researchNotes: [
+      "Keep the documented 184-drum removal and the approximate 600-drum historical report numerically distinct.",
+    ],
+  },
+  "ischua-landfill": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "The Ischua Landfill operated from 1972 to 1975 using three waste trenches on a roughly 42-acre property. Historical records describe industrial, commercial, medical, and household refuse and report that 8.5 tons of TCE-laced sawdust were among the wastes.",
+      "The landfill was covered with soil after closure, but leachate seeps were observed downslope. DEC returned under the Inactive Landfill Initiative to investigate emerging contaminants and other groundwater conditions.",
+    ],
+    timeline: [
+      { period: "1972–1975", event: "Waste was placed in three landfill trenches." },
+      { period: "1975 onward", event: "Sampling and investigation followed reports of leachate breakout and downstream conditions." },
+      { period: "1990", event: "A contamination assessment documented the historical waste record." },
+      { period: "2020", event: "DEC's inactive-landfill investigation detected PFOA, PFOS, and 1,4-dioxane in groundwater samples." },
+      { period: "Present", event: "The Class P property remains under site characterization." },
+    ],
+    documentedImpacts: [
+      "PFOA, PFOS, and 1,4-dioxane were identified as groundwater contaminants of concern during the state investigation.",
+      "Historical records report TCE-bearing sawdust and other industrial wastes, but the Class P designation does not itself establish a final remedy or exposure conclusion.",
+    ],
+    cleanupAndControls: [
+      "The landfill has a soil cap, drainage features, and an upgradient groundwater-diversion system.",
+      "Current work focuses on site characterization and defining whether additional action is required.",
+    ],
+    presentDay: [
+      "WNY Atlas labels Ischua as research in progress because DEC lists it as a potential site rather than a completed State Superfund remedy.",
+    ],
+    researchNotes: [
+      "Update the entry when DEC issues final characterization findings or changes the site classification.",
+    ],
+  },
+  "olean-refinery-river-street": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "The 1641 River Street brownfield occupies part of a larger northern Olean petroleum refining and storage complex that operated from approximately 1876 to 1954. Historical mapping shows roughly 20 large storage tanks on or near the property.",
+      "The approximately 24.7-acre parcel is divided by Interstate 86 and sits beside rail infrastructure, roads, vacant industrial land, and nearby residences.",
+    ],
+    timeline: [
+      { period: "Circa 1876–1954", event: "Petroleum refining, pumping, and bulk storage occupied the wider corridor." },
+      { period: "Later decades", event: "Most refinery structures were removed and portions of the industrial land changed ownership or use." },
+      { period: "2020", event: "Subsurface investigation documented petroleum product and affected soil, prompting a state spill record." },
+      { period: "2024", event: "The property entered New York's Brownfield Cleanup Program." },
+      { period: "Present", event: "Investigation and cleanup planning continue, including follow-up on a reported possible buried drum." },
+    ],
+    documentedImpacts: [
+      "Petroleum odors, staining, elevated field readings, and mobile petroleum product were observed in multiple test pits.",
+      "The reviewed record also identifies metals and other constituents requiring evaluation.",
+    ],
+    cleanupAndControls: [
+      "Brownfield investigation is defining soil and groundwater conditions and the remedy needed for reuse.",
+    ],
+    presentDay: [
+      "This is an active brownfield investigation, not a completed cleanup. It anchors a linked Olean refinery-corridor history.",
+    ],
+    researchNotes: [
+      "Distinguish findings at 1641 River Street from conditions on every parcel in the much larger former refinery footprint.",
+    ],
+  },
+  "olean-refinery-homer-street": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "The 251 Homer Street property is part of Olean's former refinery and petroleum-handling landscape. Its cleanup provides unusually concrete documentation of how buried refinery infrastructure, petroleum-affected soil, arsenic, and creek sediment were addressed.",
+    ],
+    timeline: [
+      { period: "Historic refinery era", event: "Refinery piping and petroleum operations occupied the Homer Street area." },
+      { period: "2012–2016", event: "Investigation and interim cleanup removed piping and large volumes of affected soil." },
+      { period: "2017", event: "DEC certified that the Brownfield Cleanup Program requirements had been achieved." },
+      { period: "Present", event: "Commercial-use controls, an environmental easement, cover maintenance, and site management continue." },
+    ],
+    documentedImpacts: [
+      "Petroleum contamination affected soil and portions of creek soil or sediment.",
+      "Arsenic-affected soil was identified and removed in designated areas.",
+    ],
+    cleanupAndControls: [
+      "More than 10,000 feet of refinery piping, approximately 52,000 tons of petroleum-affected soil, and approximately 2,000 tons of arsenic-affected soil were removed.",
+      "Two Mile Creek was restored after affected soil and sediment removal.",
+      "A site-wide cover, environmental easement, groundwater restrictions, and a site-management plan support restricted reuse.",
+    ],
+    presentDay: [
+      "Major remedial construction is complete, but the property remains restricted to commercial or industrial use under continuing controls.",
+    ],
+    researchNotes: [
+      "Connect the parcel to 1641 River Street through shared refinery history without treating their cleanup boundaries as one site.",
+    ],
+  },
+  "former-niagara-motors-dunkirk": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Industrial uses occupied the Lamphere Street property from at least 1919 through the 1970s. The building was later abandoned and demolished, leaving a vacant brownfield whose exact sequence of operators requires further archival work.",
+      "In 1999 regulators observed about 30 drums containing apparent petroleum material and evidence of spills. Subsequent investigation also identified lead-affected soil and leaking underground-tank impacts.",
+    ],
+    timeline: [
+      { period: "1919–1970s", event: "Successive industrial operations used the property." },
+      { period: "Circa 1990", event: "The abandoned industrial building had fallen into disrepair." },
+      { period: "1999", event: "Officials documented drums, petroleum material, and spill evidence." },
+      { period: "2000", event: "The building was demolished and the drums were removed." },
+      { period: "2010s", event: "State-supervised cleanup removed hazardous, lead-affected, and petroleum-affected soil and installed a cover system." },
+    ],
+    documentedImpacts: [
+      "Petroleum material and spill evidence were documented during the 1999 inspection.",
+      "Investigation identified lead-affected soil and soil affected by leaking underground storage tanks.",
+    ],
+    cleanupAndControls: [
+      "Drums and source material were removed.",
+      "Hazardous, lead-affected, and petroleum-affected soils were excavated for off-site disposal.",
+      "A cover system and land-use controls manage residual contamination beneath commercial reuse areas.",
+    ],
+    presentDay: [
+      "The entry documents a completed public brownfield response while recognizing that residual material remains controlled beneath the approved remedy.",
+    ],
+    researchNotes: [
+      "Continue archival research on the companies and products associated with the site's 1919–1970s industrial period.",
     ],
   },
 };

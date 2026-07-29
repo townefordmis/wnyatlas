@@ -206,29 +206,35 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
     id: "manufactured-gas-network",
     name: "Manufactured-gas plant network",
     summary:
-      "These sites share a historic gas-manufacturing process and recurring contaminant profile; they are a comparative network, not one connected plume.",
+      "These sites share a historic gas-manufacturing system and recurring contaminant profile. Their classifications range from active cleanup to completed management and preliminary investigation; they are a comparative network, not one connected plume.",
     members: [
       {
         siteId: "west-genesee-former-mgp",
-        role: "Buffalo MGP",
+        role: "Completed Buffalo cleanup",
         connection:
-          "A former manufactured-gas property within Buffalo's downtown and waterfront industrial history.",
+          "The former Buffalo Service Station / Blue Cross–HealthNow property is a completed cleanup and redevelopment example.",
+      },
+      {
+        siteId: "iroquois-gas-westwood",
+        role: "Managed remedy and active creek investigation",
+        connection:
+          "The former Iroquois Gas source area and lower Scajaquada Creek show how coal tar can require both constructed controls and continuing downstream investigation.",
       },
       {
         siteId: "gastown-former-mgp",
-        role: "Tonawanda MGP",
+        role: "Class 4 Tonawanda site",
         connection:
           "The Gastown record shows how the same industrial system appeared in the City of Tonawanda.",
       },
       {
         siteId: "lockport-transit-street-former-mgp",
-        role: "Lockport MGP",
+        role: "Active Lockport program",
         connection:
           "Transit Street extends the comparative MGP record to Lockport.",
       },
       {
         siteId: "mineral-springs-road-former-mgp",
-        role: "West Seneca MGP",
+        role: "Completed West Seneca cleanup",
         connection:
           "Mineral Springs Road documents another separately bounded former gas-manufacturing property.",
       },
@@ -237,6 +243,30 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
         role: "Gas-holder property",
         connection:
           "The Tonawanda Street holder site represents storage infrastructure within the historic manufactured-gas system.",
+      },
+      {
+        siteId: "jamestown-former-mgp",
+        role: "Class 2 State Superfund site",
+        connection:
+          "Jamestown is an action-required site with documented coal-tar liquid and possible migration toward the Chadakoin River.",
+      },
+      {
+        siteId: "dunkirk-former-mgp",
+        role: "Active Dunkirk program",
+        connection:
+          "Dunkirk remains under active investigation and cleanup review, including off-property and bedrock groundwater work.",
+      },
+      {
+        siteId: "niagara-falls-former-mgp",
+        role: "Potential Niagara Falls site",
+        connection:
+          "Historic maps establish the gasworks near the Rainbow Bridge area, while DEC's Class P status preserves uncertainty about current cleanup needs.",
+      },
+      {
+        siteId: "salamanca-former-mgp",
+        role: "Potential Salamanca gas property",
+        connection:
+          "The Salamanca record documents gas purification and distribution history but does not yet establish on-site manufactured-gas production or a required remedy.",
       },
     ],
   },
@@ -547,6 +577,180 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
         role: "Railroad release",
         connection:
           "The Le Roy site shows how rail transport created a different kind of historical contamination record.",
+      },
+    ],
+  },
+  {
+    id: "olean-groundwater-and-refinery-history",
+    name: "Olean groundwater and refinery history",
+    summary:
+      "Olean's regional TCE cleanup and its historic petroleum-refinery corridor are geographically related research stories with different sources, contaminants, boundaries, and remedies.",
+    members: [
+      {
+        siteId: "olean-well-field-superfund",
+        role: "Regional groundwater cleanup",
+        connection:
+          "The Superfund site coordinates multiple industrial source properties and municipal or private water-supply actions across a broad groundwater study area.",
+      },
+      {
+        siteId: "olean-refinery-river-street",
+        role: "Active refinery-area brownfield",
+        connection:
+          "River Street preserves the history of the larger former refinery and remains under Brownfield Cleanup Program investigation.",
+      },
+      {
+        siteId: "olean-refinery-homer-street",
+        role: "Completed refinery-area cleanup",
+        connection:
+          "Homer Street documents large-scale piping and contaminated-soil removal within the same broader historic refinery corridor.",
+      },
+    ],
+  },
+  {
+    id: "gowanda-animal-products-waste-network",
+    name: "Gowanda animal-products and waste network",
+    summary:
+      "Glue production, leather tanning, creek-edge disposal, and the transport of glue waste to Markhams form a connected industrial history. Each cleanup retains its own official boundary and remedy.",
+    members: [
+      {
+        siteId: "peter-cooper-gowanda",
+        role: "Glue and adhesive works",
+        connection:
+          "The Gowanda plant generated animal-glue waste and managed an on-site sludge-disposal area.",
+      },
+      {
+        siteId: "moench-tanning-gowanda",
+        role: "Leather tannery and landfill",
+        connection:
+          "The neighboring tannery adds a separate century-scale leather-waste and creek-management history.",
+      },
+      {
+        siteId: "peter-cooper-markhams",
+        role: "Off-site disposal property",
+        connection:
+          "Markhams received waste transported from the Peter Cooper operation in Gowanda and is managed as a separate Superfund site.",
+      },
+    ],
+  },
+  {
+    id: "jamestown-chlorinated-solvent-sites",
+    name: "Jamestown chlorinated-solvent cleanup sites",
+    summary:
+      "Dry cleaning, tool production, and other industrial degreasing created separate chlorinated-solvent cleanups around Jamestown. This collection compares processes and remedies; it does not assert one shared plume.",
+    members: [
+      {
+        siteId: "anderson-cleaners-jamestown",
+        role: "Dry-cleaning cleanup",
+        connection:
+          "Anderson Cleaners is a Class 2 soil and groundwater cleanup at Hunt Road.",
+      },
+      {
+        siteId: "former-cb-dry-cleaners",
+        role: "Separate dry-cleaning cleanup",
+        connection:
+          "C&B is a separate compact dry-cleaning site with its own investigated area and controls.",
+      },
+      {
+        siteId: "dc-rollforms-proto-tool",
+        role: "Tool-manufacturing cleanup",
+        connection:
+          "Proto Tool used vapor degreasing alongside forging, plating, machining, and heat-treatment processes.",
+      },
+      {
+        siteId: "keywell-vac-air-frewsburg",
+        role: "Scrap-metal degreasing cleanup",
+        connection:
+          "The nearby Frewsburg property used TCE in high-grade scrap-metal processing and has a separate managed groundwater remedy.",
+      },
+    ],
+  },
+  {
+    id: "southern-tier-landfills-and-disposal",
+    name: "Southern-tier landfills and disposal sites",
+    summary:
+      "These rural and small-community properties show different waste-disposal histories and cleanup stages. They are a comparative collection, not evidence of a shared waste stream.",
+    members: [
+      {
+        siteId: "machias-gravel-pit",
+        role: "Industrial-drum storage and disposal",
+        connection:
+          "The gravel pit received an estimated 600 drums from an industrial plant and later required solvent-source and groundwater remediation.",
+      },
+      {
+        siteId: "ischua-landfill",
+        role: "Landfill under characterization",
+        connection:
+          "The former landfill's mixed waste history and emerging-contaminant findings remain under state investigation.",
+      },
+      {
+        siteId: "farwell-road-landfill",
+        role: "Managed hazardous-waste landfill",
+        connection:
+          "Farwell Road is a closed county disposal site governed by engineering and institutional controls.",
+      },
+      {
+        siteId: "carroll-landfill",
+        role: "Municipal and construction landfill",
+        connection:
+          "Carroll adds a separate leachate, groundwater, wetland, and long-term management record near Frewsburg.",
+      },
+    ],
+  },
+  {
+    id: "mayville-separate-investigations",
+    name: "Mayville's separate environmental investigations",
+    summary:
+      "The village contains two nearby but distinct records. Their connection is geography and public interest, not a finding that one site caused the other's contamination.",
+    members: [
+      {
+        siteId: "standard-portable-mayville",
+        role: "TCE cleanup",
+        connection:
+          "Standard Portable concerns metalworking solvents in soil and groundwater.",
+      },
+      {
+        siteId: "mayville-pfas-site",
+        role: "PFAS investigation",
+        connection:
+          "The PFAS investigation concerns PFNA in the village water system and a former firefighting-training area; DEC did not identify Standard Portable as its source.",
+      },
+    ],
+  },
+  {
+    id: "dunkirk-industrial-redevelopment",
+    name: "Dunkirk industrial cleanup and redevelopment",
+    summary:
+      "Steel, alloy, locomotive, petroleum, manufactured-gas, and other industrial properties form a layered Dunkirk cleanup history. Each marker represents its own official record.",
+    members: [
+      {
+        siteId: "former-niagara-motors-dunkirk",
+        role: "Completed brownfield cleanup",
+        connection:
+          "Niagara Motors documents drums, petroleum and lead-affected soil on a former industrial property.",
+      },
+      {
+        siteId: "former-roblin-steel-dunkirk",
+        role: "Locomotive and steel-reclamation property",
+        connection:
+          "Roblin occupies part of the former American Locomotive industrial landscape.",
+      },
+      {
+        siteId: "altech-specialty-steel",
+        role: "Large specialty-steel cleanup",
+        connection:
+          "AlTech represents a century-scale manufacturing and phased-remediation property.",
+      },
+      {
+        siteId: "special-metals-dunkirk",
+        role: "Active alloy facility cleanup",
+        connection:
+          "Special Metals is a defined cleanup area within an active manufacturing property.",
+      },
+      {
+        siteId: "dunkirk-former-mgp",
+        role: "Manufactured-gas plant",
+        connection:
+          "The former gasworks adds a coal-tar and groundwater cleanup near Dunkirk's downtown industrial waterfront.",
       },
     ],
   },

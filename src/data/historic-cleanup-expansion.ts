@@ -1020,4 +1020,290 @@ export const historicCleanupExpansion: AtlasSite[] = [
       },
     ],
   },
+  {
+    id: "olean-well-field-superfund",
+    name: "Olean Well Field Superfund Site",
+    municipality: "Olean / Portville",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Approximately 800-acre groundwater cleanup involving TCE and other volatile organic compounds beneath portions of Olean and Portville. EPA identified four principal industrial source properties, extended public water to affected homes, treated municipal wells, and continues source-area cleanup and monitoring.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.3941234926409, 42.06822415241196],
+    sources: [
+      {
+        title: "Olean Well Field Superfund Cleanup Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0201877",
+      },
+      {
+        title: "Olean Well Field DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905014/",
+      },
+      {
+        title: "EPA Selects Additional Olean Groundwater Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-finalizes-cleanup-plan-address-additional-contaminated-groundwater-olean-well",
+      },
+    ],
+  },
+  {
+    id: "peter-cooper-gowanda",
+    name: "Peter Cooper Corporation — Gowanda",
+    municipality: "Gowanda",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Former animal-glue and industrial-adhesive works along Cattaraugus Creek. Manufacturing operated from 1904 into the 1980s, and a five-acre elevated area received glue-manufacturing sludge from 1925 to 1970. The closed Class 4 site remains under long-term management.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.92805924758444, 42.458173855707706],
+    sources: [
+      {
+        title: "Peter Cooper Gowanda 2021 Annual Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905003A/Report.HW.905003A.2022-10-04.2021_Annual_Report.pdf",
+      },
+      {
+        title: "Peter Cooper Gowanda Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905003A/ROD.HW.905003A.2005-09-30.petercooper_ou1.pdf",
+      },
+    ],
+  },
+  {
+    id: "peter-cooper-markhams",
+    name: "Peter Cooper–Markhams Superfund Site",
+    municipality: "Dayton / Markhams",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Former disposal property on Bentley Road that received wastes from the Peter Cooper animal-glue operation in Gowanda. The remedy consolidated and capped waste, added drainage and erosion controls, and requires continuing inspection and land-use controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.01189213670254, 42.39289274789518],
+    sources: [
+      {
+        title: "Peter Cooper–Markhams Superfund Record of Decision",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905003B/ROD.HW.905003B.2006-12-01.FINAL.pdf",
+      },
+      {
+        title: "Peter Cooper–Markhams DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905003B/",
+      },
+    ],
+  },
+  {
+    id: "moench-tanning-gowanda",
+    name: "Moench Tanning",
+    municipality: "Gowanda",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Former leather-tanning operation at 265 Palmer Street that operated for about 120 years, including Moench operations from 1900 to 1983. Its closed landfill and creek-edge controls remain subject to groundwater monitoring, inspections, and erosion management.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.92448493440273, 42.448851221364386],
+    sources: [
+      {
+        title: "Moench Tanning Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905004/Report.HW.905004.2021-01-29.2020_PRR.pdf",
+      },
+      {
+        title: "Moench Tanning Erosion-Control Completion Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905004/Report.HW.905004.2022-02-08.2021%20PRR.pdf",
+      },
+    ],
+  },
+  {
+    id: "standard-portable-mayville",
+    name: "Standard Portable",
+    municipality: "Mayville",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former metalworking property where TCE was used and spent solvent was stored or disposed in an exterior underground septic tank. Investigations documented affected soil and groundwater extending onto adjacent village property; the cleanup record is separate from Mayville's PFAS investigation.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.49778113910106, 42.241675504839904],
+    sources: [
+      {
+        title: "Standard Portable Cleanup Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/standport1109fs.pdf",
+      },
+      {
+        title: "Standard Portable DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907030/",
+      },
+      {
+        title: "Mayville PFAS Investigation Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/D907050/Report.DWC.D907050.2021-03-12.InvestigationReport_Public.pdf",
+      },
+    ],
+  },
+  {
+    id: "anderson-cleaners-jamestown",
+    name: "Anderson Cleaners",
+    municipality: "Jamestown",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former dry-cleaning property at 5 Hunt Road where chlorinated volatile organic compounds affected soil and groundwater. DEC's Class 2 record calls for source removal or treatment, plume treatment and continuing monitoring.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.2663894340612, 42.09214554009021],
+    sources: [
+      {
+        title: "Anderson Cleaners Remedial Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/ac1.pdf",
+      },
+      {
+        title: "Anderson Cleaners DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907027/",
+      },
+    ],
+  },
+  {
+    id: "keywell-vac-air-frewsburg",
+    name: "Keywell / Vac-Air",
+    municipality: "Frewsburg / Town of Carroll",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former high-grade scrap-metal processing property where TCE was used for degreasing. The Class 4 remedy includes groundwater treatment, a barrier wall, paved cover, drainage controls, access restrictions, monitoring, and continuing site management near Conewango Creek.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.15697445141898, 42.06836344538131],
+    sources: [
+      {
+        title: "Keywell / Vac-Air Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907016/Report.HW.907016.2020-07-30.2019%20Periodic%20Review%20Report.pdf",
+      },
+      {
+        title: "Keywell / Vac-Air DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907016/",
+      },
+    ],
+  },
+  {
+    id: "machias-gravel-pit",
+    name: "Machias Gravel Pit",
+    municipality: "Machias",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Former gravel-pit storage area where approximately 600 drums of Motorola industrial waste were reportedly placed in 1978. Records describe solvents, acids, epoxy wastes and cutting oils; removal, soil-vapor extraction, groundwater treatment and long-term monitoring followed.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.5283532088013, 42.40917081453386],
+    sources: [
+      {
+        title: "Machias Gravel Pit Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905013/Report.HW.905013.2023-07-26.PERIODIC%20REVIEW%20REPORT%202022_Final.pdf",
+      },
+      {
+        title: "Machias Gravel Pit Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905013/ROD.HW.905013.1992-11-01.machias_gravel.pdf",
+      },
+    ],
+  },
+  {
+    id: "ischua-landfill",
+    name: "Ischua Landfill",
+    municipality: "Town of Ischua",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Inactive capped landfill that operated from 1972 to 1975 and reportedly received industrial, commercial, medical and household refuse, including TCE-laced sawdust. DEC detected PFOA, PFOS and 1,4-dioxane in groundwater and lists the property as a potential site under characterization.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.3679499897936, 42.247621807867375],
+    sources: [
+      {
+        title: "Ischua Landfill Site-Characterization Scope",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905048/Work%20Plan.HW.905048.2022-10-18.Ischua_Landfill_WA.pdf",
+      },
+      {
+        title: "Ischua Landfill DEC Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905048/",
+      },
+    ],
+  },
+  {
+    id: "olean-refinery-river-street",
+    name: "Olean Refinery Corridor — 1641 River Street",
+    municipality: "Olean",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Approximately 24.7-acre brownfield occupying part of a much larger petroleum refining and storage complex that operated from about 1876 to 1954. Investigations documented petroleum product and affected subsurface soil; state-supervised investigation and cleanup planning continue.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.4365298269535, 42.10002812461163],
+    sources: [
+      {
+        title: "1641 River Street Subsurface Investigation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C905049/Application.BCP.C905049.2020-01-01.Subsurface%20Environmental%20Investigation%20Report.pdf",
+      },
+      {
+        title: "1641 River Street Brownfield Application",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C905049/Application.BCP.C905049.2024-04-15.Complete%20Application.pdf",
+      },
+    ],
+  },
+  {
+    id: "olean-refinery-homer-street",
+    name: "Olean Refinery Corridor — 251 Homer Street",
+    municipality: "Olean",
+    county: "Cattaraugus",
+    category: "cleanup",
+    summary:
+      "Former refinery-area brownfield where cleanup removed more than 10,000 feet of abandoned refinery piping, approximately 52,000 tons of petroleum-affected soil and approximately 2,000 tons of arsenic-affected soil before controlled commercial reuse.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.44361315236398, 42.096916711459215],
+    sources: [
+      {
+        title: "251 Homer Street Cleanup Completion Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/der/factsheet/c905037coc.pdf",
+      },
+      {
+        title: "251 Homer Street Remedial Investigation Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C905037/Report.BCP.C905037.2016-10-31.RI-IRM-AA%20Report%20-%20FINAL.pdf",
+      },
+    ],
+  },
+  {
+    id: "former-niagara-motors-dunkirk",
+    name: "Former Niagara Motors",
+    municipality: "Dunkirk",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former industrial property used from at least 1919 through the 1970s. Later inspections documented drums, petroleum material, lead-affected soil and leaking-tank impacts; cleanup removed source material and placed a cover over residual contamination for commercial reuse.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.32285203242971, 42.47637671726439],
+    sources: [
+      {
+        title: "Former Niagara Motors Proposed Remedial Action Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/niamotoprap.pdf",
+      },
+      {
+        title: "Former Niagara Motors Cleanup Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/niamotorfs.pdf",
+      },
+    ],
+  },
 ];

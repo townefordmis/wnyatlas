@@ -58,8 +58,11 @@ for (const siteId of connectedSiteIds) {
 console.log(`Checked ${sites.length} site coordinates.`);
 console.log(`Checked ${connectedSiteIds.length} connection memberships.`);
 
-if (sites.length !== 114) {
-  issues.push(`Expected 114 coordinate records but found ${sites.length}`);
+const expectedSiteCount = 132;
+if (sites.length !== expectedSiteCount) {
+  issues.push(
+    `Expected ${expectedSiteCount} coordinate records but found ${sites.length}`,
+  );
 }
 
 if (issues.length > 0) {
