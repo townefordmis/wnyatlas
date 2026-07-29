@@ -321,7 +321,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "industry",
     summary:
-      "Former Lake Erie steelmaking complex whose western shoreline includes about 440 acres of manmade land created with iron- and steelmaking slag and plant waste. The property also included the HWM-2 on-site landfill, documented as containing about 118,000 cubic yards of coke- and primary-metalmaking wastes; the larger site remains under cleanup, monitoring, and land-use controls.",
+      "Former Lake Erie steelmaking complex with about 440 acres of manmade shoreline built from slag and plant waste. Its HWM-2 landfill held about 118,000 cubic yards of coke- and primary-metalmaking waste. Cleanup, monitoring, and land-use controls continue across the larger property.",
     evidenceStatus: "well-documented",
     coordinates: [-78.85913, 42.82158],
     story: {
@@ -1401,7 +1401,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former Gardenville railroad classification and maintenance yard where a spur led into an eastern wetland depression used for waste disposal. The location became locally known as the Losson Road tar pit. Investigators found tar-like material and dozens of abandoned drums; site waste was consolidated inside a slurry-walled containment cell, capped, and remains under long-term monitoring.",
+      "Former Gardenville railroad yard where a spur led to a wetland depression used for waste disposal. The location became known locally as the Losson Road tar pit. Investigators found tar-like material and dozens of abandoned drums. The waste was consolidated in a slurry-walled containment cell, capped, and placed under long-term monitoring.",
     evidenceStatus: "well-documented",
     coordinates: [-78.74165401790096, 42.87696653934266],
     sources: [
@@ -1664,7 +1664,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "waterway",
     summary:
-      "Storm-sewer route and Niagara River cove affected by contaminants migrating from the former Durez chemical site. Cleanup included plant containment, cleaning about 22,000 feet of sewers, removal of roughly 25,000 cubic yards of contaminated sewer and cove sediment, wetland restoration, later maintenance dredging, and continuing site controls.",
+      "Contaminants from the former Durez chemical site affected a storm-sewer route and Niagara River cove. Cleanup included plant containment and cleaning about 22,000 feet of sewers. Crews also removed roughly 25,000 cubic yards of contaminated sediment, restored wetlands, and later performed maintenance dredging.",
     evidenceStatus: "well-documented",
     coordinates: [-78.918, 43.055],
     sources: [
@@ -1748,7 +1748,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former on-site disposal area for sewage-sludge incinerator ash at the Southtowns Advanced Wastewater Treatment Facility beside Woodlawn Beach State Park. Erie County’s reclamation project removed, tested, hauled, and disposed of the landfill contents off-site and restored the area; this record does not identify the natural beach or dune system as a landfill.",
+      "Former disposal area for sewage-sludge incinerator ash at the Southtowns Advanced Wastewater Treatment Facility beside Woodlawn Beach State Park. Erie County removed and tested the landfill contents, disposed of them off-site, and restored the area. The record does not identify the natural beach or dune system as a landfill.",
     evidenceStatus: "well-documented",
     coordinates: [-78.8465, 42.78875],
     sources: [
@@ -1776,7 +1776,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former roughly 50-acre limestone quarry later filled with municipal refuse, incinerator ash, construction and demolition debris, appliances, vegetation, and documented Buffalo Forge waste. Portions became McCarthy Park and nearby development, while the remaining quarry serves as a stormwater-retention basin; state investigation supported removing the site from the hazardous-waste registry.",
+      "Former roughly 50-acre limestone quarry later filled with municipal refuse, incinerator ash, demolition debris, appliances, vegetation, and documented Buffalo Forge waste. Portions became McCarthy Park and nearby development. The remaining quarry serves as a stormwater-retention basin, and state investigation supported removing the site from the hazardous-waste registry.",
     evidenceStatus: "well-documented",
     coordinates: [-78.82590193043687, 42.9431559910684],
     sources: [
@@ -1827,7 +1827,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "waterway",
     summary:
-      "Active federal Superfund site covering roughly 15 miles of Eighteen Mile Creek, from its Lockport source area toward Lake Ontario. Historic industrial operations contaminated soil, groundwater, and creek sediment with PCBs, lead, and other pollutants. Cleanup and investigation are proceeding in stages; source-area work has included building demolition, excavation, capping, and some residential relocations, while fish-consumption advisories remain in effect.",
+      "Active federal Superfund site covering roughly 15 miles of Eighteen Mile Creek, from Lockport toward Lake Ontario. Historic industry contaminated soil, groundwater, and creek sediment with PCBs, lead, and other pollutants. Investigation and cleanup are proceeding in stages. Fish-consumption advisories remain in effect.",
     evidenceStatus: "well-documented",
     coordinates: [-78.691, 43.171],
     sources: [
@@ -1850,7 +1850,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "cleanup",
     summary:
-      "Federal Superfund site where a residential development was built over an inadequately covered chemical-waste dump. EPA permanently relocated residents from 51 mobile homes and two houses, excavated contaminated soil, and consolidated it beneath an engineered cap. Long-term monitoring and land-use controls continue; the record documents the former subdivision and capped disposal area, not the wider neighborhood.",
+      "Federal Superfund site where a residential development was built over an inadequately covered chemical-waste dump. EPA permanently relocated residents, excavated contaminated soil, and consolidated it beneath an engineered cap. Long-term controls continue. The record applies to the former subdivision and capped disposal area, not the wider neighborhood.",
     evidenceStatus: "well-documented",
     coordinates: [-78.965, 43.119],
     sources: [
@@ -1873,7 +1873,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former federal Superfund site in a Lake Erie residential development where PCB-contaminated waste oil was spread on dirt roads for dust control and later redistributed with excavated road soil into yards. Cleanup treated about 36,160 tons of contaminated soil and sediment and restored affected wetlands. EPA deleted the site from the National Priorities List in 1994 after completing the remedy.",
+      "Former federal Superfund site where PCB-contaminated waste oil was spread on dirt roads for dust control. Later road excavation moved contaminated soil into residential yards. Cleanup treated about 36,160 tons of soil and sediment and restored wetlands. EPA deleted the site from the National Priorities List in 1994.",
     evidenceStatus: "well-documented",
     coordinates: [-79.12796715865463, 42.58686971771397],
     sources: [
@@ -1896,7 +1896,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "cleanup",
     summary:
-      "Pesticide plant that manufactured arsenic-based and other products beginning in the 1920s. Historic releases and disposal affected facility soil, sediment, surface water, groundwater, and nearby properties through runoff and air deposition. State-supervised cleanup has included contaminated-soil removal at residential, commercial, and Royalton-Hartland school properties; the multi-year off-site program remained active in 2025.",
+      "Pesticide plant that began manufacturing arsenic-based and other products in the 1920s. Historic releases affected the facility and nearby properties through runoff and air deposition. State-supervised work has removed contaminated soil from residential, commercial, and Royalton-Hartland school properties. The off-site cleanup remained active in 2025.",
     evidenceStatus: "well-documented",
     coordinates: [-78.4758, 43.211],
     sources: [

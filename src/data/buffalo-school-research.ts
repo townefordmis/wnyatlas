@@ -311,7 +311,7 @@ export const documentedCampusHistory: Record<
       "A mapped boundary intersection can represent overlap or a shared boundary. It does not establish contamination beneath a school building, exposure, or present risk.",
     ],
     completion:
-      "DEC's 2017 application for C915326 states that the earlier C915220 investigation and remediation were not completed and that only part of the two cleanup sites was common. C915326 remains a separate DEC record. Consult the linked DEC files for current regulatory status.",
+      "DEC's 2017 application for C915326 states that the earlier C915220 investigation and remediation were not completed. It also states that only a portion of the two cleanup-site boundaries overlapped. C915326 remains a separate DEC record. Consult the linked DEC files for current regulatory status.",
     sourceUrl: "https://tapestryschool.org/about-tapestry/history/",
     sourceLabel: "Tapestry School history",
   },

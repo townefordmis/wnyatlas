@@ -24,8 +24,8 @@ export default function EnforcementPage() {
         <p className="eyebrow">Accountability in the public record</p>
         <h1>Major environmental enforcement actions</h1>
         <p className="dek">
-          Ten of Western New York&apos;s largest documented environmental monetary
-          actions—from criminal fines to cleanup-cost recoveries.
+          Ten major financial enforcement actions documented in Western New
+          York—from criminal fines to cleanup-cost recoveries.
         </p>
       </section>
 
@@ -33,9 +33,9 @@ export default function EnforcementPage() {
         <strong>Amounts are not interchangeable.</strong>
         <p>
           A criminal fine punishes an offense. A civil penalty resolves violations.
-          Cost recovery reimburses public cleanup spending, while natural-resource
-          settlements fund restoration. We rank the announced dollar figures but label
-          each action so those differences remain visible.
+          Cost recovery reimburses public cleanup spending. Natural-resource
+          settlements fund restoration. We rank the announced dollar figures and
+          clearly label each type of action.
         </p>
       </section>
 

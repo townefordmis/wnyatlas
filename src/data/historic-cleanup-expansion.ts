@@ -547,7 +547,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former Hanna Furnace pig-iron waterfront where industrial fill, furnace waste, petroleum impacts, contaminated groundwater, and canal sediment required a brownfield remedy. Debris was removed, surrounding land was covered, canal walls were stabilized, and contaminated sediment east of Route 5 was isolated beneath geotextile and a stone-and-gravel cover. The remediated landscape is now Ship Canal Commons.",
+      "Former Hanna Furnace waterfront where industrial fill, furnace waste, petroleum, groundwater, and canal sediment required cleanup. Crews removed debris, covered surrounding land, and stabilized the canal walls. Contaminated sediment east of Route 5 was isolated beneath geotextile, stone, and gravel. The remediated landscape is now Ship Canal Commons.",
     evidenceStatus: "well-documented",
     coordinates: [-78.8514, 42.835],
     story: {
@@ -986,7 +986,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Genesee",
     category: "cleanup",
     summary:
-      "Thirty-five-acre municipal landfill where companies dumped heavy-metal sludges, oils, solvents, and other industrial wastes from the 1960s until 1980. Cleanup removed drums, consolidated contaminated material under a multilayer cap, collected leachate, restored wetlands, and extended public water. EPA deleted the site from the National Priorities List in 2005; monitoring and maintenance continue.",
+      "Thirty-five-acre municipal landfill that received heavy-metal sludges, oils, solvents, and other industrial wastes from the 1960s until 1980. Cleanup removed drums, capped remaining contaminated material, collected leachate, restored wetlands, and extended public water. EPA deleted the site from the National Priorities List in 2005. Monitoring and maintenance continue.",
     evidenceStatus: "well-documented",
     coordinates: [-78.2456, 43.0149],
     sources: [

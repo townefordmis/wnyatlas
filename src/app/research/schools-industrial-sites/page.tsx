@@ -31,7 +31,7 @@ export default function BuffaloSchoolsResearchPage() {
 
       <section className="school-method">
         <p className="eyebrow">Evidence standard</p>
-        <h2>Facts are kept in their proper lane.</h2>
+        <h2>Different kinds of evidence stay separate.</h2>
         <div>
           <article>
             <h3>On the property</h3>

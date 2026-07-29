@@ -24,17 +24,18 @@ export default function AirborneExposurePage() {
         <p className="eyebrow">Risk pathway · inhalation</p>
         <h1>Airborne exposure & historic plumes</h1>
         <p className="dek">
-          Where government monitoring, modeling, or health orders documented airborne
-          chemicals—and what the evidence can and cannot tell us.
+          Government monitoring, modeling, and health orders documented airborne
+          chemicals in these areas. The map also explains what that evidence cannot
+          establish.
         </p>
       </section>
 
       <section className="risk-warning">
         <strong>Read the shaded areas carefully.</strong>
         <p>
-          They provide geographic orientation around documented study and response
-          areas. They are not parcel-level exposure determinations, daily plume
-          reconstructions, or proof that pollution caused an individual illness.
+          The shading provides geographic context for documented study and response
+          areas. It does not show parcel-level exposure, reconstruct a plume for a
+          particular day, or prove that pollution caused an individual illness.
           Historic airborne concentrations changed with wind, weather, distance,
           operating conditions, and time spent in the area.
         </p>
