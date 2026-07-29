@@ -793,6 +793,259 @@ export const historicCleanupExpansion: AtlasSite[] = [
     ],
   },
   {
+    id: "essex-hope-site",
+    name: "Essex / Hope Site",
+    municipality: "Jamestown",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former paint, varnish, coating, and window-manufacturing property where solvents and other industrial chemicals affected soil and groundwater. DEC amended the remedy in 2023 to add thermal and chemical treatment, monitoring, a maintained cover, and continuing land- and groundwater-use controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.21417629987917, 42.10966403467532],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The approximately 4.7-acre state cleanup site covers six industrial parcels around Hopkins and Blackstone avenues. Paints, varnishes, industrial coatings, and related products were manufactured here by a succession of companies beginning in the early twentieth century.",
+        "DEC identifies the property as State Superfund site 907015, currently Class 4. That classification means remedial construction has been completed for the earlier remedy but continuing management, monitoring, or operation remains necessary.",
+      ],
+      timeline: [
+        { period: "Early 1900s onward", event: "Successive companies manufactured paints, varnishes, coatings, and related products at the property." },
+        { period: "1994", event: "DEC selected a remedy centered on source removal, groundwater recovery and treatment, air sparging, and soil-vapor extraction." },
+        { period: "1994–2023", event: "Additional investigations, underground-tank and drywell removals, and treatment pilot programs refined the understanding of on- and off-site conditions." },
+        { period: "2023", event: "DEC amended the remedy to use in-situ thermal treatment for chlorinated VOCs, chemical oxidation for petroleum-related VOCs, and continued groundwater monitoring." },
+      ],
+      documentedImpacts: [
+        "DEC documents releases including trichloroethene, petroleum-related volatile compounds, toluene, xylenes, PCBs, and vinyl chloride.",
+        "Groundwater flows generally north or northeast toward the Chadakoin River. DEC is handling the incompletely defined downgradient off-site area as a separate operable unit.",
+        "The record applies to the defined cleanup site and investigated downgradient area; it does not establish that every nearby parcel shares the same conditions.",
+      ],
+      cleanupAndControls: [
+        "The amended remedy calls for electrical-resistance heating and vapor collection in a chlorinated-solvent source area, chemical oxidation in a petroleum-affected area, and monitored natural attenuation.",
+        "A site cover, industrial-use restriction, groundwater-use restriction, excavation controls, vapor-intrusion review provisions, and periodic certification remain part of site management.",
+      ],
+      presentDay: [
+        "Essex / Hope remains a long-term managed cleanup. Its Class 4 status should be read as continuing stewardship, not as an unrestricted or inactive property.",
+      ],
+      researchNotes: [
+        "Track DEC's separate decision and future construction records for the downgradient off-site operable unit.",
+      ],
+    },
+    sources: [
+      {
+        title: "Essex / Hope 2023 Amended Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907015/ROD.HW.907015.2023-09-27.Amended%20Record%20of%20Decision%20.pdf",
+      },
+      {
+        title: "Essex / Hope Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907015/",
+      },
+    ],
+  },
+  {
+    id: "dowcraft-south-dow-street",
+    name: "Dowcraft — South Dow Street",
+    municipality: "Falconer",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former woolen mill and steel-partition factory where a trichloroethene vapor degreaser contributed to a chlorinated-solvent groundwater plume. Source treatment, monitoring, and institutional controls continue under a Class 4 State Superfund remedy.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.20193886683256, 42.112150016662],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "Industrial use at the approximately 2.2-acre South Dow Street property began with a woolen mill around 1890. From 1939 until 1999, the plant manufactured steel partitions and used a trichloroethene vapor degreaser.",
+        "DEC lists Dowcraft as State Superfund site 907020, Class 4, reflecting a constructed remedy that still requires treatment, monitoring, and site management.",
+      ],
+      timeline: [
+        { period: "About 1890–1939", event: "A woolen mill occupied the South Dow Street property." },
+        { period: "1939–1999", event: "Steel-partition manufacturing included chlorinated-solvent degreasing." },
+        { period: "2003", event: "DEC selected a remedy for contaminated soil and groundwater." },
+        { period: "2019 onward", event: "Additional source-area treatment using zero-valent iron and continued groundwater monitoring addressed remaining chlorinated VOCs." },
+        { period: "2026 review", event: "DEC reporting documented continuing monitoring and remedy evaluation." },
+      ],
+      documentedImpacts: [
+        "Trichloroethene and its breakdown products affected groundwater beneath and downgradient of the former plant.",
+        "DEC records describe the plume extending beneath the neighboring industrial property toward the Chadakoin River area. River sampling cited in the current review did not demonstrate a site-related river impact.",
+        "The mapped marker represents the cleanup property and documented plume history, not a claim about every building or parcel in Falconer.",
+      ],
+      cleanupAndControls: [
+        "Cleanup has included source-area excavation or treatment, groundwater treatment, monitoring wells, and injections of zero-valent iron to promote contaminant breakdown.",
+        "Land-use and groundwater-use restrictions, excavation procedures, monitoring, and periodic remedy reviews remain in place.",
+      ],
+      presentDay: [
+        "Dowcraft remains a managed groundwater cleanup. The continuing program is why it belongs in the atlas despite the relatively small property footprint.",
+      ],
+      researchNotes: [
+        "Continue checking periodic review reports for plume trends, treatment performance, and any revised assessment of the Chadakoin River.",
+      ],
+    },
+    sources: [
+      {
+        title: "Dowcraft Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907020/ROD.HW.907020.2003-03-31.dowcraft.pdf",
+      },
+      {
+        title: "Dowcraft 2026 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907020/Report.HW.907020.2026-02-04.PRR_and_IC-EC_Certification.pdf",
+      },
+    ],
+  },
+  {
+    id: "former-jamestown-city-landfill",
+    name: "Former Jamestown City Landfill",
+    municipality: "Jamestown",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former municipal landfill used from 1962 to 1974. Historical records identify municipal refuse together with paint, solvent, and degreasing wastes; DEC currently classifies the State Superfund record as Class 3.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.24867284195923, 42.108362644867015],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The City of Jamestown operated the Washington Street disposal area from 1962 until 1974. Municipal environmental-review records identify the location as a former landfill that also received documented industrial wastes.",
+        "DEC tracks the property as State Superfund site 907009, Class 3. Class 3 means DEC does not presently consider the site, or reasonably foresee it, to constitute a significant threat; it does not erase the landfill's history.",
+      ],
+      timeline: [
+        { period: "1962–1974", event: "The City of Jamestown operated the landfill." },
+        { period: "Operating period", event: "Records describe disposal of municipal refuse and industrial materials including paint, solvents, degreaser sludge, and paint liquids." },
+        { period: "Legacy review", event: "The property entered the state inactive hazardous-waste site record and was evaluated for potential vapor concerns." },
+        { period: "Present classification", event: "DEC lists the site as Class 3 and records the legacy vapor review as complete with no further action for that pathway." },
+      ],
+      documentedImpacts: [
+        "The historical record documents waste disposal; the Class 3 designation does not support describing the site as a current significant threat.",
+        "No atlas boundary or proximity line should be interpreted as a complete subsurface-contamination boundary.",
+      ],
+      cleanupAndControls: [
+        "The atlas preserves the operating and disposal history while deferring current risk and management conclusions to DEC's Class 3 determination.",
+        "Future construction or redevelopment review should use current DEC and municipal records rather than the map marker alone.",
+      ],
+      presentDay: [
+        "This entry is included because it was a city landfill with documented industrial-waste disposal, not because it represents a routine spill or an unverified report.",
+      ],
+      researchNotes: [
+        "Update the page if DEC publishes a new investigation, reclassification, or site-specific document collection.",
+      ],
+    },
+    sources: [
+      {
+        title: "Former Jamestown City Landfill DEC Database Record",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=907009",
+      },
+      {
+        title: "Jamestown Riverwalk Environmental Review",
+        publisher: "City of Jamestown",
+        url: "https://www.jamestownny.gov/wp-content/uploads/2021/04/Part-I_Riverwalk-Community-Skate-Park_Part-58-NEPA-Review-with-attachments.pdf",
+      },
+    ],
+  },
+  {
+    id: "ellison-bronze-company",
+    name: "Ellison Bronze Company",
+    municipality: "Falconer",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Long-running bronze-door manufacturer and foundry where metal-bearing foundry material affected soil and sediment. Stabilization, containment, groundwater monitoring, and land-use controls continue under a Class 4 State Superfund record.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.19958673235618, 42.11654760374714],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "Ellison Bronze manufactured bronze doors and related products at its West Main Street property in Falconer. Casting and finishing operations generated foundry sands, dusts, and other metal-bearing materials.",
+        "DEC identifies the property as State Superfund site 907018, Class 4, meaning the constructed remedy remains subject to monitoring or management.",
+      ],
+      timeline: [
+        { period: "Industrial operating era", event: "Bronze casting, machining, and finishing generated metal-bearing foundry residuals." },
+        { period: "Investigation", event: "State work evaluated foundry material, affected soil and sediment, and groundwater conditions." },
+        { period: "1996", event: "DEC selected a remedy based on stabilization, containment, and continuing monitoring." },
+        { period: "Present", event: "The property remains under Class 4 site management." },
+      ],
+      documentedImpacts: [
+        "DEC documents metals associated with foundry waste in on-site soil and sediment.",
+        "The cleanup record is specific to the industrial property and evaluated environmental media; it should not be generalized to all of Falconer.",
+      ],
+      cleanupAndControls: [
+        "The selected remedy stabilized metal-affected material and placed it under managed containment.",
+        "Groundwater monitoring, maintenance of the remedy, land-use controls, and periodic review preserve the remedy's protectiveness.",
+      ],
+      presentDay: [
+        "Ellison Bronze is included as a durable foundry-cleanup history with continuing stewardship, not as an allegation about present manufacturing operations.",
+      ],
+      researchNotes: [
+        "Use the latest periodic review report for future changes in monitoring frequency, controls, or classification.",
+      ],
+    },
+    sources: [
+      {
+        title: "Ellison Bronze Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907018/ROD.HW.907018.1996-03-25.ellison_bronze.pdf",
+      },
+      {
+        title: "Ellison Bronze Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907018/",
+      },
+    ],
+  },
+  {
+    id: "marsh-valve-dunkirk",
+    name: "Marsh Valve",
+    municipality: "Dunkirk",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former brass-valve and fitting foundry where metal-bearing foundry sand and industrial structures required a federal removal action. Buildings, underground tanks, and foundry material were removed before DEC selected no further remedial action.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.34685157550105, 42.48169396687779],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The Brigham Road property manufactured brass valves and fittings beginning in the 1920s and operated a foundry beginning in 1941. The industrial process left metal-bearing foundry sand and related material at the site.",
+        "DEC tracks Marsh Valve as site 907023 with completed Class C status. Class C records a completed remedial program and should not be confused with an active Class 2 State Superfund site.",
+      ],
+      timeline: [
+        { period: "1920s onward", event: "The property manufactured brass valves and fittings." },
+        { period: "1941 onward", event: "Foundry operations generated sand and residues containing lead, copper, zinc, and other metals." },
+        { period: "EPA removal", event: "A federal removal action demolished the remaining building, removed underground tanks, and excavated foundry sand to native soil." },
+        { period: "2003", event: "DEC selected no further remedial action based on the completed removal work and investigation." },
+      ],
+      documentedImpacts: [
+        "Investigations documented lead, copper, and zinc in foundry sand and fill associated with the former operation.",
+        "The historical contamination record applies to the former foundry property; it does not describe the wider Brigham Road area.",
+      ],
+      cleanupAndControls: [
+        "The federal removal addressed the principal remaining industrial structures, tanks, and foundry material.",
+        "DEC's no-further-action decision and completed classification distinguish this site from nearby properties with active remedies.",
+      ],
+      presentDay: [
+        "Marsh Valve belongs in the atlas as a completed large-scale foundry removal and redevelopment history, not as an ongoing emergency.",
+      ],
+      researchNotes: [
+        "Retain the completed-status language whenever the site is shown in search results or connection groups.",
+      ],
+    },
+    sources: [
+      {
+        title: "Marsh Valve Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907023/ROD.HW.907023.2003-03-31.marsh_valve.pdf",
+      },
+      {
+        title: "Marsh Valve Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907023/",
+      },
+    ],
+  },
+  {
     id: "bush-industries-cattaraugus",
     name: "Bush Industries",
     municipality: "Village of Cattaraugus",

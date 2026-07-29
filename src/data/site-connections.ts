@@ -426,6 +426,12 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
         connection:
           "Special Metals shows continued industrial use alongside a separately managed cleanup area.",
       },
+      {
+        siteId: "marsh-valve-dunkirk",
+        role: "Brass foundry removal",
+        connection:
+          "Marsh Valve adds a completed federal removal and state no-further-action record to the Dunkirk metals corridor.",
+      },
     ],
   },
   {
@@ -457,6 +463,30 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
         role: "Small solvent site",
         connection:
           "The dry cleaner demonstrates how a very small parcel can create a consequential subsurface cleanup.",
+      },
+      {
+        siteId: "essex-hope-site",
+        role: "Coatings and solvent site",
+        connection:
+          "Essex / Hope documents a long-running coatings property with an amended remedy and a separately investigated downgradient area.",
+      },
+      {
+        siteId: "dowcraft-south-dow-street",
+        role: "Chlorinated-solvent groundwater cleanup",
+        connection:
+          "Dowcraft connects former manufacturing and vapor degreasing to continuing groundwater treatment and monitoring.",
+      },
+      {
+        siteId: "former-jamestown-city-landfill",
+        role: "Municipal and industrial-waste landfill",
+        connection:
+          "The former city landfill preserves Jamestown's documented municipal and industrial-disposal history while clearly stating its current Class 3 status.",
+      },
+      {
+        siteId: "ellison-bronze-company",
+        role: "Bronze foundry cleanup",
+        connection:
+          "Ellison Bronze adds metal-bearing foundry material, stabilization, containment, and continuing management to the Falconer record.",
       },
       {
         siteId: "bush-industries-cattaraugus",
