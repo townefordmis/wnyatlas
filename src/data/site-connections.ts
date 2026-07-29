@@ -432,6 +432,32 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
         connection:
           "Marsh Valve adds a completed federal removal and state no-further-action record to the Dunkirk metals corridor.",
       },
+      {
+        siteId: "closed-alumax-extrusions",
+        role: "Locomotive, steel, and aluminum property",
+        connection:
+          "Alumax shares the Roberts Road industrial landscape while retaining its own chlorinated-solvent remedy and monitoring record.",
+      },
+    ],
+  },
+  {
+    id: "dunkirk-power-and-ash",
+    name: "Dunkirk power generation and ash management",
+    summary:
+      "The retired Lake Erie generating station and its separately located Pomfret fly-ash landfill are historically connected but regulated as different facilities.",
+    members: [
+      {
+        siteId: "former-dunkirk-steam-station",
+        role: "Retired generating station",
+        connection:
+          "The waterfront station produced the coal-combustion residuals and relinquished its major air permits after retirement.",
+      },
+      {
+        siteId: "dunkirk-fly-ash-landfill",
+        role: "Industrial ash landfill",
+        connection:
+          "The Van Buren Road landfill has its own liner, leachate, monitoring, permitting, and eventual closure obligations.",
+      },
     ],
   },
   {

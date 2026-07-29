@@ -1651,4 +1651,306 @@ export const historicCleanupExpansion: AtlasSite[] = [
       },
     ],
   },
+  {
+    id: "tennessee-gas-station-224",
+    name: "Tennessee Gas Pipeline Station 224",
+    municipality: "French Creek / Clymer",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Natural-gas compressor station where PCB-containing compressor oil affected defined soil, drainage, and tributary-sediment areas. Excavation and containment were completed in 1997; caps, erosion controls, sediment sampling, and annual certification continue.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.69702401856698, 42.0549802569183],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "Station 224 has operated along Ravlin Hill Road since 1959 as part of a natural-gas transmission system. Historic starting-air compressors used PCB-containing oil that entered building drains and defined outdoor areas.",
+        "DEC lists the 116.3-acre controlled property as State Superfund site 907014, Class 4. Only defined portions of the larger station property contained the documented contamination.",
+      ],
+      timeline: [
+        { period: "1959 onward", event: "The property operated as a natural-gas compressor station." },
+        { period: "1997", event: "PCB-affected soil and sediment were excavated, a drainline was grouted, and covers and erosion controls were installed." },
+        { period: "2025 review", event: "Annual inspection, sediment sampling, and certification found the controls functioning as designed." },
+      ],
+      documentedImpacts: [
+        "PCB-containing oil affected drainline material, localized soil, burn-pit and scrap-yard areas, and sediment in an on-site tributary.",
+        "The remedy record does not support treating the entire 206-acre operating station or surrounding farms as one contamination area.",
+      ],
+      cleanupAndControls: [
+        "The remedy removed material above cleanup thresholds, capped defined residual areas, stabilized tributary banks, and established groundwater and sediment monitoring.",
+        "Land-use restrictions, excavation procedures, cap maintenance, access controls, and annual certification remain required.",
+      ],
+      presentDay: ["Station 224 is an operating industrial property with a completed remedy under continuing Class 4 management."],
+      researchNotes: ["Update sediment trends and control status from future annual periodic-review reports."],
+    },
+    sources: [
+      {
+        title: "Station 224 Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907014/ROD.HW.907014.1997-03-01.tennessee_gas.pdf",
+      },
+      {
+        title: "Station 224 2025 Periodic Review",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907014/Report.HW.907014.2025-12-17.2025%20PRR.pdf",
+      },
+    ],
+  },
+  {
+    id: "gateway-lofts-chautauqua-hardware",
+    name: "Gateway Lofts / Former Chautauqua Hardware",
+    municipality: "Jamestown",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former woolen mill and hardware-manufacturing complex beside the Chadakoin River where electroplating, die-casting, and metal finishing left metals, PCBs, chlorinated solvents, and vapor concerns. DEC determined that the site posed a significant threat and selected a multi-part remedy.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.23153119845527, 42.093587178024066],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "A woolen mill began operating here in 1888. Chautauqua Hardware later manufactured furniture hardware using electroplating, die-casting, polishing, anodizing, and numerous metals and industrial compounds.",
+        "DEC manages the property as Brownfield Cleanup Program site C907046; the related off-site record is explained here rather than mapped as a duplicate pin.",
+      ],
+      timeline: [
+        { period: "1888–late 1940s", event: "Jamestown Woolen Spinning and Empire Worsted Mills produced yarn and cloth." },
+        { period: "By 1963–2005", event: "Chautauqua Hardware conducted metal casting, plating, finishing, and fabrication." },
+        { period: "2022", event: "DEC selected excavation, groundwater interception, vapor mitigation, a cover, and long-term controls." },
+      ],
+      documentedImpacts: [
+        "DEC identified metals, PCBs, PAHs, TCE and breakdown products, PFAS, affected groundwater, and soil-vapor intrusion concerns.",
+        "Investigation included riverbank soil and the adjacent Chadakoin River; the cleanup boundary should not be treated as a complete off-site plume boundary.",
+      ],
+      cleanupAndControls: [
+        "The remedy calls for roughly 14,000 tons of soil removal, PCB-source excavation, a reactive groundwater barrier, vapor systems, clean cover, and hazardous-building-material management.",
+        "An easement, groundwater restrictions, excavation controls, monitoring, and periodic certification support restricted-residential reuse.",
+      ],
+      presentDay: ["The redevelopment name does not replace the site's documented woolen-mill and metal-manufacturing history or its continuing cleanup obligations."],
+      researchNotes: ["Track construction completion and DEC's separately managed off-site investigation."],
+    },
+    sources: [
+      {
+        title: "Gateway Lofts 2022 Decision Document",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907046/Decision%20Document.BCP.C907046.2022-03-08.DD_Final.pdf",
+      },
+      {
+        title: "Gateway Lofts Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907046/",
+      },
+    ],
+  },
+  {
+    id: "jamestown-brewery-brownfield",
+    name: "Jamestown Brewery Brownfield",
+    municipality: "Jamestown",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Downtown property historically used by a photo facility, dry cleaner, taxi company, automotive repair shop, and parking garage. Deep chlorinated-solvent contamination required major excavation, groundwater treatment, vapor mitigation, and continuing controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.2432394993632, 42.09551127136597],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The DEC cleanup name reflects a redevelopment proposal, not a documented historic brewery operation. Commercial uses since the 1880s included photography, dry cleaning, vehicle repair, taxi service, and parking.",
+        "DEC determined that the site posed a significant threat and created a related off-site record. That investigation is linked to this parent page rather than shown as another pin.",
+      ],
+      timeline: [
+        { period: "1886 onward", event: "Successive commercial uses occupied the downtown parcel." },
+        { period: "2018", event: "About 2,014 tons of affected soil and fill were removed and a sub-slab depressurization system was installed." },
+        { period: "2022–present", event: "DEC selected and oversees groundwater treatment, vapor mitigation, monitoring, and site management." },
+      ],
+      documentedImpacts: [
+        "DEC identified PCE, TCE, dichloroethene, vinyl chloride, petroleum-related compounds, and PFAS in investigated soil, groundwater, or vapor.",
+        "The public water supply is separate from the contaminated site groundwater.",
+      ],
+      cleanupAndControls: [
+        "Removal included approximately 430 tons characterized as hazardous; in-situ injections address the remaining chlorinated-solvent plume.",
+        "A cover, active vapor system, easement, groundwater restriction, excavation plan, and periodic review remain part of the remedy.",
+      ],
+      presentDay: ["DEC classifies the brownfield work as completed, while groundwater, vapor, and institutional controls continue under site management."],
+      researchNotes: ["Use future periodic reviews to track plume reduction and the off-site investigation."],
+    },
+    sources: [
+      {
+        title: "Jamestown Brewery Decision Document",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907047/Decision%20Document.BCP.C907047.2021-01-04.Decision%20Document_Jamestown%20Brewery.pdf",
+      },
+      {
+        title: "Jamestown Brewery Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907047/",
+      },
+    ],
+  },
+  {
+    id: "closed-alumax-extrusions",
+    name: "Closed Alumax Extrusions",
+    municipality: "Dunkirk",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former locomotive, heat-exchanger, specialty-steel, and aluminum-extrusion property within Dunkirk's Roberts Road complex. Chlorinated-solvent source treatment was completed, but groundwater monitoring and land controls continue.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.31608370183818, 42.486107315578224],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "American Locomotive expanded onto this property around 1918. Later uses included heat-exchanger fabrication, specialty-steel production, and aluminum extrusion before Alumax closed the facility.",
+        "DEC tracks the controlled property as completed Voluntary Cleanup Program site V00589, distinct from adjoining Roblin Steel and Edgewood records.",
+      ],
+      timeline: [
+        { period: "1918–1962", event: "Locomotive and heat-exchanger manufacturing occupied the property." },
+        { period: "1969–1993", event: "Specialty-steel and aluminum-extrusion operations followed." },
+        { period: "2004 onward", event: "Source-area treatment using zero-valent iron was followed by long-term groundwater monitoring." },
+      ],
+      documentedImpacts: [
+        "Investigations identified a chlorinated-solvent source near a suspected former tank and TCE-related groundwater contamination.",
+        "DEC records distinguish the Alumax groundwater area from the adjoining Roblin Steel property.",
+      ],
+      cleanupAndControls: [
+        "Source treatment, a maintained cover, excavation controls, restricted groundwater use, monitoring wells, and periodic certification manage remaining conditions.",
+        "Monitoring continues until the site-specific chlorinated-VOC performance threshold is achieved.",
+      ],
+      presentDay: ["Completed program status records remedial construction; it does not mean that all monitoring and property controls have ended."],
+      researchNotes: ["Track the annual groundwater threshold and any future DEC approval to close monitoring wells."],
+    },
+    sources: [
+      {
+        title: "Closed Alumax Site Management Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00589/Report.VCP.V00589.2021-11-01.Revised_SMP.pdf",
+      },
+      {
+        title: "Closed Alumax Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00589/",
+      },
+    ],
+  },
+  {
+    id: "pelican-manufacturing-jamestown",
+    name: "Pelican Manufacturing",
+    municipality: "Jamestown",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Former manufacturing property where TCE affected soil, groundwater, and surface-water pathways. Soil-vapor extraction, groundwater recovery, sediment removal, building demolition, and continuing property controls addressed the former Class 2 site.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.2464066053872, 42.111760971764355],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "Pelican Manufacturing occupied 2223 Washington Street. DEC's legacy record documents disposal of chlorinated hydrocarbons and confirmed TCE contamination.",
+        "DEC now classifies site 907010 as completed Class C; EPA lists the property as a non-NPL CERCLA site.",
+      ],
+      timeline: [
+        { period: "1995", event: "DEC selected a remedy for TCE-affected soil, groundwater, and related pathways." },
+        { period: "1990s–2003", event: "Treatment, sediment removal, building demolition, and additional soil removal were completed." },
+        { period: "Present", event: "Engineering and institutional controls remain recorded for the property." },
+      ],
+      documentedImpacts: [
+        "The principal documented contaminant was trichloroethene in soil, groundwater, and surface-water or sediment pathways.",
+        "EPA's non-NPL status means the property was evaluated under CERCLA but was not placed on the federal National Priorities List.",
+      ],
+      cleanupAndControls: [
+        "Cleanup included soil-vapor extraction, groundwater extraction and treatment, contaminated-sediment removal, and source-soil removal after demolition.",
+        "Use restrictions preserve installed isolation and containment controls.",
+      ],
+      presentDay: ["Pelican is a completed cleanup with enduring legal and engineering controls, not an active federal NPL site."],
+      researchNotes: ["Keep Pelican distinct from nearby Former C&B Dry Cleaners and the former city landfill."],
+    },
+    sources: [
+      {
+        title: "Pelican Manufacturing Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907010/",
+      },
+      {
+        title: "Pelican Manufacturing CERCLA Profile",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0202672",
+      },
+    ],
+  },
+  {
+    id: "former-dunkirk-steam-station",
+    name: "Former Dunkirk Steam Generating Station",
+    municipality: "Dunkirk",
+    county: "Chautauqua",
+    category: "industry",
+    summary:
+      "Lake Erie coal-fired power station whose generating units shut down between 2012 and 2015. The facility relinquished its major air and acid-rain permits after retirement; its separately located fly-ash landfill remains a distinct regulated solid-waste site.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.3516458, 42.4897974],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The Point Drive station generated electricity on Dunkirk's Lake Erie waterfront. This entry records the retired industrial facility and its air-permit history, not a DEC remediation-site designation.",
+        "Coal-combustion residuals were managed at a separate landfill in Pomfret, which has its own map entry and regulatory record.",
+      ],
+      timeline: [
+        { period: "2012–2015", event: "The station's operating units were successively shut down or mothballed." },
+        { period: "2019–2022", event: "Formal retirement actions were completed for the generating units." },
+        { period: "2022", event: "The facility relinquished its Title V air and Acid Rain permits because of retirement." },
+      ],
+      documentedImpacts: [
+        "DEC's retirement notice documents historical permitted emissions and shutdown credits; it is not a finding that the entire power-station property is a cleanup site.",
+        "The station and fly-ash landfill are linked historically but occupy separate properties and programs.",
+      ],
+      cleanupAndControls: ["Future demolition, reuse, or environmental work should be described from the applicable permit or cleanup record as it occurs."],
+      presentDay: ["The marker preserves a major industrial and energy-history site after retirement."],
+      researchNotes: ["Track formal decommissioning, redevelopment, and any later DEC remediation enrollment."],
+    },
+    sources: [
+      {
+        title: "Dunkirk Station Retirement and Air-Permit Notice",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2022-07-27/completed-application/dunkirk-steam-generating-station",
+      },
+    ],
+  },
+  {
+    id: "dunkirk-fly-ash-landfill",
+    name: "Dunkirk Fly Ash Landfill",
+    municipality: "Pomfret",
+    county: "Chautauqua",
+    category: "cleanup",
+    summary:
+      "Separately located industrial ash landfill associated with the retired Dunkirk generating station. DEC records a lined 42-acre disposal cell, leachate collection and recirculation, groundwater monitoring, and continuing solid-waste permitting.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.3965225, 42.4455635],
+    story: {
+      lastReviewed: "July 29, 2026",
+      background: [
+        "The Van Buren Road facility in Pomfret received coal-combustion ash associated with the Dunkirk power station. It is regulated as industrial solid-waste facility 07N21, not as a State Superfund or federal NPL site.",
+        "The landfill is mapped separately because it is several miles from the waterfront generating station.",
+      ],
+      timeline: [
+        { period: "Power-generation era", event: "The facility managed fly ash and related coal-combustion residuals from Dunkirk generation." },
+        { period: "2015", event: "The generating station entered mothballed status, prompting review of the landfill's future." },
+        { period: "2023 report", event: "The landfill continued regulated operation, leachate management, monitoring, and permit-renewal review." },
+      ],
+      documentedImpacts: [
+        "The DEC annual report documents a lined landfill, primary and secondary leachate systems, and groundwater monitoring.",
+        "Coal ash should not be labeled radiological or Superfund without a separate site-specific regulatory finding.",
+      ],
+      cleanupAndControls: [
+        "The facility uses double-liner and leachate-management systems and submits monitoring and annual operating information to DEC.",
+        "Closure, post-closure care, and financial assurance remain part of the long-term solid-waste framework.",
+      ],
+      presentDay: ["This is continuing waste infrastructure linked to a retired power plant, not a completed brownfield cleanup."],
+      researchNotes: ["Update the page when DEC issues a renewed permit or approves a final closure plan."],
+    },
+    sources: [
+      {
+        title: "NRG Dunkirk Industrial Landfill 2023 Annual Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/fs/projects/SWMF/Annual%20Reports_Solid%20Waste%20Management%20Facility/Annual%20Reports_by%20Activity%20Type/Landfill/Landfill%20Annual%20Reports%20-%202023/R9/07N21_NRG_Dunkirk_Landfill_ind_R9_2023.2024-03-01.AR.pdf",
+      },
+    ],
+  },
 ];
