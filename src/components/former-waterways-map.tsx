@@ -87,7 +87,7 @@ export function FormerWaterwaysMap() {
       (record) => record.id === linkedRecordId,
     );
     if (linkedRecord) {
-      setSelected(linkedRecord);
+      requestAnimationFrame(() => setSelected(linkedRecord));
       instance.jumpTo({ center: linkedRecord.coordinates, zoom: 14 });
     }
 

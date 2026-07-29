@@ -552,6 +552,18 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
         connection:
           "Eighteenmile Creek links multiple Lockport source areas to a much longer sediment-cleanup record.",
       },
+      {
+        siteId: "old-upper-mountain-road-landfill",
+        role: "Ravine landfill and creek cleanup",
+        connection:
+          "The former municipal disposal area connects Lockport's waste history with documented Gulf Creek sediment, floodplain and sewer-infrastructure work.",
+      },
+      {
+        siteId: "vanchlor-company-landfill",
+        role: "Former quarry landfill",
+        connection:
+          "The capped Mill Street landfill adds a separately managed chemical-manufacturing waste record within the broader Lockport industrial corridor.",
+      },
     ],
   },
   {
@@ -577,6 +589,18 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
         role: "Railroad release",
         connection:
           "The Le Roy site shows how rail transport created a different kind of historical contamination record.",
+      },
+      {
+        siteId: "batavia-former-mgp",
+        role: "Manufactured-gas plant",
+        connection:
+          "The Evans Street gasworks adds Batavia's nineteenth-century energy infrastructure and its coal-tar cleanup record.",
+      },
+      {
+        siteId: "lapp-insulator-company",
+        role: "Electrical-insulator manufacturing",
+        connection:
+          "The large Le Roy property documents a separate history of ceramic manufacturing, chlorinated solvents and long-term groundwater management.",
       },
     ],
   },

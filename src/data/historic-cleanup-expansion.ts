@@ -1238,6 +1238,98 @@ export const historicCleanupExpansion: AtlasSite[] = [
     ],
   },
   {
+    id: "batavia-former-mgp",
+    name: "Batavia Former Manufactured Gas Plant",
+    municipality: "Batavia",
+    county: "Genesee",
+    category: "cleanup",
+    summary:
+      "Former Evans Street gasworks that operated from 1855 until sometime after 1909. DEC investigations documented coal tar, PAHs and volatile compounds in soil or groundwater; the selected remedy combines excavation, a site cover, groundwater monitoring and continuing controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.18620030566001, 42.99561104424735],
+    sources: [
+      {
+        title: "Batavia Former MGP Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C819019/ROD.BCP.C819019.2020-09-28.ROD.pdf",
+      },
+      {
+        title: "Batavia Former MGP Site Characterization Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/819019/Report.HW.819019.2012-11-27.Final_SC_Report.pdf",
+      },
+    ],
+  },
+  {
+    id: "lapp-insulator-company",
+    name: "Lapp Insulator Company",
+    municipality: "Le Roy",
+    county: "Genesee",
+    category: "cleanup",
+    summary:
+      "Approximately 66-acre electrical-insulator manufacturing property active since 1917. DEC records document oils and chlorinated solvents in defined soil and groundwater areas; cleanup has included excavation, in-situ treatment, covers, sub-slab systems and long-term groundwater management.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.00613549305518, 42.971070570675444],
+    sources: [
+      {
+        title: "Lapp Insulator Site Management Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/819017/Report.HW.819017.2021-03-10.Site_Management_Plan_SMP.pdf",
+      },
+      {
+        title: "Lapp Insulator Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/819017/ROD.HW.819017.2009-03-31.Record_of_Decision_Lapp_Insulator_Site.pdf",
+      },
+    ],
+  },
+  {
+    id: "old-upper-mountain-road-landfill",
+    name: "Old Upper Mountain Road Landfill",
+    municipality: "Lockport",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former municipal disposal area reportedly used from 1921 through the 1950s. Municipal refuse, incinerator ash and industrial material were placed in a ravine; the state remedy addresses landfill material together with affected Gulf Creek sediment and floodplain soil.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.72441412673288, 43.166278355547604],
+    sources: [
+      {
+        title: "Old Upper Mountain Road Cleanup Newsletter",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932112/Fact%20Sheet.HW.932112.2023-12-22.Old%20Upper%20Mountain%20Road%20Community%20Newsletter%20Winter%20Shutdown.pdf",
+      },
+      {
+        title: "Old Upper Mountain Road Engineering Design Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932112/Report.HW.932112.2022-07-19.Old%20Upper%20MOuntain%20Road%20City%20of%20Lockport%20LF%20ESD.pdf",
+      },
+    ],
+  },
+  {
+    id: "vanchlor-company-landfill",
+    name: "Vanchlor Company Landfill",
+    municipality: "Lockport",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Approximately five-acre former quarry disposal area used from 1957 to 1982, principally for silicon-tetrachloride manufacturing by-products reportedly placed in drums and trenches with crushed limestone. The landfill was capped in 1988 and remains under monitoring and institutional controls.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.70308251398365, 43.18568184822892],
+    sources: [
+      {
+        title: "Vanchlor Landfill 2023 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932039/Report.HW.932039.2024-04-02.Revised_Vanchlor_2023_PRR.pdf",
+      },
+      {
+        title: "Vanchlor Landfill Groundwater Compliance Evaluation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932039/Report.HW.932039.2019-09-25.RCRA%20GW%20CME.pdf",
+      },
+    ],
+  },
+  {
     id: "olean-refinery-river-street",
     name: "Olean Refinery Corridor — 1641 River Street",
     municipality: "Olean",

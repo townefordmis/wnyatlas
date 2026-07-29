@@ -2,7 +2,9 @@ export type WaterwayEvidenceType =
   | "documented_disposal_fill"
   | "documented_filled_waterway"
   | "documented_contaminated_sediment"
-  | "documented_reclaimed_land";
+  | "documented_reclaimed_land"
+  | "documented_engineered_waterway"
+  | "documented_culverted_waterway";
 
 export type FormerWaterwayRecord = {
   id: string;
@@ -100,6 +102,39 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     sourceLabel: "NYSDEC Region 9 remediation success stories",
     relatedSiteId: "outer-harbor-greenbelt",
   },
+  {
+    id: "lockport-hydraulic-race-tunnel",
+    name: "Lockport hydraulic race and tunnel",
+    location: "Erie Canal industrial district, Lockport",
+    coordinates: [-78.6919, 43.1708],
+    evidenceType: "documented_engineered_waterway",
+    waterwayHistory:
+      "Lockport's hydraulic company developed a man-made race and tunnel system in the early 1850s to divert Erie Canal water through the industrial district for mechanical power. Historical planning records state that the tunnel continued in use into the early 1940s.",
+    documentedMaterial:
+      "The reviewed sources document an engineered underground water-power system. They do not establish that the tunnel was a general industrial-waste disposal channel.",
+    interpretation:
+      "This marker identifies the documented downtown industrial-water system at an interpretive location rather than claiming a surveyed line for every buried segment.",
+    sourceUrl:
+      "https://www.niagaracountybusiness.com/file-library/100208/city_lockport_comprehensive_plan.pdf",
+    sourceLabel: "City of Lockport Comprehensive Plan",
+  },
+  {
+    id: "gulf-creek-upper-mountain-road",
+    name: "Gulf Creek, wetlands and culvert corridor",
+    location: "Old Upper Mountain Road area, Lockport",
+    coordinates: [-78.72441412673288, 43.166278355547604],
+    evidenceType: "documented_culverted_waterway",
+    waterwayHistory:
+      "DEC investigation describes Gulf Creek passing through open channel and wetland areas before entering a large culvert. The Gulf Interceptor sewer also crossed the Old Upper Mountain Road cleanup area.",
+    documentedMaterial:
+      "State records document contaminated creek sediment and floodplain soil associated with the former disposal area, as well as unintended sewer and stormwater discharges caused by degraded interceptor infrastructure.",
+    interpretation:
+      "The creek is partly open, partly wetland and partly culverted. WNY Atlas therefore identifies an altered waterway and sewer relationship rather than describing the entire creek as buried.",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/932112/Report.HW.932112.2022-07-19.Old%20Upper%20MOuntain%20Road%20City%20of%20Lockport%20LF%20ESD.pdf",
+    sourceLabel: "NYSDEC Old Upper Mountain Road Engineering Design Report",
+    relatedSiteId: "old-upper-mountain-road-landfill",
+  },
 ];
 
 export const waterwayEvidenceLabels: Record<WaterwayEvidenceType, string> = {
@@ -107,4 +142,6 @@ export const waterwayEvidenceLabels: Record<WaterwayEvidenceType, string> = {
   documented_filled_waterway: "Documented filled waterway",
   documented_contaminated_sediment: "Documented contaminated sediment",
   documented_reclaimed_land: "Documented reclaimed waterfront land",
+  documented_engineered_waterway: "Documented engineered waterway",
+  documented_culverted_waterway: "Documented altered or culverted waterway",
 };

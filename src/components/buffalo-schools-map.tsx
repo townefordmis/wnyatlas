@@ -158,7 +158,7 @@ export function BuffaloSchoolsMap() {
       (campus) => campus.id === linkedCampusId,
     );
     if (linkedCampus) {
-      setSelected(linkedCampus);
+      requestAnimationFrame(() => setSelected(linkedCampus));
       instance.jumpTo({ center: linkedCampus.coordinates, zoom: 14 });
     }
 

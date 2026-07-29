@@ -4481,4 +4481,128 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Continue archival research on the companies and products associated with the site's 1919–1970s industrial period.",
     ],
   },
+  "batavia-former-mgp": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Manufactured gas was produced at the Evans Street property beginning in 1855 under the Batavia Gas Light Company and later the Batavia Gas and Electric Company. DEC's historical review places continued gas-manufacturing use sometime beyond 1909.",
+      "The property forms part of a larger Evans Street redevelopment landscape, but the former manufactured-gas plant and neighboring brownfield-program parcels retain separate regulatory records.",
+    ],
+    timeline: [
+      { period: "1855", event: "Documented manufactured-gas operations began on Evans Street." },
+      { period: "After 1909", event: "The reviewed history indicates continued gas-manufacturing use, but does not establish a precise closing year." },
+      { period: "2012", event: "DEC completed a site-characterization report documenting former plant structures and subsurface conditions." },
+      { period: "2020", event: "DEC selected a Brownfield Cleanup Program remedy for the 7 Evans Street property." },
+      { period: "Long-term phase", event: "The selected remedy requires site controls, groundwater monitoring and a site-management plan." },
+    ],
+    documentedImpacts: [
+      "Coal tar was observed in a monitoring well near a former tar-tank area.",
+      "PAHs and volatile compounds associated with manufactured-gas operations affected soil or groundwater in defined areas.",
+      "The record supports a property-specific cleanup history; it does not establish identical conditions across every neighboring Evans Street parcel.",
+    ],
+    cleanupAndControls: [
+      "The selected remedy calls for excavation and off-site disposal of approximately 660 cubic yards of contaminated material.",
+      "A site cover limits routine contact with remaining subsurface material.",
+      "Monitored natural attenuation, an environmental easement and a site-management plan govern residual groundwater and future disturbance.",
+    ],
+    presentDay: [
+      "The former gasworks is part of Batavia's downtown redevelopment area. WNY Atlas keeps adjacent Batavia Creek Park and Ellicott Station program records distinct.",
+    ],
+    researchNotes: [
+      "Build a parcel-level industrial timeline for Evans Street and the adjoining Ellicott Station redevelopment properties.",
+      "Replace generalized redevelopment language with completion documents as each active Brownfield Cleanup Program parcel advances.",
+    ],
+  },
+  "lapp-insulator-company": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Electrical-insulator manufacturing began at the Le Roy property in 1917. The approximately 66-acre complex produced ceramic insulators and transformer bushings; portions remained in industrial use after transformer-bushing production ended in 2004.",
+      "Historical operations used oils, petroleum products and chlorinated solvents. DEC divided the complex into investigation and treatment areas so documented source zones, groundwater conditions and occupied buildings could receive different controls.",
+    ],
+    timeline: [
+      { period: "1917", event: "Ceramic electrical-insulator manufacturing began at the property." },
+      { period: "2004", event: "Transformer-bushing production ended, while other industrial use continued on portions of the complex." },
+      { period: "2009", event: "DEC issued a Record of Decision selecting a multi-part remedy." },
+      { period: "2014", event: "Chlorinated-solvent-affected soil was excavated in identified source areas." },
+      { period: "Long-term phase", event: "Groundwater monitoring and management continue under the site-management plan." },
+    ],
+    documentedImpacts: [
+      "Chlorinated volatile compounds, including TCA, TCE and PCE, affected soil or groundwater in defined areas.",
+      "Historical oils and petroleum products contributed additional industrial source concerns.",
+      "Groundwater monitoring documents generally eastward flow toward Oatka Creek, but that direction does not prove that all creek conditions originated at this property.",
+    ],
+    cleanupAndControls: [
+      "Selected source soil was excavated and disposed of off site.",
+      "In-situ chemical treatment addressed chlorinated compounds in portions of the subsurface.",
+      "Covers, sub-slab systems, institutional controls and continuing groundwater monitoring manage residual conditions.",
+    ],
+    presentDay: [
+      "The property remains a managed industrial cleanup site. Its large footprint does not mean every part of the property has the same condition or remedy.",
+    ],
+    researchNotes: [
+      "Review the newest groundwater data for plume trends and remedy performance.",
+      "Map confirmed treatment areas and the property boundary only when an authoritative GIS layer can be displayed clearly.",
+    ],
+  },
+  "old-upper-mountain-road-landfill": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Historical accounts reviewed by DEC describe this ravine area as a City of Lockport municipal landfill operating from 1921 through the 1950s. Incinerator ash and garbage were pushed into the ravine, and records also report disposal by local companies.",
+      "The cleanup is inseparable from the physical setting: landfill material, Gulf Creek sediment, floodplain soil, wetlands and aging sewer infrastructure required a coordinated remedy.",
+    ],
+    timeline: [
+      { period: "1921–1950s", event: "The ravine reportedly received municipal refuse, incinerator ash and some industrial material." },
+      { period: "Investigation era", event: "DEC documented waste fill and affected Gulf Creek sediment and floodplain areas." },
+      { period: "2022", event: "The final engineering design described excavation, creek work, containment and infrastructure coordination." },
+      { period: "2023", event: "Major remedial construction began, including excavation and consolidation work." },
+      { period: "Current phase", event: "The atlas awaits the newest official construction records before stating a final remedy status." },
+    ],
+    documentedImpacts: [
+      "Waste fill included incinerator ash, municipal refuse, glass, slag and industrial material.",
+      "Contaminated sediment and floodplain soil were documented along portions of Gulf Creek.",
+      "A degraded Gulf Interceptor contributed unintended sewage or stormwater discharges and complicated the remedial design.",
+    ],
+    cleanupAndControls: [
+      "Waste and affected sediment were excavated from selected areas.",
+      "Material was consolidated within an engineered containment cell or transported to approved disposal locations according to the design.",
+      "Creek restoration, floodplain work, sewer coordination, cover systems and long-term site management form parts of the remedy.",
+    ],
+    presentDay: [
+      "This remains an active cleanup story. WNY Atlas does not repeat a percentage-complete figure without a current DEC construction update.",
+    ],
+    researchNotes: [
+      "Add the newest construction status, final quantities and restored creek reaches when DEC publishes completion documentation.",
+      "Keep this landfill distinct from both the adjacent Lockport City Landfill and the separately investigated Upper Mountain Road radiological location.",
+    ],
+  },
+  "vanchlor-company-landfill": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "The Vanchlor disposal area occupies approximately five acres of a former quarry at 600 Mill Street. The reviewed periodic report states that landfilling occurred from 1957 through 1982, principally involving by-products from silicon-tetrachloride manufacturing.",
+      "Waste was reportedly placed in 55-gallon drums in trenches with crushed limestone intended to help neutralize acidic material. The site was closed with an engineered cover in 1988 and later transitioned to an order and continuing deed restrictions.",
+    ],
+    timeline: [
+      { period: "1957–1982", event: "Manufacturing by-products were reportedly placed in the former quarry disposal area." },
+      { period: "1988", event: "The landfill closed under a DEC-approved plan with a final cover system." },
+      { period: "1999", event: "Deed restrictions were recorded for the property." },
+      { period: "2014", event: "A consent order became the basis for continuing operation, maintenance and monitoring obligations." },
+      { period: "Present", event: "Groundwater, surface-water and cover inspections continue through periodic review." },
+    ],
+    documentedImpacts: [
+      "The disposal record identifies silicon-tetrachloride manufacturing by-products placed in drums and trenches.",
+      "Periodic monitoring evaluates volatile compounds, metals and other parameters in groundwater or surface water.",
+      "The hydrologic setting creates a research connection to the escarpment and Eighteen Mile Creek, but does not establish that every downstream condition originated at Vanchlor.",
+    ],
+    cleanupAndControls: [
+      "A compacted-clay cover, drainage layer and soil cover isolate the disposal area.",
+      "Deed restrictions limit disturbance and incompatible use.",
+      "Inspection, maintenance and environmental monitoring remain required.",
+    ],
+    presentDay: [
+      "DEC classifies the landfill as properly closed but requiring continuing management. The cover and monitoring program are part of its present condition.",
+    ],
+    researchNotes: [
+      "Review newer periodic reports for monitoring trends and any cover repairs.",
+      "Research the relationship among Vanchlor, adjacent chemical facilities and the broader Mill Street industrial corridor without merging separate regulatory records.",
+    ],
+  },
 };

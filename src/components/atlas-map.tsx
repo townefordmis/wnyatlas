@@ -113,6 +113,7 @@ export function AtlasMap() {
     );
     mapInstance.on("error", () => setMapUnavailable(true));
 
+    const markerStore = markers.current;
     featuredSites.forEach((site) => {
       const marker = new maplibregl.Marker({
         color:
@@ -134,15 +135,15 @@ export function AtlasMap() {
       element.classList.add("atlas-native-marker");
       element.setAttribute("aria-label", `Show ${site.name}, ${site.municipality}`);
       element.addEventListener("click", () => setSelectedSite(site));
-      markers.current.set(site.id, marker);
+      markerStore.set(site.id, marker);
     });
 
     return () => {
       resizeObserver.disconnect();
       window.removeEventListener("resize", resizeMap);
       window.visualViewport?.removeEventListener("resize", resizeMap);
-      markers.current.forEach((marker) => marker.remove());
-      markers.current.clear();
+      markerStore.forEach((marker) => marker.remove());
+      markerStore.clear();
       mapInstance.remove();
       map.current = null;
     };
