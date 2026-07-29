@@ -124,6 +124,15 @@ export function BuffaloSchoolsMap() {
       markerStore.set(campus.id, marker);
     });
 
+    const linkedCampusId = window.location.hash.replace("#school-", "");
+    const linkedCampus = buffaloSchoolCampuses.find(
+      (campus) => campus.id === linkedCampusId,
+    );
+    if (linkedCampus) {
+      setSelected(linkedCampus);
+      instance.jumpTo({ center: linkedCampus.coordinates, zoom: 14 });
+    }
+
     const resize = () => requestAnimationFrame(() => instance.resize());
     const observer = new ResizeObserver(resize);
     observer.observe(container.current);
@@ -164,7 +173,7 @@ export function BuffaloSchoolsMap() {
       <div className="school-map-toolbar">
         <div>
           <p className="eyebrow">
-            3 physical campuses · 4 institutions · verified property relationships
+            4 physical campuses · 6 institutions · verified property relationships
           </p>
           <h2 id="school-map-title">Schools on or directly beside cleanup properties</h2>
         </div>
@@ -195,6 +204,9 @@ export function BuffaloSchoolsMap() {
               <option value="all">All verified campuses</option>
               <option value="documented_campus_property">Part of cleanup property</option>
               <option value="documented_directly_adjacent">Directly adjacent</option>
+              <option value="mapped_parcel_boundary_intersection">
+                Parcel intersects mapped DEC boundary
+              </option>
             </select>
           </label>
           <p className="school-result-count">{filtered.length} campuses shown</p>
@@ -203,6 +215,7 @@ export function BuffaloSchoolsMap() {
               <button
                 type="button"
                 key={campus.id}
+                id={`school-${campus.id}`}
                 className={campus.id === selected.id ? "is-active" : ""}
                 onClick={() => chooseCampus(campus)}
               >

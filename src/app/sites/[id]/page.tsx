@@ -4,6 +4,11 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import { featuredSites } from "@/data/featured-sites";
+import {
+  buffaloSchoolCampuses,
+  existingAtlasSiteByCleanupCode,
+} from "@/data/buffalo-school-research";
+import { formerWaterwayRecords } from "@/data/former-waterways";
 import { getConnectionGroupsForSite } from "@/data/site-connections";
 import { getSiteStory } from "@/lib/site-story";
 
@@ -51,6 +56,15 @@ export default async function SitePage({ params }: SitePageProps) {
 
   const story = getSiteStory(site);
   const connectionGroups = getConnectionGroupsForSite(site.id, featuredSites);
+  const relatedWaterways = formerWaterwayRecords.filter(
+    (record) => record.relatedSiteId === site.id,
+  );
+  const relatedSchoolCampuses = buffaloSchoolCampuses.filter((campus) =>
+    campus.nearbyRemediationSites.some(
+      (record) =>
+        existingAtlasSiteByCleanupCode[record.siteCode] === site.id,
+    ),
+  );
 
   return (
     <main className="story-page">
@@ -209,6 +223,52 @@ export default async function SitePage({ params }: SitePageProps) {
                     </section>
                   ))}
                 </div>
+              </section>
+            )}
+
+            {relatedWaterways.length > 0 && (
+              <section>
+                <p className="eyebrow">Waterway connection</p>
+                <h2>See the documented waterway record</h2>
+                <p>
+                  The separate waterways map explains the documented relationship
+                  among the historic waterbody, fill or sediment, and this Atlas
+                  site without crowding the regional map.
+                </p>
+                {relatedWaterways.map((record) => (
+                  <Link
+                    className="risk-map-link"
+                    href={`/research/former-waterways#waterway-${record.id}`}
+                    key={record.id}
+                  >
+                    <span>Linked research map</span>
+                    <strong>{record.name} →</strong>
+                  </Link>
+                ))}
+              </section>
+            )}
+
+            {relatedSchoolCampuses.length > 0 && (
+              <section>
+                <p className="eyebrow">School-map connection</p>
+                <h2>See the documented campus relationship</h2>
+                <p>
+                  The schools research map explains the documented property,
+                  adjacency, or mapped-parcel relationship without treating
+                  proximity as evidence of exposure or present school conditions.
+                </p>
+                {relatedSchoolCampuses.map((campus) => (
+                  <Link
+                    className="risk-map-link"
+                    href={`/research/schools-industrial-sites#school-${campus.id}`}
+                    key={campus.id}
+                  >
+                    <span>Linked schools map</span>
+                    <strong>
+                      {campus.schools.map((school) => school.name).join(" / ")} →
+                    </strong>
+                  </Link>
+                ))}
               </section>
             )}
 

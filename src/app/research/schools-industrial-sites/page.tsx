@@ -12,15 +12,17 @@ export default function BuffaloSchoolsResearchPage() {
         <h1>Schools with documented cleanup-property connections</h1>
         <p className="dek">
           A focused map of campuses that occupy part of a documented cleanup
-          property or sit directly beside one. Ordinary proximity is excluded.
+          property, sit directly beside one, or whose current county parcel
+          intersects a mapped DEC cleanup boundary. Ordinary proximity is excluded.
         </p>
         <div className="school-caution">
           <strong>How to read this map</strong>
           <p>
-            Inclusion requires a documented property or direct-adjacency
-            relationship. The map does not establish exposure, health effects,
-            responsibility, or present conditions. WNY Atlas reports what agency
-            and historical records document.
+            Inclusion requires a documented property relationship, direct
+            adjacency, or an intersection between the current county parcel and a
+            mapped DEC boundary. Boundary intersections may be an overlap or a
+            shared edge. The map does not establish exposure, health effects,
+            responsibility, or present conditions.
           </p>
         </div>
       </section>
@@ -43,6 +45,15 @@ export default function BuffaloSchoolsResearchPage() {
             <p>
               Used only when an agency or property record identifies the cleanup
               site as directly beside the campus. General proximity is excluded.
+            </p>
+          </article>
+          <article>
+            <h3>Mapped parcel intersection</h3>
+            <p>
+              Used when the current county parcel geometry intersects a mapped DEC
+              cleanup boundary. It is labeled separately because agency boundary
+              accuracy varies and the intersection alone does not establish site
+              conditions at a school building.
             </p>
           </article>
           <article>

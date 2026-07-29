@@ -6,7 +6,8 @@ export type SchoolRelationship =
   | "within_500_ft_of_dec_boundary"
   | "within_1000_ft_of_dec_boundary"
   | "documented_campus_property"
-  | "documented_directly_adjacent";
+  | "documented_directly_adjacent"
+  | "mapped_parcel_boundary_intersection";
 
 export type BuffaloSchoolCampus = {
   id: string;
@@ -48,9 +49,17 @@ const verifiedCampusCleanupCodes: Record<string, Record<string, SchoolRelationsh
     C915194: "documented_directly_adjacent",
     C915194A: "documented_directly_adjacent",
   },
+  "65 GREAT ARROW AVE": {
+    C915220: "mapped_parcel_boundary_intersection",
+    C915326: "mapped_parcel_boundary_intersection",
+  },
+  "111 GREAT ARROW AVE": {
+    C915220: "mapped_parcel_boundary_intersection",
+    C915326: "mapped_parcel_boundary_intersection",
+  },
 };
 
-export const buffaloSchoolCampuses = (
+const verifiedSchoolCampuses = (
   campusData as BuffaloSchoolCampus[]
 )
   .filter((campus) => Boolean(verifiedCampusCleanupCodes[campus.address]))
@@ -67,6 +76,43 @@ export const buffaloSchoolCampuses = (
           verifiedCampusCleanupCodes[campus.address][site.siteCode],
       })),
   }));
+
+const tapestryAddresses = new Set([
+  "65 GREAT ARROW AVE",
+  "111 GREAT ARROW AVE",
+]);
+const tapestryRecords = verifiedSchoolCampuses.filter((campus) =>
+  tapestryAddresses.has(campus.address),
+);
+const tapestrySites = new Map<
+  string,
+  BuffaloSchoolCampus["nearbyRemediationSites"][number]
+>();
+tapestryRecords.forEach((campus) =>
+  campus.nearbyRemediationSites.forEach((site) =>
+    tapestrySites.set(site.siteCode, site),
+  ),
+);
+
+const tapestryCampus: BuffaloSchoolCampus | undefined = tapestryRecords.length
+  ? {
+      id: "tapestry-great-arrow-campus",
+      address: "65 & 111 GREAT ARROW AVE",
+      city: "BUFFALO",
+      zip: "14216",
+      coordinates: [-78.87120170649202, 42.942437270921715],
+      schools: tapestryRecords.flatMap((campus) => campus.schools),
+      nearbyRemediationSites: Array.from(tapestrySites.values()),
+      researchStatus: "documented_same_site",
+    }
+  : undefined;
+
+export const buffaloSchoolCampuses = [
+  ...verifiedSchoolCampuses.filter(
+    (campus) => !tapestryAddresses.has(campus.address),
+  ),
+  ...(tapestryCampus ? [tapestryCampus] : []),
+];
 
 export type NearbyRemediationRecord = {
   siteCode: string;
@@ -100,7 +146,11 @@ export const nearbyRemediationByCode = new Map(
 
 export const existingAtlasSiteByCleanupCode: Record<string, string> = {
   "915033": "lasalle-reservoir-quarry-landfill",
+  "915167": "west-genesee-former-mgp",
   C915283: "lasalle-reservoir-quarry-landfill",
+  C915194: "west-genesee-former-mgp",
+  C915194A: "west-genesee-former-mgp",
+  V00362: "west-genesee-former-mgp",
   C915220: "pierce-arrow-manufacturing-complex",
   C915326: "pierce-arrow-manufacturing-complex",
   C915279: "1827-fillmore-former-quarry",
@@ -153,6 +203,7 @@ export const cleanupStoryLabels: Record<string, string> = {
 const relationshipRank: Record<SchoolRelationship, number> = {
   documented_campus_property: 0,
   documented_directly_adjacent: 1,
+  mapped_parcel_boundary_intersection: 1,
   point_inside_dec_boundary: 0,
   within_500_ft_of_dec_boundary: 1,
   within_1000_ft_of_dec_boundary: 2,
@@ -251,11 +302,26 @@ export const documentedCampusHistory: Record<
       "https://extapps.dec.ny.gov/data/DecDocs/C915194/Work%20Plan.BCP.C915194.2005-03-25.IRMWP%20Final%203%2025%2005.pdf",
     sourceLabel: "DEC Interim Remedial Measure Work Plan — C915194",
   },
+  "65 & 111 GREAT ARROW AVE": {
+    heading: "Documented campus and mapped parcel relationship",
+    facts: [
+      "Tapestry School records state that the school moved to 65 Great Arrow Avenue in 2010 and acquired approximately seven acres at 111 Great Arrow Avenue in December 2012.",
+      "The current Erie County parcel service places both school locations on one parcel owned by Tapestry Charter School.",
+      "That parcel intersects the current mapped NYSDEC boundaries for the Former Pierce Arrow Manufacturing Site (C915220) and 157 Great Arrow Avenue (C915326).",
+      "A mapped boundary intersection can represent overlap or a shared boundary. It does not establish contamination beneath a school building, exposure, or present risk.",
+    ],
+    completion:
+      "DEC's 2017 application for C915326 states that the earlier C915220 investigation and remediation were not completed and that only part of the two cleanup sites was common. C915326 remains a separate DEC record. Consult the linked DEC files for current regulatory status.",
+    sourceUrl: "https://tapestryschool.org/about-tapestry/history/",
+    sourceLabel: "Tapestry School history",
+  },
 };
 
 export const relationshipLabels: Record<SchoolRelationship, string> = {
   documented_campus_property: "Cleanup property includes the campus",
   documented_directly_adjacent: "DEC record identifies the site as directly adjacent",
+  mapped_parcel_boundary_intersection:
+    "Current county parcel intersects the mapped DEC boundary",
   point_inside_dec_boundary: "School point falls inside the mapped DEC boundary",
   within_500_ft_of_dec_boundary: "Mapped within 500 feet",
   within_1000_ft_of_dec_boundary: "Mapped 500–1,000 feet away",
