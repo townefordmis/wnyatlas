@@ -4,7 +4,9 @@ import remediationData from "./buffalo-nearby-remediation-records.json";
 export type SchoolRelationship =
   | "point_inside_dec_boundary"
   | "within_500_ft_of_dec_boundary"
-  | "within_1000_ft_of_dec_boundary";
+  | "within_1000_ft_of_dec_boundary"
+  | "documented_campus_property"
+  | "documented_directly_adjacent";
 
 export type BuffaloSchoolCampus = {
   id: string;
@@ -33,14 +35,38 @@ export const heldCleanupCodes = new Set([
   "915413",
 ]);
 
+const verifiedCampusCleanupCodes: Record<string, Record<string, SchoolRelationship>> = {
+  "154 S OGDEN ST": {
+    C915268: "documented_campus_property",
+  },
+  "75 W HURON ST": {
+    C915282: "documented_campus_property",
+  },
+  "95 FOURTH ST": {
+    V00362: "documented_campus_property",
+    "915167": "documented_directly_adjacent",
+    C915194: "documented_directly_adjacent",
+    C915194A: "documented_directly_adjacent",
+  },
+};
+
 export const buffaloSchoolCampuses = (
   campusData as BuffaloSchoolCampus[]
-).map((campus) => ({
-  ...campus,
-  nearbyRemediationSites: campus.nearbyRemediationSites.filter(
-    (site) => !heldCleanupCodes.has(site.siteCode),
-  ),
-}));
+)
+  .filter((campus) => Boolean(verifiedCampusCleanupCodes[campus.address]))
+  .map((campus) => ({
+    ...campus,
+    researchStatus: "documented_same_site" as const,
+    nearbyRemediationSites: campus.nearbyRemediationSites
+      .filter((site) =>
+        Boolean(verifiedCampusCleanupCodes[campus.address][site.siteCode]),
+      )
+      .map((site) => ({
+        ...site,
+        relationship:
+          verifiedCampusCleanupCodes[campus.address][site.siteCode],
+      })),
+  }));
 
 export type NearbyRemediationRecord = {
   siteCode: string;
@@ -125,6 +151,8 @@ export const cleanupStoryLabels: Record<string, string> = {
 };
 
 const relationshipRank: Record<SchoolRelationship, number> = {
+  documented_campus_property: 0,
+  documented_directly_adjacent: 1,
   point_inside_dec_boundary: 0,
   within_500_ft_of_dec_boundary: 1,
   within_1000_ft_of_dec_boundary: 2,
@@ -209,9 +237,25 @@ export const documentedCampusHistory: Record<
       "https://extapps.dec.ny.gov/data/DecDocs/C915282/Application.BCP.C915282.2013-10-02.BCP%20Application%20and%20Attachments%20A%20-%20F.pdf",
     sourceLabel: "DEC Brownfield Cleanup application — C915282",
   },
+  "95 FOURTH ST": {
+    heading: "Documented property and adjacent-site history",
+    facts: [
+      "DEC records state that part of the former Buffalo Service Center property was acquired by the City of Buffalo for construction of Waterfront School in the 1970s.",
+      "The school property is partially underlain by the filled former Wilkeson Slip, which met the former Erie Canal in this area.",
+      "The adjacent Buffalo Service Station manufactured-gas plant operated under various companies from 1848 to 1948.",
+      "DEC records identify the Fourth Street Site and portions of the former manufactured-gas complex as adjacent to the school and describe coordinated investigation and cleanup work.",
+    ],
+    completion:
+      "State records list a November 2006 Certificate of Completion for the Former Buffalo Service Station cleanup. Connected Fourth Street, off-site, and voluntary-cleanup records include site-management or periodic-review documentation.",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915194/Work%20Plan.BCP.C915194.2005-03-25.IRMWP%20Final%203%2025%2005.pdf",
+    sourceLabel: "DEC Interim Remedial Measure Work Plan — C915194",
+  },
 };
 
 export const relationshipLabels: Record<SchoolRelationship, string> = {
+  documented_campus_property: "Cleanup property includes the campus",
+  documented_directly_adjacent: "DEC record identifies the site as directly adjacent",
   point_inside_dec_boundary: "School point falls inside the mapped DEC boundary",
   within_500_ft_of_dec_boundary: "Mapped within 500 feet",
   within_1000_ft_of_dec_boundary: "Mapped 500–1,000 feet away",

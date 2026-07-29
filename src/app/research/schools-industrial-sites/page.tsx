@@ -9,18 +9,18 @@ export default function BuffaloSchoolsResearchPage() {
       <SiteHeader />
       <section className="school-research-hero">
         <p className="eyebrow">WNY Atlas research preview · Buffalo-address campuses</p>
-        <h1>Schools, property history, and nearby cleanup records</h1>
+        <h1>Schools with documented cleanup-property connections</h1>
         <p className="dek">
-          A factual map of current public and charter school campuses, documented
-          former property uses, and mapped relationships to DEC remediation sites.
+          A focused map of campuses that occupy part of a documented cleanup
+          property or sit directly beside one. Ordinary proximity is excluded.
         </p>
         <div className="school-caution">
           <strong>How to read this map</strong>
           <p>
-            A nearby site is geographic context. Distance does not establish
-            exposure, health effects, responsibility, or present conditions.
-            Records describe what agencies and historical sources document; WNY
-            Atlas does not make findings beyond those records.
+            Inclusion requires a documented property or direct-adjacency
+            relationship. The map does not establish exposure, health effects,
+            responsibility, or present conditions. WNY Atlas reports what agency
+            and historical records document.
           </p>
         </div>
       </section>
@@ -39,10 +39,10 @@ export default function BuffaloSchoolsResearchPage() {
             </p>
           </article>
           <article>
-            <h3>Nearby</h3>
+            <h3>Directly adjacent</h3>
             <p>
-              Reported as a measured map relationship. Proximity is not presented
-              as evidence of exposure or causation.
+              Used only when an agency or property record identifies the cleanup
+              site as directly beside the campus. General proximity is excluded.
             </p>
           </article>
           <article>

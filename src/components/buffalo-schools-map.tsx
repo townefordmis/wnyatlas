@@ -45,7 +45,9 @@ export function BuffaloSchoolsMap() {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
   const markers = useRef<Map<string, Marker>>(new Map());
-  const [selected, setSelected] = useState(buffaloSchoolCampuses[0]);
+  const [selected, setSelected] = useState<BuffaloSchoolCampus>(
+    buffaloSchoolCampuses[0],
+  );
   const [query, setQuery] = useState("");
   const [relationship, setRelationship] = useState("all");
 
@@ -162,14 +164,12 @@ export function BuffaloSchoolsMap() {
       <div className="school-map-toolbar">
         <div>
           <p className="eyebrow">
-            90 physical campuses · 93 institutions · 45 curated nearby histories
+            3 physical campuses · 4 institutions · verified property relationships
           </p>
-          <h2 id="school-map-title">Buffalo-address public and charter schools</h2>
+          <h2 id="school-map-title">Schools on or directly beside cleanup properties</h2>
         </div>
         <div className="school-map-legend" aria-label="Map legend">
-          <span><i className="legend-campus" /> Campus mapped</span>
-          <span><i className="legend-nearby" /> DEC site mapped nearby</span>
-          <span><i className="legend-same" /> Same-site record documented</span>
+          <span><i className="legend-same" /> Documented campus relationship</span>
         </div>
       </div>
 
@@ -192,11 +192,9 @@ export function BuffaloSchoolsMap() {
               value={relationship}
               onChange={(event) => setRelationship(event.target.value)}
             >
-              <option value="all">All campuses</option>
-              <option value="point_inside_dec_boundary">Point inside DEC boundary</option>
-              <option value="within_500_ft_of_dec_boundary">Within 500 feet</option>
-              <option value="within_1000_ft_of_dec_boundary">500–1,000 feet</option>
-              <option value="none">No DEC boundary within 1,000 feet</option>
+              <option value="all">All verified campuses</option>
+              <option value="documented_campus_property">Part of cleanup property</option>
+              <option value="documented_directly_adjacent">Directly adjacent</option>
             </select>
           </label>
           <p className="school-result-count">{filtered.length} campuses shown</p>
@@ -240,7 +238,7 @@ export function BuffaloSchoolsMap() {
           )}
 
           <section>
-            <h4>Curated cleanup histories mapped nearby</h4>
+            <h4>Documented campus and cleanup-property relationship</h4>
             {nearbyStories.length ? (
               <ul className="nearby-records">
                 {nearbyStories.map((story) => (
