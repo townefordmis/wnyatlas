@@ -1670,7 +1670,8 @@ footer {
 
 .legend-campus { background: #405a4b; }
 .legend-nearby { background: #35637a; }
-.legend-same { background: #9e4b32; }
+.legend-same { background: #9e3f2b; }
+.legend-proximity { background: #1264d8; }
 
 .school-map-grid {
   display: grid;

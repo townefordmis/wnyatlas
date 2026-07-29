@@ -2,9 +2,10 @@
 
 Publication scope revised 2026-07-29.
 
-The schools map excludes ordinary 500-foot and 1,000-foot proximity. A campus is
-included only when an authoritative record establishes that a cleanup property is
-part of the campus or directly adjacent.
+The schools map separates property relationships from a strict 500-foot context
+category. Rust pins identify property, adjacency, or parcel-intersection evidence.
+Blue pins identify only that an official school location point is no more than
+500 feet from a mapped DEC cleanup boundary.
 
 ## Included campuses
 
@@ -34,9 +35,24 @@ part of the campus or directly adjacent.
 - Primary support: DEC Interim Remedial Measure Work Plan for C915194 and Fourth
   Street Site Record of Decision.
 
+### Blasdell Elementary School — 3780 South Park Avenue
+
+- Relationship: the official school point is approximately 386 feet from the
+  mapped DEC boundary for Jonnie's Porta Signs, C915192.
+- Classification: 500-foot proximity context only.
+- Primary support: DEC C915192 cleanup and completion records.
+
+### Henry J. Kalfas Magnet School — 1880 Beech Avenue
+
+- Relationship: the official school point is approximately 382 feet from the
+  mapped DEC boundary for Tract II Highland Avenue.
+- Classification: 500-foot proximity context only.
+- DEC records 932136 and B00022 are successive program records for one cleanup
+  property, not two separate nearby sites.
+
 ## Excluded from this map
 
-All other Buffalo-address campuses and nearby screening records. Their absence
-does not make a statement about the presence or absence of historical land use or
-environmental conditions. Relevant cleanup locations remain available through the
-main regional WNY Atlas.
+All records more than 500 feet away unless a stronger property relationship is
+documented. Their absence does not make a statement about the presence or absence
+of historical land use or environmental conditions. Relevant cleanup locations
+remain available through the main regional WNY Atlas.

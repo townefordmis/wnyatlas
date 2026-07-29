@@ -3940,4 +3940,70 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Separate contamination attributed to earlier chlor-alkali operations from Frontier's later waste-treatment activities where records allow.",
     ],
   },
+  "jonnies-porta-signs": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "DEC records identify this 0.58-acre property at 3734 South Park Avenue as a former gasoline filling station. The property entered the Brownfield Cleanup Program before redevelopment for commercial use.",
+      "Investigation documented petroleum contamination in soil and groundwater and elevated metals in portions of historic fill. Several underground tanks and other former service-station structures remained when cleanup began.",
+    ],
+    timeline: [
+      { period: "Former use", event: "The property operated as a gasoline filling station." },
+      { period: "May 2005", event: "The property entered the New York Brownfield Cleanup Program." },
+      { period: "2005", event: "Cleanup removed underground tanks, fuel-system features, hydraulic lifts, petroleum-affected soil, and historic fill." },
+      { period: "September 2008", event: "DEC issued a Certificate of Completion." },
+      { period: "Long-term phase", event: "Commercial-use restrictions and periodic review document the remaining controls." },
+    ],
+    documentedImpacts: [
+      "Petroleum contamination was documented in soil and groundwater.",
+      "Historic fill contained elevated metals.",
+      "Former fuel and waste-oil tanks and service-station equipment were removed as potential source features.",
+    ],
+    cleanupAndControls: [
+      "Two abandoned petroleum tanks, one waste-oil tank, piping, pump islands, and two in-ground hydraulic lifts were removed.",
+      "Approximately 2,822 cubic yards of petroleum-affected soil and 998 cubic yards of fill were excavated and disposed off site.",
+      "Verification sampling and clean backfill supported commercial redevelopment.",
+      "An environmental easement restricts the property to commercial use, with continuing site-management review.",
+    ],
+    presentDay: [
+      "The cleanup property is in commercial use. The nearby-schools map measures approximately 386 feet from the official Blasdell Elementary location point to the mapped DEC boundary; the reviewed DEC records do not state that contamination reached the school property.",
+    ],
+    researchNotes: [
+      "The school relationship is proximity only and must remain visually and textually separate from on-campus or adjacent cleanup relationships.",
+      "DEC boundaries are approximate; the displayed distance is a GIS screen rather than a parcel survey.",
+    ],
+  },
+  "tract-ii-highland-avenue": {
+    lastReviewed: "July 29, 2026",
+    background: [
+      "Tract II covers roughly 20 acres at Highland and Beech Avenues in Niagara Falls. DEC records state that the western part housed business-form manufacturers from 1903 to 1971, while the eastern part was associated directly or indirectly with the neighboring former battery-manufacturing property.",
+      "Waste and fill on the eastern portion included demolition debris, battery casings, granular fill, and later household dumping. A city Environmental Restoration investigation began under site B00022; the property was later addressed as State Superfund site 932136.",
+    ],
+    timeline: [
+      { period: "1903–1971", event: "Business-form manufacturing occupied the western portion." },
+      { period: "Historic industrial era", event: "The eastern portion was associated with the adjacent former battery-manufacturing operation and accumulated deep waste and fill." },
+      { period: "2000–2003", event: "The city investigated the property through the Environmental Restoration Program and DEC issued a Record of Decision." },
+      { period: "2008", event: "DEC registered the property as a Class 2 State Superfund site after the original remedy was not implemented." },
+      { period: "2012", event: "DEC amended the remedy based on additional investigation." },
+      { period: "November 2018", event: "DEC approved the final work and issued a Certificate of Completion." },
+    ],
+    documentedImpacts: [
+      "Lead and polycyclic aromatic hydrocarbons were contaminants of concern in soil and fill.",
+      "Some eastern fill extended to depths of approximately nine feet and included battery casings and demolition material.",
+      "Investigation and remedial work also addressed petroleum-affected material and screened slag-like material for radiological concerns.",
+    ],
+    cleanupAndControls: [
+      "Waste and fill were excavated for off-site disposal in designated areas.",
+      "Lead-affected material was characterized and either treated by solidification/stabilization or disposed off site, as appropriate.",
+      "A site-wide cover, clean utility corridors, an environmental easement, and a Site Management Plan control remaining material.",
+      "Commercial or industrial use restrictions, groundwater-use limits, cover maintenance, monitoring, and periodic review continue.",
+    ],
+    presentDay: [
+      "DEC issued a Certificate of Completion in 2018 and reclassified the site from Class 2 to Class C, indicating that remedial construction was complete but continuing management is required.",
+      "The nearby-schools map measures approximately 382 feet from the official Henry J. Kalfas Magnet School location point to the mapped DEC boundary. The reviewed DEC records do not state that contamination reached the school property.",
+    ],
+    researchNotes: [
+      "B00022 and 932136 are successive program records for one Tract II story and should not appear as duplicate places.",
+      "The displayed school distance is a GIS screen using approximate DEC boundaries, not a parcel survey or exposure assessment.",
+    ],
+  },
 };

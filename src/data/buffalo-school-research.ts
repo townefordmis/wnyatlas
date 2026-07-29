@@ -23,6 +23,7 @@ export type BuffaloSchoolCampus = {
     siteClass: string;
     siteAddress: string;
     relationship: SchoolRelationship;
+    distanceFeet?: number;
     detailUrl: string;
   }>;
   researchStatus:
@@ -107,11 +108,113 @@ const tapestryCampus: BuffaloSchoolCampus | undefined = tapestryRecords.length
     }
   : undefined;
 
+const royaltonHartlandCampus: BuffaloSchoolCampus = {
+  id: "royalton-hartland-middleport-campus",
+  address: "54 & 78 STATE ST",
+  city: "MIDDLEPORT",
+  zip: "14105",
+  coordinates: [-78.4672605, 43.2119685],
+  schools: [
+    {
+      name: "ROYALTON-HARTLAND HIGH SCHOOL",
+      type: "public",
+      sedCode: "401201060003",
+    },
+    {
+      name: "ROYALTON-HARTLAND MIDDLE SCHOOL",
+      type: "public",
+      sedCode: "401201060004",
+    },
+  ],
+  nearbyRemediationSites: [
+    {
+      siteCode: "932014",
+      siteName: "FMC Corporation — Royalton-Hartland School property (OU4)",
+      program: "State Superfund / RCRA Corrective Action",
+      siteClass: "2",
+      siteAddress: "Roy-Hart Middleport campus",
+      relationship: "documented_campus_property",
+      detailUrl:
+        "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/fmc-middleport-facility",
+    },
+  ],
+  researchStatus: "documented_same_site",
+};
+
+const blasdellElementaryCampus: BuffaloSchoolCampus = {
+  id: "blasdell-elementary-campus",
+  address: "3780 S PARK AVE",
+  city: "BLASDELL",
+  zip: "14219",
+  coordinates: [-78.8228, 42.7955],
+  schools: [
+    {
+      name: "BLASDELL ELEMENTARY SCHOOL",
+      type: "public",
+      sedCode: "141604060004",
+    },
+  ],
+  nearbyRemediationSites: [
+    {
+      siteCode: "C915192",
+      siteName: "Jonnie's Porta Signs",
+      program: "Brownfield Cleanup Program",
+      siteClass: "C",
+      siteAddress: "3734 South Park Avenue",
+      relationship: "within_500_ft_of_dec_boundary",
+      distanceFeet: 386,
+      detailUrl: "https://extapps.dec.ny.gov/data/DecDocs/C915192/",
+    },
+  ],
+  researchStatus: "proximity_screened",
+};
+
+const kalfasCampus: BuffaloSchoolCampus = {
+  id: "henry-j-kalfas-magnet-campus",
+  address: "1880 BEECH AVE",
+  city: "NIAGARA FALLS",
+  zip: "14305",
+  coordinates: [-79.0401, 43.1158],
+  schools: [
+    {
+      name: "HENRY J KALFAS MAGNET SCHOOL",
+      type: "public",
+      sedCode: "400800010015",
+    },
+  ],
+  nearbyRemediationSites: [
+    {
+      siteCode: "932136",
+      siteName: "Tract II Highland Avenue",
+      program: "State Superfund Program",
+      siteClass: "C",
+      siteAddress: "Highland and Beech Avenues",
+      relationship: "within_500_ft_of_dec_boundary",
+      distanceFeet: 382,
+      detailUrl: "https://extapps.dec.ny.gov/data/DecDocs/932136/",
+    },
+    {
+      siteCode: "B00022",
+      siteName: "Tract II Highland Avenue",
+      program: "Environmental Restoration Program",
+      siteClass: "Former program record",
+      siteAddress: "Highland and Beech Avenues",
+      relationship: "within_500_ft_of_dec_boundary",
+      distanceFeet: 382,
+      detailUrl: "https://extapps.dec.ny.gov/data/DecDocs/B00022/",
+    },
+  ],
+  researchStatus: "proximity_screened",
+};
+
 export const buffaloSchoolCampuses = [
   ...verifiedSchoolCampuses.filter(
     (campus) => !tapestryAddresses.has(campus.address),
   ),
   ...(tapestryCampus ? [tapestryCampus] : []),
+  royaltonHartlandCampus,
+  blasdellElementaryCampus,
+  kalfasCampus,
 ];
 
 export type NearbyRemediationRecord = {
@@ -137,14 +240,85 @@ export type NearbyRemediationRecord = {
   assembledOn: string;
 };
 
-export const nearbyRemediationRecords =
-  remediationData as NearbyRemediationRecord[];
+const regionalRemediationRecords: NearbyRemediationRecord[] = [
+  {
+    siteCode: "C915192",
+    siteName: "Jonnie's Porta Signs",
+    program: "Brownfield Cleanup Program",
+    siteClass: "C",
+    address: "3734 South Park Avenue, Blasdell",
+    closestRelationship: "within_500_ft_of_dec_boundary",
+    projects: [
+      { name: "Brownfield Cleanup Agreement", date: "2005-05-31" },
+      { name: "Remedial work completed", date: "2005" },
+      { name: "Certificate of Completion", date: "2008-09-11" },
+    ],
+    contaminants: [
+      "Petroleum-related compounds in soil and groundwater",
+      "Metals in historic fill",
+    ],
+    controls: [
+      { code: "IC", type: "Environmental easement and commercial-use restriction" },
+    ],
+    owners: [],
+    decDetailUrl: "https://extapps.dec.ny.gov/data/DecDocs/C915192/",
+    decDocumentIndex: "https://extapps.dec.ny.gov/data/DecDocs/C915192/",
+    documentIndexStatus: "Official DEC document collection",
+    hasCertificateOfCompletion: true,
+    hasFinalEngineeringReport: false,
+    hasSiteManagementPlan: true,
+    hasPeriodicReview: true,
+    openDataStatus: "matched",
+    openDataSource: "NYSDEC remediation-site records and project documents",
+    assembledOn: "2026-07-29",
+  },
+  {
+    siteCode: "932136",
+    siteName: "Tract II Highland Avenue",
+    program: "State Superfund Program",
+    siteClass: "C",
+    address: "Highland and Beech Avenues, Niagara Falls",
+    closestRelationship: "within_500_ft_of_dec_boundary",
+    projects: [
+      { name: "Environmental Restoration investigation", date: "2000" },
+      { name: "Environmental Restoration Record of Decision", date: "2003" },
+      { name: "State Superfund Record of Decision amendment", date: "2012-03" },
+      { name: "Certificate of Completion", date: "2018-11-08" },
+    ],
+    contaminants: ["Lead in soil and fill", "Polycyclic aromatic hydrocarbons (PAHs)"],
+    controls: [
+      { code: "EC", type: "Site-wide cover system" },
+      { code: "IC", type: "Environmental easement and commercial/industrial-use restriction" },
+      { code: "SMP", type: "Site Management Plan and periodic review" },
+    ],
+    owners: [],
+    decDetailUrl: "https://extapps.dec.ny.gov/data/DecDocs/932136/",
+    decDocumentIndex: "https://extapps.dec.ny.gov/data/DecDocs/932136/",
+    documentIndexStatus: "Official DEC document collection",
+    hasCertificateOfCompletion: true,
+    hasFinalEngineeringReport: true,
+    hasSiteManagementPlan: true,
+    hasPeriodicReview: true,
+    openDataStatus: "matched",
+    openDataSource: "NYSDEC remediation-site records and project documents",
+    assembledOn: "2026-07-29",
+  },
+];
+
+export const nearbyRemediationRecords = [
+  ...(remediationData as NearbyRemediationRecord[]),
+  ...regionalRemediationRecords,
+];
 
 export const nearbyRemediationByCode = new Map(
   nearbyRemediationRecords.map((record) => [record.siteCode, record]),
 );
 
 export const existingAtlasSiteByCleanupCode: Record<string, string> = {
+  C915192: "jonnies-porta-signs",
+  "932136": "tract-ii-highland-avenue",
+  B00022: "tract-ii-highland-avenue",
+  "932014": "fmc-middleport",
   "915033": "lasalle-reservoir-quarry-landfill",
   "915167": "west-genesee-former-mgp",
   C915283: "lasalle-reservoir-quarry-landfill",
@@ -159,6 +333,9 @@ export const existingAtlasSiteByCleanupCode: Record<string, string> = {
 };
 
 export const cleanupStoryGroupByCode: Record<string, string> = {
+  C915192: "jonnies-porta-signs",
+  "932136": "tract-ii-highland-avenue",
+  B00022: "tract-ii-highland-avenue",
   C915194: "buffalo-service-station-mgp",
   C915194A: "buffalo-service-station-mgp",
   "915167": "buffalo-service-station-mgp",
@@ -189,6 +366,8 @@ export const cleanupStoryGroupByCode: Record<string, string> = {
 };
 
 export const cleanupStoryLabels: Record<string, string> = {
+  "jonnies-porta-signs": "Jonnie's Porta Signs / CVS Blasdell cleanup",
+  "tract-ii-highland-avenue": "Tract II Highland Avenue cleanup",
   "buffalo-service-station-mgp":
     "Former Buffalo Service Station manufactured-gas complex",
   "275-franklin": "275 Franklin Street on-site and off-site cleanup",
@@ -315,6 +494,48 @@ export const documentedCampusHistory: Record<
     sourceUrl: "https://tapestryschool.org/about-tapestry/history/",
     sourceLabel: "Tapestry School history",
   },
+  "54 & 78 STATE ST": {
+    heading: "Documented school-property cleanup history",
+    facts: [
+      "DEC describes the neighboring FMC facility as a pesticide plant that formerly manufactured arsenic-based and other pesticide products.",
+      "Past plant operations and waste practices affected soil and other environmental media on the facility and in off-site areas.",
+      "DEC's 2013 remedy identifies the Royalton-Hartland School property as Operable Unit 4, a cleanup area outside the FMC facility boundary.",
+      "Agency records document arsenic-affected soil and removal work on areas used by the middle and high school campus.",
+    ],
+    completion:
+      "School-property soil removal occurred in 1996 and 1999, followed by phased DEC remediation from 2015 through 2020. A 2021 DEC update states that remedial activities on the Roy-Hart Middleport campus, Operable Unit 4, were complete.",
+    sourceUrl:
+      "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/fmc-middleport-facility/news-updates",
+    sourceLabel: "DEC FMC Middleport news and cleanup updates",
+  },
+  "3780 S PARK AVE": {
+    heading: "Documented nearby-site history",
+    facts: [
+      "The mapped DEC boundary for Jonnie's Porta Signs is approximately 386 feet from the official school location point.",
+      "DEC records describe the 0.58-acre property at 3734 South Park Avenue as a former gasoline filling station.",
+      "Investigation documented petroleum contamination in soil and groundwater and metals in historic fill.",
+      "The 2005 cleanup removed fuel and waste-oil tanks, piping, pump islands, two hydraulic lifts, about 2,822 cubic yards of petroleum-affected soil, and about 998 cubic yards of fill.",
+    ],
+    completion:
+      "DEC issued a Brownfield Cleanup Program Certificate of Completion in September 2008. Commercial-use controls and an environmental easement remain part of the documented remedy. The reviewed records do not state that contamination reached the school property.",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915192/Fact%20Sheet.BCP.C915192.2008-09-11.COC.pdf",
+    sourceLabel: "DEC Certificate of Completion fact sheet — C915192",
+  },
+  "1880 BEECH AVE": {
+    heading: "Documented nearby-site history",
+    facts: [
+      "The mapped Tract II Highland Avenue boundary is approximately 382 feet from the official school location point.",
+      "DEC records describe about 20 acres at Highland and Beech Avenues. The western portion was used by business-form manufacturers from 1903 to 1971; the eastern portion was associated with the adjacent former battery-manufacturing property.",
+      "Fill and waste included demolition debris, battery casings, granular fill, and later household dumping. DEC identified lead and polycyclic aromatic hydrocarbons in soil as contaminants of concern.",
+      "The Environmental Restoration record B00022 and State Superfund record 932136 describe successive programs for the same cleanup story, not two separate nearby properties.",
+    ],
+    completion:
+      "The remedy included excavation and off-site disposal, treatment or disposal of lead-affected material, a site-wide cover, an environmental easement, and continuing site management. DEC issued a Certificate of Completion in November 2018. The reviewed records do not state that contamination reached the school property.",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/932136/ROD.HW.932136.2012-03-28.ROD_AMENDMENT.pdf",
+    sourceLabel: "DEC Record of Decision amendment — 932136",
+  },
 };
 
 export const relationshipLabels: Record<SchoolRelationship, string> = {
@@ -323,6 +544,7 @@ export const relationshipLabels: Record<SchoolRelationship, string> = {
   mapped_parcel_boundary_intersection:
     "Current county parcel intersects the mapped DEC boundary",
   point_inside_dec_boundary: "School point falls inside the mapped DEC boundary",
-  within_500_ft_of_dec_boundary: "Mapped within 500 feet",
+  within_500_ft_of_dec_boundary:
+    "Official school point is within 500 feet of the mapped DEC boundary",
   within_1000_ft_of_dec_boundary: "Mapped 500–1,000 feet away",
 };

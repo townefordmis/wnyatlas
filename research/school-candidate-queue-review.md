@@ -4,10 +4,11 @@ Reviewed: July 29, 2026
 
 ## Public-map rule
 
-The schools map includes a campus only when an agency document establishes an
-on-property or direct-adjacency relationship, or when the current county parcel
-geometry intersects a mapped NYSDEC cleanup boundary. A historic industrial
-corridor, neighborhood label, or distance-only screen does not qualify.
+The schools map includes a campus when an agency document establishes an
+on-property or direct-adjacency relationship, when the current county parcel
+geometry intersects a mapped NYSDEC cleanup boundary, or in a separately labeled
+category when the official school point is no more than 500 feet from a mapped
+DEC boundary and the nearby site's history is supported by primary sources.
 
 Inclusion describes a documented geographic or regulatory relationship. It does
 not establish exposure, health effects, responsibility, or present conditions.
@@ -20,6 +21,28 @@ not establish exposure, health effects, responsibility, or present conditions.
 | South Buffalo Charter School, 154 South Ogden Street | Include | DEC C915268 documents the cleanup property and school redevelopment. |
 | Buffalo Culinary Arts / PS 42, 75 West Huron Street | Include | DEC C915282 documents the school building as part of the cleanup property. |
 | Tapestry Charter School, 65 and 111 Great Arrow Avenue | Prepare as one campus | Both NYSED school locations fall on one current Erie County school parcel. That parcel intersects the mapped DEC boundaries for C915220 and C915326. Public wording must identify this as a mapped parcel intersection, which may be overlap or a shared edge, and must not infer conditions beneath either school building. |
+| Royalton-Hartland Middle and High School, 54 and 78 State Street, Middleport | Include as one campus | DEC identifies the Royalton-Hartland School property as FMC Middleport Operable Unit 4. Agency records document arsenic-affected school soil, phased removal and restoration, and completion of the campus remedial work. |
+| Blasdell Elementary School, 3780 South Park Avenue | Include as 500-foot context | The official school point is approximately 386 feet from mapped DEC site C915192. The label states proximity only; DEC records support the former gas-station and cleanup history. |
+| Henry J. Kalfas Magnet School, 1880 Beech Avenue | Include as 500-foot context | The official school point is approximately 382 feet from the mapped Tract II boundary. Records B00022 and 932136 are consolidated into one documented site history. |
+
+## Erie and Niagara County expansion screen
+
+The current NCES public-school inventory contains 223 Erie County schools and 51
+Niagara County schools. The regional pass compared current school points with the
+nightly NYSDEC remediation-boundary layer, then reviewed official documents for
+property-specific relationships.
+
+Royalton-Hartland is the only new campus in this pass with an agency-documented
+on-property cleanup relationship. The high school and middle school are presented
+as one physical campus. Blasdell Elementary and Henry J. Kalfas Magnet are
+included only under the distinct 500-foot context rule.
+
+Court Street Elementary School and the former Scott Aviation facility remain off
+the public school map because the screen places them beyond 500 feet and no
+stronger property relationship has been documented.
+
+Royalton-Hartland Elementary School in Gasport is a separate campus and is not part
+of the documented Middleport school-property cleanup record.
 
 ## Retain for parcel and document research; do not map yet
 
@@ -84,4 +107,3 @@ Primary sources for the next review round should be:
 3. NYSDEC remediation boundaries and site documents.
 4. EPA site records where applicable.
 5. Sanborn maps, city atlases, deeds, and historic aerials for prior land use.
-

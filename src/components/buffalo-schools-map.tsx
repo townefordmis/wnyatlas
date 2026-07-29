@@ -13,10 +13,23 @@ import {
   type BuffaloSchoolCampus,
 } from "@/data/buffalo-school-research";
 
-const buffaloCenter: [number, number] = [-78.855, 42.89];
+const schoolBounds = buffaloSchoolCampuses.reduce(
+  (bounds, campus) => bounds.extend(campus.coordinates),
+  new maplibregl.LngLatBounds(),
+);
+const institutionCount = buffaloSchoolCampuses.reduce(
+  (count, campus) => count + campus.schools.length,
+  0,
+);
 
 function campusLabel(campus: BuffaloSchoolCampus) {
   return campus.schools.map((school) => school.name).join(" / ");
+}
+
+function locationLabel(value: string) {
+  return value.toLocaleLowerCase().replace(/\b\w/g, (letter) =>
+    letter.toLocaleUpperCase(),
+  );
 }
 
 function uniqueStoryProjects(
@@ -39,6 +52,21 @@ function uniqueStoryContaminants(
   return Array.from(
     new Set(records.flatMap((record) => record.contaminants)),
   ).sort();
+}
+
+function storyRelationshipLabel(
+  story: ReturnType<typeof consolidateNearbyCleanupStories>[number],
+) {
+  const distances = story.sites
+    .map((site) => site.distanceFeet)
+    .filter((distance): distance is number => typeof distance === "number");
+  if (
+    story.relationship === "within_500_ft_of_dec_boundary" &&
+    distances.length
+  ) {
+    return `Official school point is approximately ${Math.min(...distances)} feet from the mapped DEC boundary`;
+  }
+  return relationshipLabels[story.relationship];
 }
 
 export function BuffaloSchoolsMap() {
@@ -74,9 +102,9 @@ export function BuffaloSchoolsMap() {
     if (!container.current || map.current) return;
     const instance = new maplibregl.Map({
       container: container.current,
-      center: buffaloCenter,
-      zoom: 10.7,
-      minZoom: 9,
+      bounds: schoolBounds,
+      fitBoundsOptions: { padding: 36, maxZoom: 10.7 },
+      minZoom: 7.5,
       maxZoom: 17,
       attributionControl: false,
       style: {
@@ -105,12 +133,10 @@ export function BuffaloSchoolsMap() {
 
     const markerStore = markers.current;
     buffaloSchoolCampuses.forEach((campus) => {
-      const color =
-        campus.researchStatus === "documented_same_site"
-          ? "#9e4b32"
-          : campus.nearbyRemediationSites.length
-            ? "#35637a"
-            : "#405a4b";
+      const isProximityOnly = campus.nearbyRemediationSites.some(
+        (site) => site.relationship === "within_500_ft_of_dec_boundary",
+      );
+      const color = isProximityOnly ? "#1264d8" : "#9e3f2b";
       const marker = new maplibregl.Marker({
         color,
         scale: 0.62,
@@ -119,6 +145,9 @@ export function BuffaloSchoolsMap() {
         .setLngLat(campus.coordinates)
         .addTo(instance);
       marker.getElement().classList.add("school-native-marker");
+      marker
+        .getElement()
+        .classList.add(isProximityOnly ? "is-proximity" : "is-property-related");
       marker.getElement().setAttribute("aria-label", `Open ${campusLabel(campus)}`);
       marker.getElement().addEventListener("click", () => setSelected(campus));
       markerStore.set(campus.id, marker);
@@ -173,12 +202,20 @@ export function BuffaloSchoolsMap() {
       <div className="school-map-toolbar">
         <div>
           <p className="eyebrow">
-            4 physical campuses · 6 institutions · verified property relationships
+            {buffaloSchoolCampuses.length} physical campuses · {institutionCount}{" "}
+            institutions · verified relationships
           </p>
-          <h2 id="school-map-title">Schools on or directly beside cleanup properties</h2>
+          <h2 id="school-map-title">
+            Schools with documented cleanup-property or 500-foot connections
+          </h2>
         </div>
         <div className="school-map-legend" aria-label="Map legend">
-          <span><i className="legend-same" /> Documented campus relationship</span>
+          <span>
+            <i className="legend-same" /> On, beside, or intersecting campus parcel
+          </span>
+          <span>
+            <i className="legend-proximity" /> Within 500 feet — proximity only
+          </span>
         </div>
       </div>
 
@@ -207,6 +244,9 @@ export function BuffaloSchoolsMap() {
               <option value="mapped_parcel_boundary_intersection">
                 Parcel intersects mapped DEC boundary
               </option>
+              <option value="within_500_ft_of_dec_boundary">
+                Within 500 feet — proximity only
+              </option>
             </select>
           </label>
           <p className="school-result-count">{filtered.length} campuses shown</p>
@@ -229,7 +269,9 @@ export function BuffaloSchoolsMap() {
         <article className="school-record">
           <p className="record-label">Campus record</p>
           <h3>{campusLabel(selected)}</h3>
-          <p>{selected.address}, Buffalo, NY {selected.zip}</p>
+          <p>
+            {selected.address}, {locationLabel(selected.city)}, NY {selected.zip}
+          </p>
 
           {history ? (
             <section>
@@ -261,7 +303,7 @@ export function BuffaloSchoolsMap() {
                       Supporting DEC records:{" "}
                       {story.sites.map((site) => site.siteCode).join(" · ")}
                     </span>
-                    <span>{relationshipLabels[story.relationship]}</span>
+                    <span>{storyRelationshipLabel(story)}</span>
                     {(() => {
                       const projects = uniqueStoryProjects(story.records);
                       const contaminants = uniqueStoryContaminants(story.records);

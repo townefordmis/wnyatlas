@@ -8,21 +8,23 @@ export default function BuffaloSchoolsResearchPage() {
     <main>
       <SiteHeader />
       <section className="school-research-hero">
-        <p className="eyebrow">WNY Atlas research preview · Buffalo-address campuses</p>
-        <h1>Schools with documented cleanup-property connections</h1>
+        <p className="eyebrow">WNY Atlas research preview · Western New York campuses</p>
+        <h1>Schools with documented cleanup-property and nearby-site connections</h1>
         <p className="dek">
           A focused map of campuses that occupy part of a documented cleanup
           property, sit directly beside one, or whose current county parcel
-          intersects a mapped DEC cleanup boundary. Ordinary proximity is excluded.
+          intersects a mapped DEC cleanup boundary. A separate category includes
+          official school points within 500 feet of a mapped DEC boundary.
         </p>
         <div className="school-caution">
           <strong>How to read this map</strong>
           <p>
-            Inclusion requires a documented property relationship, direct
-            adjacency, or an intersection between the current county parcel and a
-            mapped DEC boundary. Boundary intersections may be an overlap or a
-            shared edge. The map does not establish exposure, health effects,
-            responsibility, or present conditions.
+            Rust pins show a documented property, adjacency, or parcel-boundary
+            relationship. Blue pins show only that the official school location
+            point is within 500 feet of a mapped DEC boundary. Proximity is not
+            evidence that contamination reached a school. The map does not
+            establish exposure, health effects, responsibility, or present
+            conditions.
           </p>
         </div>
       </section>
@@ -57,6 +59,15 @@ export default function BuffaloSchoolsResearchPage() {
             </p>
           </article>
           <article>
+            <h3>Within 500 feet</h3>
+            <p>
+              Used when the official school point is no more than 500 feet from
+              the nearest mapped DEC cleanup boundary. It is a proximity measure,
+              not a parcel survey, contaminant pathway, exposure finding, or risk
+              assessment.
+            </p>
+          </article>
+          <article>
             <h3>Not yet reviewed</h3>
             <p>
               Means research remains incomplete. It never means that no earlier
@@ -65,11 +76,10 @@ export default function BuffaloSchoolsResearchPage() {
           </article>
         </div>
         <p>
-          Campus locations are derived from NYSED data published through the NYS
-          Schools GIS service. “Buffalo-address” follows the physical city/address
-          field in that source and is not a municipal-boundary determination.
-          Nearby screening uses the live NYSDEC Remediation Site Borders layer,
-          whose boundary accuracy varies by site.
+          Campus identities are verified against NYSED records. Locations are
+          derived from the NYS Schools GIS service and current NCES EDGE school
+          data. Candidate screening uses the live NYSDEC Remediation Site Borders
+          layer, whose boundary accuracy varies by site.
         </p>
         <Link href="/">Return to the regional atlas →</Link>
       </section>

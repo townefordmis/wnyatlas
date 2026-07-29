@@ -1981,6 +1981,52 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
   },
+  {
+    id: "jonnies-porta-signs",
+    name: "Jonnie's Porta Signs / CVS Blasdell",
+    municipality: "Blasdell",
+    county: "Erie",
+    category: "cleanup",
+    summary:
+      "Former gasoline filling station at 3734 South Park Avenue. A 2005 brownfield cleanup removed underground tanks, hydraulic lifts, petroleum-affected soil, and historic fill. DEC issued a Certificate of Completion in 2008; commercial-use controls remain documented.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.82350365111772, 42.79674903091646],
+    sources: [
+      {
+        title: "Certificate of Completion Fact Sheet — C915192",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915192/Fact%20Sheet.BCP.C915192.2008-09-11.COC.pdf",
+      },
+      {
+        title: "Jonnie's Porta Signs Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915192/",
+      },
+    ],
+  },
+  {
+    id: "tract-ii-highland-avenue",
+    name: "Tract II Highland Avenue",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former manufacturing and waste-fill property at Highland and Beech Avenues. DEC records document lead and PAHs in soil, excavation and treatment, a site-wide cover, and continuing land-use and site-management controls. A Certificate of Completion was issued in 2018.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.0458346421931, 43.115498326035414],
+    sources: [
+      {
+        title: "Record of Decision Amendment — Site 932136",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932136/ROD.HW.932136.2012-03-28.ROD_AMENDMENT.pdf",
+      },
+      {
+        title: "Certificate of Completion — Site 932136",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932136/Certificate%20of%20Completion.HW.932136.2018-11-08.COC.pdf",
+      },
+    ],
+  },
 ];
 
 export const featuredSites: AtlasSite[] = [
