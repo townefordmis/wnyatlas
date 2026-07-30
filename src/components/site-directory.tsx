@@ -35,7 +35,10 @@ export function SiteDirectory() {
         site.summary,
       ].some((value) => value.toLowerCase().includes(normalizedQuery));
     const matchesCounty = county === "all" || site.county === county;
-    const matchesCategory = category === "all" || site.category === category;
+    const matchesCategory =
+      category === "all" ||
+      site.category === category ||
+      (category === "pfas" && Boolean(site.pfasStatus));
 
     return matchesQuery && matchesCounty && matchesCategory;
   });

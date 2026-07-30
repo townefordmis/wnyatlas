@@ -46,6 +46,7 @@ export type AtlasSite = {
     | "Allegany"
     | "Wyoming";
   category: "industry" | "cleanup" | "radiological" | "waterway" | "pfas";
+  pfasStatus?: "documented" | "under-review";
   summary: string;
   evidenceStatus: EvidenceStatus;
   coordinates: [longitude: number, latitude: number];

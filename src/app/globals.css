@@ -387,6 +387,39 @@ h1 {
   font-size: 0.8rem;
 }
 
+.atlas-map-legend {
+  position: absolute;
+  z-index: 5;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.35rem 0.8rem;
+  max-width: calc(100% - 1.5rem);
+  padding: 0.65rem 0.75rem;
+  color: var(--paper);
+  border: 1px solid rgba(245, 241, 231, 0.26);
+  background: rgba(23, 39, 32, 0.92);
+  font-size: 0.66rem;
+  line-height: 1.25;
+}
+
+.atlas-map-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.atlas-map-legend i {
+  width: 0.68rem;
+  height: 0.68rem;
+  flex: 0 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+}
+
 .map-sidebar {
   display: flex;
   flex-direction: column;
@@ -587,6 +620,20 @@ h1 {
   color: var(--water-light);
   border: 1px solid rgba(143, 196, 199, 0.45);
   font-size: 0.68rem;
+}
+
+.map-pfas-status {
+  margin: 0.8rem 0 0;
+  padding: 0.65rem 0.7rem;
+  border-left: 4px solid #c2185b;
+  background: rgba(194, 24, 91, 0.12);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.map-pfas-status.is-under-review {
+  border-left-color: #f08ab4;
+  background: rgba(240, 138, 180, 0.1);
 }
 
 .map-sources {
@@ -969,6 +1016,38 @@ footer {
 
 .story-body {
   max-width: 820px;
+}
+
+.pfas-record-status,
+.pfas-health-context {
+  border-left: 5px solid #c2185b;
+  background: rgba(194, 24, 91, 0.07);
+}
+
+.pfas-record-status {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+}
+
+.pfas-record-status p {
+  margin-bottom: 0;
+}
+
+.story-body .pfas-health-context {
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.pfas-health-sources {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1.25rem;
+}
+
+.pfas-health-sources a {
+  color: #8f194c;
+  font-weight: 720;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .story-body section + section {

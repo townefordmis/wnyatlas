@@ -1473,6 +1473,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     municipality: "Town of Ischua",
     county: "Cattaraugus",
     category: "cleanup",
+    pfasStatus: "documented",
     summary:
       "Inactive capped landfill that operated from 1972 to 1975 and reportedly received industrial, commercial, medical and household refuse, including TCE-laced sawdust. DEC detected PFOA, PFOS and 1,4-dioxane in groundwater and lists the property as a potential site under characterization.",
     evidenceStatus: "research-in-progress",
@@ -1702,6 +1703,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     municipality: "Jamestown",
     county: "Chautauqua",
     category: "cleanup",
+    pfasStatus: "documented",
     summary:
       "Former woolen mill and hardware-manufacturing complex beside the Chadakoin River where electroplating, die-casting, and metal finishing left metals, PCBs, chlorinated solvents, and vapor concerns. DEC determined that the site posed a significant threat and selected a multi-part remedy.",
     evidenceStatus: "well-documented",
@@ -1747,6 +1749,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     municipality: "Jamestown",
     county: "Chautauqua",
     category: "cleanup",
+    pfasStatus: "documented",
     summary:
       "Downtown property historically used by a photo facility, dry cleaner, taxi company, automotive repair shop, and parking garage. Deep chlorinated-solvent contamination required major excavation, groundwater treatment, vapor mitigation, and continuing controls; recent site-well monitoring also documented benzene, PFOA, and PFOS above applicable groundwater values.",
     evidenceStatus: "well-documented",

@@ -226,6 +226,16 @@ export default async function SitePage({ params }: SitePageProps) {
                 <p key={paragraph}>{paragraph}</p>
               ))}
               <p>{story.categoryContext}</p>
+              {(site.category === "pfas" || site.pfasStatus) && (
+                <div className="pfas-record-status">
+                  <strong>PFAS record status</strong>
+                  <p>
+                    {site.pfasStatus === "under-review"
+                      ? "Historical records and sampling information are being reviewed. This page does not present the property as a confirmed PFAS source."
+                      : "PFAS activity, investigation, or detection is documented in the cited site record. That documentation does not by itself establish off-site exposure or a health effect in any individual."}
+                  </p>
+                </div>
+              )}
               {site.atomicLegacy && (
                 <p>
                   <strong>{site.atomicLegacy.era}:</strong>{" "}
@@ -233,6 +243,52 @@ export default async function SitePage({ params }: SitePageProps) {
                 </p>
               )}
             </section>
+
+            {(site.category === "pfas" || site.pfasStatus) && (
+              <section className="pfas-health-context">
+                <p className="eyebrow">Health context</p>
+                <h2>Why PFAS are a long-term concern</h2>
+                <p>
+                  PFAS are a large family of manufactured chemicals. Many are highly
+                  persistent, and some can remain in the environment or build up in
+                  people and animals over time. Persistence can allow releases to move
+                  through groundwater, surface water, waste systems, food, and fish long
+                  after the original use has ended.
+                </p>
+                <p>
+                  Human studies have found associations between increased exposure to
+                  certain PFAS and higher cholesterol, lower antibody response to some
+                  vaccines, changes in liver enzymes, pregnancy-induced hypertension and
+                  preeclampsia, small decreases in birth weight, and kidney or testicular
+                  cancer for PFOA. Evidence differs by compound, and research continues.
+                  A site detection does not show that a particular person was exposed or
+                  that PFAS caused an illness.
+                </p>
+                <div className="pfas-health-sources">
+                  <a
+                    href="https://www.atsdr.cdc.gov/pfas/about/health-effects.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    ATSDR: How PFAS may affect health
+                  </a>
+                  <a
+                    href="https://www.epa.gov/pfas/our-current-understanding-human-health-and-environmental-risks-pfas"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    U.S. EPA: Current understanding of PFAS risks
+                  </a>
+                  <a
+                    href="https://www.health.ny.gov/environmental/water/drinking/emerging_pfas_publicwater"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    New York State: PFAS and drinking water
+                  </a>
+                </div>
+              </section>
+            )}
 
             {story.timeline.length > 0 && (
               <section>

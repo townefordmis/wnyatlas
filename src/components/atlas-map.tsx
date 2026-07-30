@@ -29,6 +29,25 @@ const evidenceLabels: Record<AtlasSite["evidenceStatus"], string> = {
   "research-lead": "Research lead",
 };
 
+const markerColors = {
+  cleanup: "#b6462c",
+  industry: "#263943",
+  pfas: "#c2185b",
+  pfasReview: "#f08ab4",
+  radiological: "#7b3f86",
+  waterway: "#176b87",
+} as const;
+
+function hasPfasRecord(site: AtlasSite) {
+  return site.category === "pfas" || Boolean(site.pfasStatus);
+}
+
+function getMarkerColor(site: AtlasSite) {
+  if (site.pfasStatus === "under-review") return markerColors.pfasReview;
+  if (hasPfasRecord(site)) return markerColors.pfas;
+  return markerColors[site.category];
+}
+
 export function AtlasMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const detailPanel = useRef<HTMLDivElement>(null);
@@ -53,7 +72,10 @@ export function AtlasMap() {
           value.toLowerCase().includes(normalizedQuery),
         );
       const matchesCounty = county === "all" || site.county === county;
-      const matchesCategory = category === "all" || site.category === category;
+      const matchesCategory =
+        category === "all" ||
+        site.category === category ||
+        (category === "pfas" && hasPfasRecord(site));
       const matchesEvidence =
         evidence === "all" || site.evidenceStatus === evidence;
 
@@ -144,16 +166,7 @@ export function AtlasMap() {
     const markerStore = markers.current;
     featuredSites.forEach((site) => {
       const marker = new maplibregl.Marker({
-        color:
-          site.category === "waterway"
-            ? "#176b87"
-            : site.category === "radiological"
-              ? "#7b3f86"
-              : site.category === "pfas"
-                ? "#8b5e34"
-                : site.category === "industry"
-                  ? "#263943"
-                  : "#b6462c",
+        color: getMarkerColor(site),
         scale: 0.72,
         subpixelPositioning: true,
       })
@@ -238,6 +251,14 @@ export function AtlasMap() {
             ref={mapContainer}
             aria-label={`Interactive map of ${featuredSites.length} featured Western New York sites`}
           />
+          <div className="atlas-map-legend" aria-label="Map pin colors">
+            <span><i style={{ background: markerColors.cleanup }} /> Cleanup</span>
+            <span><i style={{ background: markerColors.industry }} /> Industry</span>
+            <span><i style={{ background: markerColors.waterway }} /> Waterway</span>
+            <span><i style={{ background: markerColors.radiological }} /> Radiological</span>
+            <span><i style={{ background: markerColors.pfas }} /> PFAS documented</span>
+            <span><i style={{ background: markerColors.pfasReview }} /> PFAS under review</span>
+          </div>
           {mapUnavailable && (
             <p className="map-status" role="status">
               The base map is unavailable. The site list remains fully accessible.
@@ -386,6 +407,14 @@ export function AtlasMap() {
               </p>
               <h3>{displayedSite.name}</h3>
               <p>{displayedSite.summary}</p>
+              {displayedSite.pfasStatus && (
+                <p className={`map-pfas-status is-${displayedSite.pfasStatus}`}>
+                  <strong>PFAS:</strong>{" "}
+                  {displayedSite.pfasStatus === "documented"
+                    ? "Documented in the site record"
+                    : "Records and sampling are under review; no PFAS conclusion is presented"}
+                </p>
+              )}
               {displayedSite.atomicLegacy && (
                 <p>
                   <strong>{displayedSite.atomicLegacy.era}:</strong>{" "}
