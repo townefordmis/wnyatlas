@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type { Map as MapLibreMap, Marker } from "maplibre-gl";
 
@@ -31,6 +31,7 @@ const evidenceLabels: Record<AtlasSite["evidenceStatus"], string> = {
 
 export function AtlasMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
+  const detailPanel = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
   const markers = useRef<Map<string, Marker>>(new Map());
   const [selectedSite, setSelectedSite] = useState<AtlasSite>(featuredSites[0]);
@@ -64,6 +65,27 @@ export function AtlasMap() {
     filteredSites.find((site) => site.id === selectedSite.id) ??
     filteredSites[0] ??
     selectedSite;
+
+  const revealSelectedPlace = useCallback(() => {
+    const isMobileViewport = window.matchMedia("(max-width: 620px)").matches;
+    const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? "auto"
+      : "smooth";
+    window.requestAnimationFrame(() => {
+      detailPanel.current?.scrollIntoView({
+        behavior,
+        block: isMobileViewport ? "start" : "nearest",
+      });
+    });
+  }, []);
+
+  const selectSite = useCallback(
+    (site: AtlasSite) => {
+      setSelectedSite(site);
+      revealSelectedPlace();
+    },
+    [revealSelectedPlace],
+  );
 
   useEffect(() => {
     if (!mapContainer.current || map.current) return;
@@ -137,7 +159,7 @@ export function AtlasMap() {
       const element = marker.getElement();
       element.classList.add("atlas-native-marker");
       element.setAttribute("aria-label", `Show ${site.name}, ${site.municipality}`);
-      element.addEventListener("click", () => setSelectedSite(site));
+      element.addEventListener("click", () => selectSite(site));
       markerStore.set(site.id, marker);
     });
 
@@ -150,7 +172,7 @@ export function AtlasMap() {
       mapInstance.remove();
       map.current = null;
     };
-  }, []);
+  }, [selectSite]);
 
   useEffect(() => {
     const activeId = highlightedSiteId ?? displayedSite.id;
@@ -167,7 +189,7 @@ export function AtlasMap() {
   }, [filteredSites]);
 
   function focusSite(site: AtlasSite) {
-    setSelectedSite(site);
+    selectSite(site);
     map.current?.flyTo({
       center: site.coordinates,
       zoom: 11.5,
@@ -341,7 +363,11 @@ export function AtlasMap() {
           </div>
 
           {filteredSites.length > 0 && (
-            <div className="map-detail" aria-live="polite">
+            <div
+              className="map-detail"
+              ref={detailPanel}
+              aria-live="polite"
+            >
               {displayedSite.image && (
                 <Image
                   className="map-detail-image"

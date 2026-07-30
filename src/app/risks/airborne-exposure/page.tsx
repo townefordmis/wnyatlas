@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { AirborneRiskMap } from "@/components/airborne-risk-map";
+import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
   title: "Airborne Exposure & Historic Plumes",
@@ -22,13 +22,7 @@ export const metadata: Metadata = {
 export default function AirborneExposurePage() {
   return (
     <main className="risk-page">
-      <header className="story-header">
-        <Link className="brand" href="/" aria-label="WNYAtlas home">
-          <span className="brand-mark">WNY</span>
-          <span>ATLAS</span>
-        </Link>
-        <Link href="/">← Return to the atlas</Link>
-      </header>
+      <SiteHeader />
 
       <section className="risk-hero">
         <p className="eyebrow">Risk pathway · inhalation</p>

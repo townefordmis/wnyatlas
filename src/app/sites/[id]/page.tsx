@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
 import { featuredSites } from "@/data/featured-sites";
 import {
@@ -176,15 +177,7 @@ export default async function SitePage({ params }: SitePageProps) {
   return (
     <main className="story-page">
       <StructuredData data={structuredData} />
-      <header className="story-header">
-        <Link className="brand" href="/" aria-label="WNYAtlas home">
-          <span className="brand-mark">WNY</span>
-          <span>ATLAS</span>
-        </Link>
-        <Link className="story-back" href="/#map">
-          Back to the map
-        </Link>
-      </header>
+      <SiteHeader />
 
       <article>
         <section className="story-hero">

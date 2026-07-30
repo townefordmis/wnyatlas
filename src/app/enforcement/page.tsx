@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
+import { SiteHeader } from "@/components/site-header";
 import { enforcementActions } from "@/data/enforcement-actions";
 
 export const metadata: Metadata = {
@@ -22,13 +22,7 @@ export const metadata: Metadata = {
 export default function EnforcementPage() {
   return (
     <main className="enforcement-page">
-      <header className="story-header">
-        <Link className="brand" href="/" aria-label="WNYAtlas home">
-          <span className="brand-mark">WNY</span>
-          <span>ATLAS</span>
-        </Link>
-        <Link href="/">← Return to the atlas</Link>
-      </header>
+      <SiteHeader />
 
       <section className="enforcement-hero">
         <p className="eyebrow">Accountability in the public record</p>
