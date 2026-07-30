@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
+import { findChemicalsInText } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import {
   buffaloSchoolCampuses,
@@ -80,6 +81,15 @@ export default async function SitePage({ params }: SitePageProps) {
   }
 
   const story = getSiteStory(site);
+  const namedChemicals = findChemicalsInText(
+    [
+      site.summary,
+      ...story.background,
+      ...story.documentedImpacts,
+      ...story.cleanupAndControls,
+      ...story.presentDay,
+    ].join(" "),
+  );
   const connectionGroups = getConnectionGroupsForSite(site.id, featuredSites);
   const relatedWaterways = formerWaterwayRecords.filter(
     (record) => record.relatedSiteId === site.id,
@@ -243,6 +253,25 @@ export default async function SitePage({ params }: SitePageProps) {
                 </p>
               )}
             </section>
+
+            {namedChemicals.length > 0 && (
+              <section className="story-chemicals">
+                <p className="eyebrow">Chemical guide</p>
+                <h2>Chemicals named in this record</h2>
+                <p>
+                  These links explain potential hazards and exposure pathways. A
+                  chemical named in a record does not establish that anyone was
+                  exposed or harmed.
+                </p>
+                <div className="chemical-chip-list">
+                  {namedChemicals.map((chemical) => (
+                    <Link href={`/chemicals/${chemical.id}`} key={chemical.id}>
+                      {chemical.name}
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {(site.category === "pfas" || site.pfasStatus) && (
               <section className="pfas-health-context">

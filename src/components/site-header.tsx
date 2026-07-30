@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useMemo, useState } from "react";
 
+import { chemicalProfiles } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 
 const MAX_RESULTS = 6;
@@ -19,19 +20,43 @@ export function SiteHeader() {
     const normalizedQuery = query.trim().toLowerCase();
     if (!normalizedQuery) return [];
 
-    return featuredSites
+    const placeResults = featuredSites
       .filter((site) =>
         [site.name, site.municipality, site.county, site.summary].some((value) =>
           value.toLowerCase().includes(normalizedQuery),
         ),
       )
-      .slice(0, MAX_RESULTS);
+      .map((site) => ({
+        id: `place-${site.id}`,
+        href: `/sites/${site.id}`,
+        name: site.name,
+        detail: `${site.municipality} · ${site.county} County`,
+        image: site.image,
+      }));
+    const chemicalResults = chemicalProfiles
+      .filter((chemical) =>
+        [
+          chemical.name,
+          chemical.family,
+          chemical.overview,
+          ...chemical.aliases,
+        ].some((value) => value.toLowerCase().includes(normalizedQuery)),
+      )
+      .map((chemical) => ({
+        id: `chemical-${chemical.id}`,
+        href: `/chemicals/${chemical.id}`,
+        name: chemical.name,
+        detail: `Chemical guide · ${chemical.family}`,
+        image: undefined,
+      }));
+
+    return [...chemicalResults, ...placeResults].slice(0, MAX_RESULTS);
   }, [query]);
 
   function submitSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (results[0]) {
-      router.push(`/sites/${results[0].id}`);
+      router.push(results[0].href);
       setIsFocused(false);
       setIsMenuOpen(false);
     }
@@ -59,6 +84,9 @@ export function SiteHeader() {
         </Link>
         <Link href="/places" onClick={() => setIsMenuOpen(false)}>
           Places
+        </Link>
+        <Link href="/chemicals" onClick={() => setIsMenuOpen(false)}>
+          Chemicals
         </Link>
         <Link
           href="/research/schools-industrial-sites"
@@ -117,25 +145,23 @@ export function SiteHeader() {
           {isFocused && query.trim() && (
             <div className="header-search-results" aria-live="polite">
               {results.length > 0 ? (
-                results.map((site) => (
-                  <Link key={site.id} href={`/sites/${site.id}`}>
-                    {site.image && (
+                results.map((result) => (
+                  <Link key={result.id} href={result.href}>
+                    {result.image && (
                       <Image
-                        src={site.image.src}
+                        src={result.image.src}
                         alt=""
                         aria-hidden="true"
                         width={72}
                         height={72}
                       />
                     )}
-                    <strong>{site.name}</strong>
-                    <span>
-                      {site.municipality} · {site.county} County
-                    </span>
+                    <strong>{result.name}</strong>
+                    <span>{result.detail}</span>
                   </Link>
                 ))
               ) : (
-                <p>No matching places found.</p>
+                <p>No matching places or chemicals found.</p>
               )}
             </div>
           )}

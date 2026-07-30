@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { chemicalProfiles } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 
 const BASE_URL = "https://www.wnyatlas.com";
@@ -15,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/places`,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/chemicals`,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${BASE_URL}/research/schools-industrial-sites`,
@@ -45,5 +51,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(site.image ? { images: [`${BASE_URL}${site.image.src}`] } : {}),
   }));
 
-  return [...publicPages, ...placePages];
+  const chemicalPages: MetadataRoute.Sitemap = chemicalProfiles.map(
+    (chemical) => ({
+      url: `${BASE_URL}/chemicals/${chemical.id}`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }),
+  );
+
+  return [...publicPages, ...chemicalPages, ...placePages];
 }
