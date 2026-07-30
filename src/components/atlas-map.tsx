@@ -67,6 +67,9 @@ export function AtlasMap() {
     selectedSite;
 
   const revealSelectedPlace = useCallback(() => {
+    const isStackedViewport = window.matchMedia("(max-width: 960px)").matches;
+    if (!isStackedViewport) return;
+
     const isMobileViewport = window.matchMedia("(max-width: 620px)").matches;
     const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches
       ? "auto"
