@@ -10,21 +10,26 @@ import {
   generalizedAssessmentAreas,
   historicalRadiologicalRecords,
   historicalSurveySource,
+  latestRadiologicalFollowUps,
   radiologicalProducers,
   radiologicalDocuments,
   type RadiologicalDocument,
   type HistoricalRadiologicalRecord,
   type RadiologicalDisposition,
+  type RadiologicalFollowUp,
   type RadiologicalProducer,
 } from "@/data/radiological-investigation";
 
 type Selection =
   | { type: "historical"; record: HistoricalRadiologicalRecord }
-  | { type: "producer"; record: RadiologicalProducer };
+  | { type: "producer"; record: RadiologicalProducer }
+  | { type: "follow-up"; record: RadiologicalFollowUp };
+
+type MapView = "all" | "old-remediated" | "1986-other" | "newer";
 
 const dispositionLabels: Record<RadiologicalDisposition, string> = {
-  "federal-remediated": "Federally remediated historical location",
-  "historical-anomaly": "Historical anomaly; source not proven for this address",
+  "federal-remediated": "NFSS-related; report states remediation occurred",
+  "historical-anomaly": "Other DOE/ORNL anomaly; generally associated with phosphate slag",
   "building-material-or-unconfirmed": "Approximate, building-related, or unresolved record",
 };
 
@@ -36,12 +41,14 @@ export function RadiologicalInvestigationMap() {
   const map = useRef<MapLibreMap | null>(null);
   const historicalMarkers = useRef<Map<number, Marker>>(new Map());
   const producerMarkers = useRef<Map<string, Marker>>(new Map());
+  const followUpMarkers = useRef<Map<string, Marker>>(new Map());
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("all");
   const [county, setCounty] = useState<"all" | "Erie" | "Niagara">("all");
   const [disposition, setDisposition] = useState<RadiologicalDisposition | "all">("all");
   const [showAssessment, setShowAssessment] = useState(true);
   const [showProducers, setShowProducers] = useState(true);
+  const [mapView, setMapView] = useState<MapView>("all");
   const [selection, setSelection] = useState<Selection>({
     type: "historical",
     record: historicalRadiologicalRecords[0],
@@ -61,6 +68,26 @@ export function RadiologicalInvestigationMap() {
     () => county === "all" ? radiologicalProducers : radiologicalProducers.filter((record) => record.county === county),
     [county],
   );
+
+  const displayedHistorical = useMemo(
+    () => filtered.filter((record) => {
+      if (mapView === "newer") return false;
+      if (mapView === "old-remediated") return record.disposition === "federal-remediated";
+      if (mapView === "1986-other") return record.disposition !== "federal-remediated";
+      return true;
+    }),
+    [filtered, mapView],
+  );
+
+  const showNewerPins = mapView === "all" || mapView === "newer";
+
+  const filteredFollowUps = useMemo(() => {
+    const normalized = query.trim().toLowerCase();
+    return latestRadiologicalFollowUps.filter((record) => {
+      if (county !== "all" && record.county !== county) return false;
+      return !normalized || `${record.name} ${record.location}`.toLowerCase().includes(normalized);
+    });
+  }, [county, query]);
 
   useEffect(() => {
     if (!container.current || map.current) return;
@@ -92,6 +119,7 @@ export function RadiologicalInvestigationMap() {
     instance.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-left");
     const historicalStore = historicalMarkers.current;
     const producerStore = producerMarkers.current;
+    const followUpStore = followUpMarkers.current;
 
     let layersInitialized = false;
     const initializeMapLayers = () => {
@@ -210,6 +238,26 @@ export function RadiologicalInvestigationMap() {
             .addTo(instance),
         );
       });
+
+      latestRadiologicalFollowUps.forEach((record) => {
+        const element = document.createElement("button");
+        element.type = "button";
+        element.className = "radiological-map-marker follow-up-marker";
+        element.setAttribute("aria-label", `Open latest follow-up for ${record.name}: ${record.location}`);
+        element.title = `${record.name} — latest official follow-up`;
+        element.append(document.createElement("span"));
+        element.addEventListener("click", (event) => {
+          event.stopPropagation();
+          setSelection({ type: "follow-up", record });
+          showPopup(record.coordinates, `Latest official follow-up · ${record.completed}`, record.name, record.latestStatus);
+        });
+        followUpStore.set(
+          record.id,
+          new maplibregl.Marker({ element, anchor: "center", subpixelPositioning: true })
+            .setLngLat(record.coordinates)
+            .addTo(instance),
+        );
+      });
     };
 
     instance.on("load", initializeMapLayers);
@@ -229,17 +277,19 @@ export function RadiologicalInvestigationMap() {
       historicalStore.clear();
       producerStore.forEach((marker) => marker.remove());
       producerStore.clear();
+      followUpStore.forEach((marker) => marker.remove());
+      followUpStore.clear();
       instance.remove();
       map.current = null;
     };
   }, []);
 
   useEffect(() => {
-    const visible = new Set(filtered.map((record) => record.id));
+    const visible = new Set(displayedHistorical.map((record) => record.id));
     historicalMarkers.current.forEach((marker, id) => {
       marker.getElement().style.display = visible.has(id) ? "" : "none";
     });
-  }, [filtered]);
+  }, [displayedHistorical]);
 
   useEffect(() => {
     const visible = new Set(filteredProducers.map((record) => record.id));
@@ -247,6 +297,13 @@ export function RadiologicalInvestigationMap() {
       marker.getElement().style.display = showProducers && visible.has(id) ? "" : "none";
     });
   }, [filteredProducers, showProducers]);
+
+  useEffect(() => {
+    const visible = new Set(filteredFollowUps.map((record) => record.id));
+    followUpMarkers.current.forEach((marker, id) => {
+      marker.getElement().style.display = showNewerPins && visible.has(id) ? "" : "none";
+    });
+  }, [filteredFollowUps, showNewerPins]);
 
   useEffect(() => {
     const instance = map.current;
@@ -262,6 +319,9 @@ export function RadiologicalInvestigationMap() {
     producerMarkers.current.forEach((marker, id) => {
       marker.getElement().classList.toggle("is-selected", selection.type === "producer" && selection.record.id === id);
     });
+    followUpMarkers.current.forEach((marker, id) => {
+      marker.getElement().classList.toggle("is-selected", selection.type === "follow-up" && selection.record.id === id);
+    });
   }, [selection]);
 
   function chooseHistorical(record: HistoricalRadiologicalRecord) {
@@ -274,26 +334,36 @@ export function RadiologicalInvestigationMap() {
     if (record.coordinates) map.current?.flyTo({ center: record.coordinates, zoom: 13, essential: false });
   }
 
+  function chooseFollowUp(record: RadiologicalFollowUp) {
+    setSelection({ type: "follow-up", record });
+    map.current?.flyTo({ center: record.coordinates, zoom: 14, essential: false });
+  }
+
   return (
     <section className="radiological-map-shell" aria-labelledby="radiological-map-title">
       <div className="school-map-toolbar">
         <div>
-          <p className="eyebrow">Separate investigation map · 100 historical survey records</p>
-          <h2 id="radiological-map-title">Industry, fill, surveys, and cleanup</h2>
+          <p className="eyebrow">Separate investigation map · 100 DOE/ORNL historical survey records</p>
+          <h2 id="radiological-map-title">Industrial slag, uranium residue, fill, surveys, and cleanup</h2>
         </div>
         <div className="radiological-legend" aria-label="Map key">
-          <span><i className="rad-dot-remediated" /> Federal remediation</span>
-          <span><i className="rad-dot-fill" /> Historical anomaly</span>
+          <span><i className="rad-dot-remediated" /> 1986 map · reported remediated</span>
+          <span><i className="rad-dot-fill" /> 1986 map · other anomaly</span>
           <span><i className="rad-dot-review" /> Approximate/unresolved</span>
-          <span><i className="rad-dot-producer" /> Producer or handler</span>
+          <span><i className="rad-dot-follow-up" /> Newer documented site</span>
+          <span><i className="rad-dot-producer" /> Production, processing, or storage</span>
           <span><i className="rad-county-erie" /> Erie County</span>
           <span><i className="rad-county-niagara" /> Niagara County</span>
-          <span><i className="rad-area" /> Generalized survey coverage</span>
+          <span><i className="rad-area" /> 2025–26 survey coverage</span>
         </div>
       </div>
       <p className="radiological-map-help">
         Click or tap any marker for a quick identification. Its complete sourced
         record opens beside the map on desktop and directly below it on mobile.
+        Marker color separates NFSS-related locations from the other DOE/ORNL
+        anomalies. The 2025 roadway work is shown as survey coverage because agencies
+        have not released property-level findings as public pins; teal pins represent
+        newer sites with an official EPA location and outcome.
       </p>
 
       <div className="radiological-map-grid">
@@ -301,29 +371,39 @@ export function RadiologicalInvestigationMap() {
 
         <aside className="radiological-map-list" aria-label="Radiological map records">
           <label>
-            <span>Search historical locations</span>
+            <span>Search fill and survey locations</span>
             <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Address, road, or anomaly number" />
+          </label>
+          <label className="radiological-map-view">
+            <span>Map view</span>
+            <select value={mapView} onChange={(event) => setMapView(event.target.value as MapView)}>
+              <option value="all">All years compared</option>
+              <option value="old-remediated">Old map: reported remediated</option>
+              <option value="1986-other">1986 map: other survey locations</option>
+              <option value="newer">Newer documented sites</option>
+            </select>
           </label>
           <div className="radiological-filter-row">
             <label><span>County</span><select value={county} onChange={(event) => { const value = event.target.value as "all" | "Erie" | "Niagara"; setCounty(value); if (value === "Erie") setArea("all"); }}><option value="all">Erie + Niagara</option><option value="Erie">Erie County</option><option value="Niagara">Niagara County</option></select></label>
             <label><span>Area</span><select value={area} onChange={(event) => setArea(event.target.value)}><option value="all">All areas</option>{[...new Set(historicalRadiologicalRecords.map((record) => record.area))].map((value) => <option key={value}>{value}</option>)}</select></label>
-            <label><span>Record</span><select value={disposition} onChange={(event) => setDisposition(event.target.value as RadiologicalDisposition | "all")}><option value="all">All records</option><option value="federal-remediated">Federally remediated</option><option value="historical-anomaly">Historical anomaly</option><option value="building-material-or-unconfirmed">Approximate/unresolved</option></select></label>
+            <label><span>Record</span><select value={disposition} onChange={(event) => setDisposition(event.target.value as RadiologicalDisposition | "all")}><option value="all">All records</option><option value="federal-remediated">NFSS-related · remediated</option><option value="historical-anomaly">Other DOE/ORNL anomaly</option><option value="building-material-or-unconfirmed">Approximate/unresolved</option></select></label>
           </div>
           <div className="radiological-toggles">
             <label><input type="checkbox" checked={showProducers} onChange={(event) => setShowProducers(event.target.checked)} /> Producers and handlers</label>
-            <label><input type="checkbox" checked={showAssessment} onChange={(event) => setShowAssessment(event.target.checked)} /> Current assessment coverage</label>
+            <label><input type="checkbox" checked={showAssessment} onChange={(event) => setShowAssessment(event.target.checked)} /> 2025–26 assessment coverage</label>
           </div>
-          <p className="school-result-count">{filtered.length} of 100 historical records · {filteredProducers.length} facilities or handlers shown</p>
+          <p className="school-result-count">{displayedHistorical.length} historical pins · {showNewerPins ? filteredFollowUps.length : 0} newer pins · {showProducers ? filteredProducers.length : 0} facilities or handlers</p>
           <div className="radiological-options">
-            <p className="record-label">Historical survey</p>
-            {filtered.map((record) => <button type="button" key={record.id} className={selection.type === "historical" && selection.record.id === record.id ? "is-active" : ""} onClick={() => chooseHistorical(record)}><strong>{record.name}</strong><span>{record.location}</span></button>)}
-            <p className="record-label producer-heading">Producers, processors, and storage</p>
-            {filteredProducers.map((record) => <button type="button" key={record.id} className={selection.type === "producer" && selection.record.id === record.id ? "is-active producer" : "producer"} onClick={() => chooseProducer(record)}><strong>{record.name}</strong><span>{record.county} County · {record.role.replaceAll("-", " ")} · {record.evidence}</span></button>)}
+            {displayedHistorical.length > 0 && <><p className="record-label">Visible 1986 fill and survey records</p>{displayedHistorical.map((record) => <button type="button" key={record.id} className={selection.type === "historical" && selection.record.id === record.id ? "is-active" : ""} onClick={() => chooseHistorical(record)}><strong>{record.name}</strong><span>{record.location}</span></button>)}</>}
+            {showNewerPins && <><p className="record-label producer-heading">Latest documented follow-up</p>{filteredFollowUps.map((record) => <button type="button" key={record.id} className={selection.type === "follow-up" && selection.record.id === record.id ? "is-active follow-up" : "follow-up"} onClick={() => chooseFollowUp(record)}><strong>{record.name}</strong><span>{record.completed} · {record.location}</span></button>)}</>}
+            {showProducers && <><p className="record-label producer-heading">Producers, processors, and storage</p>{filteredProducers.map((record) => <button type="button" key={record.id} className={selection.type === "producer" && selection.record.id === record.id ? "is-active producer" : "producer"} onClick={() => chooseProducer(record)}><strong>{record.name}</strong><span>{record.county} County · {record.role.replaceAll("-", " ")} · {record.evidence}</span></button>)}</>}
           </div>
         </aside>
 
         <article className="radiological-record">
-          {selection.type === "historical" ? <HistoricalDetail record={selection.record} /> : <ProducerDetail record={selection.record} />}
+          {selection.type === "historical" && <HistoricalDetail record={selection.record} />}
+          {selection.type === "producer" && <ProducerDetail record={selection.record} />}
+          {selection.type === "follow-up" && <FollowUpDetail record={selection.record} />}
         </article>
       </div>
     </section>
@@ -332,11 +412,12 @@ export function RadiologicalInvestigationMap() {
 
 function HistoricalDetail({ record }: { record: HistoricalRadiologicalRecord }) {
   return <>
-    <p className="record-label">1984 federal mobile and ground survey</p>
+    <p className="record-label">1984 U.S. Department of Energy / Oak Ridge National Laboratory survey</p>
     <h3>{record.name}</h3>
     <p className="radiological-location">{record.location} · {record.area}</p>
     <div className="radiological-status"><strong>{dispositionLabels[record.disposition]}</strong><span>Map position: {record.coordinatePrecision.replaceAll("-", " ")}</span></div>
     <section><h4>What the historical record says</h4><p>{record.note}</p></section>
+    <section><h4>Latest public comparison · July 2026</h4><p>{record.nfssRelated ? "The historical remediation and federal certification records remain the latest location-specific public outcome linked to this numbered point. The current NECRA materials do not publish a newer result matched to this exact pin." : "NECRA is reassessing the wider region, but its current public materials do not publish a property-level result matched to this exact 1984 point. WNY Atlas therefore preserves the historical finding without assigning a new clearance or contamination status."}</p></section>
     {(record.surfaceMicroRPerHour || record.oneMeterMicroRPerHour || record.scanRangeMicroRPerHour) && <section><h4>Recorded in 1984</h4><dl className="radiological-measurements">{record.oneMeterMicroRPerHour && <><dt>At one meter</dt><dd>{record.oneMeterMicroRPerHour} µR/h</dd></>}{record.surfaceMicroRPerHour && <><dt>At surface</dt><dd>{record.surfaceMicroRPerHour} µR/h</dd></>}{record.scanRangeMicroRPerHour && <><dt>Scan range</dt><dd>{record.scanRangeMicroRPerHour[0]}–{record.scanRangeMicroRPerHour[1]} µR/h</dd></>}</dl><p className="measurement-caution">Historical instrument readings are reproduced for context. They do not establish present-day exposure or conditions.</p></section>}
     <section><h4>Source</h4><a href={historicalSurveySource.url} target="_blank" rel="noreferrer">{historicalSurveySource.label} ↗</a></section>
   </>;
@@ -353,8 +434,21 @@ function ProducerDetail({ record }: { record: RadiologicalProducer }) {
   </>;
 }
 
+function FollowUpDetail({ record }: { record: RadiologicalFollowUp }) {
+  return <>
+    <p className="record-label">Latest official follow-up · {record.completed}</p>
+    <h3>{record.name}</h3>
+    <p className="radiological-location">{record.location}</p>
+    <div className="radiological-status"><strong>Documented EPA removal record</strong><span>Compared with the 1984–1986 baseline</span></div>
+    <section><h4>Latest public status</h4><p>{record.latestStatus}</p></section>
+    <section><h4>What can—and cannot—be compared</h4><p>{record.historicalComparison}</p></section>
+    <section><h4>Latest source used</h4><a href={record.sourceUrl} target="_blank" rel="noreferrer">{record.sourceLabel} ↗</a></section>
+    <Link className="radiological-main-link" href={`/sites/${record.relatedSiteId}`}>Open the full Atlas site record →</Link>
+  </>;
+}
+
 export function CurrentAssessmentNote() {
-  return <section className="radiological-assessment-note"><p className="eyebrow">Current state and federal assessment · July 2026</p><h2>Investigation areas are not contamination boundaries.</h2><p>NYSDEC reports roughly 380 areas of interest identified through aerial and vehicle work: about 220 cleared without additional testing and about 160 receiving ground surveys. Agencies have not published property-level coordinates for every active review. The map therefore shows only generalized coverage and links to the official roadway map.</p><div>{currentAssessmentSources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</div></section>;
+  return <section className="radiological-assessment-note"><p className="eyebrow">Forty-year comparison · 1984 baseline to July 2026</p><h2>The regional pattern is being reassessed, but the modern work is not yet a property-by-property replacement for the old survey.</h2><p>NYSDEC and EPA report roughly 380 areas of interest identified through the modern aerial and vehicle work: about 220 cleared without additional testing and about 160 receiving ground surveys. Agencies have not published property-level coordinates and outcomes for every active review. WNY Atlas therefore compares only official, geographically supportable results and never treats an unpublished result as a clearance or a confirmation.</p><div>{currentAssessmentSources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</div></section>;
 }
 
 const documentKindLabels: Record<RadiologicalDocument["kind"], string> = {

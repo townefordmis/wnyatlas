@@ -2353,6 +2353,7 @@ footer {
 .rad-dot-remediated { background: #72518b; border: 3px solid #16805a; }
 .rad-dot-fill { background: #dc7b2f; border: 1px solid #5a346f; }
 .rad-dot-review { background: #f8f4ea; border: 1px solid #65615b; }
+.rad-dot-follow-up { background: #00a6a6; border: 3px solid #073f47; }
 .rad-dot-producer { border-radius: 1px !important; background: #59306c; box-shadow: 0 0 0 2px #fff inset; }
 .rad-area { border-radius: 1px !important; border: 1px dashed #72518b; background: rgba(114, 81, 139, .12); }
 .rad-county-erie { border-radius: 1px !important; border: 2px solid #315d76; background: rgba(76, 120, 145, .12); }
@@ -2451,6 +2452,14 @@ footer {
   border-color: #35322e;
 }
 
+.radiological-map-marker.follow-up-marker > span {
+  width: 22px;
+  height: 22px;
+  background: #00a6a6;
+  border: 4px solid #073f47;
+  box-shadow: 0 0 0 3px #fffdf8, 0 2px 7px 4px rgba(23,39,32,.42);
+}
+
 .radiological-map-marker.producer-marker > span {
   width: 23px;
   height: 23px;
@@ -2499,6 +2508,10 @@ footer {
   border-radius: 0;
   background: #fffdf8;
   color: inherit;
+}
+
+.radiological-map-view {
+  margin-top: 10px;
 }
 
 .radiological-filter-row {
@@ -2571,6 +2584,10 @@ footer {
   border-left: 4px solid #72518b;
 }
 
+.radiological-options button.follow-up {
+  border-left: 4px solid #00898f;
+}
+
 .radiological-options strong { font-size: .79rem; }
 .radiological-options span { color: #5c584f; font-size: .7rem; }
 
@@ -2634,6 +2651,18 @@ footer {
 .radiological-assessment-note > p:not(.eyebrow) { max-width: 900px; }
 .radiological-assessment-note > div { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 18px; font-size: .82rem; }
 .radiological-method article { border-top-color: #72518b; }
+
+.radiological-report-summary {
+  padding: 28px 0 46px;
+}
+
+.radiological-report-summary > div {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.radiological-report-summary .measurement-caution {
+  max-width: 980px;
+}
 
 .radiological-archive {
   padding: 76px 0 30px;
@@ -2769,6 +2798,7 @@ footer {
   .radiological-assessment-note,
   .radiological-archive { width: min(100% - 24px, 1540px); }
   .radiological-legend { justify-content: flex-start; }
+  .radiological-report-summary > div { grid-template-columns: 1fr; }
   .radiological-map-grid { grid-template-columns: 1fr; grid-template-areas: "map" "record" "list"; }
   .radiological-map-canvas { min-height: 58svh; }
   .radiological-map-list { max-height: 480px; border-top: 1px solid #b7b09f; border-left: 0; }

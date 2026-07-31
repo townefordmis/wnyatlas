@@ -32,6 +32,20 @@ export type RadiologicalProducer = {
   sourceUrl: string;
 };
 
+export type RadiologicalFollowUp = {
+  id: string;
+  name: string;
+  location: string;
+  county: "Erie" | "Niagara";
+  coordinates: [number, number];
+  completed: string;
+  latestStatus: string;
+  historicalComparison: string;
+  relatedSiteId: string;
+  sourceLabel: string;
+  sourceUrl: string;
+};
+
 export type RadiologicalDocument = {
   id: string;
   title: string;
@@ -89,7 +103,7 @@ const pletcherRecords: HistoricalRadiologicalRecord[] = [
     nfssRelated: true,
     surfaceMicroRPerHour: pletcherSurface[index],
     scanRangeMicroRPerHour: index === 22 ? ([11, 230] as [number, number]) : ([11, 86] as [number, number]),
-    note: "The federal report attributed this Pletcher Road anomaly to Niagara Falls Storage Site-related material. It was among the 38 locations later remediated under FUSRAP.",
+    note: "The DOE/ORNL report attributed this Pletcher Road anomaly to Niagara Falls Storage Site-related material. It was among the 38 locations later remediated under FUSRAP.",
   })),
   ...westFromHarold.map((feet, index) => {
     const id = index + 24;
@@ -104,7 +118,7 @@ const pletcherRecords: HistoricalRadiologicalRecord[] = [
       nfssRelated: true,
       surfaceMicroRPerHour: pletcherSurface[id - 1],
       scanRangeMicroRPerHour: [9, 57] as [number, number],
-      note: "The federal report attributed this Pletcher Road anomaly to Niagara Falls Storage Site-related material. It was among the 38 locations later remediated under FUSRAP.",
+      note: "The DOE/ORNL report attributed this Pletcher Road anomaly to Niagara Falls Storage Site-related material. It was among the 38 locations later remediated under FUSRAP.",
     };
   }),
   {
@@ -118,7 +132,7 @@ const pletcherRecords: HistoricalRadiologicalRecord[] = [
     nfssRelated: true,
     surfaceMicroRPerHour: pletcherSurface[33],
     scanRangeMicroRPerHour: [9, 57],
-    note: "The federal report attributed this Old Pletcher Road anomaly to Niagara Falls Storage Site-related material. It was among the 38 locations later remediated under FUSRAP.",
+    note: "The DOE/ORNL report attributed this Old Pletcher Road anomaly to Niagara Falls Storage Site-related material. It was among the 38 locations later remediated under FUSRAP.",
   },
   {
     id: 35,
@@ -131,7 +145,7 @@ const pletcherRecords: HistoricalRadiologicalRecord[] = [
     nfssRelated: true,
     surfaceMicroRPerHour: pletcherSurface[34],
     scanRangeMicroRPerHour: [9, 57],
-    note: "The federal report attributed this Old Pletcher Road anomaly to Niagara Falls Storage Site-related material. It was among the 38 locations later remediated under FUSRAP.",
+    note: "The DOE/ORNL report attributed this Old Pletcher Road anomaly to Niagara Falls Storage Site-related material. It was among the 38 locations later remediated under FUSRAP.",
   },
 ];
 
@@ -218,7 +232,7 @@ export const historicalRadiologicalRecords: HistoricalRadiologicalRecord[] = [
     note:
       record.note ??
       (record.disposition === "federal-remediated"
-        ? "This was one of 38 locations the federal report says were later remediated under FUSRAP."
+        ? "This was one of 38 locations the DOE/ORNL report says were later remediated under FUSRAP."
         : "The report generally associated the non-NFSS readings with phosphate slag/cyclowollastonite used beneath pavement or as gravel, but it does not prove a producer or material source for this individual location. This is a historical survey result, not a statement of current conditions."),
   })),
 ];
@@ -232,7 +246,7 @@ export const radiologicalProducers: RadiologicalProducer[] = [
     coordinates: [-79.01049, 43.07931],
     location: "Buffalo Avenue industrial complex, Niagara Falls",
     evidence: "documented",
-    summary: "The 1986 federal report says the phosphate slag found around Niagara Falls reportedly originated at the former Oldbury Furnace, where elemental phosphorus was produced from uranium-bearing raw material. Hooker acquired Oldbury in 1956; that later ownership does not mean Hooker produced all earlier material.",
+    summary: "The 1986 DOE/ORNL report says the phosphate slag found around Niagara Falls reportedly originated at the former Oldbury Furnace, where elemental phosphorus was produced from uranium-bearing raw material. Hooker acquired Oldbury in 1956; that later ownership does not mean Hooker produced all earlier material.",
     sourceLabel: historicalSurveySource.label,
     sourceUrl: historicalSurveySource.url,
   },
@@ -349,6 +363,66 @@ export const radiologicalProducers: RadiologicalProducer[] = [
     summary: "A 1979 investigation reported that Friona Trucking distributed Union Carbide slag. Union Carbide disputed parts of that account, and WNY Atlas has not found evidence tying the company to every mapped property. It is listed as a research lead, not a confirmed source for a specific anomaly.",
     sourceLabel: "Investigative Post summary of historical investigation records",
     sourceUrl: "https://investigativepost.org/2017/02/09/paying-price-for-radioactive-hotspots-in-niagara/",
+  },
+];
+
+const epaNiagaraRemovalSource = {
+  label: "EPA Niagara County Radiation Removal Sites (updated March 10, 2026)",
+  url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+};
+
+export const latestRadiologicalFollowUps: RadiologicalFollowUp[] = [
+  {
+    id: "niagara-falls-boulevard-follow-up",
+    name: "Niagara Falls Boulevard removal sites",
+    location: "9512, 9524, 9540, and 9626 Niagara Falls Boulevard and adjoining land",
+    county: "Niagara",
+    coordinates: [-78.949, 43.101],
+    completed: "2016–2020",
+    latestStatus: "EPA reports the removal and restoration work completed in 2020.",
+    historicalComparison: "This later address group is not presented as a one-to-one match for anomaly 53 at 6560 Niagara Falls Boulevard. It documents the same regional pattern of radioactive industrial slag used as fill.",
+    relatedSiteId: "niagara-falls-boulevard-radiation-site",
+    sourceLabel: epaNiagaraRemovalSource.label,
+    sourceUrl: epaNiagaraRemovalSource.url,
+  },
+  {
+    id: "upper-mountain-road-follow-up",
+    name: "Upper Mountain Road removal sites",
+    location: "Access road and two adjacent residential properties, Town of Lewiston",
+    county: "Niagara",
+    coordinates: [-79.01842, 43.15618],
+    completed: "2020–2023",
+    latestStatus: "EPA reports removal at the access road and two neighboring residential properties completed between 2020 and 2023.",
+    historicalComparison: "The work occurred in the same Upper Mountain Road corridor as several 1984 DOE/ORNL anomalies. EPA's public summary does not assign the later properties to a specific 1984 anomaly number, so WNY Atlas does not claim an exact match.",
+    relatedSiteId: "upper-mountain-road-radiation-site",
+    sourceLabel: epaNiagaraRemovalSource.label,
+    sourceUrl: epaNiagaraRemovalSource.url,
+  },
+  {
+    id: "holy-trinity-follow-up",
+    name: "Holy Trinity Cemetery vicinity removals",
+    location: "Two residences adjacent to Holy Trinity Cemetery, Town of Lewiston",
+    county: "Niagara",
+    coordinates: [-79.03242, 43.1484],
+    completed: "Completed spring 2021",
+    latestStatus: "EPA reports radioactive material was removed from built areas at two neighboring residences.",
+    historicalComparison: "This is later property-specific evidence of the regional slag-fill pattern. The current EPA summary does not match these residences to one of the 100 numbered 1984 points.",
+    relatedSiteId: "holy-trinity-radiation-site",
+    sourceLabel: epaNiagaraRemovalSource.label,
+    sourceUrl: epaNiagaraRemovalSource.url,
+  },
+  {
+    id: "donovan-head-start-follow-up",
+    name: "Donovan Head Start slag removal",
+    location: "1631 Main Street, Niagara Falls",
+    county: "Niagara",
+    coordinates: [-79.054, 43.106],
+    completed: "Completed summer 2023",
+    latestStatus: "EPA reports slag was removed from playground and parking areas; the building was not contaminated.",
+    historicalComparison: "This is later property-specific confirmation of radioactive industrial slag used as fill, but EPA's public summary does not identify it as one of the 100 numbered 1984 points.",
+    relatedSiteId: "donovan-head-start-radiation-site",
+    sourceLabel: epaNiagaraRemovalSource.label,
+    sourceUrl: epaNiagaraRemovalSource.url,
   },
 ];
 
