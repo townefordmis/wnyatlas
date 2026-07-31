@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
-import type { Map as MapLibreMap } from "maplibre-gl";
+import type { Map as MapLibreMap, Marker } from "maplibre-gl";
 
 import {
   currentAssessmentSources,
@@ -28,40 +28,14 @@ const dispositionLabels: Record<RadiologicalDisposition, string> = {
   "building-material-or-unconfirmed": "Approximate, building-related, or unresolved record",
 };
 
-function recordsGeoJson(records: HistoricalRadiologicalRecord[]) {
-  return {
-    type: "FeatureCollection" as const,
-    features: records.map((record) => ({
-      type: "Feature" as const,
-      id: record.id,
-      properties: {
-        id: record.id,
-        disposition: record.disposition,
-      },
-      geometry: { type: "Point" as const, coordinates: record.coordinates },
-    })),
-  };
-}
-
-function producersGeoJson() {
-  return {
-    type: "FeatureCollection" as const,
-    features: radiologicalProducers
-      .filter((record) => record.coordinates)
-      .map((record) => ({
-        type: "Feature" as const,
-        properties: { id: record.id, role: record.role },
-        geometry: { type: "Point" as const, coordinates: record.coordinates! },
-      })),
-  };
-}
-
 const countyBoundaryUrl =
   "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/82/query?where=STATE%3D%2736%27%20AND%20COUNTY%20IN%20%28%27029%27%2C%27063%27%29&outFields=NAME%2CBASENAME%2CSTATE%2CCOUNTY&returnGeometry=true&outSR=4326&f=geojson";
 
 export function RadiologicalInvestigationMap() {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
+  const historicalMarkers = useRef<Map<number, Marker>>(new Map());
+  const producerMarkers = useRef<Map<string, Marker>>(new Map());
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("all");
   const [county, setCounty] = useState<"all" | "Erie" | "Niagara">("all");
@@ -116,8 +90,13 @@ export function RadiologicalInvestigationMap() {
     map.current = instance;
     instance.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
     instance.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-left");
+    const historicalStore = historicalMarkers.current;
+    const producerStore = producerMarkers.current;
 
-    instance.on("load", () => {
+    let layersInitialized = false;
+    const initializeMapLayers = () => {
+      if (layersInitialized) return;
+      layersInitialized = true;
       instance.addSource("county-boundaries", { type: "geojson", data: countyBoundaryUrl });
       instance.addLayer({
         id: "county-fill",
@@ -162,54 +141,81 @@ export function RadiologicalInvestigationMap() {
         paint: { "line-color": "#6c4e82", "line-opacity": 0.55, "line-width": 1.4, "line-dasharray": [3, 3] },
       });
 
-      instance.addSource("historical-records", { type: "geojson", data: recordsGeoJson(historicalRadiologicalRecords) });
-      instance.addLayer({
-        id: "historical-records",
-        type: "circle",
-        source: "historical-records",
-        paint: {
-          "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 2.3, 13, 4.2, 17, 7],
-          "circle-color": ["match", ["get", "disposition"], "historical-anomaly", "#dc7b2f", "building-material-or-unconfirmed", "#f8f4ea", "#72518b"],
-          "circle-stroke-color": ["match", ["get", "disposition"], "federal-remediated", "#16805a", "building-material-or-unconfirmed", "#65615b", "#5a346f"],
-          "circle-stroke-width": ["match", ["get", "disposition"], "federal-remediated", 2.5, 1.2],
-          "circle-opacity": 0.92,
-        },
-      });
-      instance.addLayer({
-        id: "selected-historical",
-        type: "circle",
-        source: "historical-records",
-        filter: ["==", ["get", "id"], 1],
-        paint: { "circle-radius": 9, "circle-color": "rgba(255,255,255,.18)", "circle-stroke-color": "#111", "circle-stroke-width": 2 },
+      const popup = new maplibregl.Popup({
+        closeButton: true,
+        closeOnClick: true,
+        maxWidth: "310px",
+        offset: 18,
       });
 
-      instance.addSource("producers", { type: "geojson", data: producersGeoJson() });
-      instance.addLayer({
-        id: "producers",
-        type: "circle",
-        source: "producers",
-        paint: {
-          "circle-radius": 8,
-          "circle-color": ["match", ["get", "role"], "storage", "#222", "processor", "#8b3f69", "#59306c"],
-          "circle-stroke-color": "#fffdf8",
-          "circle-stroke-width": 2,
-        },
-      });
-
-      instance.on("click", "historical-records", (event) => {
-        const id = Number(event.features?.[0]?.properties?.id);
-        const record = historicalRadiologicalRecords.find((item) => item.id === id);
-        if (record) setSelection({ type: "historical", record });
-      });
-      instance.on("click", "producers", (event) => {
-        const id = String(event.features?.[0]?.properties?.id);
-        const record = radiologicalProducers.find((item) => item.id === id);
-        if (record) setSelection({ type: "producer", record });
-      });
-      for (const layer of ["historical-records", "producers"]) {
-        instance.on("mouseenter", layer, () => { instance.getCanvas().style.cursor = "pointer"; });
-        instance.on("mouseleave", layer, () => { instance.getCanvas().style.cursor = ""; });
+      function showPopup(
+        coordinates: [number, number],
+        label: string,
+        title: string,
+        detail: string,
+      ) {
+        const content = document.createElement("div");
+        content.className = "radiological-popup";
+        const eyebrow = document.createElement("span");
+        eyebrow.textContent = label;
+        const heading = document.createElement("strong");
+        heading.textContent = title;
+        const description = document.createElement("p");
+        description.textContent = detail;
+        const instruction = document.createElement("small");
+        instruction.textContent = "Full sourced record is open beside or below the map.";
+        content.append(eyebrow, heading, description, instruction);
+        popup.setLngLat(coordinates).setDOMContent(content).addTo(instance);
       }
+
+      historicalRadiologicalRecords.forEach((record) => {
+        const element = document.createElement("button");
+        element.type = "button";
+        element.className = `radiological-map-marker historical-marker is-${record.disposition}`;
+        element.setAttribute("aria-label", `Open ${record.name}: ${record.location}`);
+        element.title = `${record.name} — ${record.location}`;
+        element.append(document.createElement("span"));
+        element.classList.toggle("is-selected", record.id === historicalRadiologicalRecords[0].id);
+        element.addEventListener("click", (event) => {
+          event.stopPropagation();
+          setSelection({ type: "historical", record });
+          showPopup(record.coordinates, dispositionLabels[record.disposition], record.name, record.location);
+        });
+        historicalStore.set(
+          record.id,
+          new maplibregl.Marker({ element, anchor: "center", subpixelPositioning: true })
+            .setLngLat(record.coordinates)
+            .addTo(instance),
+        );
+      });
+
+      radiologicalProducers.forEach((record) => {
+        if (!record.coordinates) return;
+        const coordinates = record.coordinates;
+        const element = document.createElement("button");
+        element.type = "button";
+        element.className = `radiological-map-marker producer-marker is-${record.role}`;
+        element.setAttribute("aria-label", `Open ${record.name}: ${record.location}`);
+        element.title = `${record.name} — ${record.location}`;
+        element.append(document.createElement("span"));
+        element.addEventListener("click", (event) => {
+          event.stopPropagation();
+          setSelection({ type: "producer", record });
+          showPopup(coordinates, `${record.county} County · ${record.role.replaceAll("-", " ")}`, record.name, record.location);
+        });
+        producerStore.set(
+          record.id,
+          new maplibregl.Marker({ element, anchor: "center", subpixelPositioning: true })
+            .setLngLat(coordinates)
+            .addTo(instance),
+        );
+      });
+    };
+
+    instance.on("load", initializeMapLayers);
+    instance.on("style.load", initializeMapLayers);
+    requestAnimationFrame(() => {
+      if (instance.isStyleLoaded()) initializeMapLayers();
     });
 
     const resize = () => requestAnimationFrame(() => instance.resize());
@@ -219,31 +225,28 @@ export function RadiologicalInvestigationMap() {
     return () => {
       observer.disconnect();
       window.removeEventListener("resize", resize);
+      historicalStore.forEach((marker) => marker.remove());
+      historicalStore.clear();
+      producerStore.forEach((marker) => marker.remove());
+      producerStore.clear();
       instance.remove();
       map.current = null;
     };
   }, []);
 
   useEffect(() => {
-    const instance = map.current;
-    if (!instance?.isStyleLoaded()) return;
-    const source = instance.getSource("historical-records") as maplibregl.GeoJSONSource | undefined;
-    source?.setData(recordsGeoJson(filtered));
+    const visible = new Set(filtered.map((record) => record.id));
+    historicalMarkers.current.forEach((marker, id) => {
+      marker.getElement().style.display = visible.has(id) ? "" : "none";
+    });
   }, [filtered]);
 
   useEffect(() => {
-    const instance = map.current;
-    if (!instance?.isStyleLoaded()) return;
-    const source = instance.getSource("producers") as maplibregl.GeoJSONSource | undefined;
-    source?.setData({
-      type: "FeatureCollection",
-      features: filteredProducers.filter((record) => record.coordinates).map((record) => ({
-        type: "Feature",
-        properties: { id: record.id, role: record.role },
-        geometry: { type: "Point", coordinates: record.coordinates! },
-      })),
+    const visible = new Set(filteredProducers.map((record) => record.id));
+    producerMarkers.current.forEach((marker, id) => {
+      marker.getElement().style.display = showProducers && visible.has(id) ? "" : "none";
     });
-  }, [filteredProducers]);
+  }, [filteredProducers, showProducers]);
 
   useEffect(() => {
     const instance = map.current;
@@ -253,18 +256,12 @@ export function RadiologicalInvestigationMap() {
   }, [showAssessment]);
 
   useEffect(() => {
-    const instance = map.current;
-    if (!instance?.getLayer("producers")) return;
-    instance.setLayoutProperty("producers", "visibility", showProducers ? "visible" : "none");
-  }, [showProducers]);
-
-  useEffect(() => {
-    const instance = map.current;
-    if (!instance?.getLayer("selected-historical")) return;
-    instance.setFilter(
-      "selected-historical",
-      selection.type === "historical" ? ["==", ["get", "id"], selection.record.id] : ["==", ["get", "id"], -1],
-    );
+    historicalMarkers.current.forEach((marker, id) => {
+      marker.getElement().classList.toggle("is-selected", selection.type === "historical" && selection.record.id === id);
+    });
+    producerMarkers.current.forEach((marker, id) => {
+      marker.getElement().classList.toggle("is-selected", selection.type === "producer" && selection.record.id === id);
+    });
   }, [selection]);
 
   function chooseHistorical(record: HistoricalRadiologicalRecord) {
@@ -294,6 +291,10 @@ export function RadiologicalInvestigationMap() {
           <span><i className="rad-area" /> Generalized survey coverage</span>
         </div>
       </div>
+      <p className="radiological-map-help">
+        Click or tap any marker for a quick identification. Its complete sourced
+        record opens beside the map on desktop and directly below it on mobile.
+      </p>
 
       <div className="radiological-map-grid">
         <div className="radiological-map-canvas" ref={container} />
