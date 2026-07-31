@@ -1,0 +1,433 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useMemo, useRef, useState } from "react";
+import * as maplibregl from "maplibre-gl";
+import type { Map as MapLibreMap } from "maplibre-gl";
+
+import {
+  currentAssessmentSources,
+  generalizedAssessmentAreas,
+  historicalRadiologicalRecords,
+  historicalSurveySource,
+  radiologicalProducers,
+  radiologicalDocuments,
+  type RadiologicalDocument,
+  type HistoricalRadiologicalRecord,
+  type RadiologicalDisposition,
+  type RadiologicalProducer,
+} from "@/data/radiological-investigation";
+
+type Selection =
+  | { type: "historical"; record: HistoricalRadiologicalRecord }
+  | { type: "producer"; record: RadiologicalProducer };
+
+const dispositionLabels: Record<RadiologicalDisposition, string> = {
+  "federal-remediated": "Federally remediated historical location",
+  "historical-anomaly": "Historical anomaly; source not proven for this address",
+  "building-material-or-unconfirmed": "Approximate, building-related, or unresolved record",
+};
+
+function recordsGeoJson(records: HistoricalRadiologicalRecord[]) {
+  return {
+    type: "FeatureCollection" as const,
+    features: records.map((record) => ({
+      type: "Feature" as const,
+      id: record.id,
+      properties: {
+        id: record.id,
+        disposition: record.disposition,
+      },
+      geometry: { type: "Point" as const, coordinates: record.coordinates },
+    })),
+  };
+}
+
+function producersGeoJson() {
+  return {
+    type: "FeatureCollection" as const,
+    features: radiologicalProducers
+      .filter((record) => record.coordinates)
+      .map((record) => ({
+        type: "Feature" as const,
+        properties: { id: record.id, role: record.role },
+        geometry: { type: "Point" as const, coordinates: record.coordinates! },
+      })),
+  };
+}
+
+const countyBoundaryUrl =
+  "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/82/query?where=STATE%3D%2736%27%20AND%20COUNTY%20IN%20%28%27029%27%2C%27063%27%29&outFields=NAME%2CBASENAME%2CSTATE%2CCOUNTY&returnGeometry=true&outSR=4326&f=geojson";
+
+export function RadiologicalInvestigationMap() {
+  const container = useRef<HTMLDivElement>(null);
+  const map = useRef<MapLibreMap | null>(null);
+  const [query, setQuery] = useState("");
+  const [area, setArea] = useState("all");
+  const [county, setCounty] = useState<"all" | "Erie" | "Niagara">("all");
+  const [disposition, setDisposition] = useState<RadiologicalDisposition | "all">("all");
+  const [showAssessment, setShowAssessment] = useState(true);
+  const [showProducers, setShowProducers] = useState(true);
+  const [selection, setSelection] = useState<Selection>({
+    type: "historical",
+    record: historicalRadiologicalRecords[0],
+  });
+
+  const filtered = useMemo(() => {
+    const normalized = query.trim().toLowerCase();
+    return historicalRadiologicalRecords.filter((record) => {
+      if (county === "Erie") return false;
+      if (area !== "all" && record.area !== area) return false;
+      if (disposition !== "all" && record.disposition !== disposition) return false;
+      return !normalized || `${record.name} ${record.location} ${record.area}`.toLowerCase().includes(normalized);
+    });
+  }, [area, county, disposition, query]);
+
+  const filteredProducers = useMemo(
+    () => county === "all" ? radiologicalProducers : radiologicalProducers.filter((record) => record.county === county),
+    [county],
+  );
+
+  useEffect(() => {
+    if (!container.current || map.current) return;
+
+    const isMobile = window.matchMedia("(max-width: 720px)").matches;
+    const instance = new maplibregl.Map({
+      container: container.current,
+      bounds: [[-79.12, 42.4], [-78.42, 43.4]],
+      fitBoundsOptions: { padding: isMobile ? 18 : 34 },
+      minZoom: 8,
+      maxZoom: 18,
+      cooperativeGestures: isMobile,
+      attributionControl: false,
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: "raster",
+            tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+            tileSize: 256,
+            attribution: "© OpenStreetMap contributors",
+          },
+        },
+        layers: [{ id: "osm", type: "raster", source: "osm" }],
+      },
+    });
+    map.current = instance;
+    instance.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+    instance.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-left");
+
+    instance.on("load", () => {
+      instance.addSource("county-boundaries", { type: "geojson", data: countyBoundaryUrl });
+      instance.addLayer({
+        id: "county-fill",
+        type: "fill",
+        source: "county-boundaries",
+        paint: {
+          "fill-color": ["match", ["get", "COUNTY"], "029", "#4c7891", "063", "#72518b", "#777"],
+          "fill-opacity": 0.07,
+        },
+      });
+      instance.addLayer({
+        id: "county-outline",
+        type: "line",
+        source: "county-boundaries",
+        paint: {
+          "line-color": ["match", ["get", "COUNTY"], "029", "#315d76", "063", "#5a346f", "#555"],
+          "line-opacity": 0.8,
+          "line-width": 2,
+        },
+      });
+      instance.addSource("assessment", {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: generalizedAssessmentAreas.map((record) => ({
+            type: "Feature",
+            properties: { name: record.name },
+            geometry: { type: "Polygon", coordinates: record.coordinates },
+          })),
+        },
+      });
+      instance.addLayer({
+        id: "assessment-fill",
+        type: "fill",
+        source: "assessment",
+        paint: { "fill-color": "#6c4e82", "fill-opacity": 0.075 },
+      });
+      instance.addLayer({
+        id: "assessment-outline",
+        type: "line",
+        source: "assessment",
+        paint: { "line-color": "#6c4e82", "line-opacity": 0.55, "line-width": 1.4, "line-dasharray": [3, 3] },
+      });
+
+      instance.addSource("historical-records", { type: "geojson", data: recordsGeoJson(historicalRadiologicalRecords) });
+      instance.addLayer({
+        id: "historical-records",
+        type: "circle",
+        source: "historical-records",
+        paint: {
+          "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 2.3, 13, 4.2, 17, 7],
+          "circle-color": ["match", ["get", "disposition"], "historical-anomaly", "#dc7b2f", "building-material-or-unconfirmed", "#f8f4ea", "#72518b"],
+          "circle-stroke-color": ["match", ["get", "disposition"], "federal-remediated", "#16805a", "building-material-or-unconfirmed", "#65615b", "#5a346f"],
+          "circle-stroke-width": ["match", ["get", "disposition"], "federal-remediated", 2.5, 1.2],
+          "circle-opacity": 0.92,
+        },
+      });
+      instance.addLayer({
+        id: "selected-historical",
+        type: "circle",
+        source: "historical-records",
+        filter: ["==", ["get", "id"], 1],
+        paint: { "circle-radius": 9, "circle-color": "rgba(255,255,255,.18)", "circle-stroke-color": "#111", "circle-stroke-width": 2 },
+      });
+
+      instance.addSource("producers", { type: "geojson", data: producersGeoJson() });
+      instance.addLayer({
+        id: "producers",
+        type: "circle",
+        source: "producers",
+        paint: {
+          "circle-radius": 8,
+          "circle-color": ["match", ["get", "role"], "storage", "#222", "processor", "#8b3f69", "#59306c"],
+          "circle-stroke-color": "#fffdf8",
+          "circle-stroke-width": 2,
+        },
+      });
+
+      instance.on("click", "historical-records", (event) => {
+        const id = Number(event.features?.[0]?.properties?.id);
+        const record = historicalRadiologicalRecords.find((item) => item.id === id);
+        if (record) setSelection({ type: "historical", record });
+      });
+      instance.on("click", "producers", (event) => {
+        const id = String(event.features?.[0]?.properties?.id);
+        const record = radiologicalProducers.find((item) => item.id === id);
+        if (record) setSelection({ type: "producer", record });
+      });
+      for (const layer of ["historical-records", "producers"]) {
+        instance.on("mouseenter", layer, () => { instance.getCanvas().style.cursor = "pointer"; });
+        instance.on("mouseleave", layer, () => { instance.getCanvas().style.cursor = ""; });
+      }
+    });
+
+    const resize = () => requestAnimationFrame(() => instance.resize());
+    const observer = new ResizeObserver(resize);
+    observer.observe(container.current);
+    window.addEventListener("resize", resize);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", resize);
+      instance.remove();
+      map.current = null;
+    };
+  }, []);
+
+  useEffect(() => {
+    const instance = map.current;
+    if (!instance?.isStyleLoaded()) return;
+    const source = instance.getSource("historical-records") as maplibregl.GeoJSONSource | undefined;
+    source?.setData(recordsGeoJson(filtered));
+  }, [filtered]);
+
+  useEffect(() => {
+    const instance = map.current;
+    if (!instance?.isStyleLoaded()) return;
+    const source = instance.getSource("producers") as maplibregl.GeoJSONSource | undefined;
+    source?.setData({
+      type: "FeatureCollection",
+      features: filteredProducers.filter((record) => record.coordinates).map((record) => ({
+        type: "Feature",
+        properties: { id: record.id, role: record.role },
+        geometry: { type: "Point", coordinates: record.coordinates! },
+      })),
+    });
+  }, [filteredProducers]);
+
+  useEffect(() => {
+    const instance = map.current;
+    if (!instance?.getLayer("assessment-fill")) return;
+    instance.setLayoutProperty("assessment-fill", "visibility", showAssessment ? "visible" : "none");
+    instance.setLayoutProperty("assessment-outline", "visibility", showAssessment ? "visible" : "none");
+  }, [showAssessment]);
+
+  useEffect(() => {
+    const instance = map.current;
+    if (!instance?.getLayer("producers")) return;
+    instance.setLayoutProperty("producers", "visibility", showProducers ? "visible" : "none");
+  }, [showProducers]);
+
+  useEffect(() => {
+    const instance = map.current;
+    if (!instance?.getLayer("selected-historical")) return;
+    instance.setFilter(
+      "selected-historical",
+      selection.type === "historical" ? ["==", ["get", "id"], selection.record.id] : ["==", ["get", "id"], -1],
+    );
+  }, [selection]);
+
+  function chooseHistorical(record: HistoricalRadiologicalRecord) {
+    setSelection({ type: "historical", record });
+    map.current?.flyTo({ center: record.coordinates, zoom: Math.max(map.current.getZoom(), 14), essential: false });
+  }
+
+  function chooseProducer(record: RadiologicalProducer) {
+    setSelection({ type: "producer", record });
+    if (record.coordinates) map.current?.flyTo({ center: record.coordinates, zoom: 13, essential: false });
+  }
+
+  return (
+    <section className="radiological-map-shell" aria-labelledby="radiological-map-title">
+      <div className="school-map-toolbar">
+        <div>
+          <p className="eyebrow">Separate investigation map · 100 historical survey records</p>
+          <h2 id="radiological-map-title">Industry, fill, surveys, and cleanup</h2>
+        </div>
+        <div className="radiological-legend" aria-label="Map key">
+          <span><i className="rad-dot-remediated" /> Federal remediation</span>
+          <span><i className="rad-dot-fill" /> Historical anomaly</span>
+          <span><i className="rad-dot-review" /> Approximate/unresolved</span>
+          <span><i className="rad-dot-producer" /> Producer or handler</span>
+          <span><i className="rad-county-erie" /> Erie County</span>
+          <span><i className="rad-county-niagara" /> Niagara County</span>
+          <span><i className="rad-area" /> Generalized survey coverage</span>
+        </div>
+      </div>
+
+      <div className="radiological-map-grid">
+        <div className="radiological-map-canvas" ref={container} />
+
+        <aside className="radiological-map-list" aria-label="Radiological map records">
+          <label>
+            <span>Search historical locations</span>
+            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Address, road, or anomaly number" />
+          </label>
+          <div className="radiological-filter-row">
+            <label><span>County</span><select value={county} onChange={(event) => { const value = event.target.value as "all" | "Erie" | "Niagara"; setCounty(value); if (value === "Erie") setArea("all"); }}><option value="all">Erie + Niagara</option><option value="Erie">Erie County</option><option value="Niagara">Niagara County</option></select></label>
+            <label><span>Area</span><select value={area} onChange={(event) => setArea(event.target.value)}><option value="all">All areas</option>{[...new Set(historicalRadiologicalRecords.map((record) => record.area))].map((value) => <option key={value}>{value}</option>)}</select></label>
+            <label><span>Record</span><select value={disposition} onChange={(event) => setDisposition(event.target.value as RadiologicalDisposition | "all")}><option value="all">All records</option><option value="federal-remediated">Federally remediated</option><option value="historical-anomaly">Historical anomaly</option><option value="building-material-or-unconfirmed">Approximate/unresolved</option></select></label>
+          </div>
+          <div className="radiological-toggles">
+            <label><input type="checkbox" checked={showProducers} onChange={(event) => setShowProducers(event.target.checked)} /> Producers and handlers</label>
+            <label><input type="checkbox" checked={showAssessment} onChange={(event) => setShowAssessment(event.target.checked)} /> Current assessment coverage</label>
+          </div>
+          <p className="school-result-count">{filtered.length} of 100 historical records · {filteredProducers.length} facilities or handlers shown</p>
+          <div className="radiological-options">
+            <p className="record-label">Historical survey</p>
+            {filtered.map((record) => <button type="button" key={record.id} className={selection.type === "historical" && selection.record.id === record.id ? "is-active" : ""} onClick={() => chooseHistorical(record)}><strong>{record.name}</strong><span>{record.location}</span></button>)}
+            <p className="record-label producer-heading">Producers, processors, and storage</p>
+            {filteredProducers.map((record) => <button type="button" key={record.id} className={selection.type === "producer" && selection.record.id === record.id ? "is-active producer" : "producer"} onClick={() => chooseProducer(record)}><strong>{record.name}</strong><span>{record.county} County · {record.role.replaceAll("-", " ")} · {record.evidence}</span></button>)}
+          </div>
+        </aside>
+
+        <article className="radiological-record">
+          {selection.type === "historical" ? <HistoricalDetail record={selection.record} /> : <ProducerDetail record={selection.record} />}
+        </article>
+      </div>
+    </section>
+  );
+}
+
+function HistoricalDetail({ record }: { record: HistoricalRadiologicalRecord }) {
+  return <>
+    <p className="record-label">1984 federal mobile and ground survey</p>
+    <h3>{record.name}</h3>
+    <p className="radiological-location">{record.location} · {record.area}</p>
+    <div className="radiological-status"><strong>{dispositionLabels[record.disposition]}</strong><span>Map position: {record.coordinatePrecision.replaceAll("-", " ")}</span></div>
+    <section><h4>What the historical record says</h4><p>{record.note}</p></section>
+    {(record.surfaceMicroRPerHour || record.oneMeterMicroRPerHour || record.scanRangeMicroRPerHour) && <section><h4>Recorded in 1984</h4><dl className="radiological-measurements">{record.oneMeterMicroRPerHour && <><dt>At one meter</dt><dd>{record.oneMeterMicroRPerHour} µR/h</dd></>}{record.surfaceMicroRPerHour && <><dt>At surface</dt><dd>{record.surfaceMicroRPerHour} µR/h</dd></>}{record.scanRangeMicroRPerHour && <><dt>Scan range</dt><dd>{record.scanRangeMicroRPerHour[0]}–{record.scanRangeMicroRPerHour[1]} µR/h</dd></>}</dl><p className="measurement-caution">Historical instrument readings are reproduced for context. They do not establish present-day exposure or conditions.</p></section>}
+    <section><h4>Source</h4><a href={historicalSurveySource.url} target="_blank" rel="noreferrer">{historicalSurveySource.label} ↗</a></section>
+  </>;
+}
+
+function ProducerDetail({ record }: { record: RadiologicalProducer }) {
+  return <>
+    <p className="record-label">{record.role.replaceAll("-", " ")} · {record.evidence} evidence</p>
+    <h3>{record.name}</h3>
+    <p className="radiological-location">{record.location}</p>
+    <section><h4>Documented role</h4><p>{record.summary}</p></section>
+    <section><h4>Source</h4>{record.sourceUrl.startsWith("/") ? <Link href={record.sourceUrl}>{record.sourceLabel} →</Link> : <a href={record.sourceUrl} target="_blank" rel="noreferrer">{record.sourceLabel} ↗</a>}</section>
+    {record.relatedSiteId && <Link className="radiological-main-link" href={`/sites/${record.relatedSiteId}`}>Open the full Atlas site record →</Link>}
+  </>;
+}
+
+export function CurrentAssessmentNote() {
+  return <section className="radiological-assessment-note"><p className="eyebrow">Current state and federal assessment · July 2026</p><h2>Investigation areas are not contamination boundaries.</h2><p>NYSDEC reports roughly 380 areas of interest identified through aerial and vehicle work: about 220 cleared without additional testing and about 160 receiving ground surveys. Agencies have not published property-level coordinates for every active review. The map therefore shows only generalized coverage and links to the official roadway map.</p><div>{currentAssessmentSources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</div></section>;
+}
+
+const documentKindLabels: Record<RadiologicalDocument["kind"], string> = {
+  survey: "Survey and measurements",
+  "audit-review": "Audit, certification, or technical review",
+  "cleanup-decision": "Cleanup and administrative record",
+  "worker-record": "Worker-exposure record",
+  "current-assessment": "Current assessment",
+};
+
+export function RadiologicalDocumentArchive() {
+  const [query, setQuery] = useState("");
+  const [kind, setKind] = useState<RadiologicalDocument["kind"] | "all">("all");
+  const [county, setCounty] = useState<"all" | "Erie" | "Niagara">("all");
+
+  const documents = useMemo(() => {
+    const normalized = query.trim().toLowerCase();
+    return radiologicalDocuments.filter((document) => {
+      if (kind !== "all" && document.kind !== kind) return false;
+      if (county !== "all" && document.geography !== county && document.geography !== "Erie and Niagara") return false;
+      return !normalized || `${document.title} ${document.agency} ${document.establishes} ${document.mapConnection}`.toLowerCase().includes(normalized);
+    });
+  }, [county, kind, query]);
+
+  return (
+    <section className="radiological-archive" aria-labelledby="radiological-archive-title">
+      <div className="radiological-archive-heading">
+        <div>
+          <p className="eyebrow">Government record and research archive</p>
+          <h2 id="radiological-archive-title">Read the evidence behind the map</h2>
+          <p>
+            This library includes every government survey, audit, certification,
+            cleanup record, and technical worker review currently relied upon by
+            this investigation. Draft or ongoing work is labeled as such.
+          </p>
+        </div>
+        <div className="radiological-downloads" aria-label="Download research data">
+          <a href="/data/radiological-historical-survey.csv" download>Download 100-location survey CSV ↓</a>
+          <a href="/data/radiological-research.json" download>Download complete research JSON ↓</a>
+        </div>
+      </div>
+
+      <div className="radiological-archive-controls">
+        <label><span>Search documents</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Agency, report, facility, or subject" /></label>
+        <label><span>Document type</span><select value={kind} onChange={(event) => setKind(event.target.value as RadiologicalDocument["kind"] | "all")}><option value="all">All document types</option>{Object.entries(documentKindLabels).map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>
+        <label><span>County</span><select value={county} onChange={(event) => setCounty(event.target.value as "all" | "Erie" | "Niagara")}><option value="all">Erie + Niagara</option><option value="Erie">Erie County</option><option value="Niagara">Niagara County</option></select></label>
+      </div>
+
+      <p className="school-result-count">{documents.length} of {radiologicalDocuments.length} reviewed government records shown</p>
+      <div className="radiological-document-list">
+        {documents.map((document) => (
+          <article key={document.id}>
+            <div className="radiological-document-meta">
+              <span>{document.year}</span>
+              <span>{document.agency}</span>
+              <span>{document.geography}</span>
+              <span className={`document-status ${document.status}`}>{document.status}</span>
+            </div>
+            <h3>{document.title}</h3>
+            <p className="document-date">{document.date} · {documentKindLabels[document.kind]}</p>
+            <details>
+              <summary>What this record establishes</summary>
+              <p>{document.establishes}</p>
+              <p><strong>Map connection:</strong> {document.mapConnection}</p>
+            </details>
+            <a href={document.url} target="_blank" rel="noreferrer">Open government record ↗</a>
+          </article>
+        ))}
+      </div>
+      <p className="radiological-archive-note">
+        “All research data” means all records currently used to support this map.
+        Government repositories contain additional correspondence and attachments;
+        those will be added as they are reviewed and connected to a mapped claim.
+      </p>
+    </section>
+  );
+}

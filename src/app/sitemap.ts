@@ -33,6 +33,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/research/radiological-industry-fill`,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${BASE_URL}/risks/airborne-exposure`,
       changeFrequency: "monthly",
       priority: 0.7,

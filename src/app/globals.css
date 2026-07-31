@@ -2307,6 +2307,379 @@ footer {
   }
 }
 
+/* Radiological industry, fill, and cleanup investigation */
+.radiological-map-shell,
+.radiological-assessment-note,
+.radiological-archive {
+  width: min(1540px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.radiological-map-shell {
+  padding: 28px 0 70px;
+}
+
+.radiological-hero h1 {
+  max-width: 1120px;
+}
+
+.radiological-caution {
+  border-left-color: #72518b;
+  background: #eee5ef;
+}
+
+.radiological-legend {
+  display: flex;
+  max-width: 650px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 16px;
+  font-size: .76rem;
+}
+
+.radiological-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.radiological-legend i {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.rad-dot-remediated { background: #72518b; border: 3px solid #16805a; }
+.rad-dot-fill { background: #dc7b2f; border: 1px solid #5a346f; }
+.rad-dot-review { background: #f8f4ea; border: 1px solid #65615b; }
+.rad-dot-producer { border-radius: 1px !important; background: #59306c; box-shadow: 0 0 0 2px #fff inset; }
+.rad-area { border-radius: 1px !important; border: 1px dashed #72518b; background: rgba(114, 81, 139, .12); }
+.rad-county-erie { border-radius: 1px !important; border: 2px solid #315d76; background: rgba(76, 120, 145, .12); }
+.rad-county-niagara { border-radius: 1px !important; border: 2px solid #5a346f; background: rgba(114, 81, 139, .12); }
+
+.radiological-map-grid {
+  display: grid;
+  grid-template-columns: minmax(480px, 1.35fr) minmax(270px, .52fr) minmax(340px, .72fr);
+  min-height: 720px;
+  border: 1px solid #b7b09f;
+  background: #f7f2e8;
+}
+
+.radiological-map-canvas {
+  min-height: 720px;
+}
+
+.radiological-map-canvas .maplibregl-canvas {
+  outline: none;
+}
+
+.radiological-map-list {
+  display: flex;
+  min-width: 0;
+  max-height: 720px;
+  flex-direction: column;
+  padding: 18px;
+  border-left: 1px solid #b7b09f;
+}
+
+.radiological-map-list label {
+  display: grid;
+  gap: 5px;
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+.radiological-map-list input,
+.radiological-map-list select {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #979081;
+  border-radius: 0;
+  background: #fffdf8;
+  color: inherit;
+}
+
+.radiological-filter-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.radiological-filter-row > label:first-child {
+  grid-column: 1 / -1;
+}
+
+.radiological-toggles {
+  display: grid;
+  gap: 7px;
+  margin-top: 12px;
+  padding: 10px;
+  background: #eee5ef;
+}
+
+.radiological-toggles label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 650;
+}
+
+.radiological-toggles input {
+  width: auto;
+}
+
+.radiological-options {
+  overflow-y: auto;
+  border-top: 1px solid #c9c1b2;
+}
+
+.radiological-options .record-label {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding: 11px 8px 7px;
+  background: #f7f2e8;
+}
+
+.radiological-options .producer-heading {
+  margin-top: 10px;
+  border-top: 2px solid #72518b;
+}
+
+.radiological-options button {
+  display: grid;
+  width: 100%;
+  gap: 3px;
+  padding: 10px 8px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #d8d0c1;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.radiological-options button:hover,
+.radiological-options button.is-active {
+  background: #e9dfcd;
+}
+
+.radiological-options button.producer {
+  border-left: 4px solid #72518b;
+}
+
+.radiological-options strong { font-size: .79rem; }
+.radiological-options span { color: #5c584f; font-size: .7rem; }
+
+.radiological-record {
+  min-width: 0;
+  max-height: 720px;
+  overflow-y: auto;
+  padding: 30px;
+  border-left: 1px solid #b7b09f;
+  background: #fffaf0;
+}
+
+.radiological-record h3 {
+  margin: 6px 0 7px;
+  font-size: clamp(1.7rem, 2.5vw, 2.8rem);
+  line-height: 1;
+}
+
+.radiological-location { color: #5c584f; }
+
+.radiological-status {
+  display: grid;
+  gap: 4px;
+  margin-top: 20px;
+  padding: 14px;
+  border-left: 4px solid #72518b;
+  background: #eee5ef;
+  font-size: .82rem;
+}
+
+.radiological-status span { color: #5c584f; font-size: .74rem; }
+.radiological-record section { margin-top: 26px; }
+.radiological-record h4 { margin-bottom: 8px; font-size: 1rem; }
+.radiological-main-link { display: inline-block; margin-top: 28px; }
+
+.radiological-measurements {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: 410px;
+  margin: 0;
+  border-top: 1px solid #c8c0b0;
+}
+
+.radiological-measurements dt,
+.radiological-measurements dd {
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #c8c0b0;
+}
+
+.radiological-measurements dd { font-family: var(--font-mono); font-weight: 800; }
+.measurement-caution { font-size: .77rem; color: #5c584f; }
+
+.radiological-assessment-note {
+  padding: 38px;
+  border: 1px solid #72518b;
+  background: #eee5ef;
+}
+
+.radiological-assessment-note h2 { max-width: 850px; margin: 6px 0 12px; }
+.radiological-assessment-note > p:not(.eyebrow) { max-width: 900px; }
+.radiological-assessment-note > div { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 18px; font-size: .82rem; }
+.radiological-method article { border-top-color: #72518b; }
+
+.radiological-archive {
+  padding: 76px 0 30px;
+}
+
+.radiological-archive-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 34px;
+  align-items: end;
+}
+
+.radiological-archive-heading h2 {
+  max-width: 850px;
+  margin: 6px 0 12px;
+}
+
+.radiological-archive-heading p:not(.eyebrow) {
+  max-width: 850px;
+}
+
+.radiological-downloads {
+  display: grid;
+  gap: 8px;
+}
+
+.radiological-downloads a {
+  padding: 12px 15px;
+  border: 1px solid #72518b;
+  background: #eee5ef;
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.radiological-archive-controls {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(220px, .55fr) minmax(170px, .35fr);
+  gap: 10px;
+  margin-top: 30px;
+  padding: 16px;
+  border: 1px solid #b7b09f;
+  background: #eee5d5;
+}
+
+.radiological-archive-controls label {
+  display: grid;
+  gap: 6px;
+  font-size: .73rem;
+  font-weight: 800;
+}
+
+.radiological-archive-controls input,
+.radiological-archive-controls select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #979081;
+  border-radius: 0;
+  background: #fffdf8;
+  color: inherit;
+}
+
+.radiological-document-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.radiological-document-list article {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 22px;
+  border-top: 3px solid #72518b;
+  background: #eee5d5;
+}
+
+.radiological-document-list h3 {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+  line-height: 1.08;
+}
+
+.radiological-document-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.radiological-document-meta span {
+  padding: 4px 7px;
+  background: rgba(255,255,255,.52);
+  font-family: var(--font-mono);
+  font-size: .64rem;
+  text-transform: uppercase;
+}
+
+.radiological-document-meta .document-status.final { color: #176548; }
+.radiological-document-meta .document-status.ongoing { color: #9e3f2b; }
+.document-date { margin: 0; color: #5c584f; font-size: .76rem; }
+
+.radiological-document-list details {
+  margin: 16px 0;
+  padding-top: 13px;
+  border-top: 1px solid #c8c0b0;
+  font-size: .85rem;
+}
+
+.radiological-document-list summary { font-weight: 800; cursor: pointer; }
+.radiological-document-list details p { margin: 10px 0 0; }
+.radiological-document-list > article > a { margin-top: auto; font-size: .8rem; font-weight: 800; }
+
+.radiological-archive-note {
+  max-width: 900px;
+  margin-top: 20px;
+  padding: 14px;
+  border-left: 4px solid #d29a45;
+  background: #f4ead8;
+  font-size: .8rem;
+}
+
+@media (max-width: 1120px) {
+  .radiological-map-grid {
+    grid-template-columns: minmax(0, 1.25fr) minmax(270px, .6fr);
+    grid-template-areas: "map list" "record record";
+  }
+  .radiological-map-canvas { grid-area: map; min-height: 620px; }
+  .radiological-map-list { grid-area: list; max-height: 620px; }
+  .radiological-record { grid-area: record; max-height: none; border-top: 1px solid #b7b09f; border-left: 0; }
+}
+
+@media (max-width: 720px) {
+  .radiological-map-shell,
+  .radiological-assessment-note,
+  .radiological-archive { width: min(100% - 24px, 1540px); }
+  .radiological-legend { justify-content: flex-start; }
+  .radiological-map-grid { grid-template-columns: 1fr; grid-template-areas: "map" "list" "record"; }
+  .radiological-map-canvas { min-height: 58svh; }
+  .radiological-map-list { max-height: 480px; border-top: 1px solid #b7b09f; border-left: 0; }
+  .radiological-record { padding: 24px 18px; }
+  .radiological-filter-row { grid-template-columns: 1fr; }
+  .radiological-assessment-note { padding: 24px 18px; }
+  .radiological-archive-heading { grid-template-columns: 1fr; align-items: start; }
+  .radiological-archive-controls { grid-template-columns: 1fr; }
+  .radiological-document-list { grid-template-columns: 1fr; }
+}
+
 /* Compact, searchable place directory */
 .featured {
   padding-top: 6rem;

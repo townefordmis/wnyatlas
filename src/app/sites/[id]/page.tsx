@@ -434,6 +434,25 @@ export default async function SitePage({ params }: SitePageProps) {
               </section>
             )}
 
+            {site.category === "radiological" && (
+              <section>
+                <p className="eyebrow">Radiological-map connection</p>
+                <h2>Place this site in the wider material history</h2>
+                <p>
+                  The separate radiological investigation map distinguishes
+                  producers, processors, storage, the 100 historical survey
+                  records, federal remediation, and current assessment coverage.
+                </p>
+                <Link
+                  className="risk-map-link"
+                  href="/research/radiological-industry-fill"
+                >
+                  <span>Linked research map</span>
+                  <strong>Open the radiological investigation →</strong>
+                </Link>
+              </section>
+            )}
+
             {relatedSchoolCampuses.length > 0 && (
               <section>
                 <p className="eyebrow">School-map connection</p>
