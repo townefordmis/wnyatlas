@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type {
-  CanvasSourceSpecification,
   LayerSpecification,
   Map as MapLibreMap,
   Marker,
@@ -41,83 +40,12 @@ const confidenceLabels = {
   research_boundary_pending: "Documented change; historical boundary research pending",
 } as const;
 
-const geometryCanvasSize = 512;
-
 function geometrySourceId(id: string) {
   return `landscape-source-${id}`;
 }
 
 function geometryLayerId(id: string) {
   return `landscape-layer-${id}`;
-}
-
-function geometryBounds(geometry: LandscapeChangeGeometry) {
-  const points = geometry.coordinates[0];
-  const longitudes = points.map(([longitude]) => longitude);
-  const latitudes = points.map(([, latitude]) => latitude);
-  return {
-    west: Math.min(...longitudes),
-    east: Math.max(...longitudes),
-    south: Math.min(...latitudes),
-    north: Math.max(...latitudes),
-  };
-}
-
-function pointInGeometry(
-  point: [number, number],
-  geometry: LandscapeChangeGeometry,
-) {
-  const [longitude, latitude] = point;
-  const ring = geometry.coordinates[0];
-  let inside = false;
-  for (let index = 0, previous = ring.length - 1; index < ring.length; previous = index++) {
-    const [x1, y1] = ring[index];
-    const [x2, y2] = ring[previous];
-    if (
-      y1 > latitude !== y2 > latitude &&
-      longitude < ((x2 - x1) * (latitude - y1)) / (y2 - y1) + x1
-    ) {
-      inside = !inside;
-    }
-  }
-  return inside;
-}
-
-function createGeometryCanvas(geometry: LandscapeChangeGeometry) {
-  const canvas = document.createElement("canvas");
-  const bounds = geometryBounds(geometry);
-  canvas.id = `landscape-canvas-${geometry.id}`;
-  canvas.width = geometryCanvasSize;
-  canvas.height = geometryCanvasSize;
-  canvas.hidden = true;
-  document.body.appendChild(canvas);
-
-  const context = canvas.getContext("2d");
-  if (context) {
-    const color = waterwayMarkerColors[geometry.evidenceType];
-    context.beginPath();
-    geometry.coordinates[0].forEach(([longitude, latitude], index) => {
-      const x =
-        ((longitude - bounds.west) / (bounds.east - bounds.west)) *
-        geometryCanvasSize;
-      const y =
-        ((bounds.north - latitude) / (bounds.north - bounds.south)) *
-        geometryCanvasSize;
-      if (index === 0) context.moveTo(x, y);
-      else context.lineTo(x, y);
-    });
-    context.closePath();
-    context.globalAlpha = 0.4;
-    context.fillStyle = color;
-    context.fill();
-    context.globalAlpha = 1;
-    context.strokeStyle = color;
-    context.lineWidth = 10;
-    context.setLineDash([22, 14]);
-    context.stroke();
-  }
-
-  return { canvas, bounds };
 }
 
 export function FormerWaterwaysMap() {
@@ -147,33 +75,46 @@ export function FormerWaterwaysMap() {
     if (!container.current || map.current) return;
 
     const isMobile = window.matchMedia("(max-width: 620px)").matches;
-    const geometryCanvases = landscapeChangeGeometries.map((geometry) => ({
-      geometry,
-      ...createGeometryCanvas(geometry),
-    }));
     const geometrySources = Object.fromEntries(
-      geometryCanvases.map(({ geometry, canvas, bounds }) => [
+      landscapeChangeGeometries.map((geometry) => [
         geometrySourceId(geometry.id),
         {
-          type: "canvas",
-          canvas: canvas.id,
-          animate: false,
-          coordinates: [
-            [bounds.west, bounds.north],
-            [bounds.east, bounds.north],
-            [bounds.east, bounds.south],
-            [bounds.west, bounds.south],
-          ],
-        } satisfies CanvasSourceSpecification,
+          type: "geojson" as const,
+          data: {
+            type: "Feature" as const,
+            properties: { geometryId: geometry.id },
+            geometry: {
+              type: geometry.geometryType,
+              coordinates: geometry.coordinates,
+            },
+          },
+        },
       ]),
     );
     const geometryLayers: LayerSpecification[] = landscapeChangeGeometries.map(
-      (geometry) => ({
-        id: geometryLayerId(geometry.id),
-        type: "raster",
-        source: geometrySourceId(geometry.id),
-        paint: { "raster-opacity": 1 },
-      }),
+      (geometry) =>
+        geometry.geometryType === "Polygon"
+          ? {
+              id: geometryLayerId(geometry.id),
+              type: "fill",
+              source: geometrySourceId(geometry.id),
+              paint: {
+                "fill-color": waterwayMarkerColors[geometry.evidenceType],
+                "fill-opacity": 0.35,
+                "fill-outline-color": waterwayMarkerColors[geometry.evidenceType],
+              },
+            }
+          : {
+              id: geometryLayerId(geometry.id),
+              type: "line",
+              source: geometrySourceId(geometry.id),
+              paint: {
+                "line-color": waterwayMarkerColors[geometry.evidenceType],
+                "line-width": 5,
+                "line-opacity": 0.9,
+                "line-dasharray": [2, 1.5],
+              },
+            },
     );
     const instance = new maplibregl.Map({
       container: container.current,
@@ -212,11 +153,14 @@ export function FormerWaterwaysMap() {
     );
 
     instance.on("click", (event) => {
-      const geometry = [...landscapeChangeGeometries]
-        .reverse()
-        .find((candidate) =>
-          pointInGeometry([event.lngLat.lng, event.lngLat.lat], candidate),
-        );
+      const feature = instance.queryRenderedFeatures(event.point, {
+        layers: landscapeChangeGeometries.map((geometry) =>
+          geometryLayerId(geometry.id),
+        ),
+      })[0];
+      const geometry = landscapeChangeGeometries.find(
+        (candidate) => candidate.id === feature?.properties?.geometryId,
+      );
       const record = geometry
         ? formerWaterwayRecords.find(
             (candidate) => candidate.id === geometry.recordId,
@@ -249,7 +193,14 @@ export function FormerWaterwaysMap() {
       (record) => record.id === linkedRecordId,
     );
     if (linkedRecord) {
-      requestAnimationFrame(() => setSelected(linkedRecord));
+      requestAnimationFrame(() => {
+        setSelected(linkedRecord);
+        setSelectedGeometry(
+          landscapeChangeGeometries.find(
+            (geometry) => geometry.recordId === linkedRecord.id,
+          ) ?? null,
+        );
+      });
       instance.jumpTo({ center: linkedRecord.coordinates, zoom: 14 });
     }
 
@@ -261,7 +212,6 @@ export function FormerWaterwaysMap() {
     return () => {
       observer.disconnect();
       window.removeEventListener("resize", resize);
-      geometryCanvases.forEach(({ canvas }) => canvas.remove());
       markerStore.forEach((marker) => marker.remove());
       markerStore.clear();
       instance.remove();
@@ -323,7 +273,7 @@ export function FormerWaterwaysMap() {
           ))}
           <small>Markers show evidence locations, not surveyed boundaries.</small>
           <small className="waterway-area-key">
-            <i aria-hidden="true" /> Dashed shading = approximate historical area
+            <i aria-hidden="true" /> Shading and dashed lines = approximate historical geography
           </small>
         </div>
       </div>
@@ -423,7 +373,7 @@ export function FormerWaterwaysMap() {
 
           {selectedGeometry && selectedGeometry.recordId === selected.id && (
             <section className="record-mapped-area">
-              <p className="record-label">Mapped historical area</p>
+              <p className="record-label">Mapped historical geography</p>
               <h4>{selectedGeometry.name}</h4>
               <p>{selectedGeometry.boundaryNote}</p>
               <p><strong>Map basis:</strong> {selectedGeometry.sourceYear}</p>

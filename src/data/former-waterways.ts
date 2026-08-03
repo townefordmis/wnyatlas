@@ -324,9 +324,9 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     waterwayHistory:
       "Fern Brook reaches Lake Erie beside Evans Town Park and the former Mickey Rats property. A 2021 state environmental notice for the Grandview Bay redevelopment required abandonment of a culvert that formerly contained Fern Brook after FEMA issued a Letter of Map Revision. Town waterfront records separately document maintenance dredging that directs the brook to the lake instead of allowing its outlet channel to run laterally across the Town Beach.",
     documentedMaterial:
-      "The reviewed records document a former culverted route and active management of the beach outlet. They do not identify industrial-waste fill, establish the culvert's original construction date, or provide enough surveyed information to draw its precise former centerline.",
+      "The reviewed records document a former culverted route and active management of the beach outlet. Erie County's 1926 and 1951 aerial photographs also show the lower drainage corridor as the surrounding road and residential pattern developed. The records do not identify industrial-waste fill, establish the culvert's original construction date, or provide enough surveyed information to draw its precise former centerline.",
     interpretation:
-      "The marker uses the USGS monitoring coordinate for the present mouth. It identifies the documented change area, not the former culvert alignment. WNY Atlas will add an old-channel trace only if a FEMA, engineering, or reliably aligned historical plan establishes that route.",
+      "The marker uses the USGS monitoring coordinate for the present mouth. The dashed line is a cautious Atlas alignment of the circa-1926 open channel, checked against the 1951 aerial and present USGS hydrography. It shows the general historical corridor, not the exact former culvert alignment; that alignment remains unconfirmed without a public FEMA or engineering plan.",
     sourceUrl:
       "https://dec.ny.gov/news/environmental-notice-bulletin/2021-05-19/seqr/erie-county-the-town-of-evans-planning-board-as",
     sourceLabel: "NYSDEC Grandview Bay conditional negative declaration",
@@ -343,11 +343,19 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
         url: "https://townofevansny.gov/wp-content/uploads/Drainage-Study-for-Fern-Brook-Muddy-Creek-and-Big-Sister-Creek-.pdf",
         label: "Town of Evans Fern Brook drainage study",
       },
+      {
+        url: "https://www3.erie.gov/sites/default/files/images/aerialphotos/1951/51_6H20.jpg",
+        label: "Erie County 1951 aerial photograph 6H20",
+      },
+      {
+        url: "https://www.usgs.gov/national-hydrography/access-national-hydrography-products",
+        label: "USGS National Hydrography Dataset",
+      },
     ],
     changePeriod:
       "Former culvert documented in the 2021 redevelopment review; beach-outlet maintenance documented in the Town waterfront program",
-    comparisonYears: ["1944", "1960s", "1990s", "2021", "2022 field study", "Present"],
-    evidenceConfidence: "research_boundary_pending",
+    comparisonYears: ["1926", "1951", "2021", "2022 field study", "Present"],
+    evidenceConfidence: "agency_mapped_approximation",
   },
   {
     id: "lockport-hydraulic-race-tunnel",

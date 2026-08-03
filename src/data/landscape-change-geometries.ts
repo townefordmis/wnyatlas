@@ -3,12 +3,10 @@ import type {
   WaterwayEvidenceType,
 } from "@/data/former-waterways";
 
-export type LandscapeChangeGeometry = {
+type LandscapeChangeGeometryBase = {
   id: string;
   recordId: string;
   name: string;
-  geometryType: "Polygon";
-  coordinates: [number, number][][];
   evidenceType: WaterwayEvidenceType;
   sourceYear: string;
   sourceUrl: string;
@@ -16,6 +14,18 @@ export type LandscapeChangeGeometry = {
   confidence: LandscapeEvidenceConfidence;
   boundaryNote: string;
 };
+
+export type LandscapeChangeGeometry = LandscapeChangeGeometryBase &
+  (
+    | {
+        geometryType: "Polygon";
+        coordinates: [number, number][][];
+      }
+    | {
+        geometryType: "LineString";
+        coordinates: [number, number][];
+      }
+  );
 
 /**
  * Atlas research geometries are visual reconstructions from cited agency maps.
@@ -115,5 +125,32 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     confidence: "agency_mapped_approximation",
     boundaryNote:
       "Approximate Atlas trace of the historic-channel band shown on the agency figure. It is not the BCP boundary, a parcel line, or a uniform contamination boundary.",
+  },
+  {
+    id: "fern-brook-1926-open-channel",
+    recordId: "fern-brook-managed-outlet",
+    name: "Approximate Fern Brook open channel, circa 1926",
+    geometryType: "LineString",
+    coordinates: [
+      [-79.06504, 42.64311],
+      [-79.06555, 42.64295],
+      [-79.06586, 42.64234],
+      [-79.06572, 42.6417],
+      [-79.06608, 42.64105],
+      [-79.06602, 42.64043],
+      [-79.06647, 42.63972],
+      [-79.06672, 42.63895],
+      [-79.06708, 42.63812],
+      [-79.06722, 42.63735],
+    ],
+    evidenceType: "documented_engineered_waterway",
+    sourceYear:
+      "1926 Erie County plates B3-B10 and B3-B9, checked against 1951 photograph 6H20 and present USGS hydrography",
+    sourceUrl:
+      "https://www3.erie.gov/sites/default/files/images/aerialphotos/1920s/b3_b10.jpg",
+    sourceLabel: "Erie County 1926 aerial photograph B3-B10",
+    confidence: "agency_mapped_approximation",
+    boundaryNote:
+      "Approximate Atlas alignment of the visible open drainage corridor, anchored to surviving roads, the lake outlet and present USGS hydrography. The county scans are not georeferenced, so this is not a surveyed centerline. It does not claim the exact route of the later abandoned culvert.",
   },
 ];
