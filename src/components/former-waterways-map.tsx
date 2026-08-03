@@ -14,6 +14,15 @@ import {
 
 const buffaloCenter: [number, number] = [-78.85, 42.86];
 
+const waterwayMarkerColors: Record<WaterwayEvidenceType, string> = {
+  documented_disposal_fill: "#d81b60",
+  documented_filled_waterway: "#0057b8",
+  documented_contaminated_sediment: "#6f2dbd",
+  documented_reclaimed_land: "#f28c00",
+  documented_engineered_waterway: "#00897b",
+  documented_culverted_waterway: "#6d4c41",
+};
+
 export function FormerWaterwaysMap() {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
@@ -70,13 +79,14 @@ export function FormerWaterwaysMap() {
     const markerStore = markers.current;
     formerWaterwayRecords.forEach((record) => {
       const marker = new maplibregl.Marker({
-        color: "#35637a",
-        scale: 0.64,
+        color: waterwayMarkerColors[record.evidenceType],
+        scale: isMobile ? 0.9 : 0.82,
         subpixelPositioning: true,
       })
         .setLngLat(record.coordinates)
         .addTo(instance);
-      marker.getElement().classList.add("school-native-marker");
+      marker.getElement().classList.add("waterway-native-marker");
+      marker.getElement().dataset.evidenceType = record.evidenceType;
       marker.getElement().setAttribute("aria-label", `Open ${record.name}`);
       marker.getElement().addEventListener("click", () => setSelected(record));
       markerStore.set(record.id, marker);
@@ -134,8 +144,17 @@ export function FormerWaterwaysMap() {
           </p>
           <h2 id="waterway-map-title">Former waterways and documented fill</h2>
         </div>
-        <div className="school-map-legend" aria-label="Map limitation">
-          <span><i className="legend-nearby" /> Evidence location—not a surveyed boundary</span>
+        <div className="school-map-legend waterway-map-legend" aria-label="Map color key">
+          {Object.entries(waterwayEvidenceLabels).map(([value, label]) => (
+            <span key={value}>
+              <i
+                className="waterway-legend-swatch"
+                style={{ background: waterwayMarkerColors[value as WaterwayEvidenceType] }}
+              />
+              {label}
+            </span>
+          ))}
+          <small>Markers show evidence locations, not surveyed boundaries.</small>
         </div>
       </div>
 
@@ -167,7 +186,14 @@ export function FormerWaterwaysMap() {
                 className={record.id === selected.id ? "is-active" : ""}
                 onClick={() => chooseRecord(record)}
               >
-                <strong>{record.name}</strong>
+                <strong>
+                  <i
+                    className="waterway-list-swatch"
+                    style={{ background: waterwayMarkerColors[record.evidenceType] }}
+                    aria-hidden="true"
+                  />
+                  {record.name}
+                </strong>
                 <span>{waterwayEvidenceLabels[record.evidenceType]}</span>
               </button>
             ))}

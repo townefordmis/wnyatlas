@@ -2081,6 +2081,63 @@ footer {
   transform-origin: bottom center;
 }
 
+.waterway-native-marker,
+.waterway-native-marker * {
+  transition: none !important;
+  animation: none !important;
+}
+
+.waterway-native-marker {
+  cursor: pointer;
+  filter:
+    drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 2px #fff)
+    drop-shadow(0 3px 3px rgba(16, 24, 40, 0.72));
+}
+
+.waterway-native-marker svg {
+  overflow: visible;
+}
+
+.waterway-native-marker.is-selected svg {
+  filter:
+    drop-shadow(0 0 2px #fff)
+    drop-shadow(0 0 6px #fff)
+    drop-shadow(0 0 8px rgba(8, 31, 56, 0.95));
+}
+
+.waterway-native-marker:focus-visible {
+  outline: 3px solid #111827;
+  outline-offset: 4px;
+  border-radius: 999px;
+}
+
+.waterway-map-legend {
+  max-width: 46rem;
+  justify-content: flex-end;
+}
+
+.waterway-map-legend small {
+  flex-basis: 100%;
+  color: var(--muted);
+  text-align: right;
+}
+
+.waterway-legend-swatch,
+.waterway-list-swatch {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.8), 0 1px 3px rgba(15, 23, 42, 0.45);
+}
+
+.waterway-list-swatch {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 999px;
+  vertical-align: 0.02em;
+}
+
 .school-map-list {
   grid-area: list;
   display: flex;
