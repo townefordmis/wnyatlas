@@ -2172,6 +2172,34 @@ footer {
   z-index: 5;
 }
 
+.waterway-current-route-dot {
+  background: #0b5fc6;
+  border: 2px solid #082f63;
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px #fff;
+  display: block;
+  height: 0.58rem;
+  pointer-events: none;
+  width: 0.58rem;
+  z-index: 4;
+}
+
+.waterway-current-route-label {
+  background: #0b5fc6;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 45%);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.35rem 0.55rem;
+  pointer-events: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 6;
+}
+
 .waterway-map-stage {
   overflow: hidden;
   position: relative;
@@ -2203,6 +2231,54 @@ footer {
   z-index: 5;
 }
 
+.fern-route-comparison {
+  align-items: stretch;
+  display: grid;
+  max-width: min(31rem, calc(100% - 5.5rem));
+}
+
+.fern-route-comparison > strong {
+  color: #123b45;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.fern-route-comparison span {
+  align-items: center;
+  display: flex;
+  font-size: 0.7rem;
+  gap: 0.5rem;
+}
+
+.fern-route-current-key i {
+  background: #0b5fc6;
+  border: 2px solid #082f63;
+  border-radius: 999px;
+  flex: 0 0 0.65rem;
+  height: 0.65rem;
+}
+
+.fern-route-historic-key i {
+  background: #24e6c7;
+  border: 2px solid #003c38;
+  border-radius: 999px;
+  flex: 0 0 0.65rem;
+  height: 0.65rem;
+}
+
+.fern-route-comparison p {
+  border-top: 1px solid rgb(0 111 99 / 24%);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  margin: 0.2rem 0 0;
+  padding-top: 0.4rem;
+}
+
+.current-route-record {
+  background: #eef5ff;
+  border-color: #8db7e8;
+}
+
 .waterway-route-notice i {
   border-bottom: 3px solid #003c38;
   border-top: 6px dashed #24e6c7;
@@ -2219,6 +2295,31 @@ footer {
   color: #004f45;
   font-size: 0.75rem;
   text-transform: uppercase;
+}
+
+.fern-route-comparison .fern-route-current-key,
+.fern-route-comparison .fern-route-historic-key {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.fern-route-comparison .fern-route-current-key i {
+  background: #0b5fc6;
+  border: 2px solid #082f63;
+  border-radius: 999px;
+  flex: 0 0 0.65rem;
+  height: 0.65rem;
+  width: 0.65rem;
+}
+
+.fern-route-comparison .fern-route-historic-key i {
+  background: #24e6c7;
+  border: 2px solid #003c38;
+  border-radius: 999px;
+  flex: 0 0 0.65rem;
+  height: 0.65rem;
+  width: 0.65rem;
 }
 
 .waterway-area-key i {

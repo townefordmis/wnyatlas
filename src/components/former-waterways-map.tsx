@@ -16,6 +16,7 @@ import {
   type WaterwayEvidenceType,
 } from "@/data/former-waterways";
 import {
+  fernBrookCurrentRoute,
   landscapeChangeGeometries,
   type LandscapeChangeGeometry,
 } from "@/data/landscape-change-geometries";
@@ -62,6 +63,14 @@ function geometryBounds(geometry: LandscapeChangeGeometry) {
   return bounds;
 }
 
+function comparisonBounds(geometry: LandscapeChangeGeometry) {
+  const bounds = geometryBounds(geometry);
+  if (geometry.recordId === fernBrookCurrentRoute.recordId) {
+    fernBrookCurrentRoute.coordinates.forEach((point) => bounds.extend(point));
+  }
+  return bounds;
+}
+
 export function FormerWaterwaysMap() {
   const shell = useRef<HTMLElement>(null);
   const container = useRef<HTMLDivElement>(null);
@@ -69,6 +78,8 @@ export function FormerWaterwaysMap() {
   const markers = useRef<Map<string, Marker>>(new Map());
   const geometryLabels = useRef<Map<string, Marker>>(new Map());
   const geometryRouteDots = useRef<Map<string, Marker[]>>(new Map());
+  const currentFernRouteDots = useRef<Marker[]>([]);
+  const currentFernRouteLabel = useRef<Marker | null>(null);
   const [selected, setSelected] = useState(formerWaterwayRecords[0]);
   const [selectedGeometry, setSelectedGeometry] =
     useState<LandscapeChangeGeometry | null>(
@@ -255,6 +266,50 @@ export function FormerWaterwaysMap() {
       geometryLabelStore.set(geometry.id, label);
     });
 
+    const currentDots: Marker[] = [];
+    fernBrookCurrentRoute.coordinates.slice(0, -1).forEach((start, index) => {
+      const end = fernBrookCurrentRoute.coordinates[index + 1];
+      for (let step = 0; step < 4; step += 1) {
+        const progress = step / 4;
+        const dotElement = document.createElement("span");
+        dotElement.className = "waterway-current-route-dot";
+        dotElement.style.display = "none";
+        currentDots.push(
+          new maplibregl.Marker({ element: dotElement, anchor: "center" })
+            .setLngLat([
+              start[0] + (end[0] - start[0]) * progress,
+              start[1] + (end[1] - start[1]) * progress,
+            ])
+            .addTo(instance),
+        );
+      }
+    });
+    const currentEndElement = document.createElement("span");
+    currentEndElement.className = "waterway-current-route-dot";
+    currentEndElement.style.display = "none";
+    currentDots.push(
+      new maplibregl.Marker({ element: currentEndElement, anchor: "center" })
+        .setLngLat(
+          fernBrookCurrentRoute.coordinates[
+            fernBrookCurrentRoute.coordinates.length - 1
+          ],
+        )
+        .addTo(instance),
+    );
+    currentFernRouteDots.current = currentDots;
+
+    const currentLabelElement = document.createElement("div");
+    currentLabelElement.className = "waterway-current-route-label";
+    currentLabelElement.textContent = "Current mapped course";
+    currentLabelElement.style.display = "none";
+    currentFernRouteLabel.current = new maplibregl.Marker({
+      element: currentLabelElement,
+      anchor: "right",
+      offset: [-12, 0],
+    })
+      .setLngLat(fernBrookCurrentRoute.coordinates[10])
+      .addTo(instance);
+
     formerWaterwayRecords.forEach((record) => {
       const marker = new maplibregl.Marker({
         color: waterwayMarkerColors[record.evidenceType],
@@ -284,7 +339,7 @@ export function FormerWaterwaysMap() {
         shell.current?.scrollIntoView({ behavior: "auto", block: "start" });
       });
       if (linkedGeometry) {
-        instance.fitBounds(geometryBounds(linkedGeometry), {
+        instance.fitBounds(comparisonBounds(linkedGeometry), {
           padding: isMobile ? 34 : 52,
           maxZoom: 14.6,
           duration: 0,
@@ -310,6 +365,10 @@ export function FormerWaterwaysMap() {
         dots.forEach((dot) => dot.remove()),
       );
       geometryRouteDotStore.clear();
+      currentDots.forEach((dot) => dot.remove());
+      currentFernRouteDots.current = [];
+      currentFernRouteLabel.current?.remove();
+      currentFernRouteLabel.current = null;
       instance.remove();
       map.current = null;
     };
@@ -347,11 +406,19 @@ export function FormerWaterwaysMap() {
       }
       geometryRouteDots.current.get(geometry.id)?.forEach((dot) => {
         dot.getElement().style.display =
-          visible.has(geometry.recordId) && geometry.recordId === selected.id
-            ? ""
-            : "none";
+          visible.has(geometry.recordId) ? "" : "none";
       });
     });
+    const fernIsVisible = visible.has(fernBrookCurrentRoute.recordId);
+    currentFernRouteDots.current.forEach((dot) => {
+      dot.getElement().style.display = fernIsVisible ? "" : "none";
+    });
+    if (currentFernRouteLabel.current) {
+      currentFernRouteLabel.current.getElement().style.display =
+        fernIsVisible && selected.id === fernBrookCurrentRoute.recordId
+          ? ""
+          : "none";
+    }
   }, [filtered, selected.id]);
 
   function chooseRecord(record: FormerWaterwayRecord) {
@@ -361,7 +428,7 @@ export function FormerWaterwaysMap() {
     setSelected(record);
     setSelectedGeometry(geometry ?? null);
     if (geometry) {
-      map.current?.fitBounds(geometryBounds(geometry), {
+      map.current?.fitBounds(comparisonBounds(geometry), {
         padding: 52,
         maxZoom: 14.6,
         duration: 500,
@@ -412,13 +479,21 @@ export function FormerWaterwaysMap() {
       <div className="school-map-grid">
         <div className="school-map-canvas waterway-map-stage">
           <div className="waterway-map-inner" ref={container} />
-          {selectedGeometry?.geometryType === "LineString" && (
-            <div className="waterway-route-notice" aria-live="polite">
-              <i aria-hidden="true" />
-              <span>
-                <strong>{selectedGeometry.mapLabel}</strong>
-                Approximate historical route shown below
+          {selected.id === fernBrookCurrentRoute.recordId && (
+            <div className="waterway-route-notice fern-route-comparison" aria-live="polite">
+              <strong>Fern Brook route comparison</strong>
+              <span className="fern-route-current-key">
+                <i aria-hidden="true" /> Current mapped course - Town study and USGS hydrography
               </span>
+              <span className="fern-route-historic-key">
+                <i aria-hidden="true" /> Possible circa-1926 course - approximate aerial alignment
+              </span>
+              <p>
+                <strong>DEC 2021:</strong> The Grandview Bay review required
+                abandonment of a culvert that formerly contained Fern Brook
+                after a FEMA Letter of Map Revision. The notice does not map the
+                culvert&apos;s exact former alignment.
+              </p>
             </div>
           )}
         </div>
@@ -524,6 +599,21 @@ export function FormerWaterwaysMap() {
                 rel="noreferrer"
               >
                 {selectedGeometry.sourceLabel} ↗
+              </a>
+            </section>
+          )}
+
+          {selected.id === fernBrookCurrentRoute.recordId && (
+            <section className="record-mapped-area current-route-record">
+              <p className="record-label">Current route reference</p>
+              <h4>{fernBrookCurrentRoute.name}</h4>
+              <p>{fernBrookCurrentRoute.explanation}</p>
+              <a
+                href={fernBrookCurrentRoute.sourceUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {fernBrookCurrentRoute.sourceLabel} â†—
               </a>
             </section>
           )}
