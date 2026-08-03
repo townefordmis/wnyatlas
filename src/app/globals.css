@@ -2142,6 +2142,71 @@ footer {
   width: 1.8rem;
 }
 
+.waterway-route-label {
+  background: #006f63;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 45%);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  padding: 0.35rem 0.55rem;
+  pointer-events: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 6;
+}
+
+.waterway-map-stage {
+  overflow: hidden;
+  position: relative;
+}
+
+.school-map-shell {
+  scroll-margin-top: 0.75rem;
+}
+
+.waterway-map-inner {
+  inset: 0;
+  position: absolute;
+}
+
+.waterway-route-notice {
+  align-items: center;
+  background: rgb(255 255 255 / 94%);
+  border: 2px solid #006f63;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 10px rgb(15 23 42 / 24%);
+  display: flex;
+  gap: 0.6rem;
+  left: 0.75rem;
+  max-width: calc(100% - 5.5rem);
+  padding: 0.5rem 0.65rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0.75rem;
+  z-index: 5;
+}
+
+.waterway-route-notice i {
+  border-top: 5px dashed #00897b;
+  flex: 0 0 2.2rem;
+}
+
+.waterway-route-notice span {
+  display: grid;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.waterway-route-notice strong {
+  color: #004f45;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
 .waterway-area-key i {
   background: repeating-linear-gradient(
     135deg,

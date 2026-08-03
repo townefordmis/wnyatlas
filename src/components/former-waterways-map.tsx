@@ -48,14 +48,26 @@ function geometryLayerId(id: string) {
   return `landscape-layer-${id}`;
 }
 
-function geometryLabelLayerId(id: string) {
-  return `landscape-label-${id}`;
+function geometryCasingLayerId(id: string) {
+  return `landscape-casing-${id}`;
+}
+
+function geometryBounds(geometry: LandscapeChangeGeometry) {
+  const points =
+    geometry.geometryType === "Polygon"
+      ? geometry.coordinates.flat()
+      : geometry.coordinates;
+  const bounds = new maplibregl.LngLatBounds(points[0], points[0]);
+  points.slice(1).forEach((point) => bounds.extend(point));
+  return bounds;
 }
 
 export function FormerWaterwaysMap() {
+  const shell = useRef<HTMLElement>(null);
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
   const markers = useRef<Map<string, Marker>>(new Map());
+  const geometryLabels = useRef<Map<string, Marker>>(new Map());
   const [selected, setSelected] = useState(formerWaterwayRecords[0]);
   const [selectedGeometry, setSelectedGeometry] =
     useState<LandscapeChangeGeometry | null>(
@@ -110,7 +122,18 @@ export function FormerWaterwaysMap() {
             }];
         }
 
-        const layers: LayerSpecification[] = [{
+        const layers: LayerSpecification[] = [
+          {
+            id: geometryCasingLayerId(geometry.id),
+            type: "line",
+            source: geometrySourceId(geometry.id),
+            paint: {
+              "line-color": "#ffffff",
+              "line-width": 10,
+              "line-opacity": 0.94,
+            },
+          },
+          {
               id: geometryLayerId(geometry.id),
               type: "line",
               source: geometrySourceId(geometry.id),
@@ -120,27 +143,8 @@ export function FormerWaterwaysMap() {
                 "line-opacity": 1,
                 "line-dasharray": [2, 1.5],
               },
-            }];
-        if (geometry.mapLabel) {
-          layers.push({
-            id: geometryLabelLayerId(geometry.id),
-            type: "symbol",
-            source: geometrySourceId(geometry.id),
-            minzoom: 12,
-            layout: {
-              "symbol-placement": "line",
-              "text-field": geometry.mapLabel,
-              "text-size": 11,
-              "text-letter-spacing": 0.03,
-              "text-max-angle": 45,
             },
-            paint: {
-              "text-color": "#004f45",
-              "text-halo-color": "#ffffff",
-              "text-halo-width": 2,
-            },
-          });
-        }
+        ];
         return layers;
       },
     );
@@ -201,6 +205,20 @@ export function FormerWaterwaysMap() {
     });
 
     const markerStore = markers.current;
+    const geometryLabelStore = geometryLabels.current;
+    landscapeChangeGeometries.forEach((geometry) => {
+      if (geometry.geometryType !== "LineString" || !geometry.mapLabel) return;
+      const element = document.createElement("div");
+      element.className = "waterway-route-label";
+      element.textContent = geometry.mapLabel;
+      element.style.display = "none";
+      const midpoint = geometry.coordinates[Math.floor(geometry.coordinates.length / 2)];
+      const label = new maplibregl.Marker({ element, anchor: "bottom" })
+        .setLngLat(midpoint)
+        .addTo(instance);
+      geometryLabelStore.set(geometry.id, label);
+    });
+
     formerWaterwayRecords.forEach((record) => {
       const marker = new maplibregl.Marker({
         color: waterwayMarkerColors[record.evidenceType],
@@ -221,15 +239,23 @@ export function FormerWaterwaysMap() {
       (record) => record.id === linkedRecordId,
     );
     if (linkedRecord) {
+      const linkedGeometry = landscapeChangeGeometries.find(
+        (geometry) => geometry.recordId === linkedRecord.id,
+      );
       requestAnimationFrame(() => {
         setSelected(linkedRecord);
-        setSelectedGeometry(
-          landscapeChangeGeometries.find(
-            (geometry) => geometry.recordId === linkedRecord.id,
-          ) ?? null,
-        );
+        setSelectedGeometry(linkedGeometry ?? null);
+        shell.current?.scrollIntoView({ behavior: "auto", block: "start" });
       });
-      instance.jumpTo({ center: linkedRecord.coordinates, zoom: 14 });
+      if (linkedGeometry) {
+        instance.fitBounds(geometryBounds(linkedGeometry), {
+          padding: isMobile ? 34 : 52,
+          maxZoom: 14.6,
+          duration: 0,
+        });
+      } else {
+        instance.jumpTo({ center: linkedRecord.coordinates, zoom: 14 });
+      }
     }
 
     const resize = () => requestAnimationFrame(() => instance.resize());
@@ -242,6 +268,8 @@ export function FormerWaterwaysMap() {
       window.removeEventListener("resize", resize);
       markerStore.forEach((marker) => marker.remove());
       markerStore.clear();
+      geometryLabelStore.forEach((label) => label.remove());
+      geometryLabelStore.clear();
       instance.remove();
       map.current = null;
     };
@@ -263,32 +291,51 @@ export function FormerWaterwaysMap() {
           visible.has(geometry.recordId) ? "visible" : "none",
         );
       }
-      if (map.current?.getLayer(geometryLabelLayerId(geometry.id))) {
+      if (map.current?.getLayer(geometryCasingLayerId(geometry.id))) {
         map.current.setLayoutProperty(
-          geometryLabelLayerId(geometry.id),
+          geometryCasingLayerId(geometry.id),
           "visibility",
           visible.has(geometry.recordId) ? "visible" : "none",
         );
+      }
+      const label = geometryLabels.current.get(geometry.id);
+      if (label) {
+        label.getElement().style.display =
+          visible.has(geometry.recordId) && geometry.recordId === selected.id
+            ? ""
+            : "none";
       }
     });
   }, [filtered, selected.id]);
 
   function chooseRecord(record: FormerWaterwayRecord) {
-    setSelected(record);
-    setSelectedGeometry(
-      landscapeChangeGeometries.find(
-        (geometry) => geometry.recordId === record.id,
-      ) ?? null,
+    const geometry = landscapeChangeGeometries.find(
+      (candidate) => candidate.recordId === record.id,
     );
-    map.current?.flyTo({
-      center: record.coordinates,
-      zoom: 14,
-      essential: false,
-    });
+    setSelected(record);
+    setSelectedGeometry(geometry ?? null);
+    if (geometry) {
+      map.current?.fitBounds(geometryBounds(geometry), {
+        padding: 52,
+        maxZoom: 14.6,
+        duration: 500,
+      });
+    } else {
+      map.current?.flyTo({
+        center: record.coordinates,
+        zoom: 14,
+        essential: false,
+      });
+    }
   }
 
   return (
-    <section className="school-map-shell" aria-labelledby="waterway-map-title">
+    <section
+      className="school-map-shell"
+      id="waterway-map"
+      ref={shell}
+      aria-labelledby="waterway-map-title"
+    >
       <div className="school-map-toolbar">
         <div>
           <p className="eyebrow">
@@ -317,7 +364,18 @@ export function FormerWaterwaysMap() {
       </div>
 
       <div className="school-map-grid">
-        <div className="school-map-canvas" ref={container} />
+        <div className="school-map-canvas waterway-map-stage">
+          <div className="waterway-map-inner" ref={container} />
+          {selectedGeometry?.geometryType === "LineString" && (
+            <div className="waterway-route-notice" aria-live="polite">
+              <i aria-hidden="true" />
+              <span>
+                <strong>{selectedGeometry.mapLabel}</strong>
+                Approximate historical route shown below
+              </span>
+            </div>
+          )}
+        </div>
 
         <aside className="school-map-list" aria-label="Documented waterway locations">
           <label>
@@ -340,7 +398,6 @@ export function FormerWaterwaysMap() {
               <button
                 type="button"
                 key={record.id}
-                id={`waterway-${record.id}`}
                 className={record.id === selected.id ? "is-active" : ""}
                 onClick={() => chooseRecord(record)}
               >
