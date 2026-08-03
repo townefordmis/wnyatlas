@@ -2172,34 +2172,6 @@ footer {
   z-index: 5;
 }
 
-.waterway-current-route-dot {
-  background: #0b5fc6;
-  border: 2px solid #082f63;
-  border-radius: 999px;
-  box-shadow: 0 0 0 1px #fff;
-  display: block;
-  height: 0.58rem;
-  pointer-events: none;
-  width: 0.58rem;
-  z-index: 4;
-}
-
-.waterway-current-route-label {
-  background: #0b5fc6;
-  border: 2px solid #fff;
-  border-radius: 999px;
-  box-shadow: 0 2px 8px rgb(15 23 42 / 45%);
-  color: #fff;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-weight: 800;
-  padding: 0.35rem 0.55rem;
-  pointer-events: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-  z-index: 6;
-}
-
 .waterway-map-stage {
   overflow: hidden;
   position: relative;
@@ -2250,14 +2222,6 @@ footer {
   gap: 0.5rem;
 }
 
-.fern-route-current-key i {
-  background: #0b5fc6;
-  border: 2px solid #082f63;
-  border-radius: 999px;
-  flex: 0 0 0.65rem;
-  height: 0.65rem;
-}
-
 .fern-route-historic-key i {
   background: #24e6c7;
   border: 2px solid #003c38;
@@ -2272,11 +2236,6 @@ footer {
   line-height: 1.4;
   margin: 0.2rem 0 0;
   padding-top: 0.4rem;
-}
-
-.current-route-record {
-  background: #eef5ff;
-  border-color: #8db7e8;
 }
 
 .waterway-route-notice i {
@@ -2297,20 +2256,10 @@ footer {
   text-transform: uppercase;
 }
 
-.fern-route-comparison .fern-route-current-key,
 .fern-route-comparison .fern-route-historic-key {
   align-items: center;
   display: flex;
   gap: 0.5rem;
-}
-
-.fern-route-comparison .fern-route-current-key i {
-  background: #0b5fc6;
-  border: 2px solid #082f63;
-  border-radius: 999px;
-  flex: 0 0 0.65rem;
-  height: 0.65rem;
-  width: 0.65rem;
 }
 
 .fern-route-comparison .fern-route-historic-key i {

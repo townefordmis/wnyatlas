@@ -326,7 +326,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     documentedMaterial:
       "The reviewed records document a former culverted route and active management of the beach outlet. Erie County's 1926 and 1951 aerial photographs also show the lower drainage corridor as the surrounding road and residential pattern developed. The records do not identify industrial-waste fill, establish the culvert's original construction date, or provide enough surveyed information to draw its precise former centerline.",
     interpretation:
-      "The marker uses the USGS monitoring coordinate for the present mouth. The dashed line is a cautious Atlas alignment of the circa-1926 open channel, checked against the 1951 aerial and present USGS hydrography. It shows the general historical corridor, not the exact former culvert alignment; that alignment remains unconfirmed without a public FEMA or engineering plan.",
+      "The marker uses the USGS monitoring coordinate for the present mouth. The teal points are a cautious Atlas alignment of the circa-1926 open channel, checked against the 1951 aerial and surrounding modern geography. They show a possible historical corridor, not the exact former culvert alignment. WNY Atlas is withholding a present-day centerline until a named, georeferenced Town, FEMA or engineering source confirms it.",
     sourceUrl:
       "https://dec.ny.gov/news/environmental-notice-bulletin/2021-05-19/seqr/erie-county-the-town-of-evans-planning-board-as",
     sourceLabel: "NYSDEC Grandview Bay conditional negative declaration",
