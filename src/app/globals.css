@@ -2129,6 +2129,19 @@ footer {
   gap: 0.45rem;
 }
 
+.waterway-map-legend .waterway-line-key {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.45rem;
+}
+
+.waterway-line-key i {
+  border-top: 4px dashed #00897b;
+  display: inline-block;
+  height: 0;
+  width: 1.8rem;
+}
+
 .waterway-area-key i {
   background: repeating-linear-gradient(
     135deg,

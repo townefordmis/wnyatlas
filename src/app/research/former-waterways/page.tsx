@@ -35,11 +35,11 @@ export default function FormerWaterwaysResearchPage() {
         <div className="school-caution">
           <strong>How to read this map</strong>
           <p>
-            Markers identify documented evidence locations. Dashed shaded areas
-            are approximate Atlas reconstructions from cited agency maps—not
-            surveyed parcel, cleanup, or exposure boundaries. Physical landscape
-            change and contamination are separate facts. Each description states
-            exactly what the reviewed source supports.
+            Markers identify documented evidence locations. Shaded areas and
+            dashed lines are approximate Atlas reconstructions from cited agency
+            maps—not surveyed parcel, cleanup, or exposure boundaries. Physical
+            landscape change and contamination are separate facts. Each
+            description states exactly what the reviewed source supports.
           </p>
         </div>
       </section>

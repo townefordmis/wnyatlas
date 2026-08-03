@@ -48,6 +48,10 @@ function geometryLayerId(id: string) {
   return `landscape-layer-${id}`;
 }
 
+function geometryLabelLayerId(id: string) {
+  return `landscape-label-${id}`;
+}
+
 export function FormerWaterwaysMap() {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
@@ -91,10 +95,10 @@ export function FormerWaterwaysMap() {
         },
       ]),
     );
-    const geometryLayers: LayerSpecification[] = landscapeChangeGeometries.map(
-      (geometry) =>
-        geometry.geometryType === "Polygon"
-          ? {
+    const geometryLayers: LayerSpecification[] = landscapeChangeGeometries.flatMap(
+      (geometry): LayerSpecification[] => {
+        if (geometry.geometryType === "Polygon") {
+          return [{
               id: geometryLayerId(geometry.id),
               type: "fill",
               source: geometrySourceId(geometry.id),
@@ -103,18 +107,42 @@ export function FormerWaterwaysMap() {
                 "fill-opacity": 0.35,
                 "fill-outline-color": waterwayMarkerColors[geometry.evidenceType],
               },
-            }
-          : {
+            }];
+        }
+
+        const layers: LayerSpecification[] = [{
               id: geometryLayerId(geometry.id),
               type: "line",
               source: geometrySourceId(geometry.id),
               paint: {
                 "line-color": waterwayMarkerColors[geometry.evidenceType],
-                "line-width": 5,
-                "line-opacity": 0.9,
+                "line-width": 6,
+                "line-opacity": 1,
                 "line-dasharray": [2, 1.5],
               },
+            }];
+        if (geometry.mapLabel) {
+          layers.push({
+            id: geometryLabelLayerId(geometry.id),
+            type: "symbol",
+            source: geometrySourceId(geometry.id),
+            minzoom: 12,
+            layout: {
+              "symbol-placement": "line",
+              "text-field": geometry.mapLabel,
+              "text-size": 11,
+              "text-letter-spacing": 0.03,
+              "text-max-angle": 45,
             },
+            paint: {
+              "text-color": "#004f45",
+              "text-halo-color": "#ffffff",
+              "text-halo-width": 2,
+            },
+          });
+        }
+        return layers;
+      },
     );
     const instance = new maplibregl.Map({
       container: container.current,
@@ -235,6 +263,13 @@ export function FormerWaterwaysMap() {
           visible.has(geometry.recordId) ? "visible" : "none",
         );
       }
+      if (map.current?.getLayer(geometryLabelLayerId(geometry.id))) {
+        map.current.setLayoutProperty(
+          geometryLabelLayerId(geometry.id),
+          "visibility",
+          visible.has(geometry.recordId) ? "visible" : "none",
+        );
+      }
     });
   }, [filtered, selected.id]);
 
@@ -273,7 +308,10 @@ export function FormerWaterwaysMap() {
           ))}
           <small>Markers show evidence locations, not surveyed boundaries.</small>
           <small className="waterway-area-key">
-            <i aria-hidden="true" /> Shading and dashed lines = approximate historical geography
+            <i aria-hidden="true" /> Shading = approximate historical area
+          </small>
+          <small className="waterway-line-key">
+            <i aria-hidden="true" /> Dashed teal line = possible historic waterway course, not a surveyed route
           </small>
         </div>
       </div>

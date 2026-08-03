@@ -13,6 +13,7 @@ type LandscapeChangeGeometryBase = {
   sourceLabel: string;
   confidence: LandscapeEvidenceConfidence;
   boundaryNote: string;
+  mapLabel?: string;
 };
 
 export type LandscapeChangeGeometry = LandscapeChangeGeometryBase &
@@ -130,6 +131,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     id: "fern-brook-1926-open-channel",
     recordId: "fern-brook-managed-outlet",
     name: "Approximate Fern Brook open channel, circa 1926",
+    mapLabel: "Possible circa-1926 Fern Brook course",
     geometryType: "LineString",
     coordinates: [
       [-79.06504, 42.64311],
