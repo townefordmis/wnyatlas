@@ -128,9 +128,9 @@ export function FormerWaterwaysMap() {
             type: "line",
             source: geometrySourceId(geometry.id),
             paint: {
-              "line-color": "#ffffff",
-              "line-width": 10,
-              "line-opacity": 0.94,
+              "line-color": "#003c38",
+              "line-width": 14,
+              "line-opacity": 0.96,
             },
           },
           {
@@ -138,10 +138,10 @@ export function FormerWaterwaysMap() {
               type: "line",
               source: geometrySourceId(geometry.id),
               paint: {
-                "line-color": waterwayMarkerColors[geometry.evidenceType],
-                "line-width": 6,
+                "line-color": "#24e6c7",
+                "line-width": 8,
                 "line-opacity": 1,
-                "line-dasharray": [2, 1.5],
+                "line-dasharray": [1.8, 1.15],
               },
             },
         ];
@@ -213,7 +213,11 @@ export function FormerWaterwaysMap() {
       element.textContent = geometry.mapLabel;
       element.style.display = "none";
       const midpoint = geometry.coordinates[Math.floor(geometry.coordinates.length / 2)];
-      const label = new maplibregl.Marker({ element, anchor: "bottom" })
+      const label = new maplibregl.Marker({
+        element,
+        anchor: "left",
+        offset: [12, 0],
+      })
         .setLngLat(midpoint)
         .addTo(instance);
       geometryLabelStore.set(geometry.id, label);

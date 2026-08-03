@@ -2136,7 +2136,8 @@ footer {
 }
 
 .waterway-line-key i {
-  border-top: 4px dashed #00897b;
+  border-bottom: 3px solid #003c38;
+  border-top: 5px dashed #24e6c7;
   display: inline-block;
   height: 0;
   width: 1.8rem;
@@ -2191,7 +2192,8 @@ footer {
 }
 
 .waterway-route-notice i {
-  border-top: 5px dashed #00897b;
+  border-bottom: 3px solid #003c38;
+  border-top: 6px dashed #24e6c7;
   flex: 0 0 2.2rem;
 }
 
