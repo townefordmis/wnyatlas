@@ -398,9 +398,21 @@ export function FormerWaterwaysMap() {
           <section>
             <h4>How WNY Atlas interprets it</h4>
             <p>{selected.interpretation}</p>
-            <a href={selected.sourceUrl} target="_blank" rel="noreferrer">
-              {selected.sourceLabel} ↗
-            </a>
+            <div className="nearby-record-links">
+              <a href={selected.sourceUrl} target="_blank" rel="noreferrer">
+                {selected.sourceLabel} ↗
+              </a>
+              {selected.additionalSources?.map((source) => (
+                <a
+                  key={source.url}
+                  href={source.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {source.label} ↗
+                </a>
+              ))}
+            </div>
           </section>
           {selected.evidenceConfidence && (
             <p className="record-boundary-note">
