@@ -2123,6 +2123,36 @@ footer {
   text-align: right;
 }
 
+.waterway-map-legend .waterway-area-key {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.45rem;
+}
+
+.waterway-area-key i {
+  background: repeating-linear-gradient(
+    135deg,
+    rgb(0 87 184 / 32%) 0 4px,
+    transparent 4px 8px
+  );
+  border: 2px dashed #0057b8;
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+}
+
+.record-mapped-area {
+  background: #eef6ff;
+  border: 1px solid #aac9e9;
+  border-radius: 0.75rem;
+  padding: 0.9rem;
+}
+
+.record-mapped-area h4,
+.record-mapped-area p {
+  margin-top: 0.35rem;
+}
+
 .waterway-legend-swatch,
 .waterway-list-swatch {
   border: 2px solid #fff;
@@ -2136,6 +2166,12 @@ footer {
   margin-right: 0.5rem;
   border-radius: 999px;
   vertical-align: 0.02em;
+}
+
+.record-comparison-years {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
 }
 
 .school-map-list {

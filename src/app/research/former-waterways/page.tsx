@@ -5,18 +5,18 @@ import { FormerWaterwaysMap } from "@/components/former-waterways-map";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: "Former and Buried Waterways of Buffalo",
+  title: "Changed Waters, Filled Wetlands and Reclaimed Shorelines",
   description:
-    "Explore documented former canals, filled channels, reclaimed waterfront land, disposal fill, and contaminated sediment in Buffalo, New York.",
+    "Explore documented former waterways, filled wetlands, reclaimed shorelines, slag-created land, disposal fill, and restored habitat across Western New York.",
   alternates: {
     canonical: "/research/former-waterways",
   },
   openGraph: {
     type: "article",
     url: "/research/former-waterways",
-    title: "Former and Buried Waterways of Buffalo | WNYAtlas",
+    title: "Changed Waters, Filled Wetlands and Reclaimed Shorelines | WNYAtlas",
     description:
-      "A source-led map of Buffalo's former canals, filled channels, reclaimed waterfront land, disposal fill, and contaminated sediment.",
+      "A source-led map of Western New York's former waterways, filled wetlands, reclaimed shoreline, documented fill, and restored habitat.",
   },
 };
 
@@ -25,20 +25,21 @@ export default function FormerWaterwaysResearchPage() {
     <main>
       <SiteHeader />
       <section className="school-research-hero">
-        <p className="eyebrow">WNY Atlas research map · Buffalo waterways</p>
-        <h1>Where water became land—and what the records say was placed there</h1>
+        <p className="eyebrow">WNY Atlas research map · Erie and Niagara Counties</p>
+        <h1>Changed Waters: former waterways, filled wetlands and reclaimed shores</h1>
         <p className="dek">
-          A separate map for filled channels, reclaimed waterfront land, disposal
-          fill, and contaminated sediment. It keeps this layered history readable
-          without crowding the main regional map.
+          Follow documented changes from the early aerial era to the present:
+          filled channels and wetlands, reclaimed waterfront land, slag-created
+          shoreline, disposal fill, and restored habitat.
         </p>
         <div className="school-caution">
           <strong>How to read this map</strong>
           <p>
-            Markers identify documented evidence locations, not the full historic
-            outline of a canal, slip, river channel, fill deposit, or cleanup
-            boundary. A former waterway is not automatically a waste site. The
-            description states exactly what each reviewed source supports.
+            Markers identify documented evidence locations. Dashed shaded areas
+            are approximate Atlas reconstructions from cited agency maps—not
+            surveyed parcel, cleanup, or exposure boundaries. Physical landscape
+            change and contamination are separate facts. Each description states
+            exactly what the reviewed source supports.
           </p>
         </div>
       </section>
@@ -47,13 +48,13 @@ export default function FormerWaterwaysResearchPage() {
 
       <section className="school-method">
         <p className="eyebrow">Evidence standard</p>
-        <h2>Waterway history and contamination are separate facts.</h2>
+        <h2>Landscape change and contamination are separate facts.</h2>
         <div>
           <article>
-            <h3>Documented waterway</h3>
+            <h3>Documented former landscape</h3>
             <p>
-              Historical or agency records must establish the former channel,
-              slip, canal, sediment area, or reclaimed shoreline.
+              Historical or agency records must establish the former wetland,
+              channel, slip, canal, sediment area, or shoreline.
             </p>
           </article>
           <article>
@@ -64,10 +65,11 @@ export default function FormerWaterwaysResearchPage() {
             </p>
           </article>
           <article>
-            <h3>No inferred boundaries</h3>
+            <h3>Source-aligned boundaries</h3>
             <p>
-              The first release uses evidence-location markers. Historic traces
-              and fill polygons will be added only from defensible mapped sources.
+              Historic traces and fill polygons are added only when a defensible
+              map can be aligned to modern geography. Every shaded area identifies
+              its source year, confidence, and limits.
             </p>
           </article>
         </div>
