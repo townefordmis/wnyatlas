@@ -49,8 +49,30 @@ export function SiteHeader() {
         detail: `Chemical guide · ${chemical.family}`,
         image: undefined,
       }));
+    const researchResults = [
+      {
+        id: "research-amherst-soils-foundations",
+        href: "/research/amherst-soils-foundations",
+        name: "Amherst soils, wetlands and foundation records",
+        detail: "Research map · Amherst",
+        image: undefined,
+        terms: "amherst soil soils wetland wetlands foundation foundations army corps audubon gis",
+      },
+    ]
+      .filter((result) =>
+        [result.name, result.detail, result.terms].some((value) =>
+          value.toLowerCase().includes(normalizedQuery),
+        ),
+      )
+      .map((result) => ({
+        id: result.id,
+        href: result.href,
+        name: result.name,
+        detail: result.detail,
+        image: result.image,
+      }));
 
-    return [...chemicalResults, ...placeResults].slice(0, MAX_RESULTS);
+    return [...researchResults, ...chemicalResults, ...placeResults].slice(0, MAX_RESULTS);
   }, [query]);
 
   function submitSearch(event: FormEvent<HTMLFormElement>) {
@@ -99,6 +121,12 @@ export function SiteHeader() {
           onClick={() => setIsMenuOpen(false)}
         >
           Waterways
+        </Link>
+        <Link
+          href="/research/amherst-soils-foundations"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Amherst GIS
         </Link>
         <Link
           href="/research/radiological-industry-fill"

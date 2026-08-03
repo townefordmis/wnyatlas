@@ -72,6 +72,31 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     sourceLabel: "City of Buffalo Preservation Ready Survey",
   },
   {
+    id: "ohio-basin-conway-park",
+    name: "Filled Ohio Basin and shipping canal",
+    location: "Conway Park and the former Ohio Basin, Buffalo",
+    coordinates: [-78.8551, 42.8687],
+    evidenceType: "documented_filled_waterway",
+    waterwayHistory:
+      "State brownfield records identify the open-water Ohio Basin and its shipping canal immediately east of the 300 Ohio Street property. The basin and canal were later filled, and the former water area is now occupied by Conway Park.",
+    documentedMaterial:
+      "The reviewed records establish that the basin and canal were filled. They do not establish one uniform fill composition throughout the entire former waterway. A separate DEC site-management record describes fill containing varying amounts of brick, concrete, metal debris, ash and wood at the nearby 225 Louisiana Street cleanup site, but WNY Atlas does not extend that parcel-specific finding across Conway Park.",
+    interpretation:
+      "The marker identifies a documented filled-waterway relationship, not a park-wide contamination boundary. A polygon will be added only after the basin outline is aligned from historical maps or engineering figures.",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915257/Application.BCP.C915257.2011-07-21.Attachments_6_thru_13.pdf",
+    sourceLabel: "NYSDEC 300 Ohio Street Brownfield Cleanup Program application",
+    additionalSources: [
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915350/Work%20Plan.BCP.C915350.2023-12-18.Site%20Management%20Plan_Final.pdf",
+        label: "NYSDEC 225 Louisiana Street site-management plan",
+      },
+    ],
+    changePeriod: "Filled before the modern use of the former basin as Conway Park",
+    comparisonYears: ["Historic harbor maps", "1927", "1938", "1951", "1966", "1978", "2024"],
+    evidenceConfidence: "research_boundary_pending",
+  },
+  {
     id: "babcock-former-buffalo-river-channel",
     name: "Filled Buffalo River channel at Babcock Street",
     location: "Former ExxonMobil Buffalo Terminal, Elk and Babcock Streets",
@@ -181,6 +206,35 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     changePeriod: "Reclamation beginning in the late nineteenth century and continuing through the twentieth century",
     comparisonYears: ["1927", "1938", "1951", "1966", "1978", "2002", "2024"],
     evidenceConfidence: "documented",
+  },
+  {
+    id: "rattlesnake-island-the-flats",
+    name: "Rattlesnake Island, former channel and The Flats",
+    location: "River Road and Two Mile Creek industrial corridor, Town of Tonawanda",
+    coordinates: [-78.9248, 42.9987],
+    evidenceType: "documented_disposal_fill",
+    waterwayHistory:
+      "Government habitat and cleanup records describe Rattlesnake Island beside a broad Niagara River marsh historically known as The Flats. The surrounding marsh and the channel separating the island from the mainland were subsequently filled as the River Road industrial corridor developed.",
+    documentedMaterial:
+      "A federal-state habitat assessment reports that Rattlesnake Island and the surrounding marsh were largely filled with industrial wastes by the late 1920s. DEC investigation records for the River Road site document later landfilling and industrial-waste disposal from approximately 1957 to 1970 and identify the former Rattlesnake Creek channel as filled. These records concern defined study areas and do not support treating the entire River Road corridor as one uniform deposit.",
+    interpretation:
+      "This marker joins the documented former island, marsh and channel history without drawing an unsupported exposure boundary. The 1901 georeferenced island and former-coastline figure, the 1920s aerial plates and later imagery will be used to reconstruct individual landscape changes before shaded areas are published.",
+    sourceUrl:
+      "https://dec.ny.gov/sites/default/files/2024-01/bnrhabreport.pdf",
+    sourceLabel: "Buffalo and Niagara Rivers Habitat Inventory and Assessment",
+    additionalSources: [
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915031/Report.HW.915031.1993-09-01.Phase1-2RIandFS.pdf",
+        label: "NYSDEC River Road remedial investigation and feasibility study",
+      },
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915353/Report.BCP.C915353.2020-08-30.nygeology_2020_Tonawanda_Coke_ESA.pdf",
+        label: "NYSDEC Tonawanda Coke environmental site assessment",
+      },
+    ],
+    changePeriod: "Industrial filling documented by the late 1920s; later disposal documented approximately 1957-1970",
+    comparisonYears: ["1901 map", "1927-1929", "1938", "1951", "1966", "1978", "2002", "2024"],
+    evidenceConfidence: "research_boundary_pending",
   },
   {
     id: "bethlehem-tecumseh-slag-shoreline",

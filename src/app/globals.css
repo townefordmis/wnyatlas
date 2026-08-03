@@ -85,8 +85,8 @@ button {
 
 .main-nav {
   display: flex;
-  gap: clamp(0.85rem, 1.5vw, 2rem);
-  font-size: 0.9rem;
+  gap: clamp(0.58rem, 1vw, 1.25rem);
+  font-size: clamp(0.76rem, 0.82vw, 0.86rem);
 }
 
 .main-nav a:hover,
@@ -2397,6 +2397,250 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+/* Amherst soils, wetlands and foundation-record GIS */
+.amherst-research-hero h1 {
+  max-width: 1050px;
+}
+
+.amherst-caution {
+  border-left-color: #ad1f2d;
+  background: #f2e4dc;
+}
+
+.amherst-map-shell,
+.amherst-method,
+.amherst-downloads {
+  width: min(1540px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.amherst-map-shell {
+  padding: 22px 0 68px;
+}
+
+.amherst-map-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+  gap: 36px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+
+.amherst-map-heading h2 {
+  margin: 4px 0 0;
+}
+
+.amherst-map-heading > p {
+  margin: 0;
+  color: #5c584f;
+  font-size: .88rem;
+}
+
+.amherst-map-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(350px, .72fr);
+  min-height: min(760px, 74vh);
+  border: 1px solid #aaa292;
+  background: #f7f2e8;
+}
+
+.amherst-map-canvas {
+  min-height: min(760px, 74vh);
+}
+
+.amherst-map-canvas .maplibregl-canvas {
+  outline: none;
+}
+
+.amherst-map-panel {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+  max-height: min(760px, 74vh);
+  overflow: hidden;
+  border-left: 1px solid #aaa292;
+}
+
+.amherst-layer-controls {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border-bottom: 1px solid #c8c0b0;
+}
+
+.amherst-layer-controls label {
+  display: grid;
+  grid-template-columns: 18px 12px minmax(0, 1fr);
+  gap: 9px;
+  align-items: start;
+  cursor: pointer;
+}
+
+.amherst-layer-controls input {
+  margin: 3px 0 0;
+}
+
+.amherst-layer-controls i {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+  border: 1px solid rgba(23, 39, 32, .45);
+}
+
+.amherst-layer-controls span,
+.amherst-layer-controls strong,
+.amherst-layer-controls small {
+  display: block;
+}
+
+.amherst-layer-controls strong {
+  font-size: .78rem;
+}
+
+.amherst-layer-controls small,
+.amherst-pending-layer span {
+  margin-top: 2px;
+  color: #5c584f;
+  font-size: .67rem;
+  line-height: 1.35;
+}
+
+.amherst-pending-layer {
+  margin-top: 4px;
+  padding: 9px 10px;
+  border: 1px dashed #8d8679;
+  background: #eee7d9;
+}
+
+.amherst-feature-story {
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.amherst-feature-story h3 {
+  margin: 6px 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.7rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.amherst-feature-story > p:not(.record-label) {
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.amherst-feature-story dl {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0 0;
+}
+
+.amherst-feature-story dl > div {
+  padding-top: 10px;
+  border-top: 1px solid #d0c8b9;
+}
+
+.amherst-feature-story dt {
+  margin-bottom: 4px;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.amherst-feature-story dd {
+  margin: 0;
+  font-size: .8rem;
+  line-height: 1.48;
+}
+
+.amherst-method,
+.amherst-downloads {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  padding: 62px 0;
+}
+
+.amherst-method > div,
+.amherst-downloads > div {
+  padding: 28px;
+  border-top: 4px solid #6f5c95;
+  background: #eee5d5;
+}
+
+.amherst-method h2,
+.amherst-downloads h2 {
+  margin: 5px 0 14px;
+}
+
+.amherst-downloads {
+  padding-top: 0;
+  padding-bottom: 90px;
+}
+
+.amherst-download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.amherst-download-actions a {
+  padding: 10px 12px;
+  border: 1px solid var(--ink);
+  background: #fffdf8;
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.amherst-downloads ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 18px;
+  font-size: .82rem;
+}
+
+.amherst-downloads a:hover,
+.amherst-downloads a:focus-visible {
+  color: var(--rust);
+}
+
+@media (max-width: 900px) {
+  .amherst-map-shell,
+  .amherst-method,
+  .amherst-downloads {
+    width: min(100% - 24px, 1540px);
+  }
+
+  .amherst-map-heading,
+  .amherst-map-grid,
+  .amherst-method,
+  .amherst-downloads {
+    grid-template-columns: 1fr;
+  }
+
+  .amherst-map-grid {
+    min-height: 0;
+  }
+
+  .amherst-map-canvas {
+    min-height: 58svh;
+  }
+
+  .amherst-map-panel {
+    max-height: none;
+    overflow: visible;
+    border-top: 1px solid #aaa292;
+    border-left: 0;
+  }
+
+  .amherst-feature-story {
+    max-height: none;
   }
 }
 

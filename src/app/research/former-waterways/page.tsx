@@ -72,6 +72,21 @@ export default function FormerWaterwaysResearchPage() {
               its source year, confidence, and limits.
             </p>
           </article>
+          <article>
+            <h3>Aerial comparison</h3>
+            <p>
+              Erie County&apos;s 1926–1929 and 1951 photographs are compared with
+              historical maps and modern imagery. A visible landscape change is
+              not labeled as fill until a second source supports that conclusion.
+            </p>
+            <a
+              href="https://www3.erie.gov/aerial-photos/aerial-photographs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Erie County historical aerial photographs ↗
+            </a>
+          </article>
         </div>
         <Link href="/">Return to the regional atlas →</Link>
       </section>
