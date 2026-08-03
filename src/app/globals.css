@@ -2160,6 +2160,18 @@ footer {
   z-index: 6;
 }
 
+.waterway-route-dot {
+  background: #24e6c7;
+  border: 2px solid #003c38;
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px #fff;
+  display: block;
+  height: 0.65rem;
+  pointer-events: none;
+  width: 0.65rem;
+  z-index: 5;
+}
+
 .waterway-map-stage {
   overflow: hidden;
   position: relative;

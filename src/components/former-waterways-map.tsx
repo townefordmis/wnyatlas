@@ -68,6 +68,7 @@ export function FormerWaterwaysMap() {
   const map = useRef<MapLibreMap | null>(null);
   const markers = useRef<Map<string, Marker>>(new Map());
   const geometryLabels = useRef<Map<string, Marker>>(new Map());
+  const geometryRouteDots = useRef<Map<string, Marker[]>>(new Map());
   const [selected, setSelected] = useState(formerWaterwayRecords[0]);
   const [selectedGeometry, setSelectedGeometry] =
     useState<LandscapeChangeGeometry | null>(
@@ -206,8 +207,39 @@ export function FormerWaterwaysMap() {
 
     const markerStore = markers.current;
     const geometryLabelStore = geometryLabels.current;
+    const geometryRouteDotStore = geometryRouteDots.current;
     landscapeChangeGeometries.forEach((geometry) => {
       if (geometry.geometryType !== "LineString" || !geometry.mapLabel) return;
+      const routeDots: Marker[] = [];
+      geometry.coordinates.slice(0, -1).forEach((start, index) => {
+        const end = geometry.coordinates[index + 1];
+        for (let step = 0; step < 4; step += 1) {
+          const progress = step / 4;
+          const dotElement = document.createElement("span");
+          dotElement.className = "waterway-route-dot";
+          dotElement.style.display = "none";
+          const dot = new maplibregl.Marker({
+            element: dotElement,
+            anchor: "center",
+          })
+            .setLngLat([
+              start[0] + (end[0] - start[0]) * progress,
+              start[1] + (end[1] - start[1]) * progress,
+            ])
+            .addTo(instance);
+          routeDots.push(dot);
+        }
+      });
+      const finalDotElement = document.createElement("span");
+      finalDotElement.className = "waterway-route-dot";
+      finalDotElement.style.display = "none";
+      routeDots.push(
+        new maplibregl.Marker({ element: finalDotElement, anchor: "center" })
+          .setLngLat(geometry.coordinates[geometry.coordinates.length - 1])
+          .addTo(instance),
+      );
+      geometryRouteDotStore.set(geometry.id, routeDots);
+
       const element = document.createElement("div");
       element.className = "waterway-route-label";
       element.textContent = geometry.mapLabel;
@@ -274,6 +306,10 @@ export function FormerWaterwaysMap() {
       markerStore.clear();
       geometryLabelStore.forEach((label) => label.remove());
       geometryLabelStore.clear();
+      geometryRouteDotStore.forEach((dots) =>
+        dots.forEach((dot) => dot.remove()),
+      );
+      geometryRouteDotStore.clear();
       instance.remove();
       map.current = null;
     };
@@ -309,6 +345,12 @@ export function FormerWaterwaysMap() {
             ? ""
             : "none";
       }
+      geometryRouteDots.current.get(geometry.id)?.forEach((dot) => {
+        dot.getElement().style.display =
+          visible.has(geometry.recordId) && geometry.recordId === selected.id
+            ? ""
+            : "none";
+      });
     });
   }, [filtered, selected.id]);
 
