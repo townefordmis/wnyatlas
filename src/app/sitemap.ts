@@ -33,11 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/research/amherst-soils-foundations`,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: `${BASE_URL}/research/radiological-industry-fill`,
       changeFrequency: "monthly",
       priority: 0.85,
