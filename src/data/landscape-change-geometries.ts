@@ -360,7 +360,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     id: "smokes-creek-shoreline-1912-south",
     recordId: "smokes-creek-shifted-mouth",
     name: "1912 shoreline south of Smokes Creek",
-    mapLabel: "1912 shoreline",
+    mapLabel: "1912",
     geometryType: "LineString",
     coordinates: [
       [-78.8556212, 42.8005167], [-78.8546389, 42.8020036],
@@ -423,7 +423,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     id: "smokes-creek-shoreline-1923-north",
     recordId: "smokes-creek-shifted-mouth",
     name: "1923 shoreline north of Smokes Creek",
-    mapLabel: "1923 shoreline",
+    mapLabel: "1923",
     geometryType: "LineString",
     coordinates: [
       [-78.8595528, 42.8123396], [-78.8617772, 42.8144222],
@@ -465,7 +465,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     id: "smokes-creek-shoreline-1937-north",
     recordId: "smokes-creek-shifted-mouth",
     name: "1937 shoreline north of Smokes Creek",
-    mapLabel: "1937 shoreline",
+    mapLabel: "1937",
     geometryType: "LineString",
     coordinates: [
       [-78.861972, 42.8091143], [-78.8628073, 42.811868],
@@ -507,7 +507,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     id: "smokes-creek-shoreline-1970-north",
     recordId: "smokes-creek-shifted-mouth",
     name: "1970 shoreline north of Smokes Creek",
-    mapLabel: "1970 shoreline",
+    mapLabel: "1970",
     geometryType: "LineString",
     coordinates: [
       [-78.8647044, 42.8084092], [-78.8651893, 42.8106202],

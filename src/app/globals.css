@@ -2223,6 +2223,14 @@ footer {
   z-index: 6;
 }
 
+.waterway-route-label.is-year-label {
+  border-width: 3px;
+  font-size: 0.76rem;
+  min-width: 3.25rem;
+  padding: 0.28rem 0.48rem;
+  text-align: center;
+}
+
 .waterway-map-stage {
   overflow: hidden;
   position: relative;
@@ -2285,39 +2293,6 @@ footer {
   font-size: 0.68rem;
   line-height: 1.4;
   margin: 0.2rem 0 0;
-  padding-top: 0.4rem;
-}
-
-.smokes-shoreline-comparison {
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  max-width: min(35rem, calc(100% - 5.5rem));
-}
-
-.smokes-shoreline-comparison > strong,
-.smokes-shoreline-comparison p {
-  grid-column: 1 / -1;
-}
-
-.smokes-shoreline-comparison span {
-  align-items: center;
-  display: flex;
-  gap: 0.35rem;
-}
-
-.smokes-shoreline-comparison span i {
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 1px rgb(15 23 42 / 38%);
-  flex: 0 0 2.1rem;
-  height: 0.58rem;
-}
-
-.smokes-shoreline-comparison p {
-  border-top: 1px solid rgb(0 111 99 / 24%);
-  font-size: 0.68rem;
-  line-height: 1.4;
-  margin: 0.1rem 0 0;
   padding-top: 0.4rem;
 }
 

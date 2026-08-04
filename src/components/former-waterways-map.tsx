@@ -17,7 +17,6 @@ import {
 } from "@/data/former-waterways";
 import {
   landscapeChangeGeometries,
-  smokesCreekShorelineColors,
   type LandscapeChangeGeometry,
 } from "@/data/landscape-change-geometries";
 
@@ -323,13 +322,16 @@ export function FormerWaterwaysMap() {
       const element = document.createElement("div");
       element.className = "waterway-route-label";
       element.textContent = geometry.mapLabel;
-      if (geometry.displayColor) element.style.background = geometry.displayColor;
+      if (geometry.displayColor) {
+        element.classList.add("is-year-label");
+        element.style.background = geometry.displayColor;
+      }
       element.style.display = "none";
       const midpoint = geometry.coordinates[Math.floor(geometry.coordinates.length / 2)];
       const label = new maplibregl.Marker({
         element,
-        anchor: "left",
-        offset: [12, 0],
+        anchor: geometry.displayColor ? "center" : "left",
+        offset: geometry.displayColor ? [0, 0] : [12, 0],
       })
         .setLngLat(midpoint)
         .addTo(instance);
@@ -477,21 +479,6 @@ export function FormerWaterwaysMap() {
                 abandonment of a culvert that formerly contained Fern Brook
                 after a FEMA Letter of Map Revision. The notice does not map the
                 culvert&apos;s exact former alignment.
-              </p>
-            </div>
-          )}
-          {selected.id === "smokes-creek-shifted-mouth" && (
-            <div className="waterway-route-notice smokes-shoreline-comparison" aria-live="polite">
-              <strong>Smokes Creek shoreline sequence</strong>
-              <span><i style={{ background: smokesCreekShorelineColors[1912] }} aria-hidden="true" /> 1912</span>
-              <span><i style={{ background: smokesCreekShorelineColors[1923] }} aria-hidden="true" /> 1923</span>
-              <span><i style={{ background: smokesCreekShorelineColors[1937] }} aria-hidden="true" /> 1937</span>
-              <span><i style={{ background: smokesCreekShorelineColors[1970] }} aria-hidden="true" /> 1970</span>
-              <p>
-                Blue shading shows the approximate land between the mapped
-                1912 and 1970 shorelines. The 2024 state study describes the
-                broader man-made shoreline as primarily slag and waste fill;
-                the shading is not a contamination boundary.
               </p>
             </div>
           )}
