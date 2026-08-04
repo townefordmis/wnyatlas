@@ -574,6 +574,12 @@ export function FormerWaterwaysMap() {
               ))}
             </div>
           </section>
+          {selected.presentStatus && (
+            <section>
+              <h4>Present-day status</h4>
+              <p>{selected.presentStatus}</p>
+            </section>
+          )}
           {selected.evidenceConfidence && (
             <p className="record-boundary-note">
               <strong>Boundary status:</strong>{" "}

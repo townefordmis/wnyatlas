@@ -155,9 +155,23 @@ export function AirborneRiskMap() {
           </div>
         </dl>
         <p>{activeArea.description}</p>
-        <a href={activeArea.source.url} target="_blank" rel="noreferrer">
-          {activeArea.source.publisher}: {activeArea.source.title} ↗
-        </a>
+        <h3>Documented sequence</h3>
+        <ol>
+          {activeArea.timeline.map((item) => (
+            <li key={`${activeArea.id}-${item.period}`}>
+              <strong>{item.period}</strong> — {item.event}
+            </li>
+          ))}
+        </ol>
+        <h3>Present-day context</h3>
+        <p>{activeArea.presentStatus}</p>
+        <div className="research-source-list">
+          {activeArea.sources.map((source) => (
+            <a href={source.url} key={`${source.publisher}-${source.title}`} target="_blank" rel="noreferrer">
+              {source.publisher}: {source.title} ↗
+            </a>
+          ))}
+        </div>
       </aside>
     </div>
   );

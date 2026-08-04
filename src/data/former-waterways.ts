@@ -33,6 +33,7 @@ export type FormerWaterwayRecord = {
   changePeriod?: string;
   comparisonYears?: string[];
   evidenceConfidence?: LandscapeEvidenceConfidence;
+  presentStatus?: string;
 };
 
 export const formerWaterwayRecords: FormerWaterwayRecord[] = [
@@ -69,6 +70,14 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "Canalside later re-excavated, rewatered, or interpreted portions of the historic terminus. This marker identifies the documented terminus area and does not claim to trace the entire buried canal alignment.",
     sourceUrl:
       "https://www.buffalony.gov/DocumentCenter/View/9463/PreservationReadySurvey",
+    additionalSources: [{
+      url: "https://www.epa.gov/great-lakes-aocs/buffalo-river-aoc",
+      label: "U.S. EPA Buffalo River Area of Concern history and current work",
+    }],
+    changePeriod: "Downtown canal abandoned after the Barge Canal era; Commercial Slip filled in 1926",
+    comparisonYears: ["Historic Erie Canal mapping", "1927", "1938", "1951", "Canalside reconstruction", "2024"],
+    evidenceConfidence: "documented",
+    presentStatus: "Canalside interprets and rewaters part of the historic canal terminus. The marker is historical context, not a current contamination boundary.",
     sourceLabel: "City of Buffalo Preservation Ready Survey",
   },
   {
@@ -149,6 +158,14 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "The waterway history and the adjacent gas-manufacturing cleanup are shown together but kept as separate facts.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915194/Work%20Plan.BCP.C915194.2005-03-25.IRMWP%20Final%203%2025%2005.pdf",
+    additionalSources: [{
+      url: "https://extapps.dec.ny.gov/data/DecDocs/C915194/",
+      label: "NYSDEC Fourth Street / Former Buffalo Service Station document collection",
+    }],
+    changePeriod: "Historic canal-and-slip era through twentieth-century filling and redevelopment",
+    comparisonYears: ["Historic canal maps", "1927", "1938", "1951", "1970s school development", "2024"],
+    evidenceConfidence: "documented",
+    presentStatus: "The filled slip and adjoining manufactured-gas-plant cleanup remain separate records. Current conditions are governed by the applicable cleanup and site-management documents.",
     sourceLabel: "NYSDEC Interim Remedial Measure Work Plan — C915194",
   },
   {
@@ -165,6 +182,11 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "The marker represents the documented landscape-change area, not a reconstructed wetland boundary. The surviving and restored habitat at Tifft Nature Preserve must remain visually separate from filled portions of the historical marsh.",
     sourceUrl:
       "https://archive.epa.gov/solec/web/pdf/coastal_wetlands_of_the_great_lakes.pdf",
+    additionalSources: [
+      { url: "https://dec.ny.gov/things-to-do/watchable-wildlife/sites/tifft-nature-preserve", label: "NYSDEC present-day Tifft Nature Preserve profile" },
+      { url: "https://dec.ny.gov/sites/default/files/2024-01/bnrhabreport.pdf", label: "NYSDEC Buffalo and Niagara Rivers habitat inventory" },
+    ],
+    presentStatus: "The surviving preserve is a 264-acre urban habitat with a 75-acre cattail marsh. Historical wetland loss is not a claim that the present preserve is uniformly filled or contaminated.",
     sourceLabel: "U.S. EPA State of the Lakes Ecosystem Conference wetlands report",
     relatedSiteId: "tifft-nature-preserve",
     changePeriod: "Industrial and railroad expansion through the twentieth century",
@@ -184,6 +206,11 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     interpretation:
       "The canal sediment was covered with an engineered stone-and-gravel system, while the surrounding land received separate cleanup and cover measures.",
     sourceUrl: "https://extapps.dec.ny.gov/docs/regions_pdf/usccleanupfs.pdf",
+    additionalSources: [{ url: "https://www.epa.gov/great-lakes-aocs/buffalo-river-aoc", label: "U.S. EPA Buffalo River Area of Concern cleanup and restoration record" }],
+    changePeriod: "Canal construction beginning in 1903; industrial decline and later remediation through the modern era",
+    comparisonYears: ["1903 construction", "1927", "1938", "1951", "1966", "Cleanup-era plans", "2024"],
+    evidenceConfidence: "documented",
+    presentStatus: "The canal remains open water at Ship Canal Commons. DEC's engineered sediment cover and the surrounding land remedy are distinct controls.",
     sourceLabel: "NYSDEC Union Ship Canal cleanup fact sheet",
     relatedSiteId: "union-ship-canal-hanna-furnace",
   },
@@ -371,6 +398,11 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "This marker identifies the documented downtown industrial-water system at an interpretive location rather than claiming a surveyed line for every buried segment.",
     sourceUrl:
       "https://www.niagaracountybusiness.com/file-library/100208/city_lockport_comprehensive_plan.pdf",
+    additionalSources: [{ url: "https://www.canals.ny.gov/", label: "New York State Canal Corporation" }],
+    changePeriod: "Developed in the early 1850s; documented operation into the early 1940s",
+    comparisonYears: ["Nineteenth-century industrial mapping", "1927", "1938", "1951", "2024"],
+    evidenceConfidence: "agency_mapped_approximation",
+    presentStatus: "The point is an interpretive location for the documented buried power system; it is not a surveyed tunnel alignment or a waste-disposal boundary.",
     sourceLabel: "City of Lockport Comprehensive Plan",
   },
   {
@@ -389,6 +421,10 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "https://extapps.dec.ny.gov/data/DecDocs/932112/Report.HW.932112.2022-07-19.Old%20Upper%20MOuntain%20Road%20City%20of%20Lockport%20LF%20ESD.pdf",
     sourceLabel: "NYSDEC Old Upper Mountain Road Engineering Design Report",
     relatedSiteId: "old-upper-mountain-road-landfill",
+    changePeriod: "Historic disposal and sewer construction followed by modern creek, wetland, and culvert investigation",
+    comparisonYears: ["Historic site plans", "1951", "1966", "1978", "2022 engineering record", "2024"],
+    evidenceConfidence: "documented",
+    presentStatus: "Gulf Creek remains a mixture of open channel, wetland, and culverted segments. Cleanup and infrastructure work are tracked through the linked landfill record.",
   },
 ];
 

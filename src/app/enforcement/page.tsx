@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { SiteHeader } from "@/components/site-header";
 import { enforcementActions } from "@/data/enforcement-actions";
@@ -53,9 +54,23 @@ export default function EnforcementPage() {
               </p>
               <h2>{action.name}</h2>
               <p>{action.note}</p>
-              <a href={action.source.url} target="_blank" rel="noreferrer">
-                {action.source.publisher}: {action.source.title} ↗
-              </a>
+              <dl className="enforcement-history">
+                <div><dt>How the action developed</dt><dd>{action.proceeding}</dd></div>
+                <div><dt>Documented result</dt><dd>{action.result}</dd></div>
+              </dl>
+              <div className="enforcement-links">
+                <a href={action.source.url} target="_blank" rel="noreferrer">
+                  {action.source.publisher}: {action.source.title} ↗
+                </a>
+                {action.additionalSources?.map((source) => (
+                  <a href={source.url} key={source.url} target="_blank" rel="noreferrer">
+                    {source.publisher}: {source.title} ↗
+                  </a>
+                ))}
+                {action.relatedSiteId && (
+                  <Link href={`/sites/${action.relatedSiteId}`}>Read the Atlas site history →</Link>
+                )}
+              </div>
             </div>
             <div className="enforcement-amount">
               <strong>{action.amount}</strong>

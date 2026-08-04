@@ -10,6 +10,7 @@ export type ChemicalProfile = {
   aliases: string[];
   family: string;
   overview: string;
+  regionalHistory?: string[];
   persistence: string;
   exposureRoutes: string[];
   humanHealth: string[];
@@ -47,6 +48,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Per- and polyfluoroalkyl substances",
     overview:
       "PFAS are a large family of manufactured chemicals used in firefighting foams, fluoropolymer production, coatings, plating, textiles, paper, and many other applications.",
+    regionalHistory: [
+      "Western New York records connect PFAS investigation to firefighting-foam use at aviation facilities, industrial handling and manufacturing, landfills, and wastewater pathways.",
+      "The Atlas separates confirmed PFAS use or detection from facilities still being researched; an industrial category alone is not evidence that PFAS were released there.",
+    ],
     persistence:
       "Many PFAS break down very slowly. Some move readily with water, while others accumulate in sediment, wildlife, fish, or the human body.",
     exposureRoutes: [
@@ -102,6 +107,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Volatile organic compound",
     overview:
       "Benzene is a volatile component of gasoline and petroleum and was also used in coke production, chemical manufacturing, solvents, and industrial processes.",
+    regionalHistory: [
+      "Benzene appears in regional records involving coke production, manufactured-gas plants, petroleum terminals, refineries, and fuel releases.",
+      "The Tonawanda community air study is a major local record because DEC used monitoring and dispersion modeling to evaluate hazardous air pollutants associated with the industrial corridor.",
+    ],
     persistence:
       "Benzene evaporates readily but can migrate through soil and persist in groundwater where oxygen and microbial breakdown are limited.",
     exposureRoutes: [
@@ -130,6 +139,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Chlorinated solvent",
     overview:
       "TCE was widely used to degrease metal parts and in other industrial cleaning and manufacturing operations.",
+    regionalHistory: [
+      "TCE is documented at regional metalworking, manufacturing, and disposal sites where historical degreasing produced soil, groundwater, and vapor-intrusion investigations.",
+      "Atlas records keep the source area, mapped groundwater plume, and building-specific vapor findings separate because they are not interchangeable evidence.",
+    ],
     persistence:
       "TCE can sink through groundwater as a dense liquid, remain in aquifers, and produce vapors that migrate into buildings.",
     exposureRoutes: [
@@ -158,6 +171,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Chlorinated solvent",
     overview:
       "PCE has been used extensively in dry cleaning, textile processing, metal degreasing, and industrial cleaning.",
+    regionalHistory: [
+      "PCE investigations in Western New York commonly trace to former dry-cleaning and industrial-solvent use, including urban properties later converted to different uses.",
+      "Linked Atlas records distinguish detections beneath a source property from confirmed impacts in another building.",
+    ],
     persistence:
       "PCE can persist in soil and groundwater and can migrate as vapor into overlying buildings.",
     exposureRoutes: [
@@ -211,6 +228,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Persistent chlorinated compounds",
     overview:
       "PCBs were used in electrical equipment, hydraulic systems, heat-transfer fluids, building materials, and industrial processes before most U.S. uses were banned.",
+    regionalHistory: [
+      "Western New York cleanup records document PCBs in former industrial properties, electrical-equipment areas, fill, and river or canal sediment.",
+      "Buffalo River and Niagara River corridor work shows why upland source control and sediment cleanup are related but separately documented parts of the regional history.",
+    ],
     persistence:
       "PCBs resist breakdown, bind strongly to soil and sediment, and bioaccumulate through aquatic and terrestrial food webs.",
     exposureRoutes: [
@@ -291,6 +312,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Toxic metal",
     overview:
       "Lead has been used in paint, batteries, metalworking, fuels, plumbing, pigments, ammunition, and many industrial products.",
+    regionalHistory: [
+      "Regional lead histories include battery manufacturing, secondary smelting, foundry work, paint, demolition debris, and contaminated urban fill.",
+      "The East Ferry former smelter and Highland Avenue battery-property records illustrate different pathways and remedies; neither is generalized to surrounding neighborhoods without property-specific evidence.",
+    ],
     persistence:
       "Lead does not break down. It can remain in soil, dust, sediment, buildings, and waste unless removed or contained.",
     exposureRoutes: [
@@ -325,6 +350,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Metalloid",
     overview:
       "Arsenic occurs naturally and has also been used in pesticides, wood treatment, metal production, pigments, and industrial processes.",
+    regionalHistory: [
+      "The FMC Middleport record is the region's clearest large-scale arsenic-pesticide history, connecting former manufacture and waste practices to facility, neighborhood, and school-property soil investigations.",
+      "DEC divided that work into separate operable units and cleanup areas; Atlas descriptions preserve those boundaries rather than treating the village as one condition.",
+    ],
     persistence:
       "Arsenic does not break down and can change chemical form as soil, sediment, and groundwater conditions change.",
     exposureRoutes: [
@@ -352,6 +381,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Toxic metal",
     overview:
       "Mercury has been used in industrial equipment and chemical production and can also enter the environment through combustion and atmospheric deposition.",
+    regionalHistory: [
+      "Mercury appears in Western New York chemical-manufacturing, chlor-alkali, electrical-equipment, and sediment records.",
+      "The Niagara industrial corridor includes documented mercury-waste and remediation histories, but each facility and disposal unit has its own dates, media, and controls.",
+    ],
     persistence:
       "Mercury does not break down. Microorganisms can convert it to methylmercury, which strongly bioaccumulates in aquatic food webs.",
     exposureRoutes: [
@@ -515,6 +548,10 @@ export const chemicalProfiles: ChemicalProfile[] = [
     family: "Organochlorine pesticide",
     overview:
       "DDT was widely used as an insecticide. DDE and DDD are persistent breakdown products commonly included in environmental investigations.",
+    regionalHistory: [
+      "Western New York's DDT history is tied to pesticide manufacture, formulation, agricultural handling, and disposal rather than one industry or county.",
+      "Atlas records include properties where agency documents name DDT or related organochlorine pesticides; historic agricultural use alone is not mapped as a cleanup site.",
+    ],
     persistence:
       "DDT and its breakdown products bind to soil and sediment, persist for decades, and biomagnify through food webs.",
     exposureRoutes: [

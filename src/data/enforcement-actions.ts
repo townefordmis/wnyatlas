@@ -7,7 +7,11 @@ export type EnforcementAction = {
   numericAmount: number;
   type: string;
   note: string;
+  proceeding: string;
+  result: string;
   source: { title: string; url: string; publisher: string };
+  additionalSources?: { title: string; url: string; publisher: string }[];
+  relatedSiteId?: string;
 };
 
 export const enforcementActions: EnforcementAction[] = [
@@ -20,11 +24,15 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 129_000_000,
     type: "Cleanup-cost recovery",
     note: "Occidental agreed to reimburse federal response costs. This was a cost-recovery settlement, not a civil fine.",
+    proceeding: "The federal government sued after emergency response, relocation, containment, and cleanup spending beginning in the late 1970s. The 1995 agreement resolved outstanding EPA and FEMA cost claims after years of litigation.",
+    result: "The announced $129 million comprised $101 million in cleanup costs and $28 million in interest. Long-term operation and monitoring of the Love Canal remedy continued separately.",
     source: {
       title: "Love Canal Five-Year Review",
       url: "https://semspub.epa.gov/work/02/139757.pdf",
       publisher: "U.S. EPA",
     },
+    additionalSources: [{ title: "Occidental to Pay $129 Million in Love Canal Settlement", url: "https://www.justice.gov/archive/opa/pr/Pre_96/December95/638.txt.html", publisher: "U.S. Department of Justice" }],
+    relatedSiteId: "love-canal",
   },
   {
     rank: 2,
@@ -35,11 +43,15 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 12_500_000,
     type: "Criminal penalty",
     note: "Federal sentence following convictions under the Clean Air Act and Resource Conservation and Recovery Act; separate from $12.2 million in community-service payments.",
+    proceeding: "A federal jury convicted the company in 2013 on 11 Clean Air Act counts and three hazardous-waste counts. The environmental manager was also convicted, including for obstruction of justice.",
+    result: "The 2014 sentence imposed a $12.5 million fine, $12.2 million in community service, and five years of corporate probation; the manager received incarceration, a fine, and community service.",
     source: {
       title: "Tonawanda Coke and Manager Sentenced",
       url: "https://www.justice.gov/archives/opa/pr/tonawanda-coke-and-manager-sentenced-violating-clean-air-act-and-resource-conservation-and",
       publisher: "U.S. Department of Justice",
     },
+    additionalSources: [{ title: "Prosecution of Federal Pollution Crimes — Tonawanda Coke", url: "https://www.justice.gov/enrd/environmental-crime-victim-assistance/prosecution-federal-pollution-crimes", publisher: "U.S. Department of Justice" }],
+    relatedSiteId: "tonawanda-coke",
   },
   {
     rank: 3,
@@ -50,11 +62,14 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 7_100_000,
     type: "Cost recovery & damages",
     note: "Combined federal and state cleanup reimbursements and natural-resource damages; the agreement also required wetlands restoration.",
+    proceeding: "The agreement resolved the last of four federal Superfund cases involving Love Canal-area waste sites and addressed liability at the 102nd Street Landfill.",
+    result: "Payments covered federal and state response costs and natural-resource damages; the settlement also required restoration of wetlands affected by the landfill.",
     source: {
       title: "Occidental Chemical and Olin to Pay $7.1 Million",
       url: "https://www.justice.gov/archive/opa/pr/1999/July/312enr.htm",
       publisher: "U.S. Department of Justice",
     },
+    relatedSiteId: "hooker-102nd-street-landfill",
   },
   {
     rank: 4,
@@ -65,11 +80,15 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 6_250_000,
     type: "Natural-resource settlement",
     note: "A settlement valued at $6.25 million for habitat preservation and restoration along the Buffalo River.",
+    proceeding: "Federal, state, and Tuscarora Nation natural-resource trustees negotiated the settlement under Superfund for injuries to river resources associated with historical industrial contamination.",
+    result: "The agreement funds restoration and preserves more than 70 acres of undeveloped habitat; trustee selection and implementation of restoration projects continue.",
     source: {
       title: "Buffalo River NRDAR",
       url: "https://www.fws.gov/media/buffalo-river-nrdar",
       publisher: "U.S. Fish & Wildlife Service",
     },
+    additionalSources: [{ title: "Honeywell and Others to Fund Buffalo River Restoration", url: "https://www.justice.gov/archives/opa/pr/honeywell-and-others-fund-restoration-natural-resources-and-conserve-natural-habitat-along", publisher: "U.S. Department of Justice" }],
+    relatedSiteId: "buffalo-river",
   },
   {
     rank: 5,
@@ -80,11 +99,14 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 2_750_000,
     type: "Civil penalties",
     note: "Federal and New York civil penalties within a broader $12 million settlement that also funded controls and environmental projects.",
+    proceeding: "The civil case addressed air-pollution-control requirements and hazardous-waste management at the operating coke plant, separate from the earlier criminal prosecution.",
+    result: "The settlement combined federal and state penalties with facility improvements and environmental projects; later shutdown and property cleanup are separate chapters in the site record.",
     source: {
       title: "Tonawanda Coke to Pay $12 Million",
       url: "https://www.justice.gov/usao-wdny/pr/tonawanda-coke-pay-12-million-civil-penalties-facility-improvements-and-environmental",
       publisher: "U.S. Department of Justice",
     },
+    relatedSiteId: "tonawanda-coke",
   },
   {
     rank: 6,
@@ -95,6 +117,8 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 1_050_000,
     type: "Contingent civil penalty",
     note: "The court-ordered agreement set a minimum $50,000 payment and liability up to $1.05 million depending on compliance.",
+    proceeding: "New York's action followed odor, dust, noise, and debris-handling complaints and earlier state and court orders involving the South Buffalo facility.",
+    result: "The agreement permanently shut the facility, required site cleanup, and tied the final payable penalty to compliance with the ordered work.",
     source: {
       title: "State Shuts Down Battaglia Demolition",
       url: "https://dec.ny.gov/news/press-releases/2022/8/dec-commissioner-seggos-and-attorney-general-james-shut-down-lawless-south-buffalo-demolition-debris-processing-facility",
@@ -110,6 +134,8 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 671_000,
     type: "Civil penalty",
     note: "Clean Air Act settlement addressing landfill-gas controls and methane and organic-compound emissions.",
+    proceeding: "EPA alleged failures involving landfill-gas collection and control requirements under the Clean Air Act at the Niagara Falls landfill.",
+    result: "The settlement required a civil penalty and compliance work intended to improve collection and control of methane and non-methane organic compounds.",
     source: {
       title: "Allied Waste Resolves Clean Air Act Violations",
       url: "https://www.epa.gov/newsreleases/allied-waste-resolves-clean-air-act-violations-its-niagara-falls-landfill",
@@ -125,6 +151,8 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 475_000,
     type: "Penalty & benefit project",
     note: "$250,000 payable, $75,000 suspended, and a $150,000 environmental-benefit project after a discharge and wildlife die-off.",
+    proceeding: "DEC's 2025 order followed a wastewater discharge to Ischua Creek and a documented fish and wildlife mortality event.",
+    result: "The order combined payable and suspended penalties, corrective actions, and a local environmental-benefit project. It is not presented as a site-wide cleanup settlement.",
     source: {
       title: "DEC Orders Great Lakes Cheese to Pay $475,000",
       url: "https://dec.ny.gov/news/press-releases/2025/10/dec-orders-great-lakes-cheese-to-pay-475000-in-penalties-and-take-corrective-actions-related-to-ischua-creek-discharge",
@@ -140,6 +168,8 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 375_000,
     type: "Civil penalty",
     note: "State enforcement addressed persistent odors plus air- and water-quality violations at the Packard Road facility.",
+    proceeding: "DEC's action followed repeated odor complaints and documented air- and water-permit violations at the containerboard plant.",
+    result: "The consent order required a civil penalty and operational and pollution-control improvements, with deadlines and continued agency oversight.",
     source: {
       title: "DEC Enforcement Action Against Cascades",
       url: "https://dec.ny.gov/news/press-releases/2021/9/dec-announces-enforcement-action-against-cascades-containerboard-packaging-inc-to-correct-persistent-odors-and-air-pollution-violations",
@@ -155,10 +185,13 @@ export const enforcementActions: EnforcementAction[] = [
     numericAmount: 252_000,
     type: "Conditionally waived penalty",
     note: "EPA assessed the amount for lead-paint rule violations, then waived it after the housing authority completed required corrective actions.",
+    proceeding: "EPA alleged failures under federal lead-disclosure and renovation rules at Buffalo public-housing properties and entered a 2023 administrative settlement.",
+    result: "EPA later reported that BMHA completed the required plans, reporting, staff certification, and compliance work, allowing the $252,000 remittable penalty to be waived.",
     source: {
-      title: "Consent Agreement and Final Order",
-      url: "https://docs.publicnow.com/viewDoc?filename=65037%5CEXT%5C30F425A9B9CAD216358DFA560A9706E547E144F0_F7B4C058D7AC80FA06ED63C1BD851A4FA9FF0799.PDF",
+      title: "EPA Enforcement Helps Protect Children from Lead Paint Hazards",
+      url: "https://www.epa.gov/newsreleases/epa-enforcement-helps-protect-children-new-york-lead-paint-hazards",
       publisher: "U.S. EPA",
     },
+    additionalSources: [{ title: "EPA Settlement Protects BMHA Residents from Lead Paint", url: "https://www.epa.gov/newsreleases/epa-settlement-protects-buffalo-municipal-housing-authority-residents-lead-paint", publisher: "U.S. EPA" }],
   },
 ];

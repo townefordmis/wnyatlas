@@ -548,6 +548,7 @@ export const documentedCampusHistory: Record<
       "DEC issued a Brownfield Cleanup Program Certificate of Completion in December 2014. The remedy includes a cover system and continuing site-management controls.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915268/Decision%20Document.BCP.C915268.2014-07-22.Final%20Decision%20Doccument.pdf",
+    additionalSources: [{ label: "DEC South Buffalo Charter School document collection — C915268", url: "https://extapps.dec.ny.gov/data/DecDocs/C915268/" }],
     sourceLabel: "DEC Decision Document — C915268",
   },
   "75 W HURON ST": {
@@ -562,6 +563,7 @@ export const documentedCampusHistory: Record<
       "DEC issued a Brownfield Cleanup Program Certificate of Completion in December 2017. The DEC collection includes continuing site-management and periodic-review records.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915282/Application.BCP.C915282.2013-10-02.BCP%20Application%20and%20Attachments%20A%20-%20F.pdf",
+    additionalSources: [{ label: "DEC 73–79 West Huron Street document collection — C915282", url: "https://extapps.dec.ny.gov/data/DecDocs/C915282/" }],
     sourceLabel: "DEC Brownfield Cleanup application — C915282",
   },
   "95 FOURTH ST": {
@@ -576,6 +578,7 @@ export const documentedCampusHistory: Record<
       "State records list a November 2006 Certificate of Completion for the Former Buffalo Service Station cleanup. Connected Fourth Street, off-site, and voluntary-cleanup records include site-management or periodic-review documentation.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915194/Work%20Plan.BCP.C915194.2005-03-25.IRMWP%20Final%203%2025%2005.pdf",
+    additionalSources: [{ label: "DEC Former Buffalo Service Station document collection — C915194", url: "https://extapps.dec.ny.gov/data/DecDocs/C915194/" }],
     sourceLabel: "DEC Interim Remedial Measure Work Plan — C915194",
   },
   "65 & 111 GREAT ARROW AVE": {
@@ -589,6 +592,10 @@ export const documentedCampusHistory: Record<
     completion:
       "DEC's 2017 application for C915326 states that the earlier C915220 investigation and remediation were not completed. It also states that only a portion of the two cleanup-site boundaries overlapped. C915326 remains a separate DEC record. Consult the linked DEC files for current regulatory status.",
     sourceUrl: "https://tapestryschool.org/about-tapestry/history/",
+    additionalSources: [
+      { label: "DEC Former Pierce Arrow Manufacturing document collection — C915220", url: "https://extapps.dec.ny.gov/data/DecDocs/C915220/" },
+      { label: "DEC 157 Great Arrow Avenue document collection — C915326", url: "https://extapps.dec.ny.gov/data/DecDocs/C915326/" },
+    ],
     sourceLabel: "Tapestry School history",
   },
   "54 & 78 STATE ST": {
@@ -603,6 +610,7 @@ export const documentedCampusHistory: Record<
       "School-property soil removal occurred in 1996 and 1999, followed by phased DEC remediation from 2015 through 2020. A 2021 DEC update states that remedial activities on the Roy-Hart Middleport campus, Operable Unit 4, were complete.",
     sourceUrl:
       "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/fmc-middleport-facility/news-updates",
+    additionalSources: [{ label: "DEC FMC Middleport facility history and cleanup program", url: "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/fmc-middleport-facility" }],
     sourceLabel: "DEC FMC Middleport news and cleanup updates",
   },
   "3780 S PARK AVE": {
@@ -617,6 +625,7 @@ export const documentedCampusHistory: Record<
       "DEC issued a Brownfield Cleanup Program Certificate of Completion in September 2008. Commercial-use controls and an environmental easement remain part of the documented remedy. The reviewed records do not state that contamination reached the school property.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915192/Fact%20Sheet.BCP.C915192.2008-09-11.COC.pdf",
+    additionalSources: [{ label: "DEC Jonnie's Porta Signs document collection — C915192", url: "https://extapps.dec.ny.gov/data/DecDocs/C915192/" }],
     sourceLabel: "DEC Certificate of Completion fact sheet — C915192",
   },
   "1880 BEECH AVE": {
@@ -631,6 +640,7 @@ export const documentedCampusHistory: Record<
       "The remedy included excavation and off-site disposal, treatment or disposal of lead-affected material, a site-wide cover, an environmental easement, and continuing site management. DEC issued a Certificate of Completion in November 2018. The reviewed records do not state that contamination reached the school property.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/932136/ROD.HW.932136.2012-03-28.ROD_AMENDMENT.pdf",
+    additionalSources: [{ label: "DEC Highland Avenue / Kalfas Magnet School document collection — 932136", url: "https://extapps.dec.ny.gov/data/DecDocs/932136/" }],
     sourceLabel: "DEC Record of Decision amendment — 932136",
   },
 };

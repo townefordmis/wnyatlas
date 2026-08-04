@@ -94,6 +94,19 @@ export default async function ChemicalPage({ params }: ChemicalPageProps) {
 
         <div className="chemical-profile-layout">
           <div>
+            {chemical.regionalHistory && (
+              <section>
+                <p className="eyebrow">Regional record</p>
+                <h2>Western New York history</h2>
+                <ul>
+                  {chemical.regionalHistory.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+                <p>
+                  These examples summarize the linked Atlas place records. Open those
+                  records for site-specific dates, findings, cleanup actions, and sources.
+                </p>
+              </section>
+            )}
             <section>
               <p className="eyebrow">Environmental behavior</p>
               <h2>Persistence and movement</h2>
