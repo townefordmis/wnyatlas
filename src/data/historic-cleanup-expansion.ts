@@ -2156,4 +2156,268 @@ export const historicCleanupExpansion: AtlasSite[] = [
       },
     ],
   },
+  {
+    id: "former-hooker-main-plant",
+    name: "Former Hooker Main Plant / Occidental Niagara Plant",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Large Buffalo Avenue chemical-manufacturing property where historic operations released chlorinated organics, mercury, dioxin-related compounds, and other materials to soil and groundwater. Caps, groundwater extraction and treatment, non-aqueous-phase-liquid recovery, monitoring, and industrial-use restrictions remain part of the corrective-action program.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.00903, 43.07968],
+    story: {
+      lastReviewed: "August 4, 2026",
+      background: [
+        "The approximately 113-acre facility at 4700 Buffalo Avenue developed from chemical works operated by Hooker Chemical, Oldbury Electrochemical, and Niagara Alkali. Hooker acquired the other operations by the mid-1950s; Occidental acquired Hooker Chemicals and Plastics in 1968.",
+        "Historic products included chlorine, caustic soda, hydrochloric acid, pesticides, chlorinated benzenes, chlorinated phenols, and other chlorinated organic chemicals. This operating-plant record is separate from Hooker disposal sites elsewhere in Niagara Falls.",
+      ],
+      timeline: [
+        { period: "Early 1900s", event: "Chemical manufacturing began on parcels that became the consolidated Main Plant." },
+        { period: "1920s-1970s", event: "The facility manufactured a wide range of chlorinated organic chemicals, with peak production during the 1940s through the 1970s." },
+        { period: "1968-1982", event: "Occidental acquired Hooker, and the complex became known as the Occidental Main Plant." },
+        { period: "1996-2000", event: "Groundwater extraction and treatment, NAPL recovery, covers, and other corrective measures were constructed or incorporated into the final remedy." },
+        { period: "2021-present", event: "Occidental announced the end of production and began decommissioning while corrective-action systems and permit obligations continued." },
+      ],
+      documentedImpacts: [
+        "DEC records identify releases from historical spills, leaks, process areas, and waste-management areas across the facility.",
+        "Documented contaminants include chlorinated benzenes and ethenes, lindane-related compounds, mercury, elemental phosphorus, and dioxin-related contamination.",
+        "Groundwater investigations identified dissolved contamination and dense non-aqueous-phase liquid. A bedrock plume historically extended north toward the Falls Street Tunnel and New York Power Authority conduit drains.",
+      ],
+      cleanupAndControls: [
+        "A groundwater containment and treatment system, a Niagara River barrier wall, NAPL collection, covers and caps, and long-term monitoring control remaining contamination.",
+        "A recorded declaration restricts future use to commercial or industrial purposes and preserves agency access for oversight.",
+      ],
+      presentDay: [
+        "EPA reports that the extraction systems continue to restrict off-site groundwater migration and that monitored concentrations have declined. Decommissioning does not end the corrective-action, treatment, or monitoring obligations.",
+      ],
+      researchNotes: [
+        "Treat the facility as one corrective-action complex on the overview map; its named source areas can be described in the story without adding a cluster of overlapping pins.",
+      ],
+    },
+    sources: [
+      {
+        title: "Former Hooker Main Plant Part 373 Corrective-Action Permit",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932019/Permit.HW.932019.2022-09-15.FmrHookerMainPlant_Part373_CA_Permit_Final.pdf",
+      },
+      {
+        title: "Former Hooker Main Plant Record-of-Decision Equivalent",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932019/ROD.HW.932019.2000-02-01.hooker_ou2_ou3.pdf",
+      },
+      {
+        title: "Occidental Niagara Plant Corrective-Action Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-occidental-chemical-corporation-niagara-falls",
+      },
+    ],
+  },
+  {
+    id: "olin-buffalo-avenue-plant",
+    name: "Olin Buffalo Avenue Plant",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Long-running chlor-alkali and chemical-manufacturing complex where mercury-cell operations, chlorinated-organic production, and historic waste handling affected soil and groundwater. Extraction systems, paving and caps, monitoring, and deed restrictions manage the remaining contamination.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.028238889, 43.082105556],
+    story: {
+      lastReviewed: "August 4, 2026",
+      background: [
+        "The Olin complex at 2400 Buffalo Avenue consists of separated industrial parcels about 1,000 feet north of the upper Niagara River. Gill Creek crosses the eastern operating area.",
+        "Olin and predecessor operations produced chlorine and caustic soda using mercury-cell chlor-alkali technology. The plant also manufactured chlorinated organic chemicals from about 1950 until a 1956 explosion ended that production.",
+      ],
+      timeline: [
+        { period: "1897 onward", event: "Olin predecessors began inorganic chemical production at the Buffalo Avenue complex." },
+        { period: "1950-1956", event: "Plant 2 produced chlorinated benzenes, chlorinated phenols, and benzene hexachloride compounds before the organic operation ended." },
+        { period: "1994-1997", event: "A corrective-action investigation and corrective-measures study led to a federal consent order for the remedy." },
+        { period: "1998 onward", event: "Groundwater recovery and treatment began, followed by long-term operation, monitoring, caps, and institutional controls." },
+      ],
+      documentedImpacts: [
+        "EPA reports mercury in soil across the plant and elevated benzene hexachloride compounds near the former organic-production area.",
+        "The Olin-related groundwater plume principally contains benzene and chlorinated benzenes, with lower concentrations of BHC compounds, chlorinated phenols, methanol, and mercury.",
+        "Other groundwater beneath the property migrated from the neighboring DuPont and former Solvent Chemical properties. The atlas does not attribute those off-site plumes to Olin.",
+      ],
+      cleanupAndControls: [
+        "Recovery wells contain and treat affected groundwater in overburden and several bedrock zones; activated carbon is part of the treatment system.",
+        "Paving and caps limit contact and infiltration, while groundwater monitoring and deed restrictions support commercial and industrial use.",
+      ],
+      presentDay: [
+        "EPA's current profile states that the former mercury-cell, chlorine, caustic, and organic operations have ceased and that sodium hypochlorite manufacturing continues at the facility.",
+      ],
+      researchNotes: [
+        "Keep this plant pin separate from the Olin Industrial Welding disposal site, the Olin deep well, and the Olin portion of the 102nd Street Landfill; each has a different regulatory record and remedy.",
+      ],
+    },
+    sources: [
+      {
+        title: "Olin Corporation Niagara Falls Corrective-Action Cleanup",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-olin-corporation-niagara-falls-new-york",
+      },
+      {
+        title: "Olin Buffalo Avenue Plant Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932051B/",
+      },
+    ],
+  },
+  {
+    id: "cwm-model-city",
+    name: "CWM Chemical Services - Model City Facility",
+    municipality: "Porter",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Operating hazardous- and industrial-waste treatment and storage facility on former Lake Ontario Ordnance Works land. Its RMU-1 landfill reached capacity in 2015 and was capped; New York's Facility Siting Board denied the proposed RMU-2 landfill in September 2025.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.97852213, 43.22280069],
+    story: {
+      lastReviewed: "August 4, 2026",
+      background: [
+        "The Balmer Road facility occupies land in the towns of Porter and Lewiston that was once part of the federal Lake Ontario Ordnance Works. ChemTrol Pollution Services began commercial hazardous-waste operations there in 1972; the operation later became CWM Chemical Services, a Waste Management subsidiary.",
+        "Because the facility is both an operating waste-management property and part of the former LOOW footprint, its story links to LOOW but does not merge the two regulatory histories.",
+      ],
+      timeline: [
+        { period: "1940s-1960s", event: "The property formed part of the former federal ordnance complex and was subject to chemical and radiological investigation." },
+        { period: "1972", event: "Commercial hazardous-waste treatment, storage, and disposal operations began as ChemTrol Pollution Services." },
+        { period: "1992", event: "DOE certified that the majority of the CWM property met the radiological decontamination criteria applicable to its review." },
+        { period: "2015", event: "The RMU-1 hazardous-waste landfill reached capacity, stopped receiving waste for disposal, and was subsequently capped." },
+        { period: "2025", event: "The Facility Siting Board denied CWM's siting-certificate application for the proposed 43.5-acre RMU-2 landfill." },
+      ],
+      documentedImpacts: [
+        "Historic federal activity left chemically and radiologically affected areas within portions of the broader former LOOW property. The 1992 DOE certification applied to the majority—not necessarily every part—of the CWM property.",
+        "DEC records describe corrective actions and a groundwater-monitoring network at the Model City facility. The atlas reports those controls without treating a permit or monitoring well as proof of a present off-site exposure.",
+      ],
+      cleanupAndControls: [
+        "RMU-1 is capped and remains subject to hazardous-waste permit, corrective-action, monitoring, and post-closure requirements.",
+        "The facility also operates under state air and wastewater-discharge permits. Wastes accepted for management may be treated or stored on site or shipped to permitted off-site disposal facilities.",
+      ],
+      presentDay: [
+        "CWM remains a permitted treatment and storage facility, but the proposed RMU-2 landfill cannot proceed under the denied 2025 siting certificate. The related permit decision was described by DEC as moot because of that denial.",
+      ],
+      researchNotes: [
+        "Use one facility-center marker. Do not add individual monitoring wells or imply that the denied RMU-2 proposal is an operating landfill.",
+      ],
+    },
+    sources: [
+      {
+        title: "CWM Chemical Services Hazardous-Waste Facility and RMU-2 Decisions",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/cwm-chemical-services",
+      },
+      {
+        title: "CWM Model City Facility History and Former LOOW Property Record",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/legal_protection_pdf/cwm00046.pdf",
+      },
+    ],
+  },
+  {
+    id: "vanadium-corporation-of-america",
+    name: "Vanadium Corporation of America Site",
+    municipality: "Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Large former ferroalloy-production and disposal property divided into three cleanup units. Historic slag, dust, ash, cinders, lime-like waste, and related fill were consolidated, capped, collected, treated, or placed under long-term controls according to location.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.021394875, 43.124263433],
+    story: {
+      lastReviewed: "August 4, 2026",
+      background: [
+        "The Vanadium site southeast of Witmer Road originated as an approximately 150-acre ferroalloy operation. DEC divided the cleanup into the SKW/CC Metals parcel, the Airco parcel, and an eastern National Grid/New York Power Authority parcel.",
+        "Vanadium Corporation of America and successor operations disposed of wood, brick, ash, lime slag, ferrochromium-silicon slag, ferrochromium-silicon dust, and related manufacturing wastes on portions of the property.",
+      ],
+      timeline: [
+        { period: "1920-1964", event: "Vanadium Corporation operated the broader property and used portions for production-waste disposal." },
+        { period: "1998", event: "An interim remedy controlled drainage and runoff on the SKW parcel and supported redefining that unit around its remaining landfill cells." },
+        { period: "2000-2003", event: "The Airco landfill was closed and capped; a groundwater collection and treatment system was added after affected groundwater was found discharging toward nearby wetlands." },
+        { period: "2006-2014", event: "DEC selected and implemented the final remedy for the eastern unit, including consolidation, grading, covers, drainage, and controls for waste and affected media." },
+        { period: "2021-present", event: "Groundwater sampling, inspections, environmental easements, and site-management obligations continued." },
+      ],
+      documentedImpacts: [
+        "DEC records identify ferrochromium dust and slag, ferromanganese slag, calcium hydroxide, fly ash, cinders, and related fill and waste piles.",
+        "Hexavalent chromium movement from the Airco landfill toward a nearby stream and wetlands was a stated cleanup objective; collection and treatment were installed to intercept affected groundwater.",
+        "The three units have different owners, boundaries, waste areas, and controls. Conditions documented in one unit should not automatically be assigned to the others.",
+      ],
+      cleanupAndControls: [
+        "Landfill closure and caps, consolidation and grading, berms and controlled drainage, groundwater collection and treatment, monitoring, inspections, and environmental easements form the remedy across the separate units.",
+        "Some portions were removed from the active hazardous-waste-site boundary after investigation or cleanup, while the remaining controlled areas continue under site management.",
+      ],
+      presentDay: [
+        "The marker represents the historic multi-unit Vanadium complex. It does not mean that all approximately 150 historic acres have the same remaining contamination or access restrictions.",
+      ],
+      researchNotes: [
+        "Use a single overview pin with the three-unit explanation rather than stacking separate unit pins at this scale; retain links to the individual DEC files for parcel-level research.",
+      ],
+    },
+    sources: [
+      {
+        title: "Vanadium Corporation Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932001/ROD.HW.932001.2006-03-31.vanadium_corp_ou1_ou2_ou3.pdf",
+      },
+      {
+        title: "Vanadium Corporation Cleanup Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932001C/Fact%20Sheet.HW.932001C.2006-02-23.VanadiumPRAPFactSheet.pdf",
+      },
+      {
+        title: "Vanadium Corporation Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932001/",
+      },
+    ],
+  },
+  {
+    id: "lake-ontario-ordnance-works-loow",
+    name: "Lake Ontario Ordnance Works (LOOW)",
+    municipality: "Lewiston and Porter",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former 7,567-acre World War II ordnance complex built for flaked-TNT production. Manufacturing lasted about nine months in 1943, and process wastes were disposed of on site; the Army Corps continues the FUDS decision process for investigated drainage features.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.9935, 43.2223],
+    story: {
+      lastReviewed: "August 4, 2026",
+      background: [
+        "The federal government acquired the 7,567-acre Lake Ontario Ordnance Works property between 1941 and 1944. Six TNT lines and facilities for acid mixing, recovery, purification, and concentration were concentrated within an approximately 2,500-acre developed area.",
+        "LOOW is a Formerly Used Defense Site with many present-day owners. The overview pin represents the historic federal footprint, not a claim that every current parcel was used for TNT production or waste disposal.",
+      ],
+      timeline: [
+        { period: "1941-1943", event: "The government acquired and built a contractor-operated flaked-TNT manufacturing complex." },
+        { period: "1943", event: "LOOW produced TNT for about nine months before decommissioning because other federal plants had excess production capacity." },
+        { period: "1989-2008", event: "Federal remedial investigations examined the former works, including disposal areas, drainage features, and underground utility lines." },
+        { period: "2021", event: "A risk reevaluation supported a proposed no-further-action approach for the 30-inch outfall, Six Mile Creek, and the Southwest Drainage Ditch." },
+        { period: "2025-2027", event: "The Army Corps sought public comment on that proposal and scheduled a final decision document for 2027." },
+      ],
+      documentedImpacts: [
+        "The Army Corps states that TNT manufacturing and on-site process-waste disposal potentially affected the former works.",
+        "For the three drainage features in the current proposed plan, the federal evaluation reported results below applicable background or screening levels or calculated risk thresholds.",
+        "Those findings apply to the named drainage features; they are not a blanket determination for every parcel or every separate cleanup program inside the historic LOOW boundary.",
+      ],
+      cleanupAndControls: [
+        "The Army Corps investigated Six Mile Creek, the Southwest Drainage Ditch, the 30-inch outfall, and former utility corridors under the FUDS program.",
+        "No further action for the three drainage features remains a proposed decision until the final decision document is issued.",
+      ],
+      presentDay: [
+        "Local and federal governments, businesses, and private residents now own land within the former footprint. Property-specific conclusions require the corresponding federal, state, or local record.",
+      ],
+      researchNotes: [
+        "Keep this chemical and military FUDS history separate from the Niagara Falls Storage Site, a smaller FUSRAP property inside the former LOOW footprint where radioactive residues remain under a different federal remedy.",
+        "The Lewiston-Porter campus is documented by the Army Corps as lying in a former LOOW buffer area rather than the TNT manufacturing area.",
+      ],
+    },
+    sources: [
+      {
+        title: "Lake Ontario Ordnance Works FUDS Project and Current Status",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3663181/lake-ontario-ordnance-works-loow/",
+      },
+    ],
+  },
 ];
