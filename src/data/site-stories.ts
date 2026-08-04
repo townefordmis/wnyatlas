@@ -833,21 +833,33 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "durez-occidental-north-tonawanda": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
-      "The North Tonawanda Durez plant became part of Western New York's important plastics and chemical-manufacturing economy. Durez was associated with phenolic resins and molding compounds—materials used to make durable electrical, automotive, appliance, and industrial components before modern plastics became commonplace.",
-      "Successive corporate ownership connected the facility to Hooker Chemical and later Occidental Chemical. The environmental record is divided among the former plant, waste-management areas, groundwater-control systems, outfalls, and affected sediment. Treating those areas as one undifferentiated problem would obscure how the remedy actually works.",
+      "Harry M. Dent founded General Plastics, Inc. on the North Tonawanda property in 1921. The business adopted the Durez Plastic and Chemical Company name in 1926 and developed into a major producer of phenolic resins and molding compounds.",
+      "Phenol and formaldehyde were the principal raw materials for thermosetting resins and molding powders used in electrical, automotive, appliance, communications, and industrial components. The Durez name became closely associated with durable molded phenolic plastic before newer polymer families displaced many of those applications.",
+      "Durez joined Hooker Chemical in the mid-1950s and became part of Occidental when Occidental acquired Hooker in 1968. Occidental gradually reduced operations during the late 1980s and early 1990s; manufacturing ended in 1995 and plant demolition was completed in December 1997.",
+      "The environmental record is divided among the former plant, buried or spilled material, groundwater, the Pettit Cove Flume, Pettit Cove, and Niagara River sediment. Treating all of those areas as one uniform deposit would obscure both the history and remedy.",
     ],
     timeline: [
       {
-        period: "Industrial era",
+        period: "1921",
         event:
-          "Durez produced phenolic-resin and related chemical materials at the North Tonawanda complex.",
+          "Harry M. Dent founded General Plastics, Inc. at the future Durez property.",
       },
       {
-        period: "Corporate succession",
+        period: "1926",
         event:
-          "The operation became associated with Hooker and Occidental Chemical, linking it to a wider Niagara County chemical-manufacturing network.",
+          "The company became Durez Plastic and Chemical Company and expanded phenolic-resin and molding-compound production.",
+      },
+      {
+        period: "Mid-1950s-1968",
+        event:
+          "Durez joined Hooker Chemical and later became part of Occidental through Occidental's acquisition of Hooker.",
+      },
+      {
+        period: "1977 onward",
+        event:
+          "Occidental and DEC began formal source-control, investigation, and remedial work at and around the facility.",
       },
       {
         period: "1989",
@@ -855,9 +867,19 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
           "A partial consent judgment established major groundwater-monitoring and remediation obligations.",
       },
       {
-        period: "1989–present",
+        period: "Late 1980s-1997",
         event:
-          "A perimeter interceptor-trench system has operated to capture groundwater and limit off-site chemical migration.",
+          "Operations were gradually reduced, manufacturing ended in 1995, and demolition of the former plant buildings was completed in 1997.",
+      },
+      {
+        period: "1998-present",
+        event:
+          "Glenn Springs Holdings assumed long-term remedial responsibility, operating the interceptor trench, carbon treatment, monitoring, and maintenance program.",
+      },
+      {
+        period: "2019-2024",
+        event:
+          "Targeted in-well oxygen-release treatment and updated groundwater studies evaluated persistent chlorinated compounds and hydraulic capture.",
       },
       {
         period: "Current stewardship",
@@ -866,22 +888,26 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       },
     ],
     documentedImpacts: [
-      "Chemical manufacturing and waste management affected soil and groundwater across portions of the former facility.",
-      "DEC's sediment inventory identifies chlorinated dioxins and furans in an associated sediment area.",
-      "The long operating history produced multiple source and management areas rather than a single uniform deposit.",
+      "Burial areas, process losses, and spills affected surface soil, subsurface soil, and groundwater beneath portions of the former manufacturing property.",
+      "The groundwater program tracks benzene, toluene, chlorobenzene, dichlorobenzenes, and trichlorobenzenes among the targeted site compounds.",
+      "Until 1993, non-contact cooling water and stormwater entered the Pettit Cove Flume. Investigations identified chlorinated dioxins and furans in flume, cove, and connected river sediments potentially associated with historical facility discharges.",
+      "NAPL can enter the interceptor trench with groundwater and is separated for off-site incineration. Its presence shows why hydraulic collection remains necessary decades after manufacturing ended.",
+      "The long operating history produced multiple source, drainage, and sediment areas rather than a single uniform deposit.",
     ],
     cleanupAndControls: [
       "A perimeter interceptor trench creates an inward hydraulic gradient and collects groundwater that might otherwise migrate away from the property.",
-      "Collected water is managed through a long-term extraction and treatment program.",
-      "Institutional controls, monitoring wells, sediment restrictions, maintenance, and periodic review remain essential because contamination has not simply been excavated away.",
+      "Collected water passes through separation equipment and an activated-carbon treatment system before permitted discharge; separated NAPL is sent to a permitted off-site incinerator.",
+      "Source removals, plant demolition, site covers, drainage work, sediment removal, and long-term groundwater management address different parts of the former operation.",
+      "Institutional controls, monitoring wells, sediment restrictions, maintenance, hydraulic evaluation, and periodic review remain essential because contamination has not simply been excavated away.",
     ],
     presentDay: [
-      "The Durez record is in long-term management. The correct present-day description is neither an uncontrolled historic dump nor a completely erased cleanup: groundwater capture and continuing controls are integral parts of the remedy.",
+      "The manufacturing complex is gone and the former plant is largely open land, but the interceptor trench and treatment plant operate continuously as part of a managed Class 4 State Superfund remedy.",
+      "The correct present-day description is neither an uncontrolled historic dump nor a completely erased cleanup: groundwater capture, sediment review, and continuing controls are integral parts of the remedy.",
     ],
     researchNotes: [
-      "Build a product and ownership timeline from Durez corporate records, Hooker annual reports, and North Tonawanda industrial directories.",
       "Map the interceptor trench, principal waste areas, outfalls, and DEC sediment boundary as separate features.",
-      "Determine which sediment areas were capped, removed, or left subject to monitoring.",
+      "Continue reviewing the aquatic assessment, Pettit Cove Flume and river-sediment record, and newer groundwater-capture evaluations without extending facility findings to unrelated shoreline areas.",
+      "Cross-link Hooker and Occidental corporate history while keeping the Durez remedy independent from the Buffalo Avenue Plant and other Hooker disposal sites.",
     ],
   },
   "houdaille-strippit-landfill": {
@@ -3062,33 +3088,39 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "dupont-yerkes": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
-      "DuPont's Yerkes plant at 3115 River Road is a long-running chemical and polymer-products facility. It appears in New York's southwestern Tonawanda hydrogeologic study and operates under wastewater, air-emissions, and hazardous-material regulatory programs.",
-      "Unlike an abandoned dump, Yerkes is an active regulated industrial site. Inclusion in the atlas reflects documented industrial releases and environmental controls; it does not mean every permitted discharge represents an uncontrolled exposure.",
+      "DuPont's Yerkes plant at 3115 River Road developed as a chemical and polymer-products manufacturing complex within southwestern Tonawanda's dense Niagara River industrial corridor. The plant has shared that setting with Dunlop, Polymer Applications, 3M O-Cel-O, FMC, Huntley, and other major facilities.",
+      "A former DuPont disposal area was investigated as New York site 915019 and later delisted from the Registry of Inactive Hazardous Waste Disposal Sites. Delisting that historical unit did not end environmental regulation of the operating manufacturing facility.",
+      "The active plant has operated under industrial wastewater, air-emissions, hazardous-material, and chemical-reporting programs. Corporate names and business structures have changed, including the DuPont Specialty Products name, but the atlas follows the River Road property and its documented regulatory record rather than assuming every DuPont operation was identical.",
     ],
     timeline: [
       { period: "Industrial development", event: "The River Road property developed into a chemical and polymer-products manufacturing complex." },
-      { period: "Regional investigation", event: "DEC included the property in its southwestern Tonawanda groundwater and geochemical study." },
-      { period: "Ongoing regulation", event: "Air and wastewater permits set treatment, monitoring, and reporting requirements." },
-      { period: "2025", event: "DEC reviewed a wastewater permit application for continuing plant operations." },
+      { period: "1993", event: "A Phase II investigation characterized the former state-listed Yerkes disposal site and supported later regulatory decisions." },
+      { period: "1995-2007", event: "DEC studied regional groundwater jointly with Yerkes and neighboring facilities, distinguishing shallow flow toward the Niagara River from deeper zones influenced by industrial pumping." },
+      { period: "2014", event: "A federal court approved an EPA air-pollution settlement requiring stack testing and a $440,000 civil penalty for hazardous-air-pollutant and reporting violations." },
+      { period: "2025", event: "DEC completed technical review of a renewed industrial wastewater permit and proposed updated temperature, flow, suspended-solids, and PFOA/PFOS monitoring requirements." },
     ],
     documentedImpacts: [
-      "Historical chemical operations form part of the documented industrial groundwater setting along River Road.",
-      "Wastewater and air emissions include regulated pollutants requiring permit limits and monitoring.",
-      "Regional groundwater findings must be apportioned carefully among several adjacent industrial properties.",
+      "Historical disposal and chemical operations warranted a state site investigation; DEC's later regional study identifies the Yerkes unit as delisted rather than an active Class 2 Superfund site.",
+      "The plant historically discharged stormwater, non-contact cooling water, water-treatment backwash, and boiler blowdown through a permitted Niagara River outfall, while process wastewater went to the municipal sanitary system.",
+      "EPA's 2014 case concerned hazardous-air-pollutant controls and federal chemical-release reporting. A compliance settlement documents violations and required corrective measures; it does not by itself establish a neighborhood exposure or health outcome.",
+      "Regional groundwater findings must be apportioned carefully among several adjacent industrial properties. DEC found shallow and intermediate groundwater generally moving toward the Niagara River while deeper flow could be altered by industrial extraction elsewhere in the corridor.",
     ],
     cleanupAndControls: [
-      "Wastewater treatment and discharge permits establish enforceable operating and sampling conditions.",
-      "Hazardous-air-pollutant controls and emissions reporting govern active process sources.",
-      "Groundwater investigation and any corrective measures should be attributed to exact facility units and official decisions.",
+      "Wastewater permits establish enforceable treatment, outfall, temperature, solids, flow, best-management-practice, and monitoring requirements.",
+      "The 2025 draft renewal added action-level monitoring for PFOA and PFOS. A monitoring requirement is a tool for evaluating discharge; it is not proof that either chemical exceeded an action level.",
+      "Hazardous-air-pollutant controls, stack testing, emissions reporting, and emergency-planning requirements govern active process sources.",
+      "Groundwater investigation, historical delisting, and any present corrective measures must be attributed to the exact Yerkes unit and decision rather than inferred from neighboring properties.",
     ],
     presentDay: [
-      "Yerkes remains a regulated operating facility. The atlas should show the environmental record and controls without implying that a valid permit is proof of either zero impact or present danger.",
+      "Yerkes remains a regulated operating industrial facility beside the Niagara River. The former state waste-site unit is delisted, while current wastewater and air obligations continue under operating permits.",
+      "The atlas should show both halves of that record without implying that a valid permit proves zero impact or that a historical listing proves present danger.",
     ],
     researchNotes: [
-      "Track final 2025 permit terms, discharge monitoring, violations, and corrective-action documents.",
-      "Add PFAS or other emerging-contaminant findings only when tied to verified sampling at this facility.",
+      "Track the final 2025 permit, discharge-monitoring reports, current operator and product lines, and any new enforcement or corrective-action documents.",
+      "Add PFAS findings only when actual Yerkes sampling results are available; keep the permit's PFOA/PFOS monitoring requirement distinct from a confirmed detection.",
+      "Locate the 1993 Phase II investigation and formal delisting rationale before adding disposal-area boundaries or contaminant-specific claims.",
     ],
   },
   "fmc-peroxychem-evonik-tonawanda": {

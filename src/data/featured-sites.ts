@@ -1293,6 +1293,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/news/environmental-notice-bulletin/2025-07-09/completed-application/town-of-tonawanda-dupont-specialty-products-usa-llc",
       },
+      {
+        title: "DuPont Yerkes Air-Pollution Settlement",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/ddb046c309cbd02085257d1d00535bd5.html",
+      },
     ],
   },
   {
