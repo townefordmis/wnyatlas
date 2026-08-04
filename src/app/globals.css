@@ -2049,6 +2049,7 @@ footer {
 .legend-nearby { background: #35637a; }
 .legend-same { background: #9e3f2b; }
 .legend-proximity { background: #1264d8; }
+.legend-federal { background: #6f42a6; }
 
 .school-map-grid {
   display: grid;

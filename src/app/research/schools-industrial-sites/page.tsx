@@ -5,18 +5,18 @@ import { BuffaloSchoolsMap } from "@/components/buffalo-schools-map";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: "Schools Near Documented Cleanup Sites",
+  title: "Schools and Documented Environmental Property History",
   description:
-    "A carefully sourced map of Western New York school campuses touching, adjoining, or within 500 feet of documented cleanup-property boundaries.",
+    "A carefully sourced map of Western New York school campuses with documented cleanup-property, former federal-property, infrastructure, adjacency, or 500-foot relationships.",
   alternates: {
     canonical: "/research/schools-industrial-sites",
   },
   openGraph: {
     type: "article",
     url: "/research/schools-industrial-sites",
-    title: "Schools Near Documented Cleanup Sites | WNYAtlas",
+    title: "Schools and Documented Environmental Property History | WNYAtlas",
     description:
-      "Explore documented property, adjacency, and 500-foot proximity relationships involving Western New York schools and cleanup sites.",
+      "Explore documented property history, infrastructure, adjacency, and 500-foot proximity relationships involving Western New York schools.",
   },
 };
 
@@ -26,19 +26,23 @@ export default function BuffaloSchoolsResearchPage() {
       <SiteHeader />
       <section className="school-research-hero">
         <p className="eyebrow">WNY Atlas research preview · Western New York campuses</p>
-        <h1>Schools with documented cleanup-property and nearby-site connections</h1>
+        <h1>Schools with documented environmental property history and nearby-site connections</h1>
         <p className="dek">
           A focused map of campuses that occupy part of a documented cleanup
           property, sit directly beside one, or whose current county parcel
-          intersects a mapped DEC cleanup boundary. A separate category includes
-          official school points within 500 feet of a mapped DEC boundary.
+          intersects a mapped DEC cleanup boundary. It also includes campuses where
+          agency records document relevant former federal ownership or infrastructure.
+          A separate category includes official school points within 500 feet of a
+          mapped DEC boundary.
         </p>
         <div className="school-caution">
           <strong>How to read this map</strong>
           <p>
             Rust pins show a documented property, adjacency, or parcel-boundary
-            relationship. Blue pins show only that the official school location
-            point is within 500 feet of a mapped DEC boundary. Proximity is not
+            relationship. Purple pins identify documented former federal property
+            or infrastructure without labeling the campus a cleanup site. Blue pins
+            show only that the official school location point is within 500 feet of
+            a mapped DEC boundary. Proximity is not
             evidence that contamination reached a school. The map does not
             establish exposure, health effects, responsibility, or present
             conditions.
@@ -73,6 +77,15 @@ export default function BuffaloSchoolsResearchPage() {
               cleanup boundary. It is labeled separately because agency boundary
               accuracy varies and the intersection alone does not establish site
               conditions at a school building.
+            </p>
+          </article>
+          <article>
+            <h3>Former federal property</h3>
+            <p>
+              Used when federal records establish former ownership, operations, or
+              infrastructure on the campus. The entry must distinguish a larger
+              federal reservation from the particular activity documented on the
+              school parcel.
             </p>
           </article>
           <article>

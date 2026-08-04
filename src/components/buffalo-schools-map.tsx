@@ -23,7 +23,7 @@ const institutionCount = buffaloSchoolCampuses.reduce(
 );
 
 function campusLabel(campus: BuffaloSchoolCampus) {
-  return campus.schools.map((school) => school.name).join(" / ");
+  return campus.displayName ?? campus.schools.map((school) => school.name).join(" / ");
 }
 
 function locationLabel(value: string) {
@@ -136,7 +136,14 @@ export function BuffaloSchoolsMap() {
       const isProximityOnly = campus.nearbyRemediationSites.some(
         (site) => site.relationship === "within_500_ft_of_dec_boundary",
       );
-      const color = isProximityOnly ? "#1264d8" : "#9e3f2b";
+      const isFormerFederalProperty = campus.nearbyRemediationSites.some(
+        (site) => site.relationship === "documented_former_federal_property",
+      );
+      const color = isFormerFederalProperty
+        ? "#6f42a6"
+        : isProximityOnly
+          ? "#1264d8"
+          : "#9e3f2b";
       const marker = new maplibregl.Marker({
         color,
         scale: 0.62,
@@ -147,7 +154,13 @@ export function BuffaloSchoolsMap() {
       marker.getElement().classList.add("school-native-marker");
       marker
         .getElement()
-        .classList.add(isProximityOnly ? "is-proximity" : "is-property-related");
+        .classList.add(
+          isFormerFederalProperty
+            ? "is-former-federal"
+            : isProximityOnly
+              ? "is-proximity"
+              : "is-property-related",
+        );
       marker.getElement().setAttribute("aria-label", `Open ${campusLabel(campus)}`);
       marker.getElement().addEventListener("click", () => setSelected(campus));
       markerStore.set(campus.id, marker);
@@ -206,7 +219,7 @@ export function BuffaloSchoolsMap() {
             institutions · verified relationships
           </p>
           <h2 id="school-map-title">
-            Schools with documented cleanup-property or 500-foot connections
+            Schools with documented property history or 500-foot connections
           </h2>
         </div>
         <div className="school-map-legend" aria-label="Map legend">
@@ -215,6 +228,9 @@ export function BuffaloSchoolsMap() {
           </span>
           <span>
             <i className="legend-proximity" /> Within 500 feet — proximity only
+          </span>
+          <span>
+            <i className="legend-federal" /> Former federal property or infrastructure
           </span>
         </div>
       </div>
@@ -240,6 +256,9 @@ export function BuffaloSchoolsMap() {
             >
               <option value="all">All verified campuses</option>
               <option value="documented_campus_property">Part of cleanup property</option>
+              <option value="documented_former_federal_property">
+                Former federal property or infrastructure
+              </option>
               <option value="documented_directly_adjacent">Directly adjacent</option>
               <option value="mapped_parcel_boundary_intersection">
                 Parcel intersects mapped DEC boundary
@@ -281,6 +300,11 @@ export function BuffaloSchoolsMap() {
               <a href={history.sourceUrl} target="_blank" rel="noreferrer">
                 {history.sourceLabel} ↗
               </a>
+              {history.additionalSources?.map((source) => (
+                <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
+                  {source.label} ↗
+                </a>
+              ))}
             </section>
           ) : (
             <section>
@@ -300,7 +324,7 @@ export function BuffaloSchoolsMap() {
                   <li key={story.id}>
                     <strong>{story.title}</strong>
                     <span>
-                      Supporting DEC records:{" "}
+                      Supporting agency records:{" "}
                       {story.sites.map((site) => site.siteCode).join(" · ")}
                     </span>
                     <span>{storyRelationshipLabel(story)}</span>
@@ -323,7 +347,11 @@ export function BuffaloSchoolsMap() {
                       ].filter(Boolean);
                       return (
                         <details>
-                          <summary>Official cleanup history</summary>
+                          <summary>
+                            {story.sites.some((site) => site.siteCode.startsWith("USACE-"))
+                              ? "Official agency investigation history"
+                              : "Official cleanup history"}
+                          </summary>
                           {story.records.some(
                             (record) => record.openDataStatus === "matched",
                           ) ? (
@@ -343,14 +371,20 @@ export function BuffaloSchoolsMap() {
                               )}
                               {contaminants.length > 0 && (
                                 <p>
-                                  <b>Contaminants listed in the state dataset:</b>{" "}
+                                  <b>
+                                    {story.sites.some((site) =>
+                                      site.siteCode.startsWith("USACE-"),
+                                    )
+                                      ? "Constituents and findings in the agency report:"
+                                      : "Contaminants listed in the state dataset:"}
+                                  </b>{" "}
                                   {contaminants.join(", ")}.
                                 </p>
                               )}
                               <p>
                                 <b>Documented records available:</b>{" "}
                                 {availableDocuments.join(", ") ||
-                                  "See the DEC document collections"}.
+                                  "See the linked agency document collections"}.
                               </p>
                             </>
                           ) : (
@@ -389,7 +423,9 @@ export function BuffaloSchoolsMap() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          DEC {site.siteCode} ↗
+                          {site.siteCode.startsWith("USACE-")
+                            ? "USACE report"
+                            : `DEC ${site.siteCode}`} ↗
                         </a>
                       ))}
                       {story.records

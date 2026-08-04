@@ -7,6 +7,7 @@ export type SchoolRelationship =
   | "within_1000_ft_of_dec_boundary"
   | "documented_campus_property"
   | "documented_directly_adjacent"
+  | "documented_former_federal_property"
   | "mapped_parcel_boundary_intersection";
 
 export type BuffaloSchoolCampus = {
@@ -15,6 +16,7 @@ export type BuffaloSchoolCampus = {
   city: string;
   zip: string;
   coordinates: [number, number];
+  displayName?: string;
   schools: Array<{ name: string; type: string; sedCode: string }>;
   nearbyRemediationSites: Array<{
     siteCode: string;
@@ -207,6 +209,34 @@ const kalfasCampus: BuffaloSchoolCampus = {
   researchStatus: "proximity_screened",
 };
 
+const lewistonPorterCampus: BuffaloSchoolCampus = {
+  id: "lewiston-porter-central-campus",
+  displayName: "LEWISTON-PORTER CENTRAL CAMPUS",
+  address: "4061 CREEK RD",
+  city: "YOUNGSTOWN",
+  zip: "14174",
+  coordinates: [-79.01444, 43.21384],
+  schools: [
+    { name: "LEWISTON-PORTER PRIMARY EDUCATION CENTER", type: "public", sedCode: "" },
+    { name: "LEWISTON-PORTER INTERMEDIATE EDUCATION CENTER", type: "public", sedCode: "" },
+    { name: "LEWISTON-PORTER MIDDLE SCHOOL", type: "public", sedCode: "" },
+    { name: "LEWISTON-PORTER SENIOR HIGH SCHOOL", type: "public", sedCode: "361719001534" },
+  ],
+  nearbyRemediationSites: [
+    {
+      siteCode: "USACE-LOOW-LP-2011",
+      siteName: "Former LOOW buffer zone and wastewater infrastructure",
+      program: "DERP-FUDS / U.S. Army Corps of Engineers site inspection",
+      siteClass: "Federal historical investigation",
+      siteAddress: "Lewiston-Porter Central School District campus",
+      relationship: "documented_former_federal_property",
+      detailUrl:
+        "https://extapps.dec.ny.gov/data/DecDocs/932153/Report.RCRA.932153.2011-05-24.LEW-Port_Schools_SI_report.pdf",
+    },
+  ],
+  researchStatus: "documented_same_site",
+};
+
 export const buffaloSchoolCampuses = [
   ...verifiedSchoolCampuses.filter(
     (campus) => !tapestryAddresses.has(campus.address),
@@ -215,6 +245,7 @@ export const buffaloSchoolCampuses = [
   royaltonHartlandCampus,
   blasdellElementaryCampus,
   kalfasCampus,
+  lewistonPorterCampus,
 ];
 
 export type NearbyRemediationRecord = {
@@ -241,6 +272,43 @@ export type NearbyRemediationRecord = {
 };
 
 const regionalRemediationRecords: NearbyRemediationRecord[] = [
+  {
+    siteCode: "USACE-LOOW-LP-2011",
+    siteName: "Former LOOW buffer zone and wastewater infrastructure",
+    program: "DERP-FUDS / U.S. Army Corps of Engineers site inspection",
+    siteClass: "Federal historical investigation",
+    address: "4061 Creek Road, Youngstown",
+    closestRelationship: "documented_former_federal_property",
+    projects: [
+      { name: "Department of Defense ownership", date: "1942–1945" },
+      { name: "Phase I outfall-line investigation", date: "1999" },
+      { name: "Gamma walkover and drainage-ditch sampling", date: "2002" },
+      { name: "Campus soil investigations", date: "2001–2006" },
+      { name: "Campus Soils Management Plan", date: "2007" },
+      { name: "USACE final site-inspection report", date: "2011-03" },
+    ],
+    contaminants: [
+      "Explosives, boron and lithium tested below the outfall line; no reportable explosives",
+      "VOCs, SVOCs, pesticides, PCBs, explosives and metals tested along the outfall",
+      "Localized arsenic and PAH findings evaluated in campus soil investigations",
+      "Localized PAHs and other constituents evaluated in Southwest Drainage Ditch media",
+    ],
+    controls: [
+      { code: "SMP", type: "Campus Soils Management Plan prepared in 2007" },
+    ],
+    owners: ["Lewiston-Porter Central School District"],
+    decDetailUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/932153/Report.RCRA.932153.2011-05-24.LEW-Port_Schools_SI_report.pdf",
+    decDocumentIndex: "https://extapps.dec.ny.gov/data/DecDocs/932153/",
+    documentIndexStatus: "Official DEC document collection containing the USACE report",
+    hasCertificateOfCompletion: false,
+    hasFinalEngineeringReport: false,
+    hasSiteManagementPlan: true,
+    hasPeriodicReview: false,
+    openDataStatus: "matched",
+    openDataSource: "U.S. Army Corps of Engineers site-inspection report",
+    assembledOn: "2026-08-03",
+  },
   {
     siteCode: "C915192",
     siteName: "Jonnie's Porta Signs",
@@ -382,6 +450,7 @@ export const cleanupStoryLabels: Record<string, string> = {
 const relationshipRank: Record<SchoolRelationship, number> = {
   documented_campus_property: 0,
   documented_directly_adjacent: 1,
+  documented_former_federal_property: 0,
   mapped_parcel_boundary_intersection: 1,
   point_inside_dec_boundary: 0,
   within_500_ft_of_dec_boundary: 1,
@@ -437,8 +506,36 @@ export const documentedCampusHistory: Record<
     completion: string;
     sourceUrl: string;
     sourceLabel: string;
+    additionalSources?: Array<{ label: string; url: string }>;
   }
 > = {
+  "4061 CREEK RD": {
+    heading: "Former LOOW property, outfall, and testing record",
+    facts: [
+      "The Army Corps identifies the 372-acre campus parcel as part of the former Lake Ontario Ordnance Works buffer zone—not the TNT manufacturing area.",
+      "During federal ownership, a buried 30-inch outfall carried treated TNT wastewater, acid-neutralized wastewater, and sanitary wastewater from the former LOOW treatment plant toward the Niagara River. The concrete-encased terracotta pipe crosses the campus about six feet below ground.",
+      "The Southwest Drainage Ditch also crosses the campus. Historical-aerial reviews identified mounds, scars, pits, pathways, and drainage features for field investigation; the Corps found no documentation of other Defense Department use of the school parcel.",
+      "Phase I sampling below the outfall included TNT field screening and laboratory testing for explosives, boron, and lithium. The report states there were no reportable explosives and the data did not indicate an impact from former Defense Department activities.",
+      "Later work included a gamma walkover; surface and subsurface soil testing; ditch water, sediment, and soil testing; and samples from 11 locations along the campus portion of the outfall for VOCs, SVOCs, pesticides, PCBs, explosives, and metals.",
+      "Investigations reported localized arsenic and PAH findings in some campus soils and localized PAHs in ditch sediment. A 2007 Soils Management Plan addressed soil handling during redevelopment.",
+      "A 2008 Niagara County community review identified remaining questions about residue in the outfall west of the Southwest Drainage Ditch, ditch-sediment coverage, wooded-area mounds, and running trails. The 2011 Corps inspection later investigated the ditch and aerial anomalies and summarized earlier outfall testing, but it did not state that every recommendation in the 2008 review had been closed.",
+    ],
+    completion:
+      "The Corps' 2011 site inspection concluded that the investigated aerial anomalies and Southwest Drainage Ditch did not show contamination resulting from former Defense Department activity. It also concluded that the measured constituents did not pose unacceptable risks to people using or visiting the property. These are the report's findings, not a claim that the property was never affected or that no future review is warranted.",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/932153/Report.RCRA.932153.2011-05-24.LEW-Port_Schools_SI_report.pdf",
+    sourceLabel: "USACE Lewiston-Porter Final Site Inspection Report — March 2011",
+    additionalSources: [
+      {
+        label: "Niagara County Community LOOW Final Report — September 2008",
+        url: "https://downloads.niagaracounty.gov/Document_center/Department/A%20-F/Environmental/CLP%20Final%20Report%20Sept%2008.pdf",
+      },
+      {
+        label: "NYSDOH Lewiston and Porter cancer-incidence investigation — 1991–2000",
+        url: "https://www.health.ny.gov/environmental/investigations/lewiston/docs/lewiston_cancer_report.pdf",
+      },
+    ],
+  },
   "154 S OGDEN ST": {
     heading: "Documented property history",
     facts: [
@@ -541,6 +638,8 @@ export const documentedCampusHistory: Record<
 export const relationshipLabels: Record<SchoolRelationship, string> = {
   documented_campus_property: "Cleanup property includes the campus",
   documented_directly_adjacent: "DEC record identifies the site as directly adjacent",
+  documented_former_federal_property:
+    "Agency records document former federal ownership and infrastructure on campus",
   mapped_parcel_boundary_intersection:
     "Current county parcel intersects the mapped DEC boundary",
   point_inside_dec_boundary: "School point falls inside the mapped DEC boundary",
