@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type {
   LayerSpecification,
@@ -114,6 +114,39 @@ export function FormerWaterwaysMap() {
             (record) => record.evidenceType === filter,
           ),
     [filter],
+  );
+
+  const focusRecord = useCallback(
+    (record: FormerWaterwayRecord, duration = 500) => {
+      const instance = map.current;
+      if (!instance) return;
+
+      instance.resize();
+      const bounds = recordGeometryBounds(record.id);
+      if (bounds) {
+        instance.fitBounds(bounds, {
+          padding: window.matchMedia("(max-width: 620px)").matches ? 28 : 52,
+          maxZoom: 14.6,
+          duration,
+        });
+      } else {
+        instance.flyTo({
+          center: record.coordinates,
+          zoom: 14,
+          duration,
+          essential: false,
+        });
+      }
+    },
+    [],
+  );
+
+  const chooseRecord = useCallback(
+    (record: FormerWaterwayRecord, duration = 500) => {
+      setSelected(record);
+      window.requestAnimationFrame(() => focusRecord(record, duration));
+    },
+    [focusRecord],
   );
 
   useEffect(() => {
@@ -251,7 +284,7 @@ export function FormerWaterwaysMap() {
           )
         : undefined;
       if (geometry && record) {
-        setSelected(record);
+        chooseRecord(record);
       }
     });
 
@@ -316,7 +349,10 @@ export function FormerWaterwaysMap() {
       marker.getElement().classList.add("waterway-native-marker");
       marker.getElement().dataset.evidenceType = record.evidenceType;
       marker.getElement().setAttribute("aria-label", `Open ${record.name}`);
-      marker.getElement().addEventListener("click", () => setSelected(record));
+      marker.getElement().addEventListener("click", (event) => {
+        event.stopPropagation();
+        chooseRecord(record);
+      });
       markerStore.set(record.id, marker);
     });
 
@@ -329,24 +365,7 @@ export function FormerWaterwaysMap() {
         setSelected(linkedRecord);
         shell.current?.scrollIntoView({ behavior: "auto", block: "start" });
       });
-      const focusLinkedRecord = () => {
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            instance.resize();
-            const linkedBounds = recordGeometryBounds(linkedRecord.id);
-            if (linkedBounds) {
-              instance.fitBounds(linkedBounds, {
-                padding: isMobile ? 28 : 52,
-                maxZoom: 14.6,
-                duration: 0,
-              });
-            } else {
-              instance.jumpTo({ center: linkedRecord.coordinates, zoom: 14 });
-            }
-          });
-        });
-      };
-      focusLinkedRecord();
+      instance.once("load", () => focusRecord(linkedRecord, 0));
     }
 
     const resize = () => requestAnimationFrame(() => instance.resize());
@@ -368,7 +387,7 @@ export function FormerWaterwaysMap() {
       instance.remove();
       map.current = null;
     };
-  }, []);
+  }, [chooseRecord, focusRecord]);
 
   useEffect(() => {
     const visible = new Set(filtered.map((record) => record.id));
@@ -413,25 +432,6 @@ export function FormerWaterwaysMap() {
       });
     });
   }, [filtered, selected.id]);
-
-  function chooseRecord(record: FormerWaterwayRecord) {
-    setSelected(record);
-    const bounds = recordGeometryBounds(record.id);
-    if (bounds) {
-      map.current?.resize();
-      map.current?.fitBounds(bounds, {
-        padding: window.matchMedia("(max-width: 620px)").matches ? 28 : 52,
-        maxZoom: 14.6,
-        duration: 500,
-      });
-    } else {
-      map.current?.flyTo({
-        center: record.coordinates,
-        zoom: 14,
-        essential: false,
-      });
-    }
-  }
 
   return (
     <section
