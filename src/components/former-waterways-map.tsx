@@ -40,12 +40,14 @@ const confidenceLabels = {
   research_boundary_pending: "Documented change; historical boundary research pending",
 } as const;
 
-function geometrySourceId(id: string) {
-  return `landscape-source-${id}`;
-}
+const landscapeGeometrySourceId = "landscape-geometries";
 
 function geometryLayerId(id: string) {
   return `landscape-layer-${id}`;
+}
+
+function geometryOutlineLayerId(id: string) {
+  return `landscape-outline-${id}`;
 }
 
 function geometryCasingLayerId(id: string) {
@@ -62,6 +64,30 @@ function geometryBounds(geometry: LandscapeChangeGeometry) {
   return bounds;
 }
 
+
+function recordGeometryBounds(recordId: string) {
+  const related = landscapeChangeGeometries.filter(
+    (geometry) => geometry.recordId === recordId,
+  );
+  if (related.length === 0) return null;
+
+  const bounds = geometryBounds(related[0]);
+  related.slice(1).forEach((geometry) => {
+    const nextBounds = geometryBounds(geometry);
+    bounds.extend(nextBounds.getSouthWest());
+    bounds.extend(nextBounds.getNorthEast());
+  });
+  return bounds;
+}
+
+function counterClockwiseRing(ring: [number, number][]) {
+  const signedArea = ring.slice(0, -1).reduce((area, point, index) => {
+    const next = ring[index + 1];
+    return area + point[0] * next[1] - next[0] * point[1];
+  }, 0);
+  return signedArea < 0 ? [...ring].reverse() : ring;
+}
+
 export function FormerWaterwaysMap() {
   const shell = useRef<HTMLElement>(null);
   const container = useRef<HTMLDivElement>(null);
@@ -70,13 +96,15 @@ export function FormerWaterwaysMap() {
   const geometryLabels = useRef<Map<string, Marker>>(new Map());
   const geometryRouteDots = useRef<Map<string, Marker[]>>(new Map());
   const [selected, setSelected] = useState(formerWaterwayRecords[0]);
-  const [selectedGeometry, setSelectedGeometry] =
-    useState<LandscapeChangeGeometry | null>(
-      landscapeChangeGeometries.find(
-        (geometry) => geometry.recordId === formerWaterwayRecords[0].id,
-      ) ?? null,
-    );
   const [filter, setFilter] = useState<WaterwayEvidenceType | "all">("all");
+
+  const selectedGeometries = useMemo(
+    () =>
+      landscapeChangeGeometries.filter(
+        (geometry) => geometry.recordId === selected.id,
+      ),
+    [selected.id],
+  );
 
   const filtered = useMemo(
     () =>
@@ -92,42 +120,60 @@ export function FormerWaterwaysMap() {
     if (!container.current || map.current) return;
 
     const isMobile = window.matchMedia("(max-width: 620px)").matches;
-    const geometrySources = Object.fromEntries(
-      landscapeChangeGeometries.map((geometry) => [
-        geometrySourceId(geometry.id),
-        {
-          type: "geojson" as const,
-          data: {
-            type: "Feature" as const,
-            properties: { geometryId: geometry.id },
-            geometry: {
-              type: geometry.geometryType,
-              coordinates: geometry.coordinates,
-            },
+    maplibregl.setWorkerUrl("/maplibre/maplibre-gl-worker.mjs");
+    const geometrySource = {
+      type: "geojson" as const,
+      data: {
+        type: "FeatureCollection" as const,
+        features: landscapeChangeGeometries.map((geometry) => ({
+          type: "Feature" as const,
+          properties: { geometryId: geometry.id },
+          geometry: {
+            type: geometry.geometryType,
+            coordinates:
+              geometry.geometryType === "Polygon"
+                ? geometry.coordinates.map(counterClockwiseRing)
+                : geometry.coordinates,
           },
-        },
-      ]),
-    );
+        })),
+      },
+    };
     const geometryLayers: LayerSpecification[] = landscapeChangeGeometries.flatMap(
       (geometry): LayerSpecification[] => {
         if (geometry.geometryType === "Polygon") {
-          return [{
+          return [
+            {
               id: geometryLayerId(geometry.id),
               type: "fill",
-              source: geometrySourceId(geometry.id),
+              source: landscapeGeometrySourceId,
+              filter: ["==", ["get", "geometryId"], geometry.id],
               paint: {
                 "fill-color": waterwayMarkerColors[geometry.evidenceType],
-                "fill-opacity": 0.35,
+                "fill-opacity": isMobile ? 0.48 : 0.4,
                 "fill-outline-color": waterwayMarkerColors[geometry.evidenceType],
               },
-            }];
+            },
+            {
+              id: geometryOutlineLayerId(geometry.id),
+              type: "line",
+              source: landscapeGeometrySourceId,
+              filter: ["==", ["get", "geometryId"], geometry.id],
+              paint: {
+                "line-color": waterwayMarkerColors[geometry.evidenceType],
+                "line-width": isMobile ? 4 : 3,
+                "line-opacity": 1,
+                "line-dasharray": [2, 1],
+              },
+            },
+          ];
         }
 
         const layers: LayerSpecification[] = [
           {
             id: geometryCasingLayerId(geometry.id),
             type: "line",
-            source: geometrySourceId(geometry.id),
+            source: landscapeGeometrySourceId,
+            filter: ["==", ["get", "geometryId"], geometry.id],
             paint: {
               "line-color": "#003c38",
               "line-width": 14,
@@ -137,7 +183,8 @@ export function FormerWaterwaysMap() {
           {
               id: geometryLayerId(geometry.id),
               type: "line",
-              source: geometrySourceId(geometry.id),
+              source: landscapeGeometrySourceId,
+              filter: ["==", ["get", "geometryId"], geometry.id],
               paint: {
                 "line-color": "#24e6c7",
                 "line-width": 8,
@@ -167,15 +214,19 @@ export function FormerWaterwaysMap() {
             attribution:
               "© OpenStreetMap contributors",
           },
-          ...geometrySources,
         },
         layers: [
           { id: "osm", type: "raster", source: "osm" },
-          ...geometryLayers,
         ],
       },
     });
     map.current = instance;
+    const installGeometryLayers = () => {
+      instance.addSource(landscapeGeometrySourceId, geometrySource);
+      geometryLayers.forEach((layer) => instance.addLayer(layer));
+    };
+    if (instance.isStyleLoaded()) installGeometryLayers();
+    else instance.once("style.load", installGeometryLayers);
     instance.addControl(
       new maplibregl.NavigationControl({ showCompass: false }),
       "top-right",
@@ -200,7 +251,6 @@ export function FormerWaterwaysMap() {
           )
         : undefined;
       if (geometry && record) {
-        setSelectedGeometry(geometry);
         setSelected(record);
       }
     });
@@ -275,23 +325,28 @@ export function FormerWaterwaysMap() {
       (record) => record.id === linkedRecordId,
     );
     if (linkedRecord) {
-      const linkedGeometry = landscapeChangeGeometries.find(
-        (geometry) => geometry.recordId === linkedRecord.id,
-      );
       requestAnimationFrame(() => {
         setSelected(linkedRecord);
-        setSelectedGeometry(linkedGeometry ?? null);
         shell.current?.scrollIntoView({ behavior: "auto", block: "start" });
       });
-      if (linkedGeometry) {
-        instance.fitBounds(geometryBounds(linkedGeometry), {
-          padding: isMobile ? 34 : 52,
-          maxZoom: 14.6,
-          duration: 0,
+      const focusLinkedRecord = () => {
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            instance.resize();
+            const linkedBounds = recordGeometryBounds(linkedRecord.id);
+            if (linkedBounds) {
+              instance.fitBounds(linkedBounds, {
+                padding: isMobile ? 28 : 52,
+                maxZoom: 14.6,
+                duration: 0,
+              });
+            } else {
+              instance.jumpTo({ center: linkedRecord.coordinates, zoom: 14 });
+            }
+          });
         });
-      } else {
-        instance.jumpTo({ center: linkedRecord.coordinates, zoom: 14 });
-      }
+      };
+      focusLinkedRecord();
     }
 
     const resize = () => requestAnimationFrame(() => instance.resize());
@@ -331,6 +386,13 @@ export function FormerWaterwaysMap() {
           visible.has(geometry.recordId) ? "visible" : "none",
         );
       }
+      if (map.current?.getLayer(geometryOutlineLayerId(geometry.id))) {
+        map.current.setLayoutProperty(
+          geometryOutlineLayerId(geometry.id),
+          "visibility",
+          visible.has(geometry.recordId) ? "visible" : "none",
+        );
+      }
       if (map.current?.getLayer(geometryCasingLayerId(geometry.id))) {
         map.current.setLayoutProperty(
           geometryCasingLayerId(geometry.id),
@@ -353,14 +415,12 @@ export function FormerWaterwaysMap() {
   }, [filtered, selected.id]);
 
   function chooseRecord(record: FormerWaterwayRecord) {
-    const geometry = landscapeChangeGeometries.find(
-      (candidate) => candidate.recordId === record.id,
-    );
     setSelected(record);
-    setSelectedGeometry(geometry ?? null);
-    if (geometry) {
-      map.current?.fitBounds(geometryBounds(geometry), {
-        padding: 52,
+    const bounds = recordGeometryBounds(record.id);
+    if (bounds) {
+      map.current?.resize();
+      map.current?.fitBounds(bounds, {
+        padding: window.matchMedia("(max-width: 620px)").matches ? 28 : 52,
         maxZoom: 14.6,
         duration: 500,
       });
@@ -521,21 +581,26 @@ export function FormerWaterwaysMap() {
             </p>
           )}
 
-          {selectedGeometry && selectedGeometry.recordId === selected.id && (
-            <section className="record-mapped-area">
-              <p className="record-label">Mapped historical geography</p>
-              <h4>{selectedGeometry.name}</h4>
-              <p>{selectedGeometry.boundaryNote}</p>
-              <p><strong>Map basis:</strong> {selectedGeometry.sourceYear}</p>
+          {selectedGeometries.map((geometry, index) => (
+            <section className="record-mapped-area" key={geometry.id}>
+              <p className="record-label">
+                Mapped historical geography
+                {selectedGeometries.length > 1
+                  ? ` · Area ${index + 1} of ${selectedGeometries.length}`
+                  : ""}
+              </p>
+              <h4>{geometry.name}</h4>
+              <p>{geometry.boundaryNote}</p>
+              <p><strong>Map basis:</strong> {geometry.sourceYear}</p>
               <a
-                href={selectedGeometry.sourceUrl}
+                href={geometry.sourceUrl}
                 target="_blank"
                 rel="noreferrer"
               >
-                {selectedGeometry.sourceLabel} ↗
+                {geometry.sourceLabel} ↗
               </a>
             </section>
-          )}
+          ))}
 
           {selected.relatedSiteId && (
             <Link href={`/sites/${selected.relatedSiteId}`}>
