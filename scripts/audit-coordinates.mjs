@@ -3,6 +3,7 @@ import fs from "node:fs";
 const source = [
   "../src/data/featured-sites.ts",
   "../src/data/historic-cleanup-expansion.ts",
+  "../src/data/county-expansion-2026.ts",
 ]
   .map((path) => fs.readFileSync(new URL(path, import.meta.url), "utf8"))
   .join("\n");
@@ -58,7 +59,7 @@ for (const siteId of connectedSiteIds) {
 console.log(`Checked ${sites.length} site coordinates.`);
 console.log(`Checked ${connectedSiteIds.length} connection memberships.`);
 
-const expectedSiteCount = 151;
+const expectedSiteCount = 175;
 if (sites.length !== expectedSiteCount) {
   issues.push(
     `Expected ${expectedSiteCount} coordinate records but found ${sites.length}`,

@@ -3,6 +3,7 @@ import fs from "node:fs";
 const source = [
   "../src/data/featured-sites.ts",
   "../src/data/historic-cleanup-expansion.ts",
+  "../src/data/county-expansion-2026.ts",
 ]
   .map((path) => fs.readFileSync(new URL(path, import.meta.url), "utf8"))
   .join("\n");
@@ -15,6 +16,7 @@ const sites = matches.map((match, index) => {
   const block = source.slice(match.index, blockEnd);
   const decCodes = [
     ...block.matchAll(/DecDocs\/([A-Z]?\d{6}[A-Z]?)/gi),
+    ...block.matchAll(/siteSources\("([A-Z]?\d{6}[A-Z]?)"/gi),
   ].map((codeMatch) => codeMatch[1].toUpperCase());
 
   return {
@@ -27,29 +29,33 @@ const sites = matches.map((match, index) => {
 });
 
 const decCodes = [...new Set(sites.flatMap((site) => site.decCodes))];
-const where = encodeURIComponent(
-  `SITECODE IN (${decCodes.map((code) => `'${code}'`).join(",")})`,
-);
 const endpoint =
   "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/" +
   "Remediation_Sites/FeatureServer/1/query";
-const url =
-  `${endpoint}?where=${where}` +
-  "&outFields=SITECODE,SITENAME,ADDRESS1,LOCALITY,COUNTY,METHOD" +
-  "&returnGeometry=true&outSR=4326&f=json";
 
-const response = await fetch(url);
-if (!response.ok) {
-  throw new Error(`DEC coordinate request failed: ${response.status}`);
-}
-
-const payload = await response.json();
-if (payload.error) {
-  throw new Error(`DEC coordinate request failed: ${payload.error.message}`);
+const features = [];
+for (let index = 0; index < decCodes.length; index += 40) {
+  const batch = decCodes.slice(index, index + 40);
+  const where = encodeURIComponent(
+    `SITECODE IN (${batch.map((code) => `'${code}'`).join(",")})`,
+  );
+  const url =
+    `${endpoint}?where=${where}` +
+    "&outFields=SITECODE,SITENAME,ADDRESS1,LOCALITY,COUNTY,METHOD" +
+    "&returnGeometry=true&outSR=4326&f=json";
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`DEC coordinate request failed: ${response.status}`);
+  }
+  const payload = await response.json();
+  if (payload.error) {
+    throw new Error(`DEC coordinate request failed: ${payload.error.message}`);
+  }
+  features.push(...payload.features);
 }
 
 const officialByCode = new Map(
-  payload.features.map((feature) => [
+  features.map((feature) => [
     feature.attributes.SITECODE?.toUpperCase(),
     feature,
   ]),
@@ -62,6 +68,7 @@ const sourceContextOnly = new Set([
   "gill-creek-chemical-corridor",
   "dupont-yerkes",
   "fmc-peroxychem-evonik-tonawanda",
+  "bethlehem-steel",
 ]);
 
 function distanceMeters(from, to) {

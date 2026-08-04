@@ -6,6 +6,7 @@ const root = process.cwd();
 const dataFiles = [
   "src/data/featured-sites.ts",
   "src/data/historic-cleanup-expansion.ts",
+  "src/data/county-expansion-2026.ts",
 ];
 
 function parse(file) {
@@ -44,6 +45,25 @@ function arrayLength(object, name) {
 }
 
 function storyMetrics(story) {
+  if (
+    story &&
+    ts.isCallExpression(story) &&
+    ts.isIdentifier(story.expression) &&
+    story.expression.text === "makeStory" &&
+    ts.isObjectLiteralExpression(story.arguments[0])
+  ) {
+    const seed = story.arguments[0];
+    const metrics = {
+      hasStory: true,
+      background: arrayLength(seed, "background"),
+      timeline: arrayLength(seed, "timeline"),
+      impacts: arrayLength(seed, "documentedImpacts"),
+      controls: arrayLength(seed, "cleanupAndControls"),
+      presentDay: 2,
+      researchNotes: 2,
+    };
+    return { ...metrics, depth: Object.values(metrics).slice(1).reduce((sum, value) => sum + value, 0) };
+  }
   if (!story || !ts.isObjectLiteralExpression(story)) {
     return {
       hasStory: false,
@@ -77,6 +97,18 @@ function storyMetrics(story) {
       metrics.presentDay +
       metrics.researchNotes,
   };
+}
+
+function sourceCount(node) {
+  if (!node) return 0;
+  if (ts.isCallExpression(node) && ts.isIdentifier(node.expression) && node.expression.text === "siteSources") {
+    return node.arguments[2]?.kind === ts.SyntaxKind.FalseKeyword ? 2 : 3;
+  }
+  if (!ts.isArrayLiteralExpression(node)) return 0;
+  return node.elements.reduce((count, element) => {
+    if (ts.isSpreadElement(element)) return count + sourceCount(element.expression);
+    return count + 1;
+  }, 0);
 }
 
 function collectExternalStories() {
@@ -125,19 +157,14 @@ function collectSites(externalStories) {
 
         if (id && name && category) {
           const inlineStory = property(node, "story")?.initializer;
-          const story =
-            inlineStory && ts.isObjectLiteralExpression(inlineStory)
-              ? inlineStory
-              : externalStories.get(id);
+          const story = inlineStory ?? externalStories.get(id);
           const sources = property(node, "sources")?.initializer;
           sites.push({
             id,
             name,
             category,
             file,
-            sourceCount: ts.isArrayLiteralExpression(sources)
-              ? sources.elements.length
-              : 0,
+            sourceCount: sourceCount(sources),
             ...storyMetrics(story),
           });
           return;

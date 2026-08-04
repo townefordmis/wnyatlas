@@ -1,6 +1,7 @@
 import type { AtlasSite } from "@/types/site";
 import { siteStories } from "@/data/site-stories";
 import { historicCleanupExpansion } from "@/data/historic-cleanup-expansion";
+import { countyExpansion2026 } from "@/data/county-expansion-2026";
 import { siteImages } from "@/data/site-images";
 
 const featuredSiteRecords: AtlasSite[] = [
@@ -977,7 +978,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Ongoing investigation of PFNA detected in the village water system and in environmental media near a former firefighting-training area; replacement supply and treatment measures were implemented.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-79.505, 42.254],
+    coordinates: [-79.50940567712935, 42.25236457618568],
     sources: [
       {
         title: "Investigation at the Mayville PFAS Site",
@@ -2399,6 +2400,7 @@ const featuredSiteRecords: AtlasSite[] = [
 export const featuredSites: AtlasSite[] = [
   ...featuredSiteRecords,
   ...historicCleanupExpansion,
+  ...countyExpansion2026,
 ].map((site) => ({
   ...site,
   image: site.image ?? siteImages[site.id],
