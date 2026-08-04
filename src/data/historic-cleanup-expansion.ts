@@ -367,7 +367,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Longstanding chemical-operation property on Lee Street listed as an active Class 2 State Superfund site. The record expands the South Buffalo chemical-manufacturing story beyond the better-known Buffalo Color complex.",
+      "Sulfur-chemical plant at 55 Lee Street developed within the former Allied Chemical complex and purchased by PVS in 1981. Historical sulfuric-acid, sulfur dioxide, ammonia, and related operations created a separate soil-and-groundwater cleanup record from neighboring Buffalo Color; the defined property remains an active Class 2 State Superfund site.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.84121737, 42.86472756],
     sources: [
@@ -375,6 +375,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "PVS Chemicals Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915004/",
+      },
+      {
+        title: "Buffalo River Groundwater Injury Determination Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/brr1.pdf",
+      },
+      {
+        title: "EPA Facility Registry Report — PVS Chemical Solutions",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://frs-public.epa.gov/ords/frs_public2/fii_query_detail.disp_program_facility?p_registry_id=110000326996",
       },
     ],
   },
@@ -394,6 +404,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915105/",
       },
+      {
+        title: "Depew Village Landfill Operable Unit 1 Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915105/ROD.HW.915105.2008-03-27.Depew_Village_Landfill_OU-01.pdf",
+      },
+      {
+        title: "Depew Village Landfill 2023 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915105/Report.HW.915105.2024-02-14.Depew%20Village%20Landfill%202023%20PRR.pdf",
+      },
     ],
   },
   {
@@ -411,6 +431,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Lockport City Landfill Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932010/",
+      },
+      {
+        title: "Lockport City Landfill Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932010/ROD.HW.932010.1992-11-01.ROD.pdf",
       },
     ],
   },
@@ -439,7 +464,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Genesee",
     category: "cleanup",
     summary:
-      "Historic railroad-release site at Gulf Road and the former Lehigh Valley Railroad crossing. New York lists it as an active Class 2 State Superfund site, extending the atlas's rail and material-transport history east of Batavia.",
+      "December 1970 derailment at Gulf Road where two tank cars released about 30,000 gallons of TCE and another partially released cyanide. TCE entered fractured bedrock, producing an approximately four-mile groundwater plume across parts of Genesee, Livingston, and Monroe counties; EPA selected the remaining multi-media remedy in 2023.",
     evidenceStatus: "research-in-progress",
     coordinates: [-77.93303124, 42.99226538],
     sources: [
@@ -447,6 +472,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Lehigh Valley Railroad Derailment Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/819014/",
+      },
+      {
+        title: "Lehigh Valley Railroad Derailment 2023 Record of Decision",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101GB3R.txt",
+      },
+      {
+        title: "EPA Finalizes Lehigh Valley Railroad Cleanup Plan",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-finalizes-cleanup-plan-lehigh-valley-railroad-derailment-superfund-site-genesee",
       },
     ],
   },
@@ -529,6 +564,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Frontier Chemical — Pendleton Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932043/",
+      },
+      {
+        title: "Frontier Chemical — Pendleton Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/ROD.HW.932043.1992-03-02.frontier_chemical.pdf",
+      },
+      {
+        title: "Frontier Chemical — Pendleton 2025 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/Report.HW.932043.2025-11-13.Revised_2025_PRR.pdf",
       },
     ],
   },
@@ -676,6 +721,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/905024/Work%20Plan.HW.905024.2023-04-21.Revised%20Site%20Management%20Plan_Final.pdf",
       },
+      {
+        title: "Farwell Road Landfill Site Documents",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905024/",
+      },
     ],
   },
   {
@@ -693,6 +743,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Carroll Landfill Remedial Design",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/907017/Report.HW.907017.2011-09-27.RD%20Specs%20and%20Drawings%20approved%20by%20CCDOH.pdf",
+      },
+      {
+        title: "Carroll Landfill Groundwater Monitoring Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907017/Report.HW.907017.2019-11-27.November%202019%20Groundwater%20Monitoring%20Report.pdf",
       },
     ],
   },
@@ -749,6 +804,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Former Roblin Steel Periodic Review Report",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/B00173/Report.ERP.B00173.2022-02-24.PRR_and_IC-EC_Certification.pdf",
+      },
+      {
+        title: "Former Roblin Steel Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/robrod.pdf",
+      },
+      {
+        title: "Former Roblin Steel 2024 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/B00173/Report.ERP.B00173.2025-03-03.PRR_and_IC-EC_Certification.pdf",
       },
     ],
   },
@@ -921,7 +986,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.24867284195923, 42.108362644867015],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "The City of Jamestown operated the Washington Street disposal area from 1962 until 1974. Municipal environmental-review records identify the location as a former landfill that also received documented industrial wastes.",
         "DEC tracks the property as State Superfund site 907009, Class 3. Class 3 means DEC does not presently consider the site, or reasonably foresee it, to constitute a significant threat; it does not erase the landfill's history.",
@@ -934,6 +999,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       documentedImpacts: [
         "The historical record documents waste disposal; the Class 3 designation does not support describing the site as a current significant threat.",
+        "The documented industrial materials included paint and solvent wastes in addition to ordinary municipal refuse, which is why this location remains historically significant despite its present classification.",
         "No atlas boundary or proximity line should be interpreted as a complete subsurface-contamination boundary.",
       ],
       cleanupAndControls: [
@@ -942,9 +1008,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       presentDay: [
         "This entry is included because it was a city landfill with documented industrial-waste disposal, not because it represents a routine spill or an unverified report.",
+        "The present Class 3 record is a regulatory status, not a statement that no waste remains beneath the former disposal property.",
       ],
       researchNotes: [
         "Update the page if DEC publishes a new investigation, reclassification, or site-specific document collection.",
+        "Keep the landfill marker distinct from nearby Chadakoin River projects unless an official record documents a direct relationship.",
       ],
     },
     sources: [
@@ -971,7 +1039,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.19958673235618, 42.11654760374714],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "Ellison Bronze manufactured bronze doors and related products at its West Main Street property in Falconer. Casting and finishing operations generated foundry sands, dusts, and other metal-bearing materials.",
         "DEC identifies the property as State Superfund site 907018, Class 4, meaning the constructed remedy remains subject to monitoring or management.",
@@ -984,6 +1052,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       documentedImpacts: [
         "DEC documents metals associated with foundry waste in on-site soil and sediment.",
+        "The remedy was designed around persistent metal-bearing material, which does not break down like many volatile chemicals and therefore remains dependent on stable containment.",
         "The cleanup record is specific to the industrial property and evaluated environmental media; it should not be generalized to all of Falconer.",
       ],
       cleanupAndControls: [
@@ -992,9 +1061,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       presentDay: [
         "Ellison Bronze is included as a durable foundry-cleanup history with continuing stewardship, not as an allegation about present manufacturing operations.",
+        "Class 4 status means the remedy has been constructed but still depends on maintained engineering and institutional controls.",
       ],
       researchNotes: [
         "Use the latest periodic review report for future changes in monitoring frequency, controls, or classification.",
+        "Preserve the distinction between the historic operator, the regulated cleanup property, and any current occupant when describing this site.",
       ],
     },
     sources: [
@@ -1094,6 +1165,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Former Randolph Foundry Site Management Plan",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/E905030/Work%20Plan.ERP.E905030.2011-07-01.SMP.pdf",
+      },
+      {
+        title: "Former Randolph Foundry Cleanup Completion Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/E905030/Fact%20Sheet.ERP.E905030.2012-06-01.COC_issued-FER_approved.pdf",
+      },
+      {
+        title: "Former Randolph Foundry Site Investigation and Alternatives Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/E905030/Report.ERP.E905030.2011-07-22.SI-RAA.pdf",
       },
     ],
   },
@@ -1295,6 +1376,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Chaffee Landfill Permit Application",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/news/environmental-notice-bulletin/2022-09-14/completed-application/chaffee-landfill",
+      },
+      {
+        title: "New York Issued Title V Permits — Chaffee Landfill",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/dar/afs/issued_atv.html",
       },
     ],
   },
@@ -1688,13 +1774,14 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.69702401856698, 42.0549802569183],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "Station 224 has operated along Ravlin Hill Road since 1959 as part of a natural-gas transmission system. Historic starting-air compressors used PCB-containing oil that entered building drains and defined outdoor areas.",
         "DEC lists the 116.3-acre controlled property as State Superfund site 907014, Class 4. Only defined portions of the larger station property contained the documented contamination.",
       ],
       timeline: [
         { period: "1959 onward", event: "The property operated as a natural-gas compressor station." },
+        { period: "Historic operating period", event: "PCB-containing starting-air-compressor oil entered building drains and several defined outdoor management areas." },
         { period: "1997", event: "PCB-affected soil and sediment were excavated, a drainline was grouted, and covers and erosion controls were installed." },
         { period: "2025 review", event: "Annual inspection, sediment sampling, and certification found the controls functioning as designed." },
       ],
@@ -1706,8 +1793,15 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "The remedy removed material above cleanup thresholds, capped defined residual areas, stabilized tributary banks, and established groundwater and sediment monitoring.",
         "Land-use restrictions, excavation procedures, cap maintenance, access controls, and annual certification remain required.",
       ],
-      presentDay: ["Station 224 is an operating industrial property with a completed remedy under continuing Class 4 management."],
-      researchNotes: ["Update sediment trends and control status from future annual periodic-review reports."],
+      presentDay: [
+        "Station 224 is an operating industrial property with a completed remedy under continuing Class 4 management.",
+        "Continuing operation does not remove the obligation to protect capped areas, follow excavation procedures, and certify the remedy each year.",
+      ],
+      researchNotes: [
+        "Update sediment trends and control status from future annual periodic-review reports.",
+        "Keep the 116.3-acre controlled property and the larger operating-station acreage distinct when describing the site.",
+        "Do not treat routine monitoring as evidence of a current off-site exposure; report a completed pathway only if DEC documents one.",
+      ],
     },
     sources: [
       {
@@ -1964,7 +2058,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.3965225, 42.4455635],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "The Van Buren Road facility in Pomfret received coal-combustion ash associated with the Dunkirk power station. It is regulated as industrial solid-waste facility 07N21, not as a State Superfund or federal NPL site.",
         "The landfill is mapped separately because it is several miles from the waterfront generating station.",
@@ -1972,24 +2066,37 @@ export const historicCleanupExpansion: AtlasSite[] = [
       timeline: [
         { period: "Power-generation era", event: "The facility managed fly ash and related coal-combustion residuals from Dunkirk generation." },
         { period: "2015", event: "The generating station entered mothballed status, prompting review of the landfill's future." },
+        { period: "2022", event: "DEC processed the generating station's permanent-retirement notice, further separating the retired waterfront plant from the landfill's continuing waste-management obligations." },
         { period: "2023 report", event: "The landfill continued regulated operation, leachate management, monitoring, and permit-renewal review." },
       ],
       documentedImpacts: [
         "The DEC annual report documents a lined landfill, primary and secondary leachate systems, and groundwater monitoring.",
+        "Those engineered systems and sampling obligations are safeguards for managing buried ash; their existence alone does not establish an off-site release.",
         "Coal ash should not be labeled radiological or Superfund without a separate site-specific regulatory finding.",
       ],
       cleanupAndControls: [
         "The facility uses double-liner and leachate-management systems and submits monitoring and annual operating information to DEC.",
         "Closure, post-closure care, and financial assurance remain part of the long-term solid-waste framework.",
       ],
-      presentDay: ["This is continuing waste infrastructure linked to a retired power plant, not a completed brownfield cleanup."],
-      researchNotes: ["Update the page when DEC issues a renewed permit or approves a final closure plan."],
+      presentDay: [
+        "This is continuing waste infrastructure linked to a retired power plant, not a completed brownfield cleanup.",
+        "The landfill and waterfront station therefore remain separate pins even though one industrial history connects them.",
+      ],
+      researchNotes: [
+        "Update the page when DEC issues a renewed permit or approves a final closure plan.",
+        "Use groundwater and leachate results from the relevant reporting year before describing any trend or migration pathway.",
+      ],
     },
     sources: [
       {
         title: "NRG Dunkirk Industrial Landfill 2023 Annual Report",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/fs/projects/SWMF/Annual%20Reports_Solid%20Waste%20Management%20Facility/Annual%20Reports_by%20Activity%20Type/Landfill/Landfill%20Annual%20Reports%20-%202023/R9/07N21_NRG_Dunkirk_Landfill_ind_R9_2023.2024-03-01.AR.pdf",
+      },
+      {
+        title: "Dunkirk Station Retirement and Air-Permit Notice",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2022-07-27/completed-application/dunkirk-steam-generating-station",
       },
     ],
   },
@@ -2004,7 +2111,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-78.441212, 43.21636],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "The 30-acre Dublin Road property lies in the towns of Shelby and Ridgeway. From 1933 through 1968, approximately six acres received coal ash, cinders, laboratory material, building debris, lime-sulfur residues, and residues from pesticide-production areas and equipment associated with the Middleport plant.",
         "EPA and DEC treated Dublin Road as a distinct disposal site. Its history is directly related to FMC Middleport, but its landfill boundary, remedy, and present-day controls are separate.",
@@ -2012,6 +2119,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       timeline: [
         { period: "1933-1968", event: "Niagara Sprayer and FMC used part of the property for disposal of pesticide-production residues and other wastes." },
         { period: "1993", event: "EPA and DEC selected a remedy for contaminated soil, sediment, debris, groundwater, and surface water." },
+        { period: "Remedial construction", event: "Affected material was consolidated into an engineered on-site containment cell while water treatment and wetland restoration addressed migration pathways." },
         { period: "2015", event: "DEC determined that remedial construction was complete and reclassified the property from Class 2 to Class 4." },
         { period: "2020-present", event: "EPA deleted the site from the National Priorities List; state-supervised monitoring and site management continue." },
       ],
@@ -2029,6 +2137,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       researchNotes: [
         "Track DEC periodic reviews and any revisions to monitoring after decommissioning of the former groundwater extraction and treatment equipment.",
+        "Keep the documented waste-transfer relationship to FMC Middleport visible while avoiding an unsupported continuous plume between the two properties.",
       ],
     },
     sources: [
@@ -2065,7 +2174,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-78.39237616, 43.32384815],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "The West Avenue record covers a historic landfill, an adjoining drainage swale, and landfill leachate that once entered the village industrial storm-sewer system.",
         "Investigations involved several nearby industrial parties. The atlas therefore reports the defined DEC site and remedy without assigning every material in the landfill to one company or operation.",
@@ -2087,9 +2196,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       presentDay: [
         "DEC continues to list West Avenue as a Class 2 site. The cap and collection system control remaining material rather than documenting unrestricted cleanup.",
+        "The continuing Class 2 status makes this an active managed-cleanup record even though major construction components have already been installed.",
       ],
       researchNotes: [
         "Track current periodic-review findings and distinguish this landfill from the nearby Monroe Electronics cleanup, which has its own DEC site number.",
+        "Retain the official multi-party attribution and do not assign all pesticide residues to a single company without a source-specific finding.",
       ],
     },
     sources: [
@@ -2370,6 +2481,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       documentedImpacts: [
         "Historic federal activity left chemically and radiologically affected areas within portions of the broader former LOOW property. The 1992 DOE certification applied to the majority—not necessarily every part—of the CWM property.",
         "DEC records describe corrective actions and a groundwater-monitoring network at the Model City facility. The atlas reports those controls without treating a permit or monitoring well as proof of a present off-site exposure.",
+        "The closed RMU-1 cell and the denied RMU-2 proposal are different features: one contains historically disposed waste, while the other was a proposed expansion that did not receive a siting certificate.",
       ],
       cleanupAndControls: [
         "RMU-1 is capped and remains subject to hazardous-waste permit, corrective-action, monitoring, and post-closure requirements.",
@@ -2380,6 +2492,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       researchNotes: [
         "Use one facility-center marker. Do not add individual monitoring wells or imply that the denied RMU-2 proposal is an operating landfill.",
+        "Keep commercial hazardous-waste operations, LOOW-era contamination, and federal radiological review separated by source and date even when they overlap geographically.",
       ],
     },
     sources: [
@@ -2432,6 +2545,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       researchNotes: [
         "Use a single overview pin with the three-unit explanation rather than stacking separate unit pins at this scale; retain links to the individual DEC files for parcel-level research.",
+        "When parcel-level geometry is added, label each operating unit and its controls separately so users do not read the overview marker as one uniform waste boundary.",
       ],
     },
     sources: [
@@ -2497,6 +2611,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Lake Ontario Ordnance Works FUDS Project and Current Status",
         publisher: "U.S. Army Corps of Engineers",
         url: "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3663181/lake-ontario-ordnance-works-loow/",
+      },
+      {
+        title: "Former LOOW Proposed Plan and Public Meeting",
+        publisher: "U.S. Army Corps of Engineers Buffalo District",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/4214524/proposed-plan-available-and-public-meeting-former-lake-ontario-ordnance-works/",
       },
     ],
   },

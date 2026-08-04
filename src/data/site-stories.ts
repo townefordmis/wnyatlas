@@ -2,20 +2,23 @@ import type { AtlasStory } from "@/types/site";
 
 export const siteStories: Partial<Record<string, AtlasStory>> = {
   "former-roblin-steel-dunkirk": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "The Dunkirk property began as part of an American Locomotive Company complex established around 1910, connecting the Lake Erie city to the national railroad-equipment industry. Later occupants adapted portions of the complex for metal and steel reclamation, including Roblin Steel.",
-      "The cleanup covers an approximately 12-acre portion of this larger industrial landscape. Decades of heavy manufacturing, material storage, fuel use, and steel recovery left building, soil, and groundwater issues that required demolition and remediation before controlled reuse.",
+      "The cleanup covers an approximately 12-acre portion of this larger industrial landscape. Roblin's steel-reclamation and rolling-mill operations ended in 1987, followed by salvage and partial demolition through the late 1980s and early 1990s.",
+      "DEC divided the cleanup evidence into seven media groups covering debris and fill, chlorinated-solvent soil, PAH-, metals-, and petroleum-affected soil, drainage features, buildings, PCB areas, and VOC-affected groundwater. That structure prevents one sampling result from being generalized across the entire former industrial park.",
     ],
     timeline: [
       { period: "Circa 1910", event: "American Locomotive Company established the larger Dunkirk manufacturing complex." },
-      { period: "Later industrial era", event: "Roblin Steel and related occupants used portions of the property for steel reclamation and metal work." },
-      { period: "Environmental Restoration Program", event: "Publicly sponsored investigation and cleanup addressed a defined 12-acre parcel." },
-      { period: "Remedial construction", event: "Industrial buildings were demolished and contaminated areas were addressed for reuse." },
+      { period: "Later industrial era–1987", event: "Roblin Steel and related occupants used portions of the property for steel reclamation and rolling-mill work until operations ceased in 1987." },
+      { period: "2001–2005", event: "Chautauqua County acquired the vacant property, investigated it through the Environmental Restoration Program, and DEC issued the Record of Decision in March 2005." },
+      { period: "2006–2010", event: "Remedial work addressed contaminated areas, and the last industrial building was demolished; DEC records completion in September 2010." },
       { period: "Present", event: "Groundwater monitoring and an environmental easement continue on the completed cleanup parcel." },
     ],
     documentedImpacts: [
-      "Heavy manufacturing and steel reclamation affected soil and groundwater in defined areas.",
+      "Soil and fill contained metals, PAHs, petroleum-related material, chlorinated solvents, and localized PCBs associated with historical operations.",
+      "Groundwater monitoring identified volatile organic compounds, including trichloroethylene, in defined areas.",
+      "DEC sampling found no site-originating contamination in Hyde Creek surface water during the reported investigation.",
       "Aging industrial buildings and infrastructure required environmental management during demolition.",
       "The 12-acre cleanup parcel is part of a larger complex whose neighboring properties may have different records and controls.",
     ],
@@ -155,7 +158,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "former-randolph-foundry": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "The Former Randolph Foundry was a small foundry and machine-shop property beside a rail corridor in the Village of Randolph. Metal casting produced waste foundry sand, scrap, oils, and other residues typical of a compact industrial operation.",
       "After the foundry closed around 1986, investigation found deteriorated buildings, asbestos, drums, foundry sand, and industrial debris. The cleanup combined demolition and removal with controls for material left safely in place.",
@@ -164,8 +167,9 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       { period: "Foundry era", event: "Metal casting and machine-shop operations occupied the rail-adjacent property." },
       { period: "Circa 1986", event: "Foundry operations ended." },
       { period: "Investigation", event: "State work documented asbestos, drums, waste foundry sand, and industrial debris." },
-      { period: "Environmental Restoration Program", event: "Buildings and waste areas were addressed through public brownfield cleanup." },
-      { period: "Present", event: "The completed site remains subject to land-use and soil-management requirements." },
+      { period: "2008–2009", event: "The foundry building was demolished, wastes and foundry sand were removed, subsurface conditions were investigated, and the property received a six-inch clean-soil cover." },
+      { period: "2012", event: "DEC certified that the commercial-use cleanup requirements had been achieved." },
+      { period: "Present", event: "The completed site remains subject to groundwater-use, land-use, soil-management, and site-management requirements." },
     ],
     documentedImpacts: [
       "Waste foundry sand and industrial debris were present across portions of the property.",
@@ -173,9 +177,9 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Asbestos in former industrial structures required controlled abatement.",
     ],
     cleanupAndControls: [
-      "Unsafe structures and asbestos-containing material were demolished or removed under controlled conditions.",
-      "Drums, debris, and contaminated soil were removed or consolidated as required by the remedy.",
-      "A cover, environmental easement, excavation controls, and site-management plan govern residual material.",
+      "Controlled demolition removed approximately 180 tons of asbestos-containing debris and other unsafe building material.",
+      "Approximately 333 tons of foundry sand were excavated and disposed of off site; drums, miscellaneous chemicals, equipment, pits, and sumps were also removed or cleaned.",
+      "A six-inch clean-soil cover, environmental easement, groundwater-use restriction, commercial-use restriction, excavation controls, and site-management plan govern residual material.",
     ],
     presentDay: [
       "The former foundry is a completed cleanup with continuing controls appropriate to its residual industrial fill. The rail corridor and neighboring parcels should be interpreted separately unless investigation connects them.",
@@ -496,24 +500,28 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "pvs-chemicals-buffalo": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
-      "The PVS Chemicals property on Lee Street belongs to South Buffalo's long chemical-manufacturing and bulk-material corridor. Its setting near rail, the Buffalo River industrial belt, and other heavy industries helped make this part of the city a major production landscape during the twentieth century.",
-      "New York lists the property as an active Class 2 inactive hazardous-waste disposal site. That classification establishes a significant remedial need for the defined site, while the available public record requires care when assigning particular releases to individual operating eras.",
+      "The sulfur-chemical plant at 55 Lee Street developed within the larger Schoellkopf and Allied Chemical manufacturing landscape along the Buffalo River. Allied's Industrial Chemical Division made sulfur dioxide, sulfuric acid, anhydrous ammonia, diethanolamine, and related products while the neighboring divisions developed the dye works now mapped separately as Buffalo Color.",
+      "PVS Chemicals purchased Allied's sulfuric-acid and sulfur-manufacturing facilities in 1981. Honeywell, as Allied's corporate successor, retained environmental access rights, illustrating why current plant ownership and responsibility for historical cleanup work are not necessarily the same.",
+      "New York lists the defined property as active Class 2 State Superfund Site 915004. The historic-waste and groundwater program is separate from air, water, hazardous-material, and operating permits that regulate the active plant.",
     ],
     timeline: [
-      { period: "Industrial development", event: "Chemical handling and manufacturing became established on the Lee Street property." },
-      { period: "State investigation", event: "DEC evaluated waste-management areas, soil, and groundwater associated with the facility." },
-      { period: "Class 2 listing", event: "New York identified the defined property as requiring remedial action." },
-      { period: "Present", event: "The site remains in the active investigation and cleanup program while industrial permitting follows a separate regulatory track." },
+      { period: "Allied Chemical era", event: "The Industrial Chemical Division produced sulfurous and other inorganic chemicals at 55 Lee Street as part of the larger Buffalo chemical complex." },
+      { period: "1981", event: "PVS purchased the sulfuric-acid and sulfur-manufacturing facilities from Allied Chemical." },
+      { period: "1985–1986", event: "DEC placed the property in the inactive hazardous-waste program after groundwater results and investigated former process and waste-management areas." },
+      { period: "2002–2003", event: "A state settlement was followed by additional soil and groundwater investigation and commitments involving treatment, piping safeguards, and monitoring." },
+      { period: "Present", event: "Sulfuric-acid manufacturing continues while the Class 2 cleanup record and current operating permits proceed on separate regulatory tracks." },
     ],
     documentedImpacts: [
-      "The state registry identifies hazardous-waste impacts significant enough to require action at the defined site.",
-      "Chemical manufacturing and handling make soil, groundwater, tanks, process areas, and former waste-management features important lines of investigation.",
+      "Historic Allied operations used an unlined liquid-waste seepage pit and handled acidic wastewater and metal-bearing rinses; DEC records and later natural-resource review identify these as part of the site's legacy investigation.",
+      "Groundwater beneath the property flows generally toward the Buffalo River. Historical investigations evaluated pH, metals, and chemical-operation-related groundwater conditions rather than treating the entire river corridor as one source.",
+      "The state registry identifies hazardous-waste impacts significant enough to require action at the defined 55 Lee Street site.",
       "Conditions at PVS should not be merged with Buffalo Color or other nearby South Buffalo chemical properties without site-specific evidence.",
     ],
     cleanupAndControls: [
-      "DEC oversight governs investigation, remedy selection, and any required interim actions.",
+      "Historical measures included excavation of the former seepage pit, investigation of soil and groundwater, and replacement or secondary containment of portions of chemical-transfer infrastructure.",
+      "The 2002 settlement required additional investigation, water-treatment improvements, piping safeguards, and quarterly groundwater monitoring; current status must be read from the latest site file rather than inferred from the settlement date.",
       "Active industrial permits regulate current operations but do not substitute for the historical cleanup program.",
       "Final controls and completion status should be updated from DEC decision and construction documents as the remedy progresses.",
     ],
@@ -521,8 +529,8 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "PVS remains an active industrial and remedial property. The atlas presents the verified Class 2 status and avoids treating the entire Lee Street or Buffalo River corridor as a single contamination source.",
     ],
     researchNotes: [
-      "Locate the most recent remedial investigation, interim-action, and registry-classification documents.",
-      "Develop a verified ownership, product, and waste-management chronology before adding process-specific claims.",
+      "Locate the latest remedial investigation, interim-action, groundwater-trend, and registry-classification documents in DEC's Site 915004 file.",
+      "Keep current sulfur-dioxide permit or enforcement information in a dated operating-record section rather than merging it with the historic Superfund narrative.",
     ],
   },
   "depew-village-landfill": {
@@ -679,7 +687,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "frontier-chemical-pendleton": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "Frontier Chemical Waste Process operated an industrial-waste treatment facility in Pendleton from 1958 to 1974. The plant treated plating wastes, pickle liquors, and other acidic liquids from plating and metal-finishing businesses.",
       "Treatment residuals were discharged into the approximately 15-acre Quarry Lake. After operations ended, much of the former process area was filled and graded, leaving contaminated sediment, soil, and groundwater that required a containment-based remedy.",
@@ -689,6 +697,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       { period: "Post-1974", event: "Waste-treatment operations ended and portions of the process area were filled and graded." },
       { period: "1992", event: "DEC selected a containment and collection remedy in the site's Record of Decision." },
       { period: "1990s", event: "Contaminated lake sediment was removed and consolidated in an on-site engineered landfill." },
+      { period: "2013", event: "DEC redefined the managed site boundary so that Quarry Lake was no longer inside the formal Site 932043 boundary." },
       { period: "Present", event: "The capped landfill and groundwater collection and pretreatment system operate under long-term management." },
     ],
     documentedImpacts: [
@@ -702,11 +711,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Fencing, cap maintenance, wetland-area controls, monitoring, and annual periodic review preserve the remedy.",
     ],
     presentDay: [
-      "The Pendleton site is a closed Class 4 facility with waste consolidated and managed on site. It is entirely distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls, which has a different operating history and remedy.",
+      "The Pendleton site is a closed Class 4 facility with waste consolidated and managed on site. The latest reviewed periodic report documents the cap, collection and pretreatment system, wetlands, runoff controls, monitoring network, and security features. It is entirely distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls, which has a different operating history and remedy.",
     ],
     researchNotes: [
       "Track current groundwater-system performance and Quarry Lake monitoring in future periodic reviews.",
-      "Map the capped landfill, Quarry Lake, wetland, former process area, and larger 75-acre property as separate features.",
+      "Map the capped landfill, Quarry Lake, wetlands, former process area, and larger surrounding property as separate features, preserving DEC's 2013 site-boundary change.",
     ],
   },
   "1660-niagara-street-sediment": {
@@ -1119,7 +1128,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "lehigh-valley-railroad-derailment": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "In December 1970, a Lehigh Valley Railroad train derailed at the Gulf Road crossing in Le Roy. Two tank cars ruptured, releasing approximately 30,000 gallons of trichloroethylene, or TCE, into the ground; about one ton of cyanide crystals was also released.",
       "The cyanide was collected and neutralizing material was spread, but most of the TCE could not be recovered. Odors were reported within days, and the solvent entered bedrock groundwater, eventually producing a plume extending roughly four miles through portions of Genesee, Livingston, and Monroe counties.",
@@ -2286,26 +2295,27 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "former-trico-plant": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
-      "Trico manufactured windshield wipers in a large complex near the Buffalo Niagara Medical Campus. Decades of manufacturing, power generation, storage, and building use left soil, fill, groundwater, and building-related environmental conditions to be managed during conversion of the complex.",
-      "The Brownfield Cleanup Program supported rehabilitation primarily into apartments with commercial space. Because portions of contamination remain managed in place, the redevelopment operates under a site-management plan rather than being described as an unrestricted removal of every historical impact.",
+      "Trico Products used the Washington Street complex for windshield-wiper manufacturing from 1920 to 1990. DEC describes five connected industrial buildings containing about 617,627 square feet on the 2.11-acre brownfield parcel. Plant processes included electroplating, smelting, die-casting, rubber extrusion, and metal fabrication.",
+      "The plant had been vacant since 2000 when brownfield redevelopment advanced near the Buffalo Niagara Medical Campus. Investigation and cleanup supported conversion primarily to apartments, with commercial and other mixed uses.",
+      "Because contamination remains managed beneath or within the redevelopment, the Certificate of Completion did not make the property unrestricted. A site-management plan, environmental easement, cover system, and vapor mitigation preserve the remedy.",
     ],
     timeline: [
       {
-        period: "Manufacturing era",
-        event:
-          "Trico used the complex for windshield-wiper manufacturing and supporting industrial operations.",
+          period: "1920–1990",
+          event:
+            "Trico manufactured windshield wipers using electroplating, smelting, die-casting, rubber extrusion, metal fabrication, and supporting power and storage systems.",
       },
       {
-        period: "Post-industrial period",
-        event:
-          "Vacancy and redevelopment planning led to environmental investigation, building abatement, and brownfield enrollment.",
+          period: "1990–2013",
+          event:
+            "Manufacturing ended, the buildings became vacant by 2000, and redevelopment planning led to environmental investigation and Brownfield Cleanup Program enrollment.",
       },
       {
-        period: "Cleanup and construction",
-        event:
-          "Remedial work proceeded with adaptive reuse of the historic industrial buildings.",
+          period: "2017–2019",
+          event:
+            "DEC selected the remedy in 2017; cleanup and adaptive-reuse construction followed, and DEC issued the Certificate of Completion on December 26, 2019.",
       },
       {
         period: "2025",
@@ -2314,13 +2324,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       },
     ],
     documentedImpacts: [
-      "Historic manufacturing and urban fill affected environmental media and required investigation during residential conversion.",
+      "Historic manufacturing and urban fill affected soil, fill, groundwater, and soil vapor and required investigation during residential conversion.",
       "Large industrial buildings presented asbestos, lead-based materials, petroleum systems, and other regulated building and subsurface conditions.",
+      "DEC's 2017 decision found that the surrounding public water supply was not affected and that soil-vapor concerns were limited to the on-site building; the final redevelopment therefore incorporated vapor mitigation.",
       "Remaining contamination is managed according to the final remedy and should not be generalized beyond the brownfield boundary.",
     ],
     cleanupAndControls: [
       "Cleanup combined removal or treatment of affected material with building abatement and controlled redevelopment.",
-      "Cover systems, occupied-building controls, groundwater or soil-disturbance procedures, and environmental easements apply where specified by the site-management plan.",
+      "The final controls include a cover system, vapor mitigation, a groundwater-use restriction, a land-use restriction, an environmental easement, and soil-disturbance procedures under the site-management plan.",
       "Periodic inspection, certification, and operation and maintenance preserve the remedy after residents and businesses occupy the complex.",
     ],
     presentDay: [
@@ -2838,7 +2849,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "electro-metallurgical-company": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "Electro Metallurgical Company, a Union Carbide subsidiary, operated the metal-production end of the Western New York uranium chain. Linde in Tonawanda converted uranium concentrates to uranium tetrafluoride, or green salt, which was shipped to Electro Metallurgical in Niagara Falls and reduced to uranium metal.",
       "Beginning in April 1943, the purpose-built facility used the magnesium-reduction process and produced 1,538 tons of uranium metal—more than one-third of the Manhattan Project's requirement and more than any other single producer described in DOE's history.",
@@ -2864,6 +2875,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
         event:
           "The operation produced 1,538 tons of uranium metal, over one-third of project needs.",
       },
+      {
+        period: "1942–1947 worker record",
+        event:
+          "NIOSH later established a Special Exposure Cohort class for qualifying federal contractor employees who worked at the Niagara Falls site during the defined August 1942 through December 1947 period.",
+      },
     ],
     documentedImpacts: [
       "The facility handled large quantities of uranium tetrafluoride and uranium metal in a wartime industrial process.",
@@ -2876,7 +2892,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Public mapping should separate the documented production role from the regulatory status of the larger industrial property.",
     ],
     presentDay: [
-      "This profile documents a major Manhattan Project production location. The reviewed DOE history firmly establishes its role and output, but the current parcel-level cleanup and residual-contamination record requires additional primary-document research before stronger present-day claims are made.",
+      "This profile documents a major Manhattan Project production location and a separately documented federal worker-compensation history. The reviewed DOE and NIOSH records establish its production role and covered-work period, but the current parcel-level cleanup and residual-contamination record requires additional primary-document research before stronger present-day claims are made.",
     ],
     researchNotes: [
       "Locate the exact former production-building footprint and federal considered-site or elimination records.",
@@ -2930,7 +2946,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "guterl-specialty-steel": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "The former Simonds Saw and Steel facility in Lockport performed foundry and rolling-mill work for the Atomic Energy Commission from 1948 through 1956. USACE reports that the plant processed more than 25 million pounds of uranium metal and more than 30,000 pounds of thorium metal.",
       "Later owners included Wallace and Murray and Guterl Specialty Steel. Federal investigation identified thorium-232 and uranium in buildings and soil and uranium in groundwater, leading USACE to select a comprehensive dismantlement, excavation, and groundwater-treatment remedy.",
@@ -2952,9 +2968,9 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
           "USACE presented the proposed site-wide cleanup plan for public review.",
       },
       {
-        period: "Current federal remedy",
+        period: "September 2024",
         event:
-          "The signed Record of Decision calls for building dismantlement, complete affected-soil removal, and active groundwater-plume recovery and treatment.",
+          "USACE published the final Record of Decision for the 70-acre FUSRAP site, selecting building dismantlement, affected-soil removal, and groundwater-plume recovery and treatment.",
       },
     ],
     documentedImpacts: [
@@ -3252,16 +3268,17 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "buffalo-gas-light-tonawanda-street": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "The 31 Tonawanda Street property held a Buffalo Gas Light gasometer near Scajaquada Creek. A gas holder stored manufactured gas but did not necessarily perform the full production process on the same parcel.",
-      "DEC investigation evaluates the gasometer property alongside coal-tar impacts associated with the adjoining former Westwood/Iroquois manufactured-gas area. This relationship requires careful source attribution.",
+      "The same address also belongs to Brownfield Cleanup Program Site C915299, which combines the 31 Tonawanda industrial building parcel and the separate 150 Tonawanda former railroad parcel. The building property was developed in the early 1900s for Fedders manufacturing, with metal stamping, soldering, brazing, welding, painting, acid washing, and degreasing. That completed brownfield remedy must not be confused with the separate C915299A off-site investigation.",
+      "DEC's off-site investigation evaluates the gas-holder area and coal-tar impacts in relation to the adjoining former Westwood/Iroquois manufactured-gas landscape. The shared geography requires careful source attribution rather than assigning every nearby coal-tar finding to the gasometer parcel.",
     ],
     timeline: [
       { period: "Manufactured-gas era", event: "A large gas holder operated at 31 Tonawanda Street near the creek." },
-      { period: "Later reuse", event: "The structure disappeared and the property entered later urban and industrial use." },
-      { period: "Site characterization", event: "DEC investigated subsurface conditions and the relationship to the adjoining former MGP." },
-      { period: "Current assessment", event: "Source boundaries and cleanup needs remain part of the broader area investigation." },
+      { period: "Early 1900s onward", event: "The gas holder disappeared and Fedders manufacturing and later industrial uses occupied the 31 Tonawanda building property; the separate 150 Tonawanda parcel retained a railroad history." },
+      { period: "2018–2020", event: "The two-parcel C915299 brownfield was investigated and remediated, and DEC issued its Certificate of Completion in December 2020." },
+      { period: "2023", event: "DEC's C915299A off-site report evaluated subsurface conditions and their relationship to adjoining former manufactured-gas operations." },
     ],
     documentedImpacts: [
       "Coal-tar-related compounds are a documented concern in the adjoining manufactured-gas area.",
@@ -3269,12 +3286,12 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Available records do not justify attributing every nearby coal-tar finding to operations on the gasometer parcel itself.",
     ],
     cleanupAndControls: [
-      "Characterization separates parcel conditions from migration originating at adjoining properties.",
-      "Safe soil and groundwater management is required during intrusive work.",
-      "A final remedy should be described only after DEC issues parcel-specific decision documents.",
+      "The completed C915299 brownfield remedy and site-management plan govern the 31 and 150 Tonawanda parcels; the first reviewed periodic report found its controls compliant during the reported period.",
+      "The C915299A off-site investigation separately characterizes coal-tar-related conditions and possible migration from adjoining properties.",
+      "Safe soil and groundwater management remains required during intrusive work, but any future off-site remedy should be described only after DEC issues the corresponding decision document.",
     ],
     presentDay: [
-      "This remains a research and investigation profile. It is included because the gas-holder history and adjoining MGP contamination are documented, while the atlas explicitly preserves uncertainty about the source of impacts on the parcel.",
+      "This location combines a completed brownfield with a continuing off-site source investigation. The gas-holder history and adjoining manufactured-gas contamination are documented, while the atlas preserves uncertainty about which historical operation caused each individual finding.",
     ],
     researchNotes: [
       "Locate historic Sanborn maps, ownership records, boring logs, and DEC's final source interpretation.",
@@ -4259,7 +4276,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "peter-cooper-gowanda": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "Animal-glue production began on the Palmer Street property in 1904. Peter Cooper and predecessor operations later made industrial adhesives, connecting the site to Gowanda's long leather, rendering, and animal-products economy.",
       "From 1925 through October 1970, glue-manufacturing sludge was placed in an elevated disposal area covering about five acres. The plant closed after later synthetic-adhesive operations ended in the 1980s.",
@@ -4274,6 +4291,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     documentedImpacts: [
       "Animal-glue manufacturing sludge and associated waste occupied a defined disposal area near Cattaraugus Creek.",
       "Soil, groundwater, surface-water, sediment, and creek-edge conditions were evaluated during the state cleanup.",
+      "The five-acre sludge area is a defined feature within the former industrial property; it should not be presented as the boundary of every historic operation or remaining control.",
     ],
     cleanupAndControls: [
       "Waste was consolidated and covered within an engineered remedy.",
@@ -4452,7 +4470,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "ischua-landfill": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "The Ischua Landfill operated from 1972 to 1975 using three waste trenches on a roughly 42-acre property. Historical records describe industrial, commercial, medical, and household refuse and report that 8.5 tons of TCE-laced sawdust were among the wastes.",
       "The landfill was covered with soil after closure, but leachate seeps were observed downslope. DEC returned under the Inactive Landfill Initiative to investigate emerging contaminants and other groundwater conditions.",
@@ -4471,12 +4489,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     cleanupAndControls: [
       "The landfill has a soil cap, drainage features, and an upgradient groundwater-diversion system.",
       "Current work focuses on site characterization and defining whether additional action is required.",
+      "Until characterization is complete, the existing cover and drainage features should be described as interim site controls rather than a final remedy.",
     ],
     presentDay: [
       "WNY Atlas labels Ischua as research in progress because DEC lists it as a potential site rather than a completed State Superfund remedy.",
     ],
     researchNotes: [
       "Update the entry when DEC issues final characterization findings or changes the site classification.",
+      "Do not convert detections in monitoring wells into a public-exposure claim without a documented receptor and completed pathway evaluation.",
     ],
   },
   "olean-refinery-river-street": {

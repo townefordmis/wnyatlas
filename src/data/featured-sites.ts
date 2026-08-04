@@ -887,7 +887,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former windshield-wiper manufacturing complex remediated under the Brownfield Cleanup Program and converted primarily to residential apartments with commercial space.",
+      "Five-building Trico complex where windshield-wiper production from 1920 to 1990 included electroplating, smelting, die-casting, rubber extrusion, and metal fabrication. The 2.11-acre brownfield received a Certificate of Completion in 2019 and now operates under cover, vapor-mitigation, groundwater-use, land-use, and site-management controls.",
     evidenceStatus: "well-documented",
     coordinates: [-78.86966826328961, 42.895286241026554],
     sources: [
@@ -895,6 +895,16 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Former Trico Plant Site Management Plan",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C915281/Work%20Plan.BCP.C915281.2025-03-25.Reivsed_SMP.pdf",
+      },
+      {
+        title: "Former Trico Plant Certificate of Completion Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915281/Fact%20Sheet.BCP.C915281.2020-01-15.COC%20Issued.pdf",
+      },
+      {
+        title: "Former Trico Plant Decision Document",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915281/Decision%20Document.BCP.C915281.2017-08-03.Decision%20Document%20-%20August%203%2C%202017.pdf",
       },
     ],
   },
@@ -1071,6 +1081,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Army Corps of Engineers",
         url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3613023/tonawanda-landfill-vicinity-property/",
       },
+      {
+        title: "Tonawanda Landfill Vicinity Property — Federal Five-Year Review Resources",
+        publisher: "U.S. Army Corps of Engineers FUSRAP",
+        url: "https://www.lrd.usace.army.mil/FUSRAP/",
+      },
     ],
   },
   {
@@ -1152,6 +1167,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Department of Energy Office of Scientific and Technical Information",
         url: "https://www.osti.gov/opennet/manhattan-project-history/Places/Other/uranium-production.html",
       },
+      {
+        title: "Electro Metallurgical Company Work-Site and Exposure-Cohort Records",
+        publisher: "National Institute for Occupational Safety and Health",
+        url: "https://www.cdc.gov/niosh/ocas/electromet.html",
+      },
     ],
   },
   {
@@ -1174,6 +1194,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Department of Energy Office of Legacy Management",
         url: "https://www.energy.gov/lm/buffalo-new-york-site",
       },
+      {
+        title: "Buffalo FUSRAP Site Certification Summary",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/sites/default/files/2023-11/Buffalo_FUSRAP_Site_Certification_Summary.pdf",
+      },
     ],
   },
   {
@@ -1195,6 +1220,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Guterl Steel Site",
         publisher: "U.S. Army Corps of Engineers",
         url: "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3612330/guterl-steel-site/",
+      },
+      {
+        title: "Record of Decision Published for FUSRAP Guterl Site",
+        publisher: "U.S. Army Corps of Engineers Buffalo District",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/3904071/record-of-decision-published-for-fusrap-guterl-site-in-lockport/",
       },
     ],
   },
@@ -1440,6 +1470,16 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "31 Tonawanda Street Off-Site Remedial Investigation Report",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C915299A/Report.BCP.C915299A.2023-08-02.Off-Site%20RI%20Report%20-%20Text-Figures-Tables.pdf",
+      },
+      {
+        title: "31 Tonawanda Street Brownfield Certificate of Completion",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915299/Certificate%20of%20Completion.BCP.C915299.2020-12-22.Executed%20COC%20Package.pdf",
+      },
+      {
+        title: "31 Tonawanda Street Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915299/Report.BCP.C915299.2022-04-27.2021_Periodic_Review_Report.pdf",
       },
     ],
   },
