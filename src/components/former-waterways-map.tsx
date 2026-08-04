@@ -176,13 +176,24 @@ export function FormerWaterwaysMap() {
         if (geometry.geometryType === "Polygon") {
           return [
             {
+              id: geometryCasingLayerId(geometry.id),
+              type: "line",
+              source: landscapeGeometrySourceId,
+              filter: ["==", ["get", "geometryId"], geometry.id],
+              paint: {
+                "line-color": "#fffdf8",
+                "line-width": isMobile ? 9 : 7,
+                "line-opacity": 0.96,
+              },
+            },
+            {
               id: geometryLayerId(geometry.id),
               type: "fill",
               source: landscapeGeometrySourceId,
               filter: ["==", ["get", "geometryId"], geometry.id],
               paint: {
                 "fill-color": waterwayMarkerColors[geometry.evidenceType],
-                "fill-opacity": isMobile ? 0.48 : 0.4,
+                "fill-opacity": isMobile ? 0.62 : 0.52,
                 "fill-outline-color": waterwayMarkerColors[geometry.evidenceType],
               },
             },
@@ -193,9 +204,8 @@ export function FormerWaterwaysMap() {
               filter: ["==", ["get", "geometryId"], geometry.id],
               paint: {
                 "line-color": waterwayMarkerColors[geometry.evidenceType],
-                "line-width": isMobile ? 4 : 3,
+                "line-width": isMobile ? 5 : 4,
                 "line-opacity": 1,
-                "line-dasharray": [2, 1],
               },
             },
           ];
