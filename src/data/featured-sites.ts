@@ -480,6 +480,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/ny/tonawanda-coke-corporation-tcc-site",
       },
+      {
+        title: "Tonawanda Coke Cleanup and Regional Project History",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9",
+      },
     ],
   },
   {
@@ -622,6 +627,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
       },
+      {
+        title: "Niagara Falls Boulevard Cleanup Completion Fact Sheet",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/sites/default/files/2020-07/documents/niagara_falls_blvd_rad_fact_sheet_july_2020_final.pdf",
+      },
     ],
   },
   {
@@ -639,6 +649,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Niagara County Radiation Removal Sites",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+      },
+      {
+        title: "Donovan Head Start Removal Site",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/donovan-head-start-removal-site",
       },
     ],
   },
@@ -658,6 +673,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
       },
+      {
+        title: "Upper Mountain Road Residential Removal Community Update",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/system/files/documents/2021-09/upper-mountain-road-community-update-sept-2021-final.pdf",
+      },
     ],
   },
   {
@@ -675,6 +695,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Niagara County Radiation Removal Sites",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+      },
+      {
+        title: "Holy Trinity Cemetery Radiological Assessment Community Update",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100VY74.txt",
       },
     ],
   },
@@ -813,6 +838,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Army Corps of Engineers",
         url: "https://lre-ops.usace.army.mil/OandM/GLNAV/DMMandCDFFS/BuffaloCDFFactSheet.pdf",
       },
+      {
+        title: "Buffalo Harbor Dredging and CDF Placement",
+        publisher: "U.S. Army Corps of Engineers Buffalo District",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/4548641/buffalo-harbor-dredging-starting-supports-safe-navigation-the-economy-and-futur/",
+      },
     ],
   },
   {
@@ -877,6 +907,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "DEC Marks 21st Successful Year for the Brownfield Cleanup Program",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/news/press-releases/2025/2/dec-marks-21st-successful-year-for-new-york-states-brownfield-cleanup-program",
+      },
+      {
+        title: "Main and Hertel Remedial Investigation and Alternatives Analysis",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/mah1.pdf",
       },
     ],
   },
@@ -949,6 +984,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/investigation-at-the-mayville-pfas-site",
       },
+      {
+        title: "Mayville PFAS Investigation Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/D907050/Report.DWC.D907050.2021-03-12.InvestigationReport_Public.pdf",
+      },
     ],
   },
   {
@@ -967,6 +1007,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Marine Drive Apartments East Remedial Investigation",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C915398/Report.BCP.C915398.2024-12-09.Final%20Remedial%20Investigation_Alt.%20Analysis%20.pdf",
+      },
+      {
+        title: "Marine Drive Apartments East Decision Document",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915398/Decision%20Document.BCP.C915398.2025-06-06.Final_Decision_Document.pdf",
       },
     ],
   },
@@ -1059,6 +1104,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Army Corps of Engineers",
         url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612311/ashland-2-site/",
       },
+      {
+        title: "FUSRAP Stakeholder Report — Tonawanda Sites",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/sites/default/files/2022-06/_2022FUSRAPStakeholderReportWeb.pdf",
+      },
     ],
   },
   {
@@ -1144,6 +1194,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Niagara Falls Storage Site",
         publisher: "U.S. Army Corps of Engineers",
         url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612360/niagara-falls-storage-site/",
+      },
+      {
+        title: "Niagara Falls Storage Site Vicinity Properties",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/lm/niagara-falls-storage-site-vicinity-properties-new-york-site",
       },
     ],
   },

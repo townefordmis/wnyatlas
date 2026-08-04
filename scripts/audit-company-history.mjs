@@ -166,6 +166,16 @@ const candidates = sites
       left.name.localeCompare(right.name),
   );
 
+const needsStrengthening = sites
+  .filter((site) => !site.hasStory || site.depth < 15 || site.sourceCount < 2)
+  .sort(
+    (left, right) =>
+      Number(left.hasStory) - Number(right.hasStory) ||
+      left.depth - right.depth ||
+      left.sourceCount - right.sourceCount ||
+      left.name.localeCompare(right.name),
+  );
+
 const totals = {
   sites: sites.length,
   withStory: sites.filter((site) => site.hasStory).length,
@@ -175,6 +185,11 @@ const totals = {
   companyThinStory: candidates.filter(
     (site) => site.hasStory && site.depth < 12,
   ).length,
+  allNeedsStrengthening: needsStrengthening.length,
+  allBelowDepthStandard: sites.filter(
+    (site) => site.hasStory && site.depth < 15,
+  ).length,
+  allBelowSourceStandard: sites.filter((site) => site.sourceCount < 2).length,
 };
 
 console.log(JSON.stringify(totals));
@@ -182,6 +197,21 @@ console.log(
   "status\tdepth\tsources\tid\tname\tfile",
 );
 for (const site of candidates) {
+  console.log(
+    [
+      site.hasStory ? "story" : "missing",
+      site.depth,
+      site.sourceCount,
+      site.id,
+      site.name,
+      site.file,
+    ].join("\t"),
+  );
+}
+
+console.log("\nneeds-strengthening");
+console.log("status\tdepth\tsources\tid\tname\tfile");
+for (const site of needsStrengthening) {
   console.log(
     [
       site.hasStory ? "story" : "missing",

@@ -455,6 +455,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/819018/",
       },
+      {
+        title: "Batavia Iron and Metal Explanation of Significant Difference",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/der/factsheet/819018esd.pdf",
+      },
     ],
   },
   {
@@ -500,6 +505,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Harrison Radiator Division Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932017/",
+      },
+      {
+        title: "Eighteenmile Creek Stage I and II Remedial Action Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/sites/default/files/2024-07/eighteenmilestagei%26iirap97.pdf",
       },
     ],
   },
@@ -833,6 +843,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/907031/Fact%20Sheet.HW.907031.2007-02-23.IRM_Factsheet.pdf",
       },
+      {
+        title: "Special Metals 2021 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907031/Report.HW.907031.2022-03-10.2021PRR.pdf",
+      },
     ],
   },
   {
@@ -850,6 +865,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Lexington Machining Periodic Review Report",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/907044/Report.HW.907044.2023-11-10.PRR_and_IC-EC_Certification.pdf",
+      },
+      {
+        title: "Lexington Machining 2022 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907044/Report.HW.907044.2022-11-09.PRR_and_IC-EC_Certification.pdf",
       },
     ],
   },
@@ -883,7 +903,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.21417629987917, 42.10966403467532],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "The approximately 4.7-acre state cleanup site covers six industrial parcels around Hopkins and Blackstone avenues. Paints, varnishes, industrial coatings, and related products were manufactured here by a succession of companies beginning in the early twentieth century.",
         "DEC identifies the property as State Superfund site 907015, currently Class 4. That classification means remedial construction has been completed for the earlier remedy but continuing management, monitoring, or operation remains necessary.",
@@ -905,9 +925,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       presentDay: [
         "Essex / Hope remains a long-term managed cleanup. Its Class 4 status should be read as continuing stewardship, not as an unrestricted or inactive property.",
+        "The 2023 amendment changed how remaining source areas will be treated; it did not erase the earlier removals, treatment systems, or off-site investigation history.",
       ],
       researchNotes: [
         "Track DEC's separate decision and future construction records for the downgradient off-site operable unit.",
+        "Keep the six-parcel cleanup footprint and the still-developing downgradient operable unit visually distinct on any future detail map.",
       ],
     },
     sources: [
@@ -934,7 +956,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.20193886683256, 42.112150016662],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "Industrial use at the approximately 2.2-acre South Dow Street property began with a woolen mill around 1890. From 1939 until 1999, the plant manufactured steel partitions and used a trichloroethene vapor degreaser.",
         "DEC lists Dowcraft as State Superfund site 907020, Class 4, reflecting a constructed remedy that still requires treatment, monitoring, and site management.",
@@ -960,6 +982,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       researchNotes: [
         "Continue checking periodic review reports for plume trends, treatment performance, and any revised assessment of the Chadakoin River.",
+        "Do not describe the river as affected by Dowcraft unless later sampling establishes a site-related impact that the reviewed record did not demonstrate.",
       ],
     },
     sources: [
@@ -1092,7 +1115,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.34685157550105, 42.48169396687779],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "The Brigham Road property manufactured brass valves and fittings beginning in the 1920s and operated a foundry beginning in 1941. The industrial process left metal-bearing foundry sand and related material at the site.",
         "DEC tracks Marsh Valve as site 907023 with completed Class C status. Class C records a completed remedial program and should not be confused with an active Class 2 State Superfund site.",
@@ -1105,6 +1128,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       documentedImpacts: [
         "Investigations documented lead, copper, and zinc in foundry sand and fill associated with the former operation.",
+        "The principal historical concern was the remaining industrial material and structures on the former foundry parcel, rather than a documented community-wide plume.",
         "The historical contamination record applies to the former foundry property; it does not describe the wider Brigham Road area.",
       ],
       cleanupAndControls: [
@@ -1113,9 +1137,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       presentDay: [
         "Marsh Valve belongs in the atlas as a completed large-scale foundry removal and redevelopment history, not as an ongoing emergency.",
+        "Completed Class C status means the state remedial program is complete; it should not be displayed with the same status language as an active Class 2 cleanup.",
       ],
       researchNotes: [
         "Retain the completed-status language whenever the site is shown in search results or connection groups.",
+        "If a future project reopens the property, use its project-specific environmental review rather than assuming the 2003 decision covers newly encountered material.",
       ],
     },
     sources: [
@@ -1828,7 +1854,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.23153119845527, 42.093587178024066],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "A woolen mill began operating here in 1888. Chautauqua Hardware later manufactured furniture hardware using electroplating, die-casting, polishing, anodizing, and numerous metals and industrial compounds.",
         "DEC manages the property as Brownfield Cleanup Program site C907046; the related off-site record is explained here rather than mapped as a duplicate pin.",
@@ -1837,6 +1863,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
         { period: "1888–late 1940s", event: "Jamestown Woolen Spinning and Empire Worsted Mills produced yarn and cloth." },
         { period: "By 1963–2005", event: "Chautauqua Hardware conducted metal casting, plating, finishing, and fabrication." },
         { period: "2022", event: "DEC selected excavation, groundwater interception, vapor mitigation, a cover, and long-term controls." },
+        { period: "Remedial construction", event: "Cleanup and redevelopment work began implementing the selected restricted-residential remedy while off-site evaluation remained a separate state record." },
       ],
       documentedImpacts: [
         "DEC identified metals, PCBs, PAHs, TCE and breakdown products, PFAS, affected groundwater, and soil-vapor intrusion concerns.",
@@ -1846,8 +1873,15 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "The remedy calls for roughly 14,000 tons of soil removal, PCB-source excavation, a reactive groundwater barrier, vapor systems, clean cover, and hazardous-building-material management.",
         "An easement, groundwater restrictions, excavation controls, monitoring, and periodic certification support restricted-residential reuse.",
       ],
-      presentDay: ["The redevelopment name does not replace the site's documented woolen-mill and metal-manufacturing history or its continuing cleanup obligations."],
-      researchNotes: ["Track construction completion and DEC's separately managed off-site investigation."],
+      presentDay: [
+        "The redevelopment name does not replace the site's documented woolen-mill and metal-manufacturing history or its continuing cleanup obligations.",
+        "Restricted-residential reuse depends on the cover, vapor systems, groundwater barrier, easement, and continuing certification remaining effective.",
+      ],
+      researchNotes: [
+        "Track construction completion and DEC's separately managed off-site investigation.",
+        "Do not present PFAS detection as proof that the historic hardware operation was the sole source without a source-specific DEC finding.",
+        "Keep the adjacent Chadakoin River investigation linked but separate from the parcel remedy and building controls.",
+      ],
     },
     sources: [
       {
@@ -1874,7 +1908,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.2432394993632, 42.09551127136597],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "The DEC cleanup name reflects a redevelopment proposal, not a documented historic brewery operation. Commercial uses since the 1880s included photography, dry cleaning, vehicle repair, taxi service, and parking.",
         "DEC determined that the site posed a significant threat and created a related off-site record. That investigation is linked to this parent page rather than shown as another pin.",
@@ -1882,6 +1916,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       timeline: [
         { period: "1886 onward", event: "Successive commercial uses occupied the downtown parcel." },
         { period: "2018", event: "About 2,014 tons of affected soil and fill were removed and a sub-slab depressurization system was installed." },
+        { period: "2021", event: "DEC selected the final brownfield remedy after evaluating the chlorinated-solvent source and off-site migration concerns." },
         { period: "2022–present", event: "DEC selected and oversees groundwater treatment, vapor mitigation, monitoring, and site management." },
       ],
       documentedImpacts: [
@@ -1893,8 +1928,14 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "Removal included approximately 430 tons characterized as hazardous; in-situ injections address the remaining chlorinated-solvent plume.",
         "A cover, active vapor system, easement, groundwater restriction, excavation plan, and periodic review remain part of the remedy.",
       ],
-      presentDay: ["DEC classifies the brownfield work as completed, while groundwater, vapor, and institutional controls continue under site management."],
-      researchNotes: ["Use future periodic reviews to track plume reduction and the off-site investigation."],
+      presentDay: [
+        "DEC classifies the brownfield work as completed, while groundwater, vapor, and institutional controls continue under site management.",
+        "The project name should not be used as evidence that a brewery historically operated here; the documented uses are the commercial and automotive businesses listed in the record.",
+      ],
+      researchNotes: [
+        "Use future periodic reviews to track plume reduction and the off-site investigation.",
+        "Keep groundwater-monitoring detections distinct from finished drinking-water quality and from conditions at neighboring properties.",
+      ],
     },
     sources: [
       {
@@ -1925,7 +1966,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.31608370183818, 42.486107315578224],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "American Locomotive expanded onto this property around 1918. Later uses included heat-exchanger fabrication, specialty-steel production, and aluminum extrusion before Alumax closed the facility.",
         "DEC tracks the controlled property as completed Voluntary Cleanup Program site V00589, distinct from adjoining Roblin Steel and Edgewood records.",
@@ -1934,6 +1975,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
         { period: "1918–1962", event: "Locomotive and heat-exchanger manufacturing occupied the property." },
         { period: "1969–1993", event: "Specialty-steel and aluminum-extrusion operations followed." },
         { period: "2004 onward", event: "Source-area treatment using zero-valent iron was followed by long-term groundwater monitoring." },
+        { period: "2024–2025 review", event: "DEC-reviewed monitoring continued to evaluate chlorinated compounds, vinyl chloride, and benzene in the remaining well network." },
       ],
       documentedImpacts: [
         "Investigations identified a chlorinated-solvent source near a suspected former tank and TCE-related groundwater contamination.",
@@ -1944,8 +1986,14 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "Source treatment, a maintained cover, excavation controls, restricted groundwater use, monitoring wells, and periodic certification manage remaining conditions.",
         "Monitoring continues until the site-specific chlorinated-VOC performance threshold is achieved.",
       ],
-      presentDay: ["Completed program status records remedial construction; it does not mean that all monitoring and property controls have ended."],
-      researchNotes: ["Track the annual groundwater threshold and any future DEC approval to close monitoring wells."],
+      presentDay: [
+        "Completed program status records remedial construction; it does not mean that all monitoring and property controls have ended.",
+        "The property is part of a larger industrial complex, but the Alumax remedy and monitoring network must remain distinct from neighboring Roblin and Edgewood records.",
+      ],
+      researchNotes: [
+        "Track the annual groundwater threshold and any future DEC approval to close monitoring wells.",
+        "Describe individual well results with their sampling year and location rather than generalizing them to the entire Roberts Road corridor.",
+      ],
     },
     sources: [
       {
@@ -1976,12 +2024,13 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.2464066053872, 42.111760971764355],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "Pelican Manufacturing occupied 2223 Washington Street. DEC's legacy record documents disposal of chlorinated hydrocarbons and confirmed TCE contamination.",
         "DEC now classifies site 907010 as completed Class C; EPA lists the property as a non-NPL CERCLA site.",
       ],
       timeline: [
+        { period: "Manufacturing era", event: "Industrial operations at 2223 Washington Street used and disposed of chlorinated compounds associated with the later TCE cleanup." },
         { period: "1995", event: "DEC selected a remedy for TCE-affected soil, groundwater, and related pathways." },
         { period: "1990s–2003", event: "Treatment, sediment removal, building demolition, and additional soil removal were completed." },
         { period: "Present", event: "Engineering and institutional controls remain recorded for the property." },
@@ -1993,9 +2042,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       cleanupAndControls: [
         "Cleanup included soil-vapor extraction, groundwater extraction and treatment, contaminated-sediment removal, and source-soil removal after demolition.",
         "Use restrictions preserve installed isolation and containment controls.",
+        "The sequence of treatment followed by demolition and additional source removal is important: the final response was not limited to one technology or one environmental medium.",
       ],
-      presentDay: ["Pelican is a completed cleanup with enduring legal and engineering controls, not an active federal NPL site."],
-      researchNotes: ["Keep Pelican distinct from nearby Former C&B Dry Cleaners and the former city landfill."],
+      presentDay: [
+        "Pelican is a completed cleanup with enduring legal and engineering controls, not an active federal NPL site.",
+        "Its CERCLA profile and state completed classification describe regulatory history, not evidence that every former industrial parcel along Washington Street shares its conditions.",
+      ],
+      researchNotes: [
+        "Keep Pelican distinct from nearby Former C&B Dry Cleaners and the former city landfill.",
+        "Retain the completed-status distinction when grouping Jamestown's multiple chlorinated-solvent sites.",
+      ],
     },
     sources: [
       {
@@ -2021,29 +2077,47 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.3516458, 42.4897974],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
-        "The Point Drive station generated electricity on Dunkirk's Lake Erie waterfront. This entry records the retired industrial facility and its air-permit history, not a DEC remediation-site designation.",
+        "The Point Drive station began operating in 1948 with two 100-megawatt coal-fired units. Two additional 200-megawatt units were added in 1959 and 1960, making the waterfront complex a major regional generating station.",
+        "The station added or upgraded air-pollution controls over time, including electrostatic precipitators beginning in 1972 and fabric filtration, trona injection, carbon injection, and selective non-catalytic reduction work between 2009 and 2011.",
+        "This entry records the retired industrial facility and its air-permit history, not a DEC remediation-site designation.",
         "Coal-combustion residuals were managed at a separate landfill in Pomfret, which has its own map entry and regulatory record.",
       ],
       timeline: [
+        { period: "1948–1960", event: "Four coal-fired generating units entered service in two construction phases." },
         { period: "2012–2015", event: "The station's operating units were successively shut down or mothballed." },
         { period: "2019–2022", event: "Formal retirement actions were completed for the generating units." },
         { period: "2022", event: "The facility relinquished its Title V air and Acid Rain permits because of retirement." },
       ],
       documentedImpacts: [
         "DEC's retirement notice documents historical permitted emissions and shutdown credits; it is not a finding that the entire power-station property is a cleanup site.",
+        "The retirement record quantified emission-reduction credits for nitrogen oxides and volatile organic compounds from three unit shutdowns, documenting the scale of permitted historical emissions without serving as an exposure study.",
         "The station and fly-ash landfill are linked historically but occupy separate properties and programs.",
       ],
-      cleanupAndControls: ["Future demolition, reuse, or environmental work should be described from the applicable permit or cleanup record as it occurs."],
-      presentDay: ["The marker preserves a major industrial and energy-history site after retirement."],
-      researchNotes: ["Track formal decommissioning, redevelopment, and any later DEC remediation enrollment."],
+      cleanupAndControls: [
+        "Retirement included relinquishment of the Title V air and Acid Rain permits after the generating units ceased operating.",
+        "Future demolition, reuse, or environmental work should be described from the applicable permit or cleanup record as it occurs.",
+      ],
+      presentDay: [
+        "The marker preserves a major industrial and energy-history site after retirement.",
+        "It should not be displayed as a completed cleanup unless the waterfront property enters and completes a documented remedial program.",
+      ],
+      researchNotes: [
+        "Track formal decommissioning, redevelopment, and any later DEC remediation enrollment.",
+        "Keep the station, its permitted emission history, and the separately regulated Pomfret ash landfill as linked but non-duplicate records.",
+      ],
     },
     sources: [
       {
         title: "Dunkirk Station Retirement and Air-Permit Notice",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/news/environmental-notice-bulletin/2022-07-27/completed-application/dunkirk-steam-generating-station",
+      },
+      {
+        title: "Dunkirk Fly Ash Landfill Draft SPDES Permit and Station History",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/fs/projects/draftpermits/Region9/DraftPermit.IndSPDES.NY0202711.2025-03-10.pdf",
       },
     ],
   },
@@ -2232,7 +2306,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.052733333, 43.081777778],
     story: {
-      lastReviewed: "July 29, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
         "The approximately 16-acre cleanup area lies between Buffalo Avenue, Riverside Drive, the former Robert Moses Parkway, Fourth Street, and the Niagara River.",
         "DEC records state that the area has been park land since the Niagara Reservation was created in 1885 and did not confirm former mills or factories inside the site boundary. The marker therefore documents buried fill and waste, not a proven on-site manufacturing operation.",
@@ -2254,9 +2328,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       presentDay: [
         "The riverway and park setting can be used subject to the completed remedy and continuing controls. The page should not describe the entire park as contaminated.",
+        "The site is an example of contaminated imported fill within historic park land; the reviewed record did not establish a former factory inside the cleanup boundary.",
       ],
       researchNotes: [
         "Update the page when DEC posts a newer periodic review than the currently available site-management record.",
+        "Preserve the distinction between the 16-acre managed site, the larger state park, and the surrounding Niagara River shoreline.",
       ],
     },
     sources: [

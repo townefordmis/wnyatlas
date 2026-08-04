@@ -4306,9 +4306,10 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "peter-cooper-markhams": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "The Markhams property is a separate disposal site in the Town of Dayton. Waste from the Peter Cooper animal-glue plant in Gowanda was transported here, linking two geographically separate communities through one industrial waste stream.",
+      "The Bentley Road disposal property must be understood as the receiving end of that waste-transfer history, not as the location where the glue and adhesive products were manufactured.",
     ],
     timeline: [
       { period: "Historic disposal era", event: "Glue-production wastes from the Gowanda operation were deposited at the Bentley Road property." },
@@ -4320,6 +4321,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     documentedImpacts: [
       "The disposal area contained animal-glue manufacturing wastes transported from the Gowanda plant.",
       "The remedy addressed waste, leachate, drainage, erosion, and the potential for direct contact or migration.",
+      "The mapped disposal-site boundary and the source factory are separated geographically; the record does not support drawing a continuous contamination plume between them.",
     ],
     cleanupAndControls: [
       "Waste was consolidated and capped.",
@@ -4327,13 +4329,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     presentDay: [
       "The remedy relies on preserving the engineered cover and institutional controls. The site remains a separate Superfund property from the former Gowanda factory.",
+      "Federal periodic reviews evaluate whether the containment remedy remains protective rather than treating capped waste as removed from the property.",
     ],
     researchNotes: [
       "Map the historic waste-transfer relationship without drawing an unsupported continuous plume between Gowanda and Markhams.",
     ],
   },
   "moench-tanning-gowanda": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "Leather tanning operated at this Palmer Street location for approximately 120 years. Moench Tanning, later associated with Brown Shoe, operated from 1900 until 1983.",
       "The cleanup record centers on a closed industrial landfill near Splinter Creek and Cattaraugus Creek, where long-term stewardship must also account for streambank erosion.",
@@ -4348,6 +4351,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     documentedImpacts: [
       "Tannery waste was managed in a defined landfill area.",
       "Groundwater and creek-edge conditions require continued monitoring and maintenance.",
+      "The proximity of the closed landfill to Splinter Creek and Cattaraugus Creek makes erosion control a remedy component, not proof that all downstream sediment is attributable to Moench.",
     ],
     cleanupAndControls: [
       "The landfill has an approved cover system.",
@@ -4358,10 +4362,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     researchNotes: [
       "Present Moench and Peter Cooper as neighboring industrial histories without implying identical contaminants or a single remedy.",
+      "Use future inspections to document cover, monitoring-well, and streambank conditions before changing the Class 4 status description.",
     ],
   },
   "standard-portable-mayville": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "Standard Portable used TCE in metalworking operations at 13 West Lake Road. Records identify an exterior underground septic tank used for spent solvent and document groundwater impacts extending onto adjacent village property.",
       "The location is close to the separate Mayville drinking-water PFAS investigation. DEC's PFAS work did not identify Standard Portable as the source, so the two records must not be merged.",
@@ -4380,18 +4385,21 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     cleanupAndControls: [
       "Source-area investigation, groundwater delineation, remedial design, monitoring, and state oversight form the cleanup record.",
+      "The on-site and adjacent-village-property records should be read together for the chlorinated-solvent investigation while remaining distinct from the PFAS program.",
     ],
     presentDay: [
       "The Atlas shows one Standard Portable history and links it to Mayville PFAS only to explain that the investigations are nearby but distinct.",
     ],
     researchNotes: [
       "Add official on-site and off-site remedial boundaries when a stable parcel layer is available.",
+      "Do not infer that TCE and PFNA share a source merely because their investigations occur within the same village.",
     ],
   },
   "anderson-cleaners-jamestown": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "Anderson Cleaners operated at 5 Hunt Road in Jamestown. Releases associated with dry-cleaning chemicals created a chlorinated-solvent cleanup involving soil and groundwater.",
+      "Dry-cleaning solvents can move beneath a relatively small commercial parcel, so the cleanup record is organized around source areas and the investigated groundwater plume rather than the building footprint alone.",
     ],
     timeline: [
       { period: "Dry-cleaning era", event: "The facility used chlorinated cleaning chemicals." },
@@ -4402,20 +4410,23 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     documentedImpacts: [
       "Chlorinated volatile organic compounds affected defined soil and groundwater areas.",
+      "The contaminants and affected media are consistent with the documented dry-cleaning process; the atlas does not assign unrelated nearby detections to this site.",
       "The record concerns the Anderson property and investigated plume; proximity alone does not establish an impact at another property.",
     ],
     cleanupAndControls: [
       "The remedy combines treatment or removal of concentrated source material with treatment of dissolved groundwater contamination and monitoring.",
+      "The continuing Class 2 status means remedial action or verification remains necessary and should not be described as a completed unrestricted cleanup.",
     ],
     presentDay: [
       "Anderson Cleaners is mapped separately from Former C&B Dry Cleaners. Their connection is a shared industrial process and cleanup type, not proof of one plume.",
     ],
     researchNotes: [
       "Track the newest construction and groundwater-monitoring documents before describing the remedy as complete.",
+      "Keep Anderson and Former C&B Dry Cleaners as separate source properties unless DEC later documents a connected plume.",
     ],
   },
   "keywell-vac-air-frewsburg": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "Before 1969 the property was used for wafer-board manufacturing. Vac-Air then sorted, cleaned, and packaged high-grade scrap metal, using TCE for degreasing; Keywell acquired the operation in 1987 and continued high-grade metal processing.",
       "The property lies near Conewango Creek and across Falconer Road from a public-water supply well, making groundwater containment and monitoring central to the remedy.",
@@ -4434,16 +4445,18 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     cleanupAndControls: [
       "A groundwater treatment system, barrier wall, paved cap, subsurface barriers, stormwater controls, fencing, restrictions, and monitoring form the managed remedy.",
+      "The combination of hydraulic treatment, physical barriers, and cover maintenance shows that the remedy controls both groundwater movement and contact with remaining material.",
     ],
     presentDay: [
       "DEC classifies the closed cleanup as Class 4, meaning the remedy depends on continuing site management.",
     ],
     researchNotes: [
       "Do not describe a detected sub-slab vapor concentration as indoor exposure without corresponding indoor-air evidence.",
+      "Track the public-supply-well and Conewango Creek pathways through current sampling rather than proximity alone.",
     ],
   },
   "machias-gravel-pit": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "In 1978 an inactive town gravel pit on Very Road reportedly stored about 600 drums of industrial waste from Motorola's Arcade plant. Records identify suspected epoxy resins, acids, solvents and cutting oils; some oil was reportedly used for road-dust control.",
       "Early removal records account for 184 drums, while later geophysical investigation did not find evidence of additional buried drums in the investigated area.",
@@ -4457,16 +4470,19 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     documentedImpacts: [
       "TCE and 1,1,1-TCA were principal groundwater contaminants.",
+      "The industrial-waste description includes suspected epoxy resins, acids, solvents, and cutting oils, but the record does not establish that every reported drum contained the same material.",
       "The complete disposition of every drum described in the original estimate is not documented.",
     ],
     cleanupAndControls: [
       "Drum removal, soil-vapor extraction, air sparging, monitored natural attenuation, groundwater-use restrictions, monitoring, and a planted groundwater barrier addressed the site.",
+      "The phytoremediation barrier supplements—not replaces—the earlier mechanical source treatment and continuing groundwater monitoring.",
     ],
     presentDay: [
       "The Class 4 remedy remains managed. The record documents substantial cleanup while preserving uncertainty about the original drum inventory.",
     ],
     researchNotes: [
       "Keep the documented 184-drum removal and the approximate 600-drum historical report numerically distinct.",
+      "Do not label unlocated drums as still buried unless a later investigation documents them; geophysical work did not confirm additional drums in the investigated area.",
     ],
   },
   "ischua-landfill": {
@@ -4500,7 +4516,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "olean-refinery-river-street": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "The 1641 River Street brownfield occupies part of a larger northern Olean petroleum refining and storage complex that operated from approximately 1876 to 1954. Historical mapping shows roughly 20 large storage tanks on or near the property.",
       "The approximately 24.7-acre parcel is divided by Interstate 86 and sits beside rail infrastructure, roads, vacant industrial land, and nearby residences.",
@@ -4515,25 +4531,30 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     documentedImpacts: [
       "Petroleum odors, staining, elevated field readings, and mobile petroleum product were observed in multiple test pits.",
       "The reviewed record also identifies metals and other constituents requiring evaluation.",
+      "A reported possible buried drum remains an investigation item and should not be presented as a confirmed disposal area until excavation or other evidence verifies it.",
     ],
     cleanupAndControls: [
       "Brownfield investigation is defining soil and groundwater conditions and the remedy needed for reuse.",
+      "Because the property remains in investigation and planning, future excavation, disposal quantities, and land-use controls should be added only after DEC selects or approves them.",
     ],
     presentDay: [
       "This is an active brownfield investigation, not a completed cleanup. It anchors a linked Olean refinery-corridor history.",
     ],
     researchNotes: [
       "Distinguish findings at 1641 River Street from conditions on every parcel in the much larger former refinery footprint.",
+      "Use historic maps to explain shared refinery infrastructure while keeping each brownfield agreement and remedy boundary separate.",
     ],
   },
   "olean-refinery-homer-street": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "The 251 Homer Street property is part of Olean's former refinery and petroleum-handling landscape. Its cleanup provides unusually concrete documentation of how buried refinery infrastructure, petroleum-affected soil, arsenic, and creek sediment were addressed.",
+      "The parcel's remedy is one completed part of the larger refinery corridor; its excavation totals and controls should not be assigned to 1641 River Street or other neighboring properties.",
     ],
     timeline: [
       { period: "Historic refinery era", event: "Refinery piping and petroleum operations occupied the Homer Street area." },
       { period: "2012–2016", event: "Investigation and interim cleanup removed piping and large volumes of affected soil." },
+      { period: "Remedial completion", event: "Creek restoration, cover installation, and legal controls completed the physical remedy for restricted reuse." },
       { period: "2017", event: "DEC certified that the Brownfield Cleanup Program requirements had been achieved." },
       { period: "Present", event: "Commercial-use controls, an environmental easement, cover maintenance, and site management continue." },
     ],
@@ -4551,10 +4572,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     researchNotes: [
       "Connect the parcel to 1641 River Street through shared refinery history without treating their cleanup boundaries as one site.",
+      "Retain the removal quantities because they document scale, while making clear that remaining controls still limit groundwater use and future disturbance.",
     ],
   },
   "former-niagara-motors-dunkirk": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
       "Industrial uses occupied the Lamphere Street property from at least 1919 through the 1970s. The building was later abandoned and demolished, leaving a vacant brownfield whose exact sequence of operators requires further archival work.",
       "In 1999 regulators observed about 30 drums containing apparent petroleum material and evidence of spills. Subsequent investigation also identified lead-affected soil and leaking underground-tank impacts.",
@@ -4580,6 +4602,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     researchNotes: [
       "Continue archival research on the companies and products associated with the site's 1919–1970s industrial period.",
+      "Until that operator history is documented, describe the earlier period as successive industrial use rather than assigning specific manufacturing processes to Niagara Motors.",
     ],
   },
   "batavia-former-mgp": {
