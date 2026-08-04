@@ -259,6 +259,34 @@ const lewistonPorterCampus: BuffaloSchoolCampus = {
   researchStatus: "documented_same_site",
 };
 
+const holmesElementaryCampus: BuffaloSchoolCampus = {
+  id: "holmes-elementary-tonawanda-campus",
+  address: "365 DUPONT AVE",
+  city: "TONAWANDA",
+  zip: "14150",
+  coordinates: [-78.89721586347919, 42.97633749862072],
+  schools: [
+    {
+      name: "HOLMES ELEMENTARY SCHOOL",
+      type: "public",
+      sedCode: "142601030013",
+    },
+  ],
+  nearbyRemediationSites: [
+    {
+      siteCode: "915038",
+      siteName: "Union Carbide-Linde Division",
+      program: "RCRA Corrective Action / federal FUSRAP history",
+      siteClass: "A",
+      siteAddress: "175 East Park Drive",
+      relationship: "within_500_ft_of_dec_boundary",
+      detailUrl:
+        "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915038",
+    },
+  ],
+  researchStatus: "proximity_screened",
+};
+
 export const buffaloSchoolCampuses = [
   ...verifiedSchoolCampuses.filter(
     (campus) => !tapestryAddresses.has(campus.address),
@@ -268,6 +296,7 @@ export const buffaloSchoolCampuses = [
   blasdellElementaryCampus,
   kalfasCampus,
   lewistonPorterCampus,
+  holmesElementaryCampus,
 ];
 
 export type NearbyRemediationRecord = {
@@ -294,6 +323,36 @@ export type NearbyRemediationRecord = {
 };
 
 const regionalRemediationRecords: NearbyRemediationRecord[] = [
+  {
+    siteCode: "915038",
+    siteName: "Union Carbide-Linde Division",
+    program: "RCRA Corrective Action / federal FUSRAP history",
+    siteClass: "A",
+    address: "175 East Park Drive, Tonawanda",
+    closestRelationship: "within_500_ft_of_dec_boundary",
+    projects: [
+      { name: "Manhattan Engineer District uranium processing", date: "1942–1946" },
+      { name: "Cleanup under standards then in effect", date: "1953" },
+      { name: "Federal removal and remedial actions", date: "1997–2013" },
+      { name: "FUSRAP Site Closeout Report", date: "2015-03-30" },
+      { name: "Transfer to DOE Office of Legacy Management", date: "2017-03-30" },
+    ],
+    contaminants: [],
+    controls: [],
+    owners: ["Praxair/Linde industrial property"],
+    decDetailUrl:
+      "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915038",
+    decDocumentIndex:
+      "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3612342/linde-site/",
+    documentIndexStatus: "Official USACE FUSRAP project and closeout summary",
+    hasCertificateOfCompletion: false,
+    hasFinalEngineeringReport: false,
+    hasSiteManagementPlan: false,
+    hasPeriodicReview: false,
+    openDataStatus: "matched",
+    openDataSource: "NYSDEC boundary record and U.S. Army Corps of Engineers FUSRAP history",
+    assembledOn: "2026-08-04",
+  },
   {
     siteCode: "USACE-LOOW-LP-2011",
     siteName: "Former LOOW buffer zone and wastewater infrastructure",
@@ -405,6 +464,7 @@ export const nearbyRemediationByCode = new Map(
 );
 
 export const existingAtlasSiteByCleanupCode: Record<string, string> = {
+  "915038": "linde-air-products",
   C915192: "jonnies-porta-signs",
   "932136": "tract-ii-highland-avenue",
   B00022: "tract-ii-highland-avenue",
@@ -423,6 +483,7 @@ export const existingAtlasSiteByCleanupCode: Record<string, string> = {
 };
 
 export const cleanupStoryGroupByCode: Record<string, string> = {
+  "915038": "linde-air-products",
   C915192: "jonnies-porta-signs",
   "932136": "tract-ii-highland-avenue",
   B00022: "tract-ii-highland-avenue",
@@ -456,6 +517,7 @@ export const cleanupStoryGroupByCode: Record<string, string> = {
 };
 
 export const cleanupStoryLabels: Record<string, string> = {
+  "linde-air-products": "Linde Air Products / Union Carbide industrial property",
   "jonnies-porta-signs": "Jonnie's Porta Signs / CVS Blasdell cleanup",
   "tract-ii-highland-avenue": "Tract II Highland Avenue cleanup",
   "buffalo-service-station-mgp":
@@ -660,6 +722,15 @@ export const nearbySiteHistoryByCode: Record<
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915282/Application.BCP.C915282.2013-10-02.BCP%20Application%20and%20Attachments%20A%20-%20F.pdf",
   },
+  "915038": {
+    summary:
+      "From 1942 through 1946, Linde Air Products, a Union Carbide division, processed uranium ores for the Manhattan Engineer District at the East Park Drive ceramics plant. Federal records identify radium-226, thorium-230, and uranium isotopes as FUSRAP constituents of concern on portions of the industrial property.",
+    status:
+      "Federal work from 1997 through 2013 removed nearly 400,000 tons of affected material. USACE closed the FUSRAP remedy in 2015 for unlimited use and unrestricted exposure, while NYSDEC separately continues to map an active RCRA record for the industrial facility. Those are different regulatory records and neither establishes a condition at the school.",
+    sourceLabel: "USACE Linde FUSRAP site history and closeout summary",
+    sourceUrl:
+      "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3612342/linde-site/",
+  },
 };
 
 export const documentedCampusHistory: Record<
@@ -806,6 +877,30 @@ export const documentedCampusHistory: Record<
       "https://extapps.dec.ny.gov/data/DecDocs/932136/ROD.HW.932136.2012-03-28.ROD_AMENDMENT.pdf",
     additionalSources: [{ label: "DEC Highland Avenue / Kalfas Magnet School document collection — 932136", url: "https://extapps.dec.ny.gov/data/DecDocs/932136/" }],
     sourceLabel: "DEC Record of Decision amendment — 932136",
+  },
+  "365 DUPONT AVE": {
+    heading: "Documented nearby industrial-property history",
+    facts: [
+      "The current NYSED school point is within 500 feet of NYSDEC's mapped boundary for the Union Carbide-Linde Division record at 175 East Park Drive.",
+      "The school address is not inside the mapped DEC boundary. This entry is proximity-only and does not identify the school property as part of the Linde cleanup site.",
+      "The East Park Drive plant processed uranium ores for the Manhattan Engineer District from 1942 through 1946. Federal cleanup records concern defined portions of that industrial property and connected Tonawanda disposal locations.",
+      "USACE reports that federal removal and remedial work between 1997 and 2013 shipped nearly 400,000 tons of affected material out of state.",
+    ],
+    completion:
+      "USACE finalized the Linde FUSRAP Site Closeout Report in March 2015 and states that no further response is needed for FUSRAP-eligible constituents, with unrestricted-use conditions achieved. NYSDEC still maps a separate active RCRA record for the industrial facility. The reviewed records do not state that contamination reached Holmes Elementary School.",
+    sourceUrl:
+      "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3612342/linde-site/",
+    sourceLabel: "U.S. Army Corps of Engineers Linde Site history and status",
+    additionalSources: [
+      {
+        label: "DOE Tonawanda/Linde FUSRAP site certification summary",
+        url: "https://www.energy.gov/lm/articles/tonawanda-new-york-site-fusrap-site-certification-summary",
+      },
+      {
+        label: "NYSDEC remediation-site record — 915038",
+        url: "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915038",
+      },
+    ],
   },
 };
 
