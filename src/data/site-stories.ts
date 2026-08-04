@@ -2675,21 +2675,49 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-falls-storage-site": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 3, 2026",
     background: [
-      "The 191-acre Niagara Falls Storage Site occupies part of the former Lake Ontario Ordnance Works. Beginning in 1944, the Manhattan Engineer District used it to store radioactive residues and wastes from uranium-ore processing; additional material arrived through 1952.",
-      "DOE consolidated wastes into the approximately 10-acre Interim Waste Containment Structure between 1982 and 1986. USACE now manages three operable units—the containment structure, balance of plant, and groundwater—and selected complete excavation, processing, and out-of-state disposal of the containment structure's contents in 2019.",
+      "The 191-acre Niagara Falls Storage Site occupies part of the former Lake Ontario Ordnance Works, a federal explosives complex built during World War II to manufacture trinitrotoluene (TNT). The site's original freshwater-treatment plant supplied that production complex. LOOW produced TNT for about nine months in 1943 before it was decommissioned; in 1944, the Manhattan Engineer District began using this part of the property to receive and store radioactive residues and other wastes from the wartime atomic program.",
+      "The first documented radioactive shipments were L-50 and R-10 residues from the Linde uranium-processing operation in Tonawanda. Later receipts included L-30 and F-32 residues and K-65 residues created by processing exceptionally high-grade Belgian Congo pitchblende. Federal records also describe Middlesex Sampling Plant sandblast material, contaminated soil and sediment recovered from nearby ditches and properties, and contaminated rubble and debris generated during investigation and cleanup.",
+      "The named residue streams carried uranium isotopes, radium-226, and thorium-230. The 2007 federal remedial investigation also reported high concentrations of lead, barium, iron, cobalt, and nickel in L-30 material. Historical shipments from the Knolls Atomic Power Laboratory contained residual plutonium and mixed fission products, including cesium-137 and strontium-90; those Knolls wastes and certain contaminated wartime materials were transferred to Oak Ridge in the late 1950s and are part of the property's history, not a description of what remains in the present containment structure.",
+      "DOE consolidated radioactive residues, contaminated soil, rubble, and debris into the approximately 10-acre Interim Waste Containment Structure between 1982 and 1986. The 2007 remedial investigation estimated that structure held about 240,000 cubic yards of material and approximately 2,278 curies of combined radium-226 and thorium-230, plus uranium isotopes and other radionuclides. These are historical federal estimates rather than a claim of a new measurement.",
+      "USACE now manages three operable units—the containment structure, balance of plant, and groundwater. Its 2019 decision selected complete excavation and processing of the containment structure's contents followed by permitted out-of-state disposal. Separate decisions address contaminated soil, former infrastructure and road bedding, and a chlorinated-volatile-organic-compound groundwater plume elsewhere on the federal property.",
     ],
     timeline: [
       {
-        period: "1944–1952",
+        period: "1941–1943",
         event:
-          "The Manhattan Engineer District and successor program stored uranium-processing residues and radioactive wastes at the former ordnance works.",
+          "The federal government acquired and developed the Lake Ontario Ordnance Works as a wartime TNT-production complex. LOOW produced TNT for about nine months in 1943; the future storage-site tract included its freshwater-treatment plant.",
+      },
+      {
+        period: "1944–1949",
+        event:
+          "Atomic-program storage began with L-50 and R-10 uranium-processing residues shipped from Linde in Tonawanda. The Manhattan Engineer District transferred control to the Atomic Energy Commission in 1946.",
+      },
+      {
+        period: "Late 1940s–1954",
+        event:
+          "Additional L-30, F-32, K-65, and Middlesex materials arrived. Knolls Atomic Power Laboratory also shipped boxes and drums containing residual plutonium and mixed fission products during 1952–1954.",
+      },
+      {
+        period: "Late 1950s",
+        event:
+          "The Knolls wastes and certain contaminated metal, concrete, lumber, and reduction slag were transferred to Oak Ridge, separating those historical receipts from the material later consolidated at NFSS.",
+      },
+      {
+        period: "1970–1981",
+        event:
+          "Federal surveys identified contamination on the site, in drainage corridors, and on surrounding properties. Cleanup placed thousands of cubic yards of recovered soil and sediment with the site's residue piles, and routine monitoring began.",
       },
       {
         period: "1982–1986",
         event:
-          "DOE consolidated waste, contaminated rubble, debris, and soil in an engineered earthen containment structure.",
+          "DOE built the engineered Interim Waste Containment Structure and consolidated radioactive residues, contaminated rubble and debris, and soil from NFSS and vicinity-property cleanups. Federal records report roughly 50,000 cubic yards came from the remediated vicinity properties and drainage ditches.",
+      },
+      {
+        period: "1997",
+        event:
+          "Responsibility for the federal Formerly Utilized Sites Remedial Action Program transferred from DOE to the U.S. Army Corps of Engineers.",
       },
       {
         period: "2019",
@@ -2697,15 +2725,17 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
           "USACE signed the decision to remove the entire containment structure and dispose of its contents out of state.",
       },
       {
-        period: "2021–2026",
+        period: "2021–July 2026",
         event:
           "Detailed design advanced while USACE continued security, maintenance, environmental surveillance, and planning for the remaining operable units.",
       },
     ],
     documentedImpacts: [
-      "The containment structure holds radioactive residues, contaminated demolition debris, and soil from the main site and vicinity properties.",
-      "Radiological contamination also affects balance-of-plant media and groundwater addressed through separate federal decisions.",
-      "The stored materials are directly connected to Manhattan Project uranium-ore processing and subsequent federal handling.",
+      "The containment structure holds documented uranium-processing residues, contaminated demolition debris, and soil from the main site, drainage corridors, and vicinity properties. Principal radionuclides include uranium isotopes, radium-226, and thorium-230.",
+      "The imported residue inventory includes L-50, R-10, L-30, F-32, and K-65 materials associated with uranium recovery at Linde in Tonawanda and processing of high-grade Belgian Congo pitchblende. The 2007 federal investigation estimated approximately 3,200 cubic yards of K-65, 9,400 cubic yards of originally delivered R-10, 7,960 cubic yards of L-30, 440 cubic yards of F-32, 2,150 cubic yards of L-50, and 230 cubic yards of Middlesex sandblast material; later mixing and cleanup consolidation changed the volumes of some piles before containment.",
+      "Non-radiological contaminants documented in portions of the residue or site media include lead, barium, iron, cobalt, nickel, and chlorinated volatile organic compounds. Their locations, concentrations, and cleanup pathways are not uniform across the property.",
+      "Historical Knolls waste introduced plutonium and mixed fission products including cesium-137 and strontium-90, but federal records state that material was moved to Oak Ridge in the late 1950s. It is included to explain the full history of what was brought to the property, not to claim it remains in the containment structure.",
+      "Balance-of-plant soil, road bedding, former foundations and utilities, and a chlorinated-solvent groundwater plume are addressed separately from the containment structure under the federal cleanup program.",
     ],
     cleanupAndControls: [
       "USACE maintains site security, operations, the containment structure, and environmental surveillance while removal is designed.",
@@ -2713,11 +2743,12 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "After removal, underlying soil will be investigated and remediated as necessary under the balance-of-plant and groundwater cleanup goals.",
     ],
     presentDay: [
-      "NFSS is an active federal remediation site. USACE reports that the engineered structure is performing as designed and remains protective, but the final remedy is removal—not permanent retention—and detailed implementation remains ahead.",
+      "NFSS remains an active federal remediation site and radioactive material is still stored in the Interim Waste Containment Structure. USACE reports that the structure is performing as designed and remains protective, but the selected remedy is complete removal and out-of-state disposal—not permanent retention—and that removal has not been reported as complete.",
     ],
     researchNotes: [
       "Track final design, construction awards, transportation planning, excavation quantities, and disposal destinations.",
       "Keep the federal site boundary and its three operable units distinct from surrounding vicinity properties.",
+      "Continue reconciling historical shipment records with the final excavation inventory; early estimates, pre-containment pile volumes, and present structure contents describe different stages and should not be added together.",
     ],
   },
   "niagara-falls-storage-site-vicinity-properties": {

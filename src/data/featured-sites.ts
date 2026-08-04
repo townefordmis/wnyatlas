@@ -1052,18 +1052,33 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "radiological",
     summary:
-      "Former Lake Ontario Ordnance Works property used beginning in 1944 to store Manhattan Engineer District radioactive residues and uranium-processing wastes; active federal remediation continues.",
+      "Federal site within the former Lake Ontario Ordnance Works where a 10-acre engineered structure still holds radioactive residues, contaminated soil, and demolition debris. Complete removal and out-of-state disposal were selected, but removal is not complete.",
     evidenceStatus: "well-documented",
     coordinates: [-79.018, 43.228],
     atomicLegacy: {
       era: "Manhattan Project",
-      role: "radioactive-residue and uranium-processing-waste storage",
+      role: "current interim storage of radioactive residues pending complete removal",
     },
     sources: [
       {
         title: "Niagara Falls Storage Site",
         publisher: "U.S. Army Corps of Engineers",
         url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612360/niagara-falls-storage-site/",
+      },
+      {
+        title: "Remedial Investigation Report, Niagara Falls Storage Site",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://usace.contentdm.oclc.org/digital/api/collection/p16021coll7/id/27301/download",
+      },
+      {
+        title: "Lake Ontario Ordnance Works",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3663181/lake-ontario-ordnance-works-loow/",
+      },
+      {
+        title: "Niagara Falls Storage Site Vicinity Properties Fact Sheet",
+        publisher: "U.S. Department of Energy",
+        url: "https://www.energy.gov/sites/default/files/2023-08/NiagaraFallsVPFactSheet.pdf",
       },
     ],
   },
