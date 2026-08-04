@@ -2200,10 +2200,10 @@ footer {
 
 .waterway-line-key i {
   border-bottom: 3px solid #003c38;
-  border-top: 5px dashed #24e6c7;
+  border-top: 7px dashed #24e6c7;
   display: inline-block;
   height: 0;
-  width: 1.8rem;
+  width: 2.7rem;
 }
 
 .waterway-route-label {
@@ -2221,18 +2221,6 @@ footer {
   text-transform: uppercase;
   white-space: nowrap;
   z-index: 6;
-}
-
-.waterway-route-dot {
-  background: #24e6c7;
-  border: 2px solid #003c38;
-  border-radius: 999px;
-  box-shadow: 0 0 0 1px #fff;
-  display: block;
-  height: 0.65rem;
-  pointer-events: none;
-  width: 0.65rem;
-  z-index: 5;
 }
 
 .waterway-map-stage {
@@ -2286,11 +2274,10 @@ footer {
 }
 
 .fern-route-historic-key i {
-  background: #24e6c7;
-  border: 2px solid #003c38;
-  border-radius: 999px;
-  flex: 0 0 0.65rem;
-  height: 0.65rem;
+  border-bottom: 3px solid #003c38;
+  border-top: 7px dashed #24e6c7;
+  flex: 0 0 2.7rem;
+  height: 0;
 }
 
 .fern-route-comparison p {
@@ -2323,15 +2310,6 @@ footer {
   align-items: center;
   display: flex;
   gap: 0.5rem;
-}
-
-.fern-route-comparison .fern-route-historic-key i {
-  background: #24e6c7;
-  border: 2px solid #003c38;
-  border-radius: 999px;
-  flex: 0 0 0.65rem;
-  height: 0.65rem;
-  width: 0.65rem;
 }
 
 .waterway-area-key i {
