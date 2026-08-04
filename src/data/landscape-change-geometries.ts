@@ -30,6 +30,13 @@ export type LandscapeChangeGeometry = LandscapeChangeGeometryBase &
       }
   );
 
+export const smokesCreekShorelineColors = {
+  1912: "#6a1b9a",
+  1923: "#c62828",
+  1937: "#ef6c00",
+  1970: "#00695c",
+} as const;
+
 /**
  * Atlas research geometries are visual reconstructions from cited agency maps.
  * They are deliberately separate from parcel, cleanup, and exposure boundaries.
@@ -367,7 +374,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
     sourceLabel: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
     confidence: "agency_mapped_approximation",
-    displayColor: "#9c27b0",
+    displayColor: smokesCreekShorelineColors[1912],
     lineStyle: "solid",
     boundaryNote: "Approximate Atlas alignment of the 1912 agency shoreline trace south of Smokes Creek.",
   },
@@ -387,7 +394,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
     sourceLabel: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
     confidence: "agency_mapped_approximation",
-    displayColor: "#9c27b0",
+    displayColor: smokesCreekShorelineColors[1912],
     lineStyle: "solid",
     boundaryNote: "Approximate Atlas alignment of the 1912 agency shoreline trace north of Smokes Creek.",
   },
@@ -408,7 +415,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
     sourceLabel: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
     confidence: "agency_mapped_approximation",
-    displayColor: "#ef5350",
+    displayColor: smokesCreekShorelineColors[1923],
     lineStyle: "solid",
     boundaryNote: "Approximate Atlas alignment of the 1923 agency shoreline trace south of Smokes Creek.",
   },
@@ -429,7 +436,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
     sourceLabel: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
     confidence: "agency_mapped_approximation",
-    displayColor: "#ef5350",
+    displayColor: smokesCreekShorelineColors[1923],
     lineStyle: "solid",
     boundaryNote: "Approximate Atlas alignment of the 1923 agency shoreline trace north of Smokes Creek.",
   },
@@ -450,7 +457,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
     sourceLabel: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
     confidence: "agency_mapped_approximation",
-    displayColor: "#ff9800",
+    displayColor: smokesCreekShorelineColors[1937],
     lineStyle: "solid",
     boundaryNote: "Approximate Atlas alignment of the 1937 agency shoreline trace south of Smokes Creek.",
   },
@@ -471,7 +478,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
     sourceLabel: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
     confidence: "agency_mapped_approximation",
-    displayColor: "#ff9800",
+    displayColor: smokesCreekShorelineColors[1937],
     lineStyle: "solid",
     boundaryNote: "Approximate Atlas alignment of the 1937 agency shoreline trace north of Smokes Creek.",
   },
@@ -492,7 +499,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
     sourceLabel: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
     confidence: "agency_mapped_approximation",
-    displayColor: "#00796b",
+    displayColor: smokesCreekShorelineColors[1970],
     lineStyle: "solid",
     boundaryNote: "Approximate Atlas alignment of the 1970 agency shoreline trace south of Smokes Creek.",
   },
@@ -514,7 +521,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
     sourceLabel: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
     confidence: "agency_mapped_approximation",
-    displayColor: "#00796b",
+    displayColor: smokesCreekShorelineColors[1970],
     lineStyle: "solid",
     boundaryNote: "Approximate Atlas alignment of the 1970 agency shoreline trace north of Smokes Creek.",
   },

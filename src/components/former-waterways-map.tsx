@@ -17,6 +17,7 @@ import {
 } from "@/data/former-waterways";
 import {
   landscapeChangeGeometries,
+  smokesCreekShorelineColors,
   type LandscapeChangeGeometry,
 } from "@/data/landscape-change-geometries";
 
@@ -230,7 +231,7 @@ export function FormerWaterwaysMap() {
             paint: {
               "line-color": geometry.displayColor ? "#fffdf8" : "#003c38",
               "line-width": geometry.displayColor
-                ? isMobile ? 11 : 9
+                ? isMobile ? 18 : 16
                 : isMobile ? 16 : 14,
               "line-opacity": 0.96,
             },
@@ -243,7 +244,7 @@ export function FormerWaterwaysMap() {
               paint: {
                 "line-color": geometry.displayColor ?? "#24e6c7",
                 "line-width": geometry.displayColor
-                  ? isMobile ? 7 : 5
+                  ? isMobile ? 12 : 10
                   : isMobile ? 10 : 8,
                 "line-opacity": 1,
                 ...(geometry.lineStyle === "solid"
@@ -482,10 +483,10 @@ export function FormerWaterwaysMap() {
           {selected.id === "smokes-creek-shifted-mouth" && (
             <div className="waterway-route-notice smokes-shoreline-comparison" aria-live="polite">
               <strong>Smokes Creek shoreline sequence</strong>
-              <span><i style={{ background: "#9c27b0" }} aria-hidden="true" /> 1912</span>
-              <span><i style={{ background: "#ef5350" }} aria-hidden="true" /> 1923</span>
-              <span><i style={{ background: "#ff9800" }} aria-hidden="true" /> 1937</span>
-              <span><i style={{ background: "#00796b" }} aria-hidden="true" /> 1970</span>
+              <span><i style={{ background: smokesCreekShorelineColors[1912] }} aria-hidden="true" /> 1912</span>
+              <span><i style={{ background: smokesCreekShorelineColors[1923] }} aria-hidden="true" /> 1923</span>
+              <span><i style={{ background: smokesCreekShorelineColors[1937] }} aria-hidden="true" /> 1937</span>
+              <span><i style={{ background: smokesCreekShorelineColors[1970] }} aria-hidden="true" /> 1970</span>
               <p>
                 Blue shading shows the approximate land between the mapped
                 1912 and 1970 shorelines. The 2024 state study describes the
