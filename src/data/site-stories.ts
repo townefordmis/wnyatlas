@@ -1328,37 +1328,44 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "republic-steel": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
-      "The former Republic Steel property formed part of a larger South Buffalo steel and coke corridor along the Buffalo River. Steelmaking, coke production, rail activity, filling, and waste handling left extensive industrial soil and fill conditions across parcels later assembled under the Steelfields and RiverBend names.",
-      "Cleanup and redevelopment divided the former complex into separate areas. New York's Voluntary Cleanup and Brownfield Cleanup programs addressed contaminated soil and fill, groundwater, former structures, and migration pathways while imposing continuing controls on portions where contamination remains in place.",
+      "Republic Steel's South Buffalo plant began steel production in 1906. Its two blast furnaces made molten iron that was converted to steel in two basic-oxygen furnaces, while the adjacent Donner-Hanna plant produced coke for the steel works. The linked operations continued from the early twentieth century through 1982, with some Republic/LTV activity extending into the late 1980s.",
+      "The later Steelfields cleanup assembled approximately 215 acres but divided the history into four distinct areas: Area I, the former Republic Steel plant; Area II, the former Donner-Hanna Coke plant; Area III, the Republic warehouse parcel; and Area IV, the Donner-Hanna coke-storage yard. Conditions documented on one area should not automatically be assigned to the others.",
+      "Steelmaking, coke processing, coal handling, rail activity, filling, and surface disposal left contaminated soil, industrial fill, and groundwater. New York's Voluntary Cleanup and Brownfield Cleanup programs addressed those conditions while preserving continuing controls where material remains in place.",
     ],
     timeline: [
       {
-        period: "Industrial era",
+        period: "1906–1982",
         event:
-          "Republic Steel and associated operations used the South Buffalo property for steel manufacturing and related heavy industry.",
+          "Republic Steel produced iron and steel while Donner-Hanna made coke for the works. The combined industrial record ran from the early 1900s through 1982.",
+      },
+      {
+        period: "1984–1998",
+        event:
+          "LTV Steel acquired most of the Republic and Donner-Hanna properties in 1984, sold physical assets, and began environmental work. A voluntary-cleanup plan and site assessment followed in 1998.",
       },
       {
         period: "2002",
         event:
-          "Steelfields acquired former Republic Steel and Donner-Hanna properties and entered a state voluntary-cleanup agreement.",
+          "Steelfields acquired the former Republic Steel and Donner-Hanna properties from the LTV and National Steel bankruptcy estates and entered a state voluntary-cleanup agreement.",
       },
       {
-        period: "2000s",
+        period: "2003–2008",
         event:
-          "Remedial work removed or contained contaminated material and divided the property into managed redevelopment areas.",
+          "Extensive remediation removed contaminated soil, installed groundwater collection and treatment, and placed remaining material under managed redevelopment areas.",
       },
       {
         period: "2008–present",
         event:
-          "Successive owners advanced RiverBend redevelopment while operation, monitoring, maintenance, and soil-management requirements continued.",
+          "RiverBend purchased Area I in 2008, and Fort Schuyler Management Corporation acquired it in 2014. Redevelopment proceeded with operation, monitoring, maintenance, and soil-management requirements.",
       },
     ],
     documentedImpacts: [
-      "Historic steel and coke operations left contaminated soil, industrial fill, and former waste-management areas.",
+      "Historic steel and coke operations left contaminants associated with coal handling, coke processing, and steelmaking, including petroleum compounds, PAHs, metals, phenols, and cyanide.",
+      "Area I work from 2003 to 2008 removed soil containing benzene, semi-volatile organic compounds, and metals and established a groundwater collection and treatment system for oil contamination.",
+      "A 2009 monitoring report found several petroleum compounds, arsenic, and cyanide above groundwater standards or guidance values in at least one well in Areas I through III. That finding is a dated monitoring result, not a claim that every parcel has the same present condition.",
       "The Buffalo River cleanup record identifies Steelfields as a shoreline property where remedies were designed to prevent residual contamination from migrating to the river.",
-      "Because the former complex was subdivided, conditions and remedy obligations differ among individual areas and later development parcels.",
     ],
     cleanupAndControls: [
       "Remedial actions included excavation, grading, containment, covers, and management of remaining soil and fill.",
@@ -1367,6 +1374,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     presentDay: [
       "The former Republic Steel landscape now supports major redevelopment, but it remains a managed brownfield rather than an erased industrial site. Current use depends on parcel-specific remedies, engineering controls, and soil-management requirements.",
+      "Area I's revised management plan requires continued inspection, maintenance, reporting, and controlled handling of subsurface soil or fill during future work.",
     ],
     researchNotes: [
       "Maintain a parcel crosswalk between former Republic Steel, Donner-Hanna, Steelfields areas, RiverBend, and later development names.",
@@ -4060,26 +4068,30 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "former-american-axle-east-delavan": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 4, 2026",
     background: [
-      "General Motors and later American Axle operated a large automotive-parts manufacturing complex at 1001 East Delavan Avenue. Plant operations, underground tanks, and electrical equipment created petroleum impacts and possible PCB-release areas.",
-      "The property is divided between a state Superfund site and Brownfield Cleanup Program parcels. Oil recovery, phased investigation, demolition, and remediation therefore proceed under more than one regulatory track.",
+      "General Motors developed the East Delavan complex in the 1920s. The plant first assembled automobiles and bodies, using painting, welding, heat-treating, and machining operations; its later role centered on automotive axles, gears, and drivetrain components. GM sold the operation to American Axle & Manufacturing in February 1994, and American Axle continued production until 2008.",
+      "Historical records identify PCBs in some hydraulic, quench, and heat-transfer oils used at the plant. GM reported a coolant-pit leak in 1991, and investigation after the 1994 sale identified oil beneath parts of Plant 81, including a more concentrated PCB-impacted source area and affected oil in a sanitary sewer beneath the facility.",
+      "The cleanup geography is narrower than the full historical plant. A 32.88-acre Brownfield Cleanup Program site surrounds the separate 2.65-acre 250 Colorado Street state Superfund site. Those boundaries, responsible-party obligations, and remedy decisions must remain distinct.",
     ],
     timeline: [
-      { period: "GM and American Axle era", event: "Automotive-component manufacturing occupied the large East Delavan complex." },
-      { period: "Closure and investigation", event: "Plant closure led to characterization of tanks, petroleum, electrical equipment, and subsurface conditions." },
-      { period: "2017 onward", event: "Portions entered the Brownfield Cleanup Program while the state Superfund area remained separately managed." },
+      { period: "1920s–1940s", event: "GM built the plant for automobile assembly and body work. Heat-treating expanded by about 1941 and supported wartime and later manufacturing." },
+      { period: "1940s–1994", event: "The complex evolved toward axle, gear, and drivetrain production, with extensive machining, heat treatment, pits, sumps, oil systems, and underground storage." },
+      { period: "1991–1994", event: "GM reported a coolant-pit leak in 1991. Oil beneath the slab was reported again during the 1994 post-sale investigation, and subsequent work identified PCB-impacted oil source areas." },
+      { period: "1994–2008", event: "American Axle owned and operated the plant until manufacturing ceased in 2008; East Delavan Property acquired the idled property that October." },
+      { period: "2017–present", event: "A Brownfield Cleanup Program application was submitted in 2017 and an agreement followed in 2018, while the enclosed state Superfund site continued under a separate regulatory track." },
       { period: "2021", event: "DEC and local representatives formed a community working group to support cleanup communication." },
     ],
     documentedImpacts: [
-      "Petroleum affected soil and groundwater around operations and underground tanks.",
-      "Free product required recovery in portions of the complex.",
-      "Potential PCB releases from electrical equipment require location-specific confirmation and cleanup.",
+      "Petroleum from plant operations, spills, pits, and underground tanks affected soil and groundwater in portions of the property.",
+      "PCB-impacted oil was documented beneath sections of Plant 81 and in the underlying sanitary sewer; this defined source area became state Superfund Site 915196.",
+      "Fill across the former plant includes soil, concrete, gravel, brick, cinders, slag, wood, metal, and glass. Subsurface pits, sumps, sewers, and the former coolant pit influenced shallow groundwater movement.",
+      "Light non-aqueous phase liquid, or free product, has required recovery and treatment. The 2023 pre-design work plan states that earlier removal and treatment reduced or limited its extent and mobility while additional data were still needed for final remedy design.",
     ],
     cleanupAndControls: [
-      "Oil recovery removes mobile petroleum product and limits migration.",
-      "Demolition, tank removal, excavation, and verification sampling proceed by cleanup parcel.",
-      "Covers, vapor controls, groundwater monitoring, institutional controls, and site management are applied where residual impacts remain.",
+      "Oil recovery and treatment target mobile petroleum product and limit migration.",
+      "Demolition, underground-tank removal, excavation, disposal, and verification sampling have proceeded by cleanup parcel and interim remedial measure.",
+      "The Brownfield investigation and pre-design program evaluates remaining soil, groundwater, free product, and subsurface features before a final remedy is selected. Controls such as covers, vapor measures, groundwater monitoring, institutional restrictions, and site management depend on that final parcel-specific remedy.",
     ],
     presentDay: [
       "The former plant is an active, phased cleanup and redevelopment property. The state Superfund and brownfield sections should remain visibly distinct because their boundaries, responsible parties, and completion status differ.",

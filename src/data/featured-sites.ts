@@ -321,30 +321,41 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "industry",
     summary:
-      "Former Lake Erie steelmaking complex with about 440 acres of manmade shoreline built from slag and plant waste. Its HWM-2 landfill held about 118,000 cubic yards of coke- and primary-metalmaking waste. Cleanup, monitoring, and land-use controls continue across the larger property.",
+      "Former integrated steel complex where Seneca Steel began production in 1902 and Bethlehem Steel operated from 1922. About 440 acres of the present property are manmade land built with slag and manufacturing waste. Cleanup, monitoring, groundwater treatment, habitat work, and land-use controls continue across separately managed portions of the site.",
     evidenceStatus: "well-documented",
     coordinates: [-78.85913, 42.82158],
     story: {
-      lastReviewed: "July 26, 2026",
+      lastReviewed: "August 4, 2026",
       background: [
-        "The former Bethlehem Steel complex in Lackawanna was one of Western New York's defining industrial landscapes. Ironmaking, steelmaking, coke production, finishing operations, rail systems, water use, and waste management reshaped a long section of the Lake Erie shoreline.",
-        "The environmental record is correspondingly large. It includes plant-wide corrective action, individual waste-management units, extensive slag and industrial fill, shoreline and creek restoration, demolition, groundwater and soil work, long-term controls, and redevelopment proposals across differently managed portions of the property.",
+        "Seneca Steel began producing iron and steel on the Lackawanna waterfront in 1902. Bethlehem Steel purchased the works in 1922 and developed one of Western New York's defining industrial landscapes: an integrated complex of blast furnaces, steelmaking furnaces, coke ovens and by-product operations, rolling and finishing mills, rail systems, water infrastructure, and waste-management areas.",
+        "The plant also changed the shoreline itself. DEC and EPA records describe roughly 440 acres of manmade land created with iron- and steelmaking slag and other manufacturing waste; a DEC community plan says the fill extended the shoreline as much as one-half mile and exceeded 90 feet in thickness in some places.",
+        "Today the former works is not one cleanup parcel. State hazardous-waste Site 915009, federal RCRA corrective-action areas, Brownfield Cleanup Program parcels, renewable-energy and industrial redevelopment areas, and shoreline habitat projects overlap the larger industrial footprint but carry different boundaries and obligations.",
       ],
       timeline: [
         {
-          period: "Industrial era",
+          period: "1902–1922",
           event:
-            "The integrated steel complex expanded production and created extensive industrial infrastructure and filled shoreline land.",
+            "Seneca Steel began iron and steel production in 1902; Bethlehem Steel purchased the Lackawanna works in 1922.",
         },
         {
-          period: "1980s–2000s",
+          period: "1922–1983",
           event:
-            "Federal and state programs investigated waste units, soil, groundwater, shoreline areas, and off-site migration pathways as steel operations contracted and ended.",
+            "Bethlehem expanded and operated the integrated works. Ironmaking and steelmaking ended by the close of 1983, although other operations continued.",
+        },
+        {
+          period: "1990–2005",
+          event:
+            "An EPA corrective-action order began the facility-wide investigation in 1990. The final investigation report was submitted in January 2005 after work on more than 100 solid-waste management units and other areas of concern.",
+        },
+        {
+          period: "1990s–2009",
+          event:
+            "Most steelmaking structures west of Route 5 were demolished in the mid-1990s. Coke production ended in September 2001, Bethlehem entered bankruptcy that year, and rolling and galvanizing operations elsewhere on the property continued until 2009.",
         },
         {
           period: "2009",
           event:
-            "A major sediment-removal project addressed affected material in lower Smokes Creek.",
+            "Approximately 40,000 cubic yards of affected sediment were removed from lower Smokes Creek.",
         },
         {
           period: "Present",
@@ -355,7 +366,8 @@ const featuredSiteRecords: AtlasSite[] = [
       documentedImpacts: [
         "Approximately 440 acres of the western property consist of manmade land formed with iron- and steelmaking slag and other plant waste.",
         "The HWM-2 landfill was documented as containing coke-making and primary-metals wastes.",
-        "Investigations and remedies have addressed soil, groundwater, waste units, shoreline areas, and Smokes Creek sediment.",
+        "DEC describes roughly 40 contaminated areas identified in soil, industrial fill, groundwater, sediment, and surface water. Principal cleanup contaminants include arsenic, cadmium, mercury, lead, and semi-volatile organic compounds.",
+        "The former Benzol Yard created a groundwater plume containing benzene and related compounds; coke-oven and acid-tar areas required separate source-control and groundwater remedies.",
       ],
       cleanupAndControls: [
         "Corrective-action work is divided into units and phases because of the site's size, operating history, and varied conditions.",
@@ -365,7 +377,8 @@ const featuredSiteRecords: AtlasSite[] = [
         "Redevelopment decisions must remain compatible with environmental easements, engineering controls, and site-management requirements.",
       ],
       presentDay: [
-        "The former complex is not one uniform brownfield. Some areas support new industrial or energy uses, some remain under active cleanup or management, and restored shoreline and creek habitats coexist with controlled industrial land.",
+        "The former complex is not one uniform brownfield. Some areas support industrial, renewable-energy, trail, or habitat uses; others remain under active cleanup, demolition, monitoring, or site management.",
+        "DEC reports that public drinking water is not affected because the surrounding area uses a public supply. Its current exposure summary also says soil vapor is not an issue while the western property remains undeveloped or in outdoor industrial use; future enclosed development requires parcel-specific review.",
       ],
       researchNotes: [
         "Build a map of the major corrective-action units, HWM-2, slag-fill areas, Smokes Creek, and redevelopment parcels.",
@@ -387,6 +400,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "40 CFR Part 261, Appendix IX — Bethlehem Steel HWM-2 Exclusion",
         publisher: "U.S. Government Publishing Office",
         url: "https://www.govinfo.gov/content/pkg/CFR-2013-title40-vol27/pdf/CFR-2013-title40-vol27-part261-appIX.pdf",
+      },
+      {
+        title: "Bethlehem Steel Community Liaison Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915009/Work%20Plan.HW.915009.2021-05-05.NYSDEC%20Bethlehem%20Steel%20Community%20Liaison%20Plan.pdf",
       },
     ],
   },
@@ -420,7 +438,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "industry",
     summary:
-      "Former South Buffalo steel and coke complex remediated in phases as the Steelfields and RiverBend properties.",
+      "Former South Buffalo iron- and steelmaking property within the four-area Steelfields complex. Republic Steel's plant operated from 1906 into the 1980s; later remedies removed contaminated soil and managed petroleum, groundwater, metals, PAHs, and other industrial residues under parcel-specific controls.",
     evidenceStatus: "well-documented",
     coordinates: [-78.83, 42.85],
     sources: [
@@ -433,6 +451,16 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Steelfields Area I Revised Site Management Plan",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/V00619/Report.VCP.V00619.2021-09-20.Area_I_Revised_SMP.pdf",
+      },
+      {
+        title: "Buffalo River Groundwater Injury Determination Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/brr1.pdf",
+      },
+      {
+        title: "RiverBend Area I TENORM Reuse Work Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00619/Report.VCP.V00619.2016-05-02.Final%20RiverBend%20TENORM%20Reuse%20Work%20Plan%20.pdf",
       },
     ],
   },
@@ -2061,7 +2089,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former automotive-parts manufacturing complex at 1001 East Delavan Avenue, operated by General Motors and later American Axle. Investigations documented petroleum impacts associated with plant operations and underground tanks, along with possible PCB releases from electrical equipment. The property is divided between state Superfund and Brownfield Cleanup Program areas, with phased investigation, oil recovery, demolition, and remediation.",
+      "Former General Motors automobile, axle, and drivetrain plant operated from the 1920s to 1994, followed by American Axle through 2008. The cleanup property is divided between a 32.88-acre Brownfield Cleanup Program site and an enclosed 2.65-acre state Superfund site addressing petroleum and PCB-impacted oil beneath the former plant.",
     evidenceStatus: "well-documented",
     coordinates: [-78.821, 42.9202],
     sources: [
@@ -2074,6 +2102,16 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "1001 East Delavan Brownfield Cleanup Application",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C915196B/Application.BCP.C915196B.2017-09-29.Complete%20BCP%20Application.pdf",
+      },
+      {
+        title: "Former GM-Saginaw Division Buffalo Plant Records Search Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915196/Report.HW.915196.2006-09-19.Records_Search_Report.pdf",
+      },
+      {
+        title: "1001 East Delavan Pre-Design Investigation Work Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915196B/Work%20Plan.BCP.C915196B.2023-08-31.Preliminary%20Design%20Investigation%20-%20FINAL.pdf",
       },
     ],
   },
