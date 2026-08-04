@@ -1150,7 +1150,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Niagara",
     category: "cleanup",
     summary:
-      "Former paper mill where cleanup encountered both conventional industrial contamination and localized radioactive material. State work removed hot spots, demolished the mill, and completed the environmental-restoration project in 2012.",
+      "Former paper-manufacturing complex built in stages from 1923 through 1974 and inactive after 1982. Brownfield redevelopment removed the deteriorated mill, chemically contaminated historic fill, and localized radiologically affected soil; Greenpac now operates on the industrially restricted property.",
     evidenceStatus: "well-documented",
     coordinates: [-79.01326203165878, 43.08822382497429],
     sources: [
@@ -1159,6 +1159,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Former Mill No. 2 Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C932150/",
+      },
+      {
+        title: "Former Mill No. 2 Decision Document",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/grnpcdd.pdf",
+      },
+      {
+        title: "Former Mill No. 2 Cleanup Completion Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/fsfm2.pdf",
       },
     ],
   },
