@@ -109,7 +109,23 @@ export default function BuffaloSchoolsResearchPage() {
           Campus identities are verified against NYSED records. Locations are
           derived from the NYS Schools GIS service and current NCES EDGE school
           data. Candidate screening uses the live NYSDEC Remediation Site Borders
-          layer, whose boundary accuracy varies by site.
+          layer, whose boundary accuracy varies by site. The Buffalo campus screen
+          was rerun against the state layer on August 4, 2026. See DEC&apos;s{" "}
+          <a
+            href="https://dec.ny.gov/environmental-protection/site-cleanup/database-search/about-proximity-data"
+            target="_blank"
+            rel="noreferrer"
+          >
+            proximity method
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://dec.ny.gov/environmental-protection/site-cleanup/database-search/remediation-site-boundaries-downloadable-gis-files"
+            target="_blank"
+            rel="noreferrer"
+          >
+            boundary-data limitations
+          </a>.
         </p>
         <Link href="/">Return to the regional atlas →</Link>
       </section>

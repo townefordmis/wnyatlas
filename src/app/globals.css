@@ -2493,6 +2493,29 @@ footer {
   font-size: .78rem;
 }
 
+.nearby-site-history {
+  margin-top: 7px;
+  padding: 10px;
+  border-left: 3px solid #1264d8;
+  background: #eef4fb;
+}
+
+.nearby-site-history p {
+  margin: 0;
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+.nearby-site-history p + p,
+.nearby-site-history a {
+  margin-top: 7px;
+}
+
+.nearby-site-history a {
+  display: inline-block;
+  font-weight: 750;
+}
+
 .nearby-records details {
   margin-top: 7px;
   padding-top: 9px;

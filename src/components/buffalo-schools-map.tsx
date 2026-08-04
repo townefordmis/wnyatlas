@@ -9,6 +9,7 @@ import {
   consolidateNearbyCleanupStories,
   documentedCampusHistory,
   existingAtlasSiteByCleanupCode,
+  nearbySiteHistoryByCode,
   relationshipLabels,
   type BuffaloSchoolCampus,
 } from "@/data/buffalo-school-research";
@@ -82,7 +83,12 @@ export function BuffaloSchoolsMap() {
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return buffaloSchoolCampuses.filter((campus) => {
-      const text = `${campusLabel(campus)} ${campus.address}`.toLowerCase();
+      const cleanupSearchText = campus.nearbyRemediationSites
+        .map((site) =>
+          [site.siteCode, site.siteName, site.siteAddress].join(" "),
+        )
+        .join(" ");
+      const text = `${campusLabel(campus)} ${campus.address} ${cleanupSearchText}`.toLowerCase();
       const matchesText = !normalized || text.includes(normalized);
       const relationships = campus.nearbyRemediationSites.map(
         (site) => site.relationship,
@@ -245,7 +251,7 @@ export function BuffaloSchoolsMap() {
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="School or street"
+              placeholder="School, street, or cleanup site"
             />
           </label>
           <label>
@@ -328,6 +334,32 @@ export function BuffaloSchoolsMap() {
                       {story.sites.map((site) => site.siteCode).join(" · ")}
                     </span>
                     <span>{storyRelationshipLabel(story)}</span>
+                    {Array.from(
+                      new Map(
+                        story.sites
+                          .map((site) => nearbySiteHistoryByCode[site.siteCode])
+                          .filter(Boolean)
+                          .map((siteHistory) => [
+                            siteHistory.sourceUrl,
+                            siteHistory,
+                          ]),
+                      ).values(),
+                    ).map((siteHistory) => (
+                      <div
+                        className="nearby-site-history"
+                        key={siteHistory.sourceUrl}
+                      >
+                        <p>{siteHistory.summary}</p>
+                        <p><b>Documented status:</b> {siteHistory.status}</p>
+                        <a
+                          href={siteHistory.sourceUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {siteHistory.sourceLabel} ↗
+                        </a>
+                      </div>
+                    ))}
                     {(() => {
                       const projects = uniqueStoryProjects(story.records);
                       const contaminants = uniqueStoryContaminants(story.records);
@@ -446,9 +478,8 @@ export function BuffaloSchoolsMap() {
               </ul>
             ) : (
               <p>
-                The screening found no mapped DEC remediation-site boundary
-                within 1,000 feet. This statement is limited to that dataset and
-                search distance.
+                No qualifying cleanup-property relationship is attached to this
+                campus record.
               </p>
             )}
           </section>

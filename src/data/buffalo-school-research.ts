@@ -37,6 +37,10 @@ export type BuffaloSchoolCampus = {
 export const heldCleanupCodes = new Set([
   "915412",
   "915413",
+  // DEC lists this former application as class N and the assembled source
+  // record does not identify a completed cleanup or contaminants. Nearby
+  // campuses already have stronger, separately documented qualifying sites.
+  "C915214",
 ]);
 
 const verifiedCampusCleanupCodes: Record<string, Record<string, SchoolRelationship>> = {
@@ -62,23 +66,41 @@ const verifiedCampusCleanupCodes: Record<string, Record<string, SchoolRelationsh
   },
 };
 
-const verifiedSchoolCampuses = (
-  campusData as BuffaloSchoolCampus[]
-)
-  .filter((campus) => Boolean(verifiedCampusCleanupCodes[campus.address]))
-  .map((campus) => ({
-    ...campus,
-    researchStatus: "documented_same_site" as const,
-    nearbyRemediationSites: campus.nearbyRemediationSites
+const publishableProximityRelationships = new Set<SchoolRelationship>([
+  "point_inside_dec_boundary",
+  "within_500_ft_of_dec_boundary",
+]);
+
+const campusDisplayNameByAddress: Record<string, string> = {
+  "2885 MAIN ST":
+    "BENNETT HIGH SCHOOL OF INNOVATIVE TECHNOLOGY / MIDDLE EARLY COLLEGE HIGH SCHOOL",
+};
+
+const verifiedSchoolCampuses = (campusData as BuffaloSchoolCampus[])
+  .map((campus) => {
+    const verifiedCodes = verifiedCampusCleanupCodes[campus.address];
+    const nearbyRemediationSites = campus.nearbyRemediationSites
       .filter((site) =>
-        Boolean(verifiedCampusCleanupCodes[campus.address][site.siteCode]),
+        verifiedCodes
+          ? Boolean(verifiedCodes[site.siteCode])
+          : publishableProximityRelationships.has(site.relationship) &&
+            !heldCleanupCodes.has(site.siteCode),
       )
       .map((site) => ({
         ...site,
-        relationship:
-          verifiedCampusCleanupCodes[campus.address][site.siteCode],
-      })),
-  }));
+        relationship: verifiedCodes?.[site.siteCode] ?? site.relationship,
+      }));
+
+    return {
+      ...campus,
+      displayName: campusDisplayNameByAddress[campus.address] ?? campus.displayName,
+      researchStatus: verifiedCodes
+        ? ("documented_same_site" as const)
+        : ("proximity_screened" as const),
+      nearbyRemediationSites,
+    };
+  })
+  .filter((campus) => campus.nearbyRemediationSites.length > 0);
 
 const tapestryAddresses = new Set([
   "65 GREAT ARROW AVE",
@@ -497,6 +519,148 @@ export function consolidateNearbyCleanupStories(
       a.title.localeCompare(b.title),
   );
 }
+
+export const nearbySiteHistoryByCode: Record<
+  string,
+  {
+    summary: string;
+    status: string;
+    sourceLabel: string;
+    sourceUrl: string;
+  }
+> = {
+  C915279: {
+    summary:
+      "The property was a stone quarry by at least 1917, was backfilled with material of unknown origin in the 1940s and 1950s, and became the Kensington Heights apartment complex in 1958. DEC documented PAHs and metals in soil and fill.",
+    status:
+      "Cleanup included excavation, a cover system, and institutional controls. DEC issued a Certificate of Completion in December 2019.",
+    sourceLabel: "DEC 1827 Fillmore Avenue cleanup fact sheet",
+    sourceUrl: "https://extapps.dec.ny.gov/data/der/factsheet/c915279cubegins.pdf",
+  },
+  C915400: {
+    summary:
+      "The active brownfield record covers a multi-parcel block south of Best Street. The application identifies mixed residential and commercial history, including an RND Machine property; investigation records also evaluate fill and former automotive uses in the surrounding block.",
+    status:
+      "DEC currently maps this as an active Brownfield Cleanup Program site. The linked record documents investigation work, not a completed remedy.",
+    sourceLabel: "DEC Jefferson and Best Brownfield Cleanup application",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915400/Application.BCP.C915400.2024-01-30.Revised%20Complete%20Application.pdf",
+  },
+  C915362: {
+    summary:
+      "Dense housing and small shops occupied the property from the late 1800s into the mid-1970s, and a gasoline station operated at Michigan and Best during the mid-1900s. The Pilgrim Village apartment buildings followed. DEC identified petroleum, PAHs, and metals in fill and groundwater.",
+    status:
+      "The remedy removed affected soil and addressed redevelopment conditions. DEC issued a Certificate of Completion in December 2022.",
+    sourceLabel: "DEC Former Pilgrim Village decision document",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915362/Decision%20Document.BCP.C915362.2021-05-10.Decision%20Document.pdf",
+  },
+  C915375: {
+    summary:
+      "DEC's 0.736-acre Michigan-Best brownfield record documents PAHs, metals, and legacy pesticides including DDT-related compounds in the investigation dataset.",
+    status:
+      "DEC issued a Certificate of Completion in December 2022 for an unrestricted-use cleanup level.",
+    sourceLabel: "DEC Michigan-Best Certificate of Completion",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915375/Certificate%20of%20Completion.BCP.C915375.2022-12-29.Executed%20COC%20Package%20.pdf",
+  },
+  "915007": {
+    summary:
+      "The state record covers the former Anaconda Company/American Brass industrial property near Military Road and Sayre Street. DEC's dataset lists arsenic, cadmium, lead, and PCBs for the site.",
+    status:
+      "The state project history records investigation and remedial work in the 1990s. The public document folder was unavailable during review, so the map does not characterize present conditions beyond the current DEC record.",
+    sourceLabel: "DEC remediation-site record 915007",
+    sourceUrl:
+      "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915007",
+  },
+  "915057": {
+    summary:
+      "DEC identifies the 400 Vulcan Street property as the TRW/J.H. Williams Division record under the Resource Conservation and Recovery Act program.",
+    status:
+      "The state project history lists a 1982 remedial action and a 2012 site characterization. Accessible state records did not support a more detailed contaminant or remedy narrative, so this entry remains deliberately limited.",
+    sourceLabel: "DEC remediation-site record 915057",
+    sourceUrl:
+      "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915057",
+  },
+  C915271: {
+    summary:
+      "The downtown property contained known and previously unknown petroleum underground tanks and service-station-affected soil and fill. DEC's remedy removed the tanks, about 24,870 tons of petroleum-affected soil, and about 10,300 tons of service-station-affected soil and fill.",
+    status:
+      "DEC approved the Final Engineering Report and issued a Certificate of Completion in December 2014 after the excavation and clean backfill work.",
+    sourceLabel: "DEC 250 Delaware Avenue completion fact sheet",
+    sourceUrl: "https://extapps.dec.ny.gov/data/der/factsheet/c915271coc.pdf",
+  },
+  C915366: {
+    summary:
+      "DEC application records trace portions of the block to residences, furniture manufacturing, an automotive garage and electrical service business, and later commercial uses. The record is for the defined Ellicott and North Oak Street parcels.",
+    status:
+      "DEC currently maps the property as an active Brownfield Cleanup Program site; the linked collection documents investigation and planning rather than a completed cleanup.",
+    sourceLabel: "DEC Ellicott and Oak Streets Brownfield Cleanup application",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915366/Application.BCP.C915366.2020-07-01.Complete%20Application.pdf",
+  },
+  C915318: {
+    summary:
+      "Manufacturing began around 1910 and included paint, vehicles, gasoline pumps, and later Keystone electroplating operations. Investigation and cleanup addressed industrial soil, drums, tanks, transformers, and demolition material.",
+    status:
+      "DEC issued a Brownfield Cleanup Program Certificate of Completion in December 2024 before reuse as The Rails mixed-use development.",
+    sourceLabel: "DEC Main and Hertel document collection",
+    sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/C915318/",
+  },
+  C915389: {
+    summary:
+      "The assembled property included a former automotive-repair building, vacant residential buildings, mixed commercial/residential space, and vacant land. Investigation identified SVOCs, metals, pesticides, and chlorinated solvents in the state dataset.",
+    status:
+      "Cleanup demolished the buildings and removed about 7,850 tons of affected soil. DEC issued a Certificate of Completion in December 2025.",
+    sourceLabel: "DEC 147 West Tupper completion fact sheet",
+    sourceUrl: "https://extapps.dec.ny.gov/data/der/factsheet/c915389coc.pdf",
+  },
+  "915033": {
+    summary:
+      "The LaSalle property was a large limestone quarry later filled with municipal refuse, incinerator ash, demolition debris, appliances, vegetation, and documented Buffalo Forge waste. Portions became McCarthy Park and nearby development.",
+    status:
+      "State investigation supported removal from the hazardous-waste registry; the remaining quarry functions as a stormwater-retention basin. This history applies to the mapped former quarry/landfill area.",
+    sourceLabel: "DEC LaSalle Reservoir Phase II investigation",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/915033/Report.HW.915033.1991-04-01.Phase_II_Investigation.pdf",
+  },
+  "915151": {
+    summary:
+      "General Electric operated here from 1921 to 1968 and serviced electrical equipment containing PCB dielectric fluid. Investigations found PCBs on building surfaces, in soil, in on-site sewers, on neighboring soil, and in part of the public sewer system.",
+    status:
+      "Work from 1992 through 1999 removed affected soil and sewer sediment and decontaminated the building. Covers, access controls, an environmental notice, and a Site Management Plan address residual PCB impacts.",
+    sourceLabel: "DEC 318 Urban Street periodic review report",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/915151/Report.HW.915151.2025-10-31.PRR_and_IC-EC_Certification.pdf",
+  },
+  C915211: {
+    summary:
+      "The NOCO #S41 record concerns a former gasoline-service property at 1055 Genesee Street. DEC lists petroleum compounds and PAHs in the cleanup dataset.",
+    status:
+      "DEC issued a Certificate of Completion in December 2009. An environmental easement, commercial-use restriction, groundwater-use restriction, monitoring, and a Site Management Plan remain documented controls.",
+    sourceLabel: "DEC NOCO #S41 Site Management Plan",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915211/Work%20Plan.BCP.C915211.2021-06-30.Revised_SMP.pdf",
+  },
+  C915237: {
+    summary:
+      "The connected downtown properties had residential and parking uses; 432 Pearl Street also had hot-air-heater manufacturing by 1925. The related 275 Franklin property operated as a dry cleaner from at least 1951 into the early 2000s. DEC lists PCE and TCE for the 432 Pearl cleanup record.",
+    status:
+      "DEC issued a Certificate of Completion in December 2017, with site-management documentation for the connected properties.",
+    sourceLabel: "DEC 275 Franklin and 432 Pearl Site Management Plan",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915237/Work%20Plan.BCP.C915237.2017-07-26.Site%20Management%20Work%20Plan.pdf",
+  },
+  C915282: {
+    summary:
+      "DEC records document a horse stable, automotive garage and rental operations, and an automotive fueling station with underground tanks on portions of the 73–79 West Huron property.",
+    status:
+      "DEC issued a Brownfield Cleanup Program Certificate of Completion in December 2017; continuing site-management and periodic-review records are available.",
+    sourceLabel: "DEC 73–79 West Huron Brownfield Cleanup application",
+    sourceUrl:
+      "https://extapps.dec.ny.gov/data/DecDocs/C915282/Application.BCP.C915282.2013-10-02.BCP%20Application%20and%20Attachments%20A%20-%20F.pdf",
+  },
+};
 
 export const documentedCampusHistory: Record<
   string,
