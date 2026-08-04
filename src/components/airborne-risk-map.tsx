@@ -16,6 +16,7 @@ export function AirborneRiskMap() {
   useEffect(() => {
     if (!container.current || map.current) return;
 
+    maplibregl.setWorkerUrl("/maplibre/maplibre-gl-worker.mjs");
     const instance = new maplibregl.Map({
       container: container.current,
       center: [-78.92, 43.02],

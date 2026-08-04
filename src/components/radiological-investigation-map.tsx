@@ -93,6 +93,7 @@ export function RadiologicalInvestigationMap() {
     if (!container.current || map.current) return;
 
     const isMobile = window.matchMedia("(max-width: 720px)").matches;
+    maplibregl.setWorkerUrl("/maplibre/maplibre-gl-worker.mjs");
     const instance = new maplibregl.Map({
       container: container.current,
       bounds: [[-79.12, 42.4], [-78.42, 43.4]],
