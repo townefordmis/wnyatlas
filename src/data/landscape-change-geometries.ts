@@ -14,6 +14,7 @@ type LandscapeChangeGeometryBase = {
   confidence: LandscapeEvidenceConfidence;
   boundaryNote: string;
   mapLabel?: string;
+  mapLabelIndex?: number;
   displayColor?: string;
   lineStyle?: "solid" | "dashed";
 };
@@ -424,6 +425,7 @@ export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
     recordId: "smokes-creek-shifted-mouth",
     name: "1923 shoreline north of Smokes Creek",
     mapLabel: "1923",
+    mapLabelIndex: 6,
     geometryType: "LineString",
     coordinates: [
       [-78.8595528, 42.8123396], [-78.8617772, 42.8144222],

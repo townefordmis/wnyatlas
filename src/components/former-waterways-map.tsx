@@ -327,7 +327,9 @@ export function FormerWaterwaysMap() {
         element.style.background = geometry.displayColor;
       }
       element.style.display = "none";
-      const midpoint = geometry.coordinates[Math.floor(geometry.coordinates.length / 2)];
+      const midpoint = geometry.coordinates[
+        geometry.mapLabelIndex ?? Math.floor(geometry.coordinates.length / 2)
+      ];
       const label = new maplibregl.Marker({
         element,
         anchor: geometry.displayColor ? "center" : "left",
