@@ -104,6 +104,14 @@ export function FormerWaterwaysMap() {
       ),
     [selected.id],
   );
+  const selectedDetailGeometries = useMemo(
+    () =>
+      selectedGeometries.filter(
+        (geometry) =>
+          geometry.geometryType === "Polygon" || !geometry.displayColor,
+      ),
+    [selectedGeometries],
+  );
 
   const filtered = useMemo(
     () =>
@@ -191,9 +199,11 @@ export function FormerWaterwaysMap() {
               source: landscapeGeometrySourceId,
               filter: ["==", ["get", "geometryId"], geometry.id],
               paint: {
-                "fill-color": waterwayMarkerColors[geometry.evidenceType],
+                "fill-color":
+                  geometry.displayColor ?? waterwayMarkerColors[geometry.evidenceType],
                 "fill-opacity": isMobile ? 0.62 : 0.52,
-                "fill-outline-color": waterwayMarkerColors[geometry.evidenceType],
+                "fill-outline-color":
+                  geometry.displayColor ?? waterwayMarkerColors[geometry.evidenceType],
               },
             },
             {
@@ -202,7 +212,8 @@ export function FormerWaterwaysMap() {
               source: landscapeGeometrySourceId,
               filter: ["==", ["get", "geometryId"], geometry.id],
               paint: {
-                "line-color": waterwayMarkerColors[geometry.evidenceType],
+                "line-color":
+                  geometry.displayColor ?? waterwayMarkerColors[geometry.evidenceType],
                 "line-width": isMobile ? 5 : 4,
                 "line-opacity": 1,
               },
@@ -217,8 +228,10 @@ export function FormerWaterwaysMap() {
             source: landscapeGeometrySourceId,
             filter: ["==", ["get", "geometryId"], geometry.id],
             paint: {
-              "line-color": "#003c38",
-              "line-width": isMobile ? 16 : 14,
+              "line-color": geometry.displayColor ? "#fffdf8" : "#003c38",
+              "line-width": geometry.displayColor
+                ? isMobile ? 11 : 9
+                : isMobile ? 16 : 14,
               "line-opacity": 0.96,
             },
           },
@@ -228,10 +241,14 @@ export function FormerWaterwaysMap() {
               source: landscapeGeometrySourceId,
               filter: ["==", ["get", "geometryId"], geometry.id],
               paint: {
-                "line-color": "#24e6c7",
-                "line-width": isMobile ? 10 : 8,
+                "line-color": geometry.displayColor ?? "#24e6c7",
+                "line-width": geometry.displayColor
+                  ? isMobile ? 7 : 5
+                  : isMobile ? 10 : 8,
                 "line-opacity": 1,
-                "line-dasharray": [3.5, 1.5],
+                ...(geometry.lineStyle === "solid"
+                  ? {}
+                  : { "line-dasharray": [3.5, 1.5] }),
               },
             },
         ];
@@ -305,6 +322,7 @@ export function FormerWaterwaysMap() {
       const element = document.createElement("div");
       element.className = "waterway-route-label";
       element.textContent = geometry.mapLabel;
+      if (geometry.displayColor) element.style.background = geometry.displayColor;
       element.style.display = "none";
       const midpoint = geometry.coordinates[Math.floor(geometry.coordinates.length / 2)];
       const label = new maplibregl.Marker({
@@ -461,6 +479,21 @@ export function FormerWaterwaysMap() {
               </p>
             </div>
           )}
+          {selected.id === "smokes-creek-shifted-mouth" && (
+            <div className="waterway-route-notice smokes-shoreline-comparison" aria-live="polite">
+              <strong>Smokes Creek shoreline sequence</strong>
+              <span><i style={{ background: "#9c27b0" }} aria-hidden="true" /> 1912</span>
+              <span><i style={{ background: "#ef5350" }} aria-hidden="true" /> 1923</span>
+              <span><i style={{ background: "#ff9800" }} aria-hidden="true" /> 1937</span>
+              <span><i style={{ background: "#00796b" }} aria-hidden="true" /> 1970</span>
+              <p>
+                Blue shading shows the approximate land between the mapped
+                1912 and 1970 shorelines. The 2024 state study describes the
+                broader man-made shoreline as primarily slag and waste fill;
+                the shading is not a contamination boundary.
+              </p>
+            </div>
+          )}
         </div>
 
         <aside className="school-map-list" aria-label="Documented waterway locations">
@@ -558,12 +591,12 @@ export function FormerWaterwaysMap() {
             </p>
           )}
 
-          {selectedGeometries.map((geometry, index) => (
+          {selectedDetailGeometries.map((geometry, index) => (
             <section className="record-mapped-area" key={geometry.id}>
               <p className="record-label">
                 Mapped historical geography
-                {selectedGeometries.length > 1
-                  ? ` · Area ${index + 1} of ${selectedGeometries.length}`
+                {selectedDetailGeometries.length > 1
+                  ? ` · Area ${index + 1} of ${selectedDetailGeometries.length}`
                   : ""}
               </p>
               <h4>{geometry.name}</h4>

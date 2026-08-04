@@ -331,15 +331,25 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     waterwayHistory:
       "A 2024 state study reports that slag deposits advanced the shoreline between about 1900 and 1968. The 1912 shoreline suggests the creek once reached Lake Erie near the present railroad crossing, approximately one-half mile from its modern outlet.",
     documentedMaterial:
-      "The surrounding man-made land includes steelmaking slag. The same study also identifies two federal dumping grounds near the creek mouth that received dredged material from Buffalo Harbor, the Buffalo River and Black Rock Canal.",
+      "The surrounding man-made land includes steelmaking slag. The same study describes approximately 440 acres along two miles of waterfront as primarily man-made land where iron- and steelmaking slag and waste were disposed. It also identifies two federal dumping grounds near the creek mouth that received dredged material from Buffalo Harbor, the Buffalo River and Black Rock Canal.",
     interpretation:
-      "The modern lower creek crosses the slag-fill area in a confined, low-gradient channel. Historic outlet lines and dumping-ground boundaries will be digitized from the cited engineering plates rather than inferred from the current basemap.",
+      "The modern lower creek crosses the slag-fill area in a confined, low-gradient channel. WNY Atlas registered the state study's engineering plate to the present creek and now shows the plate's 1912, 1923, 1937 and 1970 shoreline traces as separate colored lines. Blue shading marks the approximate land between the mapped 1912 and 1970 shorelines on both sides of the creek, including the SteelWinds shoreline strip. It is a landscape-change reconstruction, not a parcel, disposal-unit or uniform-contamination boundary.",
     sourceUrl:
       "https://extapps.dec.ny.gov/fs/programs/press/R9/12572245-Smokes%20Creek-Final%20Report_DRAFT%205-15-2024.pdf",
     sourceLabel: "NYSDEC Smokes Creek habitat opportunity assessment",
+    additionalSources: [
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915009/Report.HW.915009.2019-05-14.CMS%20-%20Plates.pdf",
+        label: "NYSDEC Bethlehem Steel Corrective Measures Study — Plate 4-1A",
+      },
+      {
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/environmental-cleanup-at-former-bethlehem-steel-site",
+        label: "NYSDEC former Bethlehem Steel cleanup overview",
+      },
+    ],
     relatedSiteId: "smokes-creek-bethlehem-corridor",
     changePeriod: "Approximately 1900–1968",
-    comparisonYears: ["1912 shoreline", "1927", "1938", "1951", "1966", "1978", "2024"],
+    comparisonYears: ["1912 shoreline", "1923 shoreline", "1937 shoreline", "1970 shoreline", "2024 study"],
     evidenceConfidence: "agency_mapped_approximation",
   },
   {

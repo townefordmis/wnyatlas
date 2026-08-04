@@ -2288,6 +2288,39 @@ footer {
   padding-top: 0.4rem;
 }
 
+.smokes-shoreline-comparison {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  max-width: min(35rem, calc(100% - 5.5rem));
+}
+
+.smokes-shoreline-comparison > strong,
+.smokes-shoreline-comparison p {
+  grid-column: 1 / -1;
+}
+
+.smokes-shoreline-comparison span {
+  align-items: center;
+  display: flex;
+  gap: 0.35rem;
+}
+
+.smokes-shoreline-comparison span i {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgb(15 23 42 / 38%);
+  flex: 0 0 1.8rem;
+  height: 0.32rem;
+}
+
+.smokes-shoreline-comparison p {
+  border-top: 1px solid rgb(0 111 99 / 24%);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  margin: 0.1rem 0 0;
+  padding-top: 0.4rem;
+}
+
 .waterway-route-notice i {
   border-bottom: 3px solid #003c38;
   border-top: 6px dashed #24e6c7;
