@@ -84,14 +84,14 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     id: "ohio-basin-conway-park",
     name: "Filled Ohio Basin and shipping canal",
     location: "Conway Park and the former Ohio Basin, Buffalo",
-    coordinates: [-78.8551, 42.8687],
+    coordinates: [-78.8667023, 42.8684856],
     evidenceType: "documented_filled_waterway",
     waterwayHistory:
       "State brownfield records identify the open-water Ohio Basin and its shipping canal immediately east of the 300 Ohio Street property. The basin and canal were later filled, and the former water area is now occupied by Conway Park.",
     documentedMaterial:
       "The reviewed records establish that the basin and canal were filled. They do not establish one uniform fill composition throughout the entire former waterway. A separate DEC site-management record describes fill containing varying amounts of brick, concrete, metal debris, ash and wood at the nearby 225 Louisiana Street cleanup site, but WNY Atlas does not extend that parcel-specific finding across Conway Park.",
     interpretation:
-      "The marker identifies a documented filled-waterway relationship, not a park-wide contamination boundary. A polygon will be added only after the basin outline is aligned from historical maps or engineering figures.",
+      "The shaded area approximates the former basin using the modern Father Conway Park footprint, while the dashed route follows the historic slip toward the Buffalo River. Neither geometry is a contamination boundary.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915257/Application.BCP.C915257.2011-07-21.Attachments_6_thru_13.pdf",
     sourceLabel: "NYSDEC 300 Ohio Street Brownfield Cleanup Program application",
@@ -103,7 +103,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     ],
     changePeriod: "Filled before the modern use of the former basin as Conway Park",
     comparisonYears: ["Historic harbor maps", "1927", "1938", "1951", "1966", "1978", "2024"],
-    evidenceConfidence: "research_boundary_pending",
+    evidenceConfidence: "agency_mapped_approximation",
   },
   {
     id: "babcock-former-buffalo-river-channel",
@@ -116,10 +116,10 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     documentedMaterial:
       "The former river channel was filled. Later investigations also identified petroleum contamination in portions of the larger industrial property, but WNY Atlas does not treat the entire buried channel as a uniform contaminant deposit.",
     interpretation:
-      "Agency records identify the buried channel as a possible subsurface migration or accumulation pathway. Its exact mapped trace will be added only from the referenced engineering figures and aligned historical imagery.",
+      "Agency records identify the buried channel as a possible subsurface migration or accumulation pathway. The shaded Atlas reconstruction follows the former-riverbed band on the 2026 DEC investigation figure and is not a uniform contamination boundary.",
     sourceUrl:
-      "https://extapps.dec.ny.gov/data/DecDocs/C915201D/Work%20Plan.BCP.C915201D.2021-03-25.Focused_Soil_Investigation_Near_CSO_Pipe.pdf",
-    sourceLabel: "NYSDEC focused soil investigation — C915201D",
+      "https://extapps.dec.ny.gov/data/DecDocs/C915201D/Report.BCP.C915201D.2026-04-07.Western_Inv_Report.pdf",
+    sourceLabel: "NYSDEC western-area supplemental investigation report — C915201D",
     relatedSiteId: "exxonmobil-former-buffalo-terminal",
     changePeriod: "1914–1917",
     comparisonYears: ["Pre-1914 mapping", "1927", "1938", "1951", "1966", "2024"],
@@ -155,7 +155,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     documentedMaterial:
       "The reviewed record establishes the filled waterway and the adjoining manufactured-gas-plant history. It does not support describing every part of the filled slip as industrial-waste disposal.",
     interpretation:
-      "The waterway history and the adjacent gas-manufacturing cleanup are shown together but kept as separate facts.",
+      "The dashed traces show the mapped former Wilkeson Slip and its local confluence with the former Erie Canal. The waterway history and adjacent gas-manufacturing cleanup are shown together but kept as separate facts.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915194/Work%20Plan.BCP.C915194.2005-03-25.IRMWP%20Final%203%2025%2005.pdf",
     additionalSources: [{
