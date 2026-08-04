@@ -4729,4 +4729,129 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Research the relationship among Vanchlor, adjacent chemical facilities and the broader Mill Street industrial corridor without merging separate regulatory records.",
     ],
   },
+  "tam-ceramics-niagara": {
+    lastReviewed: "August 4, 2026",
+    background: [
+      "The Hyde Park Boulevard facility manufactured ceramic, dielectric and refractory-product ingredients under NL Industries, Titanium Alloy Manufacturing and later TAM Ceramics. An undeveloped portion of the property received process residues and obsolete material during the operating era.",
+      "DEC's record evaluates two histories at once: material generated or placed on the TAM property and organic contamination associated with the adjoining Hooker Hyde Park landfill corridor. WNYAtlas keeps those sources distinct.",
+    ],
+    timeline: [
+      { period: "1906 onward", event: "Ceramic- and dielectric-material manufacturing operated at the property." },
+      { period: "1930–1976", event: "Historical owners placed ceramic, mineral and metallic process residues in portions of the undeveloped property." },
+      { period: "1979", event: "A radiological survey preceded sale of the property and became part of the later investigation record." },
+      { period: "1995–1996", event: "DEC reviewed site classification and planned additional investigation of the undeveloped property and radiological conditions." },
+      { period: "Present record", event: "The public DEC file retains the investigation history; current parcel-specific status should be checked before disturbance or reuse conclusions." },
+    ],
+    documentedImpacts: [
+      "DEC records describe thousands of tons of ceramic and mineral waste placed in piles or landfilled on portions of the property.",
+      "Radiological surveys identified elevated radium-, uranium- and thorium-series measurements in defined areas requiring further evaluation.",
+      "Organic compounds detected in soil, groundwater or sewers were evaluated in relation to the neighboring Hyde Park landfill as well as conditions on the TAM property.",
+    ],
+    cleanupAndControls: [
+      "Investigations used surface surveys, test pits, sampling and groundwater monitoring to distinguish waste areas and possible sources.",
+      "The reviewed historical file does not support describing the entire 30-acre facility as one radiological or chemical disposal area.",
+      "Any current control or monitoring requirement should be read from the newest DEC site record rather than inferred from the 1990s studies.",
+    ],
+    presentDay: [
+      "This is a documented historical disposal and investigation site. WNYAtlas does not label it an active exposure area or imply that conditions reported in the 1990s remain unchanged everywhere on the property.",
+    ],
+    researchNotes: [
+      "Locate a newer DEC classification or periodic record that resolves the current status of each investigated area.",
+      "Map any radiological area only from a surveyed agency figure and link it to the separate radiological research page without duplicating a broad hotspot.",
+    ],
+  },
+  "witmer-road-disposal-site": {
+    lastReviewed: "August 4, 2026",
+    background: [
+      "The Witmer Road property was reportedly used during the mid-twentieth century for disposal of lime clean-outs, air-pollution-control waste, slag and burned municipal debris. Later salvage-yard activity added a separate modern operating history.",
+      "The site remained incompletely characterized for decades. DEC's 2024 work plan compiled earlier investigations and identified remaining questions about fill piles, drums, soil, groundwater and current salvage-yard conditions.",
+    ],
+    timeline: [
+      { period: "Early 1950s–1965", event: "Industrial wastes, slag and burned refuse were reportedly placed at the property." },
+      { period: "1982–1994", event: "Early investigations sampled fill, drums, soil and groundwater; health officials noted that changed land use would require reevaluation." },
+      { period: "2000", event: "Utility right-of-way work found volatile compounds, drums and containers labeled for chloropicrin or larvicide." },
+      { period: "2022", event: "A DEC-requested site visit documented numerous drums, waste tires, staining and sheens associated with the salvage yard." },
+      { period: "2024", event: "DEC issued a final site-characterization work plan to address remaining data gaps." },
+    ],
+    documentedImpacts: [
+      "Historical records describe ash, slag and lime-like fill piles, partially buried drums and industrial or municipal burning residues.",
+      "Earlier sampling identified chlorinated volatile compounds and metals in groundwater and chloropicrin in a fill-pile sample.",
+      "The 2022 salvage-yard observations were being addressed through a separate notice-of-violation process and should not automatically be attributed to the historical disposal program.",
+    ],
+    cleanupAndControls: [
+      "The current public record emphasizes characterization rather than a completed final remedy.",
+      "Sampling is intended to define contaminants, media and boundaries before remedy conclusions are made.",
+      "Access, operational enforcement and any future cleanup actions should be tracked as separate but related records.",
+    ],
+    presentDay: [
+      "Witmer Road remains a research-in-progress location. The pin identifies a documented disposal and investigation property, not a finished contamination boundary or a finding about nearby parcels.",
+    ],
+    researchNotes: [
+      "Add the site-characterization results and DEC classification decision when published.",
+      "Separate historical disposal material from present salvage-yard compliance findings in every future update.",
+    ],
+  },
+  "bell-aerospace-impoundment": {
+    lastReviewed: "August 4, 2026",
+    background: [
+      "Bell Aerospace used an unlined surface impoundment near its Wheatfield plant from 1948 to 1984. DEC records describe the pond as receiving rocket-engine test wash water, storm runoff and solvent drippings associated with cleaning, degreasing and anodizing.",
+      "The environmental history extends beyond the closed pond because chlorinated compounds moved into groundwater. The corrective-action record therefore includes both on-site and off-site groundwater recovery, monitoring and later tests of enhanced biological treatment.",
+    ],
+    timeline: [
+      { period: "1948–1984", event: "The unlined impoundment received industrial wash water, runoff and solvent-bearing drainage." },
+      { period: "1987", event: "The former pond was physically closed." },
+      { period: "1993–1995", event: "On-site and off-site groundwater extraction and treatment systems were constructed as corrective measures." },
+      { period: "2017 onward", event: "A bioremediation program tested subsurface amendments intended to accelerate breakdown of chlorinated compounds." },
+      { period: "Present", event: "Annual monitoring, system review, maintenance and additional treatment evaluation continue in the DEC record." },
+    ],
+    documentedImpacts: [
+      "TCE and related chlorinated compounds affected groundwater beneath and beyond the former impoundment area.",
+      "The record evaluates dissolved contamination and dense nonaqueous-phase liquid in a complex bedrock-groundwater setting.",
+      "Metals associated with facility operations were also evaluated, but chlorinated solvents remain the central long-term groundwater issue.",
+    ],
+    cleanupAndControls: [
+      "The impoundment was closed and covered under the corrective-action program.",
+      "On-site and off-site extraction wells collect contaminated groundwater for treatment.",
+      "Monitoring wells, maintenance plans, access controls, land-use restrictions and soil-management requirements support the long-term remedy.",
+      "Enhanced bioremediation supplements, rather than replaces, the extraction and monitoring record.",
+    ],
+    presentDay: [
+      "DEC's current file shows a continuing management and monitoring program. The pin marks the regulated facility and former source area, not the full shape of a groundwater plume.",
+    ],
+    researchNotes: [
+      "Review the revised 2024 annual report for current extraction rates, concentration trends and the latest bioremediation findings.",
+      "Publish a plume outline only if DEC provides a current map suitable for public orientation.",
+    ],
+  },
+  "carborundum-globar-site": {
+    lastReviewed: "August 4, 2026",
+    background: [
+      "Carborundum acquired the former Globar plant in 1936 and manufactured silicon-carbide heating elements and electronic components at the Hyde Park Boulevard property. Solvents used in manufacturing and degreasing became the central cleanup issue.",
+      "DEC divided the site into soil, groundwater and off-site-soil operable units. That structure is important because source removal at the plant and continuing groundwater management represent different stages of the remedy.",
+    ],
+    timeline: [
+      { period: "1936 onward", event: "Carborundum operated the Globar manufacturing plant after acquiring the property." },
+      { period: "Investigation era", event: "DEC investigations identified TCE and related compounds in soil and groundwater and evaluated possible off-site pathways." },
+      { period: "1999 and 2002", event: "Major source-soil removal work excavated and disposed of contaminated material off site." },
+      { period: "2000", event: "DEC selected remedies for the site-soil and groundwater operable units." },
+      { period: "Present", event: "Residual groundwater contamination remains under monitoring and site-management controls." },
+    ],
+    documentedImpacts: [
+      "TCE and its breakdown products are the principal documented soil and groundwater contaminants.",
+      "Historical spills or leaks associated with bulk solvent storage and use created a subsurface source at the former plant.",
+      "DEC evaluated possible vapor, direct-contact and groundwater pathways; the 2000 decision reported that sampled shallow groundwater near residences did not show site contaminants reaching those properties through that evaluated pathway.",
+    ],
+    cleanupAndControls: [
+      "Contaminated source soil was excavated and transported off site during major remedial actions.",
+      "Groundwater wells track natural attenuation and residual plume conditions.",
+      "A site-management plan, groundwater-monitoring program and land-use controls govern material that remains.",
+    ],
+    presentDay: [
+      "DEC records indicate that soil cleanup objectives were achieved for the controlled use, while groundwater remains a managed residual issue. The site pin does not assert current impacts at surrounding homes.",
+    ],
+    researchNotes: [
+      "Add the newest periodic-review conclusion and groundwater trend summary.",
+      "Keep the Carborundum Globar groundwater record distinct from nearby Hyde Park, TAM Ceramics and other industrial sources.",
+    ],
+  },
 };

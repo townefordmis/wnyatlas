@@ -2302,6 +2302,98 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
   },
+  {
+    id: "tam-ceramics-niagara",
+    name: "TAM Ceramics / Former NL Industries",
+    municipality: "Town of Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Ceramic- and dielectric-powder manufacturing property at 4511 Hyde Park Boulevard. DEC records document historical on-site waste placement, including ceramic and metallic residues, and radiological investigation of portions of the property. The record also distinguishes material generated on site from organic contamination associated with the adjoining Hyde Park landfill corridor.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.03366667, 43.12935381],
+    sources: [
+      {
+        title: "TAM Ceramics Site Investigation and Reclassification Record — 932028",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932028/Report.HW.932028.1995-10-03.reclass_decision_2a_to_3.pdf",
+      },
+      {
+        title: "TAM Ceramics Undeveloped Property Investigation Work Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932028/Report.HW.932028.1996-05-16.UndevelopedPropertyInvestigationWP.pdf",
+      },
+    ],
+  },
+  {
+    id: "witmer-road-disposal-site",
+    name: "Witmer Road Disposal Site",
+    municipality: "Town of Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Historic disposal and burning area at James Avenue and Witmer Road, now associated with salvage-yard use. DEC's 2024 characterization plan describes ash and slag piles, drums, chloropicrin containers, chlorinated compounds and metals in investigated media. The site remains an active characterization record, not a completed-remedy site.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-79.033963326, 43.126390205],
+    sources: [
+      {
+        title: "Witmer Road Final Site Characterization Work Plan — Site 932027",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932027/Report.HW.932027.2024-05-30.Final%20Site%20Characterization%20Work%20Plan_2024.pdf",
+      },
+      {
+        title: "Witmer Road Site Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932027/",
+      },
+    ],
+  },
+  {
+    id: "bell-aerospace-impoundment",
+    name: "Bell Aerospace / Textron Impoundment",
+    municipality: "Town of Wheatfield",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former unlined surface impoundment at the Bell Aerospace/Textron facility near Niagara Falls International Airport. Rocket-test wash water, stormwater and solvent-bearing industrial drainage contributed chlorinated-solvent groundwater contamination. The pond was closed, and groundwater extraction, monitoring and enhanced bioremediation remain part of the long-term corrective-action record.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.928361111, 43.102672222],
+    sources: [
+      {
+        title: "Bell Aerospace / Textron Document Collection — Site 932052",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932052/",
+      },
+      {
+        title: "Revised 2024 Annual Site Maintenance and Monitoring Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932052/Report.HW.932052.2025-11-05.REVISED_Textron_2024_Annual_Report.pdf",
+      },
+    ],
+  },
+  {
+    id: "carborundum-globar-site",
+    name: "Carborundum Globar Site",
+    municipality: "Town of Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former silicon-carbide heating-element and electronic-component plant at Hyde Park Boulevard and Rhode Island Street. Spent chlorinated solvents affected soil and groundwater, with TCE and breakdown products central to the remedy. Source soil was removed, while residual groundwater contamination remains under monitoring and site management.",
+    evidenceStatus: "well-documented",
+    coordinates: [-79.03276872, 43.11925666],
+    sources: [
+      {
+        title: "Carborundum Globar Record of Decision — Site 932036",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932036/ROD.HW.932036.2000-10-27.ROD_carborundum_globar_ous1-2.pdf",
+      },
+      {
+        title: "Carborundum Globar Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932036/",
+      },
+    ],
+  },
 ];
 
 export const featuredSites: AtlasSite[] = [
