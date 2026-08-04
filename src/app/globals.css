@@ -1753,6 +1753,13 @@ footer {
     height: 40px;
   }
 
+  .school-map-canvas .maplibregl-ctrl-group button,
+  .radiological-map-canvas .maplibregl-ctrl-group button,
+  .risk-map-canvas .maplibregl-ctrl-group button {
+    width: 44px;
+    height: 44px;
+  }
+
   .map-sidebar {
     display: flex;
     flex-direction: column;
@@ -2591,8 +2598,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas:
       "map"
-      "list"
-      "record";
+      "record"
+      "list";
   }
 
   .school-map-canvas {
@@ -3362,6 +3369,15 @@ footer {
   .radiological-map-list { max-height: 480px; border-top: 1px solid #b7b09f; border-left: 0; }
   .radiological-record { padding: 24px 18px; }
   .radiological-filter-row { grid-template-columns: 1fr; }
+  .radiological-map-list input,
+  .radiological-map-list select { min-height: 44px; }
+  .radiological-map-list summary,
+  .radiological-record summary,
+  .nearby-records summary {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+  }
   .radiological-assessment-note { padding: 24px 18px; }
   .radiological-archive-heading { grid-template-columns: 1fr; align-items: start; }
   .radiological-archive-controls { grid-template-columns: 1fr; }
