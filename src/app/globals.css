@@ -2614,6 +2614,451 @@ footer {
   }
 }
 
+/* Public Health Atlas */
+.health-hero,
+.health-module-grid,
+.health-method-summary,
+.cancer-explorer-shell,
+.public-health-map-section,
+.health-context-section,
+.health-limitations,
+.health-sources {
+  width: min(1240px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.neurological-story,
+.neurological-cause-effect,
+.neurological-table-section {
+  width: min(1240px, calc(100% - 48px));
+  margin-inline: auto;
+  padding: 5rem 0;
+}
+
+.neurological-story { border-bottom: 1px solid var(--line); }
+.neurological-county-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.neurological-county-card { padding: 1.4rem; border: 1px solid var(--ink); background: rgba(255, 255, 255, 0.28); }
+.neurological-card-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: start; }
+.neurological-card-heading > div { display: grid; gap: 0.2rem; }
+.neurological-card-heading span { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.neurological-card-heading strong { font-family: Georgia, serif; font-size: 2.8rem; font-weight: 500; line-height: 1; }
+.neurological-card-heading small { color: #5c584f; font-size: 0.7rem; }
+.neurological-card-heading > b { color: var(--rust); font-family: var(--font-mono); font-size: 1.55rem; }
+.neurological-card-heading > b small { display: block; text-align: right; }
+.neurological-rate-track { position: relative; height: 18px; margin: 1.25rem 0; border: 1px solid var(--line); background: #ddd6c8; }
+.neurological-rate-track span { display: block; height: 100%; background: var(--water); }
+.neurological-rate-track i { position: absolute; top: -5px; bottom: -5px; width: 3px; background: var(--rust); transform: translateX(-1px); }
+.neurological-county-card dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 0; }
+.neurological-county-card dl div { padding: 0.7rem 0; border-top: 1px solid var(--line); }
+.neurological-county-card dl div:nth-child(even) { padding-left: 1rem; border-left: 1px solid var(--line); }
+.neurological-county-card dt { color: #5c584f; font-size: 0.68rem; }
+.neurological-county-card dd { margin: 0.2rem 0 0; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 750; }
+.neurological-track-note { max-width: 850px; margin: 1.25rem 0 0; font-size: 0.78rem; line-height: 1.55; }
+.neurological-cause-effect { border-bottom: 1px solid var(--line); }
+.neurological-evidence-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.neurological-evidence-grid article { padding: 1.4rem; border: 1px solid var(--ink); background: rgba(255, 255, 255, 0.28); }
+.neurological-evidence-grid span { display: block; margin-bottom: 0.9rem; color: var(--rust); font-family: var(--font-mono); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }
+.neurological-evidence-grid h3 { margin: 0 0 0.65rem; font-family: Georgia, serif; font-size: 1.25rem; line-height: 1.15; }
+.neurological-evidence-grid p { margin: 0; color: #49463f; font-size: 0.88rem; line-height: 1.6; }
+.neurological-causal-test { display: grid; grid-template-columns: minmax(190px, 0.35fr) 1fr; gap: 1.5rem; margin-top: 1rem; padding: 1.25rem 1.4rem; color: var(--paper); background: var(--ink); }
+.neurological-causal-test strong { font-family: Georgia, serif; font-size: 1.05rem; line-height: 1.3; }
+.neurological-causal-test p { margin: 0; color: #e2ddd2; font-size: 0.82rem; line-height: 1.6; }
+.neurological-table-section { border-bottom: 1px solid var(--line); }
+.neurological-table-wrap { overflow-x: auto; border: 1px solid var(--ink); }
+.neurological-table-wrap table { width: 100%; min-width: 900px; border-collapse: collapse; background: rgba(255, 255, 255, 0.24); }
+.neurological-table-wrap th,
+.neurological-table-wrap td { padding: 0.8rem; border-bottom: 1px solid var(--line); text-align: right; font-size: 0.77rem; }
+.neurological-table-wrap th:first-child { text-align: left; }
+.neurological-table-wrap thead th { color: var(--paper); background: var(--ink); font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.neurological-table-wrap tbody th { font-family: Georgia, serif; font-size: 0.9rem; }
+.neurological-table-wrap .is-state-row { font-weight: 800; background: #d8e6e1; }
+
+.health-hero {
+  padding: clamp(4.5rem, 9vw, 8rem) 0 3.5rem;
+}
+
+.health-hero h1 {
+  max-width: 980px;
+  margin: 0.55rem 0 1.25rem;
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 7vw, 6.8rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+}
+
+.health-hero .dek {
+  max-width: 830px;
+  font-size: clamp(1.05rem, 2vw, 1.38rem);
+  line-height: 1.6;
+}
+
+.health-principle {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.38fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  max-width: 980px;
+  margin-top: 2rem;
+  padding: 1.35rem 1.5rem;
+  border-left: 6px solid var(--water);
+  background: #e5efeb;
+}
+
+.health-principle.is-caution {
+  border-left-color: #b97520;
+  background: #f2e7d2;
+}
+
+.health-principle p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.health-section-heading {
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.health-section-heading h2 {
+  margin: 0.45rem 0 0.8rem;
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.health-section-heading > p:last-child {
+  max-width: 760px;
+  line-height: 1.6;
+}
+
+.health-module-grid,
+.health-method-summary,
+.health-context-section,
+.health-limitations,
+.health-sources {
+  padding: 4.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.health-module-grid > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--line);
+}
+
+.health-module {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.health-module.is-live {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.health-module > span {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.health-module > p {
+  margin: 3.5rem 0 0.5rem;
+  color: var(--rust);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.health-module.is-live > p { color: var(--water-light); }
+.health-module h3 { margin: 0 0 0.75rem; font-family: Georgia, serif; font-size: 1.5rem; font-weight: 500; }
+.health-module small { margin-top: auto; font-size: 0.82rem; line-height: 1.5; }
+.health-module.is-live:hover,
+.health-module.is-live:focus-visible { background: var(--water); }
+
+.health-method-summary > div,
+.health-limitations > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.health-method-summary article,
+.health-limitations article {
+  padding: 1.5rem;
+  border-top: 4px solid var(--water);
+  background: #eee5d5;
+}
+
+.health-method-summary article > strong { color: var(--rust); font-family: var(--font-mono); }
+.health-method-summary h3,
+.health-limitations h3 { margin: 0.65rem 0; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 500; }
+.health-method-summary p,
+.health-limitations p { margin-bottom: 0; line-height: 1.55; }
+
+.cancer-hero { padding-bottom: 2.5rem; }
+.cancer-status-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-block: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.cancer-status-strip > div { display: grid; gap: 0.45rem; padding: 1.25rem 4vw; border-right: 1px solid rgba(245, 241, 231, 0.2); }
+.cancer-status-strip span { color: var(--water-light); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.cancer-status-strip strong { font-size: 0.92rem; }
+.cancer-explorer-shell { padding: 5rem 0; }
+
+.public-health-map-section {
+  width: min(1420px, calc(100% - 48px));
+  margin-inline: auto;
+  padding: 5rem 0 1rem;
+}
+
+.public-health-layer-tabs {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  border: 1px solid var(--ink);
+}
+
+.public-health-layer-tabs button {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.7rem;
+  border: 0;
+  border-right: 1px solid var(--line);
+  color: var(--ink);
+  background: #eee5d5;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.public-health-layer-tabs button:last-child { border-right: 0; }
+.public-health-layer-tabs button i { width: 11px; height: 11px; border-radius: 50%; box-shadow: 0 0 0 2px #fff; }
+.public-health-layer-tabs button.is-active,
+.public-health-layer-tabs button:hover,
+.public-health-layer-tabs button:focus-visible { color: var(--paper); background: var(--ink); }
+
+.public-health-map-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(330px, 0.62fr);
+  grid-template-areas: "map panel" "list panel";
+  border: 1px solid var(--ink);
+  border-top: 0;
+  background: #f7f2e8;
+}
+
+.public-health-map-stage { grid-area: map; min-width: 0; position: relative; }
+.public-health-map-canvas { min-height: 590px; }
+.public-health-map-canvas .maplibregl-canvas { outline: none; }
+.public-health-map-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+  max-width: min(440px, calc(100% - 5.5rem));
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.65rem 0.8rem;
+  border: 2px solid var(--ink);
+  background: rgba(255, 253, 248, 0.94);
+  box-shadow: 0 3px 12px rgba(23, 39, 32, 0.18);
+}
+.public-health-map-badge span { font-size: 0.7rem; line-height: 1.35; }
+
+.public-health-map-panel {
+  grid-area: panel;
+  min-width: 0;
+  padding: 1.5rem;
+  border-left: 1px solid var(--ink);
+}
+.public-health-map-panel h3 { margin: 0.45rem 0 0.75rem; font-family: Georgia, serif; font-size: clamp(1.6rem, 2.5vw, 2.5rem); font-weight: 500; }
+.public-health-map-value { display: block; color: var(--rust); font-family: var(--font-mono); font-size: 1.05rem; }
+.public-health-map-panel dl { display: grid; gap: 0.45rem; margin: 1.25rem 0; }
+.public-health-map-panel dl div { display: grid; grid-template-columns: 105px 1fr; gap: 0.7rem; padding-bottom: 0.45rem; border-bottom: 1px solid var(--line); }
+.public-health-map-panel dt { color: #5c584f; font-size: 0.72rem; }
+.public-health-map-panel dd { margin: 0; font-size: 0.78rem; font-weight: 750; }
+.public-health-map-panel > p { font-size: 0.86rem; line-height: 1.55; }
+.public-health-map-panel .public-health-location-note { padding: 0.7rem 0.8rem; border: 1px solid var(--line); background: #eee7d9; font-size: 0.75rem; }
+.public-health-map-panel > a { display: inline-block; margin-top: 1rem; color: var(--water); font-size: 0.8rem; font-weight: 800; }
+.public-health-map-limit { margin-top: 1rem; padding: 0.9rem; border-left: 4px solid #b97520; background: #f2e7d2; }
+.public-health-map-limit p { margin: 0.35rem 0 0; font-size: 0.76rem; line-height: 1.45; }
+.public-health-related-records { padding-left: 1.1rem; font-size: 0.75rem; line-height: 1.45; }
+.public-health-related-records li { margin-bottom: 0.4rem; }
+.public-health-map-withheld { padding: 0.25rem 0 0.75rem; }
+.public-health-map-withheld h3 { margin-bottom: 1rem; }
+.public-health-map-withheld p { font-size: 0.86rem; line-height: 1.55; }
+
+.public-health-record-list {
+  grid-area: list;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  border-top: 1px solid var(--ink);
+}
+.public-health-record-list button {
+  min-width: 190px;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  text-align: left;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: #eee5d5;
+  cursor: pointer;
+}
+.public-health-record-list button.is-active,
+.public-health-record-list button:hover,
+.public-health-record-list button:focus-visible { background: #d8e6e1; }
+.public-health-record-list span { font-size: 0.72rem; }
+.public-health-record-list strong { font-family: var(--font-mono); font-size: 0.68rem; }
+.public-health-no-local-records { margin: 0; padding: 1rem; color: #5c584f; font-size: 0.78rem; }
+
+.cancer-metric-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cancer-metric-tabs button {
+  min-height: 44px;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  cursor: pointer;
+}
+
+.cancer-metric-tabs button.is-active,
+.cancer-metric-tabs button:hover,
+.cancer-metric-tabs button:focus-visible { color: var(--paper); background: var(--ink); }
+
+.cancer-comparison-panel,
+.cancer-trend-panel {
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.cancer-trend-panel { margin-top: 1rem; }
+.cancer-panel-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 0.58fr); gap: 2rem; align-items: end; }
+.cancer-panel-heading h3 { margin: 0.45rem 0 0; font-family: Georgia, serif; font-size: clamp(1.7rem, 3vw, 3rem); font-weight: 500; }
+.cancer-panel-heading > p { margin: 0; font-size: 0.86rem; line-height: 1.55; }
+.cancer-rate-list { display: grid; gap: 1rem; margin-top: 2rem; }
+.cancer-rate-row { display: grid; grid-template-columns: minmax(180px, 0.48fr) minmax(180px, 1fr) 64px; gap: 1rem; align-items: center; }
+.cancer-rate-label { display: grid; gap: 0.25rem; }
+.cancer-rate-label span { color: #5c584f; font-size: 0.72rem; }
+.cancer-rate-track { height: 20px; border: 1px solid var(--line); background: #ddd6c8; }
+.cancer-rate-track span { display: block; height: 100%; }
+.cancer-rate-value { font-family: var(--font-mono); text-align: right; }
+.is-erie { background: #08747f; }
+.is-niagara { background: #c05a33; }
+.is-new-york { background: #66724d; }
+.is-us { background: #222b38; }
+.is-nys { background: #88907d; }
+
+.trend-legend { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; font-size: 0.76rem; }
+.trend-legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.trend-legend i { width: 12px; height: 12px; }
+.cancer-trend-chart { height: 300px; display: grid; grid-template-columns: repeat(10, 1fr); gap: 0.65rem; align-items: end; margin-top: 1rem; padding: 1rem 0 0; border-bottom: 1px solid var(--ink); background: repeating-linear-gradient(to bottom, transparent 0 73px, rgba(23, 39, 32, 0.1) 74px 75px); }
+.trend-year { height: 100%; display: grid; grid-template-rows: 1fr auto; gap: 0.55rem; align-items: end; min-width: 0; }
+.trend-bars { height: 100%; display: flex; gap: 3px; align-items: end; justify-content: center; }
+.trend-bars i { width: min(11px, 28%); min-height: 8px; }
+.trend-year > span { font-family: var(--font-mono); font-size: 0.63rem; text-align: center; }
+.cancer-data-table { margin-top: 1.25rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+.cancer-data-table summary { font-weight: 750; cursor: pointer; }
+.cancer-data-table > div { overflow-x: auto; margin-top: 1rem; }
+.cancer-data-table table { width: 100%; min-width: 520px; border-collapse: collapse; }
+.cancer-data-table th,
+.cancer-data-table td { padding: 0.65rem; border-bottom: 1px solid var(--line); text-align: right; }
+.cancer-data-table th:first-child { text-align: left; }
+
+.health-context-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.health-context-links a { min-height: 150px; display: grid; align-content: space-between; gap: 1rem; padding: 1.4rem; border: 1px solid var(--ink); }
+.health-context-links a:hover,
+.health-context-links a:focus-visible { color: var(--paper); background: var(--water); }
+.health-context-links strong { font-family: Georgia, serif; font-size: 1.4rem; font-weight: 500; }
+.health-context-links span { font-size: 0.82rem; line-height: 1.5; }
+
+.health-limitations > div:last-child { grid-template-columns: repeat(3, 1fr); }
+.health-limitations article { border-top-color: #b97520; }
+.health-sources > div:last-of-type { border-top: 1px solid var(--ink); }
+.health-sources article { display: grid; grid-template-columns: 42px 1.2fr 1.2fr 1fr auto; gap: 1.2rem; align-items: start; padding: 1.15rem 0; border-bottom: 1px solid var(--line); }
+.health-sources article > span { font-family: var(--font-mono); }
+.health-sources h3,
+.health-sources p { margin: 0; }
+.health-sources h3 { font-size: 0.95rem; }
+.health-sources article p { font-size: 0.78rem; line-height: 1.5; }
+.health-sources article > div p { color: #5c584f; margin-top: 0.25rem; }
+.health-sources a { color: var(--water); font-size: 0.78rem; font-weight: 800; }
+.health-access-note { max-width: 840px; margin: 1.5rem 0; font-size: 0.8rem; line-height: 1.5; }
+.health-back-link { display: inline-block; margin-top: 1rem; font-weight: 800; }
+
+@media (max-width: 980px) {
+  .health-module-grid > div:last-child { grid-template-columns: repeat(2, 1fr); }
+  .cancer-status-strip { grid-template-columns: repeat(2, 1fr); }
+  .neurological-county-grid { grid-template-columns: 1fr; }
+  .neurological-evidence-grid { grid-template-columns: 1fr; }
+  .health-sources article { grid-template-columns: 34px 1fr 1fr; }
+  .health-sources article > p:last-of-type,
+  .health-sources article > a { grid-column: 2 / -1; }
+}
+
+@media (max-width: 700px) {
+  .health-hero,
+  .health-module-grid,
+  .health-method-summary,
+  .cancer-explorer-shell,
+  .public-health-map-section,
+  .health-context-section,
+  .health-limitations,
+  .health-sources { width: min(100% - 24px, 1240px); }
+  .neurological-story,
+  .neurological-cause-effect,
+  .neurological-table-section { width: min(100% - 24px, 1240px); }
+  .public-health-map-section { width: min(100% - 24px, 1420px); }
+  .health-principle,
+  .cancer-panel-heading { grid-template-columns: 1fr; gap: 0.8rem; }
+  .health-module-grid > div:last-child,
+  .health-method-summary > div,
+  .health-context-links,
+  .health-limitations > div:last-child { grid-template-columns: 1fr; }
+  .health-module { min-height: 220px; }
+  .cancer-status-strip > div { padding: 1rem 5vw; }
+  .cancer-rate-row { grid-template-columns: 1fr 58px; gap: 0.5rem; }
+  .cancer-rate-track { grid-row: 2; grid-column: 1 / -1; }
+  .cancer-rate-value { grid-column: 2; grid-row: 1; }
+  .cancer-trend-chart { height: 250px; gap: 0.25rem; }
+  .trend-bars { gap: 1px; }
+  .trend-year > span { writing-mode: vertical-rl; transform: rotate(180deg); }
+  .health-sources article { grid-template-columns: 28px 1fr; }
+  .health-sources article > p,
+  .health-sources article > a { grid-column: 2; }
+  .public-health-layer-tabs { grid-template-columns: 1fr 1fr; }
+  .public-health-layer-tabs button { justify-content: flex-start; border-bottom: 1px solid var(--line); }
+  .public-health-layer-tabs button:last-child { grid-column: 1 / -1; }
+  .public-health-map-grid { grid-template-columns: 1fr; grid-template-areas: "map" "panel" "list"; }
+  .public-health-map-canvas { min-height: 58svh; }
+  .public-health-map-panel { border-top: 1px solid var(--ink); border-left: 0; }
+  .neurological-county-card { padding: 1rem; }
+  .neurological-county-card dl { grid-template-columns: 1fr; }
+  .neurological-county-card dl div:nth-child(even) { padding-left: 0; border-left: 0; }
+  .neurological-causal-test { grid-template-columns: 1fr; gap: 0.65rem; }
+}
+
 /* Amherst soils, wetlands and foundation-record GIS */
 .amherst-research-hero h1 {
   max-width: 1050px;

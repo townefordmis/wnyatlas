@@ -111,6 +111,9 @@ export function SiteHeader() {
         >
           Airborne risks
         </Link>
+        <Link href="/health" onClick={() => setIsMenuOpen(false)}>
+          Health
+        </Link>
         <Link href="/enforcement" onClick={() => setIsMenuOpen(false)}>
           Enforcement
         </Link>
