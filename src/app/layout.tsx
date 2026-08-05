@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 
+import { SiteContactFooter } from "@/components/site-contact-footer";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.wnyatlas.com"),
   title: {
@@ -59,7 +61,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <SiteContactFooter />
+      </body>
     </html>
   );
 }

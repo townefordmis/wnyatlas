@@ -887,6 +887,33 @@ footer {
   font-size: 0.85rem;
 }
 
+.site-contact-footer {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, auto);
+  padding-block: 2.5rem;
+  border-top: 1px solid rgba(247, 241, 229, 0.18);
+}
+
+.site-contact-footer > div { max-width: 760px; }
+.site-contact-footer .eyebrow { margin: 0 0 0.6rem; color: var(--sky); }
+.site-contact-footer > div > strong { display: block; font: 500 1.35rem/1.25 Georgia, serif; }
+.site-contact-footer > div > p:last-child { margin: 0.7rem 0 0; color: rgba(247, 241, 229, 0.7); line-height: 1.5; }
+
+.masked-contact-email {
+  min-width: 320px;
+  padding: 1rem 1.2rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.masked-contact-email:hover,
+.masked-contact-email:focus-visible { background: var(--sky); }
+.masked-contact-email span { display: block; margin-bottom: 0.35rem; font-size: 0.72rem; font-weight: 850; }
+.masked-contact-email strong { font: 750 0.78rem var(--font-mono); }
+.masked-contact-email i { color: var(--rust); font-style: normal; }
+
 .visitor-count {
   grid-column: 1 / -1;
   margin: 0.25rem 0 -0.5rem;
@@ -2246,6 +2273,8 @@ footer {
 }
 
 @media (max-width: 640px) {
+  .site-contact-footer { grid-template-columns: 1fr; gap: 1.4rem; padding: 2rem 1rem; }
+  .masked-contact-email { width: 100%; min-width: 0; }
   .health-platform-hero,
   .health-topic-hero,
   .county-health-hero,
