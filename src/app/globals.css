@@ -2763,6 +2763,12 @@ footer {
   background: var(--ink);
 }
 
+.health-module.is-available {
+  color: var(--ink);
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
 .health-module > span {
   font-family: var(--font-mono);
   font-size: 0.74rem;
@@ -2780,8 +2786,13 @@ footer {
 .health-module.is-live > p { color: var(--water-light); }
 .health-module h3 { margin: 0 0 0.75rem; font-family: Georgia, serif; font-size: 1.5rem; font-weight: 500; }
 .health-module small { margin-top: auto; font-size: 0.82rem; line-height: 1.5; }
+.health-module-action { margin-top: 1rem; font-size: 0.72rem; letter-spacing: 0.04em; }
 .health-module.is-live:hover,
 .health-module.is-live:focus-visible { background: var(--water); }
+.health-module.is-available:hover,
+.health-module.is-available:focus-visible { color: var(--paper); background: var(--water); }
+.health-module.is-available:hover > p,
+.health-module.is-available:focus-visible > p { color: var(--water-light); }
 
 .health-method-summary > div,
 .health-limitations > div:last-child {

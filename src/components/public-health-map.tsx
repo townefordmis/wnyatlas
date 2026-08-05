@@ -53,11 +53,11 @@ function featureCollection(records: PublicHealthMapRecord[]) {
   };
 }
 
-export function PublicHealthMap() {
+export function PublicHealthMap({ initialLayer = "childhood-asthma" }: { initialLayer?: PublicHealthLayerId }) {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
-  const [activeLayer, setActiveLayer] = useState<PublicHealthLayerId>("childhood-asthma");
-  const [selectedId, setSelectedId] = useState(recordsFor("childhood-asthma")[0].id);
+  const [activeLayer, setActiveLayer] = useState<PublicHealthLayerId>(initialLayer);
+  const [selectedId, setSelectedId] = useState(recordsFor(initialLayer)[0]?.id ?? "");
   const activeRecords = useMemo(() => recordsFor(activeLayer), [activeLayer]);
   const selectedRecord =
     activeRecords.find((record) => record.id === selectedId) ?? activeRecords[0];
@@ -86,7 +86,7 @@ export function PublicHealthMap() {
           },
           healthRecords: {
             type: "geojson",
-            data: featureCollection(recordsFor("childhood-asthma")),
+            data: featureCollection(recordsFor(initialLayer)),
           },
         },
         layers: [
@@ -97,7 +97,7 @@ export function PublicHealthMap() {
             source: "healthRecords",
             paint: {
               "circle-radius": ["get", "radius"],
-              "circle-color": publicHealthLayerMeta["childhood-asthma"].color,
+              "circle-color": publicHealthLayerMeta[initialLayer].color,
               "circle-opacity": 0.78,
               "circle-stroke-color": "#fffdf8",
               "circle-stroke-width": 4,
@@ -134,7 +134,7 @@ export function PublicHealthMap() {
       instance.remove();
       map.current = null;
     };
-  }, []);
+  }, [initialLayer]);
 
   function chooseLayer(layer: PublicHealthLayerId) {
     const nextRecords = recordsFor(layer);
@@ -149,6 +149,7 @@ export function PublicHealthMap() {
     } else {
       instance?.fitBounds([[-79.08, 42.67], [-78.48, 43.30]], { padding: 70, duration: 500 });
     }
+    window.history.replaceState(null, "", `${window.location.pathname}?layer=${layer}#health-map`);
   }
 
   function chooseRecord(record: PublicHealthMapRecord) {

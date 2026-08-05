@@ -16,37 +16,49 @@ const modules = [
     status: "Open first release",
     description: "County rates, mortality, cancer types, historical trends, and state and national context.",
     href: "/health/cancer",
+    action: "Open cancer data",
   },
   {
     title: "Neurological conditions",
     status: "County comparison available",
     description: "2023 Parkinson's and parkinsonism prevalence, statewide rank, percentile, and limitations for eight WNY counties.",
     href: "/health/neurological",
+    action: "Open neurological data",
   },
   {
     title: "Birth defects",
     status: "Local data withheld",
     description: "Registry prevalence and methods; the current public file does not meet the Atlas local-geography rule.",
+    href: "/health/cancer?layer=birth-defects#health-map",
+    action: "Open state and national data",
   },
   {
     title: "Birth outcomes",
     status: "ZIP layers available",
     description: "Premature birth and low birth weight from the 2021–2023 NYSDOH ZIP-level perinatal profiles.",
+    href: "/health/cancer?layer=premature-birth#health-map",
+    action: "Open ZIP map",
   },
   {
     title: "Childhood asthma",
     status: "ZIP layer available",
     description: "Stable published 2022–2024 childhood asthma emergency-department visit rates by ZIP code.",
+    href: "/health/cancer?layer=childhood-asthma#health-map",
+    action: "Open ZIP map",
   },
   {
     title: "Childhood lead exposure",
     status: "Map layer available",
     description: "Testing coverage, elevated blood lead levels, housing age, and documented industrial context.",
+    href: "/health/cancer?layer=childhood-lead#health-map",
+    action: "Open ZIP map",
   },
   {
     title: "Drinking water",
     status: "Map layer available",
     description: "Public water-system sources, sampling, compliance history, and consumer reports.",
+    href: "/health/cancer?layer=drinking-water#health-map",
+    action: "Open county map",
   },
 ];
 
@@ -87,14 +99,17 @@ export default function PublicHealthAtlasPage() {
                 <p>{module.status}</p>
                 <h3>{module.title}</h3>
                 <small>{module.description}</small>
+                <strong className="health-module-action">{module.action} →</strong>
               </>
             );
-            return module.href ? (
-              <Link className="health-module is-live" href={module.href} key={module.title}>
+            return (
+              <Link
+                className={`health-module ${index < 2 ? "is-live" : "is-available"}`}
+                href={module.href}
+                key={module.title}
+              >
                 {content}
               </Link>
-            ) : (
-              <article className="health-module" key={module.title}>{content}</article>
             );
           })}
         </div>

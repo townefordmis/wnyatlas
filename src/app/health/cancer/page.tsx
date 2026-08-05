@@ -4,7 +4,11 @@ import Link from "next/link";
 import { PublicHealthMap } from "@/components/public-health-map";
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
-import { publicHealthSources } from "@/data/public-health-cancer";
+import {
+  publicHealthLayerMeta,
+  publicHealthSources,
+  type PublicHealthLayerId,
+} from "@/data/public-health-cancer";
 
 export const metadata: Metadata = {
   title: "Cancer Data | Public Health Atlas",
@@ -20,7 +24,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function CancerAtlasPage() {
+type CancerAtlasPageProps = {
+  searchParams: Promise<{ layer?: string | string[] }>;
+};
+
+export default async function CancerAtlasPage({ searchParams }: CancerAtlasPageProps) {
+  const requestedLayer = (await searchParams).layer;
+  const initialLayer: PublicHealthLayerId =
+    typeof requestedLayer === "string" && requestedLayer in publicHealthLayerMeta
+      ? requestedLayer as PublicHealthLayerId
+      : "childhood-asthma";
   const datasetSchema = {
     "@context": "https://schema.org",
     "@type": "Dataset",
@@ -65,7 +78,7 @@ export default function CancerAtlasPage() {
         <div><span>Latest registry portal</span><strong>Through 2023</strong></div>
       </section>
 
-      <section className="public-health-map-section" aria-labelledby="health-map-title">
+      <section id="health-map" className="public-health-map-section" aria-labelledby="health-map-title">
         <div className="health-section-heading">
           <p className="eyebrow">Shared public-health map</p>
           <h2 id="health-map-title">Local data only on the map.</h2>
@@ -79,7 +92,7 @@ export default function CancerAtlasPage() {
             health or environmental risk score.
           </p>
         </div>
-        <PublicHealthMap />
+        <PublicHealthMap initialLayer={initialLayer} />
       </section>
 
       <section className="health-context-section">
