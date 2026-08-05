@@ -914,6 +914,15 @@ footer {
 .masked-contact-email strong { font: 750 0.78rem var(--font-mono); }
 .masked-contact-email i { color: var(--rust); font-style: normal; }
 
+.site-ai-disclosure {
+  grid-column: 1 / -1;
+  max-width: none !important;
+  padding-top: 1.35rem;
+  border-top: 1px solid rgba(247, 241, 229, 0.18);
+}
+.site-ai-disclosure strong { color: var(--sky); font: 800 0.68rem var(--font-mono) !important; letter-spacing: 0.08em; text-transform: uppercase; }
+.site-ai-disclosure p { max-width: 1050px; margin: 0.55rem 0 0; color: rgba(247, 241, 229, 0.7); font-size: 0.75rem; line-height: 1.55; }
+
 .visitor-count {
   grid-column: 1 / -1;
   margin: 0.25rem 0 -0.5rem;
