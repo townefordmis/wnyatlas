@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import * as maplibregl from "maplibre-gl";
-import type { GeoJSONSource, Map as MapLibreMap } from "maplibre-gl";
+import { useState } from "react";
 
 import { PublicHealthMap } from "@/components/public-health-map";
 import { healthSearchCounties } from "@/data/health-search-catalog";
@@ -28,21 +26,17 @@ function formatValue(record: HealthCountyRecord | undefined) {
   return record.value.toLocaleString("en-US", { maximumFractionDigits: 1 });
 }
 
-function mapData(records: HealthCountyRecord[]) {
-  const values = records.flatMap((record) => record.value === null ? [] : [record.value]);
+function countyPoint(record: HealthCountyRecord, records: HealthCountyRecord[]) {
+  const values = records.flatMap((item) => item.value === null ? [] : [item.value]);
   const minimum = Math.min(...values, 0);
   const maximum = Math.max(...values, 1);
+  const ratio = record.value === null || maximum === minimum ? 0.5 : (record.value - minimum) / (maximum - minimum);
+  const longitude = record.longitude ?? -78.55;
+  const latitude = record.latitude ?? 42.75;
   return {
-    type: "FeatureCollection" as const,
-    features: records.flatMap((record) => {
-      if (record.latitude === null || record.longitude === null || record.value === null) return [];
-      const ratio = maximum === minimum ? 0.5 : (record.value - minimum) / (maximum - minimum);
-      return [{
-        type: "Feature" as const,
-        properties: { county: record.county, radius: 11 + ratio * 9, opacity: 0.58 + ratio * 0.34 },
-        geometry: { type: "Point" as const, coordinates: [record.longitude, record.latitude] },
-      }];
-    }),
+    left: `${Math.max(7, Math.min(93, ((longitude + 79.85) / 2.2) * 86 + 7))}%`,
+    top: `${Math.max(7, Math.min(88, ((43.45 - latitude) / 1.65) * 81 + 7))}%`,
+    size: 30 + ratio * 20,
   };
 }
 
@@ -66,9 +60,6 @@ export function HealthTopicExplorer({ topic, initialIndicator, initialCounty, ex
     initialCounty && wnyCountyNames.includes(initialCounty as (typeof wnyCountyNames)[number]) ? initialCounty : "Erie",
   );
   const [peerView, setPeerView] = useState<"all" | "wny" | "population" | "neighbors">("all");
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<MapLibreMap | null>(null);
-  const indicatorRef = useRef(indicatorId);
   const records = wnyFor(indicatorId);
   const selected = records.find((record) => record.county === county) ?? records[0];
   const state = recordFor(indicatorId, "New York State");
@@ -80,78 +71,6 @@ export function HealthTopicExplorer({ topic, initialIndicator, initialCounty, ex
     ? ((selected.value / state.value) - 1) * 100
     : null;
   const trendRecords = allTrendRecords.filter((record) => record.indicatorId === indicatorId && record.county === county).sort((a, b) => a.year.localeCompare(b.year));
-
-  useEffect(() => { indicatorRef.current = indicatorId; }, [indicatorId]);
-
-  useEffect(() => {
-    if (!mapContainer.current || map.current || !indicatorId) return;
-    maplibregl.setWorkerUrl("/maplibre/maplibre-gl-worker.mjs");
-    const instance = new maplibregl.Map({
-      container: mapContainer.current,
-      center: [-78.55, 42.78],
-      zoom: 6.9,
-      minZoom: 6.2,
-      maxZoom: 11,
-      cooperativeGestures: window.matchMedia("(max-width: 700px)").matches,
-      attributionControl: false,
-      style: {
-        version: 8,
-        sources: {
-          osm: { type: "raster", tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"], tileSize: 256, attribution: "© OpenStreetMap contributors" },
-          countyHealth: { type: "geojson", data: mapData(records) },
-        },
-        layers: [
-          { id: "osm", type: "raster", source: "osm" },
-          {
-            id: "county-health",
-            type: "circle",
-            source: "countyHealth",
-            paint: {
-              "circle-radius": ["get", "radius"],
-              "circle-color": topic.color,
-              "circle-opacity": ["get", "opacity"],
-              "circle-stroke-color": "#fffdf8",
-              "circle-stroke-width": 4,
-            },
-          },
-        ],
-      },
-    });
-    instance.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
-    instance.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-left");
-    instance.on("click", "county-health", (event) => {
-      const nextCounty = event.features?.[0]?.properties?.county;
-      if (typeof nextCounty === "string") {
-        setCounty(nextCounty);
-        const params = new URLSearchParams({ indicator: indicatorRef.current, county: nextCounty });
-        if (explorerMode) params.set("topic", topic.slug);
-        window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}#explorer`);
-      }
-    });
-    instance.on("mouseenter", "county-health", () => { instance.getCanvas().style.cursor = "pointer"; });
-    instance.on("mouseleave", "county-health", () => { instance.getCanvas().style.cursor = ""; });
-    const resize = () => window.requestAnimationFrame(() => instance.resize());
-    const observer = new ResizeObserver(resize);
-    observer.observe(mapContainer.current);
-    window.addEventListener("resize", resize);
-    window.visualViewport?.addEventListener("resize", resize);
-    map.current = instance;
-    return () => {
-      observer.disconnect();
-      window.removeEventListener("resize", resize);
-      window.visualViewport?.removeEventListener("resize", resize);
-      instance.remove();
-      map.current = null;
-    };
-    // The map is initialized once; source updates are handled below.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  useEffect(() => {
-    const source = map.current?.getSource("countyHealth") as GeoJSONSource | undefined;
-    source?.setData(mapData(records));
-    map.current?.setPaintProperty("county-health", "circle-color", topic.color);
-  }, [records, topic.color]);
 
   function updateUrl(nextIndicator: string, nextCounty: string) {
     const params = new URLSearchParams();
@@ -172,8 +91,6 @@ export function HealthTopicExplorer({ topic, initialIndicator, initialCounty, ex
   function selectCounty(nextCounty: string) {
     setCounty(nextCounty);
     updateUrl(indicatorId, nextCounty);
-    const record = records.find((candidate) => candidate.county === nextCounty);
-    if (record?.latitude && record.longitude) map.current?.flyTo({ center: [record.longitude, record.latitude], zoom: 8.2 });
   }
 
   if (!topic.indicatorIds.length) {
@@ -235,8 +152,26 @@ export function HealthTopicExplorer({ topic, initialIndicator, initialCounty, ex
 
       <div className="health-explorer-grid">
         <div className="health-county-map-wrap">
-          <div ref={mapContainer} className="health-county-map" role="img" aria-label={`County reference map for ${labelFor(indicatorId)}`} />
-          <p>Circles mark county reference points and are sized by the selected county value. They are not patient locations.</p>
+          <div className="health-county-map" role="group" aria-label={`County reference plot for ${labelFor(indicatorId)}`}>
+            <span className="health-map-water" aria-hidden="true">Lake Erie</span>
+            <strong className="health-map-title">Western New York</strong>
+            {records.filter((record) => record.value !== null).map((record) => {
+              const point = countyPoint(record, records);
+              return (
+                <button
+                  type="button"
+                  className={record.county === selected?.county ? "is-selected" : ""}
+                  aria-label={`${record.county} County: ${formatValue(record)}`}
+                  onClick={() => selectCounty(record.county)}
+                  style={{ left: point.left, top: point.top, width: point.size, height: point.size, background: topic.color }}
+                  key={record.county}
+                >
+                  <span>{record.county}</span>
+                </button>
+              );
+            })}
+          </div>
+          <p>Circles show approximate county centers and are sized by the selected value. They are not patient locations.</p>
         </div>
         <aside className="health-stat-panel" style={{ borderTopColor: topic.color }}>
           <p className="record-label">{selected?.county ?? county} County</p>
