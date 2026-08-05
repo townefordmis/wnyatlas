@@ -16,7 +16,7 @@ export const healthSearchTopics = [
   ["childhood-asthma", "Childhood asthma", "ZIP asthma emergency department visits"],
   ["childhood-lead", "Childhood lead exposure", "ZIP blood lead testing and elevated levels"],
   ["drinking-water", "Public drinking water", "Water systems PFAS contaminants compliance and consumer reports"],
-  ["birth-defects", "Birth defects", "Birth Defects Registry surveillance and limitations"],
+  ["birth-defects", "Birth defects", "Down syndrome, chromosomal conditions, congenital defects, historical county surveillance, and registry limitations"],
 ] as const;
 
 export const healthSearchCounties = ["Allegany", "Cattaraugus", "Chautauqua", "Erie", "Genesee", "Niagara", "Orleans", "Wyoming"] as const;

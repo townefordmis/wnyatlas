@@ -2159,6 +2159,44 @@ footer {
 .health-topic-empty > strong { font: 500 2rem Georgia, serif; }
 .health-topic-empty > p { max-width: 800px; line-height: 1.6; }
 
+.birth-defects-evidence { width: min(100% - 48px, 1260px); margin: 70px auto; }
+.birth-defects-status { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 34px 0 72px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.birth-defects-status > div { min-height: 145px; padding: 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.birth-defects-status span,
+.birth-defects-status small { display: block; font-size: 0.7rem; }
+.birth-defects-status span { color: var(--rust); font-weight: 850; text-transform: uppercase; }
+.birth-defects-status strong { display: block; margin: 20px 0 8px; font: 500 2rem Georgia, serif; }
+.birth-defects-condition-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.birth-defects-condition-grid article { min-height: 255px; padding: 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.birth-defects-condition-grid article > p { min-height: 38px; color: var(--rust); font-size: 0.68rem; font-weight: 850; text-transform: uppercase; }
+.birth-defects-condition-grid h3 { min-height: 58px; font: 500 1.25rem/1.15 Georgia, serif; }
+.birth-defects-condition-grid strong { display: block; margin-top: 24px; font: 500 2.6rem Georgia, serif; }
+.birth-defects-condition-grid span,
+.birth-defects-condition-grid small { display: block; margin-top: 5px; font-size: 0.7rem; }
+.birth-defects-subheading { margin-top: 70px; }
+.birth-defects-two-column { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(560px, 1.2fr); gap: 34px; }
+.birth-defects-trend { display: grid; grid-template-columns: repeat(5, 1fr); min-height: 390px; padding: 28px 16px 16px; border: 1px solid var(--line); background: #fffdf8; }
+.birth-defects-trend > div { display: grid; grid-template-rows: 285px auto auto auto; gap: 5px; align-items: end; text-align: center; }
+.birth-defects-trend i { align-self: end; width: 52%; margin: 0 auto; background: #98618b; }
+.birth-defects-trend strong { font: 750 0.72rem var(--font-mono); }
+.birth-defects-trend span { font-weight: 850; }
+.birth-defects-trend small { font-size: 0.66rem; }
+.birth-defects-table { max-height: none; }
+.birth-defects-table .is-unstable,
+.birth-defects-table .is-stable { display: inline-block; padding: 4px 7px; font-size: 0.65rem; font-weight: 850; text-transform: uppercase; }
+.birth-defects-table .is-unstable { color: #7a301d; background: #f3d9cc; }
+.birth-defects-table .is-stable { color: #174a38; background: #d6ebdf; }
+.birth-defects-interpretation { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 70px; border-top: 6px solid #98618b; border-left: 1px solid var(--line); }
+.birth-defects-interpretation article { min-height: 210px; padding: 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.birth-defects-interpretation strong { font: 500 1.25rem Georgia, serif; }
+.birth-defects-interpretation p { font-size: 0.8rem; line-height: 1.6; }
+.birth-defects-sources { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 70px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.birth-defects-sources article { min-height: 250px; padding: 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.birth-defects-sources article > p:first-child { color: var(--rust); font: 800 0.68rem var(--font-mono); text-transform: uppercase; }
+.birth-defects-sources h3 { font: 500 1.3rem Georgia, serif; }
+.birth-defects-sources p { line-height: 1.55; }
+.birth-defects-sources a { font-weight: 850; }
+
 .health-source-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .health-source-cards article { min-height: 220px; padding: 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .health-source-cards article > p:first-child { color: var(--rust); font: 800 0.7rem var(--font-mono); text-transform: uppercase; }
@@ -2200,6 +2238,11 @@ footer {
   .county-featured-grid > div:last-child { grid-template-columns: repeat(2, 1fr); }
   .county-topic-groups > article { grid-template-columns: 1fr; }
   .county-topic-groups > article > div:first-child { border-right: 0; border-bottom: 1px solid var(--line); }
+  .birth-defects-status,
+  .birth-defects-condition-grid,
+  .birth-defects-interpretation { grid-template-columns: repeat(2, 1fr); }
+  .birth-defects-two-column { grid-template-columns: 1fr; }
+  .birth-defects-sources { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
@@ -2233,6 +2276,15 @@ footer {
   .health-download-row { align-items: stretch; flex-direction: column; }
   .health-download-row a { text-align: center; }
   .county-topic-groups > article > div:last-child > div { grid-template-columns: 1fr auto; }
+  .birth-defects-evidence { width: min(100% - 24px, 1260px); }
+  .birth-defects-status,
+  .birth-defects-condition-grid,
+  .birth-defects-interpretation { grid-template-columns: 1fr; }
+  .birth-defects-condition-grid article,
+  .birth-defects-interpretation article { min-height: 0; }
+  .birth-defects-trend { min-height: 320px; padding-inline: 5px; }
+  .birth-defects-trend > div { grid-template-rows: 220px auto auto auto; }
+  .birth-defects-trend i { width: 62%; }
 }
 
 .places-index {

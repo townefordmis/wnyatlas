@@ -231,12 +231,12 @@ export const healthTopics: HealthTopic[] = [
     title: "Birth defects",
     shortTitle: "Birth defects",
     eyebrow: "Registry surveillance",
-    description: "Registry methods, historical county context, and current public-data limitations.",
-    caution: "The current public file does not support a complete contemporary eight-county comparison. WNYAtlas will not infer missing local rates.",
+    description: "Chromosomal conditions, recent regional trends, historical WNY county records, registry methods, and current local-data limitations.",
+    caution: "Current public values use NYS-excluding-NYC geography, while the county series ends in 2014. WNYAtlas keeps them separate and never ranks rates based on fewer than 12 cases.",
     color: "#98618b",
     indicatorIds: [],
     localLayer: "birth-defects",
-    sourceNote: "This is deliberately included as a weak-data review candidate. The most recent public file is statewide/regional, while older county material is historical.",
+    sourceNote: "The latest public file is statewide/regional. Historical county counts remain available through 2014 and are explicitly labeled when statistically unstable.",
   },
 ];
 

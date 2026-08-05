@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { BirthDefectsEvidence } from "@/components/birth-defects-evidence";
 import { HealthTopicExplorer } from "@/components/health-topic-explorer";
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
@@ -69,7 +70,11 @@ export default async function HealthTopicPage({ params, searchParams }: Props) {
         <Link href="/health/county/erie">County profiles</Link>
       </nav>
 
-      <HealthTopicExplorer topic={topic} initialIndicator={indicator} initialCounty={county} platformTopics={healthTopics} countyRecords={topicCountyRecords} trendRecords={topicTrendRecords} />
+      {topic.slug === "birth-defects" ? (
+        <BirthDefectsEvidence />
+      ) : (
+        <HealthTopicExplorer topic={topic} initialIndicator={indicator} initialCounty={county} platformTopics={healthTopics} countyRecords={topicCountyRecords} trendRecords={topicTrendRecords} />
+      )}
 
       <section className="health-context-section">
         <div className="health-section-heading">
