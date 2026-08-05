@@ -96,16 +96,16 @@ export const cancerMetrics: CancerMetric[] = [
 ];
 
 export const allCancerIncidenceTrend = [
-  { year: 2011, erie: 566.4, niagara: 526.2, nysExcludingNyc: 523.3 },
-  { year: 2012, erie: 563.1, niagara: 504.0, nysExcludingNyc: 505.0 },
-  { year: 2013, erie: 545.9, niagara: 562.4, nysExcludingNyc: 513.5 },
-  { year: 2014, erie: 536.2, niagara: 544.6, nysExcludingNyc: 508.4 },
-  { year: 2015, erie: 549.1, niagara: 550.7, nysExcludingNyc: 511.9 },
-  { year: 2016, erie: 554.6, niagara: 541.4, nysExcludingNyc: 511.1 },
-  { year: 2017, erie: 534.1, niagara: 572.9, nysExcludingNyc: 513.6 },
-  { year: 2018, erie: 539.9, niagara: 545.8, nysExcludingNyc: 507.7 },
-  { year: 2019, erie: 554.5, niagara: 581.6, nysExcludingNyc: 516.7 },
-  { year: 2020, erie: 482.8, niagara: 520.3, nysExcludingNyc: 458.4 },
+  { year: 2011, erie: 566.4, niagara: 526.2, nysExcludingNyc: 523.3, unitedStates: 472.2 },
+  { year: 2012, erie: 563.1, niagara: 504.0, nysExcludingNyc: 505.0, unitedStates: 460.1 },
+  { year: 2013, erie: 545.9, niagara: 562.4, nysExcludingNyc: 513.5, unitedStates: 460.5 },
+  { year: 2014, erie: 536.2, niagara: 544.6, nysExcludingNyc: 508.4, unitedStates: 458.7 },
+  { year: 2015, erie: 549.1, niagara: 550.7, nysExcludingNyc: 511.9, unitedStates: 462.0 },
+  { year: 2016, erie: 554.6, niagara: 541.4, nysExcludingNyc: 511.1, unitedStates: 460.4 },
+  { year: 2017, erie: 534.1, niagara: 572.9, nysExcludingNyc: 513.6, unitedStates: 460.2 },
+  { year: 2018, erie: 539.9, niagara: 545.8, nysExcludingNyc: 507.7, unitedStates: 460.0 },
+  { year: 2019, erie: 554.5, niagara: 581.6, nysExcludingNyc: 516.7, unitedStates: 464.7 },
+  { year: 2020, erie: 482.8, niagara: 520.3, nysExcludingNyc: 458.4, unitedStates: 423.2 },
 ];
 
 export type PublicHealthLayerId =
@@ -226,15 +226,99 @@ export const publicHealthLayerMeta: Record<
   "drinking-water": {
     label: "Public drinking-water systems",
     shortLabel: "Drinking water",
-    unit: "EPA SDWIS county-served records",
+    unit: "Active EPA-regulated public water systems",
     color: "#176b87",
     geography: "County summary marker",
     sourceUrl:
       "https://www.epa.gov/waterdata/safe-drinking-water-information-system",
     limitation:
-      "Markers summarize EPA county-served records, not service-area boundaries. District and interconnected-system records may overlap and are not a risk score.",
+      "Markers summarize active EPA-regulated systems serving each county, not service-area boundaries. The current federal extract does not populate ZIPs served for these systems.",
     mapAvailability:
-      "Mapped as public-system directory records. Future service-area polygons must come from an official boundary source.",
+      "Mapped as county reference markers. ZIP shading is withheld because EPA's current ZIP_CODES_SERVED field is blank for the active Erie and Niagara systems.",
+  },
+};
+
+export type PublicHealthComparisonRow = {
+  name: string;
+  value: number;
+  period: string;
+  className: "is-erie" | "is-niagara" | "is-new-york" | "is-us";
+};
+
+export type PublicHealthComparison = {
+  title: string;
+  unit: string;
+  explanation: string;
+  rows: PublicHealthComparisonRow[];
+  availabilityNote?: string;
+};
+
+export const publicHealthComparisons: Partial<Record<PublicHealthLayerId, PublicHealthComparison>> = {
+  "birth-defects": {
+    title: "Trisomy 21 prevalence",
+    unit: "Cases per 10,000 live births",
+    explanation:
+      "The New York public file does not provide Erie or Niagara County estimates. The chart therefore compares the published New York State excluding NYC reference with CDC's national 2022 estimate.",
+    rows: [
+      { name: "NYS excluding NYC", value: 14.47, period: "2022", className: "is-new-york" },
+      { name: "United States", value: 15.3, period: "2022", className: "is-us" },
+    ],
+    availabilityNote: "Erie and Niagara County values are not published in the state file and are not estimated here.",
+  },
+  "childhood-asthma": {
+    title: "Childhood asthma emergency-department visits",
+    unit: "Crude visits per 10,000 residents aged 0–17",
+    explanation:
+      "County and New York rates use NYSDOH SPARCS records. The national reference uses CDC's HCUP estimate and covers 2020, so its different period is shown directly on the row.",
+    rows: [
+      { name: "Erie County", value: 54.2, period: "2020–2022", className: "is-erie" },
+      { name: "Niagara County", value: 51.9, period: "2020–2022", className: "is-niagara" },
+      { name: "New York State", value: 64.1, period: "2020–2022", className: "is-new-york" },
+      { name: "United States", value: 36.4, period: "2020", className: "is-us" },
+    ],
+  },
+  "premature-birth": {
+    title: "Premature births before 37 weeks",
+    unit: "Percent of live births",
+    explanation:
+      "Erie, Niagara, and New York use 2021–2023 vital-record totals. The national reference is CDC's final 2023 rate; the definition is the same and the period difference is visible.",
+    rows: [
+      { name: "Erie County", value: 11.1, period: "2021–2023", className: "is-erie" },
+      { name: "Niagara County", value: 10.9, period: "2021–2023", className: "is-niagara" },
+      { name: "New York State", value: 9.6, period: "2021–2023", className: "is-new-york" },
+      { name: "United States", value: 10.41, period: "2023", className: "is-us" },
+    ],
+  },
+  "low-birth-weight": {
+    title: "Low-birthweight births below 2,500 grams",
+    unit: "Percent of live births",
+    explanation:
+      "Erie, Niagara, and New York use 2021–2023 vital-record totals. The national reference is CDC's final 2023 rate; the matching definition and differing period are printed here.",
+    rows: [
+      { name: "Erie County", value: 9.4, period: "2021–2023", className: "is-erie" },
+      { name: "Niagara County", value: 9.3, period: "2021–2023", className: "is-niagara" },
+      { name: "New York State", value: 8.5, period: "2021–2023", className: "is-new-york" },
+      { name: "United States", value: 8.58, period: "2023", className: "is-us" },
+    ],
+  },
+  "childhood-lead": {
+    title: "Childhood blood-lead surveillance",
+    unit: "No valid state-to-national comparison",
+    explanation:
+      "CDC says surveillance testing is targeted, is not population-based, and cannot be accurately compared between states or counties. WNYAtlas keeps the published local ZIP records visible without manufacturing a benchmark chart.",
+    rows: [],
+    availabilityNote: "A comparable Erie–Niagara–New York–United States chart is withheld by design.",
+  },
+  "drinking-water": {
+    title: "Active public water systems serving each county",
+    unit: "Active systems in EPA ECHO's July 2026 SDWA extract",
+    explanation:
+      "These counts include community and non-community systems. They describe the regulated-system directory—not contaminant levels, violations, or health risk.",
+    rows: [
+      { name: "Erie County", value: 107, period: "July 2026", className: "is-erie" },
+      { name: "Niagara County", value: 21, period: "July 2026", className: "is-niagara" },
+    ],
+    availabilityNote: "EPA's ZIP_CODES_SERVED field is blank for all 128 active systems in this extract, so ZIP shading and state/national count comparisons are not shown.",
   },
 };
 
@@ -285,12 +369,12 @@ const countyHealthRecords: PublicHealthMapRecord[] = [
     name: "Erie County system records",
     geography: "Systems reported as serving Erie County, New York",
     coordinates: [-78.795544, 42.888143],
-    value: 293,
-    displayValue: "293 county-served records",
-    period: "EPA SDWIS query · August 2026",
+    value: 107,
+    displayValue: "107 active public water systems",
+    period: "EPA ECHO SDWA extract · July 2026",
     radius: 30,
     detail:
-      "The EPA county-served table includes public systems, water districts, and interconnected records. It is a directory count, not a count of independent treatment plants.",
+      "The current EPA extract lists 107 active systems serving Erie County: 44 community, 60 transient non-community, and 3 non-transient non-community systems. This is a directory count, not a water-quality score.",
     related: [
       "Buffalo Water Authority · NY1400422 · population served 276,000",
       "ECWA Direct · NY1400443 · population served 228,869",
@@ -305,12 +389,12 @@ const countyHealthRecords: PublicHealthMapRecord[] = [
     name: "Niagara County system records",
     geography: "Systems reported as serving Niagara County, New York",
     coordinates: [-78.856419, 43.134634],
-    value: 25,
-    displayValue: "25 county-served records",
-    period: "EPA SDWIS query · August 2026",
+    value: 21,
+    displayValue: "21 active public water systems",
+    period: "EPA ECHO SDWA extract · July 2026",
     radius: 24,
     detail:
-      "The EPA county-served table includes public systems, water districts, and interconnected records. It is a directory count, not a count of independent treatment plants.",
+      "The current EPA extract lists 21 active community water systems serving Niagara County. This is a directory count, not a water-quality score.",
     related: [
       "Niagara Falls Water Board · NY3100568 · population served 55,000",
       "North Tonawanda City · NY3100572 · population served 33,262",
@@ -443,8 +527,15 @@ export const publicHealthSources = [
     title: "State Cancer Profiles: New York",
     agency: "National Cancer Institute and Centers for Disease Control and Prevention",
     url: "https://statecancerprofiles.cancer.gov/quick-profiles/index.php?statename=newyork",
-    coverage: "New York and United States reference rates by cancer site",
-    updated: "Incidence 2018–2022; mortality 2019–2023",
+    coverage: "New York and United States reference rates by cancer site, including the annual U.S. all-cancer trend",
+    updated: "Incidence references through 2022; this page displays the comparable 2011–2020 observed trend",
+  },
+  {
+    title: "Historical Trends: United States, All Cancer Sites",
+    agency: "National Cancer Institute and Centers for Disease Control and Prevention",
+    url: "https://www.statecancerprofiles.cancer.gov/historicaltrend/index.php?age=001&cancer=001&datatype=1&displayCI=false&graph=2&output=4&race=00&ruralurban=0&sex=0&stage=999&statefips=00&year=0",
+    coverage: "Annual observed U.S. incidence rates for all cancer sites, all races, all ages, and both sexes",
+    updated: "The WNYAtlas historical chart uses observed rates for 2011–2020",
   },
   {
     title: "About age-adjusted rates and confidence intervals",
@@ -468,6 +559,13 @@ export const publicHealthSources = [
     updated: "Updated May 18, 2026; data through 2022",
   },
   {
+    title: "U.S. Birth Defects Prevalence Estimates, 2018–2022",
+    agency: "Centers for Disease Control and Prevention",
+    url: "https://www.cdc.gov/birth-defects/media/pdfs/2026/04/Data-Brief-Birth-Defects-National-Estimates-2018-2022.pdf",
+    coverage: "National annual and pooled prevalence estimates for selected defects, including Trisomy 21",
+    updated: "Published April 2026; the comparison uses the 2022 Trisomy 21 estimate",
+  },
+  {
     title: "Prevention Agenda Tracking Indicators: Subcounty Data",
     agency: "New York State Department of Health",
     url: "https://apps.health.ny.gov/public/tabvis/PHIG_Public/pa/",
@@ -475,11 +573,39 @@ export const publicHealthSources = [
     updated: "Current public export; mapped period 2022–2024",
   },
   {
+    title: "New York State Asthma Dashboard",
+    agency: "New York State Department of Health",
+    url: "https://apps.health.ny.gov/public/tabvis/PHIG_Public/asthma/",
+    coverage: "County and statewide childhood asthma emergency-department visit rates",
+    updated: "Comparison period 2020–2022; SPARCS data as of July 2024",
+  },
+  {
+    title: "Most Recent National Asthma Data",
+    agency: "Centers for Disease Control and Prevention",
+    url: "https://www.cdc.gov/asthma-data/about/most-recent-asthma-data.html",
+    coverage: "National childhood asthma emergency-department visit rate from HCUP",
+    updated: "National comparison year 2020",
+  },
+  {
     title: "County/ZIP Code Perinatal Data Profile",
     agency: "New York State Department of Health Vital Statistics Program",
     url: "https://www.health.ny.gov/statistics/chac/perinatal/",
     coverage: "ZIP-level premature-birth and low-birthweight percentages with three-year birth denominators",
     updated: "Revised February 2026; mapped period 2021–2023",
+  },
+  {
+    title: "County Health Indicators by Race and Ethnicity",
+    agency: "New York State Department of Health",
+    url: "https://www.health.ny.gov/community/health_equity/reports/",
+    coverage: "Published Erie, Niagara, and statewide premature-birth and low-birthweight totals",
+    updated: "Comparison period 2021–2023",
+  },
+  {
+    title: "Birthweight and Gestation",
+    agency: "Centers for Disease Control and Prevention, National Center for Health Statistics",
+    url: "https://www.cdc.gov/nchs/fastats/birthweight.htm",
+    coverage: "Final national premature-birth and low-birthweight percentages",
+    updated: "National comparison year 2023",
   },
   {
     title: "2025 ZIP Code Tabulation Areas Gazetteer",
@@ -496,10 +622,24 @@ export const publicHealthSources = [
     updated: "Updated May 14, 2026; mapped year 2024",
   },
   {
+    title: "Childhood Blood Lead Surveillance: National Data",
+    agency: "Centers for Disease Control and Prevention",
+    url: "https://www.cdc.gov/lead-prevention/php/data/national-surveillance-data.html",
+    coverage: "National surveillance methods and the warning against state or county comparisons",
+    updated: "Reviewed August 2026",
+  },
+  {
     title: "Safe Drinking Water Information System",
     agency: "United States Environmental Protection Agency",
     url: "https://www.epa.gov/waterdata/safe-drinking-water-information-system",
     coverage: "Public water-system identity, population served, compliance, violations, and enforcement records",
-    updated: "County-served records queried August 2026",
+    updated: "EPA ECHO system-search extract published July 21, 2026",
+  },
+  {
+    title: "SDWA Data Download Summary and Data Element Dictionary",
+    agency: "United States Environmental Protection Agency ECHO",
+    url: "https://echo.epa.gov/tools/data-downloads/sdwa-download-summary",
+    coverage: "Definitions for active-system status, system type, service areas, and compliance fields",
+    updated: "Current federal data dictionary reviewed August 2026",
   },
 ];

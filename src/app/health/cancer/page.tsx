@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { CancerComparison } from "@/components/cancer-comparison";
 import { PublicHealthMap } from "@/components/public-health-map";
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
@@ -81,20 +80,6 @@ export default function CancerAtlasPage() {
           </p>
         </div>
         <PublicHealthMap />
-      </section>
-
-      <section className="cancer-explorer-shell" aria-labelledby="comparison-title">
-        <div className="health-section-heading">
-          <p className="eyebrow">Community comparison</p>
-          <h2 id="comparison-title">Rates are comparable only when their definitions travel with them.</h2>
-          <p>
-            County figures below come from a fixed NYSDOH public-data extract so
-            this first release can be reproduced. New York and U.S. references use
-            the current NCI/CDC periods; differing years are labeled rather than
-            silently mixed.
-          </p>
-        </div>
-        <CancerComparison />
       </section>
 
       <section className="health-context-section">

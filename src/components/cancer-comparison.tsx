@@ -7,7 +7,7 @@ import {
   cancerMetrics,
 } from "@/data/public-health-cancer";
 
-const RATE_MIN = 430;
+const RATE_MIN = 410;
 const RATE_MAX = 600;
 
 export function CancerComparison() {
@@ -118,9 +118,10 @@ export function CancerComparison() {
           <span><i className="is-erie" /> Erie</span>
           <span><i className="is-niagara" /> Niagara</span>
           <span><i className="is-nys" /> NYS excluding NYC</span>
+          <span><i className="is-us" /> United States</span>
         </div>
 
-        <div className="cancer-trend-chart" role="img" aria-label="Bar chart of annual all-cancer incidence rates for Erie County, Niagara County, and New York State excluding New York City from 2011 through 2020">
+        <div className="cancer-trend-chart" role="img" aria-label="Bar chart of annual all-cancer incidence rates for Erie County, Niagara County, New York State excluding New York City, and the United States from 2011 through 2020">
           {allCancerIncidenceTrend.map((item) => {
             const height = (value: number) =>
               `${Math.max(8, ((value - RATE_MIN) / (RATE_MAX - RATE_MIN)) * 100)}%`;
@@ -130,6 +131,7 @@ export function CancerComparison() {
                   <i className="is-erie" style={{ height: height(item.erie) }} title={`Erie ${item.year}: ${item.erie}`} />
                   <i className="is-niagara" style={{ height: height(item.niagara) }} title={`Niagara ${item.year}: ${item.niagara}`} />
                   <i className="is-nys" style={{ height: height(item.nysExcludingNyc) }} title={`NYS excluding NYC ${item.year}: ${item.nysExcludingNyc}`} />
+                  <i className="is-us" style={{ height: height(item.unitedStates) }} title={`United States ${item.year}: ${item.unitedStates}`} />
                 </div>
                 <span>{item.year}</span>
               </div>
@@ -142,7 +144,7 @@ export function CancerComparison() {
           <div>
             <table>
               <thead>
-                <tr><th>Year</th><th>Erie</th><th>Niagara</th><th>NYS excluding NYC</th></tr>
+                <tr><th>Year</th><th>Erie</th><th>Niagara</th><th>NYS excluding NYC</th><th>United States</th></tr>
               </thead>
               <tbody>
                 {allCancerIncidenceTrend.map((item) => (
@@ -151,6 +153,7 @@ export function CancerComparison() {
                     <td>{item.erie.toFixed(1)}</td>
                     <td>{item.niagara.toFixed(1)}</td>
                     <td>{item.nysExcludingNyc.toFixed(1)}</td>
+                    <td>{item.unitedStates.toFixed(1)}</td>
                   </tr>
                 ))}
               </tbody>

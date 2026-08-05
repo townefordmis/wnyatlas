@@ -2925,6 +2925,9 @@ footer {
 .public-health-record-list span { font-size: 0.72rem; }
 .public-health-record-list strong { font-family: var(--font-mono); font-size: 0.68rem; }
 .public-health-no-local-records { margin: 0; padding: 1rem; color: #5c584f; font-size: 0.78rem; }
+.public-health-active-detail { padding-top: 4rem; }
+.public-health-comparison-note,
+.public-health-comparison-withheld { margin: 1.25rem 0 0; padding: 0.9rem 1rem; border-left: 4px solid #b97520; background: #f2e7d2; font-size: 0.8rem; line-height: 1.55; }
 
 .cancer-metric-tabs {
   display: flex;
