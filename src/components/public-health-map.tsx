@@ -53,7 +53,7 @@ function featureCollection(records: PublicHealthMapRecord[]) {
   };
 }
 
-export function PublicHealthMap({ initialLayer = "childhood-asthma" }: { initialLayer?: PublicHealthLayerId }) {
+export function PublicHealthMap({ initialLayer = "childhood-asthma", singleLayer = false }: { initialLayer?: PublicHealthLayerId; singleLayer?: boolean }) {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
   const [activeLayer, setActiveLayer] = useState<PublicHealthLayerId>(initialLayer);
@@ -159,7 +159,7 @@ export function PublicHealthMap({ initialLayer = "childhood-asthma" }: { initial
 
   return (
     <div className="public-health-map-shell">
-      <div className="public-health-layer-tabs" role="tablist" aria-label="Choose a public health map layer">
+      {!singleLayer && <div className="public-health-layer-tabs" role="tablist" aria-label="Choose a public health map layer">
         {layerOrder.map((layer) => (
           <button
             key={layer}
@@ -175,7 +175,7 @@ export function PublicHealthMap({ initialLayer = "childhood-asthma" }: { initial
             {publicHealthLayerMeta[layer].shortLabel}
           </button>
         ))}
-      </div>
+      </div>}
 
       <div
         id="health-layer-panel"

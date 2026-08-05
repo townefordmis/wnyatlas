@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { chemicalProfiles } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
+import { healthTopics, wnyCountyNames } from "@/data/health-platform";
 
 const BASE_URL = "https://www.wnyatlas.com";
 
@@ -79,5 +80,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  return [...publicPages, ...chemicalPages, ...placePages];
+  const healthPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/health/explorer`, changeFrequency: "monthly", priority: 0.9 },
+    ...healthTopics.map((topic) => ({ url: `${BASE_URL}/health/${topic.slug}`, changeFrequency: "monthly" as const, priority: 0.78 })),
+    ...wnyCountyNames.map((county) => ({ url: `${BASE_URL}/health/county/${county.toLowerCase()}`, changeFrequency: "monthly" as const, priority: 0.82 })),
+  ];
+
+  return [...publicPages, ...healthPages, ...chemicalPages, ...placePages];
 }

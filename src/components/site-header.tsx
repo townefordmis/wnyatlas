@@ -7,6 +7,7 @@ import { FormEvent, useMemo, useState } from "react";
 
 import { chemicalProfiles } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
+import { healthSearchCounties, healthSearchTopics } from "@/data/health-search-catalog";
 
 const MAX_RESULTS = 6;
 
@@ -49,7 +50,13 @@ export function SiteHeader() {
         detail: `Chemical guide · ${chemical.family}`,
         image: undefined,
       }));
-    return [...chemicalResults, ...placeResults].slice(0, MAX_RESULTS);
+    const healthResults = healthSearchTopics
+      .filter((topic) => topic.some((value) => value.toLowerCase().includes(normalizedQuery)))
+      .map(([slug, title]) => ({ id: `health-${slug}`, href: `/health/${slug}`, name: title, detail: "Public Health Atlas", image: undefined }));
+    const countyHealthResults = healthSearchCounties
+      .filter((county) => `${county} county health`.toLowerCase().includes(normalizedQuery))
+      .map((county) => ({ id: `health-county-${county}`, href: `/health/county/${county.toLowerCase()}`, name: `${county} County health profile`, detail: "Public Health Atlas · County profile", image: undefined }));
+    return [...healthResults, ...countyHealthResults, ...chemicalResults, ...placeResults].slice(0, MAX_RESULTS);
   }, [query]);
 
   function submitSearch(event: FormEvent<HTMLFormElement>) {

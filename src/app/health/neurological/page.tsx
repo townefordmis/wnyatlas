@@ -70,6 +70,10 @@ export default function NeurologicalHealthPage() {
         <div><span>Rate type</span><strong>Crude · not age-adjusted</strong></div>
       </section>
 
+      <nav className="health-subnav" aria-label="Public Health Atlas navigation">
+        <Link href="/health">Overview</Link><Link href="/health/explorer">Health Explorer</Link><Link href="/health/cancer">Cancer</Link><Link href="/health/county/erie">County profiles</Link>
+      </nav>
+
       <section className="neurological-story" aria-labelledby="neurological-story-title">
         <div className="health-section-heading">
           <p className="eyebrow">The county story</p>

@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { HealthTopicExplorer } from "@/components/health-topic-explorer";
 import { PublicHealthMap } from "@/components/public-health-map";
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
 import {
-  publicHealthLayerMeta,
   publicHealthSources,
-  type PublicHealthLayerId,
 } from "@/data/public-health-cancer";
+import { cancerHealthTopic, healthCountyRecords, healthTopics, healthTrendRecords } from "@/data/health-platform";
 
 export const metadata: Metadata = {
   title: "Cancer Data | Public Health Atlas",
   description:
-    "Compare official cancer incidence, mortality, and historical trends for Erie and Niagara Counties with New York and United States reference rates.",
+    "Compare official cancer incidence, mortality, and historical trends across eight Western New York counties, New York State, and supported local investigations.",
   alternates: { canonical: "/health/cancer" },
   openGraph: {
     type: "article",
@@ -25,23 +25,23 @@ export const metadata: Metadata = {
 };
 
 type CancerAtlasPageProps = {
-  searchParams: Promise<{ layer?: string | string[] }>;
+  searchParams: Promise<{ layer?: string | string[]; indicator?: string | string[]; county?: string | string[] }>;
 };
 
 export default async function CancerAtlasPage({ searchParams }: CancerAtlasPageProps) {
-  const requestedLayer = (await searchParams).layer;
-  const initialLayer: PublicHealthLayerId =
-    typeof requestedLayer === "string" && requestedLayer in publicHealthLayerMeta
-      ? requestedLayer as PublicHealthLayerId
-      : "childhood-asthma";
+  const query = await searchParams;
+  const initialIndicator = typeof query.indicator === "string" ? query.indicator : undefined;
+  const initialCounty = typeof query.county === "string" ? query.county : undefined;
+  const cancerCountyRecords = healthCountyRecords.filter((record) => cancerHealthTopic.indicatorIds.includes(record.indicatorId) || record.indicatorId === "total-population");
+  const cancerTrendRecords = healthTrendRecords.filter((record) => cancerHealthTopic.indicatorIds.includes(record.indicatorId));
   const datasetSchema = {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    name: "WNYAtlas Erie and Niagara County Cancer Comparison",
+    name: "WNYAtlas Western New York Cancer Comparison",
     description:
       "A presentation of official age-adjusted cancer rates from the New York State Department of Health and NCI State Cancer Profiles.",
     url: "https://www.wnyatlas.com/health/cancer",
-    spatialCoverage: ["Erie County, New York", "Niagara County, New York"],
+    spatialCoverage: "Western New York and New York State",
     temporalCoverage: "2011/2023",
     creator: { "@type": "Organization", name: "WNYAtlas" },
     isBasedOn: publicHealthSources.map((source) => source.url),
@@ -56,9 +56,9 @@ export default async function CancerAtlasPage({ searchParams }: CancerAtlasPageP
         <p className="eyebrow">Public Health Atlas · Cancer</p>
         <h1>What do the official cancer records show?</h1>
         <p className="dek">
-          Compare age-adjusted incidence and mortality rates for Erie and Niagara
-          Counties, follow historical patterns, and open the original government
-          records behind every number.
+          Compare age-adjusted incidence and mortality rates across all eight
+          Western New York counties, inspect statewide placement, and then move
+          into carefully dated local investigations.
         </p>
         <div className="health-principle is-caution">
           <strong>This page does not establish environmental causation.</strong>
@@ -72,27 +72,29 @@ export default async function CancerAtlasPage({ searchParams }: CancerAtlasPageP
       </section>
 
       <section className="cancer-status-strip" aria-label="Dataset status">
-        <div><span>County geography</span><strong>Erie + Niagara</strong></div>
+        <div><span>County geography</span><strong>8 WNY counties</strong></div>
         <div><span>Rate standard</span><strong>2000 U.S. population</strong></div>
         <div><span>County comparison</span><strong>2018–2020</strong></div>
         <div><span>Latest registry portal</span><strong>Through 2023</strong></div>
       </section>
 
+      <nav className="health-subnav" aria-label="Public Health Atlas navigation">
+        <Link href="/health">Overview</Link><Link href="/health/explorer">Health Explorer</Link><Link href="/health/neurological">Neurological</Link><Link href="/health/county/erie">County profiles</Link>
+      </nav>
+
+      <HealthTopicExplorer topic={cancerHealthTopic} initialIndicator={initialIndicator} initialCounty={initialCounty} platformTopics={[cancerHealthTopic, ...healthTopics]} countyRecords={cancerCountyRecords} trendRecords={cancerTrendRecords} />
+
       <section id="health-map" className="public-health-map-section" aria-labelledby="health-map-title">
         <div className="health-section-heading">
-          <p className="eyebrow">Shared public-health map</p>
-          <h2 id="health-map-title">Local data only on the map.</h2>
+          <p className="eyebrow">Historic and local cancer context</p>
+          <h2 id="health-map-title">Small-area records remain separate from county surveillance.</h2>
           <p>
-            Switch among cancer, birth defects, childhood asthma emergency visits,
-            premature birth, low birth weight, childhood lead, and public
-            drinking-water systems. ZIP code, city, public-system area, or a
-            smaller official geography is required for a map marker. County and
-            state figures remain available for comparison, but are not shown as
-            local points. The Atlas never combines these measures into a single
-            health or environmental risk score.
+            This map preserves the original small-area and investigation records.
+            Its dates and geography differ from the county explorer above. The
+            dedicated Health Explorer now owns the other public-health topics.
           </p>
         </div>
-        <PublicHealthMap initialLayer={initialLayer} />
+        <PublicHealthMap initialLayer="cancer" singleLayer />
       </section>
 
       <section className="health-context-section">

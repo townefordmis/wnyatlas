@@ -1907,6 +1907,325 @@ footer {
   }
 }
 
+/* Public Health Atlas platform */
+.health-platform-hero,
+.health-topic-hero,
+.county-health-hero {
+  width: min(100% - 48px, 1260px);
+  margin: 0 auto;
+  padding: 76px 0 54px;
+}
+
+.health-topic-hero {
+  border-bottom: 8px solid var(--topic-color, var(--water));
+}
+
+.health-topic-hero h1,
+.county-health-hero h1 {
+  max-width: 980px;
+  margin: 0.2rem 0 1.2rem;
+  font: 500 clamp(2.8rem, 7vw, 6.7rem)/0.95 Georgia, serif;
+  letter-spacing: -0.055em;
+}
+
+.health-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0;
+}
+
+.health-hero-actions a,
+.health-download-row a,
+.county-profile-note a {
+  padding: 12px 16px;
+  color: var(--paper);
+  background: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.health-overview-strip,
+.county-profile-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.health-overview-strip > div,
+.county-profile-stats > div {
+  min-height: 112px;
+  padding: 20px 24px;
+  border-right: 1px solid var(--line);
+}
+
+.health-overview-strip span,
+.county-profile-stats span {
+  display: block;
+  margin-bottom: 12px;
+  font: 700 0.7rem/1.3 var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.health-overview-strip strong,
+.county-profile-stats strong {
+  font: 500 clamp(1.55rem, 3vw, 2.55rem)/1 Georgia, serif;
+}
+
+.health-finding-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 40px;
+  align-items: end;
+  padding: 50px max(24px, calc((100vw - 1260px) / 2));
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.health-finding-band > div { max-width: 880px; }
+.health-finding-band h2 { margin: 10px 0 16px; font: 500 clamp(1.75rem, 4vw, 3.5rem)/1.05 Georgia, serif; }
+.health-finding-band p { color: rgba(245, 241, 231, 0.75); line-height: 1.6; }
+.health-finding-band a { padding: 13px 17px; color: var(--ink); background: var(--water-light); font-weight: 800; white-space: nowrap; }
+
+.health-county-directory,
+.health-data-explorer,
+.health-topic-methods,
+.county-featured-grid,
+.county-topic-groups,
+.county-profile-note {
+  width: min(100% - 48px, 1260px);
+  margin: 0 auto;
+  padding: 66px 0;
+}
+
+.health-county-directory > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.health-county-directory a {
+  display: grid;
+  gap: 34px;
+  min-height: 170px;
+  padding: 20px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.health-county-directory a:hover { color: var(--paper); background: var(--water); }
+.health-county-directory span { font: 700 0.72rem var(--font-mono); }
+.health-county-directory strong { font: 500 1.6rem Georgia, serif; }
+.health-county-directory small { align-self: end; font-weight: 800; }
+
+.health-platform-modules .health-module { border-top: 5px solid var(--module-color, var(--line)); }
+.health-platform-modules .health-module.is-review { background: rgba(182, 80, 49, 0.07); }
+
+.health-subnav {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  display: flex;
+  gap: 1px;
+  overflow-x: auto;
+  padding: 0 max(24px, calc((100vw - 1260px) / 2));
+  color: var(--paper);
+  background: var(--ink);
+  scrollbar-width: thin;
+}
+
+.health-subnav a {
+  flex: 0 0 auto;
+  padding: 13px 15px;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.health-subnav a:hover,
+.health-subnav a.is-active { color: var(--ink); background: var(--water-light); }
+
+.health-explorer-topic-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 18px max(24px, calc((100vw - 1260px) / 2));
+  border-bottom: 1px solid var(--line);
+}
+
+.health-explorer-topic-strip a {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.health-explorer-topic-strip a.is-active { color: var(--paper); background: var(--ink); }
+.health-explorer-topic-strip i { width: 9px; height: 9px; border-radius: 50%; }
+
+.health-explorer-controls {
+  display: grid;
+  grid-template-columns: 1.1fr 2fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.health-explorer-controls label { display: grid; gap: 7px; }
+.health-explorer-controls span { font: 800 0.7rem var(--font-mono); letter-spacing: 0.04em; text-transform: uppercase; }
+.health-explorer-controls select {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 38px 10px 12px;
+  color: var(--ink);
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  font-weight: 750;
+}
+
+.health-explorer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.75fr);
+  min-height: 540px;
+  border: 1px solid var(--line);
+  background: #fffdf8;
+}
+
+.health-county-map-wrap { position: relative; min-width: 0; border-right: 1px solid var(--line); }
+.health-county-map { width: 100%; height: 100%; min-height: 540px; }
+.health-county-map-wrap > p { position: absolute; z-index: 2; right: 14px; bottom: 14px; max-width: 340px; margin: 0; padding: 8px 10px; background: rgba(255, 253, 248, 0.92); font-size: 0.7rem; line-height: 1.4; }
+
+.health-stat-panel { padding: 28px; border-top: 8px solid var(--water); }
+.health-stat-panel h2 { margin: 12px 0 28px; font: 500 1.7rem/1.08 Georgia, serif; }
+.health-stat-panel > strong { display: block; font: 500 clamp(2.7rem, 5vw, 5rem)/0.9 Georgia, serif; }
+.health-stat-panel > span { display: block; margin: 8px 0 28px; color: rgba(23, 39, 32, 0.68); font-size: 0.8rem; }
+.health-stat-panel dl { margin: 0 0 26px; }
+.health-stat-panel dl div { display: flex; justify-content: space-between; gap: 20px; padding: 10px 0; border-top: 1px solid var(--line); }
+.health-stat-panel dt { font-size: 0.76rem; }
+.health-stat-panel dd { margin: 0; text-align: right; font-weight: 800; }
+.health-stat-panel a { font-weight: 850; text-decoration: underline; text-underline-offset: 4px; }
+
+.health-ranked-section,
+.health-trend-section,
+.health-audit-table,
+.health-local-layer { padding: 70px 0 0; }
+.health-ranked-bars { border-top: 1px solid var(--line); }
+.health-ranked-bars button { display: grid; grid-template-columns: 145px minmax(120px, 1fr) 90px; gap: 16px; align-items: center; width: 100%; padding: 13px 10px; color: inherit; background: transparent; border: 0; border-bottom: 1px solid var(--line); cursor: pointer; text-align: left; }
+.health-ranked-bars button:hover,
+.health-ranked-bars button.is-selected { background: rgba(31, 106, 117, 0.1); }
+.health-ranked-bars button > span { font-weight: 800; }
+.health-ranked-bars i { display: block; height: 12px; background: rgba(23, 39, 32, 0.08); }
+.health-ranked-bars b { display: block; height: 100%; }
+.health-ranked-bars strong { text-align: right; }
+
+.health-trend-legend { display: flex; gap: 18px; margin-bottom: 12px; font-size: 0.74rem; font-weight: 800; }
+.health-trend-legend span { display: flex; gap: 7px; align-items: center; }
+.health-trend-legend i { display: block; width: 12px; height: 12px; background: rgba(23, 39, 32, 0.28); }
+.health-trend-chart { display: grid; grid-auto-columns: minmax(54px, 1fr); grid-auto-flow: column; min-height: 285px; overflow-x: auto; padding: 18px 12px 8px; border: 1px solid var(--line); background: #fffdf8; }
+.health-trend-chart > div { display: grid; grid-template-rows: 220px auto auto; gap: 5px; min-width: 54px; text-align: center; }
+.health-trend-bars { display: flex; gap: 3px; align-items: end; justify-content: center; padding: 0 4px; border-bottom: 1px solid var(--line); }
+.health-trend-bars i { width: min(16px, 40%); background: rgba(23, 39, 32, 0.28); }
+.health-trend-chart strong { font: 700 0.68rem var(--font-mono); }
+.health-trend-chart span { font-size: 0.66rem; }
+
+.health-table-scroll { max-height: 600px; overflow: auto; border: 1px solid var(--line); background: #fffdf8; }
+.health-peer-filters { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 10px; }
+.health-peer-filters button { padding: 9px 11px; color: inherit; background: transparent; border: 1px solid var(--line); font-size: 0.72rem; font-weight: 800; cursor: pointer; }
+.health-peer-filters button:hover,
+.health-peer-filters button.is-active { color: var(--paper); background: var(--ink); }
+.health-audit-table table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+.health-audit-table thead { position: sticky; z-index: 2; top: 0; color: var(--paper); background: var(--ink); }
+.health-audit-table th,
+.health-audit-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; }
+.health-audit-table tr.is-wny { background: rgba(143, 196, 199, 0.24); }
+
+.health-topic-empty { width: min(100% - 48px, 1260px); margin: 66px auto; padding: 28px; border: 2px solid var(--rust); background: rgba(182, 80, 49, 0.06); }
+.health-topic-empty > strong { font: 500 2rem Georgia, serif; }
+.health-topic-empty > p { max-width: 800px; line-height: 1.6; }
+
+.health-source-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.health-source-cards article { min-height: 220px; padding: 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.health-source-cards article > p:first-child { color: var(--rust); font: 800 0.7rem var(--font-mono); text-transform: uppercase; }
+.health-source-cards h3 { font: 500 1.4rem Georgia, serif; }
+.health-source-cards p { line-height: 1.55; }
+.health-source-cards a { font-weight: 850; }
+.health-download-row { display: flex; justify-content: space-between; gap: 12px; margin-top: 24px; }
+
+.county-health-hero { padding-bottom: 0; }
+.county-profile-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 42px; }
+.county-profile-stats > div:first-child { border-left: 1px solid var(--line); }
+.county-featured-grid > div:last-child { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.county-featured-grid article { min-height: 245px; padding: 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.county-featured-grid article > p { min-height: 48px; font-size: 0.78rem; font-weight: 800; }
+.county-featured-grid article > strong { display: block; margin: 22px 0; font: 500 2.8rem Georgia, serif; }
+.county-featured-grid dl { margin: 0; }
+.county-featured-grid dl div { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 0.74rem; }
+.county-featured-grid dd { margin: 0; font-weight: 800; }
+
+.county-topic-groups > article { display: grid; grid-template-columns: 250px 1fr; border-top: 6px solid var(--topic-color); border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.county-topic-groups > article + article { margin-top: 20px; }
+.county-topic-groups > article > div:first-child { padding: 20px; border-right: 1px solid var(--line); }
+.county-topic-groups h3 { font: 500 1.5rem Georgia, serif; }
+.county-topic-groups a { font-weight: 850; }
+.county-topic-groups > article > div:last-child { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.county-topic-groups > article > div:last-child > div { display: grid; grid-template-columns: 1fr auto; gap: 8px 18px; padding: 15px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.county-topic-groups span { font-size: 0.76rem; line-height: 1.35; }
+.county-topic-groups small { grid-column: 1 / -1; color: rgba(23, 39, 32, 0.66); }
+.county-profile-note { margin-bottom: 70px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.county-profile-note > strong { font: 500 1.8rem Georgia, serif; }
+.county-profile-note p { max-width: 900px; line-height: 1.65; }
+
+@media (max-width: 900px) {
+  .health-overview-strip { grid-template-columns: repeat(3, 1fr); }
+  .health-county-directory > div:last-child { grid-template-columns: repeat(2, 1fr); }
+  .health-explorer-grid { grid-template-columns: 1fr; }
+  .health-county-map-wrap { border-right: 0; border-bottom: 1px solid var(--line); }
+  .health-county-map { height: 480px; min-height: 480px; }
+  .county-featured-grid > div:last-child { grid-template-columns: repeat(2, 1fr); }
+  .county-topic-groups > article { grid-template-columns: 1fr; }
+  .county-topic-groups > article > div:first-child { border-right: 0; border-bottom: 1px solid var(--line); }
+}
+
+@media (max-width: 640px) {
+  .health-platform-hero,
+  .health-topic-hero,
+  .county-health-hero,
+  .health-county-directory,
+  .health-data-explorer,
+  .health-topic-methods,
+  .county-featured-grid,
+  .county-topic-groups,
+  .county-profile-note { width: min(100% - 24px, 1260px); }
+  .health-platform-hero,
+  .health-topic-hero,
+  .county-health-hero { padding-top: 48px; }
+  .health-overview-strip,
+  .county-profile-stats { grid-template-columns: repeat(2, 1fr); }
+  .health-overview-strip > div,
+  .county-profile-stats > div { min-height: 96px; padding: 16px; }
+  .health-finding-band { grid-template-columns: 1fr; padding: 38px 18px; }
+  .health-county-directory > div:last-child,
+  .health-source-cards,
+  .county-featured-grid > div:last-child,
+  .county-topic-groups > article > div:last-child { grid-template-columns: 1fr; }
+  .health-county-directory a { min-height: 130px; gap: 22px; }
+  .health-explorer-controls { grid-template-columns: 1fr; }
+  .health-county-map { height: 390px; min-height: 390px; }
+  .health-county-map-wrap > p { position: static; max-width: none; border-top: 1px solid var(--line); }
+  .health-stat-panel { padding: 22px 18px; }
+  .health-ranked-bars button { grid-template-columns: 92px minmax(70px, 1fr) 70px; gap: 9px; padding-inline: 4px; font-size: 0.74rem; }
+  .health-download-row { align-items: stretch; flex-direction: column; }
+  .health-download-row a { text-align: center; }
+  .county-topic-groups > article > div:last-child > div { grid-template-columns: 1fr auto; }
+}
+
 .places-index {
   width: min(100% - 8vw, 1320px);
   margin: 0 auto;
