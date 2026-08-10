@@ -15,7 +15,7 @@ const featuredSiteRecords: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-78.949, 43.08],
     story: {
-      lastReviewed: "July 26, 2026",
+      lastReviewed: "August 10, 2026",
       background: [
         "Love Canal began as an unfinished canal project and was later used for chemical-waste disposal. Residential development and a school were subsequently built around the disposal area, turning a buried industrial-waste site into a national test of how government responds when contamination and community life overlap.",
         "The public record is also a history of residents organizing, government investigation, emergency relocation, litigation, and the creation of the modern federal Superfund program. WNYAtlas treats those events as connected but distinct parts of the story.",
@@ -81,6 +81,16 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Love Canal Chemical Waste Landfill Health Order",
         publisher: "New York State Department of Health",
         url: "https://www.health.ny.gov/environmental/investigations/love_canal/docs/lctimbmb.pdf",
+      },
+      {
+        title: "Love Canal Site History and Remediation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/love-canal",
+      },
+      {
+        title: "New York State Aerial Photographs",
+        publisher: "Cornell University Library",
+        url: "https://digital.library.cornell.edu/collections/aerialny",
       },
     ],
   },

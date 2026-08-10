@@ -254,6 +254,44 @@ export default async function SitePage({ params }: SitePageProps) {
               )}
             </section>
 
+            {site.id === "love-canal" && (
+              <section className="story-research-figure" aria-labelledby="love-canal-aerial-title">
+                <p className="eyebrow">Landscape transformation</p>
+                <h2 id="love-canal-aerial-title">The canal, disposal area, neighborhood, and managed remedy over time</h2>
+                <p>
+                  This comparison aligns six aerial views to show visible landscape change. Colored outlines are approximate visual interpretations—not surveyed property, disposal, or remedy boundaries.
+                </p>
+                <figure>
+                  <a
+                    className="story-research-figure-scroll"
+                    href="/historical/love-canal-aerial-timeline-corrected.png"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open the Love Canal aerial timeline at full size"
+                  >
+                    <Image
+                      src="/historical/love-canal-aerial-timeline-corrected.png"
+                      alt="Six-panel Love Canal aerial timeline comparing the open canal in 1938, the documented disposal period, closure and clay cover around 1953, emergency response in 1979, and the managed capped landfill area in 2024"
+                      width={1536}
+                      height={1024}
+                    />
+                  </a>
+                  <figcaption>
+                    <span>
+                      WNYAtlas research graphic. Historical aerials are credited to Cornell University Library / IRIS Aerial Photograph Collection; the current panel is identified in the supplied composite as Google Earth, May 2024. Individual historical flight identifiers and the current third-party imagery-provider attribution were not preserved in the supplied composite and remain under review.
+                    </span>
+                    <span className="story-research-figure-links">
+                      <a href="https://digital.library.cornell.edu/collections/aerialny" target="_blank" rel="noreferrer">Cornell aerial collection ↗</a>
+                      <a href="https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/love-canal" target="_blank" rel="noreferrer">NYSDEC Love Canal record ↗</a>
+                      <a href="https://semspub.epa.gov/work/HQ/186263.pdf" target="_blank" rel="noreferrer">EPA remedy record ↗</a>
+                      <a href="https://earth.google.com/studio/docs/attribution/" target="_blank" rel="noreferrer">Google Earth attribution requirements ↗</a>
+                    </span>
+                    <strong>Open the image for full-size labels and notes.</strong>
+                  </figcaption>
+                </figure>
+              </section>
+            )}
+
             {namedChemicals.length > 0 && (
               <section className="story-chemicals">
                 <p className="eyebrow">Chemical guide</p>
