@@ -1116,6 +1116,8 @@ footer {
 .historical-aerial-site-halo,
 .historical-aerial-site-outline {
   fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
 }
 

@@ -7,13 +7,20 @@ type AerialPanel = {
   alt: string;
   note: string;
   matched?: boolean;
-  highlight?: {
-    viewBox: string;
-    cx: number;
-    cy: number;
-    rx: number;
-    ry: number;
-  };
+  highlight?:
+    | {
+        viewBox: string;
+        path: string;
+        ariaLabel: string;
+      }
+    | {
+        viewBox: string;
+        cx: number;
+        cy: number;
+        rx: number;
+        ry: number;
+        ariaLabel?: string;
+      };
 };
 
 type AerialHistory = {
@@ -412,7 +419,7 @@ const histories: Record<string, AerialHistory> = {
     introduction:
       "EPA's historical-photo analysis supplies two unusually strong views of S-Area: a September 25, 1938 vertical photograph showing the earlier shoreline and future site boundary, and an annotated August 9, 1958 oblique view acquired while chemical-waste disposal was documented. Three later New York State orthophotos use one fixed geographic window to show the property during remedy construction, shortly after completion, and under current long-term management.",
     interpretation:
-      "The black boundary and feature labels in the 1938 and 1958 images are reproduced directly from EPA Figure 2-6; WNY Atlas did not reconstruct them. EPA described the sequence as illustrating substantial change and development, but interpreted photo labels are not sampling results and do not independently establish the contents of a particular trench or drum. The bright yellow ovals on the later orthophotos are approximate location guides, not surveyed boundaries. EPA and DEC records - not aerial appearance - establish the disposal history, contaminants, migration investigations, containment systems, treatment, monitoring, and current remedy status. Proximity to the former water-treatment plant does not by itself establish a drinking-water exposure.",
+      "The black boundary and feature labels in the 1938 and 1958 images are reproduced directly from EPA Figure 2-6. WNY Atlas added a bright yellow trace over EPA's printed site-boundary line so it remains legible at smaller screen sizes; it is not a newly surveyed property line. EPA described the sequence as illustrating substantial change and development, but interpreted photo labels are not sampling results and do not independently establish the contents of a particular trench or drum. The bright yellow ovals on the later orthophotos are approximate location guides, not surveyed boundaries. EPA and DEC records - not aerial appearance - establish the disposal history, contaminants, migration investigations, containment systems, treatment, monitoring, and current remedy status. Proximity to the former water-treatment plant does not by itself establish a drinking-water exposure.",
     panels: [
       {
         period: "1938",
@@ -423,7 +430,12 @@ const histories: Record<string, AerialHistory> = {
         sourceLabel: "EPA Figure 2-6",
         alt: "EPA reproduction of a September 25, 1938 vertical aerial photograph showing the future Hooker S-Area boundary and the earlier Niagara River shoreline",
         note:
-          "EPA dated this vertical aerial September 25, 1938 and printed it at an approximate scale of 1:3,100. The agency's overlaid line marks the future S-Area boundary. Because EPA records place chemical-processing-waste disposal beginning in 1947, this photograph provides a pre-disposal baseline for the shoreline and industrial landscape.",
+          "EPA dated this vertical aerial September 25, 1938 and printed it at an approximate scale of 1:3,100. The bright yellow trace follows the agency's overlaid future S-Area boundary. Because EPA records place chemical-processing-waste disposal beginning in 1947, this photograph provides a pre-disposal baseline for the shoreline and industrial landscape.",
+        highlight: {
+          viewBox: "0 0 1975 2020",
+          path: "M 526 716 L 1515 1128 L 1902 1137 L 1904 1813 L 423 1190 Z",
+          ariaLabel: "Bright yellow line tracing EPA's printed future S-Area boundary",
+        },
       },
       {
         period: "1958",
@@ -434,7 +446,12 @@ const histories: Record<string, AerialHistory> = {
         sourceLabel: "EPA Figure 2-6 continued",
         alt: "EPA annotated August 9, 1958 oblique aerial photograph of Hooker S-Area identifying the site boundary, land reclamation, trenches, drums, debris, and intake construction",
         note:
-          "EPA dated this oblique view August 9, 1958. Its printed interpretation labels the site boundary, land reclamation, trenches, drums, debris, a possible drum-burial area, and industrial-intake construction. Those labels are EPA's historical remote-sensing interpretation; WNY Atlas presents them as recorded rather than independently confirming every feature.",
+          "EPA dated this oblique view August 9, 1958. The bright yellow trace follows its printed site boundary; the original interpretation also labels land reclamation, trenches, drums, debris, a possible drum-burial area, and industrial-intake construction. Those labels are EPA's historical remote-sensing interpretation; WNY Atlas presents them as recorded rather than independently confirming every feature.",
+        highlight: {
+          viewBox: "0 0 2000 2015",
+          path: "M 190 400 L 805 402 L 1782 1200 L 525 1517 C 478 1496 431 1463 407 1412 C 386 1367 386 1304 349 1247 C 313 1190 284 1150 269 1090 C 253 1026 240 973 214 917 C 186 855 162 801 153 735 C 143 663 130 600 119 550 C 111 501 137 451 190 400 Z",
+          ariaLabel: "Bright yellow line tracing EPA's printed 1958 S-Area site boundary",
+        },
       },
       {
         period: "1994-1998",
@@ -520,22 +537,31 @@ export function HistoricalAerialEvidence({ siteId }: { siteId: string }) {
                   viewBox={panel.highlight.viewBox}
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
-                  aria-label="Bright yellow outline marking the approximate former site area"
+                  aria-label={panel.highlight.ariaLabel ?? "Bright yellow outline marking the approximate former site area"}
                 >
-                  <ellipse
-                    className="historical-aerial-site-halo"
-                    cx={panel.highlight.cx}
-                    cy={panel.highlight.cy}
-                    rx={panel.highlight.rx}
-                    ry={panel.highlight.ry}
-                  />
-                  <ellipse
-                    className="historical-aerial-site-outline"
-                    cx={panel.highlight.cx}
-                    cy={panel.highlight.cy}
-                    rx={panel.highlight.rx}
-                    ry={panel.highlight.ry}
-                  />
+                  {"path" in panel.highlight ? (
+                    <>
+                      <path className="historical-aerial-site-halo" d={panel.highlight.path} />
+                      <path className="historical-aerial-site-outline" d={panel.highlight.path} />
+                    </>
+                  ) : (
+                    <>
+                      <ellipse
+                        className="historical-aerial-site-halo"
+                        cx={panel.highlight.cx}
+                        cy={panel.highlight.cy}
+                        rx={panel.highlight.rx}
+                        ry={panel.highlight.ry}
+                      />
+                      <ellipse
+                        className="historical-aerial-site-outline"
+                        cx={panel.highlight.cx}
+                        cy={panel.highlight.cy}
+                        rx={panel.highlight.rx}
+                        ry={panel.highlight.ry}
+                      />
+                    </>
+                  )}
                 </svg>
               ) : null}
             </a>
