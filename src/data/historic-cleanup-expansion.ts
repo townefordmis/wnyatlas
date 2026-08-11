@@ -2132,19 +2132,22 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.3965225, 42.4455635],
     story: {
-      lastReviewed: "August 4, 2026",
+      lastReviewed: "August 11, 2026",
       background: [
         "The Van Buren Road facility in Pomfret received coal-combustion ash associated with the Dunkirk power station. It is regulated as industrial solid-waste facility 07N21, not as a State Superfund or federal NPL site.",
         "The landfill is mapped separately because it is several miles from the waterfront generating station.",
+        "DEC permit materials connect the site not only to Dunkirk but also to combustion residuals and emission-control byproducts from the Huntley and Oswego generating plants. Permitted streams have included fly ash, bottom ash, pyrites, treatment sludge, trona, grit-blasting waste, demineralizer resin, activated carbon, urea, and coal-yard debris.",
+        "A lined disposal footprint, borrow area, leachate systems, monitoring points, and future final-cover area are different features within the property. The pin marks the regulated facility, not an assertion that all land around Van Buren Road contains ash.",
       ],
       timeline: [
         { period: "Power-generation era", event: "The facility managed fly ash and related coal-combustion residuals from Dunkirk generation." },
         { period: "2015", event: "The generating station entered mothballed status, prompting review of the landfill's future." },
         { period: "2022", event: "DEC processed the generating station's permanent-retirement notice, further separating the retired waterfront plant from the landfill's continuing waste-management obligations." },
         { period: "2023 report", event: "The landfill continued regulated operation, leachate management, monitoring, and permit-renewal review." },
+        { period: "2024-2025", event: "DEC records continued water-discharge and landfill permit review, while financial-assurance estimates addressed eventual final cover and closure work." },
       ],
       documentedImpacts: [
-        "The DEC annual report documents a lined landfill, primary and secondary leachate systems, and groundwater monitoring.",
+        "The DEC annual report documents a lined disposal cell, primary and secondary leachate systems, groundwater monitoring, and financial planning for final cover.",
         "Those engineered systems and sampling obligations are safeguards for managing buried ash; their existence alone does not establish an off-site release.",
         "Coal ash should not be labeled radiological or Superfund without a separate site-specific regulatory finding.",
       ],
@@ -2153,7 +2156,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "Closure, post-closure care, and financial assurance remain part of the long-term solid-waste framework.",
       ],
       presentDay: [
-        "This is continuing waste infrastructure linked to a retired power plant, not a completed brownfield cleanup.",
+        "This is continuing waste infrastructure linked to a retired power plant, not a completed brownfield cleanup or a radiological site designation.",
         "The landfill and waterfront station therefore remain separate pins even though one industrial history connects them.",
       ],
       researchNotes: [
@@ -2542,14 +2545,17 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-78.97852213, 43.22280069],
     story: {
-      lastReviewed: "August 4, 2026",
+      lastReviewed: "August 11, 2026",
       background: [
         "The Balmer Road facility occupies land in the towns of Porter and Lewiston that was once part of the federal Lake Ontario Ordnance Works. ChemTrol Pollution Services began commercial hazardous-waste operations there in 1972; the operation later became CWM Chemical Services, a Waste Management subsidiary.",
         "Because the facility is both an operating waste-management property and part of the former LOOW footprint, its story links to LOOW but does not merge the two regulatory histories.",
+        "The commercial operation evolved through corporate ownership and name changes after SCA Services acquired ChemTrol in 1973. Facility records describe waste-oil reclamation, spent-solvent distillation, aqueous treatment, stabilization, storage, fuel blending, and secure landfilling as parts of a larger treatment-storage-disposal complex.",
+        "RMU-1 itself is an approximately 47-acre, multi-cell engineered landfill with hydraulically separate cells and primary and secondary leachate-collection systems. This operating history is distinct from the proposed RMU-2 expansion, which never became an operating landfill.",
       ],
       timeline: [
         { period: "1940s-1960s", event: "The property formed part of the former federal ordnance complex and was subject to chemical and radiological investigation." },
         { period: "1972", event: "Commercial hazardous-waste treatment, storage, and disposal operations began as ChemTrol Pollution Services." },
+        { period: "1973-1980s", event: "Acquisitions and name changes carried the operation from ChemTrol through SCA entities to the later CWM organization." },
         { period: "1992", event: "DOE certified that the majority of the CWM property met the radiological decontamination criteria applicable to its review." },
         { period: "2015", event: "The RMU-1 hazardous-waste landfill reached capacity, stopped receiving waste for disposal, and was subsequently capped." },
         { period: "2025", event: "The Facility Siting Board denied CWM's siting-certificate application for the proposed 43.5-acre RMU-2 landfill." },
@@ -2560,7 +2566,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "The closed RMU-1 cell and the denied RMU-2 proposal are different features: one contains historically disposed waste, while the other was a proposed expansion that did not receive a siting certificate.",
       ],
       cleanupAndControls: [
-        "RMU-1 is capped and remains subject to hazardous-waste permit, corrective-action, monitoring, and post-closure requirements.",
+        "RMU-1 is capped and remains subject to hazardous-waste permit, corrective-action, leachate, monitoring, and post-closure requirements.",
         "The facility also operates under state air and wastewater-discharge permits. Wastes accepted for management may be treated or stored on site or shipped to permitted off-site disposal facilities.",
       ],
       presentDay: [

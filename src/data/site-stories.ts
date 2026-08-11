@@ -378,21 +378,23 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "chaffee-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
       "Chaffee Landfill on Olean Road is a long-running solid-waste complex in the Sardinia/Chaffee area. Unlike the atlas's abandoned dumps and completed brownfields, this property contains closed historic disposal areas alongside an active permitted landfill operation.",
       "That continuing use makes chronology and boundaries especially important. Historic cells, current cells, leachate systems, landfill-gas controls, support facilities, and any proposed expansion are related parts of one complex but have different construction and permit status.",
+      "DEC's 2022 permit review described a proposed southern expansion consisting of a 20-acre lateral cell area, 10 acres of valley fill between that area and the closed landfill, and vertical expansion over permitted areas. Those proposal boundaries should be shown as proposals unless and until construction and operating records confirm their status.",
     ],
     timeline: [
       { period: "Historic disposal era", event: "Earlier landfill cells received waste and were later closed under the standards applicable to their operating period." },
       { period: "Modern operating era", event: "Permitted solid-waste disposal continued in engineered cells with leachate and landfill-gas systems." },
-      { period: "Permit reviews", event: "DEC reviewed operating, monitoring, and expansion applications through the solid-waste permitting process." },
-      { period: "Present", event: "The facility remains active while closed cells require continuing post-closure care." },
+      { period: "2022", event: "DEC released draft solid-waste and air-permit materials for a proposed southern, valley-fill, and vertical expansion." },
+      { period: "2023", event: "DEC records show the facility's Title V air permit was issued for a five-year term, governing landfill-gas and other regulated air sources." },
+      { period: "Present", event: "The facility remains active while closed cells require continuing post-closure care, and current permits and annual reports define what is operating." },
     ],
     documentedImpacts: [
       "Landfill leachate and gas are expected waste-decomposition products requiring engineered collection and management.",
       "Closed and active cells have different liners, caps, monitoring networks, and regulatory histories.",
-      "Permit applications and monitoring records should be used to describe measured conditions; an operating landfill is not automatically a state Superfund site.",
+      "Permit applications and monitoring records should be used to describe measured conditions; an operating landfill and a proposed expansion are not automatically state Superfund sites.",
     ],
     cleanupAndControls: [
       "Engineered liners, daily and intermediate cover, final caps, and stormwater controls limit releases from disposal cells.",
@@ -404,7 +406,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     researchNotes: [
       "Create a cell-by-cell map with opening, closure, liner, cap, and current permit status.",
-      "Track the newest annual report, leachate and gas data, enforcement record, and any expansion decision.",
+      "Track the newest annual report, waste receipts, leachate and gas data, enforcement record, and the constructed status of each expansion component.",
     ],
   },
   "5565-river-road": {
@@ -3485,29 +3487,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "hooker-hyde-park-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
-      "Hooker Chemical disposed of roughly 80,000 tons of chemical waste at Hyde Park, including material associated with dioxin contamination. Waste and contaminated perimeter areas affected soil and groundwater beyond the original landfill.",
-      "The federal-state remedy caps the source and perimeter, hydraulically contains contaminated groundwater, and treats recovered water. EPA later deleted the site from the National Priorities List because the remedy was constructed, not because all waste was removed.",
+      "Hooker Chemical used the approximately 15-acre Hyde Park property from 1953 to 1975, disposing of roughly 80,000 tons of chemical waste. EPA records identify the landfill as one of several separate Niagara Falls disposal sites operated by Hooker; it must not be conflated with Love Canal, S-Area, or 102nd Street.",
+      "The disposal area sits in fractured Lockport Dolomite about 2,000 feet southeast of the Niagara River. Contaminants moved in aqueous and non-aqueous phases through overburden and bedrock, while Bloody Run provided a surface-drainage route through storm sewers and down the Niagara Gorge toward the river.",
+      "A 1981 federal settlement established the cleanup framework. The resulting remedy combined source and perimeter covers, collection drains, bedrock and overburden hydraulic containment, recovered-water treatment, gorge-face seep work, and a community monitoring-well network rather than attempting to excavate the entire landfill.",
     ],
     timeline: [
-      { period: "Disposal era", event: "Hooker placed tens of thousands of tons of chemical waste in the landfill." },
-      { period: "Superfund investigation", event: "EPA defined landfill, perimeter, groundwater, and dioxin-related contamination." },
-      { period: "Remedy construction", event: "Caps, collection systems, treatment, and community monitoring were installed." },
-      { period: "2007", event: "EPA deleted Hyde Park from the Superfund list while long-term controls continued." },
+      { period: "1953-1975", event: "Hooker Chemical disposed of about 80,000 tons of chemical waste at Hyde Park." },
+      { period: "1979-1981", event: "Federal action and a 1981 settlement established responsibility for investigation, containment, treatment, and long-term monitoring." },
+      { period: "1985", event: "EPA selected the core remedy for the landfill, contaminated groundwater, Bloody Run drainage, and Niagara Gorge seep pathways." },
+      { period: "1986 onward", event: "Community monitoring wells and expanded containment systems were installed to check conditions outside the industrial property." },
+      { period: "2003", event: "EPA records construction of the site remedy as complete, beginning the long-term operation and review phase." },
+      { period: "Present", event: "Caps, extraction and treatment systems, monitoring wells, institutional controls, and five-year reviews remain necessary because waste and subsurface contamination remain." },
     ],
     documentedImpacts: [
-      "Chemical waste included dioxin-bearing material and other persistent compounds.",
-      "Contaminated groundwater migrated through fractured bedrock beyond the disposal footprint.",
-      "Community concern required monitoring wells and explicit off-site performance checks.",
+      "EPA-era records describe chlorinated organic compounds and dioxin-bearing waste; historic quantity estimates should be read as agency estimates, not a complete shipment inventory.",
+      "Contaminated groundwater and separate-phase liquids moved through fractured bedrock beyond the original disposal footprint.",
+      "Bloody Run, storm sewers, and Niagara Gorge seeps were investigated as distinct migration pathways toward the Niagara River.",
     ],
     cleanupAndControls: [
       "Landfill and perimeter caps isolate waste and reduce infiltration.",
       "Hydraulic-control wells capture contaminated groundwater for treatment.",
-      "Community monitoring wells, maintenance, institutional controls, and five-year reviews verify containment.",
+      "Community monitoring wells, gorge-seep work, maintenance, institutional controls, and five-year reviews verify containment.",
     ],
     presentDay: [
-      "Hyde Park is a contained, treated, and monitored former Superfund landfill. Deletion from the NPL signifies construction completion and continued protectiveness obligations, not removal of the buried waste.",
+      "Hyde Park is a contained, treated, and monitored Superfund landfill. EPA reports that the completed remedy no longer poses a threat to nearby residents or the environment; that conclusion depends on continued operation of the engineered systems and does not mean the buried waste was removed.",
     ],
     researchNotes: [
       "Report the newest five-year-review findings and capture-zone performance.",
@@ -3515,21 +3520,24 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "hooker-102nd-street-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
-      "Hooker Chemical and Olin used the 102nd Street landfill for at least 159,000 tons of liquid and solid chemical waste. The Niagara River location created direct concern about groundwater and nonaqueous-phase liquid migration.",
-      "The remedy consolidated waste beneath a lined cap, installed a slurry wall and recovery systems, and established long-term groundwater and NAPL monitoring.",
+      "The 22.1-acre 102nd Street landfill occupies the Niagara River edge: 15.6 acres owned by Occidental Chemical, formerly Hooker, and 6.5 acres owned by Olin. Hooker used its portion from about 1943 to 1971 and Olin used its portion from 1948 to about 1970.",
+      "The companies deposited at least 159,000 tons of liquid and solid industrial wastes. EPA records identify mixed solvents, organic and inorganic phosphates, brine and mercury-bearing sludge, fly ash, electrochemical-cell material, and hexachlorocyclohexane process waste among the documented streams.",
+      "Because the landfill is beside the Niagara River and partly within its floodplain, the remedy was designed around waste isolation and inward hydraulic control: a synthetic-clay cap, circumferential slurry wall, sediment work, leachate recovery, treatment, fencing, and long-term groundwater and non-aqueous-phase-liquid monitoring.",
     ],
     timeline: [
-      { period: "Industrial disposal era", event: "Hooker and Olin deposited bulk liquid and solid chemical wastes." },
-      { period: "Superfund listing and design", event: "Federal investigation defined the landfill source and riverward migration pathways." },
-      { period: "Remedy construction", event: "Waste consolidation, cap, slurry wall, and recovery systems were completed." },
-      { period: "Long-term phase", event: "Groundwater and NAPL systems continue under operation, maintenance, and review." },
+      { period: "1943-1971", event: "Hooker and Olin operated adjoining disposal areas for bulk liquid and solid chemical wastes." },
+      { period: "1972", event: "The property was capped, fenced on three sides, and given a riverfront bulkhead as an early control." },
+      { period: "1983", event: "EPA placed the site on the National Priorities List after investigation of soil, groundwater, and riverward pathways." },
+      { period: "1990-1995", event: "EPA selected and then amended the final containment remedy, including the cap, slurry wall, sediment handling, and liquid recovery." },
+      { period: "1996-1999", event: "Crews built the slurry wall, removed affected embayment sediment, installed the permanent cap, and connected leachate pumping to the Love Canal Treatment Facility." },
+      { period: "2004-present", event: "EPA deleted the site from the NPL after remedy construction; pumping, monitoring, maintenance, access limits, and periodic review continue." },
     ],
     documentedImpacts: [
       "Large volumes of mixed chemical waste remain within the landfill.",
       "Contaminated groundwater and NAPL created potential pathways toward the Niagara River.",
-      "Waste ownership and source history involve two industrial operators and require precise attribution.",
+      "Waste ownership and source history involve two adjoining industrial operators; a sitewide total should not be assigned to one company alone.",
     ],
     cleanupAndControls: [
       "A lined cap limits exposure and infiltration over consolidated waste.",
@@ -3537,7 +3545,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Groundwater, NAPL, treatment systems, and institutional controls receive long-term monitoring.",
     ],
     presentDay: [
-      "The landfill remains a contained-waste remedy beside the Niagara River. Protectiveness depends on the integrity and operation of the cap, wall, recovery, and monitoring systems.",
+      "The landfill remains a contained-waste remedy beside the Niagara River. EPA deletion in 2004 recorded a completed remedy, not unrestricted soil or removal of the waste mass; protectiveness depends on the cap, wall, recovery, and monitoring systems.",
     ],
     researchNotes: [
       "Add the latest five-year-review conclusions and system recovery volumes.",
@@ -3545,21 +3553,24 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "hooker-s-area-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
-      "S-Area is an approximately eight-acre former chemical-waste landfill next to the Niagara Falls drinking-water treatment plant. Its location made source containment and protection of water infrastructure central remedy objectives.",
-      "The selected remedy uses a final cap, source containment, groundwater collection and treatment, and continuing monitoring. Buried waste remains in place under engineered controls.",
+      "S-Area is an approximately eight-acre former Hooker Chemical landfill between Buffalo Avenue and the Niagara River, immediately beside the Niagara Falls drinking-water treatment plant. Hooker disposed of about 63,000 tons of chemical-processing wastes there, making the physical relationship to the water plant central to every investigation and remedy decision.",
+      "Federal studies documented affected soil, sediment, overburden and bedrock groundwater, including aqueous and non-aqueous chemical phases that moved toward water-plant structures. That historical finding concerns subsurface migration near the facility; it is not by itself evidence that present finished drinking water is contaminated.",
+      "The remedy left the waste in place beneath an engineered cap and combined hydraulic containment, collection and treatment with modifications or abandonment of affected subsurface plant structures. Long-term monitoring tests whether the systems continue to separate the landfill from critical water infrastructure.",
     ],
     timeline: [
-      { period: "Disposal era", event: "Industrial chemical waste was placed in the S-Area landfill." },
-      { period: "Federal-state investigation", event: "Studies evaluated the waste source, groundwater, and proximity to the water plant." },
-      { period: "Remedy construction", event: "Cap, containment, collection, and treatment components were installed." },
-      { period: "Long-term operation", event: "Monitoring and maintenance continue to verify protection of nearby receptors." },
+      { period: "Industrial disposal era", event: "Hooker Chemical placed roughly 63,000 tons of chemical-processing waste in the landfill." },
+      { period: "1979", event: "The United States sued Hooker over S-Area and three other Niagara Falls dumps, citing the risk posed by chemicals near the drinking-water plant." },
+      { period: "1983", event: "EPA placed S-Area on the National Priorities List and began the formal Superfund investigation." },
+      { period: "1990", event: "EPA selected the final remedy for the landfill, groundwater plume, bedrock contamination, and affected water-plant structures." },
+      { period: "1990-2002", event: "Containment, cap, collection, treatment, and infrastructure work moved through design and construction." },
+      { period: "2002-present", event: "Construction was completed; operation, maintenance, sampling, and five-year reviews continue, and the site remains on the NPL." },
     ],
     documentedImpacts: [
       "Mixed chemical wastes remain buried within the landfill.",
       "Groundwater contamination required active collection and treatment.",
-      "The adjoining drinking-water plant increased the consequence of remedy failure, though proximity alone does not mean finished water was contaminated.",
+      "Historic migration toward bedrock intake structures increased the consequence of remedy failure, though proximity and historic subsurface impacts do not establish a current finished-water exposure.",
     ],
     cleanupAndControls: [
       "The final landfill cap prevents direct contact and limits rainwater infiltration.",
@@ -3567,7 +3578,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Long-term sampling, inspections, maintenance, and land-use controls preserve protectiveness.",
     ],
     presentDay: [
-      "S-Area is a controlled, operating containment remedy. The atlas should distinguish the landfill's documented groundwater impacts from the treated municipal drinking water supplied by the neighboring plant.",
+      "S-Area is a controlled, operating containment remedy and had not been deleted from the NPL as of the 2024 federal review. The atlas distinguishes documented landfill and groundwater impacts from the treated municipal water supplied by the neighboring plant.",
     ],
     researchNotes: [
       "Add current capture-system performance and five-year-review conclusions.",
@@ -3575,16 +3586,19 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "dupont-necco-park-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
-      "DuPont's Necco Park disposal area contains an estimated 93,000 tons of industrial process waste. Contaminants entered soil and fractured-bedrock groundwater, including dense nonaqueous-phase liquid capable of sinking through water-bearing fractures.",
-      "The remedy relies on a clay cap, groundwater and DNAPL recovery, treatment, and a large monitoring-well network to control movement rather than excavating the entire waste mass.",
+      "Necco Park began as a recreation property associated with the Niagara Electrochemical Company, the origin of the name 'Necco.' DuPont acquired the property in 1930 and used the approximately 24-acre area for industrial disposal from the mid-1930s through 1977.",
+      "Liquid waste went into shallow lagoons in the southeast portion while solid wastes were placed elsewhere. EPA records describe fly ash, sodium salts and cell-bath residues, rubble, chlorinolysis wastes, off-grade products, and other organic and inorganic process materials; the total is estimated at about 93,000 tons.",
+      "Investigation found contaminants in soil and a complex sequence of overburden and fractured-bedrock water-bearing zones, including dense non-aqueous-phase liquid. The remedy therefore emphasizes hydraulic containment and recovery over wholesale excavation of the waste mass.",
     ],
     timeline: [
-      { period: "Industrial disposal era", event: "DuPont placed process waste in the Necco Park area." },
-      { period: "Superfund investigation", event: "EPA characterized buried waste, groundwater, DNAPL, and fractured-bedrock pathways." },
-      { period: "Remedy implementation", event: "Cap, recovery wells, treatment, and monitoring systems were installed." },
-      { period: "Long-term phase", event: "Hydraulic containment and monitoring continue under federal review." },
+      { period: "Before 1930", event: "The property served as Niagara Electrochemical Company recreation land, giving Necco Park its name." },
+      { period: "1930", event: "DuPont acquired the property." },
+      { period: "Mid-1930s-1977", event: "DuPont used lagoons and land areas for liquid and solid process-waste disposal." },
+      { period: "1977 onward", event: "Disposal ended and investigations focused on the waste footprint, seepage, and multiple groundwater zones." },
+      { period: "1998", event: "EPA selected a remedy centered on a stronger cover, expanded groundwater and DNAPL recovery, seep collection, treatment, monitoring, and groundwater-use restrictions." },
+      { period: "Present", event: "Cap care, recovery and treatment, plume monitoring, and periodic review continue across the long-term containment system." },
     ],
     documentedImpacts: [
       "Approximately 93,000 tons of industrial process waste remain in the disposal area.",
@@ -3594,7 +3608,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     cleanupAndControls: [
       "A clay cap isolates waste and reduces infiltration.",
       "Groundwater and DNAPL recovery systems remove contaminated liquids for treatment.",
-      "A broad monitoring-well network tests plume containment and remedy performance.",
+      "A broad monitoring-well network tests plume containment and remedy performance across the layered bedrock system.",
     ],
     presentDay: [
       "Necco Park is a long-term containment and treatment site. Its protectiveness depends on continued recovery, treatment, cap care, and monitoring across a complex bedrock system.",
@@ -3605,16 +3619,19 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-sanitation-nash-road-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
-      "The Niagara Sanitation landfill on Nash Road accepted municipal refuse and industrial wastes, including caustic material, sludges from regional manufacturers, and waste associated with the former air base. Later residential development nearby heightened concern about historic disposal boundaries.",
-      "New York's remedy and approved operation, maintenance, and monitoring program manage the landfill and remaining contamination.",
+      "The Niagara Sanitation Company operated the Nash Road landfill in Wheatfield from 1964 to 1968 on land DEC describes as formerly swampy. The disposal area covers roughly 18.7 acres within a town-owned parcel and is now bordered by residential and other developed properties.",
+      "The landfill received municipal refuse and industrial wastes, including caustic materials and sludges. DEC records identify the Niagara Falls Air Force Base, Bell Aerospace, Carborundum, Frontier Chemical, Graphite Specialties, Continental Can, and Greif Brothers among documented users.",
+      "Shortly before closure, material excavated during LaSalle Expressway sewer work near Love Canal was taken to Nash Road. That material is one documented waste stream within a larger mixed landfill; it does not make every part of the landfill or every neighboring parcel equivalent to Love Canal.",
     ],
     timeline: [
-      { period: "Landfill era", event: "Municipal and industrial waste was disposed at the Nash Road property." },
-      { period: "Investigation", event: "DEC characterized disposal areas, waste types, and environmental pathways." },
-      { period: "Remedial program", event: "Containment and management measures were implemented under state oversight." },
-      { period: "Current phase", event: "Approved operation, maintenance, and monitoring continue." },
+      { period: "1964-1968", event: "Niagara Sanitation operated the property for municipal and industrial waste disposal." },
+      { period: "1968", event: "Sewer-excavation material from near Love Canal was placed at the landfill shortly before it closed and passed to Town of Wheatfield ownership." },
+      { period: "1981-1989", event: "Local and state investigations recorded exposed refuse and evaluated waste, soil, groundwater, surface water, and landfill boundaries." },
+      { period: "2014-2015", event: "Supplemental characterization refined the western waste extent, and about 1,600 cubic yards of the documented Love Canal-related material was removed." },
+      { period: "2016-2019", event: "DEC reclassified and investigated the site under the state cleanup program, including a detailed remedial investigation." },
+      { period: "Present", event: "The town-owned landfill operates under an approved operation, maintenance, monitoring, and institutional-control program." },
     ],
     documentedImpacts: [
       "The landfill accepted both ordinary refuse and documented industrial chemical wastes.",
@@ -3622,12 +3639,12 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Nearby homes require careful boundary mapping without labeling the entire neighborhood as landfill.",
     ],
     cleanupAndControls: [
-      "The remedy contains waste and manages exposure pathways within the defined site.",
+      "Removal addressed the specifically documented Love Canal-related material; the broader municipal-industrial landfill remains managed in place.",
       "Groundwater and other environmental media are sampled under the approved monitoring plan.",
       "Inspections, maintenance, and land-use controls protect capped or controlled areas.",
     ],
     presentDay: [
-      "Niagara Sanitation remains a managed former landfill. Site-specific monitoring should guide present-day conclusions, while residential parcels must not be characterized without direct evidence.",
+      "Niagara Sanitation remains a managed former landfill. Site-specific monitoring and mapped waste limits should guide present-day conclusions; nearby residential parcels must not be characterized as disposal areas without direct evidence.",
     ],
     researchNotes: [
       "Add the newest monitoring trends, remedy boundary, and protectiveness determination.",
@@ -3695,13 +3712,15 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "alltift-landfill-ramco-steel": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
-      "Alltift Landfill and the adjoining Ramco Steel area combine a former disposal property with later industrial use near the Buffalo River corridor. Investigation identified waste and contaminated soil requiring consolidation and isolation.",
-      "The completed state remedy placed material beneath an engineered cover and established institutional controls, inspections, and long-term operation and maintenance.",
+      "Alltift Landfill and Ramco Steel were historically distinct but adjoining properties near Tifft Street and the Buffalo River industrial corridor. The former Alltift disposal area occupied about 25 acres; the Ramco Steel parcel added roughly 8.5 acres of later industrial land to the combined cleanup record.",
+      "Rail corridors, paper streets, auto-salvage and metal-working properties shaped the site's edges. Investigation found heterogeneous waste, fill, and contaminated soil rather than one uniform deposit, so the remedy consolidated material within a defined controlled footprint.",
+      "The state cleanup placed affected material beneath an engineered cover and completed major remedial construction in 2006. Institutional controls, soil-management rules, inspection, and maintenance remain necessary because residual waste was contained rather than entirely removed.",
     ],
     timeline: [
-      { period: "Disposal and industrial era", event: "Waste placement and steel-related property use created contaminated fill and soil." },
+      { period: "Disposal era", event: "The approximately 25-acre Alltift property received waste and fill within Buffalo's south-side industrial landscape." },
+      { period: "Steel-use era", event: "The adjoining Ramco property supported steel-related activity on an approximately 8.5-acre parcel." },
       { period: "Investigation and design", event: "DEC defined the material requiring consolidation and cover." },
       { period: "2006", event: "The cited construction-completion report documented the implemented remedy." },
       { period: "Long-term phase", event: "Periodic reviews evaluate cover condition, controls, and maintenance." },
@@ -3717,7 +3736,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Institutional controls, inspections, soil-management rules, and long-term maintenance preserve the remedy.",
     ],
     presentDay: [
-      "Alltift is a completed but controlled cleanup. Public or industrial reuse must remain consistent with the cover and institutional controls.",
+      "Alltift/Ramco is a completed but controlled cleanup. Its two-property history remains visible beneath a single remedy, and any public or industrial reuse must remain consistent with the cover and institutional controls.",
     ],
     researchNotes: [
       "Add the latest periodic-review findings and current property use.",
@@ -3755,15 +3774,17 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "times-beach-disposal-site": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
-      "Times Beach is a 45-acre confined disposal site used from 1972 to 1976 for sediment dredged from the Buffalo River federal navigation channel. The contained sediment reflects the river's industrial contamination history.",
-      "After disposal ended, natural succession and restoration transformed the surface into a valued nature preserve. Habitat use does not mean the contained dredged material was removed.",
+      "Times Beach is a 45-acre confined disposal facility built by the U.S. Army Corps of Engineers at the mouth of the Buffalo River. From 1972 to 1976 it received sediment dredged from the river's federal navigation channel, physically linking the property to the working harbor's industrial and maintenance history.",
+      "The Corps moved dredged-material placement to another facility in 1976. Vegetation then colonized the closed surface, creating an unusual succession from engineered disposal cell to urban habitat rather than a conventional excavation-and-redevelopment cleanup.",
+      "Later habitat programs focused on invasive-plant control and ecological restoration while respecting the containment structure. Wildlife value and public interest do not mean the dredged sediment was removed or that every part of the site can be disturbed safely.",
     ],
     timeline: [
       { period: "1972–1976", event: "Contaminated navigation-channel sediment was placed in the confined disposal area." },
-      { period: "Post-disposal", event: "Vegetation and wildlife colonized the closed containment surface." },
-      { period: "Preserve era", event: "The city and partners managed the property for habitat and public environmental value." },
+      { period: "1976", event: "The Corps shifted navigation-channel sediment placement to another facility, ending Times Beach's short active-disposal period." },
+      { period: "Post-disposal", event: "Vegetation and wildlife colonized the closed containment surface through natural succession." },
+      { period: "Preserve era", event: "Public agencies and partners managed the property for habitat while retaining its engineered containment function." },
       { period: "Ongoing restoration", event: "Invasive-species control and habitat work continue around the containment area." },
     ],
     documentedImpacts: [
@@ -3777,7 +3798,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Access, erosion, invasive species, and structural condition require continuing stewardship.",
     ],
     presentDay: [
-      "Times Beach is both a disposal structure and a nature preserve. Those identities are compatible only while containment integrity and habitat management are maintained.",
+      "Times Beach is both an Army Corps-era disposal structure and a nature preserve. Those identities are compatible only while containment integrity, access, and habitat management are maintained.",
     ],
     researchNotes: [
       "Document ownership, inspection responsibility, and current structural-monitoring requirements.",
@@ -4119,29 +4140,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "cecos-international": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 11, 2026",
     background: [
-      "The CECOS property has a disposal history dating to 1897 and began hazardous-waste treatment, storage, and disposal operations in 1977. Numerous waste-management units accumulated across the large facility over time.",
-      "EPA and New York corrective-action investigations found releases to fill, soil, and groundwater. Closed units are capped and maintained, while contaminated groundwater is recovered and treated under continuing hazardous-waste permits and corrective-action controls.",
+      "The CECOS property covers roughly 385 acres in the Town of Niagara and City of Niagara Falls. Waste disposal began there in 1897, decades before modern hazardous-waste law, and hazardous-waste treatment, storage, and disposal operations began in 1977.",
+      "EPA's facility description records an operating sanitary landfill, ten closed landfills, wastewater treatment, and container storage. Corrective-action investigations evaluated 47 solid-waste management units and areas of concern, showing why CECOS cannot be understood as a single landfill cell or one uniform plume.",
+      "Investigators identified releases to fill, soil, and groundwater, with the former Phase I wastewater-treatment impoundments described as the principal CECOS source in the central facility area. EPA separately notes that much contamination found near CECOS was attributed to the adjoining, upgradient Necco Park site; the atlas therefore keeps the two histories and responsible parties distinct.",
     ],
     timeline: [
-      { period: "1897 onward", event: "Waste disposal occurred on the property long before modern hazardous-waste regulation." },
-      { period: "1977 onward", event: "The facility operated hazardous-waste treatment, storage, and disposal units." },
-      { period: "Closure and corrective action", event: "Regulators investigated releases and closed or capped historic waste units." },
-      { period: "Current program", event: "Groundwater recovery, treatment, monitoring, maintenance, and permit controls continue." },
+      { period: "1897 onward", event: "Waste disposal began on the property long before modern engineered-landfill and hazardous-waste standards." },
+      { period: "1977 onward", event: "The complex operated hazardous-waste treatment, storage, and disposal units alongside other waste-management facilities." },
+      { period: "1984-1986", event: "Federal and state permit actions required expanded groundwater monitoring and identification and evaluation of historic waste-management units." },
+      { period: "1991 onward", event: "CECOS began recovering and treating contaminated groundwater as an interim corrective measure." },
+      { period: "1995", event: "Regulators approved the final groundwater-recovery corrective action for facility-related soil and groundwater contamination." },
+      { period: "Long-term phase", event: "Closed units, caps, groundwater recovery, treatment, monitoring, and post-closure obligations continue under hazardous-waste permits." },
     ],
     documentedImpacts: [
       "Historic waste-management units released contaminants to fill and soil.",
       "Groundwater contamination requires active recovery and treatment.",
-      "The long operating history produced units with different wastes, closure designs, and regulatory status.",
+      "The long operating history produced at least 47 investigated units or concern areas with different wastes, closure designs, owners, and regulatory status.",
     ],
     cleanupAndControls: [
       "Closed disposal units are capped and maintained to prevent contact and reduce infiltration.",
-      "Contaminated groundwater is recovered and treated.",
+      "Contaminated groundwater is recovered and treated; EPA's archived facility summary reported more than 65 million gallons treated since 1991 as of that page's publication, not as a current running total.",
       "Corrective-action orders, hazardous-waste permits, monitoring networks, inspections, and institutional controls govern long-term performance.",
     ],
     presentDay: [
-      "CECOS is a long-term hazardous-waste corrective-action site, not a single completed excavation. Understanding current risk depends on the status of individual closed units and the performance of groundwater containment and treatment.",
+      "CECOS is a long-term hazardous-waste corrective-action complex, not a single completed excavation. Understanding current conditions depends on the status of individual units, the separate influence of neighboring Necco Park, and the performance of groundwater containment and treatment.",
     ],
     researchNotes: [
       "Build a unit-level inventory of landfill cells, lagoons, tanks, closure dates, and corrective-action requirements.",
