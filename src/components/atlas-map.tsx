@@ -7,6 +7,7 @@ import * as maplibregl from "maplibre-gl";
 import type { Map as MapLibreMap, Marker } from "maplibre-gl";
 
 import { featuredSites } from "@/data/featured-sites";
+import { getPublicSiteName } from "@/lib/site-name";
 import type { AtlasSite } from "@/types/site";
 
 const regionCenter: [number, number] = [-78.84, 42.8];
@@ -174,7 +175,7 @@ export function AtlasMap() {
         .addTo(mapInstance);
       const element = marker.getElement();
       element.classList.add("atlas-native-marker");
-      element.setAttribute("aria-label", `Show ${site.name}, ${site.municipality}`);
+      element.setAttribute("aria-label", `Show ${getPublicSiteName(site.name)}, ${site.municipality}`);
       element.addEventListener("click", () => selectSite(site));
       markerStore.set(site.id, marker);
     });
@@ -361,7 +362,7 @@ export function AtlasMap() {
                 >
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <span>
-                    <strong>{site.name}</strong>
+                    <strong>{getPublicSiteName(site.name)}</strong>
                     <small>{site.municipality}</small>
                   </span>
                 </button>
@@ -405,7 +406,7 @@ export function AtlasMap() {
                 {categoryLabels[displayedSite.category]} · {displayedSite.county}{" "}
                 County
               </p>
-              <h3>{displayedSite.name}</h3>
+              <h3>{getPublicSiteName(displayedSite.name)}</h3>
               <p>{displayedSite.summary}</p>
               {displayedSite.pfasStatus && (
                 <p className={`map-pfas-status is-${displayedSite.pfasStatus}`}>

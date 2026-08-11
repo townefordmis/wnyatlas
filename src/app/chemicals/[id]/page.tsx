@@ -11,6 +11,7 @@ import {
 } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import { getSiteStory } from "@/lib/site-story";
+import { getPublicSiteName } from "@/lib/site-name";
 
 type ChemicalPageProps = {
   params: Promise<{ id: string }>;
@@ -156,7 +157,7 @@ export default async function ChemicalPage({ params }: ChemicalPageProps) {
                 <div className="chemical-related-sites">
                   {relatedSites.map((site) => (
                     <Link href={`/sites/${site.id}`} key={site.id}>
-                      <strong>{site.name}</strong>
+                      <strong>{getPublicSiteName(site.name)}</strong>
                       <span>{site.municipality} · {site.county} County</span>
                     </Link>
                   ))}

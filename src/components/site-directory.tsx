@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { featuredSites } from "@/data/featured-sites";
+import { getPublicSiteName } from "@/lib/site-name";
 
 const INITIAL_SITE_COUNT = 8;
 
@@ -110,7 +111,7 @@ export function SiteDirectory() {
                 {String(index + 1).padStart(2, "0")}
               </span>
               <span>
-                <h3>{site.name}</h3>
+                <h3>{getPublicSiteName(site.name)}</h3>
                 <p>
                   {site.municipality} · {site.county} County
                 </p>

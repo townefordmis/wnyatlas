@@ -16,6 +16,7 @@ import {
 import { formerWaterwayRecords } from "@/data/former-waterways";
 import { getConnectionGroupsForSite } from "@/data/site-connections";
 import { getSiteStory } from "@/lib/site-story";
+import { getPublicSiteName } from "@/lib/site-name";
 
 type SitePageProps = {
   params: Promise<{ id: string }>;
@@ -45,8 +46,10 @@ export async function generateMetadata({
     return {};
   }
 
+  const publicName = getPublicSiteName(site.name);
+
   return {
-    title: site.name,
+    title: publicName,
     description: site.summary,
     alternates: {
       canonical: `/sites/${site.id}`,
@@ -54,7 +57,7 @@ export async function generateMetadata({
     openGraph: {
       type: "article",
       url: `/sites/${site.id}`,
-      title: `${site.name} | WNYAtlas`,
+      title: `${publicName} | WNYAtlas`,
       description: site.summary,
       images: site.image
         ? [
@@ -67,7 +70,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${site.name} | WNYAtlas`,
+      title: `${publicName} | WNYAtlas`,
       description: site.summary,
       images: [site.image?.src ?? "/opengraph-image"],
     },
@@ -82,6 +85,7 @@ export default async function SitePage({ params }: SitePageProps) {
     notFound();
   }
 
+  const publicName = getPublicSiteName(site.name);
   const story = getSiteStory(site);
   const namedChemicals = findChemicalsInText(
     [
@@ -116,7 +120,7 @@ export default async function SitePage({ params }: SitePageProps) {
       {
         "@type": "Article",
         "@id": `${siteUrl}#article`,
-        headline: site.name,
+        headline: publicName,
         description: site.summary,
         url: siteUrl,
         mainEntityOfPage: siteUrl,
@@ -146,7 +150,8 @@ export default async function SitePage({ params }: SitePageProps) {
       {
         "@type": "Place",
         "@id": `${siteUrl}#place`,
-        name: site.name,
+        name: publicName,
+        ...(publicName !== site.name ? { alternateName: site.name } : {}),
         description: site.summary,
         address: {
           "@type": "PostalAddress",
@@ -178,7 +183,7 @@ export default async function SitePage({ params }: SitePageProps) {
           {
             "@type": "ListItem",
             position: 3,
-            name: site.name,
+            name: publicName,
             item: siteUrl,
           },
         ],
@@ -197,7 +202,7 @@ export default async function SitePage({ params }: SitePageProps) {
             <p className="eyebrow">
               {site.category} · {site.county} County
             </p>
-            <h1>{site.name}</h1>
+            <h1>{publicName}</h1>
             <p className="story-location">{site.municipality}</p>
             {site.image && (
               <figure className="story-image">
@@ -445,7 +450,7 @@ export default async function SitePage({ params }: SitePageProps) {
                             }
                           >
                             <span>{member.role}</span>
-                            <strong>{member.site.name}</strong>
+                            <strong>{getPublicSiteName(member.site.name)}</strong>
                             <p>{member.connection}</p>
                           </Link>
                         ))}

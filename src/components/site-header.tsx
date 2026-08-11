@@ -8,6 +8,7 @@ import { FormEvent, useMemo, useState } from "react";
 import { chemicalProfiles } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import { healthSearchCounties, healthSearchTopics } from "@/data/health-search-catalog";
+import { getPublicSiteName } from "@/lib/site-name";
 
 const MAX_RESULTS = 6;
 
@@ -30,7 +31,7 @@ export function SiteHeader() {
       .map((site) => ({
         id: `place-${site.id}`,
         href: `/sites/${site.id}`,
-        name: site.name,
+        name: getPublicSiteName(site.name),
         detail: `${site.municipality} · ${site.county} County`,
         image: site.image,
       }));

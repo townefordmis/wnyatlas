@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { SiteHeader } from "@/components/site-header";
 import { featuredSites } from "@/data/featured-sites";
+import { getPublicSiteName } from "@/lib/site-name";
 
 export const metadata: Metadata = {
   title: "All Documented Places",
@@ -30,10 +31,10 @@ const categoryLabels = {
 
 export default function PlacesPage() {
   const sortedSites = [...featuredSites].sort((a, b) =>
-    a.name.localeCompare(b.name),
+    getPublicSiteName(a.name).localeCompare(getPublicSiteName(b.name)),
   );
   const groups = Object.groupBy(sortedSites, (site) =>
-    site.name.charAt(0).toUpperCase(),
+    getPublicSiteName(site.name).charAt(0).toUpperCase(),
   );
 
   return (
@@ -67,7 +68,7 @@ export default function PlacesPage() {
               <div>
                 {sites?.map((site) => (
                   <Link key={site.id} href={`/sites/${site.id}`}>
-                    <strong>{site.name}</strong>
+                    <strong>{getPublicSiteName(site.name)}</strong>
                     <span>
                       {site.municipality} · {site.county} County ·{" "}
                       {categoryLabels[site.category]}
