@@ -423,7 +423,7 @@ export function RadiologicalInvestigationMap() {
   }
 
   return (
-    <section className="radiological-map-shell" aria-labelledby="radiological-map-title">
+    <section className="radiological-map-shell" id="radiological-map" aria-labelledby="radiological-map-title">
       <div className="school-map-toolbar">
         <div>
           <p className="eyebrow">Separate investigation map · 100 DOE/ORNL historical survey records</p>
@@ -561,7 +561,7 @@ export function RadiologicalDocumentArchive() {
   }, [county, kind, query]);
 
   return (
-    <section className="radiological-archive" aria-labelledby="radiological-archive-title">
+    <section className="radiological-archive" id="radiological-archive" aria-labelledby="radiological-archive-title">
       <div className="radiological-archive-heading">
         <div>
           <p className="eyebrow">Government record and research archive</p>

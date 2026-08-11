@@ -4078,13 +4078,27 @@ footer {
 }
 
 .radiological-investigation-flow li {
+  min-width: 0;
+  background: #21352c;
+}
+
+.radiological-investigation-flow a {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 3px 12px;
   min-height: 88px;
   align-content: center;
   padding: 15px;
+  color: inherit;
   background: #21352c;
+  text-decoration: none;
+}
+
+.radiological-investigation-flow a:hover,
+.radiological-investigation-flow a:focus-visible {
+  background: #2d493d;
+  outline: 2px solid #8bd4d6;
+  outline-offset: -2px;
 }
 
 .radiological-investigation-flow span {
@@ -4212,6 +4226,12 @@ footer {
 
 .radiological-map-shell {
   padding: 28px 0 70px;
+}
+
+#aerial-record,
+#radiological-map,
+#radiological-archive {
+  scroll-margin-top: 92px;
 }
 
 .radiological-hero h1 {

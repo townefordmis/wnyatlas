@@ -71,15 +71,15 @@ export default function RadiologicalInvestigationPage() {
         </div>
 
         <ol className="radiological-investigation-flow">
-          <li><span>01</span><strong>Aerial survey</strong><small>2023–2024 regional screening</small></li>
-          <li><span>02</span><strong>Roadway survey</strong><small>2025 targeted corridors</small></li>
-          <li><span>03</span><strong>Area of interest</strong><small>signal selected for review</small></li>
-          <li><span>04</span><strong>Ground survey</strong><small>fall 2025–present</small></li>
-          <li><span>05</span><strong>Property access</strong><small>when closer work is needed</small></li>
-          <li><span>06</span><strong>Detailed sampling</strong><small>only when warranted</small></li>
-          <li><span>07</span><strong>Laboratory analysis</strong><small>identify material and isotopes</small></li>
-          <li><span>08</span><strong>Risk assessment</strong><small>interpret possible exposure</small></li>
-          <li><span>09</span><strong>Agency decision</strong><small>cleanup or no further action</small></li>
+          <li><a href="#aerial-record"><span>01</span><strong>Aerial survey</strong><small>2023–2024 regional screening</small></a></li>
+          <li><a href="#aerial-record"><span>02</span><strong>Roadway survey</strong><small>2025 targeted corridors</small></a></li>
+          <li><a href="#radiological-map"><span>03</span><strong>Area of interest</strong><small>open the comparison map</small></a></li>
+          <li><a href="#radiological-map"><span>04</span><strong>Ground survey</strong><small>see mapped public findings</small></a></li>
+          <li><a href="#radiological-archive"><span>05</span><strong>Property access</strong><small>read the agency records</small></a></li>
+          <li><a href="#radiological-archive"><span>06</span><strong>Detailed sampling</strong><small>review supporting documents</small></a></li>
+          <li><a href="#radiological-archive"><span>07</span><strong>Laboratory analysis</strong><small>review technical evidence</small></a></li>
+          <li><a href="#radiological-archive"><span>08</span><strong>Risk assessment</strong><small>read agency interpretations</small></a></li>
+          <li><a href="#radiological-map"><span>09</span><strong>Agency decision</strong><small>compare documented outcomes</small></a></li>
         </ol>
 
         <div className="radiological-known-unknown">
