@@ -66,7 +66,7 @@ const featuredSiteRecords: AtlasSite[] = [
         {
           period: "1988–2000",
           event:
-            "EPA and New York completed habitability decisions, sewer and creek work, the 93rd Street School cleanup, property management, and off-site treatment or disposal of excavated materials. The last shipment left in March 2000.",
+            "EPA and New York completed habitability decisions, sewer and creek work, the 93rd Street School cleanup, property management, and off-site treatment or disposal of excavated materials. A court held Occidental liable in 1988; later agreements made the corporate successor responsible for cleanup wastes, site management, and substantial government costs. The last waste shipment left in March 2000.",
         },
         {
           period: "2004",
@@ -135,6 +135,16 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Love Canal Area Master Plan — Environmental Impact Statement Appendices",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1990-05-30.EIS%20Love%20Canal%20Master%20Plan%20Append.%20B-Z.pdf",
+      },
+      {
+        title: "Occidental to Pay $129 Million in Love Canal Settlement",
+        publisher: "U.S. Department of Justice",
+        url: "https://www.justice.gov/archive/opa/pr/Pre_96/December95/638.txt.html",
+      },
+      {
+        title: "Occidental Chemical Consent Order for Love Canal Wastes",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/archive/epa/aboutepa/occidental-chemical-signs-consent-order-storage-and-destruction-love-canal-wastes.html",
       },
       {
         title: "New York State Aerial Photographs",

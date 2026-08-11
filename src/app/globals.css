@@ -1130,6 +1130,66 @@ footer {
   line-height: 1.55;
 }
 
+.love-canal-occidental {
+  margin-top: 2rem;
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+  color: var(--paper);
+  background: var(--moss);
+}
+
+.love-canal-occidental .eyebrow {
+  color: #9adfe4;
+}
+
+.love-canal-occidental h3 {
+  margin: 0.35rem 0 0;
+  color: var(--paper);
+  font-family: Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  font-weight: 500;
+}
+
+.love-canal-occidental-summary {
+  max-width: 68ch;
+}
+
+.love-canal-occidental ol {
+  margin: 1.75rem 0 0;
+  padding: 0;
+  border-top: 1px solid rgba(245, 241, 231, 0.24);
+  list-style: none;
+}
+
+.love-canal-occidental li {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 1.25rem;
+  margin: 0 !important;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(245, 241, 231, 0.24);
+}
+
+.love-canal-occidental li strong {
+  color: #9adfe4;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.love-canal-occidental li span {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.love-canal-occidental-rule {
+  margin: 1.35rem 0 0;
+  padding: 1rem;
+  border-left: 4px solid #9adfe4;
+  background: rgba(255, 255, 255, 0.07);
+  font-size: 0.84rem !important;
+  line-height: 1.6 !important;
+}
+
 .love-canal-inventory-heading {
   display: flex;
   align-items: end;
@@ -2633,6 +2693,11 @@ footer {
     align-items: flex-start;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .love-canal-occidental li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 
   .places-index-heading {

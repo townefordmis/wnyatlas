@@ -79,6 +79,42 @@ export function LoveCanalDisposalHistory() {
         ))}
       </div>
 
+      <aside className="love-canal-occidental" aria-labelledby="love-canal-occidental-title">
+        <div className="love-canal-occidental-heading">
+          <p className="eyebrow">Corporate succession and responsibility</p>
+          <h3 id="love-canal-occidental-title">Where Occidental Chemical enters the history</h3>
+        </div>
+        <p className="love-canal-occidental-summary">
+          Occidental was not the named company conducting disposal at Love Canal in
+          1942–1953. Hooker Chemical—Occidental&apos;s corporate predecessor—was the
+          documented industrial disposer. Occidental later became the responsible corporate
+          successor and took on major financial, cleanup, and long-term management obligations.
+        </p>
+        <ol>
+          <li>
+            <strong>1979</strong>
+            <span>Federal lawsuits named Hooker Chemical and its parent, Occidental Petroleum, over Love Canal and three other Niagara Falls dumpsites.</span>
+          </li>
+          <li>
+            <strong>1988–1989</strong>
+            <span>A federal court held Occidental liable for Love Canal releases. Occidental then signed an order covering storage and destruction of cleanup wastes.</span>
+          </li>
+          <li>
+            <strong>1995</strong>
+            <span>Occidental agreed to pay the federal government $129 million. Operation, maintenance, and monitoring were also transferred from NYSDEC to Occidental Chemical.</span>
+          </li>
+          <li>
+            <strong>Today</strong>
+            <span>Glenn Springs Holdings, an Occidental subsidiary, oversees continuing operation, maintenance, monitoring, cap inspection, and treatment-system work under government oversight.</span>
+          </li>
+        </ol>
+        <p className="love-canal-occidental-rule">
+          <strong>Attribution rule:</strong> WNYAtlas names Hooker for the historical dumping and
+          Occidental for corporate succession, liability, settlement, cleanup, and continuing site
+          management. Those are related—but not interchangeable—roles.
+        </p>
+      </aside>
+
       <div className="love-canal-inventory-heading">
         <div>
           <p className="eyebrow">Hooker inventory</p>
@@ -141,6 +177,9 @@ export function LoveCanalDisposalHistory() {
         </a>
         <a href="https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1990-05-30.EIS%20Love%20Canal%20Master%20Plan%20Append.%20B-Z.pdf" target="_blank" rel="noreferrer">
           1990 NYS master-plan appendix ↗
+        </a>
+        <a href="https://www.justice.gov/archive/opa/pr/Pre_96/December95/638.txt.html" target="_blank" rel="noreferrer">
+          1995 federal Occidental settlement ↗
         </a>
       </div>
     </section>
