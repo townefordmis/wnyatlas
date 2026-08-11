@@ -1771,7 +1771,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former Hooker Chemical landfill that received about 80,000 tons of chemical waste, including dioxin-bearing material. The landfill and perimeter are capped, contaminated groundwater is hydraulically contained and treated, and community monitoring wells remain in use.",
     evidenceStatus: "well-documented",
-    coordinates: [-79.019, 43.119],
+    coordinates: [-79.03666, 43.13111],
     sources: [
       {
         title: "Hooker / Hyde Park Superfund Site Profile",

@@ -31,6 +31,9 @@ const bethlehemBounds =
 const tonawandaCokeBounds =
   "bbox=-78.950%2C42.960%2C-78.900%2C43.010&bboxSR=4326&imageSR=4326&size=1200%2C1200&format=jpg&f=image";
 
+const hydeParkBounds =
+  "bbox=-79.055%2C43.115%2C-79.015%2C43.145&bboxSR=4326&imageSR=4326&size=1200%2C1200&format=jpg&f=image";
+
 const histories: Record<string, AerialHistory> = {
   "bethlehem-steel": {
     eyebrow: "Historical aerial evidence · first release",
@@ -206,6 +209,86 @@ const histories: Record<string, AerialHistory> = {
       {
         label: "NYSDEC Region 9 cleanup record",
         url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9",
+      },
+    ],
+  },
+  "hooker-hyde-park-landfill": {
+    eyebrow: "Historical aerial evidence · third release",
+    title: "The capped landfill, Bloody Run drainage, and long-term remedy",
+    introduction:
+      "These four New York State orthophotos use one fixed geographic window around the Hyde Park Landfill, the adjoining industrial properties, the Niagara Power Project, nearby neighborhoods, and the Niagara Gorge. The verified statewide aerial sequence begins after remedy construction was already underway, so it does not show the 1953-1975 disposal period.",
+    interpretation:
+      "The bright yellow oval is an approximate visual guide derived from the landfill property shown in the official operation-and-maintenance map; it is not a surveyed boundary. EPA and DEC records - not color, vegetation, or visible surface change - establish the waste history, groundwater and sediment contamination, Bloody Run pathway, hydraulic containment, treatment, monitoring, and deletion from the National Priorities List. The photographs cannot show buried waste, NAPL, groundwater capture, dioxin, present exposure, or whether an engineered system is performing as designed.",
+    panels: [
+      {
+        period: "1994-1998",
+        heading: "Active construction and operating remedy era",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/napp/MapServer/export?${hydeParkBounds}`,
+        sourceUrl:
+          "https://orthos.its.ny.gov/arcgis/rest/services/wms/napp/MapServer",
+        sourceLabel: "USGS NAPP / NYS GIS",
+        alt: "Color infrared aerial showing the Hyde Park Landfill area, Niagara Power Project, Niagara Gorge, industry, and nearby neighborhoods in the 1994 to 1998 period",
+        note:
+          "The color-infrared mosaic records the area while the multi-part containment and treatment remedy was operating and construction was still being completed. Image seams and unusual colors are photographic artifacts or vegetation response, not contamination boundaries.",
+        matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 745, cy: 555, rx: 245, ry: 88 },
+      },
+      {
+        period: "2002",
+        heading: "Near the construction-completion milestone",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2002/MapServer/export?${hydeParkBounds}`,
+        sourceUrl:
+          "https://orthos.its.ny.gov/arcgis/rest/services/wms/2002/MapServer",
+        sourceLabel: "2002 NYS orthophoto",
+        alt: "New York State 2002 orthophoto showing the capped Hyde Park Landfill and surrounding Niagara Falls and Town of Niagara landscape",
+        note:
+          "EPA records construction completion in July 2003. This 2002 view provides surface context immediately before that milestone; it does not demonstrate completion or protectiveness by itself.",
+        matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 745, cy: 555, rx: 245, ry: 88 },
+      },
+      {
+        period: "2021",
+        heading: "Long-term remedy and five-year review",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2021/MapServer/export?${hydeParkBounds}`,
+        sourceUrl:
+          "https://orthos.its.ny.gov/arcgis/rest/services/wms/2021/MapServer",
+        sourceLabel: "2021 NYS orthophoto",
+        alt: "New York State 2021 orthophoto showing the Hyde Park Landfill area during long-term operation and monitoring",
+        note:
+          "EPA completed its sixth five-year review in 2021, eight years after deleting the site from the National Priorities List. Deletion recognized the completed remedy; it did not remove the buried waste or end required operation and monitoring.",
+        matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 745, cy: 555, rx: 245, ry: 88 },
+      },
+      {
+        period: "2024",
+        heading: "Managed cap and surrounding landscape today",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer/export?${hydeParkBounds}`,
+        sourceUrl:
+          "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer",
+        sourceLabel: "2024 NYS orthophoto",
+        alt: "New York State 2024 orthophoto showing the managed Hyde Park Landfill, nearby industry and neighborhoods, and the Niagara Gorge corridor",
+        note:
+          "The latest matched view shows the maintained surface and surrounding land uses. EPA's community monitoring wells, groundwater-control wells, treatment, cap care, and periodic reviews - not appearance in the aerial - are the evidence used to evaluate the remedy.",
+        matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 745, cy: 555, rx: 245, ry: 88 },
+      },
+    ],
+    recordLinks: [
+      {
+        label: "EPA Hyde Park cleanup record",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0201306",
+      },
+      {
+        label: "EPA cleanup milestones",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.schedule&id=0201306",
+      },
+      {
+        label: "DEC operation-and-maintenance manual and site map",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932021/Work%20Plan.HW.932021.2011-05-17.OM_Manual.pdf",
+      },
+      {
+        label: "EPA 2013 NPL deletion announcement",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/722b0632baeffc0d85257c19005357a4.html",
       },
     ],
   },
