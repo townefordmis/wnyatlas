@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
 import { LoveCanalDisposalHistory } from "@/components/love-canal-disposal-history";
+import { HistoricalAerialEvidence } from "@/components/historical-aerial-evidence";
 import { findChemicalsInText } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import {
@@ -294,6 +295,8 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {site.id === "love-canal" && <LoveCanalDisposalHistory />}
+
+            <HistoricalAerialEvidence siteId={site.id} />
 
             {namedChemicals.length > 0 && (
               <section className="story-chemicals">
