@@ -4403,6 +4403,10 @@ footer {
   background: #eee5ef;
 }
 
+.radiological-aerial-control-mobile {
+  display: none;
+}
+
 .radiological-aerial-control p {
   margin: 0;
   color: #5c584f;
@@ -4738,6 +4742,11 @@ footer {
   .radiological-legend { justify-content: flex-start; }
   .radiological-report-summary > div { grid-template-columns: 1fr; }
   .radiological-map-grid { grid-template-columns: 1fr; grid-template-areas: "map" "record" "list"; }
+  .radiological-aerial-control-desktop { display: none; }
+  .radiological-aerial-control-mobile {
+    display: grid;
+    margin: 0 0 10px;
+  }
   .radiological-map-canvas { min-height: 58svh; }
   .radiological-map-list { max-height: 480px; border-top: 1px solid #b7b09f; border-left: 0; }
   .radiological-record { padding: 24px 18px; }

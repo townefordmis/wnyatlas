@@ -52,6 +52,39 @@ const dispositionLabels: Record<RadiologicalDisposition, string> = {
 const countyBoundaryUrl =
   "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/82/query?where=STATE%3D%2736%27%20AND%20COUNTY%20IN%20%28%27029%27%2C%27063%27%29&outFields=NAME%2CBASENAME%2CSTATE%2CCOUNTY&returnGeometry=true&outSR=4326&f=geojson";
 
+function AerialControls({
+  basemap,
+  opacity,
+  onBasemapChange,
+  onOpacityChange,
+  mobile = false,
+}: {
+  basemap: Basemap;
+  opacity: number;
+  onBasemapChange: (value: Basemap) => void;
+  onOpacityChange: (value: number) => void;
+  mobile?: boolean;
+}) {
+  return <div className={`radiological-aerial-control ${mobile ? "radiological-aerial-control-mobile" : "radiological-aerial-control-desktop"}`}>
+    <label>
+      <span>Background imagery</span>
+      <select value={basemap} onChange={(event) => onBasemapChange(event.target.value as Basemap)}>
+        <option value="streets">Street map</option>
+        <option value="napp">1994–1998 USGS aerial · color infrared</option>
+        <option value="2002">2002 NYS aerial</option>
+        <option value="2024">2024 NYS aerial</option>
+      </select>
+    </label>
+    {basemap !== "streets" && <>
+      <label className="radiological-opacity-control">
+        <span>Aerial opacity · {Math.round(opacity * 100)}%</span>
+        <input type="range" min="0.35" max="1" step="0.05" value={opacity} onChange={(event) => onOpacityChange(Number(event.target.value))} />
+      </label>
+      <p>{aerialLayers[basemap].label}. The photograph provides historical surface context; it does not show subsurface material or current risk.</p>
+    </>}
+  </div>;
+}
+
 export function RadiologicalInvestigationMap() {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
@@ -417,28 +450,13 @@ export function RadiologicalInvestigationMap() {
         to place the same pins over georeferenced government imagery.
       </p>
 
+      <AerialControls basemap={basemap} opacity={aerialOpacity} onBasemapChange={setBasemap} onOpacityChange={setAerialOpacity} mobile />
+
       <div className="radiological-map-grid">
         <div className="radiological-map-canvas" ref={container} />
 
         <aside className="radiological-map-list" aria-label="Radiological map records">
-          <div className="radiological-aerial-control">
-            <label>
-              <span>Background imagery</span>
-              <select value={basemap} onChange={(event) => setBasemap(event.target.value as Basemap)}>
-                <option value="streets">Street map</option>
-                <option value="napp">1994–1998 USGS aerial · color infrared</option>
-                <option value="2002">2002 NYS aerial</option>
-                <option value="2024">2024 NYS aerial</option>
-              </select>
-            </label>
-            {basemap !== "streets" && <>
-              <label className="radiological-opacity-control">
-                <span>Aerial opacity · {Math.round(aerialOpacity * 100)}%</span>
-                <input type="range" min="0.35" max="1" step="0.05" value={aerialOpacity} onChange={(event) => setAerialOpacity(Number(event.target.value))} />
-              </label>
-              <p>{aerialLayers[basemap].label}. The photograph provides historical surface context; it does not show subsurface material or current risk.</p>
-            </>}
-          </div>
+          <AerialControls basemap={basemap} opacity={aerialOpacity} onBasemapChange={setBasemap} onOpacityChange={setAerialOpacity} />
           <label>
             <span>Search fill and survey locations</span>
             <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Address, road, or anomaly number" />
