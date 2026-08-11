@@ -660,14 +660,14 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "radiological",
     summary:
-      "Ongoing regional investigation in which 121 property owners were contacted for access to conduct more detailed testing. Contact or screening does not mean every property contains radioactive fill.",
+      "Ongoing three-phase regional assessment. As of July 20, 2026, agencies reported approximately 380 areas of interest, about 220 cleared from additional testing, and roughly 160 ground surveys still underway. These are screening stages, not counts of contaminated properties.",
     evidenceStatus: "research-in-progress",
     coordinates: [-79.035, 43.125],
     sources: [
       {
-        title: "Niagara and Erie County Radiological Assessment Project",
-        publisher: "Office of the Governor of New York",
-        url: "https://www.governor.ny.gov/news/governor-hochuls-letter-epa-administrator-protect-new-yorkers-and-accelerate-niagara-and-erie",
+        title: "Niagara and Erie County Radiological Assessment",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment",
       },
       {
         title: "ASPECT Radiological Assessment Deployment",
@@ -675,9 +675,9 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://www.epa.gov/emergency-response/aspect-program-history",
       },
       {
-        title: "DEC Officials Report 121 Property-Access Letters",
-        publisher: "Niagara Action",
-        url: "https://www.niagaraaction.com/radioactive-contamination-fears-grow-in-niagara-county-as-residents-demand-answers-cleanup-and-superfund-designation/",
+        title: "July 20, 2026 NECRA Community Meeting Presentation",
+        publisher: "NYSDEC, NYSDOH, and U.S. EPA",
+        url: "https://dec.ny.gov/sites/default/files/2026-07/FINAL%20Monday%20July%2020%20NECRA%20Community%20Meeting%20Presentation.pdf",
       },
     ],
   },

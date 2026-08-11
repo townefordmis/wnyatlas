@@ -457,7 +457,7 @@ export const radiologicalDocuments: RadiologicalDocument[] = [
     status: "historical",
     establishes: "Documents the September 1979 aerial survey that identified elevated gamma-radiation locations for follow-up work.",
     mapConnection: "Predecessor survey to the 100-location ground investigation.",
-    url: "https://lmpublicsearch.lm.doe.gov/SitePages/ConsideredSites.aspx",
+    url: "https://lmpublicsearch.lm.doe.gov/LMSites/2711-NY.17-6_NFSS.pdf",
   },
   {
     id: "ornl-100-anomalies-1986",
