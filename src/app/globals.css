@@ -4394,6 +4394,32 @@ footer {
   font-weight: 800;
 }
 
+.radiological-aerial-control {
+  display: grid;
+  gap: 9px;
+  margin: -2px -2px 16px;
+  padding: 12px;
+  border: 1px solid #72518b;
+  background: #eee5ef;
+}
+
+.radiological-aerial-control p {
+  margin: 0;
+  color: #5c584f;
+  font-size: .67rem;
+  line-height: 1.45;
+}
+
+.radiological-aerial-control .radiological-opacity-control {
+  gap: 3px;
+}
+
+.radiological-aerial-control input[type="range"] {
+  min-height: 28px;
+  padding: 0;
+  accent-color: #72518b;
+}
+
 .radiological-map-list input,
 .radiological-map-list select {
   width: 100%;

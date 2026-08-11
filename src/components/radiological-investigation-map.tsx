@@ -26,6 +26,22 @@ type Selection =
   | { type: "follow-up"; record: RadiologicalFollowUp };
 
 type MapView = "all" | "old-remediated" | "1986-other" | "newer";
+type Basemap = "streets" | "napp" | "2002" | "2024";
+
+const aerialLayers: Record<Exclude<Basemap, "streets">, { label: string; url: string }> = {
+  napp: {
+    label: "1994–1998 USGS NAPP aerial (color infrared)",
+    url: "https://orthos.its.ny.gov/arcgis/rest/services/wms/napp/MapServer/tile/{z}/{y}/{x}",
+  },
+  "2002": {
+    label: "Spring 2002 NYS orthophoto",
+    url: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2002/MapServer/tile/{z}/{y}/{x}",
+  },
+  "2024": {
+    label: "2024 NYS orthophoto",
+    url: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer/tile/{z}/{y}/{x}",
+  },
+};
 
 const dispositionLabels: Record<RadiologicalDisposition, string> = {
   "federal-remediated": "NFSS-related; report states remediation occurred",
@@ -49,6 +65,9 @@ export function RadiologicalInvestigationMap() {
   const [showAssessment, setShowAssessment] = useState(true);
   const [showProducers, setShowProducers] = useState(true);
   const [mapView, setMapView] = useState<MapView>("all");
+  const [basemap, setBasemap] = useState<Basemap>("streets");
+  const [aerialOpacity, setAerialOpacity] = useState(0.88);
+  const [mapLayersReady, setMapLayersReady] = useState(false);
   const [selection, setSelection] = useState<Selection>({
     type: "historical",
     record: historicalRadiologicalRecords[0],
@@ -111,8 +130,26 @@ export function RadiologicalInvestigationMap() {
             tileSize: 256,
             attribution: "© OpenStreetMap contributors",
           },
+          ...Object.fromEntries(Object.entries(aerialLayers).map(([id, layer]) => [
+            `aerial-${id}`,
+            {
+              type: "raster" as const,
+              tiles: [layer.url],
+              tileSize: 256,
+              attribution: id === "napp" ? "USGS NAPP / NYS ITS Geospatial Services" : "NYS ITS Geospatial Services",
+            },
+          ])),
         },
-        layers: [{ id: "osm", type: "raster", source: "osm" }],
+        layers: [
+          { id: "osm", type: "raster", source: "osm" },
+          ...Object.keys(aerialLayers).map((id) => ({
+            id: `aerial-${id}`,
+            type: "raster" as const,
+            source: `aerial-${id}`,
+            layout: { visibility: "none" as const },
+            paint: { "raster-opacity": 0.88 },
+          })),
+        ],
       },
     });
     map.current = instance;
@@ -169,6 +206,7 @@ export function RadiologicalInvestigationMap() {
         source: "assessment",
         paint: { "line-color": "#6c4e82", "line-opacity": 0.55, "line-width": 1.4, "line-dasharray": [3, 3] },
       });
+      setMapLayersReady(true);
 
       const popup = new maplibregl.Popup({
         closeButton: true,
@@ -314,6 +352,17 @@ export function RadiologicalInvestigationMap() {
   }, [showAssessment]);
 
   useEffect(() => {
+    const instance = map.current;
+    if (!instance?.isStyleLoaded()) return;
+    Object.keys(aerialLayers).forEach((id) => {
+      const layerId = `aerial-${id}`;
+      if (!instance.getLayer(layerId)) return;
+      instance.setLayoutProperty(layerId, "visibility", basemap === id ? "visible" : "none");
+      instance.setPaintProperty(layerId, "raster-opacity", aerialOpacity);
+    });
+  }, [aerialOpacity, basemap, mapLayersReady]);
+
+  useEffect(() => {
     historicalMarkers.current.forEach((marker, id) => {
       marker.getElement().classList.toggle("is-selected", selection.type === "historical" && selection.record.id === id);
     });
@@ -364,13 +413,32 @@ export function RadiologicalInvestigationMap() {
         Marker color separates NFSS-related locations from the other DOE/ORNL
         anomalies. The 2025 roadway work is shown as survey coverage because agencies
         have not released property-level findings as public pins; teal pins represent
-        newer sites with an official EPA location and outcome.
+        newer sites with an official EPA location and outcome. Use the aerial selector
+        to place the same pins over georeferenced government imagery.
       </p>
 
       <div className="radiological-map-grid">
         <div className="radiological-map-canvas" ref={container} />
 
         <aside className="radiological-map-list" aria-label="Radiological map records">
+          <div className="radiological-aerial-control">
+            <label>
+              <span>Background imagery</span>
+              <select value={basemap} onChange={(event) => setBasemap(event.target.value as Basemap)}>
+                <option value="streets">Street map</option>
+                <option value="napp">1994–1998 USGS aerial · color infrared</option>
+                <option value="2002">2002 NYS aerial</option>
+                <option value="2024">2024 NYS aerial</option>
+              </select>
+            </label>
+            {basemap !== "streets" && <>
+              <label className="radiological-opacity-control">
+                <span>Aerial opacity · {Math.round(aerialOpacity * 100)}%</span>
+                <input type="range" min="0.35" max="1" step="0.05" value={aerialOpacity} onChange={(event) => setAerialOpacity(Number(event.target.value))} />
+              </label>
+              <p>{aerialLayers[basemap].label}. The photograph provides historical surface context; it does not show subsurface material or current risk.</p>
+            </>}
+          </div>
           <label>
             <span>Search fill and survey locations</span>
             <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Address, road, or anomaly number" />
