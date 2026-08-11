@@ -214,12 +214,24 @@ const histories: Record<string, AerialHistory> = {
   },
   "hooker-hyde-park-landfill": {
     eyebrow: "Historical aerial evidence · third release",
-    title: "The capped landfill, Bloody Run drainage, and long-term remedy",
+    title: "From the operating landfill to the long-term remedy",
     introduction:
-      "These four New York State orthophotos use one fixed geographic window around the Hyde Park Landfill, the adjoining industrial properties, the Niagara Power Project, nearby neighborhoods, and the Niagara Gorge. The verified statewide aerial sequence begins after remedy construction was already underway, so it does not show the 1953-1975 disposal period.",
+      "A newly verified USGS frame records the Hyde Park Landfill area in 1958, five years after disposal began. Four later New York State orthophotos then use one fixed geographic window around the landfill, adjoining industrial properties, the Niagara Power Project, nearby neighborhoods, and the Niagara Gorge. No pre-1953 Hyde Park frame was available from the online USGS catalog; New York State's 1938 Niagara County photographs remain an archive lead rather than a published comparison image.",
     interpretation:
-      "The bright yellow oval is an approximate visual guide derived from the landfill property shown in the official operation-and-maintenance map; it is not a surveyed boundary. EPA and DEC records - not color, vegetation, or visible surface change - establish the waste history, groundwater and sediment contamination, Bloody Run pathway, hydraulic containment, treatment, monitoring, and deletion from the National Priorities List. The photographs cannot show buried waste, NAPL, groundwater capture, dioxin, present exposure, or whether an engineered system is performing as designed.",
+      "The bright yellow oval is an approximate visual guide derived from the landfill property shown in the official operation-and-maintenance map; it is not a surveyed boundary. The 1958 frame is a regional, non-orthorectified photograph and is not pixel-aligned with the later views. EPA and DEC records - not color, vegetation, or visible surface change - establish the waste history, groundwater and sediment contamination, Bloody Run pathway, hydraulic containment, treatment, monitoring, and deletion from the National Priorities List. The photographs cannot show buried waste, NAPL, groundwater capture, dioxin, present exposure, or whether an engineered system is performing as designed.",
     panels: [
+      {
+        period: "1958",
+        heading: "Early operating period",
+        imageUrl: "/historical/hyde-park-1958-usgs.jpg",
+        sourceUrl:
+          "https://ims.cr.usgs.gov/browse/aircraft/phoenix/aerial/7KRD/7KRD05031/7KRD05031_077.jpg",
+        sourceLabel: "USGS frame ARA550340100933",
+        alt: "USGS aerial photograph acquired June 3, 1958, covering northern Niagara Falls and the Hyde Park Landfill area",
+        note:
+          "USGS acquired this 1:60,000-scale frame on June 3, 1958. Its recorded footprint contains EPA's published Hyde Park site coordinate, placing the photograph within the documented 1953-1975 disposal period. The yellow guide locates the property approximately; the photograph alone does not identify waste or contamination.",
+        highlight: { viewBox: "0 0 800 755", cx: 275, cy: 327, rx: 38, ry: 14 },
+      },
       {
         period: "1994-1998",
         heading: "Active construction and operating remedy era",
@@ -285,6 +297,10 @@ const histories: Record<string, AerialHistory> = {
       {
         label: "DEC operation-and-maintenance manual and site map",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932021/Work%20Plan.HW.932021.2011-05-17.OM_Manual.pdf",
+      },
+      {
+        label: "New York State Archives 1938 Niagara County aerial collection",
+        url: "https://iarchives.nysed.gov/xtf/view?docId=ead%2Ffindingaids%2FB1936.xml",
       },
       {
         label: "EPA 2013 NPL deletion announcement",
