@@ -7,6 +7,13 @@ type AerialPanel = {
   alt: string;
   note: string;
   matched?: boolean;
+  highlight?: {
+    viewBox: string;
+    cx: number;
+    cy: number;
+    rx: number;
+    ry: number;
+  };
 };
 
 type AerialHistory = {
@@ -128,6 +135,7 @@ const histories: Record<string, AerialHistory> = {
         alt: "Erie County 1927 aerial plate showing Grand Island, the Niagara River, and the early industrial River Road corridor in Tonawanda",
         note:
           "Coke manufacturing had begun on the property in 1917. This county plate supplies broad period context for the river, islands, transportation corridor, and early industrial development; it is not a surveyed site-boundary map.",
+        highlight: { viewBox: "0 0 2306 1561", cx: 2035, cy: 235, rx: 245, ry: 185 },
       },
       {
         period: "1951",
@@ -140,6 +148,7 @@ const histories: Record<string, AerialHistory> = {
         alt: "Erie County 1951 aerial photograph of the Niagara River, Grand Island, and the Tonawanda industrial riverfront",
         note:
           "The 1951 flight records the wider River Road industrial landscape decades before Tonawanda Coke Corporation took over operations in 1978. Its extent and orientation differ from the later matched views.",
+        highlight: { viewBox: "0 0 1620 1622", cx: 1390, cy: 665, rx: 205, ry: 360 },
       },
       {
         period: "1994-1998",
@@ -152,6 +161,7 @@ const histories: Record<string, AerialHistory> = {
         note:
           "The color-infrared mosaic shows the operating plant, riverfront industry, rail and road connections, and open storage or process areas. Dark surfaces and color differences are visual features, not contamination measurements.",
         matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 500, cy: 650, rx: 285, ry: 195 },
       },
       {
         period: "2002",
@@ -164,6 +174,7 @@ const histories: Record<string, AerialHistory> = {
         note:
           "This matched view predates the major federal criminal case and the 2018 shutdown. It records the physical operating landscape, but the image alone does not establish what materials were present or where releases occurred.",
         matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 500, cy: 650, rx: 285, ry: 195 },
       },
       {
         period: "2024",
@@ -176,6 +187,7 @@ const histories: Record<string, AerialHistory> = {
         note:
           "The latest panel shows the altered property after the October 2018 shutdown and EPA-led removal work. Visible clearing does not mean the entire property is clean; DEC continues to track the main plant and Site 108 through separate state cleanup records.",
         matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 500, cy: 650, rx: 285, ry: 195 },
       },
     ],
     recordLinks: [
@@ -216,6 +228,30 @@ export function HistoricalAerialEvidence({ siteId }: { siteId: string }) {
               {/* Official archive and state GIS imagery is intentionally served from its source. */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={panel.imageUrl} alt={panel.alt} loading="lazy" referrerPolicy="no-referrer" />
+              {panel.highlight ? (
+                <svg
+                  className="historical-aerial-site-highlight"
+                  viewBox={panel.highlight.viewBox}
+                  preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="Bright yellow outline marking the approximate former site area"
+                >
+                  <ellipse
+                    className="historical-aerial-site-halo"
+                    cx={panel.highlight.cx}
+                    cy={panel.highlight.cy}
+                    rx={panel.highlight.rx}
+                    ry={panel.highlight.ry}
+                  />
+                  <ellipse
+                    className="historical-aerial-site-outline"
+                    cx={panel.highlight.cx}
+                    cy={panel.highlight.cy}
+                    rx={panel.highlight.rx}
+                    ry={panel.highlight.ry}
+                  />
+                </svg>
+              ) : null}
             </a>
             <figcaption>
               <span className="historical-aerial-period">{panel.period}</span>
