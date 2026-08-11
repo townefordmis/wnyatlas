@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
+import { LoveCanalDisposalHistory } from "@/components/love-canal-disposal-history";
 import { findChemicalsInText } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import {
@@ -291,6 +292,8 @@ export default async function SitePage({ params }: SitePageProps) {
                 </figure>
               </section>
             )}
+
+            {site.id === "love-canal" && <LoveCanalDisposalHistory />}
 
             {namedChemicals.length > 0 && (
               <section className="story-chemicals">

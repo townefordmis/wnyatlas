@@ -11,30 +11,62 @@ const featuredSiteRecords: AtlasSite[] = [
     municipality: "Niagara Falls",
     county: "Niagara",
     category: "cleanup",
-    summary: "Chemical disposal, public-health response, containment, and monitoring.",
+    summary: "Full history of chemical and municipal disposal, the 21,800-ton Hooker inventory, public-health response, cleanup, and continuing site management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.949, 43.08],
     story: {
       lastReviewed: "August 10, 2026",
       background: [
-        "Love Canal began as an unfinished canal project and was later used for chemical-waste disposal. Residential development and a school were subsequently built around the disposal area, turning a buried industrial-waste site into a national test of how government responds when contamination and community life overlap.",
-        "The public record is also a history of residents organizing, government investigation, emergency relocation, litigation, and the creation of the modern federal Superfund program. WNYAtlas treats those events as connected but distinct parts of the story.",
+        "In the 1890s, William T. Love began excavating a canal intended to support a hydroelectric-powered model city. The project failed, leaving a roughly 3,200-foot trench that held water and was used by nearby residents for recreation. Beginning in 1942, that excavation became a disposal site for industrial chemical waste and municipal refuse.",
+        "Hooker Electrochemical Company acknowledged placing an estimated 21,800 tons of chemical wastes from its Niagara Falls plants in the canal between 1942 and 1953. NYSDEC also identifies the City of Niagara Falls as a municipal-waste disposer during that period. A later state planning record attributes additional wartime disposal to the U.S. Army, but the quantity and exact composition of that material remain unresolved in the reviewed public record.",
+        "Hooker covered the canal and transferred the property to the Niagara Falls Board of Education in 1953. The 99th Street School opened on the middle portion in 1954, and residential construction accelerated around the former landfill. Complaints of odors, residues, minor explosions, and fumes appeared during the 1960s and intensified after heavy precipitation and the 1977 blizzard helped contaminated liquids reach yards, basements, sewers, and nearby creeks.",
+        "Residents—most visibly through the Love Canal Homeowners Association and organizer Lois Gibbs—forced sustained public attention on conditions, health concerns, relocation, and government accountability. State and federal emergency actions in 1978 and 1980 ultimately relocated hundreds of families and helped make Love Canal a catalyst for the federal Superfund law.",
       ],
       timeline: [
         {
+          period: "1890s–1930s",
+          event:
+            "William T. Love's power-canal project was excavated and abandoned. A 1938 aerial shows an open, water-filled trench used locally for recreation.",
+        },
+        {
+          period: "1942–1953",
+          event:
+            "Hooker disposed of an estimated 21,800 tons of chemical wastes. New York records also document municipal-waste disposal by the City of Niagara Falls; other wartime disposal was later attributed to the Army, but its scope was not established.",
+        },
+        {
+          period: "1953–1954",
+          event:
+            "Hooker installed a clay cover and transferred the property to the Board of Education. The 99th Street School was built on the middle portion of the former canal.",
+        },
+        {
+          period: "1960s–1977",
+          event:
+            "Neighborhood development surrounded the landfill. Residents reported odors, residues, fumes, and minor explosions; unusually wet conditions culminated in visible migration after the 1977 blizzard.",
+        },
+        {
           period: "1978",
           event:
-            "New York began collecting contaminated liquids, covering and fencing the landfill, and responding to conditions in the surrounding neighborhood.",
+            "Investigations documented extensive contamination. New York declared a health emergency on August 7, restricted access, recommended relocation for pregnant residents and young children nearest the canal, and began containment and treatment work.",
         },
         {
           period: "1980",
           event:
-            "Federal and state actions included temporary relocation and an expanded emergency response as the national significance of the site grew.",
+            "President Carter's second federal emergency declaration expanded relocation. FEMA ultimately evacuated about 950 of more than 1,050 families in the Emergency Declaration Area. Congress enacted the federal Superfund law that December.",
+        },
+        {
+          period: "1982–1983",
+          event:
+            "Contaminated homes and the 99th Street School were demolished, and Love Canal entered EPA's first National Priorities List.",
         },
         {
           period: "1985",
           event:
             "The state completed the approximately 40-acre cap and improved the collection and treatment system.",
+        },
+        {
+          period: "1988–2000",
+          event:
+            "EPA and New York completed habitability decisions, sewer and creek work, the 93rd Street School cleanup, property management, and off-site treatment or disposal of excavated materials. The last shipment left in March 2000.",
         },
         {
           period: "2004",
@@ -63,6 +95,8 @@ const featuredSiteRecords: AtlasSite[] = [
       ],
       researchNotes: [
         "Separate the documented remedy boundary from broader claims about all of Niagara Falls.",
+        "Do not combine Hooker's 21,800-ton estimate with municipal or Army-attributed disposal; no reliable quantity for those other streams was found in the reviewed public records.",
+        "Treat the historical waste inventory and the longer list of compounds later detected during environmental sampling as different records.",
         "Add resident oral histories only with clear attribution and without converting personal experience into unsupported medical causation.",
       ],
     },
@@ -86,6 +120,21 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Love Canal Site History and Remediation",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/love-canal",
+      },
+      {
+        title: "Love Canal: A Special Report to the Governor and Legislature",
+        publisher: "New York State Department of Health",
+        url: "https://www.health.ny.gov/environmental/investigations/love_canal/lcreport.htm",
+      },
+      {
+        title: "Love Canal Record of Decision (1985)",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://semspub.epa.gov/work/HQ/186263.pdf",
+      },
+      {
+        title: "Love Canal Area Master Plan — Environmental Impact Statement Appendices",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1990-05-30.EIS%20Love%20Canal%20Master%20Plan%20Append.%20B-Z.pdf",
       },
       {
         title: "New York State Aerial Photographs",

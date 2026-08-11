@@ -1063,6 +1063,174 @@ footer {
 .story-research-figure figcaption a { color: var(--rust); font-weight: 750; text-decoration: underline; text-underline-offset: 0.18em; }
 .story-research-figure figcaption strong { color: var(--ink); }
 
+.love-canal-party-list {
+  display: grid;
+  gap: 1px;
+  margin-top: 2rem;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.love-canal-party-list article {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 1rem;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  background: var(--paper);
+}
+
+.love-canal-party-number {
+  color: var(--rust);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.love-canal-party-list h3,
+.love-canal-inventory-heading h3 {
+  margin: 0.25rem 0 0.25rem;
+  font-family: Georgia, serif;
+  font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+  font-weight: 500;
+}
+
+.love-canal-party-list p {
+  margin: 0.55rem 0 0;
+}
+
+.love-canal-party-status,
+.love-canal-party-dates {
+  color: var(--moss);
+  font-family: var(--font-mono);
+  font-size: 0.7rem !important;
+  font-weight: 780;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.love-canal-quantity {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.38fr) 1fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.love-canal-quantity strong {
+  color: var(--rust);
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.love-canal-quantity span {
+  color: rgba(23, 39, 32, 0.72);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.love-canal-inventory-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.love-canal-inventory-heading strong {
+  flex: 0 0 auto;
+  padding: 0.75rem 0.9rem;
+  color: var(--paper);
+  background: var(--rust);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.love-canal-inventory {
+  overflow-x: auto;
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+}
+
+.love-canal-inventory table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+
+.love-canal-inventory th,
+.love-canal-inventory td {
+  padding: 0.85rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.love-canal-inventory thead th {
+  color: var(--paper);
+  background: var(--moss);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.love-canal-inventory tbody th {
+  width: 47%;
+  font-weight: 700;
+}
+
+.love-canal-inventory tbody tr:nth-child(even) {
+  background: rgba(166, 75, 45, 0.045);
+}
+
+.love-canal-inventory tfoot th,
+.love-canal-inventory tfoot td {
+  border-bottom: 0;
+  color: var(--paper);
+  background: var(--ink);
+  font-weight: 750;
+}
+
+.love-canal-tons {
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-weight: 800;
+}
+
+.love-canal-record-note {
+  margin-top: 1rem;
+  padding: 1.1rem 1.25rem;
+  border-left: 5px solid var(--rust);
+  background: rgba(166, 75, 45, 0.07);
+}
+
+.love-canal-record-note p {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.love-canal-primary-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.love-canal-primary-links a {
+  color: var(--rust);
+  font-size: 0.78rem;
+  font-weight: 740;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .pfas-record-status,
 .pfas-health-context {
   border-left: 5px solid #c2185b;
@@ -2451,6 +2619,21 @@ footer {
   }
 
   .story-research-figure-scroll img { width: 900px; max-width: none; }
+
+  .love-canal-party-list article {
+    grid-template-columns: 38px 1fr;
+  }
+
+  .love-canal-quantity {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .love-canal-inventory-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
   .places-index-heading {
     grid-template-columns: 1fr;
