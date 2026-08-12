@@ -34,6 +34,16 @@ const completedFeatures = new Set([
   "cecos-international",
   "niagara-falls-air-reserve-pfas",
   "durez-occidental-north-tonawanda",
+  "west-valley",
+  "lake-ontario-ordnance-works-loow",
+  "buffalo-color",
+  "huntley-generating-station",
+  "linde-air-products",
+  "donovan-head-start-radiation-site",
+  "union-ship-canal-hanna-furnace",
+  "tifft-nature-preserve",
+  "pierce-arrow-manufacturing-complex",
+  "former-trico-plant",
 ]);
 const aerialSites = new Set([
   "republic-steel",
