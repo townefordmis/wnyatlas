@@ -1729,6 +1729,151 @@ footer {
   text-underline-offset: 0.18em;
 }
 
+.deep-history-feature {
+  --history-accent: #d7ad4b;
+  margin-top: 4rem;
+  padding: clamp(1.4rem, 4vw, 2.6rem);
+  border-top: 7px solid var(--history-accent);
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 92% 8%, color-mix(in srgb, var(--history-accent) 18%, transparent), transparent 34%),
+    #17271f;
+}
+
+.deep-history-feature .eyebrow,
+.deep-history-period,
+.deep-history-sources a {
+  color: var(--history-accent);
+}
+
+@media (max-width: 760px) {
+  .deep-history-heading {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .deep-history-stat {
+    padding: 1rem 0 0;
+    border-top: 1px solid rgba(245, 241, 231, 0.3);
+    border-left: 0;
+  }
+
+  .deep-history-chapters {
+    grid-template-columns: 1fr;
+  }
+}
+
+.deep-history-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.35fr);
+  gap: 2rem;
+  align-items: end;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(245, 241, 231, 0.25);
+}
+
+.deep-history-heading h2 {
+  max-width: 17ch;
+  margin: 0.35rem 0 0;
+  color: var(--paper);
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.deep-history-stat {
+  display: grid;
+  gap: 0.35rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid rgba(245, 241, 231, 0.3);
+}
+
+.deep-history-stat strong {
+  color: var(--history-accent);
+  font-family: Georgia, serif;
+  font-size: clamp(2.4rem, 6vw, 4.7rem);
+  font-weight: 500;
+  line-height: 0.9;
+}
+
+.deep-history-stat span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 760;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.deep-history-lead {
+  max-width: 73ch;
+  margin: 1.5rem 0 0;
+  font-family: Georgia, serif;
+  font-size: clamp(1.08rem, 2vw, 1.4rem) !important;
+  line-height: 1.55 !important;
+}
+
+.deep-history-chapters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 2rem;
+  border: 1px solid rgba(245, 241, 231, 0.24);
+  background: rgba(245, 241, 231, 0.24);
+}
+
+.deep-history-chapters article {
+  padding: 1.35rem;
+  background: #203229;
+}
+
+.deep-history-period {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.68rem !important;
+  font-weight: 780;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.deep-history-chapters h3 {
+  margin: 0.4rem 0 0;
+  color: var(--paper);
+  font-family: Georgia, serif;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  font-weight: 500;
+}
+
+.deep-history-chapters article > p:last-child,
+.deep-history-caution p {
+  margin: 0.65rem 0 0;
+  color: rgba(245, 241, 231, 0.86);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.deep-history-caution {
+  margin-top: 1.25rem;
+  padding: 1.1rem 1.2rem;
+  border-left: 5px solid var(--history-accent);
+  background: color-mix(in srgb, var(--history-accent) 9%, transparent);
+}
+
+.deep-history-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.deep-history-sources a {
+  font-size: 0.76rem;
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .love-canal-party-list {
   display: grid;
   gap: 1px;

@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "audit:coordinates": "node scripts/audit-coordinates.mjs",
     "audit:coordinate-authorities": "node scripts/audit-coordinate-authorities.mjs",
-    "audit:company-history": "node scripts/audit-company-history.mjs"
+    "audit:company-history": "node scripts/audit-company-history.mjs",
+    "rank:site-history": "node scripts/rank-site-history.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^6.0.0",
