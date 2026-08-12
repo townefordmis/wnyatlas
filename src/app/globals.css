@@ -1495,6 +1495,116 @@ footer {
   margin-top: 1rem;
 }
 
+.buffalo-river-fire-history {
+  margin-top: 4rem;
+  padding: clamp(1.4rem, 4vw, 2.6rem);
+  color: var(--paper);
+  background:
+    linear-gradient(135deg, rgba(166, 75, 45, 0.94), rgba(91, 39, 25, 0.97)),
+    var(--rust);
+}
+
+.buffalo-river-fire-history .eyebrow {
+  color: #ffe18a;
+}
+
+.buffalo-river-fire-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid rgba(245, 241, 231, 0.3);
+}
+
+.buffalo-river-fire-heading h2 {
+  max-width: 14ch;
+  margin: 0.35rem 0 0;
+  color: var(--paper);
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 0.98;
+}
+
+.buffalo-river-fire-heading > strong {
+  flex: 0 0 auto;
+  padding: 0.7rem 0.85rem;
+  color: #4b2318;
+  background: #ffe18a;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.buffalo-river-fire-lead {
+  max-width: 68ch;
+  margin: 1.5rem 0 0;
+  font-family: Georgia, serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem) !important;
+  line-height: 1.5 !important;
+}
+
+.buffalo-river-fire-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 2rem;
+  background: rgba(245, 241, 231, 0.28);
+  border: 1px solid rgba(245, 241, 231, 0.28);
+}
+
+.buffalo-river-fire-facts article {
+  padding: 1.25rem;
+  background: rgba(56, 25, 17, 0.55);
+}
+
+.buffalo-river-fire-facts span {
+  color: #ffe18a;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.buffalo-river-fire-facts h3 {
+  margin: 0.55rem 0 0;
+  color: var(--paper);
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.buffalo-river-fire-facts p,
+.buffalo-river-fire-note p {
+  margin: 0.65rem 0 0;
+  color: rgba(245, 241, 231, 0.88);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.buffalo-river-fire-note {
+  margin-top: 1.25rem;
+  padding: 1rem 1.15rem;
+  border-left: 5px solid #ffe18a;
+  background: rgba(29, 18, 13, 0.33);
+}
+
+.buffalo-river-fire-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.buffalo-river-fire-sources a {
+  color: #ffe18a;
+  font-size: 0.76rem;
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .love-canal-party-list {
   display: grid;
   gap: 1px;
@@ -3111,6 +3221,20 @@ footer {
   }
 
   .story-research-figure-scroll img { width: 900px; max-width: none; }
+
+  .buffalo-river-fire-heading {
+    display: grid;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .buffalo-river-fire-heading > strong {
+    justify-self: start;
+  }
+
+  .buffalo-river-fire-facts {
+    grid-template-columns: 1fr;
+  }
 
   .historical-aerial-grid {
     grid-template-columns: 1fr;

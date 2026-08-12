@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
 import { LoveCanalDisposalHistory } from "@/components/love-canal-disposal-history";
+import { BuffaloRiverFireHistory } from "@/components/buffalo-river-fire-history";
 import {
   HistoricalAerialEvidence,
   hasHistoricalAerialEvidence,
@@ -242,6 +243,7 @@ export default async function SitePage({ params }: SitePageProps) {
         <nav className="story-section-nav" aria-label="Explore this place">
           <span>Explore this place</span>
           <a href="#overview">Overview</a>
+          {site.id === "buffalo-river" && <a href="#river-fire">1968 fire</a>}
           {hasAerials && <a href="#aerials">Aerial history</a>}
           {story.timeline.length > 0 && <a href="#timeline">Timeline</a>}
           {story.documentedImpacts.length > 0 && <a href="#impacts">Impacts</a>}
@@ -276,6 +278,8 @@ export default async function SitePage({ params }: SitePageProps) {
                 </p>
               )}
             </section>
+
+            {site.id === "buffalo-river" && <BuffaloRiverFireHistory />}
 
             {site.id === "love-canal" && (
               <section className="story-research-figure" aria-labelledby="love-canal-aerial-title">

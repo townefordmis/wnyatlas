@@ -240,13 +240,14 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "waterway",
     summary:
-      "Industrial corridor where navigational and remedial dredging removed legacy-contaminated sediment alongside habitat restoration and long-term recovery work.",
+      "Industrial corridor where an oil-fed 1968 river fire became a stark symbol of severe pollution, followed decades later by contaminated-sediment cleanup, habitat restoration, and long-term recovery work.",
     evidenceStatus: "well-documented",
     coordinates: [-78.873, 42.864],
     story: {
-      lastReviewed: "July 26, 2026",
+      lastReviewed: "August 12, 2026",
       background: [
         "The Buffalo River became the western terminus of the Erie Canal in 1825. Grain elevators, steel mills, meatpacking, chemical works, petroleum facilities, municipal systems, and other industries concentrated along its banks, using the river as transportation infrastructure and, historically, as a receiving water.",
+        "On January 24, 1968, oil and other combustible pollution on the river ignited. EPA records say the fire continued for nearly three days. The event did not create the river's pollution crisis; it made an already severe industrial and municipal waste problem dramatically visible.",
         "By 1987, the United States and Canada had designated the Buffalo River as a Great Lakes Area of Concern because contamination and habitat loss impaired environmental and recreational uses. Its modern story is one of sediment remediation, navigation dredging, shoreline restoration, monitoring, and the gradual removal of formally identified beneficial-use impairments.",
       ],
       timeline: [
@@ -254,6 +255,11 @@ const featuredSiteRecords: AtlasSite[] = [
           period: "1825",
           event:
             "The opening of the Erie Canal helped establish the Buffalo River as a major industrial and transportation corridor.",
+        },
+        {
+          period: "January 24, 1968",
+          event:
+            "Oil and combustible pollution on the Buffalo River caught fire. EPA's later recovery record says the fire burned for nearly three days.",
         },
         {
           period: "1987",
@@ -278,6 +284,7 @@ const featuredSiteRecords: AtlasSite[] = [
       ],
       documentedImpacts: [
         "Historic industrial and municipal activity introduced pollutants to the river and contributed to contaminated sediment.",
+        "By the 1950s and 1960s, federal accounts described an oxygen-depleted, nearly sterile river receiving oil, phenols, and other wastes; combustible surface pollution fed the documented 1968 fire.",
         "The Area of Concern record identified restrictions involving dredging, fish and wildlife, degraded benthic communities, habitat loss, aesthetics, and other uses.",
         "Contamination and physical alteration of the shoreline affected ecological function as well as navigation and recreation.",
       ],
@@ -304,6 +311,21 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Buffalo River Area of Concern",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/great-lakes-aocs/buffalo-river-aoc",
+      },
+      {
+        title: "Great Lakes Revival: Buffalo River",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/sites/production/files/2019-12/documents/how_restoring_polluted_waters_leads_to_rebirth_of_great_lakes_communities.pdf",
+      },
+      {
+        title: "Buffalo River Degradation of Aesthetics BUI Removal Package",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://19january2021snapshot.epa.gov/sites/static/files/2020-07/documents/aesthetics_bui_removal_package_buffalo.pdf",
+      },
+      {
+        title: "A Retrospective on Stanley Spisiak: A Man with a Mission",
+        publisher: "United States Army",
+        url: "https://www.army.mil/article/89945/a_retrospective_on_stanley_spisiak_a_man_with_a_mission",
       },
     ],
   },
