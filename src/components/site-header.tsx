@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { FormEvent, useMemo, useState } from "react";
 
 import { chemicalProfiles } from "@/data/chemicals";
@@ -12,8 +12,23 @@ import { getPublicSiteName } from "@/lib/site-name";
 
 const MAX_RESULTS = 6;
 
+const navigationItems = [
+  { href: "/#map", label: "Map", match: "home" },
+  { href: "/places", label: "Places", match: "places" },
+  { href: "/chemicals", label: "Chemicals", match: "/chemicals" },
+  { href: "/research/schools-industrial-sites", label: "Schools", match: "/research/schools-industrial-sites" },
+  { href: "/research/former-waterways", label: "Waterways", match: "/research/former-waterways" },
+  { href: "/research/radiological-industry-fill", label: "Radiological", match: "/research/radiological-industry-fill" },
+  { href: "/risks/airborne-exposure", label: "Airborne risks", match: "/risks/airborne-exposure" },
+  { href: "/health", label: "Health", match: "/health" },
+  { href: "/enforcement", label: "Enforcement", match: "/enforcement" },
+  { href: "/#mission", label: "Mission", match: "" },
+  { href: "/#about", label: "About", match: "" },
+];
+
 export function SiteHeader() {
   const router = useRouter();
+  const pathname = usePathname();
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,6 +84,12 @@ export function SiteHeader() {
     }
   }
 
+  function isCurrentSection(match: string) {
+    if (match === "home") return pathname === "/";
+    if (match === "places") return pathname === "/places" || pathname.startsWith("/sites/");
+    return Boolean(match && (pathname === match || pathname.startsWith(`${match}/`)));
+  }
+
   return (
     <header
       className="site-header"
@@ -86,51 +107,20 @@ export function SiteHeader() {
         className={`main-nav${isMenuOpen ? " is-open" : ""}`}
         aria-label="Main navigation"
       >
-        <Link href="/#map" onClick={() => setIsMenuOpen(false)}>
-          Map
-        </Link>
-        <Link href="/places" onClick={() => setIsMenuOpen(false)}>
-          Places
-        </Link>
-        <Link href="/chemicals" onClick={() => setIsMenuOpen(false)}>
-          Chemicals
-        </Link>
-        <Link
-          href="/research/schools-industrial-sites"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Schools
-        </Link>
-        <Link
-          href="/research/former-waterways"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Waterways
-        </Link>
-        <Link
-          href="/research/radiological-industry-fill"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Radiological
-        </Link>
-        <Link
-          href="/risks/airborne-exposure"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Airborne risks
-        </Link>
-        <Link href="/health" onClick={() => setIsMenuOpen(false)}>
-          Health
-        </Link>
-        <Link href="/enforcement" onClick={() => setIsMenuOpen(false)}>
-          Enforcement
-        </Link>
-        <Link href="/#mission" onClick={() => setIsMenuOpen(false)}>
-          Mission
-        </Link>
-        <Link href="/#about" onClick={() => setIsMenuOpen(false)}>
-          About
-        </Link>
+        {navigationItems.map((item) => {
+          const isCurrent = isCurrentSection(item.match);
+          return (
+            <Link
+              className={isCurrent ? "is-active" : undefined}
+              href={item.href}
+              aria-current={isCurrent ? "page" : undefined}
+              onClick={() => setIsMenuOpen(false)}
+              key={item.href}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
       </nav>
 
       <div className="header-tools">
