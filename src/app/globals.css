@@ -971,20 +971,28 @@ footer {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.5fr);
   gap: 5vw;
-  padding: 7rem 6vw 5rem;
+  padding: 4.5rem 6vw 3.5rem;
   border-bottom: 1px solid var(--line);
 }
 
 .story-hero h1 {
   max-width: 1050px;
   margin: 0.3rem 0 1rem;
-  font-size: clamp(3.7rem, 8vw, 8.5rem);
+  font-size: clamp(3.5rem, 7vw, 7rem);
 }
 
 .story-location {
   margin: 0;
   color: var(--moss);
   font-size: 1.1rem;
+}
+
+.story-summary {
+  max-width: 760px;
+  margin: 1.35rem 0 0;
+  color: rgba(23, 39, 32, 0.78);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.6;
 }
 
 .story-image {
@@ -1017,7 +1025,7 @@ footer {
 }
 
 .story-status {
-  align-self: end;
+  align-self: center;
   padding: 1.5rem;
   color: var(--paper);
   background: var(--moss);
@@ -1043,11 +1051,59 @@ footer {
   font-size: 0.75rem;
 }
 
+.story-section-nav {
+  position: sticky;
+  z-index: 40;
+  top: 0;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 6vw;
+  overflow-x: auto;
+  color: var(--paper);
+  border-bottom: 1px solid rgba(245, 241, 231, 0.15);
+  background: rgba(23, 39, 32, 0.98);
+  scrollbar-width: thin;
+}
+
+.story-section-nav span,
+.story-section-nav a {
+  flex: 0 0 auto;
+  padding: 0.9rem 0.85rem;
+  white-space: nowrap;
+}
+
+.story-section-nav span {
+  padding-left: 0;
+  color: var(--water-light);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.story-section-nav a {
+  font-size: 0.78rem;
+  font-weight: 720;
+}
+
+.story-section-nav a:hover,
+.story-section-nav a:focus-visible {
+  color: var(--ink);
+  background: var(--water-light);
+}
+
 .story-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
   gap: 7vw;
-  padding: 5rem 6vw 8rem;
+  padding: 3.5rem 6vw 8rem;
+}
+
+.story-body > section,
+.story-evidence {
+  scroll-margin-top: 4.5rem;
 }
 
 .story-body {
@@ -1076,6 +1132,147 @@ footer {
   margin: 1.75rem 0;
   border: 1px solid var(--line);
   background: var(--line);
+}
+
+.historical-aerial-explorer {
+  margin: 1.75rem 0;
+}
+
+.historical-aerial-years {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+}
+
+.historical-aerial-years button {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 48px;
+  padding: 0.7rem;
+  color: var(--ink);
+  border: 0;
+  background: var(--paper);
+  font-weight: 760;
+  cursor: pointer;
+}
+
+.historical-aerial-years button span {
+  color: var(--moss);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+}
+
+.historical-aerial-years button:hover,
+.historical-aerial-years button:focus-visible,
+.historical-aerial-years button.is-active {
+  color: var(--paper);
+  background: var(--rust);
+}
+
+.historical-aerial-years button.is-active span {
+  color: var(--paper);
+}
+
+.historical-aerial-explorer figure {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.65fr);
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-top: 0;
+  background: var(--paper);
+}
+
+.historical-aerial-image {
+  position: relative;
+  display: block;
+  min-height: 460px;
+  overflow: hidden;
+  background: #101713;
+}
+
+.historical-aerial-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.historical-aerial-explorer figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: clamp(1.3rem, 3vw, 2.25rem);
+  background: #eee5d5;
+}
+
+.historical-aerial-explorer figcaption > strong {
+  font-family: Georgia, serif;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.historical-aerial-explorer figcaption p {
+  margin: 0;
+  color: rgba(23, 39, 32, 0.76);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.historical-aerial-explorer figcaption > a {
+  color: var(--rust);
+  font-size: 0.76rem;
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.historical-aerial-controls {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.historical-aerial-controls button {
+  min-height: 40px;
+  padding: 0.55rem 0.65rem;
+  color: var(--paper);
+  border: 0;
+  background: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 720;
+  cursor: pointer;
+}
+
+.historical-aerial-controls button:last-child {
+  justify-self: end;
+}
+
+.historical-aerial-controls button:disabled {
+  cursor: default;
+  opacity: 0.28;
+}
+
+.historical-aerial-controls span {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  white-space: nowrap;
+}
+
+.historical-aerial-swipe-note {
+  margin: 0.65rem 0 0;
+  color: rgba(23, 39, 32, 0.62);
+  font-size: 0.72rem !important;
 }
 
 .historical-aerial-grid figure {
@@ -2806,6 +3003,65 @@ footer {
 
   .historical-aerial-grid {
     grid-template-columns: 1fr;
+  }
+
+  .story-hero {
+    padding-top: 3.25rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .story-hero h1 {
+    font-size: clamp(3rem, 14vw, 4.4rem);
+  }
+
+  .story-status {
+    padding: 1.15rem;
+  }
+
+  .story-status strong {
+    margin-bottom: 0.45rem;
+    font-size: 1.3rem;
+  }
+
+  .story-section-nav {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .story-section-nav span,
+  .story-section-nav a {
+    padding: 0.78rem 0.7rem;
+  }
+
+  .historical-aerial-years {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+  }
+
+  .historical-aerial-years button {
+    flex: 0 0 auto;
+    min-width: 104px;
+    scroll-snap-align: start;
+  }
+
+  .historical-aerial-explorer figure {
+    grid-template-columns: 1fr;
+  }
+
+  .historical-aerial-image {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    touch-action: pan-y;
+  }
+
+  .historical-aerial-explorer figcaption {
+    min-height: 355px;
+    justify-content: flex-start;
+  }
+
+  .historical-aerial-controls {
+    margin-top: auto;
   }
 
   .historical-aerial-grid figure:last-child:nth-child(odd) {

@@ -6,7 +6,10 @@ import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
 import { LoveCanalDisposalHistory } from "@/components/love-canal-disposal-history";
-import { HistoricalAerialEvidence } from "@/components/historical-aerial-evidence";
+import {
+  HistoricalAerialEvidence,
+  hasHistoricalAerialEvidence,
+} from "@/components/historical-aerial-evidence";
 import { findChemicalsInText } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import {
@@ -87,6 +90,7 @@ export default async function SitePage({ params }: SitePageProps) {
 
   const publicName = getPublicSiteName(site.name);
   const story = getSiteStory(site);
+  const hasAerials = hasHistoricalAerialEvidence(site.id);
   const namedChemicals = findChemicalsInText(
     [
       site.summary,
@@ -204,6 +208,7 @@ export default async function SitePage({ params }: SitePageProps) {
             </p>
             <h1>{publicName}</h1>
             <p className="story-location">{site.municipality}</p>
+            <p className="story-summary">{site.summary}</p>
             {site.image && (
               <figure className="story-image">
                 <Image
@@ -234,9 +239,20 @@ export default async function SitePage({ params }: SitePageProps) {
           </aside>
         </section>
 
+        <nav className="story-section-nav" aria-label="Explore this place">
+          <span>Explore this place</span>
+          <a href="#overview">Overview</a>
+          {hasAerials && <a href="#aerials">Aerial history</a>}
+          {story.timeline.length > 0 && <a href="#timeline">Timeline</a>}
+          {story.documentedImpacts.length > 0 && <a href="#impacts">Impacts</a>}
+          {story.cleanupAndControls.length > 0 && <a href="#cleanup">Cleanup</a>}
+          {story.presentDay.length > 0 && <a href="#today">Today</a>}
+          <a href="#sources">Sources</a>
+        </nav>
+
         <div className="story-layout">
           <div className="story-body">
-            <section>
+            <section id="overview">
               <p className="eyebrow">Background</p>
               <h2>What happened here?</h2>
               {story.background.map((paragraph) => (
@@ -304,7 +320,7 @@ export default async function SitePage({ params }: SitePageProps) {
             <HistoricalAerialEvidence siteId={site.id} />
 
             {namedChemicals.length > 0 && (
-              <section className="story-chemicals">
+              <section className="story-chemicals" id="chemicals">
                 <p className="eyebrow">Chemical guide</p>
                 <h2>Chemicals named in this record</h2>
                 <p>
@@ -369,7 +385,7 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {story.timeline.length > 0 && (
-              <section>
+              <section id="timeline">
                 <p className="eyebrow">Chronology</p>
                 <h2>Timeline</h2>
                 <ol className="story-timeline">
@@ -384,7 +400,7 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {story.documentedImpacts.length > 0 && (
-              <section>
+              <section id="impacts">
                 <p className="eyebrow">Environmental record</p>
                 <h2>Documented impacts</h2>
                 <ul>
@@ -402,7 +418,7 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {story.cleanupAndControls.length > 0 && (
-              <section>
+              <section id="cleanup">
                 <p className="eyebrow">Response</p>
                 <h2>Cleanup and controls</h2>
                 <ul>
@@ -414,7 +430,7 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {story.presentDay.length > 0 && (
-              <section>
+              <section id="today">
                 <p className="eyebrow">Then and now</p>
                 <h2>The site today</h2>
                 {story.presentDay.map((paragraph) => (
@@ -424,7 +440,7 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {connectionGroups.length > 0 && (
-              <section>
+              <section id="connections">
                 <p className="eyebrow">Atlas connections</p>
                 <h2>Connected places</h2>
                 <p>
@@ -526,7 +542,7 @@ export default async function SitePage({ params }: SitePageProps) {
               </section>
             )}
 
-            <section>
+            <section id="research">
               <p className="eyebrow">Research desk</p>
               <h2>How this story is being built</h2>
               <p>
@@ -545,7 +561,7 @@ export default async function SitePage({ params }: SitePageProps) {
             </section>
           </div>
 
-          <aside className="story-evidence">
+          <aside className="story-evidence" id="sources">
             <p className="field-label">Place record</p>
             <dl>
               <div>

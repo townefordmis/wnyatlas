@@ -1,3 +1,5 @@
+import { HistoricalAerialExplorer } from "@/components/historical-aerial-explorer";
+
 type AerialPanel = {
   period: string;
   heading: string;
@@ -633,17 +635,21 @@ const histories: Record<string, AerialHistory> = {
   },
 };
 
+export function hasHistoricalAerialEvidence(siteId: string) {
+  return Boolean(histories[siteId]);
+}
+
 export function HistoricalAerialEvidence({ siteId }: { siteId: string }) {
   const history = histories[siteId];
   if (!history) return null;
 
   return (
-    <section className="historical-aerial-evidence" aria-labelledby={`${siteId}-aerial-title`}>
+    <section className="historical-aerial-evidence" id="aerials" aria-labelledby={`${siteId}-aerial-title`}>
       <p className="eyebrow">{history.eyebrow}</p>
       <h2 id={`${siteId}-aerial-title`}>{history.title}</h2>
       <p>{history.introduction}</p>
 
-      <div className="historical-aerial-grid">
+      {false && <div className="historical-aerial-grid">
         {history.panels.map((panel) => (
           <figure className={panel.matched ? "is-matched" : "is-context"} key={`${panel.period}-${panel.heading}`}>
             <a href={panel.imageUrl} target="_blank" rel="noreferrer" aria-label={`Open the ${panel.period} aerial image at full size`}>
@@ -692,7 +698,8 @@ export function HistoricalAerialEvidence({ siteId }: { siteId: string }) {
             </figcaption>
           </figure>
         ))}
-      </div>
+      </div>}
+      <HistoricalAerialExplorer panels={history.panels} />
 
       <aside className="historical-aerial-reading-note">
         <strong>How to read this comparison</strong>
