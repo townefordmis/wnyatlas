@@ -47,7 +47,126 @@ const hooker102Bounds =
 const sAreaBounds =
   "bbox=-79.018%2C43.068%2C-78.993%2C43.084&bboxSR=4326&imageSR=4326&size=1200%2C1200&format=jpg&f=image";
 
+const republicSteelBounds =
+  "bbox=-78.850%2C42.850%2C-78.832%2C42.8655&bboxSR=4326&imageSR=4326&size=1200%2C1200&format=jpg&f=image";
+
+const republicSteelAreaIPath =
+  "M 177.1 628.9 L 214.8 660.5 L 409.6 723.5 L 427.8 717.7 L 431.4 696.9 L 389.2 477.8 L 326.6 392.7 L 348.2 334.0 L 362.7 316.9 L 477.2 226.5 L 499.2 216.5 L 506.0 216.5 L 753.7 416.5 L 970.5 499.7 L 938.6 521.7 L 870.7 539.6 L 874.3 557.5 L 794.2 601.4 L 686.9 678.3 L 572.4 730.3 L 572.3 738.3 L 396.8 789.1 L 320.7 818.4 L 290.4 820.0 L 257.5 814.6 L 235.5 802.0 L 218.8 771.1 L 179.2 655.7 L 177.1 628.9 Z";
+
 const histories: Record<string, AerialHistory> = {
+  "republic-steel": {
+    eyebrow: "Historical aerial evidence · sixth release",
+    title: "From operating steelworks to the managed RiverBend landscape",
+    introduction:
+      "The 1951 Erie County photograph records the Republic Steel and neighboring South Buffalo industrial landscape during the plant's long operating period. Four later state orthophotos use one fixed geographic window around Area I, the former Republic/LTV steel parcel, to show shutdown-era remains, cleanup, redevelopment, and the present managed property.",
+    interpretation:
+      "The bright yellow line follows the current NYSDEC V00619 Area I remediation-site polygon on the matched state orthophotos. Its placement on the 1951 archive frame is an approximate transfer to a scanned, differently scaled photograph. The line identifies the former Republic/LTV steel cleanup parcel; it is not a contamination, exposure, or original ownership boundary, and it does not include the separately documented Donner-Hanna coke plant and storage parcels. DEC records - not aerial appearance - establish operating history, environmental conditions, cleanup work, and continuing site-management requirements.",
+    panels: [
+      {
+        period: "1951",
+        heading: "Republic Steel during full operation",
+        imageUrl:
+          "https://www3.erie.gov/sites/default/files/images/aerialphotos/1951/51_5H106.jpg",
+        sourceUrl:
+          "https://www3.erie.gov/sites/default/files/images/aerialphotos/1951/51_5H106.jpg",
+        sourceLabel: "Erie County frame 51_5H106",
+        alt: "Erie County 1951 aerial photograph showing the operating Republic Steel complex, Buffalo River, rail corridors, and surrounding South Buffalo neighborhoods",
+        note:
+          "DEC's 1997 historical review reported no significant plant change between the 1950 Sanborn map and this 1951 aerial. The yellow trace approximately transfers the later Area I boundary onto the archival frame; scan distortion and the frame's different scale prevent survey-level alignment.",
+        highlight: {
+          viewBox: "0 0 1620 1622",
+          path: "M 300.0 828.3 L 321.9 865.0 L 434.8 938.1 L 445.4 931.3 L 447.4 907.2 L 423.0 653.1 L 386.7 554.4 L 399.2 486.3 L 407.6 466.5 L 474.0 361.6 L 486.7 350.0 L 490.7 350.0 L 634.3 582.0 L 760.0 678.5 L 741.5 704.0 L 702.1 724.8 L 704.2 745.5 L 657.8 796.4 L 595.6 885.6 L 529.2 946.0 L 529.1 955.2 L 427.4 1014.2 L 383.3 1048.1 L 365.7 1050.0 L 346.6 1043.7 L 333.9 1029.1 L 324.2 993.3 L 301.2 859.4 L 300.0 828.3 Z",
+          ariaLabel: "Bright yellow approximate transfer of the DEC Area I boundary onto the 1951 aerial",
+        },
+      },
+      {
+        period: "1994-1998",
+        heading: "Shutdown and cleared industrial ground",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/napp/MapServer/export?${republicSteelBounds}`,
+        sourceUrl:
+          "https://orthos.its.ny.gov/arcgis/rest/services/wms/napp/MapServer",
+        sourceLabel: "USGS NAPP / NYS GIS",
+        alt: "Color infrared orthophoto showing the former Republic Steel Area I parcel after steelmaking operations were suspended",
+        note:
+          "This federal mosaic records the former steel parcel after operations had been suspended and major structures were being removed. Color differences, bare soil, debris, and remaining buildings are visual context rather than measurements of contamination or cleanup completion.",
+        matched: true,
+        highlight: {
+          viewBox: "0 0 1200 1200",
+          path: republicSteelAreaIPath,
+          ariaLabel: "Bright yellow line tracing the NYSDEC Area I remediation-site boundary",
+        },
+      },
+      {
+        period: "2002",
+        heading: "Bankruptcy, transfer, and cleanup planning",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2002/MapServer/export?${republicSteelBounds}`,
+        sourceUrl:
+          "https://orthos.its.ny.gov/arcgis/rest/services/wms/2002/MapServer",
+        sourceLabel: "2002 NYS orthophoto",
+        alt: "New York State 2002 orthophoto showing the former Republic Steel Area I parcel before extensive cleanup and RiverBend redevelopment",
+        note:
+          "In 2002 Steelfields acquired former Republic Steel and Donner-Hanna properties through the LTV and National Steel bankruptcy estates and entered a state voluntary-cleanup agreement. The yellow line isolates Area I from the adjoining cleanup areas.",
+        matched: true,
+        highlight: {
+          viewBox: "0 0 1200 1200",
+          path: republicSteelAreaIPath,
+          ariaLabel: "Bright yellow line tracing the NYSDEC Area I remediation-site boundary",
+        },
+      },
+      {
+        period: "2008",
+        heading: "Cleanup completion and RiverBend transition",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2008/MapServer/export?${republicSteelBounds}`,
+        sourceUrl:
+          "https://orthos.its.ny.gov/arcgis/rest/services/wms/2008/MapServer",
+        sourceLabel: "2008 NYS orthophoto",
+        alt: "New York State 2008 orthophoto showing the remediated former Republic Steel Area I parcel during its transition to RiverBend",
+        note:
+          "Area I remedial work conducted from 2003 through 2008 included soil removal and management, covers, and groundwater controls. RiverBend purchased Area I in 2008; the photograph supplies surface context but does not demonstrate performance of subsurface systems.",
+        matched: true,
+        highlight: {
+          viewBox: "0 0 1200 1200",
+          path: republicSteelAreaIPath,
+          ariaLabel: "Bright yellow line tracing the NYSDEC Area I remediation-site boundary",
+        },
+      },
+      {
+        period: "2024",
+        heading: "Modern manufacturing on a managed brownfield",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer/export?${republicSteelBounds}`,
+        sourceUrl:
+          "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer",
+        sourceLabel: "2024 NYS orthophoto",
+        alt: "New York State 2024 orthophoto showing modern manufacturing and managed open land within the former Republic Steel Area I boundary",
+        note:
+          "The latest view shows the large modern manufacturing building and surrounding managed land within Area I. Redevelopment did not erase the environmental record: DEC's revised plan requires continuing inspection, reporting, groundwater work, and controlled handling of subsurface soil or fill.",
+        matched: true,
+        highlight: {
+          viewBox: "0 0 1200 1200",
+          path: republicSteelAreaIPath,
+          ariaLabel: "Bright yellow line tracing the NYSDEC Area I remediation-site boundary",
+        },
+      },
+    ],
+    recordLinks: [
+      {
+        label: "NYSDEC Area I revised site-management plan",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00619/Report.VCP.V00619.2021-09-20.Area_I_Revised_SMP.pdf",
+      },
+      {
+        label: "NYSDEC 1997 Steelfields historical assessment",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00619/Report.VCP.V00619.1997-09-01.Voluntary_Cleanup_Site_Assessment_Report_Vol-I%20-Text.pdf",
+      },
+      {
+        label: "NYSDEC remediation-site boundary data",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/database-search/remediation-site-boundaries-downloadable-gis-files",
+      },
+      {
+        label: "Erie County historical aerial archive",
+        url: "https://www3.erie.gov/aerial-photos/aerial-photographs",
+      },
+    ],
+  },
   "bethlehem-steel": {
     eyebrow: "Historical aerial evidence · first release",
     title: "The steel works, slag-built shoreline, and post-industrial landscape",
