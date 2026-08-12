@@ -44,6 +44,16 @@ const completedFeatures = new Set([
   "tifft-nature-preserve",
   "pierce-arrow-manufacturing-complex",
   "former-trico-plant",
+  "polymer-applications",
+  "mayville-pfas-site",
+  "former-roblin-steel-dunkirk",
+  "closed-alumax-extrusions",
+  "altech-specialty-steel",
+  "former-dunkirk-steam-station",
+  "guterl-specialty-steel",
+  "former-mill-no-2",
+  "times-beach-disposal-site",
+  "union-road-gardenville-yard",
 ]);
 const aerialSites = new Set([
   "republic-steel",

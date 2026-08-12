@@ -13,16 +13,16 @@ rank,site_id,name,county,category,status,tier,priority_score,source_strength,his
 12,motor-frog-islands-restoration,Motor and Frog Islands Restoration,Erie,waterway,queued,A - next,27,12,9,0,3,3,0,strong source base
 13,niagara-erie-radiological-assessment,Niagara–Erie Residential Radiological Assessment,Niagara,radiological,queued,A - next,26,12,8,3,0,3,0,strong source base
 14,olean-well-field-superfund,Olean Well Field Superfund Site,Cattaraugus,cleanup,feature complete,Complete,26,12,8,3,0,3,0,strong source base
-15,union-road-gardenville-yard,Union Road Site / Losson Road Tar Pit,Erie,cleanup,queued,A - next,26,15,8,3,0,0,0,strong source base
+15,union-road-gardenville-yard,Union Road Site / Losson Road Tar Pit,Erie,cleanup,feature complete,Complete,26,15,8,3,0,0,0,strong source base
 16,robert-moses-parkway-south,Robert Moses Parkway - South Site,Niagara,cleanup,queued,A - next,26,15,8,0,0,3,0,strong source base
 17,smokes-creek-bethlehem-corridor,Smokes Creek / Bethlehem Steel Discharge Corridor,Erie,waterway,queued,A - next,26,12,8,0,3,3,0,strong source base
 18,fmc-middleport,FMC Middleport Facility and Off-Site Cleanup,Niagara,cleanup,feature complete,Complete,25,8,8,6,3,0,0,solid baseline; additional primary research needed
 19,union-ship-canal-hanna-furnace,Union Ship Canal / Hanna Furnace,Erie,cleanup,feature complete,Complete,25,12,10,3,0,0,0,strong source base
 20,5565-river-road,5565 River Road,Erie,cleanup,queued,A - next,25,8,8,0,0,9,0,solid baseline; additional primary research needed
 21,eighteenmile-creek-superfund,Eighteen Mile Creek Superfund Site,Niagara,waterway,feature complete,Complete,25,8,8,0,0,9,0,solid baseline; additional primary research needed
-22,former-mill-no-2,Former Mill No. 2,Niagara,cleanup,queued,A - next,25,15,10,0,0,0,0,strong source base
-23,polymer-applications,Former Polymer Applications,Erie,cleanup,queued,A - next,25,8,8,0,6,3,0,solid baseline; additional primary research needed
-24,former-roblin-steel-dunkirk,Former Roblin Steel,Chautauqua,cleanup,queued,A - next,25,12,10,0,3,0,0,strong source base
+22,former-mill-no-2,Former Mill No. 2,Niagara,cleanup,feature complete,Complete,25,15,10,0,0,0,0,strong source base
+23,polymer-applications,Former Polymer Applications,Erie,cleanup,feature complete,Complete,25,8,8,0,6,3,0,solid baseline; additional primary research needed
+24,former-roblin-steel-dunkirk,Former Roblin Steel,Chautauqua,cleanup,feature complete,Complete,25,12,10,0,3,0,0,strong source base
 25,love-canal,Love Canal,Niagara,cleanup,feature complete,Complete,25,15,10,0,0,0,0,strong source base
 26,olin-buffalo-avenue-plant,Olin Buffalo Avenue Plant,Niagara,cleanup,queued,B - high,25,15,10,0,0,0,0,strong source base
 27,pvs-chemicals-buffalo,PVS Chemicals,Erie,cleanup,queued,B - high,25,12,10,0,0,3,0,strong source base
@@ -30,8 +30,8 @@ rank,site_id,name,county,category,status,tier,priority_score,source_strength,his
 29,lehigh-valley-railroad-derailment,Lehigh Valley Railroad Derailment,Genesee,cleanup,feature complete,Complete,24,12,9,0,3,0,0,strong source base
 30,remington-rand-north-tonawanda,Remington Rand,Niagara,cleanup,feature complete,Complete,23,8,9,3,3,0,0,solid baseline; additional primary research needed
 31,cecos-international,CECOS International Waste Facility,Niagara,cleanup,feature complete,Complete,23,8,9,0,3,3,0,solid baseline; additional primary research needed
-32,closed-alumax-extrusions,Closed Alumax Extrusions,Chautauqua,cleanup,queued,B - high,23,12,8,0,0,3,0,strong source base
-33,former-dunkirk-steam-station,Former Dunkirk Steam Generating Station,Chautauqua,industry,queued,B - high,23,8,9,0,3,3,0,solid baseline; additional primary research needed
+32,closed-alumax-extrusions,Closed Alumax Extrusions,Chautauqua,cleanup,feature complete,Complete,23,12,8,0,0,3,0,strong source base
+33,former-dunkirk-steam-station,Former Dunkirk Steam Generating Station,Chautauqua,industry,feature complete,Complete,23,8,9,0,3,3,0,solid baseline; additional primary research needed
 34,pierce-arrow-manufacturing-complex,Former Pierce-Arrow Manufacturing Complex,Erie,cleanup,feature complete,Complete,23,12,8,0,0,3,0,strong source base
 35,gill-creek-chemical-corridor,Gill Creek / DuPont–Olin Chemical Corridor,Niagara,waterway,queued,B - high,23,12,8,0,0,3,0,strong source base
 36,jamestown-brewery-brownfield,Jamestown Brewery Brownfield,Chautauqua,cleanup,queued,B - high,23,12,8,0,0,3,0,strong source base
@@ -40,7 +40,7 @@ rank,site_id,name,county,category,status,tier,priority_score,source_strength,his
 39,lyndonville-west-avenue,Lyndonville - West Avenue Landfill,Orleans,cleanup,queued,B - high,23,12,8,0,3,0,0,strong source base
 40,pettit-flume-durez-outfall,Pettit Flume / Durez Outfall,Niagara,waterway,queued,B - high,23,12,8,0,0,3,0,strong source base
 41,standard-portable-mayville,Standard Portable,Chautauqua,cleanup,queued,B - high,23,12,8,0,0,3,0,strong source base
-42,times-beach-disposal-site,Times Beach Confined Disposal Site,Erie,waterway,queued,B - high,23,8,9,0,0,6,0,solid baseline; additional primary research needed
+42,times-beach-disposal-site,Times Beach Confined Disposal Site,Erie,waterway,feature complete,Complete,23,8,9,0,0,6,0,solid baseline; additional primary research needed
 43,carroll-landfill,Carroll Landfill,Chautauqua,cleanup,queued,B - high,22,8,8,3,3,0,0,solid baseline; additional primary research needed
 44,electro-metallurgical-company,Electro Metallurgical Company,Niagara,radiological,feature complete,Complete,22,8,8,3,0,3,0,solid baseline; additional primary research needed
 45,upper-mountain-road-radiation-site,Upper Mountain Road Radiation Site,Niagara,radiological,queued,B - high,22,8,8,3,0,3,0,solid baseline; additional primary research needed
@@ -50,16 +50,16 @@ rank,site_id,name,county,category,status,tier,priority_score,source_strength,his
 49,donovan-head-start-radiation-site,Donovan Head Start Slag Removal,Niagara,radiological,feature complete,Complete,22,8,8,0,3,3,0,solid baseline; additional primary research needed
 50,dupont-yerkes,DuPont Yerkes Plant,Erie,industry,queued,B - high,22,12,10,0,0,0,0,strong source base
 51,huntley-generating-station,Former Huntley Generating Station,Erie,industry,feature complete,Complete,22,8,8,0,3,3,0,solid baseline; additional primary research needed
-52,guterl-specialty-steel,Guterl Specialty Steel / Former Simonds Saw and Steel,Niagara,radiological,queued,B - high,22,8,8,0,0,6,0,solid baseline; additional primary research needed
+52,guterl-specialty-steel,Guterl Specialty Steel / Former Simonds Saw and Steel,Niagara,radiological,feature complete,Complete,22,8,8,0,0,6,0,solid baseline; additional primary research needed
 53,lancaster-sanitary-landfill,Lancaster Sanitary Landfill,Erie,cleanup,queued,B - high,22,8,8,0,3,3,0,solid baseline; additional primary research needed
 54,marsh-valve-dunkirk,Marsh Valve,Chautauqua,cleanup,queued,B - high,22,8,8,0,3,3,0,solid baseline; additional primary research needed
-55,mayville-pfas-site,Mayville PFAS Site,Chautauqua,pfas,queued,B - high,22,8,8,0,3,3,0,solid baseline; additional primary research needed
+55,mayville-pfas-site,Mayville PFAS Site,Chautauqua,pfas,feature complete,Complete,22,8,8,0,3,3,0,solid baseline; additional primary research needed
 56,pelican-manufacturing-jamestown,Pelican Manufacturing,Chautauqua,cleanup,queued,B - high,22,8,8,0,6,0,0,solid baseline; additional primary research needed
 57,former-randolph-foundry,Former Randolph Foundry,Cattaraugus,cleanup,queued,B - high,21,12,9,0,0,0,0,strong source base
 58,former-trico-plant,Former Trico Plant,Erie,cleanup,feature complete,Complete,21,12,9,0,0,0,0,strong source base
 59,frontier-chemical-pendleton,Frontier Chemical — Pendleton,Niagara,cleanup,queued,B - high,21,12,9,0,0,0,0,strong source base
 60,1827-fillmore-former-quarry,1827 Fillmore Avenue Former Quarry,Erie,cleanup,queued,B - high,20,12,8,0,0,0,0,strong source base
-61,altech-specialty-steel,AlTech Specialty Steel,Chautauqua,cleanup,queued,B - high,20,8,9,0,3,0,0,solid baseline; additional primary research needed
+61,altech-specialty-steel,AlTech Specialty Steel,Chautauqua,cleanup,feature complete,Complete,20,8,9,0,3,0,0,solid baseline; additional primary research needed
 62,buffalo-gas-light-tonawanda-street,Buffalo Gas Light Gas Holder / 31 Tonawanda Street,Erie,cleanup,queued,B - high,20,12,8,0,0,0,0,strong source base
 63,chemical-leaman-tank-lines,Chemical Leaman Tank Lines,Erie,cleanup,queued,B - high,20,8,9,0,0,3,0,solid baseline; additional primary research needed
 64,cwm-model-city,CWM Chemical Services - Model City Facility,Niagara,cleanup,queued,B - high,20,8,9,0,0,3,0,solid baseline; additional primary research needed
