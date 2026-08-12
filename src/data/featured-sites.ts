@@ -417,13 +417,19 @@ const featuredSiteRecords: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-78.85913, 42.82158],
     story: {
-      lastReviewed: "August 4, 2026",
+      lastReviewed: "August 12, 2026",
       background: [
         "Seneca Steel began producing iron and steel on the Lackawanna waterfront in 1902. Bethlehem Steel purchased the works in 1922 and developed one of Western New York's defining industrial landscapes: an integrated complex of blast furnaces, steelmaking furnaces, coke ovens and by-product operations, rolling and finishing mills, rail systems, water infrastructure, and waste-management areas.",
+        "That scale carried a human cost. A Bethlehem Steel accident tally preserved by the Steel Plant Museum of Western New York records 171 worker deaths from 1924 through 1956 alone. The figure covers fatal accidents of many kinds—not explosions alone—and does not represent the plant's complete operating history.",
         "The plant also changed the shoreline itself. DEC and EPA records describe roughly 440 acres of manmade land created with iron- and steelmaking slag and other manufacturing waste; a DEC community plan says the fill extended the shoreline as much as one-half mile and exceeded 90 feet in thickness in some places.",
         "Today the former works is not one cleanup parcel. State hazardous-waste Site 915009, federal RCRA corrective-action areas, Brownfield Cleanup Program parcels, renewable-energy and industrial redevelopment areas, and shoreline habitat projects overlap the larger industrial footprint but carry different boundaries and obligations.",
       ],
       timeline: [
+        {
+          period: "February 1904",
+          event:
+            "At the predecessor Lackawanna Steel works, blast-furnace gas ignited near a reservoir, killing George Reynolds, Michael Smith, and Frank Prenatt and injuring several other workers. Bethlehem did not acquire the plant until 1922.",
+        },
         {
           period: "1902–1922",
           event:
@@ -433,6 +439,16 @@ const featuredSiteRecords: AtlasSite[] = [
           period: "1922–1983",
           event:
             "Bethlehem expanded and operated the integrated works. Ironmaking and steelmaking ended by the close of 1983, although other operations continued.",
+        },
+        {
+          period: "1924–1956",
+          event:
+            "A preserved Bethlehem Steel accident tally records 171 worker deaths at the Lackawanna plant during these 32 years. The total includes multiple kinds of fatal workplace accidents, not only explosions.",
+        },
+        {
+          period: "September 20, 1984",
+          event:
+            "OSHA recorded a fatal coke-oven accident in which a worker was crushed between a coke-oven door and its door machine while a malfunction was being investigated.",
         },
         {
           period: "1990–2005",
@@ -497,6 +513,21 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Bethlehem Steel Community Liaison Plan",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915009/Work%20Plan.HW.915009.2021-05-05.NYSDEC%20Bethlehem%20Steel%20Community%20Liaison%20Plan.pdf",
+      },
+      {
+        title: "The Immense Constructions of the 20th Century, and the Workers Who Toiled Within",
+        publisher: "Buffalo Toronto Public Media / Niagara Frontier Heritage Project",
+        url: "https://www.btpm.org/heritage-moments/2018-05-07/heritage-moments-the-immense-constructions-of-the-20th-century-and-the-workers-who-toiled-within",
+      },
+      {
+        title: "Explosion in Steel Plant — Three Men Killed and Several Others Injured",
+        publisher: "The Bemidji Daily Pioneer / Library of Congress",
+        url: "https://tile.loc.gov/storage-services/service/ndnp/mnhi/batch_mnhi_jevne_ver02/data/sn86063381/00206538491/1904022401/0078.pdf",
+      },
+      {
+        title: "Accident Report 14485734 — Coke Oven Door Machine Fatality",
+        publisher: "U.S. Occupational Safety and Health Administration",
+        url: "https://www.osha.gov/ords/imis/accidentsearch.accident_detail?id=14485734",
       },
     ],
   },
