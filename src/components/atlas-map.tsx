@@ -8,6 +8,7 @@ import type { Map as MapLibreMap, Marker } from "maplibre-gl";
 
 import { featuredSites } from "@/data/featured-sites";
 import { getPublicSiteName } from "@/lib/site-name";
+import { getPfasEvidenceLabel } from "@/lib/pfas-evidence";
 import type { AtlasSite } from "@/types/site";
 
 const regionCenter: [number, number] = [-78.84, 42.8];
@@ -412,8 +413,8 @@ export function AtlasMap() {
                 <p className={`map-pfas-status is-${displayedSite.pfasStatus}`}>
                   <strong>PFAS:</strong>{" "}
                   {displayedSite.pfasStatus === "documented"
-                    ? "Documented in the site record"
-                    : "Records and sampling are under review; no PFAS conclusion is presented"}
+                    ? `Documented basis: ${getPfasEvidenceLabel(displayedSite) ?? "site record"}`
+                    : `Under review: ${getPfasEvidenceLabel(displayedSite) ?? "records and sampling"}; no PFAS source conclusion is presented`}
                 </p>
               )}
               {displayedSite.atomicLegacy && (

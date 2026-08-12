@@ -2,6 +2,12 @@ import { deepHistoryBatchTwo } from "@/data/deep-history-batch-two";
 import { deepHistoryBatchThree } from "@/data/deep-history-batch-three";
 import { deepHistoryBatchFour } from "@/data/deep-history-batch-four";
 import { deepHistoryBatchFive } from "@/data/deep-history-batch-five";
+import { deepHistoryBatchSix } from "@/data/deep-history-batch-six";
+import { deepHistoryBatchSeven } from "@/data/deep-history-batch-seven";
+import { deepHistoryBatchEight } from "@/data/deep-history-batch-eight";
+import { deepHistoryBatchNine } from "@/data/deep-history-batch-nine";
+import { deepHistoryBatchTen } from "@/data/deep-history-batch-ten";
+import { deepHistoryBatchEleven } from "@/data/deep-history-batch-eleven";
 
 export type DeepHistoryFeature = {
   eyebrow: string;
@@ -23,6 +29,12 @@ export const deepHistoryFeatures: Record<string, DeepHistoryFeature> = {
   ...deepHistoryBatchThree,
   ...deepHistoryBatchFour,
   ...deepHistoryBatchFive,
+  ...deepHistoryBatchSix,
+  ...deepHistoryBatchSeven,
+  ...deepHistoryBatchEight,
+  ...deepHistoryBatchNine,
+  ...deepHistoryBatchTen,
+  ...deepHistoryBatchEleven,
   "forest-glen-mobile-home-subdivision": {
     eyebrow: "Homes built over an illegal dump",
     title: "A neighborhood was moved so families could leave the contamination behind",

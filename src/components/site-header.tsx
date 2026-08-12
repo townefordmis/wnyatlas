@@ -78,10 +78,15 @@ export function SiteHeader() {
   function submitSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (results[0]) {
-      router.push(results[0].href);
-      setIsFocused(false);
-      setIsMenuOpen(false);
+      openSearchResult(results[0].href);
     }
+  }
+
+  function openSearchResult(href: string) {
+    setIsFocused(false);
+    setIsMenuOpen(false);
+    setQuery("");
+    router.push(href);
   }
 
   function isCurrentSection(match: string) {
@@ -152,7 +157,34 @@ export function SiteHeader() {
             <div className="header-search-results" aria-live="polite">
               {results.length > 0 ? (
                 results.map((result) => (
-                  <Link key={result.id} href={result.href}>
+                  <Link
+                    key={result.id}
+                    href={result.href}
+                    onMouseDown={(event) => {
+                      // Keep the input from blurring before a desktop click reaches the link.
+                      if (event.button === 0) event.preventDefault();
+                    }}
+                    onPointerDown={(event) => {
+                      // Touch browsers may blur and remove the results before `click` fires.
+                      if (event.pointerType !== "mouse") {
+                        event.preventDefault();
+                        openSearchResult(result.href);
+                      }
+                    }}
+                    onClick={(event) => {
+                      if (
+                        event.button !== 0 ||
+                        event.metaKey ||
+                        event.ctrlKey ||
+                        event.shiftKey ||
+                        event.altKey
+                      ) {
+                        return;
+                      }
+                      event.preventDefault();
+                      openSearchResult(result.href);
+                    }}
+                  >
                     {result.image && (
                       <Image
                         src={result.image.src}

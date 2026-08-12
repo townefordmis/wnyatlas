@@ -975,6 +975,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     pfasStatus: "under-review",
+    pfasEvidence: ["investigation"],
     summary:
       "Former municipal and industrial landfill bordering Transit Road where drums and contaminated material were removed, wastes were consolidated beneath engineered caps, and long-term monitoring continues.",
     evidenceStatus: "well-documented",
@@ -1073,6 +1074,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "pfas",
     pfasStatus: "documented",
+    pfasEvidence: ["use", "detection", "investigation"],
     summary:
       "Federal and state investigations of PFAS associated with historical use and releases of aqueous film-forming firefighting foam at the air station.",
     evidenceStatus: "research-in-progress",
@@ -1097,6 +1099,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Chautauqua",
     category: "pfas",
     pfasStatus: "documented",
+    pfasEvidence: ["use", "detection", "investigation"],
     summary:
       "Ongoing investigation of PFNA detected in the village water system and in environmental media near a former firefighting-training area; replacement supply and treatment measures were implemented.",
     evidenceStatus: "research-in-progress",
@@ -1121,6 +1124,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "pfas",
     pfasStatus: "documented",
+    pfasEvidence: ["detection", "investigation"],
     summary:
       "Brownfield investigation at 90 Erie Street documented PFAS impacts in groundwater alongside contaminants associated with historic fill; remediation planning remains part of the site record.",
     evidenceStatus: "research-in-progress",
@@ -1760,6 +1764,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     pfasStatus: "under-review",
+    pfasEvidence: ["investigation"],
     summary:
       "Former luxury-automobile manufacturing complex around Great Arrow Avenue and Elmwood Avenue. State records identify petroleum impacts, industrial fill, metals, PCBs, solvents, underground tanks, and later hazardous-material storage across separately managed brownfield parcels; investigation at 157 Great Arrow was updated to include PFAS sampling.",
     evidenceStatus: "research-in-progress",

@@ -23,6 +23,7 @@ import { formerWaterwayRecords } from "@/data/former-waterways";
 import { getConnectionGroupsForSite } from "@/data/site-connections";
 import { getSiteStory } from "@/lib/site-story";
 import { getPublicSiteName } from "@/lib/site-name";
+import { getPfasEvidenceLabel } from "@/lib/pfas-evidence";
 import { hasDeepHistoryFeature } from "@/data/deep-history-features";
 
 type SitePageProps = {
@@ -270,6 +271,9 @@ export default async function SitePage({ params }: SitePageProps) {
               {(site.category === "pfas" || site.pfasStatus) && (
                 <div className="pfas-record-status">
                   <strong>PFAS record status</strong>
+                  {getPfasEvidenceLabel(site) && (
+                    <p><strong>Atlas classification:</strong> {getPfasEvidenceLabel(site)}.</p>
+                  )}
                   <p>
                     {site.pfasStatus === "under-review"
                       ? "Historical records and sampling information are being reviewed. This page does not present the property as a confirmed PFAS source."

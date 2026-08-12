@@ -47,6 +47,7 @@ export type AtlasSite = {
     | "Wyoming";
   category: "industry" | "cleanup" | "radiological" | "waterway" | "pfas";
   pfasStatus?: "documented" | "under-review";
+  pfasEvidence?: Array<"production" | "use" | "detection" | "investigation">;
   summary: string;
   evidenceStatus: EvidenceStatus;
   coordinates: [longitude: number, latitude: number];

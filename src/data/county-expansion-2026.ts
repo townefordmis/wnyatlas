@@ -305,6 +305,7 @@ export const countyExpansion2026: AtlasSite[] = [
     county: "Cattaraugus",
     category: "pfas",
     pfasStatus: "documented",
+    pfasEvidence: ["detection", "investigation"],
     summary: "Completed brownfield cleanup where PFOS, PFOA, petroleum, PAHs, and arsenic were documented and controls remain under review.",
     evidenceStatus: "well-documented",
     coordinates: [-78.441755556, 42.103519444],

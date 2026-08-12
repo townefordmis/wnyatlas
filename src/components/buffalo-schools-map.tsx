@@ -461,7 +461,11 @@ export function BuffaloSchoolsMap() {
                         </a>
                       ))}
                       {story.records
-                        .filter((record) => record.decDocumentIndex)
+                        .filter(
+                          (record) =>
+                            record.decDocumentIndex &&
+                            !record.documentIndexStatus.startsWith("unavailable"),
+                        )
                         .map((record) => (
                           <a
                             key={`${record.siteCode}-documents`}

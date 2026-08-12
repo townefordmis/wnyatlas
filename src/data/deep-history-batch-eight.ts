@@ -1,0 +1,178 @@
+import type { DeepHistoryFeature } from "@/data/deep-history-features";
+
+export const deepHistoryBatchEight: Record<string, DeepHistoryFeature> = {
+  "5565-river-road": {
+    eyebrow: "Industrial fill altered land, drainage, and the river edge",
+    title: "5565 River Road connects buried creeks to PCB-affected Niagara River sediment",
+    lead: "Historic aerials show a largely undeveloped property in 1927 followed by postwar industrial fill, drums, and expanding terminal activity. By the late 1970s, fill had obscured portions of Rattlesnake Creek and a smaller drainage, while the modern cleanup record also identifies a separate PCB-affected shoreline sediment area.",
+    accent: "#3fa3ad",
+    stat: { value: "1927", label: "aerial baseline before widespread industrial filling" },
+    chapters: [
+      { period: "1927-1970s", title: "A low riverfront landscape became made industrial ground", body: "Petroleum storage, truck-terminal activity, and deposits of industrial fill expanded after World War II. The filling changed surface grade and locally buried or displaced Rattlesnake Creek and another southern drainage." },
+      { period: "2009-2012", title: "Surface drums and fill led to a Class 2 designation", body: "A 2009 assessment documented large fill mounds and discarded drums. DEC characterization followed and the property was classified as an inactive hazardous-waste site requiring remedial action." },
+      { period: "Present", title: "The upland and submerged records must be read together", body: "DEC maps PCB-affected sediment along the Niagara River edge while the upland investigation addresses fill, soil, groundwater, and altered drainage. The two features are related parts of one site record, not one uniform contamination zone." },
+    ],
+    caution: { title: "Do not turn a site connection into a corridor-wide plume", body: "The mapped upland property and sediment feature are bounded records. Neighboring terminals, tank farms, and river sediment require their own evidence, and older reports of tar-like material in drums were not confirmed during the preliminary assessment." },
+    sources: [
+      { label: "NYSDEC: 5565 River Road site documents", url: "https://extapps.dec.ny.gov/data/DecDocs/915239/" },
+      { label: "NYSDEC: sediment cap and contamination layer", url: "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/5" },
+    ],
+  },
+  "lyndonville-west-avenue": {
+    eyebrow: "A village storm sewer once carried landfill leachate",
+    title: "West Avenue linked a buried landfill, a drainage swale, and Lyndonville's industrial drainage system",
+    lead: "The cleanup record covers more than a disposal mound. Landfill leachate entered the village industrial storm sewer, while soil in an adjoining swale contained arsenic and organochlorine-pesticide compounds. Diversion, collection, excavation, capping, and continuing controls now manage those pathways.",
+    accent: "#84a95d",
+    stat: { value: "2000-2001", label: "period when diversion and collection stopped leachate entering the storm sewer" },
+    chapters: [
+      { period: "1978-1994", title: "Odors and drainage complaints grew into a state cleanup record", body: "State and local investigations evaluated landfill odors, drainage, soil, surface water, and the West Avenue stormwater system. New York reclassified the property as a Class 2 inactive hazardous-waste site in 1994." },
+      { period: "2000-2005", title: "The remedy interrupted the water pathway", body: "Stormwater diversion and leachate collection separated landfill drainage from the village storm sewer. Affected swale soil was removed and the disposal area received asphalt and soil cover over a geosynthetic barrier." },
+      { period: "Present", title: "The cap and collection system remain active infrastructure", body: "Fencing, leachate handling, inspections, maintenance, access restrictions, and property controls continue. Major construction is complete, but the continuing Class 2 designation does not describe unrestricted land." },
+    ],
+    caution: { title: "Pesticide detection does not identify one disposer", body: "DEC records arsenic, DDT, DDD, and DDE, but earlier work noted relatively low pesticide concentrations and possible agricultural influence. Multiple nearby parties were investigated, so WNYAtlas does not assign every constituent to one company." },
+    sources: [
+      { label: "NYSDEC: West Avenue site-management plan", url: "https://extapps.dec.ny.gov/data/DecDocs/837002/Work%20Plan.HW.837002.2005-04-22.SITE_MANAGEMENT_PLAN.pdf" },
+      { label: "NYSDEC: West Avenue focused feasibility study", url: "https://extapps.dec.ny.gov/data/DecDocs/837002/Report.HW.837002.2003-11-05.Revised%20Lyndonville%20Focused%20Feasibility%20Study%20Report.pdf" },
+      { label: "NYSDEC: West Avenue document collection", url: "https://extapps.dec.ny.gov/data/DecDocs/837002/" },
+    ],
+  },
+  "carroll-landfill": {
+    eyebrow: "A rural landfill required an operating water-treatment remedy",
+    title: "Carroll Landfill sits between a waste mass, wetlands, homes, and Conewango Creek",
+    lead: "The roughly 25-acre Frewsburg-area property received municipal and construction-and-demolition waste. Its setting made leachate and affected groundwater more than an on-property concern, leading to closure construction, collection, treatment, drainage controls, and long-term monitoring.",
+    accent: "#6b9b67",
+    stat: { value: "25 acres", label: "approximately, within the former disposal property" },
+    chapters: [
+      { period: "Landfill era", title: "Local disposal occupied a sensitive creek-and-wetland setting", body: "Municipal refuse and construction-and-demolition material were placed near homes, wetlands, and Conewango Creek. The later transfer-related use of the property is a separate operating history from the buried landfill." },
+      { period: "Investigation and construction", title: "Leachate made closure an active system", body: "State and local work evaluated the waste footprint, groundwater, drainage, wetlands, and surface-water pathways. The selected remedy combined landfill cover with collection and treatment rather than relying on a cap alone." },
+      { period: "Present", title: "Treatment and inspection keep the closed landfill protective", body: "Monitoring wells, drainage structures, access controls, land restrictions, treatment, inspections, and maintenance remain part of the remedy. The visible infrastructure is continuing cleanup work, not abandoned equipment." },
+    ],
+    caution: { title: "A nearby creek is a pathway, not proof of downstream harm", body: "The location required protection of Conewango Creek and wetlands, but the landfill boundary and monitored pathways are site-specific. The record does not support characterizing every nearby home, wetland, or downstream reach as contaminated." },
+    sources: [
+      { label: "NYSDEC: Carroll Landfill remedial design", url: "https://extapps.dec.ny.gov/data/DecDocs/907017/Report.HW.907017.2011-09-27.RD%20Specs%20and%20Drawings%20approved%20by%20CCDOH.pdf" },
+      { label: "NYSDEC: Carroll Landfill groundwater monitoring", url: "https://extapps.dec.ny.gov/data/DecDocs/907017/Report.HW.907017.2019-11-27.November%202019%20Groundwater%20Monitoring%20Report.pdf" },
+    ],
+  },
+  "1660-niagara-street-sediment": {
+    eyebrow: "The environmental record continues below the waterline",
+    title: "At 1660 Niagara Street, the shoreline sediment is a feature of its own",
+    lead: "Industrial use, bulk handling, rail access, filling, and repeated property reuse shaped this section of Buffalo's Niagara River waterfront. DEC identifies a bounded PCB-affected sediment area adjoining the cleanup property, requiring the upland parcel and submerged river edge to be interpreted together but mapped separately.",
+    accent: "#398faa",
+    stat: { value: "2 settings", label: "upland property and adjoining submerged sediment" },
+    chapters: [
+      { period: "Industrial waterfront era", title: "Manufacturing and fill hardened the Niagara Street edge", body: "Successive industrial and material-handling uses occupied a shoreline built for rail and water access. Historic fill and repeated reuse created an upland record that cannot be understood from the present streetscape alone." },
+      { period: "Investigation", title: "Sampling extended from land into the Niagara River", body: "Environmental work evaluated the parcel and adjoining sediment. DEC's sediment inventory identifies PCBs in a defined shoreline feature rather than labeling the whole upper Niagara River waterfront." },
+      { period: "Present redevelopment", title: "Public access and environmental controls share the same shoreline", body: "The Niagara Street corridor is changing rapidly. Construction, dredging, or sediment disturbance must account for the mapped feature even as surrounding land gains new uses and waterfront access." },
+    ],
+    caution: { title: "The boundary matters", body: "This entry represents one documented upland-and-sediment relationship. It does not establish that the entire Niagara Street corridor or upper Niagara River shoreline has the same PCB condition." },
+    sources: [
+      { label: "NYSDEC: 1660 Niagara Street site documents", url: "https://extapps.dec.ny.gov/data/DecDocs/915311/" },
+      { label: "NYSDEC: sediment cap and contamination layer", url: "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/5" },
+    ],
+  },
+  "lancaster-sanitary-landfill": {
+    eyebrow: "A sanitary landfill also became an industrial-waste archive",
+    title: "Lancaster's closed landfill contains more than municipal refuse",
+    lead: "The disposal area crossing the Lancaster-Clarence boundary accepted ordinary community waste alongside industrial sludges, waste ink, chemical drums, and PCB-containing equipment. A state-approved cap closed the landfill, while groundwater monitoring and maintenance continue to verify containment.",
+    accent: "#9a8a58",
+    stat: { value: "2 towns", label: "Lancaster and Clarence share the disposal footprint" },
+    chapters: [
+      { period: "Operating years", title: "Municipal and industrial streams entered the same landfill", body: "Records identify sludges, waste ink, drums, and PCB-containing equipment among material disposed with sanitary waste. That mixed history explains why the property became a hazardous-waste management concern after closure." },
+      { period: "Closure and 1994 review", title: "Grading and capping changed the site's regulatory phase", body: "The landfill was closed beneath a state-approved cover. DEC's 1994 classification decision evaluated the completed closure conditions and shifted attention toward long-term protectiveness." },
+      { period: "2021 onward", title: "Post-closure care is the current cleanup", body: "An updated plan governs groundwater monitoring, inspection, drainage, cap repair, and maintenance. Remaining waste stays in place, so the remedy depends on the cover and controls continuing to perform." },
+    ],
+    caution: { title: "Closed does not mean excavated", body: "The landfill is not an open dump, but its contents were not removed for unrestricted use. WNYAtlas describes the documented disposal footprint and does not extend it across unrelated neighboring parcels." },
+    sources: [
+      { label: "NYSDEC: Lancaster Landfill classification decision", url: "https://extapps.dec.ny.gov/data/DecDocs/915068/Report.HW.915068.1994-03-24.reclass_decision_2a_to_4.pdf" },
+      { label: "NYSDEC: post-closure monitoring and maintenance plan", url: "https://extapps.dec.ny.gov/data/DecDocs/915068/Work%20Plan.HW.915068.2021-08-31.Post_Closure_Monitoring_and_Maintenance_Plan.pdf" },
+    ],
+  },
+  "marsh-valve-dunkirk": {
+    eyebrow: "A brass foundry was dismantled down to native soil",
+    title: "Marsh Valve shows what a completed industrial removal actually removed",
+    lead: "Brass valves and fittings were manufactured on Brigham Road beginning in the 1920s, with foundry operation documented from 1941. Metal-bearing foundry sand, deteriorated buildings, and underground tanks led to a federal removal before New York selected no further remedial action in 2003.",
+    accent: "#c59447",
+    stat: { value: "2003", label: "year of New York's no-further-action decision" },
+    chapters: [
+      { period: "1920s-1941 onward", title: "Machining and casting created a compact metals landscape", body: "The plant manufactured brass valves and fittings and later operated a foundry. Used sand and residues contained lead, copper, zinc, and other metals tied to the parcel's industrial process." },
+      { period: "Federal removal", title: "The response removed structures as well as contaminated material", body: "Crews demolished the remaining building, removed underground tanks, and excavated foundry sand to native soil. The work addressed the main structures and material that had preserved the former operation." },
+      { period: "2003-present", title: "The site moved from active cleanup to completed status", body: "DEC selected no further remedial action after reviewing the removal and investigation. Its completed Class C status distinguishes Marsh Valve from active Class 2 sites elsewhere in Dunkirk." },
+    ],
+    caution: { title: "Completed removal is not an ongoing emergency", body: "The historical metals and foundry-sand findings belong to the former plant property. They do not establish a community-wide plume, and the completed regulatory status should remain visible whenever the site appears." },
+    sources: [
+      { label: "NYSDEC: Marsh Valve record of decision", url: "https://extapps.dec.ny.gov/data/DecDocs/907023/ROD.HW.907023.2003-03-31.marsh_valve.pdf" },
+      { label: "NYSDEC: Marsh Valve document collection", url: "https://extapps.dec.ny.gov/data/DecDocs/907023/" },
+    ],
+  },
+  "pelican-manufacturing-jamestown": {
+    eyebrow: "One solvent moved through soil, groundwater, and sediment pathways",
+    title: "Pelican Manufacturing required a sequence of treatment, demolition, and source removal",
+    lead: "The Washington Street manufacturer used and disposed of chlorinated compounds associated with a TCE cleanup. Soil-vapor extraction and groundwater recovery began before building demolition enabled further source-soil and sediment removal, leaving a completed state remedy with continuing controls.",
+    accent: "#8a72bd",
+    stat: { value: "1995", label: "year DEC selected the TCE remedy" },
+    chapters: [
+      { period: "Manufacturing era", title: "Chlorinated-chemical disposal created a multi-medium problem", body: "DEC's legacy record documents chlorinated hydrocarbons at 2223 Washington Street. TCE affected soil, groundwater, and surface-water or sediment pathways tied to the former operation." },
+      { period: "1995-2003", title: "Cleanup technologies followed the changing property", body: "The response used soil-vapor extraction, groundwater extraction and treatment, contaminated-sediment removal, building demolition, and additional source-soil excavation. No single technology tells the whole cleanup story." },
+      { period: "Present", title: "Completion still carries property controls", body: "DEC now lists the site as completed Class C, while engineering and institutional controls preserve isolation and containment. EPA's non-NPL record means federal evaluation occurred without National Priorities List placement." },
+    ],
+    caution: { title: "Regulatory labels describe different things", body: "Non-NPL does not mean uninvestigated, and completed Class C does not mean the site never contained contamination. Neither status supports extending Pelican's conditions to every Washington Street property." },
+    sources: [
+      { label: "NYSDEC: Pelican Manufacturing document collection", url: "https://extapps.dec.ny.gov/data/DecDocs/907010/" },
+      { label: "EPA: Pelican Manufacturing CERCLA profile", url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0202672" },
+    ],
+  },
+  "former-randolph-foundry": {
+    eyebrow: "A small-town foundry left a full industrial cleanup in miniature",
+    title: "Randolph removed buildings, asbestos, drums, and foundry sand before reuse",
+    lead: "The rail-adjacent foundry and machine shop closed around 1986, leaving deteriorated structures, asbestos, drums, waste sand, pits, sumps, and industrial debris. Cleanup removed the principal hazards and placed clean cover and commercial-use controls over residual material.",
+    accent: "#b57c49",
+    stat: { value: "333 tons", label: "approximately, waste foundry sand removed off site" },
+    chapters: [
+      { period: "Foundry era-1986", title: "Casting and machining concentrated industry on a compact village parcel", body: "Metal production generated waste foundry sand, scrap, oils, and process residues beside the rail corridor. Operations ended around 1986, but the buildings and outdoor material preserved that history." },
+      { period: "2008-2009", title: "Demolition exposed and removed the remaining source areas", body: "Controlled work removed about 180 tons of asbestos-containing debris, approximately 333 tons of foundry sand, drums, chemicals, equipment, and material from pits and sumps. A six-inch clean-soil cover completed the physical response." },
+      { period: "2012-present", title: "Certification enabled commercial use with continuing rules", body: "DEC certified the commercial-use cleanup in 2012. An environmental easement, groundwater restriction, excavation plan, cover maintenance, and site-management requirements remain attached to the property." },
+    ],
+    caution: { title: "The cleanup standard defines the safe use", body: "Completion supports controlled commercial use, not unrestricted excavation or residential assumptions. The nearby railroad and other properties are separate unless direct investigation connects them." },
+    sources: [
+      { label: "NYSDEC: Former Randolph Foundry site-management plan", url: "https://extapps.dec.ny.gov/data/DecDocs/E905030/Work%20Plan.ERP.E905030.2011-07-01.SMP.pdf" },
+      { label: "NYSDEC: cleanup completion fact sheet", url: "https://extapps.dec.ny.gov/data/DecDocs/E905030/Fact%20Sheet.ERP.E905030.2012-06-01.COC_issued-FER_approved.pdf" },
+      { label: "NYSDEC: investigation and alternatives report", url: "https://extapps.dec.ny.gov/data/DecDocs/E905030/Report.ERP.E905030.2011-07-22.SI-RAA.pdf" },
+    ],
+  },
+  "frontier-chemical-pendleton": {
+    eyebrow: "Industrial liquid waste became sediment, then an engineered landfill",
+    title: "Frontier Chemical consolidated Quarry Lake sediment into an eleven-acre cap",
+    lead: "From 1958 to 1974, the Pendleton facility treated plating wastes, pickle liquors, and acidic liquids from metal-finishing businesses. Treatment residuals entered Quarry Lake before contaminated sediment was excavated and consolidated into an on-site engineered landfill with groundwater collection and pretreatment.",
+    accent: "#c86e53",
+    stat: { value: "11 acres", label: "approximately, within the capped on-site landfill" },
+    chapters: [
+      { period: "1958-1974", title: "A regional waste-treatment business discharged residuals to a quarry lake", body: "Frontier accepted plating and metal-finishing wastes and treated acidic liquid streams. Residuals from that process accumulated in the approximately 15-acre Quarry Lake and affected soil and groundwater." },
+      { period: "1992-1990s remedy", title: "The cleanup moved lake sediment into engineered containment", body: "DEC selected containment and collection in 1992. Contaminated lake sediment was excavated and consolidated within an approximately 11-acre capped landfill, paired with a subsurface barrier and groundwater collection and pretreatment." },
+      { period: "2013-present", title: "A changed boundary did not end site management", body: "DEC redefined the managed site boundary in 2013 so Quarry Lake was no longer inside formal Site 932043. Cap care, groundwater systems, wetlands, runoff controls, monitoring, security, and periodic review continue." },
+    ],
+    caution: { title: "This is not Frontier Chemical's Niagara Falls facility", body: "The Townline Road property has its own operating history, waste streams, boundary, and remedy. It must remain separate from the Royal Avenue Frontier Chemical site in Niagara Falls." },
+    sources: [
+      { label: "NYSDEC: Pendleton record of decision", url: "https://extapps.dec.ny.gov/data/DecDocs/932043/ROD.HW.932043.1992-03-02.frontier_chemical.pdf" },
+      { label: "NYSDEC: 2025 periodic review report", url: "https://extapps.dec.ny.gov/data/DecDocs/932043/Report.HW.932043.2025-11-13.Revised_2025_PRR.pdf" },
+      { label: "NYSDEC: Pendleton document collection", url: "https://extapps.dec.ny.gov/data/DecDocs/932043/" },
+    ],
+  },
+  "1827-fillmore-former-quarry": {
+    eyebrow: "A quarry became fill, then became housing",
+    title: "Kensington Heights was built over an excavation filled with material of unknown origin",
+    lead: "Stone removal created a deep urban quarry by at least 1917. Filling during the 1940s and 1950s erased the open excavation, and the Kensington Heights apartment complex followed in 1958. Decades later, PAHs and metals in the fill required excavation, protective cover, and enforceable soil-management rules.",
+    accent: "#d39155",
+    stat: { value: "1958", label: "year the apartment complex was constructed over the former quarry" },
+    chapters: [
+      { period: "By 1917", title: "Stone extraction created the site's defining landform", body: "The original environmental transformation was physical: quarrying removed rock and left a large excavation within a growing city neighborhood." },
+      { period: "1940s-1958", title: "Unknown fill converted the quarry into residential ground", body: "Material of incompletely documented origin filled the excavation during the 1940s and 1950s. Kensington Heights apartments were then constructed over the former quarry in 1958." },
+      { period: "Investigation-2019", title: "Residential use required a direct-contact remedy", body: "Brownfield investigation found PAHs and metals in soil and fill. Excavation, a maintained cover, institutional controls, and a site-management plan supported New York's 2019 Certificate of Completion." },
+    ],
+    caution: { title: "Unknown origin does not mean every rumored waste was present", body: "The source of all historic fill was not documented. WNYAtlas reports the measured PAHs and metals and does not label the quarry with additional waste types unless sampling or records establish them." },
+    sources: [
+      { label: "NYSDEC: 1827 Fillmore cleanup fact sheet", url: "https://extapps.dec.ny.gov/data/der/factsheet/c915279cubegins.pdf" },
+      { label: "NYSDEC: brownfield cleanup decision", url: "https://extapps.dec.ny.gov/data/DecDocs/C915279/Decision%20Document.BCP.C915279.2019-03-27.signed_Decision_Document.pdf" },
+      { label: "NYSDEC: 2019 Certificate of Completion", url: "https://extapps.dec.ny.gov/data/DecDocs/C915279/Certificate%20of%20Completion.BCP.C915279.2019-12-23.Executed_COC.pdf" },
+    ],
+  },
+};

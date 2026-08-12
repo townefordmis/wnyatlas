@@ -11,6 +11,7 @@ const exploreLinks = [
   { href: "/research/radiological-industry-fill", title: "Radiological history", description: "Trace production, storage, surveys, fill, and remediation." },
   { href: "/health", title: "Public Health Atlas", description: "Compare official statistics with visible limitations." },
   { href: "/enforcement", title: "Enforcement", description: "Read major documented penalties and settlements." },
+  { href: "/research-status", title: "Research status", description: "See coverage, evidence stages, and current gaps." },
 ];
 
 export function SiteContactFooter() {

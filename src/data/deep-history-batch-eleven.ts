@@ -1,0 +1,174 @@
+import type { DeepHistoryFeature } from "@/data/deep-history-features";
+
+export const deepHistoryBatchEleven: Record<string, DeepHistoryFeature> = {
+  "morgan-materials": {
+    eyebrow: "A warehouse emergency ended; a subsurface cleanup remained",
+    title: "Morgan Materials accumulated surplus chemicals until incompatible storage became an immediate hazard",
+    lead: "Connected warehouses near Hertel Avenue and Vulcan Street held surplus and off-specification chemicals. In 2016, regulators found leaking, unlabeled, and incompatible materials presenting fire, reaction, and release hazards; EPA spent the next two years stabilizing and removing the inventory while New York opened a separate soil-and-groundwater investigation.",
+    accent: "#d36f4e",
+    stat: { value: "Millions of pounds", label: "hazardous and nonhazardous material removed or recycled by EPA" },
+    chapters: [
+      { period: "Before 2016", title: "A resale business turned connected warehouses into a chemical inventory", body: "Morgan Materials purchased surplus and off-specification products. Containers of varied age, labeling, and compatibility accumulated across the complex, making storage condition as important as any single chemical." },
+      { period: "2016-2018", title: "Emergency response addressed fire, reaction, and release risks", body: "EPA and DEC encountered leaking, unlabeled, and incompatible materials. Crews characterized, separated, stabilized, removed, recycled, or disposed of millions of pounds before the warehouse response was completed." },
+      { period: "2018-present", title: "Removing containers did not answer every subsurface question", body: "DEC listed the remaining site Class 2 and continued investigating soil and groundwater for chlorinated VOCs, vinyl chloride, PCBs, PAHs, and metals. A final long-term remedy should follow that investigation rather than the warehouse closeout alone." },
+    ],
+    caution: { title: "Two cleanup phases have different meanings", body: "EPA completed the container and warehouse response. New York's subsurface investigation remains a separate active record, and variations in addresses reflect the connected complex rather than evidence about every nearby parcel." },
+    sources: [
+      { label: "NYSDEC: Morgan Materials site documents", url: "https://extapps.dec.ny.gov/data/DecDocs/915210/" },
+      { label: "EPA: completion of the warehouse chemical removal", url: "https://www.epa.gov/archive/epa/newsreleases/epa-completes-cleanup-chemical-hazard-tonawanda-new-york.html" },
+    ],
+  },
+  "michael-heyman-east-ferry": {
+    eyebrow: "Lead contamination crossed the factory line into a neighborhood setting",
+    title: "East Ferry became a major environmental-justice cleanup because the smelter's ash and fill extended off site",
+    lead: "The Michael Heyman Company smelted and refined zinc and lead on East Ferry Street. Investigations found high lead concentrations in ash and fill extending west across additional industrial and commercial parcels near homes, churches, and community institutions, expanding the remedy beyond the original 3.32-acre plant.",
+    accent: "#cc7749",
+    stat: { value: "136,234 tons", label: "lead-contaminated soil removed from the site and surrounding properties" },
+    chapters: [
+      { period: "Industrial era", title: "Smelting and refining created metal-rich ash and fill", body: "Zinc and lead processing produced residues that were placed or spread across the industrial property. Later land use obscured the extent until systematic sampling followed the material beyond the former plant." },
+      { period: "2001-2004", title: "Investigation showed the cleanup boundary had to grow", body: "DEC found that lead-contaminated ash and fill extended west onto neighboring industrial and commercial properties. The surrounding residential and institutional setting made direct-contact protection an environmental-justice priority." },
+      { period: "2000s completion", title: "Excavation removed an unusually large volume of affected soil", body: "State work ultimately removed 136,234 tons of lead-contaminated soil from the former facility and affected neighboring properties, replacing it with clean material and documenting the final remedial limits." },
+    ],
+    caution: { title: "Off-site cleanup does not label the entire East Ferry neighborhood", body: "The expanded remedy followed sampling and defined affected properties. Proximity to the former smelter is not itself evidence that every home, church, institution, or resident was exposed or harmed." },
+    sources: [
+      { label: "NYSDEC: East Ferry cleanup success story", url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories" },
+      { label: "NYSDEC: 858 East Ferry final remediation report", url: "https://extapps.dec.ny.gov/data/DecDocs/915175/Report.HW.915175.2009-03-26.Final_Remediation_Report..pdf" },
+    ],
+  },
+  "pfohl-brothers-landfill": {
+    eyebrow: "Thousands of drums were removed while the larger waste mass was contained",
+    title: "Pfohl Brothers combined municipal refuse with industrial disposal beside wetlands and growing suburbs",
+    lead: "Areas B and C of the roughly 130-acre Cheektowaga property received municipal and industrial wastes from 1932 to 1971. Shallow disposal pits were covered with fly ash and fill; the Superfund remedy later removed thousands of drums, consolidated waste, installed caps, and collected leachate.",
+    accent: "#8c7049",
+    stat: { value: "4,534 drums", label: "removed under the selected Superfund remedy" },
+    chapters: [
+      { period: "1932-1971", title: "A landfill at the suburban edge accepted many industrial waste streams", body: "Reported users represented steel, metals, chemicals, petroleum, utilities, optics, furnace materials, and other manufacturing. Areas B and C received waste, while Area A was principally a soil-borrow area." },
+      { period: "1992-2002", title: "The remedy separated removal from containment", body: "Cleanup decisions selected no action for Area A and containment for Areas B and C. Crews removed 4,534 drums, consolidated waste, installed engineered caps, and built leachate collection and treatment." },
+      { period: "Present", title: "Long-term care protects Transit Road, wetlands, and nearby land uses", body: "Groundwater and leachate monitoring, inspections, cap maintenance, land controls, and periodic federal review continue because the main waste mass remains beneath the remedy." },
+    ],
+    caution: { title: "The three areas did not have the same disposal history", body: "The no-action Area A and contained Areas B and C must remain distinct. The site's PFAS status is under review and should not be presented as a proven historical PFAS source without a source-specific finding." },
+    sources: [
+      { label: "EPA: Pfohl Brothers Superfund profile", url: "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0201751" },
+      { label: "NYSDEC: Pfohl Brothers record of decision", url: "https://extapps.dec.ny.gov/data/DecDocs/915043/ROD.HW.915043.1994-01-01.pfohl_brothers_ou2.pdf" },
+    ],
+  },
+  "old-upper-mountain-road-landfill": {
+    eyebrow: "A ravine landfill became a creek, floodplain, and sewer-infrastructure remedy",
+    title: "Lockport pushed refuse and incinerator ash into a ravine above Gulf Creek",
+    lead: "Historical accounts describe city disposal from 1921 through the 1950s, with garbage, incinerator ash, glass, slag, and some industrial material pushed into the ravine. Later investigation found affected creek sediment and floodplain soil while a degraded interceptor complicated water movement and construction.",
+    accent: "#6e9162",
+    stat: { value: "1921-1950s", label: "reported municipal-landfill operating period" },
+    chapters: [
+      { period: "1921-1950s", title: "The landform itself became the disposal system", body: "Municipal waste and ash were placed down the ravine, with records also describing local industrial disposal. Filling altered the slope and created a direct physical relationship between buried waste and Gulf Creek." },
+      { period: "Investigation and 2022 design", title: "The remedy expanded from waste to water infrastructure", body: "DEC documented landfill material, affected sediment, floodplain soil, wetlands, and an aging Gulf Interceptor that contributed unintended sewage or stormwater discharges." },
+      { period: "2023-current construction", title: "Excavation and containment are rebuilding the ravine and creek edge", body: "Selected waste, sediment, and floodplain soil were excavated, consolidated in engineered containment or sent to approved disposal. Creek restoration, sewer coordination, cover, and long-term management complete the designed system." },
+    ],
+    caution: { title: "Construction status should follow the newest official record", body: "The remedy is substantial and active, but WNYAtlas should not declare final completion until DEC publishes the corresponding closeout. Gulf Creek impacts also should not be generalized beyond investigated reaches." },
+    sources: [
+      { label: "NYSDEC: Old Upper Mountain Road community newsletter", url: "https://extapps.dec.ny.gov/data/DecDocs/932112/Fact%20Sheet.HW.932112.2023-12-22.Old%20Upper%20Mountain%20Road%20Community%20Newsletter%20Winter%20Shutdown.pdf" },
+      { label: "NYSDEC: engineering design report", url: "https://extapps.dec.ny.gov/data/DecDocs/932112/Report.HW.932112.2022-07-19.Old%20Upper%20MOuntain%20Road%20City%20of%20Lockport%20LF%20ESD.pdf" },
+    ],
+  },
+  "machias-gravel-pit": {
+    eyebrow: "A borrowed excavation became a one-time industrial drum destination",
+    title: "Approximately six hundred drums of Motorola waste were reportedly placed in the Machias pit",
+    lead: "The rural gravel pit received an industrial shipment in 1978 rather than decades of ordinary municipal disposal. Records describe roughly 600 drums containing solvents, acids, epoxy wastes, cutting oils, and related materials, followed by removal, soil-vapor extraction, groundwater treatment, and continuing monitoring.",
+    accent: "#a56e4b",
+    stat: { value: "~600 drums", label: "Motorola industrial waste reportedly placed in 1978" },
+    chapters: [
+      { period: "1978", title: "A single disposal episode created a long environmental record", body: "Drums associated with Motorola industrial operations were reportedly placed in the gravel-pit storage area. The waste inventory included solvents, acids, epoxy material, and cutting oils." },
+      { period: "Investigation and removal", title: "Excavation addressed containers and the most accessible source material", body: "State work characterized the drum area, removed containers and affected soil, and evaluated volatile compounds that had moved beyond the original disposal features." },
+      { period: "Long-term remedy", title: "Vapor extraction and groundwater treatment outlasted the drums", body: "Soil-vapor extraction, groundwater treatment, monitoring, and periodic review addressed remaining subsurface solvent impacts after the visible containers were gone." },
+    ],
+    caution: { title: "Reported drum contents and measured contamination are different evidence", body: "Historical records describe the shipment and waste types; monitoring defines what remained in soil and groundwater. The site does not establish similar disposal in every gravel pit or nearby rural parcel." },
+    sources: [
+      { label: "NYSDEC: Machias Gravel Pit periodic review", url: "https://extapps.dec.ny.gov/data/DecDocs/905013/Report.HW.905013.2023-07-26.PERIODIC%20REVIEW%20REPORT%202022_Final.pdf" },
+      { label: "NYSDEC: Machias Gravel Pit record of decision", url: "https://extapps.dec.ny.gov/data/DecDocs/905013/ROD.HW.905013.1992-11-01.machias_gravel.pdf" },
+    ],
+  },
+  "buffalo-color-area-e-field": {
+    eyebrow: "A chemical-plant parcel became athletic fields supported by engineered controls",
+    title: "Buffalo Color Area E shows how recreation can coexist with managed industrial ground",
+    lead: "The 15.8-acre parcel formed part of Buffalo's dye and chemical complex. Remediation retained some material beneath engineered covers, plugged unused process sewers, rehabilitated storm sewers, and established monitoring before athletic fields, a fieldhouse, walks, bleachers, and parking opened on the controlled property.",
+    accent: "#4eaa72",
+    stat: { value: "15.8 acres", label: "within the former chemical-manufacturing Area E parcel" },
+    chapters: [
+      { period: "Chemical-manufacturing era", title: "Area E belonged to a much larger dye-production complex", body: "The parcel shared Buffalo Color's industrial history but became its own cleanup unit. Sewers, subsurface fill, and groundwater created pathways that required a site-specific remedy." },
+      { period: "2010-2011", title: "The remedy prepared controlled ground rather than removing every trace", body: "Construction established soil and pavement covers, plugged unused process lines, rehabilitated storm sewers, imposed land restrictions, and began long-term groundwater and cover monitoring." },
+      { period: "2018-present", title: "Athletic use depends on the remedy remaining intact", body: "Fields and supporting facilities were built under DEC-approved controls. Inspections, cover maintenance, soil-management procedures, and periodic certification remain essential parts of public use." },
+    ],
+    caution: { title: "A field is not evidence of unrestricted soil", body: "The approved reuse relies on engineered cover and institutional controls. A 2021 temporary athletic-field action related to air emissions from a nearby operating facility should not be confused with failure of the Area E soil remedy." },
+    sources: [
+      { label: "NYSDEC: Area E site management and periodic review", url: "https://extapps.dec.ny.gov/data/DecDocs/C915232/Report.BCP.C915232.2024-03-21.PRR_and_IC-EC_Certification.pdf" },
+      { label: "NYSDEC: 2021 nearby air-monitoring action", url: "https://dec.ny.gov/news/press-releases/2021/5/dec-directs-pvs-chemical-solutions-inc-to-temporarily-cease-operations" },
+    ],
+  },
+  "3m-o-cel-o-tonawanda": {
+    eyebrow: "A familiar household sponge began with unusual industrial chemistry",
+    title: "O-Cel-O sponge production made carbon disulfide the site's signature contaminant",
+    lead: "The River Road plant manufactured cellulose sponges using carbon disulfide and other process materials. Releases associated with chemical handling and drainage areas led to interim controls, a 1999 state remedy, and continuing inspection and monitoring after the hazardous-waste listing was closed.",
+    accent: "#58a39b",
+    stat: { value: "1999", label: "year DEC issued the final site decision" },
+    chapters: [
+      { period: "Manufacturing era", title: "Cellulose sponge production depended on carbon disulfide", body: "The plant's consumer product came from an industrial chemical process. Storage, handling, and drainage features created specific pathways to soil and groundwater." },
+      { period: "Interim response and 1999 remedy", title: "Source controls preceded the final decision", body: "Measures at chemical-handling and drainage areas reduced continuing releases before DEC incorporated controls and monitoring into the final remedy." },
+      { period: "Closed-site management", title: "Regulatory closure still requires inspection", body: "Periodic reviews evaluate engineering controls, institutional requirements, monitoring, and maintenance. The closed classification reflects a remedy in place, not the absence of an industrial legacy." },
+    ],
+    caution: { title: "This record is about carbon disulfide, not assumed PFAS production", body: "The reviewed cleanup identifies carbon disulfide as the signature contaminant. The 3M name alone is not evidence that this plant made or released PFAS; any PFAS claim would require site-specific records." },
+    sources: [
+      { label: "NYSDEC: O-Cel-O record of decision", url: "https://extapps.dec.ny.gov/data/DecDocs/915148/ROD.HW.915148.1999-03-30.3M_O-Cel-O.pdf" },
+      { label: "NYSDEC: 2021 periodic review report", url: "https://extapps.dec.ny.gov/data/DecDocs/915148/Report.HW.915148.2022-03-09.2021_Periodic_Review_Report.pdf" },
+    ],
+  },
+  "iroquois-gas-westwood": {
+    eyebrow: "One gasworks story continues from land into lower Scajaquada Creek",
+    title: "Iroquois Gas and Westwood require connected but separate terrestrial, riparian, and creek records",
+    lead: "Manufactured gas at Dart and Bradley Streets left coal tar capable of persisting in soil, groundwater, and sediment. Later Westwood Pharmaceutical use added another industrial era; constructed land and riparian remedies now operate under management while a separate DEC investigation follows historical coal-tar impacts in lower Scajaquada Creek.",
+    accent: "#4b91a3",
+    stat: { value: "3 records", label: "terrestrial, riparian, and continuing creek investigation" },
+    chapters: [
+      { period: "Manufactured-gas era", title: "Coal-gas production created a dense subsurface source", body: "The Iroquois facility produced manufactured gas before the modern natural-gas network. Coal tar and associated compounds could sink, move through groundwater, and enter sediment pathways." },
+      { period: "Later Westwood use and remedies", title: "A second industrial era occupied the former gasworks landscape", body: "Pharmaceutical and related uses followed. DEC divided constructed terrestrial and riparian remedies into separate records with continuing caps, monitoring, and management." },
+      { period: "2021-present", title: "Investigation follows the unresolved creek connection", body: "Site characterization evaluated soil, groundwater, vapor, and the relationship to lower Scajaquada Creek. That creek work remains an investigation rather than a completed corridor-wide cleanup." },
+    ],
+    caution: { title: "Connected sites should not be merged", body: "The completed-management areas, potential gasworks record, and downstream creek investigation have different boundaries and status. Coal tar in one reach does not establish uniform contamination throughout Scajaquada Creek." },
+    sources: [
+      { label: "NYSDEC: Gaslight Lane and Scajaquada Creek characterization", url: "https://extapps.dec.ny.gov/data/DecDocs/915351/Report.HW.915351.2022-10-20.Site%20Characterization%20Report%20.pdf" },
+      { label: "NYSDEC: Iroquois Gas/Westwood riparian periodic review", url: "https://extapps.dec.ny.gov/data/DecDocs/915141B/Report.HW.915141B.2025-09-12.Revised_2024_Periodic_Review_Report.pdf" },
+    ],
+  },
+  "moench-tanning-gowanda": {
+    eyebrow: "A century of tanning ended with a landfill beside two creek systems",
+    title: "Moench's closed tannery landfill still depends on streambank protection",
+    lead: "Leather tanning occupied the Palmer Street area for approximately 120 years, with Moench operations from 1900 to 1983. Tannery waste entered a defined industrial landfill near Splinter Creek and Cattaraugus Creek, making erosion control as important as the cover and groundwater monitoring.",
+    accent: "#9a704d",
+    stat: { value: "~120 years", label: "leather-tanning history at the Palmer Street location" },
+    chapters: [
+      { period: "Circa 1860s-1983", title: "Leather production became a long-lived Gowanda industry", body: "Multiple tanning eras occupied the creekside property. Moench, later associated with Brown Shoe, operated from 1900 until closure in 1983." },
+      { period: "1990-1992", title: "The company closed the industrial landfill under state oversight", body: "A cover isolated remaining tannery waste and the property entered a long-term monitoring and inspection phase rather than unrestricted closure." },
+      { period: "2019-present", title: "Creek erosion became part of remedy maintenance", body: "Updated management requirements formalized continuing controls, and additional erosion protection was installed near Splinter Creek in 2021 to protect the landfill edge." },
+    ],
+    caution: { title: "A creek-edge remedy does not establish downstream contamination", body: "Erosion protection preserves containment at the defined landfill. It does not prove that all sediment in Splinter Creek or Cattaraugus Creek originated at Moench." },
+    sources: [
+      { label: "NYSDEC: Moench Tanning periodic review", url: "https://extapps.dec.ny.gov/data/DecDocs/905004/Report.HW.905004.2021-01-29.2020_PRR.pdf" },
+      { label: "NYSDEC: erosion-control completion report", url: "https://extapps.dec.ny.gov/data/DecDocs/905004/Report.HW.905004.2022-02-08.2021%20PRR.pdf" },
+    ],
+  },
+  "lapp-insulator-company": {
+    eyebrow: "Electrical infrastructure began with ceramics, oils, and solvent-intensive manufacturing",
+    title: "Lapp Insulator has operated in Le Roy since 1917 while defined source areas moved into long-term management",
+    lead: "The approximately 66-acre complex manufactured ceramic electrical insulators and transformer bushings. Oils, petroleum products, TCA, TCE, and PCE affected defined soil and groundwater areas, leading to excavation, in-situ treatment, covers, sub-slab systems, and monitoring.",
+    accent: "#787aae",
+    stat: { value: "1917", label: "year electrical-insulator manufacturing began" },
+    chapters: [
+      { period: "1917-2004", title: "Ceramic production supported the expanding electric grid", body: "Lapp manufactured insulators and transformer bushings across a large industrial campus. Transformer-bushing production ended in 2004 while portions of the property continued in industrial use." },
+      { period: "2009-2014", title: "The remedy separated source areas from occupied buildings", body: "DEC selected a multi-part remedy, excavated chlorinated-solvent source soil, applied in-situ treatment, and used covers and sub-slab systems where continued occupancy required additional protection." },
+      { period: "Long-term phase", title: "Groundwater monitoring follows the regional flow setting", body: "The site-management plan tracks generally eastward groundwater flow and residual solvents while maintaining covers, vapor controls, land restrictions, and monitoring." },
+    ],
+    caution: { title: "Flow direction is not proof of an Oatka Creek impact", body: "Groundwater generally moves toward Oatka Creek, but that hydraulic fact alone does not establish that all creek conditions came from Lapp or that every part of the 66-acre property is contaminated." },
+    sources: [
+      { label: "NYSDEC: Lapp Insulator site-management plan", url: "https://extapps.dec.ny.gov/data/DecDocs/819017/Report.HW.819017.2021-03-10.Site_Management_Plan_SMP.pdf" },
+      { label: "NYSDEC: Lapp Insulator record of decision", url: "https://extapps.dec.ny.gov/data/DecDocs/819017/ROD.HW.819017.2009-03-31.Record_of_Decision_Lapp_Insulator_Site.pdf" },
+    ],
+  },
+};

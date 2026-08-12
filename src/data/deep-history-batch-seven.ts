@@ -1,0 +1,178 @@
+import type { DeepHistoryFeature } from "@/data/deep-history-features";
+
+export const deepHistoryBatchSeven: Record<string, DeepHistoryFeature> = {
+  "niagara-falls-boulevard-radiation-site": {
+    eyebrow: "A regional aerial signal became a business-by-business removal",
+    title: "Crews excavated radioactive slag while Niagara Falls Boulevard businesses stayed open",
+    lead: "Federal and state surveys traced an airborne radiological anomaly to slag-like industrial fill at four commercial properties and an adjoining wooded area. EPA phased excavation through parking lots, offices, warehouses, and storage rooms so the bowling alley and building-supply business could continue operating.",
+    accent: "#ffe14f",
+    stat: { value: "28,362 tons", label: "material shipped to a licensed disposal facility in Michigan" },
+    chapters: [
+      { period: "1978 onward", title: "Aerial surveys pointed investigators toward old industrial fill", body: "A Department of Energy aerial survey first identified low-level radiation in this part of Niagara County. Later ground surveys linked the readings to slag-like material believed to have been produced by regional industry and used as fill in the early 1960s." },
+      { period: "2016-2020", title: "The removal moved from woodland into occupied commercial space", body: "EPA addressed a 1.4-acre wooded area, a 3.3-acre parking area, and 7,526 square feet inside an office, two warehouses, and two storage rooms at the documented 9512-9626 Niagara Falls Boulevard properties." },
+      { period: "During construction", title: "Phasing kept two businesses operating", body: "Work zones, temporary surfaces, restoration, and community air monitoring allowed the bowling alley and building-supply center to remain open. Excavated material was transported to a licensed disposal facility in Belleville, Michigan." },
+    ],
+    caution: { title: "A mapped removal is not a neighborhood dose map", body: "The record identifies specific fill areas that were investigated and removed. It does not establish that every nearby parcel contains the same material or that a particular worker, customer, or resident experienced a harmful dose." },
+    sources: [
+      { label: "EPA: Niagara County radiation removal sites", url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites" },
+      { label: "EPA: Niagara Falls Boulevard cleanup completion fact sheet", url: "https://www.epa.gov/sites/default/files/2020-07/documents/niagara_falls_blvd_rad_fact_sheet_july_2020_final.pdf" },
+    ],
+  },
+  "holy-trinity-radiation-site": {
+    eyebrow: "Old industrial fill reached ordinary residential surfaces",
+    title: "Two homes near Holy Trinity required targeted radiological removal",
+    lead: "Survey work near Holy Trinity Cemetery narrowed a broader radiological signal to discrete residential features. EPA ultimately removed affected material from a garage and driveway at one home and from a driveway and patio at another, restoring the properties after excavation.",
+    accent: "#f5d94b",
+    stat: { value: "2 homes", label: "with documented residential removal work" },
+    chapters: [
+      { period: "2013-2014", title: "State screening led to a federal property assessment", body: "DEC and the state Health Department surveyed the area in 2013, and EPA followed with a detailed assessment. The investigation distinguished surface features and subsurface fill from the broader cemetery vicinity rather than treating the whole area as one uniform condition." },
+      { period: "Assessment finding", title: "Subsurface material did not initially create a completed exposure pathway", body: "EPA's assessment reported that the radiological material was below surface cover under the conditions then observed. Later planning focused on removing specific affected materials and restoring the residential features above them." },
+      { period: "Completed spring 2021", title: "The remedy entered garages, driveways, and a patio", body: "At one residence, EPA removed material from the garage and driveway. At the second, crews addressed the driveway and patio. The work was completed with clean backfill and property restoration." },
+    ],
+    caution: { title: "The cemetery name describes the vicinity, not a blanket finding", body: "The documented removal involved two residences near Holy Trinity Cemetery. It does not mean that all cemetery land, neighboring homes, or people in the area were contaminated or harmed." },
+    sources: [
+      { label: "EPA: Niagara County radiation removal sites", url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites" },
+      { label: "EPA: Holy Trinity Cemetery radiological assessment", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100VY74.txt" },
+    ],
+  },
+  "seaway-site": {
+    eyebrow: "Connected history - Ashland soil became a landfill layer",
+    title: "Seaway contains the far end of Tonawanda's wartime material chain",
+    lead: "Linde's uranium-processing residue was first stored at Ashland 1, mixed with soil during later construction, and partly moved to Seaway in 1974. A general industrial landfill therefore became a federal radiological cleanup site through transported material rather than uranium processing performed on this property.",
+    accent: "#edc73d",
+    stat: { value: "22 acres", label: "approximately, covered by the engineered radiological cap" },
+    chapters: [
+      { period: "1940s-1974", title: "The site's atomic connection began somewhere else", body: "Linde residues were stored at Ashland 1 in the 1940s. When Ashland Oil excavated there in 1974, part of the mixed soil and residue was taken to the Seaway landfill, adding a radiological layer to an existing industrial-disposal landscape." },
+      { period: "1993-2009", title: "A closed landfill prompted a long remedy debate", body: "Landfill disposal ended in 1993 and part of the property was capped. DOE suspended an earlier cleanup proposal in 1994 after community concern; the Army Corps ultimately selected containment with limited off-site disposal in a 2009 decision." },
+      { period: "2016-2025", title: "Excavation and a five-foot engineered cap completed the selected construction", body: "North-side excavation was completed in 2016. The approximately 22-acre, roughly five-foot-thick engineered cap was installed in 2024, and the Army Corps reported remedy construction complete in December 2025." },
+    ],
+    caution: { title: "Transported residue is the documented connection", body: "Seaway was not a Linde uranium-processing plant. The federal record describes affected soil moved from Ashland 1 and also reports that the selected radiological constituents had not affected groundwater or leachate in the remedy assessment." },
+    sources: [
+      { label: "U.S. Army Corps: Seaway FUSRAP site", url: "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3612995/seaway-site/" },
+      { label: "U.S. Army Corps: Seaway five-year-review resources", url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/4396884/fusrap-seaway-site-five-year-review-of-selected-remedy/" },
+    ],
+  },
+  "tonawanda-landfill-fusrap-vicinity": {
+    eyebrow: "Similarity triggered federal action; origin remained unproven",
+    title: "Tonawanda Landfill entered FUSRAP without a documented atomic-program disposal record",
+    lead: "DOE designated part of the former Town landfill and adjacent mudflats as a FUSRAP vicinity property because radioactive material resembled material at other Tonawanda federal sites. Investigators did not find records tying the property itself to Manhattan Engineer District or Atomic Energy Commission work.",
+    accent: "#e8cf4c",
+    stat: { value: ">5 feet", label: "depth below which some residual material remains under controls" },
+    chapters: [
+      { period: "1992", title: "Material similarity, not a disposal receipt, drove designation", body: "DOE combined a portion of the former Town landfill and the mudflats area, now associated with the North Youngmann Commerce Center, into one vicinity property after surveys found radioactive material similar to other FUSRAP locations." },
+      { period: "Two operating units", title: "The landfill and mudflats reached different decisions", body: "The Mudflats Operable Unit required no remedial action and no continuing monitoring. The Landfill Operable Unit received a response designed for commercial, industrial, and recreational use rather than unrestricted residential use." },
+      { period: "Long-term stewardship", title: "Deep residual material remains part of the land-use record", body: "Radium, uranium, and thorium remain above unrestricted-use levels below five feet in controlled areas. The remedy uses land restrictions and five-year review, with federal stewardship evaluated over a 1,000-year horizon." },
+    ],
+    caution: { title: "FUSRAP does not prove Manhattan Project origin", body: "The site is federally managed because of radiological findings and material similarity. The Army Corps states that no record was found of Manhattan Engineer District or Atomic Energy Commission activity at this property." },
+    sources: [
+      { label: "U.S. Army Corps: Tonawanda Landfill vicinity property", url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3613023/tonawanda-landfill-vicinity-property/" },
+      { label: "U.S. Army Corps: FUSRAP program resources", url: "https://www.lrd.usace.army.mil/FUSRAP/" },
+    ],
+  },
+  "cherry-farm": {
+    eyebrow: "A landfill raised the river shore, then became managed habitat",
+    title: "Cherry Farm rebuilt fifty-six acres of Niagara River edge twice",
+    lead: "Decades of steelmaking and industrial disposal raised much of this former wetland 10 to 20 feet above its original grade. The remedy later reshaped the same land with a cover system, shoreline wetland embayments, native plantings, leachate management, and long-term maintenance.",
+    accent: "#69bd78",
+    stat: { value: "56 acres", label: "approximately, within the former landfill property" },
+    chapters: [
+      { period: "1908-1963", title: "Steelmaking wastes began converting wet ground to industrial land", body: "The disposal history includes foundry sand, slag, cinders, fly ash, sludge, boiler-cleaning waste, and rubble. Filling altered a low Niagara River landscape and eventually covered about 80 percent of the property." },
+      { period: "1963-1970", title: "The waste stream widened beyond steel production", body: "Later disposal included broader industrial wastes. By the end of filling, deposits were commonly 10 to 20 feet above original grade and drainage from the property still connected toward the Niagara River." },
+      { period: "Remedy and reuse", title: "Containment was designed to support habitat and public landscape", body: "The revised remedy allowed park development and shoreline wetland embayments while preserving the landfill cover. Remediation was completed around 2000, followed by cap care, leachate collection and treatment, inspection, and ecological maintenance." },
+    ],
+    caution: { title: "Restoration does not erase the landfill", body: "The modern landscape is a managed remedy over waste left in place. Habitat value, public access planning, cap protection, and leachate controls can coexist; none alone means the underlying disposal history has disappeared." },
+    sources: [
+      { label: "EPA: Niagara Mohawk-Cherry Farm site summary", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1012HVJ.txt" },
+      { label: "EPA: Cherry Farm Superfund site profile", url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201480" },
+    ],
+  },
+  "jamestown-brewery-brownfield": {
+    eyebrow: "A redevelopment name concealed a different commercial past",
+    title: "Jamestown Brewery was shaped by photography, dry cleaning, taxis, and automotive work",
+    lead: "The cleanup name came from a proposed redevelopment, not a documented historic brewery. The downtown parcel's actual record reaches back to photography, dry cleaning, taxi service, vehicle repair, and parking - uses that help explain the chlorinated solvents, petroleum compounds, and vapor controls found in the remedy.",
+    accent: "#d68d52",
+    stat: { value: "2,014 tons", label: "approximately, affected soil and fill removed in 2018" },
+    chapters: [
+      { period: "1886 onward", title: "Successive businesses left a layered urban property", body: "Historical records identify a photography operation, dry cleaner, taxi company, automotive repair, and parking garage. WNYAtlas uses those documented activities rather than repeating the redevelopment name as an earlier brewery history." },
+      { period: "2018-2021", title: "Excavation addressed the source while vapor controls protected the building", body: "About 2,014 tons of soil and fill were removed, including roughly 430 tons characterized as hazardous. A sub-slab depressurization system, cover, easement, and groundwater restrictions became parts of the final brownfield remedy." },
+      { period: "2022-present", title: "The remaining story is groundwater treatment and verification", body: "In-situ treatment, vapor mitigation, monitoring, and periodic review continue. Recent site wells contained benzene, PFOA, and PFOS above applicable groundwater values, alongside the established chlorinated-solvent problem." },
+    ],
+    caution: { title: "Detection does not identify the PFAS source", body: "PFOA and PFOS were detected in particular monitoring wells, but the reviewed record does not attribute those compounds to one historic tenant. Site groundwater results also do not describe the quality of Jamestown's finished public drinking water." },
+    sources: [
+      { label: "NYSDEC: Jamestown Brewery decision document", url: "https://extapps.dec.ny.gov/data/DecDocs/C907047/Decision%20Document.BCP.C907047.2021-01-04.Decision%20Document_Jamestown%20Brewery.pdf" },
+      { label: "NYSDEC: 2025 periodic review report", url: "https://extapps.dec.ny.gov/data/DecDocs/C907047/Report.BCP.C907047.2026-03-03.PRR_and_IC-EC_Certification_4_21_24_to_4_21_25.pdf" },
+      { label: "NYSDEC: Jamestown Brewery document collection", url: "https://extapps.dec.ny.gov/data/DecDocs/C907047/" },
+    ],
+  },
+  "katherine-street-peninsula": {
+    eyebrow: "An industrial peninsula became a rebuilt river edge",
+    title: "Katherine Street tells a restoration story without inventing a landfill",
+    lead: "The compacted-fill peninsula sits in a heavily altered Buffalo River corridor with documented waste-oil handling nearby. Cleanup and habitat projects removed or isolated affected sediment and reconstructed shoreline for fish and wildlife, but reviewed sources do not establish that the peninsula itself was a former municipal landfill.",
+    accent: "#4fc1b0",
+    stat: { value: "1,190 feet", label: "shoreline habitat restored in the 2015 project" },
+    chapters: [
+      { period: "Industrial era", title: "Fill and hard use simplified a once-complex shoreline", body: "Industrial occupancy, compacted fill, hardened banks, and nearby waste-oil handling altered the river edge. Those documented conditions provide the setting without assigning every nearby activity or contaminant to the peninsula itself." },
+      { period: "2015", title: "The first major project rebuilt fish habitat", body: "A Buffalo River Area of Concern project restored approximately 1,190 linear feet of shoreline habitat, replacing a degraded edge with features designed for fish, wildlife, and native vegetation." },
+      { period: "2018 and after", title: "Restoration expanded around the peninsula", body: "Additional work treated about 1,760 feet of northeast shoreline and 3.7 acres, a 2.4-acre toe area, and a roughly 450-foot extension with another 3.7 acres. The projects form a connected habitat system within the remediated river corridor." },
+    ],
+    caution: { title: "Do not upgrade an inference into a landfill claim", body: "The property is made ground in an industrial corridor, but the sources reviewed do not identify it as a former municipal landfill. WNYAtlas keeps the nearby waste-oil history, sediment work, and restoration record separate." },
+    sources: [
+      { label: "EPA: Buffalo River remediation and restoration projects", url: "https://www.epa.gov/great-lakes-aocs/remediation-and-restoration-projects-buffalo-river-aoc" },
+      { label: "U.S. Army Corps: Katherine Street habitat restoration completion", url: "https://www.lrd.usace.army.mil/News/News-Releases/Article/3652617/buffalo-river-habitat-restoration-completed-at-katherine-street/" },
+      { label: "Buffalo River Corridor Brownfield Opportunity Area", url: "https://regional-institute.buffalo.edu/wp-content/uploads/sites/155/2021/07/Buffalo-River-Corridor-BOA-Nomination-Document.pdf" },
+    ],
+  },
+  "standard-portable-mayville": {
+    eyebrow: "One buried tank created a solvent plume - but not the village PFAS source",
+    title: "Standard Portable shows why nearby contamination stories must remain separate",
+    lead: "Metalworking at the Mayville property used trichloroethene, and spent solvent was stored or disposed in an exterior underground septic tank. The resulting chlorinated-solvent investigation extends toward neighboring village land, while later testing found a different PFAS pattern and did not identify Standard Portable as the source of the village water-system PFAS finding.",
+    accent: "#9c75c7",
+    stat: { value: "1996", label: "year the solvent-related underground septic tank was removed" },
+    chapters: [
+      { period: "Industrial operation", title: "TCE cleaning connected a workshop to an underground disposal feature", body: "The metalworking operation used trichloroethene as a solvent. Spent material entered an exterior underground septic tank, creating a source area above an important aquifer and within roughly 588 feet of Chautauqua Lake." },
+      { period: "1996 onward", title: "Tank removal did not end the groundwater investigation", body: "The septic tank was removed in 1996, but soil and groundwater investigations found TCE and breakdown products including dichloroethene and vinyl chloride. The cleanup record follows affected groundwater onto adjacent village property." },
+      { period: "2021 investigation", title: "Chemical fingerprints separated the site from Mayville's PFAS question", body: "A DEC pilot investigation found low PFAS concentrations and a profile different from the village drinking-water findings. The agency ruled Standard Portable out as the source under investigation, even though its chlorinated-solvent remedy remains valid." },
+    ],
+    caution: { title: "Two real problems need not have one source", body: "Standard Portable has a documented TCE-related cleanup history. The reviewed Mayville PFAS investigation did not attribute the village water-system PFAS to this site, so WNYAtlas does not merge the two stories." },
+    sources: [
+      { label: "NYSDEC: Standard Portable brownfield agreement and site history", url: "https://extapps.dec.ny.gov/data/DecDocs/C907030/Agreement.BCP.C907030.2006-11-16.BCA.pdf" },
+      { label: "NYSDEC: 2021 remedial pilot-test report", url: "https://extapps.dec.ny.gov/data/DecDocs/C907030/Report.BCP.C907030.2021-05-29.RA%20Pilot%20Test%20Rpt%20Complete--ocr.pdf" },
+      { label: "NYSDEC: Mayville PFAS investigation report", url: "https://extapps.dec.ny.gov/data/DecDocs/D907050/Report.DWC.D907050.2021-03-12.InvestigationReport_Public.pdf" },
+    ],
+  },
+  "solvent-chemical-niagara-falls": {
+    eyebrow: "Chemical manufacturing left a plume in multiple groundwater zones",
+    title: "Solvent Chemical required containment beyond the former Buffalo Avenue plant",
+    lead: "Manufacturing, handling, and disposal at the former chemical property affected soil and several groundwater zones with benzene and chlorinated benzenes. The remedy combines source control, groundwater recovery and treatment, monitoring, and institutional controls in a corridor shared with other major chemical facilities.",
+    accent: "#cf6d58",
+    stat: { value: "3 zones", label: "shallow, intermediate, and deep groundwater considered in the remedy" },
+    chapters: [
+      { period: "Industrial operation", title: "Solvents and chemical intermediates moved through a dense manufacturing corridor", body: "The Buffalo Avenue property manufactured and handled organic chemicals in an area bordered by other large chemical operations. Historical storage, processing, and disposal created source areas containing benzene, chlorobenzenes, and related compounds." },
+      { period: "1996 remedy", title: "The state treated the site as a multi-depth groundwater problem", body: "DEC's selected remedy addressed contaminated soil and shallow, intermediate, and deep groundwater. Recovery, treatment, source controls, and monitoring were designed to contain movement rather than rely on natural disappearance." },
+      { period: "Long-term management", title: "Operating systems remain part of the site's present tense", body: "Periodic reviews track treatment performance, monitoring wells, institutional controls, and maintenance. Cleanup progress therefore means a managed system continues to intercept and evaluate contamination." },
+    ],
+    caution: { title: "Adjacent plants do not make one source", body: "Solvent Chemical lies near Olin and former DuPont operations, and regional groundwater histories can overlap. WNYAtlas attributes contaminants and remedy components only where the site record supports the connection." },
+    sources: [
+      { label: "NYSDEC: Solvent Chemical record of decision", url: "https://extapps.dec.ny.gov/data/DecDocs/932096/ROD.HW.932096.1996-12-01.solvent_chem.pdf" },
+      { label: "NYSDEC: 2021 periodic review report", url: "https://extapps.dec.ny.gov/data/DecDocs/932096/Report.HW.932096.2022-04-21.2021_Periodic_Review_Report.pdf" },
+      { label: "NYSDEC: Solvent Chemical document collection", url: "https://extapps.dec.ny.gov/data/DecDocs/932096/" },
+    ],
+  },
+  "buffalo-harbor-cdf-4": {
+    eyebrow: "Navigation maintenance created a new engineered shoreline landscape",
+    title: "CDF No. 4 stores the sediment removed to keep Western New York harbors navigable",
+    lead: "Built on the Outer Harbor in 1977, the confined disposal facility receives dredged material from Buffalo Harbor, the Buffalo River, Black Rock Channel, and Tonawanda Harbor. Its 107-acre footprint is a regional navigation system, not an extension of the neighboring Bethlehem Steel landfill or slag-fill area.",
+    accent: "#3aa6c7",
+    stat: { value: "107 acres", label: "engineered confined disposal facility constructed in 1977" },
+    chapters: [
+      { period: "1977", title: "A containment facility became part of harbor infrastructure", body: "The Army Corps constructed CDF No. 4 beside the former Bethlehem Steel property to receive sediment removed during federal navigation dredging. Dikes and controlled placement separated that material from open-water disposal." },
+      { period: "Operating history", title: "Four navigation areas feed one receiving landscape", body: "Material has arrived from Buffalo Harbor, the Buffalo River, Black Rock Channel, and Tonawanda Harbor. That service area explains why the facility's history reaches beyond the immediately adjacent Outer Harbor shoreline." },
+      { period: "Present dredging", title: "Routine maintenance links river history to the modern economy", body: "Periodic dredging keeps commercial and recreational navigation channels at authorized depth, with suitable project sediment placed in the confined facility. Capacity, placement areas, and environmental controls shape each campaign." },
+    ],
+    caution: { title: "Dredged material is not interchangeable with steel-plant waste", body: "CDF No. 4 is distinct from Bethlehem Steel's HWM-2 hazardous-waste landfill and the plant's slag-fill areas. Its contents should not all be described as hazardous, nor should adjacent steel waste automatically be assigned to the CDF." },
+    sources: [
+      { label: "U.S. Army Corps: Buffalo Harbor CDF No. 4 fact sheet", url: "https://lre-ops.usace.army.mil/OandM/GLNAV/DMMandCDFFS/BuffaloCDFFactSheet.pdf" },
+      { label: "U.S. Army Corps: Buffalo Harbor dredging and CDF placement", url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/4548641/buffalo-harbor-dredging-starting-supports-safe-navigation-the-economy-and-futur/" },
+    ],
+  },
+};

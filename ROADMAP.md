@@ -49,6 +49,7 @@ The roadmap keeps promising ideas visible without overloading the first release.
 - [ ] Watershed journey view
 - [ ] Downloadable data and printable maps
 - [ ] Public correction and source-submission workflow
+- [ ] Review the [deferred research backlog](research/deferred-research-backlog.md)
 
 ## Not in scope for the founding build
 

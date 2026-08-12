@@ -36,6 +36,7 @@ export default function PlacesPage() {
   const groups = Object.groupBy(sortedSites, (site) =>
     getPublicSiteName(site.name).charAt(0).toUpperCase(),
   );
+  const coveredCounties = new Set(featuredSites.map((site) => site.county));
 
   return (
     <main>
@@ -49,7 +50,11 @@ export default function PlacesPage() {
           <p>
             A crawlable A–Z index of {featuredSites.length} researched place
             records. Use the homepage directory when you want to search by
-            county or environmental topic.
+            county or environmental topic. The collection currently includes
+            environmental place records in {coveredCounties.size} of the eight
+            WNYAtlas counties; absence from this index is not evidence that a place
+            has no environmental history. <Link href="/research-status">Review the
+            coverage and research status.</Link>
           </p>
         </div>
 

@@ -63,6 +63,13 @@ export function SiteDirectory() {
         </p>
       </div>
 
+      <p className="collection-scope-note">
+        Current environmental place records span {counties.length} Western New York
+        counties. This is a documented research collection, not a complete inventory;
+        an unlisted county or property should not be read as evidence that no qualifying
+        history exists. <Link href="/research-status">See coverage and research status.</Link>
+      </p>
+
       <div className="directory-search" role="search" aria-label="Search places">
         <label className="directory-query">
           <span>Find a place</span>
