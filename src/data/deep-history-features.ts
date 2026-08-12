@@ -1,6 +1,7 @@
 import { deepHistoryBatchTwo } from "@/data/deep-history-batch-two";
 import { deepHistoryBatchThree } from "@/data/deep-history-batch-three";
 import { deepHistoryBatchFour } from "@/data/deep-history-batch-four";
+import { deepHistoryBatchFive } from "@/data/deep-history-batch-five";
 
 export type DeepHistoryFeature = {
   eyebrow: string;
@@ -21,6 +22,7 @@ export const deepHistoryFeatures: Record<string, DeepHistoryFeature> = {
   ...deepHistoryBatchTwo,
   ...deepHistoryBatchThree,
   ...deepHistoryBatchFour,
+  ...deepHistoryBatchFive,
   "forest-glen-mobile-home-subdivision": {
     eyebrow: "Homes built over an illegal dump",
     title: "A neighborhood was moved so families could leave the contamination behind",

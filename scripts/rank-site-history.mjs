@@ -54,6 +54,16 @@ const completedFeatures = new Set([
   "former-mill-no-2",
   "times-beach-disposal-site",
   "union-road-gardenville-yard",
+  "olin-buffalo-avenue-plant",
+  "cwm-model-city",
+  "dupont-yerkes",
+  "gratwick-riverside-park",
+  "peter-cooper-markhams",
+  "robert-moses-parkway-south",
+  "fmc-dublin-road-landfill",
+  "motor-frog-islands-restoration",
+  "gill-creek-chemical-corridor",
+  "pettit-flume-durez-outfall",
 ]);
 const aerialSites = new Set([
   "republic-steel",
