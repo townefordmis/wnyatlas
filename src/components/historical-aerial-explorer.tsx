@@ -85,6 +85,7 @@ export function HistoricalAerialExplorer({ panels }: { panels: AerialExplorerPan
       </div>
 
       <figure
+        key={`${panel.period}-${panel.heading}`}
         className={panel.matched ? "is-matched" : "is-context"}
         onTouchStart={(event) => setTouchStart(event.touches[0].clientX)}
         onTouchEnd={handleTouchEnd}
@@ -94,6 +95,10 @@ export function HistoricalAerialExplorer({ panels }: { panels: AerialExplorerPan
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={panel.imageUrl} alt={panel.alt} loading="lazy" referrerPolicy="no-referrer" />
           {panel.highlight ? <SiteHighlight highlight={panel.highlight} /> : null}
+          <span className="historical-aerial-image-label" aria-hidden="true">
+            <small>{panel.period}</small>
+            <strong>{panel.heading}</strong>
+          </span>
         </a>
 
         <figcaption aria-live="polite">
