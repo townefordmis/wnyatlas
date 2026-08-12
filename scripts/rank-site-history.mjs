@@ -15,7 +15,16 @@ const firstBatch = new Set([
   "hooker-102nd-street-landfill",
   "hooker-s-area-landfill",
 ]);
-const completedFeatures = new Set(["love-canal", "buffalo-river", "bethlehem-steel"]);
+const completedFeatures = new Set([
+  "love-canal",
+  "buffalo-river",
+  "bethlehem-steel",
+  "forest-glen-mobile-home-subdivision",
+  "wide-beach-development",
+  "former-american-axle-east-delavan",
+  "former-hooker-main-plant",
+  "niagara-falls-storage-site",
+]);
 const aerialSites = new Set([
   "republic-steel",
   "bethlehem-steel",

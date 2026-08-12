@@ -1,11 +1,11 @@
 rank,site_id,name,county,category,status,tier,priority_score,source_strength,history_foundation,human_story,defining_event,regional_consequence,visual_evidence,reason
-1,niagara-falls-storage-site,Niagara Falls Storage Site,Niagara,radiological,queued,A - next,40,15,10,0,6,9,0,strong source base
-2,forest-glen-mobile-home-subdivision,Forest Glen Mobile Home Subdivision,Niagara,cleanup,queued,A - next,37,8,8,15,0,6,0,strong human-story signal
+1,niagara-falls-storage-site,Niagara Falls Storage Site,Niagara,radiological,feature complete,Complete,40,15,10,0,6,9,0,strong source base
+2,forest-glen-mobile-home-subdivision,Forest Glen Mobile Home Subdivision,Niagara,cleanup,feature complete,Complete,37,8,8,15,0,6,0,strong human-story signal
 3,bethlehem-steel,Former Bethlehem Steel,Erie,industry,feature complete,Complete,35,15,10,0,0,0,10,historical aerials available; strong source base
-4,wide-beach-development,Wide Beach Development,Erie,cleanup,queued,A - next,31,8,8,3,0,12,0,regional consequence
+4,wide-beach-development,Wide Beach Development,Erie,cleanup,feature complete,Complete,31,8,8,3,0,12,0,regional consequence
 5,buffalo-river,Buffalo River,Erie,waterway,feature complete,Complete,31,15,10,0,3,3,0,strong source base
-6,former-american-axle-east-delavan,Former GM / American Axle Plant,Erie,cleanup,queued,A - next,31,15,10,0,0,6,0,strong source base
-7,former-hooker-main-plant,Former Hooker Main Plant / Occidental Niagara Plant,Niagara,cleanup,queued,A - next,31,15,10,0,3,3,0,strong source base
+6,former-american-axle-east-delavan,Former GM / American Axle Plant,Erie,cleanup,feature complete,Complete,31,15,10,0,0,6,0,strong source base
+7,former-hooker-main-plant,Former Hooker Main Plant / Occidental Niagara Plant,Niagara,cleanup,feature complete,Complete,31,15,10,0,3,3,0,strong source base
 8,fmc-dublin-road-landfill,FMC Dublin Road Landfill,Orleans,cleanup,queued,A - next,29,15,8,0,0,6,0,strong source base
 9,durez-occidental-north-tonawanda,Durez / Occidental Chemical,Niagara,cleanup,queued,A - next,28,15,10,0,0,3,0,strong source base
 10,niagara-falls-air-reserve-pfas,Niagara Falls Air Reserve Station PFAS Investigation,Niagara,pfas,queued,A - next,28,8,8,0,6,6,0,solid baseline; additional primary research needed

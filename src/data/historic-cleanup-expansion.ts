@@ -2372,7 +2372,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-79.00903, 43.07968],
     story: {
-      lastReviewed: "August 4, 2026",
+      lastReviewed: "August 12, 2026",
       background: [
         "Hooker Electrochemical Company began operating its Niagara plant in 1906, using Niagara Falls' abundant hydroelectric power to manufacture caustic soda and co-product chlorine. The modern approximately 113-acre property at 4700 Buffalo Avenue grew from Hooker parcels and neighboring works operated by Niagara Alkali Company and Oldbury Electrochemical Company.",
         "The facility's 1984 historical database records Hooker's acquisition of Niagara Alkali on November 30, 1955 and Oldbury on November 30, 1956. Those acquisitions consolidated several older chemical works and their different manufacturing, drainage, and waste-management areas into the Main Plant.",

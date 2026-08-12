@@ -14,6 +14,177 @@ export type DeepHistoryFeature = {
 };
 
 export const deepHistoryFeatures: Record<string, DeepHistoryFeature> = {
+  "forest-glen-mobile-home-subdivision": {
+    eyebrow: "Homes built over an illegal dump",
+    title: "A neighborhood was moved so families could leave the contamination behind",
+    lead:
+      "Forest Glen became a residential subdivision after chemical waste had been illegally disposed on the land. Approximately 150 people—including retired residents and children—lived in 51 mobile homes and two permanent houses before investigation turned ordinary domestic activities into questions about contact with buried waste.",
+    accent: "#ff8f54",
+    stat: { value: "150", label: "approximately, residents permanently relocated" },
+    chapters: [
+      {
+        period: "1980-1989",
+        title: "A complaint exposed what lay beneath the subdivision",
+        body: "Niagara County health officials responded after drum tops and resin-like material appeared at a residence; utility workers had also encountered waste, drums, and batteries. In 1989, ATSDR concluded that known conditions and plausible exposure during gardening, play, and lawn care presented a significant health risk and recommended immediate relocation.",
+      },
+      {
+        period: "1989-1992",
+        title: "Relocation affected every part of household life",
+        body: "EPA and FEMA first offered temporary assistance and then permanently relocated the residents. Federal records describe individual and possible group moves, testing possessions and mobile homes, continued mortgage obligations, pet kenneling, and the practical difficulty of moving heavily altered trailers.",
+      },
+      {
+        period: "During the response",
+        title: "Children were taken away from the site during the day",
+        body: "EPA's post-remediation account records that older Forest Glen children were bused to day camps when school was out and younger children went to daycare, reducing contact with contaminated areas while relocation and site work proceeded. It is a documented human consequence without requiring a claim about any child's health.",
+      },
+    ],
+    caution: {
+      title: "Relocation is the documented outcome",
+      body: "The record supports a significant health threat, permanent relocation, and long-term groundwater treatment. It does not support assigning a particular later illness to the site without a separate medical and epidemiological record.",
+    },
+    sources: [
+      { label: "EPA: Forest Glen cleanup and relocation history", url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0202361" },
+      { label: "EPA: 1989 relocation decision and resident comments", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100SBAM.TXT" },
+      { label: "EPA: post-remediation human-impact account", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100P583.TXT" },
+      { label: "UPI: residents respond to the relocation plan", url: "https://www.upi.com/Archives/1989/07/26/Forest-Glen-residents-cool-to-relocation-plan/8233617428800/" },
+    ],
+  },
+  "wide-beach-development": {
+    eyebrow: "An unintended neighborhood exposure",
+    title: "The material used to control dust traveled into homes and yards",
+    lead:
+      "Wide Beach was a small Lake Erie community where waste oil was applied to unpaved roads for dust control from 1968 to 1978. Neither the road treatment nor residents' later reuse of excavated soil began with knowledge that the material contained PCBs.",
+    accent: "#55c8de",
+    stat: { value: "60", label: "homes within the 55-acre development" },
+    chapters: [
+      {
+        period: "1968-1980",
+        title: "A practical road treatment created a community-wide pathway",
+        body: "The homeowners' association applied approximately 155 cubic meters of waste oil to local roads. When sewer construction later excavated road soil, some residents unknowingly used it as fill in yards and a recreation area, moving contamination beyond the original roadbeds.",
+      },
+      {
+        period: "1983-1985",
+        title: "Sampling brought the contamination inside the household story",
+        body: "Investigators reported PCBs in road dust, soil, air, private-well samples, and vacuum-cleaner dust. EPA's immediate response paved roads, driveways, and ditches, cleaned homes by vacuuming and shampooing rugs, replaced filters, and installed particulate filters on wells.",
+      },
+      {
+        period: "1990-1994",
+        title: "The neighborhood remained while the contaminated landscape was rebuilt",
+        body: "The long-term remedy excavated and treated contaminated soil from roads, driveways, yards, drainage areas, and wetlands before backfilling and repaving. EPA reports that 36,160 tons were treated; the site was removed from the national Superfund list in 1994.",
+      },
+    ],
+    caution: {
+      title: "Residents were not the polluters in this account",
+      body: "The official record says residents did not know that the road oil or excavated soil contained PCBs. WNYAtlas does not turn ordinary dust control, gardening, or yard work into blame, and it presents the completed remedy as complete rather than portraying an uncontrolled present-day site.",
+    },
+    sources: [
+      { label: "EPA: Wide Beach site and cleanup history", url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0202151" },
+      { label: "EPA: 1985 remedy and community record", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100SJF8.TXT" },
+    ],
+  },
+  "former-american-axle-east-delavan": {
+    eyebrow: "Automaking, bargaining, and closure",
+    title: "The last product left with hundreds of working lives attached",
+    lead:
+      "The East Delavan complex carried Buffalo's automobile history from General Motors into American Axle. Its environmental record matters, but so does the abrupt end of a workplace where industrial knowledge, union bargaining, family income, and neighborhood identity were concentrated.",
+    accent: "#f0b93f",
+    stat: { value: "653", label: "hourly workers offered buyouts or early retirement in 2007" },
+    chapters: [
+      {
+        period: "1920s-1994",
+        title: "A General Motors plant changed with the automobile",
+        body: "The complex began with automobile and body assembly and later concentrated on axles, gears, and drivetrain components. Generations of production workers carried skills in machining, heat treatment, painting, welding, maintenance, and material handling through repeated changes in the product line.",
+      },
+      {
+        period: "1994-2008",
+        title: "American Axle ownership ended in a regional labor crisis",
+        body: "GM sold the plant to American Axle in 1994. As the company prepared to close the Buffalo facility, 653 hourly workers were offered buyouts or early retirement. A companywide UAW strike in 2008 and negotiated plant-closure agreements formed the final labor context for the Buffalo and Tonawanda operations.",
+      },
+      {
+        period: "After manufacturing",
+        title: "A closed factory became both a cleanup and an employment loss",
+        body: "Manufacturing ceased in 2008 and the property changed hands. Brownfield investigation and controlled redevelopment address the physical inheritance, but those programs do not replace the wages, seniority, and workplace community that ended with production.",
+      },
+    ],
+    caution: {
+      title: "Three local plants, separate records",
+      body: "American Axle operated facilities in Buffalo, Cheektowaga, and Tonawanda. Employment figures, strike events, closure dates, and contamination findings must be assigned to the correct plant; this chapter uses the East Delavan property as its geographic anchor.",
+    },
+    sources: [
+      { label: "Buffalo Toronto Public Media: 653 Buffalo workers", url: "https://www.btpm.org/2007-08-15/american-axle-offers-buyout-and-early-retirement-to-buffalo-employees" },
+      { label: "SEC filing: strike and facility-closure agreements", url: "https://www.sec.gov/Archives/edgar/data/1062231/000106223109000009/form10-k.htm" },
+      { label: "NYSDEC American Axle cleanup working group", url: "https://dec.ny.gov/news/press-releases/2021/4/dec-commissioner-seggos-and-erie-county-legislator-baskin-announce-community-working-group-to-support-cleanup-of-former-american-axle-site" },
+    ],
+  },
+  "former-hooker-main-plant": {
+    eyebrow: "Workers inside the chemical complex",
+    title: "The federal record recognizes an atomic-era workforce",
+    lead:
+      "The Buffalo Avenue plant is usually introduced through Hooker's products and disposal sites. Its worker history adds a second view: employees performed chemical and atomic-weapons-related work, organized through a plant union, sought recognition of occupational uncertainty, and ultimately experienced the end of manufacturing in 2021.",
+    accent: "#e87947",
+    stat: { value: "1944-1948", label: "federal Special Exposure Cohort operating period" },
+    chapters: [
+      {
+        period: "World War II and after",
+        title: "Some employees supported federal atomic work",
+        body: "The Department of Labor recognizes Hooker Electrochemical as an atomic-weapons employer. In 2015, a defined class of employees who worked at the Niagara Falls facility for at least 250 aggregate workdays during the July 1944-December 1948 operating period entered the Special Exposure Cohort under the federal occupational-illness compensation program.",
+      },
+      {
+        period: "Why the designation matters",
+        title: "Dose could not be reconstructed reliably for the covered class",
+        body: "The federal designation followed a finding that radiation dose could not be reconstructed with sufficient reliability under the program's rules. It creates a compensation pathway for qualifying workers with specified cancers; it does not declare that every employee was exposed or became ill.",
+      },
+      {
+        period: "November 2021",
+        title: "Manufacturing ended for another generation",
+        body: "OxyChem closed its Niagara Falls manufacturing operations, affecting 130 full-time employees and 20 contractors. The company announced transitional pay and benefits, severance, counseling, outplacement help, and possible relocation—an ending distinct from the site's continuing corrective-action obligations.",
+      },
+    ],
+    caution: {
+      title: "Eligibility is not a diagnosis",
+      body: "Special Exposure Cohort status applies only to workers meeting federal employment and medical criteria. WNYAtlas reports the program and the historical reason for it without labeling every Hooker or Occidental employee as exposed, compensated, or ill.",
+    },
+    sources: [
+      { label: "U.S. Department of Labor: 2015 cohort designation", url: "https://www.dol.gov/agencies/owcp/energy/regs/compliance/PolicyandProcedures/finalcircularhtml/EEOICPACircular16-01" },
+      { label: "U.S. Department of Labor: compensation-program announcement", url: "https://www.dol.gov/newsroom/releases/owcp/owcp20151029" },
+      { label: "Buffalo Toronto Public Media: 2021 plant closure", url: "https://www.btpm.org/local/2021-08-19/oxychem-closing-its-niagara-falls-manufacturing-operations-the-company-confirms" },
+      { label: "Federal court record: Niagara Hooker Employees Union", url: "https://law.justia.com/cases/federal/appellate-courts/F2/935/1370/282826/" },
+    ],
+  },
+  "niagara-falls-storage-site": {
+    eyebrow: "A federal legacy under public watch",
+    title: "The strongest human history is collective stewardship",
+    lead:
+      "No single verified personal account yet represents the Niagara Falls Storage Site. Its defensible human history is the long relationship among wartime workers, federal agencies, nearby towns, libraries, schools, and residents who have asked what is stored there, whether containment works, and where the material should ultimately go.",
+    accent: "#d8e04f",
+    stat: { value: "10 acres", label: "interim containment structure within the 191-acre federal site" },
+    chapters: [
+      {
+        period: "1943-1952",
+        title: "A wartime explosives landscape became an atomic-waste destination",
+        body: "The property formed part of the Lake Ontario Ordnance Works, where TNT was produced during World War II. Beginning in 1944, the Manhattan Engineer District used this portion to store radioactive residues and wastes from uranium-ore processing; additional material arrived through 1952.",
+      },
+      {
+        period: "1982-1986",
+        title: "Waste from across the property was consolidated",
+        body: "The Department of Energy gathered radioactive residues, contaminated soil, rubble, and demolition debris into an engineered earthen containment structure. The work reduced dispersed contamination but also created a long-term federal storage responsibility visible to surrounding communities.",
+      },
+      {
+        period: "2015-present",
+        title: "Public review accompanies a decision to remove the cell",
+        body: "The Army Corps published alternatives, held meetings, preserved transcripts and comments, and in 2019 selected complete excavation and out-of-state disposal of the containment structure. Project records remain available through Lewiston and Youngstown libraries while design, site work, monitoring, and funding continue.",
+      },
+    ],
+    caution: {
+      title: "Concern and monitoring are not proof of present exposure",
+      body: "USACE reports that the containment structure is performing as designed and remains protective while the removal remedy advances. Public concern, proximity to schools or homes, and a site's atomic history do not by themselves establish that a particular person received a harmful dose.",
+    },
+    sources: [
+      { label: "U.S. Army Corps: NFSS history, status, and public record", url: "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3612360/niagara-falls-storage-site/" },
+      { label: "DOE: NFSS vicinity-properties fact sheet", url: "https://www.energy.gov/sites/default/files/2023-08/NiagaraFallsVPFactSheet.pdf" },
+      { label: "Niagara County: Community LOOW Project", url: "https://downloads.niagaracounty.gov/departments/a-f/environmental_health/the_community_loow_project.php" },
+    ],
+  },
   "tonawanda-coke": {
     eyebrow: "Residents, enforcement, and closure",
     title: "A neighborhood challenge became a federal criminal case",

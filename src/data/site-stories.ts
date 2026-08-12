@@ -2728,7 +2728,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-falls-storage-site": {
-    lastReviewed: "August 3, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "The 191-acre Niagara Falls Storage Site occupies part of the former Lake Ontario Ordnance Works, a federal explosives complex built during World War II to manufacture trinitrotoluene (TNT). The site's original freshwater-treatment plant supplied that production complex. LOOW produced TNT for about nine months in 1943 before it was decommissioned; in 1944, the Manhattan Engineer District began using this part of the property to receive and store radioactive residues and other wastes from the wartime atomic program.",
       "The first documented radioactive shipments were L-50 and R-10 residues from the Linde uranium-processing operation in Tonawanda. Later receipts included L-30 and F-32 residues and K-65 residues created by processing exceptionally high-grade Belgian Congo pitchblende. Federal records also describe Middlesex Sampling Plant sandblast material, contaminated soil and sediment recovered from nearby ditches and properties, and contaminated rubble and debris generated during investigation and cleanup.",
@@ -4016,7 +4016,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "forest-glen-mobile-home-subdivision": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "Forest Glen was a residential development built over an inadequately covered chemical-waste disposal area in the Town of Niagara. The discovery placed residents in direct proximity to buried industrial waste and contaminated soil.",
       "EPA permanently relocated residents from 51 mobile homes and two houses, then excavated contaminated soil and consolidated it beneath an engineered cap. The response converted a residential exposure problem into a controlled, unoccupied disposal site.",
@@ -4046,7 +4046,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "wide-beach-development": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "At Wide Beach, PCB-contaminated waste oil was spread on dirt roads for dust suppression. Road grading and excavation later moved affected soil into residential yards and nearby wetlands, distributing contamination through the Lake Erie community.",
       "The federal remedy treated approximately 36,160 tons of contaminated soil and sediment and restored disturbed wetlands. EPA deleted the site from the National Priorities List in 1994 after completing the cleanup.",
@@ -4106,7 +4106,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "former-american-axle-east-delavan": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "General Motors developed the East Delavan complex in the 1920s. The plant first assembled automobiles and bodies, using painting, welding, heat-treating, and machining operations; its later role centered on automotive axles, gears, and drivetrain components. GM sold the operation to American Axle & Manufacturing in February 1994, and American Axle continued production until 2008.",
       "Historical records identify PCBs in some hydraulic, quench, and heat-transfer oils used at the plant. GM reported a coolant-pit leak in 1991, and investigation after the 1994 sale identified oil beneath parts of Plant 81, including a more concentrated PCB-impacted source area and affected oil in a sanitary sewer beneath the facility.",
