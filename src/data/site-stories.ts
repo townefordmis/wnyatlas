@@ -844,7 +844,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "durez-occidental-north-tonawanda": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "Harry M. Dent founded General Plastics, Inc. on the North Tonawanda property in 1921. The business adopted the Durez Plastic and Chemical Company name in 1926 and developed into a major producer of phenolic resins and molding compounds.",
       "Phenol and formaldehyde were the principal raw materials for thermosetting resins and molding powders used in electrical, automotive, appliance, communications, and industrial components. The Durez name became closely associated with durable molded phenolic plastic before newer polymer families displaced many of those applications.",
@@ -974,7 +974,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "remington-rand-north-tonawanda": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "The Remington Rand property belongs to North Tonawanda's long manufacturing history. Remington Rand assembled several office-machine, filing-system, and business-equipment companies into a nationally recognized industrial corporation, and its local plant became a substantial part of the city's factory landscape.",
       "Later environmental investigation documented a mixed industrial contaminant profile rather than one single release. Petroleum, chlorinated solvents, PAHs, metals, and PCBs reflected decades of machinery, fuel, electrical equipment, material handling, and changing operations.",
@@ -1130,7 +1130,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "lehigh-valley-railroad-derailment": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "In December 1970, a Lehigh Valley Railroad train derailed at the Gulf Road crossing in Le Roy. Two tank cars ruptured, releasing approximately 30,000 gallons of trichloroethylene, or TCE, into the ground; about one ton of cyanide crystals was also released.",
       "The cyanide was collected and neutralizing material was spread, but most of the TCE could not be recovered. Odors were reported within days, and the solvent entered bedrock groundwater, eventually producing a plume extending roughly four miles through portions of Genesee, Livingston, and Monroe counties.",
@@ -2345,7 +2345,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-falls-air-reserve-pfas": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "The Niagara Falls Air Reserve Station has a long hazardous-waste corrective-action history involving former landfills, tanks, fire-training areas, and groundwater contamination. A newer investigation layer concerns PFAS associated with historical use and release of aqueous film-forming firefighting foam.",
       "PFAS work must be read separately from the older volatile-organic-compound remedy. EPA's RCRA page reports corrective action complete and groundwater controlled for the legacy units, while Air Force and state investigations continue to define PFAS occurrence and potential migration.",
@@ -2851,7 +2851,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "electro-metallurgical-company": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "Electro Metallurgical Company, a Union Carbide subsidiary, operated the metal-production end of the Western New York uranium chain. Linde in Tonawanda converted uranium concentrates to uranium tetrafluoride, or green salt, which was shipped to Electro Metallurgical in Niagara Falls and reduced to uranium metal.",
       "Beginning in April 1943, the purpose-built facility used the magnesium-reduction process and produced 1,538 tons of uranium metal—more than one-third of the Manhattan Project's requirement and more than any other single producer described in DOE's history.",
@@ -3986,7 +3986,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "eighteenmile-creek-superfund": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "The Eighteen Mile Creek Superfund site covers roughly 15 miles from the Lockport source area toward Lake Ontario. Historic industries contaminated facility soil, groundwater, creek sediment, and floodplain areas with PCBs, lead, and other pollutants.",
       "EPA divided the site into stages and operable units. Source-area actions have included demolition, excavation, capping, and selected residential relocations, while downstream sediment investigation and fish-consumption restrictions remain important.",
@@ -4076,7 +4076,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "fmc-middleport": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "FMC's Middleport plant began manufacturing arsenic-based pesticides and other products in the 1920s. Historic releases, waste handling, runoff, and air deposition affected facility soil, sediment, surface water, groundwater, and off-site properties.",
       "New York supervises a multi-year cleanup extending beyond the plant to residential and commercial parcels and Royalton-Hartland school property. Arsenic is the defining contaminant, though specific cleanup decisions vary by area.",
@@ -4140,7 +4140,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "cecos-international": {
-    lastReviewed: "August 11, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "The CECOS property covers roughly 385 acres in the Town of Niagara and City of Niagara Falls. Waste disposal began there in 1897, decades before modern hazardous-waste law, and hazardous-waste treatment, storage, and disposal operations began in 1977.",
       "EPA's facility description records an operating sanitary landfill, ten closed landfills, wastewater treatment, and container storage. Corrective-action investigations evaluated 47 solid-waste management units and areas of concern, showing why CECOS cannot be understood as a single landfill cell or one uniform plume.",
@@ -4269,7 +4269,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "olean-well-field-superfund": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 12, 2026",
     background: [
       "The Olean Well Field site covers roughly 800 acres beneath parts of Olean and Portville. EPA's investigation connected TCE and other volatile-organic groundwater contamination with four principal industrial source properties: Alcas, McGraw-Edison/Cooper, AVX, and Loohn's Dry Cleaners.",
       "The site is a regional groundwater system rather than a single disposal lot. Municipal wells, private wells, industrial source properties, and the intervening aquifer have therefore been addressed through separate but coordinated actions.",

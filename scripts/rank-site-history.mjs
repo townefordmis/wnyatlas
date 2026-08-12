@@ -24,6 +24,16 @@ const completedFeatures = new Set([
   "former-american-axle-east-delavan",
   "former-hooker-main-plant",
   "niagara-falls-storage-site",
+  "diaz-chemical",
+  "eighteenmile-creek-superfund",
+  "fmc-middleport",
+  "olean-well-field-superfund",
+  "lehigh-valley-railroad-derailment",
+  "remington-rand-north-tonawanda",
+  "electro-metallurgical-company",
+  "cecos-international",
+  "niagara-falls-air-reserve-pfas",
+  "durez-occidental-north-tonawanda",
 ]);
 const aerialSites = new Set([
   "republic-steel",

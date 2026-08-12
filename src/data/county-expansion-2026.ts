@@ -1,6 +1,7 @@
 import type { AtlasSite, AtlasStory } from "@/types/site";
 
 type Seed = Omit<AtlasStory, "lastReviewed" | "presentDay" | "researchNotes"> & {
+  lastReviewed?: string;
   present: string;
   note: string;
 };
@@ -32,7 +33,7 @@ function siteSources(code: string, label: string, hasDocuments = true) {
 
 function makeStory(seed: Seed): AtlasStory {
   return {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: seed.lastReviewed ?? "August 4, 2026",
     background: seed.background,
     timeline: seed.timeline,
     documentedImpacts: seed.documentedImpacts,
@@ -192,6 +193,7 @@ export const countyExpansion2026: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-78.02804075, 43.22285963],
     story: makeStory({
+      lastReviewed: "August 12, 2026",
       background: ["Diaz Chemical manufactured specialty chemicals at 40 Jackson Street in Holley.", "The record includes plant-related soil and groundwater contamination and a January 2002 process release that affected the surrounding community."],
       timeline: [{ period: "1992", event: "DEC classified the industrial property as Class 2." }, { period: "2002", event: "A chemical release prompted emergency response, temporary evacuation, and later federal removal work." }, { period: "2002-2012", event: "DEC selected remedies for separate operable units." }, { period: "2019-present", event: "EPA and DEC continued phased remedial construction and sampling." }],
       documentedImpacts: ["DEC lists ethylene dichloride, methylene chloride, and other brominated and chlorinated compounds.", "The emergency release and longer-term subsurface cleanup are distinct parts of the history.", "The atlas does not infer individual health outcomes from the environmental record."],
