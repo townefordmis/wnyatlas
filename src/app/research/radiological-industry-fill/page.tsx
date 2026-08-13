@@ -52,7 +52,12 @@ export default function RadiologicalInvestigationPage() {
             used at that specific property.
           </p>
         </div>
+        <a className="radiological-map-jump" href="#radiological-map">
+          Open the interactive evidence map <span>↓</span>
+        </a>
       </section>
+
+      <RadiologicalInvestigationMap />
 
       <section className="radiological-current-overview" id="current-investigation">
         <div className="radiological-current-heading">
@@ -344,13 +349,13 @@ export default function RadiologicalInvestigationPage() {
         </aside>
       </section>
 
-      <RadiologicalInvestigationMap />
       <RadiologicalDocumentArchive />
 
       <section className="radiological-update-log" aria-labelledby="radiological-update-heading">
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>August 12, 2026 · map-first navigation</strong> Moved the interactive evidence map directly below the introduction so visitors reach locations and records before the long-form research sections.</p>
           <p><strong>August 12, 2026 · Sabre Park and 56th/Pine</strong> Added the full Fashion Outlets / former Sabre Park main-map history, upgraded 56th/Pine with a separate official Level B disposal record, and documented the continuing limit on the unrecovered 2008 fingerprinting laboratory file.</p>
           <p><strong>August 12, 2026 · testimony dossier</strong> Added a complete witness-by-witness reading of the 12-page Probe record, federal corroboration and limits, and the documented Fashion Outlets/Sabre Park radiological-fill encounter.</p>
           <p><strong>August 12, 2026</strong> Added the 1979 slag-distribution testimony layer, the Military Road assessment pin, and the later source-fingerprint correction.</p>

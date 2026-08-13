@@ -5395,6 +5395,35 @@ footer {
   background: #eee5ef;
 }
 
+.radiological-map-jump {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  margin-top: 18px;
+  padding: 11px 15px;
+  border: 1px solid #172720;
+  background: #172720;
+  color: #fffdf8;
+  font-family: var(--font-mono);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .035em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.radiological-map-jump:hover,
+.radiological-map-jump:focus-visible {
+  background: #72518b;
+  color: #fff;
+}
+
+.radiological-map-jump span {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
 .radiological-legend {
   display: flex;
   max-width: 650px;
