@@ -59,7 +59,7 @@ for (const siteId of connectedSiteIds) {
 console.log(`Checked ${sites.length} site coordinates.`);
 console.log(`Checked ${connectedSiteIds.length} connection memberships.`);
 
-const expectedSiteCount = 175;
+const expectedSiteCount = 176;
 if (sites.length !== expectedSiteCount) {
   issues.push(
     `Expected ${expectedSiteCount} coordinate records but found ${sites.length}`,

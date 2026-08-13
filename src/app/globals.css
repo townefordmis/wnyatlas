@@ -5422,6 +5422,7 @@ footer {
 .rad-dot-review { background: #f8f4ea; border: 1px solid #65615b; }
 .rad-dot-follow-up { background: #00a6a6; border: 3px solid #073f47; }
 .rad-dot-producer { border-radius: 1px !important; background: #59306c; box-shadow: 0 0 0 2px #fff inset; }
+.rad-dot-record { border-radius: 1px !important; background: #1264d8; border: 2px solid #fff; box-shadow: 0 0 0 1px #082f73; }
 .rad-dot-testimony { background: #ffe04a; border: 2px dashed #8e250f; }
 .rad-area { border-radius: 1px !important; border: 1px dashed #72518b; background: rgba(114, 81, 139, .12); }
 .rad-county-erie { border-radius: 1px !important; border: 2px solid #315d76; background: rgba(76, 120, 145, .12); }
@@ -5540,6 +5541,11 @@ footer {
 .radiological-map-marker.is-processor > span { background: #8b3f69; }
 .radiological-map-marker.is-storage > span { background: #171717; }
 .radiological-map-marker.is-cleanup > span { background: #a93f2a; }
+.radiological-map-marker.is-evidence-b > span {
+  background: #1264d8;
+  border-color: #fffdf8;
+  box-shadow: 0 0 0 3px #082f73, 0 2px 7px 4px rgba(23,39,32,.42);
+}
 .radiological-map-marker.is-evidence-c > span {
   border-radius: 50%;
   background: #ffe04a;

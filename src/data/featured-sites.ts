@@ -2362,6 +2362,34 @@ const featuredSiteRecords: AtlasSite[] = [
     ],
   },
   {
+    id: "fashion-outlets-sabre-park",
+    name: "Fashion Outlets / Former Sabre Park",
+    municipality: "Town of Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "Former mobile-home community and adjoining shopping-center expansion property with several distinct cleanup chapters. Records document contaminated fill discovered in 1978, removal of about 1,200 cubic yards of mercury-contaminated fill in 1989, buried waste encountered during a 1994 mall expansion, and a separate localized radiological-slag encounter during the 2014 brownfield cleanup. The completed commercial-use remedy relies on removals, a cover system, vapor controls, an environmental easement, and site management.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.9786935, 43.0969508],
+    sources: [
+      {
+        title: "Sabre Park Mercury Site Inspection Follow-up",
+        publisher: "U.S. Environmental Protection Agency / New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932104/Report.HW.932104.1988-09-28.DataForDelineationOfMercuryInSurfaceSoils.pdf",
+      },
+      {
+        title: "Fashion Outlets / Sabre Park Final Engineering Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C932162/Report.BCP.C932162.2014-11-15.FinalFER-AppendicesA-F.pdf",
+      },
+      {
+        title: "Fashion Outlets / Sabre Park Document Collection",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C932162/",
+      },
+    ],
+  },
+  {
     id: "frontier-chemical-royal-avenue",
     name: "Frontier Chemical — Royal Avenue",
     municipality: "Niagara Falls",

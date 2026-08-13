@@ -158,6 +158,17 @@ export default function RadiologicalInvestigationPage() {
             </p>
           </article>
           <article>
+            <h3>56th/Pine now has two evidence levels</h3>
+            <p>
+              An official remedial-investigation history documents Union Carbide
+              furnace slag, hydrated lime, and miscellaneous plant-waste disposal at
+              a 56th Street and Pine Avenue facility. That supports a Level B marker.
+              John Friona&apos;s separate account of a fenced radioactive-slag burial
+              remains Level C because no reviewed agency record locates or confirms
+              that burial cell.
+            </p>
+          </article>
+          <article>
             <h3>The source-attribution correction</h3>
             <p>
               A 2020 appellate decision summarizes a 2008 fingerprinting study that
@@ -165,24 +176,31 @@ export default function RadiologicalInvestigationPage() {
               different from material recovered at the Niagara Falls Boulevard and
               Holy Trinity sites. The historical distribution account therefore
               cannot be used as proof that Union Carbide supplied every radioactive
-              slag location.
+              slag location. The underlying laboratory file has not been recovered
+              from a public repository, so this page reports the court&apos;s conclusion
+              without adding unreviewed analytical detail.
             </p>
           </article>
           <article>
-            <h3>Newer site-specific evidence</h3>
+            <h3>Newer site-specific evidence and a full Sabre Park story</h3>
             <p>
               A 2017 assessment for 4435–4445 Military Road estimated about 500 tons
               of slightly elevated radiological fill. The record also preserves a
               prior non-confirmation by EPA and does not establish where that fill
               originated. It appears as a documented assessment pin, not a completed
-              cleanup or source assignment.
+              cleanup or source assignment. The 2014 Fashion Outlets / Sabre Park
+              encounter now links to a full main-map story that keeps its 1978 fill,
+              1989 mercury removal, 1994-95 waste response, and radiological work
+              separate.
             </p>
           </article>
         </div>
         <div className="radiological-source-row">
           <a href="https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf" target="_blank" rel="noreferrer">Read the 1979 investigator reports ↗</a>
           <a href="https://decisions.courts.state.ny.us/ad3/Decisions/2020/530766.pdf" target="_blank" rel="noreferrer">Read the 2020 source-fingerprint decision ↗</a>
+          <a href="https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/cri1.pdf" target="_blank" rel="noreferrer">Read the official 56th/Pine disposal history ↗</a>
           <a href="https://extapps.dec.ny.gov/data/DecDocs/C932174/Application.BCP.C932174.2017-07-01.Phase%202%20ESA%20-%20C%26S%20Engineers.pdf" target="_blank" rel="noreferrer">Read the Military Road assessment ↗</a>
+          <Link href="/sites/fashion-outlets-sabre-park">Open the full Sabre Park site story →</Link>
         </div>
         <p className="measurement-caution">
           Evidence levels used here: A = agency sampling, removal, or laboratory
@@ -333,6 +351,7 @@ export default function RadiologicalInvestigationPage() {
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>August 12, 2026 · Sabre Park and 56th/Pine</strong> Added the full Fashion Outlets / former Sabre Park main-map history, upgraded 56th/Pine with a separate official Level B disposal record, and documented the continuing limit on the unrecovered 2008 fingerprinting laboratory file.</p>
           <p><strong>August 12, 2026 · testimony dossier</strong> Added a complete witness-by-witness reading of the 12-page Probe record, federal corroboration and limits, and the documented Fashion Outlets/Sabre Park radiological-fill encounter.</p>
           <p><strong>August 12, 2026</strong> Added the 1979 slag-distribution testimony layer, the Military Road assessment pin, and the later source-fingerprint correction.</p>
           <p><strong>August 11, 2026</strong> Added the current investigation workflow, known/unknown findings, and official 1979 aerial and 2025 roadway survey figures.</p>

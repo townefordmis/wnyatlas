@@ -438,6 +438,7 @@ export function RadiologicalInvestigationMap() {
           <span><i className="rad-dot-review" /> Approximate/unresolved</span>
           <span><i className="rad-dot-follow-up" /> Newer documented site</span>
           <span><i className="rad-dot-producer" /> Production, processing, or storage</span>
+          <span><i className="rad-dot-record" /> Level B · official waste-history record</span>
           <span><i className="rad-dot-testimony" /> 1979 testimony lead · approximate</span>
           <span><i className="rad-county-erie" /> Erie County</span>
           <span><i className="rad-county-niagara" /> Niagara County</span>
@@ -448,7 +449,9 @@ export function RadiologicalInvestigationMap() {
         Click or tap any marker for a quick identification. Its complete sourced
         record opens beside the map on desktop and directly below it on mobile.
         Marker color separates NFSS-related locations from the other DOE/ORNL
-        anomalies. The 2025 roadway work is shown as survey coverage because agencies
+        anomalies. Blue squares mark official Level B waste-history records; yellow
+        dashed circles mark unconfirmed Level C testimony. The 2025 roadway work is
+        shown as survey coverage because agencies
         have not released property-level findings as public pins; teal pins represent
         newer sites with an official EPA location and outcome. Use the aerial selector
         to place the same pins over georeferenced government imagery.

@@ -4139,16 +4139,60 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Track community-working-group materials and current free-product recovery data.",
     ],
   },
+  "fashion-outlets-sabre-park": {
+    lastReviewed: "August 12, 2026",
+    background: [
+      "This entry joins records for the former 34-acre Sabre Park mobile-home community with adjoining Fashion Outlets expansion parcels in a roughly 48.6-acre Brownfield Cleanup Program site. It is a sequence of separate discoveries and remedies, not evidence that one waste load or one company caused every condition across the property.",
+      "Union Carbide owned the Sabre Park and 1755 Factory Outlet Boulevard properties from 1949 to 1969, but the DEC decision document says its exact use of those parcels is unknown. Sabre Park was developed as a mobile-home community in the early 1970s. During a 1978 southern expansion, fill containing chlorinated solvents, mercury, and heating oil was discovered; records attribute that episode to fill inadvertently brought from Hooker Chemical property by a paving contractor.",
+      "Later sampling found additional mercury. EPA removed about 1,200 cubic yards of mercury-contaminated fill in 1989, and the state registry listing was removed in 1995. A separate 1994 mall-foundation project encountered white powder waste with a vinyl-chloride hazardous-waste characteristic; drums and debris were disposed off site in 1995, while screened soil that no longer exceeded that characteristic was placed beneath pavement.",
+      "The 2013-14 brownfield remedy addressed a wider mixture of fill, soil, groundwater, and soil-vapor concerns. During 2014 storm-sewer work, workers also encountered a localized area of slag with elevated radiation. That discovery has its own measurements and disposal controls and should not be conflated with the 1978 fill episode or the 1989 mercury excavation.",
+    ],
+    timeline: [
+      { period: "1949-1969", event: "Union Carbide owned the former Sabre Park and 1755 Factory Outlet Boulevard parcels; DEC says the exact historical use is unknown." },
+      { period: "1970-1972", event: "The wooded property was cleared, filled, graded, and developed as the Sabre Park mobile-home community." },
+      { period: "1978", event: "A southern expansion encountered fill containing chlorinated solvents, mercury, and heating oil. Contaminated material was excavated and taken to a permitted facility." },
+      { period: "1986-1989", event: "EPA sampling identified elevated mercury, and approximately 1,200 cubic yards of mercury-contaminated fill were removed in 1989 as hazardous waste." },
+      { period: "1994-1995", event: "Mall construction encountered buried white powder waste, drums, wood, and debris. About 3,037 cubic yards were screened; drums and debris went off site, and screened soil was placed beneath an asphalt parking area." },
+      { period: "2013-2014", event: "DEC selected a commercial-use brownfield remedy involving hot-spot removal, cover, vapor mitigation, an environmental easement, and long-term site management." },
+      { period: "April 2014", event: "Storm-sewer excavation exposed roughly 25 cubic yards of slag one to three feet below grade with elevated radiological readings. The work plan required controlled excavation, characterization, and permitted off-site disposal." },
+      { period: "Present", event: "The property is commercially reused under a cover system, vapor protections, groundwater-use restrictions, an environmental easement, and a site-management plan." },
+    ],
+    documentedImpacts: [
+      "The 1978 fill episode involved chlorinated solvents, mercury, and heating oil; later EPA work identified mercury requiring a separate 1989 removal.",
+      "The broader brownfield investigation identified PCBs, PAHs, chromium, chlorinated solvents, vinyl chloride, and other contaminants in defined soil, groundwater, or soil-vapor areas.",
+      "Historical fill extended locally to about 15 feet and included soil, brick, concrete, wood, glass, rubber, slag, plastic, and metal.",
+      "The 2014 radiological encounter was a localized trench area of roughly 25 cubic yards. Field readings were 35,000-52,000 counts per minute in the excavation and 65,000 on a returned truckload, compared with 5,000-7,000 background in the cited work plan.",
+      "The reviewed record does not identify the industrial producer or hauler responsible for the radiological slag and does not establish that it came from the same source as the earlier chemical fill.",
+    ],
+    cleanupAndControls: [
+      "The 1978 response excavated affected fill, and EPA removed about 1,200 cubic yards of mercury-contaminated material in 1989 for permitted off-site disposal.",
+      "The 1995 work separated drums and debris for off-site disposal and placed screened soil that did not exceed the vinyl-chloride hazardous-waste characteristic beneath pavement.",
+      "The 2014 brownfield construction removed hot spots and installed a commercial-use cover made up of buildings, pavement, sidewalks, and clean soil in landscaped areas.",
+      "Vapor mitigation, an environmental easement, a groundwater-use restriction, controlled excavation procedures, inspections, and a site-management plan govern remaining contamination.",
+      "The radiological work plan required radiation-trained oversight, lined excavations, controlled stockpiling, gamma spectroscopy and waste characterization, and permitted off-site disposal of confirmed material.",
+    ],
+    presentDay: [
+      "The Fashion Outlets expansion is a completed commercial-use brownfield remedy, not an unrestricted-use cleanup. Its protective system includes removal work plus maintained cover, vapor, land-use, groundwater, and excavation controls.",
+      "The 1978 chemical-fill incident, 1989 mercury removal, 1994-95 buried-waste response, and 2014 radiological-slag encounter are documented at this broader property but remain separate evidence streams unless a source record directly connects them.",
+    ],
+    researchNotes: [
+      "Map the former Sabre Park, mall-expansion, 1755 Factory Outlet Boulevard, 1989 mercury-removal, and 2014 trench footprints separately when official GIS-ready boundaries can be recovered.",
+      "Track the newest periodic review for cover condition, vapor systems, groundwater monitoring, and excavation-management compliance.",
+      "Do not assign the radiological slag to Union Carbide, Hooker, the 1978 hauling event, or a 1979 testimony witness without a matching analytical or shipment record.",
+    ],
+  },
   "cecos-international": {
     lastReviewed: "August 12, 2026",
     background: [
       "The CECOS property covers roughly 385 acres in the Town of Niagara and City of Niagara Falls. Waste disposal began there in 1897, decades before modern hazardous-waste law, and hazardous-waste treatment, storage, and disposal operations began in 1977.",
       "EPA's facility description records an operating sanitary landfill, ten closed landfills, wastewater treatment, and container storage. Corrective-action investigations evaluated 47 solid-waste management units and areas of concern, showing why CECOS cannot be understood as a single landfill cell or one uniform plume.",
       "Investigators identified releases to fill, soil, and groundwater, with the former Phase I wastewater-treatment impoundments described as the principal CECOS source in the central facility area. EPA separately notes that much contamination found near CECOS was attributed to the adjoining, upgradient Necco Park site; the atlas therefore keeps the two histories and responsible parties distinct.",
+      "A separate official history, summarizing the 1979 Erie-Niagara hazardous-waste task force, records Union Carbide Metals Division disposal of furnace slag, hydrated lime, and miscellaneous plant waste at a 56th Street and Pine Avenue facility. WNY Atlas maps that as a broader historical-complex point and does not relabel it as a modern CECOS unit, the Newco/BFI landfill, or DuPont's neighboring Necco Park without a boundary-specific record.",
     ],
     timeline: [
       { period: "1897 onward", event: "Waste disposal began on the property long before modern engineered-landfill and hazardous-waste standards." },
       { period: "1977 onward", event: "The complex operated hazardous-waste treatment, storage, and disposal units alongside other waste-management facilities." },
+      { period: "1979 historical record", event: "An interagency task-force history documented Union Carbide Metals Division slag, lime, and miscellaneous plant-waste disposal at a 56th/Pine off-site facility; the exact modern parcel assignment remains unresolved in the reviewed summary." },
       { period: "1984-1986", event: "Federal and state permit actions required expanded groundwater monitoring and identification and evaluation of historic waste-management units." },
       { period: "1991 onward", event: "CECOS began recovering and treating contaminated groundwater as an interim corrective measure." },
       { period: "1995", event: "Regulators approved the final groundwater-recovery corrective action for facility-related soil and groundwater contamination." },
@@ -4158,6 +4202,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Historic waste-management units released contaminants to fill and soil.",
       "Groundwater contamination requires active recovery and treatment.",
       "The long operating history produced at least 47 investigated units or concern areas with different wastes, closure designs, owners, and regulatory status.",
+      "Official records support industrial waste disposal in the broader 56th/Pine complex, while a separate 1979 interview's claim of a fenced radioactive-slag burial area remains unconfirmed testimony.",
     ],
     cleanupAndControls: [
       "Closed disposal units are capped and maintained to prevent contact and reduce infiltration.",
