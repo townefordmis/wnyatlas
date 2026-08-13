@@ -6,6 +6,10 @@ import {
   RadiologicalDocumentArchive,
   RadiologicalInvestigationMap,
 } from "@/components/radiological-investigation-map";
+import {
+  probeCorroborationFindings,
+  probeTestimonyRecords,
+} from "@/data/radiological-investigation";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
@@ -188,6 +192,81 @@ export default function RadiologicalInvestigationPage() {
         </p>
       </section>
 
+      <section className="radiological-testimony-dossier" id="probe-1979-testimony">
+        <div className="radiological-testimony-heading">
+          <div>
+            <p className="eyebrow">Original record dossier · all 12 scanned pages reviewed</p>
+            <h2>Inside the 1979 Pine Bowl investigation</h2>
+          </div>
+          <p>
+            Probe International Investigators Ltd. prepared reports dated May 10
+            and June 8, 1979 for George Gellman of Consolidated Bowling
+            Corporation. Evan P. Kenner authored the reports; Lewis Barone conducted
+            many of the Niagara Falls interviews. The June supplement includes
+            Kenner&apos;s June 4 interview with John Friona.
+          </p>
+        </div>
+
+        <div className="radiological-testimony-timeline" aria-label="1979 investigation sequence">
+          <article><span>April 26</span><strong>Investigation begins</strong><p>Kenner records meeting with the Pine Bowl owner and defining the question of who supplied or placed slag beneath the property.</p></article>
+          <article><span>May 10</span><strong>First report</strong><p>Barone&apos;s contractor and supplier interviews identify possible sources, haulers, competing construction accounts, and named fill destinations.</p></article>
+          <article><span>June 4</span><strong>John Friona interviewed</strong><p>Kenner records Friona&apos;s account of the Hackett/Friona arrangement, the 56th/Pine dump, and separately managed radioactive slag.</p></article>
+          <article><span>June 8</span><strong>Supplement issued</strong><p>The second report adds the Friona interview, Vanadium/Pittsburgh Metallurgical leads, and unresolved people or records to pursue.</p></article>
+        </div>
+
+        <div className="radiological-testimony-guide">
+          <strong>How to read these accounts</strong>
+          <span><i className="is-context" /> Corroborated context</span>
+          <span><i className="is-testimony" /> Testimony only</span>
+          <span><i className="is-qualifier" /> Qualifying or competing account</span>
+        </div>
+
+        <div className="radiological-testimony-list">
+          {probeTestimonyRecords.map((record) => (
+            <details key={record.id} id={`testimony-${record.id}`}>
+              <summary>
+                <span className={`testimony-status ${record.status}`} aria-hidden="true" />
+                <span><small>{record.reportDate}</small><strong>{record.witness}</strong><em>{record.subject}</em></span>
+              </summary>
+              <div>
+                <section><h3>What the report records</h3><p>{record.account}</p></section>
+                <section><h3>Independent check and limit</h3><p>{record.independentCheck}</p></section>
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <div className="radiological-open-leads">
+          <h3>Names and records still requiring archival proof</h3>
+          <p>
+            C.A. Hackett job or corporate files; Harold Heinrich&apos;s employment role;
+            Bruno Scrufari excavation records; Walter Kozdranski hauling records;
+            Friona invoices or dispatch books; the former King&apos;s Plaza parcel; and
+            the underlying 2008 slag-fingerprinting laboratory file. These remain
+            research targets, not affirmative map claims.
+          </p>
+        </div>
+
+        <a className="radiological-primary-document" href="https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf" target="_blank" rel="noreferrer">
+          Open the complete 12-page original scan <span>PDF · May and June 1979 ↗</span>
+        </a>
+      </section>
+
+      <section className="radiological-corroboration" aria-labelledby="corroboration-heading">
+        <p className="eyebrow">Additional primary-record research</p>
+        <h2 id="corroboration-heading">What later records add—and what they still do not prove</h2>
+        <div>
+          {probeCorroborationFindings.map((record) => (
+            <article key={record.title}>
+              <h3>{record.title}</h3>
+              <p>{record.finding}</p>
+              <aside><strong>Limit</strong>{record.caution}</aside>
+              <a href={record.sourceUrl} target="_blank" rel="noreferrer">{record.sourceLabel} ↗</a>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="radiological-aerial-evidence" id="aerial-record">
         <div className="radiological-aerial-heading">
           <p className="eyebrow">Aerial and roadway evidence</p>
@@ -254,6 +333,7 @@ export default function RadiologicalInvestigationPage() {
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>August 12, 2026 · testimony dossier</strong> Added a complete witness-by-witness reading of the 12-page Probe record, federal corroboration and limits, and the documented Fashion Outlets/Sabre Park radiological-fill encounter.</p>
           <p><strong>August 12, 2026</strong> Added the 1979 slag-distribution testimony layer, the Military Road assessment pin, and the later source-fingerprint correction.</p>
           <p><strong>August 11, 2026</strong> Added the current investigation workflow, known/unknown findings, and official 1979 aerial and 2025 roadway survey figures.</p>
           <p><strong>July 31, 2026</strong> Consolidated the 100 historical survey points, later EPA removals, and producer or handler records.</p>

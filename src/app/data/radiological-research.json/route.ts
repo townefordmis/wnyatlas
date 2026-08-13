@@ -3,6 +3,8 @@ import {
   historicalRadiologicalRecords,
   historicalSurveySource,
   latestRadiologicalFollowUps,
+  probeCorroborationFindings,
+  probeTestimonyRecords,
   radiologicalDocuments,
   radiologicalProducers,
 } from "@/data/radiological-investigation";
@@ -14,7 +16,7 @@ export function GET() {
     {
       title: "WNY Atlas Radiological Industry, Fill, Surveys & Cleanup research dataset",
       generatedForEdition: "2026 founding edition",
-      lastReviewed: "2026-07-31",
+      lastReviewed: "2026-08-12",
       limitations: [
         "Historical survey points reproduce or approximate locations described in government records and do not establish current conditions.",
         "Current assessment coverage is generalized because agencies have not published property-level coordinates for every active review.",
@@ -25,6 +27,8 @@ export function GET() {
       historicalSurveyRecords: historicalRadiologicalRecords,
       latestDocumentedFollowUps: latestRadiologicalFollowUps,
       producersProcessorsStorageAndCleanup: radiologicalProducers,
+      probe1979WitnessAccounts: probeTestimonyRecords,
+      probe1979IndependentResearch: probeCorroborationFindings,
       governmentResearchArchive: radiologicalDocuments,
       currentAssessmentSources,
     },

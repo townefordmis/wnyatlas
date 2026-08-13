@@ -62,6 +62,17 @@ export type RadiologicalDocument = {
   url: string;
 };
 
+export type ProbeTestimonyRecord = {
+  id: string;
+  witness: string;
+  reportDate: "May 10, 1979" | "June 8, 1979";
+  subject: string;
+  account: string;
+  independentCheck: string;
+  status: "corroborated-context" | "testimony-only" | "qualifying-account";
+  mappedRecordId?: string;
+};
+
 export const historicalSurveySource = {
   label: "DOE/ORNL Niagara Falls radiological measurements report (1986)",
   url: "https://lmpublicsearch.lm.doe.gov/LMSites/2726-NY.17-10_NFSS.pdf",
@@ -439,6 +450,128 @@ export const radiologicalProducers: RadiologicalProducer[] = [
   },
 ];
 
+export const probeTestimonyRecords: ProbeTestimonyRecord[] = [
+  {
+    id: "melnot-friona-hauling",
+    witness: "LaVay Melnot",
+    reportDate: "May 10, 1979",
+    subject: "Friona hauling and the Union Carbide dump",
+    account: "The report records Melnot saying Philip and Nazarino Friona operated a trucking company whose early-1960s work included hauling waste and slag from Union Carbide grounds to the Union Carbide dump, later Newco.",
+    independentCheck: "Government records support the old Union Carbide dump/Newco geography, but WNY Atlas has not found a hauling contract or load record confirming Melnot's account.",
+    status: "corroborated-context",
+    mappedRecordId: "union-carbide-newco-dump-testimony",
+  },
+  {
+    id: "cerrone-slag-market",
+    witness: "Armand Cerrone",
+    reportDate: "May 10, 1979",
+    subject: "Regional slag sources and contractor access",
+    account: "The report records Cerrone identifying Union Carbide, Airco Alloy, and Buffalo Slag as major 1962 sources and saying contractors obtained Union Carbide slag through Friona, by pickup or delivery.",
+    independentCheck: "The named industrial operations are documented, and other 1979 interviews describe the same Friona relationship. No reviewed invoice or exclusive-rights agreement confirms the commercial arrangement.",
+    status: "corroborated-context",
+    mappedRecordId: "friona-trucking",
+  },
+  {
+    id: "farina-destinations",
+    witness: "Vince Farina",
+    reportDate: "May 10, 1979",
+    subject: "Twin Fair and Michael's Pizzeria",
+    account: "The report records Farina naming the former Twin Fair parking area and Michael's Pizzeria as places where Union Carbide slag was reportedly used. He also described high-lime material lifting or damaging blacktop.",
+    independentCheck: "Historical geography supports both named places. WNY Atlas has not found radiological sampling that confirms the material, source, quantity, or present conditions at either destination.",
+    status: "testimony-only",
+    mappedRecordId: "twin-fair-testimony",
+  },
+  {
+    id: "marchetti-kings-plaza",
+    witness: "Angelo Marchetti",
+    reportDate: "May 10, 1979",
+    subject: "King's Plaza and wider parking-lot use",
+    account: "The report records Marchetti describing broad use of Union Carbide slag beneath Niagara Falls parking lots and identifying the former King's Plaza on Military Road as one example.",
+    independentCheck: "The exact former plaza parcel has not been independently resolved, so the account remains searchable but intentionally has no map pin.",
+    status: "testimony-only",
+    mappedRecordId: "kings-plaza-testimony",
+  },
+  {
+    id: "seprelli-pine-bowl",
+    witness: "John and Joseph Seprelli",
+    reportDate: "May 10, 1979",
+    subject: "Who placed the original Pine Bowl fill",
+    account: "The report records the Seprelli account that low spots had already been filled with slag before their stone, gravel, and blacktop work and that they did not believe their company supplied the original slag.",
+    independentCheck: "This is a material qualifying account: the report does not resolve who placed the original slag and cannot support assigning Pine Bowl solely to Seprelli.",
+    status: "qualifying-account",
+  },
+  {
+    id: "john-friona-network",
+    witness: "John Friona",
+    reportDate: "June 8, 1979",
+    subject: "C.A. Hackett, Friona, and Union Carbide",
+    account: "Kenner records his June 4 interview with Friona, who described a C.A. Hackett/Friona arrangement involving Union Carbide slag beginning around 1955-56 and identified the 56th/Pine dump as the later Newco property.",
+    independentCheck: "Federal and state records support Union Carbide industrial-waste disposal and possible Electromet rubble at the old dump. The specific Hackett/Friona arrangement remains testimony without a reviewed corporate record.",
+    status: "corroborated-context",
+    mappedRecordId: "union-carbide-newco-dump-testimony",
+  },
+  {
+    id: "john-friona-segregation",
+    witness: "John Friona",
+    reportDate: "June 8, 1979",
+    subject: "Reportedly segregated radioactive slag",
+    account: "The report records Friona recalling radioactive slag isolated roughly a quarter-mile from other slag, buried, and fenced or cabled. He believed Bruno Scrufari excavated the burial area.",
+    independentCheck: "A federal record separately documents 505 tons of thorium- and uranium-bearing commercial slag buried on Electromet plant property from 1965-72. It does not establish that this was the same burial area Friona described at the dump.",
+    status: "testimony-only",
+    mappedRecordId: "union-carbide-newco-dump-testimony",
+  },
+  {
+    id: "frangione-vanadium",
+    witness: "Clarence Frangione",
+    reportDate: "June 8, 1979",
+    subject: "Pittsburgh Metallurgical and Vanadium slag",
+    account: "The report records Frangione describing slag associated with Pittsburgh Metallurgical and lime slag from the old Vanadium plant, along with a recollection of radioactive-material stockpiles at a Lockport Road dump.",
+    independentCheck: "Government records confirm the large Vanadium/Airco slag-production and disposal history. The radioactive-stockpile portion remains unconfirmed testimony.",
+    status: "corroborated-context",
+    mappedRecordId: "pittsburgh-metallurgical-vanadium-testimony",
+  },
+  {
+    id: "johnson-other-sources",
+    witness: "Joseph Johnson",
+    reportDate: "June 8, 1979",
+    subject: "Other possible sources and haulers",
+    account: "The report records Johnson identifying Union Carbide, Airco Alloy, and Oldbury as slag sources and directing investigators toward Walter Kozdranski as a possible hauler.",
+    independentCheck: "The industrial sources and Kozdranski business identity can be independently placed in the period, but WNY Atlas has not found records connecting Kozdranski to a specific load or radiological destination.",
+    status: "testimony-only",
+  },
+];
+
+export const probeCorroborationFindings = [
+  {
+    title: "Commercial radioactive slag is documented",
+    finding: "A federal Electromet record says Union Carbide produced 505 tons of commercial slag from 1965 to 1972 containing 9,212 pounds of thorium dioxide and 1,293 pounds of uranium oxide, drummed and buried in a designated area on plant property.",
+    caution: "This does not establish that the buried material was distributed as ordinary fill or that it was the burial area described by John Friona.",
+    sourceLabel: "DOE Former Electromet elimination report",
+    sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/C932143/Report.BCP.C932143.2011-08-24.SITE_RADIATION_WARNING.pdf",
+  },
+  {
+    title: "The old dump connection is plausible but bounded",
+    finding: "The same federal record says some demolished-plant rubble may have reached the 200-300 acre old Union Carbide dump north of Pine Avenue, later Newco/CECOS.",
+    caution: "A 1976 screening found mostly near-background levels at the two sites, and the 1978 and 1979 aerial surveys reported no former-Electromet-site anomaly. 'May have' is not a mapped disposal cell.",
+    sourceLabel: "DOE Former Electromet elimination report",
+    sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/C932143/Report.BCP.C932143.2011-08-24.SITE_RADIATION_WARNING.pdf",
+  },
+  {
+    title: "A later commercial-fill encounter is confirmed",
+    finding: "During 2014 Fashion Outlets/Sabre Park construction, a work-plan appendix documented slag about one to three feet below grade, readings of 35,000-52,000 counts per minute in the excavation, and 65,000 at a returned truckload against 5,000-7,000 background.",
+    caution: "The record identifies historical backfill and a roughly 25-cubic-yard trench area but does not attribute the material to a testimony witness, hauler, or industrial source.",
+    sourceLabel: "NYSDEC file: Fashion Outlets/Sabre Park final engineering report, Appendix F",
+    sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/C932162/Report.BCP.C932162.2014-11-15.FinalFER-AppendicesA-F.pdf",
+  },
+  {
+    title: "The single-source theory does not hold",
+    finding: "The 2020 court record summarizes fingerprinting that found Union Carbide predecessor slag markedly different from material recovered at Niagara Falls Boulevard and Holy Trinity.",
+    caution: "The 1979 distribution evidence remains historically useful, but it cannot establish Union Carbide as the source of every later radiological-slag finding.",
+    sourceLabel: "New York appellate decision",
+    sourceUrl: "https://decisions.courts.state.ny.us/ad3/Decisions/2020/530766.pdf",
+  },
+];
+
 const epaNiagaraRemovalSource = {
   label: "EPA Niagara County Radiation Removal Sites (updated March 10, 2026)",
   url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
@@ -509,6 +642,18 @@ export const latestRadiologicalFollowUps: RadiologicalFollowUp[] = [
     sourceLabel: "NYSDEC file: 2017 Phase II Environmental Site Assessment, 4435–4445 Military Road",
     sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/C932174/Application.BCP.C932174.2017-07-01.Phase%202%20ESA%20-%20C%26S%20Engineers.pdf",
   },
+  {
+    id: "fashion-outlets-sabre-park-llrw",
+    name: "Fashion Outlets / Sabre Park radiological-fill encounter",
+    location: "Fashion Outlets expansion / former Sabre Park, Town of Niagara; property-scale point",
+    county: "Niagara",
+    coordinates: [-78.9786935, 43.0969508],
+    completed: "Documented April 2014",
+    latestStatus: "A NYSDEC-filed work plan documented elevated radiation in slag exposed during storm-sewer excavation. Field readings were 35,000-52,000 CPM in the excavation and 65,000 CPM at a returned truckload, compared with 5,000-7,000 CPM background.",
+    historicalComparison: "The slag was observed roughly one to three feet below grade in a localized trench area and was believed to be historical shopping-center backfill. The public record does not connect it to a specific 1979 witness, hauler, or industrial source, so no route or source attribution is shown.",
+    sourceLabel: "NYSDEC file: Fashion Outlets/Sabre Park final engineering report, Appendix F LLRW work plan",
+    sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/C932162/Report.BCP.C932162.2014-11-15.FinalFER-AppendicesA-F.pdf",
+  },
 ];
 
 export const currentAssessmentSources = [
@@ -569,6 +714,32 @@ export const radiologicalDocuments: RadiologicalDocument[] = [
     establishes: "Documents the assessment methods, an estimated 500 tons of slightly elevated radiological fill, the limits of earlier EPA confirmation, and the recommendation to remove impacted fill.",
     mapConnection: "Supports the newer documented assessment pin at 4435–4445 Military Road.",
     url: "https://extapps.dec.ny.gov/data/DecDocs/C932174/Application.BCP.C932174.2017-07-01.Phase%202%20ESA%20-%20C%26S%20Engineers.pdf",
+  },
+  {
+    id: "fashion-outlets-llrw-2014",
+    title: "Fashion Outlets/Sabre Park Final Engineering Report - LLRW Work Plan",
+    agency: "Langan for Macerich-Niagara; filed with NYSDEC",
+    date: "April-November 2014",
+    year: 2014,
+    kind: "survey",
+    geography: "Niagara",
+    status: "final",
+    establishes: "Documents elevated radiological readings in historical slag backfill encountered during construction, the approximate trench extent, spectroscopy and waste-classification planning, and controlled handling requirements.",
+    mapConnection: "Supports the Fashion Outlets/Sabre Park documented radiological-fill pin without assigning a historical supplier.",
+    url: "https://extapps.dec.ny.gov/data/DecDocs/C932162/Report.BCP.C932162.2014-11-15.FinalFER-AppendicesA-F.pdf",
+  },
+  {
+    id: "electromet-elimination-report",
+    title: "FUSRAP Elimination Report: Former Electro Metallurgical Company",
+    agency: "U.S. Department of Energy",
+    date: "Federal authority review; historical operations through 1980",
+    year: 1986,
+    kind: "audit-review",
+    geography: "Niagara",
+    status: "final",
+    establishes: "Documents MED/AEC and later licensed commercial operations, 505 tons of thorium- and uranium-bearing commercial slag buried on plant property, and the possibility that some demolition rubble reached the old Union Carbide/Newco dump.",
+    mapConnection: "Corroborates industrial and dump context while explicitly not proving a distributed radioactive-slag route.",
+    url: "https://extapps.dec.ny.gov/data/DecDocs/C932143/Report.BCP.C932143.2011-08-24.SITE_RADIATION_WARNING.pdf",
   },
   {
     id: "doe-aerial-1979",
