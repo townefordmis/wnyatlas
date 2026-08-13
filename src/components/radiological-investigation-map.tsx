@@ -116,10 +116,13 @@ export function RadiologicalInvestigationMap() {
     });
   }, [area, county, disposition, query]);
 
-  const filteredProducers = useMemo(
-    () => county === "all" ? radiologicalProducers : radiologicalProducers.filter((record) => record.county === county),
-    [county],
-  );
+  const filteredProducers = useMemo(() => {
+    const normalized = query.trim().toLowerCase();
+    return radiologicalProducers.filter((record) => {
+      if (county !== "all" && record.county !== county) return false;
+      return !normalized || `${record.name} ${record.location} ${record.role} ${record.summary}`.toLowerCase().includes(normalized);
+    });
+  }, [county, query]);
 
   const displayedHistorical = useMemo(
     () => filtered.filter((record) => {
@@ -294,7 +297,7 @@ export function RadiologicalInvestigationMap() {
         const coordinates = record.coordinates;
         const element = document.createElement("button");
         element.type = "button";
-        element.className = `radiological-map-marker producer-marker is-${record.role}`;
+        element.className = `radiological-map-marker producer-marker is-${record.role}${record.evidenceLevel ? ` is-evidence-${record.evidenceLevel.toLowerCase()}` : ""}`;
         element.setAttribute("aria-label", `Open ${record.name}: ${record.location}`);
         element.title = `${record.name} — ${record.location}`;
         element.append(document.createElement("span"));
@@ -435,6 +438,7 @@ export function RadiologicalInvestigationMap() {
           <span><i className="rad-dot-review" /> Approximate/unresolved</span>
           <span><i className="rad-dot-follow-up" /> Newer documented site</span>
           <span><i className="rad-dot-producer" /> Production, processing, or storage</span>
+          <span><i className="rad-dot-testimony" /> 1979 testimony lead · approximate</span>
           <span><i className="rad-county-erie" /> Erie County</span>
           <span><i className="rad-county-niagara" /> Niagara County</span>
           <span><i className="rad-area" /> 2025–26 survey coverage</span>
@@ -459,7 +463,7 @@ export function RadiologicalInvestigationMap() {
           <AerialControls basemap={basemap} opacity={aerialOpacity} onBasemapChange={setBasemap} onOpacityChange={setAerialOpacity} />
           <label>
             <span>Search fill and survey locations</span>
-            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Address, road, or anomaly number" />
+            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Address, facility, road, or anomaly" />
           </label>
           <label className="radiological-map-view">
             <span>Map view</span>
@@ -476,14 +480,14 @@ export function RadiologicalInvestigationMap() {
             <label><span>Record</span><select value={disposition} onChange={(event) => setDisposition(event.target.value as RadiologicalDisposition | "all")}><option value="all">All records</option><option value="federal-remediated">NFSS-related · remediated</option><option value="historical-anomaly">Other DOE/ORNL anomaly</option><option value="building-material-or-unconfirmed">Approximate/unresolved</option></select></label>
           </div>
           <div className="radiological-toggles">
-            <label><input type="checkbox" checked={showProducers} onChange={(event) => setShowProducers(event.target.checked)} /> Producers and handlers</label>
+            <label><input type="checkbox" checked={showProducers} onChange={(event) => setShowProducers(event.target.checked)} /> Sources, handlers, and testimony leads</label>
             <label><input type="checkbox" checked={showAssessment} onChange={(event) => setShowAssessment(event.target.checked)} /> 2025–26 assessment coverage</label>
           </div>
           <p className="school-result-count">{displayedHistorical.length} historical pins · {showNewerPins ? filteredFollowUps.length : 0} newer pins · {showProducers ? filteredProducers.length : 0} facilities or handlers</p>
           <div className="radiological-options">
             {displayedHistorical.length > 0 && <><p className="record-label">Visible 1986 fill and survey records</p>{displayedHistorical.map((record) => <button type="button" key={record.id} className={selection.type === "historical" && selection.record.id === record.id ? "is-active" : ""} onClick={() => chooseHistorical(record)}><strong>{record.name}</strong><span>{record.location}</span></button>)}</>}
             {showNewerPins && <><p className="record-label producer-heading">Latest documented follow-up</p>{filteredFollowUps.map((record) => <button type="button" key={record.id} className={selection.type === "follow-up" && selection.record.id === record.id ? "is-active follow-up" : "follow-up"} onClick={() => chooseFollowUp(record)}><strong>{record.name}</strong><span>{record.completed} · {record.location}</span></button>)}</>}
-            {showProducers && <><p className="record-label producer-heading">Producers, processors, and storage</p>{filteredProducers.map((record) => <button type="button" key={record.id} className={selection.type === "producer" && selection.record.id === record.id ? "is-active producer" : "producer"} onClick={() => chooseProducer(record)}><strong>{record.name}</strong><span>{record.county} County · {record.role.replaceAll("-", " ")} · {record.evidence}</span></button>)}</>}
+            {showProducers && <><p className="record-label producer-heading">Sources, handlers, and historical leads</p>{filteredProducers.map((record) => <button type="button" key={record.id} className={selection.type === "producer" && selection.record.id === record.id ? "is-active producer" : "producer"} onClick={() => chooseProducer(record)}><strong>{record.name}</strong><span>{record.county} County · {record.role.replaceAll("-", " ")} · {record.evidenceLevel ? `evidence level ${record.evidenceLevel}` : record.evidence}</span></button>)}</>}
           </div>
         </aside>
 
@@ -512,10 +516,11 @@ function HistoricalDetail({ record }: { record: HistoricalRadiologicalRecord }) 
 
 function ProducerDetail({ record }: { record: RadiologicalProducer }) {
   return <>
-    <p className="record-label">{record.role.replaceAll("-", " ")} · {record.evidence} evidence</p>
+    <p className="record-label">{record.role.replaceAll("-", " ")} · {record.evidenceLevel ? `evidence level ${record.evidenceLevel}` : `${record.evidence} evidence`}</p>
     <h3>{record.name}</h3>
     <p className="radiological-location">{record.location}</p>
-    <section><h4>Documented role</h4><p>{record.summary}</p></section>
+    {record.coordinatePrecision && <div className="radiological-status"><strong>{record.evidenceLevel === "C" ? "Historical lead — not a confirmed radiological site" : "Mapped from reviewed records"}</strong><span>Map position: {record.coordinatePrecision.replaceAll("-", " ")}</span></div>}
+    <section><h4>{record.evidenceLevel === "C" ? "What the historical account says" : "Documented role"}</h4><p>{record.summary}</p></section>
     <section><h4>Source</h4>{record.sourceUrl.startsWith("/") ? <Link href={record.sourceUrl}>{record.sourceLabel} →</Link> : <a href={record.sourceUrl} target="_blank" rel="noreferrer">{record.sourceLabel} ↗</a>}</section>
     {record.relatedSiteId && <Link className="radiological-main-link" href={`/sites/${record.relatedSiteId}`}>Open the full Atlas site record →</Link>}
   </>;
@@ -530,7 +535,7 @@ function FollowUpDetail({ record }: { record: RadiologicalFollowUp }) {
     <section><h4>Latest public status</h4><p>{record.latestStatus}</p></section>
     <section><h4>What can—and cannot—be compared</h4><p>{record.historicalComparison}</p></section>
     <section><h4>Latest source used</h4><a href={record.sourceUrl} target="_blank" rel="noreferrer">{record.sourceLabel} ↗</a></section>
-    <Link className="radiological-main-link" href={`/sites/${record.relatedSiteId}`}>Open the full Atlas site record →</Link>
+    {record.relatedSiteId && <Link className="radiological-main-link" href={`/sites/${record.relatedSiteId}`}>Open the full Atlas site record →</Link>}
   </>;
 }
 
@@ -544,6 +549,8 @@ const documentKindLabels: Record<RadiologicalDocument["kind"], string> = {
   "cleanup-decision": "Cleanup and administrative record",
   "worker-record": "Worker-exposure record",
   "current-assessment": "Current assessment",
+  "historical-testimony": "Historical testimony or investigator record",
+  "court-record": "Court and administrative record",
 };
 
 export function RadiologicalDocumentArchive() {

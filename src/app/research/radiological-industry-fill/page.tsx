@@ -138,6 +138,56 @@ export default function RadiologicalInvestigationPage() {
         </p>
       </section>
 
+      <section className="school-method radiological-method radiological-evidence-network" id="slag-distribution-evidence">
+        <p className="eyebrow">Slag sources and distribution · evidence kept separate</p>
+        <h2>The 1979 interviews expand the research network, but they do not prove one source for every hotspot.</h2>
+        <div>
+          <article>
+            <h3>What the 1979 reports add</h3>
+            <p>
+              A private investigator recorded interviews describing Friona hauling,
+              a Union Carbide dump near 56th and Pine streets, a Vanadium-area
+              stockpile account, and reported slag use at former retail properties.
+              These are useful
+              contemporaneous leads, so the map shows them as yellow dashed markers.
+              They are not agency sampling results or present-day hazard findings.
+            </p>
+          </article>
+          <article>
+            <h3>The source-attribution correction</h3>
+            <p>
+              A 2020 appellate decision summarizes a 2008 fingerprinting study that
+              found slag from the Union Carbide predecessor facility markedly
+              different from material recovered at the Niagara Falls Boulevard and
+              Holy Trinity sites. The historical distribution account therefore
+              cannot be used as proof that Union Carbide supplied every radioactive
+              slag location.
+            </p>
+          </article>
+          <article>
+            <h3>Newer site-specific evidence</h3>
+            <p>
+              A 2017 assessment for 4435–4445 Military Road estimated about 500 tons
+              of slightly elevated radiological fill. The record also preserves a
+              prior non-confirmation by EPA and does not establish where that fill
+              originated. It appears as a documented assessment pin, not a completed
+              cleanup or source assignment.
+            </p>
+          </article>
+        </div>
+        <div className="radiological-source-row">
+          <a href="https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf" target="_blank" rel="noreferrer">Read the 1979 investigator reports ↗</a>
+          <a href="https://decisions.courts.state.ny.us/ad3/Decisions/2020/530766.pdf" target="_blank" rel="noreferrer">Read the 2020 source-fingerprint decision ↗</a>
+          <a href="https://extapps.dec.ny.gov/data/DecDocs/C932174/Application.BCP.C932174.2017-07-01.Phase%202%20ESA%20-%20C%26S%20Engineers.pdf" target="_blank" rel="noreferrer">Read the Military Road assessment ↗</a>
+        </div>
+        <p className="measurement-caution">
+          Evidence levels used here: A = agency sampling, removal, or laboratory
+          record; B = official industrial or waste-history record; C = named
+          contemporaneous testimony. No route line is drawn unless a reviewed record
+          identifies the relationship directly.
+        </p>
+      </section>
+
       <section className="radiological-aerial-evidence" id="aerial-record">
         <div className="radiological-aerial-heading">
           <p className="eyebrow">Aerial and roadway evidence</p>
@@ -204,6 +254,7 @@ export default function RadiologicalInvestigationPage() {
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>August 12, 2026</strong> Added the 1979 slag-distribution testimony layer, the Military Road assessment pin, and the later source-fingerprint correction.</p>
           <p><strong>August 11, 2026</strong> Added the current investigation workflow, known/unknown findings, and official 1979 aerial and 2025 roadway survey figures.</p>
           <p><strong>July 31, 2026</strong> Consolidated the 100 historical survey points, later EPA removals, and producer or handler records.</p>
         </div>

@@ -21,11 +21,13 @@ export type HistoricalRadiologicalRecord = {
 export type RadiologicalProducer = {
   id: string;
   name: string;
-  role: "producer" | "processor" | "storage" | "cleanup" | "reported-distributor";
+  role: "producer" | "processor" | "storage" | "cleanup" | "reported-distributor" | "reported-fill-location";
   county: "Erie" | "Niagara";
   coordinates?: [number, number];
   location: string;
   evidence: "documented" | "reported";
+  evidenceLevel?: "A" | "B" | "C";
+  coordinatePrecision?: "address" | "facility-approximate" | "historical-area-approximate";
   summary: string;
   relatedSiteId?: string;
   sourceLabel: string;
@@ -41,7 +43,7 @@ export type RadiologicalFollowUp = {
   completed: string;
   latestStatus: string;
   historicalComparison: string;
-  relatedSiteId: string;
+  relatedSiteId?: string;
   sourceLabel: string;
   sourceUrl: string;
 };
@@ -52,7 +54,7 @@ export type RadiologicalDocument = {
   agency: string;
   date: string;
   year: number;
-  kind: "survey" | "audit-review" | "cleanup-decision" | "worker-record" | "current-assessment";
+  kind: "survey" | "audit-review" | "cleanup-decision" | "worker-record" | "current-assessment" | "historical-testimony" | "court-record";
   geography: "Erie" | "Niagara" | "Erie and Niagara";
   status: "final" | "historical" | "ongoing";
   establishes: string;
@@ -360,9 +362,80 @@ export const radiologicalProducers: RadiologicalProducer[] = [
     county: "Niagara",
     location: "Niagara County; facility point not mapped",
     evidence: "reported",
-    summary: "A 1979 investigation reported that Friona Trucking distributed Union Carbide slag. Union Carbide disputed parts of that account, and WNY Atlas has not found evidence tying the company to every mapped property. It is listed as a research lead, not a confirmed source for a specific anomaly.",
-    sourceLabel: "Investigative Post summary of historical investigation records",
-    sourceUrl: "https://investigativepost.org/2017/02/09/paying-price-for-radioactive-hotspots-in-niagara/",
+    evidenceLevel: "C",
+    summary: "In interviews recorded by a private investigator in 1979, contractors and John Friona described Friona firms hauling and distributing Union Carbide slag. This is contemporaneous reported testimony, not an agency finding, and it does not tie the company to every mapped property.",
+    sourceLabel: "1979 private-investigator reports on slag sources and distribution",
+    sourceUrl: "https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf",
+  },
+  {
+    id: "union-carbide-newco-dump-testimony",
+    name: "Union Carbide / Newco dump account",
+    role: "storage",
+    county: "Niagara",
+    coordinates: [-78.98965269272462, 43.10158803773757],
+    location: "56th and Pine streets / later Newco-CECOS area; facility-scale approximate point",
+    evidence: "reported",
+    evidenceLevel: "C",
+    coordinatePrecision: "facility-approximate",
+    summary: "John Friona told a private investigator in June 1979 that a Union Carbide dump near 56th and Pine streets kept reportedly radioactive slag in a separate fenced area before Newco operated the property. The point identifies the broader historical waste complex, not a verified burial cell or boundary.",
+    relatedSiteId: "cecos-international",
+    sourceLabel: "1979 private-investigator reports on slag sources and distribution",
+    sourceUrl: "https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf",
+  },
+  {
+    id: "twin-fair-testimony",
+    name: "Former Twin Fair fill account",
+    role: "reported-fill-location",
+    county: "Niagara",
+    coordinates: [-79.0035, 43.1083],
+    location: "Former retail area between Packard and Porter roads, west of I-190; approximate historical area",
+    evidence: "reported",
+    evidenceLevel: "C",
+    coordinatePrecision: "historical-area-approximate",
+    summary: "Contractors interviewed in 1979 named the former Twin Fair parking area as a place where Union Carbide slag was reportedly used as fill. WNY Atlas has not found agency sampling that confirms the material or present conditions at this location.",
+    sourceLabel: "1979 private-investigator reports on slag sources and distribution",
+    sourceUrl: "https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf",
+  },
+  {
+    id: "pittsburgh-metallurgical-vanadium-testimony",
+    name: "Pittsburgh Metallurgical / Vanadium-area stockpile account",
+    role: "producer",
+    county: "Niagara",
+    coordinates: [-79.021394875, 43.124263433],
+    location: "Former Vanadium industrial complex near Witmer Road; facility-scale approximate point",
+    evidence: "reported",
+    evidenceLevel: "C",
+    coordinatePrecision: "facility-approximate",
+    summary: "A former employee interviewed in 1979 recalled slag from Pittsburgh Metallurgical and the old Vanadium plant and described reportedly radioactive stockpiles at a Lockport Road dump. The interview is a research lead; it does not identify a sampled stockpile footprint or establish current radiological conditions across the broader Vanadium cleanup site.",
+    relatedSiteId: "vanadium-corporation-of-america",
+    sourceLabel: "1979 private-investigator reports on slag sources and distribution",
+    sourceUrl: "https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf",
+  },
+  {
+    id: "michaels-pizzeria-testimony",
+    name: "Michael's Pizzeria fill account",
+    role: "reported-fill-location",
+    county: "Niagara",
+    coordinates: [-79.025244, 43.0948222],
+    location: "3011 Pine Avenue, Niagara Falls; address point for the named historical business",
+    evidence: "reported",
+    evidenceLevel: "C",
+    coordinatePrecision: "address",
+    summary: "A contractor interviewed in 1979 identified Michael's Pizzeria as a destination for reportedly inexpensive Union Carbide slag fill. The testimony does not establish the exact placement, quantity, radiological character, or current condition of material at the address.",
+    sourceLabel: "1979 private-investigator reports on slag sources and distribution",
+    sourceUrl: "https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf",
+  },
+  {
+    id: "kings-plaza-testimony",
+    name: "Former King's Plaza fill account",
+    role: "reported-fill-location",
+    county: "Niagara",
+    location: "Former Military Road plaza; exact parcel not mapped",
+    evidence: "reported",
+    evidenceLevel: "C",
+    summary: "A contractor interviewed in 1979 named the former King's Plaza parking area as a reported slag-fill destination. Because the reviewed record does not provide a parcel or survey coordinate and WNY Atlas has not independently verified the former boundary, this lead remains searchable but intentionally has no map pin.",
+    sourceLabel: "1979 private-investigator reports on slag sources and distribution",
+    sourceUrl: "https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf",
   },
 ];
 
@@ -424,6 +497,18 @@ export const latestRadiologicalFollowUps: RadiologicalFollowUp[] = [
     sourceLabel: epaNiagaraRemovalSource.label,
     sourceUrl: epaNiagaraRemovalSource.url,
   },
+  {
+    id: "military-road-4435-assessment",
+    name: "4435–4445 Military Road radiological fill area",
+    location: "4435–4445 Military Road, Town of Niagara",
+    county: "Niagara",
+    coordinates: [-79.0038966, 43.1273114],
+    completed: "2014–2017 assessment",
+    latestStatus: "A 2017 Phase II assessment filed with NYSDEC estimated about 500 tons of fill with slightly elevated radiation to roughly two feet deep, with the highest readings along Military Road, and recommended removal of impacted fill.",
+    historicalComparison: "The report also records that EPA did not confirm the 2014 radiological measurements during its initial follow-up. A later 2016 survey again characterized a radiological fill area. This pin reports the assessment record; it does not claim a source or a completed removal outcome.",
+    sourceLabel: "NYSDEC file: 2017 Phase II Environmental Site Assessment, 4435–4445 Military Road",
+    sourceUrl: "https://extapps.dec.ny.gov/data/DecDocs/C932174/Application.BCP.C932174.2017-07-01.Phase%202%20ESA%20-%20C%26S%20Engineers.pdf",
+  },
 ];
 
 export const currentAssessmentSources = [
@@ -446,6 +531,45 @@ export const currentAssessmentSources = [
 ];
 
 export const radiologicalDocuments: RadiologicalDocument[] = [
+  {
+    id: "probe-slag-interviews-1979",
+    title: "Private-investigator reports on slag sources and distribution",
+    agency: "Probe Services, Inc. for private counsel",
+    date: "May 10 and June 8, 1979",
+    year: 1979,
+    kind: "historical-testimony",
+    geography: "Niagara",
+    status: "historical",
+    establishes: "Records interviews in which contractors and former participants described slag hauling, disposal, and named fill destinations. These are investigator-reported recollections, not sworn testimony, sampling results, or an agency determination.",
+    mapConnection: "Supports the separately styled Evidence Level C research-lead markers; it does not support a haul-route line.",
+    url: "https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf",
+  },
+  {
+    id: "nf-boulevard-fingerprint-decision-2020",
+    title: "Niagara Falls Boulevard radiological-slag source decision",
+    agency: "New York State Supreme Court, Appellate Division, Third Department",
+    date: "July 2, 2020",
+    year: 2020,
+    kind: "court-record",
+    geography: "Niagara",
+    status: "final",
+    establishes: "Summarizes the administrative record finding that a 2008 fingerprinting study found former Union Carbide slag markedly different from material recovered at the Niagara Falls Boulevard and Holy Trinity sites.",
+    mapConnection: "Prevents the historical distribution leads from being presented as proof that Union Carbide supplied every mapped radioactive-slag site.",
+    url: "https://decisions.courts.state.ny.us/ad3/Decisions/2020/530766.pdf",
+  },
+  {
+    id: "military-road-phase-ii-2017",
+    title: "Phase II Environmental Site Assessment: 4435–4445 Military Road",
+    agency: "C&S Engineers for Niagara County; filed with NYSDEC",
+    date: "July 2017",
+    year: 2017,
+    kind: "survey",
+    geography: "Niagara",
+    status: "final",
+    establishes: "Documents the assessment methods, an estimated 500 tons of slightly elevated radiological fill, the limits of earlier EPA confirmation, and the recommendation to remove impacted fill.",
+    mapConnection: "Supports the newer documented assessment pin at 4435–4445 Military Road.",
+    url: "https://extapps.dec.ny.gov/data/DecDocs/C932174/Application.BCP.C932174.2017-07-01.Phase%202%20ESA%20-%20C%26S%20Engineers.pdf",
+  },
   {
     id: "doe-aerial-1979",
     title: "Summary Report: Aerial Radiological Survey, Niagara Falls Area",
