@@ -23,7 +23,11 @@ import { formerWaterwayRecords } from "@/data/former-waterways";
 import { getConnectionGroupsForSite } from "@/data/site-connections";
 import { getSiteStory } from "@/lib/site-story";
 import { getPublicSiteName } from "@/lib/site-name";
-import { getPfasEvidenceLabel } from "@/lib/pfas-evidence";
+import {
+  getPfasEvidenceLabel,
+  getPfasFindingLabel,
+  getPfasSearchText,
+} from "@/lib/pfas-evidence";
 import { hasDeepHistoryFeature } from "@/data/deep-history-features";
 
 type SitePageProps = {
@@ -100,6 +104,7 @@ export default async function SitePage({ params }: SitePageProps) {
   const namedChemicals = findChemicalsInText(
     [
       site.summary,
+      getPfasSearchText(site),
       ...story.background,
       ...story.documentedImpacts,
       ...story.cleanupAndControls,
@@ -252,6 +257,7 @@ export default async function SitePage({ params }: SitePageProps) {
           {site.id === "bethlehem-steel" && <a href="#worker-history">Workers</a>}
           {hasDeepHistory && <a href="#deep-history">People &amp; history</a>}
           {hasAerials && <a href="#aerials">Aerial history</a>}
+          {site.pfasCompounds?.length ? <a href="#pfas-compounds">PFAS compounds</a> : null}
           {story.timeline.length > 0 && <a href="#timeline">Timeline</a>}
           {story.documentedImpacts.length > 0 && <a href="#impacts">Impacts</a>}
           {story.cleanupAndControls.length > 0 && <a href="#cleanup">Cleanup</a>}
@@ -279,6 +285,32 @@ export default async function SitePage({ params }: SitePageProps) {
                       ? "Historical records and sampling information are being reviewed. This page does not present the property as a confirmed PFAS source."
                       : "PFAS activity, investigation, or detection is documented in the cited site record. That documentation does not by itself establish off-site exposure or a health effect in any individual."}
                   </p>
+                  {site.pfasCompounds?.length ? (
+                    <div className="pfas-compound-record" id="pfas-compounds">
+                      <h3>Compounds and evidence</h3>
+                      <div className="pfas-compound-list">
+                        {site.pfasCompounds.map((compound) => (
+                          <article key={`${compound.abbreviation}-${compound.finding}`}>
+                            <div>
+                              <strong>{compound.abbreviation}</strong>
+                              <span>{compound.name}</span>
+                            </div>
+                            <p className={`pfas-finding is-${compound.finding}`}>
+                              {getPfasFindingLabel(compound.finding)}
+                            </p>
+                            {compound.medium && <p><strong>Medium:</strong> {compound.medium}</p>}
+                            {compound.note && <p>{compound.note}</p>}
+                          </article>
+                        ))}
+                      </div>
+                      {site.pfasScopeNote && <p className="pfas-scope-note"><strong>Evidence limit:</strong> {site.pfasScopeNote}</p>}
+                      <p className="pfas-terminology-note">
+                        <strong>C8 and APFO:</strong> PFOA is often called C8. APFO is the
+                        ammonium salt of PFOA, but a PFOA environmental result does not
+                        identify APFO as the original product or prove where it came from.
+                      </p>
+                    </div>
+                  ) : null}
                 </div>
               )}
               {site.atomicLegacy && (

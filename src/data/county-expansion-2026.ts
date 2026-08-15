@@ -306,6 +306,29 @@ export const countyExpansion2026: AtlasSite[] = [
     category: "pfas",
     pfasStatus: "documented",
     pfasEvidence: ["detection", "investigation"],
+    pfasCompounds: [
+      {
+        name: "Perfluorooctanesulfonic acid",
+        abbreviation: "PFOS",
+        finding: "detected",
+        medium: "soil and groundwater",
+      },
+      {
+        name: "Perfluorooctanoic acid",
+        abbreviation: "PFOA / C8",
+        finding: "detected",
+        medium: "soil and groundwater",
+      },
+      {
+        name: "Additional targeted PFAS",
+        abbreviation: "PFAS panel",
+        finding: "detected",
+        medium: "surface soil",
+        note: "DEC reported multiple PFAS compounds and total PFAS, but the decision summary names PFOA and PFOS individually.",
+      },
+    ],
+    pfasScopeNote:
+      "The detections do not establish PFAS production or identify APFO as the original material released.",
     summary: "Completed brownfield cleanup where PFOS, PFOA, petroleum, PAHs, and arsenic were documented and controls remain under review.",
     evidenceStatus: "well-documented",
     coordinates: [-78.441755556, 42.103519444],

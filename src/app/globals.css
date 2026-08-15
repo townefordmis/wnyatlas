@@ -2195,6 +2195,72 @@ footer {
   margin-bottom: 0;
 }
 
+.pfas-compound-record {
+  margin-top: 1.2rem;
+  scroll-margin-top: 7rem;
+}
+
+.pfas-compound-record h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+}
+
+.pfas-compound-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 0.65rem;
+}
+
+.pfas-compound-list article {
+  padding: 0.85rem;
+  border: 1px solid rgba(194, 24, 91, 0.24);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.pfas-compound-list article > div {
+  display: grid;
+  gap: 0.08rem;
+}
+
+.pfas-compound-list article > div > strong {
+  color: #8f1245;
+  font-size: 1rem;
+}
+
+.pfas-compound-list article > div > span,
+.pfas-compound-list article p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.pfas-compound-list article p {
+  margin: 0.5rem 0 0;
+}
+
+.pfas-finding {
+  width: fit-content;
+  padding: 0.18rem 0.42rem;
+  border-radius: 999px;
+  background: rgba(194, 24, 91, 0.1);
+  color: #701037;
+  font-weight: 750;
+}
+
+.pfas-finding.is-sampling-planned,
+.pfas-finding.is-analyzed-not-detected,
+.pfas-finding.is-compound-not-specified {
+  background: rgba(38, 57, 67, 0.1);
+  color: #263943;
+}
+
+.pfas-scope-note,
+.pfas-terminology-note {
+  margin-top: 0.9rem !important;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(194, 24, 91, 0.2);
+  font-size: 0.86rem;
+}
+
 .story-body .pfas-health-context {
   padding: clamp(1.25rem, 2.5vw, 2rem);
 }

@@ -8,7 +8,11 @@ import type { Map as MapLibreMap, Marker } from "maplibre-gl";
 
 import { featuredSites } from "@/data/featured-sites";
 import { getPublicSiteName } from "@/lib/site-name";
-import { getPfasEvidenceLabel } from "@/lib/pfas-evidence";
+import {
+  getPfasCompoundSummary,
+  getPfasEvidenceLabel,
+  getPfasSearchText,
+} from "@/lib/pfas-evidence";
 import type { AtlasSite } from "@/types/site";
 
 const regionCenter: [number, number] = [-78.84, 42.8];
@@ -70,7 +74,7 @@ export function AtlasMap() {
     return featuredSites.filter((site) => {
       const matchesQuery =
         !normalizedQuery ||
-        [site.name, site.municipality, site.county, site.summary].some((value) =>
+        [site.name, site.municipality, site.county, site.summary, getPfasSearchText(site)].some((value) =>
           value.toLowerCase().includes(normalizedQuery),
         );
       const matchesCounty = county === "all" || site.county === county;
@@ -415,6 +419,9 @@ export function AtlasMap() {
                   {displayedSite.pfasStatus === "documented"
                     ? `Documented basis: ${getPfasEvidenceLabel(displayedSite) ?? "site record"}`
                     : `Under review: ${getPfasEvidenceLabel(displayedSite) ?? "records and sampling"}; no PFAS source conclusion is presented`}
+                  {getPfasCompoundSummary(displayedSite) && (
+                    <> · <strong>Named record:</strong> {getPfasCompoundSummary(displayedSite)}</>
+                  )}
                 </p>
               )}
               {displayedSite.atomicLegacy && (

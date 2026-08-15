@@ -9,6 +9,7 @@ import { chemicalProfiles } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import { healthSearchCounties, healthSearchTopics } from "@/data/health-search-catalog";
 import { getPublicSiteName } from "@/lib/site-name";
+import { getPfasSearchText } from "@/lib/pfas-evidence";
 
 const MAX_RESULTS = 6;
 
@@ -39,7 +40,7 @@ export function SiteHeader() {
 
     const placeResults = featuredSites
       .filter((site) =>
-        [site.name, site.municipality, site.county, site.summary].some((value) =>
+        [site.name, site.municipality, site.county, site.summary, getPfasSearchText(site)].some((value) =>
           value.toLowerCase().includes(normalizedQuery),
         ),
       )

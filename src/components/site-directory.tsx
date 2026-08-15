@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { featuredSites } from "@/data/featured-sites";
+import { getPfasSearchText } from "@/lib/pfas-evidence";
 import { getPublicSiteName } from "@/lib/site-name";
 
 const INITIAL_SITE_COUNT = 8;
@@ -34,6 +35,7 @@ export function SiteDirectory() {
         site.category,
         categoryLabels[site.category],
         site.summary,
+        getPfasSearchText(site),
       ].some((value) => value.toLowerCase().includes(normalizedQuery));
     const matchesCounty = county === "all" || site.county === county;
     const matchesCategory =

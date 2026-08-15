@@ -44,13 +44,14 @@ export const chemicalProfiles: ChemicalProfile[] = [
   {
     id: "pfas",
     name: "PFAS",
-    aliases: ["PFOA", "PFOS", "PFNA", "PFHxS", "C8", "AFFF"],
+    aliases: ["PFOA", "C8", "APFO", "PFOS", "PFNA", "PFDA", "PFHxS", "PFBS", "AFFF"],
     family: "Per- and polyfluoroalkyl substances",
     overview:
       "PFAS are a large family of manufactured chemicals used in firefighting foams, fluoropolymer production, coatings, plating, textiles, paper, and many other applications.",
     regionalHistory: [
       "Western New York records connect PFAS investigation to firefighting-foam use at aviation facilities, industrial handling and manufacturing, landfills, and wastewater pathways.",
       "The Atlas separates confirmed PFAS use or detection from facilities still being researched; an industrial category alone is not evidence that PFAS were released there.",
+      "PFOA is often called C8. APFO is the ammonium salt of PFOA, but an environmental PFOA result cannot by itself identify APFO as the original material used or released.",
     ],
     persistence:
       "Many PFAS break down very slowly. Some move readily with water, while others accumulate in sediment, wildlife, fish, or the human body.",
@@ -76,6 +77,16 @@ export const chemicalProfiles: ChemicalProfile[] = [
       "PFOS",
       "PFNA",
       "PFHxS",
+      "PFDA",
+      "PFBS",
+      "PFBA",
+      "PFPeA",
+      "PFHxA",
+      "PFHpA",
+      "PFHpS",
+      "APFO",
+      "ammonium perfluorooctanoate",
+      "C8",
       "perfluoroalkyl",
       "polyfluoroalkyl",
       "aqueous film-forming foam",
@@ -91,6 +102,16 @@ export const chemicalProfiles: ChemicalProfile[] = [
         title: "Current Understanding of PFAS Health and Environmental Risks",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/pfas/our-current-understanding-human-health-and-environmental-risks-pfas",
+      },
+      {
+        title: "PFOA Health Effects Support Document (includes APFO terminology)",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/sites/default/files/2016-05/documents/pfoa_hesd_final_508.pdf",
+      },
+      {
+        title: "PFAS Analytical Methods and Their Limits",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/water-research/pfas-analytical-methods-development-and-sampling-research",
       },
       {
         title: "PFAS and Public Drinking Water",

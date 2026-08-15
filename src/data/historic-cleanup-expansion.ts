@@ -1612,6 +1612,22 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     pfasStatus: "documented",
     pfasEvidence: ["detection", "investigation"],
+    pfasCompounds: [
+      {
+        name: "Perfluorooctanoic acid",
+        abbreviation: "PFOA / C8",
+        finding: "detected",
+        medium: "groundwater",
+      },
+      {
+        name: "Perfluorooctanesulfonic acid",
+        abbreviation: "PFOS",
+        finding: "detected",
+        medium: "groundwater",
+      },
+    ],
+    pfasScopeNote:
+      "These compounds were identified as groundwater contaminants of concern. The record does not establish PFAS production or APFO use at the landfill.",
     summary:
       "Inactive capped landfill that operated from 1972 to 1975 and reportedly received industrial, commercial, medical and household refuse, including TCE-laced sawdust. DEC detected PFOA, PFOS and 1,4-dioxane in groundwater and lists the property as a potential site under characterization.",
     evidenceStatus: "research-in-progress",
@@ -1851,6 +1867,17 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     pfasStatus: "documented",
     pfasEvidence: ["detection", "investigation"],
+    pfasCompounds: [
+      {
+        name: "Perfluorodecanoic acid",
+        abbreviation: "PFDA",
+        finding: "detected",
+        medium: "groundwater",
+        note: "DEC reported PFDA up to 41 ppt in the remedial-investigation summary.",
+      },
+    ],
+    pfasScopeNote:
+      "PFDA, not generic PFAS alone, is the compound identified as a contaminant of concern. The record does not establish that Chautauqua Hardware was the sole source.",
     summary:
       "Former woolen mill and hardware-manufacturing complex beside the Chadakoin River where electroplating, die-casting, and metal finishing left metals, PCBs, chlorinated solvents, and vapor concerns. DEC determined that the site posed a significant threat and selected a multi-part remedy.",
     evidenceStatus: "well-documented",
@@ -1868,7 +1895,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
         { period: "Remedial construction", event: "Cleanup and redevelopment work began implementing the selected restricted-residential remedy while off-site evaluation remained a separate state record." },
       ],
       documentedImpacts: [
-        "DEC identified metals, PCBs, PAHs, TCE and breakdown products, PFAS, affected groundwater, and soil-vapor intrusion concerns.",
+        "DEC identified metals, PCBs, PAHs, TCE and breakdown products, PFDA in groundwater, and soil-vapor intrusion concerns.",
         "Investigation included riverbank soil and the adjacent Chadakoin River; the cleanup boundary should not be treated as a complete off-site plume boundary.",
       ],
       cleanupAndControls: [
@@ -1906,6 +1933,21 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     pfasStatus: "documented",
     pfasEvidence: ["detection", "investigation"],
+    pfasCompounds: [
+      { name: "Perfluorobutanoic acid", abbreviation: "PFBA", finding: "detected", medium: "groundwater" },
+      { name: "Perfluoropentanoic acid", abbreviation: "PFPeA", finding: "detected", medium: "groundwater" },
+      { name: "Perfluorobutanesulfonic acid", abbreviation: "PFBS", finding: "detected", medium: "groundwater" },
+      { name: "Perfluorohexanoic acid", abbreviation: "PFHxA", finding: "detected", medium: "groundwater" },
+      { name: "Perfluoroheptanoic acid", abbreviation: "PFHpA", finding: "detected", medium: "groundwater" },
+      { name: "Perfluorohexanesulfonic acid", abbreviation: "PFHxS", finding: "detected", medium: "groundwater" },
+      { name: "Perfluorooctanoic acid", abbreviation: "PFOA / C8", finding: "detected", medium: "groundwater" },
+      { name: "Perfluoroheptanesulfonic acid", abbreviation: "PFHpS", finding: "detected", medium: "groundwater" },
+      { name: "Perfluorononanoic acid", abbreviation: "PFNA", finding: "detected", medium: "groundwater" },
+      { name: "Perfluorooctanesulfonic acid", abbreviation: "PFOS", finding: "detected", medium: "groundwater" },
+      { name: "Perfluorodecanoic acid", abbreviation: "PFDA", finding: "detected", medium: "groundwater" },
+    ],
+    pfasScopeNote:
+      "The listed compounds occurred in particular wells and sampling rounds; they were not uniformly present across the property. The record does not identify APFO as the original material or attribute every PFAS to one former tenant.",
     summary:
       "Downtown property historically used by a photo facility, dry cleaner, taxi company, automotive repair shop, and parking garage. Deep chlorinated-solvent contamination required major excavation, groundwater treatment, vapor mitigation, and continuing controls; recent site-well monitoring also documented benzene, PFOA, and PFOS above applicable groundwater values.",
     evidenceStatus: "well-documented",
@@ -2370,6 +2412,19 @@ export const historicCleanupExpansion: AtlasSite[] = [
     municipality: "Niagara Falls",
     county: "Niagara",
     category: "cleanup",
+    pfasStatus: "documented",
+    pfasEvidence: ["detection", "investigation"],
+    pfasCompounds: [
+      {
+        name: "Per- and polyfluoroalkyl substances",
+        abbreviation: "PFAS - exact analytes pending",
+        finding: "compound-not-specified",
+        medium: "on-site and off-site monitoring wells",
+        note: "The 2022 permit record reports low-level detections slightly above guidance values but the reviewed summary does not identify each compound.",
+      },
+    ],
+    pfasScopeNote:
+      "This is a documented monitoring-well finding, not evidence that Hooker manufactured PFAS or used APFO. Compound-level laboratory results remain a research item.",
     summary:
       "Large Buffalo Avenue chemical-manufacturing property where historic operations released chlorinated organics, mercury, dioxin-related compounds, and other materials to soil and groundwater. Caps, groundwater extraction and treatment, non-aqueous-phase-liquid recovery, monitoring, and industrial-use restrictions remain part of the corrective-action program.",
     evidenceStatus: "well-documented",

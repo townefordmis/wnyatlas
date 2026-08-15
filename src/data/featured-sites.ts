@@ -976,6 +976,16 @@ const featuredSiteRecords: AtlasSite[] = [
     category: "cleanup",
     pfasStatus: "under-review",
     pfasEvidence: ["investigation"],
+    pfasCompounds: [
+      {
+        name: "Per- and polyfluoroalkyl substances",
+        abbreviation: "PFAS panel",
+        finding: "sampling-planned",
+        note: "The operation-and-maintenance record requires PFAS analysis when unexpected material is encountered; it is not a reported detection.",
+      },
+    ],
+    pfasScopeNote:
+      "No individual PFAS compound or confirmed PFAS source has been established in the reviewed Pfohl Brothers record.",
     summary:
       "Former municipal and industrial landfill bordering Transit Road where drums and contaminated material were removed, wastes were consolidated beneath engineered caps, and long-term monitoring continues.",
     evidenceStatus: "well-documented",
@@ -1075,6 +1085,28 @@ const featuredSiteRecords: AtlasSite[] = [
     category: "pfas",
     pfasStatus: "documented",
     pfasEvidence: ["use", "detection", "investigation"],
+    pfasCompounds: [
+      {
+        name: "Aqueous film-forming foam",
+        abbreviation: "AFFF",
+        finding: "documented-use",
+        note: "Historical training, testing, emergency response, and release areas were evaluated by the Air Force.",
+      },
+      {
+        name: "Perfluorooctanoic acid",
+        abbreviation: "PFOA / C8",
+        finding: "detected",
+        medium: "soil and groundwater investigation",
+      },
+      {
+        name: "Perfluorooctanesulfonic acid",
+        abbreviation: "PFOS",
+        finding: "detected",
+        medium: "soil and groundwater investigation",
+      },
+    ],
+    pfasScopeNote:
+      "Later remedial-investigation work uses a broader PFAS analyte list. The page names only compounds supported as detections by the reviewed results; APFO use has not been established.",
     summary:
       "Federal and state investigations of PFAS associated with historical use and releases of aqueous film-forming firefighting foam at the air station.",
     evidenceStatus: "research-in-progress",
@@ -1100,6 +1132,37 @@ const featuredSiteRecords: AtlasSite[] = [
     category: "pfas",
     pfasStatus: "documented",
     pfasEvidence: ["use", "detection", "investigation"],
+    pfasCompounds: [
+      {
+        name: "Aqueous film-forming foam",
+        abbreviation: "AFFF",
+        finding: "documented-use",
+        note: "Firefighting-foam use was reported at the former athletic or training area; DEC continues source investigation.",
+      },
+      {
+        name: "Perfluorononanoic acid",
+        abbreviation: "PFNA",
+        finding: "detected",
+        medium: "public-water wells and environmental media",
+        note: "PFNA is the principal compound driving the Mayville investigation.",
+      },
+      {
+        name: "Perfluorooctanoic acid",
+        abbreviation: "PFOA / C8",
+        finding: "detected",
+        medium: "village source water",
+        note: "Reported at lower concentrations than PFNA in the cited village sampling.",
+      },
+      {
+        name: "Perfluorooctanesulfonic acid",
+        abbreviation: "PFOS",
+        finding: "analyzed-not-detected",
+        medium: "village public-water wells",
+        note: "This statement is limited to the cited village-well sampling and does not describe every environmental sample.",
+      },
+    ],
+    pfasScopeNote:
+      "Mayville samples have been analyzed for broader PFAS panels, but the investigation is principally a PFNA record. APFO has not been identified as a site-specific material.",
     summary:
       "Ongoing investigation of PFNA detected in the village water system and in environmental media near a former firefighting-training area; replacement supply and treatment measures were implemented.",
     evidenceStatus: "research-in-progress",
@@ -1125,6 +1188,24 @@ const featuredSiteRecords: AtlasSite[] = [
     category: "pfas",
     pfasStatus: "documented",
     pfasEvidence: ["detection", "investigation"],
+    pfasCompounds: [
+      {
+        name: "Perfluorooctanoic acid",
+        abbreviation: "PFOA / C8",
+        finding: "detected",
+        medium: "groundwater",
+        note: "DEC considers the low-level groundwater finding likely attributable to an off-site source.",
+      },
+      {
+        name: "Perfluorooctanesulfonic acid",
+        abbreviation: "PFOS",
+        finding: "detected",
+        medium: "groundwater",
+        note: "DEC considers the low-level groundwater finding likely attributable to an off-site source.",
+      },
+    ],
+    pfasScopeNote:
+      "Soil did not exceed the applicable PFAS criteria. A groundwater detection does not establish that Marine Drive was the source.",
     summary:
       "Brownfield investigation at 90 Erie Street documented PFAS impacts in groundwater alongside contaminants associated with historic fill; remediation planning remains part of the site record.",
     evidenceStatus: "research-in-progress",
@@ -1765,6 +1846,17 @@ const featuredSiteRecords: AtlasSite[] = [
     category: "cleanup",
     pfasStatus: "under-review",
     pfasEvidence: ["investigation"],
+    pfasCompounds: [
+      {
+        name: "NYSDEC target-analyte suite",
+        abbreviation: "21-compound PFAS panel",
+        finding: "sampling-planned",
+        medium: "groundwater",
+        note: "The work plan and 2024 addendum require PFAS sampling; the plan is not a laboratory result.",
+      },
+    ],
+    pfasScopeNote:
+      "No compound-specific detection is presented until laboratory results and DEC interpretation are available. APFO and PFOA use are not inferred from the former manufacturing operations.",
     summary:
       "Former luxury-automobile manufacturing complex around Great Arrow Avenue and Elmwood Avenue. State records identify petroleum impacts, industrial fill, metals, PCBs, solvents, underground tanks, and later hazardous-material storage across separately managed brownfield parcels; investigation at 157 Great Arrow was updated to include PFAS sampling.",
     evidenceStatus: "research-in-progress",

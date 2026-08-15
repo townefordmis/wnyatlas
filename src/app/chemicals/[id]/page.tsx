@@ -11,6 +11,7 @@ import {
 } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import { getSiteStory } from "@/lib/site-story";
+import { getPfasSearchText } from "@/lib/pfas-evidence";
 import { getPublicSiteName } from "@/lib/site-name";
 
 type ChemicalPageProps = {
@@ -46,6 +47,7 @@ export default async function ChemicalPage({ params }: ChemicalPageProps) {
     const story = getSiteStory(site);
     const recordText = [
       site.summary,
+      getPfasSearchText(site),
       ...story.background,
       ...story.documentedImpacts,
       ...story.cleanupAndControls,

@@ -32,6 +32,21 @@ export type AtlasStory = {
   researchNotes: string[];
 };
 
+export type PfasFinding =
+  | "detected"
+  | "documented-use"
+  | "analyzed-not-detected"
+  | "sampling-planned"
+  | "compound-not-specified";
+
+export type PfasCompoundRecord = {
+  name: string;
+  abbreviation: string;
+  finding: PfasFinding;
+  medium?: string;
+  note?: string;
+};
+
 export type AtlasSite = {
   id: string;
   name: string;
@@ -48,6 +63,8 @@ export type AtlasSite = {
   category: "industry" | "cleanup" | "radiological" | "waterway" | "pfas";
   pfasStatus?: "documented" | "under-review";
   pfasEvidence?: Array<"production" | "use" | "detection" | "investigation">;
+  pfasCompounds?: PfasCompoundRecord[];
+  pfasScopeNote?: string;
   summary: string;
   evidenceStatus: EvidenceStatus;
   coordinates: [longitude: number, latitude: number];
