@@ -444,22 +444,22 @@ const histories: Record<string, AerialHistory> = {
   },
   "hooker-102nd-street-landfill": {
     eyebrow: "Historical aerial evidence · fourth release",
-    title: "Industrial disposal beside the Niagara River and the contained site today",
+    title: "Two adjoining dumps changed one Niagara River shoreline",
     introduction:
-      "The earliest verified public frame covering the 102nd Street Landfill is a June 1958 USGS photograph, acquired while both company-owned portions were operating. Four later New York State orthophotos use one fixed geographic window to show the river-edge property during remedy construction, after construction completion, and under long-term management. A 1938 Niagara County archive collection exists, but no exact reproducible frame was available for this release.",
+      "The earliest verified public frame covering the 102nd Street Landfill and neighboring Griffon Park is a June 1958 USGS photograph. DEC records describe Griffon as a separate city-owned disposal area: wetland before 1938, municipal refuse fill from 1949 to about 1953, and intermittent tree burning and disposal of municipal-incinerator residue and other noncombustibles into the early 1970s. Immediately east, Hooker and Olin operated the separately owned 22.1-acre industrial landfill into 1970-1971. Four later New York State orthophotos use one fixed geographic window to show both river-edge landscapes during remedy construction, after construction completion, and under long-term management.",
     interpretation:
-      "The bright yellow oval is an approximate location guide centered on the mapped site; it is not a surveyed property or waste boundary. The 1958 regional frame is not orthorectified or pixel-aligned with the later views. EPA records - not visible tone, vegetation, bare ground, or shoreline appearance - document operation of the two landfill portions from the 1940s into the early 1970s, the disposed materials, contamination, the 1972 cap and bulkhead, and the later slurry wall, cap, collection systems, monitoring, and deletion from the National Priorities List. Aerial photographs cannot reveal buried waste, groundwater conditions, DNAPL, current exposure, or remedy performance.",
+      "The bright yellow oval is an approximate guide to the 102nd Street property; Griffon Park lies immediately west between the industrial landfill and the Little Niagara River. The 1958 regional frame is not orthorectified or pixel-aligned with the later views. Similar tone or a visually continuous disturbed shoreline does not establish one common excavation, operator, or waste mass. The reviewed EPA record instead describes adjoining but separately operated disposal areas, with different ownership and closing dates. EPA sampling and property records - not aerial appearance - define where 102nd Street contamination, groundwater, and sediment were investigated. The photographs cannot reveal buried waste, the contents of Griffon Park fill, groundwater conditions, DNAPL, present exposure, or remedy performance.",
     panels: [
       {
         period: "1958",
-        heading: "Both landfill portions operating",
+        heading: "Municipal refuse filling had ended; intermittent city disposal continued",
         imageUrl: "/historical/hyde-park-1958-usgs.jpg",
         sourceUrl:
           "https://ims.cr.usgs.gov/browse/aircraft/phoenix/aerial/7KRD/7KRD05031/7KRD05031_077.jpg",
         sourceLabel: "USGS frame ARA550340100933",
         alt: "USGS aerial photograph acquired June 3, 1958, covering eastern Niagara Falls and the 102nd Street Landfill area beside the Niagara River",
         note:
-          "USGS acquired this 1:60,000-scale frame on June 3, 1958. EPA records say the larger landfill portion operated from 1943 to 1971 and the smaller portion from 1948 to about 1970, placing this photograph within both operating periods. The image provides landscape context; it does not identify individual wastes or disposal events.",
+          "USGS acquired this 1:60,000-scale frame on June 3, 1958. DEC says routine city refuse disposal at Griffon had ended about five years earlier, although intermittent burning and incinerator-residue disposal continued; the adjoining Hooker and Olin areas were both operating. The altered shoreline can appear continuous at this scale, but the photograph does not establish that these separately recorded disposal areas were one pit or shared the same wastes.",
         highlight: { viewBox: "0 0 800 755", cx: 613, cy: 578, rx: 40, ry: 20 },
       },
       {
@@ -490,14 +490,14 @@ const histories: Record<string, AerialHistory> = {
       },
       {
         period: "2021",
-        heading: "Long-term monitoring and five-year review",
+        heading: "Long-term monitoring between federal reviews",
         imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2021/MapServer/export?${hooker102Bounds}`,
         sourceUrl:
           "https://orthos.its.ny.gov/arcgis/rest/services/wms/2021/MapServer",
         sourceLabel: "2021 NYS orthophoto",
         alt: "New York State 2021 orthophoto showing the managed 102nd Street Landfill and Niagara River shoreline",
         note:
-          "EPA completed the site's sixth five-year review in 2021. The landfill had been deleted from the National Priorities List in 2004, but engineered controls, pumping, monitoring, maintenance, and land-use restrictions continued.",
+          "EPA completed the site's fifth five-year review in 2021; the sixth followed in 2026. The landfill had been deleted from the National Priorities List in 2004, but engineered controls, pumping, monitoring, maintenance, and land-use restrictions continued.",
         matched: true,
         highlight: { viewBox: "0 0 1200 1200", cx: 622, cy: 600, rx: 128, ry: 72 },
       },
@@ -527,6 +527,18 @@ const histories: Record<string, AerialHistory> = {
       {
         label: "EPA 1995 Record of Decision amendment",
         url: "https://semspub.epa.gov/work/02/67467.pdf",
+      },
+      {
+        label: "EPA 1990 decision record describing Griffon Park and 102nd Street",
+        url: "https://semspub.epa.gov/src/document/02/67460",
+      },
+      {
+        label: "DEC 2023 Griffon Park investigation and 2022 sampling",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932081/Report.HW.932081.2023-03-01.ILI_Griffon%20Park%20Summary%20Report.pdf",
+      },
+      {
+        label: "DEC July 2026 Griffon Park seep sampling memo",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932081/Report.HW.932081.2026-07-29.GriffonPark_SamplingSummary_Memo.pdf",
       },
       {
         label: "New York State Archives 1938 Niagara County aerial collection",

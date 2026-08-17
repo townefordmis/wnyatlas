@@ -2235,6 +2235,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former industrial landfill where Occidental/Hooker and Olin deposited at least 159,000 tons of liquid and solid chemical waste. The remedy consolidated waste beneath a lined cap, added a slurry wall and recovery systems, and requires long-term groundwater and NAPL monitoring.",
     evidenceStatus: "well-documented",
     coordinates: [-78.951, 43.083],
+    newsEvents: [
+      {
+        date: "August 8, 1993",
+        headline: "State officials warn that 102nd Street chemicals are leaking into the Niagara River",
+        summary: "The archived report records the pre-remedy river pathway while agencies and the responsible companies were still developing the containment system. It is historical evidence, not a description of post-construction conditions.",
+        publisher: "The Buffalo News archive",
+        url: "https://buffalonews.com/news/article_e67b298f-663e-5d9f-92d5-283ed9fac387.html",
+        reach: "Regional",
+      },
+      {
+        date: "May 28, 2026",
+        headline: "EPA's sixth review finds the remedy protective while identifying monitoring watch items",
+        summary: "EPA retained the conclusion that site-related contamination was not migrating toward the river, documented continuing leachate and NAPL recovery, and suggested follow-up for one hydraulic well pair and 1,4-dioxane monitoring.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://semspub.epa.gov/src/document/02/765926",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Hooker / 102nd Street Superfund Site Profile",
@@ -2245,6 +2263,57 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "102nd Street Long-Term Cleanup Systems",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/2fd830188d5d707c8525725800716b7d.html",
+      },
+      {
+        title: "Sixth Five-Year Review — Hooker 102nd Street Landfill",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://semspub.epa.gov/src/document/02/765926",
+      },
+    ],
+  },
+  {
+    id: "griffon-park-landfill",
+    name: "Griffon Park Former Municipal Landfill",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary:
+      "A city park and boat launch built over a former municipal disposal area beside the Little Niagara River and immediately west of the 102nd Street chemical landfill. DEC investigated groundwater and the recurring orange seep in 2022 and again in June 2026.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.951384, 43.074783],
+    newsEvents: [
+      {
+        date: "May 2, 2024",
+        headline: "Orange staining at the boat ramp renews public concern",
+        summary: "WKBW documented the visible seep and DEC's conclusion that elevated iron caused the staining. The report preserves what officials said at the time; the underlying state investigation records provide the stronger technical evidence.",
+        publisher: "WKBW 7 News",
+        url: "https://www.wkbw.com/news/local-news/niagara-orleans/nysdec-says-no-cause-for-concern-after-orange-substance-found-at-boat-ramp-outside-love-canal-community",
+        reach: "Regional",
+      },
+      {
+        date: "June-July 2026",
+        headline: "Renewed complaints prompt sampling and release of a detailed DEC memo",
+        summary: "After residents again documented orange material around the launch, DEC sampled seep material and a nearby monitoring well. Its July 29 memo attributed the staining to iron-rich groundwater and bacteria while reporting the individual detections and noting that laboratory validation was not yet complete.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932081/Report.HW.932081.2026-07-29.GriffonPark_SamplingSummary_Memo.pdf",
+        reach: "Regional",
+      },
+    ],
+    sources: [
+      {
+        title: "Griffon Park Inactive Landfill Initiative Summary Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932081/Report.HW.932081.2023-03-01.ILI_Griffon%20Park%20Summary%20Report.pdf",
+      },
+      {
+        title: "Griffon Park Boat Launch Seep Sampling Summary Memo",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932081/Report.HW.932081.2026-07-29.GriffonPark_SamplingSummary_Memo.pdf",
+      },
+      {
+        title: "Griffon Park DEC Document Repository",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932081/",
       },
     ],
   },
