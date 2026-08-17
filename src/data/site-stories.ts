@@ -1130,7 +1130,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "lehigh-valley-railroad-derailment": {
-    lastReviewed: "August 12, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "In December 1970, a Lehigh Valley Railroad train derailed at the Gulf Road crossing in Le Roy. Two tank cars ruptured, releasing approximately 30,000 gallons of trichloroethylene, or TCE, into the ground; about one ton of cyanide crystals was also released.",
       "The cyanide was collected and neutralizing material was spread, but most of the TCE could not be recovered. Odors were reported within days, and the solvent entered bedrock groundwater, eventually producing a plume extending roughly four miles through portions of Genesee, Livingston, and Monroe counties.",
@@ -1180,6 +1180,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Add the train consist, locomotive, ownership, emergency-response, and contemporary newspaper chronology.",
       "Map the spill zone, groundwater plume, public-water service area, Mud Creek remedy, and vapor-mitigation properties at appropriate privacy-preserving scales.",
       "Track implementation milestones under EPA's 2023 Record of Decision.",
+      "Link contemporary derailment photographs and newspaper pages unless an archive explicitly permits republication; the existing Library of Congress train image is company context, not the wreck scene.",
     ],
   },
   "chemical-leaman-tank-lines": {
@@ -3078,14 +3079,15 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "polymer-applications": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Polymer Applications manufactured phenolic resins and rubber products at 3445 River Road. A major 1988 fire left an abandoned complex containing drums, tanks, laboratory chemicals, damaged process equipment, and contaminated environmental media.",
-      "EPA removal work addressed immediate hazards, while New York's hazardous-waste program managed longer-term investigation and remediation. The site's industrial chemicals and fire history make careful separation of emergency removal and final remedy important.",
+      "Polymer Applications manufactured phenolic resins and rubber products at 3445 River Road. Process wastes and spills had already affected a lagoon, tank areas, soil, and groundwater when an explosion and fire severely damaged the plant on July 3–4, 1988.",
+      "Contemporary accounts describe flames reaching roughly 100 feet, firefighters withdrawing because of additional explosion danger, and approximately 300 residents evacuating or sheltering nearby. DEC later estimated that about 70,000 gallons of a phenol-and-solvent mixture were released during the emergency.",
+      "The extinguished fire left an abandoned complex containing drums, tanks, laboratory chemicals, damaged process equipment, contaminated soil, and groundwater. EPA removal work addressed immediate hazards, while New York's hazardous-waste program managed the longer investigation, containment, treatment, and land-use controls.",
     ],
     timeline: [
       { period: "Manufacturing era", event: "The plant produced phenolic-resin and rubber products using varied industrial chemicals." },
-      { period: "1988", event: "A fire damaged the facility and left chemicals, drums, tanks, and debris requiring emergency response." },
+      { period: "July 3–4, 1988", event: "An explosion and fire destroyed much of the process and tank-farm area, caused a major chemical release, and prompted evacuation and sheltering in nearby communities." },
       { period: "Federal removal", event: "EPA stabilized and removed immediate hazardous materials from the abandoned plant." },
       { period: "State remediation", event: "DEC continued site investigation, cleanup, and long-term management." },
     ],
@@ -3093,6 +3095,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Fire-damaged drums, tanks, process chemicals, and laboratory materials created direct hazards.",
       "Industrial contaminants affected building materials, soil, and groundwater.",
       "The River Road setting required attention to migration toward nearby surface water and neighboring industrial properties.",
+      "Evacuation and the documented release establish an emergency, but they do not establish any individual's dose or later medical causation.",
     ],
     cleanupAndControls: [
       "Emergency removal stabilized containers and removed accessible hazardous chemicals and debris.",
@@ -3105,6 +3108,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Add exact removal quantities and the latest protectiveness determination from DEC and EPA records.",
       "Distinguish contamination attributable to Polymer Applications from the wider southwestern Tonawanda groundwater study.",
+      "Seek licensed or permission-cleared fire photographs; link copyrighted television and newspaper coverage rather than reproducing it.",
     ],
   },
   "3m-o-cel-o-tonawanda": {
@@ -3480,7 +3484,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "union-road-gardenville-yard": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "The Union Road site—remembered locally as the Losson Road tar pit—was part of the former Gardenville railroad classification and maintenance yard. A rail spur extended into an eastern wetland depression that was used for railyard-waste disposal.",
       "Erie County investigators documented an approximately 80-by-140-foot area of tar-like waste and 56 abandoned drums in 1982; a later investigation reported 81 drums. The selected remedy did not excavate every waste deposit. It stabilized the tar-pit material in place, moved other impacted material into a containment cell, installed a bentonite slurry wall and cap, and established long-term groundwater control and monitoring.",
@@ -3508,6 +3512,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Locate the final construction report or drum-disposition log that could establish how the individually documented drums were handled.",
       "Add groundwater trend conclusions and any cap repairs from post-2024 reviews.",
       "Map the disposal spur and capped footprint separately from the larger former yard.",
+      "Use railroad-yard aerials to show how the disposal spur reached the wetland depression; do not present an unlabeled tar-pit photograph as proof of a specific drum count.",
     ],
   },
   "hooker-hyde-park-landfill": {
@@ -4293,7 +4298,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "jonnies-porta-signs": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "DEC records identify this 0.58-acre property at 3734 South Park Avenue as a former gasoline filling station. The property entered the Brownfield Cleanup Program before redevelopment for commercial use.",
       "Investigation documented petroleum contamination in soil and groundwater and elevated metals in portions of historic fill. Several underground tanks and other former service-station structures remained when cleanup began.",
@@ -4322,6 +4327,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "The school relationship is proximity only and must remain visually and textually separate from on-campus or adjacent cleanup relationships.",
       "DEC boundaries are approximate; the displayed distance is a GIS screen rather than a parcel survey.",
+      "Pair the former service-station layout with the current commercial parcel and explain that a Certificate of Completion still carries commercial-use controls.",
     ],
   },
   "tract-ii-highland-avenue": {
@@ -4579,7 +4585,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "machias-gravel-pit": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "In 1978 an inactive town gravel pit on Very Road reportedly stored about 600 drums of industrial waste from Motorola's Arcade plant. Records identify suspected epoxy resins, acids, solvents and cutting oils; some oil was reportedly used for road-dust control.",
       "Early removal records account for 184 drums, while later geophysical investigation did not find evidence of additional buried drums in the investigated area.",
@@ -4606,6 +4612,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Keep the documented 184-drum removal and the approximate 600-drum historical report numerically distinct.",
       "Do not label unlocated drums as still buried unless a later investigation documents them; geophysical work did not confirm additional drums in the investigated area.",
+      "Link archival reporting about the estimated inventory while labeling photographs by date and source so removed drums are not mistaken for present conditions.",
     ],
   },
   "ischua-landfill": {

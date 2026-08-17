@@ -1817,6 +1817,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former phenolic-resin and rubber-products plant at 3445 River Road where a 1988 fire left drums, tanks, laboratory chemicals, and contaminated media requiring federal removal and state remediation.",
     evidenceStatus: "well-documented",
     coordinates: [-78.92503206804305, 42.970463759085646],
+    newsEvents: [
+      {
+        date: "July 3–4, 1988",
+        headline: "Explosion and chemical fire force a River Road neighborhood emergency",
+        summary: "Flames, repeated explosion risk, a large phenol-and-solvent release, and the evacuation of approximately 300 residents transformed an operating resin plant into a federal removal and long-term cleanup site.",
+        publisher: "U.S. Environmental Protection Agency and NYSDEC cleanup record",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915044/",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Polymer Applications Site Documents",
@@ -2149,6 +2159,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former Gardenville railroad yard where a spur led to a wetland depression used for waste disposal. The location became known locally as the Losson Road tar pit. Investigators found tar-like material and dozens of abandoned drums. The waste was consolidated in a slurry-walled containment cell, capped, and placed under long-term monitoring.",
     evidenceStatus: "well-documented",
     coordinates: [-78.74165401790096, 42.87696653934266],
+    newsEvents: [
+      {
+        date: "1982–1986",
+        headline: "Investigators find a tar pit and dozens of drums beside a former railyard spur",
+        summary: "The documented count changed as investigation progressed—from 56 abandoned drums to 81—while the larger remedy focused on stabilizing and containing waste in a wetland depression.",
+        publisher: "New York State Department of Environmental Conservation record",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915031/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Union Road Site Health and Safety Plan",
@@ -2937,6 +2957,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former gasoline filling station at 3734 South Park Avenue. A 2005 brownfield cleanup removed underground tanks, hydraulic lifts, petroleum-affected soil, and historic fill. DEC issued a Certificate of Completion in 2008; commercial-use controls remain documented.",
     evidenceStatus: "well-documented",
     coordinates: [-78.82350365111772, 42.79674903091646],
+    newsEvents: [
+      {
+        date: "2005–2008",
+        headline: "A former filling station is excavated before commercial redevelopment",
+        summary: "Cleanup removed underground tanks, pump equipment, hydraulic lifts, petroleum-affected soil, and historic fill before New York issued a Certificate of Completion with continuing commercial-use controls.",
+        publisher: "New York State Department of Environmental Conservation brownfield record",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915192/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Certificate of Completion Fact Sheet — C915192",

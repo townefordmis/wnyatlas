@@ -472,6 +472,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "December 1970 derailment at Gulf Road where two tank cars released about 30,000 gallons of TCE and another partially released cyanide. TCE entered fractured bedrock, producing an approximately four-mile groundwater plume across parts of Genesee, Livingston, and Monroe counties; EPA selected the remaining multi-media remedy in 2023.",
     evidenceStatus: "research-in-progress",
     coordinates: [-77.93303124, 42.99226538],
+    newsEvents: [
+      {
+        date: "December 6, 1970",
+        headline: "A pre-dawn derailment releases TCE and cyanide at Gulf Road",
+        summary: "The wreck lasted minutes, but unrecovered solvent entered fractured bedrock and ultimately created an approximately four-mile groundwater plume spanning parts of three counties.",
+        publisher: "U.S. Environmental Protection Agency response archive",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/2ca1deede9b93cfd852579ac005eecfc.html",
+        reach: "Regional",
+      },
+      {
+        date: "September 2023",
+        headline: "EPA finalizes the remaining cleanup more than fifty years later",
+        summary: "The remedy addresses source soil, groundwater, Mud Creek, vapor intrusion, monitoring, and institutional controls—evidence of how a transportation accident became a generational water problem.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-finalizes-cleanup-plan-lehigh-valley-railroad-derailment-superfund-site-genesee",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Lehigh Valley Railroad Derailment Site Documents",
@@ -1629,6 +1647,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former gravel-pit storage area where approximately 600 drums of Motorola industrial waste were reportedly placed in 1978. Records describe solvents, acids, epoxy wastes and cutting oils; removal, soil-vapor extraction, groundwater treatment and long-term monitoring followed.",
     evidenceStatus: "well-documented",
     coordinates: [-78.5283532088013, 42.40917081453386],
+    newsEvents: [
+      {
+        date: "1978",
+        headline: "An inactive town gravel pit becomes a temporary industrial-drum site",
+        summary: "Historical records reported approximately 600 drums from Motorola's Arcade plant, but later documentation accounts for 184 removed drums and does not verify the disposition of the entire estimate.",
+        publisher: "New York State Department of Environmental Conservation record",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905013/ROD.HW.905013.1992-11-01.machias_gravel.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Machias Gravel Pit Periodic Review Report",
