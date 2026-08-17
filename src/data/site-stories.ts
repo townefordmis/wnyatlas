@@ -1464,8 +1464,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
   "tonawanda-coke": {
     lastReviewed: "July 27, 2026",
     background: [
-      "Coke manufacturing occurred on this River Road property from 1917 until Tonawanda Coke permanently shut down in October 2018. The process heated coal without air in batteries of ovens and produced coke and chemical by-products; the facility became a major regional focus for benzene emissions, environmental enforcement, and community health concerns.",
-      "The 129-acre site consists of the former main plant east of River Road and a separate Niagara River parcel known as Site 108. Closure required an emergency federal and state response, followed by different cleanup programs for the main plant and Site 108.",
+      "Coke manufacturing began on this River Road property in 1917. Coal was heated without air in batteries of ovens to produce coke, while gas and chemical by-products moved through a large network of process equipment. Tonawanda Coke took over the operation in 1978 and continued producing coke until October 2018.",
+      "For neighboring residents, the defining issue became the air beyond the plant fence. Community members pressed regulators over odors, soot, and pollution concerns, while government monitoring and modeling identified Tonawanda Coke as a major historical benzene source. Their organizing helped turn a long-running industrial complaint into a sustained enforcement story.",
+      "An EPA inspection in April 2009 uncovered an unreported coke-oven-gas emission source and hazardous coal-tar-sludge practices. In 2013 a federal jury convicted the company on 11 Clean Air Act counts and three hazardous-waste counts; its environmental manager was also convicted. The 2014 sentence imposed a $12.5 million penalty and $12.2 million in community-service payments directed toward health and environmental research.",
+      "When the company's 60 ovens permanently shut down in October 2018, the environmental work changed rather than ended. Federal and state teams monitored the shutdown, secured abandoned process systems, managed hazardous material, treated and disposed of more than one million gallons of waste ammonia liquor, and prepared the property for longer-term cleanup.",
+      "The 129-acre record is not one uniform cleanup area. The former main plant east of River Road entered New York's Brownfield Cleanup Program, while the Niagara River parcel known as Site 108 remained under a separate federal and state cleanup framework. Present-day claims about remedy completion or redevelopment must continue to distinguish those parcels.",
     ],
     timeline: [
       {

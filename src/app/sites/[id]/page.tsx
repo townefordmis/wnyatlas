@@ -40,6 +40,11 @@ const evidenceLabels = {
   "research-lead": "Research lead",
 };
 
+const streamlinedStoryTitles: Partial<Record<string, string>> = {
+  "union-road-gardenville-yard": "From railroad yard to contained waste site",
+  "tonawanda-coke": "A century of coke making, community pressure, and cleanup",
+};
+
 function findSite(id: string) {
   return featuredSites.find((site) => site.id === id);
 }
@@ -99,7 +104,9 @@ export default async function SitePage({ params }: SitePageProps) {
 
   const publicName = getPublicSiteName(site.name);
   const story = getSiteStory(site);
-  const usesStreamlinedStory = site.id === "union-road-gardenville-yard";
+  const streamlinedStoryTitle = streamlinedStoryTitles[site.id];
+  const usesStreamlinedStory = Boolean(streamlinedStoryTitle);
+  const keepsNewsRecord = site.id === "tonawanda-coke";
   const hasAerials = hasHistoricalAerialEvidence(site.id);
   const hasDeepHistory = hasDeepHistoryFeature(site.id);
   const namedChemicals = findChemicalsInText(
@@ -258,7 +265,7 @@ export default async function SitePage({ params }: SitePageProps) {
           {site.id === "bethlehem-steel" && <a href="#worker-history">Workers</a>}
           {hasDeepHistory && !usesStreamlinedStory && <a href="#deep-history">People &amp; history</a>}
           {hasAerials && <a href="#aerials">Aerial history</a>}
-          {site.newsEvents?.length && !usesStreamlinedStory ? <a href="#news-events">Major news</a> : null}
+          {site.newsEvents?.length && (!usesStreamlinedStory || keepsNewsRecord) ? <a href="#news-events">Major news</a> : null}
           {site.pfasCompounds?.length ? <a href="#pfas-compounds">PFAS compounds</a> : null}
           {story.timeline.length > 0 && <a href="#timeline">Timeline</a>}
           {story.documentedImpacts.length > 0 && <a href="#impacts">Impacts</a>}
@@ -274,7 +281,7 @@ export default async function SitePage({ params }: SitePageProps) {
                 <span aria-hidden="true">01</span>
                 <div>
                   <p className="eyebrow">{usesStreamlinedStory ? "The documented story" : "Background"}</p>
-                  <h2>{usesStreamlinedStory ? "From railroad yard to contained waste site" : "What happened here?"}</h2>
+                  <h2>{streamlinedStoryTitle ?? "What happened here?"}</h2>
                 </div>
               </div>
               <div className="story-background-copy">
@@ -378,7 +385,7 @@ export default async function SitePage({ params }: SitePageProps) {
 
             <HistoricalAerialEvidence siteId={site.id} />
 
-            {site.newsEvents?.length && !usesStreamlinedStory ? (
+            {site.newsEvents?.length && (!usesStreamlinedStory || keepsNewsRecord) ? (
               <section className="story-news-events" id="news-events">
                 <p className="eyebrow">News record</p>
                 <h2>Major news events</h2>
