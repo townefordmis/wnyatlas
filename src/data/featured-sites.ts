@@ -2315,7 +2315,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Former Gardenville railroad yard where a spur led to a wetland depression used for waste disposal. The location became known locally as the Losson Road tar pit. Investigators found tar-like material and dozens of abandoned drums. The waste was consolidated in a slurry-walled containment cell, capped, and placed under long-term monitoring.",
+      "A former Gardenville railroad-yard disposal area, remembered locally as the Losson Road tar pit. Tar-like waste and abandoned drums are now managed within a capped, slurry-walled containment cell under long-term monitoring.",
     evidenceStatus: "well-documented",
     coordinates: [-78.74165401790096, 42.87696653934266],
     newsEvents: [

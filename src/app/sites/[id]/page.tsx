@@ -99,6 +99,7 @@ export default async function SitePage({ params }: SitePageProps) {
 
   const publicName = getPublicSiteName(site.name);
   const story = getSiteStory(site);
+  const usesStreamlinedStory = site.id === "union-road-gardenville-yard";
   const hasAerials = hasHistoricalAerialEvidence(site.id);
   const hasDeepHistory = hasDeepHistoryFeature(site.id);
   const namedChemicals = findChemicalsInText(
@@ -255,9 +256,9 @@ export default async function SitePage({ params }: SitePageProps) {
           <a href="#overview">Overview</a>
           {site.id === "buffalo-river" && <a href="#river-fire">1968 fire</a>}
           {site.id === "bethlehem-steel" && <a href="#worker-history">Workers</a>}
-          {hasDeepHistory && <a href="#deep-history">People &amp; history</a>}
+          {hasDeepHistory && !usesStreamlinedStory && <a href="#deep-history">People &amp; history</a>}
           {hasAerials && <a href="#aerials">Aerial history</a>}
-          {site.newsEvents?.length ? <a href="#news-events">Major news</a> : null}
+          {site.newsEvents?.length && !usesStreamlinedStory ? <a href="#news-events">Major news</a> : null}
           {site.pfasCompounds?.length ? <a href="#pfas-compounds">PFAS compounds</a> : null}
           {story.timeline.length > 0 && <a href="#timeline">Timeline</a>}
           {story.documentedImpacts.length > 0 && <a href="#impacts">Impacts</a>}
@@ -272,15 +273,15 @@ export default async function SitePage({ params }: SitePageProps) {
               <div className="story-chapter-heading">
                 <span aria-hidden="true">01</span>
                 <div>
-                  <p className="eyebrow">Background</p>
-                  <h2>What happened here?</h2>
+                  <p className="eyebrow">{usesStreamlinedStory ? "The documented story" : "Background"}</p>
+                  <h2>{usesStreamlinedStory ? "From railroad yard to contained waste site" : "What happened here?"}</h2>
                 </div>
               </div>
               <div className="story-background-copy">
                 {story.background.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
-                <p className="story-context-note">{story.categoryContext}</p>
+                {!usesStreamlinedStory && <p className="story-context-note">{story.categoryContext}</p>}
               </div>
               {(site.category === "pfas" || site.pfasStatus) && (
                 <div className="pfas-record-status">
@@ -333,7 +334,7 @@ export default async function SitePage({ params }: SitePageProps) {
 
             {site.id === "bethlehem-steel" && <BethlehemWorkerHistory />}
 
-            {hasDeepHistory && <DeepHistoryFeature siteId={site.id} />}
+            {hasDeepHistory && !usesStreamlinedStory && <DeepHistoryFeature siteId={site.id} />}
 
             {site.id === "love-canal" && (
               <section className="story-research-figure" aria-labelledby="love-canal-aerial-title">
@@ -377,7 +378,7 @@ export default async function SitePage({ params }: SitePageProps) {
 
             <HistoricalAerialEvidence siteId={site.id} />
 
-            {site.newsEvents?.length ? (
+            {site.newsEvents?.length && !usesStreamlinedStory ? (
               <section className="story-news-events" id="news-events">
                 <p className="eyebrow">News record</p>
                 <h2>Major news events</h2>
@@ -650,23 +651,25 @@ export default async function SitePage({ params }: SitePageProps) {
               </section>
             )}
 
-            <section id="research">
-              <p className="eyebrow">Research desk</p>
-              <h2>How this story is being built</h2>
-              <p>
-                WNYAtlas is reviewing the linked records for ownership history,
-                operations, waste pathways, cleanup decisions, monitoring, and
-                present-day use. Missing details remain research questions rather
-                than being filled with assumptions.
-              </p>
-              {story.researchNotes.length > 0 && (
-                <ul>
-                  {story.researchNotes.map((note) => (
-                    <li key={note}>{note}</li>
-                  ))}
-                </ul>
-              )}
-            </section>
+            {!usesStreamlinedStory && (
+              <section id="research">
+                <p className="eyebrow">Research desk</p>
+                <h2>How this story is being built</h2>
+                <p>
+                  WNYAtlas is reviewing the linked records for ownership history,
+                  operations, waste pathways, cleanup decisions, monitoring, and
+                  present-day use. Missing details remain research questions rather
+                  than being filled with assumptions.
+                </p>
+                {story.researchNotes.length > 0 && (
+                  <ul>
+                    {story.researchNotes.map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+            )}
           </div>
 
           <aside className="story-evidence" id="sources">

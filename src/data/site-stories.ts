@@ -3557,8 +3557,9 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
   "union-road-gardenville-yard": {
     lastReviewed: "August 17, 2026",
     background: [
-      "The Union Road site—remembered locally as the Losson Road tar pit—was part of the former Gardenville railroad classification and maintenance yard. A rail spur extended into an eastern wetland depression that was used for railyard-waste disposal.",
-      "Erie County investigators documented an approximately 80-by-140-foot area of tar-like waste and 56 abandoned drums in 1982; a later investigation reported 81 drums. The selected remedy did not excavate every waste deposit. It stabilized the tar-pit material in place, moved other impacted material into a containment cell, installed a bentonite slurry wall and cap, and established long-term groundwater control and monitoring.",
+      "The story begins at the former Gardenville railroad classification and maintenance yard. An industrial spur ran east from the working tracks into a wetland depression, where railroad wastes were discarded. Local memory preserved the place under a more direct name: the Losson Road tar pit.",
+      "Erie County investigators arrived in 1982 and recorded an approximately 80-by-140-foot area of tar-like material and 56 abandoned drums. Expanded work later reported 81 drums and indications of additional buried metal. Those changing counts matter: they show an investigation developing over time, not a complete inventory of every object beneath the property.",
+      "The remedy chosen in the 1990s was containment rather than complete excavation. Tar-pit material was stabilized, other affected material was consolidated, and the waste cell was enclosed by a bentonite slurry wall and engineered cap. Because residual waste remains, the site's environmental history now continues through groundwater monitoring, inspections, maintenance, and land-use controls.",
     ],
     timeline: [
       { period: "Railyard era", event: "Rail classification and maintenance generated wastes disposed along an eastern spur." },
