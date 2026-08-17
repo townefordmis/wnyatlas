@@ -8,7 +8,6 @@ import { StructuredData } from "@/components/structured-data";
 import { LoveCanalDisposalHistory } from "@/components/love-canal-disposal-history";
 import { BuffaloRiverFireHistory } from "@/components/buffalo-river-fire-history";
 import { BethlehemWorkerHistory } from "@/components/bethlehem-worker-history";
-import { DeepHistoryFeature } from "@/components/deep-history-feature";
 import {
   HistoricalAerialEvidence,
   hasHistoricalAerialEvidence,
@@ -28,7 +27,7 @@ import {
   getPfasFindingLabel,
   getPfasSearchText,
 } from "@/lib/pfas-evidence";
-import { hasDeepHistoryFeature } from "@/data/deep-history-features";
+import { deepHistoryFeatures } from "@/data/deep-history-features";
 
 type SitePageProps = {
   params: Promise<{ id: string }>;
@@ -104,16 +103,19 @@ export default async function SitePage({ params }: SitePageProps) {
 
   const publicName = getPublicSiteName(site.name);
   const story = getSiteStory(site);
-  const streamlinedStoryTitle = streamlinedStoryTitles[site.id];
-  const usesStreamlinedStory = Boolean(streamlinedStoryTitle);
-  const keepsNewsRecord = site.id === "tonawanda-coke";
+  const deepHistory = deepHistoryFeatures[site.id];
+  const streamlinedStoryTitle =
+    streamlinedStoryTitles[site.id] ?? deepHistory?.title ?? "What happened here?";
+  const narrativeParagraphs = deepHistory
+    ? [deepHistory.lead, ...deepHistory.chapters.map((chapter) => chapter.body)]
+    : story.background;
   const hasAerials = hasHistoricalAerialEvidence(site.id);
-  const hasDeepHistory = hasDeepHistoryFeature(site.id);
   const namedChemicals = findChemicalsInText(
     [
       site.summary,
       getPfasSearchText(site),
-      ...story.background,
+      ...narrativeParagraphs,
+      deepHistory?.caution.body ?? "",
       ...story.documentedImpacts,
       ...story.cleanupAndControls,
       ...story.presentDay,
@@ -263,9 +265,8 @@ export default async function SitePage({ params }: SitePageProps) {
           <a href="#overview">Overview</a>
           {site.id === "buffalo-river" && <a href="#river-fire">1968 fire</a>}
           {site.id === "bethlehem-steel" && <a href="#worker-history">Workers</a>}
-          {hasDeepHistory && !usesStreamlinedStory && <a href="#deep-history">People &amp; history</a>}
           {hasAerials && <a href="#aerials">Aerial history</a>}
-          {site.newsEvents?.length && (!usesStreamlinedStory || keepsNewsRecord) ? <a href="#news-events">Major news</a> : null}
+          {site.newsEvents?.length && site.id !== "union-road-gardenville-yard" ? <a href="#news-events">Major news</a> : null}
           {site.pfasCompounds?.length ? <a href="#pfas-compounds">PFAS compounds</a> : null}
           {story.timeline.length > 0 && <a href="#timeline">Timeline</a>}
           {story.documentedImpacts.length > 0 && <a href="#impacts">Impacts</a>}
@@ -280,15 +281,20 @@ export default async function SitePage({ params }: SitePageProps) {
               <div className="story-chapter-heading">
                 <span aria-hidden="true">01</span>
                 <div>
-                  <p className="eyebrow">{usesStreamlinedStory ? "The documented story" : "Background"}</p>
-                  <h2>{streamlinedStoryTitle ?? "What happened here?"}</h2>
+                  <p className="eyebrow">The documented story</p>
+                  <h2>{streamlinedStoryTitle}</h2>
                 </div>
               </div>
               <div className="story-background-copy">
-                {story.background.map((paragraph) => (
+                {narrativeParagraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
-                {!usesStreamlinedStory && <p className="story-context-note">{story.categoryContext}</p>}
+                {deepHistory && (
+                  <aside className="story-context-note">
+                    <strong>{deepHistory.caution.title}</strong>
+                    <span>{deepHistory.caution.body}</span>
+                  </aside>
+                )}
               </div>
               {(site.category === "pfas" || site.pfasStatus) && (
                 <div className="pfas-record-status">
@@ -341,8 +347,6 @@ export default async function SitePage({ params }: SitePageProps) {
 
             {site.id === "bethlehem-steel" && <BethlehemWorkerHistory />}
 
-            {hasDeepHistory && !usesStreamlinedStory && <DeepHistoryFeature siteId={site.id} />}
-
             {site.id === "love-canal" && (
               <section className="story-research-figure" aria-labelledby="love-canal-aerial-title">
                 <p className="eyebrow">Landscape transformation</p>
@@ -385,7 +389,7 @@ export default async function SitePage({ params }: SitePageProps) {
 
             <HistoricalAerialEvidence siteId={site.id} />
 
-            {site.newsEvents?.length && (!usesStreamlinedStory || keepsNewsRecord) ? (
+            {site.newsEvents?.length && site.id !== "union-road-gardenville-yard" ? (
               <section className="story-news-events" id="news-events">
                 <p className="eyebrow">News record</p>
                 <h2>Major news events</h2>
@@ -658,23 +662,15 @@ export default async function SitePage({ params }: SitePageProps) {
               </section>
             )}
 
-            {!usesStreamlinedStory && (
+            {site.evidenceStatus !== "well-documented" && story.researchNotes.length > 0 && (
               <section id="research">
-                <p className="eyebrow">Research desk</p>
-                <h2>How this story is being built</h2>
-                <p>
-                  WNYAtlas is reviewing the linked records for ownership history,
-                  operations, waste pathways, cleanup decisions, monitoring, and
-                  present-day use. Missing details remain research questions rather
-                  than being filled with assumptions.
-                </p>
-                {story.researchNotes.length > 0 && (
-                  <ul>
-                    {story.researchNotes.map((note) => (
-                      <li key={note}>{note}</li>
-                    ))}
-                  </ul>
-                )}
+                <p className="eyebrow">Research status</p>
+                <h2>Open questions</h2>
+                <ul>
+                  {story.researchNotes.map((note) => (
+                    <li key={note}>{note}</li>
+                  ))}
+                </ul>
               </section>
             )}
           </div>

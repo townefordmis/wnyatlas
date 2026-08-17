@@ -2331,12 +2331,18 @@ footer {
 }
 
 .story-context-note {
+  display: grid;
+  gap: 0.35rem;
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px solid var(--line);
   color: rgba(23, 39, 32, 0.7);
   font-size: 0.9rem !important;
   line-height: 1.6 !important;
+}
+
+.story-context-note strong {
+  color: var(--ink);
 }
 
 .story-finding-list {
