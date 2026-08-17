@@ -24,7 +24,7 @@ const completedFeatures = new Set([
   "former-american-axle-east-delavan",
   "former-hooker-main-plant",
   "niagara-falls-storage-site",
-  "diaz-chemical",
+  "diaz-chemical-holley",
   "eighteenmile-creek-superfund",
   "fmc-middleport",
   "olean-well-field-superfund",

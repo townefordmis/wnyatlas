@@ -181,6 +181,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former dye and chemical-manufacturing complex beside the Buffalo River. Investigations documented metals, volatile and semi-volatile compounds in plant sewer sediment, including storm sewers leading to river Outfalls 006 and 011; remedies included measures to address contaminated sewer sediment and limit migration toward the river.",
     evidenceStatus: "well-documented",
     coordinates: [-78.84472385396359, 42.863843134660996],
+    newsEvents: [
+      {
+        date: "1879-2003",
+        headline: "More than a century of dye and organic-chemical production ends on the Buffalo River",
+        summary: "The plant's closure left separate cleanup areas, contaminated sewers, groundwater, and a workforce history that cannot be reduced to the later redevelopment parcels.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-buffalo-color-corporation-buffalo-new-york",
+        reach: "Regional",
+      },
+      {
+        date: "2018-2026",
+        headline: "Athletic reuse exposes the practical importance of neighboring air emissions",
+        summary: "Fields on remediated Area E depended on engineered soil controls, while complaints and regulatory action involving nearby PVS emissions raised a separate air-pathway question for athletes and spectators.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/press-releases/2021/5/dec-directs-pvs-chemical-solutions-inc-to-temporarily-cease-operations",
+        reach: "Local",
+      },
+    ],
     story: {
       lastReviewed: "July 26, 2026",
       background: [
@@ -888,6 +906,14 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://spectrumlocalnews.com/nys/buffalo/news/2026/07/19/community-meeting-set-for-monday-for-radiological-assessment-in-erie--niagara-counties",
         reach: "Regional",
       },
+      {
+        date: "July 2026",
+        headline: "Residents demand clearer answers as property-level surveys begin",
+        summary: "Public meetings documented fear, frustration, and requests for relocation and faster testing. Those accounts describe the human burden of uncertainty; confirmation still depends on property access, instrument surveys, soil sampling, and laboratory analysis.",
+        publisher: "Niagara Gazette / Niagara Frontier Publications",
+        url: "https://www.wnypapers.com/news/article/featured/2026/07/24/166614/epa-state-dec-officials-meet-with-town-of-niagara-residents-to-address-radioactivity",
+        reach: "Local",
+      },
     ],
     sources: [
       {
@@ -996,6 +1022,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Radioactive fill was removed from an access road and portions of two adjacent residential properties between 2020 and 2023.",
     evidenceStatus: "well-documented",
     coordinates: [-79.01842, 43.15618],
+    newsEvents: [
+      {
+        date: "July 2016",
+        headline: "A homeowner watches investigators map radioactive hotspots in a driveway",
+        summary: "Investigative reporting made the property-level consequence visible years before removal: a residential access road and adjoining yards required federal assessment, while the source and extent still had to be established by sampling.",
+        publisher: "Investigative Post / Buffalo Toronto Public Media",
+        url: "https://www.btpm.org/investigative-post/2016-07-06/investigative-post-radioactive-hotspots-dot-niagara-county",
+        reach: "Local",
+      },
+      {
+        date: "2020-2023",
+        headline: "EPA removes radioactive fill from an access road and two residential properties",
+        summary: "Excavation, verification sampling, clean replacement material, and restoration addressed the defined removal areas without labeling every neighboring property contaminated.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Niagara County Radiation Removal Sites",
@@ -1110,6 +1154,24 @@ const featuredSiteRecords: AtlasSite[] = [
       era: "Manhattan Project-derived material",
       role: "wartime Linde residues stored on the property",
     },
+    newsEvents: [
+      {
+        date: "1940s-1982",
+        headline: "Wartime residues are stored, then moved among Tonawanda industrial properties",
+        summary: "Material originating with Linde uranium processing remained at Ashland 1 before later transfers spread part of the cleanup responsibility to Ashland 2 and Seaway Area D.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612233/ashland-1-site/",
+        reach: "Regional",
+      },
+      {
+        date: "1998-2008",
+        headline: "Public information sessions accompany removal and federal closeout",
+        summary: "The federal community-relations record documents information repositories, comment opportunities, and repeated briefings while contaminated material was excavated and shipped away.",
+        publisher: "U.S. Department of Energy / U.S. Army Corps of Engineers",
+        url: "https://lmpublicsearch.lm.doe.gov/SiteDocs/T-555.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Ashland 1 FUSRAP Site",
@@ -1353,6 +1415,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Federal and state investigations of PFAS associated with historical use and releases of aqueous film-forming firefighting foam at the air station.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.93997339520959, 43.11936785737371],
+    newsEvents: [
+      {
+        date: "2018-2023",
+        headline: "Firefighting-foam history becomes a multi-media PFAS investigation",
+        summary: "Federal work moved from identifying training, testing, and response areas into remedial-investigation sampling of soil, groundwater, sediment, surface water, and migration pathways.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-914th-airlift-wing-afrc-niagara-falls-new-york",
+        reach: "Regional",
+      },
+      {
+        date: "Current investigation",
+        headline: "Private wells remain a specific question, not a regional drinking-water declaration",
+        summary: "The investigation identified private wells within the broader downgradient study area while noting that most surrounding residents use public water. Water conclusions must follow individual sampling and supply records.",
+        publisher: "Niagara Falls Air Reserve Station remedial investigation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932106/Work%20Plan.RCRA.932106.2023-09-19.Final%20NFARS%20PFAS%20RI%20UFP-QAPP.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Final Site Inspection Report of Firefighting Foam Usage",
@@ -1566,6 +1646,24 @@ const featuredSiteRecords: AtlasSite[] = [
       era: "Manhattan Project-derived material",
       role: "later disposal of contaminated soil moved from Ashland 1",
     },
+    newsEvents: [
+      {
+        date: "1974-1982",
+        headline: "A cleanup attempt at Ashland 1 creates a second radioactive-waste site",
+        summary: "Contaminated soil was moved to Ashland 2 over several years, demonstrating how poorly controlled material transfer expanded the geographic legacy rather than ending it.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612311/ashland-2-site/",
+        reach: "Regional",
+      },
+      {
+        date: "2008-present",
+        headline: "Federal closeout shifts the sites to records stewardship",
+        summary: "DOE reports the Ashland units meet the selected cleanup standard and require no routine monitoring or maintenance; continued records access and stakeholder response remain the present federal role.",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/lm/articles/tonawanda-north-new-york-sites-units-1-and-2-fact-sheet",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Ashland 2 Site",
@@ -1620,6 +1718,24 @@ const featuredSiteRecords: AtlasSite[] = [
       era: "Manhattan Project",
       role: "current interim storage of radioactive residues pending complete removal",
     },
+    newsEvents: [
+      {
+        date: "1982-1986",
+        headline: "Dispersed radioactive residues are consolidated into an interim containment structure",
+        summary: "Federal work reduced scattered contamination but concentrated a long-term storage obligation inside a ten-acre engineered cell that communities continued to monitor and question.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612360/niagara-falls-storage-site/",
+        reach: "Regional",
+      },
+      {
+        date: "2019-present",
+        headline: "Complete excavation and out-of-state disposal become the selected remedy",
+        summary: "Public review produced a decision to remove the containment structure rather than leave it indefinitely. Design, funding, monitoring, and preparatory work continue; the cell has not yet been fully excavated.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612360/niagara-falls-storage-site/",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Niagara Falls Storage Site",
@@ -2131,6 +2247,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former luxury-automobile manufacturing complex around Great Arrow Avenue and Elmwood Avenue. State records identify petroleum impacts, industrial fill, metals, PCBs, solvents, underground tanks, and later hazardous-material storage across separately managed brownfield parcels; investigation at 157 Great Arrow was updated to include PFAS sampling.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.874006, 42.943264],
+    newsEvents: [
+      {
+        date: "1901-1938",
+        headline: "Pierce-Arrow turns a North Buffalo complex into a nationally known automobile works",
+        summary: "Foundry, machining, painting, fuel, and maintenance operations created the industrial processes that later cleanup investigations had to reconstruct across multiple parcels.",
+        publisher: "New York State historic and brownfield records",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915326/",
+        reach: "Regional",
+      },
+      {
+        date: "2006-present",
+        headline: "Drum removal and phased brownfield investigation follow decades of divided reuse",
+        summary: "EPA removed hazardous containers at Great Arrow Plaza, while later state investigations addressed soil, groundwater, vapor, and emerging contaminants parcel by parcel rather than declaring the entire historic factory uniformly contaminated.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/f967face708ce80885257245005d9528.html",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Former Pierce Arrow Manufacturing Site Brownfield Application",
@@ -2552,6 +2686,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Contaminants from the former Durez chemical site affected a storm-sewer route and Niagara River cove. Cleanup included plant containment and cleaning about 22,000 feet of sewers. Crews also removed roughly 25,000 cubic yards of contaminated sediment, restored wetlands, and later performed maintenance dredging.",
     evidenceStatus: "well-documented",
     coordinates: [-78.918, 43.055],
+    newsEvents: [
+      {
+        date: "1949-1953",
+        headline: "Basement explosions and a fish kill enter the local record along Pettit Flume",
+        summary: "Preserved Tonawanda News images document what residents and responders encountered during the Durez operating era; later sampling, not the newspaper accounts alone, identifies particular contaminants and sources.",
+        publisher: "North Tonawanda History / Tonawanda News archive",
+        url: "https://nthistory.com/collections/show/98",
+        reach: "Local",
+      },
+      {
+        date: "1997-2006",
+        headline: "Post-remedy mussel and sediment testing finds continuing dioxin availability",
+        summary: "Monitoring and maintenance dredging showed why cleaning the sewer and removing cove sediment required follow-up rather than a one-time declaration of completion.",
+        publisher: "Niagara River Toxics Management Plan",
+        url: "https://www.epa.gov/sites/default/files/2015-11/documents/niagara-river-nrtmp-progress-report-workplan-2007-74pp.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Reduction of Toxics Loadings to the Niagara River",
@@ -2580,6 +2732,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Creek flowing past the DuPont and Olin chemical plants to the Niagara River. Historic plant-related contaminants affected creek sediment and groundwater; joint cleanup removed about 8,020 cubic yards of contaminated sediment by 1992, while groundwater collection, treatment, and monitoring continued to control migration toward the creek and river.",
     evidenceStatus: "well-documented",
     coordinates: [-78.989, 43.074],
+    newsEvents: [
+      {
+        date: "1981-1992",
+        headline: "Two chemical companies remove contaminated sediment from a shared creek corridor",
+        summary: "Olin and DuPont work proceeded in stages before the joint off-site remediation was completed, reflecting multiple sources and reaches rather than one uniform company plume.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/sites/default/files/2015-11/documents/niagara-river-reduction-toxics-loadings-report-200306-112pp.pdf",
+        reach: "Regional",
+      },
+      {
+        date: "Long-term phase",
+        headline: "Groundwater capture becomes the continuing barrier protecting Gill Creek and the Niagara River",
+        summary: "Recovery wells, treatment, and sediment monitoring remain the less-visible human and ecological protection after the major creek excavation ended.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-olin-corporation-niagara-falls-new-york",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Olin Corporation Hazardous-Waste Cleanup",
@@ -2608,6 +2778,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Lake Erie tributary crossing the former Bethlehem Steel property. Historical plant discharges contaminated the lower creek; approximately 40,000 cubic yards of affected sediment were removed in 2009. Current planning focuses on bank stabilization, habitat connectivity, flood resilience, and restoration from the creek corridor to its Lake Erie mouth.",
     evidenceStatus: "well-documented",
     coordinates: [-78.863012, 42.811638],
+    newsEvents: [
+      {
+        date: "2009",
+        headline: "About 40,000 cubic yards of contaminated lower-creek sediment are removed",
+        summary: "Dredging addressed a major legacy discharge pathway through the former steel property, but continuing sediment, bank, groundwater, flood, and habitat work remained tied to the larger Bethlehem cleanup.",
+        publisher: "Former Bethlehem Steel cleanup program",
+        url: "https://bethlehemsteelcleanup.com/",
+        reach: "Regional",
+      },
+      {
+        date: "2015-present",
+        headline: "Residents and local officials debate how cleanup choices shape waterfront reuse",
+        summary: "Public meetings and reporting connected Smokes Creek dredging, the acid-tar area, on-site consolidation, habitat, and future waterfront access—documenting community participation without treating redevelopment preference as exposure evidence.",
+        publisher: "WKBW",
+        url: "https://www.wkbw.com/news/neighbors-in-lackawanna-hear-update-on-brownfield-cleanup",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Tecumseh Redevelopment Hazardous-Waste Cleanup",

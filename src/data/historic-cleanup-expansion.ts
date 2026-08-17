@@ -327,6 +327,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Active Class 2 State Superfund property within Tonawanda's River Road industrial corridor. DEC's sediment inventory identifies PCB-affected sediment associated with the site, requiring the upland property and Niagara River edge to be understood together without assuming one corridor-wide plume.",
     evidenceStatus: "well-documented",
     coordinates: [-78.908915, 43.002985],
+    newsEvents: [
+      {
+        date: "2013 onward",
+        headline: "Investigation begins at a River Road property linked to PCB-affected shoreline sediment",
+        summary: "The state investigation connected the upland industrial property to a defined Niagara River sediment concern while preserving the distinction between this site and the many other River Road sources.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/5565rrfs.pdf",
+        reach: "Local",
+      },
+      {
+        date: "Active cleanup phase",
+        headline: "A small industrial parcel becomes part of the larger public riverfront question",
+        summary: "Residents evaluating River Road reuse need both upland and shoreline records; the marker does not represent the former Tonawanda Coke property or a corridor-wide plume.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915239/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "5565 River Road Site Documents",
@@ -396,6 +414,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Sulfur-chemical plant at 55 Lee Street developed within the former Allied Chemical complex and purchased by PVS in 1981. Historical sulfuric-acid, sulfur dioxide, ammonia, and related operations created a separate soil-and-groundwater cleanup record from neighboring Buffalo Color; the defined property remains an active Class 2 State Superfund site.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.84121737, 42.86472756],
+    newsEvents: [
+      {
+        date: "1996-2003",
+        headline: "Acid releases and failing containment produce enforcement and groundwater work",
+        summary: "State and Buffalo River records describe leaking pipes, broken valves, equipment failures, air and water violations, replacement equipment, a treatment facility, and quarterly groundwater monitoring.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/brr1.pdf",
+        reach: "Regional",
+      },
+      {
+        date: "2021-2026",
+        headline: "Odor and sulfur-dioxide concerns change how neighboring athletic land can be used",
+        summary: "DEC temporarily stopped operations in 2021 after emissions concerns near athletic fields; later reporting documented continued debate over whether intensive recreation was compatible beside an operating sulfur-chemical plant.",
+        publisher: "WKBW",
+        url: "https://www.wkbw.com/news/local-news/state-orders-business-to-temporarily-shut-down-buffalo-plant",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "PVS Chemicals Site Documents",
@@ -667,6 +703,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Niagara River shoreline sediment area associated with the 1660 Niagara Street cleanup record. DEC identifies PCB-affected sediment here; the marker represents the documented sediment boundary and should not be generalized to the entire upper Niagara River shoreline.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.8978, 42.9295],
+    newsEvents: [
+      {
+        date: "2015-2017",
+        headline: "A planned waterfront park is delayed when industrial contamination complicates construction",
+        summary: "Local reporting connected the public-access project to petroleum, PCB, metals, VOC, urban-fill, and shoreline-sediment questions that required phased investigation before redevelopment could proceed.",
+        publisher: "Spectrum News",
+        url: "https://spectrumlocalnews.com/mo/st-louis/news/2017/09/7/1660-niagara-street-construction-delay",
+        reach: "Local",
+      },
+      {
+        date: "Cleanup phase",
+        headline: "A Black Rock shoreline parcel becomes both a brownfield and a river-sediment project",
+        summary: "The land cleanup and PCB-affected shoreline sediment are related but distinct scopes; park construction does not by itself establish that the adjoining aquatic remedy is complete.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915311/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "1660 Niagara Street Site Documents",
@@ -690,6 +744,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former Hanna Furnace waterfront where industrial fill, furnace waste, petroleum, groundwater, and canal sediment required cleanup. Crews removed debris, covered surrounding land, and stabilized the canal walls. Contaminated sediment east of Route 5 was isolated beneath geotextile, stone, and gravel. The remediated landscape is now Ship Canal Commons.",
     evidenceStatus: "well-documented",
     coordinates: [-78.8514, 42.835],
+    newsEvents: [
+      {
+        date: "2001-2005",
+        headline: "Demolition and cleanup begin turning Hanna Furnace into a controlled waterfront landscape",
+        summary: "The remedy removed structures and debris, addressed contaminated soil and groundwater, and tied canal sediment controls to a shallow-water habitat plan rather than treating redevelopment as an ordinary construction project.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/B00164/ROD.ERP.B00164.2005-02-17.Record_of_Decision.pdf",
+        reach: "Regional",
+      },
+      {
+        date: "Great Lakes restoration phase",
+        headline: "Contaminated canal sediment is capped while habitat is rebuilt above it",
+        summary: "The canal demonstrates a containment remedy in public view: dredging, geotextile, stone, gravel, and habitat construction support reuse while long-term controls preserve the barrier.",
+        publisher: "Erie County watershed project inventory",
+        url: "https://www2.erie.gov/environment/index.php?order=field_wp_category_value&q=watershed-projects&sort=asc",
+        reach: "Regional",
+      },
+    ],
     story: {
       lastReviewed: "July 27, 2026",
       background: [
@@ -818,6 +890,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former municipal and construction-and-demolition landfill near Conewango Creek, wetlands, and homes. The roughly 25-acre disposal property has required leachate and groundwater controls, treatment, monitoring, and long-term management.",
     evidenceStatus: "well-documented",
     coordinates: [-79.13670584217945, 42.07609437135028],
+    newsEvents: [
+      {
+        date: "Remedy selection",
+        headline: "A landfill remedy is designed around Frewsburg's drinking-water setting",
+        summary: "Because groundwater near the landfill supplies the Frewsburg water district, the state remedy joined landfill controls, leachate collection, groundwater treatment, monitoring, and contingency planning rather than treating the waste mound alone.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/carrollrod.pdf",
+        reach: "Local",
+      },
+      {
+        date: "Long-term phase",
+        headline: "Monitoring becomes the continuing protection for nearby homes, wetlands, and Conewango Creek",
+        summary: "The human consequence is a durable water-supply and land-management obligation; the historic landfill record does not by itself establish contamination in every current household tap.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907017/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Carroll Landfill Remedial Design",
@@ -1374,6 +1464,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former industrial complex where investigations documented petroleum, chlorinated solvents, PAHs, metals, and PCBs. Interim removals and a managed remedy supported restricted-residential redevelopment while preserving soil and groundwater controls.",
     evidenceStatus: "well-documented",
     coordinates: [-78.87387831625173, 43.023181066006856],
+    newsEvents: [
+      {
+        date: "Industrial era-1970s",
+        headline: "A canal-side factory moves through trolley, engine, filing-system, and office-equipment production",
+        summary: "The long succession of manufacturers explains the mixed petroleum, solvent, PCB, PAH, and metals record better than assigning the property to one product or one owner.",
+        publisher: "Lumber City Development Corporation",
+        url: "https://www.lumbercitydc.com/remington-lofts-on-the-canal",
+        reach: "Local",
+      },
+      {
+        date: "2006-2011",
+        headline: "Brownfield cleanup supports 81 canal-side lofts under continuing controls",
+        summary: "The reuse brought residents into a former factory complex only after environmental remediation and with restrictions and management suited to controlled residential use.",
+        publisher: "Lumber City Development Corporation",
+        url: "https://www.lumbercitydc.com/remington-lofts-on-the-canal",
+        reach: "Local",
+      },
+    ],
     sources: [
       { title: "Region 9 Cleanup Success Stories", publisher: "NYSDEC", url: decSuccessStories },
       {
@@ -1667,6 +1775,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former metalworking property where TCE was used and spent solvent was stored or disposed in an exterior underground septic tank. Investigations documented affected soil and groundwater extending onto adjacent village property; the cleanup record is separate from Mayville's PFAS investigation.",
     evidenceStatus: "well-documented",
     coordinates: [-79.49778113910106, 42.241675504839904],
+    newsEvents: [
+      {
+        date: "Investigation era",
+        headline: "TCE from a metalworking septic system is traced beyond the factory property",
+        summary: "Sampling documented affected soil and groundwater extending onto adjacent village land, turning a small industrial disposal feature into a community land-use and monitoring issue.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/standport1109fs.pdf",
+        reach: "Local",
+      },
+      {
+        date: "Present",
+        headline: "Two separate Mayville investigations require careful public explanation",
+        summary: "Standard Portable's chlorinated-solvent cleanup and Mayville's later PFAS investigation occupy the same community but have different sources, compounds, boundaries, and response programs.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/investigation-at-the-mayville-pfas-site",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Standard Portable Cleanup Fact Sheet",
@@ -2491,6 +2617,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Historic landfill and drainage-swale cleanup where DEC records identified arsenic, DDT, DDD, and DDE as constituents requiring control. Stormwater diversion, leachate collection, soil removal, a landfill cap, fencing, and land-use restrictions form the continuing remedy.",
     evidenceStatus: "well-documented",
     coordinates: [-78.39237616, 43.32384815],
+    newsEvents: [
+      {
+        date: "Investigation and remedy design",
+        headline: "West Avenue residents report recurring sulfide odors traced to landfill leachate",
+        summary: "The focused feasibility record preserves a direct neighborhood observation and the technical follow-up that identified leachate entering the village drainage system as the principal odor source.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/837002/Report.HW.837002.2003-11-05.Revised%20Lyndonville%20Focused%20Feasibility%20Study%20Report.pdf",
+        reach: "Local",
+      },
+      {
+        date: "Long-term phase",
+        headline: "Public-water extension and landfill controls protect the surrounding residential setting",
+        summary: "The remedy combines cap and leachate management with monitoring and water-supply protections; current household-water claims still require current sampling rather than inference from the historic landfill.",
+        publisher: "U.S. Environmental Protection Agency five-year review",
+        url: "https://semspub.epa.gov/work/HQ/181076.pdf",
+        reach: "Local",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
@@ -2625,6 +2769,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Large Buffalo Avenue chemical-manufacturing property where historic operations released chlorinated organics, mercury, dioxin-related compounds, and other materials to soil and groundwater. Caps, groundwater extraction and treatment, non-aqueous-phase-liquid recovery, monitoring, and industrial-use restrictions remain part of the corrective-action program.",
     evidenceStatus: "well-documented",
     coordinates: [-79.00903, 43.07968],
+    newsEvents: [
+      {
+        date: "1944-1948",
+        headline: "Hooker workers support atomic-era production later recognized by a federal compensation program",
+        summary: "A defined employee class entered the Special Exposure Cohort because radiation dose could not be reconstructed reliably under program rules; eligibility is not a finding that every employee was exposed or became ill.",
+        publisher: "U.S. Department of Labor",
+        url: "https://www.dol.gov/agencies/owcp/energy/regs/compliance/PolicyandProcedures/finalcircularhtml/EEOICPACircular16-01",
+        reach: "National",
+      },
+      {
+        date: "August 2021",
+        headline: "Chemical manufacturing ends while groundwater containment and corrective action continue",
+        summary: "Plant closure affected 130 employees and 20 contractors, but shutdown did not end the subsurface treatment, monitoring, caps, barriers, or permit obligations.",
+        publisher: "Buffalo Toronto Public Media",
+        url: "https://www.btpm.org/local/2021-08-19/oxychem-closing-its-niagara-falls-manufacturing-operations-the-company-confirms",
+        reach: "Regional",
+      },
+    ],
     story: {
       lastReviewed: "August 12, 2026",
       background: [
@@ -2717,6 +2879,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Long-running chlor-alkali and chemical-manufacturing complex where mercury-cell operations, chlorinated-organic production, and historic waste handling affected soil and groundwater. Extraction systems, paving and caps, monitoring, and deed restrictions manage the remaining contamination.",
     evidenceStatus: "well-documented",
     coordinates: [-79.028238889, 43.082105556],
+    newsEvents: [
+      {
+        date: "1981-1992",
+        headline: "Olin and DuPont remove contaminated sediment from Gill Creek",
+        summary: "The creek work addressed a shared industrial pathway while later groundwater systems remained source-specific, preventing the two companies' plumes and responsibilities from being collapsed into one account.",
+        publisher: "Niagara River Toxics Management Plan",
+        url: "https://www.epa.gov/sites/default/files/2015-11/documents/niagara-river-reduction-toxics-loadings-report-200306-112pp.pdf",
+        reach: "Regional",
+      },
+      {
+        date: "Long-term phase",
+        headline: "Hydraulic containment remains necessary beside the creek and Niagara River",
+        summary: "Production wells, recovery wells, carbon treatment, monitoring, and deed controls make present operation inseparable from the historic groundwater remedy.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-olin-corporation-niagara-falls-new-york",
+        reach: "Regional",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
