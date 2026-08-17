@@ -1541,27 +1541,22 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "gratwick-riverside-park": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Gratwick Riverside Park occupies a former municipal and industrial landfill on the Niagara River. Disposal occurred from the late 1930s into the 1960s, before the property became a public waterfront park; the recreational landscape therefore sits above a documented containment remedy.",
-      "New York's State Superfund program investigated the landfill and selected a remedy that combined waste containment, groundwater and leachate control, shoreline and wetland work, and long-term management. Public access is compatible with that remedy only while its engineering and institutional controls remain protected.",
+      "Historical aerial photographs show filling at Gratwick from approximately 1938 through 1968. Metallurgical slag formed a base layer, with municipal and industrial waste above it. Records name the City of North Tonawanda, Durez/Hooker Chemical, Bell Aerospace-Textron, Browning-Ferris Industries, Booth Oil, and Niagara Mohawk among the operators, owners, or potentially responsible parties—not as proof that every company used every part of the property.",
+      "The landfill closed in 1968, was covered and seeded, and reopened as a public park in 1969. By 1979, monitoring found phenol and halogenated organic contamination in groundwater moving toward the Niagara River. Shoreline erosion later exposed 33 drums containing cured phenolic resin, which were removed in 1982.",
+      "New York's remedy combined a park-wide cover, groundwater and leachate collection, shoreline controls, contaminated-sediment capping, habitat work, and long-term management. The green waterfront landscape is therefore both a public amenity and an operating containment system.",
     ],
     timeline: [
-      {
-        period: "1938–1968",
-        event:
-          "The property operated as a landfill receiving municipal and industrial material.",
-      },
+      { period: "1938–1968", event: "Successive filling placed metallurgical slag beneath municipal and industrial wastes along the Niagara River shoreline." },
+      { period: "1969", event: "The covered and seeded landfill reopened as a public park only one year after disposal ended." },
+      { period: "1979–1982", event: "Monitoring identified contaminated groundwater flowing toward the river, and erosion exposed 33 drums of cured phenolic resin along the shoreline." },
       {
         period: "1991",
         event:
           "New York issued the Record of Decision establishing the site's remedial approach.",
       },
-      {
-        period: "2000s",
-        event:
-          "Remedial construction established the cap, groundwater collection, and related site controls.",
-      },
+      { period: "1990s–2001", event: "Remedial construction established the park cover, groundwater controls, shoreline work, and a cap over contaminated Niagara River sediment." },
       {
         period: "Present",
         event:
@@ -1569,20 +1564,22 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       },
     ],
     documentedImpacts: [
-      "Landfilled industrial and municipal material affected soil, fill, groundwater, and areas near the Niagara River shoreline.",
-      "Investigations identified volatile organic compounds and other contaminants associated with the former disposal area.",
+      "Up to roughly 13 feet of heterogeneous fill included a basal slag layer with municipal and industrial wastes above it.",
+      "Groundwater investigation identified phenols, chlorinated organics, and other compounds, with hydraulic flow generally toward the Niagara River.",
+      "Shoreline erosion demonstrated that a covered landfill could still create exposure and migration pathways at its edges.",
       "Because waste remains contained beneath the park, excavation and changes to drainage or cover systems require environmental review.",
     ],
     cleanupAndControls: [
-      "An approximately 18-inch soil cap and underlying geotextile demarcation layer isolate landfill material from normal park use.",
+      "An approximately 18-inch soil cap and underlying geotextile demarcation layer isolate landfill material from normal park use while making future excavation recognizable.",
       "A groundwater collection system operates as part of the remedy, with inspection and maintenance documented through site-management reporting.",
+      "Shoreline engineering and the 2001 contaminated-sediment cap reduce movement toward the Niagara River.",
       "Construction within the park must protect the cap, use approved clean material, and follow contaminated-material and health-and-safety procedures.",
     ],
     presentDay: [
       "Gratwick is both a valued waterfront park and an actively managed closed landfill. The remedy supports recreation, trails, boating access, and habitat while requiring permanent care of the cap and groundwater-control system.",
     ],
     researchNotes: [
-      "Map the legal landfill and cap boundary separately from the full modern park boundary.",
+      "Use the historical aerials contained in the state decision record as linked evidence; verify reproduction rights for any non-government source photographs embedded in the file.",
       "Use current periodic-review reports to track groundwater-system performance and any repairs to shoreline, drainage, or cover components.",
     ],
   },
@@ -3919,32 +3916,33 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "southtowns-awtf-ash-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Southtowns Advanced Wastewater Treatment Facility maintained an on-site disposal area for ash generated by sewage-sludge incineration. It lies beside, but is not the same as, Woodlawn Beach State Park's natural beach and dune system.",
-      "Erie County reclaimed the ash landfill by excavating, testing, transporting, and disposing of its contents off site, then restoring the disturbed area.",
+      "The Southtowns Advanced Wastewater Treatment Facility maintained a closed on-site disposal area for ash generated by sewage-sludge incineration. The footprint sits within the treatment-facility property beside Woodlawn Beach State Park, but it is not the natural beach, dune system, swimming area, or the separate story of bacteria-driven beach advisories.",
+      "Erie County chose reclamation by removal rather than leaving a permanent mound beneath a new cap. The contract called for excavation, testing, controlled hauling, off-site disposal, grading, and restoration of the former ash footprint.",
+      "This story illustrates why geographic precision matters: a wastewater-treatment waste feature can be close to a beloved public beach without making every environmental condition at the beach evidence of ash migration.",
     ],
     timeline: [
       { period: "Incineration era", event: "Sewage-sludge incinerator ash was placed in an on-site disposal area." },
-      { period: "Closure planning", event: "Erie County characterized the ash and planned full removal and reclamation." },
-      { period: "Reclamation", event: "Ash and associated landfill material were excavated, tested, hauled, and disposed of off site." },
-      { period: "Restoration", event: "The former disposal footprint was graded and revegetated." },
+      { period: "Closed-landfill era", event: "The ash area remained closed for years within the operating wastewater-treatment property." },
+      { period: "2025", event: "Erie County advertised a dedicated reclamation contract for complete removal, testing, hauling, disposal, grading, and restoration." },
+      { period: "2025–2026", event: "The county completed the removal and restoration work while the larger treatment-facility expansion proceeded as a separate project." },
     ],
     documentedImpacts: [
-      "The disposal area contained wastewater-treatment incinerator ash.",
+      "The disposal area contained ash from the incineration of sewage sludge at the treatment facility.",
       "Its proximity to Lake Erie and Woodlawn Beach required careful material handling and runoff control.",
-      "The record does not identify the adjacent natural beach or dune as landfill.",
+      "The reviewed project documents do not identify the adjacent natural beach or dune as the ash landfill and do not make the landfill the documented source of every beach-water advisory.",
     ],
     cleanupAndControls: [
       "Landfill contents were removed rather than permanently capped in place.",
       "Material testing and controlled transport directed waste to approved disposal.",
-      "Backfill, grading, vegetation, and post-construction verification restored the footprint.",
+      "Backfill, grading, vegetation, erosion control, and post-construction verification restored the footprint.",
     ],
     presentDay: [
       "The ash landfill has been reclaimed through off-site removal. The marker records the former disposal footprint and should not stigmatize Woodlawn Beach or imply ash remains across the park.",
     ],
     researchNotes: [
-      "Add final removal tonnage, disposal destination, and closure certification.",
+      "Extract final removal tonnage and disposal destinations from the complete county closeout package before adding quantities.",
       "Replace the point with the verified former landfill polygon when county plans are available.",
     ],
   },
@@ -4039,55 +4037,65 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "forest-glen-mobile-home-subdivision": {
-    lastReviewed: "August 12, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Forest Glen was a residential development built over an inadequately covered chemical-waste disposal area in the Town of Niagara. The discovery placed residents in direct proximity to buried industrial waste and contaminated soil.",
-      "EPA permanently relocated residents from 51 mobile homes and two houses, then excavated contaminated soil and consolidated it beneath an engineered cap. The response converted a residential exposure problem into a controlled, unoccupied disposal site.",
+      "The 39-acre Forest Glen site was used for unauthorized industrial-waste disposal from the 1950s into the early 1970s. Niagara Falls USA Campsites Corporation purchased the property in 1973 and developed an approximately 11-acre portion as a mobile-home subdivision. Evidence of buried waste appeared during utility installation that same year.",
+      "By the late 1980s, approximately 150 people lived at Forest Glen. Investigators found buried drums, contaminated soil and groundwater, and compounds including benzothiazole, aniline, and phenothiazine. The environmental question was no longer only what had been dumped, but whether families could safely remain while years of investigation and construction proceeded.",
+      "EPA and FEMA began voluntary temporary relocation in July 1989. Residents publicly argued that a short move was inadequate and pressed for permanent relocation. EPA selected permanent relocation in December 1989, and FEMA completed it in December 1992.",
+      "The physical remedy later excavated and consolidated contaminated material beneath an engineered cap. A commercial distribution building was constructed over part of the cap, while groundwater extraction and monitoring continued.",
     ],
     timeline: [
-      { period: "Disposal era", event: "Chemical waste was placed at the property before residential development." },
-      { period: "Residential development", event: "Mobile homes and houses were established over the inadequately covered dump." },
-      { period: "Superfund response", event: "EPA investigated the exposure and permanently relocated affected residents." },
-      { period: "Remedial construction", event: "Contaminated soil was excavated, consolidated, and contained beneath an engineered cap." },
+      { period: "1950s–early 1970s", event: "Industrial waste was illegally disposed across wooded and wet areas before subdivision development." },
+      { period: "1973–1979", event: "Waste evidence appeared during utility installation, but the mobile-home subdivision was developed and occupied." },
+      { period: "1987–July 1989", event: "Federal and state investigation identified buried waste and contaminated media; ATSDR advised that residents be relocated while the threat was addressed." },
+      { period: "July–December 1989", event: "EPA and FEMA opened a temporary-relocation program while residents demanded permanent removal. The site joined the Superfund list and EPA selected permanent relocation." },
+      { period: "1990–1992", event: "FEMA permanently relocated 53 families from 51 mobile homes and two houses." },
+      { period: "1998–2003", event: "EPA selected and constructed soil and groundwater remedies; abandoned homes were removed, contaminated material was consolidated, and the engineered cap was completed." },
+      { period: "Present", event: "A distribution facility operates above part of the capped area while groundwater extraction, monitoring, and land-use controls continue." },
     ],
     documentedImpacts: [
-      "Homes were located directly over or beside inadequately covered chemical waste.",
-      "Contaminated soil created direct-contact and residential exposure concerns.",
+      "Homes were located directly over or beside inadequately covered chemical waste, with documented contamination in soil, sediment, and groundwater.",
+      "EPA initially fenced and covered two hot spots and temporarily relocated 27 families before the permanent-relocation decision.",
+      "Contemporary reports record residents' symptoms and fears, but WNYAtlas does not convert those accounts into unverified disease-causation findings.",
       "The confirmed disposal area is site-specific and does not establish contamination throughout the wider neighborhood.",
     ],
     cleanupAndControls: [
-      "EPA permanently relocated occupants from 51 mobile homes and two houses.",
+      "EPA and FEMA permanently relocated 53 families from 51 mobile homes and two houses after maintaining temporary housing, security, winterization, and vacated properties during the transition.",
       "Affected soil was excavated and consolidated within an engineered capped area.",
-      "Land-use restrictions, cap inspections, groundwater monitoring, and long-term maintenance protect the remedy.",
+      "Groundwater is extracted and sent through the sanitary sewer for treatment; the less-contaminated western plume is monitored for natural attenuation.",
+      "Land-use restrictions, cap inspections, groundwater monitoring, and long-term maintenance protect the remedy and commercial reuse.",
     ],
     presentDay: [
-      "The former subdivision is now a capped and controlled Superfund site without residential occupancy. The remedy prevents exposure while waste remains contained; surrounding properties should be discussed only from parcel-specific evidence.",
+      "The former subdivision is now a capped and controlled Superfund site without residential occupancy. A commercial building above part of the cap is compatible with the remedy; it is not evidence that the contained waste was removed from the entire site.",
     ],
     researchNotes: [
-      "Add the newest five-year-review findings, groundwater trends, and current site ownership.",
+      "Add photographs and resident-meeting records from the Niagara Falls Public Library Forest Glen archive only with permission or as external links.",
       "Use the verified capped-area boundary rather than extending the marker to the broader Forest Glen neighborhood.",
     ],
   },
   "wide-beach-development": {
-    lastReviewed: "August 12, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "At Wide Beach, PCB-contaminated waste oil was spread on dirt roads for dust suppression. Road grading and excavation later moved affected soil into residential yards and nearby wetlands, distributing contamination through the Lake Erie community.",
-      "The federal remedy treated approximately 36,160 tons of contaminated soil and sediment and restored disturbed wetlands. EPA deleted the site from the National Priorities List in 1994 after completing the cleanup.",
+      "Wide Beach was a roughly 55-acre Lake Erie community whose unpaved private roads were periodically sprayed with waste oil to suppress dust. Some of that oil contained PCBs, turning an ordinary maintenance practice into the contamination source.",
+      "The material did not remain neatly within the roadbeds. Grading, snowplowing, drainage, vehicle movement, and road excavation redistributed affected soil toward residential yards and wetlands. Investigators also found drums in nearby woods, although the road-oiling history remained central to the remedy.",
+      "EPA selected an unusual cleanup: excavate contaminated road, yard, and sediment material; chemically treat qualifying soil on site to destroy PCBs; reuse treated soil as fill; then rebuild roads, yards, and wetlands. Approximately 36,160 tons were treated before the site was deleted from the Superfund list in 1994.",
     ],
     timeline: [
-      { period: "Dust-control era", event: "Waste oil containing PCBs was applied to unpaved community roads." },
-      { period: "Redistribution", event: "Road work moved PCB-affected soil into yards and wetland areas." },
-      { period: "Superfund cleanup", event: "Soil and sediment were excavated and treated, and affected properties were restored." },
+      { period: "1960s–1970s", event: "Waste oil was sprayed on the development's dirt roads for dust suppression; part of the oil supply contained PCBs." },
+      { period: "1980", event: "County investigation and sampling brought the neighborhood road contamination into the public record." },
+      { period: "1980s redistribution", event: "Normal road maintenance and excavation moved PCB-affected material into shoulders, yards, drainage areas, and wetlands." },
+      { period: "1985–1993", event: "The federal remedy excavated and chemically treated contaminated soil and sediment, reconstructed affected property, and restored wetlands." },
       { period: "1994", event: "EPA deleted Wide Beach from the National Priorities List after remedy completion." },
     ],
     documentedImpacts: [
-      "PCBs contaminated road soil, residential yards, and sediment.",
-      "Ordinary grading practices spread affected material beyond the original road surfaces.",
+      "PCBs contaminated road soil, residential yards, and sediment; the affected area followed material movement rather than a conventional factory boundary.",
+      "Ordinary grading, plowing, drainage, and excavation helped spread affected road material beyond the original travel surface.",
+      "The discovery of drums in nearby woods was investigated, but it should not replace the documented waste-oil pathway with a more dramatic unsupported source theory.",
       "Cleanup disturbance affected wetlands that required ecological restoration.",
     ],
     cleanupAndControls: [
-      "Approximately 36,160 tons of contaminated soil and sediment were excavated and treated.",
-      "Clean material restored roads, yards, and other excavated areas.",
+      "Approximately 36,160 tons of contaminated soil and sediment were excavated and treated using an on-site chemical process designed to destroy PCBs.",
+      "Treated and clean material restored roads, yards, and other excavated areas under verification sampling.",
       "Affected wetlands were restored and the completed remedy was verified before NPL deletion.",
     ],
     presentDay: [

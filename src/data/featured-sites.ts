@@ -797,6 +797,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Niagara River park established on a former municipal and industrial landfill, with a documented remedial program and long-term site management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.899038, 43.054331],
+    newsEvents: [
+      {
+        date: "1968–1969",
+        headline: "A closed Niagara River landfill reopens as a public park",
+        summary: "The city covered and seeded the former municipal and industrial disposal area, then opened it for recreation the following year—well before later groundwater and shoreline investigations defined the remedy.",
+        publisher: "NYSDEC Gratwick Riverside Park decision archive",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932060/ROD.HW.932060.1991-02-01.gratwick_riverside.pdf",
+        reach: "Local",
+      },
+      {
+        date: "1982",
+        headline: "Shoreline erosion exposes drums along the public park",
+        summary: "Investigators documented and removed 33 drums containing cured phenolic resin after erosion revealed them at the Niagara River edge.",
+        publisher: "NYSDEC Gratwick Riverside Park decision archive",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932060/ROD.HW.932060.1991-02-01.gratwick_riverside.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Gratwick Riverside Park Record of Decision",
@@ -2439,6 +2457,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former disposal area for sewage-sludge incinerator ash at the Southtowns Advanced Wastewater Treatment Facility beside Woodlawn Beach State Park. Erie County removed and tested the landfill contents, disposed of them off-site, and restored the area. The record does not identify the natural beach or dune system as a landfill.",
     evidenceStatus: "well-documented",
     coordinates: [-78.8465, 42.78875],
+    newsEvents: [
+      {
+        date: "May–June 2025",
+        headline: "Erie County seeks full removal of the closed ash landfill",
+        summary: "The reclamation contract called for excavating the existing ash-landfill contents, testing the material, hauling it to approved disposal, and restoring the former footprint.",
+        publisher: "Erie County purchasing archive",
+        url: "https://www3.erie.gov/purchasing/sites/www3.erie.gov.purchasing/files/2025-05/stawtf_ashlandfillrec-82_ad.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Southtowns AWTF Ash Landfill Reclamation Bid Documents",
@@ -2568,6 +2596,14 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://www.upi.com/amp/Archives/1989/08/07/Preliminary-results-show-toxins-inside-Forest-Glen-homes/7917618465600/",
         reach: "National",
       },
+      {
+        date: "April 24, 1998",
+        headline: "EPA selects the physical cleanup after families have been relocated",
+        summary: "The $16.5 million plan addressed contaminated soil and sediment years after the emergency began, showing how resident relocation and environmental construction followed separate timelines.",
+        publisher: "U.S. Environmental Protection Agency news archive",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/068e1739e9504ba3852572660072568a.html",
+        reach: "National",
+      },
     ],
     sources: [
       {
@@ -2579,6 +2615,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Forest Glen Cleanup and Reuse Profile",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.redevelop&id=0202361",
+      },
+      {
+        title: "Forest Glen Superfund plans, notes, and news archive finding aid",
+        publisher: "Niagara Falls Public Library Local History Department",
+        url: "https://nflh.libraryhost.com/repositories/2/archival_objects/12870",
       },
     ],
   },
@@ -2612,6 +2653,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Wide Beach Development Record of Decision",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915119/ROD.HW.915119.1985-09-01.Wide_Beach_OU1.pdf",
+      },
+      {
+        title: "Wide Beach PCB Treatment Case Study",
+        publisher: "U.S. Federal Remediation Technologies Roundtable",
+        url: "https://frtr.gov/costperformance/pdf/wide_bch.pdf",
       },
     ],
   },
