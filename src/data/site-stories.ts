@@ -4007,21 +4007,25 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "eighteenmile-creek-superfund": {
-    lastReviewed: "August 12, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Eighteen Mile Creek Superfund site covers roughly 15 miles from the Lockport source area toward Lake Ontario. Historic industries contaminated facility soil, groundwater, creek sediment, and floodplain areas with PCBs, lead, and other pollutants.",
-      "EPA divided the site into stages and operable units. Source-area actions have included demolition, excavation, capping, and selected residential relocations, while downstream sediment investigation and fish-consumption restrictions remain important.",
+      "The Eighteen Mile Creek Superfund site follows roughly 15 miles of water from the Erie Canal in Lockport north toward Lake Ontario. It is not one fenced factory parcel: former industrial properties, residential land, creek sediment, floodplain soil, and the aquatic food web form different pieces of the same investigation.",
+      "At the Lockport source area, the former Flintkote plant manufactured felt products and asphalt roofing materials. Other historical operations also occupied the industrial corridor. EPA documented PCBs, lead, and other contaminants in soil, groundwater, creek sediment, and floodplain deposits, but source attribution and remedy decisions differ by location.",
+      "The first major federal action focused on Water Street properties and the deteriorated Flintkote building. EPA selected permanent relocation for affected residents, demolition, excavation, and source control before turning to the much larger downstream sediment problem.",
+      "Fish-consumption restrictions make the story larger than the abandoned buildings: persistent contaminants can move through sediment and accumulate in fish even when a particular shoreline looks ordinary.",
     ],
     timeline: [
-      { period: "Industrial era", event: "Manufacturing and waste handling released contaminants near the creek's Lockport source." },
-      { period: "Superfund listing", event: "EPA placed the multi-mile creek system in the federal cleanup program." },
-      { period: "Source-area actions", event: "Buildings were demolished, contaminated material excavated, caps installed, and some residents relocated." },
-      { period: "Current program", event: "Investigation and cleanup continue by operable unit along the creek corridor." },
+      { period: "Industrial era", event: "Flintkote and other Lockport industries operated near the creek headwaters, leaving multiple source areas that later required separate investigation." },
+      { period: "2012", event: "EPA added the creek corridor to the National Priorities List, turning a local source-area problem into a staged federal sediment and watershed cleanup." },
+      { period: "2013–2015", event: "EPA selected acquisition and permanent relocation of affected Water Street residents, demolition of structures including the former Flintkote building, excavation, and capping." },
+      { period: "Later operable units", event: "Investigation moved downstream to creek and floodplain sediment, where cleanup scale and access differ sharply from the source properties." },
+      { period: "Present", event: "Remedial work and monitoring continue by operable unit; fish-consumption advice remains a separate public-health control." },
     ],
     documentedImpacts: [
       "PCBs and lead contaminate source-area soil and creek sediment.",
       "Groundwater, runoff, and sediment transport connected industrial sources to downstream reaches.",
       "Fish-consumption advisories reflect persistent bioaccumulation risk in the aquatic food web.",
+      "The official corridor boundary does not mean every bank, yard, or building along all 15 miles has the same contaminant level or cleanup requirement.",
     ],
     cleanupAndControls: [
       "Source buildings and contaminated soil were removed or capped in priority areas.",
@@ -4034,6 +4038,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Track each operable unit's decision, construction status, sediment volume, and post-cleanup monitoring.",
       "Represent the site as a corridor with source-area polygons rather than a single point.",
+      "Seek permission for copyrighted Lockport newspaper photographs; link directly to archive records when reproduction rights are unclear.",
     ],
   },
   "forest-glen-mobile-home-subdivision": {
@@ -4107,21 +4112,24 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "fmc-middleport": {
-    lastReviewed: "August 12, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "FMC's Middleport plant began manufacturing arsenic-based pesticides and other products in the 1920s. Historic releases, waste handling, runoff, and air deposition affected facility soil, sediment, surface water, groundwater, and off-site properties.",
-      "New York supervises a multi-year cleanup extending beyond the plant to residential and commercial parcels and Royalton-Hartland school property. Arsenic is the defining contaminant, though specific cleanup decisions vary by area.",
+      "FMC's Middleport plant began manufacturing arsenic-based pesticides and other products in the 1920s. The plant is the source property, but the later investigation expanded into the village because historical air emissions, runoff, drainage, and material handling created possible routes beyond the fence line.",
+      "Arsenic became the defining off-site contaminant. Investigators divided the work into geographic study and remediation areas rather than labeling Middleport as one uniformly affected place. Sampling and cleanup decisions were made property by property.",
+      "The off-site program reached homes, businesses, village land, and portions of the Royalton-Hartland school property. Excavation therefore involved more than removing soil: contractors had to document existing yards and features, replace clean soil, restore landscaping and pavement, and coordinate work around residents and school operations.",
+      "Facility corrective action remains a separate regulatory track. A completed residential excavation does not mean every on-site groundwater, drainage, or waste-management obligation at the manufacturing property is finished.",
     ],
     timeline: [
       { period: "1920s onward", event: "The plant manufactured arsenic-based pesticides and other chemical products." },
-      { period: "Investigation era", event: "Agencies documented on-site impacts and off-site deposition and runoff pathways." },
-      { period: "Off-site remedy", event: "Contaminated soil removal proceeded across residential, commercial, and school properties." },
-      { period: "2025", event: "DEC reported that the multi-year off-site cleanup program remained active." },
+      { period: "Investigation era", event: "Agencies sampled the facility and surrounding community, evaluating air deposition, runoff, drainage, soil, sediment, surface water, and groundwater." },
+      { period: "2015 onward", event: "State-supervised off-site excavation and restoration proceeded in phases across defined residential, commercial, village, and school properties." },
+      { period: "2025", event: "DEC's community update documented another active construction season, with completed areas and remaining work reported separately." },
     ],
     documentedImpacts: [
       "Arsenic affected plant soil and nearby properties through several transport pathways.",
       "Facility sediment, surface water, and groundwater were also part of the corrective-action record.",
       "Residential and school settings required property-specific cleanup and restoration.",
+      "A property included in a study or work area is not automatically proof that every part of that property exceeded a cleanup criterion.",
     ],
     cleanupAndControls: [
       "Contaminated soil is excavated from defined off-site properties and replaced with clean material.",
@@ -4134,6 +4142,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Track annual property counts, excavation volumes, restoration completion, and remaining remedial areas.",
       "Distinguish measured facility releases from naturally occurring regional arsenic and from properties below cleanup criteria.",
+      "Use DEC construction photographs when reuse terms permit; otherwise link to the community updates rather than copying images.",
     ],
   },
   "former-american-axle-east-delavan": {
@@ -4345,15 +4354,17 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "olean-well-field-superfund": {
-    lastReviewed: "August 12, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Olean Well Field site covers roughly 800 acres beneath parts of Olean and Portville. EPA's investigation connected TCE and other volatile-organic groundwater contamination with four principal industrial source properties: Alcas, McGraw-Edison/Cooper, AVX, and Loohn's Dry Cleaners.",
-      "The site is a regional groundwater system rather than a single disposal lot. Municipal wells, private wells, industrial source properties, and the intervening aquifer have therefore been addressed through separate but coordinated actions.",
+      "The Olean Well Field case began in January 1981 with a drinking-water discovery rather than a visible dump. Testing found volatile organic compounds in municipal supply wells and private wells in the Olean–Portville area, forcing officials to protect water users while investigators worked backward through the aquifer toward possible sources.",
+      "The federal site covers roughly 800 acres and is a groundwater system rather than a single disposal lot. EPA's investigation identified four principal industrial source properties—Alcas, McGraw-Edison/Cooper, AVX, and Loohn's Dry Cleaners—but each property has its own contaminants, remedy history, and evidentiary limits.",
+      "Immediate protection and long-term cleanup followed different timelines. Affected municipal wells were removed from ordinary service or treated, public water was extended to private-well users, and source-area groundwater remedies were designed and revised as investigators learned more about plume movement.",
+      "The result is an environmental detective story beneath an inhabited city: water-supply data revealed the problem, monitoring wells helped reconstruct movement, and decades of source control followed. The regional marker is not a present-day exposure map for individual homes.",
     ],
     timeline: [
-      { period: "1981", event: "Olean detected volatile organic compounds in municipal wells and removed affected wells from normal service." },
+      { period: "January 1981", event: "Routine drinking-water testing detected volatile organic compounds in municipal and private wells, triggering emergency water-supply decisions and a regional source investigation." },
       { period: "1983", event: "EPA placed the site on the National Priorities List." },
-      { period: "Early response", event: "Treatment was added to municipal supplies and public water was extended to affected private-well users." },
+      { period: "1980s response", event: "Treatment was added to municipal supplies and public water was extended to affected private-well users while EPA investigated several industrial source areas." },
       { period: "2002 onward", event: "Source-property groundwater systems and monitoring addressed continuing contamination." },
       { period: "2022–present", event: "EPA selected additional AVX-area groundwater and soil cleanup and continued design and implementation work." },
     ],
@@ -4361,6 +4372,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "TCE and other volatile organic compounds were documented in groundwater beneath residential and industrial areas.",
       "The contamination affected municipal-well and private-well decision-making.",
       "EPA attributes source-area work to four identified industrial properties; the mapped regional pin does not define the boundary of every plume.",
+      "The official record connects these properties through the shared aquifer investigation, not through one identical waste stream or one uniform plume.",
     ],
     cleanupAndControls: [
       "Air stripping and carbon treatment protected public-water supplies.",
@@ -4373,18 +4385,21 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Build a dedicated Olean detail map for the four source properties and the official study area.",
       "Do not infer present-day exposure at a home from proximity to the regional marker.",
+      "Add historical municipal-water reporting and aerials of the four source properties through links or licensed/public-domain reproductions.",
     ],
   },
   "peter-cooper-gowanda": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Animal-glue production began on the Palmer Street property in 1904. Peter Cooper and predecessor operations later made industrial adhesives, connecting the site to Gowanda's long leather, rendering, and animal-products economy.",
       "From 1925 through October 1970, glue-manufacturing sludge was placed in an elevated disposal area covering about five acres. The plant closed after later synthetic-adhesive operations ended in the 1980s.",
+      "Some waste also left the factory property and was transported to the separate Markhams disposal site in Dayton. That documented transfer—not a continuous groundwater plume—is the connection between the two Atlas stories.",
     ],
     timeline: [
       { period: "1904", event: "Animal-glue manufacturing began at the Gowanda property." },
       { period: "1925–1970", event: "Glue-manufacturing sludge was placed in the elevated disposal area." },
       { period: "1970s–1985", event: "Industrial-adhesive operations continued before the facility closed." },
+      { period: "Waste-transfer history", event: "Manufacturing waste from Gowanda was transported to the separate Bentley Road disposal property at Markhams." },
       { period: "2005", event: "DEC selected the principal site remedy." },
       { period: "Present", event: "The closed Class 4 site remains subject to inspection, maintenance, and institutional controls." },
     ],
@@ -4403,13 +4418,15 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Keep Peter Cooper Gowanda distinct from the downstream Markhams disposal site.",
       "Show its relationship to Moench Tanning as shared industrial geography, not a claim that both sites have one plume.",
+      "Use a two-point route graphic to explain transported waste without drawing an unsupported contamination corridor.",
     ],
   },
   "peter-cooper-markhams": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "The Markhams property is a separate disposal site in the Town of Dayton. Waste from the Peter Cooper animal-glue plant in Gowanda was transported here, linking two geographically separate communities through one industrial waste stream.",
       "The Bentley Road disposal property must be understood as the receiving end of that waste-transfer history, not as the location where the glue and adhesive products were manufactured.",
+      "The rural setting can make the site appear disconnected from industrial history. In fact, its central evidence is logistical: factory residuals were loaded, transported away from Gowanda, and placed on a different landscape whose drainage, erosion, and long-term controls then became a separate public responsibility.",
     ],
     timeline: [
       { period: "Historic disposal era", event: "Glue-production wastes from the Gowanda operation were deposited at the Bentley Road property." },
@@ -4433,6 +4450,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     researchNotes: [
       "Map the historic waste-transfer relationship without drawing an unsupported continuous plume between Gowanda and Markhams.",
+      "Pair aerials of the Palmer Street factory and Bentley Road disposal area; link copyrighted archive imagery unless reuse permission is documented.",
     ],
   },
   "moench-tanning-gowanda": {

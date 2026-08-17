@@ -1420,6 +1420,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Approximately 800-acre groundwater cleanup involving TCE and other volatile organic compounds beneath portions of Olean and Portville. EPA identified four principal industrial source properties, extended public water to affected homes, treated municipal wells, and continues source-area cleanup and monitoring.",
     evidenceStatus: "well-documented",
     coordinates: [-78.3941234926409, 42.06822415241196],
+    newsEvents: [
+      {
+        date: "January 1981",
+        headline: "Routine testing reveals solvents in Olean-area drinking-water wells",
+        summary: "The discovery in municipal and private wells changed the investigation from a set of factory properties into a regional aquifer and drinking-water case.",
+        publisher: "U.S. Environmental Protection Agency cleanup record",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0201877",
+        reach: "Regional",
+      },
+      {
+        date: "September 2022",
+        headline: "EPA selects additional cleanup for the AVX source area",
+        summary: "The later decision shows why the Olean story spans generations: emergency water protection came first, while source-area investigation and groundwater treatment continued decades later.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-finalizes-cleanup-plan-address-additional-contaminated-groundwater-olean-well",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Olean Well Field Superfund Cleanup Profile",
@@ -1448,6 +1466,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former animal-glue and industrial-adhesive works along Cattaraugus Creek. Manufacturing operated from 1904 into the 1980s, and a five-acre elevated area received glue-manufacturing sludge from 1925 to 1970. The closed Class 4 site remains under long-term management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.92805924758444, 42.458173855707706],
+    newsEvents: [
+      {
+        date: "1904–1985",
+        headline: "Animal-glue production creates a two-site waste history",
+        summary: "The Gowanda works manufactured glue and adhesives and managed sludge on site, while other factory waste was transported to the separate Markhams property in Dayton.",
+        publisher: "New York State Department of Environmental Conservation record",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905003A/ROD.HW.905003A.2005-09-30.petercooper_ou1.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Peter Cooper Gowanda 2021 Annual Report",
@@ -1471,6 +1499,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former disposal property on Bentley Road that received wastes from the Peter Cooper animal-glue operation in Gowanda. The remedy consolidated and capped waste, added drainage and erosion controls, and requires continuing inspection and land-use controls.",
     evidenceStatus: "well-documented",
     coordinates: [-79.01189213670254, 42.39289274789518],
+    newsEvents: [
+      {
+        date: "2006",
+        headline: "Federal remedy contains transported glue-manufacturing waste at Markhams",
+        summary: "EPA selected consolidation, a low-permeability cover, drainage and erosion controls, and continuing land-use restrictions for the rural receiving property.",
+        publisher: "U.S. Environmental Protection Agency Record of Decision",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905003B/ROD.HW.905003B.2006-12-01.FINAL.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Peter Cooper–Markhams Superfund Record of Decision",

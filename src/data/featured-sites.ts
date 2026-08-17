@@ -2548,6 +2548,14 @@ const featuredSiteRecords: AtlasSite[] = [
     coordinates: [-78.691, 43.171],
     newsEvents: [
       {
+        date: "March 2012",
+        headline: "Eighteen Mile Creek joins the federal Superfund list",
+        summary: "The listing formally joined Lockport source properties with the downstream sediment corridor, setting up a cleanup that would proceed through multiple operable units rather than one construction project.",
+        publisher: "U.S. Environmental Protection Agency cleanup record",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0206456",
+        reach: "Regional",
+      },
+      {
         date: "July–September 2013",
         headline: "EPA proposes permanent relocation beside Eighteen Mile Creek",
         summary: "The first major cleanup decision called for purchasing contaminated Water Street properties, permanently relocating residents, demolishing homes, and removing the deteriorated Flintkote building.",
@@ -2671,6 +2679,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Pesticide plant that began manufacturing arsenic-based and other products in the 1920s. Historic releases affected the facility and nearby properties through runoff and air deposition. State-supervised work has removed contaminated soil from residential, commercial, and Royalton-Hartland school properties. The off-site cleanup remained active in 2025.",
     evidenceStatus: "well-documented",
     coordinates: [-78.4758, 43.211],
+    newsEvents: [
+      {
+        date: "2015–2020",
+        headline: "Arsenic cleanup reaches Royalton-Hartland school property",
+        summary: "Phased excavation and restoration addressed defined portions of the school campus, making the village cleanup part of daily life for students, families, and staff while preserving property-specific boundaries.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/fmc-middleport-facility/news-updates",
+        reach: "Regional",
+      },
+      {
+        date: "Summer 2025",
+        headline: "Off-site excavation continues property by property in Middleport",
+        summary: "The state community update documented continuing construction and restoration, reinforcing that completed parcels and remaining remediation areas must be reported separately.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/der/factsheet/932014update0725.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "FMC Middleport Facility",
