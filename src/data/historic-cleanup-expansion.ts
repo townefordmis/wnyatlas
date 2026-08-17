@@ -616,6 +616,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Major automotive-component manufacturing property on Upper Mountain Road. DEC's closed remediation record provides a Lockport counterpart to Buffalo's former GM and American Axle complex and preserves the environmental history behind a major regional employer.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.742012511, 43.165618767],
+    newsEvents: [
+      {
+        date: "1987-1990",
+        headline: "Five wastewater-sludge piles undergo hazardous-waste clean closure",
+        summary: "DEC records required removal of sludge, waste residues and contaminated soil from five storage piles at the Upper Mountain Road plant, followed by confirmation sampling rather than reliance on surface appearance.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932017/Report.HW.932017.1990-09-20.closure_certification_vol2.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Harrison Radiator Division Site Documents",
@@ -872,6 +882,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Two-acre disposal area behind the Strippit plant. Buffalo Arms used the property during the 1940s for arms testing and scrap disposal; later wastes included coolants, heat-treatment sludge, solvents, drums, and burned refuse. Waste was consolidated beneath a composite cap in 1994, followed by monitoring and maintenance.",
     evidenceStatus: "well-documented",
     coordinates: [-78.50494, 43.0107],
+    newsEvents: [
+      {
+        date: "1940-1950",
+        headline: "A machine-gun test property becomes an industrial disposal ground",
+        summary: "The official history records Buffalo Arms firing machine guns and discarding scrap before later plant wastes, drums and burned refuse accumulated behind the Strippit factory.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915053/ROD.HW.915053.1995-03-01.Houdaille%20Industrial%20Strippit%20Division.pdf",
+        reach: "Local",
+      },
+      {
+        date: "1992-1995",
+        headline: "Investigation finds contamination contained within the landfill area",
+        summary: "DEC concluded that sampled contamination was not leaving the disposal area and selected consolidation and capping; continuing monitoring remains important because the waste was contained rather than wholly removed.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915053/ROD.HW.915053.1995-03-01.Houdaille%20Industrial%20Strippit%20Division.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Houdaille Industries / Strippit Periodic Review Report",
@@ -959,6 +987,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former tool-manufacturing complex where forging, machining, heat treating, electroplating, and vapor degreasing left chlorinated solvents, petroleum, metals, and other contaminants. Cleanup included excavation, river-protection barriers, shoreline stabilization, and continuing controls.",
     evidenceStatus: "well-documented",
     coordinates: [-79.2353, 42.0969],
+    newsEvents: [
+      {
+        date: "1984-2009",
+        headline: "A closed tool plant becomes a river-edge excavation and stabilization project",
+        summary: "After Proto Tool production ended, cleanup removed source material while barriers protected the Chadakoin River; DEC certified the major remedial work complete in July 2009.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "D.C. Rollforms Engineering Construction Completion Report",
@@ -1395,6 +1433,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Property with early Standard Oil and apple-evaporator uses followed by decades of veneer manufacturing. Cleanup removed about 3,400 tons of petroleum-affected soil and demolished asbestos-containing industrial buildings before completion in 2010.",
     evidenceStatus: "well-documented",
     coordinates: [-78.8672, 42.3297],
+    newsEvents: [
+      {
+        date: "2007-2010",
+        headline: "A village-led cleanup clears petroleum soil and asbestos buildings",
+        summary: "The state restoration removed about 3,400 tons of petroleum-affected soil and demolished asbestos-containing factory structures before DEC certified the property in 2010.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories",
+        reach: "Local",
+      },
+      {
+        date: "March 2025",
+        headline: "The cleared factory ground is folded into Cattaraugus's One Main vision",
+        summary: "Local reporting described plans for a farmers market, affordable space for artists and entrepreneurs, outdoor events and connections to new rail recreation on the former industrial ground.",
+        publisher: "Olean Star",
+        url: "https://oleanstar.com/blog/2025/03/29/village-of-cattaraugus-wins-10-million-downtown-revitalization-award/",
+        reach: "Local",
+      },
+    ],
     sources: [
       { title: "Region 9 Cleanup Success Stories", publisher: "NYSDEC", url: decSuccessStories },
       {
@@ -1461,6 +1517,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Historic ceramics-manufacturing property on Hayes Place. Cleanup addressed industrial soil and groundwater impacts; off-site groundwater and soil-vapor controls, including a neighboring residence's sub-slab system, remain part of the management record.",
     evidenceStatus: "well-documented",
     coordinates: [-78.82743, 42.86913],
+    newsEvents: [
+      {
+        date: "2010 remedial investigation",
+        headline: "Off-site vapor results require mitigation at a neighboring residence",
+        summary: "The investigation identified chlorinated compounds in off-site groundwater and indoor-air-related sampling at one location, leading to a sub-slab depressurization system; this was a specific mitigated pathway, not evidence about every nearby home.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/bchinari.pdf",
+        reach: "Local",
+      },
+      {
+        date: "March 17, 2018",
+        headline: "New businesses return to the former ceramics complex",
+        summary: "Regional reporting documented reuse of the 285,000-square-foot plant after its abrupt 2003 closure, while environmental monitoring and off-site vapor controls continued under the brownfield remedy.",
+        publisher: "Spectrum News 1",
+        url: "https://spectrumlocalnews.com/nys/buffalo/news/2018/03/17/buffalo-china-factory-hayes-place-management-group",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Former Buffalo China Remedial Investigation",
@@ -1653,6 +1727,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Long-running landfill complex on Olean Road containing closed disposal areas alongside an active permitted operation. Unlike the atlas's completed brownfields, Chaffee remains an operating solid-waste facility; its historic cells, current cells, leachate and gas systems, permits, and proposed expansions must be kept distinct.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.48589, 42.58259],
+    newsEvents: [
+      {
+        date: "September 14, 2022",
+        headline: "A major expansion proposal enters public permit review",
+        summary: "DEC released draft solid-waste and air permits for a proposed 20-acre southern cell, 10 acres of valley fill and vertical expansion, making public comment part of the operating landfill's continuing history.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2022-09-14/completed-application/chaffee-landfill",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Chaffee Landfill Permit Application",
@@ -2055,6 +2139,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former Evans Street gasworks that operated from 1855 until sometime after 1909. DEC investigations documented coal tar, PAHs and volatile compounds in soil or groundwater; the selected remedy combines excavation, a site cover, groundwater monitoring and continuing controls.",
     evidenceStatus: "well-documented",
     coordinates: [-78.18620030566001, 42.99561104424735],
+    newsEvents: [
+      {
+        date: "May 2019-March 2020",
+        headline: "Batavia asks cleanup planners to preserve its historic gas holder",
+        summary: "The city historian and public comments emphasized the circular 1855-era structure's landmark value. DEC responded that the selected stabilization work would not require demolition and would protect the building's stability.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C819019/ROD.BCP.C819019.2020-09-28.ROD.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Batavia Former MGP Record of Decision",

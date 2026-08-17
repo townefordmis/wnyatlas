@@ -1142,10 +1142,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "harrison-radiator-lockport": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Harrison Radiator emerged in Lockport during the early automobile era and became part of the group of component manufacturers assembled into General Motors. The plant made radiators and heat-exchange products, tying Lockport directly to the growth of mass automobile production.",
-      "The scale and longevity of metalworking, fabrication, testing, coating, degreasing, fuel use, and utility systems created a complex industrial property. DEC's completed-site designation reflects remedial work, but the historic facility should be interpreted parcel by parcel rather than as one uniform condition.",
+      "The scale and longevity of metalworking, fabrication, testing, coating, degreasing, fuel use, and utility systems created a complex industrial property. The specific 932017 record includes five piles that stored wastewater-treatment sludge and were closed under hazardous-waste requirements.",
+      "EPA lists the broader Upper Mountain Road facility as a non-National Priorities List site deferred to the federal hazardous-waste corrective-action program. That status is distinct from separate Harrison-era buildings elsewhere in Lockport and from the Eighteenmile Creek Superfund cleanup.",
     ],
     timeline: [
       {
@@ -1161,7 +1162,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       {
         period: "Late twentieth century",
         event:
-          "Production changes, plant modernization, and industrial-property transitions led to environmental investigation and cleanup.",
+          "DEC approved a plan to remove sludge, residues and contaminated soil from five wastewater-treatment sludge piles and verify the result through sampling.",
       },
       {
         period: "Remediation",
@@ -1176,12 +1177,12 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     documentedImpacts: [
       "Historic automotive-component manufacturing involved oils, fuels, solvents, metals, coatings, and industrial wastewater systems.",
-      "DEC records document a bounded remediation site within a much larger manufacturing history.",
+      "The 932017 closure record specifically documents wastewater-treatment sludge storage piles; it should not be generalized into an unsupported contaminant list for every plant parcel.",
       "Conditions on one cleanup parcel should not be attributed automatically to the entire Harrison/GM property.",
     ],
     cleanupAndControls: [
-      "Investigation and remedial actions addressed identified source areas under DEC oversight.",
-      "Completed-site status records the remedial program outcome for the defined parcel.",
+      "Closure work removed waste, residues and affected soil from the five sludge-pile areas and used confirmation sampling to evaluate clean closure.",
+      "The state closure record and the broader RCRA corrective-action record describe different regulatory scales and should remain distinguishable.",
       "Any residual contamination, excavation requirements, or continuing controls remain parcel-specific.",
     ],
     presentDay: [

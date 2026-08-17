@@ -2599,6 +2599,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former disposal and industrial property where the remedy consolidated waste and contaminated soil beneath an engineered cover. The completed cleanup is maintained through institutional controls, inspections, and long-term operation and maintenance.",
     evidenceStatus: "well-documented",
     coordinates: [-78.83915543575709, 42.84547102465679],
+    newsEvents: [
+      {
+        date: "1929-1979",
+        headline: "Steel pickling waste is discharged to an adjoining industrial pond",
+        summary: "The combined cleanup record documents that Ramco's predecessors discharged spent sulfuric-acid pickle liquor and rinse water to a pond, while the adjoining Alltift property accumulated a separate landfill history.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915046B/Report.HW.915046B.2006-04-01.CCR%28FER%29%28Abridged_amended%2011-15-12%29.pdf",
+        reach: "Regional",
+      },
+      {
+        date: "2006-present",
+        headline: "Two distinct waste properties are consolidated beneath one managed remedy",
+        summary: "Construction combined the adjoining Alltift and Ramco remedies, consolidating affected material beneath engineered cover while preserving inspection, maintenance and soil-disturbance obligations.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915054/Report.HW.915054.2006-04-01.CCR%28FER%29%28Abridged_amended%2011-15-12%29.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Alltift Landfill Construction Completion Report",
@@ -3297,6 +3315,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former manufacturing and waste-fill property at Highland and Beech Avenues. DEC records document lead and PAHs in soil, excavation and treatment, a site-wide cover, and continuing land-use and site-management controls. A Certificate of Completion was issued in 2018.",
     evidenceStatus: "well-documented",
     coordinates: [-79.0458346421931, 43.115498326035414],
+    newsEvents: [
+      {
+        date: "March-April 2019",
+        headline: "DEC asks the public to review Tract II's completed-cleanup status",
+        summary: "After excavation, treatment and cover construction, DEC opened a public-comment period on reclassifying and partially delisting the Highland and Beech Avenue property while long-term controls remained.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://content.govdelivery.com/accounts/NYSDEC/bulletins/235bf5c",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Record of Decision Amendment — Site 932136",
