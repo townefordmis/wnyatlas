@@ -2194,6 +2194,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former landfill that accepted municipal refuse and industrial wastes, including caustic material and sludges, from regional manufacturers and the former air base. The site remains under an approved operation, maintenance, and monitoring program.",
     evidenceStatus: "well-documented",
     coordinates: [-78.856, 43.069],
+    newsEvents: [
+      {
+        date: "September 2014",
+        headline: "Plans advance to excavate a buried waste stream at Nash Road",
+        summary: "Local reporting explained that material excavated near Love Canal during 1968 highway work had been identified within the Wheatfield landfill and would be isolated and removed.",
+        publisher: "Niagara Frontier Publications archive",
+        url: "https://www.wnypapers.com/news/article/current/2014/09/13/117571/hearing-set-on-removal-of-love-canal-waste",
+        reach: "Local",
+      },
+      {
+        date: "May 10, 2017",
+        headline: "State investigators sample yards beside the former landfill",
+        summary: "DEC offered surface-soil sampling to immediately adjacent Forbes Street properties after renewed community concern about conditions beyond the landfill boundary.",
+        publisher: "Spectrum News archive",
+        url: "https://ny1.com/nyc/queens/top-stories/2017/05/10/dec-begins-soil-testing-backyards-bordering-old-landfill-in-north-tonawanda",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Niagara Sanitation Company Project Summary",
@@ -2204,6 +2222,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Niagara Sanitation Remedial Investigation",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/nsc11.pdf",
+      },
+      {
+        title: "Supplemental Phase II Investigation — Nash Road Landfill",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/nsc15.pdf",
       },
     ],
   },
