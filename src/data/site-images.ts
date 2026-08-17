@@ -82,4 +82,14 @@ export const siteImages: Partial<Record<string, AtlasImage>> = {
       "https://www.epa.gov/newsreleases/epa-successfully-wraps-activities-tonawanda-coke-facility",
     rights: "U.S. EPA photograph",
   },
+  "republic-steel": {
+    src: "/historical/republic-steel-buffalo-bar-mill-1986.jpg",
+    alt: "Black-and-white east elevation of the former Republic Steel eight-inch bar mill in Buffalo",
+    caption:
+      "The Buffalo plant's 8-inch bar mill, photographed from the northeast during federal industrial documentation. The mill was built in 1919–1920 and was part of LTV Steel's former Republic Steel complex.",
+    date: "1986",
+    credit: "Jet Lowe / Historic American Engineering Record, Library of Congress",
+    sourceUrl: "https://www.loc.gov/pictures/item/ny1813.photos.351483p/",
+    rights: "No known restrictions on U.S. government HAER image",
+  },
 };

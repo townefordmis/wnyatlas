@@ -1633,10 +1633,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-erie-radiological-assessment": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "The Niagara and Erie County Radiological Assessment is a regional investigation of properties where historic industrial slag or other fill may contain elevated naturally occurring radioactive material. It is an assessment program, not a finding that every contacted or screened property is contaminated.",
-      "The work builds on historic aerial radiation surveys, later state and federal records, and contemporary screening. Agencies seek property access for ground-based testing where available information warrants a closer look; results must be evaluated property by property.",
+      "The current work has three linked phases: EPA aerial surveys in late 2023 and summer 2024, vehicle-based roadway surveys beginning in 2025, and ground surveys that began in fall 2025. DEC says the aerial phase identified no areas of immediate concern; the later phases use closer-range instruments and records to decide where property-level investigation is warranted.",
+      "Private-property work requires owner permission. Residents objected to broad waiver language in an early access form; public reporting says the language was clarified and improved. An access agreement permits investigation—it is not an admission that contamination exists, a cleanup decision, or a finding about health effects.",
     ],
     timeline: [
       {
@@ -1650,31 +1651,53 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
           "EPA completed removals at several known Niagara County slag-fill locations while broader questions about other properties remained.",
       },
       {
-        period: "2025–2026",
+        period: "Late 2023–summer 2024",
         event:
-          "State and federal agencies expanded regional aerial, records-based, and property-access work under the Niagara and Erie County assessment.",
+          "EPA's ASPECT aircraft surveyed Erie and Niagara counties at about 500 feet above ground. DEC reports that this first phase identified no areas of immediate concern.",
+      },
+      {
+        period: "2025",
+        event:
+          "An instrument-equipped EPA vehicle surveyed roughly 1,000 roadway miles and locations associated with historical byproduct or waste-material use.",
+      },
+      {
+        period: "Fall 2025–2026",
+        event:
+          "Phase 3 ground surveys began at selected areas using handheld, drone-mounted, and all-terrain-vehicle-mounted instruments, followed where warranted by soil sampling and laboratory analysis.",
       },
       {
         period: "July 2026",
         event:
-          "New York formally urged EPA to accelerate testing, risk communication, and planning for any properties where hazards are confirmed.",
+          "New York urged EPA to accelerate testing and resident support. Agencies expanded door-to-door access work, offered voluntary temporary relocation to some households, and revised or clarified disputed property-access language.",
+      },
+      {
+        period: "August 2026",
+        event:
+          "Field screening and property follow-up continued, with agency drop-in sessions, a seven-day hotline, and weekly public updates. Most screened properties were expected to require no intervention, while selected locations advanced to soil and laboratory work.",
       },
     ],
     documentedImpacts: [
       "Historic industrial slag can contain technically enhanced naturally occurring radioactive material, but concentration and exposure potential vary by source and property.",
       "Aerial anomalies and access letters are screening tools; neither alone establishes a completed exposure pathway or a need for removal.",
+      "A radiation instrument can locate elevated gamma activity, but laboratory analysis is needed to identify the radionuclides and distinguish naturally occurring material from industrially concentrated or other human-related sources.",
+      "Detection on a property does not by itself establish a radiation dose, an individual exposure, or a causal relationship with cancer or another illness.",
+      "Thorium generally binds strongly to soil and moves slowly toward groundwater. ATSDR nevertheless identifies exceptions involving low-sorption soils and soluble complexes, so site-specific soil, groundwater, isotope, and hydrogeologic evidence is needed before the water pathway can be closed.",
       "The investigation creates significant uncertainty for residents, making transparent methods, validated results, and property-specific communication essential.",
     ],
     cleanupAndControls: [
       "The current program uses aerial data, records review, ground surveys, sampling, and laboratory analysis to determine whether follow-up is warranted.",
       "Where radioactive fill is confirmed at actionable levels, agencies may use access controls, temporary relocation, excavation, off-site disposal, clean backfill, and restoration.",
+      "Residents should not use a consumer radiation meter as a substitute for isotope identification, professional exposure assessment, or agency sampling.",
       "Results and cleanup decisions must be communicated separately for each property rather than generalized across neighborhoods.",
     ],
     presentDay: [
-      "The regional assessment is ongoing. WNYAtlas lists it to document the investigation and public process, while explicitly avoiding the claim that all contacted properties—or an entire neighborhood—contain hazardous radioactive fill.",
+      "The regional assessment is ongoing. Agencies are moving from broad screening toward property-specific surveys, soil sampling, laboratory identification, exposure review, and response decisions. Some households have been offered voluntary temporary relocation while that work proceeds.",
+      "No public finding reviewed by WNYAtlas establishes that the residential investigation has contaminated drinking-water supplies. That is cautious reassurance, not proof that every water pathway is impossible: the answer depends on the radionuclides present, fill composition, soil chemistry, groundwater conditions, runoff, and actual exposure points.",
+      "WNYAtlas lists the assessment to document the investigation and public process while avoiding the claim that every contacted property—or an entire neighborhood—contains hazardous radioactive fill.",
     ],
     researchNotes: [
-      "Replace secondary reporting on the number of access letters with a direct agency dataset or written statement when released.",
+      "Track DEC and EPA weekly updates for stable counts of properties contacted, screened, advanced to sampling, cleared, offered relocation, and selected for removal; do not combine those stages into one contamination count.",
+      "Locate public property-specific isotope, soil, indoor-air, groundwater, and dose-assessment results when released. The AquaDiary episode is a useful secondary synthesis and source lead, not a substitute for those records.",
       "Publish property-level locations only when agencies make them public and when doing so does not compromise resident privacy.",
     ],
   },

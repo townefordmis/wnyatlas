@@ -666,6 +666,11 @@ export default async function SitePage({ params }: SitePageProps) {
 
             <div className="story-sources">
               <p className="field-label">Sources</p>
+              <p className="story-source-rights-note">
+                External photographs, news reports, and archival scans remain the
+                property of their original publishers. WNYAtlas links to restricted
+                material at its source and does not reproduce it without permission.
+              </p>
               {site.sources?.length ? (
                 site.sources.map((source) => (
                   <a

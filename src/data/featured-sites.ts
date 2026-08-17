@@ -231,6 +231,16 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/restoring-buffalo-river-faq",
       },
+      {
+        title: "Looking Out at South Buffalo's National Aniline, 1946 — historical article and photograph (view at source)",
+        publisher: "Buffalo Stories Archives & Blog",
+        url: "https://blog.buffalostories.com/looking-out-at-south-buffalos-national-aniline-1946/",
+      },
+      {
+        title: "Buffalo Color Corporation Historical Photographs — copyrighted gallery (view at source)",
+        publisher: "Abandoned America / Matthew Christopher Photography",
+        url: "https://www.abandonedamerica.us/buffalo-color-corp-historical-photos",
+      },
     ],
   },
   {
@@ -404,6 +414,16 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Department of Energy Office of Legacy Management",
         url: "https://www.energy.gov/lm/articles/tonawanda-new-york-site-fact-sheet",
       },
+      {
+        title: "FUSRAP Cleanup Progress — Linde site photographs and diagrams",
+        publisher: "Waste Management Symposia proceedings archive",
+        url: "https://archivedproceedings.econference.io/wmsym/1998/html/sess28/28-05/28-05.htm",
+      },
+      {
+        title: "Community Relations Plan for the Tonawanda Sites — historical site record",
+        publisher: "U.S. Department of Energy Legacy Management",
+        url: "https://lmpublicsearch.lm.doe.gov/SiteDocs/Linde_08.06_0001_a.pdf",
+      },
     ],
   },
   {
@@ -552,6 +572,16 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Department of Energy Office of Environmental Management",
         url: "https://www.energy.gov/em/articles/west-valley-begins-demolishing-legacy-fuel-reprocessing-facility",
       },
+      {
+        title: "West Valley Background and Historical Footage — WNED and WIVB archive links",
+        publisher: "Nuclear Information and Resource Service",
+        url: "https://www.nirs.org/campaigns/west-valley/west-valley-background-and-historical-footage/",
+      },
+      {
+        title: "Coalition on West Valley Nuclear Wastes archival collection",
+        publisher: "SUNY Fredonia Archives and Special Collections",
+        url: "https://www.fredonia.edu/news/coalition-west-valley-nuclear-wastes-donates-papers-library",
+      },
     ],
   },
   {
@@ -584,6 +614,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "RiverBend Area I TENORM Reuse Work Plan",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/V00619/Report.VCP.V00619.2016-05-02.Final%20RiverBend%20TENORM%20Reuse%20Work%20Plan%20.pdf",
+      },
+      {
+        title: "LTV Steel (Former Republic Steel), 8-inch Bar Mill — 1986 photograph",
+        publisher: "Historic American Engineering Record / Library of Congress",
+        url: "https://www.loc.gov/pictures/item/ny1813.photos.351483p/",
       },
     ],
   },
@@ -713,7 +748,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "radiological",
     summary:
-      "Ongoing three-phase regional assessment. As of July 20, 2026, agencies reported approximately 380 areas of interest, about 220 cleared from additional testing, and roughly 160 ground surveys still underway. These are screening stages, not counts of contaminated properties.",
+      "Ongoing three-phase regional assessment using aerial, roadway, and property-level surveys. Agencies are screening hundreds of locations, conducting soil and laboratory follow-up where warranted, and offering temporary relocation to some households. Contact or screening does not mean a property is confirmed contaminated.",
     evidenceStatus: "research-in-progress",
     coordinates: [-79.035, 43.125],
     sources: [
@@ -731,6 +766,21 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "July 20, 2026 NECRA Community Meeting Presentation",
         publisher: "NYSDEC, NYSDOH, and U.S. EPA",
         url: "https://dec.ny.gov/sites/default/files/2026-07/FINAL%20Monday%20July%2020%20NECRA%20Community%20Meeting%20Presentation.pdf",
+      },
+      {
+        title: "Toxicological Profile for Thorium — Environmental Fate and Transport",
+        publisher: "Agency for Toxic Substances and Disease Registry",
+        url: "https://www.atsdr.cdc.gov/toxprofiles/tp147-c5.pdf",
+      },
+      {
+        title: "Environmental Agencies Address Niagara Residents' Concerns",
+        publisher: "Buffalo Toronto Public Media",
+        url: "https://www.btpm.org/local/2026-07-21/environmental-agencies-address-niagara-residents-concerns-amid-contentious-public-event",
+      },
+      {
+        title: "120 Homes, 40 Years, One Radioactive Story: Niagara County",
+        publisher: "AquaDiary Podcast — secondary analysis",
+        url: "https://www.youtube.com/watch?v=kESis8bbYn8",
       },
     ],
   },

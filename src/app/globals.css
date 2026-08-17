@@ -2508,6 +2508,16 @@ footer {
   gap: 0.75rem;
 }
 
+.story-source-rights-note {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--moss);
+  background: color-mix(in srgb, var(--moss) 8%, transparent);
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
 .story-sources a {
   display: grid;
   gap: 0.3rem;
