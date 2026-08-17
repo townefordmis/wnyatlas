@@ -267,13 +267,20 @@ export default async function SitePage({ params }: SitePageProps) {
 
         <div className="story-layout">
           <div className="story-body">
-            <section id="overview">
-              <p className="eyebrow">Background</p>
-              <h2>What happened here?</h2>
-              {story.background.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-              <p>{story.categoryContext}</p>
+            <section className="story-chapter story-overview" id="overview">
+              <div className="story-chapter-heading">
+                <span aria-hidden="true">01</span>
+                <div>
+                  <p className="eyebrow">Background</p>
+                  <h2>What happened here?</h2>
+                </div>
+              </div>
+              <div className="story-background-copy">
+                {story.background.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+                <p className="story-context-note">{story.categoryContext}</p>
+              </div>
               {(site.category === "pfas" || site.pfasStatus) && (
                 <div className="pfas-record-status">
                   <strong>PFAS record status</strong>
@@ -435,9 +442,14 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {story.timeline.length > 0 && (
-              <section id="timeline">
-                <p className="eyebrow">Chronology</p>
-                <h2>Timeline</h2>
+              <section className="story-chapter" id="timeline">
+                <div className="story-chapter-heading">
+                  <span aria-hidden="true">02</span>
+                  <div>
+                    <p className="eyebrow">Chronology</p>
+                    <h2>Timeline</h2>
+                  </div>
+                </div>
                 <ol className="story-timeline">
                   {story.timeline.map((item) => (
                     <li key={`${item.period}-${item.event}`}>
@@ -450,10 +462,15 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {story.documentedImpacts.length > 0 && (
-              <section id="impacts">
-                <p className="eyebrow">Environmental record</p>
-                <h2>Documented impacts</h2>
-                <ul>
+              <section className="story-chapter" id="impacts">
+                <div className="story-chapter-heading">
+                  <span aria-hidden="true">03</span>
+                  <div>
+                    <p className="eyebrow">Environmental record</p>
+                    <h2>Documented impacts</h2>
+                  </div>
+                </div>
+                <ul className="story-finding-list">
                   {story.documentedImpacts.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -468,10 +485,15 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {story.cleanupAndControls.length > 0 && (
-              <section id="cleanup">
-                <p className="eyebrow">Response</p>
-                <h2>Cleanup and controls</h2>
-                <ul>
+              <section className="story-chapter" id="cleanup">
+                <div className="story-chapter-heading">
+                  <span aria-hidden="true">04</span>
+                  <div>
+                    <p className="eyebrow">Response</p>
+                    <h2>Cleanup and controls</h2>
+                  </div>
+                </div>
+                <ul className="story-finding-list">
                   {story.cleanupAndControls.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -480,12 +502,19 @@ export default async function SitePage({ params }: SitePageProps) {
             )}
 
             {story.presentDay.length > 0 && (
-              <section id="today">
-                <p className="eyebrow">Then and now</p>
-                <h2>The site today</h2>
-                {story.presentDay.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
+              <section className="story-chapter story-today" id="today">
+                <div className="story-chapter-heading">
+                  <span aria-hidden="true">05</span>
+                  <div>
+                    <p className="eyebrow">Then and now</p>
+                    <h2>The site today</h2>
+                  </div>
+                </div>
+                <div className="story-today-copy">
+                  {story.presentDay.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
               </section>
             )}
 

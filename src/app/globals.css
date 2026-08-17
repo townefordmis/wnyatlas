@@ -2292,6 +2292,91 @@ footer {
   letter-spacing: -0.035em;
 }
 
+.story-chapter-heading {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.story-chapter-heading > span {
+  padding-top: 0.7rem;
+  color: var(--rust);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.story-chapter-heading h2 {
+  margin-top: 0.35rem;
+}
+
+.story-background-copy {
+  margin-left: 70px;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.story-background-copy > p:first-child {
+  margin-top: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(1.25rem, 2.1vw, 1.65rem);
+  line-height: 1.55;
+}
+
+.story-background-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.story-context-note {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: rgba(23, 39, 32, 0.7);
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+
+.story-finding-list {
+  display: grid;
+  gap: 1px;
+  margin: 0 0 0 70px;
+  padding: 1px;
+  background: var(--line);
+  list-style: none;
+}
+
+.story-finding-list li,
+.story-finding-list li + li {
+  position: relative;
+  margin: 0;
+  padding: 1.15rem 1.25rem 1.15rem 2.8rem;
+  background: var(--paper);
+}
+
+.story-finding-list li::before {
+  position: absolute;
+  top: 1.55rem;
+  left: 1.15rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--rust);
+  content: "";
+}
+
+.story-today-copy {
+  margin-left: 70px;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  color: var(--paper);
+  background: var(--moss);
+}
+
+.story-today-copy p:first-child { margin-top: 0; }
+.story-today-copy p:last-child { margin-bottom: 0; }
+
 .story-body p,
 .story-body li {
   font-size: 1.08rem;
@@ -3664,16 +3749,47 @@ footer {
   }
 
   .story-hero {
-    padding-top: 3.25rem;
-    padding-bottom: 2.75rem;
+    gap: 1.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
   }
 
   .story-hero h1 {
-    font-size: clamp(3rem, 14vw, 4.4rem);
+    margin-top: 0.45rem;
+    margin-bottom: 0.65rem;
+    font-size: clamp(2.85rem, 13vw, 4.15rem);
+    line-height: 0.96;
+    overflow-wrap: anywhere;
+  }
+
+  .story-location {
+    font-size: 1rem;
+  }
+
+  .story-summary {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .story-image {
+    margin-top: 1.75rem;
+  }
+
+  .story-image img {
+    max-height: 330px;
+  }
+
+  .story-image figcaption {
+    gap: 0.5rem;
+    padding-bottom: 0;
+    font-size: 0.7rem;
   }
 
   .story-status {
+    max-width: none;
     padding: 1.15rem;
+    border-left: 5px solid var(--water-light);
   }
 
   .story-status strong {
@@ -3682,13 +3798,165 @@ footer {
   }
 
   .story-section-nav {
-    padding-right: 5vw;
+    min-height: 48px;
+    padding-right: 0;
     padding-left: 5vw;
+    scroll-snap-type: x proximity;
+    box-shadow: 0 7px 18px rgba(23, 39, 32, 0.16);
   }
 
   .story-section-nav span,
   .story-section-nav a {
-    padding: 0.78rem 0.7rem;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 0.75rem;
+    scroll-snap-align: start;
+  }
+
+  .story-section-nav span {
+    position: sticky;
+    z-index: 1;
+    left: 0;
+    padding-right: 1rem;
+    background: var(--ink);
+  }
+
+  .story-section-nav a:last-child {
+    padding-right: 5vw;
+  }
+
+  .story-layout {
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .story-body {
+    max-width: none;
+  }
+
+  .story-body > section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .story-body section + section {
+    margin-top: 0;
+    padding-top: 3rem;
+  }
+
+  .story-body h2 {
+    margin-top: 0.35rem;
+    margin-bottom: 1.2rem;
+    font-size: clamp(2rem, 10vw, 3rem);
+    line-height: 1.02;
+    overflow-wrap: anywhere;
+  }
+
+  .story-chapter-heading {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 0.65rem;
+  }
+
+  .story-chapter-heading > span {
+    padding-top: 0.55rem;
+    font-size: 0.65rem;
+  }
+
+  .story-background-copy,
+  .story-finding-list,
+  .story-today-copy {
+    margin-left: 0;
+  }
+
+  .story-background-copy {
+    padding: 1.15rem;
+  }
+
+  .story-background-copy > p:first-child {
+    font-size: 1.18rem;
+    line-height: 1.58;
+  }
+
+  .story-finding-list li,
+  .story-finding-list li + li {
+    padding: 1rem 1rem 1rem 2.45rem;
+  }
+
+  .story-finding-list li::before {
+    top: 1.42rem;
+    left: 0.95rem;
+  }
+
+  .story-body p,
+  .story-body li {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .story-body ul {
+    padding-left: 1.25rem;
+  }
+
+  .story-timeline {
+    position: relative;
+    margin-top: 1.5rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--line);
+  }
+
+  .story-timeline li {
+    position: relative;
+    padding: 1.15rem 0 1.35rem 0.75rem;
+    border-top: 0;
+  }
+
+  .story-timeline li::before {
+    position: absolute;
+    top: 1.55rem;
+    left: -1.61rem;
+    width: 0.65rem;
+    height: 0.65rem;
+    border: 3px solid var(--paper);
+    border-radius: 50%;
+    background: var(--rust);
+    content: "";
+  }
+
+  .story-timeline li strong {
+    color: var(--rust);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+
+  .story-evidence {
+    margin: 1rem -6vw 0;
+    padding: 3rem 6vw 4rem;
+    color: var(--paper);
+    background: var(--ink);
+  }
+
+  .story-evidence dt,
+  .story-sources span {
+    color: var(--water-light);
+  }
+
+  .story-evidence dl div,
+  .story-sources a {
+    border-color: rgba(245, 241, 231, 0.22);
+  }
+
+  .story-sources a {
+    min-height: 76px;
+    background: rgba(245, 241, 231, 0.05);
+  }
+
+  .story-footer {
+    gap: 0.9rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .historical-aerial-years {

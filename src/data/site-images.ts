@@ -71,4 +71,15 @@ export const siteImages: Partial<Record<string, AtlasImage>> = {
       "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.photovideoaudio&id=0201766",
     rights: "U.S. government image",
   },
+  "tonawanda-coke": {
+    src: "/historical/tonawanda-coke-epa-2020.jpg",
+    alt: "The deactivated coke oven battery and coal charging building at the former Tonawanda Coke facility",
+    caption:
+      "The 60-oven coke battery beside the coal charging building after the ovens were deactivated in October 2018.",
+    date: "Published March 27, 2020; capture date not stated",
+    credit: "U.S. Environmental Protection Agency",
+    sourceUrl:
+      "https://www.epa.gov/newsreleases/epa-successfully-wraps-activities-tonawanda-coke-facility",
+    rights: "U.S. EPA photograph",
+  },
 };
