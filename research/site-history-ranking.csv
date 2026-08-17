@@ -116,25 +116,25 @@ rank,site_id,name,county,category,status,tier,priority_score,source_strength,his
 115,dupont-necco-park-landfill,DuPont / Necco Park Landfill,Niagara,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
 116,former-buffalo-china,Former Buffalo China,Erie,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
 117,west-genesee-former-mgp,Former Buffalo Service Station / Blue Cross–HealthNow Site,Erie,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
-118,harrison-radiator-lockport,"Harrison Radiator Division, GMC",Niagara,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
-119,houdaille-strippit-landfill,Houdaille / Strippit Landfill,Erie,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
-120,jonnies-porta-signs,Jonnie's Porta Signs / CVS Blasdell,Erie,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
-121,peter-cooper-gowanda,Peter Cooper Corporation — Gowanda,Cattaraugus,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
-122,3m-o-cel-o-tonawanda,3M O-Cel-O Sponge Site,Erie,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-123,batavia-former-mgp,Batavia Former Manufactured Gas Plant,Genesee,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-124,bush-industries-cattaraugus,Bush Industries,Cattaraugus,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-125,carborundum-globar-site,Carborundum Globar Site,Niagara,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-126,dc-rollforms-proto-tool,D.C. Rollforms / Proto Tool,Chautauqua,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-127,dunlop-disposal-sites,Dunlop Tire Disposal Sites,Erie,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-128,essex-hope-site,Essex / Hope Site,Chautauqua,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-129,farwell-road-landfill,Farwell Road Landfill,Cattaraugus,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-130,former-cb-dry-cleaners,Former C&B Dry Cleaners,Chautauqua,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-131,former-electruk-battery,Former Electruk Battery,Niagara,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-132,fmc-peroxychem-evonik-tonawanda,Former FMC Tonawanda Plant,Erie,industry,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-133,former-niagara-motors-dunkirk,Former Niagara Motors,Chautauqua,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-134,former-nl-industries-foundry,Former NL Industries Foundry,Erie,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-135,former-signore,Former Signore,Cattaraugus,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
-136,frontier-chemical-royal-avenue,Frontier Chemical — Royal Avenue,Niagara,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+118,former-nl-industries-foundry,Former NL Industries Foundry,Erie,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
+119,harrison-radiator-lockport,"Harrison Radiator Division, GMC",Niagara,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
+120,houdaille-strippit-landfill,Houdaille / Strippit Landfill,Erie,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
+121,jonnies-porta-signs,Jonnie's Porta Signs / CVS Blasdell,Erie,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
+122,peter-cooper-gowanda,Peter Cooper Corporation — Gowanda,Cattaraugus,cleanup,feature complete,Complete,17,8,9,0,0,0,0,solid baseline; additional primary research needed
+123,3m-o-cel-o-tonawanda,3M O-Cel-O Sponge Site,Erie,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+124,batavia-former-mgp,Batavia Former Manufactured Gas Plant,Genesee,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+125,bush-industries-cattaraugus,Bush Industries,Cattaraugus,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+126,carborundum-globar-site,Carborundum Globar Site,Niagara,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+127,dc-rollforms-proto-tool,D.C. Rollforms / Proto Tool,Chautauqua,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+128,dunlop-disposal-sites,Dunlop Tire Disposal Sites,Erie,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+129,essex-hope-site,Essex / Hope Site,Chautauqua,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+130,farwell-road-landfill,Farwell Road Landfill,Cattaraugus,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+131,former-cb-dry-cleaners,Former C&B Dry Cleaners,Chautauqua,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+132,former-electruk-battery,Former Electruk Battery,Niagara,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+133,fmc-peroxychem-evonik-tonawanda,Former FMC Tonawanda Plant,Erie,industry,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+134,former-niagara-motors-dunkirk,Former Niagara Motors,Chautauqua,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+135,former-signore,Former Signore,Cattaraugus,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
+136,frontier-chemical-royal-avenue,Frontier Chemical — Royal Avenue,Niagara,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
 137,gastown-former-mgp,Gastown Former Manufactured-Gas Plant,Erie,cleanup,queued,D - maintain,16,8,8,0,0,0,0,solid baseline; additional primary research needed
 138,gateway-lofts-chautauqua-hardware,Gateway Lofts / Former Chautauqua Hardware,Chautauqua,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed
 139,iroquois-gas-westwood,Iroquois Gas / Westwood Pharmaceutical,Erie,cleanup,feature complete,Complete,16,8,8,0,0,0,0,solid baseline; additional primary research needed

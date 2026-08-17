@@ -1218,6 +1218,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Three historical waste-disposal areas at the River Road tire plant were investigated, capped, and placed under long-term groundwater monitoring and site management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.91895772323295, 42.97036356877955],
+    newsEvents: [
+      {
+        date: "Historic disposal and remedy era",
+        headline: "Three disposal areas become one long-term tire-plant stewardship story",
+        summary: "EPA and DEC records distinguish three waste areas at the River Road complex. Investigation, capping and groundwater monitoring addressed the disposal history without treating the entire manufacturing property as one uniform waste cell.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201676",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Dunlop Site 2 Superfund Site Profile",
@@ -2017,6 +2027,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "River Road and Sawyer Avenue chemical-manufacturing property included in the southwestern Tonawanda groundwater study; its former state waste-site listing was delisted while regulated operations continued under later owners.",
     evidenceStatus: "well-documented",
     coordinates: [-78.92, 42.961],
+    newsEvents: [
+      {
+        date: "Regional investigation era",
+        headline: "A delisted waste site remains part of Tonawanda's regulated chemical corridor",
+        summary: "DEC's southwestern Tonawanda study evaluated the former FMC property alongside neighboring industrial sites. Delisting the historic waste record did not end air, wastewater, hazardous-waste or chemical-release oversight of later operations.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915337/Report.BCP.C915337.2007-04-15.Hydrogeologic_and_Geochemical_Investigation_of_Southwestern_Tonawanda.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Southwestern Tonawanda Hydrogeologic Study",
@@ -3259,6 +3279,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former hazardous-waste treatment and storage facility at 4626 Royal Avenue, on property with earlier chlor-alkali manufacturing and sludge-disposal history. VOCs and other contaminants remain concentrated in deep soil and groundwater. Major corrective work is complete, while a pump-and-treat system, groundwater monitoring, an industrial-use restriction, and site-management controls continue.",
     evidenceStatus: "well-documented",
     coordinates: [-79.011194, 43.087472],
+    newsEvents: [
+      {
+        date: "Corrective-action era",
+        headline: "Deep contamination keeps groundwater treatment operating after construction",
+        summary: "EPA's corrective-action record explains why surface work did not end the story: volatile contaminants remain in deep soil and groundwater, requiring pump-and-treat operation, monitoring and industrial-use controls.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-frontier-chemical-waste-process-incorporated",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Frontier Chemical Royal Avenue Hazardous-Waste Cleanup",

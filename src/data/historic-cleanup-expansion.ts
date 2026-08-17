@@ -649,6 +649,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former battery-related industrial property at 4922 IDA Park Drive. The completed environmental-restoration site remains under an approximately 1.35-acre easement restricting the controlled property to commercial and industrial use.",
     evidenceStatus: "well-documented",
     coordinates: [-78.7466, 43.1677],
+    newsEvents: [
+      {
+        date: "2012",
+        headline: "A county-led battery-site cleanup reaches controlled completion",
+        summary: "The final engineering record and easement document a completed restoration with commercial and industrial use limits, groundwater restrictions and soil-management duties for future excavation.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/eltrkferr.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Former Electruk Battery Site Documents",
@@ -923,6 +933,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former county-owned hazardous-waste disposal site where contamination remains under a managed remedy. Engineering controls, deed restrictions, inspections, and a site-management plan govern the closed landfill.",
     evidenceStatus: "well-documented",
     coordinates: [-78.38134867598835, 42.22007775214247],
+    newsEvents: [
+      {
+        date: "1974-1975",
+        headline: "Water monitoring begins before the county landfill opens",
+        summary: "Because Ischua Creek was both a water-supply source and fishing stream, planners began baseline water monitoring before disposal operations, creating an unusually valuable record for later comparison.",
+        publisher: "U.S. Environmental Protection Agency historical planning record",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9101LXM5.TXT",
+        reach: "Local",
+      },
+      {
+        date: "1975-present",
+        headline: "Three landfill phases remain tied to groundwater and creek monitoring",
+        summary: "The site-management record documents unlined early phases, municipal refuse, incinerator ash, sewage sludge and approved industrial wastes, with groundwater flowing generally southeast toward Ischua Creek and continuing annual evaluation.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905024/Work%20Plan.HW.905024.2023-04-21.Revised%20Site%20Management%20Plan_Final.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Farwell Road Landfill Site Management Plan",
@@ -1118,6 +1146,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
     summary:
       "Compact former dry-cleaning property that illustrates how a small business could create a significant solvent cleanup problem. The site is managed separately from Jamestown's much larger industrial complexes.",
     evidenceStatus: "research-in-progress",
+    newsEvents: [
+      {
+        date: "February 2013",
+        headline: "A compact dry-cleaning property requires a public solvent-cleanup plan",
+        summary: "DEC's proposed plan brought the former cleaner's chlorinated-solvent source, groundwater and vapor pathways into public review, illustrating how contamination from a small business footprint can require long-term treatment and controls.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/prapcbdc1.pdf",
+        reach: "Local",
+      },
+    ],
     coordinates: [-79.2466826043239, 42.112404952445836],
     sources: [
       {
@@ -1138,6 +1176,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former paint, varnish, coating, and window-manufacturing property where solvents and other industrial chemicals affected soil and groundwater. DEC amended the remedy in 2023 to add thermal and chemical treatment, monitoring, a maintained cover, and continuing land- and groundwater-use controls.",
     evidenceStatus: "well-documented",
     coordinates: [-79.21417629987917, 42.10966403467532],
+    newsEvents: [
+      {
+        date: "September 2023",
+        headline: "DEC changes the remedy after decades of treatment and investigation",
+        summary: "The amended decision added electrical-resistance heating for a chlorinated-solvent source and chemical oxidation for petroleum-related compounds while preserving cover, monitoring and off-site investigation requirements.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907015/ROD.HW.907015.2023-09-27.Amended%20Record%20of%20Decision%20.pdf",
+        reach: "Local",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
@@ -1498,6 +1546,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former manufacturing property tracked through New York's brownfield program. The eight-acre site adds a smaller southern-tier industrial cleanup to an atlas otherwise dominated by Buffalo and Niagara Falls.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.66980735370983, 42.27055940024228],
+    newsEvents: [
+      {
+        date: "2006-2015",
+        headline: "An abandoned tool-and-die plant becomes an eight-acre brownfield cleanup",
+        summary: "After Signore Tool and Die ceased operations, a new owner removed underground tanks and petroleum soil, investigated off-site vapor and advanced a state-reviewed remedy; monitoring of the interceptor and town wells was reported non-detect or below drinking-water standards.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C905034/Fact%20Sheet.BCP.C905034.2015-04-10.Cleanup%20Proposed%20for%20Former%20Signore%2C%20Inc.%20Site.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Former Signore Site Documents",
@@ -1558,6 +1616,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Seven-and-a-half-acre former foundry property carried through New York's Brownfield Cleanup Program. Its story connects metal casting, industrial fill, cleanup controls, and reuse in the Buffalo–Cheektowaga industrial belt.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.70027906069848, 42.91119522314418],
+    newsEvents: [
+      {
+        date: "1892-1972",
+        headline: "Eighty years of brass foundry work leave a lead-centered cleanup",
+        summary: "The final engineering record traces brass foundry operations from 1892 to 1972. Brownfield work later addressed elevated soil contamination—particularly lead—while supporting continued industrial reuse.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915200/Report.BCP.C915200.2009-12-10.Final_Engineering_Report.pdf",
+        reach: "Local",
+      },
+      {
+        date: "December 2009",
+        headline: "DEC announces completion of the former foundry remedy",
+        summary: "The public completion notice documented finished remedial construction and availability of the final engineering record, while institutional controls continued to govern residual conditions and reuse.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915200/Fact%20Sheet.BCP.C915200.2009-12-18.FER.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Former NL Industries Foundry Site Documents",
@@ -2287,6 +2363,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former industrial property used from at least 1919 through the 1970s. Later inspections documented drums, petroleum material, lead-affected soil and leaking-tank impacts; cleanup removed source material and placed a cover over residual contamination for commercial reuse.",
     evidenceStatus: "well-documented",
     coordinates: [-79.32285203242971, 42.47637671726439],
+    newsEvents: [
+      {
+        date: "1999-2000",
+        headline: "Inspectors find drums and petroleum evidence at an abandoned Dunkirk factory",
+        summary: "The discovery led to drum removal and demolition, followed by a broader public brownfield cleanup of petroleum- and lead-affected soil and installation of a controlled cover.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/niamotoprap.pdf",
+        reach: "Local",
+      },
+      {
+        date: "November 2024",
+        headline: "The remediated property supports temporary industrial project staging",
+        summary: "Local reporting documented a lease for project staging, illustrating controlled reuse of the former factory parcel without implying that its land-use and soil-management obligations ended.",
+        publisher: "Observer Today",
+        url: "https://www.observertoday.com/news/top-stories/2024/11/wells-leasing-brownfield-for-project-staging/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Former Niagara Motors Proposed Remedial Action Plan",
