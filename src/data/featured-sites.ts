@@ -14,6 +14,24 @@ const featuredSiteRecords: AtlasSite[] = [
     summary: "Full history of chemical and municipal disposal, the 21,800-ton Hooker inventory, public-health response, cleanup, and continuing site management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.949, 43.08],
+    newsEvents: [
+      {
+        date: "August 1–7, 1978",
+        headline: "Love Canal becomes a national environmental emergency",
+        summary: "Front-page reporting, New York's health-emergency declaration, and President Carter's approval of federal emergency aid transformed a neighborhood contamination story into a national reckoning over hazardous-waste disposal.",
+        publisher: "U.S. Environmental Protection Agency historical archive",
+        url: "https://www.epa.gov/archive/epa/aboutepa/love-canal-tragedy.html",
+        reach: "National",
+      },
+      {
+        date: "1978–1981",
+        headline: "Resident organizing and continuing investigations keep the crisis in public view",
+        summary: "Local reporting, resident protests, health debates, relocations, and federal action sustained coverage beyond the first emergency announcement and helped shape the emerging Superfund era.",
+        publisher: "University at Buffalo Love Canal chronology",
+        url: "https://library.buffalo.edu/archives/lovecanal/about/chronologies.html",
+        reach: "National",
+      },
+    ],
     story: {
       lastReviewed: "August 10, 2026",
       background: [
@@ -253,6 +271,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Industrial corridor where an oil-fed 1968 river fire became a stark symbol of severe pollution, followed decades later by contaminated-sediment cleanup, habitat restoration, and long-term recovery work.",
     evidenceStatus: "well-documented",
     coordinates: [-78.873, 42.864],
+    newsEvents: [
+      {
+        date: "January 24, 1968",
+        headline: "The Buffalo River burns for nearly three days",
+        summary: "Oil and combustible pollution ignited on a river already severely damaged by industrial and municipal waste. The fire became the enduring public image of the river's environmental crisis.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/great-lakes-aocs/buffalo-river-aoc",
+        reach: "Regional",
+      },
+      {
+        date: "2013–2015",
+        headline: "Large-scale contaminated-sediment cleanup changes the river's trajectory",
+        summary: "Federal, state, industrial, and community partners completed major dredging, capping, and habitat work, reframing coverage from industrial decline toward environmental recovery.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/great-lakes-aocs/remediation-and-restoration-projects-buffalo-river-aoc",
+        reach: "Regional",
+      },
+    ],
     story: {
       lastReviewed: "August 12, 2026",
       background: [
@@ -436,6 +472,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former integrated steel complex where Seneca Steel began production in 1902 and Bethlehem Steel operated from 1922. About 440 acres of the present property are manmade land built with slag and manufacturing waste. Cleanup, monitoring, groundwater treatment, habitat work, and land-use controls continue across separately managed portions of the site.",
     evidenceStatus: "well-documented",
     coordinates: [-78.85913, 42.82158],
+    newsEvents: [
+      {
+        date: "June 25, 1982",
+        headline: "Bethlehem announces a major Lackawanna shutdown",
+        summary: "The six-week shutdown affected 1,650 workers while thousands more were already laid off, signaling that the plant's long contraction was entering its decisive final stage.",
+        publisher: "United Press International archive",
+        url: "https://www.upi.com/Archives/1982/06/25/Bethlehem-Steel-Corp-Friday-said-it-would-shut-down/7289393825600/",
+        reach: "National",
+      },
+      {
+        date: "October 1983",
+        headline: "Primary steelmaking ends after 83 years",
+        summary: "Contemporary coverage described the furnaces going cold and approximately 7,300 jobs disappearing, an economic and cultural turning point for Lackawanna and the Buffalo region.",
+        publisher: "United Press International archive",
+        url: "https://www.upi.com/Archives/1983/10/15/Steel-mill-closes-after-83-years/6801435038400/",
+        reach: "National",
+      },
+    ],
     story: {
       lastReviewed: "August 12, 2026",
       background: [
@@ -561,6 +615,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Federal cleanup and decommissioning project at the former commercial nuclear fuel reprocessing facility.",
     evidenceStatus: "well-documented",
     coordinates: [-78.647, 42.451],
+    newsEvents: [
+      {
+        date: "1960s–1980s",
+        headline: "Television reporting follows reprocessing, waste, protest, and cleanup debate",
+        summary: "Archived WNED and WIVB reports preserve how West Valley was presented during its operating aftermath and the long public argument over radioactive waste and cleanup responsibility.",
+        publisher: "NIRS index to WNED and WIVB historical footage",
+        url: "https://www.nirs.org/campaigns/west-valley/west-valley-background-and-historical-footage/",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "About the West Valley Demonstration Project",
@@ -594,6 +658,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former South Buffalo iron- and steelmaking property within the four-area Steelfields complex. Republic Steel's plant operated from 1906 into the 1980s; later remedies removed contaminated soil and managed petroleum, groundwater, metals, PAHs, and other industrial residues under parcel-specific controls.",
     evidenceStatus: "well-documented",
     coordinates: [-78.83, 42.85],
+    newsEvents: [
+      {
+        date: "January 17, 1984",
+        headline: "Republic Steel says its Buffalo plant will never reopen",
+        summary: "The company made permanent the shutdown of a plant that once employed about 2,500 people, compounding Western New York's early-1980s steel-industry losses.",
+        publisher: "United Press International archive",
+        url: "https://www.upi.com/Archives/1984/01/17/The-Republic-Steel-Corp-which-mothballed-steel-making-operations-at/2655443163600/",
+        reach: "National",
+      },
+    ],
     sources: [
       {
         title: "Restoring the Buffalo River: Frequently Asked Questions",
@@ -632,6 +706,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former coke manufacturing facility documented as a major historical benzene source, where shutdown response, removal work, state cleanup, and redevelopment followed the 2018 closure.",
     evidenceStatus: "well-documented",
     coordinates: [-78.92593, 42.98318],
+    newsEvents: [
+      {
+        date: "March 28, 2013",
+        headline: "Federal jury convicts Tonawanda Coke and its environmental manager",
+        summary: "The verdict followed a month-long trial centered on air-pollution violations, hazardous-waste handling, and obstruction, making the case a defining regional environmental-enforcement story.",
+        publisher: "Buffalo Toronto Public Media",
+        url: "https://www.btpm.org/environment/2013-03-28/federal-jury-convicts-tonawanda-coke-and-top-official-of-polluting-air",
+        reach: "Regional",
+      },
+      {
+        date: "October 2018",
+        headline: "Coke production ends and emergency site work begins",
+        summary: "The plant's closure shifted the story from emissions and prosecution to stabilization, hazardous-material removal, bankruptcy, cleanup, and redevelopment.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-successfully-wraps-activities-tonawanda-coke-facility",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Tonawanda Coke Corporation Site",
@@ -751,6 +843,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Ongoing three-phase regional assessment using aerial, roadway, and property-level surveys. Agencies are screening hundreds of locations, conducting soil and laboratory follow-up where warranted, and offering temporary relocation to some households. Contact or screening does not mean a property is confirmed contaminated.",
     evidenceStatus: "research-in-progress",
     coordinates: [-79.035, 43.125],
+    newsEvents: [
+      {
+        date: "July 2026",
+        headline: "Property screening expands and several families receive temporary-relocation support",
+        summary: "Regional coverage brought the assessment into broad public view as agencies sought hundreds of access agreements, conducted property screening, and offered voluntary temporary relocation while detailed investigation continued.",
+        publisher: "Spectrum News 1",
+        url: "https://spectrumlocalnews.com/nys/buffalo/news/2026/07/19/community-meeting-set-for-monday-for-radiological-assessment-in-erie--niagara-counties",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Niagara and Erie County Radiological Assessment",
@@ -1217,6 +1319,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Ongoing investigation of PFNA detected in the village water system and in environmental media near a former firefighting-training area; replacement supply and treatment measures were implemented.",
     evidenceStatus: "research-in-progress",
     coordinates: [-79.50940567712935, 42.25236457618568],
+    newsEvents: [
+      {
+        date: "December 2020",
+        headline: "Mayville issues a do-not-drink advisory after PFNA is detected",
+        summary: "The drinking-water advisory prompted bottled-water distribution, investigation of the contamination source, development of a replacement supply, and carbon treatment for an existing well.",
+        publisher: "WKBW 7 News",
+        url: "https://www.wkbw.com/news/local-news/do-not-drink-water-advisory-issued-for-village-of-mayville-water-customers",
+        reach: "Regional",
+      },
+      {
+        date: "September 2022",
+        headline: "The Village of Mayville files suit over PFAS contamination",
+        summary: "The litigation moved the story from emergency water response into a dispute over responsibility and the cost of securing a safe long-term municipal supply.",
+        publisher: "The Post-Journal",
+        url: "https://www.post-journal.com/news/local-news/2022/09/mayville-files-suit-over-water-contamination/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Investigation at the Mayville PFAS Site",
@@ -1972,6 +2092,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former Hooker Chemical landfill that received about 80,000 tons of chemical waste, including dioxin-bearing material. The landfill and perimeter are capped, contaminated groundwater is hydraulically contained and treated, and community monitoring wells remain in use.",
     evidenceStatus: "well-documented",
     coordinates: [-79.03666, 43.13111],
+    newsEvents: [
+      {
+        date: "January 19, 1981",
+        headline: "Federal settlement makes Hooker responsible for the Hyde Park cleanup",
+        summary: "The $16.5 million agreement was described at the time as an unusually comprehensive industrial cleanup settlement and an early model for resolving major toxic-waste cases.",
+        publisher: "The Washington Post archive",
+        url: "https://www.washingtonpost.com/archive/business/1981/01/20/dump-site-suit-settled-by-hooker/314e66ae-36b7-4513-b4a6-99f5d8b3d304/",
+        reach: "National",
+      },
+    ],
     sources: [
       {
         title: "Hooker / Hyde Park Superfund Site Profile",
@@ -2365,6 +2495,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Active federal Superfund site covering roughly 15 miles of Eighteen Mile Creek, from Lockport toward Lake Ontario. Historic industry contaminated soil, groundwater, and creek sediment with PCBs, lead, and other pollutants. Investigation and cleanup are proceeding in stages. Fish-consumption advisories remain in effect.",
     evidenceStatus: "well-documented",
     coordinates: [-78.691, 43.171],
+    newsEvents: [
+      {
+        date: "July–September 2013",
+        headline: "EPA proposes permanent relocation beside Eighteen Mile Creek",
+        summary: "The first major cleanup decision called for purchasing contaminated Water Street properties, permanently relocating residents, demolishing homes, and removing the deteriorated Flintkote building.",
+        publisher: "U.S. Environmental Protection Agency news archive",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/5b6bbcdd3847096b85257bc5006dc223.html",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Eighteen Mile Creek Superfund Site Profile",
@@ -2388,6 +2528,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Federal Superfund site where a residential development was built over an inadequately covered chemical-waste dump. EPA permanently relocated residents, excavated contaminated soil, and consolidated it beneath an engineered cap. Long-term controls continue. The record applies to the former subdivision and capped disposal area, not the wider neighborhood.",
     evidenceStatus: "well-documented",
     coordinates: [-78.965, 43.119],
+    newsEvents: [
+      {
+        date: "July 26, 1989",
+        headline: "Forest Glen residents are offered emergency relocation",
+        summary: "Federal relocation began after chemical waste was documented beneath the subdivision. Contemporary reporting captured residents' demand for permanent—not merely temporary—removal from the site.",
+        publisher: "United Press International archive",
+        url: "https://www.upi.com/Archives/1989/07/26/Forest-Glen-residents-cool-to-relocation-plan/8233617428800/",
+        reach: "National",
+      },
+      {
+        date: "August 7, 1989",
+        headline: "Testing finds contamination inside Forest Glen homes",
+        summary: "Preliminary dust results intensified concern after the relocation began and reinforced comparisons with the unresolved human consequences of Love Canal.",
+        publisher: "United Press International archive",
+        url: "https://www.upi.com/amp/Archives/1989/08/07/Preliminary-results-show-toxins-inside-Forest-Glen-homes/7917618465600/",
+        reach: "National",
+      },
+    ],
     sources: [
       {
         title: "Forest Glen Mobile Home Subdivision Site Profile",
@@ -2411,6 +2569,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former federal Superfund site where PCB-contaminated waste oil was spread on dirt roads for dust control. Later road excavation moved contaminated soil into residential yards. Cleanup treated about 36,160 tons of soil and sediment and restored wetlands. EPA deleted the site from the National Priorities List in 1994.",
     evidenceStatus: "well-documented",
     coordinates: [-79.12796715865463, 42.58686971771397],
+    newsEvents: [
+      {
+        date: "1980–1985",
+        headline: "PCB-contaminated road oil turns a lakeside community into a Superfund case",
+        summary: "Investigators traced PCB contamination to waste oil applied for dust control. Sampling, temporary protections, and the federal cleanup decision made Wide Beach a prominent example of contamination created by an everyday road-maintenance practice.",
+        publisher: "U.S. Environmental Protection Agency Record of Decision",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100SJF8.TXT",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Wide Beach Development Cleanup Profile",
@@ -2457,6 +2625,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former General Motors automobile, axle, and drivetrain plant operated from the 1920s to 1994, followed by American Axle through 2008. The cleanup property is divided between a 32.88-acre Brownfield Cleanup Program site and an enclosed 2.65-acre state Superfund site addressing petroleum and PCB-impacted oil beneath the former plant.",
     evidenceStatus: "well-documented",
     coordinates: [-78.821, 42.9202],
+    newsEvents: [
+      {
+        date: "2007–2008",
+        headline: "American Axle closes the East Delavan plant",
+        summary: "The announced shutdown affected roughly 650 hourly workers and ended more than eight decades of automotive and drivetrain manufacturing at the property.",
+        publisher: "Buffalo Toronto Public Media",
+        url: "https://www.btpm.org/2007-08-15/american-axle-offers-buyout-and-early-retirement-to-buffalo-employees",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "American Axle Cleanup Community Working Group",
@@ -2490,6 +2668,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Large waste-management property used for disposal since 1897 and for hazardous-waste treatment, storage, and disposal beginning in 1977. Investigations found releases to fill, soil, and groundwater from historic waste-management units. Closed units are capped and maintained, contaminated groundwater is recovered and treated, and long-term monitoring and corrective-action controls continue under state and federal hazardous-waste permits.",
     evidenceStatus: "well-documented",
     coordinates: [-78.98965269272462, 43.10158803773757],
+    newsEvents: [
+      {
+        date: "October 1984",
+        headline: "Reports of leakage put the CECOS hazardous-waste facility under national scrutiny",
+        summary: "Reporting on an internal EPA assessment questioned the performance of a modern lined landfill receiving Superfund waste and intensified debate over how the country should dispose of hazardous material removed from other sites.",
+        publisher: "The Washington Post archive",
+        url: "https://www.washingtonpost.com/archive/politics/1984/10/30/leaks-reported-in-new-toxic-landfill/9dfeea27-bb57-4716-9959-5b8c5556c063/",
+        reach: "National",
+      },
+    ],
     sources: [
       {
         title: "CECOS International Hazardous-Waste Cleanup",

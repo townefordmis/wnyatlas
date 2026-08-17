@@ -257,6 +257,7 @@ export default async function SitePage({ params }: SitePageProps) {
           {site.id === "bethlehem-steel" && <a href="#worker-history">Workers</a>}
           {hasDeepHistory && <a href="#deep-history">People &amp; history</a>}
           {hasAerials && <a href="#aerials">Aerial history</a>}
+          {site.newsEvents?.length ? <a href="#news-events">Major news</a> : null}
           {site.pfasCompounds?.length ? <a href="#pfas-compounds">PFAS compounds</a> : null}
           {story.timeline.length > 0 && <a href="#timeline">Timeline</a>}
           {story.documentedImpacts.length > 0 && <a href="#impacts">Impacts</a>}
@@ -375,6 +376,34 @@ export default async function SitePage({ params }: SitePageProps) {
             {site.id === "love-canal" && <LoveCanalDisposalHistory />}
 
             <HistoricalAerialEvidence siteId={site.id} />
+
+            {site.newsEvents?.length ? (
+              <section className="story-news-events" id="news-events">
+                <p className="eyebrow">News record</p>
+                <h2>Major news events</h2>
+                <p>
+                  Coverage selected here marks a turning point in public awareness,
+                  policy, enforcement, employment, or cleanup. Links open at the
+                  original publisher or archive; WNYAtlas does not reproduce
+                  restricted articles or images.
+                </p>
+                <div className="story-news-event-list">
+                  {site.newsEvents.map((event) => (
+                    <article key={`${event.date}-${event.headline}`}>
+                      <div className="story-news-event-meta">
+                        <time>{event.date}</time>
+                        <span>{event.reach}</span>
+                      </div>
+                      <h3>{event.headline}</h3>
+                      <p>{event.summary}</p>
+                      <a href={event.url} target="_blank" rel="noreferrer">
+                        {event.publisher} ↗
+                      </a>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ) : null}
 
             {namedChemicals.length > 0 && (
               <section className="story-chemicals" id="chemicals">

@@ -9,6 +9,15 @@ export type AtlasSource = {
   url: string;
 };
 
+export type AtlasNewsEvent = {
+  date: string;
+  headline: string;
+  summary: string;
+  publisher: string;
+  url: string;
+  reach: "National" | "Regional" | "Local";
+};
+
 export type AtlasImage = {
   src: string;
   alt: string;
@@ -69,6 +78,7 @@ export type AtlasSite = {
   evidenceStatus: EvidenceStatus;
   coordinates: [longitude: number, latitude: number];
   sources?: AtlasSource[];
+  newsEvents?: AtlasNewsEvent[];
   image?: AtlasImage;
   story?: AtlasStory;
   atomicLegacy?: {
