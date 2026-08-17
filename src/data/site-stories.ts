@@ -1490,7 +1490,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "seaway-site": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "The Seaway Site lies within a roughly 100-acre industrial park and former landfill along River Road. The landfill accepted municipal, commercial, construction, and industrial wastes, and in 1974 it also received material moved from the nearby Ashland 1 property that contained residues from Linde's wartime uranium-processing work.",
       "FUSRAP addresses the radiological portion of this mixed landfill history. The contaminants associated with that program include radium, thorium, uranium, and uranium daughter products; other landfill materials remain subject to their own regulatory history.",
@@ -1538,6 +1538,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Keep FUSRAP contamination distinct from the landfill's broader municipal and industrial waste inventory.",
       "Track the Southside excavation status and the 2027 five-year-review protectiveness determination.",
+      "Pair historic Ashland and Seaway aerials to show the 1974 material transfer; link copyrighted imagery unless reuse permission is explicit.",
     ],
   },
   "gratwick-riverside-park": {
@@ -1745,7 +1746,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "donovan-head-start-radiation-site": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Two areas behind the Donovan Head Start facility at 1631 Main Street contained radioactive industrial slag used as fill decades ago. The documented material was in the playground and parking area; EPA reports that the two-story building itself was not radiologically contaminated.",
       "The property owner completed the removal in 2023 with EPA oversight. Because the site serves children, exact wording about where contamination was—and was not—found is central to an accurate public account.",
@@ -1788,6 +1789,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Add the final volume, disposal destination, and verification results if EPA publishes a closeout report.",
       "Preserve the distinction between confirmed exterior fill and unsupported claims about the building or neighboring properties.",
+      "Use EPA response photographs when federal reuse terms are clear; otherwise link to the removal page and preserve children's privacy.",
     ],
   },
   "upper-mountain-road-radiation-site": {
@@ -1929,7 +1931,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "buffalo-color-area-e-field": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Area E is a 15.8-acre portion of the former Buffalo Color chemical-manufacturing complex. Remediation retained some contamination beneath engineered covers, plugged unused process sewers, rehabilitated storm sewers, and established long-term groundwater and cover-system monitoring.",
       "The central and western portions were later redeveloped as athletic fields with a fieldhouse, access walks, bleachers, and parking. The sports complex is therefore an example of restricted-residential reuse supported by engineered controls—not evidence that all former industrial material was removed.",
@@ -1977,6 +1979,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Update the profile when the revised engineering report, site-management plan, and easement referenced in the periodic report are finalized.",
       "Keep Area E's remedy and monitoring separate from conditions and programs governing Buffalo Color Areas A through D.",
+      "Build a before-and-after pair using licensed industrial aerials and present-day field photography, with the engineered-cover boundary overlaid.",
     ],
   },
   "ashland-1-refinery-site": {
@@ -2225,7 +2228,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "tifft-nature-preserve": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Tifft Nature Preserve is a 264-acre urban wildlife refuge on former docklands. Portions were used as a City of Buffalo dump in the 1950s and 1960s before municipal waste was capped with clay and soil and the landscape was reshaped for habitat and public use.",
       "The preserve now combines a 75-acre cattail marsh, woodlands, grasslands, ponds, trails, and environmental education. Its success as habitat is inseparable from the history of containment and ecological restoration beneath and around the modern preserve.",
@@ -2268,6 +2271,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Obtain the original closure drawings and map the municipal-dump footprint separately from the full preserve.",
       "Document how current habitat projects avoid or protect capped waste areas and whether formal landfill monitoring continues.",
+      "Use aerial chronology to distinguish lost marsh, rail and dock land, capped waste, and surviving habitat rather than describing all 264 acres as former dump.",
     ],
   },
   "main-hertel-the-rails": {
@@ -3794,7 +3798,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "times-beach-disposal-site": {
-    lastReviewed: "August 11, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Times Beach is a 45-acre confined disposal facility built by the U.S. Army Corps of Engineers at the mouth of the Buffalo River. From 1972 to 1976 it received sediment dredged from the river's federal navigation channel, physically linking the property to the working harbor's industrial and maintenance history.",
       "The Corps moved dredged-material placement to another facility in 1976. Vegetation then colonized the closed surface, creating an unusual succession from engineered disposal cell to urban habitat rather than a conventional excavation-and-redevelopment cleanup.",
@@ -3823,6 +3827,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Document ownership, inspection responsibility, and current structural-monitoring requirements.",
       "Do not describe all sediment beneath the preserve as uniform; disposal records and sampling should guide detail.",
+      "Pair pre-disposal shoreline imagery, 1970s placement-era aerials, and current habitat photography without suggesting ecological value removed the contained sediment.",
     ],
   },
   "pettit-flume-durez-outfall": {

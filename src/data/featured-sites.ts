@@ -774,6 +774,24 @@ const featuredSiteRecords: AtlasSite[] = [
       era: "Manhattan Project-derived material",
       role: "later disposal of residues moved from the Ashland property",
     },
+    newsEvents: [
+      {
+        date: "1974",
+        headline: "Ashland excavation moves uranium-processing residues into the Seaway landfill",
+        summary: "Material originating with Linde's wartime uranium work was mixed with soil at Ashland 1 and transported to Seaway, giving an ordinary mixed-waste landfill a second federal radiological history.",
+        publisher: "U.S. Army Corps of Engineers project record",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3612995/seaway-site/",
+        reach: "Regional",
+      },
+      {
+        date: "2009–present",
+        headline: "Federal remedy contains the radiological material beneath an engineered cap",
+        summary: "The selected remedy consolidated and covered the defined FUSRAP material while preserving inspection, monitoring, and five-year review obligations.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/4396884/fusrap-seaway-site-five-year-review-of-selected-remedy/",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Seaway Site",
@@ -937,6 +955,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Radioactive industrial slag fill was removed from playground and parking areas in 2023; EPA reports that the building itself was not contaminated.",
     evidenceStatus: "well-documented",
     coordinates: [-79.054, 43.106],
+    newsEvents: [
+      {
+        date: "September–December 2021",
+        headline: "Playground construction reveals buried radioactive industrial slag",
+        summary: "Material encountered during improvements led to a federal survey that identified uranium-bearing slag beneath portions of the outdoor playground and parking area—not inside the Head Start building.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/donovan-head-start-removal-site",
+        reach: "Regional",
+      },
+      {
+        date: "2023",
+        headline: "Outdoor slag removal is completed under EPA oversight",
+        summary: "Children and staff had been moved during the response; excavation, verification, clean backfill, and restoration completed the property-specific removal.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Niagara County Radiation Removal Sites",
@@ -1029,6 +1065,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former Buffalo Color chemical-manufacturing parcel remediated under the Brownfield Cleanup Program and redeveloped in 2019 as the Medaille athletic complex at Buffalo Color Park.",
     evidenceStatus: "well-documented",
     coordinates: [-78.84111274948687, 42.86634334494757],
+    newsEvents: [
+      {
+        date: "2010–2011",
+        headline: "Area E is remediated for controlled reuse rather than unrestricted ground",
+        summary: "Engineered soil and pavement covers, sewer work, groundwater monitoring, and institutional controls prepared one portion of the former chemical complex for compatible redevelopment.",
+        publisher: "New York State Department of Environmental Conservation site record",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915232/Report.BCP.C915232.2024-03-21.PRR_and_IC-EC_Certification.pdf",
+        reach: "Local",
+      },
+      {
+        date: "2019",
+        headline: "Athletic fields open on the managed former industrial parcel",
+        summary: "The reuse placed fields, a fieldhouse, walks, bleachers, and parking above a remedy that still depends on intact covers, monitoring, and limits on subsurface disturbance.",
+        publisher: "New York State Department of Environmental Conservation site-management record",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915232/Report.BCP.C915232.2024-03-21.PRR_and_IC-EC_Certification.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Buffalo Color Area E Site Management and Periodic Review",
@@ -1183,6 +1237,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "A 264-acre former dockland and city-dump landscape transformed through capping and habitat work into an urban nature preserve with trails, wetlands, and environmental education.",
     evidenceStatus: "well-documented",
     coordinates: [-78.862, 42.847],
+    newsEvents: [
+      {
+        date: "1950s–1960s",
+        headline: "Buffalo uses part of the future preserve for municipal waste",
+        summary: "Dumping added another industrial layer to a landscape already transformed by railroads, docks, filling, and the loss of much of the original marsh system.",
+        publisher: "City of Buffalo park-history record",
+        url: "https://www.buffalony.gov/DocumentCenter/View/9917/Buffalo-Parks-Master-Plan",
+        reach: "Local",
+      },
+      {
+        date: "1970s onward",
+        headline: "Citizen advocacy helps turn a capped dump landscape into an urban refuge",
+        summary: "Preservation, containment, habitat management, and environmental education created the modern refuge without erasing the engineered waste areas beneath portions of it.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/things-to-do/watchable-wildlife/sites/tifft-nature-preserve",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Tifft Nature Preserve",
@@ -2350,6 +2422,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former confined disposal area used from 1972 to 1976 for contaminated sediment dredged from the Buffalo River federal navigation channel. The 45-acre containment site later became a nature preserve; habitat restoration and invasive-species work continue around the contained dredged material.",
     evidenceStatus: "well-documented",
     coordinates: [-78.8818, 42.872],
+    newsEvents: [
+      {
+        date: "1972–1976",
+        headline: "Buffalo River dredged sediment forms a new engineered shoreline landscape",
+        summary: "The confined disposal facility received navigation-channel sediment during the river's heavily industrial era, then closed when placement shifted elsewhere.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.usace.army.mil/Media/News/NewsSearch/Article/503312/restoring-quality-habitat-and-combating-invasive-plants-at-times-beach/",
+        reach: "Regional",
+      },
+      {
+        date: "After 1976",
+        headline: "Plants, birds, and public advocacy transform the closed disposal cell",
+        summary: "Natural succession and later habitat work created ecological value above contained dredged material, producing a preserve whose living landscape remains inseparable from its engineered foundation.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.usace.army.mil/Media/News/NewsSearch/Article/503312/restoring-quality-habitat-and-combating-invasive-plants-at-times-beach/",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Restoring Habitat at Times Beach",
