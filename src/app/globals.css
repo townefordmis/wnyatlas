@@ -1824,23 +1824,6 @@ footer {
   color: var(--history-accent);
 }
 
-@media (max-width: 760px) {
-  .deep-history-heading {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .deep-history-stat {
-    padding: 1rem 0 0;
-    border-top: 1px solid rgba(245, 241, 231, 0.3);
-    border-left: 0;
-  }
-
-  .deep-history-chapters {
-    grid-template-columns: 1fr;
-  }
-}
-
 .deep-history-heading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(180px, 0.35fr);
@@ -1950,6 +1933,23 @@ footer {
   font-weight: 750;
   text-decoration: underline;
   text-underline-offset: 0.18em;
+}
+
+@media (max-width: 760px) {
+  .deep-history-heading {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .deep-history-stat {
+    padding: 1rem 0 0;
+    border-top: 1px solid rgba(245, 241, 231, 0.3);
+    border-left: 0;
+  }
+
+  .deep-history-chapters {
+    grid-template-columns: 1fr;
+  }
 }
 
 .love-canal-party-list {
