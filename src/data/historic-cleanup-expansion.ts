@@ -508,6 +508,14 @@ export const historicCleanupExpansion: AtlasSite[] = [
         reach: "Regional",
       },
       {
+        date: "1990s-2015",
+        headline: "A hidden plume changes drinking water and household vapor protections",
+        summary: "After the solvent plume was identified, affected properties received bottled water and treatment before public-water connections were completed; vapor-mitigation systems were installed where sampling identified a building pathway.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-finalizes-cleanup-plan-lehigh-valley-railroad-derailment-superfund-site-genesee",
+        reach: "Local",
+      },
+      {
         date: "September 2023",
         headline: "EPA finalizes the remaining cleanup more than fifty years later",
         summary: "The remedy addresses source soil, groundwater, Mud Creek, vapor intrusion, monitoring, and institutional controls—evidence of how a transportation accident became a generational water problem.",
@@ -613,6 +621,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Closed Class 4 chemical cleanup site on Townline Road. This property is distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls and is mapped separately to prevent their histories and remedies from being conflated.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.821419444, 43.087527778],
+    newsEvents: [
+      {
+        date: "1992",
+        headline: "New York selects removal and treatment for a small chemical-handling property",
+        summary: "The state remedy addressed contaminated soil, tanks and containers, and groundwater rather than treating the Townline Road operation as part of Frontier Chemical's separate Niagara Falls facility.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/ROD.HW.932043.1992-03-02.frontier_chemical.pdf",
+        reach: "Local",
+      },
+      {
+        date: "1990s-present",
+        headline: "The visible chemical inventory leaves; groundwater stewardship remains",
+        summary: "Long-term reports track the remedy, monitoring, and institutional controls after source removal. The documented human consequence is prolonged uncertainty and land-use management, not a verified finding of illness among neighbors.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Frontier Chemical — Pendleton Site Documents",
@@ -1519,6 +1545,22 @@ export const historicCleanupExpansion: AtlasSite[] = [
         url: "https://extapps.dec.ny.gov/data/DecDocs/905003A/ROD.HW.905003A.2005-09-30.petercooper_ou1.pdf",
         reach: "Regional",
       },
+      {
+        date: "August 2005",
+        headline: "Residents and the Seneca Nation question the proposed cleanup",
+        summary: "About 50 residents, business owners, officials, and a Seneca Nation representative attended EPA's public meeting. The formal record preserves questions about exposure, health effects, remedy scope, effectiveness, and long-term maintenance.",
+        publisher: "U.S. Environmental Protection Agency Record of Decision",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905003A/ROD.HW.905003A.2005-09-30.petercooper_ou1.pdf",
+        reach: "Local",
+      },
+      {
+        date: "2019-2020",
+        headline: "The former glue works leaves Superfund and reopens as Gateway Park",
+        summary: "Local redevelopment converted a previously unusable creekfront industrial property into public space, while groundwater monitoring, landfill-gas venting, land restrictions, and five-year reviews continued beneath the reuse story.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://19january2021snapshot.epa.gov/newsreleases/epa-deletes-peter-cooper-superfund-site-gowanda-new-york-federal-superfund-list_.html",
+        reach: "Local",
+      },
     ],
     sources: [
       {
@@ -1552,6 +1594,14 @@ export const historicCleanupExpansion: AtlasSite[] = [
         url: "https://extapps.dec.ny.gov/data/DecDocs/905003B/ROD.HW.905003B.2006-12-01.FINAL.pdf",
         reach: "Regional",
       },
+      {
+        date: "Long-term phase",
+        headline: "A rural receiving property remains connected to a factory miles away",
+        summary: "The human geography is unusual: Dayton-area land carries waste generated in Gowanda. Inspections, access limits, erosion controls, and deed restrictions remain local obligations even though the manufacturing source closed elsewhere.",
+        publisher: "U.S. Environmental Protection Agency Record of Decision",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905003B/ROD.HW.905003B.2006-12-01.FINAL.pdf",
+        reach: "Local",
+      },
     ],
     sources: [
       {
@@ -1576,6 +1626,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former leather-tanning operation at 265 Palmer Street that operated for about 120 years, including Moench operations from 1900 to 1983. Its closed landfill and creek-edge controls remain subject to groundwater monitoring, inspections, and erosion management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.92448493440273, 42.448851221364386],
+    newsEvents: [
+      {
+        date: "1992-present",
+        headline: "A creek-edge tannery landfill moves from closure into long-term erosion control",
+        summary: "The landfill was capped, but its position beside Cattaraugus Creek made bank stability, storm damage, groundwater monitoring, and repair part of the continuing community record rather than a one-time closure.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905004/Report.HW.905004.2022-02-08.2021%20PRR.pdf",
+        reach: "Local",
+      },
+      {
+        date: "2025",
+        headline: "Gowanda planning identifies the former tannery as both controlled land and a creekfront reuse question",
+        summary: "The state-designated Brownfield Opportunity Area record places the capped tannery beside homes, Cattaraugus Creek, and the Zoar Valley Gateway area, documenting why reuse must preserve the landfill remedy and public access decisions together.",
+        publisher: "New York Department of State / Village of Gowanda",
+        url: "https://dos.ny.gov/system/files/documents/2025/08/v-gowanda-boa-designation-package1_3_22_final_compressed.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Moench Tanning Periodic Review Report",
@@ -1682,6 +1750,14 @@ export const historicCleanupExpansion: AtlasSite[] = [
         url: "https://extapps.dec.ny.gov/data/DecDocs/905013/ROD.HW.905013.1992-11-01.machias_gravel.pdf",
         reach: "Regional",
       },
+      {
+        date: "1978-1980s",
+        headline: "Some waste oil from the drum shipment is reportedly spread on town roads",
+        summary: "The site-management record says town personnel reportedly used some received oils for dust control. It also states that available records do not establish how many drums were used this way or the final disposition of every drum in the original estimate.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905013/Work%20Plan.HW.905013.2011-11-21.SiteManagementPlan-FINAL.pdf",
+        reach: "Local",
+      },
     ],
     sources: [
       {
@@ -1724,6 +1800,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Inactive capped landfill that operated from 1972 to 1975 and reportedly received industrial, commercial, medical and household refuse, including TCE-laced sawdust. DEC detected PFOA, PFOS and 1,4-dioxane in groundwater and lists the property as a potential site under characterization.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.3679499897936, 42.247621807867375],
+    newsEvents: [
+      {
+        date: "2020-2022",
+        headline: "New sampling reopens questions at a rural landfill closed since the 1970s",
+        summary: "New York's inactive-landfill initiative detected PFOA, PFOS, and 1,4-dioxane in groundwater and ordered a fuller characterization of the waste trenches, groundwater, surface water, sediment, and nearby receptor pathways.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905048/Work%20Plan.HW.905048.2022-10-18.Ischua_Landfill_WA.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Ischua Landfill Site-Characterization Scope",
@@ -2324,6 +2410,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former federal Superfund landfill used from 1933 to 1968 for wastes from the Niagara Sprayer and FMC pesticide operation in Middleport. DDT, DDD, DDE, lindane-related compounds, metals, and other wastes affected several environmental media; the remedy consolidated and capped waste, treated water, restored wetlands, and established continuing controls.",
     evidenceStatus: "well-documented",
     coordinates: [-78.441212, 43.21636],
+    newsEvents: [
+      {
+        date: "1933-1968",
+        headline: "Middleport pesticide waste is transported to a separate rural disposal property",
+        summary: "The Dublin Road record documents how production residues, laboratory material, ash, debris, and equipment-cleaning waste extended FMC's environmental footprint beyond the plant community.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-completes-cleanup-fmc-corp-landfill-superfund-site",
+        reach: "Regional",
+      },
+      {
+        date: "2020-present",
+        headline: "Superfund deletion begins stewardship rather than erasing the landfill",
+        summary: "EPA deletion and state Class 4 status followed construction of the remedy. The capped waste, wetland restoration, water restrictions, inspections, and periodic reviews remain part of the neighboring community's land-use record.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/newsreleases/epa-completes-cleanup-fmc-corp-landfill-superfund-site",
+        reach: "Local",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
@@ -2694,6 +2798,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Operating hazardous- and industrial-waste treatment and storage facility on former Lake Ontario Ordnance Works land. Its RMU-1 landfill reached capacity in 2015 and was capped; New York's Facility Siting Board denied the proposed RMU-2 landfill in September 2025.",
     evidenceStatus: "well-documented",
     coordinates: [-78.97852213, 43.22280069],
+    newsEvents: [
+      {
+        date: "2015",
+        headline: "The operating RMU-1 hazardous-waste landfill reaches capacity",
+        summary: "Waste disposal ended in RMU-1 and the cell moved into closure and post-closure care, while treatment and storage operations continued elsewhere at the permitted facility.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/cwm-chemical-services",
+        reach: "Regional",
+      },
+      {
+        date: "September 2025-February 2026",
+        headline: "A decades-long public fight over a second landfill ends in a final siting denial",
+        summary: "The Facility Siting Board denied the proposed RMU-2 landfill after an unusually long administrative and public-participation record. The decision concerns the proposed expansion, not closure of every permitted activity at Model City.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/environmental-protection/waste-management/hazardous-waste/cwm-chemical-services",
+        reach: "Regional",
+      },
+    ],
     story: {
       lastReviewed: "August 11, 2026",
       background: [
@@ -2750,6 +2872,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Large former ferroalloy-production and disposal property divided into three cleanup units. Historic slag, dust, ash, cinders, lime-like waste, and related fill were consolidated, capped, collected, treated, or placed under long-term controls according to location.",
     evidenceStatus: "well-documented",
     coordinates: [-79.021394875, 43.124263433],
+    newsEvents: [
+      {
+        date: "2000-2003",
+        headline: "Hexavalent-chromium migration leads to collection and treatment beside wetlands",
+        summary: "The Airco unit remedy capped the landfill and added groundwater interception after investigation identified affected groundwater moving toward a stream and wetland system.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932001/ROD.HW.932001.2006-03-31.vanadium_corp_ou1_ou2_ou3.pdf",
+        reach: "Local",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
@@ -2808,6 +2940,32 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former 7,567-acre World War II ordnance complex built for flaked-TNT production. Manufacturing lasted about nine months in 1943, and process wastes were disposed of on site; the Army Corps continues the FUDS decision process for investigated drainage features.",
     evidenceStatus: "well-documented",
     coordinates: [-78.9935, 43.2223],
+    newsEvents: [
+      {
+        date: "1943",
+        headline: "A vast wartime TNT complex operates for only about nine months",
+        summary: "The short production period left a much longer land-use and investigation history across thousands of acres, including process areas, disposal locations, utilities, and drainage features later divided among many owners.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/Missions/Projects/Display/Article/3663181/lake-ontario-ordnance-works-loow/",
+        reach: "Regional",
+      },
+      {
+        date: "2014-present",
+        headline: "Niagara County organizes a community review of decades of overlapping investigations",
+        summary: "The Community LOOW Project assembled federal, state, local, and public records so residents could distinguish the former TNT works, the Niagara Falls Storage Site, commercial waste operations, schools, farms, homes, and other present-day properties.",
+        publisher: "Niagara County Department of Health",
+        url: "https://downloads.niagaracounty.gov/departments/a-f/environmental_health/the_community_loow_project.php",
+        reach: "Regional",
+      },
+      {
+        date: "2025-2027",
+        headline: "The Army Corps takes public comment on three investigated drainage features",
+        summary: "The proposed no-further-action finding is limited to the 30-inch outfall, Six Mile Creek, and Southwest Drainage Ditch; it is not a blanket finding for every property or every separate cleanup program inside the historic LOOW footprint.",
+        publisher: "U.S. Army Corps of Engineers Buffalo District",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/4214524/proposed-plan-available-and-public-meeting-former-lake-ontario-ordnance-works/",
+        reach: "Regional",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
