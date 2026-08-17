@@ -46,6 +46,9 @@ const hydeParkBounds =
 const hooker102Bounds =
   "bbox=-78.965%2C43.073%2C-78.938%2C43.093&bboxSR=4326&imageSR=4326&size=1200%2C1200&format=jpg&f=image";
 
+const diazChemicalBounds =
+  "bbox=-78.036%2C43.217%2C-78.022%2C43.228&bboxSR=4326&imageSR=4326&size=1200%2C1200&format=jpg&f=image";
+
 const sAreaBounds =
   "bbox=-79.018%2C43.068%2C-78.993%2C43.084&bboxSR=4326&imageSR=4326&size=1200%2C1200&format=jpg&f=image";
 
@@ -643,6 +646,71 @@ const histories: Record<string, AerialHistory> = {
         label: "EPA S-Area remedy record",
         url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100PZCV.TXT",
       },
+    ],
+  },
+  "diaz-chemical-holley": {
+    eyebrow: "Historical aerial evidence · seventh release",
+    title: "A neighborhood chemical plant becomes a federal treatment field",
+    introduction:
+      "Four matched New York State orthophotos follow the five-acre Diaz Chemical property and surrounding Jackson Street neighborhood from the year of the January 2002 release through demolition, water-main relocation, and construction of the thermal treatment system. The New York State Archives catalogs a 1968 Holley aerial flight, six years before Diaz bought the property, but an exact reproducible frame has not yet been retrieved; it is therefore listed as a research lead rather than displayed as evidence.",
+    interpretation:
+      "The yellow oval is an approximate location guide centered on EPA's published site coordinates, not a surveyed property, plume, deposition, or residential-impact boundary. The matched views can document buildings disappearing and cleanup infrastructure appearing. They cannot show the January 2002 airborne mixture, indoor contamination, subsurface soil and groundwater concentrations, vapor intrusion, or treatment performance. Those conclusions come from sampling, relocation decisions, engineering reports, and five-year reviews.",
+    panels: [
+      {
+        period: "2002",
+        heading: "The plant and neighborhood in the release year",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2002/MapServer/export?${diazChemicalBounds}`,
+        sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2002/MapServer",
+        sourceLabel: "2002 NYS orthophoto",
+        alt: "New York State 2002 orthophoto of the Diaz Chemical plant and Jackson Street neighborhood in Holley",
+        note:
+          "This statewide image was acquired during the year a reactor safety valve released a mixture toward the residential neighborhood. It records the physical setting, not the release itself or the exact date of exposure.",
+        matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 580, cy: 610, rx: 185, ry: 155 },
+      },
+      {
+        period: "2005",
+        heading: "Abandoned facility during removal and relocation",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2005/MapServer/export?${diazChemicalBounds}`,
+        sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2005/MapServer",
+        sourceLabel: "2005 NYS orthophoto",
+        alt: "New York State 2005 orthophoto of the abandoned Diaz Chemical facility during federal removal work",
+        note:
+          "Diaz abandoned the facility in 2003. By 2005 EPA had removed thousands of containers and large volumes of hazardous material and selected permanent relocation for eight owner-occupied homes plus assistance for two tenants.",
+        matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 580, cy: 610, rx: 185, ry: 155 },
+      },
+      {
+        period: "2015",
+        heading: "After most production buildings were removed",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2015/MapServer/export?${diazChemicalBounds}`,
+        sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2015/MapServer",
+        sourceLabel: "2015 NYS orthophoto",
+        alt: "New York State 2015 orthophoto showing the cleared Diaz Chemical property before full-scale thermal treatment",
+        note:
+          "EPA dismantled production structures and selected in-place thermal treatment for source soil and groundwater. The cleared surface did not mean the subsurface remedy was complete.",
+        matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 580, cy: 610, rx: 185, ry: 155 },
+      },
+      {
+        period: "2023",
+        heading: "Thermal-treatment infrastructure replaces the former plant",
+        imageUrl: `https://orthos.its.ny.gov/arcgis/rest/services/wms/2023/MapServer/export?${diazChemicalBounds}`,
+        sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2023/MapServer",
+        sourceLabel: "2023 NYS orthophoto",
+        alt: "New York State 2023 orthophoto showing thermal remediation infrastructure at the former Diaz Chemical property",
+        note:
+          "EPA and the Army Corps oversaw a system of heater and extraction wells designed to convert contaminants into capturable vapor. EPA reports that repaired equipment returned to operation in 2023; confirmation sampling, not the aerial appearance, determines progress.",
+        matched: true,
+        highlight: { viewBox: "0 0 1200 1200", cx: 580, cy: 610, rx: 185, ry: 155 },
+      },
+    ],
+    recordLinks: [
+      { label: "EPA Diaz Chemical site profile", url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0203341" },
+      { label: "EPA 2012 cleanup decision", url: "https://extapps.dec.ny.gov/data/DecDocs/837009/ROD.HW.837009.2012-09-26.DiazOU2_ROD_FINAL.pdf" },
+      { label: "EPA March 2026 community update", url: "https://semspub.epa.gov/work/02/762730.pdf" },
+      { label: "EPA Inspector General June 2026 review", url: "https://www.epa.gov/office-inspector-general/report-inspection-infrastructure-investment-and-jobs-act-funded-activities" },
+      { label: "State Archives 1968 Holley aerial-flight catalog", url: "https://iarchives.nysed.gov/xtf/view?docId=ead%2Ffindingaids%2FB2009.xml" },
     ],
   },
 };

@@ -1,6 +1,57 @@
 import type { AtlasStory } from "@/types/site";
 
 export const siteStories: Partial<Record<string, AtlasStory>> = {
+  "diaz-chemical-holley": {
+    lastReviewed: "August 17, 2026",
+    background: [
+      "The five-acre property at 40 Jackson Street had earlier food-processing uses before Diaz Chemical purchased it in 1974. Diaz manufactured specialty organic intermediates for agricultural, pharmaceutical, photographic, dye, and personal-care products beside residences on Jackson and South Main streets.",
+      "EPA describes repeated spills, releases, and discharges beginning around 1975. Investigations from 1994 through 1999 found volatile and semivolatile compounds in facility soil and groundwater, including conventional solvents and less commonly monitored brominated and fluorinated manufacturing intermediates. Groundwater generally moves toward an unnamed tributary and the East Branch of Sandy Creek in the Lake Ontario watershed.",
+      "On January 5, 2002, a reactor overheated and its safety valve released roughly 75 to 80 gallons through a roof vent. EPA identifies steam, toluene, 2-chloro-6-fluorophenol, and related phenolic compounds in the mixture. Residents reported sore throats, headaches, eye irritation, nosebleeds, and skin rashes; some families moved to hotels while homes and belongings were investigated.",
+      "The first local accounts preserve the breakdown in trust. Residents told a packed January 8 village meeting that they had not received enough warning or enough information to make their own evacuation decisions. Homes and vehicles with visible residue were washed, while officials and residents acknowledged how little toxicological information was then available for 2-chloro-6-fluorophenol.",
+      "Diaz stopped paying temporary-relocation costs in May 2002, filed for bankruptcy, and abandoned the plant in June 2003. EPA inherited a facility containing thousands of drums, tanks, reactor vessels, piping, and bulk chemicals, creating a removal project as well as a long-term soil and groundwater cleanup.",
+    ],
+    timeline: [
+      { period: "1890s-1974", event: "The property supported tomato processing and cider-vinegar production before Diaz acquired it." },
+      { period: "1974-2001", event: "Diaz manufactured specialty chemicals; government records document a release history beginning around 1975 and subsurface investigation during the 1990s." },
+      { period: "January 5, 2002", event: "An overheated reactor released a chemical mixture toward the neighboring residential area, prompting health complaints, cleaning, sampling, and voluntary relocation." },
+      { period: "January-May 2002", event: "Residents organized, pursued a proposed $60 million civil action with Love Canal attorney Richard Lippes, and challenged the adequacy of warning, cleanup, health information, and compensation." },
+      { period: "2003-2007", event: "Diaz went bankrupt and abandoned the plant. EPA secured it, removed chemicals and equipment, and dismantled most production buildings." },
+      { period: "2004-2005", event: "EPA listed Diaz on the National Priorities List and selected permanent relocation for eight families plus assistance for two tenants; the Army Corps managed acquisition and relocation as EPA's agent." },
+      { period: "2007-2009", event: "Indoor-air investigations led EPA to install or modify vapor-mitigation and carbon-filtration systems at three residences." },
+      { period: "2012-2017", event: "EPA selected in-place thermal treatment, demolished remaining structures needed for access, relocated a water main, and transferred eight acquired houses for resale after concluding residential soil cleanup was unnecessary." },
+      { period: "2018-2021", event: "A pilot treated about 10 percent of the source area. Full-scale heating began in August 2021, recovered more than 2,100 gallons of contaminants, and stopped in December after vapor escaped around some heater wells." },
+      { period: "2022-2025", event: "Contractors rebuilt seals, added extraction capacity, and resumed treatment. Phase 2.1 heating ended in July 2025 with EPA reporting 87 percent of site soil had met remedy goals; the final 13-percent phase began in October." },
+      { period: "2026-2027", event: "EPA and the Army Corps planned confirmation sampling and restoration in completed treatment areas while the final phase continued. EPA's Inspector General estimated thermal treatment would finish in late 2027." },
+    ],
+    documentedImpacts: [
+      "The 2002 airborne release deposited visible material on some neighboring properties and was followed by acute symptoms reported by residents. The permanent-relocation decision addressed prolonged displacement and uncertainty; it did not establish that every reported illness had one proven chemical cause.",
+      "Facility source areas contained VOCs, SVOCs, and specialized brominated and fluorinated compounds in soil and groundwater. The dissolved groundwater plume extends toward the East Branch of Sandy Creek drainage.",
+      "The 2012 decision record shows how severe historical source-area groundwater concentrations could be: maximum 1,2-dichloroethane was reported at 130,000 micrograms per liter against a 5-microgram-per-liter standard, and 1,2-dibromoethane at 25,000 against 5. These are historical investigation maxima used to design the remedy, not present-day tap-water results.",
+      "EPA reported 2-chloro-6-fluorophenol in surface soil or other outdoor media at six residential properties shortly after the 2002 release. In the later remedial investigation, site-specific VOCs were not found above cleanup objectives in residential surface or unsaturated soil; very low detections in saturated soil immediately beside the plant were attributed to the dissolved groundwater plume.",
+      "EPA removed approximately 8,080 drums and more than 112,000 gallons of hazardous products by the time of its 2005 relocation decision, followed by extensive equipment, debris, asbestos, PCB-containing fixtures, and contaminated construction material management.",
+      "Local reporting in May 2003 recorded more than $17,000 in village fines tied to excess groundwater or sewer contamination, accruing penalties, and a proposed $60 million resident action. These figures document the dispute at that date; they should not be presented as a final court judgment or final environmental-damage valuation.",
+      "EPA's residential investigation found no site-related contamination requiring neighborhood soil remediation, but three residential vapor-control systems remain operated and maintained. This distinction should remain explicit rather than being simplified to either 'nothing was found' or 'the whole neighborhood remains contaminated.'",
+      "The first five-year review judged the unfinished remedy expected to become protective upon completion, with interim exposure pathways controlled, while identifying heater-well vapor escape as a problem requiring corrective measures.",
+    ],
+    cleanupAndControls: [
+      "An interceptor trench and groundwater extraction-and-treatment system provided early plume containment under the 2002 state remedy.",
+      "EPA secured the abandoned plant, inventoried and removed hazardous materials, dismantled production equipment, and demolished structures to reach contaminated source areas.",
+      "The source remedy uses subsurface heating to volatilize contaminants and an extraction network to capture and treat vapor. EPA's March 2026 update describes 244 heater wells, 305 extraction wells, and monitoring at more than 50 wells.",
+      "When vapor escaped around heater-well bases in December 2021, contractors shut down heating while extraction continued temporarily. EPA reported no perimeter-air exceedance above off-property action levels. Repairs included more durable concrete seals and additional soil-vapor-extraction wells; a separate pressure test in December 2022 ruptured about 120 feet of PVC pipe inside the treatment building without injuring personnel.",
+      "Downgradient groundwater is managed through extraction, treatment, monitoring, and natural attenuation. Residential vapor systems continue at three properties.",
+      "EPA and the Army Corps oversee contractors, system safety, confirmation sampling, and restoration. The Corps role is therefore current and operational, not merely historical consultation.",
+    ],
+    presentDay: [
+      "Diaz remains an active federal Superfund cleanup rather than a completed redevelopment. The June 2026 Inspector General report says 87 percent of the soil treated during phase 2.1 met remedy goals; material that missed the goals was retreated or moved into phase 2.2. Treatment of the final site area began in October 2025, and overall thermal work was expected to finish in late 2027. EPA's summer 2026 sampling and restoration announcement applies to completed treatment work and should not be read as closure of the entire site.",
+      "The Inspector General found visible safety controls in place and concluded EPA and the Army Corps were making progress and had responded effectively to identified system deficiencies. It also found that EPA conducted no community interviews for the 2022 five-year review and had not updated or posted its 2007 community-involvement plan. EPA agreed to corrective actions for the 2027 review.",
+    ],
+    researchNotes: [
+      "Retrieve the exact 1968 Holley aerial frame from the New York State Archives and look for earlier USDA or USGS coverage to establish the pre-Diaz industrial footprint.",
+      "Track the 2026 confirmation-sampling results, final data validation, equipment removal, and site-restoration schedule.",
+      "Build a property-level map distinguishing the five-acre facility, eight acquired homes, three continuing vapor-control properties, groundwater plume, tributary, and East Branch of Sandy Creek.",
+      "Expand the dated-news record with accessible Orleans County and Rochester-area reporting while linking rather than reproducing copyrighted photographs and articles.",
+    ],
+  },
   "former-roblin-steel-dunkirk": {
     lastReviewed: "August 4, 2026",
     background: [

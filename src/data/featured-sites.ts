@@ -3164,6 +3164,57 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
   },
+  {
+    id: "diaz-chemical-holley",
+    name: "Diaz Chemical Corporation Superfund Site",
+    municipality: "Holley",
+    county: "Orleans",
+    category: "cleanup",
+    summary:
+      "Former specialty-chemical plant beside a Holley neighborhood. A January 2002 reactor release affected nearby homes and displaced families; the abandoned plant, contaminated soil and groundwater, residential vapor controls, and large thermal-treatment project remain part of a long federal cleanup.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.02927, 43.22294],
+    newsEvents: [
+      {
+        date: "January 14, 2002",
+        headline: "Residents describe odors and uncertainty after chemicals reach the neighborhood",
+        summary: "Contemporary local reporting documented house washing, a crowded village meeting, resident concerns, and the limited toxicological information then available for 2-chloro-6-fluorophenol.",
+        publisher: "Westside News archive",
+        url: "https://westsidenewsny.com/pastarchives/OldSite/westside/news/2002/0114/features/diazholley.html",
+        reach: "Local",
+      },
+      {
+        date: "March 30, 2005",
+        headline: "EPA permanently relocates eight families after the 2002 release",
+        summary: "EPA's decision funded permanent relocation for eight owner-occupant families and assistance for two tenants, while the Army Corps handled acquisition and relocation work as EPA's agent.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/4f285d55d6ae5f66852570d2003f39ea.html",
+        reach: "Regional",
+      },
+      {
+        date: "May 26, 2003",
+        headline: "Diaz closes after federal safety demands and mounting local pressure",
+        summary: "Local reporting recorded that EPA-required safety improvements were beyond the company's stated means, while Diaz faced a proposed $60 million resident lawsuit and village fines connected to groundwater or sewer-discharge violations. Diaz entered bankruptcy and abandoned the facility weeks later.",
+        publisher: "Westside News archive",
+        url: "https://westsidenewsny.com/pastarchives/OldSite/westside/news/2003/0526/features/Diazchemical.html",
+        reach: "Local",
+      },
+      {
+        date: "June 16, 2026",
+        headline: "Federal watchdog reviews treatment safety and community engagement",
+        summary: "EPA's Inspector General found that complaints had received swift responses but recommended community interviews during five-year reviews and an updated, publicly available community-involvement plan.",
+        publisher: "EPA Office of Inspector General",
+        url: "https://www.epa.gov/office-inspector-general/report-inspection-infrastructure-investment-and-jobs-act-funded-activities",
+        reach: "National",
+      },
+    ],
+    sources: [
+      { title: "Diaz Chemical Superfund Site Profile", publisher: "U.S. Environmental Protection Agency", url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0203341" },
+      { title: "First Five-Year Review", publisher: "U.S. Environmental Protection Agency", url: "https://semspub.epa.gov/work/02/609926.pdf" },
+      { title: "March 2026 Community Update", publisher: "U.S. Environmental Protection Agency", url: "https://semspub.epa.gov/work/02/762730.pdf" },
+      { title: "Diaz Chemical DEC Document Repository", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/837009/" },
+    ],
+  },
 ];
 
 export const featuredSites: AtlasSite[] = [
