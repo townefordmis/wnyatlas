@@ -368,6 +368,8 @@ export function FormerWaterwaysMap() {
         shell.current?.scrollIntoView({ behavior: "auto", block: "start" });
       });
       instance.once("load", () => focusRecord(linkedRecord, 0));
+    } else {
+      instance.once("load", () => focusRecord(formerWaterwayRecords[0], 0));
     }
 
     const resize = () => requestAnimationFrame(() => instance.resize());

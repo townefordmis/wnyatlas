@@ -105,16 +105,17 @@ export default async function SitePage({ params }: SitePageProps) {
   const story = getSiteStory(site);
   const deepHistory = deepHistoryFeatures[site.id];
   const streamlinedStoryTitle =
-    streamlinedStoryTitles[site.id] ?? deepHistory?.title ?? "What happened here?";
-  const narrativeParagraphs = deepHistory
-    ? [deepHistory.lead, ...deepHistory.chapters.map((chapter) => chapter.body)]
-    : story.background;
+    streamlinedStoryTitles[site.id] ?? "What happened here?";
+  const narrativeParagraphs = story.background;
+  const preservesCustomTimeline = ["love-canal", "buffalo-river", "bethlehem-steel"].includes(site.id);
+  const integratesTimeline = !deepHistory && !preservesCustomTimeline && story.timeline.length > 0;
   const hasAerials = hasHistoricalAerialEvidence(site.id);
   const namedChemicals = findChemicalsInText(
     [
       site.summary,
       getPfasSearchText(site),
       ...narrativeParagraphs,
+      ...(deepHistory?.chapters.map((chapter) => chapter.body) ?? []),
       deepHistory?.caution.body ?? "",
       ...story.documentedImpacts,
       ...story.cleanupAndControls,
@@ -268,7 +269,7 @@ export default async function SitePage({ params }: SitePageProps) {
           {hasAerials && <a href="#aerials">Aerial history</a>}
           {site.newsEvents?.length && site.id !== "union-road-gardenville-yard" ? <a href="#news-events">Major news</a> : null}
           {site.pfasCompounds?.length ? <a href="#pfas-compounds">PFAS compounds</a> : null}
-          {story.timeline.length > 0 && <a href="#timeline">Timeline</a>}
+          {story.timeline.length > 0 && !integratesTimeline && <a href="#timeline">Timeline</a>}
           {story.documentedImpacts.length > 0 && <a href="#impacts">Impacts</a>}
           {story.cleanupAndControls.length > 0 && <a href="#cleanup">Cleanup</a>}
           {story.presentDay.length > 0 && <a href="#today">Today</a>}
@@ -290,10 +291,58 @@ export default async function SitePage({ params }: SitePageProps) {
                   <p key={paragraph}>{paragraph}</p>
                 ))}
                 {deepHistory && (
-                  <aside className="story-context-note">
-                    <strong>{deepHistory.caution.title}</strong>
-                    <span>{deepHistory.caution.body}</span>
-                  </aside>
+                  <section className="story-narrative-history" aria-label="Historical turning points">
+                    <header>
+                      <div>
+                        <p className="eyebrow">{deepHistory.eyebrow}</p>
+                        <h3>{deepHistory.title}</h3>
+                      </div>
+                      {deepHistory.stat && (
+                        <p className="story-narrative-stat">
+                          <strong>{deepHistory.stat.value}</strong>
+                          <span>{deepHistory.stat.label}</span>
+                        </p>
+                      )}
+                    </header>
+                    <div className="story-narrative-passages">
+                      {deepHistory.chapters.map((chapter) => (
+                        <article key={`${chapter.period}-${chapter.title}`}>
+                          <p className="field-label">{chapter.period}</p>
+                          <h4>{chapter.title}</h4>
+                          <p>{chapter.body}</p>
+                        </article>
+                      ))}
+                    </div>
+                    <aside className="story-context-note">
+                      <strong>{deepHistory.caution.title}</strong>
+                      <span>{deepHistory.caution.body}</span>
+                    </aside>
+                    <div className="story-narrative-sources" aria-label="Historical narrative sources">
+                      {deepHistory.sources.map((source) => (
+                        <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>
+                          {source.label} ↗
+                        </a>
+                      ))}
+                    </div>
+                  </section>
+                )}
+                {integratesTimeline && (
+                  <section className="story-narrative-history" aria-label="Historical turning points">
+                    <header>
+                      <div>
+                        <p className="eyebrow">Chronology in context</p>
+                        <h3>Turning points in the public record</h3>
+                      </div>
+                    </header>
+                    <div className="story-narrative-passages">
+                      {story.timeline.map((item) => (
+                        <article key={`${item.period}-${item.event}`}>
+                          <p className="field-label">{item.period}</p>
+                          <p>{item.event}</p>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
                 )}
               </div>
               {(site.category === "pfas" || site.pfasStatus) && (
@@ -482,7 +531,7 @@ export default async function SitePage({ params }: SitePageProps) {
               </section>
             )}
 
-            {story.timeline.length > 0 && (
+            {story.timeline.length > 0 && !integratesTimeline && (
               <section className="story-chapter" id="timeline">
                 <div className="story-chapter-heading">
                   <span aria-hidden="true">02</span>

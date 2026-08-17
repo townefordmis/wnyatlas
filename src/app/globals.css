@@ -2345,6 +2345,98 @@ footer {
   color: var(--ink);
 }
 
+.story-narrative-history {
+  display: grid;
+  gap: 1.4rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.story-narrative-history > header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(150px, 0.28fr);
+  gap: 1.5rem;
+  align-items: end;
+}
+
+.story-narrative-history h3 {
+  max-width: 24ch;
+  margin: 0.35rem 0 0;
+  font-family: Georgia, serif;
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.story-narrative-stat {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--rust);
+}
+
+.story-narrative-stat strong {
+  color: var(--rust);
+  font-family: Georgia, serif;
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.story-narrative-stat span {
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.story-narrative-passages {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.story-narrative-passages article {
+  padding-left: 1rem;
+  border-left: 1px solid var(--line);
+}
+
+.story-narrative-passages h4 {
+  margin: 0.3rem 0 0;
+  font-family: Georgia, serif;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 600;
+}
+
+.story-narrative-passages article > p:last-child {
+  margin-bottom: 0;
+}
+
+.story-narrative-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.1rem;
+}
+
+.story-narrative-sources a {
+  color: var(--moss);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+@media (max-width: 760px) {
+  .story-narrative-history > header {
+    grid-template-columns: 1fr;
+  }
+
+  .story-narrative-stat {
+    padding: 0.85rem 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+}
+
 .story-finding-list {
   display: grid;
   gap: 1px;
