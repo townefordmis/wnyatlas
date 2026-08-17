@@ -1350,6 +1350,7 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former manufacturing and electroplating property cleaned through the Brownfield Cleanup Program and redeveloped as apartments with commercial space.",
     evidenceStatus: "well-documented",
     coordinates: [-78.836, 42.947],
+    newsEvents: [{ date: "March-April 2022", headline: "A former plating property enters public cleanup review before housing construction", summary: "DEC invited comment on the Main and Hertel remedy before the industrial property became The Rails, keeping contamination, vapor protection and controlled residential reuse within one public record.", publisher: "New York State Department of Environmental Conservation", url: "https://content.govdelivery.com/accounts/NYSDEC/bulletins/30ce4c7", reach: "Local" }, { date: "2022-2024", headline: "The remediated site becomes a 312-unit transit-oriented apartment complex", summary: "Construction reporting documented the transformation of the underused brownfield beside LaSalle Station while the brownfield remedy supplied the environmental foundation for residential and commercial use.", publisher: "WKBW", url: "https://www.wkbw.com/news/local-news/construction-begins-on-new-apartment-community-in-buffalo", reach: "Local" }],
     sources: [
       {
         title: "DEC Marks 21st Successful Year for the Brownfield Cleanup Program",
@@ -2060,6 +2061,7 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former manufactured-gas plant at 126 East Niagara Street where coal-tar liquid and contaminated groundwater affected the property and nearby basement sumps. DEC classifies the closed site as Class 4 because recovery, monitoring, and continuing site management remain necessary.",
     evidenceStatus: "well-documented",
     coordinates: [-78.873, 43.022],
+    newsEvents: [{ date: "March 1993", headline: "Coal tar entering a club's basement sumps reveals a vanished gasworks", summary: "A spill complaint at the Gastown Sportsmen's Club led investigators to coal-tar material associated with the former manufactured-gas plant and turned a buried industrial history into an off-site building concern.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/915171/Report.HW.915171.2015-04-14.SumpDischargePipeEvaluation-Complete.pdf", reach: "Local" }, { date: "Recent remedial construction", headline: "Cleanup reaches Tonawanda Creek and the Erie Canal bikeway corridor", summary: "Construction combined upland stabilization, sediment dredging, collection trenches and shoreline restoration while maintaining access for site tenants and pedestrian traffic.", publisher: "LAND Remediation, Inc.", url: "https://land-remediation.com/gastown-former-mgp-site-tonawanda-ny/", reach: "Local" }],
     sources: [
       {
         title: "Gastown Treatment System Semiannual Report",
@@ -2111,6 +2113,7 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former manufactured-gas plant built in the 1920s and operated into the 1960s. DEC classifies the voluntary cleanup as complete, while groundwater, surface-water, and soil-vapor evaluation continue under site management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.807, 42.878],
+    newsEvents: [{ date: "1990-2002", headline: "A working utility service center undergoes phased gasworks cleanup", summary: "Investigations and removals addressed former process areas, separator pits and contaminated soil while portions of the old gas plant remained adapted to new uses; later monitoring carried groundwater, surface-water and vapor questions into site management.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/V00195/Report.VCP.V00195.2002-06-24.Final_Engineering_Report_-Vol_I.pdf", reach: "Local" }],
     sources: [
       {
         title: "Mineral Springs Road Final Engineering Report",
@@ -2208,6 +2211,7 @@ const featuredSiteRecords: AtlasSite[] = [
       "Potential DEC site in the Rainbow Bridge and former Prospect Park area. Historic maps document a Niagara Falls Gas and Electric manufactured-gas plant and large gas holders, but the Class P designation means further investigation is required before cleanup needs can be determined.",
     evidenceStatus: "research-in-progress",
     coordinates: [-79.066273224, 43.088691577],
+    newsEvents: [{ date: "2016 corridor review", headline: "Historic maps place a gasworks beneath today's tourism and bridge landscape", summary: "State-park screening identified former manufactured-gas structures and gas holders near Prospect Park and the Rainbow Bridge plaza, but the Class P designation means investigation—not a completed contamination finding or remedy—is the correct present status.", publisher: "New York State Office of Parks, Recreation and Historic Preservation", url: "https://parks.ny.gov/documents/inside-our-agency/PublicDocuments/NiagaraFallsStateParkScopingReport/MosesParkwayNorth/AppendixLHazardousWasteJuly2016.pdf", reach: "Regional" }],
     sources: [
       {
         title: "Niagara Gorge Corridor Hazardous-Waste Screening",
@@ -2231,6 +2235,7 @@ const featuredSiteRecords: AtlasSite[] = [
       "Potential DEC site at 38 Main Street on the Seneca Nation's Allegany Territory. The available records link the property to Salamanca Gas Company and document gas purification and natural-gas distribution, but do not yet establish on-site manufactured-gas production or a required remedy.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.715378774, 42.156053639],
+    newsEvents: [{ date: "2009 records review", headline: "Historical research stops short of proving a manufactured-gas plant", summary: "The state records search found Salamanca Gas Company purification and natural-gas distribution activity at 38 Main Street but did not establish on-site manufactured-gas production; the Class P record therefore remains an investigation question, not a cleanup conclusion.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/907038/Report.HW.907038.2009-09-30.Records_Search_Reports_Fredonia_Salamanca.pdf", reach: "Local" }],
     sources: [
       {
         title: "Salamanca Former MGP DEC Record — 905035",
@@ -3401,6 +3406,7 @@ const featuredSiteRecords: AtlasSite[] = [
       "Historic disposal and burning area at James Avenue and Witmer Road, now associated with salvage-yard use. DEC's 2024 characterization plan describes ash and slag piles, drums, chloropicrin containers, chlorinated compounds and metals in investigated media. The site remains an active characterization record, not a completed-remedy site.",
     evidenceStatus: "research-in-progress",
     coordinates: [-79.033963326, 43.126390205],
+    newsEvents: [{ date: "May 2024", headline: "DEC orders a new characterization of a historic burning and disposal area", summary: "The work plan targets ash and slag piles, drums, chloropicrin containers, chlorinated compounds and metals across the James Avenue/Witmer Road property while recognizing that characterization has not yet produced a final remedy.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932027/Report.HW.932027.2024-05-30.Final%20Site%20Characterization%20Work%20Plan_2024.pdf", reach: "Local" }],
     sources: [
       {
         title: "Witmer Road Final Site Characterization Work Plan — Site 932027",

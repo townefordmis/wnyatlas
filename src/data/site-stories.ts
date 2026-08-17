@@ -3276,16 +3276,18 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "gastown-former-mgp": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Gastown property at 126 East Niagara Street in the City of Tonawanda is a former manufactured-gas plant. Coal-tar nonaqueous-phase liquid and contaminated groundwater migrated through the subsurface and were detected in nearby building sump systems.",
-      "The remedy uses recovery and treatment rather than relying only on excavation. That operating-system history is central to understanding why the site remains managed after the former gasworks disappeared.",
+      "The Gastown property at 126 East Niagara Street was operated by a succession of gas utilities. Coal-carbonization production was later joined by carbureted-water-gas equipment in 1910; both processes operated until 1921 and generated coal tar that accumulated around the former gas-holder system.",
+      "The modern investigation began in March 1993 after an unknown oily material entered basement sumps at the Gastown Sportsmen's Club. Sampling and historical research identified the material as likely coal tar from the vanished gasworks, turning a buried industrial source into a building-specific off-site pathway.",
+      "The remedy uses stabilization, sediment work, recovery and treatment rather than relying only on excavation. That operating-system history is central to understanding why the site remains managed after the former gasworks disappeared.",
     ],
     timeline: [
-      { period: "Gas-manufacturing era", event: "The plant produced manufactured gas and generated persistent coal-tar waste." },
-      { period: "Investigation", event: "Coal-tar NAPL and affected groundwater were traced on site and toward nearby structures." },
+      { period: "Before 1910-1921", event: "Coal-carbonization and later carbureted-water-gas processes produced gas and a persistent coal-tar byproduct." },
+      { period: "March 1993", event: "A spill complaint at the Sportsmen's Club led investigators to coal-tar material entering basement sumps." },
       { period: "System installation", event: "Recovery and treatment equipment was installed to intercept contamination." },
       { period: "2002 onward", event: "Semiannual and later monitoring reports documented system operation and site conditions." },
+      { period: "Recent construction", event: "Upland soil stabilization, Tonawanda Creek sediment work, collection trenches and shoreline restoration expanded the remedy." },
     ],
     documentedImpacts: [
       "Coal-tar NAPL remains a persistent subsurface source.",
@@ -3293,7 +3295,8 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Contamination reached or threatened nearby basement sump pathways, creating a building-specific concern.",
     ],
     cleanupAndControls: [
-      "NAPL and affected groundwater are recovered to limit migration.",
+      "NAPL and affected groundwater are recovered to limit migration, while sump observations evaluate building-specific pathways.",
+      "Recent construction stabilized approximately 15,000 cubic yards of affected upland soil and addressed contaminated Tonawanda Creek sediment while preserving access for tenants and trail users.",
       "Collected liquids are treated or disposed of through approved systems.",
       "Monitoring wells and nearby sump observations evaluate performance and potential off-site movement.",
     ],
@@ -4686,14 +4689,16 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "keywell-vac-air-frewsburg": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Before 1969 the property was used for wafer-board manufacturing. Vac-Air then sorted, cleaned, and packaged high-grade scrap metal, using TCE for degreasing; Keywell acquired the operation in 1987 and continued high-grade metal processing.",
+      "A federal appellate record describes 1970s handling practices in unusually direct terms: TCE sludge was placed in ponds or pits and sometimes spread to dry before off-site handling, while TCE oil was occasionally spread on plant roads for dust suppression. Deteriorated buried drum remnants were encountered during a 1985 excavation.",
       "The property lies near Conewango Creek and across Falconer Road from a public-water supply well, making groundwater containment and monitoring central to the remedy.",
     ],
     timeline: [
       { period: "Before 1969", event: "The property supported wafer-board manufacturing." },
-      { period: "1969 onward", event: "Vac-Air processed and solvent-cleaned high-grade scrap metal." },
+      { period: "1969-late 1970s", event: "Vac-Air processed and solvent-cleaned high-grade scrap metal; court testimony later described on-site TCE sludge and oil handling practices." },
+      { period: "1985", event: "Excavation encountered deteriorated remnants of buried drums associated with TCE-bearing waste." },
       { period: "1987", event: "Keywell acquired the facility." },
       { period: "1996", event: "DEC selected a remedy following investigation and feasibility work." },
       { period: "Present", event: "Groundwater treatment, monitoring, cover and barrier maintenance, and access controls continue." },
@@ -4701,6 +4706,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     documentedImpacts: [
       "TCE and related volatile organic compounds affected groundwater.",
       "The waste record includes spent TCE, TCE sludge, and lubricating and hydraulic oils.",
+      "The documented sludge pits, ground drying and dust-suppression use explain multiple potential routes from waste handling to soil and groundwater without proving an exposure at every nearby property.",
       "Periodic reviews have continued to evaluate groundwater and soil-vapor conditions.",
     ],
     cleanupAndControls: [

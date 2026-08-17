@@ -16,6 +16,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "A 24.32-acre group of vacant and underused parcels at Baseline Road and Grand Island Boulevard entered New York's Brownfield Cleanup Program after investigations identified environmental impacts requiring additional study and remediation. The record gives Grand Island its first site-specific brownfield entry in the atlas.",
     evidenceStatus: "well-documented",
     coordinates: [-78.961575, 43.0158],
+    newsEvents: [{ date: "June-July 2021", headline: "Three Grand Island parcels enter public brownfield review", summary: "DEC opened the 24.32-acre Webb Road application for comment and established a local document repository, beginning a parcel-defined investigation rather than labeling the wider neighborhood a cleanup site.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/C915367/", reach: "Local" }],
     story: {
       lastReviewed: "July 27, 2026",
       background: [
@@ -401,6 +402,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Historic manufacturing property on Chandler Street where chlorinated solvents affected environmental media. DEC records an installed clean-stone sediment cover and an environmental easement over approximately 2.65 acres.",
     evidenceStatus: "well-documented",
     coordinates: [-79.225, 42.099166667],
+    newsEvents: [{ date: "2019-2022", headline: "Groundwater treatment begins beside the Chadakoin River", summary: "Brownfield work at the historic factory installed groundwater extraction and treatment and a clean-stone sediment cover, joining upland solvent control with a distinct river-edge remedy and long-term easement.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/C907048/", reach: "Local" }],
     sources: [
       {
         title: "Weber-Knapp Company Site Documents",
@@ -498,6 +500,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former municipal landfill on Oakhurst Road. New York classifies the site as properly closed while requiring continuing management, distinguishing containment and stewardship from unrestricted reuse.",
     evidenceStatus: "well-documented",
     coordinates: [-78.72370647324514, 43.17286010406627],
+    newsEvents: [{ date: "1992-1995", headline: "Lockport caps its municipal landfill and enters long-term monitoring", summary: "The selected remedy and city planning record document cap construction, substantial completion and continuing maintenance and monitoring—closure by containment rather than removal of the landfill mass.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932010/ROD.HW.932010.1992-11-01.ROD.pdf", reach: "Local" }],
     sources: [
       {
         title: "Lockport City Landfill Site Documents",
@@ -682,6 +685,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former chemical-plant property on Lewiston Road associated with a Power Authority of the State of New York parcel. The closed Class 4 site remains under an environmental easement covering approximately 23 acres.",
     evidenceStatus: "research-in-progress",
     coordinates: [-79.03306918, 43.14455465],
+    newsEvents: [{ date: "Long-term management", headline: "A former chemical parcel remains controlled within a larger power-project landscape", summary: "DEC's Class 4 and easement records preserve approximately 23 acres of use, excavation and management restrictions; those controls apply to the defined Stauffer property rather than the entire Power Authority landscape.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932053/", reach: "Local" }],
     sources: [
       {
         title: "Stauffer Chemical / PASNY Site Documents",
@@ -1124,6 +1128,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former die-casting and machining plant operated from the 1950s into 2014. Solvents used for degreasing affected soil and groundwater; active remediation was followed by groundwater monitoring, land-use controls, and site management.",
     evidenceStatus: "well-documented",
     coordinates: [-79.32998896581996, 42.100013659046084],
+    newsEvents: [{ date: "2002-2020", headline: "Sampling turns a small machining plant into a long-term solvent-management site", summary: "Investigation traced chlorinated compounds through defined production areas and groundwater, followed by active treatment, monitoring, cover and institutional controls documented in the site-management plan.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/907044/Work%20Plan.HW.907044.2020-04-24.Revised_SMP.pdf", reach: "Local" }],
     sources: [
       {
         title: "Lexington Machining Periodic Review Report",
@@ -1154,6 +1159,14 @@ export const historicCleanupExpansion: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/prapcbdc1.pdf",
         reach: "Local",
+      },
+      {
+        date: "2025 statewide review",
+        headline: "Landfill groundwater detections do not appear in downgradient drinking-water supplies",
+        summary: "New York placed Ischua in a priority group for groundwater exceedances without downgradient drinking-water exceedances, while recommending follow-up supply monitoring and evaluation of source monitoring or mitigation.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/sites/default/files/2025-07/inactivelandfillrpt2025_0.pdf",
+        reach: "Regional",
       },
     ],
     coordinates: [-79.2466826043239, 42.112404952445836],
@@ -1757,6 +1770,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former steel property in the River Road industrial corridor. This is a different cleanup record from Former Roblin Steel in Dunkirk and is presented as its own site to prevent two similarly named histories from being conflated.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.9371, 42.9808],
+    newsEvents: [{ date: "1908-1964", headline: "An integrated steelworks is dismantled after shutdown", summary: "Industrial history traces blast furnaces, open-hearth steelmaking, wire and nail mills at the former Wickwire property; after closure, Roblin acquired the site and salvaged steel equipment for its Dunkirk operation.", publisher: "Society for Industrial Archeology", url: "https://www.sia-web.org/wordpress/wp-content/uploads/2025/02/SIA-Buffalo-Guidebook-1992.pdf", reach: "Regional" }, { date: "Current remedial record", headline: "Roblin and Envirotek units require boundary-by-boundary interpretation", summary: "Community mapping and state records describe overlapping operable-unit geography and separate responsible parties; the atlas therefore preserves each waste source and remedy rather than presenting a single corridor-wide plume.", publisher: "Clean Air Coalition of Western New York", url: "https://www.cacwny.org/tonawanda-coke-bcp/area-map/", reach: "Local" }],
     sources: [
       {
         title: "Roblin Steel Site Documents",
@@ -2100,6 +2114,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former high-grade scrap-metal processing property where TCE was used for degreasing. The Class 4 remedy includes groundwater treatment, a barrier wall, paved cover, drainage controls, access restrictions, monitoring, and continuing site management near Conewango Creek.",
     evidenceStatus: "well-documented",
     coordinates: [-79.15697445141898, 42.06836344538131],
+    newsEvents: [{ date: "1966-1987 operating history", headline: "Court testimony documents TCE sludge pits, ground drying and road spreading", summary: "The federal appellate record describes solvent sludge placed in ponds or pits, spread to dry, and TCE oil used at times for dust suppression, followed by discovery of deteriorated buried drums and groundwater concerns near a public supply.", publisher: "U.S. Court of Appeals for the Second Circuit", url: "https://openjurist.org/33/f3d/159/keywell-corporation-v-c-weinstein", reach: "Regional" }, { date: "February 13, 2020", headline: "Local officials receive permission to pursue controlled redevelopment", summary: "After years of cleanup and monitoring, DEC allowed the town and county to proceed with development planning, while the barrier, cover, treatment and site-management system remained part of any future occupancy.", publisher: "The Post-Journal", url: "https://www.post-journal.com/news/top-stories/2020/02/former-vac-air-property-on-right-track/", reach: "Local" }],
     sources: [
       {
         title: "Keywell / Vac-Air Periodic Review Report",
@@ -2294,6 +2309,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Approximately five-acre former quarry disposal area used from 1957 to 1982, principally for silicon-tetrachloride manufacturing by-products reportedly placed in drums and trenches with crushed limestone. The landfill was capped in 1988 and remains under monitoring and institutional controls.",
     evidenceStatus: "well-documented",
     coordinates: [-78.70308251398365, 43.18568184822892],
+    newsEvents: [{ date: "1957-1988", headline: "A quarry becomes a drum-and-trench chemical landfill and is capped", summary: "Historical records describe silicon-tetrachloride by-products placed with crushed limestone before the five-acre disposal area was closed under a cap; monitoring and institutional controls remain necessary because waste stayed in place.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932039/Report.HW.932039.2024-04-02.Revised_Vanchlor_2023_PRR.pdf", reach: "Local" }],
     sources: [
       {
         title: "Vanchlor Landfill 2023 Periodic Review Report",
@@ -2317,6 +2333,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Approximately 24.7-acre brownfield occupying part of a much larger petroleum refining and storage complex that operated from about 1876 to 1954. Investigations documented petroleum product and affected subsurface soil; state-supervised investigation and cleanup planning continue.",
     evidenceStatus: "well-documented",
     coordinates: [-78.4365298269535, 42.10002812461163],
+    newsEvents: [{ date: "May-June 2024", headline: "A 25-acre refinery parcel enters public brownfield review", summary: "DEC accepted the application and opened public comment on investigation and cleanup of one defined piece of Olean's much larger former refinery corridor.", publisher: "New York State Department of Environmental Conservation", url: "https://dec.ny.gov/news/environmental-notice-bulletin/2024-05-08/public-notice/city-of-olean-brownfield-cleanup-program-bcp-application-from-1641-river-street-llc-for-a-site-known-as-1641-river-street-site-site-id-c905049", reach: "Local" }, { date: "March 25, 2026", headline: "A $6 million oil-contamination cleanup receives local tax support", summary: "Local reporting documented a sales-tax abatement for cleanup of the 25-acre property; the environmental work, rather than projected job creation, is the central significance for this history.", publisher: "Olean Star", url: "https://oleanstar.com/blog/2026/03/25/ida-grants-480000-sales-tax-abatement-for-olean-brownfield-cleanup-by-benson/", reach: "Local" }],
     sources: [
       {
         title: "1641 River Street Subsurface Investigation",

@@ -88,6 +88,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Former Seneca Street dry cleaner with documented PCE, TCE, breakdown products, and long-term site-management requirements.",
     evidenceStatus: "well-documented",
     coordinates: [-78.810277778, 42.855277778],
+    newsEvents: [{ date: "2009-2022", headline: "A neighborhood dry cleaner becomes a long-term solvent site", summary: "DEC's public record traces characterization, remedial investigation, remedy selection and site management for PCE, TCE and breakdown products rather than treating the former storefront as the full contaminant boundary.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/915219/", reach: "Local" }],
     story: makeStory({
       background: ["Bestway Cleaners operated at 2075 Seneca Street and became DEC Site 915219.", "Investigations traced dry-cleaning solvents and their environmental breakdown products."],
       timeline: [{ period: "2009", event: "DEC completed an initial site-characterization report." }, { period: "2016", event: "A remedial investigation defined solvent contamination." }, { period: "2020", event: "DEC issued the site's Record of Decision." }, { period: "2022-present", event: "A site-management plan governs remaining contamination and controls." }],
@@ -213,6 +214,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Former 33-acre forge property with PCBs, PAHs, metals, petroleum impacts, contaminated sewers, and separate soil and groundwater cleanup units.",
     evidenceStatus: "well-documented",
     coordinates: [-78.907391667, 42.967091667],
+    newsEvents: [{ date: "2008-2020", headline: "Demolition exposes a forge's separate soil, sewer and groundwater problems", summary: "Interim removals addressed petroleum and PCB sources before DEC selected a first operable-unit remedy for soil, sewers and surface water, leaving groundwater to its own investigation and decision path.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/915274/", reach: "Regional" }],
     story: makeStory({
       background: ["The 2390 Kenmore Avenue property was historically part of the neighboring GM Tonawanda complex and later became a separate forge site.", "Demolition and investigation identified contamination in soil, ponded water, sewer sediment, and groundwater."],
       timeline: [{ period: "1994", event: "The property separated from the neighboring GM facility." }, { period: "2008-2018", event: "Demolition, spill work, interim excavation, and investigation addressed petroleum and PCB areas." }, { period: "2020", event: "DEC selected the Operable Unit 1 soil, sewer, and surface-water remedy." }, { period: "2020-present", event: "Groundwater remained a separate operable unit under investigation and design." }],
@@ -232,6 +234,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Former East Delavan industrial site where chlorinated solvents and petroleum affected soil and groundwater.",
     evidenceStatus: "well-documented",
     coordinates: [-78.83725166, 42.92035667],
+    newsEvents: [{ date: "1995-present", headline: "Early vapor extraction is followed by renewed state investigation", summary: "A soil-vapor extraction system addressed volatile source material, but later EPA and DEC work showed why an interim treatment milestone should not be mistaken for unrestricted completion.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/915165/", reach: "Local" }],
     story: makeStory({
       background: ["Vibratech operated at 537 East Delavan Avenue, where industrial solvent handling affected the property.", "DEC lists TCA, TCE, and petroleum products in the remediation record."],
       timeline: [{ period: "1994-1995", event: "Environmental assessments and groundwater work defined initial source areas." }, { period: "1995-1997", event: "DEC selected an interim measure and soil-vapor extraction was installed." }, { period: "2008-2009", event: "EPA and DEC reported additional cleanup activity." }, { period: "2012-present", event: "State investigation and remedial design continued." }],
@@ -251,6 +254,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Former Genesee Street industrial property with TCE, PCE, and TCA contamination addressed through soil remediation and continued groundwater review.",
     evidenceStatus: "well-documented",
     coordinates: [-78.72305384, 42.9344604],
+    newsEvents: [{ date: "1991-present", headline: "Removed solvent soil gives way to a continuing groundwater investigation", summary: "DEC's record separates completed source-soil work from the TCE, PCE and TCA groundwater questions that kept the former Westinghouse property in active Class 2 review.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/915066/", reach: "Local" }],
     story: makeStory({
       background: ["The Westinghouse property at 4454 Genesee Street became DEC Site 915066 after industrial solvent contamination was identified.", "Its cleanup record is separate from nearby airport environmental investigations."],
       timeline: [{ period: "1991", event: "DEC reclassified the property as Class 2." }, { period: "1994", event: "A remedial investigation documented soil and groundwater conditions." }, { period: "1996-2001", event: "Predesign work and soil remediation were completed." }, { period: "2022-present", event: "Later site characterization revisited remaining conditions." }],
@@ -270,6 +274,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Former Park Avenue manufacturing property with documented TCE, TCA, and fluorinated solvent wastes addressed under State Superfund.",
     evidenceStatus: "well-documented",
     coordinates: [-78.39918223973332, 43.217853859153415],
+    newsEvents: [{ date: "2000-present", headline: "Historical manufacturing solvents remain the focus—not consumer toys", summary: "The state file tracks TCE, TCA and fluorinated spent solvents through investigation, design and remedial action; the record concerns plant operations and does not support claims about Fisher-Price products.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/837008/", reach: "Local" }],
     story: makeStory({
       background: ["The Fisher-Price manufacturing property at 711 Park Avenue is DEC Site 837008.", "Historical operations generated spent chlorinated and fluorinated solvents classified as F002 hazardous waste."],
       timeline: [{ period: "Before 2000", event: "Investigation identified solvent-related contamination from manufacturing operations." }, { period: "2000", event: "DEC recorded investigation and design milestones." }, { period: "2007", event: "A remedial-action milestone was recorded." }, { period: "Present", event: "The site remains Class 2 in New York's remediation inventory." }],
@@ -289,6 +294,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Former electronics-manufacturing property with a multi-compound chlorinated-solvent groundwater plume and an active remedy.",
     evidenceStatus: "well-documented",
     coordinates: [-78.39602467, 43.32447805],
+    newsEvents: [{ date: "2014-2020", headline: "Investigation defines a multi-compound solvent groundwater plume", summary: "DEC's work distinguished parent solvents from their degradation products, selected a remedy in 2016 and moved into design and implementation without merging the plume with Lyndonville's separate landfill record.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/837013/", reach: "Local" }],
     story: makeStory({
       background: ["Monroe Electronics operated at 100 Housel Avenue in Lyndonville.", "Spent-solvent use produced a record containing TCA, TCE, dichloroethenes, dichloroethanes, chloroethane, and arsenic."],
       timeline: [{ period: "2001", event: "An early state site investigation documented conditions." }, { period: "2014-2015", event: "Remedial and supplemental investigations defined the plume and evaluated remedies." }, { period: "2016", event: "DEC issued the Record of Decision." }, { period: "2020-present", event: "Remedial design and implementation continued." }],
@@ -308,6 +314,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Former Main Street dry cleaner with PCE, TCE, vinyl chloride, and PAH contamination addressed through a 2020 remedy.",
     evidenceStatus: "well-documented",
     coordinates: [-78.386805556, 43.222430556],
+    newsEvents: [{ date: "2015-2022", headline: "A Main Street dry cleaner moves from investigation into active cleanup", summary: "DEC's record follows PCE, TCE and breakdown products through remedy selection and implementation while keeping the affected property and investigated plume distinct from the wider Medina business district.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/837016/", reach: "Local" }],
     story: makeStory({
       background: ["Starlite Dry Cleaners operated at 331 Main Street in Medina.", "DEC investigations identified dry-cleaning solvent contamination and related breakdown products."],
       timeline: [{ period: "2010", event: "Site characterization supported Class 2 listing." }, { period: "2017-2018", event: "The remedial investigation defined contamination and exposure pathways." }, { period: "2020", event: "DEC selected the final remedy." }, { period: "2020-present", event: "Remedial implementation and monitoring continued." }],
@@ -389,6 +396,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "East State Street cutlery-manufacturing property identified as a source area in the wider Olean Well Field solvent investigation.",
     evidenceStatus: "well-documented",
     coordinates: [-78.4072418, 42.073477907],
+    newsEvents: [{ date: "1980s-present", headline: "A cutlery plant is investigated as one source within the Olean Well Field case", summary: "Repeated studies and focused remedy planning tied 1,1,1-TCA at Alcas to the wider aquifer investigation while preserving the distinction between a source property and the regional drinking-water cleanup.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/905002/", reach: "Regional" }],
     story: makeStory({
       background: ["Alcas Cutlery operated at 1116 East State Street in Olean.", "DEC identified 1,1,1-trichloroethane associated with the property while investigating sources affecting the Olean Well Field."],
       timeline: [{ period: "1980s-1990s", event: "The property was evaluated during the Olean solvent-source investigation." }, { period: "2000-2008", event: "Predesign and additional investigations refined the site model." }, { period: "2014", event: "A focused feasibility study evaluated the Alcas source area." }, { period: "2018-present", event: "Predesign work and investigation amendments continued." }],
@@ -433,6 +441,7 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Completed brownfield cleanup where PFOS, PFOA, petroleum, PAHs, and arsenic were documented and controls remain under review.",
     evidenceStatus: "well-documented",
     coordinates: [-78.441755556, 42.103519444],
+    newsEvents: [{ date: "2018-2021", headline: "PFAS and petroleum findings lead to a controlled brownfield remedy", summary: "DEC documented PFOA, PFOS, petroleum, PAHs and arsenic in defined site media, completed construction and issued a Certificate of Completion without identifying PFAS production or a community-wide exposure area.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/C905045/", reach: "Local" }],
     story: makeStory({
       background: ["The Oregon Road property lies near Homer Street Extension in Olean and entered the Brownfield Cleanup Program.", "Investigation documented petroleum and PAH impacts, arsenic, and PFOS and PFOA."],
       timeline: [{ period: "2018-2020", event: "Investigation and alternatives analysis defined the remedy." }, { period: "2020", event: "DEC issued the cleanup decision." }, { period: "2021", event: "Construction was completed and DEC issued a Certificate of Completion." }, { period: "2023-present", event: "Periodic reviews evaluated controls and management compliance." }],
