@@ -240,6 +240,32 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Historic chemical-manufacturing property near Walck and River roads. The closed Class 4 State Superfund site remains under management; DEC's sediment inventory identifies adjacent sediment affected by chlorinated dioxins and furans. The facility, groundwater, outfalls, and sediment require separate but connected interpretation.",
     evidenceStatus: "well-documented",
     coordinates: [-78.86006033, 43.04655837],
+    newsEvents: [
+      {
+        date: "November 28, 1949",
+        headline: "Gas in the enclosed Pettit Creek system is linked to basement explosions",
+        summary: "The North Tonawanda History collection preserves a contemporary Tonawanda News article about emergency response to explosions associated with gas in the covered flume. It documents the event and contemporary explanation; it does not by itself establish the complete chemical source profile later developed by investigators.",
+        publisher: "North Tonawanda History / Tonawanda News archive",
+        url: "https://nthistory.com/collections/show/98",
+        reach: "Local",
+      },
+      {
+        date: "January 28, 1953",
+        headline: "Hundreds of fish die in a documented Pettit Flume pollution event",
+        summary: "A preserved local-news image records a visible ecological consequence during the Durez operating era, decades before the later dioxin, sediment-removal, and biomonitoring programs.",
+        publisher: "North Tonawanda History / Tonawanda News archive",
+        url: "https://nthistory.com/collections/show/98",
+        reach: "Local",
+      },
+      {
+        date: "1997-2006",
+        headline: "Post-remedy mussel and sediment monitoring continues to detect Durez-pattern dioxins and furans",
+        summary: "Binational Niagara River reports documented continuing bioavailability after major removals, maintenance dredging in 2000, and additional monitoring rather than treating construction completion as the end of the environmental record.",
+        publisher: "Niagara River Toxics Management Plan",
+        url: "https://www.epa.gov/sites/default/files/2015-11/documents/niagara-river-nrtmp-progress-report-workplan-2007-74pp.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Durez / Occidental Chemical Site Documents",

@@ -895,12 +895,13 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "durez-occidental-north-tonawanda": {
-    lastReviewed: "August 12, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Harry M. Dent founded General Plastics, Inc. on the North Tonawanda property in 1921. The business adopted the Durez Plastic and Chemical Company name in 1926 and developed into a major producer of phenolic resins and molding compounds.",
       "Phenol and formaldehyde were the principal raw materials for thermosetting resins and molding powders used in electrical, automotive, appliance, communications, and industrial components. The Durez name became closely associated with durable molded phenolic plastic before newer polymer families displaced many of those applications.",
       "Durez joined Hooker Chemical in the mid-1950s and became part of Occidental when Occidental acquired Hooker in 1968. Occidental gradually reduced operations during the late 1980s and early 1990s; manufacturing ended in 1995 and plant demolition was completed in December 1997.",
       "The environmental record is divided among the former plant, buried or spilled material, groundwater, the Pettit Cove Flume, Pettit Cove, and Niagara River sediment. Treating all of those areas as one uniform deposit would obscure both the history and remedy.",
+      "Pettit Creek was converted into a covered storm-drain system before the mature Durez era. Historical newspaper images preserved by North Tonawanda History record basement explosions associated with gas in the flume in 1949 and a fish kill involving hundreds of fish in 1953. These accounts establish what people observed and what local reporting said at the time; later sampling provides the evidence for particular contaminants and sources.",
     ],
     timeline: [
       {
@@ -912,6 +913,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
         period: "1926",
         event:
           "The company became Durez Plastic and Chemical Company and expanded phenolic-resin and molding-compound production.",
+      },
+      {
+        period: "1949-1953",
+        event:
+          "Local reporting documented basement explosions associated with gas in the covered flume and a later fish kill involving hundreds of fish during the plant's operating period.",
       },
       {
         period: "Mid-1950s-1968",
@@ -934,6 +940,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
           "Operations were gradually reduced, manufacturing ended in 1995, and demolition of the former plant buildings was completed in 1997.",
       },
       {
+        period: "1997-2006",
+        event:
+          "Post-remedy sediment and caged-mussel monitoring continued to find Durez-pattern dioxins and furans in Pettit Cove; maintenance dredging removed about 400 additional cubic yards in 2000 and monitoring continued.",
+      },
+      {
         period: "1998-present",
         event:
           "Glenn Springs Holdings assumed long-term remedial responsibility, operating the interceptor trench, carbon treatment, monitoring, and maintenance program.",
@@ -953,6 +964,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Burial areas, process losses, and spills affected surface soil, subsurface soil, and groundwater beneath portions of the former manufacturing property.",
       "The groundwater program tracks benzene, toluene, chlorobenzene, dichlorobenzenes, and trichlorobenzenes among the targeted site compounds.",
       "Until 1993, non-contact cooling water and stormwater entered the Pettit Cove Flume. Investigations identified chlorinated dioxins and furans in flume, cove, and connected river sediments potentially associated with historical facility discharges.",
+      "The principal remedial program removed approximately 25,000 cubic yards of contaminated sewer and cove sediment. Later monitoring found contamination in newly deposited material and demonstrated that dioxins and furans remained available to aquatic organisms, showing why removal totals alone do not establish that a pathway has ended.",
       "NAPL can enter the interceptor trench with groundwater and is separated for off-site incineration. Its presence shows why hydraulic collection remains necessary decades after manufacturing ended.",
       "The long operating history produced multiple source, drainage, and sediment areas rather than a single uniform deposit.",
     ],
@@ -4474,18 +4486,25 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "The Olean Well Field case began in January 1981 with a drinking-water discovery rather than a visible dump. Testing found volatile organic compounds in municipal supply wells and private wells in the Olean–Portville area, forcing officials to protect water users while investigators worked backward through the aquifer toward possible sources.",
       "The federal site covers roughly 800 acres and is a groundwater system rather than a single disposal lot. EPA's investigation identified four principal industrial source properties—Alcas, McGraw-Edison/Cooper, AVX, and Loohn's Dry Cleaners—but each property has its own contaminants, remedy history, and evidentiary limits.",
       "Immediate protection and long-term cleanup followed different timelines. Affected municipal wells were removed from ordinary service or treated, public water was extended to private-well users, and source-area groundwater remedies were designed and revised as investigators learned more about plume movement.",
-      "The result is an environmental detective story beneath an inhabited city: water-supply data revealed the problem, monitoring wells helped reconstruct movement, and decades of source control followed. The regional marker is not a present-day exposure map for individual homes.",
+      "The early public-health response also evolved. A period community-relations record says residents with contaminated private wells were initially advised to boil their water, advice that does not remove volatile solvents and can increase their release into indoor air. EPA subsequently installed granular-activated-carbon filters and monitoring, then extended public water to affected properties.",
+      "The resulting record documents contamination beneath an inhabited city: water-supply data revealed the problem, monitoring wells helped reconstruct movement, and decades of source control followed. The regional marker is not a present-day exposure map for individual homes.",
     ],
     timeline: [
       { period: "January 1981", event: "Routine drinking-water testing detected volatile organic compounds in municipal and private wells, triggering emergency water-supply decisions and a regional source investigation." },
       { period: "1983", event: "EPA placed the site on the National Priorities List." },
       { period: "1980s response", event: "Treatment was added to municipal supplies and public water was extended to affected private-well users while EPA investigated several industrial source areas." },
+      { period: "January 1982", event: "EPA installed carbon filters on 16 contaminated private wells and began periodic testing after county and state sampling confirmed TCE in upper-aquifer household wells." },
+      { period: "1985", event: "A permanent air-stripping system allowed the municipal wells to return to service with treatment rather than abandoning the aquifer as a public-water source." },
+      { period: "2009-2011", event: "EPA sampled soil vapor and indoor air near the Superfund area, and state health officials evaluated potential vapor-intrusion exposure." },
+      { period: "2014", event: "Additional investigation found contamination beneath the operating Cutco/Alcas building that was not defined when the original source-area remedy was selected." },
       { period: "2002 onward", event: "Source-property groundwater systems and monitoring addressed continuing contamination." },
       { period: "2022–present", event: "EPA selected additional AVX-area groundwater and soil cleanup and continued design and implementation work." },
     ],
     documentedImpacts: [
       "TCE and other volatile organic compounds were documented in groundwater beneath residential and industrial areas.",
+      "Early federal records report TCE in affected wells ranging from low parts-per-billion levels to a historical maximum of 9,200 parts per billion. That maximum describes the early aquifer investigation, not current delivered drinking water.",
       "The contamination affected municipal-well and private-well decision-making.",
+      "Because the contaminated unit is an aquifer crossed by industrial properties, homes, roads, Olean Creek, and the Allegheny River, conclusions must be tied to a particular well, depth, source property, and sampling date.",
       "EPA attributes source-area work to four identified industrial properties; the mapped regional pin does not define the boundary of every plume.",
       "The official record connects these properties through the shared aquifer investigation, not through one identical waste stream or one uniform plume.",
     ],
@@ -4493,6 +4512,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Air stripping and carbon treatment protected public-water supplies.",
       "Public water was extended to affected private-well properties.",
       "Source-area remedies include pump-and-treat, in-situ treatment, monitored natural attenuation, investigation, and continuing groundwater monitoring.",
+      "Soil-vapor and indoor-air sampling added a separate exposure check for buildings over or near affected groundwater; this pathway should not be inferred solely from a groundwater plume map.",
     ],
     presentDay: [
       "Cleanup and monitoring continue. WNY Atlas treats the regional point as an entry to a multi-property groundwater story, not as a parcel boundary or exposure map.",
