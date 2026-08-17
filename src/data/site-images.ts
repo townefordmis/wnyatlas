@@ -44,7 +44,7 @@ export const siteImages: Partial<Record<string, AtlasImage>> = {
       "https://commons.wikimedia.org/wiki/File:Huntley_Generating_Station,_Tonawanda,_NY,_July_2023.jpg",
     rights: "Creative Commons Attribution-ShareAlike 4.0",
   },
-  "former-bethlehem-steel": {
+  "bethlehem-steel": {
     src: "/historical/bethlehem-steel-blowing-engine-house.jpg",
     alt: "Black-and-white interior view of Bethlehem Steel blowing engine house number two in Lackawanna",
     caption:
@@ -114,6 +114,82 @@ export const siteImages: Partial<Record<string, AtlasImage>> = {
     sourceUrl:
       "https://www.epa.gov/newsreleases/epa-successfully-wraps-activities-tonawanda-coke-facility",
     rights: "U.S. EPA photograph",
+  },
+  "tonawanda-landfill-fusrap-vicinity": {
+    src: "/historical/tonawanda-landfill-fusrap-2019.jpg",
+    alt: "Excavator and field crew removing shallow contaminated soil at the Tonawanda Landfill FUSRAP vicinity property",
+    caption:
+      "Targeted shallow excavation at the Tonawanda Landfill vicinity property. Field scanning and laboratory analysis guided the 2019 removal; radioactive material below five feet was managed under the selected land-use remedy.",
+    date: "July 29, 2019",
+    credit: "Emily Shoffstall / U.S. Army Corps of Engineers, Buffalo District",
+    sourceUrl:
+      "https://www.dvidshub.net/image/7176742/fusrap-tonawanda-landfill-vicinity-property",
+    rights: "Public domain — official U.S. Army photograph",
+  },
+  "niagara-falls-storage-site": {
+    src: "/historical/niagara-falls-storage-site-aerial-2023.jpg",
+    alt: "Annotated aerial view outlining the Niagara Falls Storage Site and its interim waste containment structure",
+    caption:
+      "The 191-acre federal site outlined in yellow, with the approximately 10-acre Interim Waste Containment Structure labeled IWCS. The adjoining quarry is outside the outlined federal property.",
+    date: "August 8, 2023",
+    credit: "U.S. Army Corps of Engineers, Buffalo District",
+    sourceUrl:
+      "https://www.dvidshub.net/image/7959257/niagara-falls-storage-site-aerial-diagram",
+    rights: "Public domain — official U.S. Army illustration",
+  },
+  "seaway-site": {
+    src: "/historical/seaway-fusrap-site-2021.jpg",
+    alt: "U.S. Army Corps team surveying the grassy Seaway FUSRAP landfill site in Tonawanda",
+    caption:
+      "A federal survey team at the Seaway Site before construction of the engineered cap. The view documents the landfill setting and investigation work, not the buried material itself.",
+    date: "April 27, 2021",
+    credit: "U.S. Army Corps of Engineers, Buffalo District",
+    sourceUrl: "https://www.dvidshub.net/image/8028649/fusrap-seaway-site",
+    rights: "Public domain — official U.S. Army photograph",
+  },
+  "forest-glen-mobile-home-subdivision": {
+    src: "/historical/forest-glen-redevelopment.jpg",
+    alt: "Distribution building and landscaped grounds constructed over part of the capped Forest Glen Superfund site",
+    caption:
+      "A distribution facility built over part of the completed Forest Glen cap. The photograph shows post-cleanup reuse; groundwater extraction, monitoring, and land-use controls remain part of the remedy.",
+    date: "November 20, 2003",
+    credit: "U.S. Environmental Protection Agency",
+    sourceUrl:
+      "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.photovideoaudio&id=0202361",
+    rights: "U.S. government image",
+  },
+  "katherine-street-peninsula": {
+    src: "/historical/katherine-street-restoration-2022.jpg",
+    alt: "Stone, anchored wood, and aquatic plants along the restored Buffalo River shoreline at Katherine Street",
+    caption:
+      "Anchored logs, stone, and aquatic planting along the restored Katherine Street shoreline. The work rebuilt habitat after river-sediment remediation; it does not establish the composition of every upland fill area on the peninsula.",
+    date: "August 11, 2022",
+    credit: "Joshua Unghire / U.S. Army Corps of Engineers, Buffalo District",
+    sourceUrl:
+      "https://www.dvidshub.net/image/8206512/buffalo-river-habitat-restoration-completed-katherine-street",
+    rights: "Public domain — official U.S. Army photograph",
+  },
+  "times-beach-disposal-site": {
+    src: "/historical/times-beach-cdf-inspection-2020.jpg",
+    alt: "Displaced concrete armor blocks along the vegetated edge of the Times Beach confined disposal facility",
+    caption:
+      "Army Corps inspection of the former confined-disposal structure shows displaced shoreline armor among dense vegetation. Habitat value and containment maintenance occupy the same landscape at Times Beach.",
+    date: "September 4, 2020",
+    credit: "Jess Levenson / U.S. Army Corps of Engineers, Buffalo District",
+    sourceUrl:
+      "https://www.dvidshub.net/image/6422296/times-beach-confined-disposal-facility",
+    rights: "Public domain — official U.S. Army photograph",
+  },
+  "buffalo-harbor-cdf-4": {
+    src: "/historical/buffalo-harbor-cdf4-2023.jpg",
+    alt: "West shoreline of Buffalo Harbor Confined Disposal Facility Number 4 with Lake Erie and the Buffalo skyline beyond",
+    caption:
+      "The west shore of CDF No. 4, an operating dredged-material facility exposed to Lake Erie wave action. Its dike and shoreline require inspection and repair to maintain containment.",
+    date: "October 26, 2023",
+    credit: "Ryan Campbell / U.S. Army Corps of Engineers, Buffalo District",
+    sourceUrl:
+      "https://www.dvidshub.net/image/8095343/buffalo-district-commander-visits-cdf-4",
+    rights: "Public domain — official U.S. Army photograph",
   },
   "republic-steel": {
     src: "/historical/republic-steel-buffalo-bar-mill-1986.jpg",

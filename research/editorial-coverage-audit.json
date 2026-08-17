@@ -1,0 +1,526 @@
+{
+  "generated": "2026-08-17T23:31:54.544Z",
+  "totals": {
+    "sites": 177,
+    "stories": 177,
+    "newsEvents": 210,
+    "images": 19,
+    "sitesAtLeast350Words": 92,
+    "sitesAtLeastThreeSources": 80
+  },
+  "findings": {
+    "missingStory": [],
+    "missingCoreSection": [],
+    "missingReviewDate": [],
+    "under250Words": [],
+    "under350Words": [
+      "linde-air-products:304",
+      "woodlawn-beach:321",
+      "cherry-farm:293",
+      "niagara-falls-boulevard-radiation-site:309",
+      "donovan-head-start-radiation-site:305",
+      "upper-mountain-road-radiation-site:297",
+      "holy-trinity-radiation-site:264",
+      "michael-heyman-east-ferry:308",
+      "buffalo-color-area-e-field:327",
+      "ashland-1-refinery-site:330",
+      "huntley-generating-station:319",
+      "buffalo-harbor-cdf-4:312",
+      "tifft-nature-preserve:318",
+      "main-hertel-the-rails:290",
+      "niagara-falls-air-reserve-pfas:313",
+      "iroquois-gas-westwood:328",
+      "west-genesee-former-mgp:294",
+      "ashland-2-fusrap-site:308",
+      "niagara-falls-storage-site-vicinity-properties:313",
+      "guterl-specialty-steel:308",
+      "katherine-street-peninsula:259",
+      "exxonmobil-former-buffalo-terminal:254",
+      "polymer-applications:345",
+      "fmc-peroxychem-evonik-tonawanda:256",
+      "gastown-former-mgp:348",
+      "jamestown-former-mgp:310",
+      "dunkirk-former-mgp:284",
+      "niagara-falls-former-mgp:295",
+      "salamanca-former-mgp:292",
+      "dupont-necco-park-landfill:325",
+      "southtowns-awtf-ash-landfill:327",
+      "lasalle-reservoir-quarry-landfill:253",
+      "jonnies-porta-signs:291",
+      "tam-ceramics-niagara:344",
+      "witmer-road-disposal-site:289",
+      "bell-aerospace-impoundment:286",
+      "carborundum-globar-site:283",
+      "webb-road-grand-island:319",
+      "motor-frog-islands-restoration:345",
+      "strawberry-island-restoration:301",
+      "chemical-leaman-tank-lines:324",
+      "5565-river-road:333",
+      "tennessee-gas-station-229:290",
+      "weber-knapp-company:305",
+      "batavia-iron-and-metal:284",
+      "stauffer-chemical-pasny:272",
+      "frontier-chemical-pendleton:314",
+      "1660-niagara-street-sediment:269",
+      "houdaille-strippit-landfill:337",
+      "dc-rollforms-proto-tool:256",
+      "special-metals-dunkirk:281",
+      "lexington-machining:337",
+      "former-cb-dry-cleaners:274",
+      "essex-hope-site:330",
+      "dowcraft-south-dow-street:271",
+      "marsh-valve-dunkirk:293",
+      "former-randolph-foundry:286",
+      "former-signore:319",
+      "former-buffalo-china:309",
+      "former-nl-industries-foundry:264",
+      "remington-rand-north-tonawanda:294",
+      "roblin-steel-tonawanda:262",
+      "peter-cooper-gowanda:306",
+      "peter-cooper-markhams:317",
+      "standard-portable-mayville:308",
+      "keywell-vac-air-frewsburg:320",
+      "machias-gravel-pit:295",
+      "batavia-former-mgp:269",
+      "lapp-insulator-company:250",
+      "vanchlor-company-landfill:348",
+      "olean-refinery-river-street:269",
+      "olean-refinery-homer-street:257",
+      "tennessee-gas-station-224:265",
+      "gateway-lofts-chautauqua-hardware:263",
+      "jamestown-brewery-brownfield:284",
+      "closed-alumax-extrusions:265",
+      "pelican-manufacturing-jamestown:262",
+      "former-dunkirk-steam-station:313",
+      "fmc-dublin-road-landfill:333",
+      "lyndonville-west-avenue:302",
+      "robert-moses-parkway-south:329",
+      "lake-ontario-ordnance-works-loow:345",
+      "lackawanna-incinerator:332",
+      "byron-barrel-site:336",
+      "oak-orchard-pesticide-storage:265"
+    ],
+    "fewerThanTwoSources": [],
+    "noNewsEvents": [
+      "linde-air-products",
+      "woodlawn-beach",
+      "cherry-farm",
+      "niagara-falls-boulevard-radiation-site",
+      "holy-trinity-radiation-site",
+      "michael-heyman-east-ferry",
+      "huntley-generating-station",
+      "former-trico-plant",
+      "iroquois-gas-westwood",
+      "west-genesee-former-mgp",
+      "niagara-falls-storage-site-vicinity-properties",
+      "electro-metallurgical-company",
+      "guterl-specialty-steel",
+      "katherine-street-peninsula",
+      "exxonmobil-former-buffalo-terminal",
+      "3m-o-cel-o-tonawanda",
+      "dupont-yerkes",
+      "lockport-transit-street-former-mgp",
+      "buffalo-gas-light-tonawanda-street",
+      "jamestown-former-mgp",
+      "dunkirk-former-mgp",
+      "hooker-s-area-landfill",
+      "dupont-necco-park-landfill",
+      "lancaster-sanitary-landfill",
+      "niagara-county-refuse",
+      "outer-harbor-greenbelt",
+      "lasalle-reservoir-quarry-landfill",
+      "1827-fillmore-former-quarry",
+      "tam-ceramics-niagara",
+      "bell-aerospace-impoundment",
+      "carborundum-globar-site",
+      "motor-frog-islands-restoration",
+      "strawberry-island-restoration",
+      "chemical-leaman-tank-lines",
+      "altech-specialty-steel",
+      "former-roblin-steel-dunkirk",
+      "marsh-valve-dunkirk",
+      "former-randolph-foundry",
+      "former-mill-no-2",
+      "lapp-insulator-company",
+      "olean-refinery-homer-street",
+      "tennessee-gas-station-224",
+      "gateway-lofts-chautauqua-hardware",
+      "jamestown-brewery-brownfield",
+      "closed-alumax-extrusions",
+      "pelican-manufacturing-jamestown",
+      "former-dunkirk-steam-station",
+      "dunkirk-fly-ash-landfill",
+      "robert-moses-parkway-south",
+      "oak-orchard-pesticide-storage"
+    ],
+    "multipleDecDocumentCodes": [
+      {
+        "id": "iroquois-gas-westwood",
+        "codes": [
+          "915351",
+          "915141B"
+        ]
+      },
+      {
+        "id": "exxonmobil-former-buffalo-terminal",
+        "codes": [
+          "C915201C",
+          "C915201B",
+          "C915201D"
+        ]
+      },
+      {
+        "id": "buffalo-gas-light-tonawanda-street",
+        "codes": [
+          "C915299A",
+          "C915299"
+        ]
+      },
+      {
+        "id": "salamanca-former-mgp",
+        "codes": [
+          "907038",
+          "905035"
+        ]
+      },
+      {
+        "id": "pierce-arrow-manufacturing-complex",
+        "codes": [
+          "C915326",
+          "C915220"
+        ]
+      },
+      {
+        "id": "alltift-landfill-ramco-steel",
+        "codes": [
+          "915046B",
+          "915054"
+        ]
+      },
+      {
+        "id": "lasalle-reservoir-quarry-landfill",
+        "codes": [
+          "915033",
+          "C915283"
+        ]
+      },
+      {
+        "id": "former-american-axle-east-delavan",
+        "codes": [
+          "C915196B",
+          "915196"
+        ]
+      },
+      {
+        "id": "fashion-outlets-sabre-park",
+        "codes": [
+          "C932162",
+          "932104"
+        ]
+      },
+      {
+        "id": "lockport-city-landfill",
+        "codes": [
+          "932010",
+          "932112"
+        ]
+      },
+      {
+        "id": "former-jamestown-city-landfill",
+        "codes": [
+          "907009",
+          "907018"
+        ]
+      },
+      {
+        "id": "tonawanda-plastics",
+        "codes": [
+          "C915003",
+          "915003",
+          "915055"
+        ]
+      },
+      {
+        "id": "roblin-steel-tonawanda",
+        "codes": [
+          "915056",
+          "915055"
+        ]
+      },
+      {
+        "id": "standard-portable-mayville",
+        "codes": [
+          "C907030",
+          "D907050"
+        ]
+      },
+      {
+        "id": "anderson-cleaners-jamestown",
+        "codes": [
+          "C907027",
+          "907027"
+        ]
+      },
+      {
+        "id": "batavia-former-mgp",
+        "codes": [
+          "C819019",
+          "819019"
+        ]
+      },
+      {
+        "id": "vanadium-corporation-of-america",
+        "codes": [
+          "932001",
+          "932001C"
+        ]
+      }
+    ],
+    "imagesMissingMetadata": [],
+    "imagesMissingFiles": [],
+    "imageForUnknownSite": [],
+    "duplicateParagraphs": []
+  },
+  "shortest": [
+    {
+      "id": "lapp-insulator-company",
+      "name": "Lapp Insulator Company",
+      "category": "cleanup",
+      "words": 250,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "lasalle-reservoir-quarry-landfill",
+      "name": "LaSalle Reservoir / Former Quarry Landfill",
+      "category": "cleanup",
+      "words": 253,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "exxonmobil-former-buffalo-terminal",
+      "name": "Former ExxonMobil Buffalo Terminal",
+      "category": "cleanup",
+      "words": 254,
+      "sources": 3,
+      "news": 0
+    },
+    {
+      "id": "dc-rollforms-proto-tool",
+      "name": "D.C. Rollforms / Proto Tool",
+      "category": "cleanup",
+      "words": 256,
+      "sources": 2,
+      "news": 1
+    },
+    {
+      "id": "fmc-peroxychem-evonik-tonawanda",
+      "name": "Former FMC Tonawanda Plant",
+      "category": "industry",
+      "words": 256,
+      "sources": 2,
+      "news": 1
+    },
+    {
+      "id": "olean-refinery-homer-street",
+      "name": "Olean Refinery Corridor — 251 Homer Street",
+      "category": "cleanup",
+      "words": 257,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "katherine-street-peninsula",
+      "name": "Katherine Street Peninsula",
+      "category": "waterway",
+      "words": 259,
+      "sources": 3,
+      "news": 0
+    },
+    {
+      "id": "pelican-manufacturing-jamestown",
+      "name": "Pelican Manufacturing",
+      "category": "cleanup",
+      "words": 262,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "roblin-steel-tonawanda",
+      "name": "Roblin Steel — Tonawanda",
+      "category": "cleanup",
+      "words": 262,
+      "sources": 2,
+      "news": 2
+    },
+    {
+      "id": "gateway-lofts-chautauqua-hardware",
+      "name": "Gateway Lofts / Former Chautauqua Hardware",
+      "category": "cleanup",
+      "words": 263,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "former-nl-industries-foundry",
+      "name": "Former NL Industries Foundry",
+      "category": "cleanup",
+      "words": 264,
+      "sources": 2,
+      "news": 2
+    },
+    {
+      "id": "holy-trinity-radiation-site",
+      "name": "Holy Trinity Cemetery Vicinity",
+      "category": "radiological",
+      "words": 264,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "closed-alumax-extrusions",
+      "name": "Closed Alumax Extrusions",
+      "category": "cleanup",
+      "words": 265,
+      "sources": 3,
+      "news": 0
+    },
+    {
+      "id": "oak-orchard-pesticide-storage",
+      "name": "Oak Orchard Pesticide Storage Facility",
+      "category": "cleanup",
+      "words": 265,
+      "sources": 4,
+      "news": 0
+    },
+    {
+      "id": "tennessee-gas-station-224",
+      "name": "Tennessee Gas Pipeline Station 224",
+      "category": "cleanup",
+      "words": 265,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "1660-niagara-street-sediment",
+      "name": "1660 Niagara Street Shoreline",
+      "category": "cleanup",
+      "words": 269,
+      "sources": 2,
+      "news": 2
+    },
+    {
+      "id": "batavia-former-mgp",
+      "name": "Batavia Former Manufactured Gas Plant",
+      "category": "cleanup",
+      "words": 269,
+      "sources": 2,
+      "news": 1
+    },
+    {
+      "id": "olean-refinery-river-street",
+      "name": "Olean Refinery Corridor — 1641 River Street",
+      "category": "cleanup",
+      "words": 269,
+      "sources": 2,
+      "news": 2
+    },
+    {
+      "id": "dowcraft-south-dow-street",
+      "name": "Dowcraft — South Dow Street",
+      "category": "cleanup",
+      "words": 271,
+      "sources": 2,
+      "news": 1
+    },
+    {
+      "id": "stauffer-chemical-pasny",
+      "name": "Stauffer Chemical / PASNY",
+      "category": "cleanup",
+      "words": 272,
+      "sources": 2,
+      "news": 1
+    },
+    {
+      "id": "former-cb-dry-cleaners",
+      "name": "Former C&B Dry Cleaners",
+      "category": "cleanup",
+      "words": 274,
+      "sources": 2,
+      "news": 1
+    },
+    {
+      "id": "special-metals-dunkirk",
+      "name": "Special Metals",
+      "category": "cleanup",
+      "words": 281,
+      "sources": 2,
+      "news": 1
+    },
+    {
+      "id": "carborundum-globar-site",
+      "name": "Carborundum Globar Site",
+      "category": "cleanup",
+      "words": 283,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "batavia-iron-and-metal",
+      "name": "Batavia Iron and Metal",
+      "category": "cleanup",
+      "words": 284,
+      "sources": 2,
+      "news": 2
+    },
+    {
+      "id": "dunkirk-former-mgp",
+      "name": "Dunkirk Former Manufactured-Gas Plant",
+      "category": "cleanup",
+      "words": 284,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "jamestown-brewery-brownfield",
+      "name": "Jamestown Brewery Brownfield",
+      "category": "cleanup",
+      "words": 284,
+      "sources": 3,
+      "news": 0
+    },
+    {
+      "id": "bell-aerospace-impoundment",
+      "name": "Bell Aerospace / Textron Impoundment",
+      "category": "cleanup",
+      "words": 286,
+      "sources": 2,
+      "news": 0
+    },
+    {
+      "id": "former-randolph-foundry",
+      "name": "Former Randolph Foundry",
+      "category": "cleanup",
+      "words": 286,
+      "sources": 3,
+      "news": 0
+    },
+    {
+      "id": "witmer-road-disposal-site",
+      "name": "Witmer Road Disposal Site",
+      "category": "cleanup",
+      "words": 289,
+      "sources": 2,
+      "news": 1
+    },
+    {
+      "id": "main-hertel-the-rails",
+      "name": "Main & Hertel / The Rails",
+      "category": "cleanup",
+      "words": 290,
+      "sources": 2,
+      "news": 2
+    }
+  ]
+}

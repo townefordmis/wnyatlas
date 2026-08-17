@@ -61,6 +61,14 @@ const officialByCode = new Map(
   ]),
 );
 
+// Some entries cite combined reports or closely related parcels whose document
+// folder number is not the cleanup record represented by the atlas marker.
+const coordinateSiteCodes = new Map([
+  ["salamanca-former-mgp", "905035"],
+  ["former-jamestown-city-landfill", "907009"],
+  ["alltift-landfill-ramco-steel", "915054"],
+]);
+
 // These entries intentionally map a related river feature or operating
 // facility rather than the centroid of the DEC record cited for context.
 const sourceContextOnly = new Set([
@@ -86,7 +94,10 @@ function distanceMeters(from, to) {
 
 const comparisons = [];
 for (const site of sites) {
-  for (const code of site.decCodes.slice(0, 1)) {
+  const comparisonCodes = coordinateSiteCodes.has(site.id)
+    ? [coordinateSiteCodes.get(site.id)]
+    : site.decCodes.slice(0, 1);
+  for (const code of comparisonCodes) {
     const official = officialByCode.get(code);
     if (!official?.geometry) continue;
 

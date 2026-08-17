@@ -87,7 +87,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "special-metals-dunkirk": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Special Metals is part of Dunkirk's specialty-alloy manufacturing tradition, producing high-performance metals associated with demanding industrial and aerospace applications. The cleanup record concerns a defined area within an active manufacturing property rather than the whole plant.",
       "During facility expansion, workers encountered an underground storage tank and petroleum-affected soil. The discovery triggered a state-supervised interim action so construction and industrial use could proceed with the affected source removed and residual conditions controlled.",
@@ -110,6 +110,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     presentDay: [
       "Special Metals remains an active industrial site with a completed, location-specific petroleum cleanup. The atlas keeps that remedial area distinct from the company's broader manufacturing history.",
+      "That distinction is practical for readers and workers: continuing controls concern the defined former-tank area and any future soil disturbance there, not an unsupported claim that the entire operating plant has the same condition.",
     ],
     researchNotes: [
       "Add the tank size, excavation quantity, and final confirmation results from the construction-completion record.",
@@ -117,15 +118,16 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "lexington-machining": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "The Lexington Machining property in Lakewood supported die casting and machining from the 1950s until 2014. Metalworking operations used oils and chlorinated solvents, including degreasing chemicals that could move through soil into groundwater.",
-      "Investigation found a solvent-centered subsurface problem requiring active remediation followed by long-term monitoring. The site illustrates how a modest manufacturing plant can create a persistent groundwater-management obligation.",
+      "Investigation found a solvent-centered subsurface problem requiring active remediation followed by long-term monitoring. The remedy did not excavate contaminated material or install a permanent treatment plant. Instead, crews injected emulsified edible oil and nanoscale zero-valent iron into saturated soil in October and November 2006, encouraging breakdown of volatile organic compounds and creating a treatment barrier against northward migration.",
     ],
     timeline: [
       { period: "1950s–2014", event: "Die-casting and machining operations occupied the property." },
       { period: "Investigation", event: "Soil and groundwater studies identified chlorinated-solvent impacts associated with degreasing." },
-      { period: "Active remediation", event: "Source and groundwater treatment measures were implemented under state oversight." },
+      { period: "October–November 2006", event: "Crews injected emulsified edible oil and nanoscale zero-valent iron to promote in-place breakdown of groundwater VOCs and form a barrier to northward migration." },
+      { period: "March 2014", event: "A soil-vapor-intrusion evaluation examined the occupied site structures." },
       { period: "Monitoring phase", event: "The site moved from active treatment into groundwater monitoring and controlled use." },
       { period: "Present", event: "Periodic review evaluates monitoring results and the continuing effectiveness of institutional controls." },
     ],
@@ -135,15 +137,16 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Groundwater impacts are confined to the investigated site and plume information; they should not be generalized to Lakewood.",
     ],
     cleanupAndControls: [
-      "Active remedial measures addressed source material and affected groundwater.",
+      "Enhanced in-situ bioremediation treated affected groundwater without removing contaminated material from the site.",
       "Groundwater monitoring tracks concentration and plume trends after active treatment.",
-      "Land-use restrictions, groundwater-use controls, and a site-management plan govern residual contamination.",
+      "A maintained cover limits contact with soil remaining beneath the compressor room, die-casting area, and vibratory-process areas.",
+      "Commercial or industrial use restrictions, groundwater-use controls, vapor evaluation for future buildings, and a site-management plan govern residual contamination.",
     ],
     presentDay: [
-      "Lexington Machining is in the long-term management phase after active cleanup. Continued monitoring is how the state confirms that the remedy remains protective.",
+      "Lexington Machining is in the long-term management phase after active cleanup. Continued monitoring is how the state checks the treatment barrier and confirms that the cover and legal controls remain protective; completed construction does not mean unrestricted use.",
     ],
     researchNotes: [
-      "Add the specific treatment technologies, contaminant trends, and current monitoring schedule.",
+      "Update contaminant trends and the current monitoring schedule from each new periodic review.",
       "Develop a verified company, product, and employment history for the Lakewood plant.",
     ],
   },
@@ -178,30 +181,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "bush-industries-cattaraugus": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Bush Industries property in the Village of Cattaraugus passed through several industrial eras. Early uses included Standard Oil activity and an apple-evaporator operation before the site became associated with decades of veneer and furniture-related manufacturing.",
-      "When the plant closed, the publicly supported cleanup addressed petroleum-contaminated soil, aging industrial buildings, and asbestos-containing construction materials so the property could move toward reuse.",
+      "The 4.43-acre Bush property at 1 North Main Street tells several layers of Cattaraugus industrial history in one village block. Sanborn-era records place Standard Oil facilities, gasoline service, and an apple evaporator along the Main Street side before Setter Brothers and Bush Industries expanded veneer and furniture-related manufacturing across the property.",
+      "The factory stood vacant after about 1989. By the time the village entered New York's Environmental Restoration Program, partial demolition had left a building shell and rubble, concrete slabs covered much of the western ground, and a 2006 investigation had identified petroleum-affected soil tied to former operating areas.",
+      "Cleanup in 2007 and 2008 removed the remaining structures and about 3,400 tons of petroleum-affected soil. The project made reuse possible, but not by pretending the industrial history vanished: an environmental easement and soil-management requirements still govern disturbance of slightly affected soil left at depth.",
     ],
     timeline: [
       { period: "Early industrial era", event: "Standard Oil and an apple-evaporator operation used portions of the property." },
       { period: "Veneer-manufacturing era", event: "Wood-product and veneer operations became the site's long-term industrial identity." },
-      { period: "Closure and investigation", event: "Plant closure led to environmental assessment of petroleum, buildings, and former operating areas." },
-      { period: "Cleanup", event: "Buildings were demolished and approximately 3,400 tons of petroleum-affected soil were removed." },
+      { period: "Circa 1989", event: "Manufacturing ended and the property remained vacant, with a partly demolished industrial complex." },
+      { period: "2006", event: "Site investigation identified petroleum-affected soil and defined work needed for village-led restoration." },
+      { period: "2007–2008", event: "Crews removed the remaining building shell and rubble and disposed of approximately 3,400 tons of petroleum-affected soil off site." },
       { period: "2010", event: "New York completed the Environmental Restoration Program project." },
     ],
     documentedImpacts: [
       "Petroleum contamination affected soil in former fuel-handling or industrial areas.",
       "Industrial buildings contained asbestos requiring controlled demolition and disposal.",
-      "Different operating eras may have contributed different materials; attribution should follow documented source areas.",
+      "Slightly affected soil remained outside the principal excavation areas, requiring controls during future construction rather than a claim of unrestricted cleanup.",
     ],
     cleanupAndControls: [
       "Approximately 3,400 tons of petroleum-affected soil were excavated and properly disposed.",
       "Asbestos-containing industrial buildings were demolished under controlled conditions.",
-      "Completion documentation and any remaining land-use or soil-management requirements govern reuse.",
+      "An environmental easement and site-management plan require controlled soil handling during future development.",
     ],
     presentDay: [
-      "The Bush Industries property is a completed state restoration project and an important example of cleanup outside the region's largest cities. Completion should be paired with any recorded residual-use restrictions when describing future development.",
+      "The cleared property is now part of Cattaraugus's wider downtown-revival planning. That is an environmental story as much as a development story: a long-idle factory parcel can serve new public uses because petroleum soil and asbestos buildings were removed, while the easement preserves the obligations that remain below ground.",
     ],
     researchNotes: [
       "Build a detailed ownership and product chronology for the Standard Oil, evaporator, veneer, and Bush Industries periods.",
@@ -402,30 +407,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "batavia-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Batavia Landfill is a roughly 35-acre former municipal disposal site in the Town of Batavia. From the 1960s until 1980, municipal waste was joined by industrial wastes including heavy-metal sludges, oils, solvents, and drums.",
-      "The mixture of ordinary refuse and hazardous industrial material led to federal Superfund action. The remedy removed accessible drums and source material, consolidated remaining waste beneath an engineered multilayer cap, managed leachate, restored wetlands, and reduced reliance on potentially affected private wells.",
+      "Batavia Landfill is a 35-acre former municipal disposal site bordered on the north and east by Galloway Swamp. From the 1960s until DEC closed it as an open dump in 1980, ordinary refuse was mixed with heavy-metal sludges, oils, organic solvents, and both drummed and loose industrial waste.",
+      "The landfill's most immediate human pathway was groundwater. About 200 people lived within a mile, the underlying aquifer supplied thousands of people through private and public wells, and 1991 sampling found site-related contaminants in nearby residential wells. EPA selected and completed a public-water extension in 1995 so adjacent families no longer depended on threatened wells for drinking water.",
+      "Cleanup then addressed the source itself. Crews removed 632 surface drums and associated liquids and solids, excavated additional buried drums, consolidated contaminated soil and waste beneath a multilayer cap, collected leachate for off-site disposal, and restored affected wetlands. Waste remains under the cap, which is why deletion from the Superfund list in 2005 began a long stewardship phase rather than ending the story.",
     ],
     timeline: [
       { period: "1960s–1980", event: "Municipal and industrial wastes were disposed at the landfill." },
-      { period: "Superfund investigation", event: "EPA and New York characterized drums, waste, leachate, groundwater, and nearby wetlands." },
-      { period: "Remedial construction", event: "Drums were removed, waste was consolidated and capped, leachate controls were installed, and wetlands were restored." },
+      { period: "1983", event: "EPA placed the landfill on the National Priorities List after state and federal investigations of waste, leachate, groundwater, and Galloway Swamp." },
+      { period: "1991–1995", event: "Responsible parties removed 632 surface drums; after contaminants were found in nearby residential wells, a municipal water line was extended to adjacent homes." },
+      { period: "2000–2003", event: "The final remedy consolidated waste beneath a multilayer cap, removed buried drums, collected leachate, and restored wetlands." },
       { period: "2005", event: "EPA deleted the site from the National Priorities List after completing the remedy." },
-      { period: "Present", event: "Groundwater and surface-water sampling, cap maintenance, and institutional controls continue." },
+      { period: "December 2024", event: "EPA completed the sixth five-year review, while annual groundwater and surface-water sampling and cap inspection continued." },
     ],
     documentedImpacts: [
       "Industrial contributors disposed of metal-bearing sludge, oils, solvents, and other wastes with municipal refuse.",
-      "Drums and contaminated landfill material created source and direct-contact concerns.",
-      "Leachate, groundwater, surface water, and adjacent wetlands were important migration and ecological pathways.",
+      "The 1991 removal handled 35.3 tons of contaminated solids, 27.1 tons of crushed drums, 1,700 gallons of decontamination water, and 55 gallons of cyanide-bearing oils.",
+      "Leachate reached the bordering wetland, and groundwater contamination threatened residential wells—the documented pathway that prompted the water-line remedy.",
     ],
     cleanupAndControls: [
       "Accessible drums and highly contaminated materials were removed or consolidated.",
       "A multilayer cap isolates the waste mass and reduces infiltration, while leachate is collected and managed.",
-      "Wetlands were restored, public water was extended, and long-term monitoring, maintenance, and land-use restrictions protect the remedy.",
+      "Wetlands were restored, public water was extended, and a 2005 easement prohibits potable wells and buildings that could interfere with the cap or operating systems.",
     ],
     presentDay: [
-      "Batavia Landfill is a completed and delisted Superfund cleanup, not an unrestricted former dump. Deletion records successful construction and protective controls; buried waste, the cap, monitoring, and maintenance remain part of the site.",
+      "Batavia Landfill is a completed and delisted Superfund cleanup, not an unrestricted former dump. EPA reports no currently unacceptable exposure pathway, but that conclusion depends on the public-water connection, intact cap, leachate management, annual water sampling, wetland care, and land-use restrictions continuing to work.",
     ],
     researchNotes: [
       "Add exact drum, waste, cap, wetland, and public-water quantities from EPA decision and closeout documents.",
@@ -433,31 +440,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "chaffee-landfill": {
-    lastReviewed: "August 11, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Chaffee Landfill on Olean Road is a long-running solid-waste complex in the Sardinia/Chaffee area. Unlike the atlas's abandoned dumps and completed brownfields, this property contains closed historic disposal areas alongside an active permitted landfill operation.",
-      "That continuing use makes chronology and boundaries especially important. Historic cells, current cells, leachate systems, landfill-gas controls, support facilities, and any proposed expansion are related parts of one complex but have different construction and permit status.",
-      "DEC's 2022 permit review described a proposed southern expansion consisting of a 20-acre lateral cell area, 10 acres of valley fill between that area and the closed landfill, and vertical expansion over permitted areas. Those proposal boundaries should be shown as proposals unless and until construction and operating records confirm their status.",
+      "Chaffee Landfill has accepted waste on Olean Road since 1958, but the facility is not one uniform mound. Its oldest 36-acre disposal area was built before modern liner rules and placed waste directly on native clay and glacial till. A later 15-acre addition used a two-foot clay liner and leachate collection, and subsequent Western and Valley Fill expansions added separately engineered capacity.",
+      "That sequence matters because every era has a different environmental defense. The unlined original area depends heavily on its perimeter leachate collection and final cover; newer cells add liners and secondary collection; closed grades receive geomembrane-bearing final cover; and landfill gas is collected from the old and newer waste areas for engines or other control devices.",
+      "Chaffee remains an active municipal solid-waste facility on a roughly 700-acre property, not a completed brownfield. Its permit allows municipal waste plus approved non-hazardous commercial or industrial material, while air permits govern methane collection, flares, and the renewable-energy engines. Monitoring and annual reports are therefore operating evidence, not postscript.",
+      "DEC completed environmental review and issued permit materials for multiple expansions, but the names can mislead. The Western Expansion and Valley Fill appear in current operating records; the separate Southern Expansion proposal described in 2022 and 2023 included a 20-acre lateral cell, additional valley fill, and vertical capacity. WNYAtlas keeps proposed and operating footprints distinct unless a later construction record proves otherwise.",
     ],
     timeline: [
-      { period: "Historic disposal era", event: "Earlier landfill cells received waste and were later closed under the standards applicable to their operating period." },
-      { period: "Modern operating era", event: "Permitted solid-waste disposal continued in engineered cells with leachate and landfill-gas systems." },
-      { period: "2022", event: "DEC released draft solid-waste and air-permit materials for a proposed southern, valley-fill, and vertical expansion." },
-      { period: "2023", event: "DEC records show the facility's Title V air permit was issued for a five-year term, governing landfill-gas and other regulated air sources." },
-      { period: "Present", event: "The facility remains active while closed cells require continuing post-closure care, and current permits and annual reports define what is operating." },
+      { period: "1958 onward", event: "Waste disposal began in an unlined 36-acre area; the property later passed through CID, Chaffee Landfill, and Waste Management ownership." },
+      { period: "1981–1999", event: "State permits added perimeter leachate controls, expanded the permitted footprint to about 51 acres, and increased capacity and placement rates." },
+      { period: "Western Expansion era", event: "A separately engineered landfill added about 8.3 million cubic yards of non-hazardous-waste capacity and expanded gas collection and energy recovery." },
+      { period: "2022–2023", event: "DEC reviewed the Southern Expansion and issued a five-year Title V permit governing landfill-gas and renewable-energy equipment." },
+      { period: "2024 operating record", event: "The annual report documented continuing activity in the Western and Valley Fill areas, with leachate, gas, groundwater, capacity, and closure reporting." },
     ],
     documentedImpacts: [
-      "Landfill leachate and gas are expected waste-decomposition products requiring engineered collection and management.",
-      "Closed and active cells have different liners, caps, monitoring networks, and regulatory histories.",
-      "Permit applications and monitoring records should be used to describe measured conditions; an operating landfill and a proposed expansion are not automatically state Superfund sites.",
+      "The original 36 acres are unlined; later areas use clay or composite liner systems, so leachate and groundwater results must be read by cell and monitoring location.",
+      "Landfill leachate and methane are expected decomposition products requiring collection, measurement, treatment or disposal, and air-pollution controls.",
+      "The separate legacy hazardous-waste record for CID/Chaffee and its completed vapor review do not turn every modern operating cell into a State Superfund site.",
     ],
     cleanupAndControls: [
-      "Engineered liners, daily and intermediate cover, final caps, and stormwater controls limit releases from disposal cells.",
-      "Leachate is collected and managed, while landfill gas is monitored and controlled.",
-      "Groundwater monitoring, inspections, operating permits, financial assurance, and post-closure care apply across the appropriate units.",
+      "Liners, leachate collection, daily and intermediate cover, geomembrane-bearing final caps, and stormwater controls limit releases from the applicable cells.",
+      "A network of vertical wells and horizontal collectors sends landfill gas to the renewable-energy facility or approved control equipment.",
+      "Groundwater monitoring, annual reporting, inspections, financial assurance, closure estimates, and post-closure care apply across the appropriate operating and closed units.",
     ],
     presentDay: [
-      "Chaffee remains an operating solid-waste facility with a historical landscape inside it. The atlas distinguishes permitted current disposal from closed cells and avoids labeling the whole complex as an abandoned dump or completed brownfield.",
+      "Chaffee remains operating waste infrastructure with a 1958 landfill embedded inside it. The page therefore names the unit and date behind each claim: an unlined original area, later lined cells, operating Western and Valley Fill capacity, and a separately reviewed Southern proposal. That is more accurate than calling the entire property either an old dump or a modern lined landfill.",
     ],
     researchNotes: [
       "Create a cell-by-cell map with opening, closure, liner, cap, and current permit status.",
@@ -591,30 +599,33 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "depew-village-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Depew Village Landfill was an unrecorded municipal disposal area near a bend of Cayuga Creek. The exact landfill limits were never documented; later investigation treated a roughly 32-acre study area, including a 1.3-acre registry parcel on a creek-bounded peninsula and additional fill near Zurbrick Road.",
-      "The site has also been called the Depew DPW/Cayuga Creek and Zurbrick Road site. Its history combines municipal dumping, creek-bank filling, floodplain impacts, and later public-works and sewer infrastructure.",
+      "Depew operated a municipal landfill and refuse incinerator beside Cayuga Creek from about 1940 to 1961. Contemporary boundaries were never recorded, but later estimates describe a roughly 20-acre operation receiving about 10,000 tons of municipal waste each year, with incinerator ash and other fill spread across a creek-bounded peninsula now shared with public-works infrastructure.",
+      "The environmental story re-emerged during an Army Corps streambank project in 2001. Excavation along Zurbrick Road exposed fill containing lead as high as 86,000 parts per million and material that failed the federal leaching test for hazardous lead. The Corps stopped work, and subsequent investigation expanded the state registry boundary from 1.3 to 20 acres after finding that contamination extended far beyond the original mapped parcel.",
+      "Lead was mainly bound to soil and ash rather than significantly moving in groundwater, but erosion carried metals from exposed banks into Cayuga Creek sediment. Methane was also widespread in the fill, creating a separate accumulation hazard for buildings and utilities. Those different pathways drove a two-part remedy for the upland landfill and the creek, banks, floodplain, and Zurbrick Road fill.",
     ],
     timeline: [
-      { period: "Disposal era", event: "Municipal and other fill was placed near Cayuga Creek without a complete map of the landfill limits." },
-      { period: "1980s", event: "The property entered the state hazardous-waste registry and underwent early investigation." },
+      { period: "1940–1961", event: "The village landfill and incinerator reportedly handled about 10,000 tons of municipal waste per year beside Cayuga Creek." },
+      { period: "2001", event: "An Army Corps streambank project exposed fill with lead up to 86,000 ppm and stopped after material failed the hazardous-waste leaching test." },
+      { period: "2004–2007", event: "Investigation confirmed extensive metals contamination, returned the site to the Class 2 registry, and enlarged its listed footprint from 1.3 to 20 acres." },
       { period: "2008–2009", event: "DEC selected separate remedies for the landfill/source area and the Cayuga Creek, sediment, floodplain, and Zurbrick Road areas." },
-      { period: "2010s", event: "Remedial construction addressed contaminated fill, creek-bank material, and exposure pathways." },
-      { period: "Present", event: "The completed construction remains subject to site management, inspection, and periodic review." },
+      { period: "2012–2020", event: "Construction removed bank material, stabilized and restored the creek edge, installed cover and gas controls, and culminated in final engineering and site-management plans." },
+      { period: "2022–2023 review", event: "Periodic review found the remedy remained protective while calling for continued annual water and sediment monitoring, inspections, and repair of a damaged well." },
     ],
     documentedImpacts: [
-      "Landfilled material and debris extended beyond the small original registry parcel.",
-      "Contaminated fill had been dumped down the Zurbrick Road slope and affected creek-bank or floodplain areas.",
-      "Cayuga Creek sediment and surface-water pathways were evaluated as a separate operable unit.",
+      "Approximately 2.8 acres of soil contained lead above the commercial-use criterion, and about 12 acres exceeded the ecological soil criterion used in the 2008 decision.",
+      "Erosion from lead-bearing soil and ash affected Cayuga Creek sediment; lead exceeded the severe-effect screening level at four of seven sampled stream locations.",
+      "Groundwater investigation did not identify a site-related contaminant of concern, while methane in the fill required passive venting and continued vapor review for future buildings.",
     ],
     cleanupAndControls: [
       "DEC divided the remedy into operable units so upland fill and the creek environment could be addressed appropriately.",
-      "Excavation, consolidation or cover, bank restoration, and other construction measures reduced contact and migration.",
-      "A site-management plan, inspections, and institutional or engineering controls govern remaining material.",
+      "Contaminated bank soil and fill were excavated and integrated beneath the upland cover; the creek bank was rebuilt and stabilized to interrupt erosion into Cayuga Creek.",
+      "A one-foot soil cover protects vegetated land, pavement or concrete covers active work areas, and passive vents control landfill gas.",
+      "An environmental easement limits the property to commercial or industrial use, restricts groundwater use and excavation, and requires monitoring of groundwater, surface water, sediment, and biota.",
     ],
     presentDay: [
-      "The landfill is no longer an open disposal operation, but its remedy remains part of the Cayuga Creek landscape. The atlas distinguishes the confirmed cleanup areas from the much larger creek watershed.",
+      "The landfill now functions as a managed public-works landscape, but the creek bank, cover, vents, wells, and easement are working parts of the remedy. DEC's recent periodic review called it protective; that conclusion applies to the maintained controls and documented site—not to every reach of the larger Cayuga Creek watershed.",
     ],
     researchNotes: [
       "Digitize the two operable-unit boundaries and the final construction limits.",
@@ -622,30 +633,34 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "lockport-city-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "The City of Lockport operated this approximately 30-acre municipal and industrial landfill from the early 1950s until 1976. The site occupies two fill areas separated by railroad tracks near Gulf Creek, a wetland, city facilities, and the Niagara Escarpment.",
       "Reported wastes included sewage sludge, peroxide-contaminated wood starch, chemical wastes, steel barrels, plastics, glass, cardboard, and paper. Operators reportedly trenched into overburden, deposited and burned waste, and covered it with excavated material.",
+      "The closed city landfill must also be distinguished from the neighboring Old Upper Mountain Road dump, a separate Class 2 State Superfund site. Their histories meet physically at the containment landscape: remediation that began in 2023 consolidated contaminated waste and Gulf Creek sediment from Old Upper Mountain Road into a new cell whose modified cap extended into part of the existing city-landfill footprint.",
     ],
     timeline: [
       { period: "Early 1950s–1976", event: "The city operated the property as a municipal and industrial landfill." },
       { period: "1981 onward", event: "State investigations examined waste, groundwater, drainage, slope stability, and nearby Gulf Creek." },
       { period: "1992", event: "DEC selected the landfill remedy in a Record of Decision." },
       { period: "Post-closure era", event: "The site was closed and placed under long-term cap, drainage, access, and monitoring requirements." },
-      { period: "Present", event: "Periodic inspection and maintenance continue under Class 4 site management." },
+      { period: "2023–2024", event: "The adjacent Old Upper Mountain Road cleanup excavated waste and Gulf Creek sediment for on-site consolidation and extended a modified landfill cap into part of the existing city-landfill footprint." },
+      { period: "Present", event: "Periodic inspection and maintenance continue under Class 4 site management, alongside stewardship of the neighboring state cleanup." },
     ],
     documentedImpacts: [
       "Municipal and industrial wastes were buried and sometimes burned within two fill areas.",
       "Drums and refuse were historically visible at the surface, and a buried drainage pipe and steep landfill slopes complicated the setting.",
       "Gulf Creek, nearby wetlands, groundwater, drainage, and slope stability were important potential migration pathways.",
+      "Old Upper Mountain Road investigations separately documented contaminated ash, soil, surface water, and sediment affecting Gulf Creek; those findings should not be automatically attributed to the city landfill.",
     ],
     cleanupAndControls: [
       "Closure measures covered and graded the waste mass and established controlled drainage.",
       "Fencing, access restrictions, vegetation, ditches, swales, and slope stabilization protect the closed landfill.",
       "Routine inspection and maintenance address erosion, settlement, drainage blockage, vegetation, and unauthorized vehicle access.",
+      "The neighboring state project excavated impacted Gulf Creek sediment and floodplain soil, treated the material for handling, and consolidated it beneath a new cover rather than assigning it to the older city-landfill record.",
     ],
     presentDay: [
-      "The landfill is properly closed but remains a managed waste site. Class 4 status means the remedy depends on continuing care; it does not mean the buried municipal and industrial waste was wholly removed.",
+      "The city landfill is properly closed but remains a managed waste site. Class 4 status means the remedy depends on continuing care; it does not mean the buried municipal and industrial waste was wholly removed. The adjoining Old Upper Mountain Road construction makes accurate boundaries especially important when describing present conditions.",
     ],
     researchNotes: [
       "Add a final cap and drainage map and connect Gulf Creek carefully to the wider Eighteen Mile Creek watershed.",
@@ -684,29 +699,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "former-electruk-battery": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Former Electruk Battery site at 4922 IDA Park Drive represents a smaller industrial cleanup within Lockport's manufacturing district. Battery-related activity raised concerns about metals and other process materials in site soil.",
-      "Niagara County carried the property through New York's Environmental Restoration Program, a program designed to investigate and clean publicly controlled brownfields for reuse.",
+      "The 1.35-acre Electruk property at 4922 IDA Park Drive was a battery operation whose closure left batteries, contaminated equipment, drums, hazardous liquids, building debris, and lead-affected soil inside an industrial-park building and around its foundation.",
+      "Niagara County health officials asked New York for emergency action in June 1998, and DEC brought in EPA the following month. By June 1999 the federal removal had shipped 99 drums, 21 pallets containing 27.45 tons of batteries and battery parts, 8,634 gallons of hazardous liquids, 695 cubic yards of debris and equipment, and 180 cubic yards of lead-contaminated soil to permitted facilities.",
+      "That emergency work removed the gross hazards but did not make the property residential-grade. Lead remained bonded to some floor and ceiling surfaces and in soil below the industrial removal threshold; New York therefore completed the later restoration with an easement, commercial/industrial-use limits, and soil-management rules.",
     ],
     timeline: [
-      { period: "Industrial era", event: "Battery-related operations occupied the IDA Park Drive property." },
-      { period: "Environmental Restoration Program", event: "The property was investigated and remediated under state oversight." },
+      { period: "Battery-operating era", event: "Electruk handled batteries and battery materials at the IDA Park Drive building." },
+      { period: "1998–1999", event: "County and state referrals led EPA to remove batteries, drums, hazardous liquids, contaminated equipment, debris, and lead-bearing soil." },
+      { period: "Post-removal restoration", event: "Niagara County investigated the residual lead and prepared the publicly controlled property for restricted reuse." },
       { period: "2012", event: "New York issued a Certificate of Completion and established continuing institutional controls." },
       { period: "Present", event: "Commercial or industrial reuse remains subject to an environmental easement and site-management requirements." },
     ],
     documentedImpacts: [
-      "Battery handling or manufacturing created metals-related soil concerns requiring investigation and cleanup.",
-      "The completed remedy left residual conditions appropriate for controlled commercial or industrial use rather than unrestricted use.",
+      "Lead affected soil, building surfaces, debris, equipment, batteries, and other wastes; the removal also handled thousands of gallons of hazardous liquid.",
+      "Post-removal sampling found residual lead below EPA's industrial removal level but above New York's unrestricted-use soil objective and residential surface guidance.",
       "The defined 1.35-acre controlled property should not be conflated with the larger industrial park.",
     ],
     cleanupAndControls: [
-      "State-supervised remedial work addressed identified contaminated material before completion.",
+      "EPA's emergency action removed the identified bulk hazardous wastes and the most contaminated soil for off-site disposal.",
+      "Residual building surfaces required encapsulation before reuse, while remaining soil was judged compatible with undisturbed commercial or industrial use.",
       "The environmental easement restricts use to commercial and industrial purposes and prohibits unauthorized groundwater use.",
       "A site-management and soil-management framework governs future disturbance; the completion record identifies no continuing engineering control.",
     ],
     presentDay: [
-      "The site is a completed environmental-restoration project available for controlled commercial or industrial use. Its easement is the durable link between the historic cleanup and safe future excavation or redevelopment.",
+      "Electruk is a completed environmental-restoration project, but the sequence matters: emergency removal first, controlled reuse second. Its easement and soil plan preserve the reason commercial or industrial occupancy can be safe even though the cleanup did not meet unrestricted residential standards.",
     ],
     researchNotes: [
       "Add the final engineering report's excavation quantities and verified contaminants.",
@@ -806,30 +824,31 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "farwell-road-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Farwell Road Landfill is a former county-owned disposal site in the rural Town of Ischua. Its history shows that hazardous-waste management in Western New York was not limited to the Buffalo–Niagara industrial belt; smaller communities also inherited disposal areas requiring engineered closure.",
-      "New York selected the remedy in 2001. Contaminated material remains within the managed landfill, making deed restrictions, cover maintenance, drainage, monitoring, and formal site management essential parts of the cleanup.",
+      "Farwell Road Landfill occupies about 16 acres on a much larger county property along the western wall of the Ischua Creek valley. Cattaraugus County operated it from 1975 to 1989 in three adjoining phases, building a rural waste complex whose first two phases predated modern liner requirements.",
+      "Phases I and II were unlined and received municipal refuse, resource-recovery ash, sewage sludge, and state-approved non-hazardous industrial wastes until they reached capacity in 1984. Phase III had a compacted-soil liner and leachate collection system and accepted commercial and permitted industrial waste, construction and demolition debris, and incinerator ash before closing in 1989.",
+      "The distinction matters because the remedy did not excavate the landfill. It covered and managed the waste, added leachate collection where outbreaks had historically appeared, and established monitoring between the landfill and Ischua Creek, roughly 400 feet away at its nearest point.",
     ],
     timeline: [
-      { period: "Disposal era", event: "Waste was placed at the Farwell Road property before modern closure and hazardous-waste controls." },
-      { period: "Investigation", event: "State work characterized the landfill, surrounding environmental media, and potential exposure pathways." },
-      { period: "2001", event: "DEC selected the site remedy." },
-      { period: "Remedial construction", event: "The landfill was closed under an engineered, containment-based remedy." },
-      { period: "Present", event: "The site is inspected and managed under a revised long-term site-management plan." },
+      { period: "1974–1975", event: "Water-quality monitoring began before the landfill opened, creating a baseline for a site near a water-supply source and fishing stream." },
+      { period: "1975–1984", event: "The two unlined phases received municipal waste, ash, sludge, and approved industrial wastes." },
+      { period: "1984–1989", event: "A lined third phase operated with leachate collection until the county closed the landfill under a state consent order." },
+      { period: "March 2000", event: "DEC selected a containment remedy for the closed landfill." },
+      { period: "2020–present", event: "A revised site-management plan governs annual inspection, water-quality monitoring, maintenance, and reporting." },
     ],
     documentedImpacts: [
-      "Residual contamination remains within the former disposal footprint.",
-      "Runoff, erosion, groundwater, and unauthorized disturbance are continuing concerns for a closed rural landfill.",
-      "The documented site does not establish contamination on unrelated surrounding farms or residences.",
+      "Waste and residual contamination remain beneath the cover across the three landfill phases.",
+      "Historical leachate outbreaks occurred along the southeastern, eastern, and western margins, prompting collection piping during closure.",
+      "Groundwater generally moves southeast toward Ischua Creek, making leachate and water-quality trends—not distance alone—the evidence needed to judge migration.",
     ],
     cleanupAndControls: [
-      "An engineered cover limits direct contact, erosion, and water infiltration.",
-      "Deed and land-use restrictions prevent incompatible development or uncontrolled excavation.",
-      "Inspection, maintenance, monitoring, reporting, and repair requirements are defined in the site-management plan.",
+      "Closure placed 12 to 18 inches of compacted soil and six inches of vegetated topsoil over the landfill.",
+      "Leachate collection piping, drainage features, deed restrictions, and limits on excavation protect the containment remedy.",
+      "Annual inspection and groundwater, surface-water, sediment, and leachate monitoring are used to identify changing conditions and needed repairs.",
     ],
     presentDay: [
-      "Farwell Road is a closed, managed landfill. Its cleanup contains remaining waste and controls exposure; it should not be described either as an active open dump or as land returned to unrestricted use.",
+      "Farwell Road is closed and managed, not cleaned to unrestricted use. Its public meaning lies in continuing stewardship: the cap, drainage, leachate system, monitoring wells, and deed restriction must keep working because the waste remains in place.",
     ],
     researchNotes: [
       "Add verified operating dates, waste sources, and construction quantities from the remedial investigation and final engineering report.",
@@ -837,30 +856,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "carroll-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Carroll Landfill is an approximately 25-acre former municipal and construction-and-demolition disposal property in the Frewsburg area. Its location near homes, wetlands, and Conewango Creek made leachate, groundwater, drainage, and surface-water protection central to the remedy.",
-      "The property later functioned in connection with solid-waste transfer activities, but the historic landfill and any later operating facilities require separate regulatory interpretation.",
+      "The remedy was designed around a particularly human concern: groundwater near the landfill supplies the Frewsburg water district. Closure therefore joined a cover and leachate controls with groundwater treatment, monitoring, contingency planning, and restrictions on disturbing the buried waste.",
+      "Long-term sampling has added a newer chapter. The 2022 periodic review found no VOC or SVOC exceedances in sampled groundwater and considered several metal exceedances consistent with historical background, but found PFOA or PFOS above then-applicable state guidance values in two East Landfill Cell wells. That is a monitoring-well finding—not evidence that every nearby tap or Conewango Creek was contaminated.",
     ],
     timeline: [
       { period: "Landfill era", event: "Municipal and construction-and-demolition wastes were disposed at the Town of Carroll property." },
       { period: "Investigation", event: "State and local work evaluated the waste mass, leachate, groundwater, wetlands, and nearby receptors." },
       { period: "Remedial design", event: "The selected remedy was translated into landfill, collection, treatment, and monitoring construction plans." },
       { period: "Construction and closure", event: "Engineering controls were installed to contain waste and manage contaminated water." },
-      { period: "Present", event: "Treatment, monitoring, inspection, and maintenance continue under long-term management." },
+      { period: "2022 review", event: "DEC's periodic review found PFOA or PFOS above applicable guidance values in two East Landfill Cell monitoring wells and recommended continued inspections and monitoring." },
+      { period: "Present", event: "Treatment, monitoring, inspection, maintenance, and water-supply protections continue under long-term management." },
     ],
     documentedImpacts: [
       "Landfill leachate and contaminated groundwater required collection and treatment.",
       "The setting near Conewango Creek and wetlands created sensitive surface-water and ecological pathways.",
-      "The waste footprint and treatment infrastructure are site-specific and should not be generalized to all nearby land.",
+      "PFOA or PFOS exceeded the guidance values used in the 2022 review in two monitoring wells, while VOCs and SVOCs did not exceed their applicable criteria in that sampling round.",
     ],
     cleanupAndControls: [
       "The remedy uses landfill closure and cover systems to reduce infiltration and direct contact.",
       "Leachate or affected groundwater is collected and treated.",
-      "Monitoring wells, drainage structures, inspections, maintenance, access controls, and land-use restrictions support long-term performance.",
+      "Monitoring wells, drainage structures, annual inspections, severe-weather checks, maintenance, access controls, and land-use restrictions support long-term performance.",
     ],
     presentDay: [
-      "Carroll Landfill remains a managed disposal property near an important creek corridor. The visible closure and treatment systems are continuing components of the remedy, not merely remnants of construction.",
+      "Carroll Landfill remains a managed disposal property near homes, wetlands, a public-water setting, and an important creek corridor. The visible closure and treatment systems are continuing components of the remedy, while the PFAS results show why an older landfill's monitoring program must be able to respond to contaminants that were not part of the original cleanup vocabulary.",
     ],
     researchNotes: [
       "Add verified disposal dates, accepted waste categories, and current transfer-station relationship.",
@@ -1786,7 +1807,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       {
         period: "1978",
         event:
-          "Federal aerial surveillance identified low-level radiation anomalies in the Niagara region.",
+          "A federal aerial radiation survey identified an anomaly near the Niagara Falls Boulevard property, prompting later ground investigation of the suspected slag fill.",
       },
       {
         period: "2016–2020",
@@ -1832,7 +1853,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       {
         period: "1978",
         event:
-          "Federal aerial surveillance identified low-level radiation anomalies in the Niagara region.",
+          "The same regional federal aerial survey that found several Niagara-area anomalies recorded elevated readings near the future Head Start property.",
       },
       {
         period: "2023",
@@ -2157,45 +2178,46 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "dunlop-disposal-sites": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Dunlop tire plant contained three historical waste-disposal areas within a larger industrial property near River Road and Sheridan Drive. Records describe disposal of oils, cinders, solvents, wood, building rubble, rubber products, and other plant wastes beginning in the early twentieth century.",
-      "New York investigated the three areas as related but distinct units and selected containment remedies supported by long-term groundwater monitoring. The atlas treats them as one connected plant history while preserving their separate boundaries and records.",
+      "The former Dunlop tire complex covered about 128 acres near River Road and Sheridan Drive, but its State Superfund record concerns three disposal areas totaling roughly 25 acres. Treating the whole plant as one landfill loses the most revealing part of the history: each area held a different mixture of tire-making and power-plant waste.",
+      "Site A received fly ash, slag, carbon black, asphalt, foam, tires, coal, and demolition debris; most disposal ended by 1970, though construction debris continued until 1979. Site B held natural and synthetic rubber scrap, golf balls, plastics, carbon black, fly ash, amines, antioxidants, and general refuse. Site C served primarily as a coal-ash landfill until 1973, while interviews with retired workers described drums of waste solvents and degreasers among the material placed there.",
+      "A 1991 consent order led to trenching and investigation, and DEC selected a containment remedy in March 1993. Clay, soil, vegetation, asphalt, drainage, fencing, and groundwater wells now manage what remains; the current industrial use sits around and in places over that controlled waste landscape.",
     ],
     timeline: [
       {
         period: "1920s onward",
         event:
-          "Waste-disposal areas developed alongside tire-manufacturing operations.",
+          "Three disposal areas developed alongside tire manufacturing, receiving ash, rubber-process materials, solvents, debris, and other plant wastes.",
       },
       {
         period: "1980s–1992",
         event:
-          "State and federal investigations characterized three disposal areas, groundwater, and potential pathways toward nearby surface water.",
+          "A state consent order and field investigation used test trenches, borings, records, aerial photographs, and worker interviews to define Sites A, B, and C.",
       },
       {
         period: "1993",
         event:
-          "New York selected and designed capping and monitoring remedies for the inactive disposal areas.",
+          "New York selected low-permeability caps, drainage, fencing, inspection, and groundwater monitoring for all three disposal areas.",
       },
       {
         period: "1990s–present",
         event:
-          "Caps, inspections, institutional controls, and long-term groundwater monitoring have managed wastes remaining on site.",
+          "Semiannual cap inspection and periodic groundwater review have continued while the larger property remained in industrial use.",
       },
     ],
     documentedImpacts: [
-      "Historical disposal included waste oils, solvents, cinders, rubber products, construction debris, and process-related metals and chemicals.",
-      "Investigations evaluated soil, waste, groundwater, and the potential for migration toward the Niagara River and interconnected industrial groundwater system.",
+      "The waste inventory differs by unit: Site A is dominated by ash, slag, carbon black and debris; Site B by rubber-process waste and additives; and Site C by coal ash with reported solvent and degreaser drums.",
+      "The remaining-contamination record includes phenols in soil or fill; PAHs, metals, and pesticides in sediment; and VOCs, phenols, and metals in groundwater.",
       "The three units differ in size, waste history, and conditions; findings from Site 2 should not automatically be applied to Sites 1 and 3.",
     ],
     cleanupAndControls: [
-      "Engineered landfill caps reduce direct contact and rainwater infiltration into contained waste.",
-      "Groundwater wells and periodic sampling track whether contaminants are migrating from the disposal areas.",
+      "The three landfills were covered with 18 inches of compacted low-permeability clay and six inches of vegetated soil; traffic areas were paved, though the periodic report notes that a clay cap beneath every paved area was not confirmed.",
+      "Runoff is routed to catch basins and the plant settling pond, while downgradient wells provide early warning if groundwater conditions change.",
       "Landfill inspections, repair obligations, land-use controls, and excavation restrictions protect the containment systems.",
     ],
     presentDay: [
-      "The disposal areas remain managed within an industrial property. Their remedy relies on intact caps and continuing groundwater oversight, so an active or redeveloped plant use does not eliminate the underlying closed-landfill controls.",
+      "The disposal areas remain managed within an industrial property. Grass, pavement, parking, or factory activity can obscure their outlines, but none of those surface uses eliminates the capped waste below. A sale or plant closure would not cancel the maintenance and monitoring obligations.",
     ],
     researchNotes: [
       "Build separate polygons and remedy summaries for Dunlop Sites 1, 2, and 3.",
@@ -2203,7 +2225,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "buffalo-harbor-cdf-4": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Buffalo Harbor Confined Disposal Facility No. 4 is a 107-acre in-lake containment facility attached to land at the Outer Harbor's south end. The U.S. Army Corps of Engineers built it in 1977 to receive dredged material from federal navigation projects.",
       "Its location beside the former Bethlehem Steel property makes it easy to confuse with the steel plant's slag fill or HWM-2 waste unit. CDF No. 4 is a separate Erie County-owned, federally operated navigation facility with its own acceptance, capacity, and containment record.",
@@ -2225,9 +2247,9 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
           "USACE reported a total capacity of 6.9 million cubic yards and typical placement of about 140,000 cubic yards every two years.",
       },
       {
-        period: "Present",
+        period: "2023–present",
         event:
-          "The facility remains reserved primarily for material from authorized navigation projects, with other use subject to environmental acceptance and capacity review.",
+          "Army Corps inspections documented wave-driven repair needs along the exterior dike while the facility remained reserved primarily for authorized navigation projects.",
       },
     ],
     documentedImpacts: [
@@ -2249,10 +2271,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "pfohl-brothers-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Pfohl Brothers is a roughly 130-acre former landfill near Transit Road, Aero Drive, wetlands, and residential property in Cheektowaga. Areas B and C received municipal and industrial wastes from 1932 to 1971; Area A was principally a soil-borrow area and received a separate no-action decision.",
       "Industrial wastes reportedly came from steel, metal, chemical, petroleum, utility, optical, furnace-material, and other manufacturers. Disposal used shallow pits that were covered with fly ash and fill, leaving drums, waste, leachate, and contaminated environmental media to be addressed through Superfund.",
+      "The landfill sat in an inhabited and used landscape rather than an isolated waste zone: residential yards line Pfohl Road, wetlands and Aero Creek border the fill, people fish in the small on-site lake, and commercial development expanded along nearby Aero Drive. Those uses explain why the remedy combines physical containment with rules for groundwater, drainage, basements, excavation, and soil gas.",
     ],
     timeline: [
       {
@@ -2278,7 +2301,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       {
         period: "2025",
         event:
-          "EPA completed the fifth five-year review because contaminants remain above levels allowing unrestricted use.",
+          "EPA completed the fifth five-year review on November 13 because contaminants remain above levels allowing unrestricted use.",
       },
     ],
     documentedImpacts: [
@@ -2292,7 +2315,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Covenants prohibit groundwater use and cap-disturbing excavation and impose redevelopment, drainage, basement, and soil-gas requirements.",
     ],
     presentDay: [
-      "Pfohl Brothers remains a monitored and maintained containment site. NPL deletion means the required cleanup was completed; it does not mean all waste was removed or that the property supports unlimited use and unrestricted exposure.",
+      "Pfohl Brothers remains a monitored and maintained containment site. About 36 uncapped acres along Aero Drive have been studied for light-industrial or commercial reuse, but the two capped landfill areas, fishing lake, wetlands, drainage, and residential edge require different decisions. NPL deletion means the required cleanup was completed; it does not mean all waste was removed or every acre supports unrestricted use.",
     ],
     researchNotes: [
       "Incorporate the 2025 five-year review's specific recommendations and PFAS findings into the next editorial update.",
@@ -2487,10 +2510,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "mayville-pfas-site": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Mayville PFAS investigation began after perfluorononanoic acid, or PFNA, was detected in the village public-water system in December 2020. State work identified PFNA and other PFAS in environmental media near a former school athletic field reportedly used for firefighting training with aqueous film-forming foam.",
-      "The formal site includes three tax parcels at 2 Academy Street, while the investigation extends downgradient through the village. New York divided the work into three operable units because the suspected source area and the still-undefined off-site extent require different investigation steps.",
+      "Mayville's PFAS story began at the tap. In December 2020, testing found perfluorononanoic acid, or PFNA, in three of the village's four public-water wells—reported in the 2025 work plan at 140 to 390 parts per trillion—and health officials issued a do-not-drink advisory. The response changed where the village drew its water while investigators worked backward from the wells toward a source.",
+      "State sampling identified PFNA and other PFAS in environmental media near the former Mayville school property at 2 Academy Street. Firefighting exercises reportedly used aqueous film-forming foam on the former athletic fields, making that area a suspected source rather than a source proven by historical purchase or discharge records. The formal site covers three parcels totaling 15.6 acres, but the investigation follows groundwater and surface-water pathways beyond those property lines.",
+      "DEC divided the work into three operable units: the Academy Street property, a still-undefined downgradient area along Patterson Street, and a farther downgradient area along Morris Street. That structure matters because the map pin marks the suspected source area, not the full known or possible extent of the investigation.",
     ],
     timeline: [
       {
@@ -2509,19 +2533,20 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
           "Supplemental investigations sampled soil, sediment, surface water, groundwater, and private wells.",
       },
       {
-        period: "2023–2025",
+        period: "2023–2026",
         event:
-          "DEC designated the property a drinking-water-contamination remediation site and advanced a detailed remedial investigation.",
+          "DEC designated the property a drinking-water-contamination remediation site, approved a detailed investigation work plan, and the village pursued replacement-well or additional carbon-treatment improvements for its long-term supply.",
       },
     ],
     documentedImpacts: [
       "PFNA and other PFAS were documented in on-site surface soil, sediment, surface water, and groundwater.",
       "Off-site sediment, surface water, and groundwater results showed migration beyond the three-parcel site boundary.",
-      "Twenty-five private wells sampled in December 2020 did not contain PFNA or elevated concentrations of the other analyzed PFAS.",
+      "Twenty-five private wells sampled in December 2020 did not contain PFNA or elevated concentrations of the other analyzed PFAS. A twenty-sixth private well sampled in September 2021 also had no detections on the analyzed PFAS panel.",
     ],
     cleanupAndControls: [
       "The immediate drinking-water response changed supply wells and added granular-activated-carbon treatment.",
       "The remedial investigation is defining source areas, downgradient operable units, environmental pathways, and the extent of impacts to public-water wells.",
+      "A separate 2025 village water project evaluated a new replacement groundwater source and additional granular-activated-carbon treatment for affected wells. Water-system improvements reduce exposure but do not substitute for finding and addressing the environmental source.",
       "Future source removal, treatment, institutional controls, or long-term monitoring will depend on the completed investigation and selected remedy.",
     ],
     presentDay: [
@@ -2533,10 +2558,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "marine-drive-apartments-east-pfas": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Marine Drive Apartments East is a 2.447-acre brownfield at 90 Erie Street, historically part of Buffalo's canal district and later used as a parking lot beside the existing apartment complex. Deep historic fill reflects earlier streets, canals, buildings, and waterfront activity.",
-      "The brownfield investigation identified conventional fill-related contaminants in soil and low-level PFAS in groundwater. DEC's public record states that PFAS was not found above applicable criteria in soil and assumes the groundwater PFAS comes from an off-site source, an important limit on how the site should be labeled.",
+      "Marine Drive Apartments East is a 2.447-acre piece of an active parking lot at 90 Erie Street, beside the existing apartment towers and near Canalside. Before the towers, this ground belonged to Buffalo's Canal District: homes, shops, foundries, a laundry, plating and boiler shops, garages, buried streets, demolition, and successive layers of fill all contributed to a complicated subsurface record.",
+      "The 1936 natural-gas explosion that devastated part of the district is part of that land history, but it is not evidence of today's contamination. The environmental evidence comes from borings and wells. Beneath the pavement, investigators found slag and historic fill extending in places to about 16 feet, with PAHs and metals including lead and mercury above unrestricted-use soil criteria.",
+      "PFOA and PFOS were also detected at low levels in groundwater, but soil samples from roughly two to nineteen feet did not exceed New York's PFAS guidance values. DEC's investigation treated the groundwater PFAS as likely off-site. This is therefore a historic-fill cleanup with a documented PFAS groundwater finding—not evidence that Marine Drive used or manufactured PFAS.",
     ],
     timeline: [
       {
@@ -2561,17 +2587,18 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       },
     ],
     documentedImpacts: [
-      "SVOCs, PAHs, metals, acetone, and other contaminants occur in deep historic fill and subsurface soil.",
+      "PAHs, acetone, and metals occur in deep historic fill and subsurface soil. Reported soil maxima included lead at 2,480 parts per million and mercury at 20.6 parts per million, figures that describe particular samples rather than uniform conditions across the lot.",
       "Low-level PFAS, SVOCs, and metals were detected in groundwater.",
-      "The investigation did not identify PFAS exceedances in soil from the surface to more than 20 feet deep and attributes groundwater PFAS to an assumed off-site source.",
+      "The investigation did not identify PFAS above applicable guidance values in the sampled subsurface soil, collected from approximately two to nineteen feet, and attributes groundwater PFAS to an assumed off-site source.",
+      "Groundwater at and near the site is not used as the public drinking-water supply. The adjacent apartments and daily use of the parking lot make construction dust, soil handling, traffic, and safe staging central community concerns during excavation.",
     ],
     cleanupAndControls: [
-      "The selected remedy addresses contaminated historic fill and soil under state brownfield oversight.",
-      "Construction controls, soil handling, groundwater management, verification sampling, and any vapor or cover requirements protect workers and future residents.",
-      "Groundwater PFAS requires monitoring and source interpretation without inaccurately assigning an on-site soil source.",
+      "The June 2025 decision selected excavation and off-site disposal of approximately 37,000 cubic yards of soil, at depths ranging from about two to sixteen feet, to meet unrestricted-use soil objectives. Confirmation samples determine whether the planned excavation is sufficient.",
+      "Construction controls, waste characterization, soil and groundwater handling, clean backfill, and community air monitoring are required to protect residents, workers, and visitors during the work. A limited archaeological investigation precedes excavation because the parcel lies within the National Register-eligible Erie Canal Harbor Archaeological District.",
+      "Post-excavation groundwater sampling for SVOCs and metals will test whether soil removal addressed related groundwater impacts. The municipal prohibition on potable groundwater use prevents ingestion; the selected remedy does not claim that excavating this lot will eliminate an assumed off-site PFAS source.",
     ],
     presentDay: [
-      "The site is moving from investigation into implementation of a state-approved remedy for planned affordable housing. It remains a cleanup project until construction, final engineering documentation, and any required certification are complete.",
+      "DEC approved the investigation, work plan, and remedy in June 2025 for planned housing redevelopment. The decision says the property does not pose a significant threat under the Brownfield Cleanup Program, but it remains an active cleanup project until excavation, confirmation sampling, final engineering documentation, and any required completion certification are finished.",
     ],
     researchNotes: [
       "Update the profile with remedial construction quantities, groundwater PFAS trends, and the final completion certificate.",
@@ -2686,16 +2713,17 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "solvent-chemical-niagara-falls": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Solvent Chemical property on Buffalo Avenue was used for chemical manufacturing, storage, and waste handling. Investigations found benzene, chlorinated benzenes, and related compounds in soil and in both overburden and bedrock groundwater.",
-      "New York selected a containment-and-treatment remedy in 1996. Because contamination extends through multiple groundwater zones and nonaqueous-phase liquid has required monitoring, the remedy depends on active collection, treatment, maintenance, and periodic review rather than a one-time excavation.",
+      "The former Solvent Chemical plant at 3163 Buffalo Avenue used numerous buildings and aboveground and underground tanks for chemical manufacturing, storage, and waste handling. Benzene, chlorobenzene, and several dichloro- and trichlorobenzenes affected on-site soil and both overburden and upper-bedrock groundwater.",
+      "The cleanup record covers three connected but distinct features: the plant property, an Olin Hot Spot between the property and Gill Creek, and an 18-inch concrete storm sewer that once ran west across DuPont Drive and industrial land before discharging to the creek. The sewer was removed or abandoned in place and no longer requires routine operation and maintenance; groundwater and nonaqueous-phase liquid remain the persistent work.",
+      "New York selected the remedy in December 1996, and long-term operation began July 1, 2004. Collection systems control overburden and bedrock groundwater, extracted water receives pretreatment before permitted discharge, and a cover limits contact and infiltration. The newest reviewed periodic report documents three monitoring rounds from March 2024 through March 2025.",
     ],
     timeline: [
       {
         period: "Industrial operating era",
         event:
-          "Chemical manufacturing and disposal practices created soil and groundwater source areas.",
+          "Chemical manufacturing, tanks, waste handling, and a storm-sewer route created soil, groundwater, and drainage source areas.",
       },
       {
         period: "December 1996",
@@ -2705,26 +2733,26 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       {
         period: "Remedial construction",
         event:
-          "Groundwater control, collection, pretreatment, cover, and monitoring systems were installed.",
+          "The plant property, Olin Hot Spot, and former storm sewer were addressed through groundwater control, collection, pretreatment, cover, and drainage work.",
       },
       {
-        period: "2021–present",
+        period: "March 2024–March 2025",
         event:
-          "Periodic reviews continue to evaluate system operation, groundwater conditions, NAPL, and protectiveness.",
+          "The latest reviewed periodic report documents three rounds of system, groundwater, and NAPL monitoring during a 15-month transition to a new reporting schedule.",
       },
     ],
     documentedImpacts: [
-      "Benzene and chlorinated benzenes affected site soil and groundwater.",
-      "Contamination occurred in shallow overburden and deeper bedrock groundwater zones.",
-      "Nonaqueous-phase liquid and dissolved contamination created persistent sources requiring long-term hydraulic control.",
+      "Benzene, chlorobenzene, three dichlorobenzene isomers, and 1,2,4-trichlorobenzene are principal contaminants of concern.",
+      "Dissolved contamination and nonaqueous-phase liquid occur in shallow overburden and upper-bedrock groundwater zones.",
+      "The former storm sewer created a direct historical route toward Gill Creek, but its completed removal or abandonment is distinct from the groundwater systems that still operate.",
     ],
     cleanupAndControls: [
-      "Overburden and bedrock groundwater are collected or controlled to limit migration.",
+      "Overburden and upper-bedrock groundwater are collected or hydraulically controlled to limit migration from the plant and Olin Hot Spot areas.",
       "Extracted water is pretreated before discharge, while the cover limits exposure and infiltration.",
       "Groundwater, NAPL, treatment performance, and engineering controls are inspected through long-term operation, maintenance, and periodic review.",
     ],
     presentDay: [
-      "Solvent Chemical remains an active long-term remedy. The principal public-health protection comes from containing contaminated groundwater, treating collected water, maintaining the cover and systems, and checking that the remedy continues to perform as designed.",
+      "Solvent Chemical remains an active long-term remedy more than two decades after operation and maintenance began. The buildings are gone and the storm-sewer task is complete, but the groundwater and NAPL source cannot be understood as a finished excavation; protection still depends on collection, treatment, cover, monitoring, and maintenance.",
     ],
     researchNotes: [
       "Report the latest periodic-review conclusions and system-performance data rather than describing the 1996 remedy as a finished excavation.",
@@ -2778,10 +2806,10 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "tonawanda-landfill-fusrap-vicinity": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "In 1992, the Department of Energy designated portions of the Tonawanda Landfill and adjacent mudflats as a FUSRAP vicinity property because radioactive material resembled material found at other Tonawanda FUSRAP sites. Federal records emphasize that no documentation ties the property itself to Manhattan Engineer District or Atomic Energy Commission operations.",
-      "USACE separated the mudflats and landfill into different decisions. The mudflats required no remedial action; the landfill remedy addressed accessible contamination while allowing deeper residual material to remain under a commercial-industrial cleanup standard.",
+      "The Town of Tonawanda operated this municipal landfill from the 1930s until 1989, accepting incinerator ash, sewage sludge, construction debris, and household and yard waste. In 1992, the Department of Energy designated portions of the landfill and adjacent mudflats as a FUSRAP vicinity property after finding radioactive material that resembled material at other Tonawanda FUSRAP sites. That resemblance is not a proven chain of custody: federal agencies say no record has been found showing that this property took part in Manhattan Engineer District or Atomic Energy Commission work.",
+      "USACE divided the property into two operable units because the evidence and remedies were different. The mudflats—now part of the North Youngmann Commerce Center—received a 2008 no-action decision. At the landfill, workers used field instruments and laboratory analysis to guide a targeted removal of shallow radioactive soil and debris. The work dealt with accessible contamination while leaving radioactive material below five feet under a commercial-industrial land-use standard.",
     ],
     timeline: [
       {
@@ -2800,9 +2828,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
           "The landfill Record of Decision selected a commercial-industrial remedy; the mudflats required no action.",
       },
       {
-        period: "2024 onward",
+        period: "2019–2022",
         event:
-          "Five-year review and long-term stewardship evaluate the remedy where residual radioactivity remains at depth.",
+          "Targeted excavation removed shallow radioactive soil and debris; remedial action finished in 2020 and USACE issued the site closeout report in 2022.",
+      },
+      {
+        period: "Long-term stewardship",
+        event:
+          "Because radium, uranium, and thorium remain below five feet, the landfill remedy requires periodic inspections and statutory five-year reviews rather than unrestricted release.",
       },
     ],
     documentedImpacts: [
@@ -2811,15 +2844,15 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "The evidence supports a FUSRAP vicinity-property designation but not a claim that MED or AEC production occurred here.",
     ],
     cleanupAndControls: [
-      "The landfill response removed or addressed accessible material to meet the selected commercial-industrial cleanup standard.",
+      "USACE reported excavating 4,345 cubic yards of shallow radioactive-contaminated soil to a depth of five feet. DOE's stewardship account says 3,476 cubic yards—about 5,000 tons—of radiological soil and debris were shipped by rail to a licensed disposal cell in Belleville, Michigan; the different figures describe excavation and shipped waste, not necessarily the same measurement.",
       "The remedy is considered protective for recreational use but does not establish unrestricted residential suitability.",
-      "Periodic inspections and five-year reviews are required to confirm long-term performance for up to 1,000 years before DOE stewardship.",
+      "No active operation-and-maintenance system is needed for the remedy to function, but periodic inspections and five-year reviews are required because material remains at depth. DOE's long-term stewardship plan covers a 1,000-year performance period.",
     ],
     presentDay: [
       "The landfill response is complete, with deeper residual contamination managed through land-use assumptions and long-term review. The adjacent mudflats received a no-action decision and should not be mapped as though they share the landfill's residual-contamination finding.",
     ],
     researchNotes: [
-      "Add the first five-year-review findings when the final federal report is available.",
+      "The USACE project page still describes the initial five-year review as scheduled for 2024; add its findings only when a final review document can be verified.",
       "Retain the official caveat that no record connects this property to Manhattan Project or Atomic Energy Commission activity.",
     ],
   },
@@ -2998,10 +3031,10 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "bliss-laughlin-steel": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "At 110 Hopkins Street, Bliss & Laughlin Steel machined and straightened uranium rods in September and October 1952 under work associated with National Lead of Ohio, an Atomic Energy Commission prime contractor. The work occurred in a 3,230-square-foot Special Finishing Area within a much larger steel building.",
-      "AEC records indicate that rod turnings were returned through the Lake Ontario Ordnance Works for shipment to Fernald. Federal surveys later found residual uranium in the finishing area, leading to a short FUSRAP decontamination completed in 1999.",
+      "For two months in 1952, an ordinary steel-finishing plant became a small link in the federal uranium-production chain. At 110 Hopkins Street, Bliss & Laughlin Steel machined and straightened uranium rods for National Lead of Ohio, an Atomic Energy Commission prime contractor. The work appears to have taken place on Saturday shifts inside a 3,230-square-foot Special Finishing Area—only a fraction of the plant's roughly 129,600-square-foot building.",
+      "Machining produced uranium turnings that records trace through the Lake Ontario Ordnance Works on their way back to Fernald. Decades later, federal surveys found natural uranium on the finishing-area floor, overhead trusses, trenches, and finishing pit. That tightly defined footprint—not the entire steel property—became the Buffalo FUSRAP site and was decontaminated between December 1998 and March 1999.",
     ],
     timeline: [
       {
@@ -3031,12 +3064,12 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "The affected work area represented only a small portion of the full industrial building and grounds.",
     ],
     cleanupAndControls: [
-      "USACE removed or decontaminated affected building materials to site-specific radiological standards.",
-      "Post-remediation surveys supported unrestricted-use closure under the selected federal criteria.",
-      "DOE Legacy Management preserves records and provides long-term stewardship for the completed FUSRAP site.",
+      "USACE decontaminated the concrete floor, overhead trusses, trenches, and finishing pit, then scanned surfaces and sampled soil under a formal final-status survey.",
+      "The cleanup standard limited surface activity to 2,000 disintegrations per minute per 100 square centimeters and uranium-238 in soil to 100 picocuries per gram. DOE's certification summary reports that every survey unit met the release criteria.",
+      "The site was released for unrestricted use. No institutional controls, supplemental limits, or on-site radiological monitoring are required; DOE Legacy Management's remaining role is preserving records and answering stakeholder questions.",
     ],
     presentDay: [
-      "The Buffalo site is a completed FUSRAP cleanup in DOE long-term stewardship. Its importance lies both in the documented 1952 uranium work and in the verified federal decontamination; it should not be portrayed as an uncontrolled active radiological site.",
+      "The Buffalo site is a completed FUSRAP cleanup, not an uncontrolled active radiological site. Its history still matters because workers handled uranium here and later cleanup workers returned to contaminated surfaces decades after the original job. NIOSH evaluated worker petitions under the federal energy-employees compensation program, but the reviewed employee classes were not added to the Special Exposure Cohort; that administrative finding should not be rewritten as proof either of illness or of no exposure.",
     ],
     researchNotes: [
       "Use DOE's current certification summary and stewardship plan for future status updates.",
@@ -3183,33 +3216,39 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "3m-o-cel-o-tonawanda": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The O-Cel-O plant manufactured cellulose sponges on River Road. Carbon disulfide used in production and releases associated with handling and drainage areas became the principal focus of New York's investigation and remedy.",
-      "Interim measures addressed source and drainage features before the final state decision. The hazardous-waste listing is closed, but closure includes continuing engineering and institutional controls rather than erasing the site's industrial record.",
+      "The O-Cel-O plant manufactured cellulose sponges on River Road within Tonawanda's dense industrial corridor. Carbon disulfide was handled as a process chemical from the early 1960s through late 1995, when storage and drainage practices left a concentrated problem beneath a former tank and an adjoining swale.",
+      "The regulated site is less than one acre within a much larger active manufacturing property. That boundary matters: New York's decision addressed a specific tank-and-drainage source area rather than declaring the entire River Road plant or neighboring industrial corridor equally contaminated.",
+      "Carbon disulfide is volatile, but it also dissolves readily enough to move with water. Investigators therefore examined direct contact with affected surface soil, pore water within the shallow source area, and whether contamination had migrated into deeper bedrock groundwater.",
+      "3M completed several interim measures before the final decision. Those actions removed the immediate surface-soil exposure and improved stormwater control, allowing DEC to select no further active construction with long-term monitoring. Here, 'no further action' meant the completed interim work became the remedy—not that the original release or residual source ceased to exist.",
     ],
     timeline: [
-      { period: "Manufacturing era", event: "Sponge production used carbon disulfide and other process materials." },
-      { period: "Interim response", event: "Controls were installed at chemical-handling and drainage areas to reduce releases." },
-      { period: "1999", event: "DEC issued the site Record of Decision." },
-      { period: "2021 review", event: "The periodic review evaluated inspections, monitoring, and continuing controls." },
+      { period: "Early 1960s–1995", event: "Sponge manufacturing used carbon disulfide, and historical handling around the storage tank and drainage swale contaminated shallow soil and pore water." },
+      { period: "1990s interim response", event: "3M replaced the carbon-disulfide tank system, closed the former tank, excavated about 300 cubic yards of affected swale soil, and reconstructed drainage to reduce infiltration." },
+      { period: "March 1999", event: "DEC concluded that the interim actions had removed the significant direct-contact threat and selected no further active construction with monitoring and land controls." },
+      { period: "2001–2006", event: "A deed restriction was recorded, and DEC later reduced the monitoring network while retaining one bedrock well, one shallow lysimeter, and inspection of the swale and catch basin." },
+      { period: "2021–2022 review", event: "The bedrock well remained nondetect for carbon disulfide after 16 years of semiannual sampling, while the shallow lysimeter still contained carbon disulfide and therefore remained in the annual program." },
     ],
     documentedImpacts: [
-      "Carbon disulfide was the signature contaminant associated with former plant operations.",
-      "Drainage and handling areas created pathways to soil and groundwater.",
-      "Residual conditions require the property to remain within an inspection and monitoring program.",
+      "Carbon disulfide was the signature site contaminant. Before the interim measures, DEC identified direct contact with contaminated surface soil as the significant human-health threat.",
+      "The tank area and former drainage swale created a shallow source and stormwater pathway. The rebuilt swale and catch basin are therefore remedy components, not ordinary landscaping.",
+      "The 2021 sampling round did not detect carbon disulfide above the reporting limit in the monitored bedrock well, continuing a 16-year nondetect pattern. A shallow pore-water lysimeter measured 260 milligrams per liter, consistent with earlier residual-source results.",
+      "Those two results describe different depths and cannot be averaged into a single claim that groundwater is either clean or broadly contaminated. The long-term program exists to keep that distinction visible.",
     ],
     cleanupAndControls: [
-      "Interim source-control work addressed chemical storage, handling, and drainage features.",
-      "The final remedy incorporated site controls and monitoring appropriate to remaining impacts.",
-      "Periodic reviews verify continued compliance with engineering and institutional controls.",
+      "The principal source-control work installed a new bulk-storage system, closed the former tank, removed approximately 300 cubic yards of contaminated soil, and improved the swale so stormwater would drain with less infiltration through affected material.",
+      "DEC reclassified the property to Class 4—properly closed but requiring continued management—and required a declaration of covenants and restrictions, environmental monitoring, and maintenance of the drainage controls.",
+      "The monitoring network was narrowed as evidence accumulated, but it was not eliminated. The retained bedrock well tests for deeper migration, while the lysimeter tracks shallow residual contamination.",
+      "Annual inspection and institutional-and-engineering-control certification verify the condition of the swale, catch basin, fencing, access, and monitoring points. Bulk chemical storage is regulated under a separate state program.",
     ],
     presentDay: [
-      "The state site is closed in the regulatory sense but remains managed. The correct public message is that the remedy is in place and monitored, not that no contamination ever existed or that controls are unnecessary.",
+      "The small source area is a closed Class 4 site within an industrial property. The latest cited review found the controls in good condition and no carbon disulfide in the bedrock well, while documenting persistent carbon disulfide in shallow pore water. Continued monitoring and drainage maintenance—not a claim of total removal—support the site's protectiveness.",
     ],
     researchNotes: [
-      "Update the profile from the newest periodic review when available.",
-      "Document the exact current land-use restriction and monitoring locations before adding parcel polygons.",
+      "Update the profile from the next DEC periodic review and record whether annual sampling was formally approved after the 2022 proposal.",
+      "Map only the sub-acre tank-and-swale remedy area from the approved decision figure; do not use the full manufacturing parcel as a contamination boundary.",
+      "Keep shallow lysimeter results, bedrock-well results, and active bulk-storage compliance separate so readers can see what each program actually measures.",
     ],
   },
   "dupont-yerkes": {
@@ -3312,63 +3351,78 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "lockport-transit-street-former-mgp": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "A manufactured-gas plant operated on Transit Street in Lockport from 1851 to 1927. Coal tar and related nonaqueous-phase liquid persisted after the plant closed, affecting soil and groundwater in a mixed urban setting.",
-      "New York's remedy combined removal of accessible source material with containment and long-term management where complete excavation was impracticable.",
+      "A manufactured-gas plant operated on Transit Street from 1851 to 1927, supplying Lockport decades before natural gas service. Gas production generated a dense coal-tar byproduct containing PAHs, benzene, toluene, ethylbenzene, and xylene that persisted beneath the property long after the works disappeared.",
+      "The former plant footprint is only about 0.87 acre and is now occupied by an active electrical substation. Homes border the south, streets and businesses constrain the other sides, and the New York State Barge Canal lies downgradient. That compact urban setting made complete excavation impractical.",
+      "Investigation found coal-tar nonaqueous-phase liquid in soil, overburden, and fractured bedrock, with an ongoing discharge pathway toward the canal. Investigators also found contamination in canal sediment, but distinguished gasworks-related PAHs and tar from PCBs, metals, and other constituents attributable to additional Lockport sources.",
+      "The remedy therefore follows the pathway from a vanished plant, beneath an operating substation and public streets, through fractured rock, to the canal. It combines excavation where access allowed it, underground barriers where it did not, recovery wells for mobile tar, and sediment removal at the receiving water.",
     ],
     timeline: [
       { period: "1851–1927", event: "The Transit Street plant manufactured gas for the Lockport area." },
-      { period: "Investigation era", event: "Sampling identified coal tar, NAPL, and associated soil and groundwater contamination." },
-      { period: "Remedial design", event: "DEC and the responsible utility developed excavation and containment work." },
-      { period: "Long-term phase", event: "Monitoring and site management continued after construction." },
+      { period: "After 1927", event: "Gas manufacturing ended and electrical infrastructure occupied the small parcel, while tar remained in soil and fractured bedrock beneath the redeveloped surface." },
+      { period: "Investigation era", event: "Borings, wells, and canal sampling traced tar and dissolved gasworks compounds on-site, beneath LaGrange Street, and toward the Barge Canal." },
+      { period: "March 2009", event: "DEC selected partial source excavation, sheet-pile and bedrock-grout barriers, NAPL recovery, a cover, canal sediment removal, and long-term site management." },
+      { period: "2014–2016", event: "Crews excavated accessible soil, installed the sheet-pile wall, collection trench and recovery wells, grouted bedrock pathways near the canal, and covered the substation property." },
+      { period: "2018 follow-up", event: "DEC prepared to remove approximately 800 cubic yards of gasworks-affected canal sediment using a cofferdam and controlled water treatment." },
+      { period: "Present", event: "DEC continues to list the non-registry cleanup as active; recovery, monitoring, and remaining engineering documentation govern completion." },
     ],
     documentedImpacts: [
-      "Coal-tar NAPL occurred in the subsurface.",
-      "PAHs, benzene, and other manufactured-gas constituents affected soil or groundwater.",
-      "Urban utilities, buildings, and property boundaries complicated source removal.",
+      "Coal-tar NAPL persisted as a mobile or residual liquid in soil and fractured bedrock, providing a continuing source of dissolved contamination.",
+      "PAHs and BTEX compounds affected soil, groundwater, and gasworks-related canal sediment. DEC's 2009 decision identified ongoing tar discharge to the Barge Canal as an environmental threat requiring a physical barrier.",
+      "The active electrical substation, neighboring homes, public streets, utilities, and canal made access and worker or community protection part of the remedy design.",
+      "The canal contains pollution from more than one source. Transit Street explains documented coal-tar and PAH impacts, but the reviewed investigation did not assign all PCBs, metals, or other canal contamination to this gasworks.",
     ],
     cleanupAndControls: [
-      "Accessible coal-tar waste and contaminated soil were excavated where feasible.",
-      "Containment and cover components isolate residual material.",
-      "Groundwater and engineering controls remain subject to long-term monitoring and maintenance.",
+      "Accessible tar sumps, heavily affected soil, and material beneath part of LaGrange Street were excavated for approved treatment or disposal while the substation continued to constrain deeper source removal.",
+      "A sheet-pile wall contains shallow migration along the east and south sides. Near the canal, a subsurface grout wall seals fractures in bedrock that could otherwise carry tar around the shallow barrier.",
+      "A collection trench and recovery wells capture mobile NAPL that cannot be safely excavated. The cover limits routine contact and infiltration across the remaining source area.",
+      "Canal work uses a cofferdam to isolate the excavation, removes affected sediment, treats construction water before sewer discharge, and restores the canal edge. Monitoring and site management test the combined system over time.",
     ],
     presentDay: [
-      "DEC reported that most of the 2009 remedy was constructed between 2014 and 2016, but the program remains Class A—active and not yet complete. The remedy reduced exposure and migration while follow-up work and management continue.",
+      "Most upland components of the 2009 remedy were constructed from 2014 through 2016, but DEC still identifies Transit Street as an active non-registry cleanup. The substation remains in service above a managed source, and present protectiveness depends on barriers, NAPL recovery, cover maintenance, canal work, and monitoring rather than a claim that all tar was removed.",
     ],
     researchNotes: [
-      "Add construction quantities and the latest periodic-review conclusion from the full DEC document set.",
-      "Distinguish this Transit Street gasworks from the unrelated Transit Road landfill discussed elsewhere in local history.",
+      "Add final upland and canal construction quantities and the latest recovery volumes from the approved engineering reports when available.",
+      "Distinguish this Transit Street gasworks from the unrelated Transit Road landfill, and keep the nearby State Road utility site as its own regulatory record.",
+      "Do not attribute all Barge Canal contaminants to the MGP; use the remedial investigation's source-by-source interpretation.",
     ],
   },
   "mineral-springs-road-former-mgp": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Mineral Springs Road manufactured-gas plant was built in the 1920s and operated into the 1960s. Investigations found purifier residuals and hydrocarbon compounds associated with gas production and handling.",
-      "The property proceeded through New York's voluntary cleanup program, where remedial work addressed source areas and enabled controlled reuse.",
+      "National Fuel built the Mineral Springs Road manufactured-gas plant in the early 1920s and operated it into the 1960s. The works converted coal and oil into a local fuel supply before natural gas displaced manufactured gas, leaving purifier residuals, tarry hydrocarbons, buried process structures, and contaminated fill on what became a utility service center.",
+      "The property lies in a flat mixed industrial and residential area near the Buffalo–West Seneca line. Beneath four to eight feet of soil and fill, a thick clay layer separates shallow material from a water-bearing sand-and-gravel zone and deeper bedrock. That layered geology shaped which materials could be excavated and which groundwater pathways required monitoring.",
+      "National Fuel entered New York's Voluntary Cleanup Program and investigated the operating service center in phases. The remedy had to remove or isolate former production wastes without destabilizing buildings and utilities that remained in use.",
+      "Cleanup completion did not freeze the science in 2002. Groundwater, surface water, and the possibility of vapor movement remained under review; a revised 2025 work plan returned to soil-vapor intrusion because an early 1998 survey used older sampling methods and did not answer every present-day building question.",
     ],
     timeline: [
-      { period: "1920s", event: "The manufactured-gas facility was constructed." },
-      { period: "1920s–1960s", event: "Gas production and related industrial operations continued at the property." },
-      { period: "Voluntary cleanup", event: "Investigation identified purifier waste and hydrocarbon-affected media." },
-      { period: "Remedy and closure", event: "State-approved cleanup and controls supported program completion." },
+      { period: "Early 1920s–1960s", event: "Coal- and oil-gasification operations supplied manufactured gas and generated tar, purifier residuals, and other process wastes." },
+      { period: "After gas production", event: "National Fuel adapted the property as a service center, leaving former process areas and subsurface structures within an active utility workplace." },
+      { period: "1990s investigation", event: "Phased work characterized purifier waste, hydrocarbon-affected soil and groundwater, former separator and process areas, and possible vapor pathways." },
+      { period: "1998–2002", event: "The voluntary cleanup combined excavation with isolation of residual material, followed by DEC approval of the construction-completion report and an operation-and-maintenance plan." },
+      { period: "Long-term management", event: "Monitoring and periodic review continued for groundwater, surface water, controlled soil, and remedy components." },
+      { period: "March 2025", event: "A revised soil-vapor-intrusion work plan proposed modern sub-slab and indoor-air evaluation to revisit building pathways first screened in 1998." },
     ],
     documentedImpacts: [
-      "Purifier residuals contained contaminants characteristic of manufactured-gas treatment.",
-      "Hydrocarbon compounds affected soil and subsurface media.",
-      "Past structures and fill influenced the distribution of residual contamination.",
+      "Purifier residuals and petroleum-like hydrocarbons associated with coal and oil gasification affected defined soil, fill, and former process areas.",
+      "Manufactured-gas contaminants can occur as tar-like nonaqueous material and dissolved groundwater compounds. The record therefore follows both buried source material and water moving through or around it.",
+      "Former foundations, pits, utilities, and variable fill affected contaminant distribution and limited where excavation could proceed safely within the operating service center.",
+      "The site's mixed-use setting makes vapor evaluation important, but a 2025 investigation plan documents a question being tested; it is not evidence that occupants were exposed or harmed.",
     ],
     cleanupAndControls: [
-      "Contaminated source materials were removed or isolated under the voluntary cleanup remedy.",
-      "A cover and soil-management requirements prevent routine contact with remaining fill where applicable.",
-      "Institutional controls govern future excavation and land use.",
+      "The remedy integrated removal and isolation: accessible purifier residuals and hydrocarbon source materials were excavated, while material that could not be removed without damaging structures or operations was contained under approved cover and management controls.",
+      "An operation-and-maintenance plan governs inspection, monitoring, soil disturbance, and maintenance of remedy components. Future excavation must account for remaining fill and former gasworks structures.",
+      "Groundwater and surface-water sampling track whether remaining subsurface material is stable or migrating. Continued sampling is part of a completed remedy's stewardship, not proof by itself of an uncontrolled release.",
+      "The 2025 vapor work plan adds a current pathway check using sub-slab, indoor, and outdoor-air information. Any mitigation decision should follow the completed sampling report and agency review.",
     ],
     presentDay: [
-      "DEC classifies Mineral Springs Road as complete, but that does not mean all oversight ended. Recent records include groundwater and surface-water monitoring, periodic review, and a 2025 soil-vapor investigation work plan.",
+      "Mineral Springs Road remains an operating utility service center and a completed voluntary cleanup under long-term management. Its current story is not an abandoned gasworks emergency; it is a controlled industrial property where groundwater, surface-water, soil-management, and newly revisited vapor obligations must continue to match the evidence.",
     ],
     researchNotes: [
-      "Add exact completion dates, removal quantities, and current restrictions from DEC's final engineering report.",
-      "Confirm the historic plant footprint before replacing the point with a parcel polygon.",
+      "Add the exact excavated quantities and retained-source-area boundaries from the final engineering drawings after page-level verification of the large construction report.",
+      "Update the vapor account only after DEC posts the completed 2025 investigation results; do not convert a work plan into a finding.",
+      "Confirm the historic plant and current controlled-property boundaries before replacing the point with a polygon.",
     ],
   },
   "buffalo-gas-light-tonawanda-street": {
@@ -3528,21 +3582,25 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "pierce-arrow-manufacturing-complex": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Pierce-Arrow's former automobile works occupied a large complex around Great Arrow and Elmwood avenues. Automotive manufacturing, fuel storage, metalworking, painting, electrical equipment, and later hazardous-material storage left different environmental conditions across separately owned parcels.",
+      "Pierce-Arrow's former automobile works occupied a large complex around Great Arrow and Elmwood avenues. State records date the first buildings to 1907 and most of the remaining factory to 1916; automobile production continued until about 1938. Automotive manufacturing, fuel storage, metalworking, painting, electrical equipment, and later hazardous-material storage left different environmental conditions across separately owned parcels.",
+      "The modern cleanup story did not begin with one coordinated redevelopment. EPA removed approximately 3,000 drums of hazardous waste from the wider complex in 1999, but that emergency removal did not include subsurface remediation. A 2007 Brownfield Cleanup Program application covered only 6.5 acres of a roughly 16-acre proposed project, and that earlier agreement was later rescinded without completing its planned remedy.",
       "State brownfield records document petroleum impacts, industrial fill, metals, PCBs, solvents, and underground tanks. A 2024 investigation addendum for 157 Great Arrow also added PFAS sampling, but results must be interpreted parcel by parcel.",
     ],
     timeline: [
-      { period: "Automobile era", event: "Pierce-Arrow manufactured luxury vehicles across the Great Arrow complex." },
+      { period: "1907–about 1938", event: "Pierce-Arrow built out the Great Arrow works and manufactured luxury automobiles there." },
       { period: "Later industrial reuse", event: "Subdivided buildings supported varied manufacturing, storage, and commercial uses." },
-      { period: "2007 onward", event: "Separate parcels entered New York's Brownfield Cleanup Program." },
+      { period: "1999", event: "EPA removed approximately 3,000 drums of hazardous waste, while leaving subsurface conditions for later investigation." },
+      { period: "2007 onward", event: "Separate parcels entered New York's Brownfield Cleanup Program; the first 6.5-acre project did not complete its proposed remedy, while later parcel applications followed their own tracks." },
+      { period: "December 2017", event: "New York issued a Certificate of Completion for the separately numbered C915312 parcel." },
       { period: "2024", event: "The 157 Great Arrow investigation plan was expanded to include PFAS sampling." },
     ],
     documentedImpacts: [
       "Petroleum, tanks, and industrial fill affected multiple former manufacturing areas.",
       "Metals, PCBs, and solvents were identified in state brownfield records.",
       "PFAS investigation at one parcel does not establish complex-wide PFAS contamination.",
+      "A federal drum removal reduced an immediate storage hazard but did not answer what remained in soil or groundwater beneath every parcel.",
     ],
     cleanupAndControls: [
       "Each brownfield parcel receives its own investigation, remedy, construction controls, and completion decision.",
@@ -3551,6 +3609,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     presentDay: [
       "The former complex is a mosaic of reused, remediated, and still-investigated parcels. It should never be presented as a single cleanup with one status.",
+      "That uneven record is the human-scale story of the complex today: neighbors and tenants can stand beside a completed brownfield parcel while another address in the same historic factory footprint is still being investigated.",
     ],
     researchNotes: [
       "Create a parcel matrix covering every brownfield site number, address, remedy, and completion certificate.",
@@ -3809,91 +3868,108 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "lancaster-sanitary-landfill": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Lancaster Sanitary Landfill accepted municipal refuse and documented industrial wastes, including sludges, waste ink, chemical drums, and PCB-containing equipment. The disposal footprint crosses the Lancaster-Clarence area.",
-      "New York approved closure and capping, later reclassified the hazardous-waste site, and requires post-closure groundwater monitoring and maintenance.",
+      "The Lancaster Sanitary Landfill occupies former sand-and-gravel pits off Gunnville Road, immediately north of the Thruway and east of Lancaster Speedway. Disposal expanded across a broad tract during operation from 1961 to 1985, leaving an approximately 155-acre final-cover system.",
+      "The facility was called a sanitary landfill, but its record is not limited to household refuse. Investigators documented industrial wastes from at least 13 companies, including sludges, waste ink, crushed chemical drums, and PCB-containing capacitors mixed with municipal and commercial material.",
+      "Groundwater monitoring detected volatile compounds and metals around the landfill. In 1994 DEC reclassified the site to Class 4 because the approved cap and continuing operation-and-maintenance program controlled the significant threat; the agency also emphasized that private wells existed within a mile and that monitoring had to remain protective.",
+      "The closed mound later became an energy landscape. Landfill gas was collected for power generation, and a 2021 plan integrated a 34.3-acre solar array into the cap. Those uses do not remove the waste; they add equipment, drainage, and shared maintenance duties to an existing containment remedy.",
     ],
     timeline: [
-      { period: "Landfill operation", event: "Municipal refuse and varied industrial wastes were placed at the site." },
-      { period: "Closure", event: "The landfill was graded and capped under a state-approved closure plan." },
-      { period: "1994", event: "DEC documented the site-classification decision after evaluating closure conditions." },
-      { period: "2021 onward", event: "An updated post-closure monitoring and maintenance plan governs long-term care." },
+      { period: "1961–late 1970s", event: "Municipal and commercial refuse was buried with documented industrial waste, including drums, sludges, inks, and PCB-containing electrical equipment." },
+      { period: "Late 1970s–1985", event: "The landfill continued accepting ordinary solid waste after the principal documented industrial-waste period, then closed under a state consent order." },
+      { period: "1984–1986", event: "The operator graded the waste, installed a low-permeability soil-and-clay cover, added monitoring wells, and began post-closure groundwater surveillance." },
+      { period: "1994", event: "DEC moved the hazardous-waste record from investigation status to Class 4, recognizing a properly closed site that still required management and monitoring." },
+      { period: "Post-closure era", event: "A large gas-well network collected landfill methane for energy while cap, drainage, gas, and groundwater systems remained subject to inspection." },
+      { period: "2021 onward", event: "An updated plan assigned maintenance duties for the 155-acre cover and a 34.3-acre photovoltaic array constructed within it." },
     ],
     documentedImpacts: [
-      "Industrial sludges, waste ink, chemical drums, and PCB equipment were disposed with municipal waste.",
-      "Landfill leachate created a potential pathway to groundwater.",
-      "Buried waste remains in place beneath the closure system.",
+      "The disposal record includes industrial sludges, waste ink, crushed chemical drums, and PCB-containing capacitors among the municipal and commercial waste.",
+      "Historical monitoring reported volatile compounds including 1,1,1-TCA, TCE, tetrachloroethane, chlorobenzene, and dichlorobenzene, plus cadmium, iron, and manganese in groundwater samples around the property.",
+      "The landfill occupies permeable former gravel workings above shallow groundwater, creating a leachate pathway that made perimeter wells and nearby private-water supplies important parts of the 1994 classification review.",
+      "The historical detections establish a reason for long-term monitoring; they do not prove that every nearby private well was contaminated or that old maximum values describe present water quality.",
+      "Waste remains buried beneath the full cover system, and decomposition continues to generate gas and settlement that can affect drainage and cap integrity.",
     ],
     cleanupAndControls: [
-      "A final cover limits contact and infiltration.",
-      "Post-closure groundwater wells track potential contaminant migration.",
-      "Cap, drainage, gas, access, and institutional controls require inspection and maintenance.",
+      "The final cover reduces rainwater infiltration and direct contact. Surface grades, vegetation, stormwater channels, and settlement must be maintained so water does not pond or cut through the cap.",
+      "Perimeter groundwater wells track potential migration, while gas wells and vents manage methane produced by decomposing refuse.",
+      "Solar supports and buried electrical work must preserve the cap and drainage system. The 2021 plan divides inspection, repair, mowing, erosion, access, stormwater, and reporting responsibilities between the landfill owner and solar operator.",
+      "Class 4 status means the closure remedy is in place and managed. It does not authorize uncontrolled excavation, groundwater use, or construction that could compromise the cover.",
     ],
     presentDay: [
-      "The landfill is closed and maintained, not excavated away. Its current significance lies in the performance of the cap and post-closure groundwater program.",
+      "Lancaster is a closed, energy-producing landfill under long-term Class 4 management. Landfill-gas recovery and a solar array demonstrate useful reuse of capped land, while the underlying remedy still depends on groundwater monitoring, gas control, drainage, vegetation, erosion repair, and protection of all 155 acres of cover.",
     ],
     researchNotes: [
-      "Add current monitoring results and any corrective maintenance from annual reports.",
-      "Confirm the exact municipal boundary and disposal footprint for future polygon mapping.",
+      "Add current groundwater trends and corrective maintenance from the newest annual post-closure report; do not present 1980s or 1990s maximums as current conditions.",
+      "Use the approved final-cover drawing—not tax parcels or the solar lease alone—for future landfill geometry.",
+      "Keep the Lancaster–Clarence regional setting distinct from the legal landfill boundary unless source documents show that the final cover crosses a municipal line.",
     ],
   },
   "niagara-county-refuse": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Niagara County Refuse accepted municipal solid waste and industrial chemical wastes from 1969 to 1976. Approximately 3.1 million tons remain contained at the site.",
-      "The Superfund remedy placed waste beneath a cap and added leachate collection, gas venting, and environmental monitoring. Cleanup construction was completed in 2000, followed by long-term operation and five-year reviews.",
+      "The Niagara County Refuse Disposal District operated a roughly 50-acre landfill in Wheatfield from 1969 until official closure in 1976. Municipal refuse arrived alongside industrial chemical wastes, eventually leaving an estimated 3.1 million tons of mixed material in place.",
+      "The size and mixed character of the waste made wholesale excavation impractical. EPA's 1993 decision therefore chose containment: reshape the landfill, reduce rain infiltration with an engineered cap, collect leachate, vent decomposition gas, restrict access and land use, and watch groundwater and surface water for migration.",
+      "Construction ended in June 2000, but that was the beginning of the long stewardship period rather than the end of the environmental story. EPA removed the site from the National Priorities List in 2004 after reviewing post-construction monitoring, while retaining federal review because hazardous substances remain above levels that allow unrestricted use.",
+      "The human meaning of the remedy is preventative. Instead of people encountering open waste or uncontrolled leachate, multiple passive systems must keep working year after year. Quarterly reports and five-year reviews test whether that protection still holds.",
     ],
     timeline: [
       { period: "1969–1976", event: "The landfill accepted municipal and industrial wastes." },
-      { period: "Superfund remedy", event: "EPA selected containment, leachate management, gas controls, and monitoring." },
-      { period: "2000", event: "Construction of the cleanup remedy was completed." },
-      { period: "Long-term phase", event: "Groundwater, surface water, cap, leachate, and gas systems remain under review." },
+      { period: "1979–1983", event: "Federal and state assessment led to the site's placement on EPA's National Priorities List." },
+      { period: "1987–1993", event: "A remedial investigation characterized the waste and migration pathways, and EPA selected containment rather than attempting to excavate millions of tons." },
+      { period: "1997–June 2000", event: "Crews regraded the landfill, built the cap, leachate collection and gas venting systems, and established groundwater and surface-water monitoring." },
+      { period: "July 2004", event: "EPA deleted the property from the National Priorities List after construction and monitoring, while continuing operation, maintenance, and statutory reviews." },
+      { period: "June 2024", event: "EPA's fifth five-year review concluded that the remedy remained protective; quarterly monitoring showed the cap and leachate system operating as designed." },
+      { period: "Next review", event: "EPA schedules the next five-year protectiveness review for June 2029." },
     ],
     documentedImpacts: [
-      "Roughly 3.1 million tons of mixed waste remain buried.",
-      "Leachate and landfill gas required engineered collection and venting.",
-      "Groundwater and surface-water pathways require continuing surveillance.",
+      "Approximately 3.1 million tons of municipal and industrial waste remain buried; the contaminant source was contained rather than destroyed or removed.",
+      "Water passing through mixed waste can produce leachate, and decomposition generates landfill gas. Both required engineered systems because either could move away from the buried mass if unmanaged.",
+      "Groundwater and surface-water monitoring provide the evidence for whether contaminants are migrating. EPA's current conclusion is that the remedy remains protective, not that the waste has become harmless.",
+      "Deletion from the National Priorities List is an administrative milestone following successful construction and monitoring. It does not mean unrestricted use, and EPA continues five-year review because hazardous substances remain on site.",
     ],
     cleanupAndControls: [
-      "An engineered cap isolates waste and reduces infiltration.",
-      "Leachate collection and gas vents manage liquids and decomposition gases.",
-      "Groundwater and surface-water monitoring, maintenance, institutional controls, and five-year reviews verify performance.",
+      "The engineered cap isolates waste, limits direct contact, and reduces the amount of precipitation entering the landfill. Regrading and drainage carry clean runoff away from the covered waste.",
+      "A leachate collection network captures contaminated liquid for off-site treatment, while gas vents relieve and control decomposition gases beneath the cap.",
+      "Deed and access restrictions prevent uses that could pierce the cover or expose waste. Groundwater and surface-water sampling, quarterly operating reports, maintenance, and five-year federal reviews verify performance.",
+      "Because the remedy leaves the source in place, cracks, settlement, erosion, blocked drainage, failed leachate equipment, or damaged gas vents would be meaningful failures requiring correction.",
     ],
     presentDay: [
-      "The site is a completed-construction Superfund containment remedy. Protectiveness depends on continued cap, leachate, gas, and monitoring performance because the waste remains on site.",
+      "Niagara County Refuse is deleted from the National Priorities List but remains a federally reviewed containment site. EPA's June 2024 assessment found the remedy protective and the cap and leachate system operating as designed. That conclusion remains conditional on uninterrupted maintenance, monitoring, access restrictions, and the next review due in 2029.",
     ],
     researchNotes: [
-      "Update the profile with the newest five-year review after the cited 2019 report.",
-      "Report any emerging-contaminant sampling separately from the historical remedy unless formally incorporated.",
+      "Use the June 2024 fifth five-year review for current protectiveness and replace it when EPA issues the 2029 review.",
+      "Report any PFAS or other emerging-contaminant sampling separately from the historical remedy unless EPA formally incorporates it into the site decision or monitoring program.",
+      "Do not confuse this Wheatfield federal site with Niagara Sanitation/Nash Road or other nearby former landfills; each has its own waste boundary and remedy.",
     ],
   },
   "alltift-landfill-ramco-steel": {
-    lastReviewed: "August 11, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
       "Alltift Landfill and Ramco Steel were historically distinct but adjoining properties near Tifft Street and the Buffalo River industrial corridor. The former Alltift disposal area occupied about 25 acres; the Ramco Steel parcel added roughly 8.5 acres of later industrial land to the combined cleanup record.",
-      "Rail corridors, paper streets, auto-salvage and metal-working properties shaped the site's edges. Investigation found heterogeneous waste, fill, and contaminated soil rather than one uniform deposit, so the remedy consolidated material within a defined controlled footprint.",
-      "The state cleanup placed affected material beneath an engineered cover and completed major remedial construction in 2006. Institutional controls, soil-management rules, inspection, and maintenance remain necessary because residual waste was contained rather than entirely removed.",
+      "The waste history changed over time. From the 1950s into the early 1970s, records describe bulk disposal of dye and oil sludges, phenolic compounds, chromium sludge, copper sulfate, nitrobenzene, monochlorobenzene, and naphthalene. After a pause, later disposal included automobile-shredder residue, foundry core sand, fly ash, and sand waste at an estimated 40,000 to 60,000 cubic yards per year.",
+      "Investigation found heterogeneous waste, contaminated soil and sediment, and groundwater moving toward adjoining wetlands. The remedy joined the two properties physically: waste from Ramco and material around Alltift's edges were consolidated into a defined landfill footprint on Alltift, then isolated beneath an engineered cap.",
+      "Construction from November 2003 to November 2005 added groundwater collection and relief trenches at the downgradient toe, routing collected water to the Buffalo Sewer Authority under a discharge permit. Created wetlands replaced disturbed habitat along the west and south sides. In 2013 DEC moved Alltift to Class 4 and removed Ramco from the registry, but the combined cap and water controls remain one managed system.",
     ],
     timeline: [
-      { period: "Disposal era", event: "The approximately 25-acre Alltift property received waste and fill within Buffalo's south-side industrial landscape." },
+      { period: "1950s–early 1970s", event: "Alltift received chemical and petroleum-process wastes including dyes, oil sludges, phenolic material, metal sludges, and chlorinated or aromatic compounds." },
+      { period: "Late 1970s onward", event: "Disposal resumed with automobile-shredder waste, core sand, fly ash, and sand waste, reportedly at tens of thousands of cubic yards per year." },
       { period: "Steel-use era", event: "The adjoining Ramco property supported steel-related activity on an approximately 8.5-acre parcel." },
-      { period: "Investigation and design", event: "DEC defined the material requiring consolidation and cover." },
-      { period: "2006", event: "The cited construction-completion report documented the implemented remedy." },
-      { period: "Long-term phase", event: "Periodic reviews evaluate cover condition, controls, and maintenance." },
+      { period: "2003–2005", event: "Waste and affected soil and sediment were consolidated and capped; groundwater controls and replacement wetlands were built." },
+      { period: "2013–present", event: "DEC reclassified Alltift to Class 4 and delisted Ramco while periodic reviews continued for the shared containment system." },
     ],
     documentedImpacts: [
-      "Buried waste and contaminated soil were documented within the remedy footprint.",
-      "Historic fill and industrial use created heterogeneous subsurface conditions.",
-      "Residual material remains beneath the engineered cover.",
+      "Chemical sludges, aromatic and chlorinated compounds, metal-bearing waste, ash, foundry sand, and automobile-shredder material formed a mixed waste mass rather than a single uniform fill.",
+      "Groundwater at the downgradient toe could move toward adjacent wetlands, requiring collection and controlled sewer discharge.",
+      "Residual waste and affected soil and sediment remain beneath the engineered cover; the created wetlands are habitat features, not disposal cells.",
     ],
     cleanupAndControls: [
-      "Waste and affected soil were consolidated into the controlled footprint.",
+      "Waste from Alltift's edges and the adjoining Ramco property was consolidated into the controlled Alltift footprint.",
       "An engineered cover prevents direct contact and limits infiltration.",
-      "Institutional controls, inspections, soil-management rules, and long-term maintenance preserve the remedy.",
+      "Toe trenches collect groundwater for discharge to the Buffalo sewer system, while monitoring, wetland care, institutional controls, soil-management rules, and cap maintenance preserve the remedy.",
     ],
     presentDay: [
-      "Alltift/Ramco is a completed but controlled cleanup. Its two-property history remains visible beneath a single remedy, and any public or industrial reuse must remain consistent with the cover and institutional controls.",
+      "Alltift/Ramco is a completed but controlled cleanup. The regulatory records now differ—Class 4 for Alltift and delisted for Ramco—but the physical remedy still links them through one capped waste footprint, groundwater collection system, and restored wetland edge.",
     ],
     researchNotes: [
       "Add the latest periodic-review findings and current property use.",
@@ -3901,16 +3977,18 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "outer-harbor-greenbelt": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Outer Harbor Greenbelt occupies waterfront land formed in part from dredged sediment, construction debris, and a former municipal dump that received ash and incinerator residue. Its modern recreational landscape overlays a substantial engineered and industrial history.",
-      "Brownfield remediation removed selected contaminated soil, installed a protective cover, and stabilized the shoreline. New York issued a Certificate of Completion in 2012.",
+      "The approximately 16-acre Outer Harbor Greenbelt is part of a much larger, roughly 110-acre waterfront property. The shoreline is manufactured land: filling from the 1870s through the 1960s reclaimed harbor water using sediment dredged from slips, canals, and navigation channels, together with construction debris. A municipal dump in the northeastern portion also received ash, noncombustible rubbish, and residue from Buffalo's waste incinerators.",
+      "The land then served another industrial purpose. From about 1969 to 1988, operators stored dry bulk materials including rock salt, foundry sand, iron-ore pellets, zircon, gypsum, clay, potash, sand, and scrap metal. DEC attributes the Greenbelt contamination chiefly to the dredged sediment and bulk-material storage rather than treating every kind of fill as equally contaminated.",
+      "Brownfield construction began in October 2006. Crews removed selected contaminated soil, installed a protective cover, and stabilized the shoreline; the work was substantially complete by August 2008. New York issued a Certificate of Completion in April 2012, allowing recreational reuse while keeping subsurface controls in force.",
     ],
     timeline: [
-      { period: "Fill and disposal era", event: "Dredged sediment, debris, municipal waste, ash, and incinerator residue helped form the land." },
+      { period: "1870s–1960s", event: "Dredged sediment, construction debris, municipal waste, ash, and incinerator residue helped reclaim land from the harbor." },
+      { period: "About 1969–1988", event: "The reclaimed waterfront stored a changing inventory of dry bulk industrial materials and scrap." },
       { period: "Brownfield investigation", event: "Sampling identified conditions requiring controlled recreational-use remediation." },
       { period: "Remedial construction", event: "Crews removed targeted soil, installed cover, and stabilized shoreline areas." },
-      { period: "2012", event: "New York issued the site's Certificate of Completion." },
+      { period: "April 2012", event: "New York issued the site's Certificate of Completion for recreational reuse." },
     ],
     documentedImpacts: [
       "Historic fill included dredged material, construction debris, ash, and incinerator residue.",
@@ -3924,6 +4002,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     presentDay: [
       "The Greenbelt is a successful public reuse of remediated filled land. Recreational access is compatible with the remedy, while subsurface disturbance still requires adherence to site-management controls.",
+      "The lawns, paths, and shoreline therefore tell two stories at once: they restore public access to Lake Erie, but they also function as part of an engineered remedy over land assembled from a century of harbor work and disposal.",
     ],
     researchNotes: [
       "Add the environmental easement, cover inspection schedule, and precise completed-cleanup boundary.",
@@ -3942,7 +4021,8 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       { period: "1976", event: "The Corps shifted navigation-channel sediment placement to another facility, ending Times Beach's short active-disposal period." },
       { period: "Post-disposal", event: "Vegetation and wildlife colonized the closed containment surface through natural succession." },
       { period: "Preserve era", event: "Public agencies and partners managed the property for habitat while retaining its engineered containment function." },
-      { period: "Ongoing restoration", event: "Invasive-species control and habitat work continue around the containment area." },
+      { period: "2012–2017", event: "A five-year restoration demonstration cut and treated invasive plants, removed hundreds of tons of biomass, replanted native species, and monitored ecological response." },
+      { period: "2020–2022", event: "Army Corps inspections documented wind- and wave-damaged containment features, and federal infrastructure funding included major dike-wall repairs." },
     ],
     documentedImpacts: [
       "The site contains dredged sediment affected by the Buffalo River's industrial contaminant legacy.",
@@ -3952,7 +4032,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     cleanupAndControls: [
       "The confined disposal structure physically isolates dredged sediment.",
       "Habitat restoration and vegetation management improve surface ecological function without disturbing containment.",
-      "Access, erosion, invasive species, and structural condition require continuing stewardship.",
+      "Access, erosion, invasive species, and structural condition require continuing stewardship. Repairs to shoreline armor or dike components protect against release of the contained dredged material; they are not merely park landscaping.",
     ],
     presentDay: [
       "Times Beach is both an Army Corps-era disposal structure and a nature preserve. Those identities are compatible only while containment integrity, access, and habitat management are maintained.",
@@ -3964,21 +4044,24 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "pettit-flume-durez-outfall": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Pettit Flume carried stormwater and contaminated drainage from the former Durez chemical plant through sewers to a Niagara River cove. Plant-related contaminants accumulated along roughly 22,000 feet of sewer and in outfall sediment.",
-      "Cleanup combined source containment at Durez with sewer cleaning, removal of about 25,000 cubic yards of contaminated sewer and cove sediment, wetland restoration, and later maintenance dredging.",
+      "Pettit Flume was not simply a creek beside the Durez chemical plant. It became a source-to-river conveyance: plant drainage entered a long storm-sewer system, moved beneath North Tonawanda, and discharged into a cove on the Niagara River. Contaminants accumulated along roughly 22,000 feet of sewer and in the sediment where the system met the river.",
+      "Local newspaper photographs preserve the human-scale warning signs from the operating era, including basement explosions and a 1953 fish kill attributed in contemporary coverage to the flume. Those reports document what residents and responders encountered, but later sampling and regulatory records—not a headline alone—establish which chemicals were present and how they moved.",
+      "The remedy therefore had to follow the entire route. It combined source containment at Durez with sewer cleaning, removal of about 25,000 cubic yards of contaminated sewer and cove sediment, wetland restoration, and later maintenance dredging. Follow-up mussel and sediment monitoring found continuing dioxin and furan availability in the cove, demonstrating why a large excavation was not the same as the end of stewardship.",
     ],
     timeline: [
-      { period: "Industrial discharge era", event: "Plant drainage transported contaminants through Pettit Flume to the Niagara River." },
+      { period: "1940s–1950s", event: "Plant drainage moved through Pettit Flume toward the Niagara River; preserved local coverage records basement explosions and a 1953 fish kill during the Durez operating era." },
       { period: "Source investigation", event: "Agencies linked sewer and cove contamination to former Durez operations." },
-      { period: "Major cleanup", event: "Approximately 22,000 feet of sewer were cleaned and about 25,000 cubic yards of sediment removed." },
-      { period: "Long-term phase", event: "Wetland restoration, maintenance dredging, and source-site controls continued." },
+      { period: "Through 1995", event: "Source containment, cleaning of approximately 22,000 feet of sewer, and removal of about 25,000 cubic yards of affected sediment formed the principal remedy." },
+      { period: "2000", event: "Post-remedy findings prompted additional sediment removal from the cove." },
+      { period: "2000s–present", event: "Mussel and sediment monitoring, source investigation, maintenance work, wetland management, and controls at the former plant continued." },
     ],
     documentedImpacts: [
-      "Contaminants accumulated in storm-sewer sediment over a long conveyance route.",
-      "The Niagara River cove received affected sediment at the outfall.",
+      "Durez-related phenolic chemicals and dioxin- and furan-related contamination accumulated in storm-sewer and cove sediment along a long conveyance route.",
+      "The Niagara River cove received affected sediment at the outfall, connecting a land-based chemical source to river habitat.",
       "Without control of the Durez source, cleaned downstream areas could be recontaminated.",
+      "Post-cleanup biomonitoring showed that contaminants remained environmentally available in the cove; this finding supports continued investigation but does not mean every part of the Niagara River had the same concentration.",
     ],
     cleanupAndControls: [
       "Source containment at the former plant reduces continuing discharge.",
@@ -3994,26 +4077,29 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "gill-creek-chemical-corridor": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Gill Creek flows past the DuPont and Olin chemical plants to the Niagara River. Historic plant operations affected creek sediment and groundwater, making the corridor both an ecological receptor and a migration pathway.",
-      "A joint cleanup removed approximately 8,020 cubic yards of contaminated sediment by 1992. Groundwater collection, treatment, and monitoring continued to control movement toward the creek and river.",
+      "Gill Creek is a small, channelized tributary running through one of Niagara Falls' densest chemical-manufacturing corridors before reaching the Niagara River. DuPont operated on both sides of the creek, while Olin's plants and the former Solvent Chemical property occupied adjoining ground. That geography made the creek both habitat and drainage infrastructure—and made it impossible to explain all contamination as one uniform plume from one company.",
+      "DuPont's plant history included chlorinated solvents and PCBs. Olin made chlorine and caustic products and, between 1950 and a destructive 1956 production explosion, organic chemicals including chlorobenzenes, trichlorophenol, and BHC compounds. Investigations later found mercury and chlorinated chemicals in soil and groundwater, with shallow groundwater able to discharge toward Gill Creek.",
+      "Creek cleanup occurred in stages. An early 1981 action did not address every affected reach; DuPont and Olin later completed a joint removal in December 1992. In all, about 8,020 cubic yards of contaminated sediment were taken off site. Five years of post-remediation sediment monitoring reported no PCB recontamination in the remediated reach, while groundwater recovery and treatment remained the continuing defense against renewed loading.",
     ],
     timeline: [
-      { period: "Industrial discharge era", event: "Chemical-plant operations affected groundwater and creek sediment." },
-      { period: "Joint investigation", event: "DuPont, Olin, and agencies evaluated sources and downstream deposition." },
-      { period: "By 1992", event: "Approximately 8,020 cubic yards of contaminated sediment had been removed." },
-      { period: "Long-term phase", event: "Groundwater collection, treatment, and monitoring continued along the corridor." },
+      { period: "1890s onward", event: "Large chemical plants developed along Buffalo Avenue and Gill Creek, altering the land and handling mercury, solvents, chlorinated organics, and other industrial materials." },
+      { period: "1981", event: "An initial creek cleanup removed contaminated sediment but left an affected reach requiring later work." },
+      { period: "December 1992", event: "The joint DuPont-Olin project finished removal of approximately 8,020 cubic yards of contaminated sediment and restored the excavated creek reach." },
+      { period: "1992–1998", event: "Five years of post-remediation sediment monitoring did not indicate PCB recontamination in the remediated area." },
+      { period: "Long-term phase", event: "Groundwater recovery wells, treatment, pavement and caps, land-use controls, and monitoring continued at the adjoining industrial properties." },
     ],
     documentedImpacts: [
-      "Industrial contaminants accumulated in Gill Creek sediment.",
-      "Contaminated groundwater created a continuing pathway toward the creek and Niagara River.",
-      "Multiple adjacent operators make source allocation more complex than a single-facility outfall.",
+      "PCBs and other industrial contaminants accumulated in Gill Creek sediment; a federal Great Lakes summary reported a highest PCB concentration of 11,000 parts per million in the material characterized for the historic removal.",
+      "Olin investigations identified mercury, benzene, chlorinated benzenes, BHC compounds, chlorinated phenols, and other chemicals in plant soil or groundwater. DuPont and Solvent Chemical plumes also influenced the larger study area.",
+      "Contaminated shallow and bedrock groundwater created continuing pathways toward the creek, sewers, production wells, and Niagara River.",
+      "The creek cleanup volume and highest concentration describe the excavated project area, not every reach of Gill Creek or the full Niagara River.",
     ],
     cleanupAndControls: [
-      "Affected creek sediment was excavated and disposed of.",
-      "Groundwater collection systems intercept contaminated flow for treatment.",
-      "Creek, groundwater, and treatment performance require continuing monitoring.",
+      "Affected creek sediment was excavated and sent to an off-site commercial disposal facility.",
+      "Groundwater recovery systems at the adjoining plants intercept contaminated overburden and bedrock water for treatment. Olin's deep production-well pumping also helps capture portions of the larger industrial plume.",
+      "Paving, caps, deed restrictions, creek-sediment monitoring, and groundwater performance monitoring reduce infiltration and exposure while testing whether hydraulic containment continues to work.",
     ],
     presentDay: [
       "The major sediment removal is historical, while groundwater control remains the critical continuing barrier. Current creek condition should be described from recent monitoring rather than the pre-1992 record alone.",
@@ -4024,21 +4110,24 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "smokes-creek-bethlehem-corridor": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Smokes Creek crosses the former Bethlehem Steel property before entering Lake Erie. Decades of steelmaking discharges contaminated the lower creek and degraded its channel and habitat.",
-      "Approximately 40,000 cubic yards of affected sediment were removed in 2009. Current planning extends beyond contaminant removal to bank stability, fish and wildlife connectivity, flood resilience, and restoration from the industrial corridor to the creek mouth.",
+      "Smokes Creek runs about 15 miles from Orchard Park to Lake Erie. Its main and south branches meet in Lackawanna before the lower channel crosses the former Bethlehem Steel property. Decades of steelmaking discharges contaminated sediment, while channel alteration and hardened banks degraded habitat and changed how water moved through the industrial corridor.",
+      "The 2009 project dredged the lower 2,600 feet and removed approximately 40,000 cubic yards of affected sediment. The work was environmental cleanup and flood infrastructure at the same time: DEC's remedy record says the enlarged hydraulic capacity reduced flood potential and the need for flood insurance in a nearby upstream residential neighborhood.",
+      "In 2015 DEC dredged an additional reach on the Tecumseh property to maintain that flood capacity. Current watershed planning is broader still, examining habitat and flood-mitigation opportunities along the creek and Lake Erie shore from Woodlawn to Buffalo's Outer Harbor rather than implying that sediment excavation alone restored the whole system.",
     ],
     timeline: [
       { period: "Steelmaking era", event: "Plant discharges and industrial alteration affected the lower creek." },
       { period: "Investigation and design", event: "Agencies characterized contaminated sediment and selected removal." },
-      { period: "2009", event: "Approximately 40,000 cubic yards of affected sediment were excavated." },
-      { period: "Current restoration", event: "Partners plan bank, habitat, connectivity, and resilience improvements." },
+      { period: "2009", event: "Approximately 40,000 cubic yards of affected sediment were removed from the lower 2,600 feet, improving both contaminant conditions and channel capacity." },
+      { period: "2015", event: "DEC dredged the remaining Tecumseh-property reach to maintain flood capacity." },
+      { period: "2024 onward", event: "State and local partners began a corridor-scale habitat opportunity assessment incorporating public input, connectivity, bank condition, and flood resilience." },
     ],
     documentedImpacts: [
       "Industrial contaminants accumulated in lower-creek sediment.",
       "Channelization and altered banks reduced habitat quality and connectivity.",
       "The corridor is influenced by both legacy contamination and present hydrologic and erosion pressures.",
+      "Conditions in the industrial lower reach do not automatically describe the upstream branches, Woodlawn Beach, or every point along the Lake Erie shoreline.",
     ],
     cleanupAndControls: [
       "Contaminated sediment was removed from the lower creek.",
@@ -4047,6 +4136,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     presentDay: [
       "Smokes Creek is a remediated industrial waterway entering a broader restoration phase. The 2009 sediment removal was substantial but did not by itself restore all habitat or eliminate watershed pressures.",
+      "For nearby residents, the record is not only about contaminated mud: maintaining channel capacity and rebuilding ecological function are part of the same long-term public obligation.",
     ],
     researchNotes: [
       "Track final restoration designs, permits, construction, and post-project biological monitoring.",
@@ -4115,33 +4205,40 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "1827-fillmore-former-quarry": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "A former stone quarry at 1827 Fillmore Avenue was backfilled during the 1940s and 1950s with material of unknown origin and later developed as the Kensington Heights apartment complex.",
-      "Brownfield investigation found PAHs and metals in soil and fill. Excavation, cover, and institutional controls supported state cleanup completion in 2019.",
+      "Stone extraction began at 1827 Fillmore Avenue by at least 1917, cutting a quarry across what became a 17-acre urban property and into adjoining land. During the 1940s and 1950s, the excavation was filled with sand, gravel, cinders, ash, asphalt, broken concrete, brick, metal, wood, glass, and ceramics from sources that were not fully documented.",
+      "In 1958 the filled quarry became Kensington Heights: six seven-story brick apartment towers with open space, roads, and parking. The complex stood between the Kensington Expressway, two public schools, and Erie County Medical Center, making the environmental history inseparable from decades of residential use.",
+      "The towers had been vacant since the 1980s. Asbestos abatement occurred from 2009 through 2014, and all six buildings were gone by 2018. Brownfield investigation then showed that the principal contamination was not a recent spill but the heterogeneous material used to create buildable land out of the quarry.",
+      "Sampling found PAHs across much of the surface and deeper hot spots of lead and other metals. The remedy was designed for commercial use rather than unrestricted residential use: remove the strongest source areas, chemically stabilize hazardous lead where excavation was not selected, and place a managed cover over remaining fill.",
     ],
     timeline: [
-      { period: "Quarry era", event: "Stone extraction created a deep urban excavation." },
-      { period: "1940s–1950s", event: "The quarry was backfilled with material whose origin was not fully documented." },
-      { period: "Residential era", event: "Kensington Heights apartments were constructed over the former quarry." },
-      { period: "2019", event: "New York completed the brownfield cleanup after excavation and cover work." },
+      { period: "By 1917–1940s", event: "A stone quarry occupied the property and extended into adjacent land, leaving a deep excavation in the East Side landscape." },
+      { period: "1940s–1950s", event: "Mixed ash, cinders, rubble, soil, and debris from incompletely documented sources filled the quarry." },
+      { period: "1958–1980s", event: "Six Kensington Heights apartment towers housed residents over the filled quarry before the complex became vacant." },
+      { period: "2009–2018", event: "Asbestos was removed and the six deteriorated towers were demolished, exposing the fill landscape for systematic investigation and redevelopment planning." },
+      { period: "March–December 2019", event: "DEC selected the commercial-use remedy, crews removed and stabilized source material and installed a cover, and the state issued a Certificate of Completion." },
+      { period: "Long-term phase", event: "An environmental easement, groundwater restriction, excavation plan, cover inspection, monitoring, and periodic certification govern reuse." },
     ],
     documentedImpacts: [
-      "PAHs and metals were detected in soil and historic fill.",
-      "Unknown fill composition created uncertainty requiring broad characterization.",
-      "Residential use increased the need for a protective cover and enforceable soil-management controls.",
+      "PAHs exceeded commercial soil criteria in nearly every surface sample in the 2019 decision, reflecting ash and combustion-related material spread through the quarry fill rather than one isolated drum or tank.",
+      "Subsurface fill contained arsenic, barium, cadmium, copper, mercury, and lead above selected commercial criteria. Lead reached 21,800 parts per million, and two areas met the leaching definition of characteristic hazardous waste.",
+      "DEC did not find a distribution indicating consequential off-site migration of site contaminants in soil or groundwater, and its evaluation found soil-vapor intrusion was not a concern for the investigated condition.",
+      "Public access was restricted during the vacant phase, but anyone entering and disturbing soil could contact contamination. The site's history between schools and a medical campus made dependable cover and excavation controls especially important.",
     ],
     cleanupAndControls: [
-      "Contaminated soil and fill were excavated where required by the remedy.",
-      "A site cover prevents routine residential contact with remaining fill.",
-      "Institutional controls and a site-management plan govern future disturbance and maintenance.",
+      "The selected plan called for removal of approximately 4,200 tons of soil with very high lead or total SVOCs, using chemical stabilization before disposal where necessary.",
+      "Two lead areas were stabilized in place so the metal would be less soluble, then placed beneath the site cover. Pavement, building slabs, or at least one foot of approved soil over a demarcation layer provide the contact barrier.",
+      "The environmental easement restricts the property to commercial use, bars groundwater use without treatment and approval, and requires compliance with a site-management plan.",
+      "Future construction must follow the excavation plan and restore the cover wherever pavement, slabs, or soil barriers are removed. Groundwater monitoring and periodic certification test whether the remedy remains effective.",
     ],
     presentDay: [
-      "The property is a completed brownfield cleanup with residual fill managed beneath cover. Completion supports reuse but does not make uncontrolled excavation appropriate.",
+      "The former quarry and apartment complex is a completed commercial-use brownfield, not an unrestricted residential cleanup. Its 2019 certificate supports controlled reuse while mixed quarry fill, stabilized lead, the cover system, groundwater restrictions, and soil-management duties remain part of the land.",
     ],
     researchNotes: [
-      "Add the Certificate of Completion, environmental easement, and exact residual-contamination areas.",
-      "Use verified redevelopment information when describing present occupancy or future housing plans.",
+      "Use the final engineering report and easement map to locate stabilized lead and residual-fill areas before publishing geometry.",
+      "Describe any present parking, medical-campus, or other redevelopment only from current property records; the remedy authorizes commercial use but does not prove a particular project was built.",
+      "Preserve the Kensington Heights residential history without claiming that documented soil concentrations establish an individual resident's exposure or illness.",
     ],
   },
   "eighteenmile-creek-superfund": {
@@ -4156,8 +4253,9 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       { period: "Industrial era", event: "Flintkote and other Lockport industries operated near the creek headwaters, leaving multiple source areas that later required separate investigation." },
       { period: "2012", event: "EPA added the creek corridor to the National Priorities List, turning a local source-area problem into a staged federal sediment and watershed cleanup." },
       { period: "2013–2015", event: "EPA selected acquisition and permanent relocation of affected Water Street residents, demolition of structures including the former Flintkote building, excavation, and capping." },
-      { period: "Later operable units", event: "Investigation moved downstream to creek and floodplain sediment, where cleanup scale and access differ sharply from the source properties." },
-      { period: "Present", event: "Remedial work and monitoring continue by operable unit; fish-consumption advice remains a separate public-health control." },
+      { period: "2017–2019", event: "EPA selected separate remedies for the Lockport creek corridor and for lead-contaminated residential soil near the former Flintkote property." },
+      { period: "2024–2026", event: "Construction began on source-area and residential work. As of March 2026, the creek-corridor sediment remedy remained in design while cleanup of the first 24-property residential group was underway." },
+      { period: "2024–2025", event: "In the downstream Lake Ontario Area of Concern, agencies removed two ecological impairment designations after monitoring, while fish-consumption and wildlife-reproduction impairments remained." },
     ],
     documentedImpacts: [
       "PCBs and lead contaminate source-area soil and creek sediment.",
@@ -4168,10 +4266,12 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     cleanupAndControls: [
       "Source buildings and contaminated soil were removed or capped in priority areas.",
       "Residential relocation addressed properties where safe continued occupancy was not compatible with the selected action.",
-      "Sediment investigation, access controls, monitoring, and staged remedial decisions continue downstream.",
+      "The first group of 24 lead-affected residential properties entered cleanup, with another group of 42 properties moving toward contractor procurement and additional sampling continuing to define the extent.",
+      "The Lockport creek-corridor remedy calls for bank-to-bank sediment removal, off-site disposal, floodplain-soil work, and removal of deteriorated dams; it remained in remedial design as of March 2026.",
+      "The downstream Area of Concern uses fish, wildlife, toxicity, and sediment monitoring to judge ecological recovery. That program overlaps geographically with the creek but is not interchangeable with Superfund construction decisions.",
     ],
     presentDay: [
-      "Eighteen Mile Creek remains an active, large-scale Superfund cleanup. Completed source work is meaningful, but it should not be described as completion of the entire 15-mile site or cancellation of fish advisories.",
+      "Eighteen Mile Creek remains an active, large-scale Superfund cleanup. Work is now visible at residential and source properties, but the major Lockport sediment remedy is not yet complete. Downstream ecological indicators have improved enough to remove some Area of Concern impairments; the statewide 'eat none' fish advice and the remaining ecological impairments show why that progress cannot be translated into an all-clear for the creek.",
     ],
     researchNotes: [
       "Track each operable unit's decision, construction status, sediment volume, and post-cleanup monitoring.",
@@ -4396,29 +4496,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "frontier-chemical-royal-avenue": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Frontier Chemical operated a hazardous-waste treatment and storage facility at 4626 Royal Avenue on property with earlier chlor-alkali manufacturing and sludge-disposal history. Multiple operating eras contributed to a complex subsurface record.",
-      "VOCs and other contaminants remain concentrated in deep soil and groundwater. Major corrective construction is complete, while pump-and-treat, monitoring, industrial-use restrictions, and site-management controls continue.",
+      "The Royal Avenue property's chemical history began around 1906 with International Minerals and Chemical's mercury-cell chlor-alkali plant. Caustic-soda production used sludge ponds for liquid waste, leaving an older source history beneath the facility Frontier Chemical later occupied.",
+      "Frontier moved its hazardous-waste operation from Pendleton to this roughly nine-acre Niagara Falls property and treated or stored a wide range of listed and characteristic wastes from 1974 until closing in 1992. Investigation found VOCs and lesser amounts of SVOCs in soil and in several groundwater zones, including dense nonaqueous-phase liquid in overburden and bedrock.",
+      "The groundwater story changes with depth. Falls Street and New Road utility tunnels intercept contaminated overburden and upper-bedrock water near the property, limiting an off-site shallow plume. Deeper bedrock groundwater follows a monitored-natural-attenuation plan, while leachate from the on-site containment area is collected and treated.",
+      "Source work in 2013 used on-site thermal treatment for contaminated soil, followed by cover, demolition, easement, and a 2014 Certificate of Completion. EPA now describes corrective action as complete except for long-term leachate treatment and annual groundwater monitoring.",
     ],
     timeline: [
-      { period: "Earlier industrial era", event: "Chlor-alkali manufacturing and sludge disposal occurred at the property." },
-      { period: "Frontier Chemical era", event: "The facility treated and stored hazardous waste." },
-      { period: "Corrective action", event: "EPA and New York directed source work and groundwater-control construction." },
-      { period: "Long-term phase", event: "Pump-and-treat, monitoring, maintenance, and restricted industrial use continue." },
+      { period: "1906 onward", event: "A mercury-cell chlor-alkali plant produced caustic soda and used on-site sludge ponds." },
+      { period: "1974–1992", event: "Frontier Chemical treated and stored hazardous wastes at Royal Avenue before the facility closed." },
+      { period: "2006–2012", event: "DEC selected separate remedies for soil and shallow groundwater and for deep bedrock groundwater, later amending the soil remedy to use on-site thermal treatment." },
+      { period: "2013–2014", event: "Thermal treatment and other construction were completed, an easement was recorded, and New York issued a Certificate of Completion." },
+      { period: "Current EPA record", event: "Corrective construction is complete except for long-term leachate treatment, groundwater monitoring, and site-management obligations." },
     ],
     documentedImpacts: [
-      "VOCs remain in deep soil and groundwater.",
-      "Historical sludge disposal and later hazardous-waste operations created overlapping source areas.",
-      "Deep contamination requires long-term hydraulic management rather than reliance on surface cleanup alone.",
+      "High VOC concentrations and DNAPL were documented in soil and multiple overburden and bedrock groundwater zones.",
+      "Historical mercury-cell sludge disposal and Frontier's later hazardous-waste operation created overlapping sources that cannot always be assigned to one era.",
+      "EPA reports no site-related contaminants in sampled private wells, basement sumps, Bull Creek water or sediment, and no evidence of an off-site groundwater plume under the evaluated conditions.",
     ],
     cleanupAndControls: [
-      "Major source and corrective-action construction addressed accessible contaminated materials and facility units.",
-      "A pump-and-treat system captures contaminated groundwater for treatment.",
-      "Monitoring, an industrial-use restriction, institutional controls, and a site-management plan govern remaining contamination.",
+      "Buildings and debris were removed, VOC source soil was thermally treated on site, and a soil or asphalt cover limits direct contact and infiltration.",
+      "Utility tunnels intercept shallow contaminated groundwater; leachate from the containment area is pumped and treated; deep bedrock follows monitored natural attenuation.",
+      "Fencing, industrial-use and groundwater restrictions, a ban on agriculture or gardens, annual monitoring, and a site-management plan govern remaining contamination.",
     ],
     presentDay: [
-      "Frontier Chemical is in long-term corrective-action management. The major construction phase is complete, but the ongoing groundwater system and land-use restriction are essential parts of the remedy.",
+      "Frontier Chemical is not an uncontrolled abandoned facility, nor is it unrestricted land. EPA's exposure-control conclusions depend on fencing, public water, tunnel interception, cover, leachate treatment, deep-bedrock monitoring, and industrial-use restrictions remaining in place.",
     ],
     researchNotes: [
       "Add current pump-and-treat performance, plume trends, and EPA environmental-indicator status.",
@@ -4601,50 +4704,59 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "moench-tanning-gowanda": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Leather tanning operated at this Palmer Street location for approximately 120 years. Moench Tanning, later associated with Brown Shoe, operated from 1900 until 1983.",
-      "The cleanup record centers on a closed industrial landfill near Splinter Creek and Cattaraugus Creek, where long-term stewardship must also account for streambank erosion.",
+      "Leather tanning operated in the Palmer Street industrial area for approximately 120 years. Moench Tanning, a division of Brown Shoe Company, ran the facility from 1900 until 1983, continuing a creek-powered industrial history that also included nearby mills and glue manufacturing.",
+      "The regulated site is not the entire village or every former tannery building. It is an approximately 25-acre area covering the closed industrial landfill and its support land south of the former plant, bounded by steep wooded slopes, a swampy area, Splinter Creek, and Cattaraugus Creek.",
+      "Caleres, Brown Shoe's corporate successor, voluntarily closed the landfill under hazardous-waste rules from 1990 to 1992. DEC approved post-closure care in 1993, but the cover and monitoring program continued for decades before a 2019 consent order and site-management plan restated the remaining obligations.",
+      "Water shapes the present story as much as tanning shaped the past. The landfill sits beside two creeks that can overtop or erode their banks during severe storms, so streambank protection and climate vulnerability are integral to the containment remedy rather than separate beautification work.",
     ],
     timeline: [
-      { period: "Circa 1860s", event: "Tanning activity began in the Palmer Street industrial area." },
-      { period: "1900–1983", event: "Moench Tanning operated the leather-tanning facility." },
-      { period: "1990–1992", event: "The company closed the landfill under state oversight." },
-      { period: "2019", event: "Updated consent and site-management requirements formalized continuing controls." },
-      { period: "2021", event: "Additional erosion protection was installed near Splinter Creek." },
+      { period: "About 1860s–1900", event: "Earlier tanning activity developed along Palmer Street and the Gowanda creek corridor." },
+      { period: "1900–1983", event: "Moench Tanning operated the leather plant and used the adjoining industrial-landfill area tracked by the later cleanup program." },
+      { period: "1990–1993", event: "The company closed the landfill with a low-permeability soil cover, and DEC approved continuing post-closure monitoring and maintenance." },
+      { period: "1993–2019", event: "Groundwater wells, bank seeps, inspections, mowing, drainage, and cap maintenance carried the remedy through more than two decades of voluntary post-closure care." },
+      { period: "2019", event: "A new consent order and site-management plan formalized the cover, environmental easement, groundwater restrictions, inspections, and annual reporting." },
+      { period: "2020–2021", event: "Monitoring found no evidence of downgradient migration requiring corrective action, while new riprap and geomembrane erosion protection was designed and installed near Splinter Creek." },
+      { period: "2025 planning", event: "Gowanda's Brownfield Opportunity Area plan placed the controlled tannery property within a larger creekfront reuse and public-access conversation." },
     ],
     documentedImpacts: [
-      "Tannery waste was managed in a defined landfill area.",
-      "Groundwater and creek-edge conditions require continued monitoring and maintenance.",
-      "The proximity of the closed landfill to Splinter Creek and Cattaraugus Creek makes erosion control a remedy component, not proof that all downstream sediment is attributable to Moench.",
+      "Tannery-related waste remains within the defined landfill footprint beneath the engineered cover; the public file does not support extending that waste boundary across every former industrial parcel on Palmer Street.",
+      "The monitoring network covers shallow and deep overburden, bedrock, and creek-bank seeps. The 2020 review found no off-site migration requiring corrective action and documented generally declining or low VOC, lead, arsenic, and chromium trends, with periodic shallow arsenic exceedances inside the monitored system.",
+      "A one-time emerging-contaminant round found no 1,4-dioxane or PFAS above the then-used screening levels in on-site downgradient wells. PFOA exceeded its screening value in one shallow upgradient well, and the consultant concluded the pattern did not originate at the landfill.",
+      "The creek-edge location creates a physical risk to the cover during floods and severe rain. It does not establish that all downstream sediment, PFAS, or other creek pollution came from Moench.",
     ],
     cleanupAndControls: [
-      "The landfill has an approved cover system.",
-      "Groundwater monitoring, inspections, land-use restrictions, and streambank erosion protection maintain the remedy.",
+      "A 24-inch low-permeability soil barrier and 12 inches of vegetated topsoil isolate remaining waste. Settlement, vegetation, drainage, access roads, vents, fences, monitoring wells, and creek banks receive regular inspection and repair.",
+      "The environmental easement limits the land to approved commercial, industrial, or passive-recreational use, restricts groundwater use, and requires agency approval and an excavation plan for disturbance of controlled material.",
+      "Groundwater monitoring and bank-seep observations test whether constituents are moving beyond the containment system. Annual reports certify the institutional and engineering controls rather than assuming an old cap remains protective forever.",
+      "Creek-bank erosion controls use anchored geomembrane and riprap to keep floodwater from cutting into the landfill cover. Their condition is a central protectiveness measure as intense storms and overtopping remain foreseeable.",
     ],
     presentDay: [
-      "DEC classifies the property as Class 4: properly closed but requiring continuing site management.",
+      "DEC classifies Moench Tanning as Class 4: properly closed but requiring continuing site management. The landfill can participate in creekfront reuse planning only if the cover, erosion protection, groundwater restriction, monitoring network, and excavation controls remain intact.",
     ],
     researchNotes: [
-      "Present Moench and Peter Cooper as neighboring industrial histories without implying identical contaminants or a single remedy.",
-      "Use future inspections to document cover, monitoring-well, and streambank conditions before changing the Class 4 status description.",
+      "Present Moench and Peter Cooper as neighboring industrial histories without implying identical wastes, contaminant pathways, or a single remedy.",
+      "Use the newest annual inspection to update cover, monitoring-well, and streambank conditions before changing the Class 4 status description.",
+      "Keep the upgradient PFOA finding and the landfill's historical contaminant program separate unless later source investigation changes DEC's interpretation.",
     ],
   },
   "standard-portable-mayville": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Standard Portable used TCE in metalworking operations at 13 West Lake Road. Records identify an exterior underground septic tank used for spent solvent and document groundwater impacts extending onto adjacent village property.",
+      "Standard Portable used TCE in metalworking operations at 13 West Lake Road, a roughly one-acre property near Chautauqua Lake that had previously housed Wappat Saw Company. Records identify an exterior underground septic tank used for spent solvent; the tank was removed in 1996, but investigation later documented TCE and breakdown products in soil and groundwater extending onto adjacent village property.",
       "The location is close to the separate Mayville drinking-water PFAS investigation. DEC's PFAS work did not identify Standard Portable as the source, so the two records must not be merged.",
     ],
     timeline: [
       { period: "Industrial era", event: "Metalworking operations used TCE as a cleaning and degreasing solvent." },
-      { period: "Historic disposal", event: "Spent TCE was stored or disposed in an exterior underground septic tank." },
+      { period: "Historic disposal–1996", event: "Spent TCE was stored or disposed in an exterior underground septic tank, which was removed when the property changed hands in 1996." },
       { period: "Investigation", event: "Soil and groundwater work identified on-site and off-site chlorinated-solvent impacts." },
       { period: "Brownfield cleanup", event: "The site entered state-supervised investigation and remedial planning." },
       { period: "Present", event: "On-site and off-site records continue as a coordinated chlorinated-solvent cleanup." },
     ],
     documentedImpacts: [
       "TCE affected soil and groundwater at the former facility.",
+      "The investigation also identified TCE breakdown products, showing that the concern was a subsurface solvent system rather than only the removed tank itself.",
       "The investigated groundwater area extended onto adjacent village property.",
       "The reviewed PFAS investigation did not support labeling Standard Portable as the source of Mayville's separate PFAS finding.",
     ],
@@ -4757,29 +4869,30 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "ischua-landfill": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Ischua Landfill operated from 1972 to 1975 using three waste trenches on a roughly 42-acre property. Historical records describe industrial, commercial, medical, and household refuse and report that 8.5 tons of TCE-laced sawdust were among the wastes.",
-      "The landfill was covered with soil after closure, but leachate seeps were observed downslope. DEC returned under the Inactive Landfill Initiative to investigate emerging contaminants and other groundwater conditions.",
+      "The Ischua Landfill operated for only three years, from 1972 to 1975, but its three waste trenches were substantial: records describe excavations roughly 50 to 75 feet wide, 650 to 1,500 feet long, and 10 to 15 feet deep across a 42-acre property near the county airport.",
+      "The short operating period included industrial, commercial, medical, and household refuse. Historical assessments mention tires, garbage, coolants, acids, paint primers, and 8.5 tons of sawdust laced with trichloroethylene—a specific disposal record that helps explain why a rural landfill remained environmentally important decades after closure.",
+      "About two feet of soil covered the trenches, yet leachate later surfaced downslope. Water from the property drains through an on-site wetland and unnamed tributary toward Class A Ischua Creek, while a different stream north of Yankee Road flows toward Cuba Lake. Those separate drainage directions are why sampling locations and pathways matter more than a single map pin.",
     ],
     timeline: [
       { period: "1972–1975", event: "Waste was placed in three landfill trenches." },
       { period: "1975 onward", event: "Sampling and investigation followed reports of leachate breakout and downstream conditions." },
       { period: "1990", event: "A contamination assessment documented the historical waste record." },
-      { period: "2020", event: "DEC's inactive-landfill investigation detected PFOA, PFOS, and 1,4-dioxane in groundwater samples." },
-      { period: "Present", event: "The Class P property remains under site characterization." },
+      { period: "2020", event: "DEC's inactive-landfill investigation identified PFOA, PFOS, and 1,4-dioxane as groundwater contaminants of concern." },
+      { period: "2022–present record", event: "DEC scoped a fuller characterization of the trenches, groundwater, surface water, sediment, seeps, and potential receptor pathways; the property remains Class P while that evidence is developed." },
     ],
     documentedImpacts: [
       "PFOA, PFOS, and 1,4-dioxane were identified as groundwater contaminants of concern during the state investigation.",
       "Historical records report TCE-bearing sawdust and other industrial wastes, but the Class P designation does not itself establish a final remedy or exposure conclusion.",
     ],
     cleanupAndControls: [
-      "The landfill has a soil cap, drainage features, and an upgradient groundwater-diversion system.",
+      "The landfill has a soil cover, drainage features, and an upgradient interceptor and infiltration system that diverts groundwater around the trenches.",
       "Current work focuses on site characterization and defining whether additional action is required.",
       "Until characterization is complete, the existing cover and drainage features should be described as interim site controls rather than a final remedy.",
     ],
     presentDay: [
-      "WNY Atlas labels Ischua as research in progress because DEC lists it as a potential site rather than a completed State Superfund remedy.",
+      "WNYAtlas labels Ischua as research in progress because DEC lists it as a potential site rather than a completed State Superfund remedy. The record supports concern and continued investigation, but not a claim that a nearby resident drank contaminated water or that every downstream detection came from these trenches.",
     ],
     researchNotes: [
       "Update the entry when DEC issues final characterization findings or changes the site classification.",
@@ -4847,33 +4960,41 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "former-niagara-motors-dunkirk": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Industrial uses occupied the Lamphere Street property from at least 1919 through the 1970s. The building was later abandoned and demolished, leaving a vacant brownfield whose exact sequence of operators requires further archival work.",
-      "In 1999 regulators observed about 30 drums containing apparent petroleum material and evidence of spills. Subsequent investigation also identified lead-affected soil and leaking underground-tank impacts.",
+      "The 4.3-acre Lamphere Street property supported industrial use from at least 1919 through the 1970s, including manufacture of marine engines. Operations stopped in the 1970s, the factory was abandoned about a decade later, and the deteriorating building became a visible remnant of Dunkirk's industrial past.",
+      "The environmental case began with a routine inspection rather than a dramatic accident. On August 4, 1999, DEC and county health officials saw about 30 drums holding apparent petroleum liquid, along with spill evidence on the ground and factory floor. Sampling identified lubricating oil, and the state opened a petroleum-spill case after the owner did not complete the requested response.",
+      "The responsible party demolished the building and removed the drums in 2000, but that visible cleanup did not answer what remained underground. Investigation from 2005 through 2007 found lead, arsenic, and petroleum in surface or subsurface soil and identified two underground tanks requiring removal.",
+      "The state concluded that groundwater was not affected by the site contaminants evaluated for the remedy. That finding narrowed the cleanup to source soil, tanks, surface contact, and controlled reuse rather than supporting a groundwater-plume narrative.",
     ],
     timeline: [
-      { period: "1919–1970s", event: "Successive industrial operations used the property." },
-      { period: "Circa 1990", event: "The abandoned industrial building had fallen into disrepair." },
-      { period: "1999", event: "Officials documented drums, petroleum material, and spill evidence." },
-      { period: "2000", event: "The building was demolished and the drums were removed." },
-      { period: "2010s", event: "State-supervised cleanup removed hazardous, lead-affected, and petroleum-affected soil and installed a cover system." },
+      { period: "1919–1970s", event: "Industrial operations, including marine-engine manufacturing, occupied the Lamphere Street factory." },
+      { period: "1980s–1990s", event: "The factory was abandoned, deteriorated, and remained unused." },
+      { period: "August 1999", event: "A state and county inspection found approximately 30 petroleum-containing drums and spill evidence, triggering a formal spill response." },
+      { period: "2000", event: "The responsible party demolished the building and removed the drums; the state later pursued recovery of public response costs." },
+      { period: "2005–2007", event: "Public investigation characterized soil and installed wells, and a 2006 interim measure removed two underground storage tanks and affected material." },
+      { period: "2010s", event: "The final state remedy removed hazardous, lead-affected, and petroleum-affected soil and installed a commercial-use cover with long-term controls." },
+      { period: "2024", event: "The remediated parcel was leased for temporary industrial-project staging, illustrating reuse within the remedy's land-use limits." },
     ],
     documentedImpacts: [
-      "Petroleum material and spill evidence were documented during the 1999 inspection.",
-      "Investigation identified lead-affected soil and soil affected by leaking underground storage tanks.",
+      "The 1999 drums and floor residue contained petroleum material identified as lubricating oil, while later subsurface work documented a separate leaking-tank source.",
+      "Surface and subsurface soil contained lead, arsenic, and petroleum at levels requiring response. The remedy distinguished soil that required hazardous-waste handling from other affected soil.",
+      "The investigation did not find site-related groundwater contamination requiring a groundwater remedy. WNYAtlas therefore does not extend the mapped property into an unsupported plume.",
+      "The city's intervention and state-funded investigation turned an owner-unresolved abandoned property into a public cleanup and cost-recovery case; that governance history is part of the site's human impact even without a documented medical account.",
     ],
     cleanupAndControls: [
-      "Drums and source material were removed.",
-      "Hazardous, lead-affected, and petroleum-affected soils were excavated for off-site disposal.",
-      "A cover system and land-use controls manage residual contamination beneath commercial reuse areas.",
+      "The initial response removed the drums, and the building demolition eliminated an unsafe structure while allowing investigation of the former floor and subsurface.",
+      "The interim measure excavated two underground tanks and associated petroleum material. The final action removed hazardous, high-lead, and petroleum-affected soil for approved off-site treatment or disposal.",
+      "Pavement and clean soil form a cover over residual material. Institutional controls restrict the property to commercial or industrial use and require an approved soil-management procedure for future excavation.",
+      "A completed cleanup does not mean the parcel can be disturbed without controls; temporary staging, new utilities, and future construction must preserve or restore the cover.",
     ],
     presentDay: [
-      "The entry documents a completed public brownfield response while recognizing that residual material remains controlled beneath the approved remedy.",
+      "Former Niagara Motors is a completed public brownfield cleanup supporting controlled commercial or industrial reuse. The drums, tanks, and strongest soil sources were removed, groundwater was not identified as affected, and residual fill remains managed beneath the approved cover and land restrictions.",
     ],
     researchNotes: [
-      "Continue archival research on the companies and products associated with the site's 1919–1970s industrial period.",
-      "Until that operator history is documented, describe the earlier period as successive industrial use rather than assigning specific manufacturing processes to Niagara Motors.",
+      "Continue archival research on the company sequence and marine-engine products; do not assign every twentieth-century industrial activity to a single operator without records.",
+      "Confirm the current cover inspection and institutional-control certification before describing later staging or redevelopment as permanent reuse.",
+      "Keep DEC's finding that groundwater was not affected tied to the investigated site and time period rather than treating it as an eternal guarantee.",
     ],
   },
   "batavia-former-mgp": {
@@ -4939,30 +5060,32 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "old-upper-mountain-road-landfill": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "Historical accounts reviewed by DEC describe this ravine area as a City of Lockport municipal landfill operating from 1921 through the 1950s. Incinerator ash and garbage were pushed into the ravine, and records also report disposal by local companies.",
-      "The cleanup is inseparable from the physical setting: landfill material, Gulf Creek sediment, floodplain soil, wetlands and aging sewer infrastructure required a coordinated remedy.",
+      "From about 1921 through the 1950s, Lockport used the edge of a steep ravine as a municipal dump. Garbage and incinerator ash were burned or pushed over the plateau toward Gulf Creek, and local companies also reportedly discarded material there. Later investigation found ash more than 36 feet thick in places and samples that failed the hazardous-waste leaching limit for lead.",
+      "This was never only an upland dump. Gulf Creek emerges from a culvert below the fill and runs toward Eighteenmile Creek, while bedrock groundwater converges on the former ravine. DEC documented VOCs, PAHs, pesticides, and metals in waste and found related contamination in creek water, sediment, and floodplain soil, making the ravine itself a contaminant pathway.",
+      "The buried Gulf Interceptor sewer made that pathway harder to repair. New York first relocated roughly 5,000 feet of combined sewer away from the waste and creek, then began the landfill and Gulf Creek remedy in March 2023. Excavated ash, glass, slag, municipal and industrial waste, sediment, and floodplain soil were treated for handling and consolidated beneath a new on-site containment cover.",
     ],
     timeline: [
       { period: "1921–1950s", event: "The ravine reportedly received municipal refuse, incinerator ash and some industrial material." },
-      { period: "Investigation era", event: "DEC documented waste fill and affected Gulf Creek sediment and floodplain areas." },
+      { period: "1997–2011", event: "Sampling and investigation documented deep ash and mixed waste, hazardous lead, and contaminated Gulf Creek water, sediment, and floodplain soil." },
+      { period: "Fall 2022", event: "The state completed relocation of the Gulf Interceptor sewer away from the landfill and creek corridor." },
       { period: "2022", event: "The final engineering design described excavation, creek work, containment and infrastructure coordination." },
       { period: "2023", event: "Major remedial construction began, including excavation and consolidation work." },
-      { period: "Current phase", event: "The atlas awaits the newest official construction records before stating a final remedy status." },
+      { period: "December 2023 record", event: "DEC reported the remedial construction about 60 percent complete before a winter pause; later final quantities and completion status still require published closeout documentation." },
     ],
     documentedImpacts: [
-      "Waste fill included incinerator ash, municipal refuse, glass, slag and industrial material.",
-      "Contaminated sediment and floodplain soil were documented along portions of Gulf Creek.",
-      "A degraded Gulf Interceptor contributed unintended sewage or stormwater discharges and complicated the remedial design.",
+      "Waste fill included incinerator ash, municipal refuse, glass, slag, and industrial material; ash reached more than 36 feet thick in investigated areas.",
+      "Lead-bearing hazardous waste and VOCs, PAHs, pesticides, and metals affected waste or soil, with contaminants also documented in Gulf Creek surface water and sediment.",
+      "The former ravine directs groundwater and drainage toward Gulf Creek, which reaches Eighteenmile Creek about a mile downstream.",
     ],
     cleanupAndControls: [
-      "Waste and affected sediment were excavated from selected areas.",
-      "Material was consolidated within an engineered containment cell or transported to approved disposal locations according to the design.",
-      "Creek restoration, floodplain work, sewer coordination, cover systems and long-term site management form parts of the remedy.",
+      "The Gulf Interceptor was rerouted before major waste excavation so sewer flows no longer crossed the remedial work zone.",
+      "Waste, affected sediment, and floodplain soil were excavated; suitable material was amended with limestone cement and consolidated within an engineered containment cell, while other material followed approved off-site disposal routes.",
+      "A final cover, creek and habitat restoration, passive seep treatment, floodplain work, monitoring, and long-term site management form the containment system.",
     ],
     presentDay: [
-      "This remains an active cleanup story. WNY Atlas does not repeat a percentage-complete figure without a current DEC construction update.",
+      "This remains an active cleanup story in the public record available to WNYAtlas. The December 2023 update documented substantial construction but not final completion, so the page preserves that dated milestone instead of turning a projected 2024 finish into an unsupported present-day claim.",
     ],
     researchNotes: [
       "Add the newest construction status, final quantities and restored creek reaches when DEC publishes completion documentation.",
@@ -4970,30 +5093,31 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "vanchlor-company-landfill": {
-    lastReviewed: "July 29, 2026",
+    lastReviewed: "August 17, 2026",
     background: [
-      "The Vanchlor disposal area occupies approximately five acres of a former quarry at 600 Mill Street. The reviewed periodic report states that landfilling occurred from 1957 through 1982, principally involving by-products from silicon-tetrachloride manufacturing.",
-      "Waste was reportedly placed in 55-gallon drums in trenches with crushed limestone intended to help neutralize acidic material. The site was closed with an engineered cover in 1988 and later transitioned to an order and continuing deed restrictions.",
+      "Vanchlor's landfill occupies about five acres of a former quarry at 600 Mill Street. From 1957 through 1982, the company reportedly placed by-products of silicon-tetrachloride manufacturing in 55-gallon drums and trenches, mixing in crushed limestone to neutralize acidic material.",
+      "That disposal method explains why the modern site looks deceptively simple. The quarry was graded and closed in 1988 beneath a layered cover rather than dug out, leaving the chemical-waste history below a maintained grassy surface near Lockport's wider Mill Street industrial corridor.",
+      "The current remedy is therefore a stewardship system. A 2023–2024 periodic review describes the Class 4 site as governed by a state-approved management plan and deed restrictions, with inspection, sampling, reporting, and repair obligations passing to future owners.",
     ],
     timeline: [
       { period: "1957–1982", event: "Manufacturing by-products were reportedly placed in the former quarry disposal area." },
       { period: "1988", event: "The landfill closed under a DEC-approved plan with a final cover system." },
       { period: "1999", event: "Deed restrictions were recorded for the property." },
       { period: "2014", event: "A consent order became the basis for continuing operation, maintenance and monitoring obligations." },
-      { period: "Present", event: "Groundwater, surface-water and cover inspections continue through periodic review." },
+      { period: "2023–2024 review", event: "The periodic review documented continuing cover, monitoring, institutional-control, and reporting obligations for the Class 4 site." },
     ],
     documentedImpacts: [
       "The disposal record identifies silicon-tetrachloride manufacturing by-products placed in drums and trenches.",
-      "Periodic monitoring evaluates volatile compounds, metals and other parameters in groundwater or surface water.",
+      "Periodic monitoring evaluates groundwater, surface water, and the cover system for evidence that contained waste or drainage conditions are changing.",
       "The hydrologic setting creates a research connection to the escarpment and Eighteen Mile Creek, but does not establish that every downstream condition originated at Vanchlor.",
     ],
     cleanupAndControls: [
-      "A compacted-clay cover, drainage layer and soil cover isolate the disposal area.",
+      "The cover system includes a two-foot clay layer, drainage material, topsoil, vegetation, and a clay-lined perimeter ditch with an interceptor trench.",
       "Deed restrictions limit disturbance and incompatible use.",
       "Inspection, maintenance and environmental monitoring remain required.",
     ],
     presentDay: [
-      "DEC classifies the landfill as properly closed but requiring continuing management. The cover and monitoring program are part of its present condition.",
+      "DEC classifies the landfill as properly closed but requiring continuing management. What visitors see as open ground is an engineered containment surface, and its condition is part of the remedy—not evidence that the buried waste disappeared.",
     ],
     researchNotes: [
       "Review newer periodic reports for monitoring trends and any cover repairs.",

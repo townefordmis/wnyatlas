@@ -1239,6 +1239,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915018/",
       },
+      {
+        title: "Dunlop Tire and Rubber 2023 Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915018/Report.HW.915018.2023-07-24.2023_Periodic_Review_Report.pdf",
+      },
     ],
   },
   {
@@ -1251,6 +1256,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "A 107-acre Outer Harbor confined disposal facility constructed in 1977 beside the former Bethlehem Steel property. It receives dredged material from Buffalo Harbor, the Buffalo River, Black Rock Channel, and Tonawanda Harbor, but is distinct from Bethlehem’s HWM-2 industrial landfill and the steel plant’s slag-fill area.",
     evidenceStatus: "well-documented",
     coordinates: [-78.869, 42.8],
+    newsEvents: [
+      {
+        date: "October 2023",
+        headline: "Army Corps inspection focuses on wave damage and dike repairs",
+        summary: "The operating disposal facility is exposed to deep-water wave action, making structural inspection and repair part of the containment story as well as the navigation program.",
+        publisher: "U.S. Army Corps of Engineers, Buffalo District",
+        url: "https://www.dvidshub.net/image/8095343/buffalo-district-commander-visits-cdf-4",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Buffalo Harbor Confined Disposal Facility No. 4",
@@ -1286,6 +1301,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former municipal and industrial landfill bordering Transit Road where drums and contaminated material were removed, wastes were consolidated beneath engineered caps, and long-term monitoring continues.",
     evidenceStatus: "well-documented",
     coordinates: [-78.70135404543488, 42.94506885094213],
+    newsEvents: [
+      {
+        date: "November 13, 2025",
+        headline: "EPA completes the landfill's fifth five-year review",
+        summary: "The recurring review exists because contamination remains above levels allowing unlimited use and unrestricted exposure; it tests whether the caps, leachate systems, monitoring, and property restrictions still protect people and the environment.",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.schedule&id=0201751",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Pfohl Brothers Landfill Superfund Site Profile",
@@ -1296,6 +1321,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Pfohl Brothers Landfill Record of Decision",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915043/ROD.HW.915043.1994-01-01.pfohl_brothers_ou2.pdf",
+      },
+      {
+        title: "Pfohl Brothers Landfill Cleanup Schedule and Five-Year Reviews",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.schedule&id=0201751",
       },
     ],
   },
@@ -1517,6 +1547,14 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://www.post-journal.com/news/local-news/2022/09/mayville-files-suit-over-water-contamination/",
         reach: "Local",
       },
+      {
+        date: "2025",
+        headline: "State investigation and village water-system work move forward on separate tracks",
+        summary: "DEC approved a detailed environmental investigation while Mayville evaluated a replacement source or added carbon treatment for affected municipal wells—exposure control and source cleanup serving related but different purposes.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/news/environmental-notice-bulletin/2025-08-27/seqr/village-of-mayville-water-supply-improvements-project",
+        reach: "Local",
+      },
     ],
     sources: [
       {
@@ -1528,6 +1566,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Mayville PFAS Investigation Report",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/D907050/Report.DWC.D907050.2021-03-12.InvestigationReport_Public.pdf",
+      },
+      {
+        title: "2025 Mayville PFAS Remedial Investigation Work Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/D907050/Work%20Plan.DWC.D907050.2025-04-30.FinalRIWP.pdf",
       },
     ],
   },
@@ -1561,6 +1604,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Brownfield investigation at 90 Erie Street documented PFAS impacts in groundwater alongside contaminants associated with historic fill; remediation planning remains part of the site record.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.87939879828025, 42.87868563473828],
+    newsEvents: [
+      {
+        date: "June 2025",
+        headline: "DEC selects a 37,000-cubic-yard excavation beside occupied apartments",
+        summary: "The approved remedy targets historic fill for unrestricted-use cleanup while treating low-level groundwater PFAS as a likely off-site condition rather than assigning it to the parking-lot property.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915398/Decision%20Document.BCP.C915398.2025-06-06.Final_Decision_Document.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Marine Drive Apartments East Remedial Investigation",
@@ -1630,6 +1683,16 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former Buffalo Avenue chemical-manufacturing and disposal site where benzene and chlorinated benzenes affected multiple groundwater zones; containment, treatment, and monitoring remain part of the remedy.",
     evidenceStatus: "well-documented",
     coordinates: [-79.02291556938837, 43.08187274370253],
+    newsEvents: [
+      {
+        date: "2004–present",
+        headline: "Groundwater control becomes a decades-long operating system",
+        summary: "The remedy moved from construction to operation in July 2004. Collection, pretreatment, NAPL checks and monitoring continue because chlorinated benzenes occupy more than one groundwater zone.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932096/Report.HW.932096.2025-05-12.2025_PRR.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Solvent Chemical Site Record of Decision",
@@ -1637,9 +1700,9 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://extapps.dec.ny.gov/data/DecDocs/932096/ROD.HW.932096.1996-12-01.solvent_chem.pdf",
       },
       {
-        title: "Solvent Chemical Site Periodic Review Report",
+        title: "Solvent Chemical 2024–2025 Periodic Review Report",
         publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932096/Report.HW.932096.2022-04-21.2021_Periodic_Review_Report.pdf",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932096/Report.HW.932096.2025-05-12.2025_PRR.pdf",
       },
     ],
   },
@@ -1702,6 +1765,16 @@ const featuredSiteRecords: AtlasSite[] = [
       era: "FUSRAP — origin unconfirmed",
       role: "radiological vicinity property; no documented MED/AEC activity",
     },
+    newsEvents: [
+      {
+        date: "2019-2022",
+        headline: "Targeted removal closes the shallow-cleanup phase",
+        summary: "Federal crews excavated radiologically contaminated soil to five feet, completed remedial action in 2020, and documented closure in 2022 while deeper material remained subject to long-term review.",
+        publisher: "U.S. Army Corps of Engineers",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/3636932/tonawanda-landfill-vicinity-property-site-closeout-report-available/",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Tonawanda Landfill Vicinity Property",
@@ -1709,9 +1782,9 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://www.lrd.usace.army.mil/Missions/Projects/Article/3613023/tonawanda-landfill-vicinity-property/",
       },
       {
-        title: "Tonawanda Landfill Vicinity Property — Federal Five-Year Review Resources",
-        publisher: "U.S. Army Corps of Engineers FUSRAP",
-        url: "https://www.lrd.usace.army.mil/FUSRAP/",
+        title: "Tonawanda, New York, Landfill Site",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/lm/tonawanda-new-york-landfill-site",
       },
     ],
   },
@@ -1838,6 +1911,16 @@ const featuredSiteRecords: AtlasSite[] = [
       era: "Early Atomic Energy Commission",
       role: "uranium-rod machining and straightening",
     },
+    newsEvents: [
+      {
+        date: "1998-1999",
+        headline: "Federal crews decontaminate the former finishing area",
+        summary: "USACE cleaned the limited area where uranium work occurred and final surveys supported unrestricted release, with no institutional controls or on-site monitoring required.",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://www.energy.gov/lm/articles/buffalo-new-york-site-fusrap-site-certification-summary",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Buffalo, New York, Site",
@@ -1848,6 +1931,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Buffalo FUSRAP Site Certification Summary",
         publisher: "U.S. Department of Energy Office of Legacy Management",
         url: "https://www.energy.gov/sites/default/files/2023-11/Buffalo_FUSRAP_Site_Certification_Summary.pdf",
+      },
+      {
+        title: "Bliss & Laughlin Steel Work-Site and Exposure-Cohort Records",
+        publisher: "National Institute for Occupational Safety and Health",
+        url: "https://www.cdc.gov/niosh/ocas/blsteel.html",
       },
     ],
   },
@@ -2087,6 +2175,11 @@ const featuredSiteRecords: AtlasSite[] = [
     coordinates: [-78.69624555259125, 43.16692913716765],
     sources: [
       {
+        title: "Transit Street Former MGP Record of Decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932098/ROD.HW.932098.2009-03-30.Signed_with_figures.pdf",
+      },
+      {
         title: "Transit Street Former MGP Remediation Request for Proposals",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932098/Report.HW.932098.2013-07-08.RFP_for_Remediation_from_NYSEG.pdf",
@@ -2124,6 +2217,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Mineral Springs Road DEC Document Collection",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/V00195/",
+      },
+      {
+        title: "2025 Mineral Springs Road Soil Vapor Intrusion Work Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/V00195/Work%20Plan.VCP.V00195.2025-03-21.SVI_WP.pdf",
       },
     ],
   },
@@ -2324,7 +2422,7 @@ const featuredSiteRecords: AtlasSite[] = [
         headline: "Investigators find a tar pit and dozens of drums beside a former railyard spur",
         summary: "The documented count changed as investigation progressed—from 56 abandoned drums to 81—while the larger remedy focused on stabilizing and containing waste in a wetland depression.",
         publisher: "New York State Department of Environmental Conservation record",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/915031/",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915128/",
         reach: "Local",
       },
     ],
@@ -2608,9 +2706,9 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0201266",
       },
       {
-        title: "Niagara County Refuse Fourth Five-Year Review",
+        title: "Niagara County Refuse Fifth Five-Year Review",
         publisher: "U.S. Environmental Protection Agency",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932026/Report.HW.932026.2019-07-18.EPA_Fourth_5%20Year_Review.pdf",
+        url: "https://semspub.epa.gov/src/document/02/704689",
       },
     ],
   },
@@ -2634,9 +2732,9 @@ const featuredSiteRecords: AtlasSite[] = [
         reach: "Regional",
       },
       {
-        date: "2006-present",
+        date: "2003–2013",
         headline: "Two distinct waste properties are consolidated beneath one managed remedy",
-        summary: "Construction combined the adjoining Alltift and Ramco remedies, consolidating affected material beneath engineered cover while preserving inspection, maintenance and soil-disturbance obligations.",
+        summary: "Construction consolidated affected material beneath a cap on Alltift, added groundwater collection and replacement wetlands, and ultimately led DEC to classify Alltift for long-term management while delisting Ramco.",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915054/Report.HW.915054.2006-04-01.CCR%28FER%29%28Abridged_amended%2011-15-12%29.pdf",
         reach: "Regional",
@@ -2649,9 +2747,9 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://extapps.dec.ny.gov/data/DecDocs/915054/Report.HW.915054.2006-04-01.CCR%28FER%29%28Abridged_amended%2011-15-12%29.pdf",
       },
       {
-        title: "Alltift Landfill Periodic Review Report",
+        title: "Alltift Landfill / Ramco Steel 2023–2024 Periodic Review Report",
         publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/915054/Report.HW.915054.2014-05-12.Periodic%20Review%20Report%202014.pdf",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915054/Report.HW.915054.2024-05-15.PRR_and_IC-EC_Certification.pdf",
       },
     ],
   },
@@ -2703,6 +2801,14 @@ const featuredSiteRecords: AtlasSite[] = [
         summary: "Natural succession and later habitat work created ecological value above contained dredged material, producing a preserve whose living landscape remains inseparable from its engineered foundation.",
         publisher: "U.S. Army Corps of Engineers",
         url: "https://www.usace.army.mil/Media/News/NewsSearch/Article/503312/restoring-quality-habitat-and-combating-invasive-plants-at-times-beach/",
+        reach: "Regional",
+      },
+      {
+        date: "2020–2022",
+        headline: "Inspection and repair funding expose the preserve's engineered obligation",
+        summary: "Army Corps teams documented wind- and wave-damaged containment features, and federal infrastructure funding later included dike-wall repair—evidence that the nature preserve still depends on functioning disposal-site infrastructure.",
+        publisher: "U.S. Army Corps of Engineers, Buffalo District",
+        url: "https://www.dvidshub.net/image/6422296/times-beach-confined-disposal-facility",
         reach: "Regional",
       },
     ],
@@ -3237,7 +3343,7 @@ const featuredSiteRecords: AtlasSite[] = [
     summary:
       "Former mobile-home community and adjoining shopping-center expansion property with several distinct cleanup chapters. Records document contaminated fill discovered in 1978, removal of about 1,200 cubic yards of mercury-contaminated fill in 1989, buried waste encountered during a 1994 mall expansion, and a separate localized radiological-slag encounter during the 2014 brownfield cleanup. The completed commercial-use remedy relies on removals, a cover system, vapor controls, an environmental easement, and site management.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.9786935, 43.0969508],
+    coordinates: [-78.9817180991722, 43.0946467775443],
     newsEvents: [
       {
         date: "2012-2014",
@@ -3286,9 +3392,9 @@ const featuredSiteRecords: AtlasSite[] = [
     coordinates: [-79.011194, 43.087472],
     newsEvents: [
       {
-        date: "Corrective-action era",
-        headline: "Deep contamination keeps groundwater treatment operating after construction",
-        summary: "EPA's corrective-action record explains why surface work did not end the story: volatile contaminants remain in deep soil and groundwater, requiring pump-and-treat operation, monitoring and industrial-use controls.",
+        date: "2013–2014",
+        headline: "On-site thermal treatment replaces a plan to truck VOC soil away",
+        summary: "New York's amended remedy treated source soil on site, completed construction and issued a Certificate of Completion, while leachate treatment and deep-groundwater monitoring remained in the long-term plan.",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-frontier-chemical-waste-process-incorporated",
         reach: "Regional",
