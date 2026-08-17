@@ -59,6 +59,16 @@ export const countyExpansion2026: AtlasSite[] = [
     summary: "Former Clinton Street industrial property where PCB-contaminated oil and chlorinated compounds led to a Class 2 State Superfund cleanup.",
     evidenceStatus: "well-documented",
     coordinates: [-78.834989768, 42.876797738],
+    newsEvents: [
+      {
+        date: "2006-2009",
+        headline: "Renewed sampling returns a Clinton Street property to active Superfund status",
+        summary: "A limited investigation found contamination that led DEC to change the site from Class 4 to Class 2. The regulatory change records a significant threat requiring action, while remaining specific to the investigated property and media.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/regions_pdf/bengartsd1.pdf",
+        reach: "Local",
+      },
+    ],
     story: makeStory({
       background: ["DEC identifies 1079 Clinton Street as Bengart & Memel, Site 915115.", "Historical waste handling included PCB-contaminated oil; later work identified chlorinated benzenes and carbon tetrachloride."],
       timeline: [{ period: "1980s", event: "PCB investigation and remedial planning began." }, { period: "2006-2007", event: "A limited investigation reexamined soil and groundwater." }, { period: "2009", event: "DEC reclassified the site from Class 4 to Class 2." }, { period: "2021-present", event: "Remedial design and additional work remained in the state project record." }],

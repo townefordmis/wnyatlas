@@ -3195,6 +3195,24 @@ const featuredSiteRecords: AtlasSite[] = [
       "Former mobile-home community and adjoining shopping-center expansion property with several distinct cleanup chapters. Records document contaminated fill discovered in 1978, removal of about 1,200 cubic yards of mercury-contaminated fill in 1989, buried waste encountered during a 1994 mall expansion, and a separate localized radiological-slag encounter during the 2014 brownfield cleanup. The completed commercial-use remedy relies on removals, a cover system, vapor controls, an environmental easement, and site management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.9786935, 43.0969508],
+    newsEvents: [
+      {
+        date: "2012-2014",
+        headline: "Mall expansion removes the former Sabre Park mobile-home community",
+        summary: "The redevelopment required asbestos abatement and demolition of about 170 mobile homes before the brownfield remedy and commercial expansion could proceed, making displacement and land-use change part of the site's human history.",
+        publisher: "Mark Cerrone, Inc.",
+        url: "https://www.markcerrone.com/fashion-outlets-of-niagara-falls-expansion/",
+        reach: "Local",
+      },
+      {
+        date: "April 2014",
+        headline: "Storm-sewer work encounters radiologically elevated slag",
+        summary: "Construction stopped around a localized trench discovery while radiation-trained personnel characterized, controlled and arranged permitted disposal of the material; the record does not identify its producer or connect it to the earlier mercury episode.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C932162/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Sabre Park Mercury Site Inspection Follow-up",

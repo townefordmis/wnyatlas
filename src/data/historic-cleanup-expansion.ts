@@ -368,6 +368,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former pipeline-compressor station cleanup on East Eden Road. The closed Class 4 site remains managed, and DEC maps PCB-affected sediment over a substantial drainage area, adding an important rural industrial-contamination story to the atlas.",
     evidenceStatus: "well-documented",
     coordinates: [-78.8302482, 42.67695649],
+    newsEvents: [
+      {
+        date: "Long-term cleanup record",
+        headline: "A rural compressor station leaves a PCB sediment-management footprint",
+        summary: "DEC's public record documents why the Station 229 story extends beyond machinery at the plant: PCB-affected drainage and sediment areas remain part of a closed Class 4 remedy requiring continued stewardship.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915140/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Tennessee Gas Pipeline Station 229 Site Documents",
@@ -511,6 +521,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former scrap-metal and metal-processing property at 301 Bank Street. The active Class 2 State Superfund site gives Batavia a second major industrial-cleanup story beyond the municipal landfill.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.177060007, 43.008938506],
+    newsEvents: [
+      {
+        date: "September 27, 2012",
+        headline: "Ton by ton, a former scrapyard is cleared beside Dwyer Stadium",
+        summary: "Local coverage followed the visible removal of contaminated material and the city's attempt to return the long-idle Bank Street property to productive use; DEC required community air monitoring during excavation and backfilling.",
+        publisher: "The Batavian",
+        url: "https://www.thebatavian.com/jfbeck99272012/ton-by-ton-city-brownfield-site-gets-restored-for-future-use/637107",
+        reach: "Local",
+      },
+      {
+        date: "2022-2025",
+        headline: "Additional field findings reshape the long-planned remedy",
+        summary: "DEC construction notices and its later project spotlight document excavation, off-site disposal, groundwater treatment, vapor mitigation, and changes made after investigation refined contamination on and near the property.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/sites/default/files/2025-08/819018spotlight.pdf",
+        reach: "Regional",
+      },
+    ],
     sources: [
       {
         title: "Batavia Iron and Metal Site Documents",
@@ -997,6 +1025,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Aerospace-alloy manufacturing property where petroleum-contaminated soil and an underground tank were discovered during expansion. State-supervised removal and continuing institutional controls manage the affected portion of the active industrial site.",
     evidenceStatus: "well-documented",
     coordinates: [-79.33968, 42.46907],
+    newsEvents: [
+      {
+        date: "2007",
+        headline: "Plant expansion uncovers a buried petroleum source",
+        summary: "A construction discovery—not a routine closure—brought the localized cleanup into public view: an underground tank and petroleum-affected soil were removed while the larger alloy plant remained active.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907031/Fact%20Sheet.HW.907031.2007-02-23.IRM_Factsheet.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Special Metals Cleanup Fact Sheet",
@@ -1115,6 +1153,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former woolen mill and steel-partition factory where a trichloroethene vapor degreaser contributed to a chlorinated-solvent groundwater plume. Source treatment, monitoring, and institutional controls continue under a Class 4 State Superfund remedy.",
     evidenceStatus: "well-documented",
     coordinates: [-79.20193886683256, 42.112150016662],
+    newsEvents: [
+      {
+        date: "2003-2026",
+        headline: "A small former factory becomes a decades-long groundwater treatment site",
+        summary: "DEC's decision and periodic reviews trace the public consequence of historic degreasing: treatment and monitoring continued long after manufacturing ended, while river sampling in the reviewed record did not demonstrate a site-related Chadakoin River impact.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907020/Report.HW.907020.2026-02-04.PRR_and_IC-EC_Certification.pdf",
+        reach: "Local",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
@@ -1168,6 +1216,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former municipal landfill used from 1962 to 1974. Historical records identify municipal refuse together with paint, solvent, and degreasing wastes; DEC currently classifies the State Superfund record as Class 3.",
     evidenceStatus: "well-documented",
     coordinates: [-79.24867284195923, 42.108362644867015],
+    newsEvents: [
+      {
+        date: "1962-1974 legacy",
+        headline: "A municipal dump also receives Jamestown's industrial wastes",
+        summary: "Municipal environmental-review records preserve the lesser-known history that the Washington Street landfill received paint, solvent and degreasing wastes along with ordinary refuse; DEC's present Class 3 status does not erase that disposal record.",
+        publisher: "City of Jamestown",
+        url: "https://www.jamestownny.gov/wp-content/uploads/2021/04/Part-I_Riverwalk-Community-Skate-Park_Part-58-NEPA-Review-with-attachments.pdf",
+        reach: "Local",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
@@ -1221,6 +1279,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Long-running bronze-door manufacturer and foundry where metal-bearing foundry material affected soil and sediment. Stabilization, containment, groundwater monitoring, and land-use controls continue under a Class 4 State Superfund record.",
     evidenceStatus: "well-documented",
     coordinates: [-79.19958673235618, 42.11654760374714],
+    newsEvents: [
+      {
+        date: "1996-present",
+        headline: "Foundry waste is stabilized rather than treated as a disappearing contaminant",
+        summary: "DEC selected stabilization and containment for persistent metal-bearing material. The remedy's human meaning is continuing stewardship: land-use controls, groundwater monitoring and maintenance remain necessary around an operating industrial property.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/907018/ROD.HW.907018.1996-03-25.ellison_bronze.pdf",
+        reach: "Local",
+      },
+    ],
     story: {
       lastReviewed: "August 4, 2026",
       background: [
@@ -1501,6 +1569,16 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "River Road plastics property within the dense Tonawanda industrial corridor. It is tracked separately from Tonawanda Coke while sharing a landscape shaped by neighboring steel, coke, landfill, and chemical operations.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.93194594688349, 42.9796717028209],
+    newsEvents: [
+      {
+        date: "August 2023",
+        headline: "A vacant plastics plant begins a new parcel-specific investigation",
+        summary: "The Brownfield Cleanup Program work plan opened a new chapter for the 17.446-acre property, calling for testing of soil, sediment, groundwater, tanks, drums, piping and former process equipment before redevelopment decisions are made.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915003/Work%20Plan.BCP.C915003.2023-08-17.Remedial%20Investigation%20Work%20Plan_Final.pdf",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "3821 River Road Brownfield Cleanup Documents",
@@ -1821,6 +1899,24 @@ export const historicCleanupExpansion: AtlasSite[] = [
       "Former dry-cleaning property at 5 Hunt Road where chlorinated volatile organic compounds affected soil and groundwater. DEC's Class 2 record calls for source removal or treatment, plume treatment and continuing monitoring.",
     evidenceStatus: "well-documented",
     coordinates: [-79.2663894340612, 42.09214554009021],
+    newsEvents: [
+      {
+        date: "1985",
+        headline: "A major fire becomes part of the site's environmental history",
+        summary: "The cleanup work plan records that fire destroyed portions of the building and that firefighting water entered the dry-cleaning area. The record treats this as site history, not proof that the fire caused every later subsurface finding.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907027/Work%20Plan.BCP.C907027.2006-02-14.Anderson_Cleaners_Supplemental_Investigation.pdf",
+        reach: "Local",
+      },
+      {
+        date: "2004-2015",
+        headline: "Investigation expands from the former cleaner to groundwater and vapor pathways",
+        summary: "The public file traces years of borings, monitoring wells, dense-product removal, groundwater treatment and soil-vapor evaluation—showing how a small commercial property produced a much longer stewardship story.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C907027/",
+        reach: "Local",
+      },
+    ],
     sources: [
       {
         title: "Anderson Cleaners Remedial Fact Sheet",
