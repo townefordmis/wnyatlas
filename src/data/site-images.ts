@@ -11,6 +11,39 @@ export const siteImages: Partial<Record<string, AtlasImage>> = {
       "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.photovideoaudio&id=0201290",
     rights: "U.S. government image",
   },
+  "linde-air-products": {
+    src: "/historical/linde-air-products-2017.jpg",
+    alt: "Brick buildings of the former Linde Air Products factory on Chandler Street in Buffalo",
+    caption:
+      "The former Linde Air Products factory complex on Chandler Street. The photograph documents the Buffalo property in 2017, not its wartime operations or radiological conditions.",
+    date: "July 20, 2017",
+    credit: "Pubdog / Wikimedia Commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Linde_Air_Products_Factory_Jul_17.JPG",
+    rights: "CC0 1.0 public-domain dedication",
+  },
+  "west-valley": {
+    src: "/historical/west-valley-treatment-wall-2010.jpg",
+    alt: "Construction equipment installing a permeable treatment wall at the West Valley Demonstration Project",
+    caption:
+      "Construction of the 850-foot permeable treatment wall designed to slow migration of strontium-90 in groundwater at West Valley.",
+    date: "2010 project; published June 22, 2012",
+    credit: "U.S. Department of Energy",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Recovery_Act_Funds_Construction_of_Trench_to_Mitigate_Groundwater_Contamination_(7419747360).jpg",
+    rights: "Public domain — official U.S. Department of Energy work",
+  },
+  "huntley-generating-station": {
+    src: "/historical/huntley-generating-station-2023.jpg",
+    alt: "The closed Huntley Generating Station viewed from River Road in Tonawanda",
+    caption:
+      "The former Huntley coal-fired generating station viewed from River Road after the plant closed. This 2023 view documents the property, not operating-era emissions.",
+    date: "July 28, 2023",
+    credit: "Mr. Matté / Wikimedia Commons",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Huntley_Generating_Station,_Tonawanda,_NY,_July_2023.jpg",
+    rights: "Creative Commons Attribution-ShareAlike 4.0",
+  },
   "former-bethlehem-steel": {
     src: "/historical/bethlehem-steel-blowing-engine-house.jpg",
     alt: "Black-and-white interior view of Bethlehem Steel blowing engine house number two in Lackawanna",

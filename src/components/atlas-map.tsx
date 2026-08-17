@@ -431,14 +431,12 @@ export function AtlasMap() {
                 </p>
               )}
               <span>{evidenceLabels[displayedSite.evidenceStatus]}</span>
-              {displayedSite.story && (
-                <Link
-                  className="map-story-link"
-                  href={`/sites/${displayedSite.id}`}
-                >
-                  Read the full place record →
-                </Link>
-              )}
+              <Link
+                className="map-story-link"
+                href={`/sites/${displayedSite.id}`}
+              >
+                Read the full place record →
+              </Link>
               {displayedSite.sources && (
                 <div className="map-sources">
                   <strong>Official sources</strong>
