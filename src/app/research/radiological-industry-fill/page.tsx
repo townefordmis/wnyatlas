@@ -99,6 +99,7 @@ export default function RadiologicalInvestigationPage() {
               <li>The 1986 report separated 38 NFSS-related locations from 62 other anomalies.</li>
               <li>EPA later completed documented removals at several Niagara County properties.</li>
               <li>The current three-phase state and federal assessment remains active.</li>
+              <li>DEC separately confirms an active investigation of industrial fill uncovered at a 99th Street property in Black Creek Village.</li>
             </ul>
           </article>
           <article>
@@ -108,6 +109,7 @@ export default function RadiologicalInvestigationPage() {
               <li>How many modern signals reflect natural geology versus man-made material.</li>
               <li>Which current areas precisely overlap the 100 numbered 1984 survey locations.</li>
               <li>The eventual number of cleanups or no-further-action decisions.</li>
+              <li>Whether the newly investigated Black Creek Village fill contains radiological material or is connected to Love Canal.</li>
             </ul>
           </article>
         </div>
@@ -115,6 +117,59 @@ export default function RadiologicalInvestigationPage() {
         <div className="radiological-source-row">
           <a href="https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment" target="_blank" rel="noreferrer">Current NYSDEC project page ↗</a>
           <a href="https://dec.ny.gov/sites/default/files/2026-07/FINAL%20Monday%20July%2020%20NECRA%20Community%20Meeting%20Presentation.pdf" target="_blank" rel="noreferrer">July 20, 2026 agency briefing ↗</a>
+        </div>
+      </section>
+
+      <section className="school-method radiological-method radiological-black-creek" id="black-creek-village">
+        <p className="eyebrow">Black Creek Village · active investigation reported July 2026</p>
+        <h2>One neighborhood now presents two active questions—and the evidence does not yet permit them to be merged.</h2>
+        <div>
+          <article>
+            <h3>DEC is investigating newly uncovered industrial fill</h3>
+            <p>
+              Residents reported carbon rods, dark fill, and other unusual material
+              uncovered during a pool project at a 99th Street property near the Love
+              Canal containment area. DEC told the Niagara Gazette that its
+              investigation of the material is continuing. That establishes an active
+              environmental inquiry; it does not yet identify the material&apos;s source,
+              full extent, or radiological composition.
+            </p>
+          </article>
+          <article>
+            <h3>The regional radiological assessment remains active</h3>
+            <p>
+              At the same time, EPA, DEC, and NYSDOH are investigating radiological
+              anomalies across Niagara and Erie counties, including thorium-bearing
+              industrial material confirmed at some properties. Public agency records
+              reviewed by WNY Atlas do not yet identify the Black Creek Village
+              property as a confirmed radiological location. It therefore appears here
+              as an active research watch—not as a contamination pin.
+            </p>
+          </article>
+          <article>
+            <h3>Earlier cleanup records explain the renewed concern</h3>
+            <p>
+              State investigations in 1990–1993 identified isolated pesticide-affected
+              fill around 9903 and 9909 Black Creek Drive and 1044 100th Street. The
+              state planned removal of roughly 900–1,000 cubic yards and later recorded
+              black ash with elevated mercury during excavation. Those records document
+              an earlier fill problem, but they do not establish that the newly found
+              material is radioactive or that it migrated from Love Canal.
+            </p>
+          </article>
+        </div>
+        <p className="measurement-caution">
+          WNY Atlas will add a property-level radiological marker only if an agency or
+          reproducible laboratory record identifies a radiological finding at this
+          location. Until then, industrial-fill evidence, Love Canal history, and the
+          regional thorium investigation remain connected context—not one proven source
+          story.
+        </p>
+        <div className="radiological-source-row">
+          <a href="https://www.cnhi.com/rss_feed/old-dec-report-heightens-familys-fears-as-they-seek-testing-near-love-canal/" target="_blank" rel="noreferrer">Read the July 2026 local investigation report ↗</a>
+          <a href="https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1990-11-15.STATUS_OF_REMEDIAL_ACTIVITIES.pdf" target="_blank" rel="noreferrer">Read the 1990 state Area 4 record ↗</a>
+          <a href="https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1991-11-13.STATUS_OF_RA.pdf" target="_blank" rel="noreferrer">Read the 1991 removal decision ↗</a>
+          <a href="https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment" target="_blank" rel="noreferrer">Follow the regional radiological assessment ↗</a>
         </div>
       </section>
 
@@ -355,6 +410,7 @@ export default function RadiologicalInvestigationPage() {
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>August 17, 2026 · Black Creek Village watch</strong> Added the active 99th Street industrial-fill investigation, the 1990–1993 Black Creek Drive cleanup record, and its unresolved relationship to the separate regional radiological assessment.</p>
           <p><strong>August 12, 2026 · map-first navigation</strong> Moved the interactive evidence map directly below the introduction so visitors reach locations and records before the long-form research sections.</p>
           <p><strong>August 12, 2026 · Sabre Park and 56th/Pine</strong> Added the full Fashion Outlets / former Sabre Park main-map history, upgraded 56th/Pine with a separate official Level B disposal record, and documented the continuing limit on the unrecovered 2008 fingerprinting laboratory file.</p>
           <p><strong>August 12, 2026 · testimony dossier</strong> Added a complete witness-by-witness reading of the 12-page Probe record, federal corroboration and limits, and the documented Fashion Outlets/Sabre Park radiological-fill encounter.</p>

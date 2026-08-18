@@ -273,19 +273,15 @@ export function FormerWaterwaysMap() {
             attribution:
               "© OpenStreetMap contributors",
           },
+          [landscapeGeometrySourceId]: geometrySource,
         },
         layers: [
           { id: "osm", type: "raster", source: "osm" },
+          ...geometryLayers,
         ],
       },
     });
     map.current = instance;
-    const installGeometryLayers = () => {
-      instance.addSource(landscapeGeometrySourceId, geometrySource);
-      geometryLayers.forEach((layer) => instance.addLayer(layer));
-    };
-    if (instance.isStyleLoaded()) installGeometryLayers();
-    else instance.once("style.load", installGeometryLayers);
     instance.addControl(
       new maplibregl.NavigationControl({ showCompass: false }),
       "top-right",
@@ -296,11 +292,15 @@ export function FormerWaterwaysMap() {
     );
 
     instance.on("click", (event) => {
-      const feature = instance.queryRenderedFeatures(event.point, {
-        layers: landscapeChangeGeometries.flatMap((geometry) => [
+      const renderedGeometryLayers = landscapeChangeGeometries
+        .flatMap((geometry) => [
           geometryLayerId(geometry.id),
           geometryCasingLayerId(geometry.id),
-        ]),
+        ])
+        .filter((layerId) => instance.getLayer(layerId));
+      if (renderedGeometryLayers.length === 0) return;
+      const feature = instance.queryRenderedFeatures(event.point, {
+        layers: renderedGeometryLayers,
       })[0];
       const geometry = landscapeChangeGeometries.find(
         (candidate) => candidate.id === feature?.properties?.geometryId,
