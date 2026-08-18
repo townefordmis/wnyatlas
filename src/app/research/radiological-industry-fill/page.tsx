@@ -31,25 +31,32 @@ export default function RadiologicalInvestigationPage() {
     <main>
       <SiteHeader />
       <section className="school-research-hero radiological-hero">
-        <p className="eyebrow">WNY Atlas investigation · Niagara and Erie counties</p>
-        <h1>Radioactive industrial slag, uranium residues, and fill</h1>
+        <p className="eyebrow">Living government investigation · updated August 17, 2026</p>
+        <h1>Niagara–Erie radiological investigation</h1>
         <p className="dek">
-          This investigation follows two related but distinct histories: material
-          connected to the Niagara Falls Storage Site and radioactive phosphate
-          furnace slag reportedly reused beneath pavement, in driveways, and as
-          gravel fill. It connects the producers and handlers with the 100 locations
-          investigated by DOE and Oak Ridge National Laboratory, later cleanup, and
-          today&apos;s wider government assessment.
+          EPA, NYSDEC, and NYSDOH are conducting a large, active search for
+          radiological material across Niagara and Erie counties. The work covers
+          roughly 1,000 square miles, builds on more than 500,000 modern aerial data
+          points, and has moved from aircraft and roadway screening into neighborhood
+          surveys, residential testing, laboratory analysis, temporary relocations,
+          and cleanup planning. The historical slag and uranium records below explain
+          why investigators are finding a regional problem rather than one isolated site.
         </p>
+        <div className="radiological-current-metrics" aria-label="Scale of the ongoing radiological investigation">
+          <article><strong>≈1,000</strong><span>square miles screened</span></article>
+          <article><strong>500,000+</strong><span>modern aerial data points</span></article>
+          <article><strong>≈380</strong><span>areas of interest identified</span></article>
+          <article><strong>≈160</strong><span>ground reviews identified in July</span></article>
+        </div>
         <div className="school-caution radiological-caution">
-          <strong>Historical finding does not mean current hazard</strong>
+          <strong>This is ongoing—not a completed historical survey</strong>
           <p>
-            A mapped point may represent a historical instrument reading, material
-            later removed, an approximate former landmark, or a producer or storage
-            facility. The record panel states which. Shaded assessment areas show
-            where agencies surveyed—not where contamination has been established.
-            A survey point alone does not prove that uranium-production residue was
-            used at that specific property.
+            The map combines the active regional assessment with the older evidence
+            investigators are using to understand it. A screening signal is not the
+            same as a confirmed contaminated property, but confirmed elevated
+            residential findings and temporary relocations mean this work cannot be
+            presented as history alone. Every marker states whether it represents an
+            old reading, completed removal, active review, or unresolved lead.
           </p>
         </div>
         <a className="radiological-map-jump" href="#radiological-map">
@@ -62,8 +69,8 @@ export default function RadiologicalInvestigationPage() {
       <section className="radiological-current-overview" id="current-investigation">
         <div className="radiological-current-heading">
           <div>
-            <p className="eyebrow">Ongoing investigation · status reported July 20, 2026</p>
-            <h2>From regional screening to property-level answers</h2>
+            <p className="eyebrow">Massive ongoing investigation · latest public figures remain fluid</p>
+            <h2>Aircraft found the pattern; field teams are now working property by property.</h2>
           </div>
           <p>
             An area of interest is a screening result—not a contaminated property.
@@ -73,11 +80,20 @@ export default function RadiologicalInvestigationPage() {
         </div>
 
         <div className="radiological-current-metrics" aria-label="Current assessment metrics">
-          <article><strong>≈380</strong><span>areas of interest identified</span></article>
-          <article><strong>≈220</strong><span>cleared from additional testing</span></article>
-          <article><strong>≈160</strong><span>ground surveys ongoing</span></article>
-          <article><strong>Pending</strong><span>complete public property-level results</span></article>
+          <article><strong>≈470</strong><span>property-access agreements reported July 30</span></article>
+          <article><strong>200</strong><span>properties screened during the preceding week</span></article>
+          <article><strong>6</strong><span>properties then requiring deeper investigation</span></article>
+          <article><strong>4</strong><span>families offered precautionary relocation</span></article>
         </div>
+
+        <p className="measurement-caution">
+          These figures are dated snapshots from a rapidly changing investigation,
+          not final totals. Earlier agency briefing material reported approximately
+          380 regional areas of interest, about 220 not requiring additional testing,
+          and about 160 advancing through ground surveys. Later field updates counted
+          property agreements and completed screens, which are different measures and
+          should not be added together.
+        </p>
 
         <ol className="radiological-investigation-flow">
           <li><a href="#aerial-record"><span>01</span><strong>Aerial survey</strong><small>2023–2024 regional screening</small></a></li>
@@ -117,53 +133,56 @@ export default function RadiologicalInvestigationPage() {
         <div className="radiological-source-row">
           <a href="https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment" target="_blank" rel="noreferrer">Current NYSDEC project page ↗</a>
           <a href="https://dec.ny.gov/sites/default/files/2026-07/FINAL%20Monday%20July%2020%20NECRA%20Community%20Meeting%20Presentation.pdf" target="_blank" rel="noreferrer">July 20, 2026 agency briefing ↗</a>
+          <a href="https://spectrumlocalnews.com/nys/buffalo/public-safety/2026/07/30/epa--dec-share-update-on-continued-radiological-assessment-in-niagara-county" target="_blank" rel="noreferrer">July 30 field update ↗</a>
+          <a href="https://www.wnypapers.com/news/article/featured/2026/07/24/166614/epa-state-dec-officials-meet-with-town-of-niagara-residents-to-address-radioactivity" target="_blank" rel="noreferrer">Property-testing and resident briefing ↗</a>
         </div>
       </section>
 
       <section className="school-method radiological-method radiological-black-creek" id="black-creek-village">
-        <p className="eyebrow">Black Creek Village · active investigation reported July 2026</p>
-        <h2>One neighborhood now presents two active questions—and the evidence does not yet permit them to be merged.</h2>
+        <p className="eyebrow">Black Creek Village · inside the living Niagara investigation</p>
+        <h2>Black Creek belongs in the ongoing regional story—not in a separate historical footnote.</h2>
         <div>
           <article>
-            <h3>DEC is investigating newly uncovered industrial fill</h3>
+            <h3>The regional investigation is the controlling present-day context</h3>
+            <p>
+              Black Creek Village sits within the Niagara Falls landscape now being
+              reexamined through the Niagara–Erie assessment. The modern program is
+              comparing aerial and roadway signals with historical radiological
+              records, then moving selected areas into ground surveys, property access,
+              detailed sampling, laboratory analysis, risk evaluation, and possible
+              removal. This is the active investigation that frames every newer finding.
+            </p>
+          </article>
+          <article>
+            <h3>Black Creek also has an active property investigation</h3>
             <p>
               Residents reported carbon rods, dark fill, and other unusual material
               uncovered during a pool project at a 99th Street property near the Love
               Canal containment area. DEC told the Niagara Gazette that its
-              investigation of the material is continuing. That establishes an active
-              environmental inquiry; it does not yet identify the material&apos;s source,
-              full extent, or radiological composition.
+              investigation of that industrial fill is continuing. Earlier state files
+              document additional affected fill and removal work on Black Creek Drive
+              and 100th Street, making the new discovery part of a continuing
+              neighborhood evidence record rather than an isolated complaint.
             </p>
           </article>
           <article>
-            <h3>The regional radiological assessment remains active</h3>
+            <h3>The property-level radiological answer is still pending</h3>
             <p>
-              At the same time, EPA, DEC, and NYSDOH are investigating radiological
-              anomalies across Niagara and Erie counties, including thorium-bearing
-              industrial material confirmed at some properties. Public agency records
-              reviewed by WNY Atlas do not yet identify the Black Creek Village
-              property as a confirmed radiological location. It therefore appears here
-              as an active research watch—not as a contamination pin.
-            </p>
-          </article>
-          <article>
-            <h3>Earlier cleanup records explain the renewed concern</h3>
-            <p>
-              State investigations in 1990–1993 identified isolated pesticide-affected
-              fill around 9903 and 9909 Black Creek Drive and 1044 100th Street. The
-              state planned removal of roughly 900–1,000 cubic yards and later recorded
-              black ash with elevated mercury during excavation. Those records document
-              an earlier fill problem, but they do not establish that the newly found
-              material is radioactive or that it migrated from Love Canal.
+              The regional investigation has confirmed elevated radiological material
+              at some residential properties and led to precautionary relocations.
+              Public agency material reviewed by WNY Atlas has not yet published a
+              laboratory result assigning thorium or another radionuclide to the 99th
+              Street fill. Black Creek therefore remains explicitly inside the active
+              investigation chapter while its own radiological classification awaits
+              a reproducible property-specific result.
             </p>
           </article>
         </div>
         <p className="measurement-caution">
-          WNY Atlas will add a property-level radiological marker only if an agency or
-          reproducible laboratory record identifies a radiological finding at this
-          location. Until then, industrial-fill evidence, Love Canal history, and the
-          regional thorium investigation remain connected context—not one proven source
-          story.
+          This evidence standard affects the pin, not the importance of the story.
+          Black Creek is now tracked as part of the massive ongoing investigation. A
+          property-level contamination marker will be added when an agency or
+          reproducible laboratory record supplies the location and result.
         </p>
         <div className="radiological-source-row">
           <a href="https://www.cnhi.com/rss_feed/old-dec-report-heightens-familys-fears-as-they-seek-testing-near-love-canal/" target="_blank" rel="noreferrer">Read the July 2026 local investigation report ↗</a>
@@ -410,7 +429,8 @@ export default function RadiologicalInvestigationPage() {
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
-          <p><strong>August 17, 2026 · Black Creek Village watch</strong> Added the active 99th Street industrial-fill investigation, the 1990–1993 Black Creek Drive cleanup record, and its unresolved relationship to the separate regional radiological assessment.</p>
+          <p><strong>August 17, 2026 · investigation scale corrected</strong> Rebuilt the page opening around the active 1,000-square-mile Niagara–Erie assessment, modern aerial dataset, intensive residential screening, confirmed elevated properties, and precautionary relocations; moved Black Creek firmly inside that living investigation.</p>
+          <p><strong>August 17, 2026 · Black Creek Village watch</strong> Added the active 99th Street industrial-fill investigation, the 1990–1993 Black Creek Drive cleanup record, and the still-pending property-specific radiological classification within the regional assessment story.</p>
           <p><strong>August 12, 2026 · map-first navigation</strong> Moved the interactive evidence map directly below the introduction so visitors reach locations and records before the long-form research sections.</p>
           <p><strong>August 12, 2026 · Sabre Park and 56th/Pine</strong> Added the full Fashion Outlets / former Sabre Park main-map history, upgraded 56th/Pine with a separate official Level B disposal record, and documented the continuing limit on the unrecovered 2008 fingerprinting laboratory file.</p>
           <p><strong>August 12, 2026 · testimony dossier</strong> Added a complete witness-by-witness reading of the 12-page Probe record, federal corroboration and limits, and the documented Fashion Outlets/Sabre Park radiological-fill encounter.</p>
