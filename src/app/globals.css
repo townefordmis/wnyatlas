@@ -4404,6 +4404,33 @@ footer {
   position: absolute;
 }
 
+.waterway-baked-map {
+  background: #acd3df;
+  inset: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.waterway-baked-map img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.waterway-baked-map figcaption {
+  background: rgb(255 253 248 / 94%);
+  border-radius: 0.35rem;
+  bottom: 0.75rem;
+  color: #18363d;
+  font-size: 0.75rem;
+  left: 0.75rem;
+  line-height: 1.35;
+  max-width: min(31rem, calc(100% - 1.5rem));
+  padding: 0.45rem 0.6rem;
+  position: absolute;
+}
+
 .waterway-route-notice {
   align-items: center;
   background: rgb(255 255 255 / 94%);

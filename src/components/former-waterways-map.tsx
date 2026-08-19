@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type {
@@ -41,6 +42,7 @@ const confidenceLabels = {
 } as const;
 
 const landscapeGeometrySourceId = "landscape-geometries";
+const cayugaIslandRecordId = "cayuga-island-manmade-extensions";
 
 function geometryLayerId(id: string) {
   return `landscape-layer-${id}`;
@@ -465,7 +467,27 @@ export function FormerWaterwaysMap() {
 
       <div className="school-map-grid">
         <div className="school-map-canvas waterway-map-stage">
-          <div className="waterway-map-inner" ref={container} />
+          <div
+            className="waterway-map-inner"
+            ref={container}
+            hidden={selected.id === cayugaIslandRecordId}
+          />
+          {selected.id === cayugaIslandRecordId && (
+            <figure className="waterway-baked-map">
+              <Image
+                src="/research/cayuga-island-land-additions.png"
+                alt="Map of Cayuga Island with the western-tip and south-shore land additions permanently highlighted in orange"
+                width={879}
+                height={680}
+                priority
+              />
+              <figcaption>
+                Cayuga Island land additions. The orange highlighting is baked
+                into this image and does not depend on a live map overlay. Map
+                data © OpenStreetMap contributors.
+              </figcaption>
+            </figure>
+          )}
           {selected.id === "fern-brook-managed-outlet" && (
             <div className="waterway-route-notice fern-route-comparison" aria-live="polite">
               <strong>Fern Brook route evidence</strong>
