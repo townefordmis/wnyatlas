@@ -5541,6 +5541,7 @@ footer {
 .radiological-aerial-evidence,
 .radiological-testimony-dossier,
 .radiological-corroboration,
+.radiological-southtowns,
 .radiological-update-log {
   width: min(1540px, calc(100% - 48px));
   margin-inline: auto;
@@ -5678,6 +5679,113 @@ footer {
 }
 
 .radiological-source-row a { color: #8bd4d6; font-size: .8rem; font-weight: 800; }
+
+/* Southtowns evidence chapter */
+.radiological-southtowns {
+  margin-top: 18px;
+  padding: 58px 38px;
+  color: #f9f4e9;
+  background: #24202b;
+}
+
+.radiological-southtowns-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .6fr);
+  gap: 38px;
+  align-items: end;
+}
+
+.radiological-southtowns-heading h2 {
+  max-width: 980px;
+  margin: 6px 0 0;
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.radiological-southtowns-heading > p {
+  margin: 0;
+  color: #d9d2c4;
+}
+
+.radiological-southtowns-callout {
+  display: grid;
+  grid-template-columns: minmax(150px, .28fr) minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  padding: 22px;
+  border: 1px solid rgba(241,182,98,.55);
+  background: rgba(241,182,98,.08);
+}
+
+.radiological-southtowns-callout strong { color: #f1b662; }
+.radiological-southtowns-callout p { margin: 0; }
+
+.radiological-southtowns-timeline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 32px 0 0;
+  padding: 1px;
+  list-style: none;
+  background: rgba(255,255,255,.18);
+}
+
+.radiological-southtowns-timeline li {
+  padding: 26px;
+  background: #302a38;
+}
+
+.radiological-southtowns-timeline li > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radiological-southtowns-timeline time {
+  color: #8bd4d6;
+  font-family: var(--font-mono);
+  font-size: .76rem;
+  font-weight: 800;
+}
+
+.radiological-southtowns-timeline h3 {
+  margin: 16px 0 10px;
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.radiological-southtowns-timeline p {
+  color: #d9d2c4;
+  font-size: .84rem;
+}
+
+.radiological-southtowns-timeline a {
+  color: #8bd4d6;
+  font-size: .77rem;
+  font-weight: 800;
+}
+
+.evidence-status {
+  padding: 4px 8px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.evidence-status.is-proven { color: #8bd4d6; }
+.evidence-status.is-supported { color: #b8d98a; }
+.evidence-status.is-unresolved { color: #f1b662; }
+.radiological-southtowns-status { margin-bottom: 24px; }
 
 .radiological-testimony-dossier {
   padding: 58px 38px;
@@ -6461,11 +6569,13 @@ footer {
   .radiological-aerial-evidence,
   .radiological-testimony-dossier,
   .radiological-corroboration,
+  .radiological-southtowns,
   .radiological-update-log { width: min(100% - 24px, 1540px); }
   .radiological-current-overview { padding: 25px 18px; }
   .radiological-current-heading,
   .radiological-aerial-heading,
-  .radiological-testimony-heading { grid-template-columns: 1fr; gap: 16px; }
+  .radiological-testimony-heading,
+  .radiological-southtowns-heading { grid-template-columns: 1fr; gap: 16px; }
   .radiological-aerial-heading .eyebrow,
   .radiological-aerial-heading h2,
   .radiological-aerial-heading > p:last-child { grid-column: 1; grid-row: auto; }
@@ -6486,6 +6596,9 @@ footer {
   .radiological-modern-aerial-note { grid-template-columns: 1fr; gap: 7px; }
   .radiological-legend { justify-content: flex-start; }
   .radiological-report-summary > div { grid-template-columns: 1fr; }
+  .radiological-southtowns { padding: 28px 18px; }
+  .radiological-southtowns-callout,
+  .radiological-southtowns-timeline { grid-template-columns: 1fr; }
   .radiological-map-grid { grid-template-columns: 1fr; grid-template-areas: "map" "record" "list"; }
   .radiological-aerial-control-desktop { display: none; }
   .radiological-aerial-control-mobile {

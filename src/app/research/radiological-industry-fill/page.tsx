@@ -31,7 +31,7 @@ export default function RadiologicalInvestigationPage() {
     <main>
       <SiteHeader />
       <section className="school-research-hero radiological-hero">
-        <p className="eyebrow">Living government investigation · updated August 17, 2026</p>
+        <p className="eyebrow">Living government investigation · updated August 19, 2026</p>
         <h1>Niagara–Erie radiological investigation</h1>
         <p className="dek">
           EPA, NYSDEC, and NYSDOH are conducting a large, active search for
@@ -136,6 +136,144 @@ export default function RadiologicalInvestigationPage() {
           <a href="https://spectrumlocalnews.com/nys/buffalo/public-safety/2026/07/30/epa--dec-share-update-on-continued-radiological-assessment-in-niagara-county" target="_blank" rel="noreferrer">July 30 field update ↗</a>
           <a href="https://www.wnypapers.com/news/article/featured/2026/07/24/166614/epa-state-dec-officials-meet-with-town-of-niagara-residents-to-address-radioactivity" target="_blank" rel="noreferrer">Property-testing and resident briefing ↗</a>
         </div>
+      </section>
+
+      <section className="radiological-southtowns" id="southtowns-slag">
+        <div className="radiological-southtowns-heading">
+          <div>
+            <p className="eyebrow">Southtowns slag investigation · newest to oldest</p>
+            <h2>Old industrial slag is a testable lead—not a proven explanation for Southtown radiological signals.</h2>
+          </div>
+          <p>
+            Government records now connect Buffalo-area iron and steel slag to
+            TENORM, a historical processor, construction markets, and surviving
+            Southtown infrastructure. They do not yet connect those facts into one
+            proven radiological delivery route.
+          </p>
+        </div>
+
+        <div className="radiological-southtowns-callout">
+          <strong>The investigation question</strong>
+          <p>
+            Are current Southtown radiological areas of interest occurring where
+            historical industrial slag was placed? Public property-level survey
+            coordinates, laboratory results, construction records, and delivery
+            records are needed to test that question.
+          </p>
+        </div>
+
+        <ol className="radiological-southtowns-timeline">
+          <li>
+            <div><time>2025–2026</time><span className="evidence-status is-proven">Proven</span></div>
+            <h3>Abbott Road contains documented slag; its radiological character remains untested publicly.</h3>
+            <p>
+              Erie County&apos;s December 2025 assessment says record plans, 1990
+              bridge borings, and March 2025 project borings indicate slag beneath
+              Abbott Road and around the Smoke Creek bridge abutments. The consultant
+              recommended radiological screening and laboratory analysis if field
+              readings are elevated. The report identifies TENORM as a potential
+              concern; it does not report that the Abbott Road slag is TENORM.
+            </p>
+            <a href="https://www3.erie.gov/dpw/sites/www3.erie.gov.dpw/files/2026-01/5764.15-abbott-rd-draft-ippfdr-december-5-2025_2.pdf" target="_blank" rel="noreferrer">Read the Erie County assessment, PDF pages 56–58 ↗</a>
+          </li>
+          <li>
+            <div><time>2015–2016</time><span className="evidence-status is-proven">Proven</span></div>
+            <h3>Former Republic Steel slag was identified as low-level Ra-226 TENORM.</h3>
+            <p>
+              A March 2015 load excavated during RiverBend redevelopment triggered
+              a recycling facility&apos;s radiation monitors and was returned to the
+              site. The later DEC-filed work plan identifies subsurface iron- and
+              steelmaking slag as the source of low-level TENORM and radium-226 as
+              the principal isotope. This establishes radiological slag at the former
+              Republic property—not the radiological character of every Republic load.
+            </p>
+            <a href="https://extapps.dec.ny.gov/data/DecDocs/V00619/Report.VCP.V00619.2016-05-02.Final%20RiverBend%20TENORM%20Reuse%20Work%20Plan%20.pdf" target="_blank" rel="noreferrer">Read the RiverBend TENORM work plan ↗</a>
+          </li>
+          <li>
+            <div><time>March 1989</time><span className="evidence-status is-unresolved">Reason unresolved</span></div>
+            <h3>Hamburg Engineering instructed a developer to specify “NO SLAG.”</h3>
+            <p>
+              The Town Engineering Department&apos;s Lincoln Square Apartments review
+              required “NO SLAG” in every detail and stone within the Town
+              right-of-way. The document proves the instruction existed by March 8,
+              1989. It gives no reason, and WNY Atlas has found no evidence that the
+              restriction was adopted because of radiation rather than engineering
+              performance or another concern.
+            </p>
+            <a href="https://www.townofhamburgny.gov/Archive/ViewFile/Item/868" target="_blank" rel="noreferrer">Read the Hamburg Planning Board file, PDF page 14 ↗</a>
+          </li>
+          <li>
+            <div><time>1988 record</time><span className="evidence-status is-proven">Proven</span></div>
+            <h3>Republic and Hanna Furnace slag entered Buffalo Slag&apos;s construction-material stream.</h3>
+            <p>
+              A NYSDOT-commissioned site characterization says Buffalo Slag operated
+              the Steelawanna property from about 1913 to 1983. It identifies Hanna
+              Furnace “hard” slag and Republic Steel lightweight slag, mixed,
+              crushed, screened, and sold for road base and embankment fill. A
+              separate Hanna Furnace report says Buffalo Slag bought and removed
+              Hanna slag, recovered iron, and sold the remainder for road bases or
+              railroad ballast.
+            </p>
+            <div className="radiological-source-row">
+              <a href="https://extapps.dec.ny.gov/data/DecDocs/V00319/Report.VCP.V00319.1988-11-01.Preliminary_Site_Characterization_Steelwanna_Ave-Buffalo_and_Lackawanna--Recra_Environmental-ocr.pdf" target="_blank" rel="noreferrer">Buffalo Slag / Steelawanna record ↗</a>
+              <a href="https://extapps.dec.ny.gov/data/DecDocs/915029/Report.HW.915029.1988-08-22.Site_Characterization_and_Environmental_Assessment-Vol_%20I--Recra_Environmental-ocr.pdf" target="_blank" rel="noreferrer">Hanna Furnace record ↗</a>
+            </div>
+          </li>
+          <li>
+            <div><time>1983 bid</time><span className="evidence-status is-proven">Proven</span></div>
+            <h3>Buffalo Slag offered Woodlawn-produced aggregate to the Town of Boston.</h3>
+            <p>
+              The municipal bid file lists crushed blast-furnace slag grades and
+              crusher-run products available from Buffalo Slag&apos;s Woodlawn Plant
+              No. 81 in Hamburg, with delivered prices and a representation that the
+              aggregates met state transportation specifications. This documents a
+              Southtown construction market; it does not identify a radiologically
+              elevated batch or a particular placement location.
+            </p>
+            <a href="https://www.boston-ny.com/uploads/7/8/9/7/78977060/townboardminutes1983.pdf" target="_blank" rel="noreferrer">Read the Town of Boston bid file, PDF pages 97–100 ↗</a>
+          </li>
+          <li>
+            <div><time>Before March 1994</time><span className="evidence-status is-supported">Statewide mechanism</span></div>
+            <h3>DEC confirms the broader historical pathway beneath roads and construction projects.</h3>
+            <p>
+              DEC&apos;s TENORM policy history explains that slag and other
+              TENORM-containing ore-refining byproducts were historically used as
+              inexpensive construction backfill without consideration of their
+              radioactivity. The statewide policy validates the mechanism, but it
+              does not identify Buffalo Slag, Abbott Road, or any Southtown property
+              as radiologically contaminated.
+            </p>
+            <a href="https://dec.ny.gov/news/environmental-notice-bulletin/2023-07-05/statewide-program-policy-management-of-soils-contaminated-with-technologically-enhanced-naturally-occurring-radioactive-materials-tenorm" target="_blank" rel="noreferrer">Read NYSDEC&apos;s TENORM policy notice ↗</a>
+          </li>
+        </ol>
+
+        <div className="radiological-known-unknown radiological-southtowns-status">
+          <article>
+            <h3>Documented chain</h3>
+            <ul>
+              <li>Republic Steel and Hanna Furnace slag reached Buffalo Slag&apos;s processing stream.</li>
+              <li>Buffalo Slag sold processed material for road base, embankment fill, ballast, and Southtown aggregate markets.</li>
+              <li>Slag remaining at former Republic Steel was later identified as Ra-226 TENORM.</li>
+              <li>Historical slag remains beneath Abbott Road and near the Smoke Creek bridge abutments.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Unresolved bridge</h3>
+            <ul>
+              <li>Whether TENORM-bearing Republic slag entered Buffalo Slag&apos;s construction products.</li>
+              <li>Whether Abbott Road slag or another Southtown placement contains TENORM.</li>
+              <li>Whether current radiological areas of interest overlap documented slag placements.</li>
+              <li>Why Hamburg prohibited slag in Town right-of-way details by 1989.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p className="measurement-caution">
+          Niagara&apos;s documented phosphate-slag and federal radiological-material
+          distribution history remains a separate evidence branch. WNY Atlas does
+          not use it to infer that Niagara material traveled south or that
+          Buffalo-area iron and steel slag had the same origin or isotope profile.
+        </p>
       </section>
 
       <section className="school-method radiological-method radiological-black-creek" id="black-creek-village">
@@ -429,6 +567,7 @@ export default function RadiologicalInvestigationPage() {
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>August 19, 2026 · Southtowns slag investigation</strong> Added the Abbott Road slag evidence, former Republic Steel Ra-226 TENORM finding, Buffalo Slag supply chain, Woodlawn municipal-product record, Hamburg no-slag instruction, and the explicit unresolved link between historical placements and current radiological areas of interest.</p>
           <p><strong>August 17, 2026 · investigation scale corrected</strong> Rebuilt the page opening around the active 1,000-square-mile Niagara–Erie assessment, modern aerial dataset, intensive residential screening, confirmed elevated properties, and precautionary relocations; moved Black Creek firmly inside that living investigation.</p>
           <p><strong>August 17, 2026 · Black Creek Village watch</strong> Added the active 99th Street industrial-fill investigation, the 1990–1993 Black Creek Drive cleanup record, and the still-pending property-specific radiological classification within the regional assessment story.</p>
           <p><strong>August 12, 2026 · map-first navigation</strong> Moved the interactive evidence map directly below the introduction so visitors reach locations and records before the long-form research sections.</p>
