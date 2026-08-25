@@ -155,6 +155,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "Former C&B Dry Cleaners is a compact Jamestown cleanup site whose significance comes from solvent use rather than the physical scale of the business. Dry-cleaning chemicals can enter soil through spills, floor drains, tanks, or waste handling and then migrate as vapor or dissolved groundwater contamination.",
       "The property sits within a larger urban and industrial setting, but its regulatory record is distinct from nearby metalworking sites. That distinction is essential when discussing a solvent plume or vapor pathway.",
+      "DEC's proposed remedial plan identifies tetrachloroethene, commonly called PCE, as the principal site-related chemical. The state record separates the former dry-cleaning source area from the media through which contamination can move: soil near the former operation, groundwater beneath and beyond it, and soil vapor that may require building-specific evaluation. That pathway-based framing is more precise than treating every nearby property as equally affected.",
     ],
     timeline: [
       { period: "Dry-cleaning era", event: "A dry-cleaning business operated at the property and used chlorinated cleaning solvent." },
@@ -250,6 +251,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The approximately eight-acre property at 55-57 Jefferson Street housed Signore Tool and Die until operations ceased around 2006 and the facility was abandoned. A redevelopment owner acquired it in 2008 and entered New York's Brownfield Cleanup Program in 2011.",
       "Investigation addressed petroleum source areas, chlorinated-solvent groundwater and possible soil-vapor migration. The record is especially important because it includes an interceptor well and town well as monitored drinking-water protections rather than assuming that a factory-boundary cleanup alone resolved every pathway.",
+      "The 2015 proposed-cleanup record describes a staged response rather than one single construction event. Underground tanks and petroleum-affected soil had already been removed, and off-site vapor work had been completed before the state proposed the final Track 2 remedy. The later approach combined restricted-use soil cleanup, a maintained cover, excavation rules, and continuing monitoring, allowing reuse without presenting the property as if every residual condition had been removed.",
     ],
     timeline: [
       { period: "Tool-and-die era-2006", event: "Signore Tool and Die operated at the Jefferson Street plant before ceasing operations and abandoning the facility." },
@@ -281,6 +283,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The 7.5-acre property at 3241 Walden Avenue was first developed for industrial use in 1892. Brass foundry operations continued until 1972, leaving a long metal-casting and industrial-fill history within the Cheektowaga/Depew manufacturing corridor.",
       "The property later supported paper-recovery operations and entered New York's Brownfield Cleanup Program. Cleanup focused especially on elevated lead in soil while preserving controlled industrial reuse.",
+      "The final engineering record documents a remedy designed around continued commercial or industrial use rather than unrestricted residential conditions. Excavation and disposal addressed selected contaminated material, while a cover system and institutional controls manage soil left in place. That combination matters to the site's interpretation: remedial construction was completed, but the environmental easement and site-management plan remain active parts of the remedy rather than historical paperwork.",
     ],
     timeline: [
       { period: "1892-1972", event: "Brass foundry operations occupied the Walden Avenue property." },
@@ -381,6 +384,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The Tonawanda Roblin Steel site is a former steel property in the River Road industrial corridor. Its name can easily be confused with Former Roblin Steel in Dunkirk, but the two properties occupy different cities, regulatory records, and industrial settings.",
       "Steel handling and processing occurred amid neighboring coke, plastics, landfill, rail, and bulk-terminal operations. That crowded landscape makes verified parcel boundaries and source attribution especially important.",
+      "DEC assigns the Tonawanda property its own remediation identifier, Site 915056, while neighboring areas and operable units carry different identifiers and responsible-party histories. That administrative separation is useful evidence: even where industrial parcels touch or groundwater questions overlap, a finding from Tonawanda Coke, Envirotek, or another River Road property cannot automatically be assigned to Roblin Steel without the supporting site-specific record.",
     ],
     timeline: [
       { period: "Steel-industry era", event: "Roblin-related steel operations occupied the Tonawanda property." },
@@ -672,6 +676,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The 6.8-acre property at 301 Bank Street operated as Batavia Waste Material Company and later Batavia Iron and Metal from 1951 to 1999. The business recycled scrap metal and handled electrical transformers.",
       "Two furnaces operated from the early 1970s until 1994 to reclaim wire and smelt white metals. Before the furnaces were installed, wire insulation was reportedly removed by open burning in yard dumpsters, leaving a mixed metal-recycling legacy in fill, soil, groundwater, and neighboring areas.",
+      "DEC's later project spotlight shows why the remedy changed during construction. Additional investigation refined the locations and media requiring work, leading to excavation and off-site disposal, groundwater treatment, vapor mitigation, and wetland restoration rather than a single uniform excavation across the property. The evolving design is evidence of field verification, not a reason to generalize site findings to all nearby Bank Street parcels.",
     ],
     timeline: [
       { period: "1951–1999", event: "The property operated as a metal-recycling and scrap-handling facility." },
@@ -736,6 +741,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The Stauffer Chemical/PASNY site is a roughly 23-acre controlled property on Lewiston Road near the Niagara Power Project industrial landscape. Its history reflects the close physical relationship among chemical production, high-voltage infrastructure, transportation corridors, and the remade landscape around the Niagara River.",
       "State records document a completed remedy with contamination remaining under institutional and site-management controls. The Stauffer parcel must be interpreted separately from other Lewiston and Niagara Falls chemical sites despite shared corporate and industrial geography.",
+      "The environmental easement makes that distinction legally durable by defining the controlled acreage and restricting uses or soil disturbance that could interfere with the remedy. A Class 4 designation means the site is closed but requires continued management; it does not mean the wider Power Authority landscape shares the same conditions, and it does not convert the controlled parcel into unrestricted land.",
     ],
     timeline: [
       { period: "Industrial era", event: "Chemical operations occupied the Lewiston Road property." },
@@ -798,6 +804,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The 1660 Niagara Street record represents a specific industrial shoreline property and associated Niagara River sediment area, not the entire West Side waterfront. The location developed within a corridor shaped by manufacturing, bulk handling, rail access, filling, and repeated property reuse.",
       "DEC identifies PCB-affected sediment adjoining the cleanup property. That connection makes the shoreline an important example of how upland industrial activity and submerged environmental records must be researched together.",
+      "The state record and mapped sediment layer serve different but complementary purposes. The remediation file documents decisions and work associated with the upland brownfield, while the GIS feature preserves the location of the affected shoreline sediment. Keeping those scopes separate prevents completion of a park or upland construction phase from being mistaken for proof that every submerged sediment obligation is also complete.",
     ],
     timeline: [
       { period: "Industrial waterfront era", event: "Manufacturing and material-handling uses developed along the Niagara Street shoreline." },
@@ -2468,6 +2475,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The Niagara Falls Air Reserve Station has a long hazardous-waste corrective-action history involving former landfills, tanks, fire-training areas, and groundwater contamination. A newer investigation layer concerns PFAS associated with historical use and release of aqueous film-forming firefighting foam.",
       "PFAS work must be read separately from the older volatile-organic-compound remedy. EPA's RCRA page reports corrective action complete and groundwater controlled for the legacy units, while Air Force and state investigations continue to define PFAS occurrence and potential migration.",
+      "The Air Force remedial-investigation work plan organizes the PFAS study around documented or suspected AFFF release areas and the ways chemicals could move through soil, groundwater, surface water, and sediment. It also distinguishes the mostly public-water-served surrounding area from individual private wells considered during pathway review. That distinction prevents an on-base detection from being presented as evidence about every nearby drinking-water supply.",
     ],
     timeline: [
       {
@@ -2938,6 +2946,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "Niagara Falls Storage Site vicinity properties are parcels outside the principal federal site that were investigated because Manhattan Engineer District or Atomic Energy Commission material may have been moved, deposited, or dispersed there. They are not one continuous contamination zone and must be evaluated parcel by parcel.",
       "USACE identifies several open parcels north of NFSS on private property, including VP-E, E-Prime, H-Prime, and G, plus the town-owned VP-X. Access, historical use, sampling results, and remedy status differ across these locations.",
+      "The federal project history also records numerous vicinity properties where work was completed during the 1980s and parcels where investigation found that remedial action was not required. The 2025 proposal for VP-H-Prime illustrates the continuing parcel-by-parcel process: USACE completed a remedial investigation for the four-acre property and proposed no remedial action, subject to public review and a final decision. A vicinity-property label therefore describes an investigation history, not one uniform present condition.",
     ],
     timeline: [
       {
@@ -3081,6 +3090,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The former Simonds Saw and Steel facility in Lockport performed foundry and rolling-mill work for the Atomic Energy Commission from 1948 through 1956. USACE reports that the plant processed more than 25 million pounds of uranium metal and more than 30,000 pounds of thorium metal.",
       "Later owners included Wallace and Murray and Guterl Specialty Steel. Federal investigation identified thorium-232 and uranium in buildings and soil and uranium in groundwater, leading USACE to select a comprehensive dismantlement, excavation, and groundwater-treatment remedy.",
+      "Ownership boundaries are central to understanding the federal project. USACE reports that Allegheny International acquired most of the larger steel complex in 1984 but not the areas used for AEC work. FUSRAP therefore addresses defined former federal-production areas within a broader industrial property. The 2024 Record of Decision completed remedy selection; it did not mean that building dismantlement, soil removal, groundwater recovery, and off-site disposal had already been carried out.",
     ],
     timeline: [
       {

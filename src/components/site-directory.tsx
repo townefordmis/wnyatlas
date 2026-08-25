@@ -73,18 +73,20 @@ export function SiteDirectory() {
       </p>
 
       <div className="directory-search" role="search" aria-label="Search places">
-        <label className="directory-query">
+        <label className="directory-query" htmlFor="directory-query">
           <span>Find a place</span>
           <input
+            id="directory-query"
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Site, city, county, or topic"
           />
         </label>
-        <label>
+        <label htmlFor="directory-county">
           <span>County</span>
           <select
+            id="directory-county"
             value={county}
             onChange={(event) => setCounty(event.target.value)}
           >
@@ -96,9 +98,10 @@ export function SiteDirectory() {
             ))}
           </select>
         </label>
-        <label>
+        <label htmlFor="directory-category">
           <span>Type</span>
           <select
+            id="directory-category"
             value={category}
             onChange={(event) => setCategory(event.target.value)}
           >

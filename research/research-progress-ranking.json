@@ -1,0 +1,1058 @@
+{
+  "generated": "2026-08-25T01:13:25.723Z",
+  "methodology": "100-point editorial completeness score: summary 10, sources 25, five core story sections 40, narrative depth 15, review metadata 5, rights-cleared lead visual 5. News is reported as a gap but is not scored because not every record warrants a news timeline.",
+  "total": 28,
+  "weakestFive": [
+    "altech-specialty-steel",
+    "salamanca-former-mgp",
+    "witmer-road-disposal-site",
+    "niagara-falls-former-mgp",
+    "harrison-radiator-lockport"
+  ],
+  "records": [
+    {
+      "id": "altech-specialty-steel",
+      "name": "AlTech Specialty Steel",
+      "municipality": "Dunkirk",
+      "county": "Chautauqua",
+      "category": "cleanup",
+      "summary": "Large former specialty-steel complex with a century-scale manufacturing history. Industrial fill, process wastes, soil, and groundwater have been addressed through phased state investigation, demolition, remediation, and site management.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 2,
+      "news": 0,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "July 27, 2026",
+      "researchNotes": 3,
+      "narrativeWords": 357,
+      "summaryWords": 28,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 5,
+        "documentedImpacts": 4,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 74,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 12,
+        "sections": 40,
+        "narrative": 11,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 2 sources",
+        "no lead image",
+        "no news timeline"
+      ]
+    },
+    {
+      "id": "salamanca-former-mgp",
+      "name": "Salamanca Former Gas Property",
+      "municipality": "Salamanca",
+      "county": "Cattaraugus",
+      "category": "cleanup",
+      "summary": "Potential DEC site at 38 Main Street on the Seneca Nation's Allegany Territory. The available records link the property to Salamanca Gas Company and document gas purification and natural-gas distribution, but do not yet establish on-site manufactured-gas production or a required remedy.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 2,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "July 29, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 295,
+      "summaryWords": 42,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 5,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 75,
+      "scoreParts": {
+        "summary": 9,
+        "sources": 12,
+        "sections": 40,
+        "narrative": 9,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 2 sources",
+        "only 295 narrative words",
+        "no lead image"
+      ]
+    },
+    {
+      "id": "witmer-road-disposal-site",
+      "name": "Witmer Road Disposal Site",
+      "municipality": "Town of Niagara",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Historic disposal and burning area at James Avenue and Witmer Road, now associated with salvage-yard use. DEC's 2024 characterization plan describes ash and slag piles, drums, chloropicrin containers, chlorinated compounds and metals in investigated media. The site remains an active characterization record, not a completed-remedy site.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 2,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 4, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 292,
+      "summaryWords": 46,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 5,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 76,
+      "scoreParts": {
+        "summary": 10,
+        "sources": 12,
+        "sections": 40,
+        "narrative": 9,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 2 sources",
+        "only 292 narrative words",
+        "no lead image"
+      ]
+    },
+    {
+      "id": "niagara-falls-former-mgp",
+      "name": "Niagara Falls Former Manufactured-Gas Plant",
+      "municipality": "Niagara Falls",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Potential DEC site in the Rainbow Bridge and former Prospect Park area. Historic maps document a Niagara Falls Gas and Electric manufactured-gas plant and large gas holders, but the Class P designation means further investigation is required before cleanup needs can be determined.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 2,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "July 29, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 298,
+      "summaryWords": 43,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 76,
+      "scoreParts": {
+        "summary": 10,
+        "sources": 12,
+        "sections": 40,
+        "narrative": 9,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 2 sources",
+        "only 298 narrative words",
+        "no lead image"
+      ]
+    },
+    {
+      "id": "harrison-radiator-lockport",
+      "name": "Harrison Radiator Division, GMC",
+      "municipality": "Lockport",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Major automotive-component manufacturing property on Upper Mountain Road. DEC's closed remediation record provides a Lockport counterpart to Buffalo's former GM and American Axle complex and preserves the environmental history behind a major regional employer.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 2,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 3,
+      "narrativeWords": 381,
+      "summaryWords": 34,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 5,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 76,
+      "scoreParts": {
+        "summary": 8,
+        "sources": 12,
+        "sections": 40,
+        "narrative": 11,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 2 sources",
+        "no lead image"
+      ]
+    },
+    {
+      "id": "ischua-landfill",
+      "name": "Ischua Landfill",
+      "municipality": "Town of Ischua",
+      "county": "Cattaraugus",
+      "category": "cleanup",
+      "summary": "Inactive capped landfill that operated from 1972 to 1975 and reportedly received industrial, commercial, medical and household refuse, including TCE-laced sawdust. DEC detected PFOA, PFOS and 1,4-dioxane in groundwater and lists the property as a potential site under characterization.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 2,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 409,
+      "summaryWords": 40,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 5,
+        "documentedImpacts": 2,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 78,
+      "scoreParts": {
+        "summary": 9,
+        "sources": 12,
+        "sections": 40,
+        "narrative": 12,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 2 sources",
+        "no lead image"
+      ]
+    },
+    {
+      "id": "marine-drive-apartments-east-pfas",
+      "name": "Marine Drive Apartments East PFAS Investigation",
+      "municipality": "Buffalo",
+      "county": "Erie",
+      "category": "pfas",
+      "summary": "Brownfield investigation at 90 Erie Street documented PFAS impacts in groundwater alongside contaminants associated with historic fill; remediation planning remains part of the site record.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 2,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 567,
+      "summaryWords": 25,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 4,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 78,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 12,
+        "sections": 40,
+        "narrative": 15,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 2 sources",
+        "no lead image"
+      ]
+    },
+    {
+      "id": "frontier-chemical-pendleton",
+      "name": "Frontier Chemical — Pendleton",
+      "municipality": "Pendleton / North Tonawanda",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Closed Class 4 chemical cleanup site on Townline Road. This property is distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls and is mapped separately to prevent their histories and remedies from being conflated.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 2,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 4, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 317,
+      "summaryWords": 35,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 6,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 81,
+      "scoreParts": {
+        "summary": 8,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 10,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 317 narrative words",
+        "no lead image"
+      ]
+    },
+    {
+      "id": "tonawanda-plastics",
+      "name": "Tonawanda Plastics",
+      "municipality": "Town of Tonawanda",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "River Road plastics property within the dense Tonawanda industrial corridor. It is tracked separately from Tonawanda Coke while sharing a landscape shaped by neighboring steel, coke, landfill, and chemical operations.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 360,
+      "summaryWords": 30,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 5,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 2,
+        "presentDay": 1
+      },
+      "score": 81,
+      "scoreParts": {
+        "summary": 7,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 11,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
+      ]
+    },
+    {
+      "id": "buffalo-gas-light-tonawanda-street",
+      "name": "Buffalo Gas Light Gas Holder / 31 Tonawanda Street",
+      "municipality": "Buffalo",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "Former gas-holder property near Scajaquada Creek. State investigation documents the historic gasometer and evaluates coal-tar impacts associated with the adjoining former Westwood manufactured-gas plant area.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 0,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 4, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 386,
+      "summaryWords": 25,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 81,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 12,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image",
+        "no news timeline"
+      ]
+    },
+    {
+      "id": "fisher-price-medina",
+      "name": "Fisher-Price — Medina",
+      "municipality": "Medina",
+      "county": "Orleans",
+      "category": "cleanup",
+      "summary": "A former pickle works and Fisher-Price factory used chlorinated and fluorinated cleaning solvents, leaving an on-site groundwater problem that remains in New York's Superfund registry.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 5,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 0,
+      "narrativeWords": 539,
+      "summaryWords": 25,
+      "sectionCounts": {
+        "background": 4,
+        "timeline": 7,
+        "documentedImpacts": 4,
+        "cleanupAndControls": 3,
+        "presentDay": 0
+      },
+      "score": 81,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 25,
+        "sections": 32,
+        "narrative": 15,
+        "review": 3,
+        "researchNotes": 0,
+        "visual": 0
+      },
+      "gaps": [
+        "missing presentDay",
+        "no research/uncertainty note",
+        "no lead image"
+      ]
+    },
+    {
+      "id": "former-nl-industries-foundry",
+      "name": "Former NL Industries Foundry",
+      "municipality": "Cheektowaga",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "Seven-and-a-half-acre former foundry property carried through New York's Brownfield Cleanup Program. Its story connects metal casting, industrial fill, cleanup controls, and reuse in the Buffalo–Cheektowaga industrial belt.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 2,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 333,
+      "summaryWords": 28,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 5,
+        "documentedImpacts": 4,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 84,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 10,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": [
+        "only 333 narrative words"
+      ]
+    },
+    {
+      "id": "former-cb-dry-cleaners",
+      "name": "Former C&B Dry Cleaners",
+      "municipality": "Jamestown",
+      "county": "Chautauqua",
+      "category": "cleanup",
+      "summary": "Compact former dry-cleaning property that illustrates how a small business could create a significant solvent cleanup problem. The site is managed separately from Jamestown's much larger industrial complexes.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 1,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "July 27, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 340,
+      "summaryWords": 28,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 84,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 10,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": [
+        "only 340 narrative words"
+      ]
+    },
+    {
+      "id": "niagara-falls-air-reserve-pfas",
+      "name": "Niagara Falls Air Reserve Station PFAS Investigation",
+      "municipality": "Niagara Falls",
+      "county": "Niagara",
+      "category": "pfas",
+      "summary": "Federal and state investigations of PFAS associated with historical use and releases of aqueous film-forming firefighting foam at the air station.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 2,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "August 12, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 378,
+      "summaryWords": 21,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 84,
+      "scoreParts": {
+        "summary": 5,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 11,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": []
+    },
+    {
+      "id": "guterl-specialty-steel",
+      "name": "Guterl Specialty Steel / Former Simonds Saw and Steel",
+      "municipality": "Lockport",
+      "county": "Niagara",
+      "category": "radiological",
+      "summary": "Former specialty-steel complex where Atomic Energy Commission work left uranium and thorium impacts in buildings, soil, and groundwater; federal remediation is active.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 0,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "August 4, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 381,
+      "summaryWords": 22,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 84,
+      "scoreParts": {
+        "summary": 5,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 11,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": [
+        "no news timeline"
+      ]
+    },
+    {
+      "id": "mayville-pfas-site",
+      "name": "Mayville PFAS Site",
+      "municipality": "Mayville",
+      "county": "Chautauqua",
+      "category": "pfas",
+      "summary": "Ongoing investigation of PFNA detected in the village water system and in environmental media near a former firefighting-training area; replacement supply and treatment measures were implemented.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 3,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 490,
+      "summaryWords": 26,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 4,
+        "presentDay": 1
+      },
+      "score": 84,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 15,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
+      ]
+    },
+    {
+      "id": "katherine-street-peninsula",
+      "name": "Katherine Street Peninsula",
+      "municipality": "Buffalo",
+      "county": "Erie",
+      "category": "waterway",
+      "summary": "Former industrial Buffalo River peninsula with compacted fill and a documented waste-oil handling history nearby, where contaminated river sediment was addressed and multiple shoreline and habitat-restoration projects were completed. Sources reviewed do not establish the peninsula as a former municipal landfill.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 0,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "July 27, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 262,
+      "summaryWords": 41,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 85,
+      "scoreParts": {
+        "summary": 9,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 8,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": [
+        "only 262 narrative words",
+        "no news timeline"
+      ]
+    },
+    {
+      "id": "stauffer-chemical-pasny",
+      "name": "Stauffer Chemical / PASNY",
+      "municipality": "Lewiston",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Former chemical-plant property on Lewiston Road associated with a Power Authority of the State of New York parcel. The closed Class 4 site remains under an environmental easement covering approximately 23 acres.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 1,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "July 27, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 337,
+      "summaryWords": 32,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 85,
+      "scoreParts": {
+        "summary": 7,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 10,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": [
+        "only 337 narrative words"
+      ]
+    },
+    {
+      "id": "batavia-iron-and-metal",
+      "name": "Batavia Iron and Metal",
+      "municipality": "Batavia",
+      "county": "Genesee",
+      "category": "cleanup",
+      "summary": "Former scrap-metal and metal-processing property at 301 Bank Street. The active Class 2 State Superfund site gives Batavia a second major industrial-cleanup story beyond the municipal landfill.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 2,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "July 27, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 350,
+      "summaryWords": 27,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 5,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 85,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 11,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": []
+    },
+    {
+      "id": "niagara-falls-storage-site-vicinity-properties",
+      "name": "Niagara Falls Storage Site Vicinity Properties",
+      "municipality": "Lewiston and Porter",
+      "county": "Niagara",
+      "category": "radiological",
+      "summary": "Properties surrounding the federal storage site that have been investigated or remediated individually for material associated with the Niagara Falls Storage Site.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 0,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "July 27, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 388,
+      "summaryWords": 22,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 85,
+      "scoreParts": {
+        "summary": 5,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 12,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": [
+        "no news timeline"
+      ]
+    },
+    {
+      "id": "roblin-steel-tonawanda",
+      "name": "Roblin Steel — Tonawanda",
+      "municipality": "Town of Tonawanda",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "Former steel property in the River Road industrial corridor. This is a different cleanup record from Former Roblin Steel in Dunkirk and is presented as its own site to prevent two similarly named histories from being conflated.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 2,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "July 27, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 326,
+      "summaryWords": 37,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 86,
+      "scoreParts": {
+        "summary": 8,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 10,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": [
+        "only 326 narrative words"
+      ]
+    },
+    {
+      "id": "1660-niagara-street-sediment",
+      "name": "1660 Niagara Street Shoreline",
+      "municipality": "Buffalo",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "Niagara River shoreline sediment area associated with the 1660 Niagara Street cleanup record. DEC identifies PCB-affected sediment here; the marker represents the documented sediment boundary and should not be generalized to the entire upper Niagara River shoreline.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 2,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "July 27, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 334,
+      "summaryWords": 37,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 86,
+      "scoreParts": {
+        "summary": 8,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 10,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": [
+        "only 334 narrative words"
+      ]
+    },
+    {
+      "id": "former-signore",
+      "name": "Former Signore",
+      "municipality": "Ellicottville",
+      "county": "Cattaraugus",
+      "category": "cleanup",
+      "summary": "Former manufacturing property tracked through New York's brownfield program. The eight-acre site adds a smaller southern-tier industrial cleanup to an atlas otherwise dominated by Buffalo and Niagara Falls.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 1,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 390,
+      "summaryWords": 28,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 5,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 86,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 12,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": []
+    },
+    {
+      "id": "pierce-arrow-manufacturing-complex",
+      "name": "Former Pierce-Arrow Manufacturing Complex",
+      "municipality": "Buffalo",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "Former luxury-automobile manufacturing complex around Great Arrow Avenue and Elmwood Avenue. State records identify petroleum impacts, industrial fill, metals, PCBs, solvents, underground tanks, and later hazardous-material storage across separately managed brownfield parcels; investigation at 157 Great Arrow was updated to include PFAS sampling.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 2,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 431,
+      "summaryWords": 43,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 6,
+        "documentedImpacts": 4,
+        "cleanupAndControls": 3,
+        "presentDay": 2
+      },
+      "score": 86,
+      "scoreParts": {
+        "summary": 10,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 13,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
+      ]
+    },
+    {
+      "id": "pvs-chemicals-buffalo",
+      "name": "PVS Chemicals",
+      "municipality": "Buffalo",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "Sulfur-chemical plant at 55 Lee Street developed within the former Allied Chemical complex and purchased by PVS in 1981. Historical sulfuric-acid, sulfur dioxide, ammonia, and related operations created a separate soil-and-groundwater cleanup record from neighboring Buffalo Color; the defined property remains an active Class 2 State Superfund site.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 2,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 4, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 472,
+      "summaryWords": 48,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 5,
+        "documentedImpacts": 4,
+        "cleanupAndControls": 4,
+        "presentDay": 1
+      },
+      "score": 87,
+      "scoreParts": {
+        "summary": 10,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 14,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
+      ]
+    },
+    {
+      "id": "lehigh-valley-railroad-derailment",
+      "name": "Lehigh Valley Railroad Derailment",
+      "municipality": "Le Roy",
+      "county": "Genesee",
+      "category": "cleanup",
+      "summary": "December 1970 derailment at Gulf Road where two tank cars released about 30,000 gallons of TCE and another partially released cyanide. TCE entered fractured bedrock, producing an approximately four-mile groundwater plume across parts of Genesee, Livingston, and Monroe counties; EPA selected the remaining multi-media remedy in 2023.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 3,
+      "hasImage": true,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 4,
+      "narrativeWords": 374,
+      "summaryWords": 48,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 5,
+        "documentedImpacts": 4,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 89,
+      "scoreParts": {
+        "summary": 10,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 11,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 5
+      },
+      "gaps": []
+    },
+    {
+      "id": "chaffee-landfill",
+      "name": "Chaffee Landfill",
+      "municipality": "Sardinia / Chaffee",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "Long-running landfill complex on Olean Road containing closed disposal areas alongside an active permitted operation. Unlike the atlas's completed brownfields, Chaffee remains an operating solid-waste facility; its historic cells, current cells, leachate and gas systems, permits, and proposed expansions must be kept distinct.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 4,
+      "news": 2,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 563,
+      "summaryWords": 43,
+      "sectionCounts": {
+        "background": 4,
+        "timeline": 5,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 94,
+      "scoreParts": {
+        "summary": 10,
+        "sources": 24,
+        "sections": 40,
+        "narrative": 15,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
+      ]
+    },
+    {
+      "id": "niagara-erie-radiological-assessment",
+      "name": "Niagara–Erie Residential Radiological Assessment",
+      "municipality": "Town of Niagara",
+      "county": "Niagara",
+      "category": "radiological",
+      "summary": "Ongoing three-phase regional assessment using aerial, roadway, and property-level surveys. Agencies are screening hundreds of locations, conducting soil and laboratory follow-up where warranted, and offering temporary relocation to some households. Contact or screening does not mean a property is confirmed contaminated.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 6,
+      "news": 2,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "August 17, 2026",
+      "researchNotes": 3,
+      "narrativeWords": 742,
+      "summaryWords": 41,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 7,
+        "documentedImpacts": 6,
+        "cleanupAndControls": 4,
+        "presentDay": 3
+      },
+      "score": 94,
+      "scoreParts": {
+        "summary": 9,
+        "sources": 25,
+        "sections": 40,
+        "narrative": 15,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
+      ]
+    }
+  ]
+}

@@ -576,6 +576,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/der/factsheet/819018esd.pdf",
       },
+      {
+        title: "Batavia Iron and Metal Cleanup Project Spotlight",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://dec.ny.gov/sites/default/files/2025-08/819018spotlight.pdf",
+      },
     ],
   },
   {
@@ -725,6 +730,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "http://extapps.dec.ny.gov/docs/remediation_hudson_pdf/e932053stauffer.pdf",
       },
+      {
+        title: "Stauffer Chemical / PASNY Remediation Database Record",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/cfmx/extapps/derexternal/haz/details.cfm?ProgNo=932053",
+      },
     ],
   },
   {
@@ -811,6 +821,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "DEC Sediment Cap and Contamination Layer",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/5",
+      },
+      {
+        title: "1660 Niagara Street Remediation Database Record",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/cfmx/extapps/derexternal/haz/details.cfm?ProgNo=C915311",
       },
     ],
   },
@@ -1223,6 +1238,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Former C&B Dry Cleaners Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/907028/",
+      },
+      {
+        title: "Former C&B Dry Cleaners Proposed Remedial Action Plan",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/docs/remediation_hudson_pdf/prapcbdc1.pdf",
       },
       { title: "Sites with Environmental Easements", publisher: "NYSDEC", url: decEasements },
     ],
@@ -1644,6 +1664,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C905034/",
       },
+      {
+        title: "Former Signore Proposed Cleanup Fact Sheet",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C905034/Fact%20Sheet.BCP.C905034.2015-04-10.Cleanup%20Proposed%20for%20Former%20Signore%2C%20Inc.%20Site.pdf",
+      },
       { title: "Sites with Environmental Easements", publisher: "NYSDEC", url: decEasements },
     ],
   },
@@ -1721,6 +1746,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Former NL Industries Foundry Site Documents",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/C915200/",
+      },
+      {
+        title: "Former NL Industries Foundry Final Engineering Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915200/Report.BCP.C915200.2009-12-10.Final_Engineering_Report.pdf",
       },
       { title: "Sites with Environmental Easements", publisher: "NYSDEC", url: decEasements },
     ],
@@ -1850,6 +1880,11 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Tonawanda Coke Site 109 Feasibility Study",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/915055/Report.HW.915055.2024-02-02.Site%20109%20Feasibility%20Study%20_Final.pdf",
+      },
+      {
+        title: "Roblin Steel Remediation Database Record",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/cfmx/extapps/derexternal/haz/details.cfm?ProgNo=915056",
       },
     ],
   },

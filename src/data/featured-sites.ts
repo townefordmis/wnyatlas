@@ -1485,6 +1485,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-914th-airlift-wing-afrc-niagara-falls-new-york",
       },
+      {
+        title: "Final PFAS Remedial Investigation Work Plan and Quality Assurance Project Plan",
+        publisher: "U.S. Air Force / New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932106/Work%20Plan.RCRA.932106.2023-09-19.Final%20NFARS%20PFAS%20RI%20UFP-QAPP.pdf",
+      },
     ],
   },
   {
@@ -1868,6 +1873,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "U.S. Department of Energy Office of Legacy Management",
         url: "https://www.energy.gov/lm/niagara-falls-storage-site-vicinity-properties-new-york-site",
       },
+      {
+        title: "Vicinity Property H Prime Remedial Investigation and Proposed Plan",
+        publisher: "U.S. Army Corps of Engineers Buffalo District",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/4303579/niagara-falls-storage-site-vicinity-property-h-prime-remedial-investigation-pro/",
+      },
     ],
   },
   {
@@ -1963,6 +1973,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Record of Decision Published for FUSRAP Guterl Site",
         publisher: "U.S. Army Corps of Engineers Buffalo District",
         url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/3904071/record-of-decision-published-for-fusrap-guterl-site-in-lockport/",
+      },
+      {
+        title: "Guterl Specialty Steel Feasibility Study and Proposed Plan",
+        publisher: "U.S. Army Corps of Engineers Buffalo District",
+        url: "https://www.lrd.usace.army.mil/News/News-Releases/Display/Article/3637848/usace-releases-feasibility-study-and-proposed-plan-for-former-guterl-specialty/",
       },
     ],
   },

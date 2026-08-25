@@ -286,9 +286,10 @@ export function AtlasMap() {
               placeholder="Name, town, or keyword"
             />
             <div>
-              <label>
+              <label htmlFor="atlas-county">
                 <span>County</span>
                 <select
+                  id="atlas-county"
                   value={county}
                   onChange={(event) => {
                     setCounty(event.target.value);
@@ -303,9 +304,10 @@ export function AtlasMap() {
                   ))}
                 </select>
               </label>
-              <label>
+              <label htmlFor="atlas-category">
                 <span>Type</span>
                 <select
+                  id="atlas-category"
                   value={category}
                   onChange={(event) => {
                     setCategory(event.target.value);
@@ -320,9 +322,10 @@ export function AtlasMap() {
                   <option value="waterway">Waterway</option>
                 </select>
               </label>
-              <label>
+              <label htmlFor="atlas-evidence">
                 <span>Evidence</span>
                 <select
+                  id="atlas-evidence"
                   value={evidence}
                   onChange={(event) => {
                     setEvidence(event.target.value);

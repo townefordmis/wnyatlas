@@ -1,6 +1,100 @@
 import type { AtlasImage } from "@/types/site";
 
 export const siteImages: Partial<Record<string, AtlasImage>> = {
+  "1660-niagara-street-sediment": {
+    src: "/historical/1660-niagara-street-aerial-2024.jpg",
+    alt: "New York State orthophoto showing the Niagara Street transportation corridor and Niagara River shoreline in Buffalo",
+    caption:
+      "The Niagara Street shoreline corridor in 2024 state orthoimagery. This geographic view does not delineate the brownfield parcel, PCB-affected sediment, or the status of either remedy.",
+    date: "2024",
+    credit: "New York State GIS Program Office",
+    sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer",
+    rights: "New York State public orthoimagery",
+  },
+  "batavia-iron-and-metal": {
+    src: "/historical/batavia-iron-and-metal-aerial-napp.jpg",
+    alt: "Color-infrared federal aerial mosaic showing the Bank Street and Dwyer Stadium area in Batavia",
+    caption:
+      "The Bank Street setting in the federal NAPP-era aerial mosaic. Color differences reflect infrared imagery and land cover; they do not identify contamination, cleanup limits, or affected neighboring parcels.",
+    date: "1994–1998 federal mosaic",
+    credit: "U.S. Geological Survey / New York State GIS Program Office",
+    sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/napp/MapServer",
+    rights: "Public federal and New York State orthoimagery",
+  },
+  "former-signore": {
+    src: "/historical/former-signore-aerial-2021.jpg",
+    alt: "New York State orthophoto showing the Jefferson Street industrial property and surrounding Ellicottville landscape",
+    caption:
+      "The former Signore area and surrounding Ellicottville landscape in 2021. The aerial provides geographic context only and does not map groundwater, vapor pathways, or the environmental-easement boundary.",
+    date: "2021",
+    credit: "New York State GIS Program Office",
+    sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2021/MapServer",
+    rights: "New York State public orthoimagery",
+  },
+  "roblin-steel-tonawanda": {
+    src: "/historical/roblin-steel-tonawanda-aerial-2024.jpg",
+    alt: "New York State orthophoto showing the River Road industrial corridor and Niagara River shoreline in Tonawanda",
+    caption:
+      "The River Road industrial corridor in 2024. The aerial does not identify the Roblin boundary or assign conditions from neighboring cleanup sites to this property.",
+    date: "2024",
+    credit: "New York State GIS Program Office",
+    sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer",
+    rights: "New York State public orthoimagery",
+  },
+  "stauffer-chemical-pasny": {
+    src: "/historical/stauffer-chemical-pasny-aerial-2024.jpg",
+    alt: "New York State orthophoto showing the Niagara Power Project landscape and Lewiston Road area",
+    caption:
+      "The Niagara Power Project landscape near the controlled Stauffer parcel in 2024. This view does not delineate the 23-acre easement or attribute site conditions to the larger Power Authority property.",
+    date: "2024",
+    credit: "New York State GIS Program Office",
+    sourceUrl: "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer",
+    rights: "New York State public orthoimagery",
+  },
+  "former-cb-dry-cleaners": {
+    src: "/historical/former-cb-dry-cleaners-aerial-2021.jpg",
+    alt: "New York State orthophoto showing the Jamestown neighborhood and commercial corridor around the former C&B Dry Cleaners property",
+    caption:
+      "The former cleaner's Jamestown setting in 2021 state orthoimagery. This view provides geographic context only; it does not show a solvent plume, vapor-mitigation area, or cleanup boundary.",
+    date: "2021",
+    credit: "New York State GIS Program Office",
+    sourceUrl:
+      "https://orthos.its.ny.gov/arcgis/rest/services/wms/2021/MapServer",
+    rights: "New York State public orthoimagery",
+  },
+  "former-nl-industries-foundry": {
+    src: "/historical/former-nl-industries-foundry-aerial-2024.jpg",
+    alt: "New York State orthophoto showing the Walden Avenue industrial corridor around the former NL Industries Foundry property",
+    caption:
+      "The Walden Avenue industrial corridor in 2024 state orthoimagery. The photograph documents present land use and surrounding context, not contamination extent or the legal environmental-easement boundary.",
+    date: "2024",
+    credit: "New York State GIS Program Office",
+    sourceUrl:
+      "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer",
+    rights: "New York State public orthoimagery",
+  },
+  "guterl-specialty-steel": {
+    src: "/historical/guterl-specialty-steel-aerial-2024.jpg",
+    alt: "New York State orthophoto showing the former Guterl and Simonds industrial complex within Lockport",
+    caption:
+      "The Lockport industrial landscape around the former Guterl and Simonds complex in 2024. The aerial supplies geographic context; it does not delineate the former AEC work areas or radiological conditions.",
+    date: "2024",
+    credit: "New York State GIS Program Office",
+    sourceUrl:
+      "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer",
+    rights: "New York State public orthoimagery",
+  },
+  "niagara-falls-air-reserve-pfas": {
+    src: "/historical/niagara-air-reserve-aerial-2024.jpg",
+    alt: "New York State orthophoto showing the Niagara Falls Air Reserve Station runways, facilities, and surrounding land",
+    caption:
+      "The active Niagara Falls Air Reserve Station and surrounding landscape in 2024 state orthoimagery. The aerial does not depict PFAS detections, release areas, groundwater migration, or drinking-water conclusions.",
+    date: "2024",
+    credit: "New York State GIS Program Office",
+    sourceUrl:
+      "https://orthos.its.ny.gov/arcgis/rest/services/wms/2024/MapServer",
+    rights: "New York State public orthoimagery",
+  },
   "love-canal": {
     src: "/historical/love-canal-pre-1978.jpg",
     alt: "Aerial view of the Love Canal neighborhood before the 1978 emergency declaration",
@@ -135,6 +229,17 @@ export const siteImages: Partial<Record<string, AtlasImage>> = {
     credit: "U.S. Army Corps of Engineers, Buffalo District",
     sourceUrl:
       "https://www.dvidshub.net/image/7959257/niagara-falls-storage-site-aerial-diagram",
+    rights: "Public domain — official U.S. Army illustration",
+  },
+  "niagara-falls-storage-site-vicinity-properties": {
+    src: "/historical/niagara-falls-storage-site-aerial-2023.jpg",
+    alt: "Annotated aerial view of the Niagara Falls Storage Site and surrounding landscape associated with its vicinity-property program",
+    caption:
+      "The federal storage site and Interim Waste Containment Structure provide geographic context for the separate vicinity properties investigated around it. The outline does not represent one continuous vicinity-property contamination boundary.",
+    date: "August 8, 2023",
+    credit: "U.S. Army Corps of Engineers, Buffalo District",
+    sourceUrl:
+      "https://www.lrd.usace.army.mil/News/Multimedia/igphoto/2003370682/",
     rights: "Public domain — official U.S. Army illustration",
   },
   "seaway-site": {
