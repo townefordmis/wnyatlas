@@ -1454,7 +1454,7 @@ const featuredSiteRecords: AtlasSite[] = [
       "Later remedial-investigation work uses a broader PFAS analyte list. The page names only compounds supported as detections by the reviewed results; APFO use has not been established.",
     summary:
       "Federal and state investigations of PFAS associated with historical use and releases of aqueous film-forming firefighting foam at the air station.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-78.93997339520959, 43.11936785737371],
     newsEvents: [
       {
@@ -1856,7 +1856,7 @@ const featuredSiteRecords: AtlasSite[] = [
     category: "radiological",
     summary:
       "Properties surrounding the federal storage site that have been investigated or remediated individually for material associated with the Niagara Falls Storage Site.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-79.026, 43.235],
     atomicLegacy: {
       era: "Manhattan Project-derived material",
@@ -1957,7 +1957,7 @@ const featuredSiteRecords: AtlasSite[] = [
     category: "radiological",
     summary:
       "Former specialty-steel complex where Atomic Energy Commission work left uranium and thorium impacts in buildings, soil, and groundwater; federal remediation is active.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-78.69, 43.171],
     atomicLegacy: {
       era: "Early Atomic Energy Commission",

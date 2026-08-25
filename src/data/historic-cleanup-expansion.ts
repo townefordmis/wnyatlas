@@ -545,7 +545,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     summary:
       "Former scrap-metal and metal-processing property at 301 Bank Street. The active Class 2 State Superfund site gives Batavia a second major industrial-cleanup story beyond the municipal landfill.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-78.177060007, 43.008938506],
     newsEvents: [
       {
@@ -716,7 +716,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     summary:
       "Former chemical-plant property on Lewiston Road associated with a Power Authority of the State of New York parcel. The closed Class 4 site remains under an environmental easement covering approximately 23 acres.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-79.03306918, 43.14455465],
     newsEvents: [{ date: "Long-term management", headline: "A former chemical parcel remains controlled within a larger power-project landscape", summary: "DEC's Class 4 and easement records preserve approximately 23 acres of use, excavation and management restrictions; those controls apply to the defined Stauffer property rather than the entire Power Authority landscape.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932053/", reach: "Local" }],
     sources: [
@@ -791,7 +791,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     summary:
       "Niagara River shoreline sediment area associated with the 1660 Niagara Street cleanup record. DEC identifies PCB-affected sediment here; the marker represents the documented sediment boundary and should not be generalized to the entire upper Niagara River shoreline.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-78.8978, 42.9295],
     newsEvents: [
       {
@@ -1221,7 +1221,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     summary:
       "Compact former dry-cleaning property that illustrates how a small business could create a significant solvent cleanup problem. The site is managed separately from Jamestown's much larger industrial complexes.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     newsEvents: [
       {
         date: "February 2013",
@@ -1646,7 +1646,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     summary:
       "Former manufacturing property tracked through New York's brownfield program. The eight-acre site adds a smaller southern-tier industrial cleanup to an atlas otherwise dominated by Buffalo and Niagara Falls.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-78.66980735370983, 42.27055940024228],
     newsEvents: [
       {
@@ -1721,7 +1721,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     summary:
       "Seven-and-a-half-acre former foundry property carried through New York's Brownfield Cleanup Program. Its story connects metal casting, industrial fill, cleanup controls, and reuse in the Buffalo–Cheektowaga industrial belt.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-78.70027906069848, 42.91119522314418],
     newsEvents: [
       {
@@ -1867,7 +1867,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     category: "cleanup",
     summary:
       "Former steel property in the River Road industrial corridor. This is a different cleanup record from Former Roblin Steel in Dunkirk and is presented as its own site to prevent two similarly named histories from being conflated.",
-    evidenceStatus: "research-in-progress",
+    evidenceStatus: "well-documented",
     coordinates: [-78.9371, 42.9808],
     newsEvents: [{ date: "1908-1964", headline: "An integrated steelworks is dismantled after shutdown", summary: "Industrial history traces blast furnaces, open-hearth steelmaking, wire and nail mills at the former Wickwire property; after closure, Roblin acquired the site and salvaged steel equipment for its Dunkirk operation.", publisher: "Society for Industrial Archeology", url: "https://www.sia-web.org/wordpress/wp-content/uploads/2025/02/SIA-Buffalo-Guidebook-1992.pdf", reach: "Regional" }, { date: "Current remedial record", headline: "Roblin and Envirotek units require boundary-by-boundary interpretation", summary: "Community mapping and state records describe overlapping operable-unit geography and separate responsible parties; the atlas therefore preserves each waste source and remedy rather than presenting a single corridor-wide plume.", publisher: "Clean Air Coalition of Western New York", url: "https://www.cacwny.org/tonawanda-coke-bcp/area-map/", reach: "Local" }],
     sources: [
