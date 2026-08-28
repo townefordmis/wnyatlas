@@ -44,6 +44,30 @@ export const smokesCreekShorelineColors = {
  */
 export const landscapeChangeGeometries: LandscapeChangeGeometry[] = [
   {
+    id: "sinclair-genesee-river-remedy-reach",
+    recordId: "sinclair-genesee-river-channelization",
+    name: "Sinclair cleanup-driven Genesee River channelization reach",
+    mapLabel: "Sinclair river remedy",
+    geometryType: "LineString",
+    coordinates: [
+      [-77.9477, 42.1056],
+      [-77.9462, 42.1072],
+      [-77.9447, 42.1091],
+      [-77.9436, 42.1115],
+      [-77.9428, 42.1142],
+      [-77.9427, 42.117],
+    ],
+    evidenceType: "documented_engineered_waterway",
+    sourceYear: "EPA remedy design approved 1990; construction inspected 1991 and accepted 1992",
+    sourceUrl: "https://semspub.epa.gov/work/02/609934.pdf",
+    sourceLabel: "U.S. EPA 2022 Sinclair Refinery Sixth Five-Year Review",
+    confidence: "agency_mapped_approximation",
+    displayColor: "#0057b8",
+    lineStyle: "solid",
+    boundaryNote:
+      "Generalized Atlas trace aligned to the Genesee River reach beside the Sinclair landfill and refinery. It is not the approved construction survey, historic/pre-remedy centerline, landfill boundary, riverbank excavation area, or contamination boundary.",
+  },
+  {
     id: "cayuga-island-western-tip-extension",
     recordId: "cayuga-island-manmade-extensions",
     name: "Cayuga Island western-tip extension",

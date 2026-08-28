@@ -6,6 +6,7 @@ import { siteImages } from "@/data/site-images";
 import { cayugaIslandSite } from "@/data/cayuga-island-site";
 import { waterwayHubSites } from "@/data/waterway-hubs";
 import { littleValleySite } from "@/data/little-valley-site";
+import { sinclairRefinerySite } from "@/data/sinclair-refinery-site";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -3890,6 +3891,7 @@ export const featuredSites: AtlasSite[] = [
   ...featuredSiteRecords,
   cayugaIslandSite,
   littleValleySite,
+  sinclairRefinerySite,
   ...waterwayHubSites,
   ...historicCleanupExpansion,
   ...countyExpansion2026,

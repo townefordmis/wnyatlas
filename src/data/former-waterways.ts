@@ -43,6 +43,43 @@ export type FormerWaterwayRecord = {
 
 export const formerWaterwayRecords: FormerWaterwayRecord[] = [
   {
+    id: "sinclair-genesee-river-channelization",
+    name: "Genesee River channelization at Sinclair Refinery",
+    location: "Former Sinclair Refinery and landfill, Wellsville",
+    coordinates: [-77.9448, 42.1115],
+    evidenceType: "documented_engineered_waterway",
+    displayClassification:
+      "Cleanup-driven river channelization · documented landfill-erosion control",
+    waterwayHistory:
+      "The Genesee River forms the eastern and southern boundaries of the Sinclair site. After landfill erosion and flooding exposed waste and carried debris toward the river, agencies first built and stabilized an interim diversion berm. EPA's permanent remedy then partially channelized the river to protect the consolidated hazardous-waste landfill from erosion and inundation during a 100-year flood.",
+    documentedMaterial:
+      "The adjacent landfill contained approximately 230,000 cubic yards of refinery waste, including oily sludge, tank and separator sludge, off-specification products, burned Fuller's earth, acid waste, ash, tetraethyl lead, pesticides, waste oil, heavy metals, and drums. This inventory belongs to the landfill and must not be assigned uniformly to river sediment.",
+    environmentalRecord:
+      "Groundwater from the site discharges toward the Genesee River, and later LNAPL sheens led to removal of affected riverbank soil and riverbed and drainage-swale sediment. A 3,300-foot collection trench and constructed wetland system now intercept and treat contaminated shallow groundwater before monitored discharge.",
+    hydrologicPathway:
+      "EPA's landfill investigation estimated that groundwater from the central landfill could reach the river in about 1.2 years under the conditions studied. River stage, flooding, bank erosion, shallow groundwater, and contaminated fill therefore formed a documented connected remedy problem.",
+    remediationStatus:
+      "Channelization construction began in 1990, received final inspection in 1991, and was accepted in 1992. The river work operates with the capped landfill, cutoff wall, bank protection, groundwater collection and wetland treatment, institutional controls, and long-term monitoring.",
+    evidenceSummary:
+      "DOCUMENTED cleanup-driven partial channelization and bank protection; mapped line is a generalized altered reach, not the landfill, contamination, excavation, or engineering-survey boundary.",
+    interpretation:
+      "The solid Atlas line shows the approximate Sinclair river-remedy reach from EPA's site figures. It does not reproduce the construction centerline, pre-remedy channel, floodplain, Superfund boundary, or contaminated-sediment area.",
+    sourceUrl: "https://semspub.epa.gov/work/02/609934.pdf",
+    sourceLabel: "U.S. EPA 2022 Sinclair Refinery Sixth Five-Year Review",
+    additionalSources: [
+      {
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91000FBM.TXT",
+        label: "U.S. EPA 1985 landfill and river Record of Decision",
+      },
+    ],
+    relatedSiteId: "sinclair-refinery-wellsville",
+    changePeriod: "Interim diversion in 1983; permanent partial channelization constructed 1990–1991 and accepted 1992",
+    comparisonYears: ["Pre-remedy river", "1983", "1990", "1991", "1992", "Present"],
+    evidenceConfidence: "agency_mapped_approximation",
+    presentStatus:
+      "The altered reach remains part of an operating Superfund remedy and must be understood with the landfill cap, bank protection, groundwater interception, and wetland treatment system.",
+  },
+  {
     id: "cayuga-island-manmade-extensions",
     name: "Cayuga Island man-made extensions",
     location: "Western tip and portions of the southern shore, Niagara Falls",
