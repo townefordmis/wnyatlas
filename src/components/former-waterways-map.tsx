@@ -488,7 +488,7 @@ export function FormerWaterwaysMap() {
       <div className="school-map-toolbar">
         <div>
           <p className="eyebrow">
-            Separate research map · {formerWaterwayRecords.length} documented locations · {landscapeChangeGeometries.length} mapped areas
+            Separate research map · {formerWaterwayRecords.length} documented locations · {landscapeChangeGeometries.length} mapped lines and areas
           </p>
           <h2 id="waterway-map-title">Changed waters and documented fill</h2>
         </div>
@@ -502,12 +502,12 @@ export function FormerWaterwaysMap() {
               {label}
             </span>
           ))}
-          <small>Large numbered markers match the numbered location list. They show evidence locations, not surveyed boundaries.</small>
+          <small>Every numbered location now has mapped geography. Markers identify records; lines and shading show the documented or reconstructed change.</small>
           <small className="waterway-area-key">
-            <i aria-hidden="true" /> Shading = approximate historical area
+            <i aria-hidden="true" /> Shading = documented or approximate changed area; read its boundary note
           </small>
           <small className="waterway-line-key">
-            <i aria-hidden="true" /> Dashed teal line = possible historic waterway course, not a surveyed route
+            <i aria-hidden="true" /> Dashed line = reconstructed or buried waterway corridor, not surveyed banks
           </small>
         </div>
       </div>

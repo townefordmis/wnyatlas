@@ -67,7 +67,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     documentedMaterial:
       "The reviewed historical sources establish abandonment and filling, but do not establish that every buried section was filled with industrial waste. WNY Atlas therefore labels this as a filled waterway rather than a waste-disposal site.",
     interpretation:
-      "Canalside later re-excavated, rewatered, or interpreted portions of the historic terminus. This marker identifies the documented terminus area and does not claim to trace the entire buried canal alignment.",
+      "Canalside later re-excavated, rewatered, or interpreted portions of the historic terminus. The dashed Atlas line connects Commercial Slip with the documented downtown corridor and Wilkeson confluence; it is a centerline reconstruction, not surveyed canal banks or a fill-material boundary.",
     sourceUrl:
       "https://www.buffalony.gov/DocumentCenter/View/9463/PreservationReadySurvey",
     additionalSources: [{
@@ -179,7 +179,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     documentedMaterial:
       "The reviewed source establishes substantial wetland loss and filling but does not identify one uniform fill material across the entire historical marsh. Individual disposal and cleanup areas require their own records.",
     interpretation:
-      "The marker represents the documented landscape-change area, not a reconstructed wetland boundary. The surviving and restored habitat at Tifft Nature Preserve must remain visually separate from filled portions of the historical marsh.",
+      "The brown shading is a deliberately generalized envelope for the historically extensive marsh landscape, not a reconstructed wetland edge or filled-area limit. Its boundary note keeps the surviving and restored Tifft Nature Preserve habitat distinct from documented broader marsh loss.",
     sourceUrl:
       "https://archive.epa.gov/solec/web/pdf/coastal_wetlands_of_the_great_lakes.pdf",
     additionalSources: [
@@ -245,7 +245,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     documentedMaterial:
       "A federal-state habitat assessment reports that Rattlesnake Island and the surrounding marsh were largely filled with industrial wastes by the late 1920s. DEC investigation records for the River Road site document later landfilling and industrial-waste disposal from approximately 1957 to 1970 and identify the former Rattlesnake Creek channel as filled. These records concern defined study areas and do not support treating the entire River Road corridor as one uniform deposit.",
     interpretation:
-      "This marker joins the documented former island, marsh and channel history without drawing an unsupported exposure boundary. The 1901 georeferenced island and former-coastline figure, the 1920s aerial plates and later imagery will be used to reconstruct individual landscape changes before shaded areas are published.",
+      "The dashed line traces the former Rattlesnake Creek channel reproduced from the 1901 USGS map on DEC Figure 8. It makes the buried route visible without turning the broader former island and marsh landscape into an unsupported exposure or disposal boundary.",
     sourceUrl:
       "https://dec.ny.gov/sites/default/files/2024-01/bnrhabreport.pdf",
     sourceLabel: "Buffalo and Niagara Rivers Habitat Inventory and Assessment",
@@ -274,7 +274,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     documentedMaterial:
       "EPA identifies iron- and steelmaking slag and other plant wastes as the material forming this man-made waterfront. Separate waste units and remedy areas exist within the larger property and should not be collapsed into one condition.",
     interpretation:
-      "The marker identifies the documented slag-fill landscape. Aerial and engineering-map work will reconstruct successive shorelines rather than treating the modern property boundary as one fill event.",
+      "The shaded overview joins the 1912 and 1970 shoreline traces registered from the DEC engineering plate, making the scale of created land visible. The separate dated shoreline lines remain the more precise evidence; neither is a uniform disposal or contamination boundary.",
     sourceUrl:
       "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-tecumseh-redevelopment-incorporated-lackawanna",
     sourceLabel: "U.S. EPA Tecumseh Redevelopment hazardous-waste cleanup summary",
@@ -405,7 +405,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     documentedMaterial:
       "The reviewed sources document an engineered underground water-power system. They do not establish that the tunnel was a general industrial-waste disposal channel.",
     interpretation:
-      "This marker identifies the documented downtown industrial-water system at an interpretive location rather than claiming a surveyed line for every buried segment.",
+      "The dashed line is a generalized interpretive corridor through the canal-era industrial district. It makes the buried hydraulic system visible while explicitly avoiding a survey-grade claim for individual tunnel segments.",
     sourceUrl:
       "https://www.niagaracountybusiness.com/file-library/100208/city_lockport_comprehensive_plan.pdf",
     additionalSources: [{ url: "https://www.canals.ny.gov/", label: "New York State Canal Corporation" }],
