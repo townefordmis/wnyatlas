@@ -163,11 +163,10 @@ export function FormerWaterwaysMap() {
   );
 
   const chooseRecord = useCallback(
-    (record: FormerWaterwayRecord, duration = 500) => {
+    (record: FormerWaterwayRecord) => {
       setSelected(record);
-      window.requestAnimationFrame(() => focusRecord(record, duration));
     },
-    [focusRecord],
+    [],
   );
 
   useEffect(() => {
@@ -426,6 +425,15 @@ export function FormerWaterwaysMap() {
       map.current = null;
     };
   }, [chooseRecord, focusRecord]);
+
+  useEffect(() => {
+    if (!map.current || selected.id === cayugaIslandRecordId) return;
+    const frame = window.requestAnimationFrame(() => {
+      map.current?.resize();
+      focusRecord(selected);
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [focusRecord, selected]);
 
   useEffect(() => {
     const visible = new Set(filtered.map((record) => record.id));
