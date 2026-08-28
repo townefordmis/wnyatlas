@@ -3,6 +3,7 @@ import { siteStories } from "@/data/site-stories";
 import { historicCleanupExpansion } from "@/data/historic-cleanup-expansion";
 import { countyExpansion2026 } from "@/data/county-expansion-2026";
 import { siteImages } from "@/data/site-images";
+import { cayugaIslandSite } from "@/data/cayuga-island-site";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -3870,6 +3871,7 @@ const featuredSiteRecords: AtlasSite[] = [
 
 export const featuredSites: AtlasSite[] = [
   ...featuredSiteRecords,
+  cayugaIslandSite,
   ...historicCleanupExpansion,
   ...countyExpansion2026,
 ].map((site) => ({

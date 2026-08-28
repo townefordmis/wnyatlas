@@ -55,6 +55,7 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     changePeriod: "Before 1930 through 1962; south-shore change documented by 1980",
     comparisonYears: ["1927", "1938", "1958", "1962", "1966", "1978–1980", "2024"],
     evidenceConfidence: "agency_mapped_approximation",
+    relatedSiteId: "cayuga-island-industrial-fill",
   },
   {
     id: "buried-erie-canal-buffalo-terminus",

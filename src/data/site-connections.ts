@@ -177,6 +177,38 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
     ],
   },
   {
+    id: "cayuga-island-little-niagara-landscape",
+    name: "Cayuga Island and the Little Niagara River waste-site landscape",
+    summary:
+      "Cayuga Island, Griffon Park, and the 102nd Street landfill occupy one altered river-edge landscape, but government records define separate disposal histories, boundaries, pathways, and investigations.",
+    members: [
+      {
+        siteId: "cayuga-island-industrial-fill",
+        role: "Residential industrial-fill investigation",
+        connection:
+          "The island record covers man-made residential extensions, the separate Hennepin Avenue fill case, and the renewed West Rivershore Drive investigation.",
+      },
+      {
+        siteId: "griffon-park-landfill",
+        role: "Former municipal disposal area",
+        connection:
+          "Griffon Park lies directly across the Little Niagara River and has its own municipal-landfill and groundwater-seep record.",
+      },
+      {
+        siteId: "hooker-102nd-street-landfill",
+        role: "Adjoining industrial landfill complex",
+        connection:
+          "The Hooker/Olin landfill lies beside Griffon Park along the Niagara River and is governed by a separate federal containment and monitoring remedy.",
+      },
+      {
+        siteId: "love-canal",
+        role: "Nearby but separate disposal site",
+        connection:
+          "Love Canal provides essential regional history but does not establish the source or extent of fill beneath Cayuga Island.",
+      },
+    ],
+  },
+  {
     id: "buffalo-color-system",
     name: "Buffalo Color facility and river system",
     summary:
