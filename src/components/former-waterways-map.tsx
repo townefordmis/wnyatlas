@@ -35,6 +35,18 @@ const waterwayMarkerColors: Record<WaterwayEvidenceType, string> = {
   documented_restored_wetland: "#2e7d32",
 };
 
+const waterwayMarkerTextColors: Record<WaterwayEvidenceType, string> = {
+  documented_disposal_fill: "#fff",
+  documented_filled_waterway: "#fff",
+  documented_contaminated_sediment: "#fff",
+  documented_reclaimed_land: "#172720",
+  documented_engineered_waterway: "#fff",
+  documented_culverted_waterway: "#fff",
+  documented_filled_wetland: "#fff",
+  documented_slag_fill: "#fff",
+  documented_restored_wetland: "#fff",
+};
+
 const confidenceLabels = {
   documented: "Documented in the reviewed agency record",
   agency_mapped_approximation: "Approximate Atlas trace aligned from an agency map",
@@ -342,23 +354,46 @@ export function FormerWaterwaysMap() {
       geometryLabelStore.set(geometry.id, label);
     });
 
-    formerWaterwayRecords.forEach((record) => {
+    formerWaterwayRecords.forEach((record, index) => {
+      const element = document.createElement("button");
+      element.type = "button";
+      element.className = "waterway-native-marker";
+      element.dataset.evidenceType = record.evidenceType;
+      element.setAttribute("aria-label", `Open ${record.name}`);
+
+      const dot = document.createElement("span");
+      dot.className = "waterway-marker-dot";
+      dot.style.background = waterwayMarkerColors[record.evidenceType];
+      dot.style.color = waterwayMarkerTextColors[record.evidenceType];
+      dot.textContent = String(index + 1).padStart(2, "0");
+
+      const label = document.createElement("span");
+      label.className = "waterway-marker-label";
+      label.textContent = record.name;
+
+      element.append(dot, label);
       const marker = new maplibregl.Marker({
-        color: waterwayMarkerColors[record.evidenceType],
-        scale: isMobile ? 0.9 : 0.82,
+        element,
+        anchor: "bottom",
         subpixelPositioning: true,
       })
         .setLngLat(record.coordinates)
         .addTo(instance);
-      marker.getElement().classList.add("waterway-native-marker");
-      marker.getElement().dataset.evidenceType = record.evidenceType;
-      marker.getElement().setAttribute("aria-label", `Open ${record.name}`);
       marker.getElement().addEventListener("click", (event) => {
         event.stopPropagation();
         chooseRecord(record);
       });
       markerStore.set(record.id, marker);
     });
+
+    const updateMarkerDetail = () => {
+      const showLabels = instance.getZoom() >= 12.5;
+      markerStore.forEach((marker) => {
+        marker.getElement().classList.toggle("is-detailed", showLabels);
+      });
+    };
+    instance.on("zoomend", updateMarkerDetail);
+    updateMarkerDetail();
 
     const linkedRecordId = window.location.hash.replace("#waterway-", "");
     const linkedRecord = formerWaterwayRecords.find(
@@ -382,6 +417,7 @@ export function FormerWaterwaysMap() {
     return () => {
       observer.disconnect();
       window.removeEventListener("resize", resize);
+      instance.off("zoomend", updateMarkerDetail);
       markerStore.forEach((marker) => marker.remove());
       markerStore.clear();
       geometryLabelStore.forEach((label) => label.remove());
@@ -455,7 +491,7 @@ export function FormerWaterwaysMap() {
               {label}
             </span>
           ))}
-          <small>Markers show evidence locations, not surveyed boundaries.</small>
+          <small>Large numbered markers match the numbered location list. They show evidence locations, not surveyed boundaries.</small>
           <small className="waterway-area-key">
             <i aria-hidden="true" /> Shading = approximate historical area
           </small>
@@ -527,7 +563,14 @@ export function FormerWaterwaysMap() {
           </label>
           <p className="school-result-count">{filtered.length} locations shown</p>
           <div className="school-campus-options">
-            {filtered.map((record) => (
+            {filtered.map((record) => {
+              const recordNumber = formerWaterwayRecords.findIndex(
+                (candidate) => candidate.id === record.id,
+              ) + 1;
+              const hasMappedArea = landscapeChangeGeometries.some(
+                (geometry) => geometry.recordId === record.id,
+              );
+              return (
               <button
                 type="button"
                 key={record.id}
@@ -535,6 +578,9 @@ export function FormerWaterwaysMap() {
                 onClick={() => chooseRecord(record)}
               >
                 <strong>
+                  <span className="waterway-list-index">
+                    {String(recordNumber).padStart(2, "0")}
+                  </span>
                   <i
                     className="waterway-list-swatch"
                     style={{ background: waterwayMarkerColors[record.evidenceType] }}
@@ -542,9 +588,12 @@ export function FormerWaterwaysMap() {
                   />
                   {record.name}
                 </strong>
-                <span>{waterwayEvidenceLabels[record.evidenceType]}</span>
+                <span>
+                  {waterwayEvidenceLabels[record.evidenceType]} · {hasMappedArea ? "Mapped line or area" : "Evidence-location marker"}
+                </span>
               </button>
-            ))}
+              );
+            })}
           </div>
         </aside>
 
