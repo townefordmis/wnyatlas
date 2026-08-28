@@ -19,6 +19,26 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
   {
+    id: "little-valley-tce-corridor",
+    name: "Little Valley TCE plume and Bush Industries",
+    summary:
+      "The valley-scale Superfund plume and the Bush Industries property overlap in source-investigation history, but they remain distinct records with different contaminants, boundaries, and cleanup programs.",
+    members: [
+      {
+        siteId: "little-valley-superfund",
+        role: "Valley-scale groundwater and vapor remedy",
+        connection:
+          "Little Valley documents the approximately eight-mile TCE plume, treated private wells, five investigated source areas, vapor mitigation, and continuing controls.",
+      },
+      {
+        siteId: "bush-industries-cattaraugus",
+        role: "Investigated source area and separate property cleanup",
+        connection:
+          "Bush was investigated as part of the TCE source study, while its own Atlas record documents the separate village restoration of petroleum-affected soil and industrial buildings.",
+      },
+    ],
+  },
+  {
     id: "fmc-middleport-dublin-road",
     name: "FMC Middleport production and Dublin Road disposal",
     summary:

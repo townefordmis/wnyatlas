@@ -5,6 +5,7 @@ import { countyExpansion2026 } from "@/data/county-expansion-2026";
 import { siteImages } from "@/data/site-images";
 import { cayugaIslandSite } from "@/data/cayuga-island-site";
 import { waterwayHubSites } from "@/data/waterway-hubs";
+import { littleValleySite } from "@/data/little-valley-site";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -3888,6 +3889,7 @@ const featuredSiteRecords: AtlasSite[] = [
 export const featuredSites: AtlasSite[] = [
   ...featuredSiteRecords,
   cayugaIslandSite,
+  littleValleySite,
   ...waterwayHubSites,
   ...historicCleanupExpansion,
   ...countyExpansion2026,
