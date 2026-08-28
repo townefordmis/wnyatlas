@@ -209,6 +209,56 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
     ],
   },
   {
+    id: "niagara-river-waterway-network",
+    name: "Niagara River waterway and tributary network",
+    summary:
+      "The Niagara River hub connects altered tributaries, navigation channels, contaminated embayments, residential fill, source-site cleanups, and habitat projects without treating the entire river corridor as one cleanup site.",
+    members: [
+      {
+        siteId: "niagara-river-waterway",
+        role: "River and Area of Concern hub",
+        connection:
+          "The river page organizes the regional record by reach, tributary, embayment, source site, and restoration project.",
+      },
+      {
+        siteId: "black-rock-canal",
+        role: "Navigation and sediment-remediation corridor",
+        connection:
+          "The canal received strategic legacy-sediment dredging and remains connected to Scajaquada Creek and Unity Island habitat work.",
+      },
+      {
+        siteId: "scajaquada-creek",
+        role: "Highly altered urban tributary",
+        connection:
+          "Scajaquada enters Black Rock Canal after passing buried, channelized, sewer-connected, and site-specific cleanup reaches.",
+      },
+      {
+        siteId: "two-mile-creek-tonawanda",
+        role: "PCB source-tracking tributary",
+        connection:
+          "Two Mile and Rattlesnake creeks were included in the 2018–19 USGS/DEC passive-sampler investigation, with local sources not assumed from proximity alone.",
+      },
+      {
+        siteId: "cayuga-island-industrial-fill",
+        role: "Residential fill investigation",
+        connection:
+          "Cayuga Island sits within the Little Niagara River landscape near, but distinct from, major regulated disposal sites.",
+      },
+      {
+        siteId: "gill-creek-chemical-corridor",
+        role: "Lower-river tributary and embayment record",
+        connection:
+          "Gill Creek has its own industrial-source, sediment, remediation, and monitoring history within the larger river corridor.",
+      },
+      {
+        siteId: "pettit-flume-durez-outfall",
+        role: "Industrial drainage and river pathway",
+        connection:
+          "The Pettit Flume record follows a defined facility-to-river pathway and does not characterize adjoining shoreline reaches.",
+      },
+    ],
+  },
+  {
     id: "buffalo-color-system",
     name: "Buffalo Color facility and river system",
     summary:

@@ -4,6 +4,7 @@ import { historicCleanupExpansion } from "@/data/historic-cleanup-expansion";
 import { countyExpansion2026 } from "@/data/county-expansion-2026";
 import { siteImages } from "@/data/site-images";
 import { cayugaIslandSite } from "@/data/cayuga-island-site";
+import { waterwayHubSites } from "@/data/waterway-hubs";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -1659,6 +1660,16 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "2025 Riverwatch Water Quality Report",
         publisher: "Buffalo Niagara Waterkeeper",
         url: "https://bnwaterkeeper.org/wp-content/uploads/2026/01/2025-Riverwatch-Report_FINAL-web.pdf",
+      },
+      {
+        title: "Track-Down Survey of PCBs in Three Niagara River Tributaries",
+        publisher: "U.S. Geological Survey",
+        url: "https://www.usgs.gov/centers/new-york-water-science-center/science/track-down-survey-pcbs-three-tributaries-niagara",
+      },
+      {
+        title: "PCB Passive-Sampler Data for Two Mile, Rattlesnake, and Tonawanda Creeks, 2018–2019",
+        publisher: "U.S. Geological Survey",
+        url: "https://www.usgs.gov/data/pcbs-measured-three-tributaries-niagara-river-area-concern-aoc-2018-2019",
       },
     ],
   },
@@ -3351,6 +3362,11 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/nature/waterbodies/lakes-rivers/great-lakes/areas-of-concern/eighteenmile-creek-area-of-concern",
       },
+      {
+        title: "Eighteenmile Creek Area of Concern — Upstream PCB Findings and Current Impairments",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/great-lakes-aocs/eighteenmile-creek-aoc",
+      },
     ],
   },
   {
@@ -3872,6 +3888,7 @@ const featuredSiteRecords: AtlasSite[] = [
 export const featuredSites: AtlasSite[] = [
   ...featuredSiteRecords,
   cayugaIslandSite,
+  ...waterwayHubSites,
   ...historicCleanupExpansion,
   ...countyExpansion2026,
 ].map((site) => ({

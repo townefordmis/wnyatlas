@@ -87,6 +87,27 @@ export default function FormerWaterwaysResearchPage() {
               Erie County historical aerial photographs ↗
             </a>
           </article>
+          <article>
+            <h3>Buried does not always mean inactive</h3>
+            <p>
+              Historic channels can retain permeable sediment or fill and may
+              influence groundwater or contaminant movement after the visible
+              waterway disappears. DEC investigated that mechanism at Babcock
+              Street and in defined lower Scajaquada Creek areas. It is not a
+              universal assumption applied to every buried creek or canal.
+            </p>
+          </article>
+          <article>
+            <h3>Connected waterway records</h3>
+            <p>
+              Detailed waterway pages provide the larger watershed and cleanup
+              context without turning an entire river into one contaminated-site
+              boundary.
+            </p>
+            <Link href="/sites/black-rock-canal">Black Rock Canal →</Link>{" "}
+            <Link href="/sites/niagara-river-waterway">Niagara River →</Link>{" "}
+            <Link href="/sites/eighteenmile-creek-superfund">Eighteen Mile Creek →</Link>
+          </article>
         </div>
         <Link href="/">Return to the regional atlas →</Link>
       </section>

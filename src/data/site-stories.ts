@@ -2590,12 +2590,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Two Mile Creek is a short, heavily modified urban tributary passing through Sheridan Park before reaching the Niagara River in Tonawanda. Parts of its watershed and channel have long received municipal drainage, stormwater, and historically combined sanitary influences.",
       "Its toxic-sediment history includes a defined pathway from the former General Electric transformer facility. Investigators concluded that PCB-affected material may have traveled through the Oriskany Drive storm sewer to the creek, prompting several phases of sediment and bank-soil investigation from 2004 through 2010.",
       "That facility-related remedy is narrower than the creek's overall water-quality condition. Contemporary watershed summaries identify continuing concerns involving dissolved oxygen, pathogens, phosphorus, and oil or floating substances, while historic regional studies detected other persistent chemicals at particular locations and times.",
+      "USGS and DEC later deployed semipermeable membrane samplers across Two Mile, Rattlesnake, and Tonawanda creeks in 2018–19 to improve PCB source tracking. That study is a regional investigation layer; it does not erase the documented GE pathway or prove that another nearby property is a PCB source.",
     ],
     timeline: [
       { period: "Historic urbanization", event: "Channel enclosure, municipal drainage, sewer inputs, park construction, and surrounding industry transformed much of the creek's hydrology and habitat." },
       { period: "2004–2010", event: "Multiple investigations sampled sediment and bank soil downstream of the Oriskany Drive storm-sewer outfall serving the former GE facility." },
       { period: "2008", event: "A Town of Tonawanda drainage project dredged and stabilized portions of the creek; PCB-affected sediment was removed from selected areas and confirmation samples generally met the cleanup objective." },
       { period: "January 2015", event: "A limited west-bank soil excavation addressed the remaining GE-related area, with confirmation results reported below the state-approved objective." },
+      { period: "2018–2019", event: "USGS and DEC sampled waterborne PCBs at 29 tributary locations using passive samplers to improve source-area resolution." },
       { period: "2024–present", event: "Buffalo Niagara Waterkeeper advanced design for a Sheridan Park living shoreline joining restoration areas at West Pond and Two Mile Creek." },
     ],
     documentedImpacts: [
@@ -2614,6 +2616,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Locate the newest DEC waterbody factsheet and municipal sewer-overflow records before assigning current causes to particular outfalls.",
       "Update the living-shoreline section when final design, permits, construction limits, and implementation dates are published.",
+      "Keep the USGS/DEC tributary study labeled as source tracking and do not assign unresolved PCB signals to a property without a later agency conclusion.",
     ],
   },
   "scajaquada-creek": {
@@ -4393,6 +4396,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "At the Lockport source area, the former Flintkote plant manufactured felt products and asphalt roofing materials. Other historical operations also occupied the industrial corridor. EPA documented PCBs, lead, and other contaminants in soil, groundwater, creek sediment, and floodplain deposits, but source attribution and remedy decisions differ by location.",
       "The first major federal action focused on Water Street properties and the deteriorated Flintkote building. EPA selected permanent relocation for affected residents, demolition, excavation, and source control before turning to the much larger downstream sediment problem.",
       "Fish-consumption restrictions make the story larger than the abandoned buildings: persistent contaminants can move through sediment and accumulate in fish even when a particular shoreline looks ordinary.",
+      "The lower creek from Burt Dam to Olcott Harbor is a separately defined Great Lakes Area of Concern. EPA's current assessment says lower-AOC sediment is below the toxicity threshold while fish-tissue PCB impairment is driven primarily by contamination arriving from upstream of Burt Dam. The AOC and Superfund boundaries therefore overlap as a transport story but are not interchangeable cleanup boundaries.",
     ],
     timeline: [
       { period: "Industrial era", event: "Flintkote and other Lockport industries operated near the creek headwaters, leaving multiple source areas that later required separate investigation." },
@@ -4406,6 +4410,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "PCBs and lead contaminate source-area soil and creek sediment.",
       "Groundwater, runoff, and sediment transport connected industrial sources to downstream reaches.",
       "Fish-consumption advisories reflect persistent bioaccumulation risk in the aquatic food web.",
+      "EPA reports that fine suspended material can move over Burt Dam and that elevated PCB levels in lower-creek fish are primarily associated with upstream sources; this does not mean every downstream sediment location requires excavation.",
       "The official corridor boundary does not mean every bank, yard, or building along all 15 miles has the same contaminant level or cleanup requirement.",
     ],
     cleanupAndControls: [

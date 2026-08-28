@@ -633,6 +633,29 @@ export function FormerWaterwaysMap() {
             <h4>What the record documents</h4>
             <p>{selected.documentedMaterial}</p>
           </section>
+          {selected.environmentalRecord && (
+            <section>
+              <h4>Environmental record</h4>
+              <p>{selected.environmentalRecord}</p>
+            </section>
+          )}
+          {selected.hydrologicPathway && (
+            <section>
+              <h4>Why the historic waterway still matters</h4>
+              <p>{selected.hydrologicPathway}</p>
+            </section>
+          )}
+          {selected.remediationStatus && (
+            <section>
+              <h4>Remediation and present status</h4>
+              <p>{selected.remediationStatus}</p>
+            </section>
+          )}
+          {selected.evidenceSummary && (
+            <p className="record-boundary-note">
+              <strong>Evidence summary:</strong> {selected.evidenceSummary}
+            </p>
+          )}
           <section>
             <h4>How WNY Atlas interprets it</h4>
             <p>{selected.interpretation}</p>

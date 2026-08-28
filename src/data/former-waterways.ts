@@ -22,6 +22,10 @@ export type FormerWaterwayRecord = {
   evidenceType: WaterwayEvidenceType;
   waterwayHistory: string;
   documentedMaterial: string;
+  environmentalRecord?: string;
+  hydrologicPathway?: string;
+  remediationStatus?: string;
+  evidenceSummary?: string;
   interpretation: string;
   sourceUrl: string;
   sourceLabel: string;
@@ -116,11 +120,29 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "State brownfield records describe the Buffalo River crossing the southern portion of the former refinery property before it was rerouted and straightened between 1914 and 1917 to improve navigation and industrial access.",
     documentedMaterial:
       "The former river channel was filled. Later investigations also identified petroleum contamination in portions of the larger industrial property, but WNY Atlas does not treat the entire buried channel as a uniform contaminant deposit.",
+    environmentalRecord:
+      "DEC's OU-3 investigation documented dissolved and free-phase petroleum near the Babcock combined-sewer-overflow structure. A petroleum release and sheening near the outfall in August 2020 prompted response work by DEC, the U.S. Coast Guard, the Buffalo Fire Department, and the property owner. The source could not initially be pinpointed; historic subsurface petroleum was identified as a potential source.",
+    hydrologicPathway:
+      "The 2021 hydrogeologic report says the backfilled 1914–1917 river channel may act as a preferential migration pathway or accumulation point for petroleum. Investigators also evaluated communication among river-stage changes, groundwater, petroleum-bearing subsurface material, and the deteriorated CSO structure. This mechanism is documented for the investigated OU-3 area, not every former river channel.",
+    remediationStatus:
+      "Interim containment and recovery followed the 2020 release. The long-term concept included extending sheet-pile containment, limiting communication between the CSO and surrounding subsurface, controlling groundwater, and recovering product where present. The linked ExxonMobil terminal page tracks the broader multi-operable-unit remedy.",
+    evidenceSummary:
+      "DOCUMENTED filled channel; DOCUMENTED localized petroleum impacts and investigated migration pathway; former-channel polygon is not a petroleum boundary.",
     interpretation:
       "Agency records identify the buried channel as a possible subsurface migration or accumulation pathway. The shaded Atlas reconstruction follows the former-riverbed band on the 2026 DEC investigation figure and is not a uniform contamination boundary.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915201D/Report.BCP.C915201D.2026-04-07.Western_Inv_Report.pdf",
     sourceLabel: "NYSDEC western-area supplemental investigation report — C915201D",
+    additionalSources: [
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915201D/Report.BCP.C915201D.2021-07-30.OU-3_CSO%20Area_Hydrogeologic_Investigation.pdf",
+        label: "NYSDEC Babcock Street CSO hydrogeologic investigation — C915201D",
+      },
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915201D/Work%20Plan.BCP.C915201D.2020-10-19.Updated_Interim_CMWP_Rev-%202.pdf",
+        label: "NYSDEC interim corrective-measures work plan following the 2020 release",
+      },
+    ],
     relatedSiteId: "exxonmobil-former-buffalo-terminal",
     changePeriod: "1914–1917",
     comparisonYears: ["Pre-1914 mapping", "1927", "1938", "1951", "1966", "2024"],
@@ -136,11 +158,25 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "DEC records describe part of the property as following a former Buffalo River channel that was filled after the river was straightened.",
     documentedMaterial:
       "The state decision document identifies disposal fill containing ash, black sand, brick, wood, and glass over much of the property.",
+    environmentalRecord:
+      "The remedial investigation documented localized PAHs, metals, and petroleum-related compounds in soil and fill. These findings were evaluated by sample location and remedial area; they do not establish uniform contamination throughout either the property or the mapped former channel.",
+    hydrologicPathway:
+      "Groundwater was reported to move generally north to northwest toward the Buffalo River. The former-channel geometry was therefore important to investigation and redevelopment planning, but the agency record does not equate the full historic channel polygon with one contaminant pathway or waste body.",
+    remediationStatus:
+      "Interim remedial measures removed affected soil, and the property was redeveloped for South Buffalo Charter School with engineered cover and vapor-protection components. Long-term obligations continue through the DEC-approved site-management program.",
+    evidenceSummary:
+      "DOCUMENTED former river channel and disposal fill; DOCUMENTED localized contamination and completed brownfield remedy; approximate channel trace is not a contamination polygon.",
     interpretation:
       "This is a documented filled-channel and disposal-site relationship. The modern school redevelopment is managed under the completed brownfield remedy and continuing site controls.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915268/Decision%20Document.BCP.C915268.2014-07-22.Final%20Decision%20Doccument.pdf",
     sourceLabel: "NYSDEC Decision Document — C915268",
+    additionalSources: [
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915268/Work%20Plan.BCP.C915268.2012-12-28.Final_RI_WP.pdf",
+        label: "NYSDEC 154 South Ogden remedial-investigation work plan and historic-channel figure",
+      },
+    ],
     changePeriod: "River relocation documented before the 1927 comparison map",
     comparisonYears: ["1927", "1938", "1951", "1966", "1978", "2024"],
     evidenceConfidence: "documented",
@@ -155,19 +191,37 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "DEC records identify the filled former Wilkeson Slip beneath part of this area, where the slip historically met the former Erie Canal.",
     documentedMaterial:
       "The reviewed record establishes the filled waterway and the adjoining manufactured-gas-plant history. It does not support describing every part of the filled slip as industrial-waste disposal.",
+    environmentalRecord:
+      "DEC's off-site characterization documents manufactured-gas-plant impacts—principally coal tar—within portions of the former Wilkeson Slip and toward Fourth Street. Coal tar was observed entering a 2012 utility excavation from beneath Fourth Street. Fill in the investigation area was reported as roughly 6 to 21 feet thick and included silt, clay, sand, gravel, slag, and brick.",
+    hydrologicPathway:
+      "The filled slip and Erie Canal confluence created a distinct subsurface setting. Shallow groundwater generally moves toward the Lake Erie waterfront, while coal-tar observations followed particular borings, excavations, and former-slip areas rather than every part of the historic waterway.",
+    remediationStatus:
+      "Earlier work excavated part of the former slip east of the off-site study area, and later Fourth Street work removed affected material and installed sheet piling. Residual conditions and institutional or engineering controls must be read from the applicable DEC site files.",
+    evidenceSummary:
+      "DOCUMENTED filled slip; DOCUMENTED localized MGP coal-tar impacts; approximate slip and canal centerlines are not present-day contamination boundaries.",
     interpretation:
       "The dashed traces show the mapped former Wilkeson Slip and its local confluence with the former Erie Canal. The waterway history and adjacent gas-manufacturing cleanup are shown together but kept as separate facts.",
     sourceUrl:
       "https://extapps.dec.ny.gov/data/DecDocs/C915194/Work%20Plan.BCP.C915194.2005-03-25.IRMWP%20Final%203%2025%2005.pdf",
-    additionalSources: [{
-      url: "https://extapps.dec.ny.gov/data/DecDocs/C915194/",
-      label: "NYSDEC Fourth Street / Former Buffalo Service Station document collection",
-    }],
     changePeriod: "Historic canal-and-slip era through twentieth-century filling and redevelopment",
     comparisonYears: ["Historic canal maps", "1927", "1938", "1951", "1970s school development", "2024"],
     evidenceConfidence: "documented",
     presentStatus: "The filled slip and adjoining manufactured-gas-plant cleanup remain separate records. Current conditions are governed by the applicable cleanup and site-management documents.",
     sourceLabel: "NYSDEC Interim Remedial Measure Work Plan — C915194",
+    additionalSources: [
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915194A/Report.BCP.C915194A.2015-12-23.Site%20Characterization.pdf",
+        label: "NYSDEC Former Buffalo Service Station–Off-Site characterization — C915194A",
+      },
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915194A/",
+        label: "NYSDEC Wilkeson Slip / Off-Site document collection",
+      },
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915194/",
+        label: "NYSDEC Fourth Street / Former Buffalo Service Station document collection",
+      },
+    ],
   },
   {
     id: "tifft-historic-marsh-loss",
@@ -245,6 +299,14 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "Government habitat and cleanup records describe Rattlesnake Island beside a broad Niagara River marsh historically known as The Flats. The surrounding marsh and the channel separating the island from the mainland were subsequently filled as the River Road industrial corridor developed.",
     documentedMaterial:
       "A federal-state habitat assessment reports that Rattlesnake Island and the surrounding marsh were largely filled with industrial wastes by the late 1920s. DEC investigation records for the River Road site document later landfilling and industrial-waste disposal from approximately 1957 to 1970 and identify the former Rattlesnake Creek channel as filled. These records concern defined study areas and do not support treating the entire River Road corridor as one uniform deposit.",
+    environmentalRecord:
+      "The River Road record documents refuse, construction rubble, fly ash, bottom ash, foundry sand, slag, boiler-cleaning waste, and later liquid industrial wastes within its defined site. Investigations found PAHs, PCBs, metals, cyanide, and non-aqueous-phase liquid in different media. Adjacent Cherry Farm and other former Flats disposal sites have separate boundaries and records.",
+    hydrologicPathway:
+      "Groundwater beneath River Road generally moves west toward the Niagara River. DEC selected groundwater and product recovery to prevent contaminated groundwater or LNAPL discharge to the river, while the filled creek and former wetland geometry explain how the present industrial shoreline replaced the earlier island-and-marsh system.",
+    remediationStatus:
+      "The River Road remedy included a clean-earth cover, shoreline stabilization, groundwater extraction, LNAPL recovery, monitoring, and deed restrictions. Those controls apply to the River Road site and must not be projected across the entire former Flats landscape.",
+    evidenceSummary:
+      "DOCUMENTED filled Rattlesnake Creek and former wetland; DOCUMENTED waste and contamination within defined cleanup sites; broader Flats boundary remains a historical reconstruction.",
     interpretation:
       "The dashed line traces the former Rattlesnake Creek channel reproduced from the 1901 USGS map on DEC Figure 8. It makes the buried route visible without turning the broader former island and marsh landscape into an unsupported exposure or disposal boundary.",
     sourceUrl:
@@ -254,6 +316,10 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       {
         url: "https://extapps.dec.ny.gov/data/DecDocs/915031/Report.HW.915031.1993-09-01.Phase1-2RIandFS.pdf",
         label: "NYSDEC River Road remedial investigation and feasibility study",
+      },
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915031/ROD.HW.915031.1994-03-01.river_road.pdf",
+        label: "NYSDEC River Road Record of Decision — Site 915031",
       },
       {
         url: "https://extapps.dec.ny.gov/data/DecDocs/C915353/Report.BCP.C915353.2020-08-30.nygeology_2020_Tonawanda_Coke_ESA.pdf",
@@ -426,6 +492,14 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
       "DEC investigation describes Gulf Creek passing through open channel and wetland areas before entering a large culvert. The Gulf Interceptor sewer also crossed the Old Upper Mountain Road cleanup area.",
     documentedMaterial:
       "State records document contaminated creek sediment and floodplain soil associated with the former disposal area, as well as unintended sewer and stormwater discharges caused by degraded interceptor infrastructure.",
+    environmentalRecord:
+      "DEC investigations documented deep municipal and industrial waste in the former ravine and VOCs, PAHs, pesticides, and metals in waste or soil, with related impacts in Gulf Creek water, sediment, and floodplain soil. Individual pesticide and PCB detections did not, by themselves, establish the landfill as their source.",
+    hydrologicPathway:
+      "Municipal dumping and burning pushed waste into the ravine and buried the Gulf Interceptor and the creek's headwater setting. Groundwater and drainage converge toward Gulf Creek, which reaches Eighteen Mile Creek roughly a mile downstream. The mapped line is a generalized creek-and-culvert corridor, not the sewer or cleanup boundary.",
+    remediationStatus:
+      "New York first relocated roughly 5,000 feet of combined sewer away from the waste and creek. Cleanup beginning in 2023 excavated landfill material, affected floodplain soil, and Gulf Creek sediment for treatment and consolidation beneath an engineered on-site cover, with water controls and continuing management.",
+    evidenceSummary:
+      "DOCUMENTED altered and partly buried headwater corridor; DOCUMENTED landfill and contaminated-sediment impacts; source attribution remains compound- and sample-specific.",
     interpretation:
       "The creek is partly open, partly wetland and partly culverted. WNY Atlas therefore identifies an altered waterway and sewer relationship rather than describing the entire creek as buried.",
     sourceUrl:
