@@ -150,6 +150,11 @@ export function FormerWaterwaysMap() {
           maxZoom: 14.6,
           duration,
         });
+      } else if (duration === 0) {
+        instance.jumpTo({
+          center: record.coordinates,
+          zoom: 14,
+        });
       } else {
         instance.flyTo({
           center: record.coordinates,
@@ -428,11 +433,11 @@ export function FormerWaterwaysMap() {
 
   useEffect(() => {
     if (!map.current || selected.id === cayugaIslandRecordId) return;
-    const frame = window.requestAnimationFrame(() => {
+    const timer = window.setTimeout(() => {
       map.current?.resize();
-      focusRecord(selected);
-    });
-    return () => window.cancelAnimationFrame(frame);
+      focusRecord(selected, 0);
+    }, 80);
+    return () => window.clearTimeout(timer);
   }, [focusRecord, selected]);
 
   useEffect(() => {
