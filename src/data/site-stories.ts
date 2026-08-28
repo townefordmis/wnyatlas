@@ -2517,6 +2517,141 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Keep AFFF-related PFAS findings distinct from the older landfill, tank, and VOC corrective-action units.",
     ],
   },
+  "cayuga-creek-niagara-county": {
+    lastReviewed: "August 28, 2026",
+    background: [
+      "This is the 21.6-mile Cayuga Creek in Niagara County, which flows past the Niagara Falls airport area and reaches the Niagara River near Cayuga Island. It is distinct from the Erie County Cayuga Creek that passes through Depew and joins the Buffalo River.",
+      "New York's March 2025 waterbody factsheet classifies the entire creek and selected tributaries as an impaired Class C segment. Fishing and secondary-contact recreation are confirmed impaired because of dioxin, a legacy condition that predates the newer PFAS investigation and should not be merged with it.",
+      "Buffalo Niagara Waterkeeper has combined monitoring with restoration in this corridor. Its June 2022 surface-water study sampled above and below the Niagara Falls airport and found several PFAS compounds, with higher concentrations downstream. That pattern supports further source and pathway investigation, but a two-location comparison cannot establish that every detection came from the airport, the Air Reserve Station, or any single release area.",
+    ],
+    timeline: [
+      { period: "1998–present", event: "The state impairment record identifies dioxin as the confirmed cause limiting fishing and secondary-contact recreation." },
+      { period: "July 2016", event: "An estimated 500 gallons of waste oil entered through a storm pipe near Niagara Falls Boulevard and Tuscarora Road. Waterkeeper reported the spill, cleanup followed, and contemporary accounts did not identify the dumper." },
+      { period: "2018–2022", event: "Land protection and project design led to construction of a new channel through historic floodplain on a roughly 30-acre Town of Niagara restoration property." },
+      { period: "June 2022", event: "Waterkeeper collected paired PFAS samples upstream and downstream of the Niagara Falls airport and reported multiple compounds with higher downstream concentrations." },
+      { period: "2023–present", event: "Native-plant establishment, invasive-species control, stewardship, and efforts to fund formal public access continue at the restored floodplain." },
+    ],
+    documentedImpacts: [
+      "DEC identifies dioxin as the confirmed pollutant impairing fishing and secondary-contact recreation across the assessed segment.",
+      "The 2016 incident placed an estimated 500 gallons of waste oil on the creek through a stormwater pipe. Dry weather and vacuum recovery limited movement, and DEC said at the time that it did not expect long-term water-quality effects.",
+      "Waterkeeper's 2022 screening documented PFAS in surface water, including PFOA and PFOS, and a strong upstream-to-downstream difference near the airport. These screening results are evidence of occurrence, not a complete plume boundary, exposure assessment, or final source allocation.",
+      "Historic channelization, altered floodplain connection, surrounding development, and persistent flooding degraded habitat and helped motivate the restoration project.",
+    ],
+    cleanupAndControls: [
+      "Responders used vacuum equipment to recover oil and affected water after the 2016 spill while DEC investigated the discharge route and source.",
+      "The 2022 restoration shifted flow into a newly constructed channel through historic floodplain and added vernal pools, riffles, root wads, native plantings, and space for flood energy to dissipate.",
+      "Waterkeeper and partners continue vegetation monitoring, invasive-species management, community stewardship, land-protection work, and planning for public trails.",
+      "PFAS source characterization and any permanent response remain separate regulatory questions tied to the Air Force, state, and other source-specific investigations.",
+    ],
+    presentDay: [
+      "Cayuga Creek remains an impaired waterbody as well as an active restoration and monitoring corridor. The dioxin impairment, one-time oil discharge, PFAS screening, airport investigation, and restored floodplain are related by geography but represent different pollutants, evidence levels, responsible-party questions, and response programs.",
+    ],
+    researchNotes: [
+      "Add the numeric compound-by-compound 2022 upstream and downstream PFAS results after preserving the sampling map or underlying dataset in a stable public source.",
+      "Locate DEC's final spill record and closure documentation for the July 2016 waste-oil discharge, including recovered quantity and any enforcement outcome.",
+      "Keep this record labeled Niagara County in search, maps, and cross-links so it cannot be confused with Cayuga Creek in Erie County.",
+    ],
+  },
+  "bergholtz-creek": {
+    lastReviewed: "August 28, 2026",
+    background: [
+      "Bergholtz Creek is a Niagara County tributary in the Love Canal and Cayuga Creek drainage network. Black Creek joins it before Bergholtz enters Cayuga Creek, which then flows toward the Niagara River. That connected geography made the creek both a contaminant pathway and a defined part of the Love Canal remedy.",
+      "Investigators found that Love Canal contamination had migrated through storm and sanitary infrastructure to nearby waterways. The selected creek remedy focused on dioxin-contaminated sediment in Black and Bergholtz creeks rather than treating every downstream waterway as one uniform cleanup site.",
+      "The present impairment record is a separate chapter. DEC currently identifies fecal coliform and phosphorus—not dioxin—as the confirmed pollutants impairing fishing and secondary-contact recreation across the assessed Bergholtz Creek segment, with urban runoff identified in the listing history.",
+    ],
+    timeline: [
+      { period: "1942–1953", event: "Hooker Electrochemical disposed of more than 21,000 tons of chemical waste at Love Canal, creating the source later addressed by the Superfund remedy." },
+      { period: "1970s–1980s", event: "Investigation documented contaminant migration through area sewers and into Black and Bergholtz creek sediment." },
+      { period: "1986–1987", event: "State contractors cleaned approximately 68,000 linear feet of storm and sanitary sewers associated with the broader Love Canal remedy." },
+      { period: "1987–1990", event: "Approximately 14,000 cubic yards of contaminated sediment were removed from Black and Bergholtz creeks combined; clean material, riprap, and replanted banks completed the physical creek work." },
+      { period: "2004–present", event: "The state impaired-waters program identifies fecal coliform and phosphorus as continuing limitations associated with urban runoff." },
+    ],
+    documentedImpacts: [
+      "Dioxin and other Love Canal-related chemicals reached defined sewer and creek-sediment areas before remediation.",
+      "The frequently cited 14,000-cubic-yard removal quantity covers Black and Bergholtz creeks together and cannot be assigned wholly to either creek.",
+      "Current waterbody assessment confirms impairment of fishing and secondary-contact recreation from fecal coliform and phosphorus.",
+    ],
+    cleanupAndControls: [
+      "Creek remediation excavated affected sediment, placed clean soil and erosion-resistant stone in creek beds, and restored the banks.",
+      "Sediment was dewatered, stabilized, packaged, and ultimately sent through approved thermal-treatment or disposal routes under the Love Canal remedy.",
+      "Long-term Love Canal reviews evaluate the containment system and associated remedial components, while modern runoff and pathogen impairment belongs to water-quality management rather than the completed sediment excavation alone.",
+    ],
+    presentDay: [
+      "Bergholtz Creek is both a completed Superfund sediment-remedy corridor and a currently impaired urban waterbody. The historical dioxin excavation does not establish present dioxin conditions everywhere, and its completion did not resolve later pathogen and nutrient problems.",
+    ],
+    researchNotes: [
+      "Map the Black Creek confluence, remediated Bergholtz reach, and Cayuga Creek confluence as separate features when authoritative construction limits are digitized.",
+      "Add newer monitoring results only when they can be distinguished from the regulatory impairment determination and historical cleanup sampling.",
+    ],
+  },
+  "two-mile-creek-tonawanda": {
+    lastReviewed: "August 28, 2026",
+    background: [
+      "Two Mile Creek is a short, heavily modified urban tributary passing through Sheridan Park before reaching the Niagara River in Tonawanda. Parts of its watershed and channel have long received municipal drainage, stormwater, and historically combined sanitary influences.",
+      "Its toxic-sediment history includes a defined pathway from the former General Electric transformer facility. Investigators concluded that PCB-affected material may have traveled through the Oriskany Drive storm sewer to the creek, prompting several phases of sediment and bank-soil investigation from 2004 through 2010.",
+      "That facility-related remedy is narrower than the creek's overall water-quality condition. Contemporary watershed summaries identify continuing concerns involving dissolved oxygen, pathogens, phosphorus, and oil or floating substances, while historic regional studies detected other persistent chemicals at particular locations and times.",
+    ],
+    timeline: [
+      { period: "Historic urbanization", event: "Channel enclosure, municipal drainage, sewer inputs, park construction, and surrounding industry transformed much of the creek's hydrology and habitat." },
+      { period: "2004–2010", event: "Multiple investigations sampled sediment and bank soil downstream of the Oriskany Drive storm-sewer outfall serving the former GE facility." },
+      { period: "2008", event: "A Town of Tonawanda drainage project dredged and stabilized portions of the creek; PCB-affected sediment was removed from selected areas and confirmation samples generally met the cleanup objective." },
+      { period: "January 2015", event: "A limited west-bank soil excavation addressed the remaining GE-related area, with confirmation results reported below the state-approved objective." },
+      { period: "2024–present", event: "Buffalo Niagara Waterkeeper advanced design for a Sheridan Park living shoreline joining restoration areas at West Pond and Two Mile Creek." },
+    ],
+    documentedImpacts: [
+      "PCB contamination affected defined sediment and bank-soil areas associated with the former GE facility and storm-sewer pathway.",
+      "Historic Niagara River monitoring found PCBs, DDT, dioxins or furans, and PBDEs in selected creek media or organisms. These results span different decades and do not describe one uniform current concentration.",
+      "Modern water-quality reporting identifies municipal and stormwater-related impairment involving pathogens, nutrients or oxygen demand, and oil or floating substances.",
+    ],
+    cleanupAndControls: [
+      "Selected affected sediment was removed during 2008 channel work, followed by confirmation sampling and additional limited bank-soil excavation in 2015.",
+      "The GE corrective-measures record treats that work as the final facility-related action for Two Mile Creek; it does not certify the entire creek free of unrelated pollution.",
+      "The proposed Sheridan Park project emphasizes woody shoreline planting, lawn-to-meadow conversion, habitat improvement, and a corridor connecting the creek with West Pond.",
+    ],
+    presentDay: [
+      "Two Mile Creek combines completed source-specific PCB work with unresolved watershed-scale water-quality impairment and a new habitat-restoration phase. Those three conditions require different evidence and should remain visibly separated on the Atlas page.",
+    ],
+    researchNotes: [
+      "Locate the newest DEC waterbody factsheet and municipal sewer-overflow records before assigning current causes to particular outfalls.",
+      "Update the living-shoreline section when final design, permits, construction limits, and implementation dates are published.",
+    ],
+  },
+  "scajaquada-creek": {
+    lastReviewed: "August 28, 2026",
+    background: [
+      "Scajaquada Creek drains a roughly 29-square-mile watershed from Lancaster through Depew, Cheektowaga, and Buffalo to the Black Rock Canal. More than 100,000 people live in the watershed, and the creek connects neighborhoods, industrial areas, cemeteries, parks, transportation corridors, and sewer infrastructure.",
+      "The historic stream was shallow, meandering, and surrounded by wetlands. The Scajaquada Drain project, completed in 1928, buried roughly 3.5 miles of channel; later infrastructure extended the creek's physical and hydraulic connection to Buffalo's sewer system. The buried reach and other channelized sections fragmented habitat and obscured the creek from surrounding communities.",
+      "Water-quality problems vary by reach. State records identify combinations of fecal coliform, phosphorus, low dissolved oxygen, and oil or floating substances, associated principally with sewer overflows and urban runoff. Legacy industrial sites add separate, geographically bounded sediment and groundwater histories.",
+    ],
+    timeline: [
+      { period: "Before urbanization", event: "A spring-fed creek crossed wetlands and meadows on its path to the Niagara River system." },
+      { period: "1928", event: "Completion of the Scajaquada Drain placed miles of creek underground and began a long period of sewer-connected flow management." },
+      { period: "1998–1999", event: "The Iroquois Gas–Westwood remedy excavated contaminated sediment in a defined creek reach and installed recovery wells for subsurface nonaqueous-phase liquid." },
+      { period: "2014 onward", event: "Buffalo's long-term control program began phased green and gray infrastructure projects intended to reduce combined sewer overflows across receiving waters including Scajaquada Creek." },
+      { period: "2023–2026", event: "Waterkeeper's community advisory process and technical team developed a watershed-wide ecological restoration and resiliency plan." },
+      { period: "Current planning", event: "Army Corps feasibility work selected a two-stage channel and broad native riparian buffer through Cheektowaga Town Park as a leading ecosystem-restoration project." },
+    ],
+    documentedImpacts: [
+      "Upper, middle, and lower reaches have different classifications and impairment combinations; the creek cannot be accurately summarized by one pollutant list without reach context.",
+      "Sewer overflows and urban stormwater contribute pathogens, nutrients, low-oxygen conditions, and aesthetic pollution in listed reaches.",
+      "Industrial investigation documented PAHs, metals, and nonaqueous-phase liquid in particular sediment or subsurface areas near source properties. These findings do not establish equivalent contamination along the full creek.",
+      "Burial, straightening, bank hardening, culverts, flood-control works, and transportation infrastructure fragmented aquatic and riparian habitat.",
+    ],
+    cleanupAndControls: [
+      "Source-specific remedies have removed contaminated sediment and controlled groundwater or subsurface product at defined industrial reaches.",
+      "Buffalo Sewer Authority projects combine storage, conveyance, treatment, green infrastructure, and new tunnel connections to reduce combined sewer overflows.",
+      "Cheektowaga sewer rehabilitation addresses inflow, infiltration, and sanitary overflow pathways in the upper watershed.",
+      "Current ecological concepts include two-stage channels, floodplain benches, native riparian buffers, wetland and habitat restoration, and improved community connections to the creek.",
+    ],
+    presentDay: [
+      "Scajaquada Creek remains highly impaired, but it is also the focus of unusually coordinated sewer, sediment, habitat, transportation, resilience, and community-planning work. Many projects are still in planning or design, so the Atlas should distinguish funded work, selected concepts, and completed construction.",
+    ],
+    researchNotes: [
+      "Build reach-specific map geometry for upper, middle, lower, buried, and daylighted sections before presenting water-quality classifications spatially.",
+      "Track the final 2026 Waterkeeper plan, Army Corps decision documents, Great Lakes Legacy Act sediment investigation, Buffalo sewer milestones, and Cheektowaga consent-order reporting as separate workstreams.",
+      "Community histories along the buried East Side reach deserve direct sourcing and should not be reduced to an infrastructure-only narrative.",
+    ],
+  },
   "mayville-pfas-site": {
     lastReviewed: "August 17, 2026",
     background: [
