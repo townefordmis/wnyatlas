@@ -600,7 +600,7 @@ export function FormerWaterwaysMap() {
                   {record.name}
                 </strong>
                 <span>
-                  {waterwayEvidenceLabels[record.evidenceType]} · {hasMappedArea ? "Mapped line or area" : "Evidence-location marker"}
+                  {record.displayClassification ?? waterwayEvidenceLabels[record.evidenceType]} · {hasMappedArea ? "Mapped line or area" : "Evidence-location marker"}
                 </span>
               </button>
               );
@@ -612,6 +612,10 @@ export function FormerWaterwaysMap() {
           <p className="record-label">Documented location</p>
           <h3>{selected.name}</h3>
           <p>{selected.location}</p>
+          <p className="record-boundary-note">
+            <strong>Classification:</strong>{" "}
+            {selected.displayClassification ?? waterwayEvidenceLabels[selected.evidenceType]}
+          </p>
 
           <section>
             <h4>Waterway history</h4>

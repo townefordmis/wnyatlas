@@ -3,6 +3,10 @@ import Link from "next/link";
 
 import { FormerWaterwaysMap } from "@/components/former-waterways-map";
 import { SiteHeader } from "@/components/site-header";
+import {
+  formerWaterwayRecords,
+  waterwayEvidenceLabels,
+} from "@/data/former-waterways";
 
 export const metadata: Metadata = {
   title: "Changed Waters, Filled Wetlands and Reclaimed Shorelines",
@@ -45,6 +49,76 @@ export default function FormerWaterwaysResearchPage() {
       </section>
 
       <FormerWaterwaysMap />
+
+      <section className="waterway-research-index" aria-labelledby="waterway-research-index-title">
+        <p className="eyebrow">Crawlable research index · all records</p>
+        <h2 id="waterway-research-index-title">Detailed Changed Waters records</h2>
+        <p>
+          The interactive map above presents one selected record at a time. This
+          server-rendered index keeps every location&apos;s research narrative and
+          source links available in the page itself for readers, search engines,
+          and accessibility tools.
+        </p>
+        <div className="waterway-research-index-list">
+          {formerWaterwayRecords.map((record, index) => (
+            <details key={record.id} id={`research-${record.id}`}>
+              <summary>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{record.name}</strong>
+              </summary>
+              <div>
+                <p><strong>Location:</strong> {record.location}</p>
+                <p>
+                  <strong>Classification:</strong>{" "}
+                  {record.displayClassification ?? waterwayEvidenceLabels[record.evidenceType]}
+                </p>
+                <h3>Waterway history</h3>
+                <p>{record.waterwayHistory}</p>
+                <h3>Physical change and documented material</h3>
+                <p>{record.documentedMaterial}</p>
+                {record.environmentalRecord && (
+                  <>
+                    <h3>Environmental record</h3>
+                    <p>{record.environmentalRecord}</p>
+                  </>
+                )}
+                {record.hydrologicPathway && (
+                  <>
+                    <h3>Hydrologic pathway</h3>
+                    <p>{record.hydrologicPathway}</p>
+                  </>
+                )}
+                {record.remediationStatus && (
+                  <>
+                    <h3>Remediation and present status</h3>
+                    <p>{record.remediationStatus}</p>
+                  </>
+                )}
+                <h3>Atlas interpretation</h3>
+                <p>{record.interpretation}</p>
+                {record.evidenceSummary && (
+                  <p><strong>Evidence summary:</strong> {record.evidenceSummary}</p>
+                )}
+                <p>
+                  <a href={record.sourceUrl} target="_blank" rel="noreferrer">
+                    {record.sourceLabel} ↗
+                  </a>
+                </p>
+                {record.additionalSources?.map((source) => (
+                  <p key={source.url}>
+                    <a href={source.url} target="_blank" rel="noreferrer">
+                      {source.label} ↗
+                    </a>
+                  </p>
+                ))}
+                {record.relatedSiteId && (
+                  <p><Link href={`/sites/${record.relatedSiteId}`}>Open the related Atlas place record →</Link></p>
+                )}
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
 
       <section className="school-method">
         <p className="eyebrow">Evidence standard</p>

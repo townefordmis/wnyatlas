@@ -20,6 +20,7 @@ export type FormerWaterwayRecord = {
   location: string;
   coordinates: [number, number];
   evidenceType: WaterwayEvidenceType;
+  displayClassification?: string;
   waterwayHistory: string;
   documentedMaterial: string;
   environmentalRecord?: string;
@@ -116,6 +117,8 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     location: "Former ExxonMobil Buffalo Terminal, Elk and Babcock Streets",
     coordinates: [-78.83719331140942, 42.86557967382599],
     evidenceType: "documented_filled_waterway",
+    displayClassification:
+      "Former river channel · documented petroleum migration investigation",
     waterwayHistory:
       "State brownfield records describe the Buffalo River crossing the southern portion of the former refinery property before it was rerouted and straightened between 1914 and 1917 to improve navigation and industrial access.",
     documentedMaterial:
@@ -154,6 +157,8 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     location: "154 South Ogden Street, Buffalo",
     coordinates: [-78.80339974325409, 42.863467993220084],
     evidenceType: "documented_disposal_fill",
+    displayClassification:
+      "Former river channel · documented disposal fill and completed brownfield remedy",
     waterwayHistory:
       "DEC records describe part of the property as following a former Buffalo River channel that was filled after the river was straightened.",
     documentedMaterial:
@@ -187,6 +192,8 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     location: "Fourth Street and former canal district, Buffalo",
     coordinates: [-78.88460949990512, 42.887003889582715],
     evidenceType: "documented_filled_waterway",
+    displayClassification:
+      "Filled industrial slip · documented manufactured-gas coal-tar impacts",
     waterwayHistory:
       "DEC records identify the filled former Wilkeson Slip beneath part of this area, where the slip historically met the former Erie Canal.",
     documentedMaterial:
@@ -295,6 +302,8 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     location: "River Road and Two Mile Creek industrial corridor, Town of Tonawanda",
     coordinates: [-78.9248, 42.9987],
     evidenceType: "documented_disposal_fill",
+    displayClassification:
+      "Filled island channel and wetland · documented industrial disposal sites",
     waterwayHistory:
       "Government habitat and cleanup records describe Rattlesnake Island beside a broad Niagara River marsh historically known as The Flats. The surrounding marsh and the channel separating the island from the mainland were subsequently filled as the River Road industrial corridor developed.",
     documentedMaterial:
@@ -488,6 +497,8 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     location: "Old Upper Mountain Road area, Lockport",
     coordinates: [-78.72441412673288, 43.166278355547604],
     evidenceType: "documented_culverted_waterway",
+    displayClassification:
+      "Buried and altered creek · documented landfill and sediment impacts",
     waterwayHistory:
       "DEC investigation describes Gulf Creek passing through open channel and wetland areas before entering a large culvert. The Gulf Interceptor sewer also crossed the Old Upper Mountain Road cleanup area.",
     documentedMaterial:
@@ -510,6 +521,172 @@ export const formerWaterwayRecords: FormerWaterwayRecord[] = [
     comparisonYears: ["Historic site plans", "1951", "1966", "1978", "2022 engineering record", "2024"],
     evidenceConfidence: "documented",
     presentStatus: "Gulf Creek remains a mixture of open channel, wetland, and culverted segments. Cleanup and infrastructure work are tracked through the linked landfill record.",
+  },
+  {
+    id: "scajaquada-buried-channel",
+    name: "Scajaquada Creek buried and channelized corridor",
+    location: "Lancaster, Depew, Cheektowaga, and Buffalo to Black Rock Canal",
+    coordinates: [-78.868, 42.925],
+    evidenceType: "documented_culverted_waterway",
+    displayClassification:
+      "Buried urban creek · sewer, sediment, and site-specific coal-tar investigations",
+    waterwayHistory:
+      "Scajaquada Creek historically crossed a broad lowland and wetland system before reaching the Niagara River corridor. The Scajaquada Drain, completed in 1928, buried roughly 3.5 miles of channel; other reaches were straightened, channelized, placed in concrete, and later constrained by transportation infrastructure.",
+    documentedMaterial:
+      "Municipal sewer overflows and runoff affect water quality across multiple reaches. Separate DEC investigations in defined lower-creek areas document PAHs, VOCs, PCBs, metals, and manufactured-gas coal-tar or DNAPL impacts. Those findings do not characterize the entire watershed.",
+    environmentalRecord:
+      "DEC's lower-creek work connects particular coal-tar impacts with the former Iroquois Gas/Westwood manufactured-gas setting. Other reaches are principally affected by pathogen, nutrient, oxygen, runoff, habitat, or sewer-overflow problems. WNY Atlas keeps those evidence types and locations separate.",
+    hydrologicPathway:
+      "Agency investigation found that historic alluvial channel geometry can matter underground: the deepest former channel does not always match the present creek centerline, and defined coal-tar migration followed portions of that older subsurface setting. This conclusion applies to the investigated lower-creek area, not all buried Scajaquada reaches.",
+    remediationStatus:
+      "Defined lower-creek areas received sediment or creek-bottom controls, DNAPL recovery infrastructure, and monitoring. Broader work continues through sewer-overflow reduction, watershed planning, habitat design, and transportation-corridor studies.",
+    evidenceSummary:
+      "DOCUMENTED burial and channelization; DOCUMENTED reach-specific contamination and controls; watershed-wide contamination is not established.",
+    interpretation:
+      "The mapped line is a generalized corridor connecting the upper watershed, buried Drain, channelized park reach, and Black Rock Canal outlet. It is not a sewer survey, cleanup boundary, or claim that the entire line contains coal tar.",
+    sourceUrl:
+      "https://dec.ny.gov/sites/default/files/2024-06/scajaquadacreekwatershedactionplan.pdf",
+    sourceLabel: "NYSDEC Scajaquada Creek watershed planning record",
+    additionalSources: [
+      {
+        url: "https://extapps.dec.ny.gov/data/DecDocs/915351/",
+        label: "NYSDEC Lower Scajaquada Creek document collection — Site 915351",
+      },
+    ],
+    relatedSiteId: "scajaquada-creek",
+    changePeriod: "Major burial completed in 1928; continuing channel, sewer, cleanup, and restoration work",
+    comparisonYears: ["Historic creek mapping", "1928 Drain", "1951", "Modern channel", "Current restoration planning"],
+    evidenceConfidence: "agency_mapped_approximation",
+  },
+  {
+    id: "eighteenmile-creek-contaminant-corridor",
+    name: "Eighteen Mile Creek industrial and sediment corridor",
+    location: "Lockport source area to Burt Dam and the lower Lake Ontario Area of Concern",
+    coordinates: [-78.691, 43.171],
+    evidenceType: "documented_contaminated_sediment",
+    displayClassification:
+      "Creek sediment corridor · upstream Superfund sources and downstream PCB impairment",
+    waterwayHistory:
+      "Eighteen Mile Creek begins in Lockport near the Erie Canal and flows north toward Lake Ontario. Its upper industrial corridor and the lower Area of Concern are connected by water and sediment transport but have different regulatory boundaries.",
+    documentedMaterial:
+      "EPA documents PCBs and lead in upper-corridor soil and creek sediment, with additional contaminants varying by source property and operable unit. Upland fill, erosion, runoff, flooding, and creek sediment are evaluated as distinct media and mechanisms.",
+    environmentalRecord:
+      "The lower Area of Concern extends from Burt Dam to Olcott Harbor. EPA's current assessment says lower-AOC sediment is below the toxicity threshold while PCB impairment in fish is driven primarily by upstream contamination; therefore, the lower AOC does not currently have a sediment-remediation management action.",
+    hydrologicPathway:
+      "Fine suspended material can move over Burt Dam, linking upstream source control with downstream biological monitoring. This is a documented transport relationship, not evidence that every downstream bank or sediment location has the same concentration.",
+    remediationStatus:
+      "Superfund work proceeds by operable unit through source-property, residential-soil, and creek-corridor actions. The major Lockport sediment remedy remains distinct from lower-AOC monitoring and beneficial-use decisions.",
+    evidenceSummary:
+      "DOCUMENTED upper-corridor contamination and downstream PCB transport; Superfund, AOC, and watershed boundaries are separate.",
+    interpretation:
+      "The mapped line provides watershed-scale context. It is not an EPA operable-unit polygon, the lower AOC boundary, or a uniform contaminated-sediment boundary.",
+    sourceUrl: "https://www.epa.gov/great-lakes-aocs/eighteenmile-creek-aoc",
+    sourceLabel: "U.S. EPA Eighteenmile Creek Area of Concern",
+    additionalSources: [
+      {
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206456",
+        label: "U.S. EPA Eighteen Mile Creek Superfund site profile",
+      },
+    ],
+    relatedSiteId: "eighteenmile-creek-superfund",
+    changePeriod: "Industrial source era through active staged Superfund cleanup and AOC monitoring",
+    comparisonYears: ["Historic Lockport industry", "2012 NPL listing", "Current Superfund work", "Current AOC monitoring"],
+    evidenceConfidence: "agency_mapped_approximation",
+  },
+  {
+    id: "black-rock-canal-sediment-remediation",
+    name: "Black Rock Canal legacy-sediment corridor",
+    location: "Buffalo west side, Unity Island, and Tonawanda Harbor navigation corridor",
+    coordinates: [-78.9035, 42.9286],
+    evidenceType: "documented_contaminated_sediment",
+    displayClassification:
+      "Federal navigation canal · documented legacy-sediment removal",
+    waterwayHistory:
+      "Black Rock Canal is a federal navigation channel separated from the Niagara River by Unity Island. It receives Scajaquada Creek and forms part of the Niagara River Area of Concern.",
+    documentedMaterial:
+      "EPA describes the dredged material as contaminated legacy sediment containing industrial contaminants accumulated from historical activity. The documented volume applies to the combined Black Rock Channel and Tonawanda Harbor project.",
+    environmentalRecord:
+      "The strategic navigation project removed 181,532 cubic yards of contaminated sediment and advanced beneficial-use goals involving benthos, dredging restrictions, and wildlife effects.",
+    hydrologicPathway:
+      "The canal connects Scajaquada Creek, Buffalo's urban waterfront drainage, Tonawanda Harbor, and the Niagara River. Those connections provide watershed context but do not establish one source for all removed sediment.",
+    remediationStatus:
+      "Dredging occurred in 2014–15 and EPA records the project as completed in 2016. Navigation maintenance, sewer controls, tributary investigations, and habitat restoration continue through separate programs.",
+    evidenceSummary:
+      "DOCUMENTED contaminated-sediment removal; completed dredging does not establish that all corridor impairments or sources are gone.",
+    interpretation:
+      "The mapped centerline identifies the navigation and remediation corridor. It is not the dredging prism, sediment sampling boundary, or Area of Concern boundary.",
+    sourceUrl:
+      "https://www.epa.gov/great-lakes-aocs/remediation-and-restoration-projects-niagara-river-aoc",
+    sourceLabel: "U.S. EPA Niagara River AOC remediation and restoration projects",
+    relatedSiteId: "black-rock-canal",
+    changePeriod: "Engineered navigation history; strategic contaminated-sediment removal in 2014–2015",
+    comparisonYears: ["Historic navigation mapping", "2014–2015 dredging", "2016 completion", "Present"],
+    evidenceConfidence: "documented",
+  },
+  {
+    id: "niagara-river-aoc-network",
+    name: "Niagara River Area of Concern network",
+    location: "Lake Erie to Lake Ontario, including tributaries and defined nearshore sites",
+    coordinates: [-78.9605, 43.076],
+    evidenceType: "documented_engineered_waterway",
+    displayClassification:
+      "River-system hub · documented source control, sediment, and habitat programs",
+    waterwayHistory:
+      "The Niagara River is an international waterway transformed by navigation, hydropower, shoreline industry, municipal development, filled wetlands, engineered islands, and altered tributary mouths. It was designated a Great Lakes Area of Concern in 1987.",
+    documentedMaterial:
+      "Government records identify PCBs, PAHs, pesticides, metals, and other contaminants in defined source sites, tributaries, embayments, sediment, water, and biological media. WNY Atlas does not assign one mixture or condition to the entire river.",
+    environmentalRecord:
+      "The Area of Concern framework connects beneficial-use impairments with numerous individual cleanups and restoration projects. Cayuga Island, 102nd Street, Griffon Park, Gill Creek, Pettit Flume, Black Rock Canal, and tributary investigations retain separate evidence and boundaries.",
+    hydrologicPathway:
+      "Tributary inflow, groundwater discharge, nearshore sediment transport, navigation, and movement from Lake Erie toward Lake Ontario create multiple pathways. Each claimed source-to-river relationship requires its own agency evidence.",
+    remediationStatus:
+      "Federal, state, local, responsible-party, and binational programs have reduced specific loadings, removed sediment, controlled landfills, improved wastewater systems, and restored habitat. The AOC is an umbrella management geography, not one riverwide cleanup remedy.",
+    evidenceSummary:
+      "DOCUMENTED riverwide management framework with site-specific impacts and remedies; no uniform riverwide contamination boundary is claimed.",
+    interpretation:
+      "The mapped river line is a navigation aid connecting atlas records. It is not the legal AOC polygon, an exposure boundary, or a statement that every reach is impaired in the same way.",
+    sourceUrl: "https://www.epa.gov/great-lakes-aocs/niagara-river-aoc",
+    sourceLabel: "U.S. EPA Niagara River Area of Concern",
+    relatedSiteId: "niagara-river-waterway",
+    changePeriod: "Industrial transformation through the continuing binational restoration era",
+    comparisonYears: ["Historic river corridor", "1987 AOC designation", "Cleanup era", "Present"],
+    evidenceConfidence: "documented",
+  },
+  {
+    id: "niagara-tributary-pcb-source-tracking",
+    name: "Two Mile, Rattlesnake, and Tonawanda Creek PCB source investigation",
+    location: "Town of Tonawanda tributaries to the Niagara River",
+    coordinates: [-78.9065, 43.0077],
+    evidenceType: "documented_contaminated_sediment",
+    displayClassification:
+      "Three-tributary PCB investigation · local sources incompletely resolved",
+    waterwayHistory:
+      "Two Mile, Rattlesnake, and Tonawanda creeks drain developed and industrialized parts of the Niagara River corridor. Two Mile and Rattlesnake also cross the historically extensive wetland landscape known as The Flats.",
+    documentedMaterial:
+      "High PCB concentrations had been reported in fish tissue in all three tributaries and in earlier mussel studies in Two Mile and Rattlesnake creeks. Sediment results did not always explain the biological concentrations.",
+    environmentalRecord:
+      "USGS and DEC deployed semipermeable membrane devices at 29 locations in 2018–19 to measure waterborne PCBs and improve source-area resolution. The data establish an investigation network, not a single proven source.",
+    hydrologicPathway:
+      "Passive samplers measure dissolved or readily accumulated waterborne PCBs over time, complementing sediment and tissue results. Differences among these media are part of the scientific question rather than evidence that one dataset is wrong.",
+    remediationStatus:
+      "This entry tracks source investigation rather than one completed creekwide remedy. Defined facility cleanups—such as the separate GE-related Two Mile Creek work—retain their own conclusions and boundaries.",
+    evidenceSummary:
+      "DOCUMENTED PCB source-tracking study; local source or sources remain incompletely resolved and are not assigned by WNY Atlas.",
+    interpretation:
+      "The shaded study envelope links the three tributaries at regional scale. It is not a contaminated-sediment boundary, source polygon, or claim of uniform PCB concentrations.",
+    sourceUrl:
+      "https://www.usgs.gov/centers/new-york-water-science-center/science/track-down-survey-pcbs-three-tributaries-niagara",
+    sourceLabel: "U.S. Geological Survey three-tributary PCB track-down survey",
+    additionalSources: [
+      {
+        url: "https://www.usgs.gov/data/pcbs-measured-three-tributaries-niagara-river-area-concern-aoc-2018-2019",
+        label: "USGS PCB passive-sampler data release, 2018–2019",
+      },
+    ],
+    relatedSiteId: "two-mile-creek-tonawanda",
+    changePeriod: "Targeted PCB source investigation in 2018–2019 within a much longer altered-watershed history",
+    comparisonYears: ["Historic Flats landscape", "Earlier fish and mussel studies", "2018", "2019", "Present"],
+    evidenceConfidence: "documented",
   },
 ];
 
