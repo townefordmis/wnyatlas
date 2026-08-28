@@ -4320,10 +4320,6 @@ footer {
   min-height: 48px;
   min-width: 48px;
   padding: 0;
-  filter:
-    drop-shadow(0 0 1px #fff)
-    drop-shadow(0 0 2px #fff)
-    drop-shadow(0 3px 3px rgba(16, 24, 40, 0.72));
 }
 
 .waterway-marker-dot {
@@ -4377,13 +4373,6 @@ footer {
 .waterway-native-marker:hover .waterway-marker-label,
 .waterway-native-marker:focus-visible .waterway-marker-label {
   display: block;
-}
-
-.waterway-native-marker.is-selected {
-  filter:
-    drop-shadow(0 0 2px #fff)
-    drop-shadow(0 0 6px #fff)
-    drop-shadow(0 0 8px rgba(8, 31, 56, 0.95));
 }
 
 .waterway-native-marker:focus-visible {
