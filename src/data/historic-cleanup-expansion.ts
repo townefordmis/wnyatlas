@@ -2128,7 +2128,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Cattaraugus",
     category: "cleanup",
     summary:
-      "Former leather-tanning operation at 265 Palmer Street that operated for about 120 years, including Moench operations from 1900 to 1983. Its closed landfill and creek-edge controls remain subject to groundwater monitoring, inspections, and erosion management.",
+      "Former chrome-leather tannery and captive industrial landfill on Palmer Street. Historic records document major wastewater loading to Cattaraugus Creek, followed by a 1971 treatment plant, sludge disposal, closure, and continuing groundwater and creek-edge management.",
     evidenceStatus: "well-documented",
     coordinates: [-78.92448493440273, 42.448851221364386],
     newsEvents: [
@@ -2150,6 +2150,21 @@ export const historicCleanupExpansion: AtlasSite[] = [
       },
     ],
     sources: [
+      {
+        title: "Moench Tanning Closure Work Plan and Company History",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905004/Work%20Plan.HW.905004.1989-08-01.CLOSURE_WORKPLAN_VOL-1.pdf",
+      },
+      {
+        title: "Lake Erie and Tributaries Pollution Report — New York and Pennsylvania Sources",
+        publisher: "U.S. Public Health Service",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000TDE4.TXT",
+      },
+      {
+        title: "2023 Moench Tanning Periodic Review Report",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/905004/Report.HW.905004.2024-01-31.2023%20PRR.pdf",
+      },
       {
         title: "Moench Tanning Periodic Review Report",
         publisher: "New York State Department of Environmental Conservation",

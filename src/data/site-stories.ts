@@ -4854,16 +4854,22 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "moench-tanning-gowanda": {
-    lastReviewed: "August 17, 2026",
+    lastReviewed: "August 31, 2026",
     background: [
-      "Leather tanning operated in the Palmer Street industrial area for approximately 120 years. Moench Tanning, a division of Brown Shoe Company, ran the facility from 1900 until 1983, continuing a creek-powered industrial history that also included nearby mills and glue manufacturing.",
+      "The Moench company history begins with Christopher Moench's Cattaraugus tannery in 1896. The family acquired the Gaensslen & Fisher tannery in Gowanda in 1902 and consolidated its leather operations there in 1914. Brown Shoe Company acquired Moench in 1925; the Gowanda plant later produced upper leather and shoe linings as a Brown Group division.",
+      "Federal investigators using 1960 data identified Moench and Peter Cooper as the two major industrial pollution sources in the Cattaraugus Creek basin. Moench alone reported approximately 1.67 million gallons of wastewater per day, 8,730 pounds per day of biochemical oxygen demand, and 7,600 pounds per day of suspended solids—an organic load described as equivalent to a population of 52,400.",
+      "Moench completed its own wastewater-treatment plant in May 1971. Treatment reduced direct process loading but created sludge, which went to the adjacent Palmer Street Landfill until 1982. The approximately 25-acre captive landfill accepted tannery wastes rather than general regional refuse, and its records were reconstructed largely from employee interviews because virtually no operating logs survived.",
       "The regulated site is not the entire village or every former tannery building. It is an approximately 25-acre area covering the closed industrial landfill and its support land south of the former plant, bounded by steep wooded slopes, a swampy area, Splinter Creek, and Cattaraugus Creek.",
       "Caleres, Brown Shoe's corporate successor, voluntarily closed the landfill under hazardous-waste rules from 1990 to 1992. DEC approved post-closure care in 1993, but the cover and monitoring program continued for decades before a 2019 consent order and site-management plan restated the remaining obligations.",
       "Water shapes the present story as much as tanning shaped the past. The landfill sits beside two creeks that can overtop or erode their banks during severe storms, so streambank protection and climate vulnerability are integral to the containment remedy rather than separate beautification work.",
     ],
     timeline: [
       { period: "About 1860s–1900", event: "Earlier tanning activity developed along Palmer Street and the Gowanda creek corridor." },
-      { period: "1900–1983", event: "Moench Tanning operated the leather plant and used the adjoining industrial-landfill area tracked by the later cleanup program." },
+      { period: "1902–1914", event: "The Moench family acquired the Gowanda tannery and consolidated its leather operations there." },
+      { period: "1925", event: "Brown Shoe Company purchased Moench, which later became a Brown Group division." },
+      { period: "1960", event: "A federal Lake Erie investigation recorded 1.67 million gallons per day of Moench wastewater and very large organic and solids loads to the Cattaraugus Creek basin." },
+      { period: "May 1971", event: "Moench completed an industrial wastewater-treatment plant; resulting sludge was disposed in the Palmer Street Landfill until 1982." },
+      { period: "Late 1992", event: "Tannery operations ceased. Most of the more-than-30-building complex was demolished in 1993–1994 with asbestos, tank, utility, and chromium-related environmental work." },
       { period: "1990–1993", event: "The company closed the landfill with a low-permeability soil cover, and DEC approved continuing post-closure monitoring and maintenance." },
       { period: "1993–2019", event: "Groundwater wells, bank seeps, inspections, mowing, drainage, and cap maintenance carried the remedy through more than two decades of voluntary post-closure care." },
       { period: "2019", event: "A new consent order and site-management plan formalized the cover, environmental easement, groundwater restrictions, inspections, and annual reporting." },
@@ -4871,6 +4877,9 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       { period: "2025 planning", event: "Gowanda's Brownfield Opportunity Area plan placed the controlled tannery property within a larger creekfront reuse and public-access conversation." },
     ],
     documentedImpacts: [
+      "Historic federal records establish major industrial wastewater loading to Cattaraugus Creek; they should not be confused with present permitted flow or present water quality.",
+      "The landfill received sole-leather extract, rendering waste, leather and hair scraps, finishing and spray-booth wastes, wastewater-treatment sludge, and construction debris.",
+      "Investigators at the neighboring Peter Cooper site found elevated arsenic and chromium in creek sediment upstream of Peter Cooper and identified Moench or another upstream source as a possibility, not a definitive attribution.",
       "Tannery-related waste remains within the defined landfill footprint beneath the engineered cover; the public file does not support extending that waste boundary across every former industrial parcel on Palmer Street.",
       "The monitoring network covers shallow and deep overburden, bedrock, and creek-bank seeps. The 2020 review found no off-site migration requiring corrective action and documented generally declining or low VOC, lead, arsenic, and chromium trends, with periodic shallow arsenic exceedances inside the monitored system.",
       "A one-time emerging-contaminant round found no 1,4-dioxane or PFAS above the then-used screening levels in on-site downgradient wells. PFOA exceeded its screening value in one shallow upgradient well, and the consultant concluded the pattern did not originate at the landfill.",
@@ -4889,6 +4898,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Present Moench and Peter Cooper as neighboring industrial histories without implying identical wastes, contaminant pathways, or a single remedy.",
       "Use the newest annual inspection to update cover, monitoring-well, and streambank conditions before changing the Class 4 status description.",
       "Keep the upgradient PFOA finding and the landfill's historical contaminant program separate unless later source investigation changes DEC's interpretation.",
+      "Resolve whether DEC's 2025 Inactive Landfill Initiative listing for a 2027 Moench investigation duplicates the known Palmer Street landfill or identifies another disposal area before presenting it as a new site.",
     ],
   },
   "standard-portable-mayville": {

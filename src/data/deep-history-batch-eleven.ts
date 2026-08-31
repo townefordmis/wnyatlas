@@ -140,11 +140,12 @@ export const deepHistoryBatchEleven: Record<string, DeepHistoryFeature> = {
   "moench-tanning-gowanda": {
     eyebrow: "A century of tanning ended with a landfill beside two creek systems",
     title: "Moench's closed tannery landfill still depends on streambank protection",
-    lead: "Leather tanning occupied the Palmer Street area for approximately 120 years, with Moench operations from 1900 to 1983. Tannery waste entered a defined industrial landfill near Splinter Creek and Cattaraugus Creek, making erosion control as important as the cover and groundwater monitoring.",
+    lead: "Federal records show Moench discharging 1.67 million gallons of wastewater per day in 1960. A 1971 treatment plant changed the pathway from direct process water to treatment sludge, much of it placed in the captive landfill beside Splinter and Cattaraugus Creeks.",
     accent: "#9a704d",
-    stat: { value: "~120 years", label: "leather-tanning history at the Palmer Street location" },
+    stat: { value: "1.67M gal/day", label: "Moench wastewater flow reported for 1960" },
     chapters: [
-      { period: "Circa 1860s-1983", title: "Leather production became a long-lived Gowanda industry", body: "Multiple tanning eras occupied the creekside property. Moench, later associated with Brown Shoe, operated from 1900 until closure in 1983." },
+      { period: "1902–1960", title: "A large chrome-leather operation grew beside Cattaraugus Creek", body: "Moench acquired the Gowanda tannery in 1902. By 1960, federal investigators counted its wastewater among the basin's two major industrial pollution sources, with organic loading equivalent to a population of 52,400." },
+      { period: "1971–1982", title: "Wastewater treatment created a new disposal stream", body: "The May 1971 treatment plant reduced direct process discharge but generated sludge. Moench placed that sludge in its adjacent Palmer Street Landfill until 1982." },
       { period: "1990-1992", title: "The company closed the industrial landfill under state oversight", body: "A cover isolated remaining tannery waste and the property entered a long-term monitoring and inspection phase rather than unrestricted closure." },
       { period: "2019-present", title: "Creek erosion became part of remedy maintenance", body: "Updated management requirements formalized continuing controls, and additional erosion protection was installed near Splinter Creek in 2021 to protect the landfill edge." },
     ],
