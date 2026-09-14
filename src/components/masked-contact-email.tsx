@@ -1,7 +1,7 @@
 "use client";
 
-const mailbox = ["robert", "129999"].join("");
-const domain = ["yahoo", "com"].join(".");
+const mailbox = ["research"].join("");
+const domain = ["wnyatlas", "com"].join(".");
 
 export function MaskedContactEmail() {
   function openEmail() {
@@ -12,7 +12,7 @@ export function MaskedContactEmail() {
   return (
     <button type="button" className="masked-contact-email" onClick={openEmail}>
       <span>Email suggestions, corrections, or research leads</span>
-      <strong>robert129999 <i>[at]</i> yahoo <i>[dot]</i> com</strong>
+      <strong>research <i>[at]</i> wnyatlas <i>[dot]</i> com</strong>
     </button>
   );
 }

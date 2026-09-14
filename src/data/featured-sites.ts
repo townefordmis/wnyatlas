@@ -3899,6 +3899,14 @@ export const featuredSites: AtlasSite[] = [
   ...countyExpansion2026,
 ].map((site) => ({
   ...site,
+  featuredOrder: ({
+    "love-canal": 1,
+    "bethlehem-steel": 2,
+    "tonawanda-coke": 3,
+    "west-valley": 4,
+    "buffalo-river": 5,
+    "hooker-hyde-park-landfill": 6,
+  } as Record<string, number>)[site.id],
   image: site.image ?? siteImages[site.id],
   story: site.story ?? siteStories[site.id],
 }));

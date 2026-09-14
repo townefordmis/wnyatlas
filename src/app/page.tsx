@@ -1,5 +1,6 @@
 import { AtlasMap } from "@/components/atlas-map";
-import { SiteDirectory } from "@/components/site-directory";
+import { FeaturedPlaces } from "@/components/featured-places";
+import { RecentUpdates } from "@/components/recent-updates";
 import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
 import { VisitorCount } from "@/components/visitor-count";
@@ -57,6 +58,8 @@ export default function Home() {
         </aside>
       </section>
 
+      <FeaturedPlaces />
+
       <div id="map">
         <AtlasMap />
       </div>
@@ -71,7 +74,7 @@ export default function Home() {
         ))}
       </section>
 
-      <SiteDirectory />
+      <RecentUpdates />
 
       <section className="about-panel" id="about">
         <p className="eyebrow">Built as a public record</p>

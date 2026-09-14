@@ -5,6 +5,7 @@ import { MaskedContactEmail } from "@/components/masked-contact-email";
 const exploreLinks = [
   { href: "/#map", title: "Regional map", description: "Explore documented places across Western New York." },
   { href: "/places", title: "All places", description: "Browse the complete A–Z research collection." },
+  { href: "/trails", title: "Curated trails", description: "Follow connected places through a guided regional story." },
   { href: "/chemicals", title: "Chemical guide", description: "Separate hazard, detection, exposure, and risk." },
   { href: "/research/schools-industrial-sites", title: "Schools", description: "Review documented property and nearby-site connections." },
   { href: "/research/former-waterways", title: "Changed waters", description: "Follow filled wetlands, altered channels, and reclaimed shores." },

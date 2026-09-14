@@ -252,6 +252,9 @@ export default async function SitePage({ params }: SitePageProps) {
           <aside className="story-status">
             <p className="field-label">Evidence status</p>
             <strong>{evidenceLabels[site.evidenceStatus]}</strong>
+            <Link className="research-transparency-badge" href="/methodology#research-transparency">
+              Human-reviewed · AI-assisted research <span aria-hidden="true">ⓘ</span>
+            </Link>
             <p>{story.evidenceContext}</p>
             {story.lastReviewed && (
               <p className="story-reviewed">

@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 import { chemicalProfiles } from "@/data/chemicals";
 import { featuredSites } from "@/data/featured-sites";
 import { healthTopics, wnyCountyNames } from "@/data/health-platform";
+import { trails } from "@/data/trails";
 
 const BASE_URL = "https://www.wnyatlas.com";
 
@@ -18,6 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    { url: `${BASE_URL}/trails`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/updates`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/methodology`, changeFrequency: "monthly", priority: 0.7 },
     {
       url: `${BASE_URL}/chemicals`,
       changeFrequency: "monthly",
@@ -91,5 +95,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...wnyCountyNames.map((county) => ({ url: `${BASE_URL}/health/county/${county.toLowerCase()}`, changeFrequency: "monthly" as const, priority: 0.82 })),
   ];
 
-  return [...publicPages, ...healthPages, ...chemicalPages, ...placePages];
+  const trailPages: MetadataRoute.Sitemap = trails.map((trail) => ({ url: `${BASE_URL}/trails/${trail.slug}`, changeFrequency: "monthly", priority: 0.7 }));
+  return [...publicPages, ...trailPages, ...healthPages, ...chemicalPages, ...placePages];
 }

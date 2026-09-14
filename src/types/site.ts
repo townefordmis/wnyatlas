@@ -76,6 +76,8 @@ export type AtlasSite = {
   pfasScopeNote?: string;
   summary: string;
   evidenceStatus: EvidenceStatus;
+  featuredOrder?: number;
+  updateNote?: string;
   coordinates: [longitude: number, latitude: number];
   sources?: AtlasSource[];
   newsEvents?: AtlasNewsEvent[];

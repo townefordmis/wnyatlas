@@ -16,6 +16,8 @@ const MAX_RESULTS = 6;
 const navigationItems = [
   { href: "/#map", label: "Map", match: "home" },
   { href: "/places", label: "Places", match: "places" },
+  { href: "/trails", label: "Trails", match: "/trails" },
+  { href: "/updates", label: "Updates", match: "/updates" },
   { href: "/chemicals", label: "Chemicals", match: "/chemicals" },
   { href: "/research/schools-industrial-sites", label: "Schools", match: "/research/schools-industrial-sites" },
   { href: "/research/former-waterways", label: "Waterways", match: "/research/former-waterways" },

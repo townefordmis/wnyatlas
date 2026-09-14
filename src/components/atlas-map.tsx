@@ -74,7 +74,7 @@ export function AtlasMap() {
     return featuredSites.filter((site) => {
       const matchesQuery =
         !normalizedQuery ||
-        [site.name, site.municipality, site.county, site.summary, getPfasSearchText(site)].some((value) =>
+        [site.name, site.municipality, site.county, site.category, categoryLabels[site.category], site.summary, getPfasSearchText(site)].some((value) =>
           value.toLowerCase().includes(normalizedQuery),
         );
       const matchesCounty = county === "all" || site.county === county;
@@ -250,6 +250,11 @@ export function AtlasMap() {
         </button>
       </div>
 
+      <div className="explorer-view-switch" aria-label="Browse view">
+        <span aria-current="page">Map and filtered list</span>
+        <Link href="/places">Complete A–Z index →</Link>
+      </div>
+
       <div className="map-layout">
         <div className="map-stage">
           <div
@@ -283,7 +288,7 @@ export function AtlasMap() {
                 setQuery(event.target.value);
                 setVisibleSiteCount(SITE_LIST_PAGE_SIZE);
               }}
-              placeholder="Name, town, or keyword"
+              placeholder="Name, county, type, or keyword"
             />
             <div>
               <label htmlFor="atlas-county">
@@ -380,6 +385,9 @@ export function AtlasMap() {
               <p className="map-empty">No places match these filters.</p>
             )}
             {listedSites.length < filteredSites.length && (
+              <p className="map-result-count">Showing {listedSites.length} of {filteredSites.length} places</p>
+            )}
+            {listedSites.length < filteredSites.length && (
               <button
                 className="map-show-more"
                 type="button"
@@ -387,10 +395,7 @@ export function AtlasMap() {
                   setVisibleSiteCount((count) => count + SITE_LIST_PAGE_SIZE)
                 }
               >
-                Show {Math.min(
-                  SITE_LIST_PAGE_SIZE,
-                  filteredSites.length - listedSites.length,
-                )} more places
+                Show more
               </button>
             )}
           </div>
