@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { BuffaloSchoolsMap } from "@/components/buffalo-schools-map";
 import { SiteHeader } from "@/components/site-header";
+import { ResearchSectionNav } from "@/components/research-section-nav";
 
 export const metadata: Metadata = {
   title: "Schools and Documented Environmental Property History",
@@ -50,9 +51,10 @@ export default function BuffaloSchoolsResearchPage() {
         </div>
       </section>
 
-      <BuffaloSchoolsMap />
+      <ResearchSectionNav items={[{ href: "#school-map", label: "Campus map" }, { href: "#school-method", label: "Evidence standard" }]} />
+      <div id="school-map"><BuffaloSchoolsMap /></div>
 
-      <section className="school-method">
+      <section className="school-method" id="school-method">
         <p className="eyebrow">Evidence standard</p>
         <h2>Different kinds of evidence stay separate.</h2>
         <div>

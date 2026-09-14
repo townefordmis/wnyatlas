@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { FormerWaterwaysMap } from "@/components/former-waterways-map";
 import { SiteHeader } from "@/components/site-header";
+import { ResearchSectionNav } from "@/components/research-section-nav";
 import {
   formerWaterwayRecords,
   waterwayEvidenceLabels,
@@ -48,7 +49,8 @@ export default function FormerWaterwaysResearchPage() {
         </div>
       </section>
 
-      <FormerWaterwaysMap />
+      <ResearchSectionNav items={[{ href: "#waterway-map", label: "Changed waters map" }, { href: "#waterway-research-index-title", label: "Detailed records" }, { href: "#waterway-method", label: "Evidence standard" }]} />
+      <div id="waterway-map"><FormerWaterwaysMap /></div>
 
       <section className="waterway-research-index" aria-labelledby="waterway-research-index-title">
         <p className="eyebrow">Crawlable research index · all records</p>
@@ -120,7 +122,7 @@ export default function FormerWaterwaysResearchPage() {
         </div>
       </section>
 
-      <section className="school-method">
+      <section className="school-method" id="waterway-method">
         <p className="eyebrow">Evidence standard</p>
         <h2>Landscape change and contamination are separate facts.</h2>
         <div>

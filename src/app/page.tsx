@@ -5,19 +5,6 @@ import { SiteHeader } from "@/components/site-header";
 import { StructuredData } from "@/components/structured-data";
 import { VisitorCount } from "@/components/visitor-count";
 
-const categories = [
-  ["Industrial history", "Factories, products, employers, and material flows"],
-  ["Environmental legacy", "Documented contaminants, disposal, and waterways"],
-  [
-    "Waterways transformed",
-    "Straightened creeks, filled wetlands, and hardened shorelines",
-  ],
-  [
-    "Recovery & restoration",
-    "Cleanup, habitat repair, monitoring, and what returned",
-  ],
-];
-
 export default function Home() {
   const websiteData = {
     "@context": "https://schema.org",
@@ -63,16 +50,6 @@ export default function Home() {
       <div id="map">
         <AtlasMap />
       </div>
-
-      <section className="category-grid" aria-label="Atlas categories">
-        {categories.map(([title, description], index) => (
-          <article key={title}>
-            <span>0{index + 1}</span>
-            <h3>{title}</h3>
-            <p>{description}</p>
-          </article>
-        ))}
-      </section>
 
       <RecentUpdates />
 

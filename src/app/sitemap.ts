@@ -22,6 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/trails`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/updates`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/methodology`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/research/radiological/southtowns-slag`, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE_URL}/research/radiological/black-creek-village`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/research/radiological/1979-pine-bowl-dossier`, changeFrequency: "monthly", priority: 0.7 },
     {
       url: `${BASE_URL}/chemicals`,
       changeFrequency: "monthly",

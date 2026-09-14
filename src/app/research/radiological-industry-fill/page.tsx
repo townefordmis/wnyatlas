@@ -11,6 +11,9 @@ import {
   probeTestimonyRecords,
 } from "@/data/radiological-investigation";
 import { SiteHeader } from "@/components/site-header";
+import { EvidenceStatusBadge } from "@/components/evidence-status-badge";
+import { InvestigationStats } from "@/components/investigation-stats";
+import { ResearchSectionNav } from "@/components/research-section-nav";
 
 export const metadata: Metadata = {
   title: "Radioactive Industrial Slag, Uranium Residues & Fill",
@@ -31,7 +34,7 @@ export default function RadiologicalInvestigationPage() {
     <main>
       <SiteHeader />
       <section className="school-research-hero radiological-hero">
-        <p className="eyebrow">Living government investigation · updated August 19, 2026</p>
+        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Updated August 19, 2026" /></p>
         <h1>Niagara–Erie radiological investigation</h1>
         <p className="dek">
           EPA, NYSDEC, and NYSDOH are conducting a large, active search for
@@ -42,12 +45,16 @@ export default function RadiologicalInvestigationPage() {
           and cleanup planning. The historical slag and uranium records below explain
           why investigators are finding a regional problem rather than one isolated site.
         </p>
-        <div className="radiological-current-metrics" aria-label="Scale of the ongoing radiological investigation">
-          <article><strong>≈1,000</strong><span>square miles screened</span></article>
-          <article><strong>500,000+</strong><span>modern aerial data points</span></article>
-          <article><strong>≈380</strong><span>areas of interest identified</span></article>
-          <article><strong>≈160</strong><span>ground reviews identified in July</span></article>
-        </div>
+        <InvestigationStats stats={[
+          { stage: "Regional screening", value: "≈1,000", label: "square miles screened", asOfDate: "July 20, 2026" },
+          { stage: "Aerial screening", value: "500,000+", label: "aerial data points evaluated", asOfDate: "July 20, 2026" },
+          { stage: "Areas of interest", value: "≈380", label: "screening areas identified", asOfDate: "July 20, 2026" },
+          { stage: "Ground review", value: "≈160", label: "areas advancing to ground surveys", asOfDate: "July 20, 2026" },
+          { stage: "Property access", value: "≈470", label: "access agreements reported", asOfDate: "July 30, 2026" },
+          { stage: "Weekly fieldwork", value: "200", label: "properties screened in the preceding week", asOfDate: "July 30, 2026" },
+          { stage: "Deeper investigation", value: "6", label: "properties requiring additional work", asOfDate: "July 30, 2026" },
+          { stage: "Precautionary action", value: "4", label: "families offered temporary relocation", asOfDate: "July 30, 2026" },
+        ]} />
         <div className="school-caution radiological-caution">
           <strong>This is ongoing—not a completed historical survey</strong>
           <p>
@@ -64,6 +71,15 @@ export default function RadiologicalInvestigationPage() {
         </a>
       </section>
 
+      <aside className="radiological-evidence-key" aria-label="Evidence level key"><strong>Evidence levels used here</strong><span><b>A</b> Agency sampling, removal, or laboratory finding</span><span><b>B</b> Official industrial or waste-history record</span><span><b>C</b> Named contemporaneous testimony requiring corroboration</span></aside>
+      <ResearchSectionNav items={[
+        { href: "#radiological-map", label: "Evidence map" },
+        { href: "#current-investigation", label: "Current assessment" },
+        { href: "#connected-investigations", label: "Sub-investigations" },
+        { href: "#aerial-record", label: "Survey history" },
+        { href: "#radiological-archive", label: "Documents" },
+      ]} />
+
       <RadiologicalInvestigationMap />
 
       <section className="radiological-current-overview" id="current-investigation">
@@ -79,20 +95,11 @@ export default function RadiologicalInvestigationPage() {
           </p>
         </div>
 
-        <div className="radiological-current-metrics" aria-label="Current assessment metrics">
-          <article><strong>≈470</strong><span>property-access agreements reported July 30</span></article>
-          <article><strong>200</strong><span>properties screened during the preceding week</span></article>
-          <article><strong>6</strong><span>properties then requiring deeper investigation</span></article>
-          <article><strong>4</strong><span>families offered precautionary relocation</span></article>
-        </div>
-
         <p className="measurement-caution">
-          These figures are dated snapshots from a rapidly changing investigation,
-          not final totals. Earlier agency briefing material reported approximately
-          380 regional areas of interest, about 220 not requiring additional testing,
-          and about 160 advancing through ground surveys. Later field updates counted
-          property agreements and completed screens, which are different measures and
-          should not be added together.
+          The consolidated figures above combine two dated snapshots of different
+          stages in the same pipeline. Regional screening totals from July 20 and
+          weekly property-level field progress reported July 30 are different measures
+          and should not be added together.
         </p>
 
         <ol className="radiological-investigation-flow">
@@ -138,7 +145,17 @@ export default function RadiologicalInvestigationPage() {
         </div>
       </section>
 
-      <section className="radiological-southtowns" id="southtowns-slag">
+      <section className="radiological-substories" id="connected-investigations">
+        <div><p className="eyebrow">Connected investigations</p><h2>Four records, kept distinct.</h2><p>The active assessment provides the regional frame. These focused records preserve separate places, material chains, witnesses, and evidentiary limits.</p></div>
+        <div className="radiological-substory-grid">
+          <Link href="/research/radiological/southtowns-slag"><EvidenceStatusBadge status="research-in-progress" /><h3>Southtowns / Buffalo Slag</h3><p>Abbott Road, Republic Steel TENORM, and the documented construction-material chain.</p><strong>Read the full record →</strong></Link>
+          <Link href="/research/radiological/black-creek-village"><EvidenceStatusBadge status="active-government-investigation" /><h3>Black Creek Village</h3><p>The separate 99th Street fill investigation and its still-pending radiological answer.</p><strong>Read the full record →</strong></Link>
+          <Link href="/research/radiological/1979-pine-bowl-dossier"><EvidenceStatusBadge status="research-in-progress" /><h3>1979 Pine Bowl dossier</h3><p>The full witness-by-witness Probe Services record, with corroboration and explicit limits.</p><strong>Read the full record →</strong></Link>
+          <a href="#radiological-map"><EvidenceStatusBadge status="documented" /><h3>1986 DOE/ORNL survey</h3><p>The 100-point historical reference dataset remains paired with the interactive map and downloads.</p><strong>Explore the survey →</strong></a>
+        </div>
+      </section>
+
+      <section className="radiological-southtowns radiological-moved-section" id="southtowns-slag">
         <div className="radiological-southtowns-heading">
           <div>
             <p className="eyebrow">Southtowns slag investigation · newest to oldest</p>
@@ -276,7 +293,7 @@ export default function RadiologicalInvestigationPage() {
         </p>
       </section>
 
-      <section className="school-method radiological-method radiological-black-creek" id="black-creek-village">
+      <section className="school-method radiological-method radiological-black-creek radiological-moved-section" id="black-creek-village">
         <p className="eyebrow">Black Creek Village · inside the living Niagara investigation</p>
         <h2>Black Creek belongs in the ongoing regional story—not in a separate historical footnote.</h2>
         <div>
@@ -359,7 +376,7 @@ export default function RadiologicalInvestigationPage() {
         </p>
       </section>
 
-      <section className="school-method radiological-method radiological-evidence-network" id="slag-distribution-evidence">
+      <section className="school-method radiological-method radiological-evidence-network radiological-moved-section" id="slag-distribution-evidence">
         <p className="eyebrow">Slag sources and distribution · evidence kept separate</p>
         <h2>The 1979 interviews expand the research network, but they do not prove one source for every hotspot.</h2>
         <div>
@@ -427,7 +444,7 @@ export default function RadiologicalInvestigationPage() {
         </p>
       </section>
 
-      <section className="radiological-testimony-dossier" id="probe-1979-testimony">
+      <section className="radiological-testimony-dossier radiological-moved-section" id="probe-1979-testimony">
         <div className="radiological-testimony-heading">
           <div>
             <p className="eyebrow">Original record dossier · all 12 scanned pages reviewed</p>
@@ -487,7 +504,7 @@ export default function RadiologicalInvestigationPage() {
         </a>
       </section>
 
-      <section className="radiological-corroboration" aria-labelledby="corroboration-heading">
+      <section className="radiological-corroboration radiological-moved-section" aria-labelledby="corroboration-heading">
         <p className="eyebrow">Additional primary-record research</p>
         <h2 id="corroboration-heading">What later records add—and what they still do not prove</h2>
         <div>
@@ -567,6 +584,7 @@ export default function RadiologicalInvestigationPage() {
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>September 14, 2026 · research hub restructure</strong> Separated the Southtowns slag, Black Creek Village, and 1979 Pine Bowl investigations into focused, linkable records; consolidated the current investigation statistics and made the 100-point survey list collapsible.</p>
           <p><strong>August 19, 2026 · Southtowns slag investigation</strong> Added the Abbott Road slag evidence, former Republic Steel Ra-226 TENORM finding, Buffalo Slag supply chain, Woodlawn municipal-product record, Hamburg no-slag instruction, and the explicit unresolved link between historical placements and current radiological areas of interest.</p>
           <p><strong>August 17, 2026 · investigation scale corrected</strong> Rebuilt the page opening around the active 1,000-square-mile Niagara–Erie assessment, modern aerial dataset, intensive residential screening, confirmed elevated properties, and precautionary relocations; moved Black Creek firmly inside that living investigation.</p>
           <p><strong>August 17, 2026 · Black Creek Village watch</strong> Added the active 99th Street industrial-fill investigation, the 1990–1993 Black Creek Drive cleanup record, and the still-pending property-specific radiological classification within the regional assessment story.</p>
