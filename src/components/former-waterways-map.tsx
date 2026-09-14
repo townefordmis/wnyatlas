@@ -108,6 +108,7 @@ export function FormerWaterwaysMap() {
   const map = useRef<MapLibreMap | null>(null);
   const markers = useRef<Map<string, Marker>>(new Map());
   const geometryLabels = useRef<Map<string, Marker>>(new Map());
+  const hasSetInitialView = useRef(false);
   const [selected, setSelected] = useState(formerWaterwayRecords[0]);
   const [filter, setFilter] = useState<WaterwayEvidenceType | "all">("all");
 
@@ -163,6 +164,26 @@ export function FormerWaterwaysMap() {
           essential: false,
         });
       }
+    },
+    [],
+  );
+
+  const showAllRecords = useCallback(
+    (records: FormerWaterwayRecord[] = formerWaterwayRecords, duration = 500) => {
+      const instance = map.current;
+      if (!instance || records.length === 0) return;
+
+      const bounds = new maplibregl.LngLatBounds(
+        records[0].coordinates,
+        records[0].coordinates,
+      );
+      records.slice(1).forEach((record) => bounds.extend(record.coordinates));
+      instance.resize();
+      instance.fitBounds(bounds, {
+        padding: window.matchMedia("(max-width: 620px)").matches ? 24 : 52,
+        maxZoom: 9.15,
+        duration,
+      });
     },
     [],
   );
@@ -433,10 +454,15 @@ export function FormerWaterwaysMap() {
     if (!map.current || selected.id === cayugaIslandRecordId) return;
     const timer = window.setTimeout(() => {
       map.current?.resize();
+      if (!hasSetInitialView.current) {
+        hasSetInitialView.current = true;
+        showAllRecords(formerWaterwayRecords, 0);
+        return;
+      }
       focusRecord(selected, 0);
     }, 80);
     return () => window.clearTimeout(timer);
-  }, [focusRecord, selected]);
+  }, [focusRecord, selected, showAllRecords]);
 
   useEffect(() => {
     const visible = new Set(filtered.map((record) => record.id));
@@ -573,6 +599,13 @@ export function FormerWaterwaysMap() {
             </select>
           </label>
           <p className="school-result-count">{filtered.length} locations shown</p>
+          <button
+            type="button"
+            className="waterway-show-all"
+            onClick={() => showAllRecords(filtered)}
+          >
+            Show all sites on map
+          </button>
           <div className="school-campus-options">
             {filtered.map((record) => {
               const recordNumber = formerWaterwayRecords.findIndex(

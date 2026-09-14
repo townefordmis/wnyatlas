@@ -4551,6 +4551,26 @@ footer {
   position: relative;
 }
 
+.waterway-show-all {
+  align-self: flex-start;
+  background: #fffdf8;
+  border: 1px solid #9aaea8;
+  border-radius: 999px;
+  color: #17443f;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 750;
+  margin: 0 0 0.8rem;
+  padding: 0.45rem 0.75rem;
+}
+
+.waterway-show-all:hover,
+.waterway-show-all:focus-visible {
+  background: #eaf5f1;
+  border-color: #006f63;
+}
+
 .school-map-shell {
   scroll-margin-top: 0.75rem;
 }
