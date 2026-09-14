@@ -29,12 +29,29 @@ const navigationItems = [
   { href: "/#about", label: "About", match: "" },
 ];
 
+const routeLabels: Record<string, string> = {
+  research: "Research",
+  sites: "Places",
+  chemicals: "Chemicals",
+  trails: "Trails",
+  health: "Health",
+  risks: "Risks",
+  "radiological-industry-fill": "Radiological investigation",
+  radiological: "Radiological research",
+  "southtowns-slag": "Southtowns slag",
+  "black-creek-village": "Black Creek Village",
+  "1979-pine-bowl-dossier": "1979 Pine Bowl dossier",
+  "schools-industrial-sites": "Schools and environmental history",
+  "former-waterways": "Changed waters",
+};
+
 export function SiteHeader() {
   const router = useRouter();
   const pathname = usePathname();
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const breadcrumbSegments = pathname.split("/").filter(Boolean);
 
   const results = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -98,7 +115,7 @@ export function SiteHeader() {
     return Boolean(match && (pathname === match || pathname.startsWith(`${match}/`)));
   }
 
-  return (
+  return (<>
     <header
       className="site-header"
       onKeyDown={(event) => {
@@ -224,5 +241,18 @@ export function SiteHeader() {
         {isMenuOpen ? "Close" : "Menu"}
       </button>
     </header>
+    {breadcrumbSegments.length > 1 && (
+      <nav className="site-breadcrumbs" aria-label="Breadcrumb">
+        <Link href="/">Home</Link><span aria-hidden="true">/</span>
+        {breadcrumbSegments.map((segment, index) => {
+          const href = `/${breadcrumbSegments.slice(0, index + 1).join("/")}`;
+          const site = segment === breadcrumbSegments.at(-1) ? featuredSites.find((item) => item.id === segment) : undefined;
+          const label = site ? getPublicSiteName(site.name) : routeLabels[segment] ?? segment.replaceAll("-", " ");
+          const current = index === breadcrumbSegments.length - 1;
+          return <span className="breadcrumb-item" key={href}>{current ? <span aria-current="page">{label}</span> : <Link href={href}>{label}</Link>}{!current && <span aria-hidden="true">/</span>}</span>;
+        })}
+      </nav>
+    )}
+  </>
   );
 }

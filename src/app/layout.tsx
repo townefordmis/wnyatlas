@@ -3,6 +3,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 
 import { SiteContactFooter } from "@/components/site-contact-footer";
+import { BackToTop } from "@/components/back-to-top";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.wnyatlas.com"),
@@ -66,6 +67,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         <div id="main-content">{children}</div>
+        <BackToTop />
         <SiteContactFooter />
       </body>
     </html>

@@ -20,6 +20,11 @@ const SITE_LIST_PAGE_SIZE = 30;
 const countyOptions = [...new Set(featuredSites.map((site) => site.county))].sort(
   (a, b) => a.localeCompare(b),
 );
+const quickCounties = countyOptions
+  .map((name) => ({ name, count: featuredSites.filter((site) => site.county === name).length }))
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 4)
+  .map(({ name }) => name);
 
 const categoryLabels: Record<AtlasSite["category"], string> = {
   cleanup: "Cleanup",
@@ -67,6 +72,7 @@ export function AtlasMap() {
   const [evidence, setEvidence] = useState("all");
   const [visibleSiteCount, setVisibleSiteCount] = useState(SITE_LIST_PAGE_SIZE);
   const [mapUnavailable, setMapUnavailable] = useState(false);
+  const [scrollZoomEnabled, setScrollZoomEnabled] = useState(false);
 
   const filteredSites = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -152,6 +158,7 @@ export function AtlasMap() {
     });
 
     map.current = mapInstance;
+    mapInstance.scrollZoom.disable();
     const resizeMap = () => {
       window.requestAnimationFrame(() => mapInstance.resize());
     };
@@ -228,6 +235,27 @@ export function AtlasMap() {
     });
   }
 
+  function selectCounty(countyName: string) {
+    setCounty(countyName);
+    setVisibleSiteCount(SITE_LIST_PAGE_SIZE);
+    if (countyName === "all") {
+      resetMap();
+      return;
+    }
+    const sites = featuredSites.filter((site) => site.county === countyName);
+    if (!sites.length) return;
+    const longitudes = sites.map((site) => site.coordinates[0]);
+    const latitudes = sites.map((site) => site.coordinates[1]);
+    map.current?.fitBounds([[Math.min(...longitudes), Math.min(...latitudes)], [Math.max(...longitudes), Math.max(...latitudes)]], { padding: 55, maxZoom: 11, duration: 650 });
+  }
+
+  function toggleScrollZoom() {
+    const next = !scrollZoomEnabled;
+    setScrollZoomEnabled(next);
+    if (next) map.current?.scrollZoom.enable();
+    else map.current?.scrollZoom.disable();
+  }
+
   function clearFilters() {
     setQuery("");
     setCounty("all");
@@ -255,8 +283,16 @@ export function AtlasMap() {
         <Link href="/places">Complete A–Z index →</Link>
       </div>
 
+      <div className="county-quick-jump" aria-label="Quickly filter by county">
+        <strong>Quick county jump</strong>
+        <button type="button" className={county === "all" ? "is-active" : ""} aria-pressed={county === "all"} onClick={() => selectCounty("all")}>All counties</button>
+        {quickCounties.map((countyName) => <button type="button" key={countyName} className={county === countyName ? "is-active" : ""} aria-pressed={county === countyName} onClick={() => selectCounty(countyName)}>{countyName}</button>)}
+        <a href="#atlas-county">More counties ↓</a>
+      </div>
+
       <div className="map-layout">
         <div className="map-stage">
+          <button className={`map-interaction-toggle${scrollZoomEnabled ? " is-active" : ""}`} type="button" aria-pressed={scrollZoomEnabled} onClick={toggleScrollZoom}>{scrollZoomEnabled ? "Disable scroll zoom" : "Enable map zoom"}</button>
           <div
             className="map-canvas"
             ref={mapContainer}
@@ -297,8 +333,7 @@ export function AtlasMap() {
                   id="atlas-county"
                   value={county}
                   onChange={(event) => {
-                    setCounty(event.target.value);
-                    setVisibleSiteCount(SITE_LIST_PAGE_SIZE);
+                    selectCounty(event.target.value);
                   }}
                 >
                   <option value="all">All counties</option>
