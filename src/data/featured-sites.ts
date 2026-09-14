@@ -8,6 +8,8 @@ import { waterwayHubSites } from "@/data/waterway-hubs";
 import { littleValleySite } from "@/data/little-valley-site";
 import { sinclairRefinerySite } from "@/data/sinclair-refinery-site";
 import { regionalWasteNetworkSites } from "@/data/regional-waste-network-sites";
+import { amherstCleanupSites } from "@/data/amherst-cleanup-sites";
+import { erieCayugaExpansion } from "@/data/erie-cayuga-expansion";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -3894,6 +3896,8 @@ export const featuredSites: AtlasSite[] = [
   littleValleySite,
   sinclairRefinerySite,
   ...regionalWasteNetworkSites,
+  ...amherstCleanupSites,
+  ...erieCayugaExpansion,
   ...waterwayHubSites,
   ...historicCleanupExpansion,
   ...countyExpansion2026,

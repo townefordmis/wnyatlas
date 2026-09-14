@@ -8,6 +8,7 @@ import { StructuredData } from "@/components/structured-data";
 import { LoveCanalDisposalHistory } from "@/components/love-canal-disposal-history";
 import { BuffaloRiverFireHistory } from "@/components/buffalo-river-fire-history";
 import { BethlehemWorkerHistory } from "@/components/bethlehem-worker-history";
+import { AmherstDumpDistinction } from "@/components/amherst-dump-distinction";
 import {
   HistoricalAerialEvidence,
   hasHistoricalAerialEvidence,
@@ -398,6 +399,8 @@ export default async function SitePage({ params }: SitePageProps) {
             {site.id === "buffalo-river" && <BuffaloRiverFireHistory />}
 
             {site.id === "bethlehem-steel" && <BethlehemWorkerHistory />}
+
+            {site.id === "billy-wilson-park-hopkins-road-dump" && <AmherstDumpDistinction />}
 
             {site.id === "love-canal" && (
               <section className="story-research-figure" aria-labelledby="love-canal-aerial-title">

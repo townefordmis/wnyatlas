@@ -64,6 +64,15 @@ button {
 }
 
 /* Editorial discovery: featured places, trails, and updates */
+.dump-distinction { padding: 2rem 0; border-top: 1px solid var(--line); }
+.dump-distinction > p { max-width: 800px; line-height: 1.65; }
+.dump-distinction > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 1.5rem; background: var(--line); border: 1px solid var(--line); }
+.dump-distinction article { display: flex; flex-direction: column; padding: 1.2rem; background: var(--paper); }
+.dump-distinction article span, .dump-distinction article strong { font: 700 .66rem var(--font-mono); text-transform: uppercase; }
+.dump-distinction article span { color: var(--rust); }
+.dump-distinction article strong { margin-top: auto; padding-top: 1rem; }
+.dump-distinction aside { margin-top: 1rem; padding: 1.2rem; background: var(--cream); border-left: 4px solid var(--rust); }
+@media (max-width: 760px) { .dump-distinction > div { grid-template-columns: 1fr; } }
 .site-breadcrumbs { display: flex; flex-wrap: wrap; gap: .45rem; padding: .7rem clamp(1.25rem, 5vw, 6rem); border-bottom: 1px solid var(--line); font: 650 .68rem var(--font-mono); text-transform: capitalize; }
 .site-breadcrumbs a { color: inherit; }
 .breadcrumb-item { display: inline-flex; gap: .45rem; }
