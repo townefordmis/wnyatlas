@@ -3806,6 +3806,11 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "/sites/upper-mountain-road-radiation-site",
       },
       {
+        title: "Carborundum Globar Site — nearby but separate Hyde Park Boulevard record",
+        publisher: "WNY Atlas",
+        url: "/sites/carborundum-globar-site",
+      },
+      {
         title: "Radiological Industry and Reused Fill — regional evidence map",
         publisher: "WNY Atlas",
         url: "/research/radiological-industry-fill",
@@ -3927,6 +3932,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Carborundum Globar Document Collection",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932036/",
+      },
+      {
+        title: "Titanium Alloys Manufacturing / TAM Ceramics — nearby but separate Hyde Park Boulevard record",
+        publisher: "WNY Atlas",
+        url: "/sites/tam-ceramics-niagara",
       },
       {
         title: "Radiological Industry and Reused Fill — regional evidence map",

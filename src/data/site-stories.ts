@@ -5385,6 +5385,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Locate a public primary record naming the 1955 experimental slag's disposal or reuse destination before drawing a route to any fill site.",
       "Keep nonradioactive zirconium-process waste movements, including documented waste sent to LOOW, separate from the uranium-experiment record.",
+      "Carborundum Globar is a nearby but separately regulated Hyde Park Boulevard site. Proximity does not establish shared waste, groundwater, or slag provenance.",
     ],
   },
   "ead-metallurgy-americium": {
@@ -5451,6 +5452,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Add the newest periodic-review conclusion and groundwater trend summary.",
       "Keep the Carborundum Globar groundwater record distinct from its federal nuclear-work record and from nearby Hyde Park, TAM Ceramics and other industrial sources.",
+      "TAM Ceramics is linked as nearby corridor context only; the reviewed records do not establish a shared waste stream or radiological-fill source between the properties.",
     ],
   },
 };
