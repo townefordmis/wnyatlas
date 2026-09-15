@@ -3766,15 +3766,25 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "tam-ceramics-niagara",
-    name: "TAM Ceramics / Former NL Industries",
+    name: "Titanium Alloys Manufacturing / TAM Ceramics",
     municipality: "Town of Niagara",
     county: "Niagara",
-    category: "cleanup",
+    category: "radiological",
     summary:
-      "Ceramic- and dielectric-powder manufacturing property at 4511 Hyde Park Boulevard. DEC records document historical on-site waste placement, including ceramic and metallic residues, and radiological investigation of portions of the property. The record also distinguishes material generated on site from organic contamination associated with the adjoining Hyde Park landfill corridor.",
+      "Manufacturing property at 4511 Hyde Park Boulevard where federal records document a small 1955 experimental melt of uranium-contaminated stainless steel and a separate two-day uranium-compound experiment in 1956. The melt generated slag, but the reviewed public record does not establish where that slag was ultimately placed. Later state cleanup records address the broader industrial property and adjoining landfill corridor.",
     evidenceStatus: "well-documented",
     coordinates: [-79.03366667, 43.12935381],
     sources: [
+      {
+        title: "Titanium Alloys Manufacturing SEC Petition Evaluation Report — SEC-00190",
+        publisher: "National Institute for Occupational Safety and Health",
+        url: "https://www.cdc.gov/niosh/ocas/pdfs/sec/titanalloy/titanpeter-190-r0.pdf",
+      },
+      {
+        title: "Titanium Alloys Manufacturing Work-Site and SEC Record",
+        publisher: "National Institute for Occupational Safety and Health",
+        url: "https://www.cdc.gov/niosh/ocas/titanalloy.html",
+      },
       {
         title: "TAM Ceramics Site Investigation and Reclassification Record — 932028",
         publisher: "New York State Department of Environmental Conservation",
@@ -3784,6 +3794,54 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "TAM Ceramics Undeveloped Property Investigation Work Plan",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932028/Report.HW.932028.1996-05-16.UndevelopedPropertyInvestigationWP.pdf",
+      },
+      {
+        title: "Upper Mountain Road Radiation Site — related Atlas record",
+        publisher: "WNY Atlas",
+        url: "/sites/upper-mountain-road-radiation-site",
+      },
+      {
+        title: "Radiological Industry and Reused Fill — regional evidence map",
+        publisher: "WNY Atlas",
+        url: "/research/radiological-industry-fill",
+      },
+    ],
+  },
+  {
+    id: "ead-metallurgy-americium",
+    name: "EAD Metallurgy Americium-241 Operation",
+    municipality: "Town of Tonawanda",
+    county: "Erie",
+    category: "radiological",
+    summary:
+      "Former smoke-detector-foil operation at 71 Pearce Avenue. Public records document releases of americium-241 to the sanitary sewer, accumulation in treatment sludge, incineration, and disposal at the Town of Tonawanda landfill. This sewer-and-sludge pathway is separate from the Linde uranium-residue history.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.8907, 42.9984],
+    sources: [
+      {
+        title: "EAD Metallurgy Corporation Records — Series 20691",
+        publisher: "New York State Archives",
+        url: "https://findingaids.nysed.gov/do/a1bb63f9-e4a2-5676-8c2c-7c944838ec53",
+      },
+      {
+        title: "Cleanup of Americium-241 Contamination — January 19, 1987",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://lmpublicsearch.lm.doe.gov/SiteDocs/T-378.pdf",
+      },
+      {
+        title: "Tonawanda Landfill Radiological Survey Record — 1994",
+        publisher: "U.S. Department of Energy Office of Legacy Management",
+        url: "https://lmpublicsearch.lm.doe.gov/SiteDocs/T-335.pdf",
+      },
+      {
+        title: "Linde Air Products — related Atlas record",
+        publisher: "WNY Atlas",
+        url: "/sites/linde-air-products",
+      },
+      {
+        title: "Radiological Industry and Reused Fill — regional evidence map",
+        publisher: "WNY Atlas",
+        url: "/research/radiological-industry-fill",
       },
     ],
   },
@@ -3839,12 +3897,22 @@ const featuredSiteRecords: AtlasSite[] = [
     name: "Carborundum Globar Site",
     municipality: "Town of Niagara",
     county: "Niagara",
-    category: "cleanup",
+    category: "radiological",
     summary:
-      "Former silicon-carbide heating-element and electronic-component plant at Hyde Park Boulevard and Rhode Island Street. Spent chlorinated solvents affected soil and groundwater, with TCE and breakdown products central to the remedy. Source soil was removed, while residual groundwater contamination remains under monitoring and site management.",
+      "Former silicon-carbide and electronic-component plant with two distinct histories: NIOSH documents limited uranium-slug grinding in 1943 and AEC fuel-development work from 1959 to 1967, while New York cleanup records focus on later chlorinated-solvent contamination. Neither record by itself identifies Carborundum as the source of a specific off-site slag-fill location.",
     evidenceStatus: "well-documented",
     coordinates: [-79.03276872, 43.11925666],
     sources: [
+      {
+        title: "Carborundum Company Site Profile",
+        publisher: "National Institute for Occupational Safety and Health",
+        url: "https://www.cdc.gov/niosh/ocas/pdfs/tbd/carbco-r0-508.pdf",
+      },
+      {
+        title: "Carborundum Company Work-Site and SEC Record",
+        publisher: "National Institute for Occupational Safety and Health",
+        url: "https://www.cdc.gov/niosh/ocas/carbco.html",
+      },
       {
         title: "Carborundum Globar Record of Decision — Site 932036",
         publisher: "New York State Department of Environmental Conservation",
@@ -3854,6 +3922,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Carborundum Globar Document Collection",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932036/",
+      },
+      {
+        title: "Radiological Industry and Reused Fill — regional evidence map",
+        publisher: "WNY Atlas",
+        url: "/research/radiological-industry-fill",
       },
     ],
   },

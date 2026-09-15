@@ -5286,37 +5286,6 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Research the relationship among Vanchlor, adjacent chemical facilities and the broader Mill Street industrial corridor without merging separate regulatory records.",
     ],
   },
-  "tam-ceramics-niagara": {
-    lastReviewed: "August 4, 2026",
-    background: [
-      "The Hyde Park Boulevard facility manufactured ceramic, dielectric and refractory-product ingredients under NL Industries, Titanium Alloy Manufacturing and later TAM Ceramics. An undeveloped portion of the property received process residues and obsolete material during the operating era.",
-      "DEC's record evaluates two histories at once: material generated or placed on the TAM property and organic contamination associated with the adjoining Hooker Hyde Park landfill corridor. WNYAtlas keeps those sources distinct.",
-    ],
-    timeline: [
-      { period: "1906 onward", event: "Ceramic- and dielectric-material manufacturing operated at the property." },
-      { period: "1930–1976", event: "Historical owners placed ceramic, mineral and metallic process residues in portions of the undeveloped property." },
-      { period: "1979", event: "A radiological survey preceded sale of the property and became part of the later investigation record." },
-      { period: "1995–1996", event: "DEC reviewed site classification and planned additional investigation of the undeveloped property and radiological conditions." },
-      { period: "Present record", event: "The public DEC file retains the investigation history; current parcel-specific status should be checked before disturbance or reuse conclusions." },
-    ],
-    documentedImpacts: [
-      "DEC records describe thousands of tons of ceramic and mineral waste placed in piles or landfilled on portions of the property.",
-      "Radiological surveys identified elevated radium-, uranium- and thorium-series measurements in defined areas requiring further evaluation.",
-      "Organic compounds detected in soil, groundwater or sewers were evaluated in relation to the neighboring Hyde Park landfill as well as conditions on the TAM property.",
-    ],
-    cleanupAndControls: [
-      "Investigations used surface surveys, test pits, sampling and groundwater monitoring to distinguish waste areas and possible sources.",
-      "The reviewed historical file does not support describing the entire 30-acre facility as one radiological or chemical disposal area.",
-      "Any current control or monitoring requirement should be read from the newest DEC site record rather than inferred from the 1990s studies.",
-    ],
-    presentDay: [
-      "This is a documented historical disposal and investigation site. WNYAtlas does not label it an active exposure area or imply that conditions reported in the 1990s remain unchanged everywhere on the property.",
-    ],
-    researchNotes: [
-      "Locate a newer DEC classification or periodic record that resolves the current status of each investigated area.",
-      "Map any radiological area only from a surveyed agency figure and link it to the separate radiological research page without duplicating a broad hotspot.",
-    ],
-  },
   "witmer-road-disposal-site": {
     lastReviewed: "August 4, 2026",
     background: [
@@ -5380,14 +5349,83 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Publish a plume outline only if DEC provides a current map suitable for public orientation.",
     ],
   },
+  "tam-ceramics-niagara": {
+    lastReviewed: "September 14, 2026",
+    background: [
+      "Titanium Alloys Manufacturing operated a large metals and ceramics complex at 4511 Hyde Park Boulevard. NIOSH treats January 1955 through December 1956 as the covered Atomic Weapons Employer period evaluated for radiation-dose reconstruction.",
+      "In 1955 TAM experimentally melted 40 pounds of uranium-contaminated stainless steel with 30 pounds of aluminum supplied from Mallinckrodt. NIOSH reports about 90 grams of uranium in the charge, a maximum incoming surface reading of 26,800 dpm per 100 square centimeters, and slag among the resulting materials.",
+      "A separate bench-scale experiment on July 10 and 11, 1956 involved uranium tetrafluoride, uranium dioxide and uranium hexafluoride. TAM's zirconium-tetrachloride production is documented separately and should not be represented as radioactive work.",
+      "DEC's later record evaluates both wastes generated or placed on the TAM property and organic contamination associated with the adjoining Hooker Hyde Park landfill corridor. Those possible sources remain distinct in this account.",
+    ],
+    timeline: [
+      { period: "1906 onward", event: "Ceramic-, dielectric- and refractory-material manufacturing developed at the property under successive operators." },
+      { period: "1930-1976", event: "Historical owners placed ceramic, mineral and metallic process residues in portions of the undeveloped property." },
+      { period: "1955", event: "TAM performed the experimental melt of contaminated stainless steel and aluminum; records identify metal product and slag but do not document the slag's final destination." },
+      { period: "July 10-11, 1956", event: "A short bench-scale uranium-compound experiment was conducted at the plant." },
+      { period: "1979", event: "A radiological survey made before a property sale became part of the later investigation record." },
+      { period: "1993", event: "DOE reviewed the property under FUSRAP and eliminated it from further consideration; that program decision is distinct from later state cleanup work." },
+      { period: "1995-1996", event: "DEC reviewed the site's classification and planned additional investigation of the undeveloped property and radiological conditions." },
+      { period: "2011-2012", event: "NIOSH evaluated SEC Petition 190 and concluded that worker doses could be reconstructed; the requested employee class was not added to the Special Exposure Cohort." },
+    ],
+    documentedImpacts: [
+      "The federal occupational record confirms that the 1955 test produced slag from uranium-contaminated feed material.",
+      "The reviewed sources do not establish the slag's final destination. The record therefore supports a documented production point and an unresolved disposition question, not attribution to Upper Mountain Road or any other reuse location.",
+      "State files describe large quantities of additional ceramic, mineral and metallic residues and radiological measurements in defined areas, but those broader wastes should not all be labeled radiological.",
+    ],
+    cleanupAndControls: [
+      "DOE's FUSRAP screening and NIOSH's worker-dose review answer different questions from New York's hazardous-waste investigation of the property.",
+      "The NIOSH determination means dose reconstruction was considered feasible; it is not a declaration that no radiological work occurred.",
+    ],
+    presentDay: [
+      "The Atlas record separates confirmed federal-era experiments, later state cleanup records, and the unresolved question of off-site slag disposition.",
+    ],
+    researchNotes: [
+      "Locate a public primary record naming the 1955 experimental slag's disposal or reuse destination before drawing a route to any fill site.",
+      "Keep nonradioactive zirconium-process waste movements separate from the uranium-experiment record.",
+    ],
+  },
+  "ead-metallurgy-americium": {
+    lastReviewed: "September 14, 2026",
+    background: [
+      "EAD Metallurgy operated a smoke-detector-foil manufacturing process at 71 Pearce Avenue from approximately 1977 through 1983. New York archival and federal records identify americium-241 as the radionuclide involved.",
+      "The documented pathway ran through the sanitary sewer: americium entered the treatment system, accumulated in sludge, and was carried into ash after sludge incineration. Some of that material was disposed of at the Town of Tonawanda landfill.",
+      "This is not part of the Linde uranium-residue pathway. The isotope, industrial process and waste route are different, even though both histories are in the Town of Tonawanda.",
+    ],
+    timeline: [
+      { period: "About 1977-1983", event: "EAD manufactured americium-bearing smoke-detector foil elements at Pearce Avenue." },
+      { period: "1983", event: "The foil operation ceased." },
+      { period: "1984-1987", event: "Investigations traced americium through the sewer, treatment plant and landfill pathway and evaluated cleanup and potential exposure groups." },
+      { period: "1994", event: "A federal radiological survey documented the landfill record and the placement of americium-bearing treatment residues." },
+      { period: "1995", event: "New York archival records describe certification of the EAD property following decontamination work." },
+    ],
+    documentedImpacts: [
+      "Americium-241 contamination was documented at the plant and in portions of the sanitary-sewer and treatment system.",
+      "Treatment sludge was incinerated, and federal records trace americium-bearing residue to the municipal landfill.",
+      "The published record identifies potential worker and public pathways for evaluation; it should not be generalized into a claim that the whole sewer system or landfill remains uniformly contaminated.",
+    ],
+    cleanupAndControls: [
+      "The plant underwent decontamination and survey work, while the downstream sewer, treatment and landfill pathway was separately investigated.",
+      "Historical dose and risk evaluations considered sewer workers, treatment-plant workers, landfill workers and members of the public as distinct groups.",
+    ],
+    presentDay: [
+      "This page preserves the distinct EAD pathway and links the original archival and federal cleanup records without merging it into nearby uranium-processing histories.",
+    ],
+    researchNotes: [
+      "Add building- or sump-specific dimensions only when the corresponding final survey or certification document is publicly available.",
+      "Maintain a clear distinction between documented historical movement and any claim about current conditions.",
+    ],
+  },
   "carborundum-globar-site": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "September 14, 2026",
     background: [
       "Carborundum acquired the former Globar plant in 1936 and manufactured silicon-carbide heating elements and electronic components at the Hyde Park Boulevard property. Solvents used in manufacturing and degreasing became the central cleanup issue.",
       "DEC divided the site into soil, groundwater and off-site-soil operable units. That structure is important because source removal at the plant and continuing groundwater management represent different stages of the remedy.",
+      "A separate federal occupational record documents experimental centerless grinding of ten uranium slugs in 1943 and AEC-sponsored fuel-development work involving uranium and uranium-plutonium compounds from 1959 through 1967. That history should not be collapsed into DEC's later solvent-remedy record.",
     ],
     timeline: [
       { period: "1936 onward", event: "Carborundum operated the Globar manufacturing plant after acquiring the property." },
+      { period: "1943", event: "Federal records document experimental centerless grinding of ten uranium slugs." },
+      { period: "1959-1967", event: "Carborundum conducted AEC-sponsored carbide-fuel research involving uranium and uranium-plutonium compounds." },
       { period: "Investigation era", event: "DEC investigations identified TCE and related compounds in soil and groundwater and evaluated possible off-site pathways." },
       { period: "1999 and 2002", event: "Major source-soil removal work excavated and disposed of contaminated material off site." },
       { period: "2000", event: "DEC selected remedies for the site-soil and groundwater operable units." },
@@ -5396,6 +5434,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     documentedImpacts: [
       "TCE and its breakdown products are the principal documented soil and groundwater contaminants.",
       "Historical spills or leaks associated with bulk solvent storage and use created a subsurface source at the former plant.",
+      "The nuclear-development work is documented at the facility level, but the reviewed record does not identify Carborundum as the source of any specific off-site slag-fill location.",
       "DEC evaluated possible vapor, direct-contact and groundwater pathways; the 2000 decision reported that sampled shallow groundwater near residences did not show site contaminants reaching those properties through that evaluated pathway.",
     ],
     cleanupAndControls: [
@@ -5408,7 +5447,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     researchNotes: [
       "Add the newest periodic-review conclusion and groundwater trend summary.",
-      "Keep the Carborundum Globar groundwater record distinct from nearby Hyde Park, TAM Ceramics and other industrial sources.",
+      "Keep the Carborundum Globar groundwater record distinct from its federal nuclear-work record and from nearby Hyde Park, TAM Ceramics and other industrial sources.",
     ],
   },
 };
