@@ -578,12 +578,65 @@ export default function RadiologicalInvestigationPage() {
         </aside>
       </section>
 
+      <section className="school-method radiological-method" id="newly-verified-industry-records">
+        <p className="eyebrow">Newly verified industry records</p>
+        <h2>Three documented operations - and three boundaries the evidence does not cross.</h2>
+        <div>
+          <article>
+            <h3>TAM: documented melt, unknown destination</h3>
+            <p>
+              <strong>Confirmed:</strong> NIOSH records a 1955 AEC pilot melt at
+              Titanium Alloys Manufacturing using 70 pounds of uranium-contaminated
+              steel and aluminum. Its survey table identifies slag from the melt;
+              separate bench-scale uranium-compound work followed in July 1956.
+            </p>
+            <p>
+              <strong>Research boundary:</strong> the reviewed public record does not
+              say where the experimental slag ultimately went. TAM&apos;s nonradioactive
+              zirconium-operation shipments to LOOW do not answer that question and
+              are not used here to connect the melt to a later fill site.
+            </p>
+            <a href="https://www.cdc.gov/niosh/ocas/pdfs/sec/titanalloy/titanpeter-190-r0.pdf" target="_blank" rel="noreferrer">Read NIOSH SEC-00190 ↗</a>
+          </article>
+          <article>
+            <h3>Tonawanda Am-241: a separate sewer pathway</h3>
+            <p>
+              <strong>Confirmed:</strong> New York State Archives describes EAD
+              Metallurgy&apos;s approximately 1977-1983 production of Am-241 foil elements
+              for smoke detectors and releases to the sanitary sewer that contaminated
+              sewer lines, the sewage-treatment plant, and landfill.
+            </p>
+            <p>
+              <strong>Pathway boundary:</strong> this later americium history is not the
+              Linde uranium story and is not part of the Niagara County solid-slag
+              distribution record.
+            </p>
+            <a href="https://findingaids.nysed.gov/do/a1bb63f9-e4a2-5676-8c2c-7c944838ec53" target="_blank" rel="noreferrer">Open New York State Archives series 20691 ↗</a>
+          </article>
+          <article>
+            <h3>Carborundum: two federal-work periods</h3>
+            <p>
+              <strong>Confirmed:</strong> NIOSH documents experimental grinding of ten
+              uranium slugs in 1943 and a separate 1959-1967 AEC fuel-development
+              program involving uranium and uranium/plutonium materials.
+            </p>
+            <p>
+              <strong>Research boundary:</strong> the work-site record strengthens the
+              industrial history but does not prove that Carborundum supplied the
+              material at any particular off-site slag or fill location.
+            </p>
+            <a href="https://www.cdc.gov/niosh/ocas/pdfs/tbd/carbco-r0-508.pdf" target="_blank" rel="noreferrer">Read the NIOSH Carborundum site profile ↗</a>
+          </article>
+        </div>
+      </section>
+
       <RadiologicalDocumentArchive />
 
       <section className="radiological-update-log" aria-labelledby="radiological-update-heading">
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>September 14, 2026 · TAM, Carborundum, and Tonawanda Am-241</strong> Added independently verified federal and state records, kept the TAM slag destination unresolved, and separated solid slag/fill evidence from the EAD sanitary-sewer and municipal-waste pathway.</p>
           <p><strong>September 14, 2026 · research hub restructure</strong> Separated the Southtowns slag, Black Creek Village, and 1979 Pine Bowl investigations into focused, linkable records; consolidated the current investigation statistics and made the 100-point survey list collapsible.</p>
           <p><strong>August 19, 2026 · Southtowns slag investigation</strong> Added the Abbott Road slag evidence, former Republic Steel Ra-226 TENORM finding, Buffalo Slag supply chain, Woodlawn municipal-product record, Hamburg no-slag instruction, and the explicit unresolved link between historical placements and current radiological areas of interest.</p>
           <p><strong>August 17, 2026 · investigation scale corrected</strong> Rebuilt the page opening around the active 1,000-square-mile Niagara–Erie assessment, modern aerial dataset, intensive residential screening, confirmed elevated properties, and precautionary relocations; moved Black Creek firmly inside that living investigation.</p>
