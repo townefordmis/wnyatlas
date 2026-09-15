@@ -5404,7 +5404,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "ead-metallurgy-americium": {
-    lastReviewed: "September 14, 2026",
+    lastReviewed: "September 15, 2026",
     background: [
       "EAD Metallurgy operated a smoke-detector-foil manufacturing process at 71 Pearce Avenue from approximately 1977 through 1983. New York archival and federal records identify americium-241 as the radionuclide involved.",
       "The documented pathway ran through the sanitary sewer: americium entered the treatment system, accumulated in sludge, and was carried into ash after sludge incineration. Some of that material was disposed of at the Town of Tonawanda landfill.",

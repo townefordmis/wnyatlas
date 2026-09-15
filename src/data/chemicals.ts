@@ -647,6 +647,51 @@ export const chemicalProfiles: ChemicalProfile[] = [
     sources: standardSources,
   },
   {
+    id: "americium-241",
+    name: "Americium-241",
+    aliases: ["Am-241", "Americium"],
+    family: "Man-made radioactive metal",
+    overview:
+      "Americium-241 is a man-made radionuclide used in small sealed sources in some smoke detectors and in industrial or medical equipment.",
+    persistence:
+      "Americium-241 has a half-life of about 432 years. In the environment it commonly occurs as microscopic particles that can attach to soil, suspended matter, and sediment.",
+    exposureRoutes: [
+      "Inhaling contaminated dust or fine particles",
+      "Ingesting contaminated soil, water, or food",
+      "Absorption through a contaminated wound",
+      "External gamma exposure may also contribute depending on activity and proximity",
+    ],
+    humanHealth: [
+      "Americium-241 primarily emits alpha particles and also emits weak gamma radiation.",
+      "Material taken into the body can remain for decades and concentrate in bone, liver, and muscle, increasing radiation dose to those tissues.",
+      "Potential harm depends on activity, route, duration, chemical form, and the dose received; a historical site record does not establish an individual's exposure.",
+    ],
+    ecologicalHealth: [
+      "Americium particles can deposit in soil and water and bind to suspended material or bottom sediment.",
+      "Ecological effects depend on activity, environmental transport, uptake, and radiation dose.",
+    ],
+    evidenceNote:
+      "Americium-241 activity measurements, environmental distribution, and exposure are separate questions. The presence of a historical pathway does not establish present-day exposure.",
+    matchTerms: ["americium", "americium-241", "Am-241"],
+    sources: [
+      {
+        title: "Radionuclide Basics: Americium-241",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://www.epa.gov/radiation/radionuclide-basics-americium-241",
+      },
+      {
+        title: "Americium-241",
+        publisher: "Centers for Disease Control and Prevention",
+        url: "https://www.cdc.gov/radiation-emergencies/hcp/isotopes/americium-241.html",
+      },
+      {
+        title: "Toxicological Profile for Americium",
+        publisher: "Agency for Toxic Substances and Disease Registry",
+        url: "https://www.atsdr.cdc.gov/toxprofiles/tp156.pdf",
+      },
+    ],
+  },
+  {
     id: "radium",
     name: "Radium",
     aliases: ["Ra-226", "Ra-228"],
