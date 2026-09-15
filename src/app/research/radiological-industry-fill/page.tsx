@@ -116,7 +116,7 @@ export default function RadiologicalInvestigationPage() {
               <li>How many modern signals reflect natural geology versus man-made material.</li>
               <li>Which current areas precisely overlap the 100 numbered 1984 survey locations.</li>
               <li>The eventual number of cleanups or no-further-action decisions.</li>
-              <li>Whether the newly investigated Black Creek Village fill contains radiological material or is connected to Love Canal.</li>
+              <li>The chemical composition and source of the newly investigated Black Creek Village fill.</li>
             </ul>
           </article>
         </div>
@@ -149,10 +149,11 @@ export default function RadiologicalInvestigationPage() {
         <a className="radiological-next" href="#connected-investigations">Read a connected place record →</a>
       </section>
       <section className="radiological-substories" id="connected-investigations">
-        <div><p className="eyebrow">Connected investigations</p><h2>Four records, kept distinct.</h2><p>The active assessment provides the regional frame. These focused records preserve separate places, material chains, witnesses, and evidentiary limits.</p></div>
+        <div><p className="eyebrow">Connected investigations</p><h2>Connected place records and investigations</h2><p>The active assessment provides the regional frame. These focused records preserve separate places, material chains, witnesses, and evidentiary limits.</p></div>
         <div className="radiological-substory-grid">
+          <Link href="/sites/witmer-road-drive-in"><EvidenceStatusBadge status="documented" /><h3>Witmer Road Drive-In</h3><p>Industrial fill and a documented 2020 radiation survey.</p><strong>Read the environmental record →</strong></Link>
           <Link href="/research/radiological/southtowns-slag"><EvidenceStatusBadge status="research-in-progress" /><h3>Southtowns / Buffalo Slag</h3><p>Abbott Road, Republic Steel TENORM, and the documented construction-material chain.</p><strong>Read the full record →</strong></Link>
-          <Link href="/research/radiological/black-creek-village"><EvidenceStatusBadge status="active-government-investigation" /><h3>Black Creek Village</h3><p>The separate 99th Street fill investigation and its still-pending radiological answer.</p><strong>Read the full record →</strong></Link>
+          <Link href="/sites/black-creek-village-fill-investigation"><EvidenceStatusBadge status="active-government-investigation" /><h3>Black Creek Village</h3><p>The 99th Street chemical-fill investigation and earlier removal history.</p><strong>Read the full record →</strong></Link>
           <Link href="/research/radiological/1979-pine-bowl-dossier"><EvidenceStatusBadge status="research-in-progress" /><h3>1979 Pine Bowl dossier</h3><p>The full witness-by-witness Probe Services record, with corroboration and explicit limits.</p><strong>Read the full record →</strong></Link>
           <a href="#radiological-map"><EvidenceStatusBadge status="documented" /><h3>1986 DOE/ORNL survey</h3><p>The 100-point historical reference dataset remains paired with the interactive map and downloads.</p><strong>Explore the survey →</strong></a>
         </div>
@@ -314,58 +315,11 @@ export default function RadiologicalInvestigationPage() {
         </p>
 </section></details>
 
-<details className="radiological-archive-disclosure"><summary>Black Creek belongs in the ongoing regional story—not in a separate historical footnote.</summary><section className="school-method radiological-method radiological-black-creek" id="black-creek-village">
-        <p className="eyebrow">Black Creek Village · inside the living Niagara investigation</p>
-        <h2>Black Creek belongs in the ongoing regional story—not in a separate historical footnote.</h2>
-        <div>
-          <article>
-            <h3>The regional investigation is the controlling present-day context</h3>
-            <p>
-              Black Creek Village sits within the Niagara Falls landscape now being
-              reexamined through the Niagara–Erie assessment. The modern program is
-              comparing aerial and roadway signals with historical radiological
-              records, then moving selected areas into ground surveys, property access,
-              detailed sampling, laboratory analysis, risk evaluation, and possible
-              removal. This is the active investigation that frames every newer finding.
-            </p>
-          </article>
-          <article>
-            <h3>Black Creek also has an active property investigation</h3>
-            <p>
-              Residents reported carbon rods, dark fill, and other unusual material
-              uncovered during a pool project at a 99th Street property near the Love
-              Canal containment area. DEC told the Niagara Gazette that its
-              investigation of that industrial fill is continuing. Earlier state files
-              document additional affected fill and removal work on Black Creek Drive
-              and 100th Street, making the new discovery part of a continuing
-              neighborhood evidence record rather than an isolated complaint.
-            </p>
-          </article>
-          <article>
-            <h3>The property-level radiological answer is still pending</h3>
-            <p>
-              The regional investigation has confirmed elevated radiological material
-              at some residential properties and led to precautionary relocations.
-              Public agency material reviewed by WNY Atlas has not yet published a
-              laboratory result assigning thorium or another radionuclide to the 99th
-              Street fill. Black Creek therefore remains explicitly inside the active
-              investigation chapter while its own radiological classification awaits
-              a reproducible property-specific result.
-            </p>
-          </article>
-        </div>
-        <p className="measurement-caution">
-          This evidence standard affects the pin, not the importance of the story.
-          Black Creek is now tracked as part of the massive ongoing investigation. A
-          property-level contamination marker will be added when an agency or
-          reproducible laboratory record supplies the location and result.
-        </p>
-        <div className="radiological-source-row">
-          <a href="https://www.cnhi.com/rss_feed/old-dec-report-heightens-familys-fears-as-they-seek-testing-near-love-canal/" target="_blank" rel="noreferrer">Read the July 2026 local investigation report ↗</a>
-          <a href="https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1990-11-15.STATUS_OF_REMEDIAL_ACTIVITIES.pdf" target="_blank" rel="noreferrer">Read the 1990 state Area 4 record ↗</a>
-          <a href="https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1991-11-13.STATUS_OF_RA.pdf" target="_blank" rel="noreferrer">Read the 1991 removal decision ↗</a>
-          <a href="https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment" target="_blank" rel="noreferrer">Follow the regional radiological assessment ↗</a>
-        </div>
+<details className="radiological-archive-disclosure"><summary>Black Creek Village: chemical-fill investigation</summary><section className="school-method radiological-method radiological-black-creek" id="black-creek-village">
+        <h2>A separate environmental investigation at 99th Street</h2>
+        <p>The July 31, 2026 report quotes DEC saying the property’s surface radiation scan found no readings above background. Chemical sampling and the historical fill-removal record remain separate questions.</p>
+        <Link href="/sites/black-creek-village-fill-investigation">Read the Black Creek Village environmental record →</Link>
+        <p><a href="https://investigativepost.org/2026/07/31/toxic-waste-past-and-present-haunts-niagara-falls-couple/" target="_blank" rel="noreferrer">Reporting and DEC response ↗</a></p>
 </section></details>
 
       <section className="school-method radiological-method radiological-report-summary">

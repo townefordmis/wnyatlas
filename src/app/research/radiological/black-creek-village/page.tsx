@@ -1,7 +1,5 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { EvidenceStatusBadge } from "@/components/evidence-status-badge";
-import { SiteHeader } from "@/components/site-header";
-import { radiologicalDocuments } from "@/data/radiological-investigation";
-export const metadata: Metadata = { title: "Black Creek Village fill investigation", description: "The active 99th Street fill investigation and the separate historical Black Creek cleanup record.", alternates: { canonical: "/research/radiological/black-creek-village" } };
-export default function BlackCreekPage() { const records = radiologicalDocuments.filter((record) => ["black-creek-area4-1990", "black-creek-area4-1991", "love-canal-radiological-scan-1978"].includes(record.id)); return <main className="index-page"><SiteHeader /><article className="radiological-subpage"><Link href="/research/radiological-industry-fill">← Radiological investigation hub</Link><header><EvidenceStatusBadge status="active-government-investigation" /><p className="eyebrow">99th Street · Niagara Falls</p><h1>Black Creek Village fill investigation</h1><p>Black Creek is part of the active regional assessment and also has a distinct property-level investigation. Industrial fill uncovered at a 99th Street property is being evaluated; the public record does not yet establish that it contains radiological material or that it is connected to Love Canal.</p></header><section><h2>What is established</h2><p>Agencies are using records review, ground surveys, sampling, and laboratory analysis to decide whether further action is warranted. Earlier Black Creek Drive records document pesticide-affected fill and a targeted removal, but those chemical findings are not evidence of radioactivity.</p>{records.map((record) => <article className="subpage-evidence-record" key={record.id}><time>{record.date}</time><h3>{record.title}</h3><p>{record.establishes}</p><p><strong>Boundary:</strong> {record.mapConnection}</p><a href={record.url} target="_blank" rel="noreferrer">Open source record ↗</a></article>)}</section><aside className="school-caution"><strong>Still unresolved</strong><p>The material&apos;s radiological character, source, extent, and any required remedy remain pending in publicly available records.</p></aside></article></main>; }
+import { permanentRedirect } from "next/navigation";
+
+export default function BlackCreekPage() {
+  permanentRedirect("/sites/black-creek-village-fill-investigation");
+}

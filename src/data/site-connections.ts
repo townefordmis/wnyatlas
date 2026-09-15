@@ -18,6 +18,40 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 };
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
+{
+  id: "witmer-distinct-properties",
+  name: "Two separate Witmer Road investigation sites",
+  summary: "Different DEC identifiers, properties and investigation histories. No shared waste source is established here.",
+  members: [
+    {
+      siteId: "witmer-road-drive-in",
+      role: "Former theater — DEC 932118",
+      connection: "4287 Witmer Road beside Gill Creek; industrial-fill investigations and a 2020 radiation survey."
+    },
+    {
+      siteId: "witmer-road-disposal-site",
+      role: "Disposal area — DEC 932027",
+      connection: "James Avenue/Witmer Road disposal and burning area; separate from the former drive-in."
+    }
+  ]
+},
+{
+  id: "black-creek-love-canal-records",
+  name: "Black Creek Village and Love Canal: historical context",
+  summary: "Earlier Area 4 cleanup records provide context. The modern 99th Street findings are not established as a new release from Love Canal.",
+  members: [
+    {
+      siteId: "black-creek-village-fill-investigation",
+      role: "Residential fill investigation",
+      connection: "Historical chemical-fill removal and renewed 2026 concerns remain separately dated."
+    },
+    {
+      siteId: "love-canal",
+      role: "Historical disposal site and remedy",
+      connection: "The nearby containment site has its own documented cleanup and monitoring history."
+    }
+  ]
+},
   {
     id: "little-valley-tce-corridor",
     name: "Little Valley TCE plume and Bush Industries",

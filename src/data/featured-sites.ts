@@ -13,6 +13,163 @@ import { erieCayugaExpansion } from "@/data/erie-cayuga-expansion";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
+    id: "witmer-road-drive-in",
+    name: "Witmer Road Drive-In",
+    municipality: "Town of Niagara",
+    county: "Niagara",
+    category: "cleanup",
+    summary: "Former theater at 4287 Witmer Road with documented industrial fill and environmental investigations. DEC site 932118 is separate from the James Avenue/Witmer Road Disposal Site (932027).",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-79.011562382, 43.129560013],
+    newsEvents: [
+      {
+        date: "August 5–6, 2026",
+        headline: "Community groups request investigation and protective measures at former drive-in",
+        summary: "Save Our Backyards Niagara and allied groups requested fencing, warning signs, a State Superfund Class 2 listing, and on- and off-site testing. They raised concerns about flooding and nearby homes; the release does not establish a measured off-site contaminant plume.",
+        publisher: "Save Our Backyards Niagara release, reproduced by The LOOW Down",
+        url: "https://theloowdown.substack.com/p/save-our-backyards-niagara-calls",
+        reach: "Local",
+      },
+    ],
+    sources: [
+      {
+        title: "August 2026 community requests and flooding concerns",
+        publisher: "The LOOW Down, reproducing community organizations’ release",
+        url: "https://theloowdown.substack.com/p/save-our-backyards-niagara-calls",
+      },
+      {
+        title: "1989 Environmental Site Assessment — history, fill and field investigation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932118/Report.HW.932118.1989-08-01.EnvironmentalSiteAssessment.pdf"
+      },
+      {
+        title: "1991 Phase II Environmental Site Investigation",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932118/Report.HW.932118.1991-04-01.Phase_II_EnvSiteInvestigation.pdf"
+      },
+      {
+        title: "2020 Witmer Road Action Plan — sections 1.1.4, 2.4 and 2.5",
+        publisher: "Ecology and Environment Engineering and Geology, P.C., for NORLIC",
+        url: "https://www.niagaraorleanslandbank.com/documents/Witmer%20Rd%20Action%20Plan_Final%20August%202020.pdf"
+      },
+      {
+        title: "DEC site 932118 document archive",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932118/"
+      }
+    ],
+    story: {
+      lastReviewed: "September 15, 2026",
+      background: [
+        "The 1989 assessment describes a 1.72-acre investigated parcel beside Gill Creek. The theater also occupied adjoining land; this record does not define the full theater footprint or a contamination boundary.",
+        "This is a different property from the Witmer Road Disposal Site at James Avenue, DEC 932027. Similar names do not establish shared waste sources."
+      ],
+      timeline: [
+        {
+          period: "Before 1953",
+          event: "The 1989 assessment identifies earlier farmland and filling or land disturbance visible in 1951 photography. Land disturbance alone does not identify the waste producer or chemical composition."
+        },
+        {
+          period: "1953–1986",
+          event: "A drive-in theater operated on the parcel and adjoining land to the south and west, according to the 1989 assessment."
+        },
+        {
+          period: "1958 and 1966",
+          event: "Aerial photographs reviewed in the assessment showed filling activity."
+        },
+        {
+          period: "1987–1991",
+          event: "ASTECO acquired the parcel in 1987 and built an office/laboratory. The 1989 assessment and 1991 investigation examined fill, groundwater and potential seepage toward Gill Creek."
+        },
+        {
+          period: "1994–2008",
+          event: "DEC archives retain a waste-material investigation, a characterization work plan and a site-characterization report."
+        },
+        {
+          period: "June–August 2020",
+          event: "A limited surface radiation survey informed NORLIC’s redevelopment action plan."
+        }
+      ],
+      documentedImpacts: [
+        "The 1989 assessment recorded lime-like fill, glass, metal and brick, with elevated organic vapors prompting subsurface investigation.",
+        "The 2020 plan estimates 5,500–6,000 cubic yards of lime-like material, extending south off-site. It identifies resin-associated toluene, xylene, ethylbenzene, phenols, arsenic, copper and lead, and chromium associated with lime-like fill. This is not an estimate of uniformly hazardous waste beneath theater parking spaces.",
+        "The June 12, 2020 survey measured up to 24 µR/hour against an 8 µR/hour background. Vegetated areas were excluded; locations exceeding 21,000 counts per minute were surveyed only at their boundaries. These are historical measurements, not isotope identification or present-day exposure estimates."
+      ],
+      cleanupAndControls: [
+        "The 2020 plan recommends waste removal and radiation screening during soil disposal, with possible vapor investigation. Recommendations do not establish completed remediation."
+      ],
+      presentDay: [
+        "The reviewed documents establish investigation and cleanup planning, but do not establish a completed remedy.",
+        "The 2020 assessment did not find widespread groundwater impacts or significant effects on Gill Creek. Those dated conclusions do not settle current conditions."
+      ],
+      researchNotes: [
+        "Obtain subsequent cleanup decisions, disposal records and any updated sampling. Identify waste producers only with supporting records.",
+        "Map location: DEC Remediation Sites GIS point for 932118, checked September 15, 2026; not a surveyed boundary."
+      ]
+    }
+  },
+  {
+    id: "black-creek-village-fill-investigation",
+    name: "Black Creek Village / 99th Street Fill Investigation",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "cleanup",
+    summary: "Residential industrial-fill investigation near 99th Street, alongside a separate history of pesticide-affected fill removal at Black Creek Drive. The neighborhood marker is approximate.",
+    evidenceStatus: "research-in-progress",
+    coordinates: [-78.948012, 43.08603],
+    sources: [
+      {
+        title: "July 31, 2026 reporting and DEC response on the 99th Street investigation",
+        publisher: "Mark Scheer / Niagara Gazette, published by Investigative Post",
+        url: "https://investigativepost.org/2026/07/31/toxic-waste-past-and-present-haunts-niagara-falls-couple/"
+      },
+      {
+        title: "November 1990 Area 4 sampling and remedial status",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1990-11-15.STATUS_OF_REMEDIAL_ACTIVITIES.pdf"
+      },
+      {
+        title: "November 1991 Area 4 removal decision",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1991-11-13.STATUS_OF_RA.pdf"
+      }
+    ],
+    story: {
+      lastReviewed: "September 15, 2026",
+      background: [
+        "This record separates an earlier chemical-fill removal from a renewed residential investigation. Proximity to Love Canal does not establish the source of newly encountered material."
+      ],
+      timeline: [
+        {
+          period: "1990–1991",
+          event: "Agency records identified pesticide-affected fill near Black Creek Drive and 100th Street. The 1991 decision described three lots and proposed removing approximately 900–1,000 cubic yards."
+        },
+        {
+          period: "1993",
+          event: "July 2026 reporting describes a subsequent removal accepted by DEC on August 24, 1993, including part of 9903 Black Creek Drive."
+        },
+        {
+          period: "July 2026",
+          event: "Daniel and Jocelyn McKiernan sought testing and relocation after pool excavation exposed unusual fill. DEC reported receiving the complaint July 15 and sampling fill and basement sump liquid July 22."
+        }
+      ],
+      documentedImpacts: [
+        "DEC’s response in the July 31 report identified graphite rods and other debris. Its surface radiological scan found no readings above background. That scan does not resolve chemical composition or subsurface conditions."
+      ],
+      cleanupAndControls: [
+        "Historical pesticide-fill removal does not establish that every neighboring parcel was investigated or remediated."
+      ],
+      presentDay: [
+        "The residents’ reported odors and basement material warrant documentation as concerns, not proof of exposure or a Love Canal release. Chemical results were pending in the July 31 account.",
+        "A surface screening result does not answer every environmental question about the fill."
+      ],
+      researchNotes: [
+        "Obtain the original 1993 completion report and later chemical sampling results. Do not repeat unverified drilling depths, illness causation or source claims.",
+        "Map marker: approximate public intersection of 99th Street and Black Creek Drive, located with Esri geocoding on September 15, 2026. It is not a residential sampling point or contamination boundary."
+      ]
+    }
+  },
+  {
     id: "love-canal",
     name: "Love Canal",
     municipality: "Niagara Falls",
