@@ -3277,12 +3277,15 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "Hooker Electrochemical Company began operating its Niagara plant in 1906, using Niagara Falls' abundant hydroelectric power to manufacture caustic soda and co-product chlorine. The modern approximately 113-acre property at 4700 Buffalo Avenue grew from Hooker parcels and neighboring works operated by Niagara Alkali Company and Oldbury Electrochemical Company.",
         "The facility's 1984 historical database records Hooker's acquisition of Niagara Alkali on November 30, 1955 and Oldbury on November 30, 1956. Those acquisitions consolidated several older chemical works and their different manufacturing, drainage, and waste-management areas into the Main Plant.",
         "Chlorine, caustic soda, hydrogen, bleach, and hydrochloric acid formed the basic-product side of the operation. Beginning in the 1920s, the plant also manufactured pesticides and a wide range of chlorinated organic compounds; that production peaked from the 1940s through the 1970s.",
+        "Hooker's Niagara Falls operation also produced fluorocarbon coolant and lubricants for the Manhattan Project's K-25 gaseous-diffusion plant, according to a participant's Nuclear Museum oral history. A Cornell historical chemistry record identifies MFL as the Manhattan District designation for Miller's Fluorolube, a chlorotrifluoroethylene polymer oil developed for uranium-hexafluoride-related equipment; government technical tables later identify several Fluorolube oils and greases as Hooker Chemical products.",
+        "Together, those sources support a carefully bounded synthesis: Hooker produced Manhattan Project fluorocarbon coolants and lubricants at Niagara Falls; Miller's Fluorolube was among the specialized materials developed for uranium-hexafluoride equipment; and Hooker subsequently manufactured Fluorolube products. No single reviewed source proves that a specific wartime Hooker batch was formally branded Miller's Fluorolube.",
         "Occidental Petroleum acquired Hooker Chemicals and Plastics in 1968. The property continued under the Hooker name until 1982, when it became Occidental Chemical Corporation's Main Plant and later the Niagara or Buffalo Avenue Plant.",
         "This page covers the manufacturing complex and its RCRA corrective-action program. The S-Area landfill lies within the broader plant property but has its own federal Superfund record; Love Canal and the Hooker portions of the 102nd Street landfill are separate disposal sites with separate map entries and remedies.",
       ],
       timeline: [
         { period: "1906", event: "Hooker Electrochemical began Niagara Plant operations producing caustic soda and chlorine." },
         { period: "1920s-1930s", event: "The product line expanded beyond basic chlor-alkali chemicals into chlorinated organic manufacturing." },
+        { period: "World War II", event: "Hooker's Niagara Falls operation produced fluorocarbon coolants and lubricants for the Manhattan Project's K-25 gaseous-diffusion plant." },
         { period: "1940s-1970s", event: "Production of chlorobenzenes, chlorotoluenes, chlorinated phenols, lindane-related compounds, and other organics reached its broadest scale." },
         { period: "1955-1956", event: "Hooker acquired Niagara Alkali and Oldbury Electrochemical, bringing their parcels and operations into the consolidated plant." },
         { period: "1968-1982", event: "Occidental acquired Hooker Chemicals and Plastics; in 1982 the complex became the Occidental Chemical Corporation Main Plant." },
@@ -3345,6 +3348,21 @@ export const historicCleanupExpansion: AtlasSite[] = [
         title: "Buffalo Avenue Plant Final Remedial System Optimization Report",
         publisher: "New York State Department of Environmental Conservation document repository",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932019/Report.HW.932019.2024-08-02.Buffalo_Ave_Plant_Final_RSO_Report.pdf",
+      },
+      {
+        title: "Joe Dykstra Oral History — Hooker fluorocarbon coolant and lubricant production",
+        publisher: "National Museum of Nuclear Science & History",
+        url: "https://ahf.nuclearmuseum.org/voices/oral-histories/joe-dykstras-interview/",
+      },
+      {
+        title: "William T. Miller Historical Chemistry Record — Miller's Fluorolube",
+        publisher: "Cornell University",
+        url: "https://ecommons.cornell.edu/server/api/core/bitstreams/02d9c914-a3aa-4f25-b5d5-b0409a2c1ff4/content",
+      },
+      {
+        title: "Technical Manual — Fluorolube oils and greases manufactured by Hooker Chemical",
+        publisher: "U.S. Naval Facilities Engineering Systems Command",
+        url: "https://www.navfac.navy.mil/Portals/68/Documents/Business-Lines/Design-and-Construction/4_159_01dm39.pdf",
       },
       {
         title: "Hooker S-Area Superfund Site Profile",

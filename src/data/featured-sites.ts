@@ -3786,6 +3786,11 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://www.cdc.gov/niosh/ocas/titanalloy.html",
       },
       {
+        title: "Klevin and Harris, “Remelting May Permit Reclaiming Uranium-Contaminated Metals,” Nucleonics 14 (April 1956), 93–96 — citation reproduced in DOE literature",
+        publisher: "U.S. Department of Energy Office of Scientific and Technical Information",
+        url: "https://www.osti.gov/servlets/purl/6809639",
+      },
+      {
         title: "TAM Ceramics Site Investigation and Reclassification Record — 932028",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932028/Report.HW.932028.1995-10-03.reclass_decision_2a_to_3.pdf",

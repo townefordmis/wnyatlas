@@ -5354,6 +5354,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "Titanium Alloys Manufacturing operated a large metals and ceramics complex at 4511 Hyde Park Boulevard. NIOSH treats January 1955 through December 1956 as the covered Atomic Weapons Employer period evaluated for radiation-dose reconstruction.",
       "In 1955 TAM experimentally melted 40 pounds of uranium-contaminated stainless steel with 30 pounds of aluminum supplied from Mallinckrodt. NIOSH reports about 90 grams of uranium in the charge, a maximum incoming surface reading of 26,800 dpm per 100 square centimeters, and slag among the resulting materials.",
+      "NIOSH identifies P. B. Klevin's 1955 request for the contaminated metal and an April 1956 pilot study by Klevin and W. B. Harris. Their published account, “Remelting May Permit Reclaiming Uranium-Contaminated Metals,” appeared in Nucleonics, volume 14, April 1956, pages 93–96; NIOSH states that TAM cooperated in processing the metal.",
       "A separate bench-scale experiment on July 10 and 11, 1956 involved uranium tetrafluoride, uranium dioxide and uranium hexafluoride. TAM's zirconium-tetrachloride production is documented separately and should not be represented as radioactive work.",
       "DEC's later record evaluates both wastes generated or placed on the TAM property and organic contamination associated with the adjoining Hooker Hyde Park landfill corridor. Those possible sources remain distinct in this account.",
     ],
@@ -5371,6 +5372,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "The federal occupational record confirms that the 1955 test produced slag from uranium-contaminated feed material.",
       "The reviewed sources do not establish the slag's final destination. The record therefore supports a documented production point and an unresolved disposition question, not attribution to Upper Mountain Road or any other reuse location.",
       "State files describe large quantities of additional ceramic, mineral and metallic residues and radiological measurements in defined areas, but those broader wastes should not all be labeled radiological.",
+      "The 1956 article described the experimental slag as containing significantly less uranium than a very low-grade ore and suggested that disposal on normal slag dumps would be permissible. That was a contemporaneous opinion, not documentation of where TAM's slag actually went or an assessment under current standards.",
     ],
     cleanupAndControls: [
       "DOE's FUSRAP screening and NIOSH's worker-dose review answer different questions from New York's hazardous-waste investigation of the property.",
@@ -5381,7 +5383,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     researchNotes: [
       "Locate a public primary record naming the 1955 experimental slag's disposal or reuse destination before drawing a route to any fill site.",
-      "Keep nonradioactive zirconium-process waste movements separate from the uranium-experiment record.",
+      "Keep nonradioactive zirconium-process waste movements, including documented waste sent to LOOW, separate from the uranium-experiment record.",
     ],
   },
   "ead-metallurgy-americium": {
