@@ -418,6 +418,7 @@ const featuredSiteRecords: AtlasSite[] = [
       background: [
         "Between 1942 and 1946, the Manhattan Engineer District contracted with the Linde Air Products Division of Union Carbide to process uranium ore at this Town of Tonawanda industrial facility. Work included separating uranium dioxide from ores and converting uranium dioxide to uranium tetrafluoride.",
         "Processing affected portions of the property, buildings, infrastructure, sediment, soil, and groundwater. Later handling and disposal also moved Linde-related material to other Tonawanda locations, making the site central to understanding the region's connected FUSRAP landscape.",
+        "Linde's liquid-waste history - including well injection, sewer discharge, and overflow toward Two Mile Creek - is a separate pathway from solid residues moved to the Ashland, Seaway, and Tonawanda Landfill properties. WNY Atlas does not merge those routes or use one as proof of the other.",
       ],
       timeline: [
         {
@@ -462,6 +463,7 @@ const featuredSiteRecords: AtlasSite[] = [
       researchNotes: [
         "Create a material-movement diagram connecting Linde, Ashland 1, Ashland 2, Seaway, and Tonawanda Landfill.",
         "Document which remedy areas support unrestricted use and which were evaluated for commercial or industrial use.",
+        "Keep liquid discharge, well injection, and creek transport visually and narratively distinct from solid-residue storage, hauling, and fill.",
       ],
     },
     sources: [
@@ -1046,6 +1048,14 @@ const featuredSiteRecords: AtlasSite[] = [
         url: "https://www.epa.gov/ny/niagara-county-radiation-removal-sites",
         reach: "Regional",
       },
+      {
+        date: "2022-2023 court-filed EPA records",
+        headline: "Recovered TAM-marked plates create a strong but bounded source lead",
+        summary: "A court-filed EPA site memo photographed eight TAM/Titanium Alloy Manufacturing product-testing plates recovered during hand excavation beneath one home. A later EPA notice said the agency had reason to believe the corporate predecessor generated and arranged disposal of contamination at the site. These records support a TAM-origin material lead but do not identify the fill as slag from TAM's 1955 experimental melt.",
+        publisher: "U.S. Environmental Protection Agency records filed in Palmeri v. NL Industries",
+        url: "https://www.documentcloud.org/documents/24764898-epa-site-coordinator-letter/",
+        reach: "Regional",
+      },
     ],
     sources: [
       {
@@ -1057,6 +1067,16 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Upper Mountain Road Residential Removal Community Update",
         publisher: "U.S. Environmental Protection Agency",
         url: "https://www.epa.gov/system/files/documents/2021-09/upper-mountain-road-community-update-sept-2021-final.pdf",
+      },
+      {
+        title: "Court-filed EPA site-coordinator memo with recovered-material photographs",
+        publisher: "U.S. Environmental Protection Agency / public court exhibit",
+        url: "https://www.documentcloud.org/documents/24764898-epa-site-coordinator-letter/",
+      },
+      {
+        title: "Court-filed EPA notice regarding potential responsibility",
+        publisher: "U.S. Environmental Protection Agency / public court exhibit",
+        url: "https://www.documentcloud.org/documents/24764897-epa-letter-to-nl-industries-dec-2023/",
       },
     ],
   },

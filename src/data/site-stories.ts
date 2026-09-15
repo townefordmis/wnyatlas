@@ -1897,6 +1897,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     background: [
       "The Upper Mountain Road removal addressed radioactive industrial slag used as fill along an access road and at two neighboring residential properties in Lewiston. EPA traced the concern to the same regional history of low-level radiological slag identified by aerial surveillance and later ground investigation.",
       "Cleanup occurred in phases because the affected material crossed different property settings: a culvert and gravel drive serving an access road, followed by soil beneath basement areas and in yards at two homes.",
+      "Public court exhibits include an EPA site-coordinator memo with photographs of eight product-testing plates marked with Titanium Alloys Manufacturing names recovered during crawl-space excavation. A later EPA notice said the agency had reason to believe the corporate predecessor generated and arranged disposal of contamination at the site. That is strong physical and agency attribution evidence for TAM-origin material, but it does not prove that the residential fill was slag from TAM's separate 1955 experimental uranium-scrap melt.",
     ],
     timeline: [
       {
@@ -1934,8 +1935,9 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "EPA reports the access-road and two residential cleanups as complete. The case remains important because it shows that historic fill can occur beneath later residential construction and that investigation boundaries must follow evidence rather than street names.",
     ],
     researchNotes: [
-      "Add property-specific closeout measurements and disposal quantities if EPA publishes them.",
+      "Obtain a publicly accessible EPA closeout or removal report before treating the reported approximately 4,800-ton combined-property quantity as an agency-published final total.",
       "Do not identify private residential addresses beyond what agencies make public or extend findings to unsampled neighbors.",
+      "Keep the TAM-marked plates and agency potential-responsibility notice distinct from the unresolved disposition of the 1955 experimental melt slag.",
     ],
   },
   "holy-trinity-radiation-site": {
