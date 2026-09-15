@@ -5383,7 +5383,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       { period: "2011-2012", event: "NIOSH evaluated SEC Petition 190 and concluded that worker doses could be reconstructed; the requested employee class was not added to the Special Exposure Cohort." },
     ],
     documentedImpacts: [
-      "The federal occupational record confirms that the 1955 test produced slag from uranium-contaminated feed material.",
+      "The federal occupational record confirms that the 1955 test produced slag from uranium-contaminated feed material; the NIOSH survey table uses the exact label “Slag from Melt.”",
       "The reviewed sources do not establish the slag's final destination. The record therefore supports a documented production point and an unresolved disposition question, not attribution to Upper Mountain Road or any other reuse location.",
       "State files describe large quantities of additional ceramic, mineral and metallic residues and radiological measurements in defined areas, but those broader wastes should not all be labeled radiological.",
       "The 1956 article described the experimental slag as containing significantly less uranium than a very low-grade ore and suggested that disposal on normal slag dumps would be permissible. That was a contemporaneous opinion, not documentation of where TAM's slag actually went or an assessment under current standards.",

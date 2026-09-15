@@ -427,6 +427,16 @@ const featuredSiteRecords: AtlasSite[] = [
             "Linde performed uranium-processing work for the Manhattan Engineer District.",
         },
         {
+          period: "1944–1946",
+          event:
+            "Liquid process wastes were initially discharged to town sewers and were also routed to five approximately 150-foot-deep on-site wells. Plugging or overflow could divert effluent through a former storm-drainage ditch to Two Mile Creek.",
+        },
+        {
+          period: "June 1981",
+          event:
+            "A federal survey sampled the former liquid-effluent pathways, including disposal wells, sewers, Two Mile Creek and comparison waterways.",
+        },
+        {
           period: "1980",
           event:
             "The Department of Energy designated the property for remediation under FUSRAP.",
@@ -451,6 +461,8 @@ const featuredSiteRecords: AtlasSite[] = [
         "The contaminants of concern included radium-226, thorium-230, uranium isotopes, and associated decay products.",
         "Contamination was documented in surface and subsurface soil, sediment, structural surfaces, and groundwater.",
         "Waste relocation linked the Linde history to the Ashland, Seaway, and Tonawanda Landfill FUSRAP records.",
+        "EPA's 1982 overview reports that about 37 million gallons of wastewater containing radioactive materials were injected into the five on-site wells. This liquid route is separate from the off-site movement of solid residues.",
+        "DOE's 1981 survey generally found sampled Two Mile Creek soil, sediment and water comparable to baseline locations, while higher concentrations were measured on site near former disposal wells. Those historical results do not substitute for current sampling.",
       ],
       cleanupAndControls: [
         "Remedial work removed affected soil, building surfaces, and infrastructure for disposal at licensed facilities.",
@@ -467,6 +479,16 @@ const featuredSiteRecords: AtlasSite[] = [
       ],
     },
     sources: [
+      {
+        title: "Radiological Survey of Liquid Effluent Disposal Pathways Formerly Used by Linde Air Products Division",
+        publisher: "U.S. Department of Energy public legacy records",
+        url: "https://lmpublicsearch.lm.doe.gov/LMSites/2667-NY.08-5.pdf",
+      },
+      {
+        title: "Overview of Environmental Pollution in the Niagara Frontier, New York",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000TE3Z.TXT",
+      },
       {
         title: "Tonawanda, New York, Site",
         publisher: "U.S. Department of Energy Office of Legacy Management",
