@@ -3808,7 +3808,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Niagara",
     category: "radiological",
     summary:
-      "Manufacturing property at 4511 Hyde Park Boulevard where federal records document a small 1955 experimental melt of uranium-contaminated stainless steel and a separate two-day uranium-compound experiment in 1956. The melt generated slag, but the reviewed public record does not establish where that slag was ultimately placed. Later state cleanup records address the broader industrial property and adjoining landfill corridor.",
+      "Manufacturing property at 4511 Hyde Park Boulevard where federal records document a 1955 experimental melt of uranium-contaminated stainless steel and aluminum. The survey table identifies “Slag from Melt,” but the reviewed public record does not establish where that experimental slag was ultimately placed. A separate two-day uranium-compound experiment followed in 1956. Later state cleanup records address the broader industrial property and adjoining landfill corridor.",
     evidenceStatus: "well-documented",
     coordinates: [-79.03366667, 43.12935381],
     sources: [
@@ -3841,6 +3841,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Upper Mountain Road Radiation Site — related Atlas record",
         publisher: "WNY Atlas",
         url: "/sites/upper-mountain-road-radiation-site",
+      },
+      {
+        title: "Court-filed EPA site-coordinator memo with TAM-marked plates and recovered-material photographs",
+        publisher: "U.S. Environmental Protection Agency / public court exhibit",
+        url: "https://www.documentcloud.org/documents/24764898-epa-site-coordinator-letter/",
       },
       {
         title: "Carborundum Globar Site — nearby but separate Hyde Park Boulevard record",

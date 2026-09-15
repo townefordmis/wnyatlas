@@ -2969,7 +2969,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     timeline: [
       {
-        period: "1977-1988",
+        period: "1977-1983 operation; investigation through 1988",
         event:
           "EAD's smoke-detector-foil operation released americium-241 to the sanitary sewer; subsequent investigation traced it through treatment sludge and incinerator ash to identified eastern-landfill areas, with 1988 characterization reporting Am-241 as deep as seven feet in those areas.",
       },
@@ -5364,12 +5364,12 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "tam-ceramics-niagara": {
-    lastReviewed: "September 14, 2026",
+    lastReviewed: "September 15, 2026",
     background: [
       "Titanium Alloys Manufacturing operated a large metals and ceramics complex at 4511 Hyde Park Boulevard. NIOSH treats January 1955 through December 1956 as the covered Atomic Weapons Employer period evaluated for radiation-dose reconstruction.",
-      "In 1955 TAM experimentally melted 40 pounds of uranium-contaminated stainless steel with 30 pounds of aluminum supplied from Mallinckrodt. NIOSH reports about 90 grams of uranium in the charge, a maximum incoming surface reading of 26,800 dpm per 100 square centimeters, and slag among the resulting materials.",
+      "In 1955 TAM experimentally melted 40 pounds of uranium-contaminated stainless steel with 30 pounds of aluminum supplied from Mallinckrodt. The feed metal had been cut into pieces approximately three inches square. NIOSH reports about 90 grams of uranium in the charge, a maximum incoming total-alpha surface reading of 26,800 dpm per 100 square centimeters, and slag among the resulting materials.",
       "NIOSH identifies P. B. Klevin's January 1955 request, made through the AEC Health and Safety Laboratory, for Mallinckrodt to supply the contaminated metal. It also identifies an April 1956 pilot study by Klevin and W. B. Harris. Their published account, “Remelting May Permit Reclaiming Uranium-Contaminated Metals,” appeared in Nucleonics, volume 14, April 1956, pages 93–96; NIOSH states that TAM and American Smelting and Refining's Central Research Laboratory cooperated in processing the metal.",
-      "A separate bench-scale experiment on July 10 and 11, 1956 involved uranium tetrafluoride, uranium dioxide and uranium hexafluoride. TAM's zirconium-tetrachloride production is documented separately and should not be represented as radioactive work.",
+      "A separate bench-scale experiment on July 10 and 11, 1956 involved uranium tetrafluoride, uranium dioxide and uranium hexafluoride under an AEC source-material license. TAM's 1950-1956 zirconium-tetrachloride production is documented separately and involved no radioactive material.",
       "DEC's later record evaluates both wastes generated or placed on the TAM property and organic contamination associated with the adjoining Hooker Hyde Park landfill corridor. Those possible sources remain distinct in this account.",
     ],
     timeline: [
@@ -5384,10 +5384,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     documentedImpacts: [
       "The federal occupational record confirms that the 1955 test produced slag from uranium-contaminated feed material; the NIOSH survey table uses the exact label “Slag from Melt.”",
-      "The reviewed sources do not establish the slag's final destination. The record therefore supports a documented production point and an unresolved disposition question, not attribution to Upper Mountain Road or any other reuse location.",
+      "The reviewed sources do not establish the slag's final destination: no shipping, transfer, disposal or cleanup record for the experimental slag has been located. The record therefore supports a documented production point and an unresolved disposition question, not attribution to Upper Mountain Road or any other reuse location.",
       "State files describe large quantities of additional ceramic, mineral and metallic residues and radiological measurements in defined areas, but those broader wastes should not all be labeled radiological.",
       "The 1956 article described the experimental slag as containing significantly less uranium than a very low-grade ore and suggested that disposal on normal slag dumps would be permissible. That was a contemporaneous opinion, not documentation of where TAM's slag actually went or an assessment under current standards.",
       "Later DOE/OSTI technical literature cites the Klevin-Harris work and reports that remelting reduced uranium in nickel, stainless steel and copper to around one part per million; aluminum was less successfully decontaminated. Those experimental results do not identify the disposition of TAM's slag.",
+      "Separate Upper Mountain Road records document plates and barium titanate associated with TAM-origin industrial material in residential fill. They do not identify that material as the 1955 uranium-bearing experimental slag, so the two records are cross-linked but not merged.",
     ],
     cleanupAndControls: [
       "DOE's FUSRAP screening and NIOSH's worker-dose review answer different questions from New York's hazardous-waste investigation of the property.",
