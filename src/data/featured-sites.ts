@@ -1649,7 +1649,7 @@ const featuredSiteRecords: AtlasSite[] = [
     county: "Erie",
     category: "waterway",
     summary:
-      "Urban Niagara River tributary running through Sheridan Park. Municipal and stormwater impairments overlap with a separate industrial sediment history: PCB-affected creek sediment and bank soil associated with the former GE transformer facility were removed, while a new living-shoreline project is advancing habitat restoration.",
+      "Urban Niagara River tributary running through Sheridan Park with several distinct histories. Linde's 1944-1946 uranium-processing effluent could reach the creek through a former storm-drainage route; decades later, PCB-affected sediment and bank soil associated with the former GE transformer facility were removed. Municipal water-quality impairments and a living-shoreline project form additional, separate layers.",
     evidenceStatus: "well-documented",
     coordinates: [-78.903, 42.986],
     newsEvents: [
@@ -1671,6 +1671,16 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
     sources: [
+      {
+        title: "Radiological Survey of Liquid Effluent Disposal Pathways Formerly Used by Linde Air Products Division",
+        publisher: "U.S. Department of Energy public legacy records",
+        url: "https://lmpublicsearch.lm.doe.gov/LMSites/2667-NY.08-5.pdf",
+      },
+      {
+        title: "Overview of Environmental Pollution in the Niagara Frontier, New York",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000TE3Z.TXT",
+      },
       {
         title: "GE Tonawanda Corrective Measures Completion Final Report",
         publisher: "New York State Department of Environmental Conservation",
@@ -2055,6 +2065,11 @@ const featuredSiteRecords: AtlasSite[] = [
         title: "Tonawanda, New York, Landfill Site",
         publisher: "U.S. Department of Energy Office of Legacy Management",
         url: "https://www.energy.gov/lm/tonawanda-new-york-landfill-site",
+      },
+      {
+        title: "Tonawanda Landfill Radiological Investigation Work Plan — Americium-241 pathway",
+        publisher: "U.S. Department of Energy public legacy records",
+        url: "https://lmpublicsearch.lm.doe.gov/SiteDocs/T-335.pdf",
       },
     ],
   },

@@ -2587,15 +2587,19 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "two-mile-creek-tonawanda": {
-    lastReviewed: "August 28, 2026",
+    lastReviewed: "September 15, 2026",
     background: [
       "Two Mile Creek is a short, heavily modified urban tributary passing through Sheridan Park before reaching the Niagara River in Tonawanda. Parts of its watershed and channel have long received municipal drainage, stormwater, and historically combined sanitary influences.",
+      "A separate Manhattan Project-era pathway began at Linde Air Products. Federal records state that uranium-processing wastewater was initially sent to town sewers, then alternatively discharged to five approximately 150-foot-deep on-site wells or routed through a storm sewer. When wells plugged or overflowed, liquid effluent could be diverted through a former drainage ditch into Two Mile Creek. EPA's 1982 overview reports that about 37 million gallons of radioactive-process wastewater were injected into the wells.",
+      "DOE's June 1981 survey sampled the former outfall area and locations upstream and downstream. It reported creek-bank soil, sediment and water results generally comparable to baseline locations, while identifying higher on-site concentrations near the former disposal wells. Those historical findings describe that survey and do not substitute for current sampling.",
       "Its toxic-sediment history includes a defined pathway from the former General Electric transformer facility. Investigators concluded that PCB-affected material may have traveled through the Oriskany Drive storm sewer to the creek, prompting several phases of sediment and bank-soil investigation from 2004 through 2010.",
       "That facility-related remedy is narrower than the creek's overall water-quality condition. Contemporary watershed summaries identify continuing concerns involving dissolved oxygen, pathogens, phosphorus, and oil or floating substances, while historic regional studies detected other persistent chemicals at particular locations and times.",
       "USGS and DEC later deployed semipermeable membrane samplers across Two Mile, Rattlesnake, and Tonawanda creeks in 2018–19 to improve PCB source tracking. That study is a regional investigation layer; it does not erase the documented GE pathway or prove that another nearby property is a PCB source.",
     ],
     timeline: [
       { period: "Historic urbanization", event: "Channel enclosure, municipal drainage, sewer inputs, park construction, and surrounding industry transformed much of the creek's hydrology and habitat." },
+      { period: "1944-1946", event: "During Linde's Manhattan Engineer District uranium-processing work, storm-system drainage and overflow from the liquid-effluent disposal system could enter Two Mile Creek through a now-removed ditch." },
+      { period: "June 1981", event: "A federal radiological survey sampled former Linde liquid-disposal pathways, including Two Mile Creek, sewers, wells and comparison waterways." },
       { period: "2004–2010", event: "Multiple investigations sampled sediment and bank soil downstream of the Oriskany Drive storm-sewer outfall serving the former GE facility." },
       { period: "2008", event: "A Town of Tonawanda drainage project dredged and stabilized portions of the creek; PCB-affected sediment was removed from selected areas and confirmation samples generally met the cleanup objective." },
       { period: "January 2015", event: "A limited west-bank soil excavation addressed the remaining GE-related area, with confirmation results reported below the state-approved objective." },
@@ -2603,6 +2607,8 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       { period: "2024–present", event: "Buffalo Niagara Waterkeeper advanced design for a Sheridan Park living shoreline joining restoration areas at West Pond and Two Mile Creek." },
     ],
     documentedImpacts: [
+      "Federal records document Two Mile Creek as one historical liquid-effluent pathway from Linde's 1940s uranium-processing operation; this was not the same material stream as Linde-derived solid residues moved to other Tonawanda properties.",
+      "The 1981 survey generally found sampled creek media comparable to its baseline locations. The historical discharge route should therefore not be presented as proof of a current creek-wide radiological condition.",
       "PCB contamination affected defined sediment and bank-soil areas associated with the former GE facility and storm-sewer pathway.",
       "Historic Niagara River monitoring found PCBs, DDT, dioxins or furans, and PBDEs in selected creek media or organisms. These results span different decades and do not describe one uniform current concentration.",
       "Modern water-quality reporting identifies municipal and stormwater-related impairment involving pathogens, nutrients or oxygen demand, and oil or floating substances.",
@@ -2619,6 +2625,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Locate the newest DEC waterbody factsheet and municipal sewer-overflow records before assigning current causes to particular outfalls.",
       "Update the living-shoreline section when final design, permits, construction limits, and implementation dates are published.",
       "Keep the USGS/DEC tributary study labeled as source tracking and do not assign unresolved PCB signals to a property without a later agency conclusion.",
+      "Keep Linde's 1940s radiological-effluent history visually and narratively separate from the later GE/PCB corrective-action record.",
     ],
   },
   "scajaquada-creek": {
@@ -2954,12 +2961,18 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "tonawanda-landfill-fusrap-vicinity": {
-    lastReviewed: "August 17, 2026",
+    lastReviewed: "September 15, 2026",
     background: [
       "The Town of Tonawanda operated this municipal landfill from the 1930s until 1989, accepting incinerator ash, sewage sludge, construction debris, and household and yard waste. In 1992, the Department of Energy designated portions of the landfill and adjacent mudflats as a FUSRAP vicinity property after finding radioactive material that resembled material at other Tonawanda FUSRAP sites. That resemblance is not a proven chain of custody: federal agencies say no record has been found showing that this property took part in Manhattan Engineer District or Atomic Energy Commission work.",
       "USACE divided the property into two operable units because the evidence and remedies were different. The mudflats—now part of the North Youngmann Commerce Center—received a 2008 no-action decision. At the landfill, workers used field instruments and laboratory analysis to guide a targeted removal of shallow radioactive soil and debris. The work dealt with accessible contamination while leaving radioactive material below five feet under a commercial-industrial land-use standard.",
+      "A later and separately sourced radiological history also reached the broader landfill property. Federal records trace americium-241 released by EAD Metallurgy to the Town sanitary sewer, sewage-treatment sludge, the municipal sludge incinerator and identified areas of the eastern landfill. This 1977-1983-era EAD pathway is not the source of the older Linde/FUSRAP uranium, radium and thorium record.",
     ],
     timeline: [
+      {
+        period: "1977-1988",
+        event:
+          "EAD's smoke-detector-foil operation released americium-241 to the sanitary sewer; subsequent investigation traced it through treatment sludge and incinerator ash to identified eastern-landfill areas, with 1988 characterization reporting Am-241 as deep as seven feet in those areas.",
+      },
       {
         period: "1992",
         event:
@@ -2990,6 +3003,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Radium, uranium, and thorium contamination was identified in landfill materials.",
       "Residual radioactive material remains below approximately five feet in portions of the landfill.",
       "The evidence supports a FUSRAP vicinity-property designation but not a claim that MED or AEC production occurred here.",
+      "Americium-241 associated with EAD was investigated in separately identified landfill areas. Its source, isotope and municipal-waste route must not be merged with the FUSRAP material.",
     ],
     cleanupAndControls: [
       "USACE reported excavating 4,345 cubic yards of shallow radioactive-contaminated soil to a depth of five feet. DOE's stewardship account says 3,476 cubic yards—about 5,000 tons—of radiological soil and debris were shipped by rail to a licensed disposal cell in Belleville, Michigan; the different figures describe excavation and shipped waste, not necessarily the same measurement.",

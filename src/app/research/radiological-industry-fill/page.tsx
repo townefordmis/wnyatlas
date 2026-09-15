@@ -637,6 +637,60 @@ export default function RadiologicalInvestigationPage() {
         </div>
       </section>
 
+      <section className="school-method radiological-method" id="linde-waste-pathways">
+        <p className="eyebrow">One plant, distinct material routes</p>
+        <h2>Linde&apos;s solid residues and liquid effluent did not follow one path.</h2>
+        <p>
+          Federal records describe several routes from Linde&apos;s Manhattan Project-era
+          uranium processing. They belong in one history, but they are not interchangeable
+          evidence and should not be drawn as one continuous shipment chain.
+        </p>
+        <div>
+          <article>
+            <h3>Solid residues and fill</h3>
+            <p>
+              Solid uranium-processing residues were stored or moved among the Linde,
+              Ashland, Seaway and Tonawanda Landfill FUSRAP records. Each destination
+              retains its own chain-of-custody and cleanup findings.
+            </p>
+          </article>
+          <article>
+            <h3>Sanitary-sewer discharge</h3>
+            <p>
+              Linde liquid process wastes were initially discharged to town sewers.
+              This is a liquid-effluent route, not proof that the same solid residues
+              entered the sewer or treatment sludge.
+            </p>
+          </article>
+          <article>
+            <h3>On-site disposal wells</h3>
+            <p>
+              EPA&apos;s 1982 overview reports that about 37 million gallons of wastewater
+              containing radioactive materials were injected into five approximately
+              150-foot-deep wells at Linde.
+            </p>
+          </article>
+          <article>
+            <h3>Storm drainage to Two Mile Creek</h3>
+            <p>
+              When wells plugged or overflowed, federal records say effluent could be
+              diverted through a former storm-drainage ditch to Two Mile Creek. A 1981
+              survey generally found sampled creek media comparable to baseline locations;
+              that result does not erase the documented historical route.
+            </p>
+          </article>
+        </div>
+        <p>
+          EAD Metallurgy&apos;s later Am-241 sewer-to-sludge-to-incinerator-to-landfill route
+          is another distinct Tonawanda history; it is not a continuation of Linde&apos;s
+          uranium-processing pathway.
+        </p>
+        <p>
+          <a href="https://lmpublicsearch.lm.doe.gov/LMSites/2667-NY.08-5.pdf" target="_blank" rel="noreferrer">Read the 1981 Linde liquid-pathway survey ↗</a>{" · "}
+          <a href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000TE3Z.TXT" target="_blank" rel="noreferrer">Read EPA&apos;s 1982 Niagara Frontier overview ↗</a>
+        </p>
+      </section>
+
       <RadiologicalDocumentArchive />
 
       <section className="radiological-update-log" aria-labelledby="radiological-update-heading">
