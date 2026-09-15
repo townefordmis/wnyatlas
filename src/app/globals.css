@@ -7384,3 +7384,29 @@ footer {
     border-left: 0;
   }
 }
+/* Radiological page: progressive disclosure and compact map controls. */
+.radiological-page section[id], .radiological-page details[id] { scroll-margin-top: 5rem; }
+.radiological-reading-guide, .radiological-process, .radiological-background, .radiological-section-action, .radiological-archive-disclosure { width: min(1420px, calc(100% - 48px)); margin: 2rem auto; }
+.radiological-page .investigation-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; background: transparent; border: 0; }
+.radiological-page .investigation-stats article { border: 1px solid var(--line); border-radius: .35rem; }
+.radiological-page .investigation-stats p { font-size: .9rem; line-height: 1.4; }
+.radiological-page .investigation-stats small { margin-top: auto; }
+.radiological-page .radiological-map-jump { margin: 1rem 0; }
+.radiological-next { display: inline-block; margin: 1.2rem 0; font-weight: 750; text-decoration: underline; text-underline-offset: .2em; }
+.radiological-reading-guide .radiological-evidence-key { padding: 1rem; }
+.radiological-page summary { cursor: pointer; padding: 1rem; font-weight: 700; }
+.radiological-process details, .radiological-background details, .radiological-archive-disclosure { border: 1px solid var(--line); }
+.radiological-background details > p { padding: 0 1rem 1rem; }
+.radiological-process .radiological-investigation-flow { background: var(--ink); padding: 1rem; }
+.radiological-archive-disclosure > section { width: auto; margin: 0; padding: 1.5rem; }
+.radiological-quick-filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.radiological-quick-filters button { padding: .65rem .85rem; border: 1px solid var(--water); border-radius: 2rem; color: var(--ink); background: var(--paper); cursor: pointer; }
+.radiological-quick-filters button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.radiological-map-stage { position: relative; min-width: 0; display: flex; flex-direction: column; }
+.radiological-map-stage .radiological-map-canvas { flex: 1; }
+.radiological-map-stage .radiological-legend { padding: .75rem; margin: 0; gap: .4rem .8rem; background: var(--paper); border-top: 1px solid var(--line); font-size: .65rem; }
+.radiological-map-explainer { margin-bottom: 1rem; border: 1px solid var(--line); }
+.radiological-map-explainer > p { padding: 0 1rem; }
+@media (max-width: 1120px) { .radiological-map-stage { grid-area: map; } }
+@media (max-width: 800px) { .radiological-page .investigation-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .radiological-map-stage .radiological-map-canvas { min-height: 58svh; } .radiological-page .investigation-stats strong { font-size: 1.5rem; } }

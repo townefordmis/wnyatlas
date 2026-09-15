@@ -948,6 +948,22 @@ const featuredSiteRecords: AtlasSite[] = [
     ],
     sources: [
       {
+        title: "NYSDEC & EPA update for Aug. 31, 2026",
+        publisher: "NYSDEC, published by Niagara Frontier Publications",
+        url: "https://www.wnypapers.com/news/article/current/2026/09/01/166923/nysdec-epa-update-for-aug.-31",
+      },
+      {
+        title: "September 10, 2026 NECRA oversight letter announcement",
+        publisher: "Office of Congressman Timothy M. Kennedy",
+        url: "https://kennedy.house.gov/news/documentsingle.aspx?DocumentID=2482",
+      },
+      {
+        title: "NECRA CERCLA site record — EPA ID NY8180000160",
+        publisher: "U.S. Environmental Protection Agency",
+        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206750",
+      },
+
+      {
         title: "Niagara and Erie County Radiological Assessment",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment",

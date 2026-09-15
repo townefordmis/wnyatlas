@@ -25,7 +25,7 @@ type Selection =
   | { type: "producer"; record: RadiologicalProducer }
   | { type: "follow-up"; record: RadiologicalFollowUp };
 
-type MapView = "all" | "old-remediated" | "1986-other" | "newer";
+type MapView = "active" | "historical" | "completed" | "all" | "old-remediated" | "1986-other" | "newer";
 type Basemap = "streets" | "napp" | "2002" | "2024";
 
 const aerialLayers: Record<Exclude<Basemap, "streets">, { label: string; url: string }> = {
@@ -126,7 +126,8 @@ export function RadiologicalInvestigationMap() {
 
   const displayedHistorical = useMemo(
     () => filtered.filter((record) => {
-      if (mapView === "newer") return false;
+      if (mapView === "newer" || mapView === "active") return false;
+      if (mapView === "completed") return record.disposition === "federal-remediated";
       if (mapView === "old-remediated") return record.disposition === "federal-remediated";
       if (mapView === "1986-other") return record.disposition !== "federal-remediated";
       return true;
@@ -134,15 +135,16 @@ export function RadiologicalInvestigationMap() {
     [filtered, mapView],
   );
 
-  const showNewerPins = mapView === "all" || mapView === "newer";
+  const showNewerPins = mapView === "all" || mapView === "newer" || mapView === "completed";
 
   const filteredFollowUps = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return latestRadiologicalFollowUps.filter((record) => {
+      if (mapView === "completed" && !["niagara-falls-boulevard-follow-up", "upper-mountain-road-follow-up", "holy-trinity-follow-up", "donovan-head-start-follow-up"].includes(record.id)) return false;
       if (county !== "all" && record.county !== county) return false;
       return !normalized || `${record.name} ${record.location}`.toLowerCase().includes(normalized);
     });
-  }, [county, query]);
+  }, [county, query, mapView]);
 
   useEffect(() => {
     if (!container.current || map.current) return;
@@ -385,7 +387,7 @@ export function RadiologicalInvestigationMap() {
     if (!instance?.getLayer("assessment-fill")) return;
     instance.setLayoutProperty("assessment-fill", "visibility", showAssessment ? "visible" : "none");
     instance.setLayoutProperty("assessment-outline", "visibility", showAssessment ? "visible" : "none");
-  }, [showAssessment]);
+  }, [showAssessment, mapLayersReady]);
 
   useEffect(() => {
     const instance = map.current;
@@ -410,6 +412,22 @@ export function RadiologicalInvestigationMap() {
     });
   }, [selection]);
 
+  function chooseMapView(value: MapView) {
+    setMapView(value);
+    setShowAssessment(value === "active" || value === "all");
+    setShowProducers(value === "all");
+    setCounty("all");
+    setArea("all");
+    setDisposition("all");
+    setQuery("");
+  }
+
+  const selectionVisible = selection.type === "historical"
+    ? displayedHistorical.some(record => record.id === selection.record.id)
+    : selection.type === "follow-up"
+      ? showNewerPins && filteredFollowUps.some(record => record.id === selection.record.id)
+      : showProducers && filteredProducers.some(record => record.id === selection.record.id);
+
   function chooseHistorical(record: HistoricalRadiologicalRecord) {
     setSelection({ type: "historical", record });
     map.current?.flyTo({ center: record.coordinates, zoom: Math.max(map.current.getZoom(), 14), essential: false });
@@ -432,6 +450,31 @@ export function RadiologicalInvestigationMap() {
           <p className="eyebrow">Separate investigation map · 100 DOE/ORNL historical survey records</p>
           <h2 id="radiological-map-title">Industrial slag, uranium residue, fill, surveys, and cleanup</h2>
         </div>
+      </div>
+      <p className="radiological-map-help"><strong>Desktop:</strong> click a marker; drag to pan and use +/− to zoom. <strong>Mobile:</strong> tap a marker; use two fingers to move the map. The full record appears below on smaller screens.</p>
+      <details className="radiological-map-explainer"><summary>What the map layers mean</summary><p className="radiological-map-help">
+        Click or tap any marker for a quick identification. Its complete sourced
+        record opens beside the map on desktop and directly below it on mobile.
+        Marker color separates NFSS-related locations from the other DOE/ORNL
+        anomalies. Blue squares mark official Level B waste-history records; yellow
+        dashed circles mark unconfirmed Level C testimony. The 2025 roadway work is
+        shown as survey coverage because agencies
+        have not released property-level findings as public pins; teal pins represent
+        newer sites with an official EPA location and outcome. Use the aerial selector
+        to place the same pins over georeferenced government imagery.
+      </p>
+
+      </details>
+      <div className="radiological-quick-filters" role="group" aria-label="Quick map filters">
+        {([['all', 'All records'], ['active', 'Active investigation'], ['historical', 'Historical 1984 points'], ['completed', 'Completed cleanups']] as const).map(([value, label]) => <button type="button" key={value} aria-pressed={mapView === value} onClick={() => chooseMapView(value)}>{label}</button>)}
+      </div>
+      {mapView === 'active' && <p className="radiological-map-help">Active work is shown as regional survey coverage. Agencies have not published property-level findings for every active review; coverage does not confirm contamination.</p>}
+      {mapView === 'completed' && <p className="radiological-map-help">Includes historical locations reported remediated and documented EPA removals. These records do not establish present-day conditions at every property.</p>}
+      <AerialControls basemap={basemap} opacity={aerialOpacity} onBasemapChange={setBasemap} onOpacityChange={setAerialOpacity} mobile />
+
+      <div className="radiological-map-grid">
+        <div className="radiological-map-stage">
+          <div className="radiological-map-canvas" ref={container} />
         <div className="radiological-legend" aria-label="Map key">
           <span><i className="rad-dot-remediated" /> 1986 map · reported remediated</span>
           <span><i className="rad-dot-fill" /> 1986 map · other anomaly</span>
@@ -444,23 +487,7 @@ export function RadiologicalInvestigationMap() {
           <span><i className="rad-county-niagara" /> Niagara County</span>
           <span><i className="rad-area" /> 2025–26 survey coverage</span>
         </div>
-      </div>
-      <p className="radiological-map-help">
-        Click or tap any marker for a quick identification. Its complete sourced
-        record opens beside the map on desktop and directly below it on mobile.
-        Marker color separates NFSS-related locations from the other DOE/ORNL
-        anomalies. Blue squares mark official Level B waste-history records; yellow
-        dashed circles mark unconfirmed Level C testimony. The 2025 roadway work is
-        shown as survey coverage because agencies
-        have not released property-level findings as public pins; teal pins represent
-        newer sites with an official EPA location and outcome. Use the aerial selector
-        to place the same pins over georeferenced government imagery.
-      </p>
-
-      <AerialControls basemap={basemap} opacity={aerialOpacity} onBasemapChange={setBasemap} onOpacityChange={setAerialOpacity} mobile />
-
-      <div className="radiological-map-grid">
-        <div className="radiological-map-canvas" ref={container} />
+        </div>
 
         <aside className="radiological-map-list" aria-label="Radiological map records">
           <AerialControls basemap={basemap} opacity={aerialOpacity} onBasemapChange={setBasemap} onOpacityChange={setAerialOpacity} />
@@ -470,8 +497,11 @@ export function RadiologicalInvestigationMap() {
           </label>
           <label className="radiological-map-view">
             <span>Map view</span>
-            <select value={mapView} onChange={(event) => setMapView(event.target.value as MapView)}>
+            <select value={mapView} onChange={(event) => chooseMapView(event.target.value as MapView)}>
               <option value="all">All years compared</option>
+              <option value="active">Active investigation coverage</option>
+              <option value="historical">Historical 1984 points</option>
+              <option value="completed">Completed cleanups</option>
               <option value="old-remediated">Old map: reported remediated</option>
               <option value="1986-other">1986 map: other survey locations</option>
               <option value="newer">Newer documented sites</option>
@@ -495,11 +525,14 @@ export function RadiologicalInvestigationMap() {
         </aside>
 
         <article className="radiological-record">
-          {selection.type === "historical" && <HistoricalDetail record={selection.record} />}
-          {selection.type === "producer" && <ProducerDetail record={selection.record} />}
-          {selection.type === "follow-up" && <FollowUpDetail record={selection.record} />}
+          {mapView !== "active" && !selectionVisible && <p>Choose a visible marker or a record from the list to read its findings and sources.</p>}
+          {mapView === "active" && <><h3>Current regional assessment</h3><p>The shaded area shows survey coverage, not individual contaminated properties.</p>{currentAssessmentSources.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a></p>)}</>}
+          {mapView !== "active" && selectionVisible && selection.type === "historical" && <HistoricalDetail record={selection.record} />}
+          {mapView !== "active" && selectionVisible && selection.type === "producer" && <ProducerDetail record={selection.record} />}
+          {mapView !== "active" && selectionVisible && selection.type === "follow-up" && <FollowUpDetail record={selection.record} />}
         </article>
       </div>
+      <a className="radiological-next" href="#radiological-archive">Read the sources behind the map →</a>
     </section>
   );
 }
@@ -615,6 +648,7 @@ export function RadiologicalDocumentArchive() {
           </article>
         ))}
       </div>
+      <a className="radiological-next" href="#radiological-map">Return to the map →</a>
       <p className="radiological-archive-note">
         “All research data” means all records currently used to support this map.
         Government repositories contain additional correspondence and attachments;

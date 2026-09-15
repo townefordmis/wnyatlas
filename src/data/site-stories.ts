@@ -1731,7 +1731,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-erie-radiological-assessment": {
-    lastReviewed: "August 17, 2026",
+    lastReviewed: "September 15, 2026",
     background: [
       "The Niagara and Erie County Radiological Assessment is a regional investigation of properties where historic industrial slag or other fill may contain elevated naturally occurring radioactive material. It is an assessment program, not a finding that every contacted or screened property is contaminated.",
       "The current work has three linked phases: EPA aerial surveys in late 2023 and summer 2024, vehicle-based roadway surveys beginning in 2025, and ground surveys that began in fall 2025. DEC says the aerial phase identified no areas of immediate concern; the later phases use closer-range instruments and records to decide where property-level investigation is warranted.",
@@ -1773,6 +1773,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
         event:
           "Field screening and property follow-up continued, with agency drop-in sessions, a seven-day hotline, and weekly public updates. Most screened properties were expected to require no intervention, while selected locations advanced to soil and laboratory work.",
       },
+      {
+        period: "August 31, 2026",
+        event: "The August 31, 2026 agency update reported approximately 1,078 signed access forms and 847 properties screened. Approximately 514 properties had been notified that no additional radiological investigation was needed; 32 parcels were referred to EPA for additional investigation, and four properties were recommended for voluntary temporary relocation. These counts describe different stages and should not be added together. Referral or a relocation recommendation does not by itself establish a final contamination classification or identify the source material.",
+      },
+      {
+        period: "September 10, 2026",
+        event: "Congressman Tim Kennedy requested written answers from EPA and USACE about material origins, sampling and laboratory analysis, testing timelines, risk assessments, resident protections, relocation assistance, and property values. The request does not establish the source of the material.",
+      },
     ],
     documentedImpacts: [
       "Historic industrial slag can contain technically enhanced naturally occurring radioactive material, but concentration and exposure potential vary by source and property.",
@@ -1789,6 +1797,8 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Results and cleanup decisions must be communicated separately for each property rather than generalized across neighborhoods.",
     ],
     presentDay: [
+      "The August 31, 2026 agency update reported approximately 1,078 signed access forms and 847 properties screened. Approximately 514 properties had been notified that no additional radiological investigation was needed; 32 parcels were referred to EPA for additional investigation, and four properties were recommended for voluntary temporary relocation. These counts describe different stages and should not be added together. Referral or a relocation recommendation does not by itself establish a final contamination classification or identify the source material.",
+      "EPA identifies the assessment as NY8180000160, a Removal Only Site that is not on the National Priorities List. This program record does not classify every screened property as contaminated.",
       "The regional assessment is ongoing. Agencies are moving from broad screening toward property-specific surveys, soil sampling, laboratory identification, exposure review, and response decisions. Some households have been offered voluntary temporary relocation while that work proceeds.",
       "No public finding reviewed by WNYAtlas establishes that the residential investigation has contaminated drinking-water supplies. That is cautious reassurance, not proof that every water pathway is impossible: the answer depends on the radionuclides present, fill composition, soil chemistry, groundwater conditions, runoff, and actual exposure points.",
       "WNYAtlas lists the assessment to document the investigation and public process while avoiding the claim that every contacted property—or an entire neighborhood—contains hazardous radioactive fill.",

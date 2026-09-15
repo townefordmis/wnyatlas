@@ -31,30 +31,37 @@ export const metadata: Metadata = {
 
 export default function RadiologicalInvestigationPage() {
   return (
-    <main>
+    <main className="radiological-page">
       <SiteHeader />
-      <section className="school-research-hero radiological-hero">
-        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Updated August 19, 2026" /></p>
+      <section className="school-research-hero radiological-hero" id="current-status">
+        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Updated September 15, 2026" /></p>
         <h1>Niagara–Erie radiological investigation</h1>
-        <p className="dek">
-          EPA, NYSDEC, and NYSDOH are conducting a large, active search for
-          radiological material across Niagara and Erie counties. The work covers
-          roughly 1,000 square miles, builds on more than 500,000 modern aerial data
-          points, and has moved from aircraft and roadway screening into neighborhood
-          surveys, residential testing, laboratory analysis, temporary relocations,
-          and cleanup planning. The historical slag and uranium records below explain
-          why investigators are finding a regional problem rather than one isolated site.
-        </p>
+        <p className="dek">EPA, NYSDEC, and NYSDOH are investigating radiological material across roughly 1,000 square miles in Niagara and Erie counties. Teams are following aerial and roadway screening with ground surveys and property testing. A screening signal does not mean contamination is confirmed.</p>
+        <a className="radiological-map-jump" href="#radiological-map">Open the interactive map <span aria-hidden="true">↓</span></a>
         <InvestigationStats stats={[
-          { stage: "Regional screening", value: "≈1,000", label: "square miles screened", asOfDate: "July 20, 2026" },
-          { stage: "Aerial screening", value: "500,000+", label: "aerial data points evaluated", asOfDate: "July 20, 2026" },
-          { stage: "Areas of interest", value: "≈380", label: "screening areas identified", asOfDate: "July 20, 2026" },
-          { stage: "Ground review", value: "≈160", label: "areas advancing to ground surveys", asOfDate: "July 20, 2026" },
-          { stage: "Property access", value: "≈470", label: "access agreements reported", asOfDate: "July 30, 2026" },
-          { stage: "Weekly fieldwork", value: "200", label: "properties screened in the preceding week", asOfDate: "July 30, 2026" },
-          { stage: "Deeper investigation", value: "6", label: "properties requiring additional work", asOfDate: "July 30, 2026" },
-          { stage: "Precautionary action", value: "4", label: "families offered temporary relocation", asOfDate: "July 30, 2026" },
+          { stage: "Property access", value: "≈1,078", label: "signed access forms", asOfDate: "August 31, 2026" },
+          { stage: "Property screening", value: "847", label: "properties screened", asOfDate: "August 31, 2026" },
+          { stage: "Notification", value: "≈514", label: "properties notified no additional radiological investigation was needed", asOfDate: "August 31, 2026" },
+          { stage: "Additional investigation", value: "32", label: "parcels referred to EPA", asOfDate: "August 31, 2026" },
+          { stage: "Precautionary action", value: "4", label: "properties recommended for voluntary temporary relocation", asOfDate: "August 31, 2026" },
         ]} />
+        <p>Property-level progress reported August 31, 2026. These counts describe different stages and should not be added together. Referral or a relocation recommendation does not by itself establish a final contamination classification or identify the source material. <a href="https://www.wnypapers.com/news/article/current/2026/09/01/166923/nysdec-epa-update-for-aug.-31" target="_blank" rel="noreferrer">DEC-submitted update ↗</a></p>
+        <a className="radiological-next" href="#reading-guide">How to read this page →</a>
+      </section>
+
+      <ResearchSectionNav items={[
+        { href: "#current-status", label: "Current status" },
+        { href: "#reading-guide", label: "Reading guide" },
+        { href: "#current-investigation", label: "Known / open" },
+        { href: "#investigation-process", label: "9-step process" },
+        { href: "#connected-investigations", label: "Stories" },
+        { href: "#radiological-map", label: "Map" },
+        { href: "#radiological-archive", label: "Sources" },
+      ]} />
+      <section className="radiological-reading-guide" id="reading-guide">
+        <h2>How to read this page and map</h2>
+        <p>Start with the dated figures, then choose a marker to read its finding and source. Historical readings describe conditions at the time; they do not establish present-day exposure.</p>
+      <aside className="radiological-evidence-key" aria-label="Evidence level key"><strong>Evidence levels used here</strong><span><b>A</b> Agency sampling, removal, or laboratory finding</span><span><b>B</b> Official industrial or waste-history record</span><span><b>C</b> Named contemporaneous testimony requiring corroboration</span></aside>
         <div className="school-caution radiological-caution">
           <strong>This is ongoing—not a completed historical survey</strong>
           <p>
@@ -66,26 +73,12 @@ export default function RadiologicalInvestigationPage() {
             old reading, completed removal, active review, or unresolved lead.
           </p>
         </div>
-        <a className="radiological-map-jump" href="#radiological-map">
-          Open the interactive evidence map <span>↓</span>
-        </a>
+        <a className="radiological-next" href="#current-investigation">See what is known and still open →</a>
       </section>
-
-      <aside className="radiological-evidence-key" aria-label="Evidence level key"><strong>Evidence levels used here</strong><span><b>A</b> Agency sampling, removal, or laboratory finding</span><span><b>B</b> Official industrial or waste-history record</span><span><b>C</b> Named contemporaneous testimony requiring corroboration</span></aside>
-      <ResearchSectionNav items={[
-        { href: "#radiological-map", label: "Evidence map" },
-        { href: "#current-investigation", label: "Current assessment" },
-        { href: "#connected-investigations", label: "Sub-investigations" },
-        { href: "#aerial-record", label: "Survey history" },
-        { href: "#radiological-archive", label: "Documents" },
-      ]} />
-
-      <RadiologicalInvestigationMap />
-
       <section className="radiological-current-overview" id="current-investigation">
         <div className="radiological-current-heading">
           <div>
-            <p className="eyebrow">Massive ongoing investigation · latest public figures remain fluid</p>
+            <p className="eyebrow">Current investigation · dated public findings</p>
             <h2>Aircraft found the pattern; field teams are now working property by property.</h2>
           </div>
           <p>
@@ -96,23 +89,14 @@ export default function RadiologicalInvestigationPage() {
         </div>
 
         <p className="measurement-caution">
-          The consolidated figures above combine two dated snapshots of different
-          stages in the same pipeline. Regional screening totals from July 20 and
-          weekly property-level field progress reported July 30 are different measures
-          and should not be added together.
+          July 20, 2026 investigation baseline: roughly 1,000 square miles screened,
+          more than 500,000 aerial data points evaluated, approximately 380 areas of
+          interest, and about 160 areas advancing to ground surveys. Areas of interest
+          and individual properties are different measures; these baseline figures
+          should not be added to the August property counts.
         </p>
-
-        <ol className="radiological-investigation-flow">
-          <li><a href="#aerial-record"><span>01</span><strong>Aerial survey</strong><small>2023–2024 regional screening</small></a></li>
-          <li><a href="#aerial-record"><span>02</span><strong>Roadway survey</strong><small>2025 targeted corridors</small></a></li>
-          <li><a href="#radiological-map"><span>03</span><strong>Area of interest</strong><small>open the comparison map</small></a></li>
-          <li><a href="#radiological-map"><span>04</span><strong>Ground survey</strong><small>see mapped public findings</small></a></li>
-          <li><a href="#radiological-archive"><span>05</span><strong>Property access</strong><small>read the agency records</small></a></li>
-          <li><a href="#radiological-archive"><span>06</span><strong>Detailed sampling</strong><small>review supporting documents</small></a></li>
-          <li><a href="#radiological-archive"><span>07</span><strong>Laboratory analysis</strong><small>review technical evidence</small></a></li>
-          <li><a href="#radiological-archive"><span>08</span><strong>Risk assessment</strong><small>read agency interpretations</small></a></li>
-          <li><a href="#radiological-map"><span>09</span><strong>Agency decision</strong><small>compare documented outcomes</small></a></li>
-        </ol>
+        <p><strong>September 10, 2026 — Federal oversight.</strong> Congressman Tim Kennedy requested written answers from EPA and USACE about material origins, sampling and laboratory analysis, testing timelines, risk assessments, resident protections, relocation assistance, and property values. The request does not establish the source of the material. <a href="https://kennedy.house.gov/news/documentsingle.aspx?DocumentID=2482" target="_blank" rel="noreferrer">Official release ↗</a></p>
+        <p><strong>Federal reference:</strong> EPA identifies the assessment as NY8180000160, a Removal Only Site that is not on the National Priorities List. This program record does not classify every screened property as contaminated. <a href="https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206750" target="_blank" rel="noreferrer">EPA site record ↗</a></p>
 
         <div className="radiological-known-unknown">
           <article>
@@ -137,7 +121,7 @@ export default function RadiologicalInvestigationPage() {
           </article>
         </div>
 
-        <div className="radiological-source-row">
+        <a className="radiological-next" href="#investigation-process">Follow the investigation process →</a><div className="radiological-source-row">
           <a href="https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment" target="_blank" rel="noreferrer">Current NYSDEC project page ↗</a>
           <a href="https://dec.ny.gov/sites/default/files/2026-07/FINAL%20Monday%20July%2020%20NECRA%20Community%20Meeting%20Presentation.pdf" target="_blank" rel="noreferrer">July 20, 2026 agency briefing ↗</a>
           <a href="https://spectrumlocalnews.com/nys/buffalo/public-safety/2026/07/30/epa--dec-share-update-on-continued-radiological-assessment-in-niagara-county" target="_blank" rel="noreferrer">July 30 field update ↗</a>
@@ -145,6 +129,25 @@ export default function RadiologicalInvestigationPage() {
         </div>
       </section>
 
+      <section className="radiological-process" id="investigation-process">
+        <h2>How the investigation works</h2>
+        <p>These steps show how a screening signal can lead to an agency decision. Not every location needs every step.</p>
+        <details><summary>Explore the 9-step investigation process</summary>
+        <ol className="radiological-investigation-flow">
+          <li><a href="#aerial-record"><span>01</span><strong>Aerial survey</strong><small>2023–2024 regional screening</small></a></li>
+          <li><a href="#aerial-record"><span>02</span><strong>Roadway survey</strong><small>2025 targeted corridors</small></a></li>
+          <li><a href="#radiological-map"><span>03</span><strong>Area of interest</strong><small>open the comparison map</small></a></li>
+          <li><a href="#radiological-map"><span>04</span><strong>Ground survey</strong><small>see mapped public findings</small></a></li>
+          <li><a href="#radiological-archive"><span>05</span><strong>Property access</strong><small>read the agency records</small></a></li>
+          <li><a href="#radiological-archive"><span>06</span><strong>Detailed sampling</strong><small>review supporting documents</small></a></li>
+          <li><a href="#radiological-archive"><span>07</span><strong>Laboratory analysis</strong><small>review technical evidence</small></a></li>
+          <li><a href="#radiological-archive"><span>08</span><strong>Risk assessment</strong><small>read agency interpretations</small></a></li>
+          <li><a href="#radiological-map"><span>09</span><strong>Agency decision</strong><small>compare documented outcomes</small></a></li>
+        </ol>
+
+        </details>
+        <a className="radiological-next" href="#connected-investigations">Read a connected place record →</a>
+      </section>
       <section className="radiological-substories" id="connected-investigations">
         <div><p className="eyebrow">Connected investigations</p><h2>Four records, kept distinct.</h2><p>The active assessment provides the regional frame. These focused records preserve separate places, material chains, witnesses, and evidentiary limits.</p></div>
         <div className="radiological-substory-grid">
@@ -155,7 +158,25 @@ export default function RadiologicalInvestigationPage() {
         </div>
       </section>
 
-      <section className="radiological-southtowns radiological-moved-section" id="southtowns-slag">
+      <div className="radiological-section-action"><a className="radiological-next" href="#radiological-map">See the map →</a></div>
+      <RadiologicalInvestigationMap />
+      <section className="radiological-background">
+        <h2>Background and full evidence</h2>
+        <p>Explore the historical records, technical findings, and limits behind the map.</p>
+        <details><summary>Investigation background</summary>
+        <p className="dek">
+          EPA, NYSDEC, and NYSDOH are conducting a large, active search for
+          radiological material across Niagara and Erie counties. The work covers
+          roughly 1,000 square miles, builds on more than 500,000 modern aerial data
+          points, and has moved from aircraft and roadway screening into neighborhood
+          surveys, residential testing, laboratory analysis, temporary relocations,
+          and cleanup planning. The historical slag and uranium records below explain
+          why investigators are finding a regional problem rather than one isolated site.
+        </p>
+        </details>
+        <a className="radiological-next" href="#radiological-archive">Browse all sources →</a>
+      </section>
+<details className="radiological-archive-disclosure"><summary>Old industrial slag is a testable lead—not a proven explanation for Southtown radiological signals.</summary><section className="radiological-southtowns" id="southtowns-slag">
         <div className="radiological-southtowns-heading">
           <div>
             <p className="eyebrow">Southtowns slag investigation · newest to oldest</p>
@@ -291,9 +312,9 @@ export default function RadiologicalInvestigationPage() {
           not use it to infer that Niagara material traveled south or that
           Buffalo-area iron and steel slag had the same origin or isotope profile.
         </p>
-      </section>
+</section></details>
 
-      <section className="school-method radiological-method radiological-black-creek radiological-moved-section" id="black-creek-village">
+<details className="radiological-archive-disclosure"><summary>Black Creek belongs in the ongoing regional story—not in a separate historical footnote.</summary><section className="school-method radiological-method radiological-black-creek" id="black-creek-village">
         <p className="eyebrow">Black Creek Village · inside the living Niagara investigation</p>
         <h2>Black Creek belongs in the ongoing regional story—not in a separate historical footnote.</h2>
         <div>
@@ -345,7 +366,7 @@ export default function RadiologicalInvestigationPage() {
           <a href="https://extapps.dec.ny.gov/data/DecDocs/932020/Report.HW.932020.1991-11-13.STATUS_OF_RA.pdf" target="_blank" rel="noreferrer">Read the 1991 removal decision ↗</a>
           <a href="https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment" target="_blank" rel="noreferrer">Follow the regional radiological assessment ↗</a>
         </div>
-      </section>
+</section></details>
 
       <section className="school-method radiological-method radiological-report-summary">
         <p className="eyebrow">What the 1986 DOE/ORNL report concluded</p>
@@ -376,7 +397,7 @@ export default function RadiologicalInvestigationPage() {
         </p>
       </section>
 
-      <section className="school-method radiological-method radiological-evidence-network radiological-moved-section" id="slag-distribution-evidence">
+<details className="radiological-archive-disclosure"><summary>The 1979 interviews expand the research network, but they do not prove one source for every hotspot.</summary><section className="school-method radiological-method radiological-evidence-network" id="slag-distribution-evidence">
         <p className="eyebrow">Slag sources and distribution · evidence kept separate</p>
         <h2>The 1979 interviews expand the research network, but they do not prove one source for every hotspot.</h2>
         <div>
@@ -442,9 +463,9 @@ export default function RadiologicalInvestigationPage() {
           contemporaneous testimony. No route line is drawn unless a reviewed record
           identifies the relationship directly.
         </p>
-      </section>
+</section></details>
 
-      <section className="radiological-testimony-dossier radiological-moved-section" id="probe-1979-testimony">
+<details className="radiological-archive-disclosure"><summary>Inside the 1979 Pine Bowl investigation</summary><section className="radiological-testimony-dossier" id="probe-1979-testimony">
         <div className="radiological-testimony-heading">
           <div>
             <p className="eyebrow">Original record dossier · all 12 scanned pages reviewed</p>
@@ -502,9 +523,9 @@ export default function RadiologicalInvestigationPage() {
         <a className="radiological-primary-document" href="https://investigativepost.org/wp-content/uploads/2017/02/Private-Investigator-Letters-to-Bowling-Alley-Owner-re-Sources-of-Slag-1979.pdf" target="_blank" rel="noreferrer">
           Open the complete 12-page original scan <span>PDF · May and June 1979 ↗</span>
         </a>
-      </section>
+</section></details>
 
-      <section className="radiological-corroboration radiological-moved-section" aria-labelledby="corroboration-heading">
+<details className="radiological-archive-disclosure"><summary>What later records add—and what they still do not prove</summary><section className="radiological-corroboration" aria-labelledby="corroboration-heading">
         <p className="eyebrow">Additional primary-record research</p>
         <h2 id="corroboration-heading">What later records add—and what they still do not prove</h2>
         <div>
@@ -517,9 +538,9 @@ export default function RadiologicalInvestigationPage() {
             </article>
           ))}
         </div>
-      </section>
+</section></details>
 
-      <section className="radiological-aerial-evidence" id="aerial-record">
+<details className="radiological-archive-disclosure" id="aerial-record"><summary>Survey coverage, then and now</summary><section className="radiological-aerial-evidence">
         <div className="radiological-aerial-heading">
           <p className="eyebrow">Aerial and roadway evidence</p>
           <h2>What agencies surveyed, then and now</h2>
@@ -576,11 +597,11 @@ export default function RadiologicalInvestigationPage() {
             immediate public-health response; analysis and follow-up continue.
           </p>
         </aside>
-      </section>
+</section></details>
 
-      <section className="school-method radiological-method" id="newly-verified-industry-records">
+<details className="radiological-archive-disclosure" id="newly-verified-industry-records"><summary>Technical industry records</summary><section className="school-method radiological-method">
         <p className="eyebrow">Newly verified industry records</p>
-        <h2>Three documented operations - and three boundaries the evidence does not cross.</h2>
+        <h2>Three documented operations - and three boundaries the evidence does not cross.</h2><p>These records describe industrial work and explain which material destinations remain unknown.</p>
         <div>
           <article>
             <h3>TAM: documented melt, unknown destination</h3>
@@ -635,9 +656,9 @@ export default function RadiologicalInvestigationPage() {
             <a href="https://www.cdc.gov/niosh/ocas/pdfs/tbd/carbco-r0-508.pdf" target="_blank" rel="noreferrer">Read the NIOSH Carborundum site profile ↗</a>
           </article>
         </div>
-      </section>
+</section></details>
 
-      <section className="school-method radiological-method" id="linde-waste-pathways">
+<details className="radiological-archive-disclosure" id="linde-waste-pathways"><summary>Linde material pathways</summary><section className="school-method radiological-method">
         <p className="eyebrow">One plant, distinct material routes</p>
         <h2>Linde&apos;s solid residues and liquid effluent did not follow one path.</h2>
         <p>
@@ -689,11 +710,11 @@ export default function RadiologicalInvestigationPage() {
           <a href="https://lmpublicsearch.lm.doe.gov/LMSites/2667-NY.08-5.pdf" target="_blank" rel="noreferrer">Read the 1981 Linde liquid-pathway survey ↗</a>{" · "}
           <a href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000TE3Z.TXT" target="_blank" rel="noreferrer">Read EPA&apos;s 1982 Niagara Frontier overview ↗</a>
         </p>
-      </section>
+</section></details>
 
       <RadiologicalDocumentArchive />
 
-      <section className="radiological-update-log" aria-labelledby="radiological-update-heading">
+      <details className="radiological-archive-disclosure"><summary>Page update history</summary><section className="radiological-update-log" aria-labelledby="radiological-update-heading">
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
@@ -712,7 +733,7 @@ export default function RadiologicalInvestigationPage() {
         </div>
       </section>
 
-      <section className="school-method radiological-method">
+      </details><section className="school-method radiological-method">
         <p className="eyebrow">How the material streams differ</p>
         <h2>Production residue, slag, and fill are not one single material stream.</h2>
         <div>
