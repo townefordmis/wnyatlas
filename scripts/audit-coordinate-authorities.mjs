@@ -2,6 +2,7 @@ import fs from "node:fs";
 
 const source = [
   "../src/data/featured-sites.ts",
+  "../src/data/paint-industry-sites.ts",
   "../src/data/historic-cleanup-expansion.ts",
   "../src/data/county-expansion-2026.ts",
 ]
@@ -64,6 +65,7 @@ const officialByCode = new Map(
 // Some entries cite combined reports or closely related parcels whose document
 // folder number is not the cleanup record represented by the atlas marker.
 const coordinateSiteCodes = new Map([
+  ["pratt-lambert-scajaquada", "915251"],
   ["salamanca-former-mgp", "905035"],
   ["former-jamestown-city-landfill", "907009"],
   ["alltift-landfill-ramco-steel", "915054"],

@@ -18,6 +18,24 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 };
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
+  {
+    id: "elk-street-paint-and-petroleum",
+    name: "Elk Street: paint industries and the later refinery complex",
+    summary: "Overlapping industrial histories require separate source attribution; the paint stop lies within and beside the broader terminal investigation area.",
+    members: [
+      { siteId: "mcdougall-kellogg-elk-street", role: "Historic paint and pigment industries", connection: "Focuses on the mapped manufacturers and buried white-lead evidence discussed in the OU-2 alternatives analysis." },
+      { siteId: "exxonmobil-former-buffalo-terminal", role: "Wider petroleum complex", connection: "Provides context for the larger refinery, terminal and multiple cleanup units." },
+    ],
+  },
+  {
+    id: "pratt-lambert-creek-context",
+    name: "Pratt & Lambert and Scajaquada Creek",
+    summary: "The plants are documented potential sources in a creek with multiple industrial histories; proximity alone does not establish responsibility for sediment contamination.",
+    members: [
+      { siteId: "pratt-lambert-scajaquada", role: "Paint and lacquer plants", connection: "Two addresses provide a focused industrial-history field stop." },
+      { siteId: "scajaquada-creek", role: "Receiving-waterway context", connection: "The broader creek record provides watershed and contamination context." },
+    ],
+  },
 {
   id: "witmer-distinct-properties",
   name: "Two separate Witmer Road investigation sites",
