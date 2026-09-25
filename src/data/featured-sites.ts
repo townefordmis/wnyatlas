@@ -11,6 +11,7 @@ import { regionalWasteNetworkSites } from "@/data/regional-waste-network-sites";
 import { amherstCleanupSites } from "@/data/amherst-cleanup-sites";
 import { erieCayugaExpansion } from "@/data/erie-cayuga-expansion";
 import { paintIndustrySites } from "@/data/paint-industry-sites";
+import { dryCleaningSites } from "@/data/dry-cleaning-sites";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -4217,6 +4218,7 @@ const featuredSiteRecords: AtlasSite[] = [
 export const featuredSites: AtlasSite[] = [
   ...featuredSiteRecords,
   ...paintIndustrySites,
+  ...dryCleaningSites,
   cayugaIslandSite,
   littleValleySite,
   sinclairRefinerySite,

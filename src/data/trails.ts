@@ -3,6 +3,20 @@ export type Trail = { title: string; slug: string; intro: string; places: TrailP
 
 export const trails: Trail[] = [
   {
+    title: "Dry Cleaning & Chlorinated Solvents",
+    slug: "dry-cleaning-chlorinated-solvents",
+    intro: "Small businesses left lasting solvent-cleanup obligations across Western New York. Explore separate groundwater and vapor histories, from neighborhood storefronts to shopping centers. This is a thematic reading trail; it does not imply a shared plume or public access to the properties.",
+    places: [
+      { slug: "peters-dry-cleaning", blurb: "Follow a Lockport plume from source excavation to continuing groundwater management." },
+      { slug: "time-one-hour-cleaners", blurb: "See how building foundations, sewers and subsurface water complicate vapor controls." },
+      { slug: "bestway-cleaners" },
+      { slug: "northtown-plaza-former-dry-cleaner" },
+      { slug: "starlite-dry-cleaners" },
+      { slug: "former-cb-dry-cleaners" },
+      { slug: "anderson-cleaners-jamestown" },
+    ],
+  },
+  {
     title: "The Hooker Chemical landfill network",
     slug: "hooker-chemical-landfill-network",
     intro: "Love Canal is the best-known name, but it was one part of a larger, separately managed disposal landscape. This trail follows distinct sites and remedies without collapsing their histories into one story.",

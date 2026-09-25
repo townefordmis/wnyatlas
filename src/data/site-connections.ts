@@ -19,6 +19,20 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
   {
+    id: "dry-cleaning-chlorinated-solvents",
+    name: "Dry Cleaning & Chlorinated Solvents",
+    summary: "Neighborhood businesses connect solvent use with groundwater and vapor cleanup. These are separate sites and remedies, not one shared plume.",
+    members: [
+      { siteId: "peters-dry-cleaning", role: "Lockport groundwater plume", connection: "Excavation, biological treatment and continuing management at a small residential-neighborhood site." },
+      { siteId: "time-one-hour-cleaners", role: "Pine Avenue vapor controls", connection: "Building and sewer work illustrates the complexity of vapor mitigation in a commercial and residential setting." },
+      { siteId: "bestway-cleaners", role: "Buffalo neighborhood cleanup", connection: "A separate Seneca Street solvent investigation extending beyond the source parcel." },
+      { siteId: "starlite-dry-cleaners", role: "Canalside solvent cleanup", connection: "Former cleaning operations left a separate soil and groundwater treatment problem." },
+      { siteId: "former-cb-dry-cleaners", role: "Jamestown solvent history", connection: "A compact parcel with a consequential subsurface cleanup." },
+      { siteId: "anderson-cleaners-jamestown", role: "Separate Jamestown property", connection: "Related by the cleaning process, not evidence of a shared plume with C&B." },
+      { siteId: "northtown-plaza-former-dry-cleaner", role: "Shopping-center cleanup", connection: "PCE cleanup and vapor controls in a suburban commercial setting." },
+    ],
+  },
+  {
     id: "elk-street-paint-and-petroleum",
     name: "Elk Street: paint industries and the later refinery complex",
     summary: "Overlapping industrial histories require separate source attribution; the paint stop lies within and beside the broader terminal investigation area.",
