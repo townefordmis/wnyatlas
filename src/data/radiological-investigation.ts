@@ -252,6 +252,19 @@ export const historicalRadiologicalRecords: HistoricalRadiologicalRecord[] = [
 
 export const radiologicalProducers: RadiologicalProducer[] = [
   {
+    id: "bethlehem-uranium-rolling",
+    name: "Bethlehem Steel — uranium rolling",
+    role: "processor", county: "Erie",
+    coordinates: [-78.85913, 42.82158],
+    coordinatePrecision: "facility-approximate",
+    location: "Lackawanna; plant marker, not the surveyed 10-inch mill location",
+    evidence: "documented", evidenceLevel: "B",
+    summary: "Federal records document uranium rolling, worker exposure and residues shipped to LOOW. Later reviews found no significant residual contamination after AEC operations. No uranium route to shoreline slag or Smokes Creek is verified here.",
+    relatedSiteId: "bethlehem-steel",
+    sourceLabel: "NIOSH 2013 review, conclusion and Attachment 2",
+    sourceUrl: "https://www.cdc.gov/niosh/ocas/pdfs/dps/dc-bethstrc-052313.pdf",
+  },
+  {
     id: "titanium-alloys-manufacturing",
     name: "Titanium Alloys Manufacturing (TAM)",
     role: "processor",
@@ -728,6 +741,15 @@ export const currentAssessmentSources = [
 ];
 
 export const radiologicalDocuments: RadiologicalDocument[] = [
+  {
+    id: "bethlehem-uranium-residual-review-2013",
+    title: "Bethlehem Steel residual-contamination review",
+    agency: "NIOSH", date: "May 23, 2013", year: 2013,
+    kind: "worker-record", geography: "Erie and Niagara", status: "final",
+    establishes: "Documents occupational exposure, cleanup evaluation and Bethlehem residue transfers to LOOW; concludes significant residual contamination was not present after the 1952 end of operations.",
+    mapConnection: "Plant marker only; neither a current radiological finding nor a verified creek or slag-disposal route.",
+    url: "https://www.cdc.gov/niosh/ocas/pdfs/dps/dc-bethstrc-052313.pdf",
+  },
   {
     id: "tam-sec-00190-2012",
     title: "SEC Petition Evaluation Report SEC-00190 - Titanium Alloys Manufacturing",

@@ -12,6 +12,7 @@ import { amherstCleanupSites } from "@/data/amherst-cleanup-sites";
 import { erieCayugaExpansion } from "@/data/erie-cayuga-expansion";
 import { paintIndustrySites } from "@/data/paint-industry-sites";
 import { dryCleaningSites } from "@/data/dry-cleaning-sites";
+import { bethlehemUraniumSources } from "@/data/bethlehem-uranium-sources";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -672,6 +673,8 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "bethlehem-steel",
+    updateNote: "Added the uranium-rolling program, worker exposure, documented LOOW transfers and later federal findings.",
+    atomicLegacy: { era: "Early Atomic Energy Commission", role: "The 1949–1952 uranium-rolling program used the 10-inch continuous bar mill; it is distinct from the wider steelworks chemical and slag cleanup." },
     name: "Former Bethlehem Steel",
     municipality: "Lackawanna",
     county: "Erie",
@@ -699,7 +702,7 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
     story: {
-      lastReviewed: "August 12, 2026",
+      lastReviewed: "September 28, 2026",
       background: [
         "Seneca Steel began producing iron and steel on the Lackawanna waterfront in 1902. Bethlehem Steel purchased the works in 1922 and developed one of Western New York's defining industrial landscapes: an integrated complex of blast furnaces, steelmaking furnaces, coke ovens and by-product operations, rolling and finishing mills, rail systems, water infrastructure, and waste-management areas.",
         "That scale carried a human cost. A Bethlehem Steel accident tally preserved by the Steel Plant Museum of Western New York records 171 worker deaths from 1924 through 1956 alone. The figure covers fatal accidents of many kinds—not explosions alone—and does not represent the plant's complete operating history.",
@@ -726,6 +729,10 @@ const featuredSiteRecords: AtlasSite[] = [
           period: "1924–1956",
           event:
             "A preserved Bethlehem Steel accident tally records 171 worker deaths at the Lackawanna plant during these 32 years. The total includes multiple kinds of fatal workplace accidents, not only explosions.",
+        },
+        {
+          period: "1949–1952",
+          event: "AEC uranium work used the 10-inch mill. Its occupational exposure and federal material-handling history are documented separately from the wider steelworks cleanup.",
         },
         {
           period: "September 20, 1984",
@@ -771,6 +778,7 @@ const featuredSiteRecords: AtlasSite[] = [
         "DEC reports that public drinking water is not affected because the surrounding area uses a public supply. Its current exposure summary also says soil vapor is not an issue while the western property remains undeveloped or in outdoor industrial use; future enclosed development requires parcel-specific review.",
       ],
       researchNotes: [
+        "Locate the uranium program's 10-inch mill and trace scale-pit, drainage and material-accountability records. Uranium attribution to shoreline slag or Smokes Creek remains unverified.",
         "Build a map of the major corrective-action units, HWM-2, slag-fill areas, Smokes Creek, and redevelopment parcels.",
         "Separate Buffalo Harbor dredged-material disposal records from Bethlehem's own industrial waste units unless a primary source documents a connection.",
       ],
@@ -781,6 +789,7 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/environmental-cleanup-at-former-bethlehem-steel-site",
       },
+      ...bethlehemUraniumSources,
       {
         title: "Tecumseh Redevelopment Hazardous-Waste Cleanup",
         publisher: "U.S. Environmental Protection Agency",

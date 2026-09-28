@@ -14,6 +14,7 @@ import { SiteHeader } from "@/components/site-header";
 import { EvidenceStatusBadge } from "@/components/evidence-status-badge";
 import { InvestigationStats } from "@/components/investigation-stats";
 import { ResearchSectionNav } from "@/components/research-section-nav";
+import { BethlehemUraniumHistory } from "@/components/bethlehem-uranium-history";
 
 export const metadata: Metadata = {
   title: "Radioactive Industrial Slag, Uranium Residues & Fill",
@@ -56,6 +57,7 @@ export default function RadiologicalInvestigationPage() {
         { href: "#investigation-process", label: "9-step process" },
         { href: "#connected-investigations", label: "Stories" },
         { href: "#radiological-map", label: "Map" },
+        { href: "#bethlehem-uranium", label: "Bethlehem uranium" },
         { href: "#radiological-archive", label: "Sources" },
       ]} />
       <section className="radiological-reading-guide" id="reading-guide">
@@ -552,6 +554,8 @@ export default function RadiologicalInvestigationPage() {
           </p>
         </aside>
 </section></details>
+
+      <BethlehemUraniumHistory />
 
 <details className="radiological-archive-disclosure" id="newly-verified-industry-records"><summary>Technical industry records</summary><section className="school-method radiological-method">
         <p className="eyebrow">Newly verified industry records</p>

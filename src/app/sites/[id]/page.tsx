@@ -400,6 +400,20 @@ export default async function SitePage({ params }: SitePageProps) {
 
             {site.id === "bethlehem-steel" && <BethlehemWorkerHistory />}
 
+            {["bethlehem-steel", "smokes-creek-bethlehem-corridor", "niagara-falls-storage-site"].includes(site.id) && (
+              <section className="story-research-figure" aria-labelledby="uranium-history-title">
+                <h2 id="uranium-history-title">Bethlehem Steel&apos;s uranium program</h2>
+                <p>
+                  {site.id === "bethlehem-steel"
+                    ? "The 1949–1952 AEC program used the 10-inch mill to roll uranium. Federal records document worker exposure and residue shipments to LOOW; later reviews found no significant residual contamination requiring FUSRAP cleanup."
+                    : site.id === "niagara-falls-storage-site"
+                      ? "Federal records identify Bethlehem uranium dust and oxides stored at LOOW. The shipment record does not establish where those particular materials ultimately went within or beyond the larger property."
+                      : "Bethlehem's uranium rolling is documented separately. A uranium-to-creek connection remains unverified; the Smokes Creek sediment cleanup is not identified as a uranium cleanup."}
+                </p>
+                <Link href="/research/radiological-industry-fill#bethlehem-uranium">Read the uranium operation, worker record and material pathways →</Link>
+              </section>
+            )}
+
             {site.id === "billy-wilson-park-hopkins-road-dump" && <AmherstDumpDistinction />}
 
             {site.id === "love-canal" && (
