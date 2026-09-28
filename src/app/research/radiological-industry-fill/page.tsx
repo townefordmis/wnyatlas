@@ -15,9 +15,13 @@ import { EvidenceStatusBadge } from "@/components/evidence-status-badge";
 import { InvestigationStats } from "@/components/investigation-stats";
 import { ResearchSectionNav } from "@/components/research-section-nav";
 import { BethlehemUraniumHistory } from "@/components/bethlehem-uranium-history";
+import { RadiologicalDirectory, type RadiologicalDirectoryEntry } from "@/components/radiological-directory";
+import { featuredSites } from "@/data/featured-sites";
+import { radiologicalProducers, latestRadiologicalFollowUps } from "@/data/radiological-investigation";
+import { getPublicSiteName } from "@/lib/site-name";
 
 export const metadata: Metadata = {
-  title: "Radioactive Industrial Slag, Uranium Residues & Fill",
+  title: "Radiological Places & Research",
   description:
     "Trace radioactive industrial slag, uranium-production residues, historical fill locations, DOE/ORNL surveys, storage, and cleanup in Niagara and Erie counties.",
   alternates: { canonical: "/research/radiological-industry-fill" },
@@ -31,12 +35,29 @@ export const metadata: Metadata = {
 };
 
 export default function RadiologicalInvestigationPage() {
+  const relatedIds = new Set([
+    ...radiologicalProducers.map((record) => record.relatedSiteId),
+    ...latestRadiologicalFollowUps.map((record) => record.relatedSiteId),
+    "witmer-road-drive-in", "black-creek-village-fill-investigation",
+  ]);
+  const entries: RadiologicalDirectoryEntry[] = [
+    ...featuredSites.filter((site) => site.category === "radiological" || relatedIds.has(site.id)).map((site) => ({
+      name: getPublicSiteName(site.name), href: `/sites/${site.id}`,
+      location: `${site.municipality} · ${site.county} County`, description: site.summary,
+    })),
+    { name: "Carborundum — Buffalo Avenue Building 1", href: "/research/radiological/carborundum-buffalo-avenue", location: "Niagara Falls · Focused research", description: "The documented 1959–1967 nuclear-fuel program and the distinction from the separate Globar property." },
+    { name: "Pine Bowl — 1979 investigation", href: "/research/radiological/1979-pine-bowl-dossier", location: "Niagara County · Witness records", description: "Witness accounts, later corroboration and the questions that remain unresolved." },
+    { name: "Southtowns / Buffalo Slag", href: "/research/radiological/southtowns-slag", location: "Erie County · Focused research", description: "Abbott Road, Republic Steel and the historical construction-material chain. A delivery route for current radiological findings remains unproven." },
+  ].sort((a, b) => a.name.localeCompare(b.name));
   return (
     <main className="radiological-page">
       <SiteHeader />
+      <RadiologicalDirectory entries={entries} />
+      <details className="radiological-full-report" id="full-research">
+      <summary>Full investigation, interactive map & source archive</summary>
       <section className="school-research-hero radiological-hero" id="current-status">
         <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Updated September 15, 2026" /></p>
-        <h1>Niagara–Erie radiological investigation</h1>
+        <h2>Niagara–Erie radiological investigation</h2>
         <p className="dek">EPA, NYSDEC, and NYSDOH are investigating radiological material across roughly 1,000 square miles in Niagara and Erie counties. Teams are following aerial and roadway screening with ground surveys and property testing. A screening signal does not mean contamination is confirmed.</p>
         <a className="radiological-map-jump" href="#radiological-map">Open the interactive map <span aria-hidden="true">↓</span></a>
         <InvestigationStats stats={[
@@ -729,6 +750,7 @@ export default function RadiologicalInvestigationPage() {
         </div>
         <Link href="/">Return to the regional atlas →</Link>
       </section>
+      </details>
     </main>
   );
 }
