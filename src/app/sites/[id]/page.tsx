@@ -399,6 +399,20 @@ export default async function SitePage({ params }: SitePageProps) {
             {site.id === "buffalo-river" && <BuffaloRiverFireHistory />}
 
             {site.id === "bethlehem-steel" && <BethlehemWorkerHistory />}
+            {site.id === "carborundum-globar-site" && (
+              <section className="story-research-figure">
+                <h2>Correction: Buffalo Avenue nuclear work is a separate location</h2>
+                <p>Earlier Atlas text placed the 1959–1967 fuel-development history on this Globar page. NIOSH identifies Buffalo Avenue Building 1 as its location. The company’s 1943 grinding location remains unresolved.</p>
+                <Link href="/research/radiological/carborundum-buffalo-avenue">Read the Buffalo Avenue record and open questions →</Link>
+              </section>
+            )}
+            {site.id === "niagara-sanitation-nash-road-landfill" && (
+              <section className="story-research-figure">
+                <h2>Carborundum: the originating plant and waste need verification</h2>
+                <p>DEC names Carborundum among landfill users, but that company-level record does not establish a radioactive-waste shipment from Buffalo Avenue Building 1.</p>
+                <Link href="/research/radiological/carborundum-buffalo-avenue">Read the separate Buffalo Avenue research history →</Link>
+              </section>
+            )}
 
             {["bethlehem-steel", "smokes-creek-bethlehem-corridor", "niagara-falls-storage-site"].includes(site.id) && (
               <section className="story-research-figure" aria-labelledby="uranium-history-title">

@@ -19,6 +19,16 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
   {
+    id: "pratt-letchworth-creek-context",
+    name: "Foundry and paint industries along Scajaquada Creek",
+    summary: "Separate manufacturers and waste histories along one creek. These connections do not assign creek contamination to a particular plant.",
+    members: [
+      { siteId: "pratt-letchworth-foundry", role: "Iron foundry", connection: "Documented foundry-sand and slag disposal at 189 Tonawanda Street, with a later PCB-soil cleanup." },
+      { siteId: "pratt-lambert-scajaquada", role: "Separate paint manufacturer", connection: "Pratt & Lambert was a different company with separate plant and waste records." },
+      { siteId: "scajaquada-creek", role: "Waterway context", connection: "The broader creek investigation considers multiple industrial properties." },
+    ],
+  },
+  {
     id: "dry-cleaning-chlorinated-solvents",
     name: "Dry Cleaning & Chlorinated Solvents",
     summary: "Neighborhood businesses connect solvent use with groundwater and vapor cleanup. These are separate sites and remedies, not one shared plume.",

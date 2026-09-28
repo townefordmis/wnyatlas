@@ -5445,16 +5445,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "carborundum-globar-site": {
-    lastReviewed: "September 14, 2026",
+    lastReviewed: "September 28, 2026",
     background: [
       "Carborundum acquired the former Globar plant in 1936 and manufactured silicon-carbide heating elements and electronic components at the Hyde Park Boulevard property. Solvents used in manufacturing and degreasing became the central cleanup issue.",
       "DEC divided the site into soil, groundwater and off-site-soil operable units. That structure is important because source removal at the plant and continuing groundwater management represent different stages of the remedy.",
-      "A separate federal occupational record documents experimental centerless grinding of ten uranium slugs in 1943 and AEC-sponsored fuel-development work involving uranium and uranium-plutonium compounds from 1959 through 1967. That history should not be collapsed into DEC's later solvent-remedy record.",
+      "Correction: NIOSH’s June 2026 presentation places the 1959–1967 nuclear-fuel work at Buffalo Avenue Building 1, not this Globar property. It leaves the exact location of the 1943 grinding unresolved between Buffalo Avenue and Globar.",
     ],
     timeline: [
       { period: "1936 onward", event: "Carborundum operated the Globar manufacturing plant after acquiring the property." },
-      { period: "1943", event: "Federal records document experimental centerless grinding of ten uranium slugs." },
-      { period: "1959-1967", event: "Carborundum conducted AEC-sponsored carbide-fuel research involving uranium and uranium-plutonium compounds." },
       { period: "Investigation era", event: "DEC investigations identified TCE and related compounds in soil and groundwater and evaluated possible off-site pathways." },
       { period: "1999 and 2002", event: "Major source-soil removal work excavated and disposed of contaminated material off site." },
       { period: "2000", event: "DEC selected remedies for the site-soil and groundwater operable units." },
@@ -5463,7 +5461,6 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     documentedImpacts: [
       "TCE and its breakdown products are the principal documented soil and groundwater contaminants.",
       "Historical spills or leaks associated with bulk solvent storage and use created a subsurface source at the former plant.",
-      "The nuclear-development work is documented at the facility level, but the reviewed record does not identify Carborundum as the source of any specific off-site slag-fill location.",
       "DEC evaluated possible vapor, direct-contact and groundwater pathways; the 2000 decision reported that sampled shallow groundwater near residences did not show site contaminants reaching those properties through that evaluated pathway.",
     ],
     cleanupAndControls: [
@@ -5476,7 +5473,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     researchNotes: [
       "Add the newest periodic-review conclusion and groundwater trend summary.",
-      "Keep the Carborundum Globar groundwater record distinct from its federal nuclear-work record and from nearby Hyde Park, TAM Ceramics and other industrial sources.",
+      "Keep Globar’s solvent cleanup separate from Buffalo Avenue Building 1. Do not assign the unresolved 1943 grinding or a radioactive-waste route to this pin.",
       "TAM Ceramics is linked as nearby corridor context only; the reviewed records do not establish a shared waste stream or radiological-fill source between the properties.",
     ],
   },

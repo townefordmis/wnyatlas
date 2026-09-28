@@ -597,21 +597,26 @@ export default function RadiologicalInvestigationPage() {
             <a href="https://findingaids.nysed.gov/do/a1bb63f9-e4a2-5676-8c2c-7c944838ec53" target="_blank" rel="noreferrer">Open New York State Archives series 20691 ↗</a>
             <a href="https://lmpublicsearch.lm.doe.gov/SiteDocs/T-335.pdf" target="_blank" rel="noreferrer">Read the federal landfill pathway record ↗</a>
           </article>
-          <article>
-            <h3>Carborundum: two federal-work periods</h3>
+          <article id="carborundum-buffalo-avenue">
+            <h3>Carborundum Buffalo Avenue: Building 1 nuclear-fuel research</h3>
+            <p><Link href="/research/radiological/carborundum-buffalo-avenue">Read the Buffalo Avenue research page →</Link></p>
             <p>
               <strong>Confirmed:</strong> NIOSH documents experimental centerless
               grinding of ten uranium slugs, totaling approximately 30 pounds, from
-              June through September 1943 and a separate 1959-1967 AEC
+              June through September 1943, at an unresolved location. NIOSH places the separate 1959–1967 AEC
               fuel-development program involving uranium and mixed uranium/plutonium
-              carbide and related fuel materials.
+              carbide and related fuel materials in Buffalo Avenue Building 1, not the separately mapped Globar property.
             </p>
+            <p>The June 2026 overview places the plutonium facility in the fourth-floor Central Laboratory. It lists broader Building 1 work dates of 1957–1968 separately from the covered 1959–1967 operational period. Neither date range establishes a waste-disposal route.</p>
             <p>
               <strong>Research boundary:</strong> the work-site record strengthens the
               industrial history but does not prove that Carborundum supplied the
               material at any particular off-site slag or fill location.
             </p>
             <a href="https://www.cdc.gov/niosh/ocas/pdfs/tbd/carbco-r0-508.pdf" target="_blank" rel="noreferrer">Read the NIOSH Carborundum site profile ↗</a>
+            <p><a href="https://www.cdc.gov/niosh/ocas/pdfs/abrwh/pres/2026/dc-carborundum-status-061626-508.pdf">Read the June 2026 location clarification, slides 8–12 ↗</a></p>
+            <p><Link href="/sites/carborundum-globar-site">Globar’s separate solvent-cleanup record →</Link></p>
+            <p>Open records: Building 1’s surveyed location, demolition and radiological-release documentation, shipment manifests, and landfill acceptance records identifying material and source building. Company-level landfill references do not establish disposal of radioactive material from this laboratory. No precise Building 1 pin is assigned pending location verification.</p>
           </article>
         </div>
 </section></details>

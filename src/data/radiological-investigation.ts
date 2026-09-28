@@ -290,15 +290,14 @@ export const radiologicalProducers: RadiologicalProducer[] = [
   },
   {
     id: "carborundum-federal-nuclear-work",
-    name: "Carborundum federal nuclear-development work",
+    name: "Carborundum Buffalo Avenue — Building 1",
     role: "processor",
     county: "Niagara",
-    location: "Buffalo Avenue and Globar Plant locations, Niagara Falls",
+    location: "Buffalo Avenue Building 1, Niagara Falls; exact building footprint not mapped",
     evidence: "documented",
-    summary: "NIOSH documents experimental grinding of ten uranium slugs in 1943 and a separate 1959-1967 AEC fuel-development program involving uranium and uranium/plutonium compounds. These operations strengthen the facility history but do not identify Carborundum as the source of any specific off-site slag-fill location.",
-    relatedSiteId: "carborundum-globar-site",
-    sourceLabel: "NIOSH Carborundum Company site profile",
-    sourceUrl: "https://www.cdc.gov/niosh/ocas/pdfs/tbd/carbco-r0-508.pdf",
+    summary: "NIOSH places the 1959–1967 uranium and plutonium fuel work in Buffalo Avenue Building 1. The 1943 grinding location and radioactive-waste destinations remain unresolved. This record is not pinned to Globar.",
+    sourceLabel: "NIOSH June 2026 overview, slides 8–12",
+    sourceUrl: "https://www.cdc.gov/niosh/ocas/pdfs/abrwh/pres/2026/dc-carborundum-status-061626-508.pdf",
   },
   {
     id: "oldbury-furnace",
@@ -741,6 +740,14 @@ export const currentAssessmentSources = [
 ];
 
 export const radiologicalDocuments: RadiologicalDocument[] = [
+  {
+    id: "carborundum-building-one-2026", title: "Carborundum site overview and location clarification",
+    agency: "NIOSH/DCAS", date: "June 16, 2026", year: 2026,
+    kind: "worker-record", geography: "Niagara", status: "ongoing",
+    establishes: "Places the second operational period in Buffalo Avenue Building 1; explicitly leaves the 1943 grinding location unknown.",
+    mapConnection: "Corrects the former Globar attribution. Building-level coordinates and waste routes remain unresolved.",
+    url: "https://www.cdc.gov/niosh/ocas/pdfs/abrwh/pres/2026/dc-carborundum-status-061626-508.pdf",
+  },
   {
     id: "bethlehem-uranium-residual-review-2013",
     title: "Bethlehem Steel residual-contamination review",

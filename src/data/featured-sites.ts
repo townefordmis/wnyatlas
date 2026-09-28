@@ -11,6 +11,7 @@ import { regionalWasteNetworkSites } from "@/data/regional-waste-network-sites";
 import { amherstCleanupSites } from "@/data/amherst-cleanup-sites";
 import { erieCayugaExpansion } from "@/data/erie-cayuga-expansion";
 import { paintIndustrySites } from "@/data/paint-industry-sites";
+import { prattLetchworthSite } from "@/data/pratt-letchworth-site";
 import { dryCleaningSites } from "@/data/dry-cleaning-sites";
 import { bethlehemUraniumSources } from "@/data/bethlehem-uranium-sources";
 
@@ -4130,15 +4131,17 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "carborundum-globar-site",
+    updateNote: "Corrected the nuclear-work attribution: Buffalo Avenue Building 1 is separate from Globar.",
     name: "Carborundum Globar Site",
     municipality: "Town of Niagara",
     county: "Niagara",
-    category: "radiological",
+    category: "cleanup",
     summary:
-      "Former silicon-carbide and electronic-component plant with two distinct histories: NIOSH documents limited uranium-slug grinding in 1943 and AEC fuel-development work from 1959 to 1967, while New York cleanup records focus on later chlorinated-solvent contamination. Neither record by itself identifies Carborundum as the source of a specific off-site slag-fill location.",
+      "Hyde Park Boulevard silicon-carbide and electronic-component plant with documented chlorinated-solvent contamination. The 1959–1967 nuclear-fuel program belongs to the separate Buffalo Avenue Building 1; the location of the company’s 1943 uranium grinding remains unresolved.",
     evidenceStatus: "well-documented",
     coordinates: [-79.03276872, 43.11925666],
     sources: [
+      { title: "June 2026 NIOSH overview — Buffalo Avenue / Globar location distinction", publisher: "NIOSH/DCAS", url: "https://www.cdc.gov/niosh/ocas/pdfs/abrwh/pres/2026/dc-carborundum-status-061626-508.pdf" },
       {
         title: "Carborundum Company Site Profile",
         publisher: "National Institute for Occupational Safety and Health",
@@ -4227,6 +4230,7 @@ const featuredSiteRecords: AtlasSite[] = [
 export const featuredSites: AtlasSite[] = [
   ...featuredSiteRecords,
   ...paintIndustrySites,
+  prattLetchworthSite,
   ...dryCleaningSites,
   cayugaIslandSite,
   littleValleySite,

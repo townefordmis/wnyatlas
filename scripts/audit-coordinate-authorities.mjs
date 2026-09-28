@@ -3,6 +3,7 @@ import fs from "node:fs";
 const source = [
   "../src/data/featured-sites.ts",
   "../src/data/paint-industry-sites.ts",
+  "../src/data/pratt-letchworth-site.ts",
   "../src/data/dry-cleaning-sites.ts",
   "../src/data/historic-cleanup-expansion.ts",
   "../src/data/county-expansion-2026.ts",

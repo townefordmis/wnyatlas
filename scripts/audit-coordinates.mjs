@@ -3,6 +3,7 @@ import fs from "node:fs";
 const source = [
   "../src/data/featured-sites.ts",
   "../src/data/paint-industry-sites.ts",
+  "../src/data/pratt-letchworth-site.ts",
   "../src/data/dry-cleaning-sites.ts",
   "../src/data/amherst-cleanup-sites.ts",
   "../src/data/historic-cleanup-expansion.ts",
@@ -62,7 +63,7 @@ for (const siteId of connectedSiteIds) {
 console.log(`Checked ${sites.length} site coordinates.`);
 console.log(`Checked ${connectedSiteIds.length} connection memberships.`);
 
-const expectedSiteCount = 193;
+const expectedSiteCount = 194;
 if (sites.length !== expectedSiteCount) {
   issues.push(
     `Expected ${expectedSiteCount} coordinate records but found ${sites.length}`,
