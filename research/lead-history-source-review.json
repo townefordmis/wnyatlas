@@ -1,0 +1,75 @@
+{
+  "page": "/research/lead",
+  "reviewedOn": "2026-10-07",
+  "briefs": "Both user-provided complete research and rewrite briefs",
+  "scope": "Historical narrative rebuilt around industrial uses, housing enforcement, childhood neurological effects, gasoline/soil, water services, cleanup and reuse",
+  "sourceRegistry": "src/data/lead-history.ts: historySources",
+  "directDocumentChecks": [
+    {
+      "record": "C915201B alternatives analysis, text revised May 2018",
+      "method": "Public PDF downloaded and text extracted with pypdf",
+      "locators": ["section 2.1.3.2", "printed page 3-33", "Plate 6"],
+      "findings": ["Leaded gasoline stored 1952–1989", "Company records describe spreading leaded tank bottoms into tank yards", "SB-107 waste contains lead oxide/carbonate and discarded containers", "Report attributes these pigment wastes most likely to historical paint industries"],
+      "limits": ["Do not attribute every terminal contaminant to a paint manufacturer", "OU-2 East is not a single historic factory footprint"]
+    },
+    {
+      "record": "C915201B periodic review, August 2024",
+      "method": "Public PDF downloaded and text extracted with pypdf",
+      "locators": ["printed pages 4–5"],
+      "findings": ["33.45-acre managed area", "Mostly vacant parcels owned by 503 Elk Street LLC and ShotClub Social Buffalo LLC; separate Buckeye facilities", "Cover and stabilization remain under site management"],
+      "limits": ["Dated 2024 ownership/use, not independently verified 2026 occupancy"]
+    },
+    {
+      "record": "Tract I C932157 alternatives analysis, May 2014",
+      "method": "Public PDF downloaded and text extracted with pypdf",
+      "locators": ["printed page 2, site introduction"],
+      "findings": ["U.S. Light & Heat around 1910, then Auto-Lite, then Prestolite in 1960s", "Battery filling, charging and hard-rubber case production", "1970s end of battery assembly followed by warehouse/auto-body uses"],
+      "limits": ["Tract I differs from adjacent Tract II 932136", "Tract II completion certificate is November 8, 2018", "Current occupants require parcel-level confirmation"]
+    },
+    {
+      "record": "East Ferry final remediation report, March 2009",
+      "method": "NYSDEC primary report read through web extraction",
+      "locators": ["sections 1.1–1.3, PDF pages 9–10"],
+      "findings": ["858 is the approximately 3.3-acre ash-disposal site", "856 is the adjacent smelting/casting property identified from 1939 Sanborn mapping", "Report describes a used-auto lot at 856 in its historical account"],
+      "limits": ["Do not label 856 an affordable-housing development", "DEC success story dates cleanup completion January 2008; final report publication is March 2009", "Belmont lists 30 True Bethel family townhomes, built 2013, at 858"]
+    }
+  ],
+  "importantCorrectionsToBrief": [
+    "2018 housing report says 93% built before 1980, not an interchangeable pre-1978 statistic",
+    "Contemporary January 7, 1904 journal already describes McDougall's acquisition by United Lead; avoid asserting United Lead was first formed later in 1904",
+    "Library of Congress HAER NY-246 and period pigment technical history establish Kellogg & McDougall predecessor name and Carter-process Buffalo operation",
+    "Raiszadeh 2023 complaint and September 2025 announcement use different childhood counts and time windows; preserve those definitions",
+    "BMHA conditional $252,000 penalty was waived, not collected",
+    "HUD OIG assessment/disclosure percentages concern 69 sampled units containing lead paint, not all BMHA apartments",
+    "January 2026 Appellate Division motion order is procedural; April 2026 argument is not a final appellate disposition"
+  ],
+  "inventory": {
+    "sourceReview": "research/buffalo-lead-water-source-review.json",
+    "certifiedOn": "2025-12-11",
+    "total": 76457,
+    "lead": 33600,
+    "unknown": 35372,
+    "nonLead": 7365,
+    "galvanizedRequiringReplacement": 120,
+    "newRetrievalLimit": "NYSDOH detail page returned 403 to direct retrieval and was unavailable through web open. Counts retained from the existing October 7 repository source review and supplied brief; no claim of a new inventory download.",
+    "interpretation": "Material classifications, not tap-water tests or a live replacement tally"
+  },
+  "researchAttemptsAndLimits": [
+    "Searched primary and archival records for Buffalo Oil Paint & Varnish: 1910 directory confirms 1317 Elk wholesale white-lead listing; founders, corporate transitions, renumbering and closure remain unresolved",
+    "Searched Pratt & Lambert product catalogs, regulatory reports and company history; exact Buffalo lead formulas and current occupants remain unresolved",
+    "Pratt 1988 PDF is scanned; downloaded text extraction is insufficient for fresh formula verification. Existing Atlas facility history is retained with source links",
+    "Searched Buffalo plumbing specifications; modern code retains lead-service language but does not establish first installation, mandatory use or cessation dates",
+    "Searched pre-2018 housing advocacy; PPG 2009 policy report and 2018 Action Plan provide dated milestones; full 2005–2018 chronology remains incomplete",
+    "Searched later appeal records; found January 2026 motion and April argument account, no verified later disposition",
+    "Searched current industrial occupants; dated DEC reuse accounts are kept separate from unverified 2026 tenancy"
+  ],
+  "visuals": [
+    "Code-native house/soil/service-line schematic with accessible description",
+    "Source-linked chronological timeline",
+    "Inventory bar and accessible count table",
+    "Five-record interactive map using existing Atlas coordinates and source scopes",
+    "Industrial process chain",
+    "Then-and-now structured table and documentary comparison links; georeferenced archival image overlays remain research gaps"
+  ],
+  "preserved": ["Existing lead investigation records", "Separate water-line subpage and its program evidence", "Existing industrial site entries", "Unrelated working-tree changes"]
+}

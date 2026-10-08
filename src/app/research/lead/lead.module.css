@@ -31,3 +31,75 @@
 .steps { max-width: 850px; padding-left: 24px; line-height: 1.75; }
 .steps li { padding: 8px 0 8px 8px; }
 @media (max-width: 760px) { .pathways { grid-template-columns: 1fr; } .hero, .content { width: calc(100% - 32px); } .hero { padding-top: 36px; } .record { padding: 20px; } }
+
+/* Historical lead landing page; shared water-page rules above remain available. */
+.historyHero { border-bottom: 1px solid var(--line); }
+.historyHero h1 { max-width: 1080px; font-size: clamp(2.8rem, 6.3vw, 5.5rem); line-height: 1.06; }
+.heroFacts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin: 40px 0 8px; }
+.heroFacts a { color: inherit; text-decoration: none; padding: 22px 0; border-top: 3px solid var(--rust); }
+.heroFacts strong { display: block; font-family: Georgia, serif; font-size: clamp(1.8rem, 3.4vw, 3rem); color: var(--rust); font-weight: 500; }
+.heroFacts span { display: block; margin-top: 10px; line-height: 1.65; color: var(--moss); }
+.prose { max-width: 850px; margin: 26px 0; }
+.prose > p { font-size: 1.08rem; line-height: 1.85; margin-bottom: 8px; }
+.citations { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+.citations .source { font-size: .8rem; margin-top: 4px; }
+.process, .inventoryFigure, .houseFigure { margin: 36px 0; padding: 28px; background: rgba(166,75,45,.045); border: 1px solid var(--line); }
+.process figcaption, .inventoryFigure figcaption, .houseFigure figcaption { font-family: Georgia, serif; font-size: 1.4rem; line-height: 1.5; }
+.process ol { display: flex; padding: 0; list-style: none; gap: 22px; margin: 24px 0; }
+.process li { flex: 1; padding: 16px 12px; border-top: 2px solid var(--rust); position: relative; line-height: 1.6; }
+.process li + li::before { content: '→'; position: absolute; left: -22px; top: 16px; color: var(--rust); }
+.process > p { color: var(--moss); font-size: .9rem; line-height: 1.6; }
+.inventoryFigure figcaption span { font-family: var(--font-mono); font-size: .75rem; color: var(--moss); }
+.inventoryBar { display: flex; height: 28px; margin: 24px 0; width: 100%; }
+.inventoryColor0 { background: var(--rust); }
+.inventoryColor1 { background: #263943; }
+.inventoryColor2 { background: #a89778; }
+.inventoryColor3 { background: var(--moss); }
+.facilityFacts { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 36px; margin: 24px 0; }
+.facilityFacts dt { font-weight: 600; font-size: .86rem; color: var(--rust); }
+.facilityFacts dd { margin: 8px 0 0; line-height: 1.75; }
+.thenNow { min-width: 820px; font-size: .87rem; }
+.thenNow td:nth-child(2) { font-family: inherit; white-space: normal; color: inherit; }
+.thenNow th p { font-weight: 400; color: var(--moss); }
+.archive { margin-top: 28px; padding: 22px; border: 1px solid var(--line); scroll-margin-top: 100px; }
+.archive summary { cursor: pointer; font-size: 1.1rem; font-weight: 600; line-height: 1.6; }
+.archive > p { line-height: 1.7; }
+.houseFigure { max-width: 950px; color: var(--ink); }
+.houseFigure svg { display: block; width: 100%; height: auto; }
+.houseFigure figcaption { margin-top: 15px; text-align: center; color: var(--rust); }
+.pathwayGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.pathwayGrid article { border-top: 2px solid var(--rust); }
+.pathwayGrid h3 { font-family: Georgia, serif; font-size: 1.4rem; font-weight: 500; }
+.pathwayGrid p { line-height: 1.75; }
+.timeline { list-style: none; padding: 0; max-width: 900px; }
+.timeline li { display: grid; grid-template-columns: 170px 1fr; gap: 26px; border-top: 1px solid var(--line); padding: 22px 0; }
+.timelineDate { color: var(--rust); font-family: var(--font-mono); font-size: .9rem; padding-top: 6px; }
+.timeline p { margin: 0 0 8px; line-height: 1.7; }
+.timeline .source { font-size: .8rem; margin: 0; }
+.mapLayout { display: grid; grid-template-columns: 1.6fr 1fr; gap: 26px; margin-top: 28px; }
+.mapCanvas { height: 480px; width: 100%; background: #e2dfd3; border: 1px solid var(--line); }
+.mapPanel { padding: 24px; border: 1px solid var(--line); }
+.mapPanel h3 { font-family: Georgia, serif; font-size: 1.5rem; font-weight: 500; }
+.mapPanel p { line-height: 1.7; }
+.mapChoices { display: grid; gap: 8px; }
+.mapChoices button { cursor: pointer; padding: 12px; text-align: left; border: 1px solid var(--line); background: transparent; font: inherit; color: inherit; }
+.mapChoices button[aria-pressed='true'] { background: var(--rust); color: #fff; border-color: var(--rust); }
+.mapMarker { border: 2px solid white; border-radius: 50%; width: 34px; height: 34px; background: var(--rust); color: white; cursor: pointer; font-weight: 700; }
+.mapMarker[aria-pressed='true'] { background: #263943; }
+.mapChoices button:focus-visible, .mapMarker:focus-visible, .heroFacts a:focus-visible, .archive summary:focus-visible { outline: 3px solid var(--rust); outline-offset: 4px; }
+.sourceDirectory { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
+.ending { border-bottom: none; padding-bottom: 20px; }
+@media (max-width: 760px) {
+  .heroFacts, .facilityFacts, .pathwayGrid, .mapLayout, .sourceDirectory { grid-template-columns: 1fr; }
+  .heroFacts { gap: 8px; }
+  .heroFacts a { padding: 16px 0; }
+  .process, .inventoryFigure, .houseFigure { padding: 18px; }
+  .process ol { flex-direction: column; gap: 18px; }
+  .process li + li::before { content: '↓'; left: 12px; top: -22px; }
+  .timeline li { grid-template-columns: 1fr; gap: 10px; }
+  .mapCanvas { height: 350px; }
+  .houseFigure { padding: 10px; overflow-x: auto; }
+  .houseFigure svg { min-width: 580px; }
+}
+
+.inventorySwatch { display: inline-block; width: 12px; height: 12px; margin-right: 10px; }
