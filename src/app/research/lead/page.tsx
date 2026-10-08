@@ -11,7 +11,7 @@ import styles from "./lead.module.css";
 
 export const metadata: Metadata = {
   title: "Lead: The Poison Western New York Inherited",
-  description: "Buffalo's white-lead factories, rental housing, gasoline, batteries and buried water lines: a sourced Western New York history through 2026.",
+  description: "Buffalo's white-lead factories, rental housing, gasoline, garden pesticides, batteries and buried water lines: a sourced Western New York history through 2026.",
   alternates: { canonical: "/research/lead" },
   openGraph: { type: "article", url: "/research/lead", title: "Lead: The Poison Western New York Inherited | WNYAtlas", description: "Lead regulation changed faster than the built environment." },
 };
@@ -29,6 +29,7 @@ const facilityFields = [
 const pathways = [
   { title: "Paint and dust", text: "Deterioration or disturbance → chips and microscopic dust → hands, toys and ingestion.", source: s.home },
   { title: "Gasoline and soil", text: "Historical vehicle exhaust → atmospheric deposition → soil and tracked-in dust.", source: s.soil },
+  { title: "Garden pesticides", text: "Historical lead-arsenate application → lead and arsenic in soil → soil contact, dust and potentially contaminated produce. Local use requires evidence.", source: s.gardenGuide },
   { title: "Industrial waste", text: "Pigment waste, smelter ash or battery materials → locally documented soil/fill. Attribution requires site evidence.", source: s.elk },
   { title: "Drinking water", text: "Corrosion of a lead-containing service line, solder or fixture → tap water.", source: s.water },
   { title: "Take-home exposure", text: "Workplace lead dust → clothing, boots, skin or vehicles → the household.", source: s.history },
@@ -44,7 +45,7 @@ export default function LeadResearchPage() {
       <p className="eyebrow">Western New York · An industrial and housing history</p>
       <h1>Lead: The Poison Western New York Inherited</h1>
       <p className={styles.dek}>The danger was known long before the regulations arrived.</p>
-      <p>Paint, gasoline, pipes, smelters and batteries embedded lead in Western New York&apos;s homes, soil and infrastructure for generations. Each use solved a practical problem. Each left a legacy that outlived the product—and often the industry.</p>
+      <p>Paint, gasoline, garden pesticides, pipes, smelters and batteries embedded lead in Western New York&apos;s homes, soil and infrastructure for generations. Each use solved a practical problem. Each left a legacy that outlived the product—and often the industry.</p>
       <p>What changed was our understanding of how little exposure could injure a child&apos;s developing brain. Buffalo&apos;s lead history connects the decisions that put the metal into the city with the unfinished work of removing its hazards.</p>
       <Sources sources={[s.history, s.health, s.elk, s.inventory, s.eastFerry, s.hud]} />
       <p className={styles.reviewed}>Research reviewed October 7, 2026 · Findings, inventories and legal outcomes retain their own dates</p>
@@ -57,23 +58,29 @@ export default function LeadResearchPage() {
     <ResearchSectionNav items={[
       { href: "#history", label: "Knowledge and use" }, { href: "#paint-industry", label: "Buffalo paint" },
       { href: "#housing", label: "Homes and enforcement" }, { href: "#gasoline", label: "Gasoline and soil" },
-      { href: "#water", label: "Buried service lines" }, { href: "#industrial-sites", label: "Industry, then and now" },
+      { href: "#garden", label: "Gardens and farms" }, { href: "#water", label: "Buried service lines" }, { href: "#industrial-sites", label: "Industry, then and now" },
       { href: "#one-house", label: "Exposure pathways" }, { href: "#timeline", label: "Timeline" },
       { href: "#map", label: "Map" }, { href: "#evidence", label: "Sources and gaps" },
     ]} />
     <div className={styles.content}>
       {leadChapters.map(chapter => <section id={chapter.id} key={chapter.id} className={`${styles.section} ${styles.chapter}`}>
         <p className="eyebrow">{chapter.eyebrow}</p><h2>{chapter.title}</h2>
-        {chapter.paragraphs.map((paragraph, index) => <div className={styles.prose} key={index}><p>{paragraph.text}</p><Sources sources={paragraph.sources} /></div>)}
+        {chapter.paragraphs.map((paragraph, index) => <div className={styles.prose} key={index}>{paragraph.heading && <h3>{paragraph.heading}</h3>}<p>{paragraph.text}</p><Sources sources={paragraph.sources} /></div>)}
         {chapter.id === "paint-industry" && <figure className={styles.process}>
           <figcaption>From pigment production to a household exposure pathway</figcaption>
           <ol>{["Lead metal", "White-lead pigment", "Paint on a house", "Deterioration and friction dust", "Childhood exposure"].map(step => <li key={step}>{step}</li>)}</ol>
           <p>A general process chain; it does not identify the manufacturer of paint in a particular house.</p>
         </figure>}
+        {chapter.id === "garden" && <aside className={styles.caution}>
+          <strong>From old orchard to present neighborhood: the mapping work still ahead</strong>
+          <p>Compare historical orchard rows, nursery grounds, vineyards and truck farms with later aerials, deeds and subdivision plats. Then seek crop-specific spray records and soil sampling. The northern Niagara orchard belt and Erie County agricultural records are research starting points; no subdivision is identified here as pesticide-contaminated.</p>
+          <ol><li>Locate and date the former agricultural footprint.</li><li>Establish which pesticides were used and when.</li><li>Trace subdivision, grading and imported fill.</li><li>Use lead and arsenic sampling to assess present conditions.</li></ol>
+          <p>The Atlas map below continues to show documented industrial sites. Former farm footprints will need their own evidence before they can be mapped responsibly.</p>
+        </aside>}
         {chapter.id === "public-housing" && <aside className={styles.caution}><strong>Keep the audit&apos;s denominator.</strong><p>The assessment and disclosure percentages concern 69 sampled units containing lead-based paint. They are not estimates for the entire BMHA housing inventory.</p></aside>}
       </section>)}
       <section id="water" className={styles.section}>
-        <p className="eyebrow">11 · The underground legacy</p><h2>The service line stayed after plumbing rules changed.</h2>
+        <p className="eyebrow">12 · The underground legacy</p><h2>The service line stayed after plumbing rules changed.</h2>
         <div className={styles.prose}><p>The service line is the smaller connection from a street water main to a property, potentially with portions on either side of the property boundary. Lead can also be present in solder, fittings and fixtures. Corrosion can release lead into water; a modern treatment plant does not replace the old connection beneath a house.</p><Sources sources={[s.water]} /></div>
         <div className={styles.prose}><p>The Safe Drinking Water Act&apos;s 1986 amendments restricted lead plumbing materials, with requirements effective in June 1988. EPA adopted the Lead and Copper Rule in 1991. Those measures did not excavate Buffalo&apos;s existing service lines.</p><Sources sources={[s.federalTimeline, s.laws]} /></div>
         <figure className={styles.inventoryFigure}>
@@ -91,7 +98,7 @@ export default function LeadResearchPage() {
         <aside className={styles.record}><h3>Replacement progress and the work ahead</h3><p>The city reports more than 700 properties served by its $10 million expansion completed in June 2024. Later board decisions and 2026 funding announcements retain their own dates; announced money cannot be counted as completed pipe removal.</p><Sources sources={[buffaloWaterSources.recovery, buffaloWaterSources.minutes, buffaloWaterSources.grant]} /><Link className={styles.source} href="/research/lead/buffalo-water-lines">Read the water-system history, program milestones and household guidance →</Link></aside>
       </section>
       <section id="industrial-sites" className={styles.section}>
-        <p className="eyebrow">12 · Smelters, pigment and batteries</p><h2>Follow the property through cleanup and reuse.</h2>
+        <p className="eyebrow">13 · Smelters, pigment and batteries</p><h2>Follow the property through cleanup and reuse.</h2>
         <p>These facilities show different lead processes and different endings. Cleanup boundaries, historical factory footprints and modern tenants must be checked separately. A remediated property&apos;s past is not a claim of present exposure.</p>
         <div className={styles.records}>{leadFacilities.map(facility => <article className={styles.record} id={`facility-${facility.id}`} key={facility.id}>
           <p className={styles.status}>{facility.evidenceStatus === "well-documented" ? "Documented atlas record" : "Research in progress · lead-specific production unresolved"}</p>
@@ -107,7 +114,7 @@ export default function LeadResearchPage() {
         </table></div>
       </section>
       <section id="places" className={styles.section}>
-        <p className="eyebrow">13 · Other documented investigations</p><h2>The wider record includes unfinished answers.</h2>
+        <p className="eyebrow">14 · Other documented investigations</p><h2>The wider record includes unfinished answers.</h2>
         <div className={styles.records}>{leadPlaceRecords.filter(record => record.id !== "east-ferry").map(record => <article className={styles.record} id={record.id} key={record.id}>
           <p className={styles.status}>{record.status}</p><h3>{record.name}</h3><p className={styles.location}>{record.location}</p>
           <p>{record.finding}</p><p>{record.response}</p><p className={styles.limit}>{record.limit}</p><Source source={record.source} />
@@ -120,37 +127,37 @@ export default function LeadResearchPage() {
         </details>
       </section>
       <section id="one-house" className={styles.section}>
-        <p className="eyebrow">14 · One house, several generations of lead</p><h2>Where did the lead come from?</h2>
+        <p className="eyebrow">15 · One house, several generations of lead</p><h2>Where did the lead come from?</h2>
         <p>Several pathways can overlap at an older property. This schematic explains possibilities; it is not a diagnosis of any Buffalo address.</p>
         <figure className={styles.houseFigure}>
           <svg viewBox="0 0 840 490" role="img" aria-labelledby="house-title house-description">
-            <title id="house-title">An older house and possible lead pathways</title><desc id="house-description">Exterior and window-frame paint can produce dust. Soil can contain paint flakes, historical traffic deposition or locally documented industrial waste. A service line runs from the street water main to the house.</desc>
+            <title id="house-title">An older house and possible lead pathways</title><desc id="house-description">Exterior and window-frame paint can produce dust. Soil can contain paint flakes, historical traffic deposition, garden pesticide residues or locally documented industrial waste. A service line runs from the street water main to the house.</desc>
             <path d="M250 170 L420 65 L590 170" fill="none" stroke="currentColor" strokeWidth="9" />
             <path d="M275 160 V370 H565 V160" fill="var(--paper)" stroke="currentColor" strokeWidth="5" />
             <path d="M380 370 V260 H450 V370 M310 210 H360 V270 H310 Z M480 210 H530 V270 H480 Z M310 240 H360 M505 210 V270" fill="none" stroke="currentColor" strokeWidth="4" />
             <path d="M40 375 H800" stroke="var(--moss)" strokeWidth="5" /><path d="M45 425 H380 V370" stroke="var(--rust)" strokeWidth="8" fill="none" />
             <path d="M690 340 H790 M715 325 H765 L778 340 M730 340 V375" fill="none" stroke="currentColor" strokeWidth="4" />
-            <g fontSize="17" fill="currentColor"><text x="50" y="105">Exterior paint</text><text x="50" y="129">and weathering</text><text x="625" y="180">Window friction</text><text x="625" y="204">and household dust</text><text x="60" y="305">Yard soil:</text><text x="60" y="329">paint + past deposition</text><text x="615" y="295">Historical exhaust</text><text x="55" y="462">Street main → service line → household plumbing</text></g>
+            <g fontSize="17" fill="currentColor"><text x="50" y="105">Exterior paint</text><text x="50" y="129">and weathering</text><text x="625" y="180">Window friction</text><text x="625" y="204">and household dust</text><text x="60" y="305">Yard soil:</text><text x="60" y="329">paint + deposition</text><text x="60" y="353">+ past garden pesticides</text><text x="615" y="295">Historical exhaust</text><text x="55" y="462">Street main → service line → household plumbing</text></g>
             <g stroke="var(--rust)" strokeWidth="2" fill="none"><path d="M180 123 L275 195" /><path d="M620 197 L530 237" /><path d="M195 338 L230 375" /><path d="M707 301 L734 320" /></g>
           </svg><figcaption>Lead regulation changed faster than the built environment.</figcaption>
         </figure>
         <div id="pathways" className={styles.pathwayGrid}>{pathways.map(item => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p><Source source={item.source} /></article>)}</div>
       </section>
-      <section id="timeline" className={styles.section}><p className="eyebrow">15 · Decisions and their aftermath</p><h2>A long history. An unfinished removal.</h2>
+      <section id="timeline" className={styles.section}><p className="eyebrow">16 · Decisions and their aftermath</p><h2>A long history. An unfinished removal.</h2>
         <ol className={styles.timeline}>{leadTimeline.map(item => <li key={item.date}><span className={styles.timelineDate}>{item.date}</span><div><p>{item.text}</p><Source source={item.source} /></div></li>)}</ol>
       </section>
-      <section id="map" className={styles.section}><p className="eyebrow">16 · Industrial geography</p><h2>Explore the documented places.</h2><p>Atlas points identify records, not historic factory footprints, cleanup boundaries or exposure zones. Pratt & Lambert&apos;s point locates Tonawanda Street; West Avenue is separate. The Highland marker is Tract II, not the whole battery complex.</p><LeadHistoryMap points={mapPoints} /></section>
-      <section id="visual-record" className={styles.section}><p className="eyebrow">17 · Then and now in the documentary record</p><h2>Compare maps before drawing boundaries.</h2>
+      <section id="map" className={styles.section}><p className="eyebrow">17 · Industrial geography</p><h2>Explore the documented places.</h2><p>Atlas points identify records, not historic factory footprints, cleanup boundaries or exposure zones. Pratt & Lambert&apos;s point locates Tonawanda Street; West Avenue is separate. The Highland marker is Tract II, not the whole battery complex.</p><LeadHistoryMap points={mapPoints} /></section>
+      <section id="visual-record" className={styles.section}><p className="eyebrow">18 · Then and now in the documentary record</p><h2>Compare maps before drawing boundaries.</h2>
         <div className={styles.pathways}><article><h3>Elk Street</h3><p>Plate 6 locates historical paint operations. Compare it with the periodic review&apos;s modern cleanup plan; these are different boundaries.</p><Sources sources={[s.elk, s.elkReview]} /></article><article><h3>East Ferry</h3><p>Read DEC&apos;s excavation account beside Belmont&apos;s redevelopment listing. Housing followed remediation; the listing does not resolve every neighboring parcel.</p><Sources sources={[s.eastFerry, s.townhomes]} /></article><article><h3>Highland Avenue</h3><p>Compare Tract I&apos;s aerial layout with Tract II&apos;s remedy plan. A georeferenced overlay remains a research gap; no unverified image is represented as a parcel survey.</p><Sources sources={[s.tractI, s.tractII]} /></article></div>
       </section>
-      <section id="evidence" className={styles.section}><p className="eyebrow">18 · Sources, interpretation and open questions</p><h2>Keep the evidence attached to the claim.</h2>
+      <section id="evidence" className={styles.section}><p className="eyebrow">19 · Sources, interpretation and open questions</p><h2>Keep the evidence attached to the claim.</h2>
         <div className={styles.pathways}><article><h3>Documented fact</h3><p>A cited directory, investigation, legal record or audit states the finding. The Atlas preserves its date, scope and sample.</p></article><article><h3>Historical inference</h3><p>An interpretation connects documented conditions, such as unequal ability to repair housing. It does not establish an unrecorded factory formula or an individual&apos;s source of exposure.</p></article><article><h3>Research lead</h3><p>An unresolved company, parcel or process is a question to investigate. It is not counted as confirmed production, contamination or cleanup.</p></article></div>
         <p>Facility gaps appear with each property. Additional work remains on historical service-line specifications, early advocacy, later court dispositions and modern tenants at divided industrial parcels. Dated agency reuse accounts are identified as such.</p>
         <details className={styles.archive}><summary>Source and document directory</summary><div className={styles.sourceDirectory}>{Object.values(s).map(source => <Source key={source.url + source.label} source={source} />)}</div></details>
         <Link className={styles.source} href="/methodology">Atlas evidence methodology →</Link>
       </section>
       <section className={`${styles.section} ${styles.ending}`}><h2>Banning future use was easier than removing a century of what was already here.</h2>
-        <p>Buffalo&apos;s lead history belongs to buildings, soil and infrastructure as much as to closed factories. Paint stayed on windows. Industrial waste required excavation or lasting controls. Service lines remained connected to houses. Enforcement records and the 2026 audit show that prevention still depends on maintenance, inspection, disclosure and removal.</p>
+        <p>Buffalo&apos;s lead history belongs to buildings, soil and infrastructure as much as to closed factories. Paint stayed on windows. Pesticide applications left metals in some agricultural and garden soils. Industrial waste required excavation or lasting controls. Service lines remained connected to houses. Enforcement records and the 2026 audit show that prevention still depends on maintenance, inspection, disclosure and removal.</p>
         <p>The city inherited the material. The work now is to prevent that inheritance from becoming another child&apos;s exposure.</p><Sources sources={[s.home, s.elkReview, s.inventory, s.hud]} />
         <Link className={styles.source} href="/chemicals/lead">Lead exposure and effects profile →</Link>
       </section>

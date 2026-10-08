@@ -8,30 +8,70 @@
     {
       "record": "C915201B alternatives analysis, text revised May 2018",
       "method": "Public PDF downloaded and text extracted with pypdf",
-      "locators": ["section 2.1.3.2", "printed page 3-33", "Plate 6"],
-      "findings": ["Leaded gasoline stored 1952–1989", "Company records describe spreading leaded tank bottoms into tank yards", "SB-107 waste contains lead oxide/carbonate and discarded containers", "Report attributes these pigment wastes most likely to historical paint industries"],
-      "limits": ["Do not attribute every terminal contaminant to a paint manufacturer", "OU-2 East is not a single historic factory footprint"]
+      "locators": [
+        "section 2.1.3.2",
+        "printed page 3-33",
+        "Plate 6"
+      ],
+      "findings": [
+        "Leaded gasoline stored 1952–1989",
+        "Company records describe spreading leaded tank bottoms into tank yards",
+        "SB-107 waste contains lead oxide/carbonate and discarded containers",
+        "Report attributes these pigment wastes most likely to historical paint industries"
+      ],
+      "limits": [
+        "Do not attribute every terminal contaminant to a paint manufacturer",
+        "OU-2 East is not a single historic factory footprint"
+      ]
     },
     {
       "record": "C915201B periodic review, August 2024",
       "method": "Public PDF downloaded and text extracted with pypdf",
-      "locators": ["printed pages 4–5"],
-      "findings": ["33.45-acre managed area", "Mostly vacant parcels owned by 503 Elk Street LLC and ShotClub Social Buffalo LLC; separate Buckeye facilities", "Cover and stabilization remain under site management"],
-      "limits": ["Dated 2024 ownership/use, not independently verified 2026 occupancy"]
+      "locators": [
+        "printed pages 4–5"
+      ],
+      "findings": [
+        "33.45-acre managed area",
+        "Mostly vacant parcels owned by 503 Elk Street LLC and ShotClub Social Buffalo LLC; separate Buckeye facilities",
+        "Cover and stabilization remain under site management"
+      ],
+      "limits": [
+        "Dated 2024 ownership/use, not independently verified 2026 occupancy"
+      ]
     },
     {
       "record": "Tract I C932157 alternatives analysis, May 2014",
       "method": "Public PDF downloaded and text extracted with pypdf",
-      "locators": ["printed page 2, site introduction"],
-      "findings": ["U.S. Light & Heat around 1910, then Auto-Lite, then Prestolite in 1960s", "Battery filling, charging and hard-rubber case production", "1970s end of battery assembly followed by warehouse/auto-body uses"],
-      "limits": ["Tract I differs from adjacent Tract II 932136", "Tract II completion certificate is November 8, 2018", "Current occupants require parcel-level confirmation"]
+      "locators": [
+        "printed page 2, site introduction"
+      ],
+      "findings": [
+        "U.S. Light & Heat around 1910, then Auto-Lite, then Prestolite in 1960s",
+        "Battery filling, charging and hard-rubber case production",
+        "1970s end of battery assembly followed by warehouse/auto-body uses"
+      ],
+      "limits": [
+        "Tract I differs from adjacent Tract II 932136",
+        "Tract II completion certificate is November 8, 2018",
+        "Current occupants require parcel-level confirmation"
+      ]
     },
     {
       "record": "East Ferry final remediation report, March 2009",
       "method": "NYSDEC primary report read through web extraction",
-      "locators": ["sections 1.1–1.3, PDF pages 9–10"],
-      "findings": ["858 is the approximately 3.3-acre ash-disposal site", "856 is the adjacent smelting/casting property identified from 1939 Sanborn mapping", "Report describes a used-auto lot at 856 in its historical account"],
-      "limits": ["Do not label 856 an affordable-housing development", "DEC success story dates cleanup completion January 2008; final report publication is March 2009", "Belmont lists 30 True Bethel family townhomes, built 2013, at 858"]
+      "locators": [
+        "sections 1.1–1.3, PDF pages 9–10"
+      ],
+      "findings": [
+        "858 is the approximately 3.3-acre ash-disposal site",
+        "856 is the adjacent smelting/casting property identified from 1939 Sanborn mapping",
+        "Report describes a used-auto lot at 856 in its historical account"
+      ],
+      "limits": [
+        "Do not label 856 an affordable-housing development",
+        "DEC success story dates cleanup completion January 2008; final report publication is March 2009",
+        "Belmont lists 30 True Bethel family townhomes, built 2013, at 858"
+      ]
     }
   ],
   "importantCorrectionsToBrief": [
@@ -71,5 +111,38 @@
     "Industrial process chain",
     "Then-and-now structured table and documentary comparison links; georeferenced archival image overlays remain research gaps"
   ],
-  "preserved": ["Existing lead investigation records", "Separate water-line subpage and its program evidence", "Existing industrial site entries", "Unrelated working-tree changes"]
+  "preserved": [
+    "Existing lead investigation records",
+    "Separate water-line subpage and its program evidence",
+    "Existing industrial site entries",
+    "Unrelated working-tree changes"
+  ],
+  "gardenAndFarmAddition": {
+    "reviewedOn": "2026-10-07",
+    "verified": [
+      "ATSDR archived Historical Use of Lead Arsenate: U.S. apple orchards 1892; repeated use accumulated lead and arsenic in topsoil",
+      "WSU EB1884, PDF page 4: home gardens/orchards, lawns/golf greens; uneven residues around former trees",
+      "EPA HERO 1390861: 1983 Massachusetts former-orchard study abstract; no WNY extrapolation",
+      "USDA Miscellaneous Publication 525 (February 1944), printed pages 1–2: arsenical recommendations and residue warnings; bean entry warns against lead arsenate and Paris green",
+      "Niagara County 2018 farmland plan, printed page 2 / PDF page 6: reproduces Cornell 1909 approximately 24,190 apple acres and northern-half concentration",
+      "Cornell collection 21-29-1582 finding aid: box 3 folders 15 and 17 Erie/Niagara extension correspondence; box 1 folder 16 Erie survey",
+      "EPA Lead in Soil current guidance: test food-crop soils, clean raised beds, wash/peel produce; WSU soil guidance supports investigating both metals"
+    ],
+    "researchGaps": [
+      "No Buffalo/Erie Victory Garden lead-arsenate recommendation verified",
+      "Cornell correspondence folder contents not digitized/reviewed; finding aid establishes leads only",
+      "No parcel-level WNY former-orchard-to-subdivision overlay or pesticide-contamination determination completed",
+      "Nursery/vineyard/truck-farm history must not be treated as proof of lead-arsenate use",
+      "Supplied 1968 inventory has no identifiable citation supplied and was not used to extend lead-arsenate claims to all listed crops"
+    ],
+    "retrievalNotes": [
+      "Downloaded and extracted Niagara County 2018 plan and Cornell 1909 survey PDF. The 1909 scan yielded no usable pesticide text; acreage cited through the county reproduction.",
+      "Reviewed USDA 1944 handbook PDF through web extraction. WSU and EPA HERO source scopes preserved."
+    ],
+    "changes": [
+      "Added full garden/farm chapter, Victory Garden distinction and specific archival leads",
+      "Added pesticide exposure card, yard diagram labels, timeline entries, chapter navigation and metadata",
+      "No agricultural hazard markers added to industrial map"
+    ]
+  }
 }
