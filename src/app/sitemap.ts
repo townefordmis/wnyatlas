@@ -9,6 +9,8 @@ const BASE_URL = "https://www.wnyatlas.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const publicPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/research/lead`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/research/lead/buffalo-water-lines`, changeFrequency: "monthly", priority: 0.8 },
     {
       url: BASE_URL,
       changeFrequency: "weekly",

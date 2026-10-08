@@ -1,0 +1,45 @@
+{
+  "story": "/research/lead/buffalo-water-lines",
+  "reviewedOn": "2026-10-07",
+  "scope": "City of Buffalo / Buffalo Water; excludes Erie County Water Authority replacement totals",
+  "inventory": {
+    "url": "https://www.health.ny.gov/environmental/water/drinking/service_line/NY1400422.htm",
+    "certifiedOn": "2025-12-11",
+    "total": 76457,
+    "lead": 33600,
+    "galvanizedRequiringReplacement": 120,
+    "unknown": 35372,
+    "nonLead": 7365,
+    "limits": "Published material classifications, not tap-test results or a live remaining count. August 2024 footer is a template revision. Do not sum utility/customer segments or subtract earlier program counts. Unknown is not confirmed lead."
+  },
+  "milestones": [
+    { "date": "2019-07-22", "finding": "ROLL launch: 30 homes replaced since June; approximately 180 initially planned", "url": "https://www.buffalony.gov/m/newsflash/home/detail/429" },
+    { "date": "2024-06", "reportedIn": "2025", "finding": "ARPA expansion completed at more than 700 residential properties; $10 million initiative", "url": "https://www.buffalony.gov/DocumentCenter/View/15254/2025-SLFRF-Recovery-Plan-Performance-Reportcleaned", "locator": "Lead Service Line Replacement, ARP 5.12-21", "limit": "Expansion count, not all-time city total; do not add separately mentioned earlier 500 homes" },
+    { "date": "2025-11-12", "finding": "25 services replaced in October; board will stop accepting new no-cost ROLL applications", "url": "https://buffalowater.org/wp-content/uploads/2025/12/Buffalo-Water-Board-Meeting-Minutes-November-12-2025.pdf", "locator": "Printed page 2", "limit": "Not a finding that all replacement work stopped" },
+    { "date": "2026-02-18", "finding": "$1,092,000 federal funding announced for Buffalo lead service-line replacement", "url": "https://kennedy.house.gov/news/documentsingle.aspx?DocumentID=2367", "limit": "Award announcement, not completed replacements or proof general free applications reopened; broad 40,000–60,000 estimate not substituted for classified state inventory" }
+  ],
+  "monitoring": {
+    "period": "January–June 2025",
+    "finding": "82 of 100 required approved lead-and-copper samples submitted; monitoring violation",
+    "url": "https://buffalowater.org/wp-content/uploads/2026/06/2025-AWQR-Buffalo-Water-Final-5.29.2026.pdf",
+    "locator": "PDF page 5 (zero-based page 4)",
+    "limit": "Sampling shortfall is not itself evidence of an action-level exceedance"
+  },
+  "policyConflict": {
+    "url": "https://getwaterwisebuffalo.org/en/faq/",
+    "finding": "Undated FAQ describes no-cost replacement in certain circumstances; dated November 2025 minutes announce new-application cutoff",
+    "response": "Tell residents to confirm current eligibility, costs, scope and schedule; do not promise free replacements"
+  },
+  "history": {
+    "nationalPipeHistory": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2509614/",
+    "url": "https://buffalowater.org/quality/treatment/watertreatmenthistory/",
+    "finding": "1827 wooden-pipe beginnings; 1852 river pumping; 1868 city purchase; 1913 Lake Erie intake; 1914 chlorination; 1926 treatment plant",
+    "limit": "System milestones do not establish installation dates or manufacturers of current lead service lines"
+  },
+  "healthSources": [
+    "https://www.cdc.gov/lead-prevention/about/index.html",
+    "https://www.cdc.gov/lead-prevention/symptoms-complications/index.html",
+    "https://www.epa.gov/ground-water-and-drinking-water/basic-information-about-lead-drinking-water"
+  ],
+  "healthLimits": "No safe childhood blood-lead level. No conversion of pipe counts into child exposure, blood-lead levels or predicted developmental outcomes."
+}

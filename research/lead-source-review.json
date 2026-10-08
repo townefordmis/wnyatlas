@@ -1,0 +1,40 @@
+{
+  "reviewDate": "2026-10-07",
+  "scope": "Historical lead locations added to /research/lead; no new surveyed boundaries or current-risk findings",
+  "records": [
+    {
+      "id": "cornell-niagara-white-lead",
+      "supported": ["1859 directory listing at Delaware and Virginia", "1887 Cornell works and named lead products at the same intersection"],
+      "sources": ["https://ldsgenealogy.com/NY/books/The-Commercial-Advertiser-Directory-for-the-City-of-Buffalo-etc-1859-part-49.htm", "https://upload.wikimedia.org/wikipedia/commons/7/7e/Cornell_University_Library_digitization_%28IA_cu31924068919434%29.pdf"],
+      "limits": ["Exact factory parcels not reconstructed", "No address-specific cleanup established by these sources", "1889 demolition and later housing claims not added", "Later National Lead/Cornell entries not assumed to represent this footprint"]
+    },
+    {
+      "id": "buffalo-white-lead-works",
+      "supported": ["1859 White Lead Factories listing at Sixth and Georgia"],
+      "sources": ["https://ldsgenealogy.com/NY/books/The-Commercial-Advertiser-Directory-for-the-City-of-Buffalo-etc-1859-part-49.htm"],
+      "limits": ["No modern address or footprint inferred", "Listing is not environmental sampling or cleanup evidence"]
+    },
+    {
+      "id": "reliance-lead",
+      "supported": ["Historical-smelter table entry 31", "EPA address 399 GENNESSEE ST", "EPA NYN000206596 removal referral", "2017 Appendix A referral to cleanup program, PDF page 50"],
+      "sources": ["https://www.researchgate.net/publication/273666591_April_2003_updated_tables", "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206596", "https://semspub.epa.gov/work/HQ/100000189.pdf"],
+      "limits": ["397 versus 399 variants not resolved into a parcel range", "Referral does not establish remedy completion"]
+    },
+    {
+      "id": "magnus-metals",
+      "supported": ["Historical-smelter table entry 33 lists 779 Walden, Depew (Buffalo)", "2017 EPA Appendix A lists NYN000206594 as No Further Superfund Interest / not a valid site or incident, PDF page 33"],
+      "sources": ["https://www.researchgate.net/publication/273666591_April_2003_updated_tables", "https://semspub.epa.gov/work/HQ/100000189.pdf"],
+      "limits": ["Historical geography and address need reconciliation", "Not presented as a confirmed smelter hazard", "No interpretation of EP decision code added without underlying assessment"]
+    },
+    {
+      "id": "lake-erie-fillmore",
+      "supported": ["April 30, 2020 POLREP 6 explicitly documents relocation to 127 Fillmore", "Same report establishes the Superior Street footprint in Towne Gardens and removal mobilization in September 2019 with resumed excavation in April 2020"],
+      "sources": ["https://semspub.epa.gov/work/02/607028.pdf"],
+      "limits": ["Superior Street results do not transfer to Fillmore", "2020 work-in-progress report is not final completion evidence", "No current conditions inferred"]
+    }
+  ],
+  "context": {
+    "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC1446633/", "https://www.epa.gov/history/origins-epa", "https://www.epa.gov/superfund/superfund-cercla-overview"],
+    "limits": ["2001 study's ten sampled sites are not a representative sample of these WNY properties", "1970 and 1980 federal milestones do not imply absence of all earlier regulation", "Historical operation, measured contamination, exposure, and cleanup are separate findings"]
+  }
+}

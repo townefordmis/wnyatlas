@@ -97,6 +97,14 @@ export default async function ChemicalPage({ params }: ChemicalPageProps) {
 
         <div className="chemical-profile-layout">
           <div>
+            {chemical.id === "lead" && (
+              <section>
+                <p className="eyebrow">Western New York investigation</p>
+                <h2>Lead in industry, homes, and soil</h2>
+                <p>Read the source-checked regional section for documented local findings, historical cleanup, and the limits of each record.</p>
+                <Link href="/research/lead">Explore Lead in Western New York →</Link>
+              </section>
+            )}
             {chemical.regionalHistory && (
               <section>
                 <p className="eyebrow">Regional record</p>
