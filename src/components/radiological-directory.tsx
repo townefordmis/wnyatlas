@@ -39,6 +39,8 @@ export function RadiologicalDirectory({ entries }: { entries: RadiologicalDirect
         <p>Find a place, read its story, and follow the evidence. This collection includes industrial history, completed cleanups and unresolved investigations. Inclusion does not mean a place presents a current radiation risk.</p>
       </div>
       <nav className="radiological-directory-tools" aria-label="Radiological research tools">
+        <Link className="radiological-news-button" href="/research/radiological/news">Latest radiological news →</Link>
+        <Link className="radiological-news-button" href="/research/radiological/1979-pine-bowl-dossier">Pine Bowl / bowling alley →</Link>
         <a href="#radiological-map">Explore the map →</a>
         <a href="#current-status">Investigation updates →</a>
         <a href="#radiological-archive">Browse source documents →</a>

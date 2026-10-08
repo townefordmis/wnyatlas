@@ -3870,6 +3870,22 @@ footer {
   padding: 1.5rem 0;
 }
 
+.radiological-directory-tools .radiological-news-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.85rem 1.1rem;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.radiological-news-button:hover,
+.radiological-news-button:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 3px;
+}
+
 .radiological-directory-search {
   display: grid;
   gap: 0.6rem;
