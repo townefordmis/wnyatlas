@@ -1720,7 +1720,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Erie",
     category: "cleanup",
     summary:
-      "Seven-and-a-half-acre former foundry property carried through New York's Brownfield Cleanup Program. Its story connects metal casting, industrial fill, cleanup controls, and reuse in the Buffalo–Cheektowaga industrial belt.",
+      "Seven-and-a-half-acre former foundry at 3241 Walden Avenue. DEC traces Buffalo Brass, Magnus Metal, Empire Smelting and National Lead operations here. A completed Brownfield remedy retained lead-bearing material under engineered controls and restricted reuse.",
     evidenceStatus: "well-documented",
     coordinates: [-78.70027906069848, 42.91119522314418],
     newsEvents: [
@@ -1742,6 +1742,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       },
     ],
     sources: [
+      { title: "NL Industries Decision Document (June 2005), pages 3–4: operator history", publisher: "NYSDEC", url: "https://extapps.dec.ny.gov/data/DecDocs/C915200/Report.BCP.C915200.2005-06-01.NLI-Decision-Document.pdf" },
       {
         title: "Former NL Industries Foundry Site Documents",
         publisher: "New York State Department of Environmental Conservation",

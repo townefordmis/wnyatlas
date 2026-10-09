@@ -1,0 +1,572 @@
+[
+  {
+    "layer": 2,
+    "url": "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/2/query?where=%28COUNTY+%3D+%27Erie%27+OR+COUNTY+%3D+%27Niagara%27%29+AND+%28UPPER%28SITENAME%29+LIKE+%27%25LUMEN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25LUMAN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25CORNELL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25WHITE+LEAD%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25RELIANCE%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25MAGNUS%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25MERIT%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25NIAGARA+METAL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25GREENFIELD%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25WHITE+METAL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25ELECTRO+REFRA%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25HAYMAN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25HEYMAN%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25LATHROP%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25FILLMORE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25HOWARD%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25STONE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25ELMWOOD%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25WALDEN%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25DELAWARE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25GEORGIA%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25VIRGINIA%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25OAK%25%27%29&outFields=SITECODE%2CSITENAME%2CADDRESS1%2CLOCALITY%2CCOUNTY%2CSITECLASS%2CDOC_URL%2CDETAIL_URL&returnGeometry=false&f=json&resultRecordCount=2000",
+    "where": "(COUNTY = 'Erie' OR COUNTY = 'Niagara') AND (UPPER(SITENAME) LIKE '%LUMEN%' OR UPPER(SITENAME) LIKE '%LUMAN%' OR UPPER(SITENAME) LIKE '%CORNELL%' OR UPPER(SITENAME) LIKE '%WHITE LEAD%' OR UPPER(SITENAME) LIKE '%RELIANCE%' OR UPPER(SITENAME) LIKE '%MAGNUS%' OR UPPER(SITENAME) LIKE '%MERIT%' OR UPPER(SITENAME) LIKE '%NIAGARA METAL%' OR UPPER(SITENAME) LIKE '%GREENFIELD%' OR UPPER(SITENAME) LIKE '%WHITE METAL%' OR UPPER(SITENAME) LIKE '%ELECTRO REFRA%' OR UPPER(SITENAME) LIKE '%HAYMAN%' OR UPPER(SITENAME) LIKE '%HEYMAN%' OR UPPER(ADDRESS1) LIKE '%LATHROP%' OR UPPER(ADDRESS1) LIKE '%FILLMORE%' OR UPPER(ADDRESS1) LIKE '%HOWARD%' OR UPPER(ADDRESS1) LIKE '%STONE%' OR UPPER(ADDRESS1) LIKE '%ELMWOOD%' OR UPPER(ADDRESS1) LIKE '%WALDEN%' OR UPPER(ADDRESS1) LIKE '%DELAWARE%' OR UPPER(ADDRESS1) LIKE '%GEORGIA%' OR UPPER(ADDRESS1) LIKE '%VIRGINIA%' OR UPPER(ADDRESS1) LIKE '%OAK%')",
+    "response": {
+      "displayFieldName": "SITENAME",
+      "fieldAliases": {
+        "SITECODE": "SITECODE",
+        "SITENAME": "SITENAME",
+        "ADDRESS1": "ADDRESS1",
+        "LOCALITY": "LOCALITY",
+        "COUNTY": "COUNTY",
+        "SITECLASS": "SITECLASS",
+        "DOC_URL": "DOC_URL",
+        "DETAIL_URL": "DETAIL_URL"
+      },
+      "fields": [
+        {
+          "name": "SITECODE",
+          "type": "esriFieldTypeString",
+          "alias": "SITECODE",
+          "length": 8
+        },
+        {
+          "name": "SITENAME",
+          "type": "esriFieldTypeString",
+          "alias": "SITENAME",
+          "length": 80
+        },
+        {
+          "name": "ADDRESS1",
+          "type": "esriFieldTypeString",
+          "alias": "ADDRESS1",
+          "length": 50
+        },
+        {
+          "name": "LOCALITY",
+          "type": "esriFieldTypeString",
+          "alias": "LOCALITY",
+          "length": 30
+        },
+        {
+          "name": "COUNTY",
+          "type": "esriFieldTypeString",
+          "alias": "COUNTY",
+          "length": 26
+        },
+        {
+          "name": "SITECLASS",
+          "type": "esriFieldTypeString",
+          "alias": "SITECLASS",
+          "length": 2
+        },
+        {
+          "name": "DOC_URL",
+          "type": "esriFieldTypeString",
+          "alias": "DOC_URL",
+          "length": 100
+        },
+        {
+          "name": "DETAIL_URL",
+          "type": "esriFieldTypeString",
+          "alias": "DETAIL_URL",
+          "length": 100
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "SITECODE": "C915343",
+            "SITENAME": "1395 Delaware Avenue Site",
+            "ADDRESS1": "1395 Delaware Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "A",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915343",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915343"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "932010",
+            "SITENAME": "Lockport City Landfill",
+            "ADDRESS1": "Oakhurst Road",
+            "LOCALITY": "Lockport",
+            "COUNTY": "Niagara",
+            "SITECLASS": "04",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/932010",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=932010"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915366",
+            "SITENAME": "Ellicott and Oak Streets Site",
+            "ADDRESS1": "324, 328, and 334 North Oak St and 441 Ellicott St",
+            "LOCALITY": "Bufalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "A",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915366",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915366"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915373",
+            "SITENAME": "1984 Elmwood Avenue Site",
+            "ADDRESS1": "1984 Elmwood Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "A",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915373",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915373"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915394",
+            "SITENAME": "1803 Elmwood Avenue",
+            "ADDRESS1": "1803 Elmwood Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "A",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915394",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915394"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915395",
+            "SITENAME": "22 Fillmore Avenue",
+            "ADDRESS1": "22 Fillmore Avenue",
+            "LOCALITY": "Tonawanda",
+            "COUNTY": "Erie",
+            "SITECLASS": "A",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915395",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915395"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "layer": 3,
+    "url": "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/3/query?where=%28COUNTY+%3D+%27Erie%27+OR+COUNTY+%3D+%27Niagara%27%29+AND+%28UPPER%28SITENAME%29+LIKE+%27%25LUMEN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25LUMAN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25CORNELL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25WHITE+LEAD%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25RELIANCE%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25MAGNUS%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25MERIT%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25NIAGARA+METAL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25GREENFIELD%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25WHITE+METAL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25ELECTRO+REFRA%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25HAYMAN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25HEYMAN%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25LATHROP%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25FILLMORE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25HOWARD%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25STONE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25ELMWOOD%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25WALDEN%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25DELAWARE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25GEORGIA%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25VIRGINIA%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25OAK%25%27%29&outFields=SITECODE%2CSITENAME%2CADDRESS1%2CLOCALITY%2CCOUNTY%2CSITECLASS%2CDOC_URL%2CDETAIL_URL&returnGeometry=false&f=json&resultRecordCount=2000",
+    "where": "(COUNTY = 'Erie' OR COUNTY = 'Niagara') AND (UPPER(SITENAME) LIKE '%LUMEN%' OR UPPER(SITENAME) LIKE '%LUMAN%' OR UPPER(SITENAME) LIKE '%CORNELL%' OR UPPER(SITENAME) LIKE '%WHITE LEAD%' OR UPPER(SITENAME) LIKE '%RELIANCE%' OR UPPER(SITENAME) LIKE '%MAGNUS%' OR UPPER(SITENAME) LIKE '%MERIT%' OR UPPER(SITENAME) LIKE '%NIAGARA METAL%' OR UPPER(SITENAME) LIKE '%GREENFIELD%' OR UPPER(SITENAME) LIKE '%WHITE METAL%' OR UPPER(SITENAME) LIKE '%ELECTRO REFRA%' OR UPPER(SITENAME) LIKE '%HAYMAN%' OR UPPER(SITENAME) LIKE '%HEYMAN%' OR UPPER(ADDRESS1) LIKE '%LATHROP%' OR UPPER(ADDRESS1) LIKE '%FILLMORE%' OR UPPER(ADDRESS1) LIKE '%HOWARD%' OR UPPER(ADDRESS1) LIKE '%STONE%' OR UPPER(ADDRESS1) LIKE '%ELMWOOD%' OR UPPER(ADDRESS1) LIKE '%WALDEN%' OR UPPER(ADDRESS1) LIKE '%DELAWARE%' OR UPPER(ADDRESS1) LIKE '%GEORGIA%' OR UPPER(ADDRESS1) LIKE '%VIRGINIA%' OR UPPER(ADDRESS1) LIKE '%OAK%')",
+    "response": {
+      "displayFieldName": "SITENAME",
+      "fieldAliases": {
+        "SITECODE": "SITECODE",
+        "SITENAME": "SITENAME",
+        "ADDRESS1": "ADDRESS1",
+        "LOCALITY": "LOCALITY",
+        "COUNTY": "COUNTY",
+        "SITECLASS": "SITECLASS",
+        "DOC_URL": "DOC_URL",
+        "DETAIL_URL": "DETAIL_URL"
+      },
+      "fields": [
+        {
+          "name": "SITECODE",
+          "type": "esriFieldTypeString",
+          "alias": "SITECODE",
+          "length": 8
+        },
+        {
+          "name": "SITENAME",
+          "type": "esriFieldTypeString",
+          "alias": "SITENAME",
+          "length": 80
+        },
+        {
+          "name": "ADDRESS1",
+          "type": "esriFieldTypeString",
+          "alias": "ADDRESS1",
+          "length": 50
+        },
+        {
+          "name": "LOCALITY",
+          "type": "esriFieldTypeString",
+          "alias": "LOCALITY",
+          "length": 30
+        },
+        {
+          "name": "COUNTY",
+          "type": "esriFieldTypeString",
+          "alias": "COUNTY",
+          "length": 26
+        },
+        {
+          "name": "SITECLASS",
+          "type": "esriFieldTypeString",
+          "alias": "SITECLASS",
+          "length": 2
+        },
+        {
+          "name": "DOC_URL",
+          "type": "esriFieldTypeString",
+          "alias": "DOC_URL",
+          "length": 100
+        },
+        {
+          "name": "DETAIL_URL",
+          "type": "esriFieldTypeString",
+          "alias": "DETAIL_URL",
+          "length": 100
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "SITECODE": "915060",
+            "SITENAME": "NYS Thruway Exit 52",
+            "ADDRESS1": "Exit 52 (Walden Ave) Interchange",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": null,
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915060"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "B00171",
+            "SITENAME": "UST Removal and Site Remediation",
+            "ADDRESS1": "1071 Walden Avenue opposite Pine Ridge Road",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/B00171",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=B00171"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915214",
+            "SITENAME": "200 Delaware Ave Project",
+            "ADDRESS1": "200 Delaware Ave",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915214",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915214"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "B00170",
+            "SITENAME": "Env. Site Assess. - 1279 Walden Ave.",
+            "ADDRESS1": "1279 Walden Avenue opposite Pine Ridge Road",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": null,
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=B00170"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "915250",
+            "SITENAME": "Buffalo Tin Plating",
+            "ADDRESS1": "194 Oak Street",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": null,
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915250"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "V00353",
+            "SITENAME": "NL Industries Site",
+            "ADDRESS1": "3241 Walden Avenue",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/V00353",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00353"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "B00169",
+            "SITENAME": "UST Removal and Contaminated Soil Remedi",
+            "ADDRESS1": "1281 Walden Ave opposite Pine Ridge Road",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": null,
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=B00169"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "915030",
+            "SITENAME": "Hartwell Street Landfill / Atlas Steel",
+            "ADDRESS1": "1963 Elmwood Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/915030",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915030"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915388",
+            "SITENAME": "Simon Properties Northeast",
+            "ADDRESS1": "264 Oak Street",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "N",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915388",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915388"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "layer": 4,
+    "url": "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_clean_up/MapServer/4/query?where=%28COUNTY+%3D+%27Erie%27+OR+COUNTY+%3D+%27Niagara%27%29+AND+%28UPPER%28SITENAME%29+LIKE+%27%25LUMEN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25LUMAN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25CORNELL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25WHITE+LEAD%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25RELIANCE%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25MAGNUS%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25MERIT%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25NIAGARA+METAL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25GREENFIELD%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25WHITE+METAL%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25ELECTRO+REFRA%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25HAYMAN%25%27+OR+UPPER%28SITENAME%29+LIKE+%27%25HEYMAN%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25LATHROP%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25FILLMORE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25HOWARD%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25STONE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25ELMWOOD%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25WALDEN%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25DELAWARE%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25GEORGIA%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25VIRGINIA%25%27+OR+UPPER%28ADDRESS1%29+LIKE+%27%25OAK%25%27%29&outFields=SITECODE%2CSITENAME%2CADDRESS1%2CLOCALITY%2CCOUNTY%2CSITECLASS%2CDOC_URL%2CDETAIL_URL&returnGeometry=false&f=json&resultRecordCount=2000",
+    "where": "(COUNTY = 'Erie' OR COUNTY = 'Niagara') AND (UPPER(SITENAME) LIKE '%LUMEN%' OR UPPER(SITENAME) LIKE '%LUMAN%' OR UPPER(SITENAME) LIKE '%CORNELL%' OR UPPER(SITENAME) LIKE '%WHITE LEAD%' OR UPPER(SITENAME) LIKE '%RELIANCE%' OR UPPER(SITENAME) LIKE '%MAGNUS%' OR UPPER(SITENAME) LIKE '%MERIT%' OR UPPER(SITENAME) LIKE '%NIAGARA METAL%' OR UPPER(SITENAME) LIKE '%GREENFIELD%' OR UPPER(SITENAME) LIKE '%WHITE METAL%' OR UPPER(SITENAME) LIKE '%ELECTRO REFRA%' OR UPPER(SITENAME) LIKE '%HAYMAN%' OR UPPER(SITENAME) LIKE '%HEYMAN%' OR UPPER(ADDRESS1) LIKE '%LATHROP%' OR UPPER(ADDRESS1) LIKE '%FILLMORE%' OR UPPER(ADDRESS1) LIKE '%HOWARD%' OR UPPER(ADDRESS1) LIKE '%STONE%' OR UPPER(ADDRESS1) LIKE '%ELMWOOD%' OR UPPER(ADDRESS1) LIKE '%WALDEN%' OR UPPER(ADDRESS1) LIKE '%DELAWARE%' OR UPPER(ADDRESS1) LIKE '%GEORGIA%' OR UPPER(ADDRESS1) LIKE '%VIRGINIA%' OR UPPER(ADDRESS1) LIKE '%OAK%')",
+    "response": {
+      "displayFieldName": "SITENAME",
+      "fieldAliases": {
+        "SITECODE": "SITECODE",
+        "SITENAME": "SITENAME",
+        "ADDRESS1": "ADDRESS1",
+        "LOCALITY": "LOCALITY",
+        "COUNTY": "COUNTY",
+        "SITECLASS": "SITECLASS",
+        "DOC_URL": "DOC_URL",
+        "DETAIL_URL": "DETAIL_URL"
+      },
+      "fields": [
+        {
+          "name": "SITECODE",
+          "type": "esriFieldTypeString",
+          "alias": "SITECODE",
+          "length": 8
+        },
+        {
+          "name": "SITENAME",
+          "type": "esriFieldTypeString",
+          "alias": "SITENAME",
+          "length": 80
+        },
+        {
+          "name": "ADDRESS1",
+          "type": "esriFieldTypeString",
+          "alias": "ADDRESS1",
+          "length": 50
+        },
+        {
+          "name": "LOCALITY",
+          "type": "esriFieldTypeString",
+          "alias": "LOCALITY",
+          "length": 30
+        },
+        {
+          "name": "COUNTY",
+          "type": "esriFieldTypeString",
+          "alias": "COUNTY",
+          "length": 26
+        },
+        {
+          "name": "SITECLASS",
+          "type": "esriFieldTypeString",
+          "alias": "SITECLASS",
+          "length": 2
+        },
+        {
+          "name": "DOC_URL",
+          "type": "esriFieldTypeString",
+          "alias": "DOC_URL",
+          "length": 100
+        },
+        {
+          "name": "DETAIL_URL",
+          "type": "esriFieldTypeString",
+          "alias": "DETAIL_URL",
+          "length": 100
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "SITECODE": "915022",
+            "SITENAME": "Ernst Steel",
+            "ADDRESS1": "1728-1746 Walden Avenue",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/915022",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915022"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "915137",
+            "SITENAME": "Pyramid Company",
+            "ADDRESS1": "North of Walden Ave., West of I-90",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": null,
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915137"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915271",
+            "SITENAME": "250 Delaware Avenue Site",
+            "ADDRESS1": "250 Delaware Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915271",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915271"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915279",
+            "SITENAME": "1827 Fillmore Avenue",
+            "ADDRESS1": "1827 Fillmore Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915279",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915279"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915333",
+            "SITENAME": "11075 Walden Avenue",
+            "ADDRESS1": "11075 Walden Avenue",
+            "LOCALITY": "Alden",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915333",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915333"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915200",
+            "SITENAME": "Former NL Industries Foundry",
+            "ADDRESS1": "3241 Walden Avenue",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915200",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915200"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915288",
+            "SITENAME": "905 Elmwood Avenue Site",
+            "ADDRESS1": "905 Elmwood Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915288",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915288"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915314",
+            "SITENAME": "MOD-PAC CORP.",
+            "ADDRESS1": "1801 Elmwood Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915314",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915314"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915319",
+            "SITENAME": "1111 Elmwood Avenue",
+            "ADDRESS1": "1111 Elmwood Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915319",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915319"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "V00410",
+            "SITENAME": "Former Dowell Facility",
+            "ADDRESS1": "3311-3313 Walden Ave",
+            "LOCALITY": "Depew",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/V00410",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00410"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "V00379",
+            "SITENAME": "Envirotek 1",
+            "ADDRESS1": "153 Fillmore Avenue",
+            "LOCALITY": "Tonawanda",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/V00379",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=V00379"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915308",
+            "SITENAME": "Pierce Arrow",
+            "ADDRESS1": "1695, 1721 and 1723 Elmwood Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915308",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915308"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "915138",
+            "SITENAME": "Delavan Industries",
+            "ADDRESS1": "1722 and 1728 Walden Avenue",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/915138",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=915138"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915334",
+            "SITENAME": "441 Elmwood Avenue",
+            "ADDRESS1": "443 Elmwood Avenue",
+            "LOCALITY": "Buffalo",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": "https://extapps.dec.ny.gov/data/DecDocs/C915334",
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915334"
+          }
+        },
+        {
+          "attributes": {
+            "SITECODE": "C915200A",
+            "SITENAME": "Former NL Industries Foundry - OFF-SITE",
+            "ADDRESS1": "3241 Walden Avenue",
+            "LOCALITY": "Cheektowaga",
+            "COUNTY": "Erie",
+            "SITECLASS": "C",
+            "DOC_URL": null,
+            "DETAIL_URL": "https://appfactory.dec.ny.gov/DERExternalSearch/ERDDetails?SiteCode=C915200A"
+          }
+        }
+      ]
+    }
+  }
+]

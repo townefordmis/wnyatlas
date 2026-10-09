@@ -1,0 +1,50 @@
+[
+  {
+    "name": "lumen-polrep",
+    "url": "https://response.epa.gov/site/sitrep_profile.aspx?site_id=11718&counter=27353",
+    "result": "retrieved",
+    "bytes": 71546
+  },
+  {
+    "name": "lumen-sitreps",
+    "url": "https://response.epa.gov/site/sitrep_list.aspx?site_id=11718",
+    "result": "retrieved",
+    "bytes": 49018
+  },
+  {
+    "name": "reliance",
+    "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206596",
+    "result": "retrieved",
+    "bytes": 17004
+  },
+  {
+    "name": "merit",
+    "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206588",
+    "result": "retrieved",
+    "bytes": 14206
+  },
+  {
+    "name": "niagara-metal",
+    "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206589",
+    "result": "retrieved",
+    "bytes": 14206
+  },
+  {
+    "name": "national-lead",
+    "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206595",
+    "result": "retrieved",
+    "bytes": 14206
+  },
+  {
+    "name": "electro",
+    "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206656",
+    "result": "retrieved",
+    "bytes": 14206
+  },
+  {
+    "name": "magnus",
+    "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206594",
+    "result": "retrieved",
+    "bytes": 14206
+  }
+]

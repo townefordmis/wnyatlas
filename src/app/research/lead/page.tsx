@@ -48,7 +48,7 @@ export default function LeadResearchPage() {
       <p>Paint, gasoline, garden pesticides, pipes, smelters and batteries embedded lead in Western New York&apos;s homes, soil and infrastructure for generations. Each use solved a practical problem. Each left a legacy that outlived the product—and often the industry.</p>
       <p>What changed was our understanding of how little exposure could injure a child&apos;s developing brain. Buffalo&apos;s lead history connects the decisions that put the metal into the city with the unfinished work of removing its hazards.</p>
       <Sources sources={[s.history, s.health, s.elk, s.inventory, s.eastFerry, s.hud]} />
-      <p className={styles.reviewed}>Research reviewed October 7, 2026 · Findings, inventories and legal outcomes retain their own dates</p>
+      <p className={styles.reviewed}>Research reviewed October 7, 2026 · Historical-site follow-up October 9, 2026 · Findings retain their own dates</p>
       <div className={styles.heroFacts}>
         <a href="#water"><strong>33,600</strong><span>identified lead service lines<br />December 2025 inventory</span></a>
         <a href="#industrial-sites"><strong>136,234 tons</strong><span>lead-contaminated soil removed<br />East Ferry cleanup</span></a>
@@ -117,7 +117,7 @@ export default function LeadResearchPage() {
         <p className="eyebrow">14 · Other documented investigations</p><h2>The wider record includes unfinished answers.</h2>
         <div className={styles.records}>{leadPlaceRecords.filter(record => record.id !== "east-ferry").map(record => <article className={styles.record} id={record.id} key={record.id}>
           <p className={styles.status}>{record.status}</p><h3>{record.name}</h3><p className={styles.location}>{record.location}</p>
-          <p>{record.finding}</p><p>{record.response}</p><p className={styles.limit}>{record.limit}</p><Source source={record.source} />
+          <p>{record.finding}</p><p>{record.response}</p><p className={styles.limit}>{record.limit}</p><Sources sources={"sources" in record ? record.sources : [record.source]} />
         </article>)}</div>
         <details id="historical-sites" className={styles.archive}><summary>Earlier factories and historical-smelter research records</summary>
           <p>These existing Atlas records preserve period listings and agency decisions. Unverified factory footprints are not given map pins.</p>

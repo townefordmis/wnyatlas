@@ -1,0 +1,153 @@
+{
+  "reviewed": "2026-10-09",
+  "scope": "Historical lead-site follow-up; partial investigation",
+  "completed": [
+    "Full EPA September 2017 report Appendix A read; relevant rows PDF pages 33,36,50 and code key page55",
+    "EPA Lumen profile, final POLREP and 2014 sampling PDF retrieved",
+    "EPA profiles retrieved for Reliance, Greenfield, White Metal, Continental; exact profile lookups for five other entries returned no site found",
+    "DEC current GIS active/no-action/closed layers 2/3/4 queried for Erie/Niagara using saved name/address SQL; results retained as candidates, not automatically matched",
+    "DEC C915200 decision, completion fact sheet and document index reviewed",
+    "Erie parcel address query; exact Buffalo matches filtered from broad returned candidates",
+    "1943 Federal Register PDF printed page83 verified by local PDF extraction"
+  ],
+  "not_completed": [
+    "Sanborn footprint reconstruction and street renumbering",
+    "Full EPA ECHO search",
+    "Comprehensive municipal brownfield search",
+    "Underlying federal screening and assessment files for all entries",
+    "Current engineering-control compliance",
+    "Priority 3 broader industries"
+  ],
+  "failed_or_limited": [
+    {
+      "source": "Old DEC der/RemediationSpills/MapServer endpoint",
+      "result": "Service not found; replaced by dil/dil_clean_up endpoint; not a negative site result"
+    },
+    {
+      "source": "LOC collection JSON",
+      "result": "HTTP403; maps not inspected"
+    },
+    {
+      "source": "ResearchGate updated tables",
+      "result": "Full view unavailable; search excerpts not treated as fully verified history"
+    },
+    {
+      "source": "EPA profile lookups 0206588,0206589,0206594,0206595,0206656",
+      "result": "No site found response; 2017 records retained, no clean-soil inference"
+    }
+  ],
+  "primary_sources": {
+    "lumenFinal": {
+      "label": "EPA · Lumen final POLREP (September 19, 2016), sections 2.1–2.2",
+      "url": "https://response.epa.gov/site/sitrep_profile.aspx?site_id=11718&counter=27353"
+    },
+    "greenfield": {
+      "label": "EPA · Samuel Greenfield, NYN000206597",
+      "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206597"
+    },
+    "whiteMetal": {
+      "label": "EPA · Buffalo White Metal / Harry Fox, NYN000206622",
+      "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206622"
+    },
+    "continental": {
+      "label": "EPA · Niagara Falls Smelting / Continental Copper, NYN000206592",
+      "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206592"
+    },
+    "nlDecision": {
+      "label": "NYSDEC · NL Industries decision document (June 2005), printed pages 3–4",
+      "url": "https://extapps.dec.ny.gov/data/DecDocs/C915200/Report.BCP.C915200.2005-06-01.NLI-Decision-Document.pdf"
+    },
+    "nlCompletion": {
+      "label": "NYSDEC · NL Industries completion fact sheet (December 2009), pages 1–2",
+      "url": "https://extapps.dec.ny.gov/data/DecDocs/C915200/Fact%20Sheet.BCP.C915200.2009-12-18.FER.pdf"
+    },
+    "nlDocuments": {
+      "label": "NYSDEC · NL Industries C915200 document archive",
+      "url": "https://extapps.dec.ny.gov/data/DecDocs/C915200/"
+    },
+    "register1943": {
+      "label": "Federal Register · January 5, 1943, printed page 83 (PDF page 43)",
+      "url": "https://www.govinfo.gov/content/pkg/FR-1943-01-05/pdf/FR-1943-01-05.pdf"
+    },
+    "eastFerry": {
+      "label": "NYSDEC · East Ferry Street cleanup",
+      "url": "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories"
+    },
+    "lumen": {
+      "label": "EPA · Lumen Bearing investigation",
+      "url": "https://response.epa.gov/site/site_profile.aspx?site_id=11718"
+    },
+    "lakeErie": {
+      "label": "EPA · Lake Erie Smelting site listing",
+      "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206590"
+    },
+    "home": {
+      "label": "EPA · Lead exposure at home",
+      "url": "https://www.epa.gov/lead/reduce-risk-lead-exposure-home"
+    },
+    "soil": {
+      "label": "EPA · Where lead is found",
+      "url": "https://www.epa.gov/lead/where-lead-found"
+    },
+    "laws": {
+      "label": "EPA · Lead laws and gasoline phaseout",
+      "url": "https://www.epa.gov/lead/epas-lead-laws-regulations-policies"
+    },
+    "health": {
+      "label": "CDC · Childhood lead exposure",
+      "url": "https://www.cdc.gov/lead-prevention/about/index.html"
+    },
+    "symptoms": {
+      "label": "CDC · Symptoms and complications",
+      "url": "https://www.cdc.gov/lead-prevention/symptoms-complications/index.html"
+    },
+    "directory1859": {
+      "label": "1859 Commercial Advertiser directory · White Lead Factories (transcription)",
+      "url": "https://ldsgenealogy.com/NY/books/The-Commercial-Advertiser-Directory-for-the-City-of-Buffalo-etc-1859-part-49.htm"
+    },
+    "cornell1887": {
+      "label": "The Industries of Buffalo (1887) · Cornell Lead Co., printed page 91",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Cornell_University_Library_digitization_%28IA_cu31924068919434%29.pdf"
+    },
+    "smelterStudy": {
+      "label": "Eckel, Rabinowitz & Foster (2001) · Unrecognized lead-smelting sites",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1446633/"
+    },
+    "smelterTable": {
+      "label": "Eckel · Updated historical-smelter tables, entries 31 and 33",
+      "url": "https://www.researchgate.net/publication/273666591_April_2003_updated_tables"
+    },
+    "smelterReview": {
+      "label": "EPA · Lead Smelter Strategy Summary Report (September 2017), Appendix A (March 2017)",
+      "url": "https://semspub.epa.gov/work/HQ/100000189.pdf"
+    },
+    "reliance": {
+      "label": "EPA · Reliance site profile, NYN000206596",
+      "url": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206596"
+    },
+    "lakeErieRemoval": {
+      "label": "EPA · Lake Erie Smelting POLREP 6 (April 30, 2020), sections 1.1–1.2",
+      "url": "https://semspub.epa.gov/work/02/607028.pdf"
+    },
+    "epaOrigins": {
+      "label": "EPA · Origins of the agency (1970)",
+      "url": "https://www.epa.gov/history/origins-epa"
+    },
+    "superfundOrigins": {
+      "label": "EPA · CERCLA overview (1980)",
+      "url": "https://www.epa.gov/superfund/superfund-cercla-overview"
+    }
+  },
+  "raw_search_logs": [
+    "dec-query-log.json",
+    "parcel-address-query.json",
+    "retrieval-log.json"
+  ],
+  "parcel_filter": "CITYTOWN City of Buffalo and exact requested street; broad LIKE Stone returned unrelated streets excluded from sites.csv",
+  "record_limit": "Address-matched SBLs are not factory footprints. No new map pins.",
+  "follow_up_portals_verified": {
+    "EPA ECHO": "https://echo.epa.gov/facilities/facility-search",
+    "DEC remediation search (old application redirects here)": "https://appfactory.dec.ny.gov/DERExternalSearch/",
+    "EPA SEMS": "https://semspub.epa.gov/"
+  }
+}
