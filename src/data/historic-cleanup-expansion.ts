@@ -1,3 +1,4 @@
+import { warDepartment, oldburyLandfillRI, oldburyLandfillAssessment } from "@/data/wartime-history-sources";
 import type { AtlasSite } from "@/types/site";
 
 const decSuccessStories =
@@ -3273,8 +3274,9 @@ export const historicCleanupExpansion: AtlasSite[] = [
       },
     ],
     story: {
-      lastReviewed: "August 12, 2026",
+      lastReviewed: "October 19, 2026",
       background: [
+        "Oldbury Electro-Chemical, a predecessor acquired by Hooker in 1956, manufactured phosgene for the WWI chemical-warfare program. The War Department describes an experimental operation followed by a larger plant that began production on August 5, 1918. Oldbury initially sought a use for carbon monoxide generated as a byproduct of phosphorus manufacture.",
         "Hooker Electrochemical Company began operating its Niagara plant in 1906, using Niagara Falls' abundant hydroelectric power to manufacture caustic soda and co-product chlorine. The modern approximately 113-acre property at 4700 Buffalo Avenue grew from Hooker parcels and neighboring works operated by Niagara Alkali Company and Oldbury Electrochemical Company.",
         "The facility's 1984 historical database records Hooker's acquisition of Niagara Alkali on November 30, 1955 and Oldbury on November 30, 1956. Those acquisitions consolidated several older chemical works and their different manufacturing, drainage, and waste-management areas into the Main Plant.",
         "Chlorine, caustic soda, hydrogen, bleach, and hydrochloric acid formed the basic-product side of the operation. Beginning in the 1920s, the plant also manufactured pesticides and a wide range of chlorinated organic compounds; that production peaked from the 1940s through the 1970s.",
@@ -3286,6 +3288,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       timeline: [
         { period: "1906", event: "Hooker Electrochemical began Niagara Plant operations producing caustic soda and chlorine." },
+        { period: "1918 - Oldbury predecessor", event: "The War Department records 83,070 pounds of phosgene from the experimental plant, including 24,800 pounds shipped overseas, and 435 tons from the larger plant that began production August 5." },
         { period: "1920s-1930s", event: "The product line expanded beyond basic chlor-alkali chemicals into chlorinated organic manufacturing." },
         { period: "World War II", event: "Hooker's Niagara Falls operation produced fluorocarbon coolants and lubricants for the Manhattan Project's K-25 gaseous-diffusion plant." },
         { period: "1940s-1970s", event: "Production of chlorobenzenes, chlorotoluenes, chlorinated phenols, lindane-related compounds, and other organics reached its broadest scale." },
@@ -3321,12 +3324,17 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "Any future redevelopment must remain compatible with the industrial-use restriction and the buried collection systems, wells, caps, walls, and contaminated media that make the remedy work.",
       ],
       researchNotes: [
+        "The 102nd Street investigation describes phosphorus-bearing wastes buried below the water table on former Oldbury property. Oldbury acquired its landfill parcels in 1924; that later connection does not identify the destination of its 1918 phosgene-production wastes.",
+        "Keep Oldbury's confirmed WWI phosgene production separate from WWII protective impregnite manufacture at 3163 Buffalo Avenue, mapped under Solvent Chemical. The reviewed records do not establish uninterrupted local warfare-agent production between the wars.",
         "Treat the facility as one corrective-action complex on the overview map; named source areas belong in this history rather than as a cluster of overlapping pins.",
         "Cross-link S-Area, Love Canal, 102nd Street, Hyde Park, and other Hooker-related disposal sites where records establish a relationship, but do not combine their waste quantities, exposure histories, or cleanup status with the Main Plant.",
         "Continue reviewing the post-shutdown decommissioning record, PFAS and 1,4-dioxane treatment results, Flow Zone 1 studies, and annual performance reports as DEC posts them.",
       ],
     },
     sources: [
+      warDepartment,
+      oldburyLandfillRI,
+      oldburyLandfillAssessment,
       {
         title: "Former Hooker Main Plant Part 373 Corrective-Action Permit",
         publisher: "New York State Department of Environmental Conservation",

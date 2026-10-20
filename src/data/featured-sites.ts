@@ -1,3 +1,4 @@
+import { buffaloAreaD, buffaloAreaDRI, warDepartment, mustardCourt, armyImpregnite, solventWartimeCourt, impregniteMonograph, usgsImpregnite } from "@/data/wartime-history-sources";
 import type { AtlasSite } from "@/types/site";
 import { siteStories } from "@/data/site-stories";
 import { historicCleanupExpansion } from "@/data/historic-cleanup-expansion";
@@ -368,8 +369,9 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
     story: {
-      lastReviewed: "July 26, 2026",
+      lastReviewed: "October 19, 2026",
       background: [
+        "NYSDEC's Area D history identifies phosgene production during 1917-1918. Military records separately document National Aniline's 1918 mustard-gas plant project. These accounts establish wartime chemical-warfare involvement, but actual mustard output and the detailed relationship between the two operations remain unresolved.",
         "Chemical and dye manufacturing began on this Buffalo River property in 1879 under the Schoellkopf Aniline and Dye Company. Later owners included National Aniline, Allied Chemical, and Buffalo Color. EPA reports that the complex produced more than 1,000 dyes and organic chemicals based on aniline and related compounds.",
         "The site's long operating history created multiple cleanup areas rather than one simple event. Plant sections, sewers, soil, groundwater, shoreline, and the adjacent river have been investigated through different state and federal programs.",
       ],
@@ -384,6 +386,8 @@ const featuredSiteRecords: AtlasSite[] = [
           event:
             "The property became part of National Aniline and then Allied Chemical.",
         },
+        { period: "1917-1918", event: "DEC identifies phosgene manufacturing in Area D; this is an attributed historical account, not a measurement of present-day contamination." },
+        { period: "July-November 1918", event: "The government contracted for a mustard-gas plant designed for 50 tons daily. The War Department reports it was 80 percent complete on November 1; capacity is not verified output." },
         {
           period: "1977",
           event:
@@ -401,6 +405,7 @@ const featuredSiteRecords: AtlasSite[] = [
         },
       ],
       documentedImpacts: [
+        "Area D's broader chemical works used iron-sludge lagoons and metal-sludge weathering areas. The 1989 investigation's 1922 chronology describes tars burned on the peninsula and liquids sewered to the Buffalo River. No reviewed record traces a specific WWI gas-production waste stream to those destinations.",
         "Historic wastes included off-specification dye, process tars and residues, spent catalysts, and waste solvents.",
         "Investigations documented metals, volatile compounds, and semi-volatile compounds in parts of the plant system, including sewer sediment.",
         "Plant sewers leading toward Buffalo River outfalls became part of the investigation and remedy.",
@@ -415,11 +420,16 @@ const featuredSiteRecords: AtlasSite[] = [
         "Former plant areas have moved through cleanup and redevelopment at different rates. The correct present-day account therefore depends on the specific parcel and cleanup program rather than treating the entire former complex as one uniform condition.",
       ],
       researchNotes: [
+        "Reconcile DEC's 1917-1918 phosgene account, the War Department's unfinished 1918 mustard-gas project, and the 1926 court statement that a mustard plant operated. Establish production dates and quantities before treating planned capacity as actual output.",
         "Build a parcel-by-parcel crosswalk for Areas A through E and identify the current owner, remedy, and land-use controls for each.",
         "Distinguish Buffalo Color plant contamination from the separate Buffalo River sediment-remediation program.",
       ],
     },
     sources: [
+      buffaloAreaD,
+      buffaloAreaDRI,
+      warDepartment,
+      mustardCourt,
       {
         title: "Buffalo Color Remedial Investigation Report",
         publisher: "New York State Department of Environmental Conservation",
@@ -2181,6 +2191,10 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
     sources: [
+      armyImpregnite,
+      solventWartimeCourt,
+      impregniteMonograph,
+      usgsImpregnite,
       {
         title: "Solvent Chemical Site Record of Decision",
         publisher: "New York State Department of Environmental Conservation",

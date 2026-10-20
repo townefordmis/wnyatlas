@@ -19,6 +19,33 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
   {
+      id: "wartime-chemical-production",
+      name: "Wartime chemical production and its environmental record",
+      summary: "WWI agent production, a mustard-gas plant project, WWII protective treatment and later disposal histories have different evidence. These connections do not establish continuous warfare-agent manufacture, a shared plume, or a verified destination for WWI gas-production wastes.",
+      members: [
+          {
+              siteId: "buffalo-color",
+              role: "WWI chemical-warfare work",
+              connection: "DEC identifies Area D phosgene manufacture; military records document a mustard-gas project with unresolved actual output."
+          },
+          {
+              siteId: "former-hooker-main-plant",
+              role: "Oldbury predecessor production",
+              connection: "Oldbury manufactured phosgene in 1918, decades before its acquisition by Hooker."
+          },
+          {
+              siteId: "solvent-chemical-niagara-falls",
+              role: "WWII and Korean War protective treatment",
+              connection: "DuPont and later Hooker manufactured impregnite at 3163 Buffalo Avenue. The treatment was protective, not proof of poison-gas production."
+          },
+          {
+              siteId: "hooker-102nd-street-landfill",
+              role: "Later Oldbury disposal connection",
+              connection: "Oldbury acquired landfill parcels in 1924. Later phosphorus-waste burial does not establish a destination for its 1918 gas-production wastes."
+          }
+      ]
+  },
+  {
     id: "pratt-letchworth-creek-context",
     name: "Foundry and paint industries along Scajaquada Creek",
     summary: "Separate manufacturers and waste histories along one creek. These connections do not assign creek contamination to a particular plant.",

@@ -1,3 +1,4 @@
+import { armyImpregnite, solventWartimeCourt, impregniteMonograph, usgsImpregnite } from "@/data/wartime-history-sources";
 import type { DeepHistoryFeature } from "@/data/deep-history-features";
 
 export const deepHistoryBatchSeven: Record<string, DeepHistoryFeature> = {
@@ -147,12 +148,19 @@ export const deepHistoryBatchSeven: Record<string, DeepHistoryFeature> = {
     accent: "#cf6d58",
     stat: { value: "3 zones", label: "shallow, intermediate, and deep groundwater considered in the remedy" },
     chapters: [
+      {"period":"World War II; 1951-1953","title":"A chemical-warfare protection plant before Solvent Chemical","body":"DuPont built and operated a government-contract plant at 3163 Buffalo Avenue to manufacture impregnite for Army uniforms. Army records document Niagara Falls projects beginning in 1940-1941. Hooker reactivated this property from 1951 to 1953 during the Korean War. Impregnite was a protective treatment; this does not establish mustard-gas or phosgene manufacture at the property."},
+      {"period":"Materials and production wastes","title":"Protective treatment involved hazardous chemistry","body":"Impregnite CC-2 was a chlorinated compound, not a PFAS. An appendix to a 1991 court decision reproduces a plant monograph describing toxic aniline-related sludge discarded in drums; the dump's identity remains unresolved in that account. The Army also identifies tetrachloroethane as a highly toxic solvent used to apply CC-2 to clothing, later replaced by a water-dispersible formulation. Loss of protective effectiveness does not establish harmless wastes or breakdown products."},
+
       { period: "Industrial operation", title: "Solvents and chemical intermediates moved through a dense manufacturing corridor", body: "The Buffalo Avenue property manufactured and handled organic chemicals in an area bordered by other large chemical operations. Historical storage, processing, and disposal created source areas containing benzene, chlorobenzenes, and related compounds." },
       { period: "1996 remedy", title: "The state treated the site as a multi-depth groundwater problem", body: "DEC's selected remedy addressed contaminated soil and shallow, intermediate, and deep groundwater. Recovery, treatment, source controls, and monitoring were designed to contain movement rather than rely on natural disappearance." },
       { period: "Long-term management", title: "Operating systems remain part of the site's present tense", body: "Periodic reviews track treatment performance, monitoring wells, institutional controls, and maintenance. Cleanup progress therefore means a managed system continues to intercept and evaluate contamination." },
     ],
     caution: { title: "Adjacent plants do not make one source", body: "Solvent Chemical lies near Olin and former DuPont operations, and regional groundwater histories can overlap. WNYAtlas attributes contaminants and remedy components only where the site record supports the connection." },
     sources: [
+      { label: armyImpregnite.title, url: armyImpregnite.url },
+      { label: solventWartimeCourt.title, url: solventWartimeCourt.url },
+      { label: impregniteMonograph.title, url: impregniteMonograph.url },
+      { label: usgsImpregnite.title, url: usgsImpregnite.url },
       { label: "NYSDEC: Solvent Chemical record of decision", url: "https://extapps.dec.ny.gov/data/DecDocs/932096/ROD.HW.932096.1996-12-01.solvent_chem.pdf" },
       { label: "NYSDEC: 2021 periodic review report", url: "https://extapps.dec.ny.gov/data/DecDocs/932096/Report.HW.932096.2022-04-21.2021_Periodic_Review_Report.pdf" },
       { label: "NYSDEC: Solvent Chemical document collection", url: "https://extapps.dec.ny.gov/data/DecDocs/932096/" },

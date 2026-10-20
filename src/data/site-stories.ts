@@ -2878,13 +2878,19 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "solvent-chemical-niagara-falls": {
-    lastReviewed: "August 17, 2026",
+    lastReviewed: "October 19, 2026",
     background: [
+        "Before Solvent Chemical, DuPont built and operated a WWII government-contract plant at 3163 Buffalo Avenue to manufacture impregnite, a treatment intended to protect Army uniforms against poison gas. Army records place Niagara Falls impregnite projects in 1940-1941. Hooker reactivated this property for impregnite production from 1951 to 1953 during the Korean War.",
+        "Impregnite CC-2 was a chlorinated protective treatment, not a PFAS. Its manufacture and application involved toxic substances, including aniline-related production sludge and the solvent tetrachloroethane. That protective role does not establish that this property manufactured mustard gas or phosgene, or that local warfare-agent production continued uninterrupted from WWI through WWII.",
       "The former Solvent Chemical plant at 3163 Buffalo Avenue used numerous buildings and aboveground and underground tanks for chemical manufacturing, storage, and waste handling. Benzene, chlorobenzene, and several dichloro- and trichlorobenzenes affected on-site soil and both overburden and upper-bedrock groundwater.",
       "The cleanup record covers three connected but distinct features: the plant property, an Olin Hot Spot between the property and Gill Creek, and an 18-inch concrete storm sewer that once ran west across DuPont Drive and industrial land before discharging to the creek. The sewer was removed or abandoned in place and no longer requires routine operation and maintenance; groundwater and nonaqueous-phase liquid remain the persistent work.",
       "New York selected the remedy in December 1996, and long-term operation began July 1, 2004. Collection systems control overburden and bedrock groundwater, extracted water receives pretreatment before permitted discharge, and a cover limits contact and infiltration. The newest reviewed periodic report documents three monitoring rounds from March 2024 through March 2025.",
     ],
     timeline: [
+        { period: "1940-1941 and World War II", event: "Army impregnite projects developed at Niagara Falls; DuPont built and operated the government-contract plant at this property to make protective clothing treatment." },
+        { period: "1951-1953", event: "Hooker reactivated the property for impregnite production during the Korean War." },
+        { period: "1970s", event: "Solvent Chemical operated a later chemical-manufacturing business on the former military-contract property." },
+
       {
         period: "Industrial operating era",
         event:
@@ -2920,6 +2926,8 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Solvent Chemical remains an active long-term remedy more than two decades after operation and maintenance began. The buildings are gone and the storm-sewer task is complete, but the groundwater and NAPL source cannot be understood as a finished excavation; protection still depends on collection, treatment, cover, monitoring, and maintenance.",
     ],
     researchNotes: [
+        "Attribute contamination to successive operators only where the records support it. The 1991 court appendix reproduces a monograph's toxicity and drum-disposal account, but the identity of the dump and allegations of direct Army dumping at Love Canal remain unresolved in that evidence.",
+        "Loss of CC-2's protective effectiveness does not establish that manufacturing wastes or degradation products became harmless. Evaluate persistence and current exposure using site-specific evidence.",
       "Report the latest periodic-review conclusions and system-performance data rather than describing the 1996 remedy as a finished excavation.",
       "Separate overburden, bedrock, dissolved-phase, and NAPL findings when more detailed plume mapping becomes available.",
     ],

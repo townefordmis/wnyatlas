@@ -1,3 +1,4 @@
+import { buffaloAreaD, buffaloAreaDRI, warDepartment, mustardCourt } from "@/data/wartime-history-sources";
 import type { DeepHistoryFeature } from "@/data/deep-history-features";
 
 export const deepHistoryBatchThree: Record<string, DeepHistoryFeature> = {
@@ -45,11 +46,17 @@ export const deepHistoryBatchThree: Record<string, DeepHistoryFeature> = {
     stat: { value: "3,000", label: "approximately, workers at the plant's reported peak" },
     chapters: [
       { period: "1879-1977", title: "A riverfront dye works grew into a major chemical complex", body: "The Schoellkopf works became National Aniline and then part of Allied Chemical. Thousands of employees produced aniline dyes, intermediates, acids, and other chemicals while process wastewater and waste handling connected the factory to the Buffalo River and adjoining plant areas." },
+      {"period":"1917-1918","title":"World War I chemical-warfare work","body":"DEC's Area D history identifies phosgene production during 1917-1918. Military records separately describe a July 6, 1918 contract for a mustard-gas plant designed for 50 tons daily, reported 80 percent complete on November 1. A 1926 court opinion says a mustard plant operated but gives no production dates or quantities. The contract and construction are documented; planned capacity is not verified output."},
+      {"period":"Waste handling across the chemical works","title":"The peninsula and river received industrial wastes","body":"Area D's broader chemical history includes iron-sludge lagoons, metal-sludge weathering, open burning beginning in 1922, and later incineration. The 1989 investigation's 1922 chronology describes tars burned at Area D and liquid wastes sewered to the Buffalo River. These records do not trace a specific wartime phosgene- or mustard-production waste stream to those destinations."},
       { period: "1977-2003", title: "Synthetic indigo tied Buffalo labor to the global blue-jeans market", body: "Buffalo Color bought the operation from Allied and concentrated on indigo dye. State historical material says the plant employed about 3,000 people at its peak; lower-priced overseas production eventually undercut the business, and the final approximately 170 production workers were laid off in 2003." },
       { period: "After production", title: "The factory closed, but the property did not become one simple cleanup site", body: "EPA and DEC records divide the complex into areas with different contaminants, owners, remedies, and reuse conditions. Buildings, sewers, soil, groundwater, shoreline pathways, and river sediment therefore belong to connected but not interchangeable records." },
     ],
     caution: { title: "Occupational hazard does not establish an individual diagnosis", body: "Historical records document hazardous dye chemistry and studies of exposed worker groups. They do not allow WNYAtlas to attribute a particular worker's illness to the plant without an individual medical and occupational record." },
     sources: [
+      { label: buffaloAreaD.title, url: buffaloAreaD.url },
+      { label: buffaloAreaDRI.title, url: buffaloAreaDRI.url },
+      { label: warDepartment.title, url: warDepartment.url },
+      { label: mustardCourt.title, url: mustardCourt.url },
       { label: "EPA: Buffalo Color hazardous-waste cleanup", url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-buffalo-color-corporation-buffalo-new-york" },
       { label: "NYSDEC archive: National Aniline and Buffalo Color history", url: "https://extapps.dec.ny.gov/data/DecDocs/C915230A/Published%20Article.BCP.C915230A.1900-01-01.History_National_Aniline_and_Chemical_Company.pdf" },
       { label: "EPA: groundwater environmental-indicator determination", url: "https://www.epa.gov/sites/default/files/2017-08/documents/buffa750.pdf" },

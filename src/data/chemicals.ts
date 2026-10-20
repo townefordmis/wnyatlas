@@ -1,3 +1,4 @@
+import { armyImpregnite, impregniteMonograph, usgsImpregnite, solventWartimeCourt } from "@/data/wartime-history-sources";
 export type ChemicalSource = {
   title: string;
   publisher: string;
@@ -41,6 +42,46 @@ const epaEcotox: ChemicalSource = {
 const standardSources = [atsdrProfiles, epaIris, epaEcotox];
 
 export const chemicalProfiles: ChemicalProfile[] = [
+  {
+      id: "impregnite-cc2",
+      name: "Impregnite CC-2",
+      aliases: [
+          "CC-2",
+          "CC2",
+          "XX-CC3",
+          "XXCC3"
+      ],
+      family: "Chlorinated organic protective treatment",
+      overview: "CC-2 was a reactive clothing treatment developed to protect against blister agents such as mustard. Army records describe its discovery in 1924, standardization in 1928, and wartime manufacture. It was a protective material, not evidence of finished poison-gas production at every plant that made it.",
+      regionalHistory: [
+          "DuPont manufactured impregnite at 3163 Buffalo Avenue in Niagara Falls during WWII; Hooker reactivated the property for impregnite production in 1951-1953. See the Solvent Chemical place record for the court-supported site history.",
+          "A historical technical monograph discussed in the Niagara Falls litigation described hazardous aniline-related production sludge and disposal in drums. The particular dump is not conclusively identified in that account."
+      ],
+      persistence: "CC-2 contains chlorine rather than fluorine and is not a PFAS. The Army reports that protective effectiveness diminished during storage and use. That is not an environmental half-life and does not establish that degradation products or manufacturing wastes became harmless; their persistence requires compound- and site-specific evidence.",
+      exposureRoutes: [
+          "Potential worker contact with manufacturing raw materials, sludge, or dust",
+          "Solvent vapor exposure during historical clothing impregnation",
+          "Contact with improperly disposed production wastes where a pathway is established"
+      ],
+      humanHealth: [
+          "The strongest reviewed local toxicity evidence concerns raw materials and production sludge: the historical plant monograph described aniline-related hazards, including inhalation and skin absorption.",
+          "The Army identifies tetrachloroethane used in the clothing-treatment process as a highly toxic solvent. Its hazards must be distinguished from the finished treatment itself.",
+          "The reviewed sources do not establish a complete modern toxicological assessment of CC-2 itself or a site-specific present-day exposure."
+      ],
+      ecologicalHealth: [
+          "Environmental effects of production wastes, solvents and degradation products must be evaluated by identified compound, concentration and exposure pathway.",
+          "The reviewed sources do not establish a CC-2-specific ecological risk for the Niagara Falls property."
+      ],
+      evidenceNote: "Historical protective use does not establish safety of manufacture or disposal. Do not infer finished-product toxicity solely from its raw materials, equate CC-2 with PFAS, or identify a waste destination without direct evidence.",
+      matchTerms: [
+          "impregnite",
+          "CC-2",
+          "CC2",
+          "XX-CC3",
+          "XXCC3"
+      ],
+      sources: [armyImpregnite, impregniteMonograph, usgsImpregnite, solventWartimeCourt]
+  },
   {
     id: "pfas",
     name: "PFAS",
