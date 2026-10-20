@@ -1,3 +1,4 @@
+import { burningYearsSources } from "@/data/burning-years";
 import { perchlorateEPA, perchlorateHistory } from "@/data/industrial-history-sources";
 import { warDepartment, oldburyLandfillRI, oldburyLandfillAssessment } from "@/data/wartime-history-sources";
 import type { AtlasSite } from "@/types/site";
@@ -745,44 +746,21 @@ export const historicCleanupExpansion: AtlasSite[] = [
     municipality: "Pendleton / North Tonawanda",
     county: "Niagara",
     category: "cleanup",
-    summary:
-      "Closed Class 4 chemical cleanup site on Townline Road. This property is distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls and is mapped separately to prevent their histories and remedies from being conflated.",
+    summary: "Closed Class 4 chemical cleanup site on Townline Road. This property is distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls and is mapped separately to prevent their histories and remedies from being conflated.",
     evidenceStatus: "research-in-progress",
-    coordinates: [-78.821419444, 43.087527778],
+    coordinates: [
+      -78.821419444,
+      43.087527778,
+    ],
     newsEvents: [
-      {
-        date: "1992",
-        headline: "New York selects removal and treatment for a small chemical-handling property",
-        summary: "The state remedy addressed contaminated soil, tanks and containers, and groundwater rather than treating the Townline Road operation as part of Frontier Chemical's separate Niagara Falls facility.",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/ROD.HW.932043.1992-03-02.frontier_chemical.pdf",
-        reach: "Local",
-      },
-      {
-        date: "1990s-present",
-        headline: "The visible chemical inventory leaves; groundwater stewardship remains",
-        summary: "Long-term reports track the remedy, monitoring, and institutional controls after source removal. The documented human consequence is prolonged uncertainty and land-use management, not a verified finding of illness among neighbors.",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/",
-        reach: "Local",
-      },
+      { date: "1992", headline: "New York selects containment, sediment consolidation and groundwater collection", summary: "The 1992 decision addressed the process/fill area and Quarry Lake sediments through containment and consolidation, with groundwater collection and treatment. The Townline Road site is separate from Royal Avenue.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932043/ROD.HW.932043.1992-03-02.frontier_chemical.pdf", reach: "Local" },
+      { date: "1990s-present", headline: "A capped waste area requires continuing groundwater stewardship", summary: "Long-term reports track the capped landfill, groundwater collection and pretreatment, monitoring and institutional controls. Consolidation and containment leave continuing management obligations.", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932043/", reach: "Local" },
     ],
     sources: [
-      {
-        title: "Frontier Chemical — Pendleton Site Documents",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/",
-      },
-      {
-        title: "Frontier Chemical — Pendleton Record of Decision",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/ROD.HW.932043.1992-03-02.frontier_chemical.pdf",
-      },
-      {
-        title: "Frontier Chemical — Pendleton 2025 Periodic Review Report",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932043/Report.HW.932043.2025-11-13.Revised_2025_PRR.pdf",
-      },
+      burningYearsSources.siting,
+      { title: "Frontier Chemical — Pendleton Site Documents", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932043/" },
+      { title: "Frontier Chemical — Pendleton Record of Decision", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932043/ROD.HW.932043.1992-03-02.frontier_chemical.pdf" },
+      { title: "Frontier Chemical — Pendleton 2025 Periodic Review Report", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932043/Report.HW.932043.2025-11-13.Revised_2025_PRR.pdf" },
     ],
   },
   {
@@ -3296,6 +3274,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "The historical bedrock plume extended north toward the Falls Street Tunnel and New York Power Authority conduit drains. Overburden groundwater could also enter plant sewers and outfalls, making those utilities part of the investigation and containment strategy.",
         "The 2022 permit briefing reported low-level 1,4-dioxane and PFAS detections slightly above guidance levels in on- and off-site monitoring wells and required treatment-system influent and effluent sampling. That record documents detection and treatment evaluation; it does not establish that Hooker manufactured PFAS at this plant.",
         "The fluorocarbon coolant and lubricant history documents a wartime production role. It is not, by itself, evidence that Fluorolube was disposed at a particular Hooker landfill or caused a documented environmental release.",
+        "A 1994 court account describes thionyl-chloride wastes sent to Love Canal and mostly S-Area after Hooker abandoned an unsuccessful 1940s incineration effort.",
       ],
       cleanupAndControls: [
         "Bedrock extraction wells create hydraulic containment along the western and northwestern plant boundaries. The F-Area treatment plant uses air stripping and activated carbon for groundwater; contaminated stripper air is treated by thermal oxidation and scrubbing.",
@@ -3321,6 +3300,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
     },
     sources: [
+      burningYearsSources.court,
       perchlorateEPA,
       perchlorateHistory,
       warDepartment,
@@ -3337,7 +3317,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       { title: "Technical Manual — Fluorolube oils and greases manufactured by Hooker Chemical", publisher: "U.S. Naval Facilities Engineering Systems Command", url: "https://www.navfac.navy.mil/Portals/68/Documents/Business-Lines/Design-and-Construction/4_159_01dm39.pdf" },
       { title: "Hooker S-Area Superfund Site Profile", publisher: "U.S. Environmental Protection Agency", url: "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0202150" },
     ],
-    updateNote: "Added Oldbury's 1908-1910 perchlorate beginnings and distinguished oxidizer manufacturing from the separate phosgene operation and unresolved waste destinations.",
+    updateNote: "Added the court-supported failed 1940s incineration effort and subsequent thionyl-chloride-waste landfill destinations.",
   },
   {
     id: "olin-buffalo-avenue-plant",

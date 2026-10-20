@@ -768,9 +768,10 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "frontier-chemical-pendleton": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "October 19, 2026",
     background: [
       "Frontier Chemical Waste Process operated an industrial-waste treatment facility in Pendleton from 1958 to 1974. The plant treated plating wastes, pickle liquors, and other acidic liquids from plating and metal-finishing businesses.",
+      "DEC lists incineration alongside oxidation, product recovery and distillation. A 1979 EPA case study specifies flammable-waste burning and records complaints about smoke, odors, noise and trucks; it also recounts a June 1973 drum explosion and brief neighborhood evacuation.",
       "Treatment residuals were discharged into the approximately 15-acre Quarry Lake. After operations ended, much of the former process area was filled and graded, leaving contaminated sediment, soil, and groundwater that required a containment-based remedy.",
     ],
     timeline: [
@@ -797,6 +798,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     researchNotes: [
       "Track current groundwater-system performance and Quarry Lake monitoring in future periodic reviews.",
       "Map the capped landfill, Quarry Lake, wetlands, former process area, and larger surrounding property as separate features, preserving DEC's 2013 site-boundary change.",
+      "Recover incinerator operating logs and feed records before identifying particular chemicals as burned. Keep incineration distinct from Quarry Lake treatment discharges.",
     ],
   },
   "1660-niagara-street-sediment": {
@@ -2342,32 +2344,17 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "tifft-nature-preserve": {
-    lastReviewed: "August 17, 2026",
+    lastReviewed: "October 19, 2026",
     background: [
       "Tifft Nature Preserve is a 264-acre urban wildlife refuge on former docklands. Portions were used as a City of Buffalo dump in the 1950s and 1960s before municipal waste was capped with clay and soil and the landscape was reshaped for habitat and public use.",
+      "The 1985 USGS investigation describes fill transferred from Squaw Island to Tifft Farm during the mid-1970s and an engineered disposal area with clay barriers, a cap and leachate collection. The source identifies mixed fill, not an ash-only shipment inventory. This historical disposal area should not be treated as the whole present nature preserve.",
       "The preserve now combines a 75-acre cattail marsh, woodlands, grasslands, ponds, trails, and environmental education. Its success as habitat is inseparable from the history of containment and ecological restoration beneath and around the modern preserve.",
     ],
     timeline: [
-      {
-        period: "Industrial dockland era",
-        event:
-          "The property formed part of Buffalo's rail- and water-served industrial waterfront.",
-      },
-      {
-        period: "1950s–1960s",
-        event:
-          "Portions of the land were used for municipal waste disposal.",
-      },
-      {
-        period: "1970s",
-        event:
-          "Waste was capped with clay and soil, ponds were enlarged, vegetation was planted, and the preserve was established.",
-      },
-      {
-        period: "2025–present",
-        event:
-          "New habitat work has targeted marsh water levels, invasive species, turtle nesting, fish spawning, and Lake Kirsty shoreline restoration.",
-      },
+      { period: "Industrial dockland era", event: "The property formed part of Buffalo's rail- and water-served industrial waterfront." },
+      { period: "1950s–1960s", event: "Portions of the land were used for municipal waste disposal." },
+      { period: "1970s", event: "Waste was capped with clay and soil, ponds were enlarged, vegetation was planted, and the preserve was established." },
+      { period: "2025–present", event: "New habitat work has targeted marsh water levels, invasive species, turtle nesting, fish spawning, and Lake Kirsty shoreline restoration." },
     ],
     documentedImpacts: [
       "Municipal dumping and earlier industrial waterfront use altered soil, fill, drainage, and habitat.",
@@ -4688,10 +4675,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "frontier-chemical-royal-avenue": {
-    lastReviewed: "August 17, 2026",
+    lastReviewed: "October 19, 2026",
     background: [
       "The Royal Avenue property's chemical history began around 1906 with International Minerals and Chemical's mercury-cell chlor-alkali plant. Caustic-soda production used sludge ponds for liquid waste, leaving an older source history beneath the facility Frontier Chemical later occupied.",
       "Frontier moved its hazardous-waste operation from Pendleton to this roughly nine-acre Niagara Falls property and treated or stored a wide range of listed and characteristic wastes from 1974 until closing in 1992. Investigation found VOCs and lesser amounts of SVOCs in soil and in several groundwater zones, including dense nonaqueous-phase liquid in overburden and bedrock.",
+      "A 1979 EPA case study describes treated liquid effluent entering municipal sewers and solid residues sent to regional hazardous-waste landfills. Those are documented disposal pathways, separate from the flammable-waste incineration described at Frontier's earlier Pendleton property.",
       "The groundwater story changes with depth. Falls Street and New Road utility tunnels intercept contaminated overburden and upper-bedrock water near the property, limiting an off-site shallow plume. Deeper bedrock groundwater follows a monitored-natural-attenuation plan, while leachate from the on-site containment area is collected and treated.",
       "Source work in 2013 used on-site thermal treatment for contaminated soil, followed by cover, demolition, easement, and a 2014 Certificate of Completion. EPA now describes corrective action as complete except for long-term leachate treatment and annual groundwater monitoring.",
     ],

@@ -1,0 +1,60 @@
+{
+  "reviewed": "2026-10-19",
+  "feature": "/research/burning-years",
+  "verified": [
+    {
+      "claim": "Six Erie County municipal incinerators, inadequate controls, upgrades underway; Niagara 1965 totals and industrial material; open-burning inventory.",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9101U1O3.TXT",
+      "locator": "Appendix C, C-9 through C-12",
+      "limit": "1970 Public Health Service publication, now EPA-hosted. Industrial suppliers and chemicals unspecified."
+    },
+    {
+      "claim": "Brzezinski ash receipts and 1968-1969 complaint chronology.",
+      "url": "https://extapps.dec.ny.gov/data/DecDocs/932006/Report.HW.932006.1990-03-31.PHASE_II_INVESTIGATION_REPORT_VOL_2.pdf",
+      "locator": "Earlier history in investigation appendix, PDF 56-60; site inventory PDF 74",
+      "limit": "Generic ash-composition tables elsewhere in the appendix are not local samples. Earlier screening assessment not a current health finding."
+    },
+    {
+      "claim": "Unity/Squaw Island mixed waste and subsequent Tifft fill transfer.",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000E55V.TXT",
+      "locator": "Printed 145-150",
+      "limit": "Fill transfer does not identify each load as ash. Historical migration potential is not measured current exposure."
+    },
+    {
+      "claim": "DuPont 1942 incinerator shutdown; Hooker failed 1940s incineration and thionyl-chloride-waste landfill destinations.",
+      "url": "https://law.justia.com/cases/federal/district-courts/FSupp/850/993/2132540/",
+      "locator": "Printed 1017",
+      "limit": "Do not locate the DuPont incinerator at Necco Park or infer its ash destination."
+    },
+    {
+      "claim": "Pendleton incineration and other processes.",
+      "url": "https://extapps.dec.ny.gov/data/DecDocs/932043/ROD.HW.932043.1992-03-02.frontier_chemical.pdf",
+      "locator": "Section 2, PDF 5",
+      "limit": "Waste receipt is not proof of combustion feed."
+    },
+    {
+      "claim": "Frontier smoke complaints, June 1973 event and Royal Avenue sewer/solid-residue pathways.",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=10003J1L.TXT",
+      "locator": "Frontier case study, 46-50",
+      "limit": "1979 retrospective account; no particular Royal Avenue landfill inferred."
+    }
+  ],
+  "heldAsLeads": [
+    {
+      "claim": "May 1, 1970 nighttime smoldering-ash truck correspondence",
+      "reason": "Original letter, receiving parcel and agency disposition unverified."
+    },
+    {
+      "claim": "City of Buffalo specific 1950s-1979 ash locations, settling lagoons and transfer-station conversion",
+      "url": "https://www.buffalony.gov/DocumentCenter/View/5921",
+      "reason": "Search excerpt available but full record returned 403; specific chronology withheld."
+    }
+  ],
+  "notEstablished": [
+    "Specific historical stack concentrations for each municipal plant",
+    "Generator-by-generator municipal furnace feed",
+    "Individual residential dose",
+    "Neighborhood disease causation"
+  ],
+  "mapping": "No new coordinates inferred for Unity Island or Brzezinski; these records are discussed in the feature."
+}

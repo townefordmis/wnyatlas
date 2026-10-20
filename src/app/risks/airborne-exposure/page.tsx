@@ -46,6 +46,11 @@ export default function AirborneExposurePage() {
         </p>
       </section>
 
+      <section className="risk-warning">
+        <strong>The Burning Years</strong>
+        <p>Follow documented incinerator operations, smoke complaints and ash disposal. <Link href="/research/burning-years">Read the regional investigation →</Link></p>
+      </section>
+
       <section className="risk-map-shell">
         <AirborneRiskMap />
       </section>

@@ -20,6 +20,7 @@ const navigationItems = [
   { href: "/updates", label: "Updates", match: "/updates" },
   { href: "/chemicals", label: "Chemicals", match: "/chemicals" },
   { href: "/research/lead", label: "Lead", match: "/research/lead" },
+  { href: "/research/burning-years", label: "Burning years", match: "/research/burning-years" },
   { href: "/research/schools-industrial-sites", label: "Schools", match: "/research/schools-industrial-sites" },
   { href: "/research/former-waterways", label: "Waterways", match: "/research/former-waterways" },
   { href: "/research/radiological-industry-fill", label: "Radiological", match: "/research/radiological-industry-fill" },
@@ -32,6 +33,7 @@ const navigationItems = [
 
 const routeLabels: Record<string, string> = {
   research: "Research",
+  "burning-years": "The Burning Years",
   lead: "Lead",
   "buffalo-water-lines": "Buffalo’s lead water lines",
   sites: "Places",

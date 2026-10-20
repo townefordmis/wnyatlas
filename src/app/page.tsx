@@ -51,6 +51,12 @@ export default function Home() {
         <AtlasMap />
       </div>
 
+      <section className="about-panel" aria-labelledby="burning-years-title">
+        <p className="eyebrow">New historical investigation</p>
+        <h2 id="burning-years-title"><a href="/research/burning-years">The Burning Years →</a></h2>
+        <p>Follow Western New York’s incinerators, industrial waste burning, complaints and buried ash through the original records.</p>
+      </section>
+
       <RecentUpdates />
 
       <section className="about-panel" id="about">

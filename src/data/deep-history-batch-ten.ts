@@ -1,3 +1,4 @@
+import { burningYearsSources } from "@/data/burning-years";
 import { niagaraElectrochemical1896, niagaraPlantCatalog, niagaraPlantCourt, neccoReview2024 } from "@/data/industrial-history-sources";
 import type { DeepHistoryFeature } from "@/data/deep-history-features";
 
@@ -198,6 +199,7 @@ export const deepHistoryBatchTen: Record<string, DeepHistoryFeature> = {
     chapters: [
       { period: "1895-1896", title: "Niagara power supported a new sodium works", body: "Electrical World's December 1896 account describes a recently operating Buffalo Avenue factory established in 1895, with Franz Roessler, Hamilton Castner, and Jacob Hasslacher as officers. Sodium and sodium peroxide were its founding products. The report places the office frontage on Buffalo Avenue; it does not place this manufacturing at the later Necco landfill." },
       { period: "1925-1930 and later", title: "Roessler & Hasslacher became part of DuPont", body: "Hagley's collection description, reproduced by North Tonawanda History, dates the merger of Niagara Electro-Chemical and Roessler & Hasslacher to 1925 and DuPont's purchase to 1930. A 1995 court account identifies sodium compounds, cyanides, ammonia, chlorinated solvents, polyvinyl alcohol, and adiponitrile across the Niagara Plant's history. This list spans different periods; it is not a claim that every product was present in 1896." },
+      { period: "1942 - separate plant operation", title: "The city intervened over particle emissions", body: "A 1994 federal opinion recounts Niagara Falls shutting a DuPont incinerator in 1942 because precipitators were missing. It does not locate that incinerator at Necco Park or trace its ash there." },
       { period: "1940s-1970s plant practices", title: "Some wastes entered the ground before ever reaching a landfill", body: "The 1995 insurance opinion describes solvent tank residues washed onto bare ground and sodium/cyanide equipment and residues left outdoors to weather, leaching barium and cyanide. It also describes PCB cooling oil washed through drains and trenches to Gill Creek and tetrachloroethane reactor wastes discharged toward the creek. These are Buffalo Avenue plant pathways, distinct from waste transported to Necco Park." },
       { period: "Mid-1930s-1977", title: "The landfill inventory connects the products to their residues", body: "EPA's 1998 decision identifies sodium-process salts and broken cell materials; chlorinolysis residues containing hexachlorobenzene, hexachlorobutadiene, and hexachloroethane; and liming sludge carrying TCE and PCE. Polymer residues and off-grade products also went to Necco. Liquids entered shallow earthen lagoons while solids occupied other areas. This documented Niagara Plant waste inventory totals an estimated 93,000 tons." },
       { period: "Investigation", title: "Dense liquid moved into a complicated bedrock system", body: "Sampling identified soil contamination, multiple water-bearing zones, and dense non-aqueous-phase liquid. Fractures made source control and plume monitoring more complex than a shallow-soil remedy." },
@@ -206,6 +208,7 @@ export const deepHistoryBatchTen: Record<string, DeepHistoryFeature> = {
     ],
     caution: { title: "Necco Park is one defined disposal area", body: "It is distinct from DuPont operating areas, TAM Ceramics, Hyde Park Landfill, and other Niagara chemical sites. Similar groundwater compounds or proximity do not erase source boundaries." },
     sources: [
+      { label: burningYearsSources.court.title, url: burningYearsSources.court.url },
       { label: niagaraElectrochemical1896.title, url: niagaraElectrochemical1896.url },
       { label: niagaraPlantCatalog.title, url: niagaraPlantCatalog.url },
       { label: niagaraPlantCourt.title, url: niagaraPlantCourt.url },

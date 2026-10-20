@@ -1,3 +1,4 @@
+import { burningYearsSources } from "@/data/burning-years";
 import { buffaloAreaDRevised, niagaraElectrochemical1896, niagaraPlantCatalog, niagaraPlantCourt, neccoReview2024 } from "@/data/industrial-history-sources";
 import { buffaloAreaD, buffaloAreaDRI, warDepartment, mustardCourt, armyImpregnite, solventWartimeCourt, impregniteMonograph, usgsImpregnite } from "@/data/wartime-history-sources";
 import type { AtlasSite } from "@/types/site";
@@ -1536,39 +1537,20 @@ const featuredSiteRecords: AtlasSite[] = [
     municipality: "Buffalo",
     county: "Erie",
     category: "cleanup",
-    summary:
-      "A 264-acre former dockland and city-dump landscape transformed through capping and habitat work into an urban nature preserve with trails, wetlands, and environmental education.",
+    summary: "A 264-acre former dockland and city-dump landscape transformed through capping and habitat work into an urban nature preserve with trails, wetlands, and environmental education.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.862, 42.847],
+    coordinates: [
+      -78.862,
+      42.847,
+    ],
     newsEvents: [
-      {
-        date: "1950s–1960s",
-        headline: "Buffalo uses part of the future preserve for municipal waste",
-        summary: "Dumping added another industrial layer to a landscape already transformed by railroads, docks, filling, and the loss of much of the original marsh system.",
-        publisher: "City of Buffalo park-history record",
-        url: "https://www.buffalony.gov/DocumentCenter/View/9917/Buffalo-Parks-Master-Plan",
-        reach: "Local",
-      },
-      {
-        date: "1970s onward",
-        headline: "Citizen advocacy helps turn a capped dump landscape into an urban refuge",
-        summary: "Preservation, containment, habitat management, and environmental education created the modern refuge without erasing the engineered waste areas beneath portions of it.",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://dec.ny.gov/things-to-do/watchable-wildlife/sites/tifft-nature-preserve",
-        reach: "Regional",
-      },
+      { date: "1950s–1960s", headline: "Buffalo uses part of the future preserve for municipal waste", summary: "Dumping added another industrial layer to a landscape already transformed by railroads, docks, filling, and the loss of much of the original marsh system.", publisher: "City of Buffalo park-history record", url: "https://www.buffalony.gov/DocumentCenter/View/9917/Buffalo-Parks-Master-Plan", reach: "Local" },
+      { date: "1970s onward", headline: "Citizen advocacy helps turn a capped dump landscape into an urban refuge", summary: "Preservation, containment, habitat management, and environmental education created the modern refuge without erasing the engineered waste areas beneath portions of it.", publisher: "New York State Department of Environmental Conservation", url: "https://dec.ny.gov/things-to-do/watchable-wildlife/sites/tifft-nature-preserve", reach: "Regional" },
     ],
     sources: [
-      {
-        title: "Tifft Nature Preserve",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://dec.ny.gov/things-to-do/watchable-wildlife/sites/tifft-nature-preserve",
-      },
-      {
-        title: "Buffalo Parks Master Plan",
-        publisher: "City of Buffalo",
-        url: "https://www.buffalony.gov/DocumentCenter/View/9917/Buffalo-Parks-Master-Plan",
-      },
+      burningYearsSources.island,
+      { title: "Tifft Nature Preserve", publisher: "New York State Department of Environmental Conservation", url: "https://dec.ny.gov/things-to-do/watchable-wildlife/sites/tifft-nature-preserve" },
+      { title: "Buffalo Parks Master Plan", publisher: "City of Buffalo", url: "https://www.buffalony.gov/DocumentCenter/View/9917/Buffalo-Parks-Master-Plan" },
     ],
   },
   {
@@ -3083,6 +3065,7 @@ const featuredSiteRecords: AtlasSite[] = [
       43.112,
     ],
     sources: [
+      burningYearsSources.court,
       niagaraElectrochemical1896,
       niagaraPlantCatalog,
       niagaraPlantCourt,
@@ -3090,7 +3073,7 @@ const featuredSiteRecords: AtlasSite[] = [
       { title: "DuPont / Necco Park Superfund Site Profile", publisher: "U.S. Environmental Protection Agency", url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.Cleanup&id=0201992" },
       { title: "DuPont / Necco Park Record of Decision", publisher: "U.S. Environmental Protection Agency", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1002O4B.TXT" },
     ],
-    updateNote: "Connected Niagara Electro-Chemical and Roessler & Hasslacher manufacturing to documented plant and landfill waste pathways; added EPA's 2024 review and unresolved PFAS/1,4-dioxane source investigation.",
+    updateNote: "Added the court account of Niagara Falls closing a DuPont incinerator in 1942 for missing particle controls.",
   },
   {
     id: "niagara-sanitation-nash-road-landfill",
@@ -3841,31 +3824,19 @@ const featuredSiteRecords: AtlasSite[] = [
     municipality: "Niagara Falls",
     county: "Niagara",
     category: "cleanup",
-    summary:
-      "Former hazardous-waste treatment and storage facility at 4626 Royal Avenue, on property with earlier chlor-alkali manufacturing and sludge-disposal history. VOCs and other contaminants remain concentrated in deep soil and groundwater. Major corrective work is complete, while a pump-and-treat system, groundwater monitoring, an industrial-use restriction, and site-management controls continue.",
+    summary: "Former hazardous-waste treatment and storage facility at 4626 Royal Avenue, on property with earlier chlor-alkali manufacturing and sludge-disposal history. VOCs and other contaminants remain concentrated in deep soil and groundwater. Major corrective work is complete, while a pump-and-treat system, groundwater monitoring, an industrial-use restriction, and site-management controls continue.",
     evidenceStatus: "well-documented",
-    coordinates: [-79.011194, 43.087472],
+    coordinates: [
+      -79.011194,
+      43.087472,
+    ],
     newsEvents: [
-      {
-        date: "2013–2014",
-        headline: "On-site thermal treatment replaces a plan to truck VOC soil away",
-        summary: "New York's amended remedy treated source soil on site, completed construction and issued a Certificate of Completion, while leachate treatment and deep-groundwater monitoring remained in the long-term plan.",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-frontier-chemical-waste-process-incorporated",
-        reach: "Regional",
-      },
+      { date: "2013–2014", headline: "On-site thermal treatment replaces a plan to truck VOC soil away", summary: "New York's amended remedy treated source soil on site, completed construction and issued a Certificate of Completion, while leachate treatment and deep-groundwater monitoring remained in the long-term plan.", publisher: "U.S. Environmental Protection Agency", url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-frontier-chemical-waste-process-incorporated", reach: "Regional" },
     ],
     sources: [
-      {
-        title: "Frontier Chemical Royal Avenue Hazardous-Waste Cleanup",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-frontier-chemical-waste-process-incorporated",
-      },
-      {
-        title: "Frontier Chemical EPA Site Profile",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201541",
-      },
+      burningYearsSources.siting,
+      { title: "Frontier Chemical Royal Avenue Hazardous-Waste Cleanup", publisher: "U.S. Environmental Protection Agency", url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-frontier-chemical-waste-process-incorporated" },
+      { title: "Frontier Chemical EPA Site Profile", publisher: "U.S. Environmental Protection Agency", url: "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201541" },
     ],
   },
   {

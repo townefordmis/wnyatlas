@@ -18,6 +18,19 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 };
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
+{
+    id: "burning-years",
+    name: "The Burning Years: incineration and residue histories",
+    summary: "These places illustrate separate municipal and industrial burning, residue disposal and later reuse histories; the group does not establish a common furnace, hauler or waste stream.",
+    members: [
+      { siteId: "lackawanna-incinerator", role: "Municipal incinerator", connection: "Ash-related lead and arsenic on the plant grounds and creek corridor required a property-specific remedy." },
+      { siteId: "depew-village-landfill", role: "Village burning and landfill", connection: "Municipal incineration and disposal beside Cayuga Creek have their own cleanup record." },
+      { siteId: "buffalo-color", role: "Industrial burning", connection: "The investigation documents buried on-site burning residues." },
+      { siteId: "frontier-chemical-pendleton", role: "Commercial treatment and incineration", connection: "Incineration was one of several waste-treatment processes." },
+      { siteId: "frontier-chemical-royal-avenue", role: "Separate successor facility", connection: "Historical records document sewer and off-site residue pathways." },
+      { siteId: "tifft-nature-preserve", role: "Fill transfer and later reuse", connection: "USGS describes Squaw Island fill moved into an engineered disposal area; not all fill was identified as ash." },
+    ],
+  },
   {
     id: "niagara-electrochemical-waste-trails",
     name: "Niagara Electro-Chemical, Roessler & Hasslacher, and DuPont waste trails",
