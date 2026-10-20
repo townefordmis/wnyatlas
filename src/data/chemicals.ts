@@ -1,3 +1,4 @@
+import { perchlorateEPA, perchlorateHistory, perchlorateHealth } from "@/data/industrial-history-sources";
 import { armyImpregnite, impregniteMonograph, usgsImpregnite, solventWartimeCourt } from "@/data/wartime-history-sources";
 export type ChemicalSource = {
   title: string;
@@ -42,6 +43,43 @@ const epaEcotox: ChemicalSource = {
 const standardSources = [atsdrProfiles, epaIris, epaEcotox];
 
 export const chemicalProfiles: ChemicalProfile[] = [
+  {
+    id: "perchlorate",
+    name: "Perchlorate",
+    aliases: [
+      "Sodium perchlorate",
+      "Potassium perchlorate",
+      "Ammonium perchlorate",
+    ],
+    family: "Inorganic oxidizer salts",
+    overview: "Perchlorate is an oxygen-containing ion found in several industrial salts. It has been used in flares, fireworks, propellants and other products; it can also occur naturally. It is chemically separate from phosgene and from PFAS.",
+    regionalHistory: [
+      "EPA dates the first U.S. manufacture to Oldbury in Niagara Falls in 1908. A 1999 industrial history specifies sodium perchlorate in 1908 and potassium perchlorate in 1910.",
+      "Manufacturing history does not by itself identify a local disposal destination, establish current drinking-water contamination, or prove a particular plume source.",
+    ],
+    persistence: "Perchlorate can dissolve and move with water and can persist where conditions do not support biological reduction. Suitable treatment or reducing conditions can break it down. It is not a fluorinated PFAS and should not be described as one.",
+    exposureRoutes: [
+      "Ingestion of affected drinking water or food where contamination and exposure are established",
+      "Occupational contact during manufacture or handling of oxidizer salts",
+    ],
+    humanHealth: [
+      "Perchlorate can interfere with iodide uptake by the thyroid and reduce thyroid-hormone production.",
+      "Adequate thyroid hormone is especially important during fetal and childhood development. Dose, timing, iodine status and actual exposure matter; historical manufacture alone establishes no individual diagnosis.",
+    ],
+    ecologicalHealth: [
+      "Water mobility can carry perchlorate beyond a release point; uptake into vegetation is a potential pathway.",
+      "The reviewed historical Niagara sources do not establish a site-specific perchlorate ecological injury.",
+    ],
+    evidenceNote: "Keep the salt/product history, environmental detections, source attribution and actual exposure as separate findings. This guide does not assign a present-day Niagara water exposure.",
+    matchTerms: [
+      "perchlorate",
+    ],
+    sources: [
+      perchlorateEPA,
+      perchlorateHistory,
+      perchlorateHealth,
+    ],
+  },
   {
       id: "impregnite-cc2",
       name: "Impregnite CC-2",

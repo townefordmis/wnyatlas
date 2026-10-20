@@ -1,3 +1,4 @@
+import { perchlorateEPA, perchlorateHistory } from "@/data/industrial-history-sources";
 import { warDepartment, oldburyLandfillRI, oldburyLandfillAssessment } from "@/data/wartime-history-sources";
 import type { AtlasSite } from "@/types/site";
 
@@ -3239,44 +3240,29 @@ export const historicCleanupExpansion: AtlasSite[] = [
     county: "Niagara",
     category: "cleanup",
     pfasStatus: "documented",
-    pfasEvidence: ["detection", "investigation"],
-    pfasCompounds: [
-      {
-        name: "Per- and polyfluoroalkyl substances",
-        abbreviation: "PFAS - exact analytes pending",
-        finding: "compound-not-specified",
-        medium: "on-site and off-site monitoring wells",
-        note: "The 2022 permit record reports low-level detections slightly above guidance values but the reviewed summary does not identify each compound.",
-      },
+    pfasEvidence: [
+      "detection",
+      "investigation",
     ],
-    pfasScopeNote:
-      "This is a documented monitoring-well finding, not evidence that Hooker manufactured PFAS or used APFO. Compound-level laboratory results remain a research item.",
-    summary:
-      "Large Buffalo Avenue chemical-manufacturing property where historic operations released chlorinated organics, mercury, dioxin-related compounds, and other materials to soil and groundwater. Caps, groundwater extraction and treatment, non-aqueous-phase-liquid recovery, monitoring, and industrial-use restrictions remain part of the corrective-action program.",
+    pfasCompounds: [
+      { name: "Per- and polyfluoroalkyl substances", abbreviation: "PFAS - exact analytes pending", finding: "compound-not-specified", medium: "on-site and off-site monitoring wells", note: "The 2022 permit record reports low-level detections slightly above guidance values but the reviewed summary does not identify each compound." },
+    ],
+    pfasScopeNote: "This is a documented monitoring-well finding, not evidence that Hooker manufactured PFAS or used APFO. Compound-level laboratory results remain a research item.",
+    summary: "Large Buffalo Avenue chemical-manufacturing property where historic operations released chlorinated organics, mercury, dioxin-related compounds, and other materials to soil and groundwater. Caps, groundwater extraction and treatment, non-aqueous-phase-liquid recovery, monitoring, and industrial-use restrictions remain part of the corrective-action program.",
     evidenceStatus: "well-documented",
-    coordinates: [-79.00903, 43.07968],
+    coordinates: [
+      -79.00903,
+      43.07968,
+    ],
     newsEvents: [
-      {
-        date: "1944-1948",
-        headline: "Hooker workers support atomic-era production later recognized by a federal compensation program",
-        summary: "A defined employee class entered the Special Exposure Cohort because radiation dose could not be reconstructed reliably under program rules; eligibility is not a finding that every employee was exposed or became ill.",
-        publisher: "U.S. Department of Labor",
-        url: "https://www.dol.gov/agencies/owcp/energy/regs/compliance/PolicyandProcedures/finalcircularhtml/EEOICPACircular16-01",
-        reach: "National",
-      },
-      {
-        date: "August 2021",
-        headline: "Chemical manufacturing ends while groundwater containment and corrective action continue",
-        summary: "Plant closure affected 130 employees and 20 contractors, but shutdown did not end the subsurface treatment, monitoring, caps, barriers, or permit obligations.",
-        publisher: "Buffalo Toronto Public Media",
-        url: "https://www.btpm.org/local/2021-08-19/oxychem-closing-its-niagara-falls-manufacturing-operations-the-company-confirms",
-        reach: "Regional",
-      },
+      { date: "1944-1948", headline: "Hooker workers support atomic-era production later recognized by a federal compensation program", summary: "A defined employee class entered the Special Exposure Cohort because radiation dose could not be reconstructed reliably under program rules; eligibility is not a finding that every employee was exposed or became ill.", publisher: "U.S. Department of Labor", url: "https://www.dol.gov/agencies/owcp/energy/regs/compliance/PolicyandProcedures/finalcircularhtml/EEOICPACircular16-01", reach: "National" },
+      { date: "August 2021", headline: "Chemical manufacturing ends while groundwater containment and corrective action continue", summary: "Plant closure affected 130 employees and 20 contractors, but shutdown did not end the subsurface treatment, monitoring, caps, barriers, or permit obligations.", publisher: "Buffalo Toronto Public Media", url: "https://www.btpm.org/local/2021-08-19/oxychem-closing-its-niagara-falls-manufacturing-operations-the-company-confirms", reach: "Regional" },
     ],
     story: {
       lastReviewed: "October 19, 2026",
       background: [
         "Oldbury Electro-Chemical, a predecessor acquired by Hooker in 1956, manufactured phosgene for the WWI chemical-warfare program. The War Department describes an experimental operation followed by a larger plant that began production on August 5, 1918. Oldbury initially sought a use for carbon monoxide generated as a byproduct of phosphorus manufacture.",
+        "Oldbury also made perchlorates before World War I. EPA dates the first U.S. manufacture to Niagara Falls in 1908; a 1999 industrial-history paper identifies sodium perchlorate in 1908 and potassium perchlorate in 1910. These oxidizer salts expand the product history beyond phosgene.",
         "Hooker Electrochemical Company began operating its Niagara plant in 1906, using Niagara Falls' abundant hydroelectric power to manufacture caustic soda and co-product chlorine. The modern approximately 113-acre property at 4700 Buffalo Avenue grew from Hooker parcels and neighboring works operated by Niagara Alkali Company and Oldbury Electrochemical Company.",
         "The facility's 1984 historical database records Hooker's acquisition of Niagara Alkali on November 30, 1955 and Oldbury on November 30, 1956. Those acquisitions consolidated several older chemical works and their different manufacturing, drainage, and waste-management areas into the Main Plant.",
         "Chlorine, caustic soda, hydrogen, bleach, and hydrochloric acid formed the basic-product side of the operation. Beginning in the 1920s, the plant also manufactured pesticides and a wide range of chlorinated organic compounds; that production peaked from the 1940s through the 1970s.",
@@ -3288,6 +3274,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
       timeline: [
         { period: "1906", event: "Hooker Electrochemical began Niagara Plant operations producing caustic soda and chlorine." },
+        { period: "1908-1910 - Oldbury predecessor", event: "Sodium perchlorate production began in 1908 and potassium perchlorate in 1910, according to the industrial history preserved in a NASA-hosted report." },
         { period: "1918 - Oldbury predecessor", event: "The War Department records 83,070 pounds of phosgene from the experimental plant, including 24,800 pounds shipped overseas, and 435 tons from the larger plant that began production August 5." },
         { period: "1920s-1930s", event: "The product line expanded beyond basic chlor-alkali chemicals into chlorinated organic manufacturing." },
         { period: "World War II", event: "Hooker's Niagara Falls operation produced fluorocarbon coolants and lubricants for the Manhattan Project's K-25 gaseous-diffusion plant." },
@@ -3324,6 +3311,8 @@ export const historicCleanupExpansion: AtlasSite[] = [
         "Any future redevelopment must remain compatible with the industrial-use restriction and the buried collection systems, wells, caps, walls, and contaminated media that make the remedy work.",
       ],
       researchNotes: [
+        "Perchlorate is a water-mobile inorganic oxidizer, separate from phosgene and from PFAS. Manufacturing history alone does not identify a disposal location, a modern plume source, or a drinking-water exposure.",
+        "Reconcile differing published start dates for Niagara military-grade ammonium perchlorate before assigning a continuous WWII-to-1975 production chronology. Obtain predecessor production and waste records; Hooker did not acquire Oldbury until 1956.",
         "The 102nd Street investigation describes phosphorus-bearing wastes buried below the water table on former Oldbury property. Oldbury acquired its landfill parcels in 1924; that later connection does not identify the destination of its 1918 phosgene-production wastes.",
         "Keep Oldbury's confirmed WWI phosgene production separate from WWII protective impregnite manufacture at 3163 Buffalo Avenue, mapped under Solvent Chemical. The reviewed records do not establish uninterrupted local warfare-agent production between the wars.",
         "Treat the facility as one corrective-action complex on the overview map; named source areas belong in this history rather than as a cluster of overlapping pins.",
@@ -3332,60 +3321,23 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
     },
     sources: [
+      perchlorateEPA,
+      perchlorateHistory,
       warDepartment,
       oldburyLandfillRI,
       oldburyLandfillAssessment,
-      {
-        title: "Former Hooker Main Plant Part 373 Corrective-Action Permit",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932019/Permit.HW.932019.2022-09-15.FmrHookerMainPlant_Part373_CA_Permit_Final.pdf",
-      },
-      {
-        title: "Former Hooker Main Plant Record-of-Decision Equivalent",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932019/ROD.HW.932019.2000-02-01.hooker_ou2_ou3.pdf",
-      },
-      {
-        title: "Occidental Niagara Plant Corrective-Action Cleanup",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-occidental-chemical-corporation-niagara-falls",
-      },
-      {
-        title: "Niagara Plant Historical Database, Volume 1",
-        publisher: "New York State Department of Environmental Conservation document repository",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932019/Report.HW.932019.1984-08-01.Historical_Data_Base_Vol_1_Text.pdf",
-      },
-      {
-        title: "Buffalo Avenue Plant Final Remedial System Optimization Report",
-        publisher: "New York State Department of Environmental Conservation document repository",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932019/Report.HW.932019.2024-08-02.Buffalo_Ave_Plant_Final_RSO_Report.pdf",
-      },
-      {
-        title: "Joe Dykstra Oral History — Hooker fluorocarbon coolant and lubricant production",
-        publisher: "National Museum of Nuclear Science & History",
-        url: "https://ahf.nuclearmuseum.org/voices/oral-histories/joe-dykstras-interview/",
-      },
-      {
-        title: "William T. Miller Historical Chemistry Record — Miller's Fluorolube",
-        publisher: "Cornell University",
-        url: "https://ecommons.cornell.edu/server/api/core/bitstreams/02d9c914-a3aa-4f25-b5d5-b0409a2c1ff4/content",
-      },
-      {
-        title: "William T. Miller Electrolytic Cell and Manhattan Project Materials Collection",
-        publisher: "Smithsonian National Museum of American History",
-        url: "https://americanhistory.si.edu/collections/object/nmah_333451",
-      },
-      {
-        title: "Technical Manual — Fluorolube oils and greases manufactured by Hooker Chemical",
-        publisher: "U.S. Naval Facilities Engineering Systems Command",
-        url: "https://www.navfac.navy.mil/Portals/68/Documents/Business-Lines/Design-and-Construction/4_159_01dm39.pdf",
-      },
-      {
-        title: "Hooker S-Area Superfund Site Profile",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0202150",
-      },
+      { title: "Former Hooker Main Plant Part 373 Corrective-Action Permit", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932019/Permit.HW.932019.2022-09-15.FmrHookerMainPlant_Part373_CA_Permit_Final.pdf" },
+      { title: "Former Hooker Main Plant Record-of-Decision Equivalent", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932019/ROD.HW.932019.2000-02-01.hooker_ou2_ou3.pdf" },
+      { title: "Occidental Niagara Plant Corrective-Action Cleanup", publisher: "U.S. Environmental Protection Agency", url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-occidental-chemical-corporation-niagara-falls" },
+      { title: "Niagara Plant Historical Database, Volume 1", publisher: "New York State Department of Environmental Conservation document repository", url: "https://extapps.dec.ny.gov/data/DecDocs/932019/Report.HW.932019.1984-08-01.Historical_Data_Base_Vol_1_Text.pdf" },
+      { title: "Buffalo Avenue Plant Final Remedial System Optimization Report", publisher: "New York State Department of Environmental Conservation document repository", url: "https://extapps.dec.ny.gov/data/DecDocs/932019/Report.HW.932019.2024-08-02.Buffalo_Ave_Plant_Final_RSO_Report.pdf" },
+      { title: "Joe Dykstra Oral History — Hooker fluorocarbon coolant and lubricant production", publisher: "National Museum of Nuclear Science & History", url: "https://ahf.nuclearmuseum.org/voices/oral-histories/joe-dykstras-interview/" },
+      { title: "William T. Miller Historical Chemistry Record — Miller's Fluorolube", publisher: "Cornell University", url: "https://ecommons.cornell.edu/server/api/core/bitstreams/02d9c914-a3aa-4f25-b5d5-b0409a2c1ff4/content" },
+      { title: "William T. Miller Electrolytic Cell and Manhattan Project Materials Collection", publisher: "Smithsonian National Museum of American History", url: "https://americanhistory.si.edu/collections/object/nmah_333451" },
+      { title: "Technical Manual — Fluorolube oils and greases manufactured by Hooker Chemical", publisher: "U.S. Naval Facilities Engineering Systems Command", url: "https://www.navfac.navy.mil/Portals/68/Documents/Business-Lines/Design-and-Construction/4_159_01dm39.pdf" },
+      { title: "Hooker S-Area Superfund Site Profile", publisher: "U.S. Environmental Protection Agency", url: "https://cumulis.epa.gov/supercpad/cursites/csitinfo.cfm?id=0202150" },
     ],
+    updateNote: "Added Oldbury's 1908-1910 perchlorate beginnings and distinguished oxidizer manufacturing from the separate phosgene operation and unresolved waste destinations.",
   },
   {
     id: "olin-buffalo-avenue-plant",

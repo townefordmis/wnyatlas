@@ -1,0 +1,72 @@
+{
+  "reviewed": "2026-10-19",
+  "scope": "Buffalo Color / Oldbury / Niagara Electro-Chemical-Roessler & Hasslacher-DuPont",
+  "findings": [
+    {
+      "siteId": "buffalo-color",
+      "claim": "Building 432 was built in 1917 and subsequently used for picric acid after the 1920s; its phosgene role is tentative in this investigation.",
+      "source": "https://extapps.dec.ny.gov/data/DecDocs/915012/Report.HW.915012.1989-08-01.REMEDIAL_INVESTIGATION.pdf",
+      "locator": "Printed 2-3, section 2.2.3; visually checked PDF page 5",
+      "limit": "Separate DEC 2015 history identifies Area D phosgene production; building-level uncertainty must not erase the area-level account."
+    },
+    {
+      "siteId": "buffalo-color",
+      "claim": "Metal sludges were dewatered and shipped to recyclers; ash and chemical residues from burning were left in pits and soil covered.",
+      "source": "https://extapps.dec.ny.gov/data/DecDocs/915012/Report.HW.915012.1989-08-01.REMEDIAL_INVESTIGATION.pdf",
+      "locator": "Printed 2-4, section 2.2.5; visually checked PDF page 6",
+      "limit": "No attribution to a particular WWI-agent or picric-acid waste batch. Separate southwest concrete pit has uncertain function."
+    },
+    {
+      "siteId": "former-hooker-main-plant",
+      "claim": "Oldbury began sodium perchlorate in 1908 and potassium perchlorate in 1910.",
+      "source": "https://jplwater.nasa.gov/docs/NAS710571B.pdf",
+      "locator": "Appendix B: Joseph C. Schumacher 1999 paper, printed paper page 2 / PDF page 82",
+      "corroboration": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=30006JWT.TXT",
+      "limit": "NASA hosts the paper; it did not author it. Early salt production does not prove later military-grade ammonium production dates or a waste destination."
+    },
+    {
+      "siteId": "dupont-necco-park-landfill",
+      "claim": "Niagara Electro-Chemical sodium works was recently operating by December 1896; the contemporary account dates establishment to 1895.",
+      "source": "https://reference.insulators.info/publications/view/?id=265",
+      "locator": "Electrical World, December 5, 1896, pages 685-686",
+      "limit": "Buffalo Avenue factory and Necco Park landfill are separate properties."
+    },
+    {
+      "siteId": "dupont-necco-park-landfill",
+      "claim": "Manufacturing lineage includes Roessler & Hasslacher merger in 1925 and DuPont acquisition in 1930.",
+      "source": "https://nthistory.com/items/show/4838",
+      "locator": "Reproduction of Hagley collection description; original link https://findingaids.hagley.org/repositories/3/resources/1200/collection_organization",
+      "limit": "Original archive blocked automated reading. Catalog reproduction is identified as such. Company-wide acquisition products must not all be assigned to Niagara."
+    },
+    {
+      "siteIds": [
+        "dupont-necco-park-landfill",
+        "gill-creek-chemical-corridor"
+      ],
+      "claim": "Niagara Plant historical practices included bare-ground solvent washouts, cyanide-material weathering, PCB-oil drainage and reactor wastes directed toward Gill Creek.",
+      "source": "https://law.justia.com/cases/delaware/superior-court/1995/711-a-2d-45-4.html",
+      "locator": "Section I.B, Niagara Falls Plant",
+      "limit": "Historical insurance opinion, not a current exposure assessment. Adjacent section I.A describes Pompton Lakes, New Jersey, and must not be imported into Niagara."
+    },
+    {
+      "siteId": "dupont-necco-park-landfill",
+      "claim": "EPA identified specific sodium-process, chlorinated-manufacturing and solvent-bearing waste categories at Necco.",
+      "source": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1002O4B.TXT",
+      "locator": "Site History and Enforcement Activities",
+      "limit": "Mid-1930s-1977 disposal inventory does not establish destinations of all earlier company waste streams."
+    },
+    {
+      "siteId": "dupont-necco-park-landfill",
+      "claim": "2024 review found short-term protection with no current exposures, requiring emerging-contaminant delineation, source investigation and treatment-system sampling.",
+      "source": "https://extapps.dec.ny.gov/data/DecDocs/932047/Report.HW.932047.2024-03-15.Fourth%20Five-Year%20Review%20Report.pdf",
+      "locator": "Printed 14-15 and 18; protectiveness table visually checked PDF page 19",
+      "limit": "PFAS and 1,4-dioxane occurred upgradient and downgradient. September 30, 2026 milestone is not evidence of completed follow-up; DEC public listing reviewed has no subsequent report."
+    }
+  ],
+  "openQuestions": [
+    "Building 432 operating dates, picric-acid customers, and specific residue destinations.",
+    "Actual National Aniline mustard output, distinct from planned daily capacity.",
+    "Reconcile conflicting Niagara military-grade ammonium-perchlorate start dates and find plant waste records; do not assign pre-1956 Oldbury activity to Hooker ownership.",
+    "Obtain Necco emerging-contaminant follow-up to the September 2026 milestone and EPA disposition."
+  ]
+}

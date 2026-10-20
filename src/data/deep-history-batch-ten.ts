@@ -1,3 +1,4 @@
+import { niagaraElectrochemical1896, niagaraPlantCatalog, niagaraPlantCourt, neccoReview2024 } from "@/data/industrial-history-sources";
 import type { DeepHistoryFeature } from "@/data/deep-history-features";
 
 export const deepHistoryBatchTen: Record<string, DeepHistoryFeature> = {
@@ -189,18 +190,26 @@ export const deepHistoryBatchTen: Record<string, DeepHistoryFeature> = {
     ],
   },
   "dupont-necco-park-landfill": {
-    eyebrow: "A recreation property became a chemical landfill over fractured bedrock",
-    title: "Necco Park contains ninety-three thousand tons managed by cap, recovery, and treatment",
-    lead: "The Niagara Electrochemical Company's former recreation ground gave Necco Park its name. After DuPont acquired it in 1930, lagoons and land areas received liquid and solid process wastes from the mid-1930s through 1977, creating a long-term DNAPL and groundwater problem in layered fractured bedrock.",
+    eyebrow: "From early electrochemistry to a landfill still requiring treatment",
+    title: "The Niagara chemical works sent its wastes to Necco Park",
+    lead: "Niagara Electro-Chemical, Roessler & Hasslacher, and DuPont built a chemical business on Buffalo Avenue. Its products changed over time; later waste records show how sodium-process debris, chlorinated residues, and solvent-bearing sludges reached a separate recreation property that became a landfill.",
     accent: "#a8684f",
     stat: { value: "93,000 tons", label: "estimated industrial process waste within the disposal area" },
     chapters: [
-      { period: "Before 1930-1977", title: "Recreation land became a process-waste disposal property", body: "DuPont placed liquid waste in shallow southeast lagoons and solid materials elsewhere. Recorded wastes include fly ash, sodium salts, cell-bath residue, rubble, chlorinolysis waste, and off-grade products." },
+      { period: "1895-1896", title: "Niagara power supported a new sodium works", body: "Electrical World's December 1896 account describes a recently operating Buffalo Avenue factory established in 1895, with Franz Roessler, Hamilton Castner, and Jacob Hasslacher as officers. Sodium and sodium peroxide were its founding products. The report places the office frontage on Buffalo Avenue; it does not place this manufacturing at the later Necco landfill." },
+      { period: "1925-1930 and later", title: "Roessler & Hasslacher became part of DuPont", body: "Hagley's collection description, reproduced by North Tonawanda History, dates the merger of Niagara Electro-Chemical and Roessler & Hasslacher to 1925 and DuPont's purchase to 1930. A 1995 court account identifies sodium compounds, cyanides, ammonia, chlorinated solvents, polyvinyl alcohol, and adiponitrile across the Niagara Plant's history. This list spans different periods; it is not a claim that every product was present in 1896." },
+      { period: "1940s-1970s plant practices", title: "Some wastes entered the ground before ever reaching a landfill", body: "The 1995 insurance opinion describes solvent tank residues washed onto bare ground and sodium/cyanide equipment and residues left outdoors to weather, leaching barium and cyanide. It also describes PCB cooling oil washed through drains and trenches to Gill Creek and tetrachloroethane reactor wastes discharged toward the creek. These are Buffalo Avenue plant pathways, distinct from waste transported to Necco Park." },
+      { period: "Mid-1930s-1977", title: "The landfill inventory connects the products to their residues", body: "EPA's 1998 decision identifies sodium-process salts and broken cell materials; chlorinolysis residues containing hexachlorobenzene, hexachlorobutadiene, and hexachloroethane; and liming sludge carrying TCE and PCE. Polymer residues and off-grade products also went to Necco. Liquids entered shallow earthen lagoons while solids occupied other areas. This documented Niagara Plant waste inventory totals an estimated 93,000 tons." },
       { period: "Investigation", title: "Dense liquid moved into a complicated bedrock system", body: "Sampling identified soil contamination, multiple water-bearing zones, and dense non-aqueous-phase liquid. Fractures made source control and plume monitoring more complex than a shallow-soil remedy." },
       { period: "1998-present", title: "Containment and recovery replaced wholesale excavation", body: "The selected system uses a clay cap, groundwater and DNAPL recovery, seep collection, treatment, groundwater restrictions, and a broad monitoring-well network." },
+      { period: "2020 sampling / 2024 review", title: "New contaminants reopened the question of sources", body: "EPA reviewed monitoring-well detections of PFAS and 1,4-dioxane. Detections occurred both upgradient and downgradient, leaving the landfill's contribution unresolved. The March 2024 review found the remedy protective in the short term because there were no current exposures, but required broader sampling and checks of treatment-system influent and effluent for long-term protection. Its September 2026 milestone does not itself prove the follow-up was completed." },
     ],
     caution: { title: "Necco Park is one defined disposal area", body: "It is distinct from DuPont operating areas, TAM Ceramics, Hyde Park Landfill, and other Niagara chemical sites. Similar groundwater compounds or proximity do not erase source boundaries." },
     sources: [
+      { label: niagaraElectrochemical1896.title, url: niagaraElectrochemical1896.url },
+      { label: niagaraPlantCatalog.title, url: niagaraPlantCatalog.url },
+      { label: niagaraPlantCourt.title, url: niagaraPlantCourt.url },
+      { label: neccoReview2024.title, url: neccoReview2024.url },
       { label: "EPA: DuPont/Necco Park Superfund profile", url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.Cleanup&id=0201992" },
       { label: "EPA: DuPont/Necco Park record of decision", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1002O4B.TXT" },
     ],

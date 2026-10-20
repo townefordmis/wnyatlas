@@ -1,3 +1,4 @@
+import { buffaloAreaDRevised, niagaraElectrochemical1896, niagaraPlantCatalog, niagaraPlantCourt, neccoReview2024 } from "@/data/industrial-history-sources";
 import { buffaloAreaD, buffaloAreaDRI, warDepartment, mustardCourt, armyImpregnite, solventWartimeCourt, impregniteMonograph, usgsImpregnite } from "@/data/wartime-history-sources";
 import type { AtlasSite } from "@/types/site";
 import { siteStories } from "@/data/site-stories";
@@ -346,66 +347,38 @@ const featuredSiteRecords: AtlasSite[] = [
     municipality: "Buffalo",
     county: "Erie",
     category: "industry",
-    summary:
-      "Former dye and chemical-manufacturing complex beside the Buffalo River. Investigations documented metals, volatile and semi-volatile compounds in plant sewer sediment, including storm sewers leading to river Outfalls 006 and 011; remedies included measures to address contaminated sewer sediment and limit migration toward the river.",
+    summary: "Former dye and chemical-manufacturing complex beside the Buffalo River. Investigations documented metals, volatile and semi-volatile compounds in plant sewer sediment, including storm sewers leading to river Outfalls 006 and 011; remedies included measures to address contaminated sewer sediment and limit migration toward the river.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.84472385396359, 42.863843134660996],
+    coordinates: [
+      -78.84472385396359,
+      42.863843134660996,
+    ],
     newsEvents: [
-      {
-        date: "1879-2003",
-        headline: "More than a century of dye and organic-chemical production ends on the Buffalo River",
-        summary: "The plant's closure left separate cleanup areas, contaminated sewers, groundwater, and a workforce history that cannot be reduced to the later redevelopment parcels.",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-buffalo-color-corporation-buffalo-new-york",
-        reach: "Regional",
-      },
-      {
-        date: "2018-2026",
-        headline: "Athletic reuse exposes the practical importance of neighboring air emissions",
-        summary: "Fields on remediated Area E depended on engineered soil controls, while complaints and regulatory action involving nearby PVS emissions raised a separate air-pathway question for athletes and spectators.",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://dec.ny.gov/news/press-releases/2021/5/dec-directs-pvs-chemical-solutions-inc-to-temporarily-cease-operations",
-        reach: "Local",
-      },
+      { date: "1879-2003", headline: "More than a century of dye and organic-chemical production ends on the Buffalo River", summary: "The plant's closure left separate cleanup areas, contaminated sewers, groundwater, and a workforce history that cannot be reduced to the later redevelopment parcels.", publisher: "U.S. Environmental Protection Agency", url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-buffalo-color-corporation-buffalo-new-york", reach: "Regional" },
+      { date: "2018-2026", headline: "Athletic reuse exposes the practical importance of neighboring air emissions", summary: "Fields on remediated Area E depended on engineered soil controls, while complaints and regulatory action involving nearby PVS emissions raised a separate air-pathway question for athletes and spectators.", publisher: "New York State Department of Environmental Conservation", url: "https://dec.ny.gov/news/press-releases/2021/5/dec-directs-pvs-chemical-solutions-inc-to-temporarily-cease-operations", reach: "Local" },
     ],
     story: {
       lastReviewed: "October 19, 2026",
       background: [
         "NYSDEC's Area D history identifies phosgene production during 1917-1918. Military records separately document National Aniline's 1918 mustard-gas plant project. These accounts establish wartime chemical-warfare involvement, but actual mustard output and the detailed relationship between the two operations remain unresolved.",
+        "The revised 1989 investigation also identifies Building 432, built in 1917, with later picric-acid production. Its possible phosgene use is less certain than DEC's separate Area D production history.",
         "Chemical and dye manufacturing began on this Buffalo River property in 1879 under the Schoellkopf Aniline and Dye Company. Later owners included National Aniline, Allied Chemical, and Buffalo Color. EPA reports that the complex produced more than 1,000 dyes and organic chemicals based on aniline and related compounds.",
         "The site's long operating history created multiple cleanup areas rather than one simple event. Plant sections, sewers, soil, groundwater, shoreline, and the adjacent river have been investigated through different state and federal programs.",
       ],
       timeline: [
-        {
-          period: "1879",
-          event:
-            "Schoellkopf Aniline and Dye Company established the dye and chemical works beside the Buffalo River.",
-        },
-        {
-          period: "1916–1920",
-          event:
-            "The property became part of National Aniline and then Allied Chemical.",
-        },
+        { period: "1879", event: "Schoellkopf Aniline and Dye Company established the dye and chemical works beside the Buffalo River." },
+        { period: "1916–1920", event: "The property became part of National Aniline and then Allied Chemical." },
         { period: "1917-1918", event: "DEC identifies phosgene manufacturing in Area D; this is an attributed historical account, not a measurement of present-day contamination." },
         { period: "July-November 1918", event: "The government contracted for a mustard-gas plant designed for 50 tons daily. The War Department reports it was 80 percent complete on November 1; capacity is not verified output." },
-        {
-          period: "1977",
-          event:
-            "Buffalo Color purchased the plant and focused later production on indigo dye and related materials.",
-        },
-        {
-          period: "2003",
-          event:
-            "Manufacturing ended after Buffalo Color ceased operations and entered bankruptcy.",
-        },
-        {
-          period: "2000s–present",
-          event:
-            "State brownfield and inactive-hazardous-waste programs, together with federal corrective-action oversight, addressed the complex in separate areas and phases.",
-        },
+        { period: "After the 1920s", event: "The investigation documents picric-acid production in Building 432; the exact operating dates remain unresolved." },
+        { period: "1922-1972", event: "Area D handled combustible plant wastes; open pits gave way to the Building 448 incinerator in 1954." },
+        { period: "1977", event: "Buffalo Color purchased the plant and focused later production on indigo dye and related materials." },
+        { period: "2003", event: "Manufacturing ended after Buffalo Color ceased operations and entered bankruptcy." },
+        { period: "2000s–present", event: "State brownfield and inactive-hazardous-waste programs, together with federal corrective-action oversight, addressed the complex in separate areas and phases." },
       ],
       documentedImpacts: [
         "Area D's broader chemical works used iron-sludge lagoons and metal-sludge weathering areas. The 1989 investigation's 1922 chronology describes tars burned on the peninsula and liquids sewered to the Buffalo River. No reviewed record traces a specific WWI gas-production waste stream to those destinations.",
+        "The revised investigation describes ash and chemical residues left in burning pits and covered with soil. This establishes a historical on-site disposal pathway without identifying a specific WWI-agent waste stream.",
         "Historic wastes included off-specification dye, process tars and residues, spent catalysts, and waste solvents.",
         "Investigations documented metals, volatile compounds, and semi-volatile compounds in parts of the plant system, including sewer sediment.",
         "Plant sewers leading toward Buffalo River outfalls became part of the investigation and remedy.",
@@ -420,42 +393,26 @@ const featuredSiteRecords: AtlasSite[] = [
         "Former plant areas have moved through cleanup and redevelopment at different rates. The correct present-day account therefore depends on the specific parcel and cleanup program rather than treating the entire former complex as one uniform condition.",
       ],
       researchNotes: [
+        "Locate Building 432 operating records and product shipments to establish picric-acid dates and use. The report does not identify a wartime customer or establish that picric acid remains today.",
+        "The southwest concrete pit has an uncertain purpose; the investigation suggests a possible water-settling basin. It should not be relabeled a chemical-disposal pit.",
         "Reconcile DEC's 1917-1918 phosgene account, the War Department's unfinished 1918 mustard-gas project, and the 1926 court statement that a mustard plant operated. Establish production dates and quantities before treating planned capacity as actual output.",
         "Build a parcel-by-parcel crosswalk for Areas A through E and identify the current owner, remedy, and land-use controls for each.",
         "Distinguish Buffalo Color plant contamination from the separate Buffalo River sediment-remediation program.",
       ],
     },
     sources: [
+      buffaloAreaDRevised,
       buffaloAreaD,
       buffaloAreaDRI,
       warDepartment,
       mustardCourt,
-      {
-        title: "Buffalo Color Remedial Investigation Report",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/C915230/Report.BCP.C915230.2008-08-29.Area-ABCE_Remedial_Investigation_Report.pdf",
-      },
-      {
-        title: "Buffalo Color Corporation Hazardous-Waste Cleanup",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-buffalo-color-corporation-buffalo-new-york",
-      },
-      {
-        title: "Frequently Asked Questions About Restoring the Buffalo River",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/restoring-buffalo-river-faq",
-      },
-      {
-        title: "Looking Out at South Buffalo's National Aniline, 1946 — historical article and photograph (view at source)",
-        publisher: "Buffalo Stories Archives & Blog",
-        url: "https://blog.buffalostories.com/looking-out-at-south-buffalos-national-aniline-1946/",
-      },
-      {
-        title: "Buffalo Color Corporation Historical Photographs — copyrighted gallery (view at source)",
-        publisher: "Abandoned America / Matthew Christopher Photography",
-        url: "https://www.abandonedamerica.us/buffalo-color-corp-historical-photos",
-      },
+      { title: "Buffalo Color Remedial Investigation Report", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/C915230/Report.BCP.C915230.2008-08-29.Area-ABCE_Remedial_Investigation_Report.pdf" },
+      { title: "Buffalo Color Corporation Hazardous-Waste Cleanup", publisher: "U.S. Environmental Protection Agency", url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-buffalo-color-corporation-buffalo-new-york" },
+      { title: "Frequently Asked Questions About Restoring the Buffalo River", publisher: "New York State Department of Environmental Conservation", url: "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/restoring-buffalo-river-faq" },
+      { title: "Looking Out at South Buffalo's National Aniline, 1946 — historical article and photograph (view at source)", publisher: "Buffalo Stories Archives & Blog", url: "https://blog.buffalostories.com/looking-out-at-south-buffalos-national-aniline-1946/" },
+      { title: "Buffalo Color Corporation Historical Photographs — copyrighted gallery (view at source)", publisher: "Abandoned America / Matthew Christopher Photography", url: "https://www.abandonedamerica.us/buffalo-color-corp-historical-photos" },
     ],
+    updateNote: "Expanded Building 432 and picric-acid history; traced Area D burning residues and sludge handling to the revised 1989 investigation.",
   },
   {
     id: "buffalo-river",
@@ -3119,22 +3076,21 @@ const featuredSiteRecords: AtlasSite[] = [
     municipality: "Niagara Falls and Town of Niagara",
     county: "Niagara",
     category: "cleanup",
-    summary:
-      "Former DuPont disposal area containing an estimated 93,000 tons of industrial process waste. A clay cap, groundwater and dense non-aqueous-phase-liquid recovery, treatment systems, and a large monitoring-well network manage contamination in fractured bedrock.",
+    summary: "Former DuPont disposal area containing an estimated 93,000 tons of Niagara Plant process waste. Cap, groundwater recovery and treatment manage fractured-bedrock contamination. EPA's 2024 review found short-term protection while requiring more work on emerging contaminants and their sources.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.956, 43.112],
-    sources: [
-      {
-        title: "DuPont / Necco Park Superfund Site Profile",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.Cleanup&id=0201992",
-      },
-      {
-        title: "DuPont / Necco Park Record of Decision",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1002O4B.TXT",
-      },
+    coordinates: [
+      -78.956,
+      43.112,
     ],
+    sources: [
+      niagaraElectrochemical1896,
+      niagaraPlantCatalog,
+      niagaraPlantCourt,
+      neccoReview2024,
+      { title: "DuPont / Necco Park Superfund Site Profile", publisher: "U.S. Environmental Protection Agency", url: "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.Cleanup&id=0201992" },
+      { title: "DuPont / Necco Park Record of Decision", publisher: "U.S. Environmental Protection Agency", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1002O4B.TXT" },
+    ],
+    updateNote: "Connected Niagara Electro-Chemical and Roessler & Hasslacher manufacturing to documented plant and landfill waste pathways; added EPA's 2024 review and unresolved PFAS/1,4-dioxane source investigation.",
   },
   {
     id: "niagara-sanitation-nash-road-landfill",
@@ -3393,45 +3349,23 @@ const featuredSiteRecords: AtlasSite[] = [
     municipality: "Niagara Falls",
     county: "Niagara",
     category: "waterway",
-    summary:
-      "Creek flowing past the DuPont and Olin chemical plants to the Niagara River. Historic plant-related contaminants affected creek sediment and groundwater; joint cleanup removed about 8,020 cubic yards of contaminated sediment by 1992, while groundwater collection, treatment, and monitoring continued to control migration toward the creek and river.",
+    summary: "Creek flowing past the DuPont and Olin chemical plants to the Niagara River. Historic plant-related contaminants affected creek sediment and groundwater; joint cleanup removed about 8,020 cubic yards of contaminated sediment by 1992, while groundwater collection, treatment, and monitoring continued to control migration toward the creek and river.",
     evidenceStatus: "well-documented",
-    coordinates: [-78.989, 43.074],
+    coordinates: [
+      -78.989,
+      43.074,
+    ],
     newsEvents: [
-      {
-        date: "1981-1992",
-        headline: "Two chemical companies remove contaminated sediment from a shared creek corridor",
-        summary: "Olin and DuPont work proceeded in stages before the joint off-site remediation was completed, reflecting multiple sources and reaches rather than one uniform company plume.",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://www.epa.gov/sites/default/files/2015-11/documents/niagara-river-reduction-toxics-loadings-report-200306-112pp.pdf",
-        reach: "Regional",
-      },
-      {
-        date: "Long-term phase",
-        headline: "Groundwater capture becomes the continuing barrier protecting Gill Creek and the Niagara River",
-        summary: "Recovery wells, treatment, and sediment monitoring remain the less-visible human and ecological protection after the major creek excavation ended.",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-olin-corporation-niagara-falls-new-york",
-        reach: "Regional",
-      },
+      { date: "1981-1992", headline: "Two chemical companies remove contaminated sediment from a shared creek corridor", summary: "Olin and DuPont work proceeded in stages before the joint off-site remediation was completed, reflecting multiple sources and reaches rather than one uniform company plume.", publisher: "U.S. Environmental Protection Agency", url: "https://www.epa.gov/sites/default/files/2015-11/documents/niagara-river-reduction-toxics-loadings-report-200306-112pp.pdf", reach: "Regional" },
+      { date: "Long-term phase", headline: "Groundwater capture becomes the continuing barrier protecting Gill Creek and the Niagara River", summary: "Recovery wells, treatment, and sediment monitoring remain the less-visible human and ecological protection after the major creek excavation ended.", publisher: "U.S. Environmental Protection Agency", url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-olin-corporation-niagara-falls-new-york", reach: "Regional" },
     ],
     sources: [
-      {
-        title: "Olin Corporation Hazardous-Waste Cleanup",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-olin-corporation-niagara-falls-new-york",
-      },
-      {
-        title: "Reduction of Toxics Loadings to the Niagara River",
-        publisher: "U.S. Environmental Protection Agency",
-        url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1010FSX.txt",
-      },
-      {
-        title: "Gill Creek Investigation and Cleanup History",
-        publisher: "New York State Department of Environmental Conservation",
-        url: "https://extapps.dec.ny.gov/data/DecDocs/932013/Report.HW.932013.1991-03-13.GILL_CREEK_WELL_BORINGS.pdf",
-      },
+      niagaraPlantCourt,
+      { title: "Olin Corporation Hazardous-Waste Cleanup", publisher: "U.S. Environmental Protection Agency", url: "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-olin-corporation-niagara-falls-new-york" },
+      { title: "Reduction of Toxics Loadings to the Niagara River", publisher: "U.S. Environmental Protection Agency", url: "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1010FSX.txt" },
+      { title: "Gill Creek Investigation and Cleanup History", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/932013/Report.HW.932013.1991-03-13.GILL_CREEK_WELL_BORINGS.pdf" },
     ],
+    updateNote: "Added documented DuPont drain, trench and reactor-waste pathways to the Gill Creek history.",
   },
   {
     id: "smokes-creek-bethlehem-corridor",

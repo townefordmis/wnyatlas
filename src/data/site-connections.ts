@@ -19,6 +19,16 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
   {
+    id: "niagara-electrochemical-waste-trails",
+    name: "Niagara Electro-Chemical, Roessler & Hasslacher, and DuPont waste trails",
+    summary: "A manufacturing lineage links the Buffalo Avenue works to Necco Park disposal and Gill Creek discharge records. DuPont's separate WWII impregnite property has its own manufacturing and cleanup history.",
+    members: [
+      { siteId: "dupont-necco-park-landfill", role: "Documented Niagara Plant waste destination", connection: "EPA inventories sodium-process debris, chlorinated residues and solvent-bearing sludges transported to the separate landfill." },
+      { siteId: "gill-creek-chemical-corridor", role: "Plant drainage and sediment pathway", connection: "Historical accounts describe DuPont PCB-oil drainage and reactor wastes entering Gill Creek; sediment cleanup and groundwater controls followed." },
+      { siteId: "solvent-chemical-niagara-falls", role: "Separate DuPont wartime property", connection: "The 3163 Buffalo Avenue impregnite facility is distinct from the Niagara Plant and Necco landfill; company ownership alone does not trace its wastes to either." },
+    ],
+  },
+  {
       id: "wartime-chemical-production",
       name: "Wartime chemical production and its environmental record",
       summary: "WWI agent production, a mustard-gas plant project, WWII protective treatment and later disposal histories have different evidence. These connections do not establish continuous warfare-agent manufacture, a shared plume, or a verified destination for WWI gas-production wastes.",

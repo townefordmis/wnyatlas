@@ -3984,24 +3984,29 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "dupont-necco-park-landfill": {
-    lastReviewed: "August 11, 2026",
+    lastReviewed: "October 19, 2026",
     background: [
       "Necco Park began as a recreation property associated with the Niagara Electrochemical Company, the origin of the name 'Necco.' DuPont acquired the property in 1930 and used the approximately 24-acre area for industrial disposal from the mid-1930s through 1977.",
+      "The waste-producing factory was a separate Buffalo Avenue property. Niagara Electro-Chemical began with sodium and sodium-peroxide manufacturing in the 1890s; Roessler & Hasslacher and then DuPont expanded the chemical business. Necco Park records document a destination for later Niagara Plant wastes, not the factory's location.",
       "Liquid waste went into shallow lagoons in the southeast portion while solid wastes were placed elsewhere. EPA records describe fly ash, sodium salts and cell-bath residues, rubble, chlorinolysis wastes, off-grade products, and other organic and inorganic process materials; the total is estimated at about 93,000 tons.",
       "Investigation found contaminants in soil and a complex sequence of overburden and fractured-bedrock water-bearing zones, including dense non-aqueous-phase liquid. The remedy therefore emphasizes hydraulic containment and recovery over wholesale excavation of the waste mass.",
     ],
     timeline: [
+      { period: "1895-1896", event: "Niagara Electro-Chemical was organized and brought its Buffalo Avenue sodium works into operation." },
+      { period: "1925-1930", event: "Hagley's collection description dates the Niagara Electro-Chemical/Roessler & Hasslacher merger to 1925 and DuPont's acquisition to 1930." },
       { period: "Before 1930", event: "The property served as Niagara Electrochemical Company recreation land, giving Necco Park its name." },
       { period: "1930", event: "DuPont acquired the property." },
       { period: "Mid-1930s-1977", event: "DuPont used lagoons and land areas for liquid and solid process-waste disposal." },
       { period: "1977 onward", event: "Disposal ended and investigations focused on the waste footprint, seepage, and multiple groundwater zones." },
       { period: "1998", event: "EPA selected a remedy centered on a stronger cover, expanded groundwater and DNAPL recovery, seep collection, treatment, monitoring, and groundwater-use restrictions." },
+      { period: "March 2024", event: "EPA found the remedy protective in the short term; long-term protection required more data on emerging contaminants and their sources." },
       { period: "Present", event: "Cap care, recovery and treatment, plume monitoring, and periodic review continue across the long-term containment system." },
     ],
     documentedImpacts: [
       "Approximately 93,000 tons of industrial process waste remain in the disposal area.",
       "Groundwater contamination extends through complex fractured bedrock.",
       "DNAPL creates a persistent subsurface source requiring specialized recovery and monitoring.",
+      "The 1998 decision identifies sodium-process salts and cell rubble, chlorinated-manufacturing residues, and sludge carrying TCE and PCE among the deposited materials. These are specific waste categories rather than an assumption that everything made by the company was dumped here.",
     ],
     cleanupAndControls: [
       "A clay cap isolates waste and reduces infiltration.",
@@ -4009,11 +4014,13 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "A broad monitoring-well network tests plume containment and remedy performance across the layered bedrock system.",
     ],
     presentDay: [
-      "Necco Park is a long-term containment and treatment site. Its protectiveness depends on continued recovery, treatment, cap care, and monitoring across a complex bedrock system.",
+      "EPA's March 2024 review found short-term protection because no current exposures were identified. PFAS and 1,4-dioxane detected in monitoring wells required further delineation and source investigation, including treatment-plant influent and effluent sampling.",
+      "Continued cap maintenance, liquid recovery and treatment remain necessary. The review's September 30, 2026 investigation milestone is a target; the reviewed public file listing does not establish its completion.",
     ],
     researchNotes: [
-      "Report updated DNAPL recovery and groundwater plume trends from the newest review.",
-      "Keep the disposal area distinct from adjacent DuPont operating areas and other Niagara chemical sites.",
+      "Obtain the emerging-contaminant investigation and EPA follow-up to the September 2026 milestone. Upgradient detections prevent assigning all PFAS and 1,4-dioxane to Necco Park from this review alone.",
+      "Use plant-specific records to date individual product lines. Corporate acquisition lists do not prove every Roessler & Hasslacher product was made in Niagara Falls.",
+      "Keep the Buffalo Avenue plant, Gill Creek sediment, Necco landfill, adjacent commercial landfills, and the separate WWII impregnite property spatially distinct.",
     ],
   },
   "niagara-sanitation-nash-road-landfill": {
@@ -4259,10 +4266,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "gill-creek-chemical-corridor": {
-    lastReviewed: "August 17, 2026",
+    lastReviewed: "October 19, 2026",
     background: [
       "Gill Creek is a small, channelized tributary running through one of Niagara Falls' densest chemical-manufacturing corridors before reaching the Niagara River. DuPont operated on both sides of the creek, while Olin's plants and the former Solvent Chemical property occupied adjoining ground. That geography made the creek both habitat and drainage infrastructure—and made it impossible to explain all contamination as one uniform plume from one company.",
       "DuPont's plant history included chlorinated solvents and PCBs. Olin made chlorine and caustic products and, between 1950 and a destructive 1956 production explosion, organic chemicals including chlorobenzenes, trichlorophenol, and BHC compounds. Investigations later found mercury and chlorinated chemicals in soil and groundwater, with shallow groundwater able to discharge toward Gill Creek.",
+      "A 1995 insurance opinion describes specific DuPont pathways to Gill Creek: PCB cooling oil washed into trenches and floor drains, and tetrachloroethane reactor wastes sent to a creek-bound sluice. This historical account complements the sediment-removal record; it does not establish current creek concentrations.",
       "Creek cleanup occurred in stages. An early 1981 action did not address every affected reach; DuPont and Olin later completed a joint removal in December 1992. In all, about 8,020 cubic yards of contaminated sediment were taken off site. Five years of post-remediation sediment monitoring reported no PCB recontamination in the remediated reach, while groundwater recovery and treatment remained the continuing defense against renewed loading.",
     ],
     timeline: [
