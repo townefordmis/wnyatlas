@@ -1,0 +1,117 @@
+{
+  "reviewed": "2026-10-26",
+  "scope": "Reconcile the user's consolidated industrial, mercury, waste-disposal, and brownfield candidates with existing Atlas coverage",
+  "publicationStandard": "Documented locations and findings may be published with their limits; historical use, a proposed measure, or a shared operator does not establish a release, completed cleanup, or common waste stream.",
+  "addedSiteIds": ["curtiss-malt-house", "1440-main-street", "3701-river-road", "olin-industrial-welding", "durez-packard-road"],
+  "findings": [
+    {
+      "siteId": "curtiss-malt-house",
+      "source": "https://extapps.dec.ny.gov/data/DecDocs/C915382/Application.BCP.C915382.2026-04-01.Interim%20Remedial%20Measures%20Work%20Plan.pdf",
+      "locator": "PDF pages 4–7 / printed pages 1–4, sections 1–2; page 4 visually reviewed",
+      "finding": "April 2026 plan describes five parcels totaling 2.686 acres, historical malt/grain uses and adjoining metal-related businesses, a vapor concern in the northern buildings, and proposed vapor mitigation, soil removal, and tank removal.",
+      "limit": "Supersedes older acreage and reuse proposals for this narrative; does not certify completed work or prove attribution to a neighboring company. The 2025 investigation plan supports soil/groundwater findings separately."
+    },
+    {
+      "siteId": "1440-main-street",
+      "source": "https://extapps.dec.ny.gov/data/der/factsheet/c915408riwp.pdf",
+      "locator": "March 2026, PDF pages 1–2",
+      "finding": "DEC identifies C915408 at 1440–1458 Main Street, prior garage/shop uses and historical tanks, soil SVOCs and metals, and proposed soil/groundwater/vapor investigation.",
+      "limit": "No final remedy, completed investigation, specific release source, or indoor-air impact established by this fact sheet."
+    },
+    {
+      "siteId": "1440-main-street",
+      "source": "https://extapps.dec.ny.gov/data/DecDocs/C915408/Work%20Plan.BCP.C915408.2026-07-06.Final%20Remedial%20Investigation%20Work%20Plan.pdf",
+      "locator": "June 2026 document filed July 6, PDF pages 6–12 / printed pages 1–7, sections 1–3",
+      "finding": "Final plan provides proposed 178,000-square-foot mixed-use redevelopment, prior soil findings, tank-area investigation and potential interim measures. Later than the March fact sheet which left redevelopment undetermined.",
+      "limit": "Plan is not a completion report. Introduction misprints the site code as C915405; retain C915408 from cover, archive, DEC fact sheet, and GIS. Historical sample summaries do not assign all exceedances to all locations."
+    },
+    {
+      "siteId": "3701-river-road",
+      "source": "https://extapps.dec.ny.gov/data/DecDocs/C915419/Application.BCP.C915419.2024-10-30.%20Phase%20II.pdf",
+      "locator": "October 30, 2024 report, pages 1–4, Tables 1–2",
+      "finding": "Refinery-related storage/fueling history, petroleum soil and groundwater impacts, localized PAHs, and limited selected lead analyses. Two of four sampled temporary wells had VOC standard exceedances.",
+      "limit": "Recommendation to pursue spill closure requires remediation; no closure established. Historical occupants are not automatically the source of each measured compound. Two soil lead analyses do not characterize the entire site."
+    },
+    {
+      "siteId": "3701-river-road",
+      "source": "https://extapps.dec.ny.gov/data/DecDocs/C915419/Agreement.BCP.C915419.2026-09-23.BCP%20Acceptance%20Package.pdf",
+      "locator": "PDF page 1, September 23, 2026 DEC transmittal",
+      "finding": "DEC transmits the fully executed Brownfield Cleanup Agreement.",
+      "limit": "Acceptance is a process milestone, not remediation completion."
+    },
+    {
+      "siteId": "olin-industrial-welding",
+      "source": "https://extapps.dec.ny.gov/data/DecDocs/932050/Report.HW.932050.2026-07-08.2026_PRR.pdf",
+      "locator": "PDF pages 6–9, 14–15, 18–19 / sections 1, 4.2, 6; PDF page 14 visually reviewed",
+      "finding": "1952–1956 pilot research history, brine and demolition fill, affected creek sediment and soils, consolidation and cover, May 2025–May 2026 monitoring. MW-2 spring 2026 mercury 16.3 micrograms/L and beta-BHC 0.22 micrograms/L exceeded report comparison standards. Surface-water discharge samples also had specified exceedances. Operator reports effective hydraulic containment and no new exposure pathways.",
+      "limit": "Operator-submitted report is not a separate DEC concurrence. Its general favorable conclusion must not erase specific exceedances. Groundwater and surface-water discharge sampling are not drinking-water sampling. Older and newer documents use differing OU labels; retain document-specific maps."
+    },
+    {
+      "siteId": "olin-industrial-welding",
+      "source": "https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0201396",
+      "locator": "CERCLA site information / NYD002114536",
+      "finding": "Legacy EPA entry confirms a federal inventory identity and no further federal action status, but lists a coordinate conflicting with DEC's Niagara Falls cleanup location.",
+      "limit": "Use DEC GIS point 932050. Federal NFFA/NFRAP is not state cleanup completion or absence of contamination."
+    },
+    {
+      "siteId": "durez-packard-road",
+      "source": "https://www.epa.gov/hwcorrectiveactioncleanups/hazardous-waste-cleanup-durez-corporation-niagara-falls-new-york",
+      "locator": "Cleanup Status, Site Description, Contaminants; page updated April 14, 2026",
+      "finding": "Phenolic-resin facility, on-site hazardous-waste incinerator, soil and groundwater releases, and a cap plus overburden and bedrock collection remedy.",
+      "limit": "Separate from North Tonawanda Durez and Pettit Flume. Facility waste codes do not prove off-site exposure or current air violations."
+    },
+    {
+      "siteId": "durez-packard-road",
+      "source": "https://dec.ny.gov/news/environmental-notice-bulletin/2026-06-24/completed-application/city-of-niagara-falls-durez-niagara",
+      "locator": "June 24, 2026 Title V renewal notice, Project Description",
+      "finding": "Operating resin facility at 5000 Packard Road with aqueous process-waste thermal oxidizer and boiler, seeking air-permit renewal.",
+      "limit": "Draft renewal notice is not final permit issuance or evidence of an emissions violation."
+    },
+    {
+      "siteIds": ["niagara-county-refuse", "bell-aerospace-impoundment", "olin-buffalo-avenue-plant"],
+      "source": "https://semspub.epa.gov/work/02/49366.pdf",
+      "locator": "March 1988 RI/FS work plan, Table 2-1, PDF pages 17–18 / printed pages 9–10; table columns on PDF page 17 visually verified",
+      "finding": "Bell: heat-treatment salts, plating-tank sludge, scrap wood, clay/fly ash. Olin: graphite, lime sludge, mercury-bearing brine sludge. Continuation: Niagara Falls incinerator residue. Table cites January 5, 1983 Remedial Action Master Plan.",
+      "limit": "Reported/suspected historical waste inventory, not exhaustive or representative of all wastes and not generator-specific chemical analyses. Do not infer chromium oxidation state, cadmium, nickel, cyanide, or the same shipments to Nash Road or other Witmer properties."
+    }
+  ],
+  "coordinateAuthority": {
+    "source": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/Remediation_Sites/FeatureServer/1/query",
+    "retrieved": "2026-10-26",
+    "outSR": 4326,
+    "markers": [
+      { "siteId": "curtiss-malt-house", "decCode": "C915382", "coordinates": [-78.90059321326937, 42.9132928262656] },
+      { "siteId": "1440-main-street", "decCode": "C915408", "coordinates": [-78.86586827252643, 42.912830950498744] },
+      { "siteId": "3701-river-road", "decCode": "C915419", "coordinates": [-78.9306015042552, 42.975913440377624] },
+      { "siteId": "olin-industrial-welding", "decCode": "932050", "coordinates": [-79.02617434310837, 43.08371594014158] },
+      { "siteId": "durez-packard-road", "decCode": "932040", "coordinates": [-79.00219642326812, 43.10018984299492] }
+    ],
+    "limit": "Agency orientation points; no new parcel or contamination polygons drawn."
+  },
+  "validationNotes": {
+    "newMarkers": "All five new coordinates match DEC's retrieved GIS points exactly. All 210 map records pass bounds, duplicate-coordinate, and connection-membership checks.",
+    "existingEditorialFlag": "The unchanged black-creek-village-fill-investigation article has 248 narrative words, below the 250-word editorial audit threshold. All five additions exceed that threshold and include every core story section.",
+    "existingCoordinateReviewQueue": ["land-reclamation-landfill", "two-mile-creek-tonawanda", "amherst-central-park-westwood-country-club", "cayuga-creek-erie-county", "sinclair-refinery-wellsville", "cayuga-island-industrial-fill", "little-valley-superfund", "black-creek-village-fill-investigation", "former-buffalo-forge-property", "niagara-transformer-cheektowaga"],
+    "coordinateReviewLimit": "These unchanged markers differ by over 250 meters from the first linked DEC record. Some represent waterways or contextual locations; review intended feature and document-code assignment before moving them.",
+    "lintScope": "Exclude pre-existing untracked .tmp and outputs directories when running ESLint; .tmp/youtube-transcript/bin is inaccessible to the ordinary workspace scan."
+  },
+  "remainingQueue": [
+    { "topic": "Bell waste chemistry and Nash Road shipments", "priority": 1, "nextEvidence": "Generator-specific waste analyses, manifests, and original 1983 Niagara County Refuse inventory. Do not infer individual metals from plating alone." },
+    { "topic": "Olin mercury disposal network", "priority": 1, "nextEvidence": "Hauling, shipment, and disposal records for additional named destinations; keep plant, Industrial Welding, 102nd Street, deep well, and other disposal records separate." },
+    { "topic": "Industrial Welding 2026 follow-up", "priority": 1, "nextEvidence": "DEC response to monitoring exceedances and operator conclusions, subsequent sampling, and unused piezometer decommissioning." },
+    { "topic": "Curtiss interim cleanup", "priority": 1, "nextEvidence": "DEC approval, construction certification, soil-disposal documentation, and vapor-system testing." },
+    { "topic": "1440 Main Street investigation", "priority": 1, "nextEvidence": "Investigation results following the final July 2026 RIWP, interim-work documentation, compound-specific findings, and any selected remedy." },
+    { "topic": "3701 River Road investigation", "priority": 1, "nextEvidence": "2025 chemical fingerprinting assessment, approved RIWP, subsequent investigation, and cleanup decisions." },
+    { "topic": "Durez Packard Road", "priority": 1, "nextEvidence": "Final 2026 air permit, emissions testing, annual groundwater reports, and off-site residue destinations." },
+    { "topic": "March 1979 interagency inventory", "priority": 2, "nextEvidence": "Obtain and extract the complete original inventory, deduplicate by address and agency code, and reconcile with later investigation files. Existing Atlas references to extracts do not constitute full inventory review." },
+    { "topic": "Niagara Falls municipal incinerator", "priority": 2, "nextEvidence": "Exact operating location and dates plus destination-specific ash records. Niagara County Refuse inventory establishes a reported destination without a verified standalone incinerator pin." },
+    { "topic": "Oldbury phosphorus and early Hooker production", "priority": 2, "existingCoverage": ["former-hooker-main-plant", "hooker-102nd-street-landfill", "radiological-investigation.ts"], "nextEvidence": "Reconcile early production dates, phosphorus-waste shipment records, and sampled slag mineralogy; no automatic thorium attribution." },
+    { "topic": "Royal Avenue chlorine predecessor", "priority": 2, "existingCoverage": ["frontier-chemical-royal-avenue"], "nextEvidence": "Operator succession and boundary-specific predecessor records; avoid a duplicate plant pin or merger with Olin." },
+    { "topic": "Niagara Falls gasworks", "priority": 2, "existingCoverage": ["niagara-falls-former-mgp"], "nextEvidence": "Site-specific characterization and agency decisions; historical gas manufacture alone is insufficient for confirmed contamination." },
+    { "topic": "Westwood manufactured gas", "priority": 2, "existingCoverage": ["iroquois-gas-westwood"], "nextEvidence": "Any new off-site disposal evidence, retaining separate source-property and creek records." },
+    { "topic": "Vanadium", "priority": 2, "existingCoverage": ["vanadium-corporation-of-america"], "nextEvidence": "Additional waste-hauling records and unit-specific monitoring, rather than duplicate coverage." },
+    { "topic": "Union Carbide / Newco / CECOS", "priority": 2, "existingCoverage": ["electro-metallurgical-company", "cecos-international", "radiological-investigation.ts"], "nextEvidence": "Parcel-specific historical maps and shipment/analytical records. Keep Necco Park separate; testimony is not verified radioactive burial." },
+    { "topic": "White-lead factories and pesticide facilities", "priority": 2, "existingCoverage": ["lead-investigation.ts", "paint-industry-sites.ts", "fmc-middleport", "oak-orchard-pesticide-storage"], "nextEvidence": "Named missing properties with address lineage and primary records; do not create generic category pins." },
+    { "topic": "Contaminant profiles", "priority": 3, "existingCoverage": ["arsenic", "cadmium", "chromium"], "nextEvidence": "Review nickel and beryllium profiles against primary toxicological references and actual site-specific findings. Chromium records require oxidation-state evidence before labeling hexavalent chromium." }
+  ]
+}

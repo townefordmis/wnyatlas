@@ -11,6 +11,7 @@ import { waterwayHubSites } from "@/data/waterway-hubs";
 import { littleValleySite } from "@/data/little-valley-site";
 import { sinclairRefinerySite } from "@/data/sinclair-refinery-site";
 import { regionalWasteNetworkSites } from "@/data/regional-waste-network-sites";
+import { researchCandidateSites, niagaraRefuseWasteSource } from "@/data/research-candidate-additions";
 import { amherstCleanupSites } from "@/data/amherst-cleanup-sites";
 import { erieCayugaExpansion } from "@/data/erie-cayuga-expansion";
 import { paintIndustrySites } from "@/data/paint-industry-sites";
@@ -3146,6 +3147,7 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "niagara-county-refuse",
+    updateNote: "Added the historical generator inventory linking Bell plating wastes, Olin mercury-bearing brine sludge, and Niagara Falls incinerator residue to this landfill, with attribution limits.",
     name: "Niagara County Refuse Site",
     municipality: "Wheatfield",
     county: "Niagara",
@@ -3155,6 +3157,7 @@ const featuredSiteRecords: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-78.90641356469966, 43.066200238910234],
     sources: [
+      niagaraRefuseWasteSource,
       {
         title: "Niagara County Refuse Superfund Cleanup Profile",
         publisher: "U.S. Environmental Protection Agency",
@@ -4027,6 +4030,7 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "bell-aerospace-impoundment",
+    updateNote: "Added the reported Niagara County Refuse waste categories and separated off-site disposal questions from the plant groundwater cleanup.",
     name: "Bell Aerospace / Textron Impoundment",
     municipality: "Town of Wheatfield",
     county: "Niagara",
@@ -4036,6 +4040,7 @@ const featuredSiteRecords: AtlasSite[] = [
     evidenceStatus: "well-documented",
     coordinates: [-78.928361111, 43.102672222],
     sources: [
+      niagaraRefuseWasteSource,
       {
         title: "Bell Aerospace / Textron Document Collection — Site 932052",
         publisher: "New York State Department of Environmental Conservation",
@@ -4155,6 +4160,7 @@ export const featuredSites: AtlasSite[] = [
   littleValleySite,
   sinclairRefinerySite,
   ...regionalWasteNetworkSites,
+  ...researchCandidateSites,
   ...amherstCleanupSites,
   ...erieCayugaExpansion,
   ...waterwayHubSites,

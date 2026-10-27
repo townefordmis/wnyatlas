@@ -2,9 +2,17 @@ import fs from "node:fs";
 
 const source = [
   "../src/data/featured-sites.ts",
+  "../src/data/research-candidate-additions.ts",
   "../src/data/paint-industry-sites.ts",
   "../src/data/pratt-letchworth-site.ts",
   "../src/data/dry-cleaning-sites.ts",
+  "../src/data/amherst-cleanup-sites.ts",
+  "../src/data/cayuga-island-site.ts",
+  "../src/data/little-valley-site.ts",
+  "../src/data/sinclair-refinery-site.ts",
+  "../src/data/regional-waste-network-sites.ts",
+  "../src/data/erie-cayuga-expansion.ts",
+  "../src/data/waterway-hubs.ts",
   "../src/data/historic-cleanup-expansion.ts",
   "../src/data/county-expansion-2026.ts",
 ]
@@ -12,7 +20,7 @@ const source = [
   .join("\n");
 
 const sitePattern =
-  /id: "([^"]+)"[\s\S]*?name: "([^"]+)"[\s\S]*?coordinates: \[(-?\d+(?:\.\d+)?), (-?\d+(?:\.\d+)?)\]/g;
+  /id: "([^"]+)"[\s\S]*?name: "([^"]+)"[\s\S]*?coordinates:\s*\[\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)\s*,?\s*\]/g;
 const matches = [...source.matchAll(sitePattern)];
 const sites = matches.map((match, index) => {
   const blockEnd = matches[index + 1]?.index ?? source.length;

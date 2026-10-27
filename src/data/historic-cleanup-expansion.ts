@@ -2,6 +2,7 @@ import { burningYearsSources } from "@/data/burning-years";
 import { perchlorateEPA, perchlorateHistory } from "@/data/industrial-history-sources";
 import { warDepartment, oldburyLandfillRI, oldburyLandfillAssessment } from "@/data/wartime-history-sources";
 import type { AtlasSite } from "@/types/site";
+import { niagaraRefuseWasteSource } from "@/data/research-candidate-additions";
 
 const decSuccessStories =
   "https://dec.ny.gov/environmental-protection/site-cleanup/regional-remediation-project-information/region-9/der-success-stories";
@@ -3322,6 +3323,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
   {
     id: "olin-buffalo-avenue-plant",
     name: "Olin Buffalo Avenue Plant",
+    updateNote: "Added reported mercury-bearing brine-sludge disposal at Niagara County Refuse and linked the separate Industrial Welding cleanup.",
     municipality: "Niagara Falls",
     county: "Niagara",
     category: "cleanup",
@@ -3348,12 +3350,13 @@ export const historicCleanupExpansion: AtlasSite[] = [
       },
     ],
     story: {
-      lastReviewed: "August 4, 2026",
+      lastReviewed: "October 26, 2026",
       background: [
         "The Olin complex at 2400 Buffalo Avenue is part of one of the oldest chlor-alkali manufacturing districts in the United States. EPA and DEC records trace inorganic chemical production on the property to 1897, when Niagara Falls hydropower made the electrolysis of salt commercially attractive.",
         "The modern site includes the roughly six-acre former Plant 1 and the approximately 16-acre Plant 2, separated by Chemical Road and intervening DuPont property. Gill Creek crosses the eastern operating area about 1,000 feet north of the upper Niagara River.",
         "Olin's corporate chlor-alkali lineage combines the former Mathieson chemical business with Olin Industries; the 1954 merger created Olin Mathieson Chemical Corporation, shortened to Olin Corporation in 1969. Site records also describe earlier operators and do not assign every pre-merger release to the same corporate entity.",
         "The plant electrolyzed brine to produce chlorine and caustic soda. Historical mercury-cell technology created mercury-bearing brine muds and wastewater; organic operations later produced chlorinated benzenes, chlorinated phenols, and benzene hexachloride compounds.",
+        "The waste trail extends beyond the factory. A March 1988 Niagara County Refuse work plan associates Olin with reported graphite, lime sludge, and mercury-bearing brine sludge at that separate landfill. Industrial Welding has its own DEC-confirmed brine-waste disposal and Gill Creek cleanup history. These records establish distinct destinations, not a complete inventory of everything the plant generated.",
         "This manufacturing-complex page is separate from Olin's nearby Industrial Welding disposal site, parking-lot fill area, deep disposal well, Charles Gibson disposal site, and its portion of the 102nd Street Landfill. Those records document related corporate activity but different waste locations and remedies.",
       ],
       timeline: [
@@ -3391,6 +3394,7 @@ export const historicCleanupExpansion: AtlasSite[] = [
       ],
     },
     sources: [
+      niagaraRefuseWasteSource,
       {
         title: "Olin Corporation Niagara Falls Corrective-Action Cleanup",
         publisher: "U.S. Environmental Protection Agency",

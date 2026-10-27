@@ -2,10 +2,17 @@ import fs from "node:fs";
 
 const source = [
   "../src/data/featured-sites.ts",
+  "../src/data/research-candidate-additions.ts",
   "../src/data/paint-industry-sites.ts",
   "../src/data/pratt-letchworth-site.ts",
   "../src/data/dry-cleaning-sites.ts",
   "../src/data/amherst-cleanup-sites.ts",
+  "../src/data/cayuga-island-site.ts",
+  "../src/data/little-valley-site.ts",
+  "../src/data/sinclair-refinery-site.ts",
+  "../src/data/regional-waste-network-sites.ts",
+  "../src/data/erie-cayuga-expansion.ts",
+  "../src/data/waterway-hubs.ts",
   "../src/data/historic-cleanup-expansion.ts",
   "../src/data/county-expansion-2026.ts",
 ]
@@ -17,7 +24,7 @@ const connectionSource = fs.readFileSync(
 );
 
 const sitePattern =
-  /id: "([^"]+)"[\s\S]*?name: "([^"]+)"[\s\S]*?coordinates: \[(-?\d+(?:\.\d+)?), (-?\d+(?:\.\d+)?)\]/g;
+  /id: "([^"]+)"[\s\S]*?name: "([^"]+)"[\s\S]*?coordinates:\s*\[\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)\s*,?\s*\]/g;
 const sites = [...source.matchAll(sitePattern)].map((match) => ({
   id: match[1],
   name: match[2],
@@ -63,7 +70,7 @@ for (const siteId of connectedSiteIds) {
 console.log(`Checked ${sites.length} site coordinates.`);
 console.log(`Checked ${connectedSiteIds.length} connection memberships.`);
 
-const expectedSiteCount = 194;
+const expectedSiteCount = [...source.matchAll(/\bcoordinates:\s*\[/g)].length;
 if (sites.length !== expectedSiteCount) {
   issues.push(
     `Expected ${expectedSiteCount} coordinate records but found ${sites.length}`,

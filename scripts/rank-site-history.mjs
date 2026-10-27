@@ -5,6 +5,7 @@ import ts from "typescript";
 const root = process.cwd();
 const dataFiles = [
   "src/data/featured-sites.ts",
+  "src/data/research-candidate-additions.ts",
   "src/data/historic-cleanup-expansion.ts",
   "src/data/county-expansion-2026.ts",
 ];

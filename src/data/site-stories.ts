@@ -4082,9 +4082,10 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-county-refuse": {
-    lastReviewed: "August 17, 2026",
+    lastReviewed: "October 26, 2026",
     background: [
       "The Niagara County Refuse Disposal District operated a roughly 50-acre landfill in Wheatfield from 1969 until official closure in 1976. Municipal refuse arrived alongside industrial chemical wastes, eventually leaving an estimated 3.1 million tons of mixed material in place.",
+      "A March 1988 work plan preserves a generator-by-waste inventory: Bell Aerospace is associated with heat-treatment salts, plating sludge, wood, clay, and fly ash; Olin with graphite, lime sludge, and mercury-bearing brine sludge. The continuation lists Niagara Falls incinerator residue. The table describes reported or suspected historical wastes from available records, not a complete manifest inventory or a modern sampling result.",
       "The size and mixed character of the waste made wholesale excavation impractical. EPA's 1993 decision therefore chose containment: reshape the landfill, reduce rain infiltration with an engineered cap, collect leachate, vent decomposition gas, restrict access and land use, and watch groundwater and surface water for migration.",
       "Construction ended in June 2000, but that was the beginning of the long stewardship period rather than the end of the environmental story. EPA removed the site from the National Priorities List in 2004 after reviewing post-construction monitoring, while retaining federal review because hazardous substances remain above levels that allow unrestricted use.",
       "The human meaning of the remedy is preventative. Instead of people encountering open waste or uncontrolled leachate, multiple passive systems must keep working year after year. Quarterly reports and five-year reviews test whether that protection still holds.",
@@ -4114,6 +4115,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Niagara County Refuse is deleted from the National Priorities List but remains a federally reviewed containment site. EPA's June 2024 assessment found the remedy protective and the cap and leachate system operating as designed. That conclusion remains conditional on uninterrupted maintenance, monitoring, access restrictions, and the next review due in 2029.",
     ],
     researchNotes: [
+      "The 1988 work plan's Table 2-1 cites a January 1983 Remedial Action Master Plan. Retrieve that underlying inventory and shipment or analytical records before identifying individual metals in Bell's plating sludge. The inventory does not assign these loads to Nash Road, James Avenue/Witmer Road Disposal Site, or the Witmer Road Drive-In.",
       "Use the June 2024 fifth five-year review for current protectiveness and replace it when EPA issues the 2029 review.",
       "Report any PFAS or other emerging-contaminant sampling separately from the historical remedy unless EPA formally incorporates it into the site decision or monitoring program.",
       "Do not confuse this Wheatfield federal site with Niagara Sanitation/Nash Road or other nearby former landfills; each has its own waste boundary and remedy.",
@@ -5346,10 +5348,11 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "bell-aerospace-impoundment": {
-    lastReviewed: "August 4, 2026",
+    lastReviewed: "October 26, 2026",
     background: [
       "Bell Aerospace used an unlined surface impoundment near its Wheatfield plant from 1948 to 1984. DEC records describe the pond as receiving rocket-engine test wash water, storm runoff and solvent drippings associated with cleaning, degreasing and anodizing.",
       "The environmental history extends beyond the closed pond because chlorinated compounds moved into groundwater. The corrective-action record therefore includes both on-site and off-site groundwater recovery, monitoring and later tests of enhanced biological treatment.",
+      "Bell's waste history extends beyond this impoundment. Table 2-1 of the March 1988 Niagara County Refuse work plan associates Bell Aerospace with reported heat-treatment salts, plating-tank sludge, scrap wood, clay, and fly ash at that separate landfill. This historical disposal inventory does not identify the individual metals in the sludge or define the composition of the impoundment's groundwater plume.",
     ],
     timeline: [
       { period: "1948–1984", event: "The unlined impoundment received industrial wash water, runoff and solvent-bearing drainage." },
@@ -5373,6 +5376,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "DEC's current file shows a continuing management and monitoring program. The pin marks the regulated facility and former source area, not the full shape of a groundwater plume.",
     ],
     researchNotes: [
+      "Obtain generator-specific analyses or manifests for chromium, cadmium, nickel, and cyanide before identifying those chemicals as Bell's loads at a particular landfill. Do not transfer the Niagara County Refuse inventory to Nash Road merely because both landfills list Bell among their users.",
       "Review the revised 2024 annual report for current extraction rates, concentration trends and the latest bioremediation findings.",
       "Publish a plume outline only if DEC provides a current map suitable for public orientation.",
     ],

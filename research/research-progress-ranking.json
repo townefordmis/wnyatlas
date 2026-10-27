@@ -1,13 +1,13 @@
 {
-  "generated": "2026-08-25T01:30:51.699Z",
+  "generated": "2026-10-26T23:57:13.980Z",
   "methodology": "100-point editorial completeness score: summary 10, sources 25, five core story sections 40, narrative depth 15, review metadata 5, rights-cleared lead visual 5. News is reported as a gap but is not scored because not every record warrants a news timeline.",
-  "total": 18,
+  "total": 23,
   "weakestFive": [
     "altech-specialty-steel",
     "salamanca-former-mgp",
+    "black-creek-village-fill-investigation",
     "witmer-road-disposal-site",
-    "niagara-falls-former-mgp",
-    "harrison-radiator-lockport"
+    "niagara-falls-former-mgp"
   ],
   "records": [
     {
@@ -86,6 +86,45 @@
         "only 2 sources",
         "only 295 narrative words",
         "no lead image"
+      ]
+    },
+    {
+      "id": "black-creek-village-fill-investigation",
+      "name": "Black Creek Village / 99th Street Fill Investigation",
+      "municipality": "Niagara Falls",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Residential industrial-fill investigation near 99th Street, alongside a separate history of pesticide-affected fill removal at Black Creek Drive. The neighborhood marker is approximate.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 3,
+      "news": 0,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "September 15, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 251,
+      "summaryWords": 23,
+      "sectionCounts": {
+        "background": 1,
+        "timeline": 3,
+        "documentedImpacts": 1,
+        "cleanupAndControls": 1,
+        "presentDay": 2
+      },
+      "score": 76,
+      "scoreParts": {
+        "summary": 5,
+        "sources": 18,
+        "sections": 40,
+        "narrative": 8,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 251 narrative words",
+        "no lead image",
+        "no news timeline"
       ]
     },
     {
@@ -277,44 +316,6 @@
       },
       "gaps": [
         "only 2 sources",
-        "no lead image"
-      ]
-    },
-    {
-      "id": "frontier-chemical-pendleton",
-      "name": "Frontier Chemical — Pendleton",
-      "municipality": "Pendleton / North Tonawanda",
-      "county": "Niagara",
-      "category": "cleanup",
-      "summary": "Closed Class 4 chemical cleanup site on Townline Road. This property is distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls and is mapped separately to prevent their histories and remedies from being conflated.",
-      "evidenceStatus": "research-in-progress",
-      "sources": 3,
-      "news": 2,
-      "hasImage": false,
-      "hasStory": true,
-      "reviewed": "August 4, 2026",
-      "researchNotes": 2,
-      "narrativeWords": 317,
-      "summaryWords": 35,
-      "sectionCounts": {
-        "background": 2,
-        "timeline": 6,
-        "documentedImpacts": 3,
-        "cleanupAndControls": 3,
-        "presentDay": 1
-      },
-      "score": 81,
-      "scoreParts": {
-        "summary": 8,
-        "sources": 18,
-        "sections": 40,
-        "narrative": 10,
-        "review": 3,
-        "researchNotes": 2,
-        "visual": 0
-      },
-      "gaps": [
-        "only 317 narrative words",
         "no lead image"
       ]
     },
@@ -545,6 +546,82 @@
       ]
     },
     {
+      "id": "3701-river-road",
+      "name": "3701 River Road / Former Petroleum Property",
+      "municipality": "Town of Tonawanda",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "A former refinery-related storage and fueling property with petroleum-impacted soil and groundwater documented in 2024. DEC transmitted its executed Brownfield Cleanup Agreement in September 2026; entry into the program does not establish completed remediation.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 4,
+      "news": 0,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "October 26, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 334,
+      "summaryWords": 34,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 4,
+        "documentedImpacts": 2,
+        "cleanupAndControls": 2,
+        "presentDay": 1
+      },
+      "score": 87,
+      "scoreParts": {
+        "summary": 8,
+        "sources": 24,
+        "sections": 40,
+        "narrative": 10,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "only 334 narrative words",
+        "no lead image",
+        "no news timeline"
+      ]
+    },
+    {
+      "id": "witmer-road-drive-in",
+      "name": "Witmer Road Drive-In",
+      "municipality": "Town of Niagara",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Former theater at 4287 Witmer Road with documented industrial fill and environmental investigations. DEC site 932118 is separate from the James Avenue/Witmer Road Disposal Site (932027).",
+      "evidenceStatus": "research-in-progress",
+      "sources": 5,
+      "news": 1,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "September 15, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 379,
+      "summaryWords": 27,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 6,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 1,
+        "presentDay": 2
+      },
+      "score": 87,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 25,
+        "sections": 40,
+        "narrative": 11,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
+      ]
+    },
+    {
       "id": "pvs-chemicals-buffalo",
       "name": "PVS Chemicals",
       "municipality": "Buffalo",
@@ -573,6 +650,43 @@
         "sources": 18,
         "sections": 40,
         "narrative": 14,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
+      ]
+    },
+    {
+      "id": "frontier-chemical-pendleton",
+      "name": "Frontier Chemical — Pendleton",
+      "municipality": "Pendleton / North Tonawanda",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Closed Class 4 chemical cleanup site on Townline Road. This property is distinct from Frontier Chemical's Royal Avenue facility in Niagara Falls and is mapped separately to prevent their histories and remedies from being conflated.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 4,
+      "news": 2,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "October 19, 2026",
+      "researchNotes": 3,
+      "narrativeWords": 376,
+      "summaryWords": 35,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 6,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 3,
+        "presentDay": 1
+      },
+      "score": 88,
+      "scoreParts": {
+        "summary": 8,
+        "sources": 24,
+        "sections": 40,
+        "narrative": 11,
         "review": 3,
         "researchNotes": 2,
         "visual": 0
@@ -615,6 +729,82 @@
         "visual": 5
       },
       "gaps": []
+    },
+    {
+      "id": "1440-main-street",
+      "name": "1440–1458 Main Street Brownfield",
+      "municipality": "Buffalo",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "Former garages, shops, storage buildings, and gasoline-tank locations on Main Street became a brownfield investigation. Studies found PAHs and metals in fill; the final investigation plan filed in July 2026 addresses soil, groundwater, and vapor questions ahead of proposed mixed-use redevelopment.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 4,
+      "news": 0,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "October 26, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 399,
+      "summaryWords": 41,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 5,
+        "documentedImpacts": 2,
+        "cleanupAndControls": 2,
+        "presentDay": 1
+      },
+      "score": 90,
+      "scoreParts": {
+        "summary": 9,
+        "sources": 24,
+        "sections": 40,
+        "narrative": 12,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image",
+        "no news timeline"
+      ]
+    },
+    {
+      "id": "curtiss-malt-house",
+      "name": "Curtiss Malt House / Niagara Street Industrial Parcels",
+      "municipality": "Buffalo",
+      "county": "Erie",
+      "category": "cleanup",
+      "summary": "The former malt house and adjoining heat-treatment and machine-shop parcels at 1100–1114 Niagara Street are one expanding brownfield project. Investigations document impacted fill and groundwater; an April 2026 plan proposes soil removal, tank removal, and vapor controls as part of reuse.",
+      "evidenceStatus": "research-in-progress",
+      "sources": 4,
+      "news": 0,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "October 26, 2026",
+      "researchNotes": 2,
+      "narrativeWords": 426,
+      "summaryWords": 42,
+      "sectionCounts": {
+        "background": 3,
+        "timeline": 4,
+        "documentedImpacts": 3,
+        "cleanupAndControls": 1,
+        "presentDay": 1
+      },
+      "score": 91,
+      "scoreParts": {
+        "summary": 9,
+        "sources": 24,
+        "sections": 40,
+        "narrative": 13,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image",
+        "no news timeline"
+      ]
     },
     {
       "id": "chaffee-landfill",
@@ -661,20 +851,20 @@
       "category": "radiological",
       "summary": "Ongoing three-phase regional assessment using aerial, roadway, and property-level surveys. Agencies are screening hundreds of locations, conducting soil and laboratory follow-up where warranted, and offering temporary relocation to some households. Contact or screening does not mean a property is confirmed contaminated.",
       "evidenceStatus": "research-in-progress",
-      "sources": 6,
+      "sources": 9,
       "news": 2,
       "hasImage": false,
       "hasStory": true,
-      "reviewed": "August 17, 2026",
+      "reviewed": "September 15, 2026",
       "researchNotes": 3,
-      "narrativeWords": 742,
+      "narrativeWords": 971,
       "summaryWords": 41,
       "sectionCounts": {
         "background": 3,
-        "timeline": 7,
+        "timeline": 9,
         "documentedImpacts": 6,
         "cleanupAndControls": 4,
-        "presentDay": 3
+        "presentDay": 5
       },
       "score": 94,
       "scoreParts": {

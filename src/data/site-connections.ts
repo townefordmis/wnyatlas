@@ -18,6 +18,37 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 };
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
+  {
+    id: "olin-mercury-production-disposal",
+    name: "Olin production, disposal, and Gill Creek records",
+    summary: "Plant releases, a separate brine-waste disposal property, and reported off-site shipments explain different parts of Olin's history. Each property retains its own evidence, boundary, and remedy.",
+    members: [
+      { siteId: "olin-buffalo-avenue-plant", role: "Chemical production", connection: "Mercury-cell chlor-alkali production and plant cleanup provide the manufacturing context; the plant is distinct from off-site disposal properties." },
+      { siteId: "olin-industrial-welding", role: "Brine-waste disposal and creek cleanup", connection: "DEC documents mercury-bearing process waste, adjacent sediment impacts, and a separate containment remedy under site 932050." },
+      { siteId: "niagara-county-refuse", role: "Reported industrial waste destination", connection: "The March 1988 work plan associates Olin with graphite, lime sludge, and mercury-bearing brine sludge. This historical inventory is not a load-by-load analytical record." },
+      { siteId: "gill-creek-chemical-corridor", role: "Broader waterway context", connection: "Several industrial properties affected the creek corridor; this link does not attribute every creek detection to Olin or merge their separate sediment-removal projects." },
+    ],
+  },
+  {
+    id: "bell-aerospace-waste-records",
+    name: "Bell Aerospace: plant groundwater and off-site waste records",
+    summary: "Bell's former impoundment and two separately documented landfill histories require distinct evidence. Reported disposal categories at one destination do not establish exact chemicals or loads at another.",
+    members: [
+      { siteId: "bell-aerospace-impoundment", role: "Plant source area", connection: "Rocket-test wash water and solvent-bearing drainage contributed to the regulated groundwater cleanup; this record is not a universal inventory of Bell's wastes." },
+      { siteId: "niagara-county-refuse", role: "Reported waste categories", connection: "Table 2-1 of the March 1988 work plan lists heat-treatment salts, plating sludge, wood, clay, and fly ash associated with Bell. Individual plating metals remain unresolved." },
+      { siteId: "niagara-sanitation-nash-road-landfill", role: "Separate documented landfill user", connection: "DEC names Bell among Nash Road's users. The reviewed evidence does not assign the Niagara County Refuse waste table to this landfill." },
+    ],
+  },
+  {
+    id: "durez-distinct-facilities",
+    name: "Two Durez facilities and separate cleanup histories",
+    summary: "The Niagara Falls resin plant and the former North Tonawanda works share a company name, while their waste treatment, drainage, and cleanup records remain property-specific.",
+    members: [
+      { siteId: "durez-packard-road", role: "Niagara Falls resin plant", connection: "5000 Packard Road has its own process-waste incinerator, shallow and bedrock groundwater controls, and air-permit history." },
+      { siteId: "durez-occidental-north-tonawanda", role: "Former North Tonawanda works", connection: "The Walck/River Road property has a separate manufacturing, closure, and long-term cleanup history." },
+      { siteId: "pettit-flume-durez-outfall", role: "North Tonawanda drainage pathway", connection: "The flume and cove sediment remedy belongs to the North Tonawanda history; it does not establish Packard Road discharges to this outfall." },
+    ],
+  },
 {
     id: "burning-years",
     name: "The Burning Years: incineration and residue histories",
@@ -28,6 +59,7 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
       { siteId: "buffalo-color", role: "Industrial burning", connection: "The investigation documents buried on-site burning residues." },
       { siteId: "frontier-chemical-pendleton", role: "Commercial treatment and incineration", connection: "Incineration was one of several waste-treatment processes." },
       { siteId: "frontier-chemical-royal-avenue", role: "Separate successor facility", connection: "Historical records document sewer and off-site residue pathways." },
+      { siteId: "durez-packard-road", role: "Process-waste incineration", connection: "DEC's June 2026 notice describes a permitted resin-plant wastewater incinerator; its operation and groundwater remedy have separate regulatory records." },
       { siteId: "tifft-nature-preserve", role: "Fill transfer and later reuse", connection: "USGS describes Squaw Island fill moved into an engineered disposal area; not all fill was identified as ash." },
     ],
   },
