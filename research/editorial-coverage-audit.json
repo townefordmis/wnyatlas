@@ -1,12 +1,12 @@
 {
-  "generated": "2026-10-26T23:57:12.634Z",
+  "generated": "2026-11-06T15:28:01.796Z",
   "totals": {
-    "sites": 189,
-    "stories": 189,
-    "newsEvents": 222,
+    "sites": 190,
+    "stories": 190,
+    "newsEvents": 224,
     "images": 29,
-    "sitesAtLeast350Words": 112,
-    "sitesAtLeastThreeSources": 114
+    "sitesAtLeast350Words": 113,
+    "sitesAtLeastThreeSources": 115
   },
   "findings": {
     "missingStory": [],

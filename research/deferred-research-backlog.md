@@ -4,6 +4,16 @@ This file preserves promising research topics that are intentionally not ready f
 An item being listed here does not mean that WNY Atlas has verified the claim or decided to
 build a map for it.
 
+## Hartwell Street Landfill, Buffalo — November 6, 2026 review
+
+**Status:** Investigation lead; hold a new map entry pending identity, boundary, and site-specific evidence review. This is separate from Hartland Town Landfill in Niagara County.
+
+DEC's [July 2025 Inactive Landfill Initiative report](https://dec.ny.gov/sites/default/files/2025-07/inactivelandfillrpt2025_0.pdf), Table A.2, printed page 130 (PDF page 133), lists **Hartwell St Landfill**, Erie County, Region 9, ranked score 39, with investigation initiation scheduled for 2026. This is a dated planning status, not confirmation that fieldwork began or that contaminants were measured or are reaching homes. The ranking is an investigation priority, not a health-risk score.
+
+An existing DEC record provides an identity lead: **915030, Hartwell Street Landfill / Atlas Steel**, at **1963 Elmwood Avenue, Buffalo**. The DEC GIS record retrieved November 6, 2026 lists classification N. Its [document archive](https://extapps.dec.ny.gov/data/DecDocs/915030/) contains 1986 and 1992 investigations and a 2016 spill report. Reconcile those historical records and the landfill footprint with the name in the 2025 initiative before assigning one boundary, current contaminant inventory, or regulatory conclusion to both. The existence of older reports does not establish the outcome of a proposed 2026 investigation.
+
+Obtain the site-specific ILI work plan or task order, start/status confirmation, landfill boundary and ownership records, sampling locations and groundwater/surface-water results, any nearby-water-supply assessment, and agency conclusions. Review the older archive for measured findings and their original geographic scope; the newer planning table alone is insufficient for a contamination claim. Keep the date of every observation and preserve any no-further-action or later reopening decision in its program context.
+
 ## Hartland Town Landfill — November 6, 2026 review
 
 **Status:** Research lead; not ready for a mapped site record.

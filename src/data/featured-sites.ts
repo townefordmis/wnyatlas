@@ -22,6 +22,7 @@ import { bethlehemUraniumSources } from "@/data/bethlehem-uranium-sources";
 const featuredSiteRecords: AtlasSite[] = [
   {
     id: "witmer-road-drive-in",
+    updateNote: "Clarified the 2020 survey, DEC's reported August 2026 receipt of elevated-reading information, and the October reevaluation; added the original report and correspondence to the records queue.",
     name: "Witmer Road Drive-In",
     municipality: "Town of Niagara",
     county: "Niagara",
@@ -49,7 +50,7 @@ const featuredSiteRecords: AtlasSite[] = [
     ],
     sources: [
       {
-        title: "October 2026 supplemental investigation fact sheet — Site 932118",
+        title: "October 22, 2026 supplemental investigation fact sheet — Site 932118; page 2 dates DEC receipt to August 2026",
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/DecDocs/932118/Fact%20Sheet.HW.932118.2026-10-22.Supplemental_Investigation_to_Begin.pdf",
       },
@@ -111,8 +112,12 @@ const featuredSiteRecords: AtlasSite[] = [
           event: "A limited surface radiation survey informed NORLIC’s redevelopment action plan."
         },
         {
-          period: "August–October 2026",
-          event: "DEC says the elevated 2020 survey readings reached the agency in August 2026. New NECRA screening prompted an EPA referral and a supplemental assessment planned for fall."
+          period: "August 2026 — information reaches DEC",
+          event: "DEC's October fact sheet says the elevated-reading information from the 2020 survey was not conveyed to the agency until August 2026. Separately, DEC and EPA performed NECRA screening that month and referred the property to EPA for additional assessment."
+        },
+        {
+          period: "October 22, 2026 — public investigation notice",
+          event: "DEC published its supplemental assessment notice, attributing reevaluation to the 2020 survey information together with recent NECRA findings. The notice describes planned on- and off-site work rather than completed sampling."
         }
       ],
       documentedImpacts: [
@@ -131,6 +136,7 @@ const featuredSiteRecords: AtlasSite[] = [
         "The 2020 assessment did not find widespread groundwater impacts or significant effects on Gill Creek. Those dated conclusions do not settle current conditions."
       ],
       researchNotes: [
+        "Obtain the original 2020 radiation-survey report and field records, the correspondence transmitting the elevated-reading information, and DEC receipt or intake records. The October fact sheet supplies August 2026 as the receipt month but does not establish the exact day, sender, prior recipients, or reason for the interval. The timing alone establishes neither deliberate concealment nor exposure to neighboring residents.",
         "Obtain the supplemental work plan and sampling map, EPA isotope results, Gill Creek tables, waste-source records and final assessment or classification decision.",
         "Obtain subsequent cleanup decisions, disposal records and any updated sampling. Identify waste producers only with supporting records.",
         "Map location: DEC Remediation Sites GIS point for 932118, checked September 15, 2026; not a surveyed boundary."

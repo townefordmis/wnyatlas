@@ -11,6 +11,71 @@ export const niagaraRefuseWasteSource: AtlasSource = {
 
 export const researchCandidateSites: AtlasSite[] = [
   {
+    id: "619-exchange-street",
+    name: "619 Exchange Street / Former Iroquois Doors",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary: "Former millwork and warehouse property at Exchange and Larkin Streets where investigations found PAHs and metals in buried fill. DEC's January 2026 decision selected targeted excavation, cover, and long-term controls for mixed residential and commercial reuse. An easement was recorded in April; completed cleanup remains to be verified.",
+    evidenceStatus: "well-documented",
+    coordinates: [-78.85414884095279, 42.87507874116481],
+    updateNote: "Added the Iroquois Doors property, buried-fill findings, January 2026 cleanup decision, and April recorded easement, with completion records still outstanding.",
+    sources: [
+      { title: "619 Exchange Street decision document (January 27, 2026), sections 3, 6, and selected remedy — C915403", publisher: "NYSDEC", url: "https://extapps.dec.ny.gov/data/DecDocs/C915403/Decision%20Document.BCP.C915403.2026-01-27.Final_DD.pdf" },
+      { title: "619 Exchange Street Phase II investigation (October 2023), sections 1–4", publisher: "TurnKey Environmental Restoration for Park Grove Realty, DEC repository", url: "https://extapps.dec.ny.gov/data/DecDocs/C915403/Application.BCP.C915403.2023-10-01.Phase%20II%20Evironmental%20Investigation%20Report.pdf" },
+      { title: "Aboveground tank interim measures work plan (December 3, 2025), pages 1–3", publisher: "Roux Environmental Engineering and Geology, DEC repository", url: "https://extapps.dec.ny.gov/data/DecDocs/C915403/Work%20Plan.BCP.C915403.2025-12-03.Final_Interim%20Remedial%20Measures-WP.pdf" },
+      { title: "619 Exchange Street remedial action work plan (December 2025), sections 1–2", publisher: "Roux Environmental Engineering and Geology, DEC repository", url: "https://extapps.dec.ny.gov/data/DecDocs/C915403/Work%20Plan.BCP.C915403.2025-12-19.Final%20Remedial%20Action%20Work%20Plan.pdf" },
+      { title: "Environmental easement and municipal notice, recorded April 7, 2026", publisher: "Erie County Clerk / NYSDEC repository", url: "https://extapps.dec.ny.gov/data/DecDocs/C915403/Easement.BCP.C915403.2026-04-07.Recorded%20EE%20and%20Notice%20to%20Municipality.pdf" },
+      { title: "619 Exchange Street agreements, investigation, and remedial plans — C915403", publisher: dec, url: "https://extapps.dec.ny.gov/data/DecDocs/C915403/" },
+      { title: "DEC remediation GIS — marker authority C915403, retrieved November 6, 2026", publisher: "NYSDEC", url: gisUrl },
+    ],
+    newsEvents: [
+      {
+        date: "January 27, 2026",
+        headline: "DEC selects excavation and lasting cover for former millwork property",
+        summary: "The decision calls for about 250 tons of contaminated soil removal, confirmation sampling, cover, and use restrictions. The selected remedy supports restricted residential reuse while requiring management of material left beneath the property.",
+        publisher: "NYSDEC",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/C915403/Decision%20Document.BCP.C915403.2026-01-27.Final_DD.pdf",
+        reach: "Local",
+      },
+    ],
+    story: {
+      lastReviewed: "November 6, 2026",
+      background: [
+        "The roughly three-quarter-acre property at Exchange and Larkin Streets carries several generations of industrial use. DEC dates the principal building to 1908, with 1924 additions; Iroquois Doors used the property for millwork, planing, woodworking, and lumber storage from about 1926 through at least 1986. Later occupants included bedding and textile businesses.",
+        "The 2023 Phase II investigation approached the building as a series of potential source areas: floor drains, sumps, staining, former electrical equipment, and evidence of fuel-oil heating. Investigators sampled through slabs and at accessible excavations to examine the material beneath the reused building.",
+        "Across the investigated locations, fill included black fines, ash, cinders, gravel, wood, and brick over native soils. The resulting story is about both industrial use and the material used to build up and backfill the property; the reviewed evidence does not identify the supplier of that fill.",
+      ],
+      timeline: [
+        { period: "1908–1926", event: "Construction and additions preceded the documented Iroquois Doors millwork era." },
+        { period: "About 1926–at least 1986", event: "Woodworking, planing, millwork, and lumber storage occupied the property, followed by other commercial and industrial uses." },
+        { period: "2023", event: "Phase II soil investigations identified PAHs and metals in fill beneath and around the building." },
+        { period: "December 2024–2025", event: "A brownfield agreement and remedial investigation led to cleanup planning and a separate work plan for a vaulted fuel-oil tank." },
+        { period: "January 27, 2026", event: "DEC selected excavation, cover, an environmental easement, and site management for restricted residential reuse." },
+        { period: "April 7, 2026", event: "The county clerk recorded the environmental easement; the recorded instrument is preserved in DEC's public file." },
+      ],
+      documentedImpacts: [
+        "DEC's decision reports PAH and metal exceedances in subsurface fill. Its investigation summary gives barium up to 6,290 mg/kg, compared with the 400 mg/kg restricted-residential soil objective. That is a soil concentration at sampled locations, not a property-wide average or an exposure measurement.",
+        "The decision describes possible slag fragments at one investigation location. The observation does not establish a producer, shipment route, isotope, or radiological contamination. Laboratory metal concentrations and identification of radioactive material require different evidence.",
+        "Groundwater results require their own reading: several total-metal measurements exceeded comparison standards, while corresponding dissolved results were generally lower; some dissolved magnesium and manganese results also exceeded standards. The sampled groundwater is distinct from the public drinking-water supply. DEC concluded that the vapor investigation required no further on-site action and did not indicate an off-site building concern.",
+      ],
+      cleanupAndControls: [
+        "The selected remedy targets approximately 250 tons for excavation and off-site disposal, with confirmation sampling to determine whether additional removal is needed. It also preserves or repairs existing cover and requires cover where needed elsewhere on the property.",
+        "The recorded easement permits restricted residential, commercial, and industrial use and requires ongoing compliance with the site management plan. Controls run with the land, including requirements for future disturbance of remaining contaminated material; recording them does not certify every construction task as complete.",
+        "The December 2025 tank work plan addresses a separate approximately 5,000-gallon vaulted aboveground tank. It proposes removal and sampling beneath it, with disposal receipts, field logs, analytical results, and final engineering documentation needed to establish the outcome.",
+        "The remedial action plan links excavation to community air monitoring, dust suppression, access controls, and keeping sidewalks and roads clear of soil. These construction measures address how material is handled during reuse, alongside the cover and controls intended to last after the work.",
+      ],
+      presentDay: [
+        "The public file establishes a selected brownfield remedy and a recorded land-use control for planned mixed-use redevelopment. The archive reviewed on November 6, 2026 does not list a final engineering report or Certificate of Completion. Construction outcomes and certified completion remain to be verified.",
+      ],
+      researchNotes: [
+        "Obtain the final engineering report, confirmation-sample tables, excavation survey and quantities, soil and tank-waste disposal receipts or manifests, final site management plan, and any Certificate of Completion before reporting completed remediation.",
+        "The 2023 Phase II report and the later DEC investigation summary cover different sampling rounds and give different maximum concentrations. Preserve their dates and locations rather than treating those maxima as a measured trend.",
+        "DEC's decision describes about 0.72 acres; the recorded easement controls approximately 0.70 acres of the parcel. Use the amended agreement and recorded survey to resolve boundaries. The Atlas marker is DEC's C915403 GIS point, retrieved November 6, 2026, not a surveyed cleanup boundary.",
+      ],
+    },
+  },
+  {
     id: "curtiss-malt-house",
     name: "Curtiss Malt House / Niagara Street Industrial Parcels",
     municipality: "Buffalo",

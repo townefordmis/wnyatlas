@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T23:57:13.980Z",
+  "generated": "2026-11-06T15:28:02.409Z",
   "methodology": "100-point editorial completeness score: summary 10, sources 25, five core story sections 40, narrative depth 15, review metadata 5, rights-cleared lead visual 5. News is reported as a gap but is not scored because not every record warrants a news timeline.",
   "total": 23,
   "weakestFive": [
@@ -585,43 +585,6 @@
       ]
     },
     {
-      "id": "witmer-road-drive-in",
-      "name": "Witmer Road Drive-In",
-      "municipality": "Town of Niagara",
-      "county": "Niagara",
-      "category": "cleanup",
-      "summary": "Former theater at 4287 Witmer Road with documented industrial fill and environmental investigations. DEC site 932118 is separate from the James Avenue/Witmer Road Disposal Site (932027).",
-      "evidenceStatus": "research-in-progress",
-      "sources": 5,
-      "news": 1,
-      "hasImage": false,
-      "hasStory": true,
-      "reviewed": "September 15, 2026",
-      "researchNotes": 2,
-      "narrativeWords": 379,
-      "summaryWords": 27,
-      "sectionCounts": {
-        "background": 2,
-        "timeline": 6,
-        "documentedImpacts": 3,
-        "cleanupAndControls": 1,
-        "presentDay": 2
-      },
-      "score": 87,
-      "scoreParts": {
-        "summary": 6,
-        "sources": 25,
-        "sections": 40,
-        "narrative": 11,
-        "review": 3,
-        "researchNotes": 2,
-        "visual": 0
-      },
-      "gaps": [
-        "no lead image"
-      ]
-    },
-    {
       "id": "pvs-chemicals-buffalo",
       "name": "PVS Chemicals",
       "municipality": "Buffalo",
@@ -804,6 +767,43 @@
       "gaps": [
         "no lead image",
         "no news timeline"
+      ]
+    },
+    {
+      "id": "witmer-road-drive-in",
+      "name": "Witmer Road Drive-In",
+      "municipality": "Town of Niagara",
+      "county": "Niagara",
+      "category": "cleanup",
+      "summary": "Former theater at 4287 Witmer Road with documented industrial fill and environmental investigations. DEC site 932118 is separate from the James Avenue/Witmer Road Disposal Site (932027).",
+      "evidenceStatus": "research-in-progress",
+      "sources": 6,
+      "news": 2,
+      "hasImage": false,
+      "hasStory": true,
+      "reviewed": "November 6, 2026",
+      "researchNotes": 4,
+      "narrativeWords": 618,
+      "summaryWords": 27,
+      "sectionCounts": {
+        "background": 2,
+        "timeline": 8,
+        "documentedImpacts": 4,
+        "cleanupAndControls": 2,
+        "presentDay": 3
+      },
+      "score": 91,
+      "scoreParts": {
+        "summary": 6,
+        "sources": 25,
+        "sections": 40,
+        "narrative": 15,
+        "review": 3,
+        "researchNotes": 2,
+        "visual": 0
+      },
+      "gaps": [
+        "no lead image"
       ]
     },
     {

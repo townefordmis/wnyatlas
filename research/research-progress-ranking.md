@@ -1,6 +1,6 @@
 # Research-in-progress completeness ranking
 
-Generated 2026-10-26. This is an editorial completeness queue, not a hazard, exposure, or health-risk ranking.
+Generated 2026-11-06. This is an editorial completeness queue, not a hazard, exposure, or health-risk ranking.
 
 Found **23** records marked `research-in-progress`. Lower scores should be reviewed first.
 
@@ -27,12 +27,12 @@ Found **23** records marked `research-in-progress`. Lower scores should be revie
 | 13 | [Katherine Street Peninsula](https://www.wnyatlas.com/sites/katherine-street-peninsula) | Erie | 85 | 262 | 3 | Yes | only 262 narrative words; no news timeline |
 | 14 | [Former Pierce-Arrow Manufacturing Complex](https://www.wnyatlas.com/sites/pierce-arrow-manufacturing-complex) | Erie | 86 | 431 | 3 | No | no lead image |
 | 15 | [3701 River Road / Former Petroleum Property](https://www.wnyatlas.com/sites/3701-river-road) | Erie | 87 | 334 | 4 | No | only 334 narrative words; no lead image; no news timeline |
-| 16 | [Witmer Road Drive-In](https://www.wnyatlas.com/sites/witmer-road-drive-in) | Niagara | 87 | 379 | 5 | No | no lead image |
-| 17 | [PVS Chemicals](https://www.wnyatlas.com/sites/pvs-chemicals-buffalo) | Erie | 87 | 472 | 3 | No | no lead image |
-| 18 | [Frontier Chemical — Pendleton](https://www.wnyatlas.com/sites/frontier-chemical-pendleton) | Niagara | 88 | 376 | 4 | No | no lead image |
-| 19 | [Lehigh Valley Railroad Derailment](https://www.wnyatlas.com/sites/lehigh-valley-railroad-derailment) | Genesee | 89 | 374 | 3 | Yes |  |
-| 20 | [1440–1458 Main Street Brownfield](https://www.wnyatlas.com/sites/1440-main-street) | Erie | 90 | 399 | 4 | No | no lead image; no news timeline |
-| 21 | [Curtiss Malt House / Niagara Street Industrial Parcels](https://www.wnyatlas.com/sites/curtiss-malt-house) | Erie | 91 | 426 | 4 | No | no lead image; no news timeline |
+| 16 | [PVS Chemicals](https://www.wnyatlas.com/sites/pvs-chemicals-buffalo) | Erie | 87 | 472 | 3 | No | no lead image |
+| 17 | [Frontier Chemical — Pendleton](https://www.wnyatlas.com/sites/frontier-chemical-pendleton) | Niagara | 88 | 376 | 4 | No | no lead image |
+| 18 | [Lehigh Valley Railroad Derailment](https://www.wnyatlas.com/sites/lehigh-valley-railroad-derailment) | Genesee | 89 | 374 | 3 | Yes |  |
+| 19 | [1440–1458 Main Street Brownfield](https://www.wnyatlas.com/sites/1440-main-street) | Erie | 90 | 399 | 4 | No | no lead image; no news timeline |
+| 20 | [Curtiss Malt House / Niagara Street Industrial Parcels](https://www.wnyatlas.com/sites/curtiss-malt-house) | Erie | 91 | 426 | 4 | No | no lead image; no news timeline |
+| 21 | [Witmer Road Drive-In](https://www.wnyatlas.com/sites/witmer-road-drive-in) | Niagara | 91 | 618 | 6 | No | no lead image |
 | 22 | [Chaffee Landfill](https://www.wnyatlas.com/sites/chaffee-landfill) | Erie | 94 | 563 | 4 | No | no lead image |
 | 23 | [Niagara–Erie Residential Radiological Assessment](https://www.wnyatlas.com/sites/niagara-erie-radiological-assessment) | Niagara | 94 | 971 | 9 | No | no lead image |
 
