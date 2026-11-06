@@ -236,6 +236,8 @@ fs.writeFileSync(
 const markdown = [
   "# Research-in-progress completeness ranking",
   "",
+  "For value of the next investigation, use the [master follow-up priorities](follow-up-priorities.md). This report measures page completeness and scans a narrower module list.",
+  "",
   `Generated ${generated.slice(0, 10)}. This is an editorial completeness queue, not a hazard, exposure, or health-risk ranking.`,
   "",
   `Found **${progress.length}** records marked \`research-in-progress\`. Lower scores should be reviewed first.`,

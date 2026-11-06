@@ -344,6 +344,8 @@ const active = rows.filter((row) => row.status === "queued");
 const markdown = [
   "# WNYAtlas site-history priority ranking",
   "",
+  "For the working order across research topics and source questions, use the [master follow-up priorities](follow-up-priorities.md). This report supports feature planning rather than deciding the next investigation.",
+  "",
   `Generated ${new Date().toISOString().slice(0, 10)}. This is an editorial work queue, not a hazard or health-risk ranking.`,
   "",
   "## Method",

@@ -1,5 +1,7 @@
 # WNYAtlas site-history priority ranking
 
+For the working order across research topics and source questions, use the [master follow-up priorities](follow-up-priorities.md). This report supports feature planning rather than deciding the next investigation.
+
 Generated 2026-11-06. This is an editorial work queue, not a hazard or health-risk ranking.
 
 ## Method

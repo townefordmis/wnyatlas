@@ -2,6 +2,8 @@
 
 Reviewed: July 29, 2026
 
+For current follow-up order and a crosswalk of older pending decisions against existing Atlas and school-history coverage, see the [master research priorities](follow-up-priorities.md). The screening decisions below remain dated evidence, not a new-additions list.
+
 ## Public-map rule
 
 The schools map includes a campus when an agency document establishes an

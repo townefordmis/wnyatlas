@@ -66,6 +66,11 @@ export default function ResearchStatusPage() {
         </p>
       </header>
 
+      <section className="research-status-section">
+        <div><p className="eyebrow">Working research agenda</p><h2>Follow the highest-value questions first.</h2></div>
+        <div><p>The consolidated queue orders site updates, new-place leads, historical records, school questions and deferred topics by evidence, reader value and the practical next step.</p><div className="research-status-actions"><Link href="/research/priorities">View the ranked research priorities</Link></div></div>
+      </section>
+
       <section className="research-status-summary" aria-label="Collection summary">
         <article><strong>{featuredSites.length}</strong><span>place records</span></article>
         <article><strong>{documented}</strong><span>well-documented records</span></article>

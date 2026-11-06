@@ -4,6 +4,8 @@ This file preserves promising research topics that are intentionally not ready f
 An item being listed here does not mean that WNY Atlas has verified the claim or decided to
 build a map for it.
 
+For the working order across this backlog and the other Atlas queues, use the [ranked follow-up priorities](follow-up-priorities.md). This file retains the underlying questions and publication gates.
+
 ## Hartwell Street Landfill, Buffalo — November 6, 2026 review
 
 **Status:** Investigation lead; hold a new map entry pending identity, boundary, and site-specific evidence review. This is separate from Hartland Town Landfill in Niagara County.

@@ -2,6 +2,8 @@
 
 Last reviewed: August 12, 2026
 
+This is a historical expansion audit. Use the [master research priorities](follow-up-priorities.md) for follow-up order and current coverage reconciliation; a candidate named below may already have its feature chapter.
+
 ## Audit result
 
 - 175 mapped place records were reviewed by the existing history-depth audit.

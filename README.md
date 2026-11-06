@@ -20,6 +20,8 @@ The project asks a simple question:
 
 ## Current foundation
 
+For research planning, start with the [ranked follow-up priorities](research/follow-up-priorities.md). It consolidates site notes, candidate lists, school reviews, historical leads, and deferred topics from highest expected research value to work that should wait for stronger evidence. Run `npm run rank:research-followups` to refresh the register after editing its priority configuration or the underlying records.
+
 - Next.js App Router
 - TypeScript
 - Tailwind CSS

@@ -1,0 +1,1000 @@
+{
+  "reviewed": "2026-11-06",
+  "basis": "Editorial judgment using the evidence and open questions already held in the project. This is a return-on-research-effort ranking, not a hazard or health-risk ranking. Agency statuses have not all been freshly reverified for this organization pass.",
+  "tiers": {
+    "1": "Follow up first",
+    "2": "Strong next investigations",
+    "3": "Useful bounded research",
+    "4": "Maintain or check when new records appear",
+    "5": "Park unless a stronger lead arrives"
+  },
+  "items": [
+    {
+      "id": "witmer-necra",
+      "tier": 1,
+      "title": "Witmer Drive-In and property-specific NECRA results",
+      "why": "An active assessment and a documented information-transmission gap can materially change an existing public story.",
+      "nextAction": "Find the supplemental sampling plan/results, EPA isotope assessment, original 2020 survey, and August 2026 transmission/receipt records. Keep screened, sampled, relocated, and remediated properties separate.",
+      "effort": "Medium",
+      "siteIds": [
+        "witmer-road-drive-in",
+        "niagara-erie-radiological-assessment"
+      ],
+      "references": [
+        "src/data/radiological-investigation.ts",
+        "research/research-candidate-source-review-2026-11-06.json",
+        "research/deferred-research-backlog.md"
+      ]
+    },
+    {
+      "id": "residential-fill",
+      "tier": 1,
+      "title": "Cayuga Island and Black Creek Village findings",
+      "why": "New validated property-specific results would answer substantive questions in existing residential-fill stories.",
+      "nextAction": "Seek validated 2026 results, original disposal questionnaires, earlier sampling maps and closure records. Treat Cayuga Island and Black Creek Village as separate investigations and protect resident privacy.",
+      "effort": "High",
+      "siteIds": [
+        "cayuga-island-industrial-fill",
+        "black-creek-village-fill-investigation"
+      ],
+      "references": [
+        "src/data/cayuga-island-site.ts",
+        "src/data/site-stories.ts",
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "industrial-welding",
+      "tier": 1,
+      "title": "Industrial Welding monitoring exceedances and agency response",
+      "why": "The submitted 2026 report contains both exceedances and a favorable remedy assessment; agency interpretation is a concrete missing piece.",
+      "nextAction": "Get DEC's response, later monitoring, and corrective-maintenance records; distinguish well and discharge samples from drinking water.",
+      "effort": "Low to medium",
+      "siteIds": [
+        "olin-industrial-welding"
+      ],
+      "references": [
+        "research/research-candidate-source-review-2026-10-26.json"
+      ]
+    },
+    {
+      "id": "necco-emerging-contaminants",
+      "tier": 1,
+      "title": "Necco Park emerging-contaminant follow-up",
+      "why": "The stored review identifies a September 2026 follow-up milestone with unresolved source and treatment questions.",
+      "nextAction": "Check for the follow-up investigation, treatment-system sampling, and EPA disposition. Separate upgradient findings from landfill attribution.",
+      "effort": "Low to medium",
+      "siteIds": [
+        "dupont-necco-park-landfill"
+      ],
+      "references": [
+        "research/industrial-history-source-review-2026-10-19.json"
+      ]
+    },
+    {
+      "id": "bell-olin-network",
+      "tier": 1,
+      "title": "Bell and Olin waste destinations and exact waste chemistry",
+      "why": "A real generator inventory already exists, and shipment or analytical records could connect several established sites without guesswork.",
+      "nextAction": "Recover the 1983 master inventory, generator analyses and manifests. Resolve Bell's plating constituents and destination-specific shipments; keep Nash Road, Niagara County Refuse, and other Witmer properties distinct.",
+      "effort": "High",
+      "siteIds": [
+        "bell-aerospace-impoundment",
+        "olin-buffalo-avenue-plant",
+        "niagara-county-refuse",
+        "niagara-sanitation-nash-road-landfill"
+      ],
+      "references": [
+        "research/research-candidate-source-review-2026-10-26.json"
+      ]
+    },
+    {
+      "id": "towne-gardens-smelter",
+      "tier": 1,
+      "title": "Lake Erie Smelting at Superior Street and Towne Gardens",
+      "why": "The lead investigation has a documented residential-redevelopment connection and removal activity, but no dedicated Atlas place entry or verified final outcome.",
+      "nextAction": "Retrieve final EPA removal/closeout records, confirm the historical factory footprint, and prepare a property-specific entry if the records support it.",
+      "effort": "Medium",
+      "siteIds": [],
+      "leadIds": [
+        "lake-erie-smelting"
+      ],
+      "references": [
+        "src/data/lead-investigation.ts"
+      ]
+    },
+    {
+      "id": "lumen-bearing",
+      "tier": 1,
+      "title": "Lumen Bearing stabilization and present controls",
+      "why": "Measured contamination and a completed stabilization action are already documented; current stewardship and a dedicated entry are answerable gaps.",
+      "nextAction": "Verify ownership, cover/control maintenance, and later agency actions at 197 Lathrop before building a dedicated place record.",
+      "effort": "Medium",
+      "siteIds": [],
+      "leadIds": [
+        "lumen-bearing"
+      ],
+      "references": [
+        "src/data/lead-investigation.ts"
+      ]
+    },
+    {
+      "id": "inventory-1979",
+      "tier": 1,
+      "title": "Original March 1979 Erie–Niagara disposal inventory",
+      "why": "One original inventory could unlock multiple missing sites and waste routes, giving this broad task unusually high reuse value.",
+      "nextAction": "Locate the complete report, extract names/addresses/generators with page references, and crosswalk them to current Atlas IDs and agency codes. Start with a small test batch before a full extraction.",
+      "effort": "High",
+      "siteIds": [],
+      "references": [
+        "research/research-candidate-source-review-2026-10-26.json",
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "hartwell",
+      "tier": 1,
+      "title": "Hartwell Street Landfill and Atlas Steel identity",
+      "why": "There is a named scheduled investigation plus an older site-specific archive, providing a stronger starting point than a generic landfill lead.",
+      "nextAction": "Read DEC 915030's older investigations and reconcile the footprint with the ILI listing; obtain the site-specific 2026 plan/start status and results before a new pin.",
+      "effort": "Medium",
+      "siteIds": [],
+      "references": [
+        "research/deferred-research-backlog.md",
+        "research/research-candidate-source-review-2026-11-06.json"
+      ]
+    },
+    {
+      "id": "curtiss-completion",
+      "tier": 1,
+      "title": "Curtiss Malt House interim cleanup and vapor controls",
+      "why": "The expanded five-parcel project has documented findings and a specific 2026 cleanup proposal; construction evidence could meaningfully update the published story.",
+      "nextAction": "Obtain DEC approval, excavation/disposal records, vapor-system commissioning, and final engineering documentation.",
+      "effort": "Low to medium",
+      "siteIds": [
+        "curtiss-malt-house"
+      ],
+      "references": [
+        "research/research-candidate-source-review-2026-10-26.json"
+      ]
+    },
+    {
+      "id": "exchange-completion",
+      "tier": 1,
+      "title": "619 Exchange Street completion evidence",
+      "why": "The new story is published and the easement is recorded; checking the final outcome is valuable, while redoing its history adds little.",
+      "nextAction": "Check for the final engineering report, confirmation samples, soil/tank manifests, site management plan and completion certificate. If unavailable, retain the selected-remedy wording and wait for a new filing.",
+      "effort": "Low",
+      "siteIds": [
+        "619-exchange-street"
+      ],
+      "references": [
+        "research/research-candidate-source-review-2026-11-06.json"
+      ]
+    },
+    {
+      "id": "diaz-results",
+      "tier": 1,
+      "title": "Diaz Chemical 2026 confirmation and restoration results",
+      "why": "The stored notes identify a defined treatment-to-confirmation milestone with a realistic chance of a substantial outcome update outside Erie and Niagara counties.",
+      "nextAction": "Find validated confirmation results, equipment-removal/restoration records, and the property-specific vapor-control status.",
+      "effort": "Medium",
+      "siteIds": [
+        "diaz-chemical-holley"
+      ],
+      "references": [
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "coordinate-reliability",
+      "tier": 2,
+      "title": "Resolve the ten recorded coordinate-review flags",
+      "why": "A bounded review could prevent readers from interpreting contextual points as precise cleanup locations.",
+      "nextAction": "Check each marker's intended feature and authoritative record before moving it; some differences reflect waterways or related-document folders rather than errors.",
+      "effort": "Low to medium",
+      "siteIds": [
+        "land-reclamation-landfill",
+        "two-mile-creek-tonawanda",
+        "amherst-central-park-westwood-country-club",
+        "cayuga-creek-erie-county",
+        "sinclair-refinery-wellsville",
+        "cayuga-island-industrial-fill",
+        "little-valley-superfund",
+        "black-creek-village-fill-investigation",
+        "former-buffalo-forge-property",
+        "niagara-transformer-cheektowaga"
+      ],
+      "references": [
+        "research/research-candidate-source-review-2026-10-26.json"
+      ]
+    },
+    {
+      "id": "pfas-results",
+      "tier": 2,
+      "title": "PFAS investigations and water-supply outcome updates",
+      "why": "Mayville, the Air Reserve Station, Marine Drive and Ischua have specific investigation or remedy questions that can improve already useful pages.",
+      "nextAction": "Review each site's next RI, sampling, construction or completion record separately; distinguish replacement water supplies, groundwater detections and unresolved sources.",
+      "effort": "Medium",
+      "siteIds": [
+        "mayville-pfas-site",
+        "niagara-falls-air-reserve-pfas",
+        "marine-drive-apartments-east-pfas",
+        "ischua-landfill",
+        "oregon-road-site"
+      ],
+      "references": [
+        "src/data/featured-sites.ts",
+        "src/data/historic-cleanup-expansion.ts"
+      ]
+    },
+    {
+      "id": "buffalo-lead-water",
+      "tier": 2,
+      "title": "Buffalo lead service-line policy and replacement outcomes",
+      "why": "Dated board minutes, public guidance and inventory counts can give readers practical clarity; the stored review identifies conflicting eligibility language.",
+      "nextAction": "Reconcile newer board minutes and program guidance, verified replacement completions, the classified inventory and water-quality reporting. Keep Buffalo Water separate from ECWA and funding awards separate from completed work.",
+      "effort": "Low to medium",
+      "siteIds": [],
+      "references": [
+        "research/buffalo-lead-water-source-review.json",
+        "src/data/buffalo-lead-water.ts"
+      ]
+    },
+    {
+      "id": "griffon-data",
+      "tier": 2,
+      "title": "Griffon Park seep investigation and validated 2026 data",
+      "why": "A dated agency evaluation and earlier seep investigations can be compared through actual samples rather than recurring public speculation.",
+      "nextAction": "Obtain validated June 2026 data, sampling locations and earlier seep files; check for a later DEC interpretation.",
+      "effort": "Medium",
+      "siteIds": [
+        "griffon-park-landfill"
+      ],
+      "references": [
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "carborundum-building1",
+      "tier": 2,
+      "title": "Carborundum Buffalo Avenue Building 1 and waste disposition",
+      "why": "Federal nuclear-work evidence is strong, but exact building geography and disposition remain important missing connections.",
+      "nextAction": "Find considered-site/building plans, decommissioning surveys and shipment records. Keep the unresolved 1943 location and Globar solvent cleanup separate.",
+      "effort": "High",
+      "siteIds": [
+        "carborundum-globar-site"
+      ],
+      "references": [
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "tam-slag",
+      "tier": 2,
+      "title": "TAM experimental slag disposition",
+      "why": "A documented experiment generated slag; a destination record would close a meaningful gap. The search may require difficult archival work.",
+      "nextAction": "Pursue AEC, contractor and disposal records for the 1955 experimental melt, preserving the distinction from ordinary ceramic waste and TAM-marked plates elsewhere.",
+      "effort": "High",
+      "siteIds": [
+        "tam-ceramics-niagara"
+      ],
+      "references": [
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "hooker-current",
+      "tier": 2,
+      "title": "Hooker and Olin plant decommissioning and treatment outcomes",
+      "why": "Post-shutdown and emerging-contaminant records can update established manufacturing histories more usefully than another general company narrative.",
+      "nextAction": "Check decommissioning, annual performance, Flow Zone 1, PFAS/1,4-dioxane and plant-specific groundwater reports without merging disposal-site remedies.",
+      "effort": "Medium",
+      "siteIds": [
+        "former-hooker-main-plant",
+        "olin-buffalo-avenue-plant",
+        "solvent-chemical-niagara-falls"
+      ],
+      "references": [
+        "src/data/historic-cleanup-expansion.ts"
+      ]
+    },
+    {
+      "id": "ead-sludge",
+      "tier": 2,
+      "title": "EAD americium sewer, sludge and landfill pathway",
+      "why": "A documented industrial-to-municipal waste pathway offers a coherent regional story with stronger anchors than testimony-only slag destinations.",
+      "nextAction": "Reconcile plant, sewer, treatment-sludge, incineration and landfill records, quantities and final cleanup decisions.",
+      "effort": "Medium to high",
+      "siteIds": [
+        "ead-metallurgy-americium"
+      ],
+      "references": [
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "scajaquada",
+      "tier": 2,
+      "title": "Scajaquada Creek decisions and source-specific findings",
+      "why": "Several identifiable 2026 planning, sediment and sewer decisions can improve one major regional narrative.",
+      "nextAction": "Check the final waterway plan, Army Corps decisions, sediment investigation and sewer milestones; map reaches before assigning findings spatially.",
+      "effort": "High",
+      "siteIds": [
+        "scajaquada-creek",
+        "iroquois-gas-westwood",
+        "buffalo-gas-light-tonawanda-street"
+      ],
+      "references": [
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "tributaries",
+      "tier": 2,
+      "title": "Cayuga Creek, Bergholtz Creek and Two Mile Creek datasets",
+      "why": "Named studies and sample sets offer bounded additions; narrative completeness scores alone undervalue the underlying source questions.",
+      "nextAction": "Recover the compound-level PFAS data, source-tracking conclusions, spill closure and reach-specific monitoring; preserve the distinction between the two Cayuga Creeks.",
+      "effort": "Medium",
+      "siteIds": [
+        "cayuga-creek-niagara-county",
+        "bergholtz-creek",
+        "two-mile-creek-tonawanda",
+        "gill-creek-chemical-corridor"
+      ],
+      "references": [
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "pierce-parcels",
+      "tier": 2,
+      "title": "Pierce-Arrow and American Axle parcel/remedy crosswalks",
+      "why": "Complexes with multiple site numbers need a usable account of which parcel has which remedy or completion status.",
+      "nextAction": "Build address-to-site-code matrices from decisions, easements and certificates; add PFAS only with published results and agency interpretation.",
+      "effort": "Medium",
+      "siteIds": [
+        "pierce-arrow-manufacturing-complex",
+        "former-american-axle-east-delavan"
+      ],
+      "references": [
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "river-road-new",
+      "tier": 2,
+      "title": "3701 River Road and Tonawanda Plastics investigations",
+      "why": "Existing entries have specific upcoming evidence, but the payoff depends on new results rather than more historical-use inference.",
+      "nextAction": "Read the fingerprinting and RI results for 3701 and the sampling/alternatives analysis for Tonawanda Plastics as separate properties.",
+      "effort": "Low to medium",
+      "siteIds": [
+        "3701-river-road",
+        "tonawanda-plastics"
+      ],
+      "references": [
+        "research/research-candidate-source-review-2026-10-26.json"
+      ]
+    },
+    {
+      "id": "main-results",
+      "tier": 2,
+      "title": "1440 Main Street investigation and interim-work results",
+      "why": "The final plan is already incorporated; completed results are the next meaningful addition.",
+      "nextAction": "Check results, tank/interim-work documentation and alternatives analysis. If no new filing exists, stop rechecking the same plan.",
+      "effort": "Low",
+      "siteIds": [
+        "1440-main-street"
+      ],
+      "references": [
+        "research/research-candidate-source-review-2026-10-26.json"
+      ]
+    },
+    {
+      "id": "hartland",
+      "tier": 2,
+      "title": "Hartland Town Landfill identity and investigation start",
+      "why": "A named scheduled investigation is worth a bounded check, but its current identity and footprint are less secure than Hartwell's archive lead.",
+      "nextAction": "Verify the Ryan Road/EPA identity, boundary and ILI task order, then seek results. Hold a new pin until site-specific evidence arrives.",
+      "effort": "Medium",
+      "siteIds": [],
+      "references": [
+        "research/deferred-research-backlog.md"
+      ]
+    },
+    {
+      "id": "amherst-dump",
+      "tier": 2,
+      "title": "Billy Wilson Park and Hopkins Road Dump investigation",
+      "why": "A full investigation could resolve waste footprint and alias questions already identified in the Atlas.",
+      "nextAction": "Recover the landfill groundwater report and match the EPA record, disposal footprint, analytes, flow direction and recommendations.",
+      "effort": "Medium",
+      "siteIds": [
+        "billy-wilson-park-hopkins-road-dump"
+      ],
+      "references": [
+        "src/data/amherst-cleanup-sites.ts"
+      ]
+    },
+    {
+      "id": "hamburg-nike",
+      "tier": 2,
+      "title": "Hamburg Landfill and former Nike launch-area records",
+      "why": "Named older assessments, neighboring-property work and construction files give a concrete route through a complicated disposal landscape.",
+      "nextAction": "Obtain the NUS/EPA, 1999 GZA, neighboring-property and 2007/2008 project records; resolve landfill and launch/control-area boundaries separately.",
+      "effort": "High",
+      "siteIds": [
+        "hamburg-landfill-former-nike-launch-area"
+      ],
+      "references": [
+        "src/data/erie-cayuga-expansion.ts"
+      ]
+    },
+    {
+      "id": "reliance",
+      "tier": 2,
+      "title": "Reliance Lead referral and cleanup outcome",
+      "why": "An agency removal referral is a firmer lead than an unlocated historical factory listing.",
+      "nextAction": "Retrieve assessment, action and completion files and reconcile the historical Genesee Street footprint before a dedicated entry.",
+      "effort": "Medium",
+      "siteIds": [],
+      "leadIds": [
+        "reliance-lead"
+      ],
+      "references": [
+        "src/data/lead-investigation.ts"
+      ]
+    },
+    {
+      "id": "regional-remedy-progress",
+      "tier": 2,
+      "title": "Lehigh derailment and Little Valley remedy implementation",
+      "why": "Existing decisions and defined future reviews make these useful regional updates outside the Niagara industrial concentration.",
+      "nextAction": "Check Lehigh's post-2023 remedy milestones and Little Valley source/plume records; prepare for the stored FY2027 review milestone without claiming a new release.",
+      "effort": "Medium",
+      "siteIds": [
+        "lehigh-valley-railroad-derailment",
+        "little-valley-superfund"
+      ],
+      "references": [
+        "src/data/little-valley-site.ts",
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "pvs-durez",
+      "tier": 2,
+      "title": "PVS and Durez Packard Road regulatory outcomes",
+      "why": "Both have identifiable cleanup and operating-permit records that can provide a dated update.",
+      "nextAction": "Retrieve PVS investigation/registry conclusions and Durez's final air permit, test reports and groundwater review; do not equate permitted operation with a violation.",
+      "effort": "Medium",
+      "siteIds": [
+        "pvs-chemicals-buffalo",
+        "durez-packard-road"
+      ],
+      "references": [
+        "src/data/research-candidate-additions.ts",
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "regional-incomplete",
+      "tier": 2,
+      "title": "AlTech, Fisher-Price and Harrison missing primary records",
+      "why": "Specific source and remedy gaps justify work; a missing photograph or low completeness score alone does not.",
+      "nextAction": "Prioritize AlTech construction/sediment records, Fisher-Price decisions/completion/controls, and Harrison's final remedial boundary and report before expanding company history.",
+      "effort": "Medium",
+      "siteIds": [
+        "altech-specialty-steel",
+        "fisher-price-medina",
+        "harrison-radiator-lockport"
+      ],
+      "references": [
+        "research/research-progress-ranking.md"
+      ]
+    },
+    {
+      "id": "pesticide-records",
+      "tier": 2,
+      "title": "FMC and other documented pesticide-property updates",
+      "why": "Named cleanup properties and school work have stronger evidence than broad claims about every historical pesticide business.",
+      "nextAction": "Check parcel-specific cleanup/monitoring at FMC and Dublin Road, Oak Orchard storage, Gleason's Nursery and Westwood; separate completed school work from outstanding off-site areas.",
+      "effort": "Medium",
+      "siteIds": [
+        "fmc-middleport",
+        "fmc-dublin-road-landfill",
+        "oak-orchard-pesticide-storage",
+        "former-gleasons-nursery",
+        "amherst-central-park-westwood-country-club",
+        "330-maple-road-buffalo-shooting-club"
+      ],
+      "references": [
+        "research/school-candidate-queue-review.md",
+        "src/data/amherst-cleanup-sites.ts"
+      ]
+    },
+    {
+      "id": "unmapped-dec-candidates",
+      "tier": 3,
+      "title": "Unmapped cleanup records from the school-source review",
+      "why": "The source/editorial tables contain named DEC records with supporting documents; some may justify standalone place histories even when a school relationship does not.",
+      "nextAction": "Crosswalk every queued DEC code to current Atlas coverage. For uncovered records, start with strong primary sources and a distinct industrial/cleanup story; verify narrative status and avoid duplicate multi-parcel entries.",
+      "effort": "Medium",
+      "siteIds": [],
+      "references": [
+        "research/schools-nearby-site-editorial-review.csv",
+        "research/schools-nearby-site-source-review.csv",
+        "src/data/buffalo-school-research.ts"
+      ]
+    },
+    {
+      "id": "morris-reimann",
+      "tier": 3,
+      "title": "Morris and Reimann Wrecking primary-file review",
+      "why": "A named historical investigation and federal inventory offer a practical starting point, but not yet a publishable disposal history.",
+      "nextAction": "Read DEC 915092's Phase I file and the EPA assessment for footprint, materials, investigation outcome and present controls.",
+      "effort": "Medium",
+      "siteIds": [],
+      "references": [
+        "src/data/amherst-research-queue.ts"
+      ]
+    },
+    {
+      "id": "newco-parcels",
+      "tier": 3,
+      "title": "Union Carbide, Newco and CECOS parcel attribution",
+      "why": "Official industrial-disposal evidence is real; exact modern parcel assignment and radiological claims remain harder to establish.",
+      "nextAction": "Build dated property maps and locate shipment/analytical records for the 56th/Pine complex; distinguish Necco Park and treat burial testimony as testimony.",
+      "effort": "High",
+      "siteIds": [
+        "cecos-international",
+        "electro-metallurgical-company",
+        "fashion-outlets-sabre-park"
+      ],
+      "references": [
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "early-chemical",
+      "tier": 3,
+      "title": "Early chemical production dates, quantities and waste records",
+      "why": "The main histories are published. Precise production records could resolve real discrepancies, but broad historical retelling has diminishing returns.",
+      "nextAction": "Resolve Buffalo Color Building 432/picric-acid dates and actual mustard output, Oldbury military-perchlorate chronology, and Royal Avenue predecessor boundaries.",
+      "effort": "High",
+      "siteIds": [
+        "buffalo-color",
+        "former-hooker-main-plant",
+        "frontier-chemical-royal-avenue",
+        "hooker-102nd-street-landfill",
+        "stauffer-chemical-pasny"
+      ],
+      "references": [
+        "research/industrial-history-source-review-2026-10-19.json"
+      ]
+    },
+    {
+      "id": "incinerator-network",
+      "tier": 3,
+      "title": "Niagara Falls incinerator and residue destinations",
+      "why": "A reported landfill destination is anchored in a generator table; the furnace location, dates and load records could add a distinct site.",
+      "nextAction": "Locate municipal operating/location records and destination manifests. Keep municipal ash, plant incinerators and each landfill separate.",
+      "effort": "Medium to high",
+      "siteIds": [
+        "niagara-county-refuse",
+        "lackawanna-incinerator",
+        "depew-village-landfill",
+        "frontier-chemical-pendleton"
+      ],
+      "references": [
+        "src/data/burning-years.ts",
+        "research/burning-years-source-review-2026-10-19.json"
+      ]
+    },
+    {
+      "id": "paint-waste-routes",
+      "tier": 3,
+      "title": "Pratt and Lambert and other documented waste-transfer leads",
+      "why": "Labeled waste evidence and plant records provide a better starting point than merely shared company ownership.",
+      "nextAction": "Verify the plant-to-Newstead history, haulers and dates; extend Niagara Transformer/Wide Beach and Clean Harbors routes only with matching records.",
+      "effort": "High",
+      "siteIds": [
+        "pratt-lambert-scajaquada",
+        "niagara-transformer-cheektowaga",
+        "wide-beach-development",
+        "clean-harbors-bdt-clarence",
+        "chemical-leaman-tank-lines"
+      ],
+      "references": [
+        "src/data/paint-industry-sites.ts",
+        "src/data/regional-waste-network-sites.ts"
+      ]
+    },
+    {
+      "id": "white-lead-footprints",
+      "tier": 3,
+      "title": "Cornell and Buffalo White Lead factory footprints",
+      "why": "Contemporary directories support real factories, but parcel reconstruction must precede environmental claims.",
+      "nextAction": "Georeference Delaware/Virginia and Sixth/Georgia factory footprints, track later land use, and seek address-specific investigation files. Keep the Oak Street inventory separate.",
+      "effort": "High",
+      "siteIds": [
+        "mcdougall-kellogg-elk-street"
+      ],
+      "leadIds": [
+        "cornell-niagara-white-lead",
+        "buffalo-white-lead-works",
+        "national-lead-cornell"
+      ],
+      "references": [
+        "src/data/lead-investigation.ts",
+        "research/lead-history-source-review.json"
+      ]
+    },
+    {
+      "id": "lead-assessment-files",
+      "tier": 3,
+      "title": "Samuel Greenfield, Buffalo White Metal and Continental Copper files",
+      "why": "Named completed assessments can settle what federal closure actually meant without requiring a large new investigation.",
+      "nextAction": "Retrieve assessment/sampling and closure rationale; reconcile addresses and factory footprints. Stop if no site-specific result is available.",
+      "effort": "Medium",
+      "siteIds": [],
+      "leadIds": [
+        "samuel-greenfield",
+        "buffalo-white-metal",
+        "continental-copper"
+      ],
+      "references": [
+        "src/data/lead-investigation.ts"
+      ]
+    },
+    {
+      "id": "industrial-waste-bounded",
+      "tier": 3,
+      "title": "Vanadium, landfill and foundry waste-inventory details",
+      "why": "These sites already have substantial coverage; targeted generator, quantity or unit records can add useful detail.",
+      "nextAction": "Work from a named missing document for Vanadium, Union Road, Houdaille, Sinclair, Land Reclamation or Farwell. Avoid re-investigating a complete general narrative.",
+      "effort": "Medium to high",
+      "siteIds": [
+        "vanadium-corporation-of-america",
+        "union-road-gardenville-yard",
+        "houdaille-strippit-landfill",
+        "sinclair-refinery-wellsville",
+        "land-reclamation-landfill",
+        "farwell-road-landfill",
+        "pratt-letchworth-foundry"
+      ],
+      "references": [
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "documented-campus-followups",
+      "tier": 3,
+      "title": "Documented school-campus histories and unresolved agency recommendations",
+      "why": "Existing campus stories include specific cleanup or inspection conclusions; some older recommendations still need a documented disposition, without implying a present hazard.",
+      "nextAction": "Reconcile Lewiston-Porter community-review questions with later Corps conclusions and follow-up, confirm Tapestry parcel scope, and preserve Royalton-Hartland campus completion separately from the broader FMC program.",
+      "effort": "Medium",
+      "siteIds": [],
+      "references": [
+        "src/data/buffalo-school-research.ts",
+        "research/schools-verified-campus-relationships.md",
+        "research/school-candidate-queue-review.md"
+      ]
+    },
+    {
+      "id": "school-parcel-verification",
+      "tier": 3,
+      "title": "Held school candidates with specific parcel/document questions",
+      "why": "A small, finite verification pass could resolve inclusion decisions; proximity is only a screening lead.",
+      "nextAction": "Check Lydia Wright, Enterprise, Emerson and both CSAT locations against current parcels and original DEC files. Resolve former School 26's address and status separately. Do not republish already included campuses as new discoveries.",
+      "effort": "Medium",
+      "siteIds": [],
+      "references": [
+        "research/school-candidate-queue-review.md",
+        "src/data/buffalo-school-research.ts"
+      ]
+    },
+    {
+      "id": "vapor-cleaners",
+      "tier": 3,
+      "title": "Dry-cleaner and other building-specific vapor follow-ups",
+      "why": "A new mitigation or monitoring result can change a precise property story; neighborhood-wide inference cannot.",
+      "nextAction": "Read new remedy/vapor records for Bestway, Vibratech, Peters, Time One Hour and other documented solvent sites, preserving sub-slab versus indoor-air findings.",
+      "effort": "Medium",
+      "siteIds": [
+        "bestway-cleaners",
+        "vibratech",
+        "peters-dry-cleaning",
+        "time-one-hour-cleaners",
+        "northtown-plaza-former-dry-cleaner",
+        "mineral-springs-road-former-mgp"
+      ],
+      "references": [
+        "src/data/dry-cleaning-sites.ts",
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "landfill-construction",
+      "tier": 3,
+      "title": "Landfill construction, closure and control updates",
+      "why": "Construction and final reports can resolve genuine status questions; annual monitoring without a material change is lower priority.",
+      "nextAction": "Check named milestones at Old Upper Mountain Road, Chaffee, Huntley, Moench, Jamestown and other landfill entries; reconcile Moench's later ILI listing before adding a new site.",
+      "effort": "Medium",
+      "siteIds": [
+        "old-upper-mountain-road-landfill",
+        "chaffee-landfill",
+        "huntley-generating-station",
+        "moench-tanning-gowanda",
+        "former-jamestown-city-landfill",
+        "lancaster-sanitary-landfill",
+        "carroll-landfill"
+      ],
+      "references": [
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "mgp-identity",
+      "tier": 3,
+      "title": "Potential gasworks characterization and identity",
+      "why": "Niagara Falls and Salamanca could gain meaningful clarity from specific files, but factory existence or a potential classification is not a contamination finding.",
+      "nextAction": "Seek Niagara Falls characterization and construction sampling; establish Salamanca's actual manufacture/purification/distribution role with appropriate Seneca Nation coordination.",
+      "effort": "Medium to high",
+      "siteIds": [
+        "niagara-falls-former-mgp",
+        "salamanca-former-mgp",
+        "jamestown-former-mgp"
+      ],
+      "references": [
+        "src/data/site-stories.ts"
+      ]
+    },
+    {
+      "id": "waterways-boundaries",
+      "tier": 3,
+      "title": "Authoritative waterway, fill and remedy geometry",
+      "why": "Better maps can improve several stories once the intended boundaries and permissions are clear.",
+      "nextAction": "Digitize a selected approved drawing or archival shoreline sequence for Tifft, Times Beach, Buffalo River/harbor, Smokes Creek, canal and restoration sites. Finish one defensible layer before opening another.",
+      "effort": "High",
+      "siteIds": [
+        "tifft-nature-preserve",
+        "times-beach-disposal-site",
+        "buffalo-river",
+        "buffalo-harbor-cdf-4",
+        "smokes-creek-bethlehem-corridor",
+        "black-rock-canal",
+        "niagara-river-waterway",
+        "motor-frog-islands-restoration",
+        "strawberry-island-restoration"
+      ],
+      "references": [
+        "src/data/former-waterways.ts",
+        "src/data/waterway-hubs.ts"
+      ]
+    },
+    {
+      "id": "official-health",
+      "tier": 3,
+      "title": "Official health-study conclusions and surveillance updates",
+      "why": "Existing official studies and county surveillance can be useful with their denominators and limitations; they answer different questions from site causation.",
+      "nextAction": "Review Love Canal and East Buffalo/Western Cheektowaga study follow-up, official county data and lead-water records. Update existing health experiences before proposing a new cluster map.",
+      "effort": "High",
+      "siteIds": [
+        "love-canal"
+      ],
+      "references": [
+        "research/deferred-research-backlog.md",
+        "src/data/health-platform.ts",
+        "research/buffalo-lead-water-source-review.json"
+      ]
+    },
+    {
+      "id": "routine-existing-pages",
+      "tier": 4,
+      "title": "Routine follow-up on other published site records",
+      "why": "These pages remain useful; most open notes concern later monitoring, exact geometry, archival detail or maintenance rather than a new lead.",
+      "nextAction": "Use the full site register below. Promote a site when a new decision, measured result, remedy failure, construction outcome or specific source document appears; otherwise review in bounded batches.",
+      "effort": "Low per check",
+      "siteIds": [],
+      "fallback": true,
+      "references": [
+        "src/data/featured-sites.ts",
+        "src/data/site-stories.ts",
+        "src/data/historic-cleanup-expansion.ts",
+        "src/data/county-expansion-2026.ts"
+      ]
+    },
+    {
+      "id": "radiological-closeouts",
+      "tier": 4,
+      "title": "Completed radiological removals and historical point matching",
+      "why": "Closeout quantities and historical-to-modern location matching improve context but do not automatically create a new active investigation.",
+      "nextAction": "Seek final reports for Upper Mountain, Niagara Falls Boulevard, Holy Trinity and Donovan; compare the 100 historical points only with source-supported later properties. Check unresolved Military Road and Fashion Outlets documentation for a material new outcome.",
+      "effort": "Medium to high",
+      "siteIds": [
+        "upper-mountain-road-radiation-site",
+        "niagara-falls-boulevard-radiation-site",
+        "holy-trinity-radiation-site",
+        "donovan-head-start-radiation-site",
+        "fashion-outlets-sabre-park"
+      ],
+      "references": [
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "atomic-provenance",
+      "tier": 4,
+      "title": "Additional atomic-era mill and building provenance",
+      "why": "Useful specialized history, but broad searches for an unproven waste route can consume considerable time after the core history is published.",
+      "nextAction": "Pursue a named Bethlehem mill, Electro Metallurgical building, Linde/LOOW shipment or considered-site record when an archive locator exists; otherwise defer route claims.",
+      "effort": "High",
+      "siteIds": [
+        "bethlehem-steel",
+        "electro-metallurgical-company",
+        "linde-air-products",
+        "lake-ontario-ordnance-works-loow"
+      ],
+      "references": [
+        "src/data/bethlehem-uranium-sources.ts",
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "thin-lead-identities",
+      "tier": 4,
+      "title": "Thin smelter inventory identities and address conflicts",
+      "why": "Merit Metals, Niagara Metal and Electro Refractories have weaker location or identity anchors; Magnus and Fillmore require separation from already covered properties.",
+      "nextAction": "Time-box one inventory/address lookup per lead. Promote only if a footprint and primary investigation or operating record are recovered.",
+      "effort": "Medium",
+      "siteIds": [],
+      "leadIds": [
+        "merit-metals",
+        "niagara-metal",
+        "electro-refractories",
+        "magnus-metals",
+        "lake-erie-fillmore"
+      ],
+      "references": [
+        "src/data/lead-investigation.ts"
+      ]
+    },
+    {
+      "id": "school-cleanup-holds",
+      "tier": 4,
+      "title": "Weak or explicitly held cleanup-code candidates",
+      "why": "Older source-review decisions sometimes conflict with current holds or lack enough primary support; they should not become automatic new place entries.",
+      "nextAction": "Review the exact missing source or newer agency disposition for held Sweet Kleen, 230 Grider, the former 200 Delaware application and other weak records. Promote only when the evidence changes.",
+      "effort": "Low initial check; uncertain yield",
+      "siteIds": [],
+      "references": [
+        "research/schools-nearby-site-editorial-review.csv",
+        "src/data/buffalo-school-research.ts"
+      ]
+    },
+    {
+      "id": "chemical-profiles",
+      "tier": 4,
+      "title": "Nickel, beryllium and chemical-guide refinements",
+      "why": "Useful supporting reference work, but generally adds less new place knowledge than resolving a site-specific investigation.",
+      "nextAction": "Add or refine a profile when needed by a documented site finding, using primary references; retain chromium speciation limits. Arsenic, cadmium and chromium profiles already exist.",
+      "effort": "Medium",
+      "siteIds": [],
+      "references": [
+        "src/data/chemicals.ts",
+        "research/research-candidate-source-review-2026-10-26.json"
+      ]
+    },
+    {
+      "id": "page-polish",
+      "tier": 4,
+      "title": "Missing photographs, longer prose and general company histories",
+      "why": "These improve presentation but should not outrank a substantive unanswered source question.",
+      "nextAction": "Use the older completeness/history rankings as secondary editing aids. Obtain rights-cleared images and human accounts when a concrete archive is available; do not pad articles to satisfy a word count.",
+      "effort": "Variable",
+      "siteIds": [],
+      "references": [
+        "research/research-progress-ranking.md",
+        "research/site-history-ranking.md"
+      ]
+    },
+    {
+      "id": "school-negative-screen",
+      "tier": 5,
+      "title": "School leads supported only by general history or proximity",
+      "why": "The existing screen found no qualifying relationship for these candidates; another broad map pass is unlikely to improve the evidence.",
+      "nextAction": "Retain Maritime, Health Sciences, Reach, School of Technology, Bennett Park and Buffalo Academy of Science locations as leads only. Reopen for a specific parcel, cleanup or archival record.",
+      "effort": "High without a new lead",
+      "siteIds": [],
+      "references": [
+        "research/school-candidate-queue-review.md"
+      ]
+    },
+    {
+      "id": "testimony-only-fill",
+      "tier": 5,
+      "title": "Named businesses in uncorroborated 1979 fill testimony",
+      "why": "The interviews may guide archive searches, but they do not establish sampled material, a precise footprint or present conditions at named businesses.",
+      "nextAction": "Preserve Friona, Twin Fair, Michael's Pizzeria, King's Plaza and stockpile accounts as attributed testimony. Reopen only for a matching manifest, map, analytical result or independent agency finding.",
+      "effort": "High without a new lead",
+      "siteIds": [],
+      "references": [
+        "src/data/radiological-investigation.ts"
+      ]
+    },
+    {
+      "id": "army-reserve-listing",
+      "tier": 5,
+      "title": "Amherst Army Reserve Center database-only lead",
+      "why": "An inventory listing alone offers little basis for a new environmental story.",
+      "nextAction": "Reopen for a site-specific release, assessment, cleanup or closure file at 100 North Forest Road.",
+      "effort": "Low initial lookup; low expected yield",
+      "siteIds": [],
+      "references": [
+        "src/data/amherst-research-queue.ts"
+      ]
+    },
+    {
+      "id": "broad-category-hunts",
+      "tier": 5,
+      "title": "Broad unnamed factory, slag and pesticide searches",
+      "why": "Searching entire categories without a property or document can duplicate published work and encourage unsupported source attribution.",
+      "nextAction": "Replace a broad topic with one named property, dated operating record and testable question before spending substantial time.",
+      "effort": "High and open-ended",
+      "siteIds": [],
+      "references": [
+        "research/research-candidate-source-review-2026-10-26.json"
+      ]
+    },
+    {
+      "id": "orchard-overlay",
+      "tier": 5,
+      "title": "Former orchard or subdivision pesticide overlay",
+      "why": "Regional agricultural history and known pesticide use do not identify treatment or contamination on a present-day residential parcel.",
+      "nextAction": "Hold a hazard overlay until parcel-specific crop/treatment history and environmental evidence are available. Preserve the existing lead-arsenate history without extending it to every former farm.",
+      "effort": "High without parcel evidence",
+      "siteIds": [],
+      "references": [
+        "research/lead-history-source-review.json",
+        "src/data/lead-history.ts"
+      ]
+    },
+    {
+      "id": "unsupported-health-clusters",
+      "tier": 5,
+      "title": "General thyroid, MS and environmental disease-cluster claims",
+      "why": "The backlog has no adequately documented local cluster basis for these proposed maps; causal inference would require a separate epidemiological project.",
+      "nextAction": "Keep deferred. Reopen for a responsible health agency investigation or suitable peer-reviewed local study, then assess methods, population, time period and conclusions.",
+      "effort": "Very high",
+      "siteIds": [],
+      "references": [
+        "research/deferred-research-backlog.md"
+      ]
+    },
+    {
+      "id": "unsupported-dose-reconstruction",
+      "tier": 5,
+      "title": "Reconstructing historical residential dose or universal furnace inventories",
+      "why": "The burning-years review does not establish individual dose, historical stack concentrations or generator-by-generator furnace feed. Filling those gaps by inference would add weak claims.",
+      "nextAction": "Do not launch without recoverable measurements and a defensible study design; preserve the existing limits.",
+      "effort": "Very high",
+      "siteIds": [],
+      "references": [
+        "research/burning-years-source-review-2026-10-19.json"
+      ]
+    },
+    {
+      "id": "paused-amherst-gis",
+      "tier": 5,
+      "title": "Paused Amherst soils, wetlands and foundation GIS experience",
+      "why": "The project deliberately keeps this experience outside the live app; organizing the queue is not authorization to resume it.",
+      "nextAction": "Keep paused until explicitly resumed, then reassess source permissions, georeferencing and privacy before implementation.",
+      "effort": "High",
+      "siteIds": [],
+      "references": [
+        "research/paused-amherst-gis/page.tsx"
+      ]
+    }
+  ]
+}
