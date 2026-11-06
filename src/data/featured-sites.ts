@@ -31,6 +31,14 @@ const featuredSiteRecords: AtlasSite[] = [
     coordinates: [-79.011562382, 43.129560013],
     newsEvents: [
       {
+        date: "October 22, 2026",
+        headline: "DEC announces on- and off-site assessment after EPA radiological referral",
+        summary: "August NECRA screening led to an EPA referral. DEC plans additional radiation surveys and chemical sampling, including Gill Creek water and sediment; the announcement does not establish completed fieldwork or a cleanup outcome.",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932118/Fact%20Sheet.HW.932118.2026-10-22.Supplemental_Investigation_to_Begin.pdf",
+        reach: "Local",
+      },
+      {
         date: "August 5–6, 2026",
         headline: "Community groups request investigation and protective measures at former drive-in",
         summary: "Save Our Backyards Niagara and allied groups requested fencing, warning signs, a State Superfund Class 2 listing, and on- and off-site testing. They raised concerns about flooding and nearby homes; the release does not establish a measured off-site contaminant plume.",
@@ -40,6 +48,11 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
     sources: [
+      {
+        title: "October 2026 supplemental investigation fact sheet — Site 932118",
+        publisher: "New York State Department of Environmental Conservation",
+        url: "https://extapps.dec.ny.gov/data/DecDocs/932118/Fact%20Sheet.HW.932118.2026-10-22.Supplemental_Investigation_to_Begin.pdf",
+      },
       {
         title: "August 2026 community requests and flooding concerns",
         publisher: "The LOOW Down, reproducing community organizations’ release",
@@ -67,7 +80,7 @@ const featuredSiteRecords: AtlasSite[] = [
       }
     ],
     story: {
-      lastReviewed: "September 15, 2026",
+      lastReviewed: "November 6, 2026",
       background: [
         "The 1989 assessment describes a 1.72-acre investigated parcel beside Gill Creek. The theater also occupied adjoining land; this record does not define the full theater footprint or a contamination boundary.",
         "This is a different property from the Witmer Road Disposal Site at James Avenue, DEC 932027. Similar names do not establish shared waste sources."
@@ -96,21 +109,29 @@ const featuredSiteRecords: AtlasSite[] = [
         {
           period: "June–August 2020",
           event: "A limited surface radiation survey informed NORLIC’s redevelopment action plan."
+        },
+        {
+          period: "August–October 2026",
+          event: "DEC says the elevated 2020 survey readings reached the agency in August 2026. New NECRA screening prompted an EPA referral and a supplemental assessment planned for fall."
         }
       ],
       documentedImpacts: [
+        "DEC’s October fact sheet confirms historical waste across two properties south of the site, commercial soil-cleanup exceedances and localized groundwater impacts. These are earlier investigation findings, not new October sampling results.",
         "The 1989 assessment recorded lime-like fill, glass, metal and brick, with elevated organic vapors prompting subsurface investigation.",
         "The 2020 plan estimates 5,500–6,000 cubic yards of lime-like material, extending south off-site. It identifies resin-associated toluene, xylene, ethylbenzene, phenols, arsenic, copper and lead, and chromium associated with lime-like fill. This is not an estimate of uniformly hazardous waste beneath theater parking spaces.",
         "The June 12, 2020 survey measured up to 24 µR/hour against an 8 µR/hour background. Vegetated areas were excluded; locations exceeding 21,000 counts per minute were surveyed only at their boundaries. These are historical measurements, not isotope identification or present-day exposure estimates."
       ],
       cleanupAndControls: [
+        "The fall plan includes fencing, community air monitoring, soil and groundwater sampling, Gill Creek sampling, flow measurements and waste characterization.",
         "The 2020 plan recommends waste removal and radiation screening during soil disposal, with possible vapor investigation. Recommendations do not establish completed remediation."
       ],
       presentDay: [
+        "The EPA referral warrants further assessment; it does not identify a radionuclide, waste producer, contaminated volume or current exposure. Earlier groundwater and creek conclusions are being reevaluated.",
         "The reviewed documents establish investigation and cleanup planning, but do not establish a completed remedy.",
         "The 2020 assessment did not find widespread groundwater impacts or significant effects on Gill Creek. Those dated conclusions do not settle current conditions."
       ],
       researchNotes: [
+        "Obtain the supplemental work plan and sampling map, EPA isotope results, Gill Creek tables, waste-source records and final assessment or classification decision.",
         "Obtain subsequent cleanup decisions, disposal records and any updated sampling. Identify waste producers only with supporting records.",
         "Map location: DEC Remediation Sites GIS point for 932118, checked September 15, 2026; not a surveyed boundary."
       ]

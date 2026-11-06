@@ -4,6 +4,20 @@ This file preserves promising research topics that are intentionally not ready f
 An item being listed here does not mean that WNY Atlas has verified the claim or decided to
 build a map for it.
 
+## Hartland Town Landfill — November 6, 2026 review
+
+**Status:** Research lead; not ready for a mapped site record.
+
+DEC’s [July 2025 Inactive Landfill Initiative report](https://dec.ny.gov/sites/default/files/2025-07/inactivelandfillrpt2025_0.pdf), Table A.2, printed page 130 (PDF page 133), lists Hartland Town Landfill in Niagara County, Region 9, score 39, for investigation initiation in 2026. This verifies a planned investigation, not fieldwork, contamination or a current exposure pathway.
+
+The supplied GPT research watch identifies Ryan Road and EPA ID NYD980506745. Verify that identity against EPA’s archived inventory and current parcel records before publishing a location. The reported change from a 2025 schedule also needs comparison with the earlier plan.
+
+Obtain a site-specific work plan or task order, investigation start confirmation, landfill boundary and ownership records, groundwater/surface-water/leachate and nearby private-well results, any PFAS and 1,4-dioxane analyses, and the final recommendations. Do not infer contamination from statewide landfill statistics.
+
+## NECRA follow-up — November 6, 2026 review
+
+Preserve dated dashboard snapshots and keep confirmed findings, detailed sampling, voluntary relocations, removals and final determinations separate. The [October 23 agency bulletin](https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd) is a dated program snapshot, not a property-level outcome list.
+
 ## Health studies and reported disease patterns
 
 **Status:** Deferred for a future deep dive. No health map or new health claims should be

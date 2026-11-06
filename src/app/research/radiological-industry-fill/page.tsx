@@ -56,18 +56,20 @@ export default function RadiologicalInvestigationPage() {
       <details className="radiological-full-report" id="full-research">
       <summary>Full investigation, interactive map & source archive</summary>
       <section className="school-research-hero radiological-hero" id="current-status">
-        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Updated September 15, 2026" /></p>
+        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Reviewed November 6, 2026 · October 23 agency figures" /></p>
         <h2>Niagara–Erie radiological investigation</h2>
         <p className="dek">EPA, NYSDEC, and NYSDOH are investigating radiological material across roughly 1,000 square miles in Niagara and Erie counties. Teams are following aerial and roadway screening with ground surveys and property testing. A screening signal does not mean contamination is confirmed.</p>
         <a className="radiological-map-jump" href="#radiological-map">Open the interactive map <span aria-hidden="true">↓</span></a>
         <InvestigationStats stats={[
-          { stage: "Property access", value: "≈1,078", label: "signed access forms", asOfDate: "August 31, 2026" },
-          { stage: "Property screening", value: "847", label: "properties screened", asOfDate: "August 31, 2026" },
-          { stage: "Notification", value: "≈514", label: "properties notified no additional radiological investigation was needed", asOfDate: "August 31, 2026" },
-          { stage: "Additional investigation", value: "32", label: "parcels referred to EPA", asOfDate: "August 31, 2026" },
+          { stage: "Property access", value: ">1,100", label: "signed access agreements", asOfDate: "October 23, 2026" },
+          { stage: "Property screening", value: ">1,080", label: "properties screened", asOfDate: "October 23, 2026" },
+          { stage: "Notification", value: "≈900", label: "properties notified no additional radiological investigation was needed", asOfDate: "October 23, 2026" },
+          { stage: "Additional investigation", value: "37", label: "properties referred to EPA", asOfDate: "October 23, 2026" },
+          { stage: "Data review", value: ">150", label: "results still under review", asOfDate: "October 23, 2026" },
           { stage: "Precautionary action", value: "4", label: "properties recommended for voluntary temporary relocation", asOfDate: "August 31, 2026" },
         ]} />
-        <p>Property-level progress reported August 31, 2026. These counts describe different stages and should not be added together. Referral or a relocation recommendation does not by itself establish a final contamination classification or identify the source material. <a href="https://www.wnypapers.com/news/article/current/2026/09/01/166923/nysdec-epa-update-for-aug.-31" target="_blank" rel="noreferrer">DEC-submitted update ↗</a></p>
+        <p>The October 23 totals describe overlapping stages, not confirmed contamination counts. No-further-investigation notices concern radiological findings and do not evaluate unrelated chemical contamination. <a href="https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd" target="_blank" rel="noreferrer">October 23 agency update ↗</a> The relocation figure remains the separately dated August 31 snapshot. <a href="https://www.wnypapers.com/news/article/current/2026/09/01/166923/nysdec-epa-update-for-aug.-31" target="_blank" rel="noreferrer">August 31 update ↗</a></p>
+        <p>Background soil sampling for radium-226, thorium-232, uranium-238 and decay products will inform cleanup levels. Laboratory activity in picocuries per gram identifies specific radionuclides; initial counts-per-minute screening does not. <a href="https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd" target="_blank" rel="noreferrer">Background-sampling explanation ↗</a></p>
         <a className="radiological-next" href="#reading-guide">How to read this page →</a>
       </section>
 
@@ -116,7 +118,7 @@ export default function RadiologicalInvestigationPage() {
           more than 500,000 aerial data points evaluated, approximately 380 areas of
           interest, and about 160 areas advancing to ground surveys. Areas of interest
           and individual properties are different measures; these baseline figures
-          should not be added to the August property counts.
+          should not be added to the October property counts.
         </p>
         <p><strong>September 10, 2026 — Federal oversight.</strong> Congressman Tim Kennedy requested written answers from EPA and USACE about material origins, sampling and laboratory analysis, testing timelines, risk assessments, resident protections, relocation assistance, and property values. The request does not establish the source of the material. <a href="https://kennedy.house.gov/news/documentsingle.aspx?DocumentID=2482" target="_blank" rel="noreferrer">Official release ↗</a></p>
         <p><strong>Federal reference:</strong> EPA identifies the assessment as NY8180000160, a Removal Only Site that is not on the National Priorities List. This program record does not classify every screened property as contaminated. <a href="https://cumulis.epa.gov/supercpad/CurSites/csitinfo.cfm?id=0206750" target="_blank" rel="noreferrer">EPA site record ↗</a></p>
@@ -174,7 +176,7 @@ export default function RadiologicalInvestigationPage() {
       <section className="radiological-substories" id="connected-investigations">
         <div><p className="eyebrow">Connected investigations</p><h2>Connected place records and investigations</h2><p>The active assessment provides the regional frame. These focused records preserve separate places, material chains, witnesses, and evidentiary limits.</p></div>
         <div className="radiological-substory-grid">
-          <Link href="/sites/witmer-road-drive-in"><EvidenceStatusBadge status="documented" /><h3>Witmer Road Drive-In</h3><p>Industrial fill and a documented 2020 radiation survey.</p><strong>Read the environmental record →</strong></Link>
+          <Link href="/sites/witmer-road-drive-in"><EvidenceStatusBadge status="documented" /><h3>Witmer Road Drive-In</h3><p>Industrial fill, EPA referral and a planned off-site assessment.</p><strong>Read the environmental record →</strong></Link>
           <Link href="/research/radiological/southtowns-slag"><EvidenceStatusBadge status="research-in-progress" /><h3>Southtowns / Buffalo Slag</h3><p>Abbott Road, Republic Steel TENORM, and the documented construction-material chain.</p><strong>Read the full record →</strong></Link>
           <Link href="/sites/black-creek-village-fill-investigation"><EvidenceStatusBadge status="active-government-investigation" /><h3>Black Creek Village</h3><p>The 99th Street chemical-fill investigation and earlier removal history.</p><strong>Read the full record →</strong></Link>
           <Link href="/research/radiological/1979-pine-bowl-dossier"><EvidenceStatusBadge status="research-in-progress" /><h3>1979 Pine Bowl dossier</h3><p>The full witness-by-witness Probe Services record, with corroboration and explicit limits.</p><strong>Read the full record →</strong></Link>

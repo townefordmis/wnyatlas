@@ -9,6 +9,8 @@ export const metadata: Metadata = {
 };
 
 const updates = [
+  { date: "October 23, 2026", topic: "Property testing", title: "NECRA reports more than 1,080 screenings and 37 EPA referrals", publisher: "NYSDEC", summary: "More than 1,100 access agreements, approximately 900 notifications requiring no additional radiological investigation and over 150 results under review. Referrals require further assessment; they are not confirmed contamination totals. The bulletin also explains background soil sampling and the Witmer Road referral.", url: "https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd" },
+  { date: "October 22, 2026", topic: "Witmer Road", title: "DEC announces a supplemental assessment at the former drive-in", publisher: "NYSDEC", summary: "Planned on- and off-site work includes radiological surveys and Gill Creek sampling. Read the updated site record for the investigation history and evidence limits.", url: "/sites/witmer-road-drive-in" },
   { date: "September 10, 2026", topic: "Federal oversight", title: "Kennedy seeks answers on testing, material origins and resident support", publisher: "Office of Congressman Timothy M. Kennedy", summary: "An oversight letter asks EPA and the Army Corps about testing timelines, relocation assistance and financial impacts. The request does not establish the source of the material.", url: "https://kennedy.house.gov/news/documentsingle.aspx?DocumentID=2482" },
   { date: "September 1, 2026", topic: "Property testing", title: "Agencies report 847 properties screened in the August 31 update", publisher: "NYSDEC, via Niagara Frontier Publications", summary: "The update reports approximately 514 properties notified that no further radiological investigation was needed, 32 parcels referred to EPA and four properties recommended for voluntary temporary relocation. These are different stages, not counts to add together.", url: "https://www.wnypapers.com/news/article/current/2026/09/01/166923/nysdec-epa-update-for-aug.-31" },
   { date: "August 24, 2026", topic: "Local reporting", title: "EPA and DEC discuss the assessment with Buffalo Toronto Public Media", publisher: "Buffalo Toronto Public Media", summary: "Agency representatives discuss the regional investigation, historical industrial material and the questions behind the surveys.", url: "https://www.btpm.org/local/2026-08-24/epa-admin-dec-commish-join-btpm-news-to-discuss-ongoing-radiological-assessment" },
@@ -25,7 +27,7 @@ export default function RadiologicalNewsPage() {
       <p className="eyebrow">Niagara & Erie counties</p>
       <h1>Latest radiological news</h1>
       <p>Flyovers, property testing, Niagara Falls slag, cleanup and resident concerns—in one place, newest first.</p>
-      <p>Selected local reporting and agency updates. Reviewed September 28, 2026; this is an editorial collection, not a live news feed.</p>
+      <p>Selected local reporting and agency updates. Reviewed November 6, 2026; this is an editorial collection, not a live news feed.</p>
       <nav className="radiological-directory-tools" aria-label="Radiological news links">
         <Link href="/research/radiological-industry-fill">Browse radiological places →</Link>
         <a href="https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment">Current DEC updates & resident information ↗</a>
