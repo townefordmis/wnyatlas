@@ -18,8 +18,50 @@ import { paintIndustrySites } from "@/data/paint-industry-sites";
 import { prattLetchworthSite } from "@/data/pratt-letchworth-site";
 import { dryCleaningSites } from "@/data/dry-cleaning-sites";
 import { bethlehemUraniumSources } from "@/data/bethlehem-uranium-sources";
+import { earlyIndustrySources } from "@/data/early-industry";
 
 const featuredSiteRecords: AtlasSite[] = [
+  {
+    id: "williamsville-water-mills",
+    name: "Williamsville Water Mills / Ellicott Creek Mill District",
+    municipality: "Williamsville / Town of Amherst",
+    county: "Erie",
+    category: "industry",
+    summary: "An early water-powered district with a gristmill, sawmill, tannery, distillery, dams and raceways. The marker locates the surviving Water Mill address; it does not locate every former business or define contamination.",
+    evidenceStatus: "research-in-progress",
+    updateNote: "Added the documented 1811 mill district and its tannery, distillery and water-power history, linked to the new 1750–1900 investigation.",
+    coordinates: [-78.744687754076, 42.963808799611],
+    sources: [
+      earlyIndustrySources.mills,
+      earlyIndustrySources.landmark,
+      earlyIndustrySources.raceway,
+      { title: "Early industry: 1750–1900 — regional historical investigation", publisher: "WNYAtlas", url: "/research/early-industry#williams-mills" },
+    ],
+    story: {
+      lastReviewed: "November 15, 2026",
+      background: [
+        "The village's 2013 survey describes Jonas Williams's permanent gristmill and nearby sawmill in 1811, together with a tannery, distillery, dams and raceways around Ellicott Creek. The district connected water power, processing and settlement.",
+        "The surviving Water Mills landmark at 56 Spring Street gives this record a public address. The other industrial uses need separate footprint evidence; they are not all assigned to that building or parcel.",
+      ],
+      timeline: [
+        { period: "Early 1800s", event: "Williams developed mill operations around Ellicott Creek and its falls; the survey describes an earlier temporary gristmill on the east side of the creek." },
+        { period: "1811", event: "The permanent gristmill and nearby sawmill became part of the district's water-powered industrial system." },
+        { period: "Nineteenth century", event: "Historical sources document tannery and distillery operations, dams and raceways. The construction sequence requires further map and deed research." },
+        { period: "June 25, 1984", event: "The village designated Williamsville Water Mills as a local landmark." },
+      ],
+      documentedImpacts: [
+        "Mills, dams and raceways document the use and alteration of Ellicott Creek for industrial power.",
+        "The reviewed historical sources do not provide contaminant measurements, exposure findings or a cleanup determination for this district.",
+      ],
+      cleanupAndControls: ["Historic landmark designation concerns preservation; it is not an environmental cleanup certification."],
+      presentDay: ["The surviving mill anchors a larger historical district whose former industrial footprints remain under research. Its preservation history is distinct from unresolved environmental questions."],
+      researchNotes: [
+        "Resolve conflicting raceway dates: indexed waterfront-plan text says 1814; the 2013 survey inventory uses circa 1841. Retrieve the full waterfront plan and early deeds before selecting an exact construction date.",
+        "Locate the tannery, distillery, separate mill buildings and water rights using nineteenth-century maps and deeds. Do not infer chromium use or contamination from a tannery listing alone.",
+        "Map marker: Esri PointAddress geocode for 56 East Spring Street, checked November 15, 2026. The official landmark page uses 56 Spring Street. The address point identifies the surviving mill, not all historic uses, a survey boundary or a sampling location.",
+      ],
+    },
+  },
   {
     id: "catholic-academy-niagara-falls-radiological-assessment",
     name: "Catholic Academy of Niagara Falls Radiological Assessment",
@@ -2533,15 +2575,18 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "katherine-street-peninsula",
+    updateNote: "Added the 1860–1861 Farmer's Point blast-furnace history and its distinction from later fill, sediment cleanup and habitat restoration.",
     name: "Katherine Street Peninsula",
     municipality: "Buffalo",
     county: "Erie",
     category: "waterway",
     summary:
-      "Former industrial Buffalo River peninsula with compacted fill and a documented waste-oil handling history nearby, where contaminated river sediment was addressed and multiple shoreline and habitat-restoration projects were completed. Sources reviewed do not establish the peninsula as a former municipal landfill.",
+      "Buffalo River peninsula with an early Farmer's Point ironmaking history, later industrial fill and nearby waste-oil handling. Sediment cleanup and habitat restoration are separately documented; sources do not establish a municipal landfill here.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.855204, 42.857583],
     sources: [
+      earlyIndustrySources.iron,
+      { title: "Early industry: 1750–1900 — Farmer's Point and Union Iron Works", publisher: "WNYAtlas", url: "/research/early-industry#union-iron" },
       {
         title: "Remediation and Restoration Projects for the Buffalo River AOC",
         publisher: "U.S. Environmental Protection Agency",

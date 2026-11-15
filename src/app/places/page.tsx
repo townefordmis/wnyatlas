@@ -58,6 +58,7 @@ export default function PlacesPage() {
           </p>
         </div>
 
+        <p className="collection-scope-note"><Link href="/research/early-industry">Explore early industry, 1750–1900 →</Link> Historical investigations include places whose exact footprints are still under research.</p>
         <nav className="places-alphabet" aria-label="Place index letters">
           {Object.keys(groups).map((letter) => (
             <a key={letter} href={`#letter-${letter}`}>

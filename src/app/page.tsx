@@ -59,6 +59,12 @@ export default function Home() {
 
       <RecentUpdates />
 
+      <section className="about-panel" aria-labelledby="early-industry-title">
+        <p className="eyebrow">1750–1900 · New historical research</p>
+        <h2 id="early-industry-title"><a href="/research/early-industry">Early industry, waterways and trade →</a></h2>
+        <p>Explore Niagara portage landings, Williamsville mills, tanneries, cement works, early Buffalo furnaces and oil recovered from Little Genesee Creek.</p>
+      </section>
+
       <section className="about-panel" id="about">
         <p className="eyebrow">Built as a public record</p>
         <h2>Document the past. Understand the present.</h2>

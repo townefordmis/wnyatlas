@@ -112,12 +112,14 @@ export const deepHistoryBatchSeven: Record<string, DeepHistoryFeature> = {
     accent: "#4fc1b0",
     stat: { value: "1,190 feet", label: "shoreline habitat restored in the 2015 project" },
     chapters: [
+      { period: "1860–1861", title: "Blast furnaces preceded the later industrial shoreline", body: "The Society for Industrial Archeology places two early blast-furnace ventures at Farmer's Point, where Hamburg and Katherine streets met the Buffalo River. Their later consolidation as Union Iron Works adds an ironmaking chapter, while the original furnace footprints still require mapping. This history does not identify an off-site slag destination or assign every later river contaminant to the furnaces." },
       { period: "Industrial era", title: "Fill and hard use simplified a once-complex shoreline", body: "Industrial occupancy, compacted fill, hardened banks, and nearby waste-oil handling altered the river edge. Those documented conditions provide the setting without assigning every nearby activity or contaminant to the peninsula itself." },
       { period: "2015", title: "The first major project rebuilt fish habitat", body: "A Buffalo River Area of Concern project restored approximately 1,190 linear feet of shoreline habitat, replacing a degraded edge with features designed for fish, wildlife, and native vegetation." },
       { period: "2018 and after", title: "Restoration expanded around the peninsula", body: "Additional work treated about 1,760 feet of northeast shoreline and 3.7 acres, a 2.4-acre toe area, and a roughly 450-foot extension with another 3.7 acres. The projects form a connected habitat system within the remediated river corridor." },
     ],
     caution: { title: "Do not upgrade an inference into a landfill claim", body: "The property is made ground in an industrial corridor, but the sources reviewed do not identify it as a former municipal landfill. WNYAtlas keeps the nearby waste-oil history, sediment work, and restoration record separate." },
     sources: [
+      { label: "Society for Industrial Archeology: 1992 guide, printed page 3 / PDF page 7", url: "https://www.sia-web.org/wordpress/wp-content/uploads/2025/02/SIA-Buffalo-Guidebook-1992.pdf" },
       { label: "EPA: Buffalo River remediation and restoration projects", url: "https://www.epa.gov/great-lakes-aocs/remediation-and-restoration-projects-buffalo-river-aoc" },
       { label: "U.S. Army Corps: Katherine Street habitat restoration completion", url: "https://www.lrd.usace.army.mil/News/News-Releases/Article/3652617/buffalo-river-habitat-restoration-completed-at-katherine-street/" },
       { label: "Buffalo River Corridor Brownfield Opportunity Area", url: "https://regional-institute.buffalo.edu/wp-content/uploads/sites/155/2021/07/Buffalo-River-Corridor-BOA-Nomination-Document.pdf" },

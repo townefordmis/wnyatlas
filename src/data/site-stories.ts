@@ -3302,12 +3302,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "katherine-street-peninsula": {
-    lastReviewed: "July 27, 2026",
+    lastReviewed: "November 15, 2026",
     background: [
+      "The Society for Industrial Archeology's 1992 guide places two blast-furnace ventures at Farmer's Point, where Hamburg and Katherine streets met the Buffalo River. Construction began in 1860–1861 and the ventures later merged as Union Iron Works. Historic furnace footprints remain to be reconciled with modern parcels.",
       "Katherine Street Peninsula is a filled industrial landform in the Buffalo River corridor. Historical mapping and planning records show compacted fill and nearby waste-oil handling, while the river edge was affected by the broader legacy of contaminated Buffalo River sediment.",
       "EPA, USACE, and local partners combined sediment remediation with shoreline and habitat restoration here. The reviewed sources do not establish that the peninsula itself was a municipal landfill, so the atlas avoids repeating that unverified description.",
     ],
     timeline: [
+      { period: "1860–1861", event: "Two partnerships began blast-furnace construction at Farmer's Point; their businesses later combined as Union Iron Works." },
       { period: "Industrial era", event: "Filling and industrial waterfront use reshaped the peninsula and its shoreline." },
       { period: "Buffalo River cleanup", event: "Contaminated navigation-channel and river sediment was addressed through the Area of Concern program." },
       { period: "Restoration phase", event: "Partners rebuilt shoreline and shallow-water habitat at Katherine Street." },
@@ -3327,6 +3329,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "The peninsula is best understood as a restored industrial shoreline within a remediated river corridor. Its exact upland fill history remains less certain than the documented sediment and habitat work.",
     ],
     researchNotes: [
+      "Recover nineteenth-century furnace plans, atlas plates and deeds. Keep Farmer's Point separate from Hanna Furnace/Union Ship Canal and the Black Rock furnaces; no off-site slag destination or radiological connection is established by the reviewed history.",
       "Locate parcel-level boring logs and waste-oil facility records before assigning a stronger upland contamination status.",
       "Keep completed river restoration distinct from any future upland redevelopment cleanup.",
     ],

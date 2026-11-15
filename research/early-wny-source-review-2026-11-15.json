@@ -1,0 +1,259 @@
+{
+  "reviewed": "2026-11-15",
+  "scope": "Verification of seven proposed 1750-1900 Buffalo and Western New York historical-place investigations, with two additional leads found in the reviewed records.",
+  "publicationStatus": "Publication prepared: /research/early-industry covers the seven subjects and two further leads; /sites/williamsville-water-mills adds the surviving mill address as an explicitly qualified marker; /sites/katherine-street-peninsula gains the Farmer's Point ironmaking chapter. Other historical footprints remain unmapped. This status records the editorial disposition, not proof of successful deployment.",
+  "method": "Compared candidates with existing Atlas source modules; searched institutional, government and archival sources; downloaded and extracted relevant reports; visually checked cited PDF pages. Historical accounts in agency files are historical evidence, not new environmental measurements. A catalog description verifies an archival holding, not the contents of unexamined ledger pages.",
+  "sources": [
+    {
+      "id": "dec-geis",
+      "title": "Generic Environmental Impact Statement on the Oil, Gas and Solution Mining Regulatory Program",
+      "publisher": "New York State Department of Environmental Conservation",
+      "url": "https://extapps.dec.ny.gov/fs/docs/pdf/geismaster.pdf",
+      "locators": "Chapter IV, printed pages 4-1 and 4-6; full PDF pages 365 and 374. Bibliography: PDF page 906, Herrick, John P., Empire Oil, 1949.",
+      "review": "Full report downloaded; relevant text extracted; PDF pages 365 and 374 rendered, page 374 visually checked.",
+      "limit": "DEC's account cites Herrick (1949). The local-history versions may share this same source and should not be counted as wholly independent contemporary confirmations. Historical quantities are reported estimates, not modern sampling measurements."
+    },
+    {
+      "id": "dec-draft-geis-ch4",
+      "title": "Draft GEIS, Volume 1, Chapter IV: History of Oil, Gas and Solution Salt Production in New York State",
+      "publisher": "New York State Department of Environmental Conservation",
+      "url": "https://extapps.dec.ny.gov/docs/materials_minerals_pdf/dgeisv1ch4.pdf",
+      "locators": "Printed pages 4-1 and 4-6; chapter PDF pages 1 and 10.",
+      "review": "Readable chapter copy retrieved through web and downloaded.",
+      "limit": "Explicitly a draft chapter; the larger GEIS copy was also checked. Do not treat the two copies as independent sources."
+    },
+    {
+      "id": "cynthia-local-history",
+      "title": "Bolivar's First Refinery (The Cynthia Lubricating Oil Works)",
+      "publisher": "Allegany County Historical Society",
+      "url": "https://www.alleganyhistory.org/places/towns-and-villages/a-e274/bolivar262/related-articles48/2178-bolivars-first-refinery",
+      "review": "Article read.",
+      "limit": "Retrospective local history without an original parcel map or cited contemporary analytical record."
+    },
+    {
+      "id": "williamsville-survey",
+      "title": "Intensive Level Historic Resources Survey, Village of Williamsville",
+      "publisher": "Clinton Brown Company Architecture / Village of Williamsville, June 2013",
+      "url": "https://williamsvilleny.gov/wp-content/uploads/2017/01/Intensive-Level-Survey-FULL-FINAL.pdf",
+      "locators": "Printed page 3-6 / PDF page 23: early mills, tannery, distillery and water-power system. Island Park inventory, PDF page 182: circa-1841 raceway account.",
+      "review": "Downloaded and extracted; PDF page 23 rendered and visually checked.",
+      "limit": "Historical survey, not an environmental investigation. Individual facilities should not automatically be placed at the surviving mill building."
+    },
+    {
+      "id": "williamsville-landmarks",
+      "title": "Historic Preservation Commission: Williamsville Water Mills landmark",
+      "publisher": "Village of Williamsville",
+      "url": "https://williamsvilleny.gov/committees/historic-preservation/",
+      "locators": "Williamsville Water Mills, designated June 25, 1984; 56 Spring Street; operation began in 1811.",
+      "review": "Official landmark description read."
+    },
+    {
+      "id": "williamsville-lwrp",
+      "title": "Village of Williamsville Local Waterfront Revitalization Program",
+      "publisher": "Village of Williamsville / New York State Department of State",
+      "url": "https://dos.ny.gov/system/files/documents/2023/01/williamsville_lwrp_approved_sections_1_7.pdf",
+      "review": "Search-index text reviewed; direct download returned HTTP 403. Not a visually verified page.",
+      "limit": "Indexed account dates the Island Park raceway to 1814, while the 2013 survey inventory and village birthday article use about 1841. Do not resolve the discrepancy without an earlier map, deed or construction record."
+    },
+    {
+      "id": "usgs-522",
+      "title": "Portland Cement Materials and Industry in the United States, Bulletin 522",
+      "publisher": "U.S. Geological Survey, Edwin C. Eckel, 1913",
+      "url": "https://pubs.usgs.gov/bul/0522/report.pdf",
+      "locators": "Printed page 22 / PDF page 22, natural-cement history in Erie County.",
+      "review": "Downloaded, extracted, rendered and visually checked.",
+      "limit": "Historical industrial account. Manufacturing dates do not establish current contamination, a disposal boundary or a surviving quarry footprint."
+    },
+    {
+      "id": "akron-1884",
+      "title": "History of Akron and Vicinity: transcription of Henry Perry Smith's 1884 county history",
+      "publisher": "New York Genealogy, citing History of the City of Buffalo and Erie County, D. Mason & Co., 1884",
+      "url": "https://newyorkgenealogy.org/erie/history-of-akron-and-vicinity.htm",
+      "locators": "Newman works, Akron Cement Works, and Cummings Akron Cement Works sections; source attribution at end of article.",
+      "review": "Transcription read; original printed pages not inspected.",
+      "limit": "Reports 1869 sale of the older Cummings works; USGS uses 1871. Treat transaction timing as unresolved."
+    },
+    {
+      "id": "schoellkopf-biography",
+      "title": "Jacob Frederick Schoellkopf",
+      "publisher": "Immigrant Entrepreneurship / German Historical Institute; Benjamin Schwantes and Juliane Hornung",
+      "url": "https://www.immigrantentrepreneurship.org/entries/jacob-frederick-schoellkopf/",
+      "locators": "Business Development: 1844 store and tannery purchases, Buffalo sheepskin operation, North Evans, 1877 Lymburner & Torrey acquisition; source notes.",
+      "review": "Scholarly institutional biography and notes read.",
+      "limit": "Different tannery acquisitions must remain distinct; biographical dates are not surveyed footprints or wastewater measurements."
+    },
+    {
+      "id": "north-evans-ledger",
+      "title": "L. Breithaupt tannery: orders, SCA204-GA528-1-11",
+      "publisher": "University of Waterloo Special Collections & Archives",
+      "url": "https://archives.uwaterloo.ca/index.php/l-breithaupt-tannery-orders",
+      "locators": "Catalog file 11, dated 1856-1857 and 1861; description identifies a Hide Book recording hides from Canada charged to North Evans Tannery and notes payable through J. F. Schoellkopf, Buffalo.",
+      "review": "Institutional catalog description verified through indexed results; individual record page could not be retrieved. Original ledger pages not inspected.",
+      "limit": "Strong specific archival lead for trade and ownership research, not direct verification of every transaction or an environmental release."
+    },
+    {
+      "id": "buffalo-survey-2013",
+      "title": "Buffalo Preservation Ready Survey 2013",
+      "publisher": "Panamerican Consultants, Inc. / City of Buffalo",
+      "url": "https://www.buffalony.gov/DocumentCenter/View/9463/PreservationReadySurvey",
+      "retrievedCopyUrl": "https://buffaloah.com/surveys/PresReady/PresReady.pdf",
+      "locators": "Printed 3-9 / PDF 27: 1904 newspaper account of refuse and nuisance conditions beside Schoellkopf tannery. Printed 3-10 / PDF 28: Beals-Mayhew in 1828 at Indiana and Ohio. Printed 3-20 / PDF 38: later Schoellkopf tannery north of Perry between Mississippi and Liberty.",
+      "review": "City endpoint blocked download; matching-title public copy downloaded, extracted, relevant pages rendered and visually checked.",
+      "limit": "The 1904 canal account is outside the target period and does not identify the tannery as the source of every refuse deposit. The report's 1828 foundry date conflicts with the 2002 historical report's 1826 date."
+    },
+    {
+      "id": "hanna-summary-2002",
+      "title": "Historical Summary and Archival Photographs: The Hanna Furnace Corporation and the Union Ship Canal",
+      "publisher": "Panamerican Consultants, Inc., November 2002, prepared for Development Downtown, Inc.; NYSDEC archive",
+      "url": "https://extapps.dec.ny.gov/data/DecDocs/915029/Report.HW.915029.2002-11-01.Historical%20Summary%20and%20Archival%20Photographs.pdf",
+      "locators": "Printed page 3 / PDF page 6: Beals-Mayhew in 1826 at Ohio and Indiana. Printed page 4 / PDF page 7: 1861 Union Iron Company and production plant.",
+      "review": "Downloaded and extracted; PDF page 6 rendered and visually checked.",
+      "limit": "Background chapter addresses multiple historical ironworks. Its presence in DEC 915029 does not assign that cleanup identifier or its environmental findings to Beals-Mayhew or Farmer's Point."
+    },
+    {
+      "id": "buffalo-directory-1832",
+      "title": "1832 Buffalo City Directory, transcription",
+      "publisher": "Genealogy Trails, transcribing the historical directory",
+      "url": "https://www.genealogytrails.com/ny/erie/1832buffalodirectory.html",
+      "locators": "Alphabetical M entries: J. Mayhew & Co., wholesale dealers in stoves, hollow ware, pig iron and castings, stone warehouse, Buffalo Creek.",
+      "review": "Directory transcription read; original printed page not inspected.",
+      "limit": "Corroborates a Mayhew iron-trade business by 1832; does not by itself prove the legal identity, founding date or footprint of Beals-Mayhew."
+    },
+    {
+      "id": "sia-1992",
+      "title": "Industrial Crossroads: Buffalo and the Niagara Frontier, A Gazetteer for Tourists",
+      "publisher": "Society for Industrial Archeology, 21st Annual Conference, June 4-8, 1992",
+      "url": "https://www.sia-web.org/wordpress/wp-content/uploads/2025/02/SIA-Buffalo-Guidebook-1992.pdf",
+      "locators": "Introduction, printed page 3 / PDF page 7: Farmer's Point, Hamburg and Katherine streets; blast-furnace construction in 1860-1861 and subsequent Union Iron Works consolidation.",
+      "review": "Downloaded; scanned PDF page 7 rendered and visually read because embedded text extraction did not recover the passage.",
+      "limit": "Historical industrial geography, not environmental sampling or proof of any particular off-site slag shipment."
+    },
+    {
+      "id": "fort-little-niagara",
+      "title": "Little Niagara, Fort",
+      "publisher": "New York State Military Museum and Veterans Research Center",
+      "url": "https://museum.dmna.ny.gov/forts/little-niagara",
+      "review": "Official historical profile read."
+    },
+    {
+      "id": "fort-schlosser",
+      "title": "Schlosser, Fort",
+      "publisher": "New York State Military Museum and Veterans Research Center",
+      "url": "https://museum.dmna.ny.gov/forts/schlosser",
+      "review": "Official historical profile read.",
+      "limit": "Profile reports conflicting accounts of the later destruction date; do not choose between them without further documentation."
+    },
+    {
+      "id": "niagara-nrhp",
+      "title": "National Register documentation bundle: Fort Niagara and Lower Landing Archeological District / Colonial Niagara Historic District",
+      "publisher": "National Park Service",
+      "url": "https://npgallery.nps.gov/GetAsset/a177b303-6c93-45ef-9412-2bb19b34ec6d",
+      "locators": "Lower Landing section, page 10 / bundle PDF page 63: 1751 Upper Landing post, proposed trading house and guard accommodation, Seneca permission and portage labor. Bundle PDF page 57 describes possible additional properties pending study and consent.",
+      "review": "Downloaded and extracted; bundle PDF page 63 rendered and visually checked.",
+      "limit": "Bundle includes multiple nomination documents. It does not by itself establish that every discussed Upper Landing property is listed or within the nominated boundary. Respect redactions; no precise archaeological locations inferred."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cynthia-oil-works-bolivar",
+      "researchPriority": 1,
+      "decision": "Strongest new historical environmental story; prepare an attributed narrative, hold precise map pin pending footprint verification.",
+      "period": "1882 onward",
+      "verified": [
+        { "sources": ["dec-geis", "dec-draft-geis-ch4"], "finding": "DEC recounts oil leaking from early tanks into Little Genesee Creek, recovery behind a dam, shipments to an unnamed Buffalo oil works, and a reported stock of 10,000 barrels of salvaged crude when Cynthia was built in 1882." },
+        { "sources": ["cynthia-local-history"], "finding": "Local history places the works on the Porter Cowles flats at Bolivar's north end, south of Salt Rising Road on a Bradford, Eldred & Cuba Railroad siding; reports initial operation September 30, 1882 and B. W. Baum & Son ownership." }
+      ],
+      "limits": ["Do not identify the Buffalo receiver as Sinclair or another refinery without a named shipping record.", "The refinery recovered oil already in the creek; the reviewed passage does not make Cynthia the source of every upstream leak.", "Historical release evidence does not establish current soil or water concentrations, exposure, site classification or cleanup status."],
+      "nextRecords": ["Herrick, Empire Oil (1949), relevant original pages and citations", "1880s Bolivar maps, deeds, railroad siding plans, assessment rolls and petroleum trade press", "Dam location and named Buffalo consignee in shipping or company records"]
+    },
+    {
+      "id": "williams-mills-industrial-district",
+      "researchPriority": 2,
+      "decision": "Ready for an industrial-landscape history with facility locations distinguished; no contamination designation from the reviewed sources.",
+      "period": "Early 1800s through 1900",
+      "verified": [
+        { "sources": ["williamsville-survey", "williamsville-landmarks"], "finding": "The permanent gristmill and nearby sawmill date to 1811; the survey also records Williams's tannery, distillery, dams and raceways. The surviving landmark is at 56 Spring Street." }
+      ],
+      "limits": ["The tannery and distillery need separate footprint evidence; do not assign all early uses to the surviving mill parcel.", "Island Park raceway dates conflict: indexed LWRP text says 1814; the survey inventory uses circa 1841. Historical system existence is stronger than the exact construction date.", "No site-specific contaminant analyses were established by these historical sources."],
+      "nextRecords": ["Earliest mill deeds and water-power rights", "Nineteenth-century Williamsville maps showing tannery, distillery, dams and races", "Original material underlying the survey's Howe citation and the two raceway dates"]
+    },
+    {
+      "id": "schoellkopf-tanneries",
+      "researchPriority": 3,
+      "decision": "Develop separate historical records for the early businesses and later Perry Street plant; North Evans has a specific archival collection lead.",
+      "period": "1840s through 1900, with a separately dated 1904 canal-condition follow-up",
+      "verified": [
+        { "sources": ["schoellkopf-biography"], "finding": "The business history distinguishes an 1844 leather store and tannery acquisition outside Buffalo, a Buffalo sheepskin tannery two years later, a North Evans enterprise, and the 1877 acquisition of Lymburner & Torrey." },
+        { "sources": ["north-evans-ledger"], "finding": "The university catalog identifies original 1856-1857 hides records for North Evans and Schoellkopf-related notes; only the description, not the ledger contents, was reviewed." },
+        { "sources": ["buffalo-survey-2013"], "finding": "The later tannery stood north of Perry between Mississippi and Liberty, beside the Clark and Skinner Canal. A cited 1904 newspaper describes refuse-contaminated canal water there without assigning all refuse to the tannery." }
+      ],
+      "limits": ["Do not turn the 1846 Buffalo start into the founding date of the later Perry Street plant.", "White's Corners/Hamburg and North Evans need parcel-level identity work.", "Tannery use does not by itself establish chromium use, measured contamination, or a particular discharge route."],
+      "nextRecords": ["University of Waterloo SCA204-GA528-1-11 original ledger pages", "Contemporary directories and atlases for the 1846 and 1877 Buffalo businesses", "Original September 29, 1904 Express account and canal records", "Hamburg and Evans deeds and factory water rights"]
+    },
+    {
+      "id": "akron-natural-cement-works",
+      "researchPriority": 4,
+      "decision": "Ready for a district-level industrial history; separate plants and quarries before creating individual map records.",
+      "period": "1839 through 1900",
+      "verified": [
+        { "sources": ["usgs-522"], "finding": "USGS records Jonathan Delano's 1839 Falkirk works near Akron, followed by Montgomery and Newman interests; H. Cummings & Son began another plant in 1854, followed by a later plant west of Akron." },
+        { "sources": ["akron-1884"], "finding": "The 1884 account distinguishes Newman, Akron Cement Works, and Cummings' Akron Cement Works; describes kilns, water and steam power, and quarry tunneling." }
+      ],
+      "limits": ["1824 in the USGS history refers to Williamsville, not the start of Akron production.", "The 1869 versus 1871 transfer dates remain unresolved.", "Historic natural cement should not automatically be described as a modern Portland-cement process; no reviewed source establishes a hazardous-waste site."],
+      "nextRecords": ["1880 Beers map of Akron and historic quarry deeds", "Company incorporation and sale records around 1869-1871", "Separate mill, kiln, tunnel and quarry footprints along Murder Creek and west of Akron"]
+    },
+    {
+      "id": "union-iron-works-farmers-point",
+      "researchPriority": 5,
+      "decision": "Expand the existing Katherine Street historical account first; add a separate place only if the furnace footprint and distinct story justify it.",
+      "existingSiteId": "katherine-street-peninsula",
+      "period": "1860s-1870s; later reuse requires separate chronology",
+      "verified": [
+        { "sources": ["sia-1992"], "finding": "Two partnerships began constructing blast furnaces at Farmer's Point, where Hamburg and Katherine streets meet the Buffalo River, in 1860-1861; the operations merged as Union Iron Works." },
+        { "sources": ["hanna-summary-2002"], "finding": "The regional iron-history chapter separately records the Union Iron Company in 1861 and its industrial equipment." }
+      ],
+      "limits": ["Do not merge Farmer's Point, Hanna Furnace/Union Ship Canal and Black Rock furnace locations merely because company names overlap.", "The reviewed historical accounts do not identify an off-site slag destination or establish radiological material.", "Existing Katherine Street restoration and sediment findings must not automatically be attributed to the nineteenth-century furnaces."],
+      "nextRecords": ["1860s-1890s fire insurance and city atlas plates", "Original furnace/company directories and deeds", "Crosswalk original shoreline and furnace locations to the current Katherine Street record"]
+    },
+    {
+      "id": "beals-mayhew-foundry",
+      "researchPriority": 6,
+      "decision": "Retain as a verified historical-place lead with an explicit founding-date conflict; use late 1820s until resolved.",
+      "period": "Late 1820s onward",
+      "verified": [
+        { "sources": ["buffalo-survey-2013", "hanna-summary-2002"], "finding": "Both historical reports place an early foundry and machine shop at Ohio and Indiana streets; the 2013 survey gives 1828 and the 2002 report gives 1826." },
+        { "sources": ["buffalo-directory-1832"], "finding": "An 1832 directory transcription lists J. Mayhew & Co. selling pig iron, castings and related goods from a Buffalo Creek warehouse; this supports early iron-trade activity but is not proof of the foundry's full identity." }
+      ],
+      "limits": ["Do not repeat a definitive first-foundry claim or exact founding year before reconciling sources.", "Historic intersection geography is not a modern parcel boundary.", "DEC archive 915029 is the Hanna record containing the regional history, not a cleanup designation for this foundry."],
+      "nextRecords": ["Original 1820s newspapers and directories", "1850 Emslie and Kirk map cited by the 2013 survey", "Earliest partnership deeds and advertisements"]
+    },
+    {
+      "id": "niagara-upper-landing-portage",
+      "researchPriority": 7,
+      "decision": "Strong 1750s historical-landscape subject; distinguish the French and British positions and include Seneca control and portage labor.",
+      "period": "1751 onward, with a separately dated 1760 British fort",
+      "verified": [
+        { "sources": ["fort-little-niagara", "fort-schlosser"], "finding": "The state museum dates the French upper-portage post to 1751 and Fort Schlosser to 1760, describing the latter as 40 rods upstream rather than the identical footprint." },
+        { "sources": ["niagara-nrhp"], "finding": "National Register documentation discusses the 1751 trading post, military stores and traffic, Seneca permission, and displacement of Seneca portage labor by horses." }
+      ],
+      "limits": ["The earlier 1745 storehouse is context, outside the requested 1750 start.", "No reviewed source establishes current contamination, a modern cleanup boundary, or a direct link to later industrial wastes.", "Do not infer archaeological coordinates from redacted material or describe every property mentioned in the nomination bundle as individually listed."],
+      "nextRecords": ["Published period portage maps and fort plans", "Severance and Pouchot source passages cited in the National Register account", "Public interpretation with Seneca-authored historical context"]
+    }
+  ],
+  "additionalLeads": [
+    {
+      "name": "Warren Granger natural-cement works, Scajaquada Creek / later Forest Lawn area",
+      "period": "1850",
+      "sources": ["usgs-522"],
+      "finding": "USGS page 22 locates an 1850 natural-cement plant beside Scajaquada Creek below the Main Street bridge, in what the 1913 account calls Forest Lawn Cemetery.",
+      "nextRecord": "Check early cemetery acquisitions, quarry and creek maps, and directories; exact footprint and environmental findings remain unverified."
+    },
+    {
+      "name": "Seneca Oil Spring and Niagara trade",
+      "period": "1767 and earlier context",
+      "sources": ["dec-geis", "dec-draft-geis-ch4"],
+      "finding": "DEC's chapter records Seneca oil use and trade at Fort Niagara by 1767, citing Herrick. This offers an Indigenous resource-history subject within the requested period.",
+      "nextRecord": "Consult Seneca Nation historical sources and the original historical references before a new narrative. A natural seep is not an industrial-contamination finding."
+    }
+  ]
+}
