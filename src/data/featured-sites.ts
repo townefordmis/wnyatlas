@@ -21,6 +21,74 @@ import { bethlehemUraniumSources } from "@/data/bethlehem-uranium-sources";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
+    id: "catholic-academy-niagara-falls-radiological-assessment",
+    name: "Catholic Academy of Niagara Falls Radiological Assessment",
+    municipality: "Niagara Falls",
+    county: "Niagara",
+    category: "radiological",
+    summary: "Follow-up sampling at 1055 North Military Road after slightly elevated parking-area screening readings. Laboratory results and the source of the readings remain unresolved.",
+    evidenceStatus: "research-in-progress",
+    updateNote: "Added the September screening and November 11 follow-up sampling; laboratory results remain pending.",
+    coordinates: [-78.963702022547, 43.086544001981],
+    sources: [
+      { title: "November 11, 2026 on-site reporting and EPA coordinator interview", publisher: "Buffalo Toronto Public Media / Michael Mroziak", url: "https://www.btpm.org/local/2026-11-11/epa-begins-follow-up-radiological-testing-on-grounds-of-niagara-falls-church-and-school" },
+      { title: "Regional radiological assessment and resident information", publisher: "New York State Department of Environmental Conservation", url: "https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment" },
+      { title: "School contact information — 1055 North Military Road", publisher: "Catholic Academy of Niagara Falls", url: "https://www.catholicacademyofniagarafalls.com/about-us/contact-us/" },
+      { title: "Regional assessment record", publisher: "WNYAtlas", url: "/sites/niagara-erie-radiological-assessment" },
+    ],
+    newsEvents: [{ date: "November 11, 2026", headline: "EPA samples school parking areas after elevated screening readings", summary: "BTPM observed soil sampling and reported surveys at the school, church and rectory. EPA's coordinator reported no immediate threat to students based on screening; laboratory results were expected to take months.", publisher: "Buffalo Toronto Public Media", url: "https://www.btpm.org/local/2026-11-11/epa-begins-follow-up-radiological-testing-on-grounds-of-niagara-falls-church-and-school", reach: "Local" }],
+    story: {
+      lastReviewed: "November 15, 2026",
+      background: ["The campus assessment is part of NECRA. Screening readings require follow-up; they do not identify a contaminant or its origin."],
+      timeline: [
+        { period: "September 2026", event: "EPA's coordinator told BTPM that exterior screening found slightly elevated readings in parking areas away from building foundations, beneath pavement." },
+        { period: "November 11, 2026", event: "EPA collected soil beneath parking lots and began scoping surveys in the school, church and rectory." },
+        { period: "Results pending — November 15, 2026 review", event: "The November 11 report anticipated several days of fieldwork and months for analytical results. No subsequent results were verified for this review." },
+      ],
+      documentedImpacts: ["Elevated screening readings are documented; the reviewed report does not confirm contamination, exposure or illness."],
+      cleanupAndControls: ["EPA's coordinator said screening indicated no immediate threat to students. This is a dated assessment, not a final laboratory finding or cleanup determination."],
+      presentDay: ["Sampling results and the cause of the readings remain unresolved. Follow the regional investigation for agency updates."],
+      researchNotes: [
+        "Obtain laboratory results and the final survey report. No reviewed evidence links this campus to Bethlehem Steel uranium processing, TAM Ceramics or another specific facility.",
+        "Map marker: Esri address geocode for 1055 North Military Road, checked November 15, 2026. It locates the campus address, not a sampling point or contamination boundary.",
+      ],
+    },
+  },
+  {
+    id: "swan-chicago-streets-brownfield",
+    name: "Swan and Chicago Streets Brownfield Investigation",
+    municipality: "Buffalo",
+    county: "Erie",
+    category: "cleanup",
+    summary: "DEC C915423 application records document metal- and PAH-affected fill at four Swan/Chicago Street parcels. The investigation identifies lead and mercury hot spots and orphan underground tanks.",
+    evidenceStatus: "research-in-progress",
+    updateNote: "Added DEC C915423 application records, sample-specific lead and mercury results, and the documented Lakeview disposal lead.",
+    coordinates: [-78.8653785452962, 42.87968311276373],
+    sources: [
+      { title: "November 21, 2025 Phase II investigation — pages 1–4 and Table 1", publisher: "Roux Environmental Engineering and Geology, D.P.C., in NYSDEC archive", url: "https://extapps.dec.ny.gov/data/DecDocs/C915423/Application.BCP.C915423.2026-08-17.%20Phase%20II%20Report%20-%20Swan%20and%20Chicago%20Streets_November%202025.pdf" },
+      { title: "C915423 brownfield application and investigation documents", publisher: "New York State Department of Environmental Conservation", url: "https://extapps.dec.ny.gov/data/DecDocs/C915423/" },
+    ],
+    story: {
+      lastReviewed: "November 15, 2026",
+      background: ["The application covers 275, 279 and 281 Swan Street and 425 Chicago Street. Earlier uses included homes, storefronts, stables and an automobile garage."],
+      timeline: [
+        { period: "1997–1998", event: "The Phase II report recounts an oil spill, disposal receipts and closure of spill 9615008 in January 1998." },
+        { period: "October–November 2025", event: "Fifteen test pits investigated fill and encountered two orphan underground tanks. Roux issued its Phase II report November 21." },
+        { period: "2026", event: "DEC's C915423 archive contains the brownfield application, Phase I and II reports and a remedial investigation work plan. An application or work plan does not establish completed cleanup." },
+      ],
+      documentedImpacts: [
+        "Table 1 reports lead at 20,000 mg/kg in TP-8 and mercury at 159 mg/kg in TP-10 (J-qualified, estimated). These individual sample maxima exceed the report's industrial soil cleanup objectives of 3,900 and 5.7 mg/kg respectively; they are not sitewide averages or exposure measurements.",
+        "The report describes ash-and-cinder fill, PAH exceedances and two orphan tanks.",
+      ],
+      cleanupAndControls: ["The report recounts a receipt for 13.5 tons of oil-contaminated soil sent to Lakeview Landfill; documentation for other removed wastes was incomplete. This does not establish the destination of all waste."],
+      presentDay: ["Investigation and cleanup outcomes require subsequent agency records."],
+      researchNotes: [
+        "Recover original disposal receipts and subsequent investigation results. Do not attribute the fill to a specific industrial producer without records.",
+        "Map marker: NYSDEC Remediation Sites GIS point for C915423, checked November 15, 2026. It is an orientation point, not a surveyed boundary.",
+      ],
+    },
+  },
+  {
     id: "witmer-road-drive-in",
     updateNote: "Clarified the 2020 survey, DEC's reported August 2026 receipt of elevated-reading information, and the October reevaluation; added the original report and correspondence to the records queue.",
     name: "Witmer Road Drive-In",
@@ -145,14 +213,17 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "black-creek-village-fill-investigation",
+    updateNote: "Added the November 13 announcement expanding investigation to nearby properties and the buried former Black Creek corridor.",
     name: "Black Creek Village / 99th Street Fill Investigation",
     municipality: "Niagara Falls",
     county: "Niagara",
     category: "cleanup",
-    summary: "Residential industrial-fill investigation near 99th Street, alongside a separate history of pesticide-affected fill removal at Black Creek Drive. The neighborhood marker is approximate.",
+    summary: "Residential fill investigation near 99th Street, expanded in November 2026 to nearby properties and the buried former Black Creek corridor. The neighborhood marker is approximate.",
     evidenceStatus: "research-in-progress",
     coordinates: [-78.948012, 43.08603],
+    newsEvents: [{ date: "November 13, 2026", headline: "DEC expands investigation to nearby properties and former Black Creek", summary: "DEC and DOH announced an initial investigation following 2026 sampling and historical-record review. The announcement establishes planned investigation, not completed fieldwork or a Love Canal source connection.", publisher: "WIVB / Daniel Telvock, republished by AOL", url: "https://www.aol.com/articles/state-investigate-potential-contamination-99th-195710000.html", reach: "Local" }],
     sources: [
+      { title: "November 13, 2026 investigation expansion and DEC statement", publisher: "WIVB / Daniel Telvock, republished by AOL", url: "https://www.aol.com/articles/state-investigate-potential-contamination-99th-195710000.html" },
       {
         title: "July 31, 2026 reporting and DEC response on the 99th Street investigation",
         publisher: "Mark Scheer / Niagara Gazette, published by Investigative Post",
@@ -170,7 +241,7 @@ const featuredSiteRecords: AtlasSite[] = [
       }
     ],
     story: {
-      lastReviewed: "September 15, 2026",
+      lastReviewed: "November 15, 2026",
       background: [
         "This record separates an earlier chemical-fill removal from a renewed residential investigation. Proximity to Love Canal does not establish the source of newly encountered material."
       ],
@@ -186,6 +257,10 @@ const featuredSiteRecords: AtlasSite[] = [
         {
           period: "July 2026",
           event: "Daniel and Jocelyn McKiernan sought testing and relocation after pool excavation exposed unusual fill. DEC reported receiving the complaint July 15 and sampling fill and basement sump liquid July 22."
+        },
+        {
+          period: "November 13, 2026",
+          event: "WIVB reported DEC and DOH's announcement of an initial investigation of nearby private properties and a portion of former Black Creek, based on 2026 sampling and historical review. The announced expansion does not establish completed work."
         }
       ],
       documentedImpacts: [
@@ -195,11 +270,12 @@ const featuredSiteRecords: AtlasSite[] = [
         "Historical pesticide-fill removal does not establish that every neighboring parcel was investigated or remediated."
       ],
       presentDay: [
-        "The residents’ reported odors and basement material warrant documentation as concerns, not proof of exposure or a Love Canal release. Chemical results were pending in the July 31 account.",
+        "November 13 reporting describes chemicals in soil, including exceedances of residential cleanup standards, and traces in sump liquid. The announced investigation will assess the extent of legacy contamination; a source connection to the Love Canal landfill has not been established.",
         "A surface screening result does not answer every environmental question about the fill."
       ],
       researchNotes: [
-        "Obtain the original 1993 completion report and later chemical sampling results. Do not repeat unverified drilling depths, illness causation or source claims.",
+        "Obtain the November 13 DEC fact sheet, original laboratory tables, site-classification evaluation and field reports. Reconstruct the former Black Creek channel from historic maps and disposal records; whether fill follows the old waterway or later development remains unresolved.",
+        "Obtain the original 1993 completion report. Do not repeat unverified drilling depths, illness causation or source claims.",
         "Map marker: approximate public intersection of 99th Street and Black Creek Drive, located with Esri geocoding on September 15, 2026. It is not a residential sampling point or contamination boundary."
       ]
     }
@@ -1085,15 +1161,17 @@ const featuredSiteRecords: AtlasSite[] = [
   },
   {
     id: "niagara-erie-radiological-assessment",
+    updateNote: "Updated EPA referrals to 41 as of November 6 and added the announced residential-removal milestone and school follow-up.",
     name: "Niagara–Erie Residential Radiological Assessment",
     municipality: "Town of Niagara",
     county: "Niagara",
     category: "radiological",
     summary:
-      "Ongoing three-phase regional assessment using aerial, roadway, and property-level surveys. Agencies are screening hundreds of locations, conducting soil and laboratory follow-up where warranted, and offering temporary relocation to some households. Contact or screening does not mean a property is confirmed contaminated.",
+      "Ongoing regional assessment using aerial, roadway and property-level surveys. EPA reported 41 referrals as of November 6, 2026 and announced cleanup at two homes for the week of November 9. Screening or referral alone does not confirm contamination.",
     evidenceStatus: "research-in-progress",
     coordinates: [-79.035, 43.125],
     newsEvents: [
+      { date: "November 6, 2026", headline: "EPA announces residential radioactive-soil removal", summary: "EPA reported 41 referrals and scheduled cleanup at two homes for the week of November 9. The announcement describes excavation, screening and off-site disposal; it does not verify completed removals.", publisher: "U.S. Environmental Protection Agency", url: "https://response.epa.gov/site/site_profile.aspx?site_id=17492", reach: "Regional" },
       {
         date: "July 2026",
         headline: "Property screening expands and several families receive temporary-relocation support",
@@ -1112,6 +1190,10 @@ const featuredSiteRecords: AtlasSite[] = [
       },
     ],
     sources: [
+      { title: "November 6, 2026 — 41 referrals and planned residential removals", publisher: "U.S. Environmental Protection Agency", url: "https://response.epa.gov/site/site_profile.aspx?site_id=17492" },
+      { title: "October 23, 2026 agency snapshot — earlier screening and referral figures", publisher: "New York State Department of Environmental Conservation", url: "https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd" },
+      { title: "Catholic Academy follow-up assessment", publisher: "WNYAtlas", url: "/sites/catholic-academy-niagara-falls-radiological-assessment" },
+      { title: "November 11, 2026 school sampling and EPA interview", publisher: "Buffalo Toronto Public Media", url: "https://www.btpm.org/local/2026-11-11/epa-begins-follow-up-radiological-testing-on-grounds-of-niagara-falls-church-and-school" },
       {
         title: "NYSDEC & EPA update for Aug. 31, 2026",
         publisher: "NYSDEC, published by Niagara Frontier Publications",

@@ -56,7 +56,7 @@ export default function RadiologicalInvestigationPage() {
       <details className="radiological-full-report" id="full-research">
       <summary>Full investigation, interactive map & source archive</summary>
       <section className="school-research-hero radiological-hero" id="current-status">
-        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Reviewed November 6, 2026 · October 23 agency figures" /></p>
+        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Reviewed November 15, 2026 · figures dated individually" /></p>
         <h2>Niagara–Erie radiological investigation</h2>
         <p className="dek">EPA, NYSDEC, and NYSDOH are investigating radiological material across roughly 1,000 square miles in Niagara and Erie counties. Teams are following aerial and roadway screening with ground surveys and property testing. A screening signal does not mean contamination is confirmed.</p>
         <a className="radiological-map-jump" href="#radiological-map">Open the interactive map <span aria-hidden="true">↓</span></a>
@@ -64,11 +64,13 @@ export default function RadiologicalInvestigationPage() {
           { stage: "Property access", value: ">1,100", label: "signed access agreements", asOfDate: "October 23, 2026" },
           { stage: "Property screening", value: ">1,080", label: "properties screened", asOfDate: "October 23, 2026" },
           { stage: "Notification", value: "≈900", label: "properties notified no additional radiological investigation was needed", asOfDate: "October 23, 2026" },
-          { stage: "Additional investigation", value: "37", label: "properties referred to EPA", asOfDate: "October 23, 2026" },
+          { stage: "Additional investigation", value: "41", label: "properties referred to EPA", asOfDate: "November 6, 2026" },
           { stage: "Data review", value: ">150", label: "results still under review", asOfDate: "October 23, 2026" },
           { stage: "Precautionary action", value: "4", label: "properties recommended for voluntary temporary relocation", asOfDate: "August 31, 2026" },
         ]} />
-        <p>The October 23 totals describe overlapping stages, not confirmed contamination counts. No-further-investigation notices concern radiological findings and do not evaluate unrelated chemical contamination. <a href="https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd" target="_blank" rel="noreferrer">October 23 agency update ↗</a> The relocation figure remains the separately dated August 31 snapshot. <a href="https://www.wnypapers.com/news/article/current/2026/09/01/166923/nysdec-epa-update-for-aug.-31" target="_blank" rel="noreferrer">August 31 update ↗</a></p>
+        <p>These separately dated totals describe overlapping stages, not confirmed contamination counts. EPA's November 6 referral count replaces 37 from October 23. Screening, access, notification and review figures retain the <a href="https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd" target="_blank" rel="noreferrer">October 23 agency snapshot ↗</a>; newer screening totals have not been verified against a dated dashboard export. No-additional-investigation notices concern radiological findings and do not evaluate unrelated chemical contamination. Relocation remains the <a href="https://www.wnypapers.com/news/article/current/2026/09/01/166923/nysdec-epa-update-for-aug.-31" target="_blank" rel="noreferrer">August 31 snapshot ↗</a>.</p>
+        <p><strong>November 2026 — residential cleanup announced.</strong> EPA scheduled work at two homes for the week of November 9, including excavation, screening and off-site disposal of radiologically contaminated soil. A subsequent field report is needed to verify work performed. Material origins remain under investigation. <a href="https://response.epa.gov/site/site_profile.aspx?site_id=17492" target="_blank" rel="noreferrer">November 6 EPA update ↗</a></p>
+        <p><strong>November 11 — school follow-up sampling.</strong> Soil sampling and scoping surveys followed slightly elevated parking-area readings at Catholic Academy of Niagara Falls. Laboratory results remain pending in the reviewed reporting. <Link href="/sites/catholic-academy-niagara-falls-radiological-assessment">Read the separate school assessment →</Link></p>
         <p>Background soil sampling for radium-226, thorium-232, uranium-238 and decay products will inform cleanup levels. Laboratory activity in picocuries per gram identifies specific radionuclides; initial counts-per-minute screening does not. <a href="https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd" target="_blank" rel="noreferrer">Background-sampling explanation ↗</a></p>
         <a className="radiological-next" href="#reading-guide">How to read this page →</a>
       </section>

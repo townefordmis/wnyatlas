@@ -9,6 +9,9 @@ export const metadata: Metadata = {
 };
 
 const updates = [
+  { date: "November 13, 2026", topic: "Chemical fill · separate investigation", title: "Black Creek investigation expands to nearby properties and a buried creek corridor", publisher: "WIVB, via AOL", summary: "DEC and DOH announced additional investigation following residential sampling and historical review. This chemical-fill investigation does not establish a Love Canal release or a radiological source connection.", url: "/sites/black-creek-village-fill-investigation" },
+  { date: "November 11, 2026", topic: "School assessment", title: "EPA samples Catholic Academy parking areas; laboratory results pending", publisher: "Buffalo Toronto Public Media", summary: "Follow-up sampling and scoping surveys followed September screening. EPA reported no immediate threat to students based on screening; the cause of the readings remains unresolved.", url: "/sites/catholic-academy-niagara-falls-radiological-assessment" },
+  { date: "November 6, 2026", topic: "Residential removal", title: "EPA reports 41 referrals and schedules cleanup at two homes", publisher: "U.S. EPA", summary: "Cleanup was scheduled for the week of November 9, with excavation, screening and off-site disposal. The announcement does not verify completed removals or identify a particular industrial source.", url: "https://response.epa.gov/site/site_profile.aspx?site_id=17492" },
   { date: "October 23, 2026", topic: "Property testing", title: "NECRA reports more than 1,080 screenings and 37 EPA referrals", publisher: "NYSDEC", summary: "More than 1,100 access agreements, approximately 900 notifications requiring no additional radiological investigation and over 150 results under review. Referrals require further assessment; they are not confirmed contamination totals. The bulletin also explains background soil sampling and the Witmer Road referral.", url: "https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd" },
   { date: "October 22, 2026", topic: "Witmer Road", title: "DEC announces a supplemental assessment at the former drive-in", publisher: "NYSDEC", summary: "Planned on- and off-site work includes radiological surveys and Gill Creek sampling. Read the updated site record for the investigation history and evidence limits.", url: "/sites/witmer-road-drive-in" },
   { date: "September 10, 2026", topic: "Federal oversight", title: "Kennedy seeks answers on testing, material origins and resident support", publisher: "Office of Congressman Timothy M. Kennedy", summary: "An oversight letter asks EPA and the Army Corps about testing timelines, relocation assistance and financial impacts. The request does not establish the source of the material.", url: "https://kennedy.house.gov/news/documentsingle.aspx?DocumentID=2482" },
@@ -27,7 +30,7 @@ export default function RadiologicalNewsPage() {
       <p className="eyebrow">Niagara & Erie counties</p>
       <h1>Latest radiological news</h1>
       <p>Flyovers, property testing, Niagara Falls slag, cleanup and resident concerns—in one place, newest first.</p>
-      <p>Selected local reporting and agency updates. Reviewed November 6, 2026; this is an editorial collection, not a live news feed.</p>
+      <p>Selected local reporting and agency updates. Reviewed November 15, 2026; this is an editorial collection, not a live news feed.</p>
       <nav className="radiological-directory-tools" aria-label="Radiological news links">
         <Link href="/research/radiological-industry-fill">Browse radiological places →</Link>
         <a href="https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment">Current DEC updates & resident information ↗</a>

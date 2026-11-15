@@ -19,6 +19,15 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
   {
+    id: "catholic-academy-necra-assessment",
+    name: "School follow-up within the regional radiological assessment",
+    summary: "The school assessment follows NECRA screening. Inclusion does not establish contamination or a particular industrial source.",
+    members: [
+      { siteId: "catholic-academy-niagara-falls-radiological-assessment", role: "Sampling and laboratory follow-up", connection: "September screening led to November 11 sampling; analytical results remain pending in the reviewed reporting." },
+      { siteId: "niagara-erie-radiological-assessment", role: "Regional investigation", connection: "The broader record tracks screening, referrals and residential-removal announcements as separately dated stages." },
+    ],
+  },
+  {
     id: "olin-mercury-production-disposal",
     name: "Olin production, disposal, and Gill Creek records",
     summary: "Plant releases, a separate brine-waste disposal property, and reported off-site shipments explain different parts of Olin's history. Each property retains its own evidence, boundary, and remedy.",

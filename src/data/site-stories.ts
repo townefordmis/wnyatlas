@@ -1733,7 +1733,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-erie-radiological-assessment": {
-    lastReviewed: "September 15, 2026",
+    lastReviewed: "November 15, 2026",
     background: [
       "The Niagara and Erie County Radiological Assessment is a regional investigation of properties where historic industrial slag or other fill may contain elevated naturally occurring radioactive material. It is an assessment program, not a finding that every contacted or screened property is contaminated.",
       "The current work has three linked phases: EPA aerial surveys in late 2023 and summer 2024, vehicle-based roadway surveys beginning in 2025, and ground surveys that began in fall 2025. DEC says the aerial phase identified no areas of immediate concern; the later phases use closer-range instruments and records to decide where property-level investigation is warranted.",
@@ -1783,6 +1783,14 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
         period: "September 10, 2026",
         event: "Congressman Tim Kennedy requested written answers from EPA and USACE about material origins, sampling and laboratory analysis, testing timelines, risk assessments, resident protections, relocation assistance, and property values. The request does not establish the source of the material.",
       },
+      {
+        period: "November 2026 — residential cleanup announced",
+        event: "EPA's November 6 update reported 41 referrals and scheduled excavation, screening and off-site disposal at two residential properties for the week of November 9. This establishes an announced start, not verified completion. Material origins remain under investigation.",
+      },
+      {
+        period: "November 11, 2026",
+        event: "BTPM reported follow-up soil sampling and scoping surveys at Catholic Academy of Niagara Falls, its church and rectory after September parking-area screening. Laboratory results were expected to take months; the separate school record tracks this unresolved assessment.",
+      },
     ],
     documentedImpacts: [
       "Historic industrial slag can contain technically enhanced naturally occurring radioactive material, but concentration and exposure potential vary by source and property.",
@@ -1799,6 +1807,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "Results and cleanup decisions must be communicated separately for each property rather than generalized across neighborhoods.",
     ],
     presentDay: [
+      "EPA reported 41 referrals as of November 6, 2026, up from 37 in the October 23 update. Cleanup at two homes was scheduled for the week of November 9; a subsequent field report is needed to verify work performed.",
       "The August 31, 2026 agency update reported approximately 1,078 signed access forms and 847 properties screened. Approximately 514 properties had been notified that no additional radiological investigation was needed; 32 parcels were referred to EPA for additional investigation, and four properties were recommended for voluntary temporary relocation. These counts describe different stages and should not be added together. Referral or a relocation recommendation does not by itself establish a final contamination classification or identify the source material.",
       "EPA identifies the assessment as NY8180000160, a Removal Only Site that is not on the National Priorities List. This program record does not classify every screened property as contaminated.",
       "The regional assessment is ongoing. Agencies are moving from broad screening toward property-specific surveys, soil sampling, laboratory identification, exposure review, and response decisions. Some households have been offered voluntary temporary relocation while that work proceeds.",
@@ -1806,6 +1815,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
       "WNYAtlas lists the assessment to document the investigation and public process while avoiding the claim that every contacted property—or an entire neighborhood—contains hazardous radioactive fill.",
     ],
     researchNotes: [
+      "Verify reported November 10 totals of 1,123 screened properties and 960 no-additional-investigation notices against a dated agency dashboard export before replacing earlier screening totals. Obtain removal progress, disposal and restoration reports.",
       "Track DEC and EPA weekly updates for stable counts of properties contacted, screened, advanced to sampling, cleared, offered relocation, and selected for removal; do not combine those stages into one contamination count.",
       "Locate public property-specific isotope, soil, indoor-air, groundwater, and dose-assessment results when released. The AquaDiary episode is a useful secondary synthesis and source lead, not a substitute for those records.",
       "Publish property-level locations only when agencies make them public and when doing so does not compromise resident privacy.",
