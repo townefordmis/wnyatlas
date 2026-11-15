@@ -7,6 +7,10 @@ export const earlyIndustrySources = {
   landmark: { title: "Williamsville Water Mills — official landmark description", publisher: "Village of Williamsville", url: "https://williamsvilleny.gov/committees/historic-preservation/" },
   raceway: { title: "Williamsville waterfront plan — alternative raceway chronology; indexed text reviewed", publisher: "Village of Williamsville / New York State Department of State", url: "https://dos.ny.gov/system/files/documents/2023/01/williamsville_lwrp_approved_sections_1_7.pdf" },
   cement: { title: "USGS Bulletin 522 — 1913, printed and PDF page 22", publisher: "U.S. Geological Survey", url: "https://pubs.usgs.gov/bul/0522/report.pdf" },
+  cementSurvey: { title: "Lime and Cement Industries of New York — printed pages 836–837 and plate 84; PDF pages 377, 387–388", publisher: "Heinrich Ries / New York State Museum Bulletin 44, 1901 volume", url: "https://archive.org/details/limeandcementin00riesgoog" },
+  refineries: { title: "The Early and Later History of Petroleum — 1873, printed page 320 / PDF page 336", publisher: "J. T. Henry; University of California Libraries copy", url: "https://archive.org/details/earlylaterhistor00henrrich/page/320/mode/2up" },
+  bolivar1891: { title: "Bolivar fire-insurance maps — July 1891, two sheets", publisher: "Sanborn / Library of Congress", url: "https://www.loc.gov/item/sanborn05780_001/" },
+  bolivar1897: { title: "Bolivar fire-insurance maps — January 1897, two sheets", publisher: "Sanborn / Library of Congress", url: "https://www.loc.gov/item/sanborn05780_002/" },
   akron: { title: "Akron's separate cement works — transcription of Henry Perry Smith's 1884 history", publisher: "New York Genealogy", url: "https://newyorkgenealogy.org/erie/history-of-akron-and-vicinity.htm" },
   tanning: { title: "Jacob Frederick Schoellkopf — business development and acquisitions", publisher: "German Historical Institute / Immigrant Entrepreneurship", url: "https://www.immigrantentrepreneurship.org/entries/jacob-frederick-schoellkopf/" },
   ledger: { title: "North Evans tannery Hide Book — catalog SCA204-GA528-1-11", publisher: "University of Waterloo Special Collections & Archives", url: "https://archives.uwaterloo.ca/index.php/l-breithaupt-tannery-orders" },
@@ -28,6 +32,7 @@ type EarlyIndustryChapter = {
   nextRecord: string;
   sources: AtlasSource[];
   related?: { href: string; label: string };
+  image?: { src: string; alt: string; caption: string; source: AtlasSource };
 };
 
 export const earlyIndustryChapters: EarlyIndustryChapter[] = [
@@ -71,10 +76,11 @@ export const earlyIndustryChapters: EarlyIndustryChapter[] = [
     paragraphs: [
       "USGS's 1913 history identifies Jonathan Delano's 1839 cement works at Falkirk, near Akron, followed by Montgomery and Newman interests. It separately records H. Cummings & Son's 1854 plant and a later Cummings operation west of Akron.",
       "The 1884 county history distinguishes the Newman works, Akron Cement Works and Cummings' Akron Cement Works. Its account includes kilns, water and steam power, and limestone extraction by tunneling. These names should be reconciled plant by plant before assigning map markers.",
+      "The State Museum's 1901 volume supplies a closer view of the process: Cummings had seventeen kilns, with crushers, pulverizers and millstones preparing cement for the packing house. It identifies Union Akron as another large works and illustrates both operations. These are descriptions from the turn of the century, rather than proof that all this equipment existed in 1839.",
     ],
     limit: "The 1824 cement-production date in USGS's account belongs to Williamsville, not Akron. Sources disagree over an ownership transfer, giving 1869 and 1871. Historical natural-cement production is not evidence of a hazardous-waste site.",
     nextRecord: "Match the 1880 Akron map to quarry deeds, kiln sites and company transfers around 1869–1871.",
-    sources: [earlyIndustrySources.cement, earlyIndustrySources.akron],
+    sources: [earlyIndustrySources.cement, earlyIndustrySources.akron, earlyIndustrySources.cementSurvey],
   },
   {
     id: "schoellkopf-tanneries", period: "1840s–1900", location: "Buffalo, Hamburg and North Evans · Erie County",
@@ -90,6 +96,19 @@ export const earlyIndustryChapters: EarlyIndustryChapter[] = [
     related: { href: "/sites/buffalo-color", label: "Read the separate Buffalo Color dye-works history" },
   },
   {
+    id: "buffalo-cement", period: "1850–1900; 1901 survey follow-up", location: "Scajaquada Creek and Main Street · Buffalo",
+    title: "Cement quarries beneath the city's later landscape",
+    paragraphs: [
+      "USGS's 1913 history places Warren Granger's 1850 natural-cement plant beside Scajaquada Creek below the Main Street bridge, in what it describes as Forest Lawn Cemetery. It separately records Bennett's 1874 Buffalo Plains enterprise. Those locations and businesses require separate histories.",
+      "The State Museum's 1901 volume locates Buffalo Cement Company's quarries on Main Street near the New York Central Belt Line. Its photograph shows the quarry and a railway carrying stone toward the crusher. The survey describes ten firebrick-lined stone kilns in two rows, charged with rock and coke hauled up an incline.",
+      "Grinding machinery and screens separated the burned material; harder clinker went to a Griffin mill for a product the survey called Portland cement. The reported plant capacity was about 750 barrels a day. This was an extraction, fuel-burning and manufacturing landscape extending beyond a single quarry pit.",
+    ],
+    limit: "The 1901 process description is a separately dated follow-up to the nineteenth-century history. It does not establish nineteenth-century emissions, current contamination, filled-quarry contents or exact modern parcel boundaries. Granger's Forest Lawn works should not be merged with the Main Street/Belt Line operation.",
+    nextRecord: "Match plate 84 and Sanborn quarry plans to company deeds and cemetery acquisitions before adding a precise marker or tracing later quarry fill.",
+    sources: [earlyIndustrySources.cement, earlyIndustrySources.cementSurvey],
+    image: { src: "/images/research/buffalo-cement-quarry-1901.jpg", alt: "Historical photograph of Buffalo Cement Company's open quarry, with rail tracks crossing the excavation.", caption: "Buffalo Cement Company quarry, plate 84 in the State Museum's 1901 volume. The original caption identifies the railway as carrying stone to the crusher. Photograph credited to L. P. Bishop. Scan rotated and cropped to the photograph; the publication date is not a verified exposure date.", source: earlyIndustrySources.cementSurvey },
+  },
+  {
     id: "union-iron", period: "1860–1861 onward", location: "Farmer's Point / Katherine Street · Buffalo",
     title: "Blast furnaces on the Buffalo River",
     paragraphs: [
@@ -102,15 +121,27 @@ export const earlyIndustryChapters: EarlyIndustryChapter[] = [
     related: { href: "/sites/katherine-street-peninsula", label: "Read the expanded Katherine Street record" },
   },
   {
+    id: "buffalo-refineries", period: "Documented in 1873", location: "Hamburg Street and oil-trade routes · Buffalo",
+    title: "Two Buffalo refineries in a contemporary petroleum survey",
+    paragraphs: [
+      "J. T. Henry's 1873 petroleum history lists Star Oil Works, operated by Thayer & Riddell at 385 Hamburg Street, with a still capacity of nearly 200 barrels a day. It also lists Dudley & Co. at 251 barrels a day, while explaining that some refining took place at Miller Farm on Pennsylvania's Oil Creek before shipment to Buffalo.",
+      "The account documents Buffalo's place in an interregional refining network by 1873. It also shows why a company's reported capacity cannot automatically be assigned entirely to its Buffalo premises. The Hamburg Street address is a historical listing whose modern parcel and street-number correspondence still need verification.",
+    ],
+    limit: "These contemporary listings predate Cynthia's 1882 opening. Neither company has been identified as the unnamed Buffalo recipient of oil recovered from Little Genesee Creek. Reported still capacity is not measured output, a spill quantity or a modern environmental finding.",
+    nextRecord: "Follow Star and Dudley through 1870s–1880s directories, plant maps and shipping records; distinguish office addresses from refinery locations.",
+    sources: [earlyIndustrySources.refineries],
+  },
+  {
     id: "cynthia-oil-works", period: "1882 onward", location: "Bolivar / Little Genesee Creek · Allegany County",
     title: "A refinery supplied by oil recovered from a creek",
     paragraphs: [
       "DEC's oil-and-gas history recounts oil leaking from early storage tanks into Little Genesee Creek. As much as 90 barrels a day were reportedly recovered behind a dam and sent to an unnamed Buffalo oil works. The account cites John P. Herrick's 1949 Empire Oil.",
       "When Cynthia Oil Works was built in 1882, a reported 10,000 barrels of crude recovered from the creek were in storage. The Allegany County Historical Society places the refinery on the Porter Cowles flats at Bolivar's north end, south of Salt Rising Road on a Bradford, Eldred & Cuba Railroad siding, and dates its first run to September 30, 1882.",
       "The history connects upstream tank losses, creek recovery, local refining and a Buffalo destination. It is a documented historical petroleum-release story, with a material route still to identify.",
+      "The Library of Congress holds two-sheet Bolivar fire-insurance maps from 1891 and 1897. Reviewing both editions did not establish Cynthia's location on the northern flats described by the local history. Their village-center coverage leaves a mapping gap; the missing identification does not demonstrate that the refinery had closed or never existed.",
     ],
     limit: "The quantities are historical estimates, not modern measurements. Cynthia recovered oil already in the creek; this does not make it the source of every upstream leak. The Buffalo recipient, exact refinery footprint, current conditions and any cleanup status remain unverified.",
     nextRecord: "Read Herrick's original pages and locate refinery deeds, railroad siding plans and records naming the Buffalo consignee.",
-    sources: [earlyIndustrySources.oil, earlyIndustrySources.cynthia],
+    sources: [earlyIndustrySources.oil, earlyIndustrySources.cynthia, earlyIndustrySources.bolivar1891, earlyIndustrySources.bolivar1897],
   },
 ];

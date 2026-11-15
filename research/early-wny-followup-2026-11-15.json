@@ -1,0 +1,64 @@
+{
+  "reviewed": "2026-11-15",
+  "scope": "Follow-up to early-wny-source-review-2026-11-15.json: contemporary Buffalo refinery listings, Buffalo and Akron cement processes, and Bolivar map coverage.",
+  "editorialDisposition": "Expand /research/early-industry to nine chapters. Add a distinct Buffalo cement chapter, an 1873 Buffalo refining chapter, a historical quarry photograph and a Bolivar coverage finding. Retain uncertain footprints without precise map pins. Deployment must be checked separately.",
+  "sources": [
+    {
+      "id": "ries-1901",
+      "title": "Lime and Cement Industries of New York",
+      "author": "Heinrich Ries",
+      "publisher": "New York State Museum Bulletin 44, 1901 volume, with a January 1902 editorial revision noted on printed page 838",
+      "url": "https://archive.org/details/limeandcementin00riesgoog",
+      "locators": "Printed 836 / PDF 377: Akron; printed 837 / PDF 388: Buffalo; plate 84 / PDF 387: Buffalo Cement quarry photograph.",
+      "review": "Downloaded original scan and OCR; rendered and visually checked printed pages 836 and 837 and plate 84. Archive leaf numbers differ from PDF page numbers; original images establish the locators.",
+      "findings": [
+        "Buffalo Cement Company quarries were on Main Street near the New York Central Belt Line. Ten firebrick-lined stone kilns in two rows received rock and coke via an inclined haulage system. Grinding and screening separated material; clinker went to a Griffin mill for a product described as Portland cement. Reported capacity about 750 barrels daily.",
+        "Plate 84 credits L. P. Bishop and identifies the quarry railway as carrying stone to the crusher.",
+        "Cummings at Akron had seventeen kilns, crushers, pulverizers and millstones; Union Akron was another large works. The original reads 575 acres. OCR readings suggesting other acreage must not be used."
+      ],
+      "limits": ["Turn-of-century descriptions do not date all machinery to the founding years.", "Capacity is not measured output or an emission quantity.", "The survey does not establish current contamination, quarry fill contents or modern parcel boundaries."]
+    },
+    {
+      "id": "henry-1873",
+      "title": "The Early and Later History of Petroleum",
+      "author": "J. T. Henry",
+      "publisher": "Philadelphia: J. B. Rodgers Co., 1873; University of California Libraries copy",
+      "url": "https://archive.org/details/earlylaterhistor00henrrich/page/320/mode/2up",
+      "locators": "Printed page 320 / downloaded PDF page 336.",
+      "review": "Downloaded original scan and OCR; rendered and visually checked the Buffalo entries. The printed Dudley capacity is 251, not an assumed correction to 250.",
+      "findings": ["Star Oil Works, Thayer & Riddell, 385 Hamburg Street, nearly 200 barrels daily still capacity.", "Dudley & Co., 251 barrels daily still capacity; some refining done at Miller Farm on Oil Creek before shipment to Buffalo."],
+      "limits": ["No evidence identifies either firm as the receiver of recovered Bolivar creek oil.", "Company capacity is not necessarily all located in Buffalo.", "Historical street numbering needs a modern geographic crosswalk before mapping."]
+    },
+    {
+      "id": "bolivar-sanborn-1891",
+      "title": "Sanborn Fire Insurance Map from Bolivar, Allegany County, New York, July 1891",
+      "publisher": "Sanborn / Library of Congress",
+      "url": "https://www.loc.gov/item/sanborn05780_001/",
+      "review": "Catalog metadata retrieved; both map sheets downloaded and visually inspected.",
+      "finding": "Village-center coverage did not establish Cynthia's footprint on the northern flats described by the county historical society.",
+      "limit": "Failure to identify a plant within limited map coverage is not evidence that it never existed or had closed."
+    },
+    {
+      "id": "bolivar-sanborn-1897",
+      "title": "Sanborn Fire Insurance Map from Bolivar, Allegany County, New York, January 1897",
+      "publisher": "Sanborn / Library of Congress",
+      "url": "https://www.loc.gov/item/sanborn05780_002/",
+      "review": "Catalog metadata retrieved; both map sheets downloaded and visually inspected.",
+      "finding": "Village-center coverage did not establish Cynthia's footprint; the open question is retained.",
+      "limit": "No inferred parcel, closure date or Buffalo consignee."
+    }
+  ],
+  "image": {
+    "file": "public/images/research/buffalo-cement-quarry-1901.jpg",
+    "source": "ries-1901, plate 84, PDF page 387",
+    "credit": "L. P. Bishop, photograph; New York State Museum, published in 1901 volume; Google/Internet Archive scan of New York Public Library copy",
+    "rightsBasis": "Published before 1931; public domain in the United States by age of publication.",
+    "processing": "Rendered source page at 2100 pixels, rotated 90 degrees clockwise and cropped to photograph. JPEG quality 90. No generated or reconstructed content.",
+    "dateLimit": "Publication date is not a verified exposure date."
+  },
+  "unresolved": [
+    "Herrick's Empire Oil (1949) original passage has not been read; DEC and local retellings should not count as fully independent confirmations.",
+    "Cynthia exact footprint and the Buffalo consignee remain unverified. Deeds, siding plans and shipping records would be useful.",
+    "Granger's Forest Lawn works and Buffalo Cement's Main Street/Belt Line operation remain distinct; quarry photos do not alone establish modern parcel boundaries."
+  ]
+}
