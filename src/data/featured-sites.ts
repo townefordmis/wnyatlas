@@ -19,6 +19,7 @@ import { prattLetchworthSite } from "@/data/pratt-letchworth-site";
 import { dryCleaningSites } from "@/data/dry-cleaning-sites";
 import { bethlehemUraniumSources } from "@/data/bethlehem-uranium-sources";
 import { earlyIndustrySources } from "@/data/early-industry";
+import { cayugaCreekDisposalSites, gibsonReviewSource, dibaccoPhaseIISource, dibaccoFollowupSource } from "@/data/cayuga-creek-disposal-sites";
 
 const featuredSiteRecords: AtlasSite[] = [
   {
@@ -1852,7 +1853,7 @@ const featuredSiteRecords: AtlasSite[] = [
     pfasScopeNote:
       "Buffalo Niagara Waterkeeper's June 2022 samples documented PFAS in Cayuga Creek and higher concentrations downstream of the Niagara Falls airport than upstream. The sampling establishes occurrence and a spatial pattern, not sole-source attribution to the airport or Air Reserve Station.",
     summary:
-      "Niagara River tributary that New York lists as impaired for fishing and secondary-contact recreation because of dioxin. Its modern record also includes a 2016 discharge of an estimated 500 gallons of waste oil, PFAS detected in 2022 surface-water sampling upstream and downstream of the Niagara Falls airport, and a major stream-and-floodplain restoration project.",
+      "Niagara River tributary with distinct records of dioxin impairment, PFAS sampling, a waste-oil spill and floodplain restoration. Separate Charles Gibson and Dibacco Old Creek records document industrial disposal and historical channel changes without establishing a shared plume or present-day buried-channel migration.",
     evidenceStatus: "well-documented",
     coordinates: [-78.956, 43.104],
     newsEvents: [
@@ -1887,6 +1888,9 @@ const featuredSiteRecords: AtlasSite[] = [
         publisher: "New York State Department of Environmental Conservation",
         url: "https://extapps.dec.ny.gov/data/WQP/PWL/0101-0001.html",
       },
+      gibsonReviewSource,
+      dibaccoPhaseIISource,
+      dibaccoFollowupSource,
       {
         title: "Cayuga Creek Stream and Floodplain Restoration Project",
         publisher: "Buffalo Niagara Waterkeeper",
@@ -4317,6 +4321,7 @@ export const featuredSites: AtlasSite[] = [
   ...researchCandidateSites,
   ...amherstCleanupSites,
   ...erieCayugaExpansion,
+  ...cayugaCreekDisposalSites,
   ...waterwayHubSites,
   ...historicCleanupExpansion,
   ...countyExpansion2026,

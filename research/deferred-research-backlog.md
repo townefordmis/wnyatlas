@@ -6,6 +6,10 @@ build a map for it.
 
 For the working order across this backlog and the other Atlas queues, use the [ranked follow-up priorities](follow-up-priorities.md). This file retains the underlying questions and publication gates.
 
+## Cayuga Creek disposal sites — November 16, 2026 review
+
+Charles Gibson and Dibacco No. 1 / Old Creek now have separate site records and Changed Waters entries supported by reviewed DEC reports and official GIS points. The [source review and open research queue](cayuga-creek-source-review-2026-11-16.md) retains unverified drum counts, historical seepage estimates, the final Dibacco delisting date, the proposed old-channel length, original USGS station data and present-day hydraulic/migration questions. Historical sampling and the 1998 soil-based delisting recommendation do not establish current buried-channel flow or water quality. No channel alignments or disposal polygons have been invented.
+
 ## Hartwell Street Landfill, Buffalo — November 6, 2026 review
 
 **Status:** Investigation lead; hold a new map entry pending identity, boundary, and site-specific evidence review. This is separate from Hartland Town Landfill in Niagara County.

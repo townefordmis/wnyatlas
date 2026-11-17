@@ -6,7 +6,7 @@ Editorial judgment using the evidence and open questions already held in the pro
 
 The order weighs reader value, strength of the starting evidence, realistic access to the next record, added knowledge beyond existing coverage, and effort. It is an editorial judgment rather than a scientific score. Lower rank means lower expected return from the next research session, not lower importance of a community or less contamination.
 
-This consolidates **64 workstreams**, all **211 mapped records and 489 research notes**, **16 lead-investigation records**, **66 cleanup-code candidates from the school reviews**, **16 held or screened-out campus groups**, the **2 Amherst leads**, historical radiological evidence, and the dated source-review backlogs. These counts overlap and must not be added into a count of sites or investigations.
+This consolidates **64 workstreams**, all **216 mapped records and 507 research notes**, **16 lead-investigation records**, **66 cleanup-code candidates from the school reviews**, **16 held or screened-out campus groups**, the **2 Amherst leads**, historical radiological evidence, and the dated source-review backlogs. These counts overlap and must not be added into a count of sites or investigations.
 
 ## How to use the order
 
@@ -46,7 +46,7 @@ An existing public entry can still rank highly because an unanswered outcome mat
 | 19 | **Hooker and Olin plant decommissioning and treatment outcomes** — [historic-cleanup-expansion.ts](../src/data/historic-cleanup-expansion.ts) | Post-shutdown and emerging-contaminant records can update established manufacturing histories more usefully than another general company narrative. | Check decommissioning, annual performance, Flow Zone 1, PFAS/1,4-dioxane and plant-specific groundwater reports without merging disposal-site remedies. | Medium |
 | 20 | **EAD americium sewer, sludge and landfill pathway** — [radiological-investigation.ts](../src/data/radiological-investigation.ts) | A documented industrial-to-municipal waste pathway offers a coherent regional story with stronger anchors than testimony-only slag destinations. | Reconcile plant, sewer, treatment-sludge, incineration and landfill records, quantities and final cleanup decisions. | Medium to high |
 | 21 | **Scajaquada Creek decisions and source-specific findings** — [site-stories.ts](../src/data/site-stories.ts) | Several identifiable 2026 planning, sediment and sewer decisions can improve one major regional narrative. | Check the final waterway plan, Army Corps decisions, sediment investigation and sewer milestones; map reaches before assigning findings spatially. | High |
-| 22 | **Cayuga Creek, Bergholtz Creek and Two Mile Creek datasets** — [site-stories.ts](../src/data/site-stories.ts) | Named studies and sample sets offer bounded additions; narrative completeness scores alone undervalue the underlying source questions. | Recover the compound-level PFAS data, source-tracking conclusions, spill closure and reach-specific monitoring; preserve the distinction between the two Cayuga Creeks. | Medium |
+| 22 | **Cayuga Creek, Bergholtz Creek and Two Mile Creek datasets** — [site-stories.ts](../src/data/site-stories.ts); [cayuga-creek-disposal-sites.ts](../src/data/cayuga-creek-disposal-sites.ts); [cayuga-creek-source-review-2026-11-16.md](./cayuga-creek-source-review-2026-11-16.md) | Named studies and sample sets offer bounded additions; narrative completeness scores alone undervalue the underlying source questions. | Recover compound-level PFAS data, spill closure and reach-specific monitoring; follow up Gibson's sampling/hydraulic qualifications and Dibacco's final delisting decision, historical channel maps and later groundwater data. Preserve the distinction between the two Cayuga Creeks. | Medium |
 | 23 | **Pierce-Arrow and American Axle parcel/remedy crosswalks** — [site-stories.ts](../src/data/site-stories.ts) | Complexes with multiple site numbers need a usable account of which parcel has which remedy or completion status. | Build address-to-site-code matrices from decisions, easements and certificates; add PFAS only with published results and agency interpretation. | Medium |
 | 24 | **3701 River Road and Tonawanda Plastics investigations** — [research-candidate-source-review-2026-10-26.json](./research-candidate-source-review-2026-10-26.json) | Existing entries have specific upcoming evidence, but the payoff depends on new results rather than more historical-use inference. | Read the fingerprinting and RI results for 3701 and the sampling/alternatives analysis for Tonawanda Plastics as separate properties. | Low to medium |
 | 25 | **1440 Main Street investigation and interim-work results** — [research-candidate-source-review-2026-10-26.json](./research-candidate-source-review-2026-10-26.json) | The final plan is already incorporated; completed results are the next meaningful addition. | Check results, tank/interim-work documentation and alternatives analysis. If no new filing exists, stop rechecking the same plan. | Low |
@@ -115,7 +115,7 @@ Across the 66 reviewed codes, 35 already have direct or related-complex narrativ
 
 Older research-completeness and site-history rankings remain useful for editing depth and feature planning. They do not override this follow-up order: a missing image or short article is not automatically a better investigation than an active, well-sourced question.
 
-The full app aggregate contains 27 records labeled research-in-progress. Older completeness reports scan a smaller module list, so their totals may differ. This register follows the aggregate actually used by the app.
+The full app aggregate contains 32 records labeled research-in-progress. Older completeness reports scan a smaller module list, so their totals may differ. This register follows the aggregate actually used by the app.
 
 ### Published site crosswalk
 
@@ -123,9 +123,9 @@ Every mapped record is listed below. The first rank is its highest-priority matc
 
 | Workstream rank | Existing Atlas record | County | Stored evidence stage | Source notes |
 |---:|---|---|---|---:|
-| 1 | [Niagara–Erie Residential Radiological Assessment](https://www.wnyatlas.com/sites/niagara-erie-radiological-assessment) | Niagara | research-in-progress | 3 |
+| 1 | [Niagara–Erie Residential Radiological Assessment](https://www.wnyatlas.com/sites/niagara-erie-radiological-assessment) | Niagara | research-in-progress | 4 |
 | 1 | [Witmer Road Drive-In](https://www.wnyatlas.com/sites/witmer-road-drive-in) | Niagara | research-in-progress | 4 |
-| 2 | [Black Creek Village / 99th Street Fill Investigation](https://www.wnyatlas.com/sites/black-creek-village-fill-investigation) | Niagara | research-in-progress | 2 |
+| 2 | [Black Creek Village / 99th Street Fill Investigation](https://www.wnyatlas.com/sites/black-creek-village-fill-investigation) | Niagara | research-in-progress | 3 |
 | 2 | [Cayuga Island Industrial Fill Investigation](https://www.wnyatlas.com/sites/cayuga-island-industrial-fill) | Niagara | well-documented | 5 |
 | 3 | [Olin / Industrial Welding Disposal Site](https://www.wnyatlas.com/sites/olin-industrial-welding) | Niagara | well-documented | 2 |
 | 4 | [DuPont / Necco Park Landfill](https://www.wnyatlas.com/sites/dupont-necco-park-landfill) | Niagara | well-documented | 3 |
@@ -159,7 +159,9 @@ Every mapped record is listed below. The first rank is its highest-priority matc
 | 21 | [Iroquois Gas / Westwood Pharmaceutical](https://www.wnyatlas.com/sites/iroquois-gas-westwood) | Erie | well-documented | 2 |
 | 21 | [Scajaquada Creek](https://www.wnyatlas.com/sites/scajaquada-creek) | Erie | well-documented | 3 |
 | 22 | [Bergholtz Creek](https://www.wnyatlas.com/sites/bergholtz-creek) | Niagara | well-documented | 2 |
-| 22 | [Cayuga Creek — Niagara County](https://www.wnyatlas.com/sites/cayuga-creek-niagara-county) | Niagara | well-documented | 3 |
+| 22 | [Cayuga Creek — Niagara County](https://www.wnyatlas.com/sites/cayuga-creek-niagara-county) | Niagara | well-documented | 4 |
+| 22 | [Charles Gibson Site](https://www.wnyatlas.com/sites/charles-gibson-site) | Niagara | research-in-progress | 3 |
+| 22 | [Dibacco No. 1 / Old Creek Site](https://www.wnyatlas.com/sites/dibacco-old-creek-site) | Niagara | research-in-progress | 4 |
 | 22 | [Gill Creek / DuPont–Olin Chemical Corridor](https://www.wnyatlas.com/sites/gill-creek-chemical-corridor) | Niagara | well-documented | 2 |
 | 23 | [Former GM / American Axle Plant](https://www.wnyatlas.com/sites/former-american-axle-east-delavan) | Erie | well-documented | 2 |
 | 23 | [Former Pierce-Arrow Manufacturing Complex](https://www.wnyatlas.com/sites/pierce-arrow-manufacturing-complex) | Erie | research-in-progress | 2 |
@@ -242,6 +244,7 @@ Every mapped record is listed below. The first rank is its highest-priority matc
 | 50 | [Buffalo Color Area E / Former Medaille Field](https://www.wnyatlas.com/sites/buffalo-color-area-e-field) | Erie | well-documented | 3 |
 | 50 | [Bush Industries](https://www.wnyatlas.com/sites/bush-industries-cattaraugus) | Cattaraugus | well-documented | 2 |
 | 50 | [Byron Barrel Site](https://www.wnyatlas.com/sites/byron-barrel-site) | Genesee | well-documented | 1 |
+| 50 | [Catholic Academy of Niagara Falls Radiological Assessment](https://www.wnyatlas.com/sites/catholic-academy-niagara-falls-radiological-assessment) | Niagara | research-in-progress | 2 |
 | 50 | [Closed Alumax Extrusions](https://www.wnyatlas.com/sites/closed-alumax-extrusions) | Chautauqua | well-documented | 2 |
 | 50 | [CWM Chemical Services - Model City Facility](https://www.wnyatlas.com/sites/cwm-model-city) | Niagara | well-documented | 2 |
 | 50 | [D.C. Rollforms / Proto Tool](https://www.wnyatlas.com/sites/dc-rollforms-proto-tool) | Chautauqua | well-documented | 2 |
@@ -280,7 +283,7 @@ Every mapped record is listed below. The first rank is its highest-priority matc
 | 50 | [Hooker / S-Area Landfill](https://www.wnyatlas.com/sites/hooker-s-area-landfill) | Niagara | well-documented | 2 |
 | 50 | [Jamestown Brewery Brownfield](https://www.wnyatlas.com/sites/jamestown-brewery-brownfield) | Chautauqua | well-documented | 2 |
 | 50 | [Jonnie's Porta Signs / CVS Blasdell](https://www.wnyatlas.com/sites/jonnies-porta-signs) | Erie | well-documented | 3 |
-| 50 | [Katherine Street Peninsula](https://www.wnyatlas.com/sites/katherine-street-peninsula) | Erie | research-in-progress | 2 |
+| 50 | [Katherine Street Peninsula](https://www.wnyatlas.com/sites/katherine-street-peninsula) | Erie | research-in-progress | 3 |
 | 50 | [Keywell / Vac-Air](https://www.wnyatlas.com/sites/keywell-vac-air-frewsburg) | Chautauqua | well-documented | 2 |
 | 50 | [Lapp Insulator Company](https://www.wnyatlas.com/sites/lapp-insulator-company) | Genesee | well-documented | 2 |
 | 50 | [LaSalle Reservoir / Former Quarry Landfill](https://www.wnyatlas.com/sites/lasalle-reservoir-quarry-landfill) | Erie | well-documented | 2 |
@@ -313,6 +316,7 @@ Every mapped record is listed below. The first rank is its highest-priority matc
 | 50 | [Special Metals](https://www.wnyatlas.com/sites/special-metals-dunkirk) | Chautauqua | well-documented | 2 |
 | 50 | [Standard Portable](https://www.wnyatlas.com/sites/standard-portable-mayville) | Chautauqua | well-documented | 2 |
 | 50 | [Starlite Dry Cleaners](https://www.wnyatlas.com/sites/starlite-dry-cleaners) | Orleans | well-documented | 1 |
+| 50 | [Swan and Chicago Streets Brownfield Investigation](https://www.wnyatlas.com/sites/swan-chicago-streets-brownfield) | Erie | research-in-progress | 2 |
 | 50 | [Tennessee Gas Pipeline Station 224](https://www.wnyatlas.com/sites/tennessee-gas-station-224) | Chautauqua | well-documented | 3 |
 | 50 | [Tennessee Gas Pipeline Station 229](https://www.wnyatlas.com/sites/tennessee-gas-station-229) | Erie | well-documented | 2 |
 | 50 | [Tonawanda Forge Site](https://www.wnyatlas.com/sites/tonawanda-forge) | Erie | well-documented | 1 |
@@ -325,6 +329,7 @@ Every mapped record is listed below. The first rank is its highest-priority matc
 | 50 | [Weber-Knapp Company](https://www.wnyatlas.com/sites/weber-knapp-company) | Chautauqua | well-documented | 2 |
 | 50 | [West Valley Demonstration Project](https://www.wnyatlas.com/sites/west-valley) | Cattaraugus | well-documented | 2 |
 | 50 | [Westinghouse Electric — Cheektowaga](https://www.wnyatlas.com/sites/westinghouse-cheektowaga) | Erie | well-documented | 1 |
+| 50 | [Williamsville Water Mills / Ellicott Creek Mill District](https://www.wnyatlas.com/sites/williamsville-water-mills) | Erie | research-in-progress | 3 |
 | 50 | [Witmer Road Disposal Site](https://www.wnyatlas.com/sites/witmer-road-disposal-site) | Niagara | research-in-progress | 2 |
 | 50 | [Woodlawn Beach](https://www.wnyatlas.com/sites/woodlawn-beach) | Erie | well-documented | 2 |
 | 51 | [Donovan Head Start Slag Removal](https://www.wnyatlas.com/sites/donovan-head-start-radiation-site) | Niagara | well-documented | 3 |

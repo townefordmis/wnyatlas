@@ -10,10 +10,10 @@
       "4": 7,
       "5": 8
     },
-    "atlasSites": 211,
-    "sourceResearchNotes": 489,
-    "siteNotesClassifiedAsFollowUps": 382,
-    "atlasResearchInProgress": 27,
+    "atlasSites": 216,
+    "sourceResearchNotes": 507,
+    "siteNotesClassifiedAsFollowUps": 397,
+    "atlasResearchInProgress": 32,
     "atlasResearchLeads": 0,
     "leadInvestigationRecords": 16,
     "heldOrScreenedOutCampusGroups": 16,
@@ -25,7 +25,7 @@
     "cleanupCandidatesForFreshStoryReview": 22,
     "amherstLeads": 2,
     "historicalRadiologicalReferencePoints": 100,
-    "reviewLedgerSections": 20
+    "reviewLedgerSections": 34
   },
   "priorities": [
     {
@@ -375,16 +375,20 @@
       "tier": 2,
       "title": "Cayuga Creek, Bergholtz Creek and Two Mile Creek datasets",
       "why": "Named studies and sample sets offer bounded additions; narrative completeness scores alone undervalue the underlying source questions.",
-      "nextAction": "Recover the compound-level PFAS data, source-tracking conclusions, spill closure and reach-specific monitoring; preserve the distinction between the two Cayuga Creeks.",
+      "nextAction": "Recover compound-level PFAS data, spill closure and reach-specific monitoring; follow up Gibson's sampling/hydraulic qualifications and Dibacco's final delisting decision, historical channel maps and later groundwater data. Preserve the distinction between the two Cayuga Creeks.",
       "effort": "Medium",
       "siteIds": [
         "cayuga-creek-niagara-county",
+        "charles-gibson-site",
+        "dibacco-old-creek-site",
         "bergholtz-creek",
         "two-mile-creek-tonawanda",
         "gill-creek-chemical-corridor"
       ],
       "references": [
-        "src/data/site-stories.ts"
+        "src/data/site-stories.ts",
+        "src/data/cayuga-creek-disposal-sites.ts",
+        "research/cayuga-creek-source-review-2026-11-16.md"
       ]
     },
     {
@@ -1087,7 +1091,7 @@
       "county": "Niagara",
       "evidenceStatus": "research-in-progress",
       "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
-      "lastReviewed": "September 15, 2026",
+      "lastReviewed": "November 15, 2026",
       "primaryPriority": "witmer-necra",
       "primaryRank": 1,
       "allPriorities": [
@@ -1101,20 +1105,45 @@
         {
           "index": 1,
           "kind": "follow-up or source question",
-          "text": "Track DEC and EPA weekly updates for stable counts of properties contacted, screened, advanced to sampling, cleared, offered relocation, and selected for removal; do not combine those stages into one contamination count."
+          "text": "Verify reported November 10 totals of 1,123 screened properties and 960 no-additional-investigation notices against a dated agency dashboard export before replacing earlier screening totals. Obtain removal progress, disposal and restoration reports."
         },
         {
           "index": 2,
           "kind": "follow-up or source question",
-          "text": "Locate public property-specific isotope, soil, indoor-air, groundwater, and dose-assessment results when released. The AquaDiary episode is a useful secondary synthesis and source lead, not a substitute for those records."
+          "text": "Track DEC and EPA weekly updates for stable counts of properties contacted, screened, advanced to sampling, cleared, offered relocation, and selected for removal; do not combine those stages into one contamination count."
         },
         {
           "index": 3,
+          "kind": "follow-up or source question",
+          "text": "Locate public property-specific isotope, soil, indoor-air, groundwater, and dose-assessment results when released. The AquaDiary episode is a useful secondary synthesis and source lead, not a substitute for those records."
+        },
+        {
+          "index": 4,
           "kind": "editorial constraint or location qualification",
           "text": "Publish property-level locations only when agencies make them public and when doing so does not compromise resident privacy."
         }
       ],
       "sources": [
+        {
+          "title": "November 6, 2026 — 41 referrals and planned residential removals",
+          "publisher": "U.S. Environmental Protection Agency",
+          "url": "https://response.epa.gov/site/site_profile.aspx?site_id=17492"
+        },
+        {
+          "title": "October 23, 2026 agency snapshot — earlier screening and referral figures",
+          "publisher": "New York State Department of Environmental Conservation",
+          "url": "https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd"
+        },
+        {
+          "title": "Catholic Academy follow-up assessment",
+          "publisher": "WNYAtlas",
+          "url": "/sites/catholic-academy-niagara-falls-radiological-assessment"
+        },
+        {
+          "title": "November 11, 2026 school sampling and EPA interview",
+          "publisher": "Buffalo Toronto Public Media",
+          "url": "https://www.btpm.org/local/2026-11-11/epa-begins-follow-up-radiological-testing-on-grounds-of-niagara-falls-church-and-school"
+        },
         {
           "title": "NYSDEC & EPA update for Aug. 31, 2026",
           "publisher": "NYSDEC, published by Niagara Frontier Publications",
@@ -1238,7 +1267,7 @@
       "county": "Niagara",
       "evidenceStatus": "research-in-progress",
       "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
-      "lastReviewed": "September 15, 2026",
+      "lastReviewed": "November 15, 2026",
       "primaryPriority": "residential-fill",
       "primaryRank": 2,
       "allPriorities": [
@@ -1252,15 +1281,25 @@
         {
           "index": 1,
           "kind": "follow-up or source question",
-          "text": "Obtain the original 1993 completion report and later chemical sampling results. Do not repeat unverified drilling depths, illness causation or source claims."
+          "text": "Obtain the November 13 DEC fact sheet, original laboratory tables, site-classification evaluation and field reports. Reconstruct the former Black Creek channel from historic maps and disposal records; whether fill follows the old waterway or later development remains unresolved."
         },
         {
           "index": 2,
+          "kind": "follow-up or source question",
+          "text": "Obtain the original 1993 completion report. Do not repeat unverified drilling depths, illness causation or source claims."
+        },
+        {
+          "index": 3,
           "kind": "editorial constraint or location qualification",
           "text": "Map marker: approximate public intersection of 99th Street and Black Creek Drive, located with Esri geocoding on September 15, 2026. It is not a residential sampling point or contamination boundary."
         }
       ],
       "sources": [
+        {
+          "title": "November 13, 2026 investigation expansion and DEC statement",
+          "publisher": "WIVB / Daniel Telvock, republished by AOL",
+          "url": "https://www.aol.com/articles/state-investigate-potential-contamination-99th-195710000.html"
+        },
         {
           "title": "July 31, 2026 reporting and DEC response on the 99th Street investigation",
           "publisher": "Mark Scheer / Niagara Gazette, published by Investigative Post",
@@ -3247,7 +3286,7 @@
       "county": "Niagara",
       "evidenceStatus": "well-documented",
       "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
-      "lastReviewed": "August 28, 2026",
+      "lastReviewed": "November 16, 2026",
       "primaryPriority": "tributaries",
       "primaryRank": 22,
       "allPriorities": [
@@ -3261,15 +3300,20 @@
         {
           "index": 1,
           "kind": "follow-up or source question",
-          "text": "Add the numeric compound-by-compound 2022 upstream and downstream PFAS results after preserving the sampling map or underlying dataset in a stable public source."
+          "text": "Follow up the separate Gibson and Dibacco source-review queue: missing sediment/well samples, hydraulic qualifications, the final Dibacco delisting decision, original channel maps and later groundwater data. Historical channel geometry and proposed flow pathways remain unmapped pending verification."
         },
         {
           "index": 2,
           "kind": "follow-up or source question",
-          "text": "Locate DEC's final spill record and closure documentation for the July 2016 waste-oil discharge, including recovered quantity and any enforcement outcome."
+          "text": "Add the numeric compound-by-compound 2022 upstream and downstream PFAS results after preserving the sampling map or underlying dataset in a stable public source."
         },
         {
           "index": 3,
+          "kind": "follow-up or source question",
+          "text": "Locate DEC's final spill record and closure documentation for the July 2016 waste-oil discharge, including recovered quantity and any enforcement outcome."
+        },
+        {
+          "index": 4,
           "kind": "editorial constraint or location qualification",
           "text": "Keep this record labeled Niagara County in search, maps, and cross-links so it cannot be confused with Cayuga Creek in Erie County."
         }
@@ -3279,6 +3323,21 @@
           "title": "Cayuga Creek and Minor Tributaries Waterbody Segment Assessment",
           "publisher": "New York State Department of Environmental Conservation",
           "url": "https://extapps.dec.ny.gov/data/WQP/PWL/0101-0001.html"
+        },
+        {
+          "title": "2024 Periodic Review Report, revised submission August 19, 2025 — sections 1–4, printed pages 1-1–4-3 (PDF pages 7–15)",
+          "publisher": "WSP USA for Olin Corporation, in NYSDEC archive",
+          "url": "https://extapps.dec.ny.gov/data/DecDocs/932063/Report.HW.932063.2025-08-19.PRR_and_IC-EC_Certification.pdf"
+        },
+        {
+          "title": "February 1992 Phase II Investigation — executive summary, printed pages 1-1–1-5 (PDF pages 10–14)",
+          "publisher": "Ecology and Environment Engineering, P.C., for NYSDEC",
+          "url": "https://extapps.dec.ny.gov/data/DecDocs/932056A/Report.HW.932056A.1992-02-01.PHASEIIINVESTIGATIONS.pdf"
+        },
+        {
+          "title": "March 1998 Preliminary Site Investigation — history, printed pages 1–3; results and qualifications, pages 4–7; conclusions, page 8 (PDF page 16)",
+          "publisher": "Malcolm Pirnie, Inc., for NYSDEC",
+          "url": "https://extapps.dec.ny.gov/data/DecDocs/932056A/Report.HW.932056A.1998-03-01.PRELIMINARYSITEINVESTIGATIONREPORT.pdf"
         },
         {
           "title": "Cayuga Creek Stream and Floodplain Restoration Project",
@@ -3294,6 +3353,106 @@
           "title": "DEC Investigating Oil Spill in Cayuga Creek",
           "publisher": "Buffalo Toronto Public Media",
           "url": "https://www.btpm.org/environment/2016-07-20/dec-investigating-oil-spill-in-cayuga-creek"
+        }
+      ]
+    },
+    {
+      "id": "charles-gibson-site",
+      "name": "Charles Gibson Site",
+      "county": "Niagara",
+      "evidenceStatus": "research-in-progress",
+      "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
+      "lastReviewed": "November 16, 2026",
+      "primaryPriority": "tributaries",
+      "primaryRank": 22,
+      "allPriorities": [
+        "tributaries"
+      ],
+      "sourceFiles": [
+        "src/data/cayuga-creek-disposal-sites.ts"
+      ],
+      "notes": [
+        {
+          "index": 1,
+          "kind": "follow-up or source question",
+          "text": "Obtain subsequent monitoring, any DEC response to the revised 2024 review, downstream sediment resampling and a successful MW-A3 sample. Check whether HCB sampling anticipated for 2026 occurred."
+        },
+        {
+          "index": 2,
+          "kind": "follow-up or source question",
+          "text": "Review original water-level records and the P-2 substitution with seasonal/high-water conditions before making a stronger hydraulic-containment claim. Reconcile original investigation/feasibility-study dates and differing drum counts; do not publish the proposed 20-gallon-per-day estimate without its original model and assumptions."
+        },
+        {
+          "index": 3,
+          "kind": "follow-up or source question",
+          "text": "Historical creek alignment, disposal footprint and well coordinates require source-map verification before GIS tracing. Do not infer additional waste shipments or reduced monitoring requirements without records."
+        }
+      ],
+      "sources": [
+        {
+          "title": "2024 Periodic Review Report, revised submission August 19, 2025 — sections 1–4, printed pages 1-1–4-3 (PDF pages 7–15)",
+          "publisher": "WSP USA for Olin Corporation, in NYSDEC archive",
+          "url": "https://extapps.dec.ny.gov/data/DecDocs/932063/Report.HW.932063.2025-08-19.PRR_and_IC-EC_Certification.pdf"
+        },
+        {
+          "title": "NYSDEC Remediation Sites GIS — official orientation points and classification fields, retrieved November 16, 2026",
+          "publisher": "New York State Department of Environmental Conservation",
+          "url": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/Remediation_Sites/FeatureServer/1/query?where=SITECODE%20IN%20(%27932063%27,%27932056A%27)&outFields=*&returnGeometry=true&outSR=4326&f=pjson"
+        }
+      ]
+    },
+    {
+      "id": "dibacco-old-creek-site",
+      "name": "Dibacco No. 1 / Old Creek Site",
+      "county": "Niagara",
+      "evidenceStatus": "research-in-progress",
+      "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
+      "lastReviewed": "November 16, 2026",
+      "primaryPriority": "tributaries",
+      "primaryRank": 22,
+      "allPriorities": [
+        "tributaries"
+      ],
+      "sourceFiles": [
+        "src/data/cayuga-creek-disposal-sites.ts"
+      ],
+      "notes": [
+        {
+          "index": 1,
+          "kind": "follow-up or source question",
+          "text": "Obtain the final delisting decision and effective date; explain DEC's current N code from the authoritative site record. The 1998 report places the site in Niagara Falls, while the 1992 report and current GIS identify Niagara; reconcile the historical municipal description."
+        },
+        {
+          "index": 2,
+          "kind": "follow-up or source question",
+          "text": "Retrieve relocation plans and verify the proposed 1,500-foot channel length, historical alignment, disposal footprint, drainage connections, boring logs and seasonal groundwater gradients before mapping them."
+        },
+        {
+          "index": 3,
+          "kind": "follow-up or source question",
+          "text": "Retrieve the original USGS old-creek-bed station observations, dates, methods and coordinates; station names alone do not establish groundwater seepage or continuous subsurface flow. Search for post-1998 monitoring and distinguish it from the historical sample sets."
+        },
+        {
+          "index": 4,
+          "kind": "follow-up or source question",
+          "text": "Review original laboratory tables before publishing concentrations, sample identifiers, filtration status or modern standards comparisons. Treat the possible buried-channel migration mechanism as an unverified research question."
+        }
+      ],
+      "sources": [
+        {
+          "title": "February 1992 Phase II Investigation — executive summary, printed pages 1-1–1-5 (PDF pages 10–14)",
+          "publisher": "Ecology and Environment Engineering, P.C., for NYSDEC",
+          "url": "https://extapps.dec.ny.gov/data/DecDocs/932056A/Report.HW.932056A.1992-02-01.PHASEIIINVESTIGATIONS.pdf"
+        },
+        {
+          "title": "March 1998 Preliminary Site Investigation — history, printed pages 1–3; results and qualifications, pages 4–7; conclusions, page 8 (PDF page 16)",
+          "publisher": "Malcolm Pirnie, Inc., for NYSDEC",
+          "url": "https://extapps.dec.ny.gov/data/DecDocs/932056A/Report.HW.932056A.1998-03-01.PRELIMINARYSITEINVESTIGATIONREPORT.pdf"
+        },
+        {
+          "title": "NYSDEC Remediation Sites GIS — official orientation points and classification fields, retrieved November 16, 2026",
+          "publisher": "New York State Department of Environmental Conservation",
+          "url": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/Remediation_Sites/FeatureServer/1/query?where=SITECODE%20IN%20(%27932063%27,%27932056A%27)&outFields=*&returnGeometry=true&outSR=4326&f=pjson"
         }
       ]
     },
@@ -7379,6 +7538,56 @@
       ]
     },
     {
+      "id": "catholic-academy-niagara-falls-radiological-assessment",
+      "name": "Catholic Academy of Niagara Falls Radiological Assessment",
+      "county": "Niagara",
+      "evidenceStatus": "research-in-progress",
+      "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
+      "lastReviewed": "November 15, 2026",
+      "primaryPriority": "routine-existing-pages",
+      "primaryRank": 50,
+      "allPriorities": [
+        "routine-existing-pages"
+      ],
+      "sourceFiles": [
+        "src/data/featured-sites.ts"
+      ],
+      "notes": [
+        {
+          "index": 1,
+          "kind": "follow-up or source question",
+          "text": "Obtain laboratory results and the final survey report. No reviewed evidence links this campus to Bethlehem Steel uranium processing, TAM Ceramics or another specific facility."
+        },
+        {
+          "index": 2,
+          "kind": "editorial constraint or location qualification",
+          "text": "Map marker: Esri address geocode for 1055 North Military Road, checked November 15, 2026. It locates the campus address, not a sampling point or contamination boundary."
+        }
+      ],
+      "sources": [
+        {
+          "title": "November 11, 2026 on-site reporting and EPA coordinator interview",
+          "publisher": "Buffalo Toronto Public Media / Michael Mroziak",
+          "url": "https://www.btpm.org/local/2026-11-11/epa-begins-follow-up-radiological-testing-on-grounds-of-niagara-falls-church-and-school"
+        },
+        {
+          "title": "Regional radiological assessment and resident information",
+          "publisher": "New York State Department of Environmental Conservation",
+          "url": "https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment"
+        },
+        {
+          "title": "School contact information — 1055 North Military Road",
+          "publisher": "Catholic Academy of Niagara Falls",
+          "url": "https://www.catholicacademyofniagarafalls.com/about-us/contact-us/"
+        },
+        {
+          "title": "Regional assessment record",
+          "publisher": "WNYAtlas",
+          "url": "/sites/niagara-erie-radiological-assessment"
+        }
+      ]
+    },
+    {
       "id": "closed-alumax-extrusions",
       "name": "Closed Alumax Extrusions",
       "county": "Chautauqua",
@@ -9135,7 +9344,7 @@
       "county": "Erie",
       "evidenceStatus": "research-in-progress",
       "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
-      "lastReviewed": "July 27, 2026",
+      "lastReviewed": "November 15, 2026",
       "primaryPriority": "routine-existing-pages",
       "primaryRank": 50,
       "allPriorities": [
@@ -9151,15 +9360,30 @@
         {
           "index": 1,
           "kind": "follow-up or source question",
-          "text": "Locate parcel-level boring logs and waste-oil facility records before assigning a stronger upland contamination status."
+          "text": "Recover nineteenth-century furnace plans, atlas plates and deeds. Keep Farmer's Point separate from Hanna Furnace/Union Ship Canal and the Black Rock furnaces; no off-site slag destination or radiological connection is established by the reviewed history."
         },
         {
           "index": 2,
+          "kind": "follow-up or source question",
+          "text": "Locate parcel-level boring logs and waste-oil facility records before assigning a stronger upland contamination status."
+        },
+        {
+          "index": 3,
           "kind": "editorial constraint or location qualification",
           "text": "Keep completed river restoration distinct from any future upland redevelopment cleanup."
         }
       ],
       "sources": [
+        {
+          "title": "Industrial Crossroads — 1992, introduction printed page 3 / PDF page 7",
+          "publisher": "Society for Industrial Archeology",
+          "url": "https://www.sia-web.org/wordpress/wp-content/uploads/2025/02/SIA-Buffalo-Guidebook-1992.pdf"
+        },
+        {
+          "title": "Early industry: 1750–1900 — Farmer's Point and Union Iron Works",
+          "publisher": "WNYAtlas",
+          "url": "/research/early-industry#union-iron"
+        },
         {
           "title": "Remediation and Restoration Projects for the Buffalo River AOC",
           "publisher": "U.S. Environmental Protection Agency",
@@ -10638,6 +10862,46 @@
       ]
     },
     {
+      "id": "swan-chicago-streets-brownfield",
+      "name": "Swan and Chicago Streets Brownfield Investigation",
+      "county": "Erie",
+      "evidenceStatus": "research-in-progress",
+      "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
+      "lastReviewed": "November 15, 2026",
+      "primaryPriority": "routine-existing-pages",
+      "primaryRank": 50,
+      "allPriorities": [
+        "routine-existing-pages"
+      ],
+      "sourceFiles": [
+        "src/data/featured-sites.ts"
+      ],
+      "notes": [
+        {
+          "index": 1,
+          "kind": "follow-up or source question",
+          "text": "Recover original disposal receipts and subsequent investigation results. Do not attribute the fill to a specific industrial producer without records."
+        },
+        {
+          "index": 2,
+          "kind": "editorial constraint or location qualification",
+          "text": "Map marker: NYSDEC Remediation Sites GIS point for C915423, checked November 15, 2026. It is an orientation point, not a surveyed boundary."
+        }
+      ],
+      "sources": [
+        {
+          "title": "November 21, 2025 Phase II investigation — pages 1–4 and Table 1",
+          "publisher": "Roux Environmental Engineering and Geology, D.P.C., in NYSDEC archive",
+          "url": "https://extapps.dec.ny.gov/data/DecDocs/C915423/Application.BCP.C915423.2026-08-17.%20Phase%20II%20Report%20-%20Swan%20and%20Chicago%20Streets_November%202025.pdf"
+        },
+        {
+          "title": "C915423 brownfield application and investigation documents",
+          "publisher": "New York State Department of Environmental Conservation",
+          "url": "https://extapps.dec.ny.gov/data/DecDocs/C915423/"
+        }
+      ]
+    },
+    {
       "id": "tennessee-gas-station-224",
       "name": "Tennessee Gas Pipeline Station 224",
       "county": "Chautauqua",
@@ -11205,6 +11469,61 @@
           "title": "2021 Groundwater and Surface-Water Sampling Field Summary",
           "publisher": "New York State Department of Environmental Conservation",
           "url": "https://extapps.dec.ny.gov/data/DecDocs/915066/Report.HW.915066.2022-02-24.Groundwater_and_Surface_Water_Sampling_Field_Summary_Report.pdf"
+        }
+      ]
+    },
+    {
+      "id": "williamsville-water-mills",
+      "name": "Williamsville Water Mills / Ellicott Creek Mill District",
+      "county": "Erie",
+      "evidenceStatus": "research-in-progress",
+      "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
+      "lastReviewed": "November 15, 2026",
+      "primaryPriority": "routine-existing-pages",
+      "primaryRank": 50,
+      "allPriorities": [
+        "routine-existing-pages"
+      ],
+      "sourceFiles": [
+        "src/data/featured-sites.ts"
+      ],
+      "notes": [
+        {
+          "index": 1,
+          "kind": "follow-up or source question",
+          "text": "Resolve conflicting raceway dates: indexed waterfront-plan text says 1814; the 2013 survey inventory uses circa 1841. Retrieve the full waterfront plan and early deeds before selecting an exact construction date."
+        },
+        {
+          "index": 2,
+          "kind": "follow-up or source question",
+          "text": "Locate the tannery, distillery, separate mill buildings and water rights using nineteenth-century maps and deeds. Do not infer chromium use or contamination from a tannery listing alone."
+        },
+        {
+          "index": 3,
+          "kind": "editorial constraint or location qualification",
+          "text": "Map marker: Esri PointAddress geocode for 56 East Spring Street, checked November 15, 2026. The official landmark page uses 56 Spring Street. The address point identifies the surviving mill, not all historic uses, a survey boundary or a sampling location."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Williamsville historic survey — printed page 3-6 / PDF page 23",
+          "publisher": "Village of Williamsville / Clinton Brown Company Architecture, 2013",
+          "url": "https://williamsvilleny.gov/wp-content/uploads/2017/01/Intensive-Level-Survey-FULL-FINAL.pdf"
+        },
+        {
+          "title": "Williamsville Water Mills — official landmark description",
+          "publisher": "Village of Williamsville",
+          "url": "https://williamsvilleny.gov/committees/historic-preservation/"
+        },
+        {
+          "title": "Williamsville waterfront plan — alternative raceway chronology; indexed text reviewed",
+          "publisher": "Village of Williamsville / New York State Department of State",
+          "url": "https://dos.ny.gov/system/files/documents/2023/01/williamsville_lwrp_approved_sections_1_7.pdf"
+        },
+        {
+          "title": "Early industry: 1750–1900 — regional historical investigation",
+          "publisher": "WNYAtlas",
+          "url": "/research/early-industry#williams-mills"
         }
       ]
     },
@@ -16595,6 +16914,133 @@
         "Generator-by-generator municipal furnace feed",
         "Individual residential dose",
         "Neighborhood disease causation"
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/0/limits",
+      "value": [
+        "Do not identify the Buffalo receiver as Sinclair or another refinery without a named shipping record.",
+        "The refinery recovered oil already in the creek; the reviewed passage does not make Cynthia the source of every upstream leak.",
+        "Historical release evidence does not establish current soil or water concentrations, exposure, site classification or cleanup status."
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/0/nextRecords",
+      "value": [
+        "Herrick, Empire Oil (1949), relevant original pages and citations",
+        "1880s Bolivar maps, deeds, railroad siding plans, assessment rolls and petroleum trade press",
+        "Dam location and named Buffalo consignee in shipping or company records"
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/1/limits",
+      "value": [
+        "The tannery and distillery need separate footprint evidence; do not assign all early uses to the surviving mill parcel.",
+        "Island Park raceway dates conflict: indexed LWRP text says 1814; the survey inventory uses circa 1841. Historical system existence is stronger than the exact construction date.",
+        "No site-specific contaminant analyses were established by these historical sources."
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/1/nextRecords",
+      "value": [
+        "Earliest mill deeds and water-power rights",
+        "Nineteenth-century Williamsville maps showing tannery, distillery, dams and races",
+        "Original material underlying the survey's Howe citation and the two raceway dates"
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/2/limits",
+      "value": [
+        "Do not turn the 1846 Buffalo start into the founding date of the later Perry Street plant.",
+        "White's Corners/Hamburg and North Evans need parcel-level identity work.",
+        "Tannery use does not by itself establish chromium use, measured contamination, or a particular discharge route."
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/2/nextRecords",
+      "value": [
+        "University of Waterloo SCA204-GA528-1-11 original ledger pages",
+        "Contemporary directories and atlases for the 1846 and 1877 Buffalo businesses",
+        "Original September 29, 1904 Express account and canal records",
+        "Hamburg and Evans deeds and factory water rights"
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/3/limits",
+      "value": [
+        "1824 in the USGS history refers to Williamsville, not the start of Akron production.",
+        "The 1869 versus 1871 transfer dates remain unresolved.",
+        "Historic natural cement should not automatically be described as a modern Portland-cement process; no reviewed source establishes a hazardous-waste site."
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/3/nextRecords",
+      "value": [
+        "1880 Beers map of Akron and historic quarry deeds",
+        "Company incorporation and sale records around 1869-1871",
+        "Separate mill, kiln, tunnel and quarry footprints along Murder Creek and west of Akron"
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/4/limits",
+      "value": [
+        "Do not merge Farmer's Point, Hanna Furnace/Union Ship Canal and Black Rock furnace locations merely because company names overlap.",
+        "The reviewed historical accounts do not identify an off-site slag destination or establish radiological material.",
+        "Existing Katherine Street restoration and sediment findings must not automatically be attributed to the nineteenth-century furnaces."
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/4/nextRecords",
+      "value": [
+        "1860s-1890s fire insurance and city atlas plates",
+        "Original furnace/company directories and deeds",
+        "Crosswalk original shoreline and furnace locations to the current Katherine Street record"
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/5/limits",
+      "value": [
+        "Do not repeat a definitive first-foundry claim or exact founding year before reconciling sources.",
+        "Historic intersection geography is not a modern parcel boundary.",
+        "DEC archive 915029 is the Hanna record containing the regional history, not a cleanup designation for this foundry."
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/5/nextRecords",
+      "value": [
+        "Original 1820s newspapers and directories",
+        "1850 Emslie and Kirk map cited by the 2013 survey",
+        "Earliest partnership deeds and advertisements"
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/6/limits",
+      "value": [
+        "The earlier 1745 storehouse is context, outside the requested 1750 start.",
+        "No reviewed source establishes current contamination, a modern cleanup boundary, or a direct link to later industrial wastes.",
+        "Do not infer archaeological coordinates from redacted material or describe every property mentioned in the nomination bundle as individually listed."
+      ]
+    },
+    {
+      "sourceFile": "research/early-wny-source-review-2026-11-15.json",
+      "pointer": "/candidates/6/nextRecords",
+      "value": [
+        "Published period portage maps and fort plans",
+        "Severance and Pouchot source passages cited in the National Register account",
+        "Public interpretation with Seneca-authored historical context"
       ]
     },
     {

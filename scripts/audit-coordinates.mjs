@@ -12,6 +12,7 @@ const source = [
   "../src/data/sinclair-refinery-site.ts",
   "../src/data/regional-waste-network-sites.ts",
   "../src/data/erie-cayuga-expansion.ts",
+  "../src/data/cayuga-creek-disposal-sites.ts",
   "../src/data/waterway-hubs.ts",
   "../src/data/historic-cleanup-expansion.ts",
   "../src/data/county-expansion-2026.ts",

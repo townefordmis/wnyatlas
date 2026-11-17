@@ -1,3 +1,5 @@
+import { gibsonReviewSource, dibaccoPhaseIISource, dibaccoFollowupSource } from "@/data/cayuga-creek-disposal-sites";
+
 export type WaterwayEvidenceType =
   | "documented_disposal_fill"
   | "documented_filled_waterway"
@@ -42,6 +44,53 @@ export type FormerWaterwayRecord = {
 };
 
 export const formerWaterwayRecords: FormerWaterwayRecord[] = [
+  {
+    id: "charles-gibson-cayuga-creek-relocation",
+    name: "Cayuga Creek relocation at Charles Gibson",
+    location: "Tuscarora Road, Niagara Falls — DEC 932063",
+    coordinates: [-78.9636653548925, 43.09302566297977],
+    evidenceType: "documented_engineered_waterway",
+    displayClassification: "Documented creek relocation and engineered containment",
+    waterwayHistory: "Section 1.2 of the 2024 Periodic Review Report describes a new channel excavated east of the waste during the 1989–1990 remedy. The former bed was stabilized with rock, concrete, excavated soil and structural fill.",
+    documentedMaterial: "The report's historical inventory describes approximately 400 HCB drums and 100 tons of BHC/HCH manufacturing residue disposed in 1957. Waste fill and channel-stabilization material are distinct descriptions; the inventory is not assigned uniformly to the former bed.",
+    environmentalRecord: "Historical soil and groundwater contamination prompted containment. Fall 2024 delta-BHC at 1.8 µg/L was measured in captured Manhole B water, not creek water. An off-site well was unsampled and downstream sediment lacked sufficient material for analysis.",
+    hydrologicPathway: "The historical concern was shallow groundwater discharge to Cayuga Creek. WSP judged the remedy effective in 2024, with qualifications including an outward gradient at P-1/P-2 and substitution of a historical average for an anomalous P-2 reading. The reviewed evidence does not establish current uncontrolled migration.",
+    remediationStatus: "Cap, surrounding slurry wall, perimeter collection, sewer discharge and monitoring operate as an integrated remedy. DEC's GIS returned Class 04 on November 16, 2026; the inspected monitoring report covers 2024.",
+    evidenceSummary: "DOCUMENTED historical channel change and containment; historical channel geometry remains pending.",
+    interpretation: "The marker uses DEC's official site orientation point. It is not a surveyed creek alignment, landfill boundary, monitoring station or groundwater-flow arrow. No channel trace is invented.",
+    sourceUrl: gibsonReviewSource.url,
+    sourceLabel: gibsonReviewSource.title,
+    relatedSiteId: "charles-gibson-site",
+    additionalSources: [{ url: "/sites/cayuga-creek-niagara-county", label: "Cayuga Creek — Niagara County watershed record" }],
+    changePeriod: "1989–1990 remedy construction",
+    evidenceConfidence: "research_boundary_pending",
+    presentStatus: "Managed containment; present-day migration is not established by the reviewed evidence.",
+  },
+  {
+    id: "dibacco-cayuga-old-creek-bed",
+    name: "Dibacco disposal in the former Cayuga Creek bed",
+    location: "Behind 9115 Porter Road, Town of Niagara — DEC 932056A",
+    coordinates: [-78.958337588218868, 43.100217676059493],
+    evidenceType: "documented_disposal_fill",
+    displayClassification: "Documented former-channel disposal; current subsurface flow unverified",
+    waterwayHistory: "The 1992 Phase II executive summary describes creek displacement southeast during berm construction around 1969, leaving a low wetland in the old bed. Waste was placed in and beside that channel during 1977–1978.",
+    documentedMaterial: "The report estimates 3,300 cubic yards of mostly demolition material, including fire-damaged Carborundum products and International Paper debris, and recounts reported fly ash and spent C-56 catalyst disposal. It does not establish a uniform fill composition.",
+    environmentalRecord: "The 1992 summary documents soil and sediment PAHs, low cyanide in one sediment sample and several groundwater metals above the study's historical Class GA comparisons. The March 1998 report found no cleanup-guideline exceedances in six July 1997 soil samples and recommended delisting.",
+    hydrologicPathway: "The 1992 report identifies an intermittent ditch, erosion, runoff and groundwater as potential migration routes. Continuous subsurface flow through the buried channel and present-day contaminant transport have not been demonstrated in the reviewed evidence.",
+    remediationStatus: "The 1998 history records grading and clay cover in 1978. Its delisting recommendation does not establish the final decision date, removal of all waste or present groundwater conditions. DEC's GIS returned N on November 16, 2026; the regulatory history requires reconciliation.",
+    evidenceSummary: "DOCUMENTED historical disposal and channel change; present-day hydraulic connection is UNVERIFIED.",
+    interpretation: "The point is DEC's official site orientation location, not an old-channel centerline or waste boundary. Verify relocation plans and historical maps before drawing the proposed channel extent or potential groundwater pathways.",
+    sourceUrl: dibaccoPhaseIISource.url,
+    sourceLabel: dibaccoPhaseIISource.title,
+    additionalSources: [
+      { url: dibaccoFollowupSource.url, label: dibaccoFollowupSource.title },
+      { url: "/sites/cayuga-creek-niagara-county", label: "Cayuga Creek — Niagara County watershed record" },
+    ],
+    relatedSiteId: "dibacco-old-creek-site",
+    changePeriod: "Around 1969 channel displacement; 1977–1978 disposal",
+    evidenceConfidence: "research_boundary_pending",
+    presentStatus: "Historical findings and later soil-based delisting recommendation; current flow and migration unresolved.",
+  },
   {
     id: "sinclair-genesee-river-channelization",
     name: "Genesee River channelization at Sinclair Refinery",

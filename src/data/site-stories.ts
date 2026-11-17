@@ -2527,13 +2527,17 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "cayuga-creek-niagara-county": {
-    lastReviewed: "August 28, 2026",
+    lastReviewed: "November 16, 2026",
     background: [
+      "Two separately documented industrial-disposal sites add a channel-history chapter to this watershed. Charles Gibson (932063) received chemical wastes in 1957 and underwent creek relocation and engineered containment in 1989–1990. Dibacco No. 1 / Old Creek (932056A) received industrial and demolition debris in and beside a former channel during 1977–1978. The linked site records retain their distinct sources, results and regulatory histories.",
       "This is the 21.6-mile Cayuga Creek in Niagara County, which flows past the Niagara Falls airport area and reaches the Niagara River near Cayuga Island. It is distinct from the Erie County Cayuga Creek that passes through Depew and joins the Buffalo River.",
       "New York's March 2025 waterbody factsheet classifies the entire creek and selected tributaries as an impaired Class C segment. Fishing and secondary-contact recreation are confirmed impaired because of dioxin, a legacy condition that predates the newer PFAS investigation and should not be merged with it.",
       "Buffalo Niagara Waterkeeper has combined monitoring with restoration in this corridor. Its June 2022 surface-water study sampled above and below the Niagara Falls airport and found several PFAS compounds, with higher concentrations downstream. That pattern supports further source and pathway investigation, but a two-location comparison cannot establish that every detection came from the airport, the Air Reserve Station, or any single release area.",
     ],
     timeline: [
+      { period: "Around 1969 / 1977–1978", event: "The Dibacco investigation describes an old channel left after berm construction, then industrial and demolition disposal within and beside it." },
+      { period: "1989–1990", event: "The Charles Gibson remedy relocated Cayuga Creek and installed a cap, slurry wall and groundwater collection system. This was a separate project from the later floodplain restoration." },
+      { period: "March 1998", event: "A Dibacco soil investigation recommended delisting after six July 1997 samples did not exceed the cleanup guidelines used by that study. The final decision date remains unverified." },
       { period: "1998–present", event: "The state impairment record identifies dioxin as the confirmed cause limiting fishing and secondary-contact recreation." },
       { period: "July 2016", event: "An estimated 500 gallons of waste oil entered through a storm pipe near Niagara Falls Boulevard and Tuscarora Road. Waterkeeper reported the spill, cleanup followed, and contemporary accounts did not identify the dumper." },
       { period: "2018–2022", event: "Land protection and project design led to construction of a new channel through historic floodplain on a roughly 30-acre Town of Niagara restoration property." },
@@ -2554,8 +2558,10 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     presentDay: [
       "Cayuga Creek remains an impaired waterbody as well as an active restoration and monitoring corridor. The dioxin impairment, one-time oil discharge, PFAS screening, airport investigation, and restored floodplain are related by geography but represent different pollutants, evidence levels, responsible-party questions, and response programs.",
+      "Gibson's reviewed monitoring report covers 2024 and concludes containment was effective with sampling and hydraulic qualifications. Dibacco's reviewed follow-up concerns 1997 soil samples. Neither establishes present-day migration through a buried channel or assigns the creek's dioxin/PFAS findings to either disposal site.",
     ],
     researchNotes: [
+      "Follow up the separate Gibson and Dibacco source-review queue: missing sediment/well samples, hydraulic qualifications, the final Dibacco delisting decision, original channel maps and later groundwater data. Historical channel geometry and proposed flow pathways remain unmapped pending verification.",
       "Add the numeric compound-by-compound 2022 upstream and downstream PFAS results after preserving the sampling map or underlying dataset in a stable public source.",
       "Locate DEC's final spill record and closure documentation for the July 2016 waste-oil discharge, including recovered quantity and any enforcement outcome.",
       "Keep this record labeled Niagara County in search, maps, and cross-links so it cannot be confused with Cayuga Creek in Erie County.",

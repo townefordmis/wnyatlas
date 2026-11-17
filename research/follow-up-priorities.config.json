@@ -334,16 +334,20 @@
       "tier": 2,
       "title": "Cayuga Creek, Bergholtz Creek and Two Mile Creek datasets",
       "why": "Named studies and sample sets offer bounded additions; narrative completeness scores alone undervalue the underlying source questions.",
-      "nextAction": "Recover the compound-level PFAS data, source-tracking conclusions, spill closure and reach-specific monitoring; preserve the distinction between the two Cayuga Creeks.",
+      "nextAction": "Recover compound-level PFAS data, spill closure and reach-specific monitoring; follow up Gibson's sampling/hydraulic qualifications and Dibacco's final delisting decision, historical channel maps and later groundwater data. Preserve the distinction between the two Cayuga Creeks.",
       "effort": "Medium",
       "siteIds": [
         "cayuga-creek-niagara-county",
+        "charles-gibson-site",
+        "dibacco-old-creek-site",
         "bergholtz-creek",
         "two-mile-creek-tonawanda",
         "gill-creek-chemical-corridor"
       ],
       "references": [
-        "src/data/site-stories.ts"
+        "src/data/site-stories.ts",
+        "src/data/cayuga-creek-disposal-sites.ts",
+        "research/cayuga-creek-source-review-2026-11-16.md"
       ]
     },
     {

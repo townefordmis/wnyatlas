@@ -19,6 +19,16 @@ export type ResolvedSiteConnectionGroup = Omit<SiteConnectionGroup, "members"> &
 
 export const siteConnectionGroups: SiteConnectionGroup[] = [
   {
+    id: "cayuga-niagara-disposal-channel-history",
+    name: "Cayuga Creek: separate disposal sites and altered channels",
+    summary: "Historical channel changes connect these places geographically. Their wastes, sampling results and remedies remain site-specific; no shared plume or present-day buried-channel migration is established.",
+    members: [
+      { siteId: "cayuga-creek-niagara-county", role: "Niagara County waterway", connection: "The watershed record keeps disposal history separate from dioxin impairment, PFAS screening, the oil spill and restoration." },
+      { siteId: "charles-gibson-site", role: "Engineered containment and creek relocation", connection: "The 1989–1990 remedy relocated the creek and installed a cap, slurry wall and collection system. The reviewed 2024 report assesses continued containment with sampling and hydraulic qualifications." },
+      { siteId: "dibacco-old-creek-site", role: "Disposal in and beside a former channel", connection: "The 1992 investigation documents disposal and historical sampling; the 1998 soil report recommended delisting. Present-day buried-channel flow remains unverified." },
+    ],
+  },
+  {
     id: "catholic-academy-necra-assessment",
     name: "School follow-up within the regional radiological assessment",
     summary: "The school assessment follows NECRA screening. Inclusion does not establish contamination or a particular industrial source.",
