@@ -6,7 +6,7 @@ Editorial judgment using the evidence and open questions already held in the pro
 
 The order weighs reader value, strength of the starting evidence, realistic access to the next record, added knowledge beyond existing coverage, and effort. It is an editorial judgment rather than a scientific score. Lower rank means lower expected return from the next research session, not lower importance of a community or less contamination.
 
-This consolidates **64 workstreams**, all **216 mapped records and 507 research notes**, **16 lead-investigation records**, **66 cleanup-code candidates from the school reviews**, **16 held or screened-out campus groups**, the **2 Amherst leads**, historical radiological evidence, and the dated source-review backlogs. These counts overlap and must not be added into a count of sites or investigations.
+This consolidates **64 workstreams**, all **216 mapped records and 511 research notes**, **16 lead-investigation records**, **66 cleanup-code candidates from the school reviews**, **16 held or screened-out campus groups**, the **2 Amherst leads**, historical radiological evidence, and the dated source-review backlogs. These counts overlap and must not be added into a count of sites or investigations.
 
 ## How to use the order
 
@@ -20,7 +20,7 @@ An existing public entry can still rank highly because an unanswered outcome mat
 
 | Rank | Follow-up | Why it earns this place | First useful action | Effort |
 |---:|---|---|---|---|
-| 1 | **Witmer Drive-In and property-specific NECRA results** — [radiological-investigation.ts](../src/data/radiological-investigation.ts); [research-candidate-source-review-2026-11-06.json](./research-candidate-source-review-2026-11-06.json); [deferred-research-backlog.md](./deferred-research-backlog.md) | An active assessment and a documented information-transmission gap can materially change an existing public story. | Find the supplemental sampling plan/results, EPA isotope assessment, original 2020 survey, and August 2026 transmission/receipt records. Keep screened, sampled, relocated, and remediated properties separate. | Medium |
+| 1 | **Witmer Drive-In and property-specific NECRA results** — [radiological-investigation.ts](../src/data/radiological-investigation.ts); [research-candidate-source-review-2026-11-06.json](./research-candidate-source-review-2026-11-06.json); [catholic-academy-source-review-2026-11-16.md](./catholic-academy-source-review-2026-11-16.md); [deferred-research-backlog.md](./deferred-research-backlog.md) | An active assessment and a documented information-transmission gap can materially change an existing public story. | Find the supplemental sampling plan/results, EPA isotope assessment, original 2020 survey and transmission records. For Catholic Academy, obtain validated laboratory results and outdoor play-area coverage maps, match historical Anomaly #59 to current parcels and test material-source hypotheses. Keep screening, sampling, relocation and removal separate. | Medium |
 | 2 | **Cayuga Island and Black Creek Village findings** — [cayuga-island-site.ts](../src/data/cayuga-island-site.ts); [site-stories.ts](../src/data/site-stories.ts); [radiological-investigation.ts](../src/data/radiological-investigation.ts) | New validated property-specific results would answer substantive questions in existing residential-fill stories. | Seek validated 2026 results, original disposal questionnaires, earlier sampling maps and closure records. Treat Cayuga Island and Black Creek Village as separate investigations and protect resident privacy. | High |
 | 3 | **Industrial Welding monitoring exceedances and agency response** — [research-candidate-source-review-2026-10-26.json](./research-candidate-source-review-2026-10-26.json) | The submitted 2026 report contains both exceedances and a favorable remedy assessment; agency interpretation is a concrete missing piece. | Get DEC's response, later monitoring, and corrective-maintenance records; distinguish well and discharge samples from drinking water. | Low to medium |
 | 4 | **Necco Park emerging-contaminant follow-up** — [industrial-history-source-review-2026-10-19.json](./industrial-history-source-review-2026-10-19.json) | The stored review identifies a September 2026 follow-up milestone with unresolved source and treatment questions. | Check for the follow-up investigation, treatment-system sampling, and EPA disposition. Separate upgradient findings from landfill attribution. | Low to medium |
@@ -123,6 +123,7 @@ Every mapped record is listed below. The first rank is its highest-priority matc
 
 | Workstream rank | Existing Atlas record | County | Stored evidence stage | Source notes |
 |---:|---|---|---|---:|
+| 1 | [Catholic Academy of Niagara Falls Radiological Assessment](https://www.wnyatlas.com/sites/catholic-academy-niagara-falls-radiological-assessment) | Niagara | research-in-progress | 6 |
 | 1 | [Niagara–Erie Residential Radiological Assessment](https://www.wnyatlas.com/sites/niagara-erie-radiological-assessment) | Niagara | research-in-progress | 4 |
 | 1 | [Witmer Road Drive-In](https://www.wnyatlas.com/sites/witmer-road-drive-in) | Niagara | research-in-progress | 4 |
 | 2 | [Black Creek Village / 99th Street Fill Investigation](https://www.wnyatlas.com/sites/black-creek-village-fill-investigation) | Niagara | research-in-progress | 3 |
@@ -244,7 +245,6 @@ Every mapped record is listed below. The first rank is its highest-priority matc
 | 50 | [Buffalo Color Area E / Former Medaille Field](https://www.wnyatlas.com/sites/buffalo-color-area-e-field) | Erie | well-documented | 3 |
 | 50 | [Bush Industries](https://www.wnyatlas.com/sites/bush-industries-cattaraugus) | Cattaraugus | well-documented | 2 |
 | 50 | [Byron Barrel Site](https://www.wnyatlas.com/sites/byron-barrel-site) | Genesee | well-documented | 1 |
-| 50 | [Catholic Academy of Niagara Falls Radiological Assessment](https://www.wnyatlas.com/sites/catholic-academy-niagara-falls-radiological-assessment) | Niagara | research-in-progress | 2 |
 | 50 | [Closed Alumax Extrusions](https://www.wnyatlas.com/sites/closed-alumax-extrusions) | Chautauqua | well-documented | 2 |
 | 50 | [CWM Chemical Services - Model City Facility](https://www.wnyatlas.com/sites/cwm-model-city) | Niagara | well-documented | 2 |
 | 50 | [D.C. Rollforms / Proto Tool](https://www.wnyatlas.com/sites/dc-rollforms-proto-tool) | Chautauqua | well-documented | 2 |

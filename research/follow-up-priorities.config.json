@@ -14,15 +14,17 @@
       "tier": 1,
       "title": "Witmer Drive-In and property-specific NECRA results",
       "why": "An active assessment and a documented information-transmission gap can materially change an existing public story.",
-      "nextAction": "Find the supplemental sampling plan/results, EPA isotope assessment, original 2020 survey, and August 2026 transmission/receipt records. Keep screened, sampled, relocated, and remediated properties separate.",
+      "nextAction": "Find the supplemental sampling plan/results, EPA isotope assessment, original 2020 survey and transmission records. For Catholic Academy, obtain validated laboratory results and outdoor play-area coverage maps, match historical Anomaly #59 to current parcels and test material-source hypotheses. Keep screening, sampling, relocation and removal separate.",
       "effort": "Medium",
       "siteIds": [
         "witmer-road-drive-in",
-        "niagara-erie-radiological-assessment"
+        "niagara-erie-radiological-assessment",
+        "catholic-academy-niagara-falls-radiological-assessment"
       ],
       "references": [
         "src/data/radiological-investigation.ts",
         "research/research-candidate-source-review-2026-11-06.json",
+        "research/catholic-academy-source-review-2026-11-16.md",
         "research/deferred-research-backlog.md"
       ]
     },

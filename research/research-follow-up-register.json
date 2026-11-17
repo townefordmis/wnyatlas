@@ -11,8 +11,8 @@
       "5": 8
     },
     "atlasSites": 216,
-    "sourceResearchNotes": 507,
-    "siteNotesClassifiedAsFollowUps": 397,
+    "sourceResearchNotes": 511,
+    "siteNotesClassifiedAsFollowUps": 401,
     "atlasResearchInProgress": 32,
     "atlasResearchLeads": 0,
     "leadInvestigationRecords": 16,
@@ -34,15 +34,17 @@
       "tier": 1,
       "title": "Witmer Drive-In and property-specific NECRA results",
       "why": "An active assessment and a documented information-transmission gap can materially change an existing public story.",
-      "nextAction": "Find the supplemental sampling plan/results, EPA isotope assessment, original 2020 survey, and August 2026 transmission/receipt records. Keep screened, sampled, relocated, and remediated properties separate.",
+      "nextAction": "Find the supplemental sampling plan/results, EPA isotope assessment, original 2020 survey and transmission records. For Catholic Academy, obtain validated laboratory results and outdoor play-area coverage maps, match historical Anomaly #59 to current parcels and test material-source hypotheses. Keep screening, sampling, relocation and removal separate.",
       "effort": "Medium",
       "siteIds": [
         "witmer-road-drive-in",
-        "niagara-erie-radiological-assessment"
+        "niagara-erie-radiological-assessment",
+        "catholic-academy-niagara-falls-radiological-assessment"
       ],
       "references": [
         "src/data/radiological-investigation.ts",
         "research/research-candidate-source-review-2026-11-06.json",
+        "research/catholic-academy-source-review-2026-11-16.md",
         "research/deferred-research-backlog.md"
       ]
     },
@@ -1085,6 +1087,96 @@
     }
   ],
   "siteRegister": [
+    {
+      "id": "catholic-academy-niagara-falls-radiological-assessment",
+      "name": "Catholic Academy of Niagara Falls Radiological Assessment",
+      "county": "Niagara",
+      "evidenceStatus": "research-in-progress",
+      "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
+      "lastReviewed": "November 16, 2026",
+      "primaryPriority": "witmer-necra",
+      "primaryRank": 1,
+      "allPriorities": [
+        "witmer-necra"
+      ],
+      "sourceFiles": [
+        "src/data/featured-sites.ts"
+      ],
+      "notes": [
+        {
+          "index": 1,
+          "kind": "follow-up or source question",
+          "text": "Obtain validated soil radionuclide results, interior scoping and radon findings, sampling dates, methods, detection limits and agency interpretations. Distinguish planned tests, completed fieldwork and released laboratory results."
+        },
+        {
+          "index": 2,
+          "kind": "follow-up or source question",
+          "text": "Request the full survey coverage map and logs for playgrounds, lawns and other outdoor activity spaces, including paved and unpaved areas, depths and any inaccessible locations. Do not claim those areas were surveyed or omitted without the coverage record."
+        },
+        {
+          "index": 3,
+          "kind": "follow-up or source question",
+          "text": "Match original Anomaly #59 maps and the historical 908 North Military Road rectory address to current parcels and 2026 sample locations. Preserve the existing address-based historical marker as approximate; do not move it to the modern school pin or draw a contamination footprint from address proximity alone."
+        },
+        {
+          "index": 4,
+          "kind": "follow-up or source question",
+          "text": "Test the phosphate-slag explanation against mineralogy, radionuclide profiles, fill records and agency conclusions. Regional Oldbury history and Donovan's confirmed slag do not identify this campus's material or prove a shared producer or hauler."
+        },
+        {
+          "index": 5,
+          "kind": "follow-up or source question",
+          "text": "Recover agency correspondence, historical notification, any earlier property surveys and cleanup decisions before asserting that officials knew the same current condition had persisted for decades without action."
+        },
+        {
+          "index": 6,
+          "kind": "editorial constraint or location qualification",
+          "text": "Map marker: Esri address geocode for 1055 North Military Road, checked November 15, 2026. It locates the campus address, not a sampling point or contamination boundary."
+        }
+      ],
+      "sources": [
+        {
+          "title": "November 11, 2026 on-site reporting and EPA coordinator interview",
+          "publisher": "Buffalo Toronto Public Media / Michael Mroziak",
+          "url": "https://www.btpm.org/local/2026-11-11/epa-begins-follow-up-radiological-testing-on-grounds-of-niagara-falls-church-and-school"
+        },
+        {
+          "title": "August 1985 mobile gamma scanning report (ORNL/RASA-85/1) — October 1984 survey; Table 4, printed page 12 / PDF page 17",
+          "publisher": "Oak Ridge National Laboratory for the U.S. Department of Energy",
+          "url": "https://lmpublicsearch.lm.doe.gov/LMSites/2708-NY.17-9_NFSS.pdf"
+        },
+        {
+          "title": "November 1986 radiological measurements report (ORNL/TM-10076) — Table 5, page 23; Table 11, page 30; Table 14, page 38; regional interpretation, pages 5–6",
+          "publisher": "Oak Ridge National Laboratory for the U.S. Department of Energy",
+          "url": "https://lmpublicsearch.lm.doe.gov/LMSites/2726-NY.17-10_NFSS.pdf"
+        },
+        {
+          "title": "Donovan Head Start: property-specific assessment, uranium-238-bearing slag and interior findings",
+          "publisher": "U.S. Environmental Protection Agency",
+          "url": "https://www.epa.gov/ny/donovan-head-start-removal-site"
+        },
+        {
+          "title": "Completed Niagara County removals — Donovan cleanup and late-summer 2023 restoration",
+          "publisher": "U.S. Environmental Protection Agency",
+          "url": "https://www.epa.gov/ny/niagara-county-radiation-removal-sites"
+        },
+        {
+          "title": "Regional radiological assessment and resident information",
+          "publisher": "New York State Department of Environmental Conservation",
+          "url": "https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment"
+        },
+        {
+          "title": "School contact information — 1055 North Military Road",
+          "publisher": "Catholic Academy of Niagara Falls",
+          "url": "https://www.catholicacademyofniagarafalls.com/about-us/contact-us/"
+        },
+        {
+          "title": "Regional assessment record",
+          "publisher": "WNYAtlas",
+          "url": "/sites/niagara-erie-radiological-assessment"
+        }
+      ]
+    },
     {
       "id": "niagara-erie-radiological-assessment",
       "name": "Niagara–Erie Residential Radiological Assessment",
@@ -7534,56 +7626,6 @@
           "title": "EPA Region 2 Five-Year Review Index",
           "publisher": "U.S. Environmental Protection Agency",
           "url": "https://www.epa.gov/superfund/R2-fiveyearreviews"
-        }
-      ]
-    },
-    {
-      "id": "catholic-academy-niagara-falls-radiological-assessment",
-      "name": "Catholic Academy of Niagara Falls Radiological Assessment",
-      "county": "Niagara",
-      "evidenceStatus": "research-in-progress",
-      "publicationStatus": "Already in the Atlas; rank concerns remaining follow-up",
-      "lastReviewed": "November 15, 2026",
-      "primaryPriority": "routine-existing-pages",
-      "primaryRank": 50,
-      "allPriorities": [
-        "routine-existing-pages"
-      ],
-      "sourceFiles": [
-        "src/data/featured-sites.ts"
-      ],
-      "notes": [
-        {
-          "index": 1,
-          "kind": "follow-up or source question",
-          "text": "Obtain laboratory results and the final survey report. No reviewed evidence links this campus to Bethlehem Steel uranium processing, TAM Ceramics or another specific facility."
-        },
-        {
-          "index": 2,
-          "kind": "editorial constraint or location qualification",
-          "text": "Map marker: Esri address geocode for 1055 North Military Road, checked November 15, 2026. It locates the campus address, not a sampling point or contamination boundary."
-        }
-      ],
-      "sources": [
-        {
-          "title": "November 11, 2026 on-site reporting and EPA coordinator interview",
-          "publisher": "Buffalo Toronto Public Media / Michael Mroziak",
-          "url": "https://www.btpm.org/local/2026-11-11/epa-begins-follow-up-radiological-testing-on-grounds-of-niagara-falls-church-and-school"
-        },
-        {
-          "title": "Regional radiological assessment and resident information",
-          "publisher": "New York State Department of Environmental Conservation",
-          "url": "https://dec.ny.gov/environmental-protection/facilities-in-your-neighborhood/niagara-and-erie-county-radiological-assessment"
-        },
-        {
-          "title": "School contact information — 1055 North Military Road",
-          "publisher": "Catholic Academy of Niagara Falls",
-          "url": "https://www.catholicacademyofniagarafalls.com/about-us/contact-us/"
-        },
-        {
-          "title": "Regional assessment record",
-          "publisher": "WNYAtlas",
-          "url": "/sites/niagara-erie-radiological-assessment"
         }
       ]
     },

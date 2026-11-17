@@ -38,6 +38,15 @@ export const siteConnectionGroups: SiteConnectionGroup[] = [
     ],
   },
   {
+    id: "school-radiological-evidence-comparison",
+    name: "School grounds: a completed slag removal and an unresolved assessment",
+    summary: "Donovan and Catholic Academy illustrate different evidence stages. This comparison does not establish a shared waste source, matching exposure, or the same cleanup needs.",
+    members: [
+      { siteId: "catholic-academy-niagara-falls-radiological-assessment", role: "Historical anomaly and current follow-up", connection: "DOE records name the Prince of Peace parking lot as Anomaly #59. Current screening led to November 2026 sampling; material identity, validated results and full outdoor play-area coverage remain unresolved." },
+      { siteId: "donovan-head-start-radiation-site", role: "Confirmed slag and completed removal", connection: "EPA confirmed uranium-238-bearing slag beneath the playground and parking lot, found no building contamination and records removal/restoration in 2023. These property-specific findings do not establish Catholic Academy's conditions." },
+    ],
+  },
+  {
     id: "olin-mercury-production-disposal",
     name: "Olin production, disposal, and Gill Creek records",
     summary: "Plant releases, a separate brine-waste disposal property, and reported off-site shipments explain different parts of Olin's history. Each property retains its own evidence, boundary, and remedy.",

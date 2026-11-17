@@ -6,6 +6,10 @@ build a map for it.
 
 For the working order across this backlog and the other Atlas queues, use the [ranked follow-up priorities](follow-up-priorities.md). This file retains the underlying questions and publication gates.
 
+## Catholic Academy / Prince of Peace — November 16, 2026 review
+
+The existing record now incorporates the original DOE church-parking-lot history and a comparison with Donovan's completed removal. The [source review and queue](catholic-academy-source-review-2026-11-16.md) preserves unresolved historical-to-current footprint matching, material source, current validated results and coverage of children's outdoor play areas. The survey was conducted in October 1984 and reported in August 1985. The 1986 report identifies Anomaly #59 but marks it not sampled for soil analysis; do not turn regional phosphate-slag history into a property-specific soil finding or assume a shared waste source with Donovan.
+
 ## Cayuga Creek disposal sites — November 16, 2026 review
 
 Charles Gibson and Dibacco No. 1 / Old Creek now have separate site records and Changed Waters entries supported by reviewed DEC reports and official GIS points. The [source review and open research queue](cayuga-creek-source-review-2026-11-16.md) retains unverified drum counts, historical seepage estimates, the final Dibacco delisting date, the proposed old-channel length, original USGS station data and present-day hydraulic/migration questions. Historical sampling and the 1998 soil-based delisting recommendation do not establish current buried-channel flow or water quality. No channel alignments or disposal polygons have been invented.
