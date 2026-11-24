@@ -1,0 +1,46 @@
+{
+  "reviewedOn": "2026-11-24",
+  "scope": "Follow unresolved leads from handoff 001; preserve allegations, measurements and outcomes as distinct evidence.",
+  "resolved": [
+    {
+      "recordId": "driscolls-farley-lead",
+      "finding": "Recovered stamped Document 1, Farley v. Driscoll’s, 2:26-cv-05950, Eastern District of New York, filed September 24, 2026. Upgrade from research lead to filed litigation; keep existing ID stable.",
+      "source": "https://edge.sitecorecloud.io/dlapiperukl2c48-dlapiper7aff-prodb8eb-83a9/media/project/dlapiper-tenant/dlapiper/pdf/farley-v-driscolls-inc-226cv05950--complaint.pdf",
+      "method": "Extracted all 23 PDF pages; visually checked stamped caption. Reviewed claims and proposed-class language.",
+      "limits": "Publisher mirror of original filing, not a current docket. Proposed classes are not established as certified. Same testing account as Washington, not a new New York sample. Subsequent outcome unknown."
+    },
+    {
+      "recordId": "notice-2026-03892",
+      "finding": "Trader Joe’s Crunchy Almond Butter No Salt, UPC 00514378; aflatoxin warning allegation; August 7, 2026. Resolves the product incorrectly paired with 03891 in the handoff.",
+      "source": "https://oag.ca.gov/system/files/prop65/notices/2026-03892.pdf",
+      "method": "Checked official DOJ detail record and visually verified original notice page 1.",
+      "limits": "Private notice only. Laboratory concentration, actual factory, local lot availability and later outcome unknown."
+    },
+    {
+      "recordId": "notice-2026-03893",
+      "finding": "Adjacent record: Trader Joe’s Almond Butter Cocoa (ABC) Bars, UPC 00593229; aflatoxins and ochratoxin A; August 7, 2026.",
+      "source": "https://oag.ca.gov/system/files/prop65/notices/2026-03893.pdf",
+      "method": "Checked official DOJ detail record and visually verified original notice page 1.",
+      "limits": "Private notice only. No concentration, agency confirmation, recall or merits finding established."
+    }
+  ],
+  "partialToleranceReview": {
+    "recordId": "driscolls-washington",
+    "commodityRule": "40 CFR 180.41: strawberry belongs to subgroup 13-07G.",
+    "comparisons": [
+      { "chemical": "Fludioxonil", "complaintReportedPpb": 60, "convertedPpm": 0.060, "currentTolerancePpm": 3.0, "rule": "40 CFR 180.516" },
+      { "chemical": "Fluxapyroxad", "complaintReportedPpb": 26, "convertedPpm": 0.026, "currentTolerancePpm": 4.0, "rule": "40 CFR 180.666" },
+      { "chemical": "Flupyradifurone", "complaintReportedPpb": 27, "convertedPpm": 0.027, "currentTolerancePpm": 1.5, "rule": "40 CFR 180.679" }
+    ],
+    "method": "Reviewed current eCFR commodity rows and parent-only compliance residue definitions on November 24, 2026. One ppm equals 1,000 ppb.",
+    "conclusion": "These three reported values are numerically below current tolerances. This is conditional comparison, not independent analytical verification, complete compliance certification or health-risk assessment.",
+    "limits": "Original analytical report and actual analysis date missing. Rules applicable at sampling not independently established. Other residues remain incomplete. Under 180.613, flonicamid and specified metabolites including TFNG require stoichiometric equivalents; do not simply add the reported entries."
+  },
+  "remainingPriorities": [
+    "Original Mamavation laboratory certificate, sample identity, methods, quality controls and residue-definition calculations.",
+    "Current Washington and Farley dockets, operative pleadings and orders.",
+    "Signed Nature Valley settlement and state docket.",
+    "Original product-specific reports underlying the private notices, lots, serving assumptions and exposure calculations.",
+    "Dated Western New York product availability and documented manufacturer/grower relationships."
+  ]
+}

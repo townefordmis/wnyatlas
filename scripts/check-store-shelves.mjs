@@ -45,5 +45,17 @@ assert.match(applesauce.localAvailability, /378 Main Street, Arcade/);
 assert.match(applesauce.measurements[0].sample, /New York City/);
 assert.equal(applesauce.measurements[0].testingDate, null, "Collection date must not become an inferred analysis date");
 assert.equal(applesauce.evidence.includes("regulatory-violation"), false, "Do not turn an agreement without admission into an adjudicated violation");
-assert.equal(records.find(item => item.id === "driscolls-farley-lead").caseNumber, null, "Unrecovered primary case facts remain unknown");
+const farley = records.find(item => item.id === "driscolls-farley-lead");
+assert.equal(farley.caseNumber, "2:26-cv-05950");
+assert.equal(farley.filingDate, "2026-09-24");
+assert.deepEqual(farley.evidence, ["filed-litigation"]);
+assert.equal(farley.measurements.length, 0, "Do not invent a second New York sample from shared testing allegations");
+assert.equal(records.find(item => item.id === "notice-2026-03892").product, "Trader Joe’s Crunchy Almond Butter No Salt");
+assert.deepEqual(records.find(item => item.id === "notice-2026-03893").contaminants, ["Aflatoxins", "Ochratoxin A"]);
+for (const [chemical, ppm, tolerance, section] of [["Fludioxonil", 0.060, 3.0, "180.516"], ["Fluxapyroxad", 0.026, 4.0, "180.666"], ["Flupyradifurone", 0.027, 1.5, "180.679"]]) {
+  assert.equal(strawberries.measurements.find(item => item.chemical === chemical).value / 1000, ppm, "ppb to ppm conversion");
+  assert.ok(ppm < tolerance);
+  assert.ok(strawberries.sources.some(item => item.url.endsWith(`section-${section}`)), "Every tolerance comparison needs its chemical-specific rule");
+}
+assert.match(strawberries.regulatoryComparison, /not laboratory verification/);
 console.log(`Store Shelves checks passed: ${records.length} records; combined filters, source provenance, unknowns and handoff corrections verified.`);
