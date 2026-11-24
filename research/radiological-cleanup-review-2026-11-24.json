@@ -1,0 +1,63 @@
+{
+  "reviewed": "2026-11-24",
+  "status": "Prepared locally for review; no push, deployment or live record write",
+  "november15Work": {
+    "threadTitle": "Update radiological cleanup timeline",
+    "threadId": "01a1dfc2-e6ef-7111-af9f-bd70c638d19d",
+    "finding": "The November 15 work already added the 41-referral figure and planned two-home cleanup to the public Atlas hub, news and regional site story. It also added Catholic Academy, Black Creek expansion and Swan/Chicago records. Those changes do not need duplicating."
+  },
+  "liveDesk": {
+    "url": "https://wnyatlas-investigations.scott-thomps-3706.chatgpt.site",
+    "projectId": "appgprj_6af4eda322c88191a6c91539033f03ef",
+    "version": 1,
+    "sourceCommit": "5e424b7546bd49ec0b25f537de240a86f07eaa0e",
+    "published": "2026-11-11",
+    "evidence": "Authenticated live HTML and published client bundle read successfully. Native read-only inspection found DB.records empty. The client loads saved rows from /api/records and merges them with 12 built-in leads, all dated November 11. No regional assessment record, November 6 referral event or November 9 planned cleanup is present.",
+    "missing": [
+      "Regional Niagara–Erie assessment record with evidence and source register",
+      "November 6 EPA count of 41 referrals, superseding October 23's 37",
+      "Two-home cleanup scheduled for the week of November 9, with excavation, screening and off-site disposal",
+      "Explicit distinction between announcement, work performed and completion",
+      "Separately dated October screening totals and unresolved source attribution"
+    ],
+    "draftFile": "research/investigation-desk-radiological-draft.json",
+    "draftCompatibility": "Uses the record fields observed in the published client, including sources with title/url/page/verified and events with date/note. This is a review payload, not an installed import feature or a saved live record.",
+    "limits": "Source checkout retrieval failed; no hosted source was modified. The DB read and published client establish the current record state without a browser editing session."
+  },
+  "localChanges": [
+    {
+      "file": "src/data/site-stories.ts",
+      "before": "The regional site's present-day section still used August screening/access/notification figures even though the hub had the October snapshot.",
+      "after": "Aligned present-day screening figures with October 23, retained the separately dated August relocation count and November referrals, and updated the review date. The historical August timeline entry remains intact."
+    },
+    {
+      "file": "src/data/radiological-investigation.ts",
+      "before": "Searchable document archive and current assessment source list omitted both the November 6 EPA announcement and October 23 DEC snapshot.",
+      "after": "Added both source records, their dated findings and evidence limits; no new residential map pins."
+    },
+    {
+      "file": "src/app/data/radiological-research.json/route.ts",
+      "before": "Research download was still stamped August 12 and had no current assessment chronology.",
+      "after": "Added dated October and November timeline entries, a November 24 review date and a scheduled-removal limitation."
+    },
+    {
+      "file": "src/app/research/radiological-industry-fill/page.tsx",
+      "before": "Page update history ended in September despite the November 15 content updates.",
+      "after": "Added November 15 and November 24 history entries and a scoped cleanup-timeline check date."
+    }
+  ],
+  "validation": {
+    "typecheck": "Passed",
+    "productionBuild": "Passed: 304 pages, including the separately requested Store Shelves section",
+    "httpAndContentChecks": "Passed for radiological hub, regional site story, research JSON, Store Shelves, Teflon Legacy and sitemap",
+    "deskDraft": "JSON parses and required fields match the published client record shape; not posted to the live API",
+    "diffCheck": "Passed",
+    "preview": "Production preview at http://localhost:3004; app preview and review-panel opening queued. Visual browser QA not completed. Development preview failed while scanning an existing access-restricted .tmp/youtube-transcript directory; production build and serving succeeded."
+  },
+  "heldForEvidence": [
+    "No completed-removal claim without a subsequent field report",
+    "No replacement of screening totals with unverified 1,123/960 figures",
+    "No industrial-source attribution or private residential address inference",
+    "Catholic Academy laboratory status remains dated to reviewed reporting"
+  ]
+}

@@ -59,6 +59,12 @@ export default function Home() {
 
       <RecentUpdates />
 
+      <section className="about-panel" aria-labelledby="store-shelves-title">
+        <p className="eyebrow">New investigation · Consumer exposure</p>
+        <h2 id="store-shelves-title"><a href="/research/pollution-on-store-shelves">Pollution on Store Shelves</a></h2>
+        <p>Food, drinks, packaging and household chemicals: explore the research agenda and the first Teflon Legacy source review.</p>
+      </section>
+
       <section className="about-panel" aria-labelledby="early-industry-title">
         <p className="eyebrow">1750–1900 · New historical research</p>
         <h2 id="early-industry-title"><a href="/research/early-industry">Early industry, waterways and trade →</a></h2>

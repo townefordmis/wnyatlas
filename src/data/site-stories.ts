@@ -1733,7 +1733,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
   },
   "niagara-erie-radiological-assessment": {
-    lastReviewed: "November 15, 2026",
+    lastReviewed: "November 24, 2026",
     background: [
       "The Niagara and Erie County Radiological Assessment is a regional investigation of properties where historic industrial slag or other fill may contain elevated naturally occurring radioactive material. It is an assessment program, not a finding that every contacted or screened property is contaminated.",
       "The current work has three linked phases: EPA aerial surveys in late 2023 and summer 2024, vehicle-based roadway surveys beginning in 2025, and ground surveys that began in fall 2025. DEC says the aerial phase identified no areas of immediate concern; the later phases use closer-range instruments and records to decide where property-level investigation is warranted.",
@@ -1808,7 +1808,7 @@ export const siteStories: Partial<Record<string, AtlasStory>> = {
     ],
     presentDay: [
       "EPA reported 41 referrals as of November 6, 2026, up from 37 in the October 23 update. Cleanup at two homes was scheduled for the week of November 9; a subsequent field report is needed to verify work performed.",
-      "The August 31, 2026 agency update reported approximately 1,078 signed access forms and 847 properties screened. Approximately 514 properties had been notified that no additional radiological investigation was needed; 32 parcels were referred to EPA for additional investigation, and four properties were recommended for voluntary temporary relocation. These counts describe different stages and should not be added together. Referral or a relocation recommendation does not by itself establish a final contamination classification or identify the source material.",
+      "The October 23, 2026 DEC snapshot reports more than 1,100 signed access agreements, more than 1,080 properties screened, approximately 900 notifications requiring no additional radiological investigation and more than 150 results under review. These overlapping stages retain their October date; only the referral figure has been superseded by EPA's November 6 update. The four properties recommended for voluntary temporary relocation remain an August 31 snapshot. None of these counts identifies a material source or should be added into a contamination total.",
       "EPA identifies the assessment as NY8180000160, a Removal Only Site that is not on the National Priorities List. This program record does not classify every screened property as contaminated.",
       "The regional assessment is ongoing. Agencies are moving from broad screening toward property-specific surveys, soil sampling, laboratory identification, exposure review, and response decisions. Some households have been offered voluntary temporary relocation while that work proceeds.",
       "No public finding reviewed by WNYAtlas establishes that the residential investigation has contaminated drinking-water supplies. That is cautious reassurance, not proof that every water pathway is impossible: the answer depends on the radionuclides present, fill composition, soil chemistry, groundwater conditions, runoff, and actual exposure points.",

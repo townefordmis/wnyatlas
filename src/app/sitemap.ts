@@ -9,6 +9,8 @@ const BASE_URL = "https://www.wnyatlas.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const publicPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/research/pollution-on-store-shelves`, lastModified: "2026-11-24", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/research/pollution-on-store-shelves/teflon-legacy`, lastModified: "2026-11-24", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/research/early-industry`, lastModified: "2026-11-15", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/research/priorities`, changeFrequency: "monthly", priority: 0.75 },
     { url: `${BASE_URL}/research/burning-years`, changeFrequency: "monthly", priority: 0.8 },

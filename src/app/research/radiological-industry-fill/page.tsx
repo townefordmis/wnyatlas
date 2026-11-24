@@ -56,7 +56,7 @@ export default function RadiologicalInvestigationPage() {
       <details className="radiological-full-report" id="full-research">
       <summary>Full investigation, interactive map & source archive</summary>
       <section className="school-research-hero radiological-hero" id="current-status">
-        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Reviewed November 15, 2026 · figures dated individually" /></p>
+        <p className="eyebrow"><EvidenceStatusBadge status="active-government-investigation" detail="Cleanup timeline checked November 24, 2026 · figures dated individually" /></p>
         <h2>Niagara–Erie radiological investigation</h2>
         <p className="dek">EPA, NYSDEC, and NYSDOH are investigating radiological material across roughly 1,000 square miles in Niagara and Erie counties. Teams are following aerial and roadway screening with ground surveys and property testing. A screening signal does not mean contamination is confirmed.</p>
         <a className="radiological-map-jump" href="#radiological-map">Open the interactive map <span aria-hidden="true">↓</span></a>
@@ -706,6 +706,8 @@ export default function RadiologicalInvestigationPage() {
         <p className="eyebrow">Living investigation</p>
         <h2 id="radiological-update-heading">What changed</h2>
         <div>
+          <p><strong>November 24, 2026 · cleanup source and dataset reconciliation</strong> Rechecked EPA&apos;s November 6 announcement, added it and the October 23 agency snapshot to the searchable document archive and research download, and retained the distinction between scheduled work and verified completion. Screening totals keep their own dates.</p>
+          <p><strong>November 15, 2026 · residential cleanup announced</strong> Updated EPA referrals from 37 on October 23 to 41 on November 6 and added the planned two-home cleanup for the week of November 9. Added the separate Catholic Academy follow-up assessment with laboratory results pending in the reviewed reporting.</p>
           <p><strong>September 14, 2026 · source comparison completed</strong> Added the TAM source quantity and survey measurements, expanded the EAD sewer-to-sludge-to-landfill chain with public government records, and clarified the Carborundum material and operating periods. Court-filed Upper Mountain Road evidence remains separately labeled and does not prove disposition of TAM&apos;s 1955 experimental slag.</p>
           <p><strong>September 14, 2026 · TAM, Carborundum, and Tonawanda Am-241</strong> Added independently verified federal and state records, kept the TAM slag destination unresolved, and separated solid slag/fill evidence from the EAD sanitary-sewer and municipal-waste pathway.</p>
           <p><strong>September 14, 2026 · research hub restructure</strong> Separated the Southtowns slag, Black Creek Village, and 1979 Pine Bowl investigations into focused, linkable records; consolidated the current investigation statistics and made the 100-point survey list collapsible.</p>

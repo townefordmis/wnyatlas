@@ -1,0 +1,46 @@
+{
+  "id": "niagara-erie-radiological-assessment",
+  "title": "Niagara–Erie radiological assessment and announced residential cleanup",
+  "location": "Erie and Niagara counties · regional topic; marker is a regional locator, not either residential cleanup property",
+  "county": "Regional",
+  "lat": 43.125,
+  "lng": -79.035,
+  "contaminants": ["Radiological"],
+  "confidence": "documented",
+  "status": "Researching",
+  "summary": "EPA reported 41 referrals as of November 6, 2026 and scheduled cleanup at two homes for the week of November 9. This is a documented announcement, not confirmation of completed removals.",
+  "confirmed": "EPA's November 6 update reports 41 properties referred for further assessment. It schedules excavation, screening, appropriate handling and off-site disposal of radiologically contaminated soil at two residential properties for the week of November 9. The October 23 DEC snapshot reports more than 1,100 access agreements, more than 1,080 screenings, approximately 900 no-additional-investigation notifications and more than 150 results under review. These overlapping stages retain their own dates and are not contamination totals.",
+  "speculation": "A particular industrial supplier, waste route, household exposure, removal-completion date or exact residential location has not been established by the reviewed announcement. The separate Bethlehem, Buffalo Slag and landfill research leads are not proven sources of these residential findings.",
+  "related": [],
+  "questions": "What work was actually performed at each home, and when? What do laboratory, disposal, verification and restoration records establish? Can reported November 10 totals of 1,123 screenings and 960 notifications be verified against a dated agency dashboard export?",
+  "next": "Obtain subsequent EPA field and completion reports; verify disposal and restoration. Retrieve a dated dashboard snapshot before changing screening totals. Track Catholic Academy separately, retaining pending-result status until a reviewed follow-up supports a change. Do not map private residential addresses without a public agency record.",
+  "sources": [
+    {
+      "title": "EPA Western New York RAD Removal — November 6, 2026 update",
+      "url": "https://response.epa.gov/site/site_profile.aspx?site_id=17492",
+      "page": "Update section: 41 referrals, two-home cleanup scheduled for the week of November 9, excavation, screening and off-site disposal. Reviewed November 24, 2026.",
+      "verified": true
+    },
+    {
+      "title": "NYSDEC NECRA Project Update — October 23, 2026",
+      "url": "https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd",
+      "page": "Let's Talk Numbers and background-sampling sections; October screening snapshot. Reviewed November 24, 2026.",
+      "verified": true
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-23",
+      "note": "DEC reported 37 EPA referrals, more than 1,080 screenings and approximately 900 no-additional-investigation notifications. Counts describe overlapping stages, not confirmed contamination totals. Source: https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd"
+    },
+    {
+      "date": "2026-11-06",
+      "note": "EPA reported 41 referrals and announced cleanup at two homes for the week of November 9. This supersedes the October referral count only. Source: https://response.epa.gov/site/site_profile.aspx?site_id=17492"
+    },
+    {
+      "date": "2026-11-09",
+      "note": "Week scheduled for residential excavation, screening and off-site disposal; planned start, not a verified field event or completion. Source: EPA's November 6 announcement."
+    }
+  ],
+  "updated": "2026-11-24"
+}

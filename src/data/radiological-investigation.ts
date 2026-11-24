@@ -722,6 +722,14 @@ export const latestRadiologicalFollowUps: RadiologicalFollowUp[] = [
 
 export const currentAssessmentSources = [
   {
+    label: "EPA Western New York RAD Removal — November 6, 2026 update",
+    url: "https://response.epa.gov/site/site_profile.aspx?site_id=17492",
+  },
+  {
+    label: "NYSDEC October 23, 2026 screening and referral snapshot",
+    url: "https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd",
+  },
+  {
     label: "2025 U.S. Census Bureau TIGERweb county boundaries",
     url: "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/82",
   },
@@ -740,6 +748,32 @@ export const currentAssessmentSources = [
 ];
 
 export const radiologicalDocuments: RadiologicalDocument[] = [
+  {
+    id: "wny-rad-removal-november-2026",
+    title: "Western New York RAD Removal — residential cleanup announcement",
+    agency: "U.S. Environmental Protection Agency",
+    date: "November 6, 2026; cleanup scheduled for the week of November 9",
+    year: 2026,
+    kind: "cleanup-decision",
+    geography: "Erie and Niagara",
+    status: "ongoing",
+    establishes: "Reports 41 properties referred to EPA for further assessment and schedules cleanup at two residential properties, including excavation, screening, appropriate handling and off-site disposal of radiologically contaminated soil. The announcement does not verify work performed or completed removals.",
+    mapConnection: "Updates the regional assessment chronology. The reviewed announcement does not identify the two residential locations, so it adds no property-level markers or industrial-source attribution.",
+    url: "https://response.epa.gov/site/site_profile.aspx?site_id=17492",
+  },
+  {
+    id: "necra-october-23-2026",
+    title: "NECRA Project Update — October property screening snapshot",
+    agency: "New York State Department of Environmental Conservation",
+    date: "October 23, 2026",
+    year: 2026,
+    kind: "current-assessment",
+    geography: "Erie and Niagara",
+    status: "ongoing",
+    establishes: "Reports more than 1,100 access agreements, more than 1,080 properties screened, approximately 900 notifications requiring no additional radiological investigation, 37 EPA referrals and more than 150 results under review. EPA's November 6 count of 41 supersedes the referral figure only; the other figures retain their October date.",
+    mapConnection: "Provides dated regional pipeline counts and explains background sampling and the Witmer Road referral. These overlapping stages are not contamination totals or property boundaries.",
+    url: "https://content.govdelivery.com/accounts/NYSDEC/bulletins/42f64bd",
+  },
   {
     id: "carborundum-building-one-2026", title: "Carborundum site overview and location clarification",
     agency: "NIOSH/DCAS", date: "June 16, 2026", year: 2026,
