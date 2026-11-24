@@ -1,0 +1,37 @@
+{
+  "reviewDate": "2026-11-24",
+  "handoff": "Research Handoff 001: Grocery Retailers, Growers and Chemical Litigation",
+  "publicationScope": "Existing Pollution on Store Shelves section: 16 searchable records and a research JSON download; no separate website",
+  "corrections": [
+    { "claim": "226 units sold after Dollar Tree recall notification", "finding": "At least 226 three-pack boxes, not 226 individual pouches. Assurance paragraphs 43–47 describe the sales and total." },
+    { "claim": "2,560 ppb lead", "finding": "One WanaBana pouch collected by NYC health officials from a New York City household on November 6, 2023. Sampling date is known; laboratory analysis date is not. Not a Western New York sample or a sitewide average." },
+    { "claim": "40 confirmed or probable cases", "finding": "Assurance paragraphs 34–35 distinguish 17 confirmed and 23 probable consumption links, with caregivers reporting New York Dollar Tree purchases. These are not 40 Western New York cases." },
+    { "claim": "Walmart mussels notice 2026-04351", "finding": "Official record and original withdrawal letter show withdrawal on October 20, 2026. Retain as withdrawn, not an unqualified active allegation." },
+    { "claim": "Trader Joe's crunchy almond butter notice 2026-03891", "finding": "Official record and notice identify Trader Joe's Peanut Butter with Honey and aflatoxins. The intended crunchy-almond-butter notice has not been independently recovered." },
+    { "claim": "Trader Joe's peanut butter with honey notice 2026-03890", "finding": "Official record and notice identify Simple Truth Organic Baby Kale, Kroger/Ralphs and cadmium. Do not assign this number to Trader Joe's." },
+    { "claim": "Trader Joe's tortellini is only a notice", "finding": "Official record links a complaint filed October 15, 2026, San Francisco Superior Court CGC-26-641988, naming Nuovo Pasta Productions and Trader Joe's. No merits outcome verified." },
+    { "claim": "Great Value Argentine red shrimp", "finding": "Original notice product name specifies Raw Argentine Red Shrimp." },
+    { "claim": "New York PFAS defendants", "finding": "Filed complaint includes The Chemours Company FC, LLC in addition to the five companies summarized in the handoff. Verified index 907879-26, Albany County, July 9, 2026." },
+    { "claim": "Strawberry testing establishes PFAS exposure", "finding": "The 12 concentrations are transcribed as complaint-reported results, with eight described by plaintiffs as PFAS-related. Original laboratory certificate, analysis date and matched EPA tolerance review remain unknown; no confirmed-detection label assigned." }
+  ],
+  "unresolved": [
+    { "topic": "Farley v. Driscoll's", "handoffCaseNumber": "2:26-cv-05950", "finding": "Discovery docket index located. Original complaint/current primary docket not recovered; public case number, filing date and status remain unknown rather than presented as independently verified." },
+    { "topic": "General Mills", "handoffStateCaseNumber": "2016-CA-006309B", "finding": "Original federal remand opinion verified as 1:16-cv-01921-ESH, Document 17, February 22, 2017. Plaintiffs' August 23, 2018 announcement reviewed; signed settlement and original state docket not recovered. No definitive state judgment or settlement amount asserted." },
+    { "topic": "Current case outcomes", "finding": "Records identify the dated complaint, order or notice reviewed. A current complete docket was not recovered for every case; later history remains explicitly unknown." },
+    { "topic": "Western New York availability", "finding": "Official Trader Joe's and Whole Foods Amherst store pages verify retailer presence only. Exact product/lot availability unknown. Assurance paragraph 45 identifies a recalled three-pack sold at 378 Main Street, Arcade, Wyoming County, Family Dollar #5357 on October 29, 2023. Paragraph 46 identifies 15 three-pack boxes released at 821 Culver Road, Rochester, Dollar Tree #7472 on November 5, 2023. Affected Erie/Niagara stores and local illness counts remain unknown." },
+    { "topic": "Grower and private-label supplier tracing", "finding": "Individual growers, shared manufacturing relationships and most supplier locations remain unknown; no inference from a brand or named defendant." }
+  ],
+  "additionalContext": [
+    "Separate November 18, 2026 Driscoll's v. Localize preliminary-injunction order was recovered from GovInfo. It addresses misleading cancer/drift statements, not the merits of the Washington marketing complaint.",
+    "WHO mycotoxin guidance supports a scoped aflatoxin/ochratoxin A explanation. The public feature does not transfer general toxicity findings to untested named products.",
+    "Minnesota and EPA sources show why structural PFAS classifications must be distinguished; PFOA/PFOS toxicity is not assigned to every fluorinated pesticide."
+  ],
+  "validation": {
+    "productionBuild": "Passed: 305 pages; TypeScript completed successfully",
+    "dataChecks": "node scripts/check-store-shelves.mjs: 16 records; provenance, unknowns, corrections and combined filters passed",
+    "browserChecks": "Headless Chrome: combined filters, details disclosure, reset, empty state, withdrawn status, manufacturer filter and JSON download passed; no page errors",
+    "responsiveChecks": "1440px desktop and 390px mobile screenshots inspected; no horizontal overflow at 390px",
+    "sourceReview": "Original PDF text and rendered pages checked for the applesauce sample, Arcade/Rochester stores, Driscoll residue list, NY PFAS caption, chocolate judgment and notice withdrawal"
+  },
+  "sourceHandling": "Original public PDFs and HTML retrieved under ignored tmp/store-shelves-001 for source review. Public dataset preserves original URLs and page/paragraph support. No private consumer identities included."
+}
